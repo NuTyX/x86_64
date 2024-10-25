@@ -123,7 +123,7 @@ rm $PKG/lib/systemd/system/systemd-logind.service
 lib() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 lib/lib* lib/systemd/libsystemd-shared*
 
 rm lib/lib* lib/systemd/libsystemd-shared*
