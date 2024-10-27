@@ -9,7 +9,7 @@ name=m4
 version=1.4.19
 release=2
 
-set=(devel)
+set=(devel chroot)
 
 PKGMK_LOCALES=()
 source=(http://ftp.gnu.org/gnu/m4/m4-$version.tar.xz)
