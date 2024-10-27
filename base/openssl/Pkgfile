@@ -8,6 +8,9 @@ makedepends=(perl)
 
 name=openssl
 version=3.3.2
+release=2
+
+set=(chroot)
 
 source=(https://github.com/openssl/openssl/releases/download/$name-$version/$name-$version.tar.gz)
 
