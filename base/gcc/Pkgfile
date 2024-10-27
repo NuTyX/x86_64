@@ -8,7 +8,9 @@ maintainer="Jakub Jelinek (jakub at redhat dot com),Manuel López-Ibáñez (manu
 makedepends=(gmp mpfr mpc tar flex)
 name=gcc
 version=14.1.0
-release=2
+release=3
+
+set=(chroot)
 
 PKGMK_KEEP_LA_LIBS="yes"
 PKGMK_IGNORE_UNPACK="yes"
