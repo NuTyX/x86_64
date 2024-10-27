@@ -7,7 +7,9 @@ makedepends=(python libidn2 libunistring)
 
 name=libpsl
 version=0.21.5
-release=3
+release=4
+
+set=(chroot)
 
 source=(https://github.com/rockdaboot/libpsl/releases/download/$version/$name-$version.tar.gz)
 build() {
