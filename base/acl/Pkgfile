@@ -6,9 +6,11 @@ packager="tnut <tnut@nutyx.org>"
 
 makedepends=(attr)
 
-
 name=acl
 version=2.3.2
+release=2
+
+set=(chroot)
 
 PKGMK_LOCALES=()
 source=( http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
