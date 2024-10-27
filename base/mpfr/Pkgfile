@@ -9,7 +9,9 @@ makedepends=(gmp texinfo)
 
 name=mpfr
 version=4.2.1
-release=2
+release=3
+
+set=(chroot)
 
 source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.xz)
 
