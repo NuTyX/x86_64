@@ -8,6 +8,10 @@ makedepends=(ncurses readline sed)
 
 name=bash
 version=5.2.37
+release=2
+
+set=(chroot)
+
 PKGMK_LOCALES=()
 
 source=(http://ftp.gnu.org/gnu/bash/bash-$version.tar.gz)
