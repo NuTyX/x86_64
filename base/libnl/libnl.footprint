@@ -1,0 +1,94 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/libnl/
+-rw-r--r--	root/root	etc/libnl/classid
+-rw-r--r--	root/root	etc/libnl/pktloc
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/genl-ctrl-list
+-rwxr-xr-x	root/root	usr/bin/idiag-socket-details
+-rwxr-xr-x	root/root	usr/bin/nf-ct-add
+-rwxr-xr-x	root/root	usr/bin/nf-ct-events
+-rwxr-xr-x	root/root	usr/bin/nf-ct-list
+-rwxr-xr-x	root/root	usr/bin/nf-exp-add
+-rwxr-xr-x	root/root	usr/bin/nf-exp-delete
+-rwxr-xr-x	root/root	usr/bin/nf-exp-list
+-rwxr-xr-x	root/root	usr/bin/nf-log
+-rwxr-xr-x	root/root	usr/bin/nf-monitor
+-rwxr-xr-x	root/root	usr/bin/nf-queue
+-rwxr-xr-x	root/root	usr/bin/nl-addr-add
+-rwxr-xr-x	root/root	usr/bin/nl-addr-delete
+-rwxr-xr-x	root/root	usr/bin/nl-addr-list
+-rwxr-xr-x	root/root	usr/bin/nl-class-add
+-rwxr-xr-x	root/root	usr/bin/nl-class-delete
+-rwxr-xr-x	root/root	usr/bin/nl-class-list
+-rwxr-xr-x	root/root	usr/bin/nl-classid-lookup
+-rwxr-xr-x	root/root	usr/bin/nl-cls-add
+-rwxr-xr-x	root/root	usr/bin/nl-cls-delete
+-rwxr-xr-x	root/root	usr/bin/nl-cls-list
+-rwxr-xr-x	root/root	usr/bin/nl-fib-lookup
+-rwxr-xr-x	root/root	usr/bin/nl-link-enslave
+-rwxr-xr-x	root/root	usr/bin/nl-link-ifindex2name
+-rwxr-xr-x	root/root	usr/bin/nl-link-list
+-rwxr-xr-x	root/root	usr/bin/nl-link-name2ifindex
+-rwxr-xr-x	root/root	usr/bin/nl-link-release
+-rwxr-xr-x	root/root	usr/bin/nl-link-set
+-rwxr-xr-x	root/root	usr/bin/nl-link-stats
+-rwxr-xr-x	root/root	usr/bin/nl-list-caches
+-rwxr-xr-x	root/root	usr/bin/nl-list-sockets
+-rwxr-xr-x	root/root	usr/bin/nl-monitor
+-rwxr-xr-x	root/root	usr/bin/nl-neigh-add
+-rwxr-xr-x	root/root	usr/bin/nl-neigh-delete
+-rwxr-xr-x	root/root	usr/bin/nl-neigh-list
+-rwxr-xr-x	root/root	usr/bin/nl-neightbl-list
+-rwxr-xr-x	root/root	usr/bin/nl-nh-list
+-rwxr-xr-x	root/root	usr/bin/nl-pktloc-lookup
+-rwxr-xr-x	root/root	usr/bin/nl-qdisc-add
+-rwxr-xr-x	root/root	usr/bin/nl-qdisc-delete
+-rwxr-xr-x	root/root	usr/bin/nl-qdisc-list
+-rwxr-xr-x	root/root	usr/bin/nl-route-add
+-rwxr-xr-x	root/root	usr/bin/nl-route-delete
+-rwxr-xr-x	root/root	usr/bin/nl-route-get
+-rwxr-xr-x	root/root	usr/bin/nl-route-list
+-rwxr-xr-x	root/root	usr/bin/nl-rule-list
+-rwxr-xr-x	root/root	usr/bin/nl-tctree-list
+-rwxr-xr-x	root/root	usr/bin/nl-util-addr
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libnl-3.so -> libnl-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-3.so.200 -> libnl-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so -> libnl-cli-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-cli-3.so.200 -> libnl-cli-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-cli-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so -> libnl-genl-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-genl-3.so.200 -> libnl-genl-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-genl-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so -> libnl-idiag-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-idiag-3.so.200 -> libnl-idiag-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-idiag-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so -> libnl-nf-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-nf-3.so.200 -> libnl-nf-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-nf-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so -> libnl-route-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-route-3.so.200 -> libnl-route-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-route-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-xfrm-3.so -> libnl-xfrm-3.so.200.26.0
+lrwxrwxrwx	root/root	usr/lib/libnl-xfrm-3.so.200 -> libnl-xfrm-3.so.200.26.0
+-rwxr-xr-x	root/root	usr/lib/libnl-xfrm-3.so.200.26.0
+drwxr-xr-x	root/root	usr/lib/libnl/
+drwxr-xr-x	root/root	usr/lib/libnl/cli/
+drwxr-xr-x	root/root	usr/lib/libnl/cli/cls/
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/cls/basic.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/cls/cgroup.so
+drwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/bfifo.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/blackhole.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/fq_codel.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/hfsc.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/htb.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/ingress.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/pfifo.so
+-rwxr-xr-x	root/root	usr/lib/libnl/cli/qdisc/plug.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/libnl/
+-rw-r--r--	root/root	usr/share/licenses/libnl/COPYING
