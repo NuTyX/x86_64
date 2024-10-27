@@ -7,6 +7,9 @@ contributors="Spiky"
 
 name=binutils
 version=2.42
+release=2
+
+set=(chroot)
 
 makedepends=(perl texinfo)
 source=(http://ftp.gnu.org/gnu/binutils/binutils-$version.tar.xz)
