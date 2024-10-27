@@ -5,10 +5,14 @@ maintainer="Daniel Stenberg"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 license="MIT"
-makedepends=(openssl libpsl)
+
+makedepends=(openssl libidn2 libpsl zlib zstd)
 
 name=curl
 version=8.10.1
+release=2
+
+set=(chroot)
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://curl.se/ca/cacert.pem
