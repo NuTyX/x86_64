@@ -7,7 +7,9 @@ packager="tnut <tnut@nutyx.org>"
 
 name=attr
 version=2.5.2
-release=2
+release=3
+
+set=(chroot)
 
 PKGMK_GROUPS=(devel man doc)
 PKGMK_LOCALES=()
