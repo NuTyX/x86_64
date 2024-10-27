@@ -9,6 +9,9 @@ makedepends=(autoconf automake gettext)
 
 name=coreutils
 version=9.5
+release=2
+
+set=(chroot)
 
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.xz
 	http://www.linuxfromscratch.org/patches/downloads/$name/$name-$version-i18n-1.patch
