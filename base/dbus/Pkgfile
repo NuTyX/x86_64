@@ -13,7 +13,7 @@ contributors="Pierre,Jayce,Tnut"
 # 3/ build dbus with systemd with folling makedepends
 # makedepends=(systemd expat) and --enable-systemd
 
-makedepends=(expat systemd)
+makedepends=(systemd expat)
 
 name=dbus
 version=1.14.10
