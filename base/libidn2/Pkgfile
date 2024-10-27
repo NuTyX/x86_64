@@ -5,7 +5,10 @@ contributors="Pierre,Tnut"
 
 name=libidn2
 version=2.3.7
-release=2
+release=3
+
+set=(chroot)
+
 makedepends=(libunistring)
 source=(https://ftp.gnu.org/gnu/libidn/$name-$version.tar.gz)
 
