@@ -7,6 +7,9 @@ makedepends=(git musl)
 
 name=busybox
 version=1.36.1
+release=2
+
+set=(chroot)
 
 source=(busybox-1.33.0_modprobe.patch
         $name.config
