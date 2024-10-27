@@ -6,8 +6,10 @@ maintainer="tnut <tnut@nutyx.org>"
 
 makedepends=(zstd util-linux)
 
+set=(chroot)
+
 name=nutyx
-version=24.91
+version=24.91.0
 release=1
 
 # nutyx patch version
