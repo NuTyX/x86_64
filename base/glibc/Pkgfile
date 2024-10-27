@@ -9,7 +9,9 @@ makedepends=(python bison grep)
 
 name=glibc
 version=2.39
-release=2
+release=3
+
+set=(chroot)
 
 PKGMK_LOCALES=()
 source=(
