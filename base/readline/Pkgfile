@@ -6,6 +6,9 @@ packager="tnut <tnut@nutyx.org>"
 
 name=readline
 version=8.2.13
+release=2
+
+set=(chroot)
 
 source=(https://ftp.gnu.org/gnu/readline/readline-$version.tar.gz)
 
