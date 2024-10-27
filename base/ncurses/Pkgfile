@@ -9,7 +9,9 @@ contributors="Spiky"
 
 name=ncurses
 version=6.5
-release=2
+release=3
+
+set=(chroot)
 
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 build()
