@@ -1,13 +1,18 @@
 description="Provides informations about LSB status (Linux Standards Base) of the distribution."
 url="http://www.linuxbase.org/"
+
 maintainer="Sven-Hendrik Haase"
-contributors="geantbrun at gmail dot com"
+contributors="Geantbrun"
 packager="tnut <tnut@nutyx.org>"
 
 name=lsb-release
 version=1.4
 release=1
+
 alias=(lsb_release)
+
+makedepends=(help2man)
+
 source=(http://sourceforge.net/projects/lsb/files/${alias}/${version}/${name}-${version}.tar.gz)
 
 build() {
