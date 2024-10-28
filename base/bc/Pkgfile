@@ -1,8 +1,15 @@
 description="The Bc package contains an arbitrary precision numeric processing language."
 url="http://ftp.gnu.org/gnu/bc/"
+
+license="GPL-2.0-only"
+
 packager="tnut <tnut@nutyx.org>"
+contributors="Spkiy"
+
 name=bc
 version=1.07.1
+
+makedepends=(texinfo)
 
 source=(http://ftp.gnu.org/gnu/bc/bc-$version.tar.gz)
 
