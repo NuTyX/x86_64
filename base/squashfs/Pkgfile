@@ -5,7 +5,7 @@ maintainer="phillip at lougher.demon.co.uk"
 contributors="Guy,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(sed zlib lzo xz lz4 zstd)
+makedepends=(help2man sed zlib lzo xz lz4 zstd)
 
 name=squashfs
 version=4.6.1
@@ -25,6 +25,10 @@ cd $name-tools-$version/squashfs-tools
 
 make XZ_SUPPORT=1 LZO_SUPPORT=1 LZMA_XZ_SUPPORT=1 LZA_SUPPORT= \
 ZSTD_SUPPORT=1 GZIP_SUPPORT=1 LZ4_SUPPORT=1 COMP_DEFAULT=zstd
+
 mkdir -p $PKG/bin
-make INSTALL_DIR=$PKG/bin install
+
+make INSTALL_DIR=$PKG/bin  \
+     INSTALL_MANPAGES_DIR=$PKG/usr/share/man/man1 \
+     install
 }
