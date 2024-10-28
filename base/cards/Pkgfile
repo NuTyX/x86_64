@@ -10,15 +10,14 @@ alias=(card)
 PKGMK_IGNORE_RUNTIMEDEPS="no"
 makedepends=(curl git bzip2 gettext xz util-linux)
 run_devel=(curl.devel gcc.devel glibc.devel libarchive.devel \
-openssl.devel zlib.devel bash binutils coreutils file \
-findutils gawk gettext groff make patch pkgconf \
-readline rsync bzip2.devel xz.devel zstd.devel)
+openssl.devel zlib.devel bzip2.devel xz.devel zstd.devel)
 
 PKGMK_GROUPS=(devel doc man lib)
 PKGMK_LOCALES=()
 
 name=cards
 version=2.87.1
+release=1
 
 set=(chroot)
 
