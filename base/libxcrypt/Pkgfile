@@ -6,11 +6,13 @@ license='LGPL'
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
+makedepends=(perl)
+
 name=libxcrypt
 version=4.4.36
 release=4
 
-PKGMK_DEPENDS=(perl)
+set=(chroot)
 
 source=(https://github.com/besser82/libxcrypt/releases/download/v$version/$name-$version.tar.xz)
 
