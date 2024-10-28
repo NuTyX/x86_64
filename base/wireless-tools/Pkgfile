@@ -1,5 +1,8 @@
 description="Driver to expose configuration and statistics specific to common Wireless LANs to user space"
 url="http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html"
+
+license="GPL"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
@@ -7,8 +10,8 @@ name=wireless-tools
 version=29
 release=1
 
-source=(  http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/wireless_tools.$version.tar.gz
-	http://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch)
+source=(https://hewlettpackard.github.io/$name/wireless_tools.$version.tar.gz
+	https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch)
 build() {
 cd wireless_tools.${version}
 patch -Np1 -i ../wireless_tools-${version}-fix_iwlist_scanning-1.patch
