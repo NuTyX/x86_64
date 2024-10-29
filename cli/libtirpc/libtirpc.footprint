@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/bindresvport.blacklist
+-rw-r--r--	root/root	etc/netconfig
+drwxr-xr-x	root/root	lib/
+lrwxrwxrwx	root/root	lib/libtirpc.so.3 -> libtirpc.so.3.0.0
+-rwxr-xr-x	root/root	lib/libtirpc.so.3.0.0
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libtirpc.so -> ../../lib/libtirpc.so.3.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/libtirpc/
+-rw-r--r--	root/root	usr/share/licenses/libtirpc/COPYING
