@@ -1,0 +1,39 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/intel/
+drwxr-xr-x	root/root	lib/firmware/intel/avs/
+drwxr-xr-x	root/root	lib/firmware/intel/avs/apl/
+-rw-r--r--	root/root	lib/firmware/intel/avs/apl/dsp_basefw.bin
+drwxr-xr-x	root/root	lib/firmware/intel/avs/cnl/
+-rw-r--r--	root/root	lib/firmware/intel/avs/cnl/dsp_basefw.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/da7219-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/dmic-tplg.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/avs/hda-8086-generic-tplg.bin -> hda-808628xx-3ep-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/hda-808628xx-3ep-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/hda-generic-1ep-tplg.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/avs/hda-generic-tplg.bin -> hda-generic-1ep-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/max98357a-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/max98373-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/max98927-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/nau8825-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/rt274-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/rt286-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/rt298-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/rt5514-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/rt5640-tplg.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/rt5663-tplg.bin
+drwxr-xr-x	root/root	lib/firmware/intel/avs/skl/
+-rw-r--r--	root/root	lib/firmware/intel/avs/skl/dsp_basefw.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/skl/dsp_mod_7CAD0808-AB10-CD23-EF45-12AB34CD56EF.bin
+-rw-r--r--	root/root	lib/firmware/intel/avs/ssm4567-tplg.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/dsp_fw_bxtn.bin -> avs/apl/dsp_basefw.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/dsp_fw_cnl.bin -> avs/cnl/dsp_basefw.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/dsp_fw_glk.bin -> avs/apl/dsp_basefw.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/dsp_fw_kbl.bin -> avs/skl/dsp_basefw.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/dsp_fw_release.bin -> avs/skl/dsp_basefw.bin
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/snd_soc_avs-firmware/
+-rw-r--r--	root/root	usr/share/licenses/snd_soc_avs-firmware/LICENCE.adsp_sst
+-rw-r--r--	root/root	usr/share/licenses/snd_soc_avs-firmware/WHENCE
