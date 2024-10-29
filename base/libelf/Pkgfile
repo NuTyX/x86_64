@@ -3,12 +3,12 @@ url="https://sourceware.org/ftp/elfutils"
 
 license="GPL2 GPL3 LGPL3"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 name=libelf
 
 makedepends=(m4 zstd)
 
-version=0.191
+version=0.192
 
 source=(https://sourceware.org/ftp/elfutils/$version/elfutils-$version.tar.bz2)
 
