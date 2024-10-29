@@ -1,0 +1,26 @@
+drwxr-xr-x	root/root	lib/
+lrwxrwxrwx	root/root	lib/ld-musl-x86_64.so.1 -> /usr/lib/musl/lib/libc.so
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ld.musl-clang
+-rwxr-xr-x	root/root	usr/bin/musl-clang
+-rwxr-xr-x	root/root	usr/bin/musl-gcc
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/musl/
+drwxr-xr-x	root/root	usr/lib/musl/lib/
+-rw-r--r--	root/root	usr/lib/musl/lib/Scrt1.o
+-rw-r--r--	root/root	usr/lib/musl/lib/crt1.o
+-rw-r--r--	root/root	usr/lib/musl/lib/crti.o
+-rw-r--r--	root/root	usr/lib/musl/lib/crtn.o
+-rw-r--r--	root/root	usr/lib/musl/lib/libc.a
+-rwxr-xr-x	root/root	usr/lib/musl/lib/libc.so
+-rw-r--r--	root/root	usr/lib/musl/lib/libcrypt.a
+-rw-r--r--	root/root	usr/lib/musl/lib/libdl.a
+-rw-r--r--	root/root	usr/lib/musl/lib/libm.a
+-rw-r--r--	root/root	usr/lib/musl/lib/libpthread.a
+-rw-r--r--	root/root	usr/lib/musl/lib/libresolv.a
+-rw-r--r--	root/root	usr/lib/musl/lib/librt.a
+-rw-r--r--	root/root	usr/lib/musl/lib/libutil.a
+-rw-r--r--	root/root	usr/lib/musl/lib/libxnet.a
+-rw-r--r--	root/root	usr/lib/musl/lib/musl-gcc.specs
+-rw-r--r--	root/root	usr/lib/musl/lib/rcrt1.o
