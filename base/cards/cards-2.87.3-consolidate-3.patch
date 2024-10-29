@@ -1,0 +1,20 @@
+diff --git a/src/create.cxx b/src/create.cxx
+index 6c9804f..1ced6a7 100644
+--- a/src/create.cxx
++++ b/src/create.cxx
+@@ -159,6 +159,7 @@ void create::installDependencies(std::string& packageName)
+     std::string message, commandName;
+     cards::pkgrepo pkgrepo("/etc/cards.conf");
+ 
++    m_dependencies.clear();
+     auto level = m_tree[packageName].level();
+     unsigned int currentLevel = 0;
+     std::string packageArchiveName;
+@@ -349,6 +350,7 @@ void create::buildBinary(std::string packageName)
+     }
+ 
+     base();
++    m_list.clear();
+     list(packageName);
+     installDependencies(packageName);
+ 
