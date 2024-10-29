@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/keyutils/
+-rw-r--r--	root/root	etc/request-key.conf
+drwxr-xr-x	root/root	etc/request-key.d/
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/keyctl
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libkeyutils.a
+lrwxrwxrwx	root/root	usr/lib/libkeyutils.so -> /usr/lib/libkeyutils.so.1
+lrwxrwxrwx	root/root	usr/lib/libkeyutils.so.1 -> libkeyutils.so.1.10
+-rwxr-xr-x	root/root	usr/lib/libkeyutils.so.1.10
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/key.dns_resolver
+-rwxr-xr-x	root/root	usr/sbin/request-key
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/keyutils/
+-rwxr-xr-x	root/root	usr/share/keyutils/request-key-debug.sh
