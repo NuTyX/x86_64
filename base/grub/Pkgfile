@@ -11,7 +11,7 @@ dejavu_version=2.37
 splash_version=21.03.0-rc4
 
 makedepends=(automake m4 bison flex gettext texinfo python
-             xz efibootmgr efivar freetype lvm2)
+             xz efibootmgr efivar freetype lvm2 gawk)
 
 source=(https://download.tuxfamily.org/nutyx/sources/$name/splash-${splash_version}.png
 	https://ftp.gnu.org/gnu/unifont/unifont-13.0.06/unifont-13.0.06.pcf.gz
