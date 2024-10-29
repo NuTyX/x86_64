@@ -9,6 +9,8 @@ packager="spiky <spiky@nutyx.org>"
 name=dhcpcd
 version=10.1.0
 
+makedepends=(shadow)
+
 runyx_version=20201011
 source=(http://download.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
 	https://github.com/NetworkConfiguration/dhcpcd/releases/download/v${version}/$name-$version.tar.xz)
