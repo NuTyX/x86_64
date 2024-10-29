@@ -1,0 +1,54 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/sysconfig/
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/arpaname
+-rwxr-xr-x	root/root	usr/bin/delv
+-rwxr-xr-x	root/root	usr/bin/dig
+-rwxr-xr-x	root/root	usr/bin/dnssec-cds
+-rwxr-xr-x	root/root	usr/bin/dnssec-dsfromkey
+-rwxr-xr-x	root/root	usr/bin/dnssec-importkey
+-rwxr-xr-x	root/root	usr/bin/dnssec-keyfromlabel
+-rwxr-xr-x	root/root	usr/bin/dnssec-keygen
+-rwxr-xr-x	root/root	usr/bin/dnssec-ksr
+-rwxr-xr-x	root/root	usr/bin/dnssec-revoke
+-rwxr-xr-x	root/root	usr/bin/dnssec-settime
+-rwxr-xr-x	root/root	usr/bin/dnssec-signzone
+-rwxr-xr-x	root/root	usr/bin/dnssec-verify
+-rwxr-xr-x	root/root	usr/bin/host
+-rwxr-xr-x	root/root	usr/bin/mdig
+-rwxr-xr-x	root/root	usr/bin/named-checkconf
+-rwxr-xr-x	root/root	usr/bin/named-checkzone
+-rwxr-xr-x	root/root	usr/bin/named-compilezone
+-rwxr-xr-x	root/root	usr/bin/named-journalprint
+-rwxr-xr-x	root/root	usr/bin/named-rrchecker
+-rwxr-xr-x	root/root	usr/bin/nsec3hash
+-rwxr-xr-x	root/root	usr/bin/nslookup
+-rwxr-xr-x	root/root	usr/bin/nsupdate
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bind/
+-rwxr-xr-x	root/root	usr/lib/bind/filter-a.so
+-rwxr-xr-x	root/root	usr/lib/bind/filter-aaaa.so
+-rwxr-xr-x	root/root	usr/lib/libdns-9.20.3.so
+lrwxrwxrwx	root/root	usr/lib/libdns.so -> libdns-9.20.3.so
+-rwxr-xr-x	root/root	usr/lib/libisc-9.20.3.so
+lrwxrwxrwx	root/root	usr/lib/libisc.so -> libisc-9.20.3.so
+-rwxr-xr-x	root/root	usr/lib/libisccc-9.20.3.so
+lrwxrwxrwx	root/root	usr/lib/libisccc.so -> libisccc-9.20.3.so
+-rwxr-xr-x	root/root	usr/lib/libisccfg-9.20.3.so
+lrwxrwxrwx	root/root	usr/lib/libisccfg.so -> libisccfg-9.20.3.so
+-rwxr-xr-x	root/root	usr/lib/libns-9.20.3.so
+lrwxrwxrwx	root/root	usr/lib/libns.so -> libns-9.20.3.so
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/ddns-confgen
+-rwxr-xr-x	root/root	usr/sbin/named
+-rwxr-xr-x	root/root	usr/sbin/rndc
+-rwxr-xr-x	root/root	usr/sbin/rndc-confgen
+-rwxr-xr-x	root/root	usr/sbin/tsig-keygen
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/bind/
+-rw-r--r--	root/root	usr/share/licenses/bind/COPYING
+-rw-r--r--	root/root	usr/share/licenses/bind/COPYRIGHT
+-rw-r--r--	root/root	usr/share/licenses/bind/LICENSE

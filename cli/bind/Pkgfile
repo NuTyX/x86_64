@@ -42,17 +42,9 @@ make DESTDIR=$PKG install-runyx-bind
 }
 service() {
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
 lib/init etc/{init,rc.d}
 
 rm -r etc/{rc.d,init}
 rm -r lib/init
-}
-uptodate() {
-local url ext
-ext=".tar.bz2"
-url="https://ftp.isc.org/isc/bind9/"
-
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url?C=M\;O=D|sed "s@$url@@"|grep [0-9]/$|head -1|sed "s@/\$@@"
 }
