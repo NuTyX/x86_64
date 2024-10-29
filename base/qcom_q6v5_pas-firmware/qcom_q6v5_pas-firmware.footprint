@@ -1,0 +1,97 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/qcom/
+drwxr-xr-x	root/root	lib/firmware/qcom/apq8016/
+-rw-r--r--	root/root	lib/firmware/qcom/apq8016/WCNSS_qcom_wlan_nv_sbc.bin
+-rw-r--r--	root/root	lib/firmware/qcom/apq8016/mba.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8016/modem.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8016/wcnss.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/apq8096/
+-rw-r--r--	root/root	lib/firmware/qcom/apq8096/adsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8096/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8096/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8096/mba.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8096/modem.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/apq8096/modemr.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/qcm2290/
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/a702_zap.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/adsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/adsps.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/modem.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/modemr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm2290/modemuw.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/qcm6490/
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/adsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/adsps.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/battmgr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/cdsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/cdspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcm6490/ipa_fws.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/adsp.mbn -> ../qcm6490/adsp.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/adspr.jsn -> ../qcm6490/adspr.jsn
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/adsps.jsn -> ../qcm6490/adsps.jsn
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/adspua.jsn -> ../qcm6490/adspua.jsn
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/battmgr.jsn -> ../qcm6490/battmgr.jsn
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/cdsp.mbn -> ../qcm6490/cdsp.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/cdspr.jsn -> ../qcm6490/cdspr.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/qrb4210/
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/a610_zap.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/adsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/adsps.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/cdsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/cdspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/modem.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/modemr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qrb4210/modemuw.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/sc8280xp/
+drwxr-xr-x	root/root	lib/firmware/qcom/sc8280xp/LENOVO/
+drwxr-xr-x	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/battmgr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/cdspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/qcadsp8280.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/qccdsp8280.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sc8280xp/LENOVO/21BX/qcslpi8280.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/sdm845/
+drwxr-xr-x	root/root	lib/firmware/qcom/sdm845/Thundercomm/
+drwxr-xr-x	root/root	lib/firmware/qcom/sdm845/Thundercomm/db845c/
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/Thundercomm/db845c/slpi.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/Thundercomm/db845c/slpir.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/Thundercomm/db845c/slpius.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/adsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/cdsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sdm845/cdspr.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/sm8250/
+drwxr-xr-x	root/root	lib/firmware/qcom/sm8250/Thundercomm/
+drwxr-xr-x	root/root	lib/firmware/qcom/sm8250/Thundercomm/RB5/
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/Thundercomm/RB5/slpi.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/Thundercomm/RB5/slpir.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/Thundercomm/RB5/slpius.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/adsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/adspr.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/cdsp.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/sm8250/cdspr.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/x1e80100/
+-rw-r--r--	root/root	lib/firmware/qcom/x1e80100/adsp.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/x1e80100/adsp_dtb.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/x1e80100/adspr.jsn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/x1e80100/adsps.jsn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/x1e80100/adspua.jsn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/x1e80100/battmgr.jsn (EMPTY)
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/qcom_q6v5_pas-firmware/
+-rw-r--r--	root/root	usr/share/licenses/qcom_q6v5_pas-firmware/LICENSE.qcom
+-rw-r--r--	root/root	usr/share/licenses/qcom_q6v5_pas-firmware/WHENCE
