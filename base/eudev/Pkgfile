@@ -6,14 +6,14 @@ contributors=""
 
 # 1/ remove all the eudev archives cards.tar packages
 
-makedepends=(libcap kmod meson ninja libxcrypt)
+makedepends=(gettext libcap kmod meson ninja libxcrypt)
 
 name=eudev
 _name=systemd
 version=253
 release=2
 
-PKGMK_DEPENDS=(perl python python-markupsafe python-jinja m4 gperf util-linux pam systemd acl)
+PKGMK_DEPENDS=(shadow perl python python-markupsafe python-jinja m4 gperf util-linux pam systemd acl)
 PKGMK_IGNORE_FOOTPRINT='no'
 PKGMK_IGNORE_RUNTIMEDEPS='yes'
 
