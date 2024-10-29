@@ -1,0 +1,20 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/nvidia/
+drwxr-xr-x	root/root	lib/firmware/nvidia/tegra124/
+lrwxrwxrwx	root/root	lib/firmware/nvidia/tegra124/vic.bin -> vic03_ucode.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tegra124/vic03_ucode.bin
+drwxr-xr-x	root/root	lib/firmware/nvidia/tegra186/
+lrwxrwxrwx	root/root	lib/firmware/nvidia/tegra186/vic.bin -> vic04_ucode.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tegra186/vic04_ucode.bin
+drwxr-xr-x	root/root	lib/firmware/nvidia/tegra194/
+-rw-r--r--	root/root	lib/firmware/nvidia/tegra194/vic.bin
+drwxr-xr-x	root/root	lib/firmware/nvidia/tegra210/
+lrwxrwxrwx	root/root	lib/firmware/nvidia/tegra210/vic.bin -> vic04_ucode.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tegra210/vic04_ucode.bin
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/tegra-vic-firmware/
+-rw-r--r--	root/root	usr/share/licenses/tegra-vic-firmware/LICENCE.nvidia
+-rw-r--r--	root/root	usr/share/licenses/tegra-vic-firmware/WHENCE
