@@ -1,0 +1,36 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/pam.d/
+-rw-r--r--	root/root	etc/pam.d/sudo
+-rw-r--r--	root/root	etc/sudo.conf
+-rw-r--r--	root/root	etc/sudo_logsrvd.conf
+-r--r-----	root/root	etc/sudoers
+drwxr-x---	root/root	etc/sudoers.d/
+-r--r-----	root/root	etc/sudoers.dist
+drwxr-xr-x	root/root	run/
+drwx--x--x	root/root	run/sudo/
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cvtsudoers
+-rwsr-xr-x	root/root	usr/bin/sudo
+lrwxrwxrwx	root/root	usr/bin/sudoedit -> sudo
+-rwxr-xr-x	root/root	usr/bin/sudoreplay
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/sudo/
+-rw-r--r--	root/root	usr/lib/sudo/audit_json.so
+-rw-r--r--	root/root	usr/lib/sudo/group_file.so
+lrwxrwxrwx	root/root	usr/lib/sudo/libsudo_util.so -> libsudo_util.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/sudo/libsudo_util.so.0 -> libsudo_util.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/sudo/libsudo_util.so.0.0.0
+-rw-r--r--	root/root	usr/lib/sudo/sudo_intercept.so
+-rw-r--r--	root/root	usr/lib/sudo/sudo_noexec.so
+-rw-r--r--	root/root	usr/lib/sudo/sudoers.so
+-rw-r--r--	root/root	usr/lib/sudo/system_group.so
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/sudo_logsrvd
+-rwxr-xr-x	root/root	usr/sbin/sudo_sendlog
+-rwxr-xr-x	root/root	usr/sbin/visudo
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwx--x--x	root/root	var/lib/sudo/
+drwx------	root/root	var/lib/sudo/lectured/
