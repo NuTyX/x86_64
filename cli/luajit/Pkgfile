@@ -4,21 +4,25 @@ url="http://luajit.org/"
 contributors="Greg"
 packager="tnut <tnut@nutyx.org>"
 
+license="MIT"
+
+makedepends=(git)
 
 name=luajit
-version=2.0.5
-release=2
+version=2.1.97813fb
+release=1
 
-source=(http://luajit.org/download/LuaJIT-$version.tar.gz)
-
+prepare() {
+  git clone https://github.com/LuaJIT/LuaJIT
+  mv LuaJIT $name-$version
+}
 build() {
 
-  cd LuaJIT-$version
-
-  sed -i 's/PREFIX= \/usr\/local/\PREFIX= \/usr/' Makefile
+  cd $name-$version
 
   make
 
-  make DESTDIR=$PKG install
+  make install DESTDIR=$PKG PREFIX=/usr
 
+  install -Dm644 COPYRIGHT $PKG/usr/share/licenses/$name/COPYRIGHT
 }
