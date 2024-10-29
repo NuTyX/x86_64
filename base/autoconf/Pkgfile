@@ -3,8 +3,12 @@ url="http://www.gnu.org/software/autoconf/"
 
 maintainer="David MacKenzie,François Pinard,Karl Berry,Richard Pixley,Ian Lance Taylor,Roland McGrath,Noah Friedman,David d zuhn, and many others."
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
 makedepends=(m4 perl)
+
+set=(devel)
 
 name=autoconf
 version=2.72
