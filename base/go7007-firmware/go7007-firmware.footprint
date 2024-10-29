@@ -1,0 +1,19 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/go7007/
+-rw-r--r--	root/root	lib/firmware/go7007/go7007fw.bin
+-rw-r--r--	root/root	lib/firmware/go7007/go7007tv.bin
+-rw-r--r--	root/root	lib/firmware/go7007/lr192.fw
+-rw-r--r--	root/root	lib/firmware/go7007/px-m402u.fw
+-rw-r--r--	root/root	lib/firmware/go7007/px-tv402u.fw
+-rw-r--r--	root/root	lib/firmware/go7007/s2250-1.fw
+-rw-r--r--	root/root	lib/firmware/go7007/s2250-2.fw
+-rw-r--r--	root/root	lib/firmware/go7007/wis-startrek.fw
+lrwxrwxrwx	root/root	lib/firmware/s2250.fw -> go7007/s2250-2.fw
+lrwxrwxrwx	root/root	lib/firmware/s2250_loader.fw -> go7007/s2250-1.fw
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/go7007-firmware/
+-rw-r--r--	root/root	usr/share/licenses/go7007-firmware/LICENCE.go7007
+-rw-r--r--	root/root	usr/share/licenses/go7007-firmware/WHENCE
