@@ -1,5 +1,5 @@
 diff --git a/src/create.cxx b/src/create.cxx
-index 1ced6a7..2ebb2bd 100644
+index 1ced6a7..354155f 100644
 --- a/src/create.cxx
 +++ b/src/create.cxx
 @@ -171,6 +171,7 @@ void create::installDependencies(std::string& packageName)
@@ -10,6 +10,25 @@ index 1ced6a7..2ebb2bd 100644
          for (auto i : m_dependencies) {
              if ( i == packageName)
                  break;
+@@ -224,6 +225,18 @@ void create::buildCollection()
+             buildBinary(i);
+             continue;
+         }
++        if (!checkFileExist(pkgrepo.dirName(i)
++            + "/"
++            + pkgrepo.fileName(i))) {
++            std::cout << i
++                << " ===> SHOULD BE BUILD !"
++                << std::endl;
++
++            if (m_argParser.isSet(CardsArgumentParser::OPT_DRY))
++                continue;
++            buildBinary(i);
++            continue;
++        }
+         if (pkgrepo.version(i) != pkgfile.getPortVersion(i)) {
+             std::cout << i
+                 <<": Binary: "
 diff --git a/src/pkgfile.cxx b/src/pkgfile.cxx
 index 47ee998..c2fba3d 100644
 --- a/src/pkgfile.cxx
