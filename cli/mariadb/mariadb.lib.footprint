@@ -1,0 +1,78 @@
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libmariadb.a -> libmariadbclient.a
+lrwxrwxrwx	root/root	usr/lib/libmariadb.so -> libmariadb.so.3
+-rwxr-xr-x	root/root	usr/lib/libmariadb.so.3
+-rw-r--r--	root/root	usr/lib/libmariadbclient.a
+-rw-r--r--	root/root	usr/lib/libmariadbd.a
+lrwxrwxrwx	root/root	usr/lib/libmariadbd.so -> libmariadbd.so.19
+-rwxr-xr-x	root/root	usr/lib/libmariadbd.so.19
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient.a -> libmariadbclient.a
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient.so -> libmariadb.so.3
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.a -> libmariadbclient.a
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so -> libmariadb.so.3
+lrwxrwxrwx	root/root	usr/lib/libmysqld.a -> libmariadbd.a
+lrwxrwxrwx	root/root	usr/lib/libmysqld.so -> libmariadbd.so.19
+-rw-r--r--	root/root	usr/lib/libmysqlservices.a
+drwxr-xr-x	root/root	usr/lib/mysql/
+drwxr-xr-x	root/root	usr/lib/mysql/plugin/
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/adt_null.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_0x0100.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_ed25519.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_pam.so
+drwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_pam_tool_dir/
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_pam_tool_dir/auth_pam_tool
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_pam_v1.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/auth_test_plugin.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/caching_sha2_password.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/client_ed25519.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/cracklib_password_check.so
+-rw-r--r--	root/root	usr/lib/mysql/plugin/daemon_example.ini
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/debug_key_management.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/dialog.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/dialog_examples.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/disks.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/example_key_management.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/file_key_management.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/func_test.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_archive.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_blackhole.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_connect.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_example.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_federated.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_federatedx.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_mroonga.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_rocksdb.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_s3.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_sphinx.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_spider.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/ha_test_sql_discovery.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/handlersocket.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/hashicorp_key_management.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/libdaemon_example.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/locales.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/metadata_lock_info.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/mypluglib.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/mysql_clear_password.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/password_reuse_check.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/provider_bzip2.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/provider_lz4.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/provider_lzma.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/provider_lzo.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_client.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_interface.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/qa_auth_server.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/query_cache_info.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/query_response_time.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/server_audit.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/sha256_password.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/simple_password_check.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/sql_errlog.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/test_sql_service.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/test_versioning.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/type_mysql_json.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/type_mysql_timestamp.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/type_test.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/wsrep_info.so
+-rwxr-xr-x	root/root	usr/lib/mysql/plugin/zstd.so
+drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/mysqld.conf
