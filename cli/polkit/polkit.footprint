@@ -1,0 +1,53 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/pam.d/
+-rw-r--r--	root/root	etc/pam.d/polkit-1
+drwxr-xr-x	root/root	etc/polkit-1/
+drwxr-x---	root/polkitd	etc/polkit-1/rules.d/
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/systemd/
+drwxr-xr-x	root/root	lib/systemd/system/
+-rw-r--r--	root/root	lib/systemd/system/polkit.service
+drwxr-xr-x	root/root	lib/sysusers.d/
+-rw-r--r--	root/root	lib/sysusers.d/polkit.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pkaction
+-rwxr-xr-x	root/root	usr/bin/pkcheck
+-rwsr-xr-x	root/root	usr/bin/pkexec
+-rwxr-xr-x	root/root	usr/bin/pkttyagent
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/Polkit-1.0.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/PolkitAgent-1.0.typelib
+lrwxrwxrwx	root/root	usr/lib/libpolkit-agent-1.so -> libpolkit-agent-1.so.0
+lrwxrwxrwx	root/root	usr/lib/libpolkit-agent-1.so.0 -> libpolkit-agent-1.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libpolkit-agent-1.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libpolkit-gobject-1.so -> libpolkit-gobject-1.so.0
+lrwxrwxrwx	root/root	usr/lib/libpolkit-gobject-1.so.0 -> libpolkit-gobject-1.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libpolkit-gobject-1.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/pam.d/
+-rw-r--r--	root/root	usr/lib/pam.d/polkit-1
+drwxr-xr-x	root/root	usr/lib/polkit-1/
+-rwsr-xr-x	root/root	usr/lib/polkit-1/polkit-agent-helper-1
+-rwxr-xr-x	root/root	usr/lib/polkit-1/polkitd
+drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/polkit-tmpfiles.conf
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
+-rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.PolicyKit1.service
+drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
+-rw-r--r--	root/root	usr/share/dbus-1/system.d/org.freedesktop.PolicyKit1.conf
+drwxr-xr-x	root/root	usr/share/gettext/
+drwxr-xr-x	root/root	usr/share/gettext/its/
+-rw-r--r--	root/root	usr/share/gettext/its/polkit.its
+-rw-r--r--	root/root	usr/share/gettext/its/polkit.loc
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/Polkit-1.0.gir
+-rw-r--r--	root/root	usr/share/gir-1.0/PolkitAgent-1.0.gir
+drwxr-xr-x	root/root	usr/share/polkit-1/
+drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.policykit.policy
+-rw-r--r--	root/root	usr/share/polkit-1/policyconfig-1.dtd
+drwxr-xr-x	root/root	usr/share/polkit-1/rules.d/
+-rw-r--r--	root/root	usr/share/polkit-1/rules.d/50-default.rules
