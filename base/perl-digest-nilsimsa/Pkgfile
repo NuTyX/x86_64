@@ -14,7 +14,10 @@ source=(http://www.cpan.org/authors/id/V/VI/VIPUL/Digest-Nilsimsa-$version.tar.g
 build() {
 cd Digest-Nilsimsa-$version
 PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+sed -E 's@(^OPTIMIZE.*)@\1 -Wno-implicit-function-declaration@' -i Makefile
+
 make
+
 make DESTDIR=$PKG install
 find $PKG \
         -name '*.bs' -or \
