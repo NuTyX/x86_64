@@ -35,7 +35,7 @@ rm $PKG/usr/lib/$name.la
 lib() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libxml2*
 
 rm usr/lib/libxml2*
@@ -45,7 +45,7 @@ rm -d usr/lib || true
 devel() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}any.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/cmake usr/lib/pkgconfig usr/lib/cmake \
 usr/include  usr/share/aclocal
 
@@ -56,7 +56,7 @@ rm -d usr/lib || true
 doc() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_BUILDVER}any.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
 usr/share/doc usr/share/gtk-doc
 rm -r usr/share/{doc,gtk-doc}
 rm -d usr/share || true
