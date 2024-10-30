@@ -1,0 +1,70 @@
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libecpg.a
+lrwxrwxrwx	root/root	usr/lib/libecpg.so -> libecpg.so.6.16
+lrwxrwxrwx	root/root	usr/lib/libecpg.so.6 -> libecpg.so.6.16
+-rwxr-xr-x	root/root	usr/lib/libecpg.so.6.16
+-rw-r--r--	root/root	usr/lib/libecpg_compat.a
+lrwxrwxrwx	root/root	usr/lib/libecpg_compat.so -> libecpg_compat.so.3.16
+lrwxrwxrwx	root/root	usr/lib/libecpg_compat.so.3 -> libecpg_compat.so.3.16
+-rwxr-xr-x	root/root	usr/lib/libecpg_compat.so.3.16
+-rw-r--r--	root/root	usr/lib/libpgcommon.a
+-rw-r--r--	root/root	usr/lib/libpgcommon_shlib.a
+-rw-r--r--	root/root	usr/lib/libpgfeutils.a
+-rw-r--r--	root/root	usr/lib/libpgport.a
+-rw-r--r--	root/root	usr/lib/libpgport_shlib.a
+-rw-r--r--	root/root	usr/lib/libpgtypes.a
+lrwxrwxrwx	root/root	usr/lib/libpgtypes.so -> libpgtypes.so.3.16
+lrwxrwxrwx	root/root	usr/lib/libpgtypes.so.3 -> libpgtypes.so.3.16
+-rwxr-xr-x	root/root	usr/lib/libpgtypes.so.3.16
+-rw-r--r--	root/root	usr/lib/libpq.a
+lrwxrwxrwx	root/root	usr/lib/libpq.so -> libpq.so.5.16
+lrwxrwxrwx	root/root	usr/lib/libpq.so.5 -> libpq.so.5.16
+-rwxr-xr-x	root/root	usr/lib/libpq.so.5.16
+drwxr-xr-x	root/root	usr/lib/postgresql/
+-rwxr-xr-x	root/root	usr/lib/postgresql/cyrillic_and_mic.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/dict_snowball.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/euc2004_sjis2004.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/euc_cn_and_mic.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/euc_jp_and_sjis.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/euc_kr_and_mic.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/euc_tw_and_big5.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/latin2_and_win1250.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/latin_and_mic.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/libpqwalreceiver.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/pgoutput.so
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/config/
+-rwxr-xr-x	root/root	usr/lib/postgresql/pgxs/config/install-sh
+-rwxr-xr-x	root/root	usr/lib/postgresql/pgxs/config/missing
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/
+-rw-r--r--	root/root	usr/lib/postgresql/pgxs/src/Makefile.global
+-rw-r--r--	root/root	usr/lib/postgresql/pgxs/src/Makefile.port
+-rw-r--r--	root/root	usr/lib/postgresql/pgxs/src/Makefile.shlib
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/makefiles/
+-rw-r--r--	root/root	usr/lib/postgresql/pgxs/src/makefiles/pgxs.mk
+-rw-r--r--	root/root	usr/lib/postgresql/pgxs/src/nls-global.mk
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/test/
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/test/isolation/
+-rwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/test/isolation/isolationtester
+-rwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/test/isolation/pg_isolation_regress
+drwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/test/regress/
+-rwxr-xr-x	root/root	usr/lib/postgresql/pgxs/src/test/regress/pg_regress
+-rwxr-xr-x	root/root	usr/lib/postgresql/plpgsql.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_big5.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_cyrillic.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_euc2004.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_euc_cn.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_euc_jp.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_euc_kr.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_euc_tw.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_gb18030.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_gbk.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_iso8859.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_iso8859_1.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_johab.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_sjis.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_sjis2004.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_uhc.so
+-rwxr-xr-x	root/root	usr/lib/postgresql/utf8_and_win.so
+drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/postgresql.conf
