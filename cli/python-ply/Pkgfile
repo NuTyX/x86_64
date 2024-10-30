@@ -13,7 +13,7 @@ alias=(${_name})
 version=3.11
 release=11
 
-source=(${url}ply-$version.tar.gz)
+source=(https://pypi.io/packages/source/p/ply/ply-$version.tar.gz)
 
 build() {
 
