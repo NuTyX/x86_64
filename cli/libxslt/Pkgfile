@@ -28,7 +28,7 @@ build() {
 lib() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/lib{e,}xslt*
 rm -r usr/lib/libxslt-plugins
 rm usr/lib/libexslt* usr/lib/libxslt*
@@ -37,7 +37,7 @@ rm -d usr/lib || true
 devel() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}any.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/pkgconfig usr/include \
 usr/lib/xsltConf.sh
 rm -r usr/{include,lib/{pkgconfig,xsltConf.sh}}
