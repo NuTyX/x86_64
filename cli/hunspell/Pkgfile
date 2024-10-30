@@ -18,7 +18,7 @@ source=(https://github.com/hunspell/hunspell/releases/download/v${version}/$name
 
 pack_locale() {
 	bsdtar -cf \
-	$PKGMK_PACKAGE_DIR/${name}.$1${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+	$PKGMK_PACKAGE_DIR/${name}.$1${PKGMK_PACKAGE_EXT}$version-$release \
 	$(find usr/share/myspell/dicts/$1*) \
 	$(find usr/share/hunspell/$1*) \
 	$(find usr/share/locale/$1)    \
