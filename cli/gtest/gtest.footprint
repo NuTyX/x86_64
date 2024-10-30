@@ -1,0 +1,56 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/GTest/
+-rw-r--r--	root/root	usr/lib/cmake/GTest/GTestConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/GTest/GTestConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/GTest/GTestTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/GTest/GTestTargets.cmake
+lrwxrwxrwx	root/root	usr/lib/libgmock.so -> libgmock.so.1.15.2
+-rwxr-xr-x	root/root	usr/lib/libgmock.so.1.15.2
+lrwxrwxrwx	root/root	usr/lib/libgmock_main.so -> libgmock_main.so.1.15.2
+-rwxr-xr-x	root/root	usr/lib/libgmock_main.so.1.15.2
+lrwxrwxrwx	root/root	usr/lib/libgtest.so -> libgtest.so.1.15.2
+-rwxr-xr-x	root/root	usr/lib/libgtest.so.1.15.2
+lrwxrwxrwx	root/root	usr/lib/libgtest_main.so -> libgtest_main.so.1.15.2
+-rwxr-xr-x	root/root	usr/lib/libgtest_main.so.1.15.2
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/gtest-1.15.2/
+-rw-r--r--	root/root	usr/share/licenses/gtest-1.15.2/LICENSE
+drwxr-xr-x	root/root	usr/src/
+drwxr-xr-x	root/root	usr/src/gmock/
+-rw-r--r--	root/root	usr/src/gmock/CMakeLists.txt
+drwxr-xr-x	root/root	usr/src/gmock/cmake/
+-rw-r--r--	root/root	usr/src/gmock/cmake/gmock.pc.in
+-rw-r--r--	root/root	usr/src/gmock/cmake/gmock_main.pc.in
+drwxr-xr-x	root/root	usr/src/gmock/src/
+-rw-r--r--	root/root	usr/src/gmock/src/gmock-all.cc
+-rw-r--r--	root/root	usr/src/gmock/src/gmock-cardinalities.cc
+-rw-r--r--	root/root	usr/src/gmock/src/gmock-internal-utils.cc
+-rw-r--r--	root/root	usr/src/gmock/src/gmock-matchers.cc
+-rw-r--r--	root/root	usr/src/gmock/src/gmock-spec-builders.cc
+-rw-r--r--	root/root	usr/src/gmock/src/gmock.cc
+-rw-r--r--	root/root	usr/src/gmock/src/gmock_main.cc
+drwxr-xr-x	root/root	usr/src/googletest/
+-rw-r--r--	root/root	usr/src/googletest/CMakeLists.txt
+drwxr-xr-x	root/root	usr/src/googletest/cmake/
+-rw-r--r--	root/root	usr/src/googletest/cmake/Config.cmake.in
+-rw-r--r--	root/root	usr/src/googletest/cmake/gtest.pc.in
+-rw-r--r--	root/root	usr/src/googletest/cmake/gtest_main.pc.in
+-rw-r--r--	root/root	usr/src/googletest/cmake/internal_utils.cmake
+-rw-r--r--	root/root	usr/src/googletest/cmake/libgtest.la.in
+drwxr-xr-x	root/root	usr/src/googletest/src/
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-all.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-assertion-result.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-death-test.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-filepath.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-internal-inl.h
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-matchers.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-port.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-printers.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-test-part.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest-typed-test.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest.cc
+-rw-r--r--	root/root	usr/src/googletest/src/gtest_main.cc
+lrwxrwxrwx	root/root	usr/src/gtest -> googletest
