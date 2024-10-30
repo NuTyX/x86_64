@@ -1,0 +1,137 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/amdgpu-arch
+-rwxr-xr-x	root/root	usr/bin/analyze-build
+-rwxr-xr-x	root/root	usr/bin/bugpoint
+-rwxr-xr-x	root/root	usr/bin/c-index-test
+lrwxrwxrwx	root/root	usr/bin/clang -> clang-18
+lrwxrwxrwx	root/root	usr/bin/clang++ -> clang
+-rwxr-xr-x	root/root	usr/bin/clang-18
+-rwxr-xr-x	root/root	usr/bin/clang-check
+lrwxrwxrwx	root/root	usr/bin/clang-cl -> clang
+lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
+-rwxr-xr-x	root/root	usr/bin/clang-extdef-mapping
+-rwxr-xr-x	root/root	usr/bin/clang-format
+-rwxr-xr-x	root/root	usr/bin/clang-linker-wrapper
+-rwxr-xr-x	root/root	usr/bin/clang-offload-bundler
+-rwxr-xr-x	root/root	usr/bin/clang-offload-packager
+-rwxr-xr-x	root/root	usr/bin/clang-refactor
+-rwxr-xr-x	root/root	usr/bin/clang-rename
+-rwxr-xr-x	root/root	usr/bin/clang-repl
+-rwxr-xr-x	root/root	usr/bin/clang-scan-deps
+-rwxr-xr-x	root/root	usr/bin/clang-tblgen
+-rwxr-xr-x	root/root	usr/bin/diagtool
+-rwxr-xr-x	root/root	usr/bin/dsymutil
+-rwxr-xr-x	root/root	usr/bin/git-clang-format
+-rwxr-xr-x	root/root	usr/bin/hmaptool
+-rwxr-xr-x	root/root	usr/bin/intercept-build
+-rwxr-xr-x	root/root	usr/bin/llc
+-rwxr-xr-x	root/root	usr/bin/lli
+lrwxrwxrwx	root/root	usr/bin/llvm-addr2line -> llvm-symbolizer
+-rwxr-xr-x	root/root	usr/bin/llvm-ar
+-rwxr-xr-x	root/root	usr/bin/llvm-as
+-rwxr-xr-x	root/root	usr/bin/llvm-bcanalyzer
+lrwxrwxrwx	root/root	usr/bin/llvm-bitcode-strip -> llvm-objcopy
+-rwxr-xr-x	root/root	usr/bin/llvm-c-test
+-rwxr-xr-x	root/root	usr/bin/llvm-cat
+-rwxr-xr-x	root/root	usr/bin/llvm-cfi-verify
+-rwxr-xr-x	root/root	usr/bin/llvm-config
+-rwxr-xr-x	root/root	usr/bin/llvm-cov
+-rwxr-xr-x	root/root	usr/bin/llvm-cvtres
+-rwxr-xr-x	root/root	usr/bin/llvm-cxxdump
+-rwxr-xr-x	root/root	usr/bin/llvm-cxxfilt
+-rwxr-xr-x	root/root	usr/bin/llvm-cxxmap
+-rwxr-xr-x	root/root	usr/bin/llvm-debuginfo-analyzer
+-rwxr-xr-x	root/root	usr/bin/llvm-debuginfod
+-rwxr-xr-x	root/root	usr/bin/llvm-debuginfod-find
+-rwxr-xr-x	root/root	usr/bin/llvm-diff
+-rwxr-xr-x	root/root	usr/bin/llvm-dis
+lrwxrwxrwx	root/root	usr/bin/llvm-dlltool -> llvm-ar
+-rwxr-xr-x	root/root	usr/bin/llvm-dwarfdump
+-rwxr-xr-x	root/root	usr/bin/llvm-dwarfutil
+-rwxr-xr-x	root/root	usr/bin/llvm-dwp
+-rwxr-xr-x	root/root	usr/bin/llvm-exegesis
+-rwxr-xr-x	root/root	usr/bin/llvm-extract
+-rwxr-xr-x	root/root	usr/bin/llvm-gsymutil
+-rwxr-xr-x	root/root	usr/bin/llvm-ifs
+lrwxrwxrwx	root/root	usr/bin/llvm-install-name-tool -> llvm-objcopy
+-rwxr-xr-x	root/root	usr/bin/llvm-jitlink
+lrwxrwxrwx	root/root	usr/bin/llvm-lib -> llvm-ar
+-rwxr-xr-x	root/root	usr/bin/llvm-libtool-darwin
+-rwxr-xr-x	root/root	usr/bin/llvm-link
+-rwxr-xr-x	root/root	usr/bin/llvm-lipo
+-rwxr-xr-x	root/root	usr/bin/llvm-lto
+-rwxr-xr-x	root/root	usr/bin/llvm-lto2
+-rwxr-xr-x	root/root	usr/bin/llvm-mc
+-rwxr-xr-x	root/root	usr/bin/llvm-mca
+-rwxr-xr-x	root/root	usr/bin/llvm-ml
+-rwxr-xr-x	root/root	usr/bin/llvm-modextract
+-rwxr-xr-x	root/root	usr/bin/llvm-mt
+-rwxr-xr-x	root/root	usr/bin/llvm-nm
+-rwxr-xr-x	root/root	usr/bin/llvm-objcopy
+-rwxr-xr-x	root/root	usr/bin/llvm-objdump
+-rwxr-xr-x	root/root	usr/bin/llvm-opt-report
+lrwxrwxrwx	root/root	usr/bin/llvm-otool -> llvm-objdump
+-rwxr-xr-x	root/root	usr/bin/llvm-pdbutil
+-rwxr-xr-x	root/root	usr/bin/llvm-profdata
+-rwxr-xr-x	root/root	usr/bin/llvm-profgen
+lrwxrwxrwx	root/root	usr/bin/llvm-ranlib -> llvm-ar
+-rwxr-xr-x	root/root	usr/bin/llvm-rc
+lrwxrwxrwx	root/root	usr/bin/llvm-readelf -> llvm-readobj
+-rwxr-xr-x	root/root	usr/bin/llvm-readobj
+-rwxr-xr-x	root/root	usr/bin/llvm-readtapi
+-rwxr-xr-x	root/root	usr/bin/llvm-reduce
+-rwxr-xr-x	root/root	usr/bin/llvm-remarkutil
+-rwxr-xr-x	root/root	usr/bin/llvm-rtdyld
+-rwxr-xr-x	root/root	usr/bin/llvm-sim
+-rwxr-xr-x	root/root	usr/bin/llvm-size
+-rwxr-xr-x	root/root	usr/bin/llvm-split
+-rwxr-xr-x	root/root	usr/bin/llvm-stress
+-rwxr-xr-x	root/root	usr/bin/llvm-strings
+lrwxrwxrwx	root/root	usr/bin/llvm-strip -> llvm-objcopy
+-rwxr-xr-x	root/root	usr/bin/llvm-symbolizer
+-rwxr-xr-x	root/root	usr/bin/llvm-tblgen
+-rwxr-xr-x	root/root	usr/bin/llvm-tli-checker
+-rwxr-xr-x	root/root	usr/bin/llvm-undname
+lrwxrwxrwx	root/root	usr/bin/llvm-windres -> llvm-rc
+-rwxr-xr-x	root/root	usr/bin/llvm-xray
+-rwxr-xr-x	root/root	usr/bin/nvptx-arch
+-rwxr-xr-x	root/root	usr/bin/opt
+-rwxr-xr-x	root/root	usr/bin/sancov
+-rwxr-xr-x	root/root	usr/bin/sanstats
+-rwxr-xr-x	root/root	usr/bin/scan-build
+-rwxr-xr-x	root/root	usr/bin/scan-build-py
+-rwxr-xr-x	root/root	usr/bin/scan-view
+-rwxr-xr-x	root/root	usr/bin/verify-uselistorder
+drwxr-xr-x	root/root	usr/libexec/
+-rwxr-xr-x	root/root	usr/libexec/analyze-c++
+-rwxr-xr-x	root/root	usr/libexec/analyze-cc
+-rwxr-xr-x	root/root	usr/libexec/c++-analyzer
+-rwxr-xr-x	root/root	usr/libexec/ccc-analyzer
+-rwxr-xr-x	root/root	usr/libexec/intercept-c++
+-rwxr-xr-x	root/root	usr/libexec/intercept-cc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/clang/
+-rw-r--r--	root/root	usr/share/clang/bash-autocomplete.sh
+-rw-r--r--	root/root	usr/share/clang/clang-format-bbedit.applescript
+-rwxr-xr-x	root/root	usr/share/clang/clang-format-diff.py
+-rw-r--r--	root/root	usr/share/clang/clang-format-sublime.py
+-rw-r--r--	root/root	usr/share/clang/clang-format.el
+-rw-r--r--	root/root	usr/share/clang/clang-format.py
+-rw-r--r--	root/root	usr/share/clang/clang-rename.el
+-rw-r--r--	root/root	usr/share/clang/clang-rename.py
+drwxr-xr-x	root/root	usr/share/opt-viewer/
+-rwxr-xr-x	root/root	usr/share/opt-viewer/opt-diff.py
+-rwxr-xr-x	root/root	usr/share/opt-viewer/opt-stats.py
+-rwxr-xr-x	root/root	usr/share/opt-viewer/opt-viewer.py
+-rwxr-xr-x	root/root	usr/share/opt-viewer/optpmap.py
+-rwxr-xr-x	root/root	usr/share/opt-viewer/optrecord.py
+-rwxr-xr-x	root/root	usr/share/opt-viewer/style.css
+drwxr-xr-x	root/root	usr/share/scan-build/
+-rw-r--r--	root/root	usr/share/scan-build/scanview.css
+-rw-r--r--	root/root	usr/share/scan-build/sorttable.js
+drwxr-xr-x	root/root	usr/share/scan-view/
+-rw-r--r--	root/root	usr/share/scan-view/Reporter.py
+-rw-r--r--	root/root	usr/share/scan-view/ScanView.py
+-rw-r--r--	root/root	usr/share/scan-view/bugcatcher.ico
+-rw-r--r--	root/root	usr/share/scan-view/startfile.py
