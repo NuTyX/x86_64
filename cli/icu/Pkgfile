@@ -30,7 +30,7 @@ install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
 lib() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libicu*
 
 rm usr/lib/libicu*
@@ -40,7 +40,7 @@ rm -d usr/lib || true
 devel() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}any.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/icu usr/lib/pkgconfig usr/share/icu usr/include
 
 rm -r usr/{lib/{icu,pkgconfig},share/icu,include}
