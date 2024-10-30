@@ -10,6 +10,8 @@ makedepends=(libxcrypt pam)
 name=shadow
 version=4.16.0
 
+set=(chroot)
+
 PKGMK_LOCALES=()
 source=(https://github.com/shadow-maint/shadow/releases/download/$version/shadow-$version.tar.xz)
 
