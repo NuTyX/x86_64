@@ -4,7 +4,7 @@ url="http://www.openldap.org"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
-makedepends=(autoconf m4)
+makedepends=(autoconf m4 shadow)
 
 name=openldap
 version=2.6.8
@@ -47,7 +47,7 @@ make DESTDIR=$PKG install-sysd-slapd
 service() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
 lib/{systemd,init} etc/{init,rc.d}
 
 rm -r etc/{rc.d,init}
