@@ -1,15 +1,15 @@
 description="A widely used XML scheme for writing documentation and help"
 url="http://www.docbook.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(sgml-common unzip)
 run=(libxml2)
 
 name=docbook-xml
 version=4.5
-release=5
+release=6
 
 source=(http://www.docbook.org/xml/4.5/docbook-xml-4.5.zip \
 	http://www.docbook.org/xml/4.4/docbook-xml-4.4.zip \
