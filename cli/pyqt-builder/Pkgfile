@@ -8,12 +8,13 @@ contributors="Tnut"
 makedepends=(python-setuptools python-wheel python-packaging sip)
 
 name=pyqt-builder
-_name="PyQt-builder"
+_name="pyqt_builder"
 alias=(${_name})
 
 version=1.16.4
+release=2
 
-source=(https://github.com/Python-PyQt/PyQt-builder/archive/refs/tags/$version.tar.gz)
+source=(https://pypi.io/packages/source/p/pyqt_builder/pyqt_builder-$version.tar.gz)
 
 build() {
 
