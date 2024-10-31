@@ -8,6 +8,7 @@ makedepends=(gpm libpng libtiff libjpeg-turbo)
 
 name=links
 version=2.30
+release=2
 
 source=(${url}download/links-$version.tar.bz2)
 build() {
