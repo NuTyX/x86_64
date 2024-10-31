@@ -1,13 +1,13 @@
 description="Tools for maintaining centralized SGML catalogs."
 url="http://www.docbook.org/xml/"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 
 makedepends=(autoconf automake sed grep)
 
 name=sgml-common
 version=0.6.3
-release=2
+release=3
 
 source=( http://anduin.linuxfromscratch.org/BLFS/sgml-common/sgml-common-$version.tgz
          sgml-common-$version-manpage-1.patch)
