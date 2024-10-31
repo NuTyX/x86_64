@@ -1,11 +1,11 @@
 description="Netscape Portable Runtime library (NSPR)"
 url="http://www.mozilla.org/projects/nspr/"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=nspr
-version=4.35
+version=4.36
 
 source=(https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v$version/src/$name-$version.tar.gz)
 build () {
