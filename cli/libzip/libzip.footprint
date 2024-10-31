@@ -1,0 +1,23 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/zipcmp
+-rwxr-xr-x	root/root	usr/bin/zipmerge
+-rwxr-xr-x	root/root	usr/bin/ziptool
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/libzip/
+-rw-r--r--	root/root	usr/lib/cmake/libzip/libzip-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/libzip/libzip-config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/libzip/libzip-targets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/libzip/libzip-targets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/libzip/modules/
+-rw-r--r--	root/root	usr/lib/cmake/libzip/modules/FindMbedTLS.cmake
+-rw-r--r--	root/root	usr/lib/cmake/libzip/modules/FindNettle.cmake
+-rw-r--r--	root/root	usr/lib/cmake/libzip/modules/Findzstd.cmake
+lrwxrwxrwx	root/root	usr/lib/libzip.so -> libzip.so.5
+lrwxrwxrwx	root/root	usr/lib/libzip.so.5 -> libzip.so.5.5
+-rwxr-xr-x	root/root	usr/lib/libzip.so.5.5
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/libzip/
+-rw-r--r--	root/root	usr/share/licenses/libzip/LICENSE
