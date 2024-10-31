@@ -8,6 +8,7 @@ makedepends=(popt mandoc)
 
 name=efivar
 version=38
+release=2
 
 source=(efivar-${version}.patch
 	https://github.com/rhboot/efivar/archive/refs/tags/$version.tar.gz)
