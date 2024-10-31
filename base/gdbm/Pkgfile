@@ -2,11 +2,12 @@ description="The GDBM package contains the GNU Database Manager."
 url="http://www.gnu.org/software/gdbm/gdbm.html"
 
 maintainer="Philip A. Nelson  phil at cs dot wwu dot edu,Jason Downs downsj at downsj dot com,Sergey Poznyakoff gray at gnu dot org dot ua"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=gdbm
 version=1.24
+release=2
 
 PKGMK_LOCALES=()
 source=(https://ftp.gnu.org/gnu/gdbm/gdbm-$version.tar.gz)
