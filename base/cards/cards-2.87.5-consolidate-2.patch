@@ -1,0 +1,18 @@
+diff --git a/scripts/pkgmk.in b/scripts/pkgmk.in
+index c5b53a1..f9256ee 100755
+--- a/scripts/pkgmk.in
++++ b/scripts/pkgmk.in
+@@ -792,10 +792,10 @@ add_meta_to_archive() {
+ 				done
+ 			fi
+ 		fi
+-		for lib in $($PKGMK_PKGINFO --runtimelibs $TAR|grep -v ^[A-Z]); do
+-			echo "l$lib" >> .META
+-		done
+ 	fi
++	for lib in $($PKGMK_PKGINFO --runtimelibs $TAR|grep -v ^[A-Z]); do
++		echo "l$lib" >> .META
++	done
+ 	if [ ! -z $alias ]; then
+ 		info "Adding Alias to Archive $NAME"
+ 		for al in ${alias[@]}; do
