@@ -35,7 +35,7 @@ devel() {
 
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}`uname -m`.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/include \
 usr/bin/fltk-config \
 usr/bin/fluid
