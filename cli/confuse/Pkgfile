@@ -1,9 +1,10 @@
 description="C-library for parsing configuration files"
 url="https://github.com/martinh/libconfuse"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=confuse
 version=3.3
+release=2
 
 source=(https://github.com/martinh/libconfuse/releases/download/v$version/$name-$version.tar.gz)
 
