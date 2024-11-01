@@ -1,0 +1,78 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/alsa
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K35alsa -> ../init.d/alsa
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K35alsa -> ../init.d/alsa
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K35alsa -> ../init.d/alsa
+drwxr-xr-x	root/root	etc/rc.d/rcS.d/
+lrwxrwxrwx	root/root	etc/rc.d/rcS.d/S60alsa -> ../init.d/alsa
+drwxr-xr-x	root/root	etc/sysconfig/
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/systemd/
+drwxr-xr-x	root/root	lib/systemd/system/
+-rw-r--r--	root/root	lib/systemd/system/alsa-restore.service
+-rw-r--r--	root/root	lib/systemd/system/alsa-state.service
+drwxr-xr-x	root/root	lib/systemd/system/sound.target.wants/
+lrwxrwxrwx	root/root	lib/systemd/system/sound.target.wants/alsa-restore.service -> ../alsa-restore.service
+lrwxrwxrwx	root/root	lib/systemd/system/sound.target.wants/alsa-state.service -> ../alsa-state.service
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/90-alsa-restore.rules
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/aconnect
+-rwxr-xr-x	root/root	usr/bin/alsaloop
+-rwxr-xr-x	root/root	usr/bin/alsamixer
+-rwxr-xr-x	root/root	usr/bin/alsatplg
+-rwxr-xr-x	root/root	usr/bin/alsaucm
+-rwxr-xr-x	root/root	usr/bin/amidi
+-rwxr-xr-x	root/root	usr/bin/amixer
+-rwxr-xr-x	root/root	usr/bin/aplay
+-rwxr-xr-x	root/root	usr/bin/aplaymidi
+lrwxrwxrwx	root/root	usr/bin/arecord -> aplay
+-rwxr-xr-x	root/root	usr/bin/arecordmidi
+-rwxr-xr-x	root/root	usr/bin/aseqdump
+-rwxr-xr-x	root/root	usr/bin/aseqnet
+-rwxr-xr-x	root/root	usr/bin/aseqsend
+-rwxr-xr-x	root/root	usr/bin/axfer
+-rwxr-xr-x	root/root	usr/bin/iecset
+-rwxr-xr-x	root/root	usr/bin/nhlt-dmic-info
+-rwxr-xr-x	root/root	usr/bin/speaker-test
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/alsa-topology/
+-rwxr-xr-x	root/root	usr/lib/alsa-topology/libalsatplg_module_nhlt.so
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/alsa-info.sh
+-rwxr-xr-x	root/root	usr/sbin/alsactl
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/alsa/
+drwxr-xr-x	root/root	usr/share/alsa/init/
+-rw-r--r--	root/root	usr/share/alsa/init/00main
+-rw-r--r--	root/root	usr/share/alsa/init/ca0106
+-rw-r--r--	root/root	usr/share/alsa/init/default
+-rw-r--r--	root/root	usr/share/alsa/init/hda
+-rw-r--r--	root/root	usr/share/alsa/init/help
+-rw-r--r--	root/root	usr/share/alsa/init/info
+-rw-r--r--	root/root	usr/share/alsa/init/test
+drwxr-xr-x	root/root	usr/share/sounds/
+drwxr-xr-x	root/root	usr/share/sounds/alsa/
+-rw-r--r--	root/root	usr/share/sounds/alsa/Front_Center.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Front_Left.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Front_Right.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Noise.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Rear_Center.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Rear_Left.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Rear_Right.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Side_Left.wav
+-rw-r--r--	root/root	usr/share/sounds/alsa/Side_Right.wav
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/alsa/
