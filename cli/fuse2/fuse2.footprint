@@ -1,0 +1,21 @@
+drwxr-xr-x	root/root	dev/
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/init.d/
+-rwxr-xr-x	root/root	etc/init.d/fuse
+drwxr-xr-x	root/root	etc/udev/
+drwxr-xr-x	root/root	etc/udev/rules.d/
+-rw-r--r--	root/root	etc/udev/rules.d/99-fuse.rules
+drwxr-xr-x	root/root	lib/
+lrwxrwxrwx	root/root	lib/libfuse.so.2 -> libfuse.so.2.9.9
+-rwxr-xr-x	root/root	lib/libfuse.so.2.9.9
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwsr-xr-x	root/root	usr/bin/fusermount
+-rwxr-xr-x	root/root	usr/bin/mount.fuse
+-rwxr-xr-x	root/root	usr/bin/ulockmgr_server
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libfuse.so -> ../../lib/libfuse.so.2.9.9
+lrwxrwxrwx	root/root	usr/lib/libulockmgr.so -> libulockmgr.so.1.0.1
+lrwxrwxrwx	root/root	usr/lib/libulockmgr.so.1 -> libulockmgr.so.1.0.1
+-rwxr-xr-x	root/root	usr/lib/libulockmgr.so.1.0.1
+drwxr-xr-x	root/root	usr/share/

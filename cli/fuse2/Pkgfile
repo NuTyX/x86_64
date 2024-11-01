@@ -1,15 +1,24 @@
 description="Library that makes it possible to implement a filesystem in a userspace program."
 url="http://fuse.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B, Rems"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
-makedepends=(doxygen)
+makedepends=(libtool automake doxygen)
 
 name=fuse2
 version=2.9.9
+release=2
 
-source=(https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz)
+source=(https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz
+        fuse-2.9.9-closefrom-glibc-2-34.patch)
+
+prepare() {
+cd fuse-$version
+patch -Np1 -i ../fuse-2.9.9-closefrom-glibc-2-34.patch
+
+autoreconf -vfi
+}
 
 build() {
 cd fuse-$version
