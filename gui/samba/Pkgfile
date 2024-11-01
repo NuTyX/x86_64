@@ -96,7 +96,7 @@ make DESTDIR=$PKG install-runyx-winbindd
 service() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
 lib/{systemd,init} etc/{init,rc.d}
 
 rm -r etc/{rc.d,init}
@@ -106,7 +106,7 @@ rm -r lib/{init,systemd}
 lib() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/lib* usr/lib/samba/lib* \
 usr/bin/{smbclient,rpcclient,smbspool,smbtree,smbcacls,\
 smbcquotas,smbget,net,nmblookup,smbtar}
@@ -121,7 +121,7 @@ rm -d usr/bin || true
 devel() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}any.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/pkgconfig usr/include
 
 rm -r usr/{include,lib/pkgconfig}
