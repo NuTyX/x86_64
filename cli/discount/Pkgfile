@@ -3,13 +3,13 @@ url='https://www.pell.portland.or.us/~orc/Code/discount/'
 
 license='BSD-3-Clause'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=discount
 version=3.0.0.d
+release=3
 _version=3.0.0d
-release=2
 
 source=(https://github.com/Orc/discount/archive/v${_version}/$name-$version.tar.gz)
 
