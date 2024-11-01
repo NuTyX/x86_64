@@ -1,14 +1,14 @@
 description="Cyrus saslauthd SASL authentication daemon"
 url="http://cyrusimap.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(db automake libtool libxcrypt)
 
 name=cyrus-sasl
 version=2.1.28
-release=3
+release=5
 
 runyx_version=20201011
 
@@ -18,6 +18,8 @@ source=(https://github.com/cyrusimap/$name/archive/refs/tags/$name-$version.tar.
 prepare() {
 cd $name-$name-$version
 autoreconf -fiv
+sed '/saslint/a #include <time.h>'       -i lib/saslutil.c
+sed '/plugin_common/a #include <time.h>' -i plugins/cram.c
 }
 build() {
 	cd $name-$name-$version

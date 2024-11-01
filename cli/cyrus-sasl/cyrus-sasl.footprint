@@ -1,0 +1,47 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/default/
+-rw-r--r--	root/root	etc/default/saslauthd
+drwxr-xr-x	root/root	etc/sysconfig/
+-rw-r--r--	root/root	etc/sysconfig/saslauthd
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libsasl2.so -> libsasl2.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsasl2.so.3 -> libsasl2.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsasl2.so.3.0.0
+drwxr-xr-x	root/root	usr/lib/sasl2/
+lrwxrwxrwx	root/root	usr/lib/sasl2/libanonymous.so -> libanonymous.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libanonymous.so.3 -> libanonymous.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libanonymous.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libcrammd5.so -> libcrammd5.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libcrammd5.so.3 -> libcrammd5.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libcrammd5.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libdigestmd5.so -> libdigestmd5.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libdigestmd5.so.3 -> libdigestmd5.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libdigestmd5.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libotp.so -> libotp.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libotp.so.3 -> libotp.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libotp.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libplain.so -> libplain.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libplain.so.3 -> libplain.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libplain.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libsasldb.so -> libsasldb.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libsasldb.so.3 -> libsasldb.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libsasldb.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libscram.so -> libscram.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/sasl2/libscram.so.3 -> libscram.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/sasl2/libscram.so.3.0.0
+drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/saslauthd.conf
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/pluginviewer
+-rwxr-xr-x	root/root	usr/sbin/saslauthd
+-rwxr-xr-x	root/root	usr/sbin/sasldblistusers2
+-rwxr-xr-x	root/root	usr/sbin/saslpasswd2
+-rwxr-xr-x	root/root	usr/sbin/testsaslauthd
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwx------	root/root	var/lib/sasl/
+drwxr-xr-x	root/root	var/run/
+drwx------	root/root	var/run/saslauthd/
