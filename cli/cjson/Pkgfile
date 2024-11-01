@@ -10,6 +10,7 @@ makedepends=(cmake)
 
 name=cjson
 version=1.7.18
+release=2
 source=(https://github.com/DaveGamble/cJSON/archive/v$version.tar.gz)
 
 build() {
