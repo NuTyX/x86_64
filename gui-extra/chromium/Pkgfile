@@ -3,9 +3,9 @@ url="https://www.chromium.org/Home"
 
 license="BSD"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 maintainer="Arch Linux"
-contributors="Tnut"
+contributors="Spiky"
 
 run=(minizip gtk3 ffmpeg flac dbus freetype brotli woff2
      xorg-libxscrnsaver libxslt nss snappy json-glib llvm
@@ -13,7 +13,9 @@ run=(minizip gtk3 ffmpeg flac dbus freetype brotli woff2
      gtk-update-icon-cache shared-mime-info abseil-cpp)
 
 name=chromium
-version=130.0.6723.58
+version=130.0.6723.91
+release=2
+
 re2version=2024-04-01
 
 source=(https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
@@ -21,5 +23,8 @@ build() {
 
 mv usr $PKG
 mkdir -p $PKG/etc/ld.so.conf.d
+# in conflict with the installed one
+rm $PKG/usr/lib/chromium/libvulkan.so.1
+
 echo "/usr/lib/chromium" > $PKG/etc/ld.so.conf.d/$name.conf
 }
