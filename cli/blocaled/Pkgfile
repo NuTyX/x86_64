@@ -1,11 +1,12 @@
 description='Implementation of the org.freedesktop.locale1 D-Bus protocol'
 url='https://github.com/lfs-book/blocaled'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Tnut"
 
 name=blocaled
 version=0.4
+release=2
 
 run=(polkit libdaemon)
 
