@@ -18,7 +18,7 @@ source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.t
 pack_remove_locale() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.${1}${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.${1}${PKGMK_PACKAGE_EXT}$version-$release \
 usr/share/help/${1}
 
 rm -r usr/share/help/${1}
@@ -103,7 +103,7 @@ pack_remove_locale pl
 locale_pt() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_PACKAGE_EXT}$version-$release \
 usr/share/help/pt_BR usr/share/help/pt
 
 rm -r usr/share/help/pt
@@ -122,7 +122,7 @@ pack_remove_locale sl
 locale_sr() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sr${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sr${PKGMK_PACKAGE_EXT}$version-$release \
 usr/share/help/sr \
 usr/share/help/sr@latin
 
@@ -144,7 +144,7 @@ pack_remove_locale ta
 locale_zh() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.zh${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.zh${PKGMK_PACKAGE_EXT}$version-$release \
 usr/share/help/zh_CN
 
 rm -r usr/share/help/zh_CN
