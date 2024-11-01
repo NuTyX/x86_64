@@ -1,12 +1,13 @@
 description="A fast Bayesian spam filtering tool"
 url="http://bogofilter.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(db perl)
 
 name=bogofilter
 version=1.2.5
+release=2
 
 source=(http://downloads.sourceforge.net/project/$name/$name-stable/$name-$version.tar.xz)
