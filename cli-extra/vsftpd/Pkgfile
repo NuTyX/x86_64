@@ -105,7 +105,7 @@ EOF
 }
 service() {
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
 lib/{systemd,init} etc/{init,rc.d}
 
 rm -r etc/{rc.d,init}
