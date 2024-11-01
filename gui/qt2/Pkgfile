@@ -60,7 +60,7 @@ pathappend $QTDIR/bin
 EOF
 mv usr/lib/qt2/lib lib
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/qt2 \
 etc
 
