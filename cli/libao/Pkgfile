@@ -1,13 +1,14 @@
 description="Cross-platform audio output library and plugins"
 url="http://xiph.org/ao/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rems"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Tnut"
 
 makedepends=(automake autoconf m4 alsa-lib)
 
 name=libao
 version=1.2.2
+release=2
 
 PKGMK_KEE_SOURCES="no"
 source=(https://github.com/xiph/libao/archive/$version.tar.gz)
