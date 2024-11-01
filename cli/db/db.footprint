@@ -1,0 +1,29 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/db_archive
+-rwxr-xr-x	root/root	usr/bin/db_checkpoint
+-rwxr-xr-x	root/root	usr/bin/db_convert
+-rwxr-xr-x	root/root	usr/bin/db_deadlock
+-rwxr-xr-x	root/root	usr/bin/db_dump
+-rwxr-xr-x	root/root	usr/bin/db_hotbackup
+-rwxr-xr-x	root/root	usr/bin/db_load
+-rwxr-xr-x	root/root	usr/bin/db_log_verify
+-rwxr-xr-x	root/root	usr/bin/db_printlog
+-rwxr-xr-x	root/root	usr/bin/db_recover
+-rwxr-xr-x	root/root	usr/bin/db_replicate
+-rwxr-xr-x	root/root	usr/bin/db_stat
+-rwxr-xr-x	root/root	usr/bin/db_tuner
+-rwxr-xr-x	root/root	usr/bin/db_upgrade
+-rwxr-xr-x	root/root	usr/bin/db_verify
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libdb-6.2.a
+-rwxr-xr-x	root/root	usr/lib/libdb-6.2.so
+lrwxrwxrwx	root/root	usr/lib/libdb-6.so -> libdb-6.2.so
+-rw-r--r--	root/root	usr/lib/libdb.a
+lrwxrwxrwx	root/root	usr/lib/libdb.so -> libdb-6.2.so
+-rw-r--r--	root/root	usr/lib/libdb_cxx-6.2.a
+-rwxr-xr-x	root/root	usr/lib/libdb_cxx-6.2.so
+lrwxrwxrwx	root/root	usr/lib/libdb_cxx-6.so -> libdb_cxx-6.2.so
+-rw-r--r--	root/root	usr/lib/libdb_cxx.a
+lrwxrwxrwx	root/root	usr/lib/libdb_cxx.so -> libdb_cxx-6.2.so
+drwxr-xr-x	root/root	usr/share/
