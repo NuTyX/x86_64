@@ -6,9 +6,10 @@ contributors="Pierre,Tnut"
 
 name=pcre
 version=8.45
+release=2
 
 makedepends=(bzip2 readline)
-source=(https://ftp.pcre.org/pub/pcre/$name-$version.tar.bz2 )
+source=(https://sourceforge.net/projects/pcre/files/pcre/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
