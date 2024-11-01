@@ -66,7 +66,7 @@ $PKG/usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 rm ${1}.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.${1}${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.${1}${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 
 rm usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
@@ -189,7 +189,7 @@ done
 
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.es${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.es${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-es-AR@$name.mozilla.org.xpi \
 usr/lib/$name/extensions/langpack-es-ES@$name.mozilla.org.xpi
 
@@ -225,7 +225,7 @@ $PKG/usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
 rm $lang.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
 
 rm usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
@@ -275,7 +275,7 @@ $PKG/usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
 rm $lang.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.nn${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.nn${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
 
 rm usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
@@ -296,7 +296,7 @@ done
 
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-pt-PT@$name.mozilla.org.xpi \
 usr/lib/$name/extensions/langpack-pt-BR@$name.mozilla.org.xpi
 
@@ -336,7 +336,7 @@ $PKG/usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
 rm $lang.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sv${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sv${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
 
 rm usr/lib/$name/extensions/langpack-$lang@$name.mozilla.org.xpi
@@ -365,7 +365,7 @@ done
 
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.zh${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.zh${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/$name/extensions/langpack-zh-CN@$name.mozilla.org.xpi \
 usr/lib/$name/extensions/langpack-zh-TW@$name.mozilla.org.xpi
 
