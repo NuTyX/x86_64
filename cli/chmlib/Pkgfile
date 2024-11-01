@@ -1,16 +1,19 @@
 name=chmlib
 version=0.40
-release=3
+release=4
 
 description="Library for dealing with Microsoft ITSS/CHM format files"
 maintainer="Matthew T. Russotto's"
-packager="tnut at nutyx dot org"
+packager="spiky <spiky@nutyx.org>"
 url="http://www.jedrea.com/chmlib/"
 
 source=($url/$name-$version.tar.bz2)
 
 build(){
     cd $name-$version
+
+    CFLAGS+=" -Wno-implicit-function-declaration"
+
     ./configure --prefix=/usr \
                 --enable-examples=yes
     make
