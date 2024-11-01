@@ -1,12 +1,13 @@
 description="clex (light file manager)"
 url="http://www.clex.sk/"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(ncurses)
 
 name=clex
 version=4.7
+release=2
 
 source=(https://github.com/xitop/clex/releases/download/v${version}/$name-$version.tar.gz)
 
