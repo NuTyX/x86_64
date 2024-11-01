@@ -122,7 +122,7 @@ locale_ar()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ar${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ar${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/ar \
 usr/lib/libreoffice/program/resource/ar \
 usr/lib/libreoffice/share/extensions/dict-ar \
@@ -140,7 +140,7 @@ locale_cs()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.cs${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.cs${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/cs \
 usr/lib/libreoffice/program/resource/cs \
 usr/lib/libreoffice/share/autotext/cs \
@@ -162,7 +162,7 @@ locale_da()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.da${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.da${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/da \
 usr/lib/libreoffice/program/resource/da \
 usr/lib/libreoffice/share/autotext/da \
@@ -184,7 +184,7 @@ locale_de()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.de${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.de${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/de \
 usr/lib/libreoffice/program/resource/de \
 usr/lib/libreoffice/share/autotext/de \
@@ -206,7 +206,7 @@ locale_el()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.el${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.el${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/el \
 usr/lib/libreoffice/program/resource/el \
 usr/lib/libreoffice/share/autotext/el \
@@ -228,7 +228,7 @@ locale_es()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.es${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.es${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/es \
 usr/lib/libreoffice/program/resource/es \
 usr/lib/libreoffice/share/autotext/es \
@@ -250,7 +250,7 @@ locale_fi()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.fi${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.fi${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/fi \
 usr/lib/libreoffice/program/resource/fi \
 usr/lib/libreoffice/share/autotext/fi \
@@ -270,7 +270,7 @@ locale_fr()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.fr${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.fr${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/fr \
 usr/lib/libreoffice/program/resource/fr \
 usr/lib/libreoffice/share/autotext/fr \
@@ -292,7 +292,7 @@ locale_ga()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/ga \
 usr/lib/libreoffice/share/autotext/ga \
 usr/lib/libreoffice/readmes/README_ga \
@@ -309,7 +309,7 @@ locale_gl()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.gl${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.gl${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/gl \
 usr/lib/libreoffice/program/resource/gl \
 usr/lib/libreoffice/share/autotext/gl \
@@ -331,7 +331,7 @@ locale_hi()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.hi${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.hi${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/hi \
 usr/lib/libreoffice/program/resource/hi \
 usr/lib/libreoffice/share/autotext/hi \
@@ -351,7 +351,7 @@ locale_hr()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.hr${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.hr${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/hr \
 usr/lib/libreoffice/program/resource/hr \
 usr/lib/libreoffice/share/autotext/hr \
@@ -373,7 +373,7 @@ locale_hu()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.hu${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.hu${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/hu \
 usr/lib/libreoffice/program/resource/hu \
 usr/lib/libreoffice/share/autotext/hu \
@@ -395,7 +395,7 @@ locale_it()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.it${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.it${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/it \
 usr/lib/libreoffice/program/resource/it \
 usr/lib/libreoffice/share/autotext/it \
@@ -417,7 +417,7 @@ locale_ja()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ja${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ja${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/ja \
 usr/lib/libreoffice/program/resource/ja \
 usr/lib/libreoffice/share/autotext/ja \
@@ -437,7 +437,7 @@ locale_lt()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.lt${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.lt${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/lt \
 usr/lib/libreoffice/program/resource/lt \
 usr/lib/libreoffice/share/autotext/lt \
@@ -459,7 +459,7 @@ locale_lv()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.lv${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.lv${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/lv \
 usr/lib/libreoffice/program/resource/lv \
 usr/lib/libreoffice/share/autotext/lv \
@@ -481,7 +481,7 @@ locale_nl()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.nl${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.nl${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/nl \
 usr/lib/libreoffice/program/resource/nl \
 usr/lib/libreoffice/share/autotext/nl \
@@ -503,7 +503,7 @@ locale_nn()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.nn${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.nn${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/n{b,n} \
 usr/lib/libreoffice/program/resource/n{b,n} \
 usr/lib/libreoffice/share/autotext/n{b,n} \
@@ -527,7 +527,7 @@ locale_pl()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.pl${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.pl${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/pl \
 usr/lib/libreoffice/program/resource/pl \
 usr/lib/libreoffice/share/autotext/pl \
@@ -549,7 +549,7 @@ locale_pt()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/pt \
 usr/lib/libreoffice/program/resource/pt \
 usr/lib/libreoffice/share/autotext/pt \
@@ -571,7 +571,7 @@ locale_ro()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ro${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ro${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/ro \
 usr/lib/libreoffice/program/resource/ro \
 usr/lib/libreoffice/share/autotext/ro \
@@ -593,7 +593,7 @@ locale_ru()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ru${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ru${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/ru \
 usr/lib/libreoffice/program/resource/ru \
 usr/lib/libreoffice/share/autotext/ru \
@@ -615,7 +615,7 @@ locale_sk()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sk${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sk${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/sk \
 usr/lib/libreoffice/program/resource/sk \
 usr/lib/libreoffice/share/autotext/sk \
@@ -635,7 +635,7 @@ locale_sl()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sl${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sl${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/sl \
 usr/lib/libreoffice/program/resource/sl \
 usr/lib/libreoffice/share/autotext/sl \
@@ -657,7 +657,7 @@ locale_sq()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sq${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sq${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/sq \
 usr/lib/libreoffice/program/resource/sq \
 usr/lib/libreoffice/share/autotext/sq \
@@ -679,7 +679,7 @@ locale_sr()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sr${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sr${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/sr \
 usr/lib/libreoffice/share/autotext/sr \
 usr/lib/libreoffice/share/extensions/dict-sr \
@@ -700,7 +700,7 @@ locale_sv()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sv${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sv${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/sv \
 usr/lib/libreoffice/program/resource/sv \
 usr/lib/libreoffice/share/autotext/sv \
@@ -722,7 +722,7 @@ locale_th()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.th${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.th${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/th \
 usr/lib/libreoffice/share/autotext/th \
 usr/lib/libreoffice/share/extensions/dict-th \
@@ -743,7 +743,7 @@ locale_tr()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.tr${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.tr${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/tr \
 usr/lib/libreoffice/program/resource/tr \
 usr/lib/libreoffice/share/autotext/tr \
@@ -763,7 +763,7 @@ locale_uk()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.uk${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.uk${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/uk \
 usr/lib/libreoffice/program/resource/uk \
 usr/lib/libreoffice/share/autotext/uk \
@@ -785,7 +785,7 @@ locale_zh_CN()
 {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.zh_CN${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.zh_CN${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/help/zh-CN \
 usr/lib/libreoffice/program/resource/zh_CN \
 usr/lib/libreoffice/share/autotext/zh-CN \

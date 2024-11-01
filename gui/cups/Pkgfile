@@ -90,7 +90,7 @@ EOF
 lib() {
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libcups*
 rm usr/lib/libcups*
 rm -d usr/lib || true

@@ -34,7 +34,7 @@ $PKG/usr/lib/firefox/browser/extensions/langpack-${1}@firefox.mozilla.org.xpi
 rm ${1}.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.${1}${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.${1}${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-${1}@firefox.mozilla.org.xpi
 
 rm usr/lib/firefox/browser/extensions/langpack-${1}@firefox.mozilla.org.xpi
@@ -262,7 +262,7 @@ done
 
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.es${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.es${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-es-AR@firefox.mozilla.org.xpi \
 usr/lib/firefox/browser/extensions/langpack-es-CL@firefox.mozilla.org.xpi \
 usr/lib/firefox/browser/extensions/langpack-es-ES@firefox.mozilla.org.xpi \
@@ -303,7 +303,7 @@ $PKG/usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
 rm $lang.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
 
 rm usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
@@ -321,7 +321,7 @@ $PKG/usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
 rm $lang.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.hi${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.hi${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
 
 rm usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
@@ -373,7 +373,7 @@ do
 done
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.nn${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.nn${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-nn-NO@firefox.mozilla.org.xpi \
 usr/lib/firefox/browser/extensions/langpack-nb-NO@firefox.mozilla.org.xpi
 
@@ -396,7 +396,7 @@ done
 
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.pt${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-pt-PT@firefox.mozilla.org.xpi \
 usr/lib/firefox/browser/extensions/langpack-pt-BR@firefox.mozilla.org.xpi
 
@@ -436,7 +436,7 @@ $PKG/usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
 rm $lang.xpi
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.sv${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.sv${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
 
 rm usr/lib/firefox/browser/extensions/langpack-$lang@firefox.mozilla.org.xpi
@@ -468,7 +468,7 @@ do
 done
 cd $PKG
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.zh${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
+$PKGMK_PACKAGE_DIR/${name}.zh${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/firefox/browser/extensions/langpack-zh-CN@firefox.mozilla.org.xpi \
 usr/lib/firefox/browser/extensions/langpack-zh-TW@firefox.mozilla.org.xpi
 

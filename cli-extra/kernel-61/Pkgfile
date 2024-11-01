@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-61
-version=6.1.112
+version=6.1.114
 
 alias=(linux-61)
 INITRD="initrd-${name/*-/}"
@@ -47,7 +47,7 @@ cp $SRC/config_64 ./.config
 
 make
 
-cp .config $SRC/config_64
+cp .config ${PKGMK_ROOT}/config_64
 
 ## Modules
 #
@@ -111,7 +111,7 @@ mv usr/src/linux-${_version}/arch/.x86 usr/src/linux-${_version}/arch/x86
 
 
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}any.${PKGMK_PACKAGE_EXT} \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/src/linux-${_version}
 
 rm -r usr
@@ -125,7 +125,7 @@ mv $SRC/linux-${_version}/Documentation \
 usr/share/doc/linux-$version
 
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_BUILDVER}any.${PKGMK_PACKAGE_EXT} \
+$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
 usr/share/doc/linux-$version
 
 rm -r usr
