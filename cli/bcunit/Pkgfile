@@ -8,6 +8,7 @@ PKGMK_KEEP_SOURCES="no"
 makedepends=(cmake)
 name=bcunit
 version=5.2.0
+release=2
 
 source=(https://gitlab.linphone.org/BC/public/bcunit/-/archive/$version/$name-$version.tar.gz)
 
