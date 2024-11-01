@@ -1,12 +1,12 @@
 description='Scripts to mount the cgroupfs hierarchy'
 url='https://github.com/tianon/cgroupfs-mount'
 
-contributors="MattHoush"
-packager="tnut <tnut@nutyx.org>"
+contributors="MattHoush,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 name=cgroupfs-mount
 version=1.4
-release=1
+release=2
 
 source=(https://github.com/tianon/${name}/archive/$version/$name-$version.tar.gz)
 
