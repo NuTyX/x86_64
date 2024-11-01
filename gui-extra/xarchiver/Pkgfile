@@ -5,7 +5,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Rems,Greg,Fabianwang,Tnut"
 
 makedepends=(gtk3 docbook-xsl xmlto)
-run=(tar zip p7zip lzop cpio unrar)
+run=(unzip tar zip p7zip lzop cpio unrar)
 
 PKGMK_KEEP_SOURCES="no"
 
