@@ -2,14 +2,14 @@ description="Set of programs for CD/DVD recording, ISO image creation and audio 
 url="http://cdrecord.org/"
 
 maintainer="Joerg Jaspert"
-contributors="Pierre B, Rems"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
-makedepends=(libcap cmake)
+makedepends=(libcap cmake alsa-libs)
 
 name=cdrtools
 version=3.02a09
-release=2
+release=3
 
 source=(https://downloads.sourceforge.net/cdrtools/$name-$version.tar.bz2)
 
@@ -20,6 +20,8 @@ sed -i 's|DEFINSGRP=.*|DEFINSGRP=root|' DEFAULTS/Defaults.linux
 # install rscsi to /usr/bin instead of /usr/sbin
   sed -i 's|INSDIR=.*|INSDIR=bin|' rscsi/Makefile
 export GMAKE_NOWARN=true
+export CFLAGS="$CFLAGS -std=gnu89 -fno-strict-aliasing"
+
 make LINKMODE=dynamic -j1
 make INS_BASE=/usr DESTDIR=$PKG LINKMODE=dynamic install
 	cd $PKG/usr/bin

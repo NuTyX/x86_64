@@ -1,0 +1,108 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/default/
+-rw-r--r--	root/root	etc/default/cdrecord
+-rw-r--r--	root/root	etc/default/rscsi
+drwxr-xr-x	root/root	etc/modules-load.d/
+-rw-r--r--	root/root	etc/modules-load.d/cdrecord.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/btcflash
+-rwxr-xr-x	root/root	usr/bin/cdda2mp3
+-rwxr-xr-x	root/root	usr/bin/cdda2ogg
+-rws--x--x	root/root	usr/bin/cdda2wav
+-rws--x--x	root/root	usr/bin/cdrecord
+-rwxr-xr-x	root/root	usr/bin/devdump
+lrwxrwxrwx	root/root	usr/bin/dvdrecord -> cdrecord
+lrwxrwxrwx	root/root	usr/bin/genisoimage -> mkisofs
+lrwxrwxrwx	root/root	usr/bin/icedax -> cdda2wav
+-rwxr-xr-x	root/root	usr/bin/isodebug
+-rwxr-xr-x	root/root	usr/bin/isodump
+-rwxr-xr-x	root/root	usr/bin/isoinfo
+-rwxr-xr-x	root/root	usr/bin/isovfy
+lrwxrwxrwx	root/root	usr/bin/mkhybrid -> mkisofs
+-rwxr-xr-x	root/root	usr/bin/mkisofs
+-rws--x--x	root/root	usr/bin/readcd
+lrwxrwxrwx	root/root	usr/bin/readom -> readcd
+-rws--x--x	root/root	usr/bin/rscsi
+-rwxr-xr-x	root/root	usr/bin/scgcheck
+-rwxr-xr-x	root/root	usr/bin/scgskeleton
+lrwxrwxrwx	root/root	usr/bin/wodim -> cdrecord
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libcdrdeflt.so -> libcdrdeflt.so.1.0
+-r--r--r--	root/root	usr/lib/libcdrdeflt.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libdeflt.so -> libdeflt.so.1.0
+-r--r--r--	root/root	usr/lib/libdeflt.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libedc_ecc.so -> libedc_ecc.so.1.0
+-r--r--r--	root/root	usr/lib/libedc_ecc.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libedc_ecc_dec.so -> libedc_ecc_dec.so.1.0
+-r--r--r--	root/root	usr/lib/libedc_ecc_dec.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libfile.so -> libfile.so.1.0
+-r--r--r--	root/root	usr/lib/libfile.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libfind.so -> libfind.so.1.0
+-r--r--r--	root/root	usr/lib/libfind.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libhfs.so -> libhfs.so.1.0
+-r--r--r--	root/root	usr/lib/libhfs.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libmdigest.so -> libmdigest.so.1.0
+-r--r--r--	root/root	usr/lib/libmdigest.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libparanoia.so -> libparanoia.so.1.0
+-r--r--r--	root/root	usr/lib/libparanoia.so.1.0
+lrwxrwxrwx	root/root	usr/lib/librscg.so -> librscg.so.1.0
+-r--r--r--	root/root	usr/lib/librscg.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libscg.so -> libscg.so.1.0
+-r--r--r--	root/root	usr/lib/libscg.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libscgcmd.so -> libscgcmd.so.1.0
+-r--r--r--	root/root	usr/lib/libscgcmd.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libschily.so -> libschily.so.1.0
+-r--r--r--	root/root	usr/lib/libschily.so.1.0
+lrwxrwxrwx	root/root	usr/lib/libsiconv.so -> libsiconv.so.1.0
+-r--r--r--	root/root	usr/lib/libsiconv.so.1.0
+drwxr-xr-x	root/root	usr/lib/siconv/
+-r--r--r--	root/root	usr/lib/siconv/cp10000
+-r--r--r--	root/root	usr/lib/siconv/cp10006
+-r--r--r--	root/root	usr/lib/siconv/cp10007
+-r--r--r--	root/root	usr/lib/siconv/cp10029
+-r--r--r--	root/root	usr/lib/siconv/cp10079
+-r--r--r--	root/root	usr/lib/siconv/cp10081
+-r--r--r--	root/root	usr/lib/siconv/cp1250
+-r--r--r--	root/root	usr/lib/siconv/cp1251
+-r--r--r--	root/root	usr/lib/siconv/cp1252
+-r--r--r--	root/root	usr/lib/siconv/cp1253
+-r--r--r--	root/root	usr/lib/siconv/cp1254
+-r--r--r--	root/root	usr/lib/siconv/cp1255
+-r--r--r--	root/root	usr/lib/siconv/cp1256
+-r--r--r--	root/root	usr/lib/siconv/cp1257
+-r--r--r--	root/root	usr/lib/siconv/cp1258
+-r--r--r--	root/root	usr/lib/siconv/cp437
+-r--r--r--	root/root	usr/lib/siconv/cp737
+-r--r--r--	root/root	usr/lib/siconv/cp775
+-r--r--r--	root/root	usr/lib/siconv/cp850
+-r--r--r--	root/root	usr/lib/siconv/cp852
+-r--r--r--	root/root	usr/lib/siconv/cp855
+-r--r--r--	root/root	usr/lib/siconv/cp857
+-r--r--r--	root/root	usr/lib/siconv/cp860
+-r--r--r--	root/root	usr/lib/siconv/cp861
+-r--r--r--	root/root	usr/lib/siconv/cp862
+-r--r--r--	root/root	usr/lib/siconv/cp863
+-r--r--r--	root/root	usr/lib/siconv/cp864
+-r--r--r--	root/root	usr/lib/siconv/cp865
+-r--r--r--	root/root	usr/lib/siconv/cp866
+-r--r--r--	root/root	usr/lib/siconv/cp869
+-r--r--r--	root/root	usr/lib/siconv/cp874
+-r--r--r--	root/root	usr/lib/siconv/iso8859-1
+-r--r--r--	root/root	usr/lib/siconv/iso8859-10
+-r--r--r--	root/root	usr/lib/siconv/iso8859-11
+-r--r--r--	root/root	usr/lib/siconv/iso8859-13
+-r--r--r--	root/root	usr/lib/siconv/iso8859-14
+-r--r--r--	root/root	usr/lib/siconv/iso8859-15
+-r--r--r--	root/root	usr/lib/siconv/iso8859-16
+-r--r--r--	root/root	usr/lib/siconv/iso8859-2
+-r--r--r--	root/root	usr/lib/siconv/iso8859-3
+-r--r--r--	root/root	usr/lib/siconv/iso8859-4
+-r--r--r--	root/root	usr/lib/siconv/iso8859-5
+-r--r--r--	root/root	usr/lib/siconv/iso8859-6
+-r--r--r--	root/root	usr/lib/siconv/iso8859-7
+-r--r--r--	root/root	usr/lib/siconv/iso8859-8
+-r--r--r--	root/root	usr/lib/siconv/iso8859-9
+-r--r--r--	root/root	usr/lib/siconv/koi8-r
+-r--r--r--	root/root	usr/lib/siconv/koi8-u
+drwxr-xr-x	root/root	usr/share/
