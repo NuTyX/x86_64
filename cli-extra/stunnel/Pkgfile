@@ -46,7 +46,7 @@ cp -v $SRC/stunnel.conf $PKG/etc/stunnel/stunnel.conf
 }
 service() {
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
 lib/init etc/{init,rc.d}
  
 rm -r etc/{rc.d,init}
