@@ -1,14 +1,14 @@
 description="Low-latency audio communication codec"
 url="http://www.celt-codec.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libogg)
 
 name=celt
 version=0.11.3
-release=2
+release=3
 
 source=(http://downloads.us.xiph.org/releases/celt/celt-$version.tar.gz)
 
