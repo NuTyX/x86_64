@@ -1,11 +1,12 @@
 description="A full-featured and high-performance event loop"
 url="http://software.schmorp.de/pkg/libev.html"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Minzords"
+packager="spiky <spiky@nutyx.org>"
+contributors="Minzords,Tnut"
 
 name=libev
 version=4.33
+release=2
 
 source=(http://dist.schmorp.de/$name/$name-$version.tar.gz)
 build() {
