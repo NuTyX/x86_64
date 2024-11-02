@@ -1,22 +1,26 @@
 description="A low level library, upon which multimedia APIs can be built"
 url="http://gmerlin.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(doxygen)
 
 name=gavl
 version=1.4.0
-release=3
+release=4
 
 source=(http://downloads.sourceforge.net/sourceforge/gmerlin/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
+sed -i 's/LDFLAGS="$GRMLIN_DEP_RPATH"/LDFLAGS="$LDFLAGS $GREMLIN_DEP_RPATH"/' configure{,.ac}
+autoreconf -fiv
 LIBS=-lm \
 ./configure --prefix=/usr \
+--with-cpuflags=none \
 --docdir=/usr/share/doc/gavl-$version
+
 make
 make DESTDIR=$PKG install
 
