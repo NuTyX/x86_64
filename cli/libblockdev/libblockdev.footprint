@@ -1,0 +1,69 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/libblockdev/
+drwxr-xr-x	root/root	etc/libblockdev/3/
+drwxr-xr-x	root/root	etc/libblockdev/3/conf.d/
+-rw-r--r--	root/root	etc/libblockdev/3/conf.d/00-default.cfg
+-rw-r--r--	root/root	etc/libblockdev/3/conf.d/10-lvm-dbus.cfg
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/lvm-cache-stats
+-rwxr-xr-x	root/root	usr/bin/vfat-resize
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/BlockDev-3.0.typelib
+lrwxrwxrwx	root/root	usr/lib/libbd_btrfs.so -> libbd_btrfs.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_btrfs.so.3 -> libbd_btrfs.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_btrfs.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_crypto.so -> libbd_crypto.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_crypto.so.3 -> libbd_crypto.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_crypto.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_fs.so -> libbd_fs.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_fs.so.3 -> libbd_fs.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_fs.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_loop.so -> libbd_loop.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_loop.so.3 -> libbd_loop.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_loop.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_lvm-dbus.so -> libbd_lvm-dbus.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_lvm-dbus.so.3 -> libbd_lvm-dbus.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_lvm-dbus.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_lvm.so -> libbd_lvm.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_lvm.so.3 -> libbd_lvm.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_lvm.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_mdraid.so -> libbd_mdraid.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_mdraid.so.3 -> libbd_mdraid.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_mdraid.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_mpath.so -> libbd_mpath.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_mpath.so.3 -> libbd_mpath.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_mpath.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_nvme.so -> libbd_nvme.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_nvme.so.3 -> libbd_nvme.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_nvme.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_part.so -> libbd_part.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_part.so.3 -> libbd_part.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_part.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_smart.so -> libbd_smart.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_smart.so.3 -> libbd_smart.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_smart.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_smartmontools.so -> libbd_smartmontools.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_smartmontools.so.3 -> libbd_smartmontools.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_smartmontools.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_swap.so -> libbd_swap.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_swap.so.3 -> libbd_swap.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_swap.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_utils.so -> libbd_utils.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libbd_utils.so.3 -> libbd_utils.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libbd_utils.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libblockdev.so -> libblockdev.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libblockdev.so.3 -> libblockdev.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libblockdev.so.3.0.0
+drwxr-xr-x	root/root	usr/lib/python3.12/
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/gi/
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/gi/overrides/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/gi/overrides/BlockDev.py
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/BlockDev-3.0.gir
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/libblockdev/
+-rw-r--r--	root/root	usr/share/licenses/libblockdev/LICENSE
