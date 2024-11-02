@@ -1,13 +1,14 @@
 description="A portable middleware for email access"
 url="http://www.etpan.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libgcrypt expat cyrus-sasl gnutls zlib)
 
 name=libetpan
 version=1.9.4
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/dinhviethoa/$name/archive/$version.tar.gz)
