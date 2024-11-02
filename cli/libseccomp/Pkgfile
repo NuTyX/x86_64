@@ -7,6 +7,7 @@ makedepends=(gperf)
 
 name=libseccomp
 version=2.5.5
+release=2
 
 source=(https://github.com/seccomp/$name/releases/download/v$version/$name-$version.tar.gz)
 
