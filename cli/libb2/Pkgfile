@@ -1,11 +1,12 @@
 description='C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp hash functions'
 url='https://blake2.net/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=libb2
 version=0.98.1
+release=2
 
 source=(https://github.com/BLAKE2/libb2/releases/download/v$version/$name-$version.tar.gz)
 
