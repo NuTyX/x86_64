@@ -1,0 +1,50 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/affixcompress
+-rwxr-xr-x	root/root	usr/bin/analyze
+-rwxr-xr-x	root/root	usr/bin/chmorph
+-rwxr-xr-x	root/root	usr/bin/hunspell
+-rwxr-xr-x	root/root	usr/bin/hunzip
+-rwxr-xr-x	root/root	usr/bin/hzip
+-rwxr-xr-x	root/root	usr/bin/ispellaff2myspell
+-rwxr-xr-x	root/root	usr/bin/makealias
+-rwxr-xr-x	root/root	usr/bin/munch
+-rwxr-xr-x	root/root	usr/bin/unmunch
+-rwxr-xr-x	root/root	usr/bin/wordforms
+-rwxr-xr-x	root/root	usr/bin/wordlist2hunspell
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libhunspell-1.7.so -> libhunspell-1.7.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libhunspell-1.7.so.0 -> libhunspell-1.7.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libhunspell-1.7.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libhunspell.so -> libhunspell-1.7.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/hunspell/
+-rw-r--r--	root/root	usr/share/hunspell/en_AU.aff
+-rw-r--r--	root/root	usr/share/hunspell/en_AU.dic
+-rw-r--r--	root/root	usr/share/hunspell/en_CA.aff
+-rw-r--r--	root/root	usr/share/hunspell/en_CA.dic
+-rw-r--r--	root/root	usr/share/hunspell/en_GB.aff
+-rw-r--r--	root/root	usr/share/hunspell/en_GB.dic
+-rw-r--r--	root/root	usr/share/hunspell/en_US.aff
+-rw-r--r--	root/root	usr/share/hunspell/en_US.dic
+-rw-r--r--	root/root	usr/share/hunspell/en_ZA.aff
+-rw-r--r--	root/root	usr/share/hunspell/en_ZA.dic
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/hunspell-en/
+-rw-r--r--	root/root	usr/share/licenses/hunspell-en/LICENCE-AU.txt
+-rw-r--r--	root/root	usr/share/licenses/hunspell-en/LICENCE-CA.txt
+-rw-r--r--	root/root	usr/share/licenses/hunspell-en/LICENCE-GB.txt
+-rw-r--r--	root/root	usr/share/licenses/hunspell-en/LICENCE-US.txt
+-rw-r--r--	root/root	usr/share/licenses/hunspell-en/LICENCE-ZA.txt
+drwxr-xr-x	root/root	usr/share/myspell/
+drwxr-xr-x	root/root	usr/share/myspell/dicts/
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_AU.aff -> /usr/share/hunspell/en_AU.aff
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_AU.dic -> /usr/share/hunspell/en_AU.dic
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_CA.aff -> /usr/share/hunspell/en_CA.aff
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_CA.dic -> /usr/share/hunspell/en_CA.dic
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_GB.aff -> /usr/share/hunspell/en_GB.aff
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_GB.dic -> /usr/share/hunspell/en_GB.dic
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_US.aff -> /usr/share/hunspell/en_US.aff
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_US.dic -> /usr/share/hunspell/en_US.dic
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_ZA.aff -> /usr/share/hunspell/en_ZA.aff
+lrwxrwxrwx	root/root	usr/share/myspell/dicts/en_ZA.dic -> /usr/share/hunspell/en_ZA.dic
