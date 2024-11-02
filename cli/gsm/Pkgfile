@@ -1,10 +1,11 @@
 description="GSM 06.10 lossy speech compression library"
 url="http://www.quut.com/gsm/"
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
 name=gsm
 version=1.0.22
+release=2
 
 source=(http://www.quut.com/$name/$name-$version.tar.gz
         gsm.patch)
