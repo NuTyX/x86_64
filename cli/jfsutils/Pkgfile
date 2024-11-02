@@ -2,11 +2,13 @@ description="Administration and debugging tools for the jfs file system."
 url="http://jfs.sourgeforge.net"
 
 maintainer="shaggy at kernel dot org"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
+
+makedepends=(util-linux)
 
 name=jfsutils
 version=1.1.15
-release=2
+release=3
 
 source=(jfsutils-1.1.15-gcc10_fix-1.patch
 	http://jfs.sourceforge.net/project/pub/$name-$version.tar.gz)
