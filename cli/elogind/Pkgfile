@@ -1,11 +1,11 @@
 description="Standalone logind fork"
 url="https://github.com/elogind/elogind"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=elogind
 version=246.10
-release=2
+release=3
 
 PKGMK_GROUPS=(doc devel man)
 makedepends=(shadow dbus meson ninja eudev glib libseccomp)
