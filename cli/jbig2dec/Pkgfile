@@ -9,6 +9,7 @@ makedepends=(autoconf intltool libtool automake)
 depends=(libpng)
 name=jbig2dec
 version=0.20
+release=2
 source=(https://github.com/ArtifexSoftware/jbig2dec/releases/download/$version/$name-$version.tar.gz)
 
 prepare() {
