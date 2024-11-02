@@ -1,14 +1,14 @@
 description="A library to control A/V devices using the 1394ta AV/C commands."
 url="https://ieee1394.wiki.kernel.org/index.php/Main_Page"
 
-contributors="Fanch, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(libraw1394)
 
 name=libavc1394
 version=0.5.4
-release=3
+release=4
 
 source=(http://downloads.sourceforge.net/sourceforge/libavc1394/${name}-${version}.tar.gz)
 
