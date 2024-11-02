@@ -1,13 +1,13 @@
 description="Non-DNS IP-to-country resolver C library & utils."
 url="http://www.maxmind.com/app/c"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
-makedepends=(geoip-database)
+makedepends=(libtool autoconf geoip-database)
 
 name=geoip
 version=1.6.12
-release=2
+release=3
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/maxmind/${name}-api-c/archive/v${version}.tar.gz)
