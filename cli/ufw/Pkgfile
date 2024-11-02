@@ -3,12 +3,12 @@ url='https://launchpad.net/ufw'
 
 license='GPL3'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=ufw
 version=0.36.2
-release=2
+release=3
 
 makedepends=( python-setuptools)
 run=(iptables python)
