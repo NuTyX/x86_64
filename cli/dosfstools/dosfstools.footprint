@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/dosfsck -> fsck.fat
+lrwxrwxrwx	root/root	usr/bin/dosfslabel -> fatlabel
+-rwxr-xr-x	root/root	usr/bin/fatlabel
+-rwxr-xr-x	root/root	usr/bin/fsck.fat
+lrwxrwxrwx	root/root	usr/bin/fsck.msdos -> fsck.fat
+lrwxrwxrwx	root/root	usr/bin/fsck.vfat -> fsck.fat
+lrwxrwxrwx	root/root	usr/bin/mkdosfs -> mkfs.fat
+-rwxr-xr-x	root/root	usr/bin/mkfs.fat
+lrwxrwxrwx	root/root	usr/bin/mkfs.msdos -> mkfs.fat
+lrwxrwxrwx	root/root	usr/bin/mkfs.vfat -> mkfs.fat
+drwxr-xr-x	root/root	usr/share/

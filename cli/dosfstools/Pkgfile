@@ -1,11 +1,12 @@
 description="DOS filesystem utilities"
 url="https://github.com/dosfstools/dosfstools"
 
-contributors="Pierre B"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 name=dosfstools
 version=4.2
+release=2
 
 source=(https://github.com/dosfstools/dosfstools/releases/download/v$version/$name-$version.tar.gz)
 
