@@ -1,8 +1,8 @@
 description='EditorConfig core library'
 url='https://github.com/editorconfig/editorconfig-core-c'
 
-packager="Skythrew <mael.guerin@outlook.fr>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Skythrew"
 
 makedepends=(pcre2 cmake)
 run=()
@@ -10,6 +10,7 @@ set=()
 
 name=libeditorconfig
 version=0.12.6
+release=2
 
 source=(https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v$version.tar.gz)
 
