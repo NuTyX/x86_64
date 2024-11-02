@@ -1,11 +1,11 @@
 description="Charset analyser and converter."
 url="http://cihar.com/software/enca/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B, Fanch V"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Fanch,V,Tnut"
 
 name=enca
-release=2
 version=1.19
+release=3
 source=(http://dl.cihar.com/${name}/${name}-${version}.tar.xz)
 
 build() {
