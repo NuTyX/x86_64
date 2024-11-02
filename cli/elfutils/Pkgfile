@@ -9,6 +9,7 @@ makedepends=(libelf zlib bzip2 xz)
 
 name=elfutils
 version=0.191
+release=3
 
 source=(https://sourceware.org/elfutils/ftp/$version/elfutils-$version.tar.bz2 )
 
@@ -16,9 +17,12 @@ build() {
 cd $name-$version
 ./configure --prefix=/usr \
 --disable-debuginfod \
+--enable-libdebuginfod=dummy \
 --program-prefix="eu-"
+
 make
 make prefix=$PKG/usr install
+
 # Already present in libelf
 rm -r "${PKG}"/usr/include/elfutils/elf-knowledge.h
 rm -r "${PKG}"/usr/include/gelf.h
