@@ -1,13 +1,14 @@
 description="A free codec for free speech"
 url="http://www.speex.org/"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
 makedepends=(libogg)
 
 name=speex
 version=1.2.1
+release=2
 
 source=( http://downloads.us.xiph.org/releases/$name/$name-$version.tar.gz)
 
