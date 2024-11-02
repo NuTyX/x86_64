@@ -7,9 +7,14 @@ makedepends=(sgml-common)
 
 name=opensp
 version=1.5.2
-release=4
+release=5
 
-source=(http://downloads.sourceforge.net/openjade/OpenSP-$version.tar.gz)
+source=(http://downloads.sourceforge.net/openjade/OpenSP-$version.tar.gz
+        OpenSP-1.5.2-gcc14-1.patch)
+prepare() {
+cd OpenSP-$version
+patch -Np1 -i ../OpenSP-1.5.2-gcc14-1.patch
+}
 
 build(){
     cd OpenSP-$version
