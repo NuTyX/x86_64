@@ -8,6 +8,7 @@ makedepends=(doxygen)
 
 name=libdvdcss
 version=1.4.3
+release=2
 
 source=(http://download.videolan.org/libdvdcss/$version/libdvdcss-$version.tar.bz2)
 build() {
