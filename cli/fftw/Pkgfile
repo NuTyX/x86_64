@@ -1,11 +1,12 @@
 description="A library for computing the discrete Fourier transform (DFT)"
 url="http://www.fftw.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=fftw
 version=3.3.10
+release=2
 
 source=(http://www.fftw.org/$name-$version.tar.gz)
 
