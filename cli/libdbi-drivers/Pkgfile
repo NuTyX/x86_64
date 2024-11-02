@@ -1,8 +1,8 @@
 description="Database MySQL, PostgreSQL, and SQLite drivers for libdbi"
 url="http://libdbi-drivers.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(openjade libdbi
              mariadb postgresql sqlite)
@@ -11,6 +11,7 @@ set=()
 
 name=libdbi-drivers
 version=0.9.0
+release=2
 
 source=(https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
