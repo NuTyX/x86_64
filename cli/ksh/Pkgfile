@@ -1,14 +1,14 @@
 description="The Original AT&T Korn Shell"
 url='http://kornshell.org/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson ninja python)
 
 name=ksh
 version=2020.0.0
-release=3
+release=4
 
 source=(https://github.com/att/ast/releases/download/$version/$name-$version.tar.xz)
 
