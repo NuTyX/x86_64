@@ -6,6 +6,7 @@ packager="spiky <spiky@nutyx.org>"
 
 name=ffnvcodec-headers
 version=12.2.72.0
+release=2
 
 source=()
 
@@ -14,7 +15,7 @@ PKGMK_DEPENDS=(git make-ca expat)
 prepare() {
   git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git $name-$version
   cd $name-$version
-#  git checkout 315ad740ac77282c7cea67ba31f2e4b373132919
+  git checkout 157becbf51c8b813425572b75c06c370bd43d8fd
 }
 
 build() {
