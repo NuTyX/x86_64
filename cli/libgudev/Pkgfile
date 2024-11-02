@@ -8,6 +8,7 @@ makedepends=(meson ninja eudev glib gobject-introspection gtk-doc)
 
 name=libgudev
 version=238
+release=2
 
 source=(https://download.gnome.org/sources/libgudev/$version/libgudev-$version.tar.xz)
 
