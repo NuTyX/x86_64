@@ -1,13 +1,14 @@
 description='Alliance for Open Media video codec'
 url='https://aomedia.org/'
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors=""
 
 makedepends=(cmake ninja doxygen yasm)
 
 name=libaom
 version=3.4.0
+release=2
 
 source=(https://storage.googleapis.com/aom-releases/$name-$version.tar.gz)
 
