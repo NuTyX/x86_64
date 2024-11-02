@@ -1,9 +1,10 @@
 description="Minimalistic user-space library oriented to Netlink developers"
 url="http://www.netfilter.org/projects/libmnl/"
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=libmnl
 version=1.0.5
+release=2
 
 source=(
 http://www.netfilter.org/projects/$name/files/$name-$version.tar.bz2)
