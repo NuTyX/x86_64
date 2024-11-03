@@ -1,0 +1,32 @@
+description="Configuration tools for Linux networking"
+url="http://net-tools.sourceforge.net/"
+
+license="GPL2"
+
+packager="Spiky <spiky@nutyx.org>"
+contributors=""
+makedepends=(glibc bash gettext)
+name=net-tools
+version=2.10
+
+source=(https://downloads.sourceforge.net/project/net-tools/net-tools-$version.tar.xz)
+
+build() {
+
+cd $name-$version
+  export BINDIR='/usr/bin' SBINDIR='/usr/bin'
+  yes "" | make -j1
+
+make DESTDIR=$PKG install -j1
+
+ # the following is provided by yp-tools
+  rm $PKG/usr/bin/{nis,yp}domainname
+  rm $PKG/usr/share/man/man1/{nis,yp}domainname.1
+
+  # hostname is provided by inetutils
+  rm $PKG/usr/bin/{hostname,dnsdomainname,domainname}
+  rm -rf $PKG/usr/share/man/man1
+
+install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
+
+}
