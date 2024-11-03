@@ -1,9 +1,10 @@
 description="Interface for terminal emulators to record user sessions to utmp and wtmp files."
 url="ftp://ftp.altlinux.org/pub/people/ldv/utempter"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=libutempter
 version=1.2.1
+release=2
 
 source=(http://ftp.altlinux.org/pub/people/ldv/utempter/$name-$version.tar.gz)
 
