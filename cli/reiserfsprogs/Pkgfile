@@ -1,13 +1,13 @@
 description="Utilities for use with the Reiser file system."
 url="http://www.kernel.org/pub/linux/utils/fs/reiserfs/"
 
-packager="tnut <tnut@nutyx@org>"
+packager="spiky <spiky@nutyx.org>"
 
-makedepends=(e2fsprogs)
+makedepends=(libtool e2fsprogs)
 
 name=reiserfsprogs
 version=3.6.27
-release=3
+release=4
 
 source=(https://www.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/v${version}/$name-$version.tar.xz
         reiserfsprogs-3.6.27-loff_t.patch)
@@ -17,10 +17,15 @@ build() {
         cd $name-$version
 	patch -p1 -i ../reiserfsprogs-3.6.27-loff_t.patch
 	autoreconf -fiv
+
+        CFLAGS+=' -fgnu89-inline'
+
         ./configure --prefix=/usr \
                 --sbindir=/sbin
+
         make
         make DESTDIR=$PKG install
+
         ln -sf reiserfsck $PKG/sbin/fsck.reiserfs
         ln -sf mkreiserfs $PKG/sbin/mkfs.reiserfs
 
