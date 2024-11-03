@@ -5,8 +5,9 @@ contributors="Pierre,Tnut"
 
 name=npth
 version=1.7
+release=2
 
-source=(ftp://ftp.gnupg.org/gcrypt/$name/$name-$version.tar.bz2)
+source=(https://gnupg.org/ftp/gcrypt/$name/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
