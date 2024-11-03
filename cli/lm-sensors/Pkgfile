@@ -1,14 +1,15 @@
 description="Collection of user space tools for general SMBus access and hardware monitoring"
 url="http://dl.lm-sensors.org/lm-sensors/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(bison flex)
 run=(perl)
 
 name=lm-sensors
 version=3.6.0
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 
