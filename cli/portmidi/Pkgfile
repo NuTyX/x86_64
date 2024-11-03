@@ -7,9 +7,9 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(cmake glib alsa-lib)
 
 name=portmidi
-version=236
+version=2.0.4
 
-source=(https://github.com/mixxxdj/portmidi/archive/refs/tags/$version.tar.gz)
+source=(https://github.com/portmidi/portmidi/archive/v$version/$name-$version.tar.gz)
 
 build() {
 
@@ -18,9 +18,7 @@ build() {
            cd    build
 
 	cmake           -DCMAKE_INSTALL_PREFIX=/usr \
-			-DCMAKE_ARCHIVE_OUTPUT_DIRECTORY=Release \
-			-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=Release \
-			-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=Release \
+			-DCMAKE_BUILD_TYPE=none     \
                         -DBUILD_TESTING=OFF \
                         ..
 
