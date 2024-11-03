@@ -1,14 +1,14 @@
 description="A Perl Module for PC/SC SmartCard access"
 url="http://ludovic.rousseau.free.fr/softwares/pcsc-perl/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(pcsclite perl)
 
 name=perl-pcsc
 version=1.4.14
-release=3
+release=4
 
 source=(http://ludovic.rousseau.free.fr/softwares/pcsc-perl/pcsc-perl-$version.tar.bz2)
 
