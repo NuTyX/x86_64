@@ -1,10 +1,11 @@
 description='Utility for tracing a bitmap (input: PBM,PGM,PPM,BMP; output: EPS,PS,PDF,SVG,DXF,PGM,Gimppath,XFig)'
 url='http://potrace.sourceforge.net/'
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=potrace
 version=1.16
+release=2
 
 source=("http://potrace.sourceforge.net/download/$version/$name-$version.tar.gz")
 
