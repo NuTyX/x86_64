@@ -1,19 +1,22 @@
 description="An autonomous mail processor for filtering and sorting incoming mail"
 url="http://www.ring.gr.jp/archives/net/mail/procmail/"
-contributors="berlius, Greg"
-packager="tnut<tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 
 name=procmail
-version=3.22
-release=2
-source=(http://ftp.osuosl.org/pub/blfs/8.3/p/$name-$version.tar.gz)
+version=3.24
+source=(http://github.com/BuGlessRB/procmail/archive/refs/tags/v$version/$name-$version.tar.gz
+        procmail-3.24-consolidated_fixes-1.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../procmail-3.24-consolidated_fixes-1.patch
+}
 
 build () {
 
 	cd $name-$version
-
-	sed -i 's/getline/get_line/' src/*.[ch]
 
 	yes n | make BASENAME=$PKG/usr LOCKINGTEST="/tmp ." \
 	MANDIR=$PKG/usr/share/man install 
