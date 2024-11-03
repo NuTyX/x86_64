@@ -1,11 +1,12 @@
 description="A noise suppression lib based on recurrent neural network"
 url="https://gitlab.xiph.org/xiph/rnnoise"
 
-packager="tnut <tnut@nutyx.org"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=rnnoise
 version=0.4.1
+release=2
 
 makedepends=(autoconf automake m4 grep sed libtool)
 
