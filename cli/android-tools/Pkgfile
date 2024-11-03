@@ -1,14 +1,15 @@
 description='http://tools.android.com/'
 url='Android platform tools'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 run=()
 set=(android)
 
 name=android-tools
 version=r33.0.1
+release=2
 
 source=(http://dl-ssl.google.com/android/repository/platform-tools_${version}-linux.zip)
 
