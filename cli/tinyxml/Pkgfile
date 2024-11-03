@@ -1,12 +1,12 @@
 description="A simple, small, minimal, C++ XML parser"
 url="http://www.grinninglizard.com/tinyxml/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Greg,Tnut"
 
 name=tinyxml
 version=2.6.2
-release=2
+release=3
 
 source=(http://download.sourceforge.net/project/$name/$name/$version/${name}_${version//./_}.zip \
         entity.patch $name-use-stl.patch)
