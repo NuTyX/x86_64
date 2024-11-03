@@ -3,11 +3,12 @@ url='https://github.com/cisco/libsrtp'
 
 license="BSD-3-Clause"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=libsrtp
 version=2.6.0
+release=2
 
 makedepends=(python meson nss)
 
