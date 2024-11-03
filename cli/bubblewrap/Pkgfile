@@ -1,38 +1,33 @@
 description="Unprivileged sandboxing tool"
 url="https://github.com/projectatomic/bubblewrap"
 
+license="GPL2"
+
 contributors="Greg,Rems,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(autoconf automake m4 sed grep libxslt docbook-xsl libcap)
+makedepends=(meson libxslt docbook-xsl libcap)
 
 name=bubblewrap
-version=0.10.0
+version=0.11.0
 
 source=(https://github.com/projectatomic/bubblewrap/releases/download/v$version/bubblewrap-$version.tar.xz)
-
-prepare() {
-
-cd $name-$version
-
-NOCONFIGURE=1 ./autogen.sh
-}
 
 
 build() {
 
 cd $name-$version
-./configure --prefix=/usr \
---with-priv-mode=setuid
-make
 
-}
+mkdir build
+cd    build
 
+meson setup ..      \
+      --prefix=/usr \
+      --buildtype=release
 
-package() {
+ninja
+DESTDIR=$PKG ninja install	
 
-cd $name-$version 
-make DESTDIR=$PKG install
-	
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
 
