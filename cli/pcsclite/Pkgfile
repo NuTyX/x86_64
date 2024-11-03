@@ -6,42 +6,39 @@ license="BSD"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
-makedepends=(python eudev pkgconf flex polkit)
+makedepends=(python glib eudev pkgconf flex polkit)
 
 name=pcsclite
-version=2.1.0
-release=2
+version=2.3.0
 
 PKGMK_KEEP_SOURCES="No"
-source=(https://pcsclite.apdu.fr/files/pcsc-lite-$version.tar.bz2
+source=(https://pcsclite.apdu.fr/files/pcsc-lite-$version.tar.xz
 	pcscd)
 
 build() {
   cd pcsc-lite-$version
-  ./configure --prefix=/usr \
-              --sbindir=/usr/bin \
-              --enable-libudev \
-              --disable-libsystemd \
-              --sysconfdir=/etc \
-              --enable-ipcdir=/run/pcscd \
-              --enable-usbdropdir=/usr/lib/pcsc/drivers \
-              --enable-polkit \
-              --disable-documentation
-  make
-  make DESTDIR=$PKG install
+  mkdir build
+  cd    build
+
+  meson setup .. \
+        --prefix=/usr \
+        --buildtype=plain  \
+        -D polkit=true     \
+        -D usb=true        \
+        -D usbdropdir=/usr/lib/pcsc/drivers \
+        -D ipcdir=/run/pcscd
+
+  ninja
+  DESTDIR=$PKG ninja install
 
   install -d $PKG/usr/lib/pcsc/drivers
 
-  # Obsolets libs
-  rm $PKG/usr/lib/libpcsclite.la
-  rm $PKG/usr/lib/libpcscspy.la
-
-  install -D -m0644 COPYING \
-  $PKG/usr/share/licenses/$name/LICENSE
+  install -D -m0644 ../COPYING \
+  $PKG/usr/share/licenses/$name/COPYING
 
   # Service
   mkdir -p $PKG/etc/rc.d/init.d
-  install -m755 ../pcscd $PKG/etc/rc.d/init.d/pcscd
+  install -m755 $SRC/pcscd $PKG/etc/rc.d/init.d/pcscd
   for i in 0 1 2 3 4 5 6
   do
    mkdir -p $PKG/etc/rc.d/rc${i}.d
