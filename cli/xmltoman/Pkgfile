@@ -1,13 +1,13 @@
 description="Convert xml to man pages in groff format or html"
 url="http://xmltoman.sourceforge.net/"
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
 makedepends=(perl-xml-parser)
 
 name=xmltoman
 version=0.4
-release=3
+release=4
 
 source=(https://downloads.sourceforge.net/project/$name/$name/$name-$version.tar.gz/$name-$version.tar.gz
 )
