@@ -1,14 +1,14 @@
 description="File manager with VI key bindings."
 url="http://ranger.nongnu.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Alienus,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Alienus,Tnut"
 
 makedepends=(python python-setuptools)
 
 name=ranger
 version=1.9.3
-release=4
+release=5
 
 source=(https://ranger.github.io/$name-$version.tar.gz)
 
