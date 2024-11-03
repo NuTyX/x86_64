@@ -1,14 +1,14 @@
 description="File compressor using lzo lib"
 url="http://www.lzop.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(lzo)
 
 name=lzop
 version=1.04
-release=4
+release=5
 
 source=(http://www.lzop.org/download/${name}-${version}.tar.gz)
 
