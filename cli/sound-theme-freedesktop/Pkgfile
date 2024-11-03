@@ -1,13 +1,13 @@
 description="The Sound Theme Freedesktop package contains sound themes for the desktop."
 url="http://freedesktop.org/wiki/Specifications/sound-theme-spec"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Tnut"
 
 makedepends=(intltool perl-xml-parser)
 
 name=sound-theme-freedesktop
 version=0.8
-release=4
+release=5
 
 source=(http://people.freedesktop.org/~mccann/dist/$name-$version.tar.bz2)
