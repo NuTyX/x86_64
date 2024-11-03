@@ -1,29 +1,25 @@
 description="A distributed, collaborative, spam detection and filtering network"
 url="http://search.cpan.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(perl perl-net-dns perl-digest-sha1 perl-uri perl-digest-nilsimsa)
 
 name=razor
-version=2.85
-release=3
+version=2.86
 
 unset MAKEFLAGS
-source=(http://sourceforge.net/projects/razor/files/razor-agents/$version/razor-agents-$version.tar.bz2
-	$name-$version-cosmetic-pv-fix.patch
-	$name-$version-makefile-quoting-fix.patch )
+source=(http://cpan.metacpan.org/authors/id/T/TO/TODDR/Razor2-Client-Agent-$version.tar.gz)
 
 build() {
-cd razor-agents-$version
-
-patch -p1 -i $SRC/$name-$version-cosmetic-pv-fix.patch
-patch -p1 -i $SRC/$name-$version-makefile-quoting-fix.patch
+cd Razor2-Client-Agent-$version
 
 perl Makefile.PL INSTALLDIRS=vendor
+
 make
 make DESTDIR=$PKG install
+
 find $PKG \
          -name '*.bs' -or \
          -name '.packlist' -or \
