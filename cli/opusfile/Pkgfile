@@ -1,14 +1,14 @@
 description="Library for opening, seeking, and decoding .opus files"
 url="http://www.opus-codec.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B, Rems"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
 makedepends=(libogg openssl opus)
 
 name=opusfile
 version=0.12
-release=2
+release=3
 
 source=(http://downloads.xiph.org/releases/opus/$name-$version.tar.gz)
 
