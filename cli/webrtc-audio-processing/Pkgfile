@@ -1,14 +1,14 @@
 description="AudioProcessing library based on Google's implementation of WebRTC"
 url="https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rems"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Tnut"
 
-makedepends=(git)
+makedepends=(libtool autoconf git)
 
 name=webrtc-audio-processing
 version=0.3.1
-release=2
+release=3
 
 prepare () {
 git clone https://anongit.freedesktop.org/git/pulseaudio/webrtc-audio-processing $name
