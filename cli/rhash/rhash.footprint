@@ -1,0 +1,24 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/rhashrc
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/ed2k-link -> rhash
+lrwxrwxrwx	root/root	usr/bin/edonr256-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/edonr512-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/gost12-256-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/gost12-512-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/has160-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/magnet-link -> rhash
+-rwxr-xr-x	root/root	usr/bin/rhash
+lrwxrwxrwx	root/root	usr/bin/sfv-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/tiger-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/tth-hash -> rhash
+lrwxrwxrwx	root/root	usr/bin/whirlpool-hash -> rhash
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/librhash.so -> librhash.so.1
+lrwxrwxrwx	root/root	usr/lib/librhash.so.1 -> librhash.so.1.4.4
+-rwxr-xr-x	root/root	usr/lib/librhash.so.1.4.4
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/rhash/
+-rw-r--r--	root/root	usr/share/licenses/rhash/COPYING
