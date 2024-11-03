@@ -5,12 +5,14 @@ contributors="Greg,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
 name=xa
-version=2.3.14
+version=2.4.1
 
 source=(http://www.floodgap.com/retrotech/$name/dists/$name-$version.tar.gz)
 
 build(){
 cd ${name}-${version}
+sed -i 's/all: killxa/all:/' Makefile
+
 make
 make DESTDIR="${PKG}/usr" install
 }
