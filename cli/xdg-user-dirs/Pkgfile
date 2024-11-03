@@ -1,13 +1,14 @@
 description="Manage user directories like ~/Desktop and ~/Music"
 url="http://www.freedesktop.org/wiki/Software/xdg-user-dirs"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 maintainer="Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>"
 
 makedepends=(libxslt docbook-xsl)
 
 name=xdg-user-dirs
 version=0.18
+release=2
 
 PKGMK_LOCALES=()
 
