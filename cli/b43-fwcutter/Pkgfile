@@ -7,7 +7,7 @@ name=b43-fwcutter
 version=019
 release=3
 
-source=(http://bues.ch/b43/fwcutter/${name}-${version}.tar.bz2)
+source=(https://bues.ch/b43/fwcutter/${name}-${version}.tar.bz2)
 
 build() {
    cd $name-$version
