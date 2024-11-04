@@ -3,13 +3,14 @@ url="http://net-tools.sourceforge.net/"
 
 license="GPL2"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
 makedepends=(glibc bash gettext)
 name=net-tools
 version=2.10
 
-source=(https://downloads.sourceforge.net/project/net-tools/net-tools-$version.tar.xz)
+source=(https://downloads.sourceforge.net/project/$name/$name-$version.tar.xz)
 
 build() {
 
@@ -24,8 +25,9 @@ make DESTDIR=$PKG install -j1
   rm $PKG/usr/share/man/man1/{nis,yp}domainname.1
 
   # hostname is provided by inetutils
-  rm $PKG/usr/bin/{hostname,dnsdomainname,domainname}
+  rm $PKG/usr/bin/{hostname,dnsdomainname,domainname,ifconfig}
   rm -rf $PKG/usr/share/man/man1
+  rm     $PKG/usr/share/man/man8/ifconfig.8
 
 install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 
