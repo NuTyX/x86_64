@@ -1,17 +1,19 @@
 description="a cross-platform Integrated Development Environment (IDE)."
 url="https://www.codeblocks.org/"
 
-maintainer="The Code::Blocks Team"
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+license="GPL3"
 
-makedepends=(zip boost gamin hunspell wxgtk)
+maintainer="The Code::Blocks Team"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
+
+makedepends=(zip boost hunspell wxgtk)
 run=(desktop-file-utils gtk-update-icon-cache hicolor-icon-theme
      shared-mime-info)
 
 name=codeblocks
 version=20.03
-release=4
+release=5
 
 source=(https://downloads.sourceforge.net/codeblocks/$name-$version.tar.xz
         codeblocks-gcc11.patch
@@ -53,7 +55,7 @@ build () {
 cd $name-$version
 
 ./configure --prefix=/usr    \
-  --with-contrib-plugins=all \
+  --with-contrib-plugins=all,-FileManager \
   --with-wx-config=/usr/bin/wx-config
 
 sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
