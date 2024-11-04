@@ -4,7 +4,7 @@ url="http://www.gnome.org/"
 packager="Spiky <spiky@nutyx.org>"
 contributors="Jayce,Tnut"
 
-makedepends=(gtk3 itstool libgtop vala bind traceroute net-tool-cvs whois)
+makedepends=(gtk3 itstool libgtop vala bind traceroute net-tools whois)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache nmap)
 
 name=gnome-nettool
