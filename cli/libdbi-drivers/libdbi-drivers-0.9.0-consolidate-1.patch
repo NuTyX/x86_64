@@ -1,0 +1,92 @@
+diff -Naur a/acinclude.m4 b/acinclude.m4
+--- a/acinclude.m4	2011-02-20 00:02:39.000000000 +0100
++++ b/acinclude.m4	2024-11-05 09:48:16.886651846 +0100
+@@ -191,7 +191,7 @@
+ 		PGSQL_INCLUDE=-I$ac_pgsql_incdir
+ 	fi
+ 	if test "$ac_pgsql_libdir" = "no"; then
+-		PGSQL_LDFLAGS=`pg_config --libdir`
++		PGSQL_LDFLAGS=-L`pg_config --libdir`
+ 	else
+ 		PGSQL_LDFLAGS=-L$ac_pgsql_libdir
+ 	fi
+diff -Naur a/drivers/firebird/dbd_firebird.c b/drivers/firebird/dbd_firebird.c
+--- a/drivers/firebird/dbd_firebird.c	2013-01-09 22:20:07.000000000 +0100
++++ b/drivers/firebird/dbd_firebird.c	2024-11-05 09:42:54.279985607 +0100
+@@ -43,6 +43,7 @@
+ #include <string.h>
+ #include <time.h>
+ #include <ibase.h>
++#include <ctype>
+ 
+ #include "dbd_firebird.h"
+ #include "firebird_charsets.h"
+diff -Naur a/drivers/sqlite3/dbd_sqlite3.c b/drivers/sqlite3/dbd_sqlite3.c
+--- a/drivers/sqlite3/dbd_sqlite3.c	2013-01-23 00:29:13.000000000 +0100
++++ b/drivers/sqlite3/dbd_sqlite3.c	2024-11-05 09:47:21.523318589 +0100
+@@ -580,7 +580,8 @@
+   unsigned char *temp;
+   size_t len;
+ 
+-  if ((temp = malloc(from_length*2)) == NULL) {
++  /* allocate an extra byte for NULL and two for the quotes */
++  if ((temp = malloc(2*from_length+1+2)) == NULL) {
+     return 0;
+   }
+ 
+@@ -1451,7 +1452,7 @@
+ 		    break;
+ 		  }
+ 
+-		  word_lower[item-start+1];
++		  char word_lower[item-start+1];
+ 		  strncpy(word_lower,start,item-start);
+ 		  word_lower[item-start] = '\0';
+ 		  int i = 0;
+diff -Naur a/tests/cgreen/src/constraint.c b/tests/cgreen/src/constraint.c
+--- a/tests/cgreen/src/constraint.c	2010-07-19 23:49:44.000000000 +0200
++++ b/tests/cgreen/src/constraint.c	2024-11-05 10:36:00.436648221 +0100
+@@ -22,7 +22,7 @@
+ static double as_double(intptr_t box);
+ 
+ static int compare_using_matcher(Constraint *constraint, intptr_t actual);
+-static void test_with_matcher(Constraint *constraint, const char *function, const char* matcher_name, intptr_t actual, const char *test_file, int test_line, TestReporter *reporter);
++static void test_with_matcher(Constraint *constraint, const char *function, intptr_t matcher_function, const char *test_file, int test_line, TestReporter *reporter);
+ 
+ 
+ void destroy_constraint(void *abstract) {
+@@ -164,11 +164,11 @@
+ }
+ 
+ static int compare_using_matcher(Constraint *constraint, intptr_t actual) {
+-	int (*matches)(const void*) = constraint->expected;
+-    return matches(actual);
++    int (*matches)(const void*) = (int (*)(const void*)) constraint->expected;
++    return matches((const void *)actual);
+ }
+ 
+-static void test_with_matcher(Constraint *constraint, const char *function, const char* matcher_name, intptr_t matcher_function, const char *test_file, int test_line, TestReporter *reporter) {
++static void test_with_matcher(Constraint *constraint, const char *function, intptr_t matcher_function, const char *test_file, int test_line, TestReporter *reporter) {
+     (*reporter->assert_true)(
+             reporter,
+             test_file,
+@@ -176,7 +176,7 @@
+             (*constraint->compare)(constraint, matcher_function),
+             "Wanted parameter [%s] to match [%s] in function [%s]",
+             constraint->parameter,
+-            matcher_name,
++            constraint->name,
+             function);
+ }
+ 
+diff -Naur a/tests/cgreen/src/unit.c b/tests/cgreen/src/unit.c
+--- a/tests/cgreen/src/unit.c	2010-07-19 23:49:44.000000000 +0200
++++ b/tests/cgreen/src/unit.c	2024-11-05 10:41:24.526647788 +0100
+@@ -9,6 +9,7 @@
+ #include <stdarg.h>
+ #include <unistd.h>
+ #include <signal.h>
++#include <sys/wait.h>
+ 
+ enum {test_function, test_suite};
+ 

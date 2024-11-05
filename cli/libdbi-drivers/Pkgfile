@@ -1,24 +1,31 @@
 description="Database MySQL, PostgreSQL, and SQLite drivers for libdbi"
 url="http://libdbi-drivers.sourceforge.net/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(openjade libdbi
              mariadb postgresql sqlite)
-run=()
-set=()
 
 name=libdbi-drivers
 version=0.9.0
 release=2
 
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+source=($name-$version-consolidate-1.patch
+https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
+prepare() {
+  cd $name-$version
+  patch -Np1 -i ../$name-$version-consolidate-1.patch
+}
 build() {
-cd $name-$version
-./configure --prefix=/usr --localstatedir=/var \
---with-pgsql --with-sqlite3 --with-mysql --disable-docs
-make
-make DESTDIR=$PKG install
+  cd $name-$version
+  ./configure --prefix=/usr --localstatedir=/var \
+  --with-pgsql --with-sqlite3 --with-mysql --disable-docs
+
+  make
+
+  make DESTDIR=$PKG install
 }
