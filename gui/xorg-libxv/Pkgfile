@@ -6,6 +6,7 @@ contributors="Pierre,Greg,Tnut"
 name=xorg-libxv
 alias=(libXv)
 version=1.0.12
+release=2
 _name=libXv
 makedepends=(xorgproto xorg-libx11 xorg-libxext)
 source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
