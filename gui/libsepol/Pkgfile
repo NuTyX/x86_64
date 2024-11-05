@@ -5,6 +5,7 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(flex)
 name=libsepol
 version=3.5
+release=2
 
 source=(https://github.com/SELinuxProject/selinux/releases/download/$version/$name-$version.tar.gz)
 build() {
