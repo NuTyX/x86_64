@@ -3,19 +3,19 @@ url="https://lib.filezilla-project.org/"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Rémy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Rémy,Spiky"
 
 makedepends=(libidn2 gettext nettle gnutls libxcrypt)
 
 name=libfilezilla
-version=0.48.1
+version=0.49.0
 
-source=(
-        https://dl4.cdn.filezilla-project.org/libfilezilla/libfilezilla-0.48.1.tar.xz)
+source=(http://rsync.nutyx.org/sources/$name-$version.tar.xz)
+
 build() {
 
-cd $SRC/$name-$version
+cd $name-$version
 ./configure --prefix=/usr \
 --disable-static
 make
