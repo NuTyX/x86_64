@@ -1,16 +1,30 @@
 description="Small library for C application development"
 url="https://launchpad.net/libnih"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Alienus"
+packager="spiky <spiky@nutyx.org>"
+contributors="Alienus,Tnut"
 
 makedepends=(dbus)
 
 name=libnih
 version=1.0.3
-release=3
+release=4
 
-source=(http://launchpad.net/libnih/1.0/$version/+download/$name-$version.tar.gz)
+source=(http://launchpad.net/libnih/1.0/$version/+download/$name-$version.tar.gz
+        fix_gcc-10.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../fix_gcc-10.patch
+}
+
+build() {
+cd $name-$version
+
+./configure --prefix=/usr
+
+make
+make DESTDIR=$PKG install
 
 package() {
 # Obsolets libs
