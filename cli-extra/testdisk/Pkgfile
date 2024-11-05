@@ -3,13 +3,14 @@ url="http://www.cgsecurity.org/index.html?testdisk.html"
 
 license="GPL2"
 
-contributors="Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(util-linux ntfs-3g)
 
 name=testdisk
 version=7.2
+release=2
 
 source=(https://www.cgsecurity.org/$name-$version-WIP.tar.bz2)
 
