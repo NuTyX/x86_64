@@ -10,6 +10,7 @@ makedepends=(xcb-proto xorg-libxdmcp xorg-libxau libxslt)
 
 name=libxcb
 version=1.17.0
+release=2
 
 source=(https://xorg.freedesktop.org/archive/individual/lib/$name-$version.tar.xz)
 
