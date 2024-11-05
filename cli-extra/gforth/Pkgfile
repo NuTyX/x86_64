@@ -7,6 +7,8 @@ contributors=""
 name=gforth
 version=0.7.3
 
+makedepends=(diffutils)
+
 source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
