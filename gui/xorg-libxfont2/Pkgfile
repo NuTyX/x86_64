@@ -1,11 +1,12 @@
 description="libXfont2, library Xorg"
 url="http://xorg.freedesktop.org"
-packager="Spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
 
 name=xorg-libxfont2
 alias=(libXfont2)
 version=2.0.6
+release=2
 _name=libXfont2
 makedepends=(freetype xorgproto xorg-xtrans xorg-libfontenc)
 source=(http://ftp.x.org/pub/individual//lib/libXfont2-$version.tar.xz)
