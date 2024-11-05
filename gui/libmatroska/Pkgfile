@@ -1,14 +1,15 @@
 description="Matroska library"
 url="https://github.com/Matroska-Org/libmatroska"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fabienwang.Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fabienwang.,Tnut"
 
 makedepends=(cmake)
 run=(libebml)
 
 name=libmatroska
 version=1.7.1
+release=2
 
 source=(https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-$version.zip)
 
