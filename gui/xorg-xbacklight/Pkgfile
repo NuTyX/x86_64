@@ -1,12 +1,13 @@
 description="RandR-based backlight control application."
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 PKGMK_GROUPS=(doc man)
 url="http://xorg.freedesktop.org"
 
 name=xorg-xbacklight
 version=1.2.3
+release=2
 _name=${name/xorg-/}
 makedepends=(xcb-util)
 source=(http://ftp.x.org/pub/individual/app/${_name}-$version.tar.bz2)
