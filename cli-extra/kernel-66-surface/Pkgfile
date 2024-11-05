@@ -1,5 +1,6 @@
-url="https://www.kernel.org"
-description="The latest stable kernel version"
+# git source: https://github.com/linux-surface/linux-surface
+url="https://kernel.org"
+description="The latest kernel-66 LTS version"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
@@ -11,7 +12,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-66-surface
-version=6.6.58
+version=6.6.59
 
 alias=(linux-66-surface)
 INITRD="initrd-${name/*-/}"
