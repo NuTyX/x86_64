@@ -7,6 +7,7 @@ url="http://xorg.freedesktop.org"
 
 name=xorg-x11perf
 version=1.7.0
+release=2
 _name=${name/xorg-/}
 makedepends=(xorgproto xorg-libx11 xorg-libxmu xorg-libxrender)
 source=(http://ftp.x.org/pub/individual/test/${_name}-$version.tar.xz)
