@@ -1,10 +1,11 @@
 description="A POSIX-compliant line-oriented text editor"
 url="http://www.gnu.org/software/ed/ed.html"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=ed
 version=1.20.2
+release=2
 
 source=(https://ftp.gnu.org/gnu/ed/$name-$version.tar.lz)
 

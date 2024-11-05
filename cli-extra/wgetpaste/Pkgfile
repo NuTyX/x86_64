@@ -1,13 +1,14 @@
 description="A script that automates pasting to a number of pastebin services"
 url="http://wgetpaste.zlin.dk/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(wget)
 
 name=wgetpaste
 version=2.34
+release=2
 
 source=(https://github.com/zlin/$name/archive/refs/tags/$version.tar.gz
 		http://wgetpaste.zlin.dk/$name.example)

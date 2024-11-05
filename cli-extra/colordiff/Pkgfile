@@ -1,13 +1,14 @@
 description="diff wrapper produce the same output but with prety syntax."
 url='https://www.colordiff.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Hakerdefo,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Hakerdefo,Spiky"
 
 run=(perl)
 
 name=colordiff
 version=1.0.21
+release=2
 
 source=(https://www.colordiff.org/colordiff-$version.tar.gz)
 

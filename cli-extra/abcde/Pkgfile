@@ -1,15 +1,15 @@
 description="a better cd encoder"
 url="https://abcde.einval.com/"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors="Greg,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Remy,Spiky"
 
 makedepends=(bash cd-discid wget libvorbis cdparanoia cdrtools
              flac id3lib lame mp3gain)
 
 name=abcde
 version=2.9.3
-release=3
+release=4
 
 source=(https://abcde.einval.com/download/$name-$version.tar.gz)
 

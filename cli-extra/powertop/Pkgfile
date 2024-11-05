@@ -1,14 +1,15 @@
 description="an intel provided tool that enhances powersaving"
 url="https://bellard.org/tcc/tcc-doc.html#Invoke"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors="Cbarth,Tnut,Spiky"
+packager="tnut <tnut@nutyx.org>"
+contributors="Cbarth,Spiky"
 
 makedepends=(libnl ncurses pciutils gettext libtool autoconf automake autoconf-archive patch)
 
 name=powertop
 
 version=2.15
+release=2
 
 source=(https://github.com/fenrus75/$name/archive/refs/tags/v${version}.tar.gz)
 

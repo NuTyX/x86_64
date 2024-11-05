@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K28proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K28proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K28proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S32proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S32proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S32proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K28proftpd -> ../init.d/proftpd
+drwxr-xr-x	root/root	etc/rc.d/rcS.d/

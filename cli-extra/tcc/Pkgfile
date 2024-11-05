@@ -1,8 +1,11 @@
 description="a small but fast c compiler"
 url="https://bellard.org/tcc/tcc-doc.html#Invoke"
-packager="cbarth15"
+
+packager="tnut tnut@nutyx.org"
 contributors="cbarth15"
 
+
+makedepends=(texinfo)
 
 name=tcc
 

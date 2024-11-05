@@ -1,13 +1,14 @@
 description='Contains a very secure and very small FTP daemon.'
 url="https://security.appspot.com/"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(libnsl libcap)
 run=(pam shadow)
 
 name=vsftpd
 version=3.0.5
+release=2
 
 runyx_version=20201011
 

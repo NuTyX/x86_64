@@ -1,8 +1,8 @@
 description='A program to send ICMP echo probes to network hosts'
 url='https://fping.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=()
 run=()
@@ -10,6 +10,7 @@ set=()
 
 name=fping
 version=5.2
+release=2
 
 source=(https://fping.org/dist/$name-$version.tar.gz)
 

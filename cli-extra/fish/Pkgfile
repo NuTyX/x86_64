@@ -3,13 +3,14 @@ url="http://www.fishshell.com/"
 
 license="GPL2 LGPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Fanch,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Fanch,Remy,Spiky"
 
 makedepends=(cmake doxygen)
 
 name=fish
 version=3.7.1
+release=2
 
 source=(https://github.com/fish-shell/fish-shell/releases/download/$version/$name-$version.tar.xz)
 
