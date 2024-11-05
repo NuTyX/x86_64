@@ -1,11 +1,12 @@
 description="library libpciaccess for access generic PCI"
 url="http://xorg.freedesktop.org"
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Greg,Tnut"
  
 name=xorg-libpciaccess
 _name=libpciaccess
 version=0.17
+release=2
 
 source=(http://ftp.x.org/pub/individual//lib/${_name}-$version.tar.xz)
 
