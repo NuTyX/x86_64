@@ -1,13 +1,14 @@
 description="DCFL (DoD Computer Forensics Lab) dd replacement with hashing"
 url="http://dcfldd.sourceforge.net/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(autoconf automake)
 depends=(glibc)
 name=dcfldd
 version=1.9.1
+release=2
 
 source=(https://github.com/resurrecting-open-source-projects/$name/archive/refs/tags/v${version}.tar.gz)
 
