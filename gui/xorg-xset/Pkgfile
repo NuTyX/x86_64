@@ -7,6 +7,7 @@ url="http://xorg.freedesktop.org"
 
 name=xorg-xset
 version=1.2.5
+release=2
 _name=${name/xorg-/}
 makedepends=(xorg-libxmu)
 source=(http://ftp.x.org/pub/individual/app/${_name}-$version.tar.xz)
