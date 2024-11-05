@@ -1,11 +1,12 @@
 description="The Hdparm package contains an utility that is useful for controlling ATA/IDE"
 url="http://hdparm.sourceforge.net/"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut,Spiky"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 name=hdparm
 version=9.65
+release=2
 
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
