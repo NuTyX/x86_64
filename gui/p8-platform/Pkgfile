@@ -1,14 +1,14 @@
 description="Platform support library used by libCEC and binary add-ons for Kodi"
 url="https://github.com/Pulse-Eight/platform"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rems"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Tnut"
 
 makedepends=(cmake)
 
 name=p8-platform
 version=2.1.0.1
-release=2
+release=3
 
 source=(https://github.com/Pulse-Eight/platform/archive/$name-$version.tar.gz)
 
