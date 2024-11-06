@@ -1,14 +1,14 @@
 description="Vera font family derivate with additional characters"
 url="http://dejavu.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(xorg-libx11 xorg-fontconfig)
 
 name=dejavu-ttf
 version=2.37
-release=4
+release=5
 
 source=(http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-$version.tar.bz2)
 build() {
