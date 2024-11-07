@@ -1,11 +1,12 @@
 description="Library libXp, X print client library"
 url="http://xorg.freedesktop.org"
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
 
 name=xorg-libxp
 version=1.0.4
+release=2
 _name=libXp
 makedepends=(xorgproto printproto xorg-libx11 xorg-libxext)
 source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)

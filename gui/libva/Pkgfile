@@ -6,8 +6,9 @@ contributors="Greg,Remy,Tnut"
 license="MIT"
 name=libva
 version=2.22.0
+release=2
 
-makedepends=(libglade xorg-libdrm xorg-libxfixes)
+makedepends=(xorg-libdrm xorg-libxfixes)
 
 source=(https://github.com/intel/libva/archive/$version/$name-$version.tar.gz)
 

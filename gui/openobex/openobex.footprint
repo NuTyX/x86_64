@@ -1,0 +1,19 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/60-openobex.rules
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/OpenObex-1.7.2/
+-rw-r--r--	root/root	usr/lib/cmake/OpenObex-1.7.2/openobex-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/OpenObex-1.7.2/openobex-config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/OpenObex-1.7.2/openobex-target-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/OpenObex-1.7.2/openobex-target.cmake
+lrwxrwxrwx	root/root	usr/lib/libopenobex.so -> libopenobex.so.2
+-rwxr-xr-x	root/root	usr/lib/libopenobex.so.1.7.2
+lrwxrwxrwx	root/root	usr/lib/libopenobex.so.2 -> libopenobex.so.1.7.2
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/obex-check-device
+drwxr-xr-x	root/root	usr/share/

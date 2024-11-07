@@ -6,19 +6,12 @@ license="Apache"
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(cups xorg-fontconfig ghostscript lcms2 qpdf)
+makedepends=(cups xorg-fontconfig ghostscript lcms2 qpdf hicolor-icon-theme)
 
 name=libcupsfilters
-version=2.0.0
-release=3
+version=2.1.0
 
-source=(https://github.com/OpenPrinting/libcupsfilters/releases/download/$version/$name-$version.tar.xz
-        libcupsfilters-2.0.0-upstream_fixes-1.patch)
-
-prepare() {
-cd $name-$version
-patch -Np1 -i ../libcupsfilters-2.0.0-upstream_fixes-1.patch
-}
+source=(https://github.com/OpenPrinting/libcupsfilters/releases/download/$version/$name-$version.tar.xz)
 
 build() {
 cd $name-$version

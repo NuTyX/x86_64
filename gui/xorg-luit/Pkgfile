@@ -7,6 +7,7 @@ url="http://xorg.freedesktop.org"
 
 name=xorg-luit
 version=20230201
+release=2
 _name=${name/xorg-/}
 makedepends=(xorg-libfontenc)
 source=(https://invisible-mirror.net/archives/${_name}/${_name}-$version.tgz)

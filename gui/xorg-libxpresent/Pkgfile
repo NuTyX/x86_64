@@ -3,12 +3,13 @@ url="http://xorg.freedesktop.org"
 
 license="custom"
 
-packager="Tnut <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Greg,Tnut"
 
 name=xorg-libxpresent
 alias=(libXpresent)
 version=1.0.1
+release=2
 _name=libXpresent
 makedepends=(xorg-util-macros xorgproto xorg-libxfixes xorg-libxrandr)
 

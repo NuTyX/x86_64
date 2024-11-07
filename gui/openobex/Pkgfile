@@ -1,14 +1,14 @@
 description="Implements Object Exchange Protocol used for binary file transfers between devices."
 url="http://dev.zuckschwerdt.org/openobex/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(bluez libusb docbook-xsl)
 
 name=openobex
 version=1.7.2
-release=2
+release=3
 
 source=( http://downloads.sourceforge.net/$name/$name-$version-Source.tar.gz)
 build() {

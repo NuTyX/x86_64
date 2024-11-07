@@ -7,6 +7,7 @@ url="http://xorg.freedesktop.org"
 
 name=xorg-bdftopcf
 version=1.1.2
+release=2
 _name=${name/xorg-/}
 makedepends=(xorgproto xorg-libxfont)
 source=(https://xorg.freedesktop.org/archive/individual/util/bdftopcf-$version.tar.xz)

@@ -1,7 +1,7 @@
 description="Server access control program for X."
 url="https://xorg.freedesktop.org"
 
-packager="Tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
 set=(xorg)
@@ -10,6 +10,7 @@ PKGMK_GROUPS=(doc man)
 
 name=xorg-xhost
 version=1.0.9
+release=2
 
 _name=${name/xorg-/}
 

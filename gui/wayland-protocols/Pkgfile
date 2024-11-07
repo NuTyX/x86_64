@@ -9,6 +9,7 @@ makedepends=(pkgconf wayland)
 
 name=wayland-protocols
 version=1.38
+release=2
 
 source=(https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/$version/downloads/$name-$version.tar.xz)
 

@@ -1,0 +1,48 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/vde2/
+drwxr-xr-x	root/root	etc/vde2/libvdemgmt/
+-rw-r--r--	root/root	etc/vde2/libvdemgmt/asyncrecv.rc
+-rw-r--r--	root/root	etc/vde2/libvdemgmt/closemachine.rc
+-rw-r--r--	root/root	etc/vde2/libvdemgmt/openmachine.rc
+-rw-r--r--	root/root	etc/vde2/libvdemgmt/sendcmd.rc
+-rw-r--r--	root/root	etc/vde2/vdecmd
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dpipe
+-rwxr-xr-x	root/root	usr/bin/unixcmd
+-rwxr-xr-x	root/root	usr/bin/vde_autolink
+-rwxr-xr-x	root/root	usr/bin/vde_over_ns
+-rwxr-xr-x	root/root	usr/bin/vde_pcapplug
+-rwxr-xr-x	root/root	usr/bin/vde_plug
+-rwxr-xr-x	root/root	usr/bin/vde_plug2tap
+-rwxr-xr-x	root/root	usr/bin/vde_router
+-rwxr-xr-x	root/root	usr/bin/vde_switch
+lrwxrwxrwx	root/root	usr/bin/vdecmd -> unixcmd
+-rwxr-xr-x	root/root	usr/bin/vdeterm
+-rwxr-xr-x	root/root	usr/bin/wirefilter
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libvdehist.a
+lrwxrwxrwx	root/root	usr/lib/libvdehist.so -> libvdehist.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libvdehist.so.0 -> libvdehist.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libvdehist.so.0.0.1
+-rw-r--r--	root/root	usr/lib/libvdemgmt.a
+lrwxrwxrwx	root/root	usr/lib/libvdemgmt.so -> libvdemgmt.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libvdemgmt.so.0 -> libvdemgmt.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libvdemgmt.so.0.0.1
+-rw-r--r--	root/root	usr/lib/libvdeplug.a
+lrwxrwxrwx	root/root	usr/lib/libvdeplug.so -> libvdeplug.so.3.0.1
+lrwxrwxrwx	root/root	usr/lib/libvdeplug.so.3 -> libvdeplug.so.3.0.1
+-rwxr-xr-x	root/root	usr/lib/libvdeplug.so.3.0.1
+-rw-r--r--	root/root	usr/lib/libvdesnmp.a
+lrwxrwxrwx	root/root	usr/lib/libvdesnmp.so -> libvdesnmp.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libvdesnmp.so.0 -> libvdesnmp.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libvdesnmp.so.0.0.1
+drwxr-xr-x	root/root	usr/lib/vde2/
+-rw-r--r--	root/root	usr/lib/vde2/libvdetap.a
+-rwxr-xr-x	root/root	usr/lib/vde2/libvdetap.so
+drwxr-xr-x	root/root	usr/lib/vde2/plugins/
+-rwxr-xr-x	root/root	usr/lib/vde2/plugins/dump.so
+-rwxr-xr-x	root/root	usr/lib/vde2/plugins/iplog.so
+-rwxr-xr-x	root/root	usr/lib/vde2/plugins/pdump.so
+-rwxr-xr-x	root/root	usr/lib/vde2/vdetap
+drwxr-xr-x	root/root	usr/share/
