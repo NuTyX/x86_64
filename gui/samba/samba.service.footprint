@@ -1,0 +1,51 @@
+drwxr-xr-x	root/root	etc/init/
+drwxr-xr-x	root/root	etc/init/multi/
+lrwxrwxrwx	root/root	etc/init/multi/nmbd -> /lib/init/services/nmbd
+lrwxrwxrwx	root/root	etc/init/multi/smbd -> /lib/init/services/smbd
+lrwxrwxrwx	root/root	etc/init/multi/winbindd -> /lib/init/services/winbindd
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/samba
+-rwxr-xr--	root/root	etc/rc.d/init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K48samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K49winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K48samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K49winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K48samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K49winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S45samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S50winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S45samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S50winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S45samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S50winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K48samba -> ../init.d/samba
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K49winbindd -> ../init.d/winbindd
+drwxr-xr-x	root/root	etc/rc.d/rcS.d/
+drwxr-xr-x	root/root	lib/init/
+drwxr-xr-x	root/root	lib/init/services/
+drwxr-xr-x	root/root	lib/init/services/nmbd/
+drwxrwxr-x	root/root	lib/init/services/nmbd/log/
+-rwxrwxr-x	root/root	lib/init/services/nmbd/log/run
+-rwxrwxr-x	root/root	lib/init/services/nmbd/run
+drwxr-xr-x	root/root	lib/init/services/smbd/
+drwxrwxr-x	root/root	lib/init/services/smbd/log/
+-rwxrwxr-x	root/root	lib/init/services/smbd/log/run
+-rwxrwxr-x	root/root	lib/init/services/smbd/run
+drwxr-xr-x	root/root	lib/init/services/winbindd/
+-rwxrwxr-x	root/root	lib/init/services/winbindd/run
+drwxr-xr-x	root/root	lib/systemd/
+drwxr-xr-x	root/root	lib/systemd/system/
+-rw-r--r--	root/root	lib/systemd/system/nmbd.service
+-rw-r--r--	root/root	lib/systemd/system/samba.service
+-rw-r--r--	root/root	lib/systemd/system/smbd.service
+-rw-r--r--	root/root	lib/systemd/system/smbd.socket
+-rw-r--r--	root/root	lib/systemd/system/smbd@.service
+-rw-r--r--	root/root	lib/systemd/system/winbindd.service
