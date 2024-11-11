@@ -1,0 +1,17 @@
+description="FT Jam - an enhanced version of the Jam build tool"
+url="http://freetype.org/jam/"
+
+license="custom"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Chris Farrell,Spiky"
+
+name=ftjam
+version=2.5.3rc2
+release=3
+source=(https://www.mirrorservice.org/sites/download.salixos.org/i486/14.0/source/d/ftjam/$name-$version.tar.bz2
+        $name-$version-consolidate-1.patch)
+prepare() {
+  cd $name-$version
+  patch -Np1 -i ../$name-$version-consolidate-1.patch
+}

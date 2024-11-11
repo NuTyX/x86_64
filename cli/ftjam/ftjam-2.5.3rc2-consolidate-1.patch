@@ -1,0 +1,11 @@
+diff -Naur a/jam.h b/jam.h
+--- a/jam.h	2007-05-13 20:58:24.000000000 +0000
++++ b/jam.h	2024-11-11 10:32:24.866235316 +0000
+@@ -380,6 +380,7 @@
+ # include <ctype.h>
+ # include <signal.h>
+ # include <string.h>
++# include <unistd.h>
+ # include <time.h>
+ 
+ # ifndef OS_QNX
