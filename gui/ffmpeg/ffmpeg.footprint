@@ -1,0 +1,66 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ffmpeg
+-rwxr-xr-x	root/root	usr/bin/ffplay
+-rwxr-xr-x	root/root	usr/bin/ffprobe
+-rwxr-xr-x	root/root	usr/bin/qt-faststart
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.61.3.100
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so.61 -> libavcodec.so.61.3.100
+-rwxr-xr-x	root/root	usr/lib/libavcodec.so.61.3.100
+lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.61.1.100
+lrwxrwxrwx	root/root	usr/lib/libavdevice.so.61 -> libavdevice.so.61.1.100
+-rwxr-xr-x	root/root	usr/lib/libavdevice.so.61.1.100
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.10.1.100
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so.10 -> libavfilter.so.10.1.100
+-rwxr-xr-x	root/root	usr/lib/libavfilter.so.10.1.100
+lrwxrwxrwx	root/root	usr/lib/libavformat.so -> libavformat.so.61.1.100
+lrwxrwxrwx	root/root	usr/lib/libavformat.so.61 -> libavformat.so.61.1.100
+-rwxr-xr-x	root/root	usr/lib/libavformat.so.61.1.100
+lrwxrwxrwx	root/root	usr/lib/libavutil.so -> libavutil.so.59.8.100
+lrwxrwxrwx	root/root	usr/lib/libavutil.so.59 -> libavutil.so.59.8.100
+-rwxr-xr-x	root/root	usr/lib/libavutil.so.59.8.100
+lrwxrwxrwx	root/root	usr/lib/libpostproc.so -> libpostproc.so.58.1.100
+lrwxrwxrwx	root/root	usr/lib/libpostproc.so.58 -> libpostproc.so.58.1.100
+-rwxr-xr-x	root/root	usr/lib/libpostproc.so.58.1.100
+lrwxrwxrwx	root/root	usr/lib/libswresample.so -> libswresample.so.5.1.100
+lrwxrwxrwx	root/root	usr/lib/libswresample.so.5 -> libswresample.so.5.1.100
+-rwxr-xr-x	root/root	usr/lib/libswresample.so.5.1.100
+lrwxrwxrwx	root/root	usr/lib/libswscale.so -> libswscale.so.8.1.100
+lrwxrwxrwx	root/root	usr/lib/libswscale.so.8 -> libswscale.so.8.1.100
+-rwxr-xr-x	root/root	usr/lib/libswscale.so.8.1.100
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/ffmpeg/
+drwxr-xr-x	root/root	usr/share/ffmpeg/examples/
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/Makefile
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/README
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/avio_http_serve_files.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/avio_list_dir.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/avio_read_callback.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/decode_audio.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/decode_filter_audio.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/decode_filter_video.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/decode_video.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/demux_decode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/encode_audio.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/encode_video.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/extract_mvs.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/filter_audio.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/hw_decode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/mux.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/qsv_decode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/qsv_transcode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/remux.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/resample_audio.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/scale_video.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/show_metadata.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/transcode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/transcode_aac.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/vaapi_encode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/examples/vaapi_transcode.c
+-rw-r--r--	root/root	usr/share/ffmpeg/ffprobe.xsd
+-rw-r--r--	root/root	usr/share/ffmpeg/libvpx-1080p.ffpreset
+-rw-r--r--	root/root	usr/share/ffmpeg/libvpx-1080p50_60.ffpreset
+-rw-r--r--	root/root	usr/share/ffmpeg/libvpx-360p.ffpreset
+-rw-r--r--	root/root	usr/share/ffmpeg/libvpx-720p.ffpreset
+-rw-r--r--	root/root	usr/share/ffmpeg/libvpx-720p50_60.ffpreset
