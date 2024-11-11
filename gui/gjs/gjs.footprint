@@ -1,0 +1,40 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/gjs -> gjs-console
+-rwxr-xr-x	root/root	usr/bin/gjs-console
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gjs/
+drwxr-xr-x	root/root	usr/lib/gjs/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/gjs/girepository-1.0/GjsPrivate-1.0.typelib
+lrwxrwxrwx	root/root	usr/lib/libgjs.so -> libgjs.so.0
+lrwxrwxrwx	root/root	usr/lib/libgjs.so.0 -> libgjs.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libgjs.so.0.0.0
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/installed-tests/
+drwxr-xr-x	root/root	usr/libexec/installed-tests/gjs/
+-rw-r--r--	root/root	usr/libexec/installed-tests/gjs/GIMarshallingTests-1.0.typelib
+-rw-r--r--	root/root	usr/libexec/installed-tests/gjs/Regress-1.0.typelib
+-rw-r--r--	root/root	usr/libexec/installed-tests/gjs/RegressUnix-1.0.typelib
+-rw-r--r--	root/root	usr/libexec/installed-tests/gjs/Utility-1.0.typelib
+-rw-r--r--	root/root	usr/libexec/installed-tests/gjs/WarnLib-1.0.typelib
+-rwxr-xr-x	root/root	usr/libexec/installed-tests/gjs/libgimarshallingtests.so
+-rwxr-xr-x	root/root	usr/libexec/installed-tests/gjs/libregress.so
+-rwxr-xr-x	root/root	usr/libexec/installed-tests/gjs/libutility.so
+-rwxr-xr-x	root/root	usr/libexec/installed-tests/gjs/libwarnlib.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gjs-1.0/
+drwxr-xr-x	root/root	usr/share/gjs-1.0/lsan/
+-rw-r--r--	root/root	usr/share/gjs-1.0/lsan/lsan.supp
+drwxr-xr-x	root/root	usr/share/gjs-1.0/valgrind/
+-rw-r--r--	root/root	usr/share/gjs-1.0/valgrind/gjs.supp
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/gjs/
+-rw-r--r--	root/root	usr/share/licenses/gjs/BSD-3-Clause.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/CC0-1.0.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/GPL-2.0-or-later.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/GPL-3.0-or-later.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/LGPL-2.0-or-later.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/LGPL-2.1-or-later.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/MIT.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/MPL-1.1.txt
+-rw-r--r--	root/root	usr/share/licenses/gjs/MPL-2.0.txt
