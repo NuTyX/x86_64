@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libnvidia-egl-wayland.so -> libnvidia-egl-wayland.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-egl-wayland.so.1 -> libnvidia-egl-wayland.so.1.1.16
+-rwxr-xr-x	root/root	usr/lib/libnvidia-egl-wayland.so.1.1.16
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/egl/
+drwxr-xr-x	root/root	usr/share/egl/egl_external_platform.d/
+-rw-r--r--	root/root	usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/egl-wayland/
+-rw-r--r--	root/root	usr/share/licenses/egl-wayland/COPYING
+drwxr-xr-x	root/root	usr/share/wayland-eglstream/
+-rw-r--r--	root/root	usr/share/wayland-eglstream/wayland-drm.xml
+-rw-r--r--	root/root	usr/share/wayland-eglstream/wayland-eglstream-controller.xml
+-rw-r--r--	root/root	usr/share/wayland-eglstream/wayland-eglstream.xml

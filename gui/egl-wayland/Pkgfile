@@ -4,7 +4,7 @@ url='https://github.com/NVIDIA/egl-wayland'
 packager="spiky <spiky@nutyx.org>"
 contributors="Llamatron,2112"
 
-makedepends=(meson xorg-libdrm.devel wayland.devel libglvnd.devel eglexternalplatform wayland-protocols)
+makedepends=(meson xorg-libdrm wayland.devel libglvnd eglexternalplatform wayland-protocols)
 run=(eglexternalplatform wayland)
 set=()
 
