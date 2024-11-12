@@ -1,13 +1,13 @@
 description='A cross-platform application and UI framework, QtConnectivity files'
 url='http://qt-project.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(qt6-declarative bluez cmake)
 
 name=qt6-connectivity
-version=6.7.3
+version=6.8.0
 
 _name=${name/6-/}-everywhere-src
 
