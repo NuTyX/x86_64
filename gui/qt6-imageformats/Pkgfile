@@ -1,10 +1,13 @@
 description='Plugins for additional image formats: TIFF, MNG, TGA, WBMP'
 url='https://www.qt.io/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+license="GPL3 LGPL3 FDL Custom"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
 name=qt6-imageformats
-version=6.7.3
+version=6.8.0
 
 makedepends=(cmake ninja qt6-base
              jasper libmng libwebp )
