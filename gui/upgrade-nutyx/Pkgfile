@@ -5,8 +5,9 @@ packager="Tnut <tnut@nutyx.org>"
 contributors=""
 
 name=upgrade-nutyx
-version="$(date +%Y%m%d)"
+version=20240207
 release=2
+
 _notifier="cards-upgrade-notifier"
 
 makedepends=(gtk3)
