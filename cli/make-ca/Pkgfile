@@ -8,7 +8,7 @@ run=(gawk nss p11-kit)
 
 name=make-ca
 version=1.14
-release=2
+release=3
 
 set=(devel)
 
@@ -21,4 +21,7 @@ install -m644 certdata.txt $PKG/etc/ssl/certdata.txt
 
 cd $name-$version
 make DESTDIR=$PKG install
+
+# Generate all the certificates a first time
+$PKG/usr/sbin/make-ca -r -D $PKG
 }
