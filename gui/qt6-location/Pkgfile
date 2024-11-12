@@ -1,13 +1,15 @@
 description='A cross-platform application and UI framework, QtLocation files'
 url='http://qt-project.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+license="GPL3 LGPL3 FDL Custom"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(icu qt6-base qt6-declarative qt6-tools qt6-positioning)
 
 name=qt6-location
-version=6.7.3
+version=6.8.0
 
 _name=${name/6-/}-everywhere-src
 
