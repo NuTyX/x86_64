@@ -3,11 +3,11 @@ url='https://www.qt.io/'
 
 license="FDL, GPL3, LGPL3, custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=qt6-webengine
-version=6.7.3
+version=6.8.0
 
 makedepends=(cmake ninja qt6-base qt6-declarative qt6-positioning qt6-webchannel
              qt6-tools qt6-websockets python-html5lib gzip icu
@@ -20,16 +20,10 @@ makedepends=(cmake ninja qt6-base qt6-declarative qt6-positioning qt6-webchannel
 
 _name=${name/6-/}-everywhere-src
 
-source=(ninja.patch ninja-1.12.patch
-        https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/${_name}-$version.tar.xz
-        qtwebengine-6.7.3-ffmpeg7_fixes-1.patch)
-
+source=(https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/${_name}-$version.tar.xz)
 
 prepare() {
 cd ${_name}-$version
-
-patch -Np1 -i ../ninja-1.12.patch
-patch -Np1 -d src/3rdparty/chromium < ../qtwebengine-6.7.3-ffmpeg7_fixes-1.patch
 
 sed -e '189 s/=/& false/' \
     -e '190 d'            \
@@ -41,6 +35,7 @@ export NINJAJOBS=8
 
  cmake -D CMAKE_MESSAGE_LOG_LEVEL=STATUS       \
  -D QT_FEATURE_webengine_system_icu=ON         \
+ -D QT_FEATURE_webengine_system_ffmpeg=ON      \
  -D QT_FEATURE_webengine_system_libevent=ON    \
  -D QT_FEATURE_webengine_proprietary_codecs=ON \
  -D QT_FEATURE_webengine_webrtc_pipewire=ON    \
