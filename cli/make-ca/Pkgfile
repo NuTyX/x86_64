@@ -8,7 +8,7 @@ run=(gawk nss p11-kit)
 
 name=make-ca
 version=1.14
-release=3
+release=4
 
 set=(devel)
 
@@ -24,4 +24,7 @@ make DESTDIR=$PKG install
 
 # Generate all the certificates a first time
 $PKG/usr/sbin/make-ca -r -D $PKG
+
+# And refresh it .. don't ask me
+$PKG/usr/sbin/make-ca -g -D $PKG
 }
