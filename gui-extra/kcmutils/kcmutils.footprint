@@ -1,0 +1,59 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/kcmshell6
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/KF6KCMUtils/
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsMacros.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsToolingTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/KF6KCMUtilsToolingTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/kcmutilsgeneratemoduledata.cpp.in
+-rw-r--r--	root/root	usr/lib/cmake/KF6KCMUtils/kcmutilsgeneratemoduledata.h.in
+lrwxrwxrwx	root/root	usr/lib/libKF6KCMUtils.so -> libKF6KCMUtils.so.6
+lrwxrwxrwx	root/root	usr/lib/libKF6KCMUtils.so.6 -> libKF6KCMUtils.so.6.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KCMUtils.so.6.8.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KCMUtilsCore.so -> libKF6KCMUtilsCore.so.6
+lrwxrwxrwx	root/root	usr/lib/libKF6KCMUtilsCore.so.6 -> libKF6KCMUtilsCore.so.6.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KCMUtilsCore.so.6.8.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KCMUtilsQuick.so -> libKF6KCMUtilsQuick.so.6
+lrwxrwxrwx	root/root	usr/lib/libKF6KCMUtilsQuick.so.6 -> libKF6KCMUtilsQuick.so.6.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KCMUtilsQuick.so.6.8.0
+drwxr-xr-x	root/root	usr/lib/qt6/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kcmutils/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/AbstractKCM.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/ContextualHelpButton.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/GridDelegate.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/GridView.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/GridViewKCM.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/PluginDelegate.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/PluginSelector.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/ScrollView.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/ScrollViewKCM.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/SettingHighlighter.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/SettingStateBinding.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/SimpleKCM.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/kcmutilsqmlplugin.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kcmutils/libkcmutilsqmlplugin.so
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/AboutPlugin.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/GridDelegateMenu.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/GridViewInternal.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/kcmutilsprivateqmlplugin.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/libkcmutilsprivateqmlplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/private/qmldir
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kcmutils/qmldir
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/kf6/
+-rwxr-xr-x	root/root	usr/libexec/kf6/kcmdesktopfilegenerator
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/qlogging-categories6/
+-rw-r--r--	root/root	usr/share/qlogging-categories6/kcmutils.categories
