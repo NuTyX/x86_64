@@ -3,13 +3,13 @@ url='https://kde.org/plasma-desktop/'
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6)
 
 name=xdg-desktop-portal-kde
-version=6.1.4
+version=6.2.3
 
 makedepends=(libxkbcommon xdg-desktop-portal wayland qt6-base qt6-declarative
              extra-cmake-modules kconfig kcoreaddons kglobalaccel ki18n
