@@ -3,13 +3,13 @@ url="https://www.kde.org/"
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6)
 
 name=kwayland-integration
-version=6.1.4
+version=6.2.3
 
 makedepends=(qtbase qtwayland extra-cmake-modules wayland-protocols
              kf5-wayland  kf5-windowsystem plasma-wayland-protocols)
