@@ -3,11 +3,11 @@ url="https://www.kde.org/"
 
 license="LGPL-2.0-only,LGPL-3.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
 
 name=attica
-version=6.6.0
+version=6.8.0
 makedepends=(extra-cmake-modules qt6-base)
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
