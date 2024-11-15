@@ -3,14 +3,14 @@ url='https://www.kde.org/plasma-desktop/'
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6)
 
 
 name=kwayland
-version=6.2.0
+version=6.2.3
 
 makedepends=(wayland qt6-base qt6-tools qt6-wayland extra-cmake-modules
              plasma-wayland-protocols wayland-protocols)
