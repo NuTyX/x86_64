@@ -1,0 +1,40 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/KPipeWire/
+-rw-r--r--	root/root	usr/lib/cmake/KPipeWire/KPipeWireConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KPipeWire/KPipeWireConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KPipeWire/KPipeWireTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KPipeWire/KPipeWireTargets.cmake
+lrwxrwxrwx	root/root	usr/lib/libKPipeWire.so -> libKPipeWire.so.6
+lrwxrwxrwx	root/root	usr/lib/libKPipeWire.so.6 -> libKPipeWire.so.6.2.3
+-rwxr-xr-x	root/root	usr/lib/libKPipeWire.so.6.2.3
+lrwxrwxrwx	root/root	usr/lib/libKPipeWireDmaBuf.so -> libKPipeWireDmaBuf.so.6
+lrwxrwxrwx	root/root	usr/lib/libKPipeWireDmaBuf.so.6 -> libKPipeWireDmaBuf.so.6.2.3
+-rwxr-xr-x	root/root	usr/lib/libKPipeWireDmaBuf.so.6.2.3
+lrwxrwxrwx	root/root	usr/lib/libKPipeWireRecord.so -> libKPipeWireRecord.so.6
+lrwxrwxrwx	root/root	usr/lib/libKPipeWireRecord.so.6 -> libKPipeWireRecord.so.6.2.3
+-rwxr-xr-x	root/root	usr/lib/libKPipeWireRecord.so.6.2.3
+drwxr-xr-x	root/root	usr/lib/qt6/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/pipewire/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/KPipeWireDeclarative.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/pipewire/libKPipeWireDeclarative.so
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/pipewire/monitor/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/monitor/KPipeWireMonitorDeclarative.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/monitor/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/pipewire/monitor/libKPipeWireMonitorDeclarative.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/monitor/qmldir
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/qmldir
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/pipewire/record/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/record/KPipeWireRecordDeclarative.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/record/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/pipewire/record/libKPipeWireRecordDeclarative.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/pipewire/record/qmldir
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/qlogging-categories6/
+-rw-r--r--	root/root	usr/share/qlogging-categories6/kpipewire.categories
+-rw-r--r--	root/root	usr/share/qlogging-categories6/kpipewirerecord.categories
