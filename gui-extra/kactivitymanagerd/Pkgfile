@@ -3,15 +3,14 @@ url='https://www.kde.org/plasma-desktop/'
 
 license="GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6)
 
 
 name=kactivitymanagerd
-version=6.1.4
-release=2
+version=6.2.3
 
 makedepends=(boost qt6-base extra-cmake-modules
              kconfig kcoreaddons kcrash kglobalaccel ki18n kio kservice
