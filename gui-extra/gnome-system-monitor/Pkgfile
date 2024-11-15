@@ -3,8 +3,8 @@ url="http://library.gnome.org/users/gnome-system-monitor/"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut,Jayce,Remy,Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Remy,Fanch,Spiky"
 
 makedepends=(meson adwaita-icon-theme itstool gtkmm4
              libgtop libwnck librsvg gnome-icon-theme)
@@ -13,8 +13,8 @@ run=(gsettings-desktop-schemas desktop-file-utils libhandy libadwaita)
 set=(gnome)
 
 name=gnome-system-monitor
-version=46.0
-release=3
+version=47.0
+release=1
 
 source=(http://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
