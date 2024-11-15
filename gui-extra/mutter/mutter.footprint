@@ -1,0 +1,56 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/61-mutter.rules
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mutter
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libmutter-15.so -> libmutter-15.so.0
+lrwxrwxrwx	root/root	usr/lib/libmutter-15.so.0 -> libmutter-15.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libmutter-15.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/mutter-15/
+-rw-r--r--	root/root	usr/lib/mutter-15/Clutter-15.gir
+-rw-r--r--	root/root	usr/lib/mutter-15/Clutter-15.typelib
+-rw-r--r--	root/root	usr/lib/mutter-15/Cogl-15.gir
+-rw-r--r--	root/root	usr/lib/mutter-15/Cogl-15.typelib
+-rw-r--r--	root/root	usr/lib/mutter-15/CoglPango-15.gir
+-rw-r--r--	root/root	usr/lib/mutter-15/CoglPango-15.typelib
+-rw-r--r--	root/root	usr/lib/mutter-15/Meta-15.gir
+-rw-r--r--	root/root	usr/lib/mutter-15/Meta-15.typelib
+-rw-r--r--	root/root	usr/lib/mutter-15/Mtk-15.gir
+-rw-r--r--	root/root	usr/lib/mutter-15/Mtk-15.typelib
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-clutter-15.so -> libmutter-clutter-15.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-clutter-15.so.0 -> libmutter-clutter-15.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-15/libmutter-clutter-15.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-cogl-15.so -> libmutter-cogl-15.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-cogl-15.so.0 -> libmutter-cogl-15.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-15/libmutter-cogl-15.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-cogl-pango-15.so -> libmutter-cogl-pango-15.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-cogl-pango-15.so.0 -> libmutter-cogl-pango-15.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-15/libmutter-cogl-pango-15.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-mtk-15.so -> libmutter-mtk-15.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-mtk-15.so.0 -> libmutter-mtk-15.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-15/libmutter-mtk-15.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/mutter-15/plugins/
+-rwxr-xr-x	root/root	usr/lib/mutter-15/plugins/libdefault.so
+drwxr-xr-x	root/root	usr/libexec/
+-rwxr-xr-x	root/root	usr/libexec/mutter-restart-helper
+-rwxr-xr-x	root/root	usr/libexec/mutter-x11-frames
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/GConf/
+drwxr-xr-x	root/root	usr/share/GConf/gsettings/
+-rw-r--r--	root/root	usr/share/GConf/gsettings/mutter-schemas.convert
+drwxr-xr-x	root/root	usr/share/glib-2.0/
+drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
+-rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.mutter.gschema.xml
+-rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.mutter.wayland.gschema.xml
+drwxr-xr-x	root/root	usr/share/gnome-control-center/
+drwxr-xr-x	root/root	usr/share/gnome-control-center/keybindings/
+-rw-r--r--	root/root	usr/share/gnome-control-center/keybindings/50-mutter-navigation.xml
+-rw-r--r--	root/root	usr/share/gnome-control-center/keybindings/50-mutter-system.xml
+-rw-r--r--	root/root	usr/share/gnome-control-center/keybindings/50-mutter-wayland.xml
+-rw-r--r--	root/root	usr/share/gnome-control-center/keybindings/50-mutter-windows.xml
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/mutter/
+-rw-r--r--	root/root	usr/share/licenses/mutter/COPYING
