@@ -1,0 +1,39 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/kscreen-doctor
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/KF6Screen/
+-rw-r--r--	root/root	usr/lib/cmake/KF6Screen/KF6ScreenConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6Screen/KF6ScreenConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6Screen/KF6ScreenTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6Screen/KF6ScreenTargets.cmake
+lrwxrwxrwx	root/root	usr/lib/libKF6Screen.so -> libKF6Screen.so.8
+-rwxr-xr-x	root/root	usr/lib/libKF6Screen.so.6.2.3
+lrwxrwxrwx	root/root	usr/lib/libKF6Screen.so.8 -> libKF6Screen.so.6.2.3
+lrwxrwxrwx	root/root	usr/lib/libKF6ScreenDpms.so -> libKF6ScreenDpms.so.8
+-rwxr-xr-x	root/root	usr/lib/libKF6ScreenDpms.so.6.2.3
+lrwxrwxrwx	root/root	usr/lib/libKF6ScreenDpms.so.8 -> libKF6ScreenDpms.so.6.2.3
+drwxr-xr-x	root/root	usr/lib/qt6/
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kscreen/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kscreen/KSC_Fake.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kscreen/KSC_KWayland.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kscreen/KSC_QScreen.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kscreen/KSC_XRandR.so
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+-rw-r--r--	root/root	usr/lib/systemd/user/plasma-kscreen.service
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/kf6/
+-rwxr-xr-x	root/root	usr/libexec/kf6/kscreen_backend_launcher
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.kscreen.service
+drwxr-xr-x	root/root	usr/share/qlogging-categories6/
+-rw-r--r--	root/root	usr/share/qlogging-categories6/libkscreen.categories
+drwxr-xr-x	root/root	usr/share/zsh/
+drwxr-xr-x	root/root	usr/share/zsh/site-functions/
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_kscreen-doctor
