@@ -1,0 +1,62 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/driverless -> ../lib/cups/driver/driverless
+lrwxrwxrwx	root/root	usr/bin/driverless-fax -> ../lib/cups/driver/driverless-fax
+lrwxrwxrwx	root/root	usr/bin/foomatic-rip -> ../lib/cups/filter/foomatic-rip
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cups/
+drwxr-xr-x	root/root	usr/lib/cups/backend/
+-rwxr-xr-x	root/root	usr/lib/cups/backend/beh
+lrwxrwxrwx	root/root	usr/lib/cups/backend/driverless -> ../driver/driverless
+lrwxrwxrwx	root/root	usr/lib/cups/backend/driverless-fax -> ../driver/driverless-fax
+-rwxr-xr-x	root/root	usr/lib/cups/backend/parallel
+-rwxr-xr-x	root/root	usr/lib/cups/backend/serial
+drwxr-xr-x	root/root	usr/lib/cups/driver/
+-rwxr-xr-x	root/root	usr/lib/cups/driver/driverless
+-rwxr-xr-x	root/root	usr/lib/cups/driver/driverless-fax
+drwxr-xr-x	root/root	usr/lib/cups/filter/
+-rwxr-xr-x	root/root	usr/lib/cups/filter/bannertopdf
+-rwxr-xr-x	root/root	usr/lib/cups/filter/commandtoescpx
+-rwxr-xr-x	root/root	usr/lib/cups/filter/commandtopclx
+-rwxr-xr-x	root/root	usr/lib/cups/filter/foomatic-rip
+-rwxr-xr-x	root/root	usr/lib/cups/filter/gstopdf
+-rwxr-xr-x	root/root	usr/lib/cups/filter/gstopxl
+-rwxr-xr-x	root/root	usr/lib/cups/filter/gstoraster
+-rwxr-xr-x	root/root	usr/lib/cups/filter/imagetopdf
+-rwxr-xr-x	root/root	usr/lib/cups/filter/imagetops
+-rwxr-xr-x	root/root	usr/lib/cups/filter/imagetoraster
+-rwxr-xr-x	root/root	usr/lib/cups/filter/mupdftopwg
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pclmtoraster
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pdftopdf
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pdftops
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pdftoraster
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pwgtopclm
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pwgtopdf
+-rwxr-xr-x	root/root	usr/lib/cups/filter/pwgtoraster
+-rwxr-xr-x	root/root	usr/lib/cups/filter/rastertoescpx
+-rwxr-xr-x	root/root	usr/lib/cups/filter/rastertopclx
+-rwxr-xr-x	root/root	usr/lib/cups/filter/rastertops
+-rwxr-xr-x	root/root	usr/lib/cups/filter/texttopdf
+-rwxr-xr-x	root/root	usr/lib/cups/filter/texttops
+-rwxr-xr-x	root/root	usr/lib/cups/filter/texttotext
+-rwxr-xr-x	root/root	usr/lib/cups/filter/universal
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/cups/
+drwxr-xr-x	root/root	usr/share/cups/drv/
+-rw-r--r--	root/root	usr/share/cups/drv/cupsfilters.drv
+drwxr-xr-x	root/root	usr/share/cups/mime/
+-rw-r--r--	root/root	usr/share/cups/mime/cupsfilters-universal-postscript.convs
+-rw-r--r--	root/root	usr/share/cups/mime/cupsfilters-universal.convs
+-rw-r--r--	root/root	usr/share/cups/mime/cupsfilters.convs
+-rw-r--r--	root/root	usr/share/cups/mime/cupsfilters.types
+drwxr-xr-x	root/root	usr/share/ppd/
+drwxr-xr-x	root/root	usr/share/ppd/cupsfilters/
+-rw-r--r--	root/root	usr/share/ppd/cupsfilters/Fuji_Xerox-DocuPrint_CM305_df-PDF.ppd
+-rw-r--r--	root/root	usr/share/ppd/cupsfilters/Generic-PDF_Printer-PDF.ppd
+-rw-r--r--	root/root	usr/share/ppd/cupsfilters/HP-Color_LaserJet_CM3530_MFP-PDF.ppd
+-rw-r--r--	root/root	usr/share/ppd/cupsfilters/Ricoh-PDF_Printer-PDF.ppd
+-rw-r--r--	root/root	usr/share/ppd/cupsfilters/pxlcolor.ppd
+-rw-r--r--	root/root	usr/share/ppd/cupsfilters/pxlmono.ppd
+drwxr-xr-x	root/root	usr/share/ppdc/
+-rw-r--r--	root/root	usr/share/ppdc/escp.h
+-rw-r--r--	root/root	usr/share/ppdc/pcl.h
