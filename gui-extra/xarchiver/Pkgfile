@@ -1,8 +1,8 @@
 description="GTK+ frontend to various command line archivers"
 url="https://github.com/ib/xarchive"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Greg,Fabianwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Greg,Fabianwang,Spiky"
 
 makedepends=(gtk3 docbook-xsl xmlto)
 run=(unzip tar zip p7zip lzop cpio unrar)
@@ -13,6 +13,7 @@ set=(xfce4-extra)
 
 name=xarchiver
 version=0.5.4.23
+release=2
 
 source=(https://github.com/ib/xarchiver/archive/$version.tar.gz)
 
