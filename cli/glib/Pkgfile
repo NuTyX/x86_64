@@ -3,8 +3,8 @@ url="http://www.gtk.org/"
 
 license="LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
 
 makedepends=(flex bison libffi pcre2 python-packaging
@@ -14,7 +14,7 @@ makedepends=(flex bison libffi pcre2 python-packaging
 PKGMK_GROUPS=(man devel doc )
 
 name=glib
-version=2.82.0
+version=2.82.2
 giversion=1.82.0
 
 source=(https://download.gnome.org/sources/gobject-introspection/${giversion:0:4}/gobject-introspection-$giversion.tar.xz
