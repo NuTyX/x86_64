@@ -51,7 +51,7 @@ build() {
 }
 service() {
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
 etc/rc.d
 
 rm -r etc/rc.d
