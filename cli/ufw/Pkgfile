@@ -3,14 +3,14 @@ url='https://launchpad.net/ufw'
 
 license='GPL3'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=ufw
 version=0.36.2
-release=3
+release=4
 
-makedepends=( python-setuptools)
+makedepends=(python-setuptools)
 run=(iptables python)
 
 source=(service
@@ -31,4 +31,28 @@ build() {
   install -Dm644 shell-completion/bash $PKG/usr/share/bash-completion/completions/ufw
   install -Dm644 ../service $PKG/lib/systemd/system/ufw.service
   chmod 644 $PKG/etc/ufw/*.rules
+
+  # service
+  mkdir -p $PKG/etc/rc.d/init.d
+  ln -sv /lib/ufw/ufw-init $PKG/etc/rc.d/init.d/$name
+  for i in 2 3 4 5
+  do
+     mkdir $PKG/etc/rc.d/rc${i}.d
+    ln -sv ../init.d/$name \
+  $PKG/etc/rc.d/rc${i}.d/S80$name
+  done
+
+  for i in 0 1 6
+  do
+    mkdir $PKG/etc/rc.d/rc${i}.d
+    ln -sv ../init.d/$name \
+    $PKG/etc/rc.d/rc${i}.d/K05$name
+  done
+}
+service() {
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_BUILDVER}${PKGMK_ARCH}.cards.tar \
+etc/rc.d
+
+rm -r etc/rc.d
 }
