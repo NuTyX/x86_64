@@ -25,7 +25,7 @@ cd $name-$version
 
 make
 make DESTDIR=$PKG install
-
+}
 package() {
 # Obsolets libs
 rm $PKG/usr/lib/libnih-dbus.la
