@@ -3,14 +3,14 @@ url='https://www.onlyoffice.com/'
 
 license="AGPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(gtk3 nss gstreamer gstreamer-plugins-base gstreamer-plugins-ugly ttf-liberation 
              dejavu-ttf ttf-carlito ttf-ms-fonts desktop-file-utils hicolor-icon-theme libreoffice)
 
 name=onlyoffice
-version=8.0.1
+version=8.2.0
 PKGMK_IGNORE_UNPACK="yes"
 source=(https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/$name-desktopeditors_amd64.deb)
 

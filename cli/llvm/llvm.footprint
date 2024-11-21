@@ -4,15 +4,17 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/analyze-build
 -rwxr-xr-x	root/root	usr/bin/bugpoint
 -rwxr-xr-x	root/root	usr/bin/c-index-test
-lrwxrwxrwx	root/root	usr/bin/clang -> clang-18
+lrwxrwxrwx	root/root	usr/bin/clang -> clang-19
 lrwxrwxrwx	root/root	usr/bin/clang++ -> clang
--rwxr-xr-x	root/root	usr/bin/clang-18
+-rwxr-xr-x	root/root	usr/bin/clang-19
 -rwxr-xr-x	root/root	usr/bin/clang-check
 lrwxrwxrwx	root/root	usr/bin/clang-cl -> clang
 lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
 -rwxr-xr-x	root/root	usr/bin/clang-extdef-mapping
 -rwxr-xr-x	root/root	usr/bin/clang-format
+-rwxr-xr-x	root/root	usr/bin/clang-installapi
 -rwxr-xr-x	root/root	usr/bin/clang-linker-wrapper
+-rwxr-xr-x	root/root	usr/bin/clang-nvlink-wrapper
 -rwxr-xr-x	root/root	usr/bin/clang-offload-bundler
 -rwxr-xr-x	root/root	usr/bin/clang-offload-packager
 -rwxr-xr-x	root/root	usr/bin/clang-refactor
@@ -97,6 +99,7 @@ lrwxrwxrwx	root/root	usr/bin/llvm-windres -> llvm-rc
 -rwxr-xr-x	root/root	usr/bin/llvm-xray
 -rwxr-xr-x	root/root	usr/bin/nvptx-arch
 -rwxr-xr-x	root/root	usr/bin/opt
+-rwxr-xr-x	root/root	usr/bin/reduce-chunk-list
 -rwxr-xr-x	root/root	usr/bin/sancov
 -rwxr-xr-x	root/root	usr/bin/sanstats
 -rwxr-xr-x	root/root	usr/bin/scan-build

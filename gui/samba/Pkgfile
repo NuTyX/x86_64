@@ -3,8 +3,8 @@ url="https://www.samba.org"
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 license="GPL3"
 
 makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
@@ -14,6 +14,7 @@ run=(samba.lib)
 
 name=samba
 version=4.21.1
+release=2
 
 runyx_version=20201011
 

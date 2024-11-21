@@ -1,13 +1,13 @@
 description="Libraries and utilities used for parsing XML files."
 url="http://xmlsoft.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Fanch,Schrodinger72,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fanch,Schrodinger72,Spiky"
 
 makedepends=(libtool automake python)
 
 name=libxml2
-version=2.13.4
+version=2.13.5
 
 PKGMK_GROUPS=(lib man devel doc)
 source=(https://gitlab.gnome.org/GNOME/libxml2/-/archive/v${version}/$name-v${version}.tar.gz)
