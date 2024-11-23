@@ -1,3 +1,16 @@
+diff --git a/src/create.cxx b/src/create.cxx
+index ccdf94a..8776003 100644
+--- a/src/create.cxx
++++ b/src/create.cxx
+@@ -23,6 +23,8 @@ create::create(CardsArgumentParser& argParser)
+ 
+     core();
+ 
++    chdir(m_portsDir.c_str());
++
+     if (isACollection())
+         buildCollection();
+     else
 diff --git a/src/pkgrepo.cxx b/src/pkgrepo.cxx
 index 918ffcf..e18230a 100644
 --- a/src/pkgrepo.cxx
