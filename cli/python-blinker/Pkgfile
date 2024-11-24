@@ -10,10 +10,9 @@ name=python-blinker
 _name="blinker"
 alias=(${_name})
 
-version=1.7.0
-release=2
+version=1.9.0
 
-source=(https://files.pythonhosted.org/packages/a1/13/6df5fc090ff4e5d246baf1f45fe9e5623aa8565757dfa5bd243f6a545f9e/blinker-1.7.0.tar.gz)
+source=(https://files.pythonhosted.org/packages/source/b/blinker/blinker-$version.tar.gz)
 
 build() {
 
