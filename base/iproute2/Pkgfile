@@ -1,13 +1,13 @@
 url="https://www.kernel.org/pub/linux/utils/net/iproute2/"
 description="Programs for basic and advanced network routing."
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libcap bison flex)
 
 name=iproute2
-version=6.11.0
+version=6.12.0
 
 PKGMK_GROUPS=(devel man doc)
 
