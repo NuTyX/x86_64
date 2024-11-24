@@ -2,15 +2,15 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/LICENSE.APACHE
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/LICENSE.BSD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.1.dist-info/WHEEL
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/LICENSE.APACHE
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/LICENSE.BSD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging-24.2.dist-info/WHEEL
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging/__pycache__/
@@ -34,6 +34,12 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/_parser.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/_structures.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/_tokenizer.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging/licenses/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/licenses/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/packaging/licenses/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/licenses/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/licenses/__pycache__/_spdx.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/licenses/_spdx.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/markers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/metadata.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/packaging/py.typed (EMPTY)
