@@ -327,11 +327,11 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/hgext3rd/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/hgext3rd/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/hgext3rd/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/hgext3rd/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial-6.8.2-py3.12.egg-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.8.2-py3.12.egg-info/PKG-INFO
--rw-rw-r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.8.2-py3.12.egg-info/SOURCES.txt
--rw-rw-r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.8.2-py3.12.egg-info/dependency_links.txt
--rw-rw-r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.8.2-py3.12.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial-6.9-py3.12.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.9-py3.12.egg-info/PKG-INFO
+-rw-rw-r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.9-py3.12.egg-info/SOURCES.txt
+-rw-rw-r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.9-py3.12.egg-info/dependency_links.txt
+-rw-rw-r--	root/root	usr/lib/python3.12/site-packages/mercurial-6.9-py3.12.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/__main__.py
@@ -499,6 +499,12 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/admin/__pycache_
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/ancestor.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/archival.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/bookmarks.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/branching/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/branching/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/branching/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/branching/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/branching/__pycache__/rev_cache.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/branching/rev_cache.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/branchmap.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/bundle2.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/bundlecaches.py
@@ -669,9 +675,11 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/__pycache__/dirstate.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/__pycache__/modules.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/__pycache__/repository.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/__pycache__/util.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/dirstate.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/modules.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/repository.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/interfaces/util.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/keepalive.py
@@ -1042,8 +1050,10 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/testing/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/testing/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/__pycache__/ps_util.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/__pycache__/revlog.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/__pycache__/storage.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/ps_util.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/revlog.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/mercurial/testing/storage.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/mercurial/thirdparty/
