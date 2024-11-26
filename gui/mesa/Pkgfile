@@ -5,8 +5,8 @@ url="http://www.xorg-mesa3d.org"
 
 license="custom"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
 makedepends=(meson ninja libclc python-ply rust-bindgen cbindgen
              xorgproto pkgconf libtool xorg-xrandr wayland python-mako
@@ -18,8 +18,7 @@ run=(libglvnd)
 alias=(xorg-mesa Mesa mesa3d Mesa3D mesa3)
 
 name=mesa
-version=24.2.6
-release=2
+version=24.2.7
 
 source=(LICENSE
         https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
