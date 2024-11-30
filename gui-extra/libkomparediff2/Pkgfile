@@ -1,0 +1,17 @@
+description='Library to compare files and strings'
+url="http://www.kde.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(extra-cmake-modules kconfig 
+             kconfigwidgets kcoreaddons
+             ki18n kxmlgui)
+run=(kio)
+
+name=libkomparediff2
+version=24.08.3
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
