@@ -1,0 +1,23 @@
+description="Gnome Video effets pour cheese"
+url="http://www.gnome.org/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky, Jayce, Rems"
+
+makedepends=(intltool perl-xml-parser python meson ninja)
+
+name=gnome-video-effects
+version=0.6.0
+
+source=(https://download.gnome.org/sources/$name/${version:0:3}/$name-$version.tar.xz)
+
+build() {
+
+ meson setup --prefix /usr \
+ --buildtype  plain        \
+ $name-$version                builddir
+
+ meson compile -C              builddir
+
+ DESTDIR=$PKG meson install -C builddir
+}
