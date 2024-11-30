@@ -14,21 +14,11 @@ makedepends=(qtbase extra-cmake-modules karchive
 run=(shared-mime-info cdrdao dvd+rw-tools cdrtools libburn 
      libkcddb)
 
+set=(kde6)
+
 name=k3b
-version=23.08.5
+version=24.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
-build=kde5
-
-uptodate() {
-feed=https://github.com/KDE/$name/releases.atom 
-exec="lynx -read_timeout=20 -dump -listonly -nonumbers $feed"
-ligne=1 # nombre de notification ? afficher
-$exec $feed | grep title | \
-sed "s@<title>@@" | \
-sed "s@</title>@@" | \
-sed "s@v@@" | sed "s@ @@g" | \
-head -n $(($ligne+1 )) | \
-tail -n $(($ligne))
-}
+build=kde6
