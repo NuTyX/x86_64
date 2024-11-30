@@ -1,18 +1,23 @@
 description="Freedesktop.org Hicolor icon theme"
 url="http://icon-theme.freedesktop.org/wiki/HicolorTheme"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
+
+makedepends=(python meson ninja)
 
 name=hicolor-icon-theme
-version=0.17
-release=2
+version=0.18
 
 source=(  http://icon-theme.freedesktop.org/releases/$name-$version.tar.xz)
 
-uptodate() {
-local url ext
-ext=".tar.xz"
-url="https://icon-theme.freedesktop.org/releases/"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep $name|grep $ext$|head -1|sed "s@$url/$name-@@"|sed "s/$ext//"
+build() {
+
+    meson setup --prefix /usr \
+    --buildtype  plain        \
+    $name-$version            builddir
+
+    meson compile -C          builddir
+
+DESTDIR=$PKG meson install -C builddir
 }
