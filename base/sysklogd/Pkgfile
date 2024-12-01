@@ -3,6 +3,7 @@ url="http://www.infodrom.org/projects/sysklogd/"
 
 name=sysklogd
 version=2.6.2
+release=2
 
 contributors="Pierre B"
 packager="tnut <tnut@nutyx.org>"
@@ -16,13 +17,14 @@ cd sysklogd-$version
 
 mkdir -p $PKG/{usr/sbin,etc,usr/share/man/man{5,8}}
 
-./configure --prefix=/usr    \
-            --sysconfdir=/etc \
-            --runstatedir=/run \
+./configure --prefix=/usr        \
+            --sysconfdir=/etc    \
+            --localstatedir=/var \
+            --runstatedir=/run   \
             --without-logger
 make
 
-make BINDIR=$PKG/usr/sbin MANDIR=$PKG/usr/share/man install
+make DESTDIR=$PKG install
 
 cat > $PKG/etc/syslog.conf << "EOF"
 # Begin /etc/syslog.conf
