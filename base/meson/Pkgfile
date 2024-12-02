@@ -5,14 +5,12 @@ contributors="Jayce,Greg,Fabienwang,Tnut"
 packager="spiky <spiky@nutyx.org>"
 license="Apache"
 
-set=(devel)
-
 name=meson
 _name="meson"
 alias=(${_name})
 
 version=1.6.0
-release=2
+release=3
 
 PKGMK_DEPENDS=(sqlite expat libffi python python-wheel python-setuptools)
 source=(skip-test.diff
@@ -33,6 +31,7 @@ build() {
     --no-cache-dir    \
     --no-user         \
     --root=$PKG       \
+    --ignore-installed\
     ${_name}
 
   install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
