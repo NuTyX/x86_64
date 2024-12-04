@@ -8,7 +8,7 @@ contributors="Spiky"
 
 name=qt6-base
 version=6.8.0
-
+release=2
 
 makedepends=(libb2 cmake ninja systemd icu at-spi2-core mtdev 
              cups gstreamer-plugins-base xcb-util xcb-util-renderutil
@@ -33,7 +33,7 @@ build() {
  -DFEATURE_system_sqlite=ON                   -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON  \
  -DFEATURE_no_direct_extern_access=ON         -DFEATURE_system_xcb_xinput=ON   \
  -DFEATURE_qmake=ON                           -DCMAKE_BUILD_TYPE=Release       \
- -DBUILD_TESTS_BY_DEFAULT=OFF \
+ -DBUILD_TESTS_BY_DEFAULT=OFF                 -DFEATURE_syslog=ON              \
  ../qtbase-everywhere-src-$version
 
  ninja
