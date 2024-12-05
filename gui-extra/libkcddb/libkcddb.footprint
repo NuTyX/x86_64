@@ -1,5 +1,14 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/KCddb6/
+-rw-r--r--	root/root	usr/lib/cmake/KCddb6/KCddb6Config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KCddb6/KCddb6ConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KCddb6/KCddb6Targets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KCddb6/KCddb6Targets.cmake
+lrwxrwxrwx	root/root	usr/lib/libKCddb6.so -> libKCddb6.so.5
+lrwxrwxrwx	root/root	usr/lib/libKCddb6.so.5 -> libKCddb6.so.5.1.0
+-rwxr-xr-x	root/root	usr/lib/libKCddb6.so.5.1.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/mkspecs/
 drwxr-xr-x	root/root	usr/lib/qt6/mkspecs/modules/
@@ -9,16 +18,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_cddb.so
-drwxr-xr-x	root/root	usr/lib64/
-drwxr-xr-x	root/root	usr/lib64/cmake/
-drwxr-xr-x	root/root	usr/lib64/cmake/KCddb6/
--rw-r--r--	root/root	usr/lib64/cmake/KCddb6/KCddb6Config.cmake
--rw-r--r--	root/root	usr/lib64/cmake/KCddb6/KCddb6ConfigVersion.cmake
--rw-r--r--	root/root	usr/lib64/cmake/KCddb6/KCddb6Targets-noconfig.cmake
--rw-r--r--	root/root	usr/lib64/cmake/KCddb6/KCddb6Targets.cmake
-lrwxrwxrwx	root/root	usr/lib64/libKCddb6.so -> libKCddb6.so.5
-lrwxrwxrwx	root/root	usr/lib64/libKCddb6.so.5 -> libKCddb6.so.5.1.0
--rwxr-xr-x	root/root	usr/lib64/libKCddb6.so.5.1.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kcm_cddb.desktop
