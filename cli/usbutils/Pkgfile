@@ -6,26 +6,26 @@ license="GPL2 GPL3"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
-makedepends=(libusb-compat)
+makedepends=(python meson ninja libusb-compat)
 run=(hwdata)
 
 name=usbutils
-version=017
-release=2
+version=018
 
 source=(http://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-$version.tar.xz)
 
 build() {
-cd $name-$version
 
-./configure --prefix=/usr \
---datadir=/usr/share/hwdata
+ meson setup --prefix /usr \
+ --buildtype  plain        \
+ $name-$version                builddir
+
+ meson compile -C              builddir
 
 mkdir -p $PKG/usr/share/hwdata
 
-make
-make DESTDIR=$PKG install
+ DESTDIR=$PKG meson install -C builddir
 
-install -Dm644 LICENSES/GPL-2.0-only.txt $PKG/usr/share/licenses/$name/GPL-2.0-only.txt
-install -Dm644 LICENSES/GPL-3.0-only.txt $PKG/usr/share/licenses/$name/GPL-3.0-only.txt
+install -Dm644 $SRC/$name-$version/LICENSES/GPL-2.0-only.txt $PKG/usr/share/licenses/$name/GPL-2.0-only.txt
+install -Dm644 $SRC/$name-$version/LICENSES/GPL-3.0-only.txt $PKG/usr/share/licenses/$name/GPL-3.0-only.txt
 }
