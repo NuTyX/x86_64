@@ -9,12 +9,14 @@ makedepends=(python extra-cmake-modules kconfig kdoctools kcmutils
 
 name=libkcddb
 version=24.08.3
+release=2
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
 build() {
   cmake -B build -S $name-$version \
-  -DBUILD_TESTING=OFF \
+  -DBUILD_TESTING=OFF        \
+  -DCMAKE_INSTALL_LIBDIR=lib \
   -DQT_MAJOR_VERSION=6
 
   cmake --build build
