@@ -73,10 +73,13 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_hugo -> _golangci-li
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_ignite -> _golangci-lint
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_incus -> _golangci-lint
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_infracost -> _gh
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_insmod
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_insmod.static -> _insmod
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_ionice
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_istioctl -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_jungle
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_k3s -> _golangci-lint
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_kata-runtime -> _sops
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_keyring
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_kn -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_kontena
@@ -95,13 +98,18 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_minikube -> _golangc
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_mise -> _golangci-lint
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_mmctl -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_mock
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_modinfo
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_modprobe
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_modules
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_moldy -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_mount
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_mount.linux
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_mtr
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_multi-gitter -> _golangci-lint
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_nerdctl -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_newgrp
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_nfpm -> _golangci-lint
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_ngrok -> _gaiacli
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_nmcli
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_nomad -> _vault
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_nox
@@ -126,12 +134,14 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_rclone -> _golangci-
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_reptyr
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_rfkill
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_rg
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_rmmod
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_rtcwake
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_ruff
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_runuser
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_rustup
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_skaffold -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_slackpkg
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_sops
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_ssh-inscribe -> _golangci-lint
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_sshi -> _golangci-lint
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_starship -> _mdbook
@@ -145,6 +155,7 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_tendermint -> _gaiac
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_terraform -> _vault
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_tkn -> _golangci-lint
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_tkn-pac -> _golangci-lint
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_todoist -> _sops
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_tofu -> _vault
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_tokio-console
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_trivy -> _golangci-lint
@@ -152,6 +163,8 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_trivy -> _golangci-l
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_umount
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_umount.linux
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_upctl -> _golangci-lint
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_uv -> _ruff
+-rw-r--r--	root/root	usr/share/bash-completion/completions/_uvx
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_vacuum -> _golangci-lint
 -rw-r--r--	root/root	usr/share/bash-completion/completions/_vault
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/_virtctl -> _golangci-lint
@@ -336,7 +349,10 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/filebucket -> puppet
 -rw-r--r--	root/root	usr/share/bash-completion/completions/firefox
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/firefox-esr -> firefox
 -rw-r--r--	root/root	usr/share/bash-completion/completions/flake8
--rw-r--r--	root/root	usr/share/bash-completion/completions/freebsd-update
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fprintd-delete
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fprintd-enroll
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/fprintd-list -> fprintd-delete
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/fprintd-verify -> fprintd-enroll
 -rw-r--r--	root/root	usr/share/bash-completion/completions/freeciv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/freeciv-gtk2 -> freeciv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/freeciv-gtk3 -> freeciv
@@ -441,8 +457,6 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/import -> convert
 -rw-r--r--	root/root	usr/share/bash-completion/completions/inject
 -rw-r--r--	root/root	usr/share/bash-completion/completions/inotifywait
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/inotifywatch -> inotifywait
--rw-r--r--	root/root	usr/share/bash-completion/completions/insmod
-lrwxrwxrwx	root/root	usr/share/bash-completion/completions/insmod.static -> insmod
 -rw-r--r--	root/root	usr/share/bash-completion/completions/installpkg
 -rw-r--r--	root/root	usr/share/bash-completion/completions/interdiff
 -rw-r--r--	root/root	usr/share/bash-completion/completions/invoke-rc.d
@@ -477,8 +491,6 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/javadoc -> java
 -rw-r--r--	root/root	usr/share/bash-completion/completions/kcov
 -rw-r--r--	root/root	usr/share/bash-completion/completions/kill
 -rw-r--r--	root/root	usr/share/bash-completion/completions/killall
--rw-r--r--	root/root	usr/share/bash-completion/completions/kldload
--rw-r--r--	root/root	usr/share/bash-completion/completions/kldunload
 -rw-r--r--	root/root	usr/share/bash-completion/completions/koji
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/kplayer -> mplayer
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ktutil
@@ -577,8 +589,6 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/micropython -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/mkisofs -> genisoimage
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mktemp
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mmsitepass
--rw-r--r--	root/root	usr/share/bash-completion/completions/modinfo
--rw-r--r--	root/root	usr/share/bash-completion/completions/modprobe
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/mogrify -> convert
 -rw-r--r--	root/root	usr/share/bash-completion/completions/monodevelop
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/montage -> convert
@@ -640,14 +650,10 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/ping4 -> ping
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/ping6 -> ping
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pkg-config
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pkg-get
-lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pkg_deinstall -> pkg_delete
--rw-r--r--	root/root	usr/share/bash-completion/completions/pkg_delete
-lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pkg_info -> pkg_delete
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pkgadd
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pkgconf -> pkg-config
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pkgrm
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pkgtool
--rw-r--r--	root/root	usr/share/bash-completion/completions/pkgutil
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pkill -> pgrep
 -rw-r--r--	root/root	usr/share/bash-completion/completions/plague-client
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/plzip -> lzip
@@ -658,9 +664,6 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pm-suspend -> pm-hibe
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pm-suspend-hybrid -> pm-hibernate
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pmake -> make
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pngfix
--rw-r--r--	root/root	usr/share/bash-completion/completions/portinstall
--rw-r--r--	root/root	usr/share/bash-completion/completions/portsnap
--rw-r--r--	root/root	usr/share/bash-completion/completions/portupgrade
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/postalias -> postmap
 -rw-r--r--	root/root	usr/share/bash-completion/completions/postcat
 -rw-r--r--	root/root	usr/share/bash-completion/completions/postconf
@@ -720,6 +723,7 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.10 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.11 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.12 -> python
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.13 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.3 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.4 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.5 -> python
@@ -731,6 +735,7 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/python3.9 -> python
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.10 -> pyvenv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.11 -> pyvenv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.12 -> pyvenv
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.13 -> pyvenv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.4 -> pyvenv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.5 -> pyvenv
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/pyvenv-3.6 -> pyvenv
@@ -763,7 +768,6 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/rfcomm -> hcitool
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ri
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/rlog -> rcs
 -rw-r--r--	root/root	usr/share/bash-completion/completions/rmlist
--rw-r--r--	root/root	usr/share/bash-completion/completions/rmmod
 -rw-r--r--	root/root	usr/share/bash-completion/completions/route
 -rw-r--r--	root/root	usr/share/bash-completion/completions/rpcdebug
 -rw-r--r--	root/root	usr/share/bash-completion/completions/rpm
@@ -784,6 +788,7 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/scp -> ssh
 -rw-r--r--	root/root	usr/share/bash-completion/completions/scrub
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/sdptool -> hcitool
 -rw-r--r--	root/root	usr/share/bash-completion/completions/secret-tool
+-rw-r--r--	root/root	usr/share/bash-completion/completions/set
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/setquota -> quota
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/sftp -> ssh
 -rw-r--r--	root/root	usr/share/bash-completion/completions/sh
@@ -796,6 +801,7 @@ lrwxrwxrwx	root/root	usr/share/bash-completion/completions/shasum -> sha256sum
 -rw-r--r--	root/root	usr/share/bash-completion/completions/shellcheck
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/sidedoor -> ssh
 -rw-r--r--	root/root	usr/share/bash-completion/completions/sitecopy
+-rw-r--r--	root/root	usr/share/bash-completion/completions/slabtop
 -rw-r--r--	root/root	usr/share/bash-completion/completions/slapt-get
 -rw-r--r--	root/root	usr/share/bash-completion/completions/slapt-src
 lrwxrwxrwx	root/root	usr/share/bash-completion/completions/slogin -> ssh
