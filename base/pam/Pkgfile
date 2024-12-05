@@ -4,34 +4,38 @@ url="http://www.kernel.org/pub/libs/pam"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(autoconf automake texinfo libxcrypt)
+makedepends=(intltool meson ninja texinfo libxcrypt)
 
 name=pam
-version=1.6.1
+version=1.7.0
 
 PKGMK_LOCALES=()
 
 source=(https://github.com/linux-pam/linux-pam/releases/download/v$version/Linux-PAM-$version.tar.xz)
-prepare() {
+#prepare() {
 
-cd Linux-PAM-$version
+#cd Linux-PAM-$version
 
-sed -e /service_DATA/d \
-    -i modules/pam_namespace/Makefile.am &&
-autoreconf
-}
+#sed -e /service_DATA/d \
+#    -i modules/pam_namespace/Makefile.am &&
+#autoreconf
+#}
 
 build() {
 
 cd Linux-PAM-$version
 
-./configure --prefix=/usr --sysconfdir=/etc \
-            --libdir=/usr/lib                \
-            --enable-securedir=/lib/security \
-            --disable-regenerate-docu        \
-            --docdir=/usr/share/doc/Linux-PAM-$version
-make
-make DESTDIR=$PKG install
+meson setup --prefix /usr \
+            --libdir /usr/lib \
+            --buildtype release \
+            -D docdir /usr/share/doc/Linux-PAM-$version \
+
+ $name-$version                builddir
+
+ meson compile -C              builddir
+
+ DESTDIR=$PKG meson install -C builddir
+
 
 chmod -v 4755 $PKG/sbin/unix_chkpwd
 
