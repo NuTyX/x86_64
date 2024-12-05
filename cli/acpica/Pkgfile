@@ -6,10 +6,9 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(flex bison)
 
 name=acpica
-version=20240321
-release=2
+version=20240927
 
-source=(https://downloadmirror.intel.com/819451/acpica-unix-$version.tar.gz)
+source=(https://github.com/user-attachments/files/17171019/acpica-unix-$version.tar.gz)
 
 prepare() {
 
