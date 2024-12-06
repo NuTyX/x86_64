@@ -7,7 +7,8 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(qt6-base qt6-tools kconfig kguiaddons ki18n)
-set=()
+
+set=(kde6-frameworks)
 
 name=kcolorscheme
 version=6.8.0
