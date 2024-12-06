@@ -5,10 +5,12 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Spiky"
 
 makedepends=(autoconf automake)
-depends=(glibc)
+
 name=dcfldd
 version=1.9.1
-release=2
+release=3
+
+PKGMK_KEEP_SOURCES="no"
 
 source=(https://github.com/resurrecting-open-source-projects/$name/archive/refs/tags/v${version}.tar.gz)
 
