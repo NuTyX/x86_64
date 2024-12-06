@@ -6,6 +6,8 @@ license="LGPL-2.0-only LGPL-3.0-only"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
+set=(kde6-frameworks)
+
 name=kguiaddons
 version=6.8.0
 makedepends=(extra-cmake-modules qt6-tools qt6-wayland plasma-wayland-protocols)
