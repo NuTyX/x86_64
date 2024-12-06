@@ -11,6 +11,8 @@ name=libkcddb
 version=24.08.3
 release=2
 
+set=(kde6-gear)
+
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
 build() {
