@@ -9,7 +9,8 @@ contributors="Spiky"
 makedepends=(qt6-base extra-cmake-modules kdoctools polkit-qt-1
              kcolorscheme kconfig kconfigwidgets kcoreaddons kcrash kdbusaddons
              ki18n kio kpmcore kwidgetsaddons kwindowsystem kxmlgui)
-set=(kde6)
+
+set=(kde6 kde6-gear)
 
 name=partitionmanager
 version=24.08.3
