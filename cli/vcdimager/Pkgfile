@@ -1,16 +1,16 @@
 description="A full-featured mastering suite for authoring disassembling and analyzing Video CDs"
 url="http://www.vcdimager.org/"
 
-packager="Rems <remy@nutyx.org>"
-contributors="Pierre B, Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre B, Rems"
 
 makedepends=(libcdio libxml2 popt)
 
 name=vcdimager
 version=2.0.1
-release=5
+release=6
 
-source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 package() {
 # Obsolet lib
