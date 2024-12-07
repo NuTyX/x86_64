@@ -3,11 +3,12 @@ url='https://audacityteam.org'
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=audacity
 version=3.5.1
+release=2
 
 makedepends=(libvorbis libmad libid3tag wxgtk lame ffmpeg redland jack
              soundtouch cmake zip python vst3sdk wavpack libogg sqlite
