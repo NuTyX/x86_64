@@ -22,8 +22,6 @@ drwxr-xr-x	root/root	lib/elogind/system-sleep/
 lrwxrwxrwx	root/root	lib/libelogind.so -> libelogind.so.0
 lrwxrwxrwx	root/root	lib/libelogind.so.0 -> libelogind.so.0.29.0
 -rwxr-xr-x	root/root	lib/libelogind.so.0.29.0
-drwxr-xr-x	root/root	lib/security/
--rwxr-xr-x	root/root	lib/security/pam_elogind.so
 drwxr-xr-x	root/root	lib/udev/
 drwxr-xr-x	root/root	lib/udev/rules.d/
 -rw-r--r--	root/root	lib/udev/rules.d/70-power-switch.rules
@@ -34,6 +32,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/busctl
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/security/
+-rwxr-xr-x	root/root	usr/lib/security/pam_elogind.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
