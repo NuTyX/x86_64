@@ -15,7 +15,7 @@ set=(gnome)
 
 name=gdm
 version=46.2
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
@@ -43,7 +43,7 @@ meson setup .. \
       -Ddefault-pam-config=lfs    \
       -Dplymouth=disabled         \
       -Dgdm-xsession=true         \
-      -Dpam-mod-dir=/lib/security
+      -Dpam-mod-dir=/usr/lib/security
 
 ninja
 DESTDIR=$PKG ninja install
