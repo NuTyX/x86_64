@@ -3,9 +3,8 @@ url="https://www.samba.org"
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
-license="GPL3"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
              docbook-xsl avahi gnutls libgpg-error popt talloc lmdb
@@ -14,6 +13,7 @@ run=(samba.lib)
 
 name=samba
 version=4.21.2
+release=2
 
 runyx_version=20201011
 
@@ -41,7 +41,7 @@ LDFLAGS+=" -ltirpc"                     \
     --sysconfdir=/etc                   \
     --localstatedir=/var                \
     --with-piddir=/run/samba            \
-    --with-pammodulesdir=/lib/security  \
+    --with-pammodulesdir=/usr/lib/security  \
     --without-ad-dc                     \
     --enable-fhs                        \
     --bundled-libraries=!tdb,!talloc,!pytalloc-util \
