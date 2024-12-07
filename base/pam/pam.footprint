@@ -12,65 +12,68 @@ drwxr-xr-x	root/root	etc/security/namespace.d/
 -rw-r--r--	root/root	etc/security/pam_env.conf
 -rw-r--r--	root/root	etc/security/pwhistory.conf
 -rw-r--r--	root/root	etc/security/time.conf
-drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libpam.so.0 -> libpam.so.0.85.1
--rwxr-xr-x	root/root	lib/libpam.so.0.85.1
-lrwxrwxrwx	root/root	lib/libpam_misc.so.0 -> libpam_misc.so.0.82.1
--rwxr-xr-x	root/root	lib/libpam_misc.so.0.82.1
-lrwxrwxrwx	root/root	lib/libpamc.so.0 -> libpamc.so.0.82.1
--rwxr-xr-x	root/root	lib/libpamc.so.0.82.1
-drwxr-xr-x	root/root	lib/security/
--rwxr-xr-x	root/root	lib/security/pam_access.so
--rwxr-xr-x	root/root	lib/security/pam_canonicalize_user.so
--rwxr-xr-x	root/root	lib/security/pam_debug.so
--rwxr-xr-x	root/root	lib/security/pam_deny.so
--rwxr-xr-x	root/root	lib/security/pam_echo.so
--rwxr-xr-x	root/root	lib/security/pam_env.so
--rwxr-xr-x	root/root	lib/security/pam_exec.so
--rwxr-xr-x	root/root	lib/security/pam_faildelay.so
--rwxr-xr-x	root/root	lib/security/pam_faillock.so
--rwxr-xr-x	root/root	lib/security/pam_filter.so
-drwxr-xr-x	root/root	lib/security/pam_filter/
--rwxr-xr-x	root/root	lib/security/pam_filter/upperLOWER
--rwxr-xr-x	root/root	lib/security/pam_ftp.so
--rwxr-xr-x	root/root	lib/security/pam_group.so
--rwxr-xr-x	root/root	lib/security/pam_issue.so
--rwxr-xr-x	root/root	lib/security/pam_keyinit.so
--rwxr-xr-x	root/root	lib/security/pam_limits.so
--rwxr-xr-x	root/root	lib/security/pam_listfile.so
--rwxr-xr-x	root/root	lib/security/pam_localuser.so
--rwxr-xr-x	root/root	lib/security/pam_loginuid.so
--rwxr-xr-x	root/root	lib/security/pam_mail.so
--rwxr-xr-x	root/root	lib/security/pam_mkhomedir.so
--rwxr-xr-x	root/root	lib/security/pam_motd.so
--rwxr-xr-x	root/root	lib/security/pam_namespace.so
--rwxr-xr-x	root/root	lib/security/pam_nologin.so
--rwxr-xr-x	root/root	lib/security/pam_permit.so
--rwxr-xr-x	root/root	lib/security/pam_pwhistory.so
--rwxr-xr-x	root/root	lib/security/pam_rhosts.so
--rwxr-xr-x	root/root	lib/security/pam_rootok.so
--rwxr-xr-x	root/root	lib/security/pam_securetty.so
--rwxr-xr-x	root/root	lib/security/pam_setquota.so
--rwxr-xr-x	root/root	lib/security/pam_shells.so
--rwxr-xr-x	root/root	lib/security/pam_stress.so
--rwxr-xr-x	root/root	lib/security/pam_succeed_if.so
--rwxr-xr-x	root/root	lib/security/pam_time.so
--rwxr-xr-x	root/root	lib/security/pam_timestamp.so
--rwxr-xr-x	root/root	lib/security/pam_umask.so
--rwxr-xr-x	root/root	lib/security/pam_unix.so
--rwxr-xr-x	root/root	lib/security/pam_usertype.so
--rwxr-xr-x	root/root	lib/security/pam_warn.so
--rwxr-xr-x	root/root	lib/security/pam_wheel.so
--rwxr-xr-x	root/root	lib/security/pam_xauth.so
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/faillock
--rwxr-xr-x	root/root	sbin/mkhomedir_helper
--rwxr-xr-x	root/root	sbin/pam_namespace_helper
--rwxr-xr-x	root/root	sbin/pam_timestamp_check
--rwsr-xr-x	root/root	sbin/unix_chkpwd
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libpam.so -> ../../lib/libpam.so.0.85.1
-lrwxrwxrwx	root/root	usr/lib/libpam_misc.so -> ../../lib/libpam_misc.so.0.82.1
-lrwxrwxrwx	root/root	usr/lib/libpamc.so -> ../../lib/libpamc.so.0.82.1
+lrwxrwxrwx	root/root	usr/lib/libpam.so -> libpam.so.0
+lrwxrwxrwx	root/root	usr/lib/libpam.so.0 -> libpam.so.0.85.1
+-rwxr-xr-x	root/root	usr/lib/libpam.so.0.85.1
+lrwxrwxrwx	root/root	usr/lib/libpam_misc.so -> libpam_misc.so.0
+lrwxrwxrwx	root/root	usr/lib/libpam_misc.so.0 -> libpam_misc.so.0.82.1
+-rwxr-xr-x	root/root	usr/lib/libpam_misc.so.0.82.1
+lrwxrwxrwx	root/root	usr/lib/libpamc.so -> libpamc.so.0
+lrwxrwxrwx	root/root	usr/lib/libpamc.so.0 -> libpamc.so.0.82.1
+-rwxr-xr-x	root/root	usr/lib/libpamc.so.0.82.1
+drwxr-xr-x	root/root	usr/lib/security/
+-rwxr-xr-x	root/root	usr/lib/security/pam_access.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_canonicalize_user.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_debug.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_deny.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_echo.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_env.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_exec.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_faildelay.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_faillock.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_filter.so
+drwxr-xr-x	root/root	usr/lib/security/pam_filter/
+-rwxr-xr-x	root/root	usr/lib/security/pam_filter/upperLOWER
+-rwxr-xr-x	root/root	usr/lib/security/pam_ftp.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_group.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_issue.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_keyinit.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_limits.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_listfile.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_localuser.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_loginuid.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_mail.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_mkhomedir.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_motd.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_namespace.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_nologin.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_permit.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_pwhistory.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_rhosts.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_rootok.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_securetty.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_setquota.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_shells.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_stress.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_succeed_if.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_time.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_timestamp.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_umask.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_unix.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_usertype.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_warn.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_wheel.so
+-rwxr-xr-x	root/root	usr/lib/security/pam_xauth.so
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/pam_namespace.service
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/faillock
+-rwxr-xr-x	root/root	usr/sbin/mkhomedir_helper
+-rwxr-xr-x	root/root	usr/sbin/pam_namespace_helper
+-rwxr-xr-x	root/root	usr/sbin/pam_timestamp_check
+-rwxr-xr-x	root/root	usr/sbin/pwhistory_helper
+-rwsr-xr-x	root/root	usr/sbin/unix_chkpwd
 drwxr-xr-x	root/root	usr/share/

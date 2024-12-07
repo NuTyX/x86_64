@@ -9,6 +9,8 @@ contributors="Spiky"
 makedepends=(extra-cmake-modules qt6-base qt6-tools shared-mime-info)
 run=(shared-mime-info)
 
+set=(kde6-frameworks)
+
 name=kcoreaddons
 version=6.8.0
 

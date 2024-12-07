@@ -6,11 +6,10 @@ license="LGPL-2.0-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-set=(kde6)
-
+set=(kde6 kde6-plasma)
 
 name=kwayland
-version=6.2.3
+version=6.2.4
 
 makedepends=(wayland qt6-base qt6-tools qt6-wayland extra-cmake-modules
              plasma-wayland-protocols wayland-protocols)

@@ -1,10 +1,11 @@
 description="Pluggable Authentication Modules to choose how applications authenticate users."
 url="http://www.kernel.org/pub/libs/pam"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(intltool meson ninja texinfo libxcrypt)
+PKGMK_DEPENDS=(python meson ninja)
+makedepends=(intltool texinfo libxcrypt)
 
 name=pam
 version=1.7.0
@@ -12,24 +13,18 @@ version=1.7.0
 PKGMK_LOCALES=()
 
 source=(https://github.com/linux-pam/linux-pam/releases/download/v$version/Linux-PAM-$version.tar.xz)
-#prepare() {
+prepare() {
 
-#cd Linux-PAM-$version
-
-#sed -e /service_DATA/d \
-#    -i modules/pam_namespace/Makefile.am &&
-#autoreconf
-#}
+mv Linux-PAM-$version \
+   $name-$version
+}
 
 build() {
 
-cd Linux-PAM-$version
-
-meson setup --prefix /usr \
-            --libdir /usr/lib \
-            --buildtype release \
-            -D docdir /usr/share/doc/Linux-PAM-$version \
-
+ meson setup --prefix    /usr    \
+             --buildtype plain   \
+             --libdir    lib     \
+             -D docdir=/usr/share/doc/Linux-PAM-$version \
  $name-$version                builddir
 
  meson compile -C              builddir
@@ -37,11 +32,6 @@ meson setup --prefix /usr \
  DESTDIR=$PKG meson install -C builddir
 
 
-chmod -v 4755 $PKG/sbin/unix_chkpwd
+chmod -v 4755 $PKG/usr/sbin/unix_chkpwd
 
-for file in pam pam_misc pamc
-do
-  mv -v $PKG/usr/lib/lib${file}.so.* $PKG/lib &&
-  ln -sfv ../../lib/$(readlink $PKG/usr/lib/lib${file}.so) $PKG/usr/lib/lib${file}.so
-done
 }
