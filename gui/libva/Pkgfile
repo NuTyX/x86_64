@@ -6,9 +6,10 @@ contributors="Greg,Remy,Tnut"
 license="MIT"
 name=libva
 version=2.22.0
-release=3
+release=4
 
-makedepends=(xorg-libdrm xorg-libxfixes wayland)
+makedepends=(xorg-libdrm xorg-libxfixes wayland xorg-libx11
+             xorg-libxext libglvnd)
 
 source=(https://github.com/intel/libva/archive/$version/$name-$version.tar.gz)
 
