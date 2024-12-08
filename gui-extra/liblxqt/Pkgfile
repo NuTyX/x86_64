@@ -6,12 +6,13 @@ license="LGPL2.1"
 packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
-makedepends=(kwindowsystem libqtxdg xorg-libxscrnsaver polkit-qt-1 lxqt-build-tools)
+makedepends=(kwindowsystem libqtxdg xorg-libxscrnsaver polkit-qt-1
+             libqtxdg  lxqt-build-tools)
 
 set=(lxqt)
 
 name=liblxqt
-version=2.0.0
+version=2.1.0
 
 source=(https://github.com/lxqt/$name/releases/download/$version/$name-$version.tar.xz)
 
