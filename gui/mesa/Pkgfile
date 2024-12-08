@@ -18,7 +18,7 @@ run=(libglvnd)
 alias=(xorg-mesa Mesa mesa3d Mesa3D mesa3)
 
 name=mesa
-version=24.2.7
+version=24.3.1
 
 source=(LICENSE
         https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
@@ -35,15 +35,14 @@ meson setup                          \
       -Dgallium-drivers="crocus,iris,nouveau,r300,r600,radeonsi,svga,swrast,virgl,zink" \
       -Dvulkan-drivers=auto \
       -Dgallium-nine=false       \
-      -Dgallium-vdpau=true       \
+      -Dgallium-vdpau=enabled    \
       -Dgallium-va=enabled       \
       -Dglx=dri                  \
       -Dosmesa=true              \
-      -Dvalgrind=false           \
-      -Dlibunwind=false          \
+      -Dvalgrind=disabled        \
+      -Dlibunwind=disabled       \
       -Dplatforms="x11,wayland"  \
-      -Ddri3=enabled             \
-      -Dglvnd=true               \
+      -Dglvnd=enabled            \
       -Dglx-direct=true          \
       ..
 ninja
