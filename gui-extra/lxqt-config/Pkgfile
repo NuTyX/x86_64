@@ -6,13 +6,13 @@ license="LGPL2.1"
 packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
-makedepends=(lxqt-build-tools liblxqt qtsvg libkscreen xorg-libxcursor
+makedepends=(lxqt-build-tools liblxqt qt6-svg libkscreen xorg-libxcursor
              xorg-xf86-input-libinput lxqt-menu-data)
 
 set=(lxqt)
 
 name=lxqt-config
-version=2.0.0
+version=2.1.0
 
 source=(https://github.com/lxqt/$name/releases/download/$version/$name-$version.tar.xz)
 
