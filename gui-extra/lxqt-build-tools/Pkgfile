@@ -9,7 +9,7 @@ makedepends=(perl cmake qt6-tools)
 set=(lxqt)
 
 name=lxqt-build-tools
-version=2.0.0
+version=2.1.0
 
 source=(cxx17.pach
         https://github.com/lxqt/$name/releases/download/$version/$name-$version.tar.xz)
