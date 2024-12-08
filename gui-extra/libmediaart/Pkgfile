@@ -1,8 +1,8 @@
 description="Library tasked with managing, extracting and handling media art caches"
 url="https://github.com/curlybeast/libmediaart"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors="Jayce,Tnut,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Tnut"
 
 makedepends=(meson gobject-introspection vala gdk-pixbuf gtk-doc)
 
@@ -10,6 +10,7 @@ set=(gnome)
 
 name=libmediaart
 version=1.9.6
+release=2
 
 source=(https://download.gnome.org/sources/$name/1.9/$name-$version.tar.xz)
 
