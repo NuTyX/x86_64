@@ -6,8 +6,7 @@ PKGMK_GROUPS=(doc man)
 url="http://xorg.freedesktop.org"
 
 name=xorg-xkbevd
-version=1.1.5
-release=2
+version=1.1.6
 _name=${name/xorg-/}
 makedepends=(xorg-libxkbfile xorg-libx11)
 source=(http://ftp.x.org/pub/individual/app/${_name}-$version.tar.xz)
