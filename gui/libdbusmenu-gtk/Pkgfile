@@ -1,14 +1,14 @@
 description="Library for passing menus over DBus"
 url="https://launchpad.net/libdbusmenu"
 
-packager="Tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gnome-common gobject-introspection gtk3 intltool vala valgrind glib)
 
 name=libdbusmenu-gtk
 version=16.04.0
-release=2
+release=3
 
 source=(https://launchpad.net/libdbusmenu/16.04/16.04.0/+download/libdbusmenu-16.04.0.tar.gz)
 
