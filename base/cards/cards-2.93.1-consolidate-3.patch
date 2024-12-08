@@ -1,0 +1,442 @@
+diff --git a/fltk/cards_client.cxx b/fltk/cards_client.cxx
+index 3478a74..1319f96 100644
+--- a/fltk/cards_client.cxx
++++ b/fltk/cards_client.cxx
+@@ -17,7 +17,7 @@ namespace cards
+     /// Get a string list of installed packages
+     std::set<std::string> cards_client::ListOfInstalledPackages()
+     {
+-        return getListOfPackagesNames();
++        return getSetOfPackagesNames();
+     }
+ 
+     /// Install a package list
+@@ -31,8 +31,6 @@ namespace cards
+             message += _(" ") + pack;
+         }
+         m_log->log(message);
+-        // Get the list of installed packages
+-        getListOfPackagesNames(m_root);
+ 
+         // Retrieve info about all the packages
+         buildDatabase(true);
+@@ -79,8 +77,7 @@ namespace cards
+         m_log->log(message);
+ 
+         cards::lock Lock(m_root, true);
+-        // Get the list of installed packages
+-        getListOfPackagesNames(m_root);
++
+         // Retrieve info about all the packages
+         buildDatabase(true);
+ 
+@@ -113,16 +110,16 @@ namespace cards
+ 			{
+ 			case cards::ACTION_ENUM_DB_OPEN_RUN:
+ 			{
+-				i = j / ( getListOfPackagesNames("") / 100);
++				i = j / ( getNumberOfPackages() / 100);
+ 				Value = i;
+ 				j++;
+ 				break;
+ 			}
+ 			case cards::ACTION_ENUM_PKG_INSTALL_RUN:
+ 			{
+-				if (getFilesNumber() > 100)
++				if (getNumberOfFiles() > 100)
+ 				{
+-					i= getInstalledFilesNumber() / ( getFilesNumber() /100);
++					i= getInstalledFilesNumber() / ( getNumberOfFiles() /100);
+ 					Value = i;
+ 				} else {
+ 					Value = j;
+@@ -137,7 +134,7 @@ namespace cards
+ 			}
+ 			case cards::ACTION_ENUM_RM_PKG_FILES_RUN:
+ 			{
+-					unsigned int l = getFilesList().size();
++					unsigned int l = getNumberOfFiles();
+ 					if ( l > 100 )
+ 					{
+ 						i = j / ( l / 100);
+diff --git a/fltk/flcards_info.cxx b/fltk/flcards_info.cxx
+index 6c62ea9..d0f7694 100644
+--- a/fltk/flcards_info.cxx
++++ b/fltk/flcards_info.cxx
+@@ -11,16 +11,16 @@ void Flcards_info::progressInfo()
+ {
+ 
+ 	static int j = 0;
+-	int i,n;
+-	n = getListOfPackagesNames("");
+-	switch ( m_actualAction )
++	unsigned int i, n;
++	n = getNumberOfPackages();
++	switch (m_actualAction)
+ 	{
+ 		case cards::ACTION_ENUM_DB_OPEN_START:
+ 			m_progressBar->value(0);
+ 			break;
+ 		case cards::ACTION_ENUM_DB_OPEN_RUN:
+ 			if (n >100) {
+-				i = j / ( n / 100);
++				i = j /(n / 100);
+ 				m_progressBar->value(i);
+ 			}
+ 			j++;
+@@ -47,7 +47,6 @@ std::set<std::string> Flcards_info::getListOfInstalledPackages()
+ 	m_window->show();
+ 	m_progressBar->value(0);
+ 
+-	getListOfPackagesNames (m_root);
+ 	buildDatabase(false);
+ 
+ 	delete m_progressBar;
+@@ -61,8 +60,8 @@ std::set<std::string> Flcards_info::getListOfInstalledPackages()
+ 			<< std::endl;
+ #endif
+ 		packageDetails = i.first + '\t'
+-			+ i.second.version + '\t'
+-			+ i.second.description + '\t';
++			+ i.second.version() + '\t'
++			+ i.second.description() + '\t';
+ 
+ 		ListOfInstalledPackages.insert(packageDetails);
+ 	}
+@@ -85,17 +84,15 @@ std::set<std::string> Flcards_info::getListOfAvailablePackages()
+ 	m_window->show();
+ 	m_progressBar->value(0);
+ 
+-	parsePkgRepoCollectionFile();
++	cards::pkgrepo pkgrepo("/etc/cards");
+ 
+ 	std::set<std::string> ListOfAvailablePackages;
+ 	std::string packageNameVersion;
+-	for (auto i : m_portsDirectoryList) {
+-		for (auto j : i.packagesList) {
+-			packageNameVersion = j.basePackageName + '\t'
+-				+ j.version + '\t'
+-				+ j.description + '\t';
+-			ListOfAvailablePackages.insert(packageNameVersion);
+-		}
++	for (auto i : pkgrepo.getListOfPackages()) {
++		packageNameVersion = i.first + '\t'
++			+ i.second.version() + '\t'
++			+ i.second.description() + '\t';
++		ListOfAvailablePackages.insert(packageNameVersion);
+ 	}
+ 	delete m_progressBar;
+ 	delete m_window;
+diff --git a/scripts/mybld.in b/scripts/mybld.in
+index 8c33a0c..12c409a 100755
+--- a/scripts/mybld.in
++++ b/scripts/mybld.in
+@@ -149,13 +149,13 @@ rsync_binaries () {
+   if [ ! -z ${PARAM[0]} ]; then
+     echo "
+ rsync $options \
+-${RSYNC_URL}/$(uname -m)/$VERSION/$COLLECTION/${PARAM[0]}.*  \
++$URL/$(uname -m)/$VERSION/$COLLECTION/${PARAM[0]}.*  \
+ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+ "
+     echo -n "  OK ? (y) : "
+     answer
+     rsync $options \
+-${RSYNC_URL}/$(uname -m)/$VERSION/$COLLECTION/${PARAM[0]}.* \
++$URL/$(uname -m)/$VERSION/$COLLECTION/${PARAM[0]}.* \
+ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+     exit 0
+   fi
+@@ -165,7 +165,7 @@ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+ sudo mkdir -p $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+ sudo chown -R $(whoami):$(whoami) $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+ rsync $options \
+-${RSYNC_URL}/$(uname -m)/$VERSION/$COLLECTION/ \
++$URL/$(uname -m)/$VERSION/$COLLECTION/ \
+ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+ "
+     echo -n "  OK ? (y) : "
+@@ -173,7 +173,7 @@ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+     sudo mkdir -p $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+     sudo chown -R $(whoami):$(whoami) $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+     rsync $options \
+-${RSYNC_URL}/$(uname -m)/$VERSION/$COLLECTION/ \
++$URL/$(uname -m)/$VERSION/$COLLECTION/ \
+ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+     exit 0
+   fi
+@@ -182,7 +182,7 @@ $ROOTMOUNT/$(uname -m)/$VERSION/$COLLECTION/
+ mkdir -p $ROOTMOUNT/$(uname -m)/$VERSION/
+ sudo chown -R $(whoami):$(whoami) $ROOTMOUNT/$(uname -m)/$VERSION/
+ rsync $options \
+-${RSYNC_URL}/$(uname -m)/$VERSION/ \
++$URL/$(uname -m)/$VERSION/ \
+ $ROOTMOUNT/$(uname -m)/$VERSION/
+ "
+   echo -n "  OK ? (y) : "
+@@ -190,7 +190,7 @@ $ROOTMOUNT/$(uname -m)/$VERSION/
+   mkdir -p $ROOTMOUNT/$(uname -m)/$VERSION/
+   sudo chown -R $(whoami):$(whoami) $ROOTMOUNT/$(uname -m)/$VERSION/
+   rsync $options \
+-${RSYNC_URL}/$(uname -m)/$VERSION/ \
++$URL/$(uname -m)/$VERSION/ \
+ $ROOTMOUNT/$(uname -m)/$VERSION/
+   exit 0
+ }
+@@ -369,14 +369,13 @@ find_new_packager () {
+   -e "s/\b\(.\)/\u\1/g" -e "s/^,//g" -e "s/,$//g")"
+ }
+ find_set () {
+-  local i=0 p c s n
++  local i=0 c n set s
+   for c in base cli cli-extra gui gui-extra
+   do
+      for n in $c/*/Pkgfile
+      do
+-         . $n
++         set=$(. $n; echo $set)
+          [ -z $set ] && continue
+-         [ "$version" == "${PARAM[1]}" ] && continue
+          for s in ${set[@]}
+          do
+             if [ "$s" == "${PARAM[0]}" ]; then
+@@ -520,7 +519,6 @@ fi
+ [ -z "$EDITOR" ] && EDITOR="vi"
+ [ -z "$COLLECTIONS" ] && COLLECTIONS=(gui cli base)
+ [ -z "$VERSION" ] && VERSION="$(git branch --show-current)"
+-RSYNC_URL="$URL"
+ 
+ GIT_PROJ=$(pwd)
+ GIT="mybld/$(basename $GIT_PROJ)"
+@@ -563,9 +561,11 @@ if ! ( $(which $EDITOR > /dev/null) ); then
+ fi
+ 
+ parse_arguments "$@"
+-find_version
+-[ -z "$PACKAGES_LIST" ] && find_set
+ 
++if [ ! -z ${PARAM[1]} ];then
++  find_version
++  [ -z "$PACKAGES_LIST" ] && find_set
++fi
+ if [ "$INIT" == "yes" ]; then
+   create_folders
+   exit 0
+diff --git a/src/pkgadd.cxx b/src/pkgadd.cxx
+index 6379c00..2e77239 100644
+--- a/src/pkgadd.cxx
++++ b/src/pkgadd.cxx
+@@ -67,9 +67,6 @@ void pkgadd::preRun()
+ }
+ void pkgadd::run()
+ {
+-	// Get the list of installed packages
+-	getListOfPackagesNames(m_root);
+-
+ 	// Retrieving info about all the packages
+ 	buildDatabase(true);
+ 
+diff --git a/src/pkgdbh.cxx b/src/pkgdbh.cxx
+index 34970d1..65dea5d 100644
+--- a/src/pkgdbh.cxx
++++ b/src/pkgdbh.cxx
+@@ -288,10 +288,10 @@ void pkgdbh::progressInfo()
+   }
+ }
+ 
+-std::set<std::string>& pkgdbh::getListOfPackagesNames()
++std::set<std::string>& pkgdbh::getSetOfPackagesNames()
+ {
+ 	if (m_listOfPackagesNames.empty())
+-		getListOfPackagesNames(m_root);
++		getListOfPackagesNames();
+ 	return m_listOfPackagesNames;
+ }
+ std::string pkgdbh::getSingleItem(const std::string& PackageName, const char i) const
+@@ -376,20 +376,19 @@ unsigned int pkgdbh::getRelease(const std::string& name) const
+ 
+ // Append to the "DB" the number of packages founds
+ // directory containing a file named files
+-int pkgdbh::getListOfPackagesNames (const std::string& path)
++void pkgdbh::getListOfPackagesNames()
+ {
+ 	if (! m_listOfPackagesNames.empty())
+-		return m_listOfPackagesNames.size();
++		return;
+ 
+ 	const std::string pathdb =  m_root + PKG_DB_DIR;
+-	if ( findDir(m_listOfPackagesNames, pathdb) != 0 ) {
++	if (findDir(m_listOfPackagesNames, pathdb) != 0) {
+ 		m_actualError = cards::ERROR_ENUM_CANNOT_READ_FILE;
+ 		treatErrors(pathdb);
+ 	}
+-	return m_listOfPackagesNames.size();
+ }
+ std::set<std::string>
+-pkgdbh::getSetOfFiles( const std::string& packageName )
++pkgdbh::getSetOfFiles(const std::string& packageName)
+ {
+ 	std::string name = m_listOfAlias[packageName];
+ 	std::set<std::string> packageFiles;
+@@ -430,7 +429,7 @@ void
+ pkgdbh::buildSimpleDependenciesDatabase()
+ {
+ 	if (m_listOfPackagesNames.empty() )
+-			getListOfPackagesNames (m_root);
++			getListOfPackagesNames();
+ 
+ 	for (auto i : m_listOfPackagesNames) {
+ 		std::pair < std::string, std::set<std::string> > packageWithDeps;
+@@ -457,7 +456,7 @@ void pkgdbh::buildDatabase(const bool& files)
+ 		return;
+ 
+ 	if (m_listOfPackagesNames.empty())
+-		getListOfPackagesNames (m_root);
++		getListOfPackagesNames();
+ 
+ 	progressInfo(ACTION_ENUM_DB_OPEN_START);
+ 
+@@ -1313,7 +1312,7 @@ const void pkgdbh::readRulesFile()
+ {
+ 	unsigned int linecount = 0;
+ 	const std::string filename = m_root + PKGADD_CONF;
+-	std::ifstream in(filename.c_str());
++	std::ifstream in(filename);
+ 
+ 	if (in) {
+ 		while (!in.eof()) {
+@@ -1655,16 +1654,22 @@ void pkgdbh::print_version() const
+ 	std::cout << m_utilName << " (cards) " << PACKAGE_VERSION << std::endl;
+ }
+ 
+-unsigned int pkgdbh::getFilesNumber()
++const unsigned int pkgdbh::getNumberOfPackages()
+ {
+-    return m_filesNumber;
+-}
++	if (m_listOfPackagesNames.empty())
++		getListOfPackagesNames();
+ 
++    return m_listOfPackagesNames.size();
++}
++const unsigned int pkgdbh::getNumberOfFiles()
++{
++	return m_filesNumber;
++}
+ unsigned int pkgdbh::getInstalledFilesNumber()
+ {
+     return m_installedFilesNumber;
+ }
+-std::set<std::string> pkgdbh::getFilesList()
++std::set<std::string> pkgdbh::getSetOfFiles()
+ {
+ 	return m_filesList;
+ }
+diff --git a/src/pkgdbh.h b/src/pkgdbh.h
+index d671b39..1f91070 100644
+--- a/src/pkgdbh.h
++++ b/src/pkgdbh.h
+@@ -38,6 +38,7 @@ class pkgdbh {
+     bool                    m_DB_Empty;
+ 
+     void                    runLastPostInstall();
++    void                    getListOfPackagesNames();
+     std::string             getSingleItem(const std::string& PackageName, const char i) const;
+ 
+     std::set<std::string>   getSetOfItems(const std::string& PackageName, const char i) const;
+@@ -45,8 +46,6 @@ class pkgdbh {
+ protected:
+     // Database
+ 
+-    int                     getListOfPackagesNames(const std::string& path);
+-
+     void                    buildSimpleDependenciesDatabase();
+ 
+     void                    addPackageFilesRefsToDB(const std::string& name,
+@@ -144,7 +143,7 @@ public:
+     void                    setDependency();
+     void                    resetDependency();
+ 
+-    std::set<std::string>&  getListOfPackagesNames();
++    std::set<std::string>&  getSetOfPackagesNames();
+     std::string             getDescription(const std::string& name) const;
+     std::string             getVersion(const std::string& name) const;
+     std::string             getCollection(const std::string& name) const;
+@@ -155,9 +154,10 @@ public:
+     std::string             getCategories(const std::string& name) const;
+     std::set<std::string>   getSetOfCategories(const std::string& name) const;
+     std::set<std::string>   getSetOfFiles(const std::string& packageName);
+-    std::set<std::string>   getFilesList();
++    std::set<std::string>   getSetOfFiles();
+ 
+-    unsigned int            getFilesNumber();
++    const unsigned int      getNumberOfPackages();
++    const unsigned int      getNumberOfFiles();
+     unsigned int            getInstalledFilesNumber();
+     unsigned int            getSize(const std::string& name) const;
+     unsigned int            getRelease(const std::string& name) const;
+diff --git a/src/pkginfo.cxx b/src/pkginfo.cxx
+index fef0dae..eb1e9f3 100644
+--- a/src/pkginfo.cxx
++++ b/src/pkginfo.cxx
+@@ -185,14 +185,15 @@ void pkginfo::run()
+     if (m_footprint_mode) {
+         getFootprintPackage(m_arg);
+     } else if (m_number_mode) {
+-        std::cout << getListOfPackagesNames(m_root) << std::endl;
++        buildDatabase(false);
++        std::cout << m_listOfPackages.size() << std::endl;
+     } else {
+         /*
+          *  Modes that require the database to be opened
+          *
+          */
+         cards::lock Lock(m_root, false);
+-        getListOfPackagesNames(m_root);
++
+         if (m_installed_mode) {
+             /*
+              *  List installed packages
+diff --git a/src/pkgrm.cxx b/src/pkgrm.cxx
+index 98fe984..81fd5e9 100644
+--- a/src/pkgrm.cxx
++++ b/src/pkgrm.cxx
+@@ -11,14 +11,13 @@ pkgrm::pkgrm ()
+ }
+ void pkgrm::getListOfManInstalledPackages ()
+ {
+-	// Get the list of installed packages
+-	getListOfPackagesNames(m_root);
++	buildSimpleDependenciesDatabase();
+ 
+ 	for ( auto i : m_listOfPackages) {
+ 		if ( i.second.dependency() == false )
+ 			m_listOfManInstalledPackages.insert(i.first);
+ 	}
+-	buildSimpleDependenciesDatabase();
++
+ 	for ( auto i : m_listOfManInstalledPackages ) {
+ 		getDirectDependencies(i);
+ 	}
+@@ -59,9 +58,6 @@ void pkgrm::run()
+ 
+ 	cards::lock Lock(m_root, true);
+ 
+-	// Get the list of installed packages
+-	getListOfPackagesNames(m_root);
+-
+ 	// Retrieve info about all the packages
+ 	buildDatabase(true);
+ 
+diff --git a/src/upgrade.cxx b/src/upgrade.cxx
+index 5a95186..d4d1ca4 100644
+--- a/src/upgrade.cxx
++++ b/src/upgrade.cxx
+@@ -184,7 +184,6 @@ void upgrade::go()
+ 		}
+ 		for (auto i : m_ListOfPackagesToDelete) {
+ 			cards::lock Lock(m_root,true);
+-			getListOfPackagesNames(m_root);
+ 			buildDatabase(true);
+ 			removePackageFilesRefsFromDB(i);
+ 			removePackageFiles(i);
