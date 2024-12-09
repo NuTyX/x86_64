@@ -1,7 +1,10 @@
 description="Library to create an ISO-9660 filesystem with extensions like RockRidge or Joliet"
 url="http://libburnia.pykix.org/"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
+
+makedepends=(acl)
 
 name=libisofs
 version=1.5.6
