@@ -14,45 +14,45 @@ drwxr-xr-x	root/root	usr/lib/cmake/
 drwxr-xr-x	root/root	usr/lib/cmake/FreeRDP-Client3/
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Client3/FreeRDP-ClientConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Client3/FreeRDP-ClientConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Client3/FreeRDP-ClientTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Client3/FreeRDP-ClientTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Client3/FreeRDP-ClientTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/FreeRDP-Proxy3/
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Proxy3/FreeRDP-ProxyConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Proxy3/FreeRDP-ProxyConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Proxy3/FreeRDP-ProxyTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Proxy3/FreeRDP-ProxyTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Proxy3/FreeRDP-ProxyTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/FreeRDP-Server3/
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Server3/FreeRDP-ServerConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Server3/FreeRDP-ServerConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Server3/FreeRDP-ServerTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Server3/FreeRDP-ServerTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Server3/FreeRDP-ServerTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/FreeRDP-Shadow3/
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Shadow3/FreeRDP-ShadowConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Shadow3/FreeRDP-ShadowConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Shadow3/FreeRDP-ShadowTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Shadow3/FreeRDP-ShadowTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP-Shadow3/FreeRDP-ShadowTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/FreeRDP3/
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP3/FreeRDPConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP3/FreeRDPConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/FreeRDP3/FreeRDPTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/FreeRDP3/FreeRDPTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/FreeRDP3/FreeRDPTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/WinPR-tools3/
 -rw-r--r--	root/root	usr/lib/cmake/WinPR-tools3/WinPR-toolsConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/WinPR-tools3/WinPR-toolsConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/WinPR-tools3/WinPR-toolsTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/WinPR-tools3/WinPR-toolsTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/WinPR-tools3/WinPR-toolsTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/WinPR3/
 -rw-r--r--	root/root	usr/lib/cmake/WinPR3/WinPRConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/WinPR3/WinPRConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/WinPR3/WinPRTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/WinPR3/WinPRTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/WinPR3/WinPRTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/rdtk0/
--rw-r--r--	root/root	usr/lib/cmake/rdtk0/rdtk-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/rdtk0/rdtk-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/rdtk0/rdtk.cmake
 -rw-r--r--	root/root	usr/lib/cmake/rdtk0/rdtkConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/rdtk0/rdtkConfigVersion.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/uwac0/
--rw-r--r--	root/root	usr/lib/cmake/uwac0/uwac-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/uwac0/uwac-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/uwac0/uwac.cmake
 -rw-r--r--	root/root	usr/lib/cmake/uwac0/uwacConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/uwac0/uwacConfigVersion.cmake
@@ -62,23 +62,23 @@ drwxr-xr-x	root/root	usr/lib/freerdp3/proxy/
 -rwxr-xr-x	root/root	usr/lib/freerdp3/proxy/proxy-demo-plugin.so
 -rwxr-xr-x	root/root	usr/lib/freerdp3/proxy/proxy-dyn-channel-dump-plugin.so
 lrwxrwxrwx	root/root	usr/lib/libfreerdp-client3.so -> libfreerdp-client3.so.3
-lrwxrwxrwx	root/root	usr/lib/libfreerdp-client3.so.3 -> libfreerdp-client3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libfreerdp-client3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libfreerdp-client3.so.3 -> libfreerdp-client3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libfreerdp-client3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/libfreerdp-server-proxy3.so -> libfreerdp-server-proxy3.so.3
-lrwxrwxrwx	root/root	usr/lib/libfreerdp-server-proxy3.so.3 -> libfreerdp-server-proxy3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libfreerdp-server-proxy3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libfreerdp-server-proxy3.so.3 -> libfreerdp-server-proxy3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libfreerdp-server-proxy3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/libfreerdp-server3.so -> libfreerdp-server3.so.3
-lrwxrwxrwx	root/root	usr/lib/libfreerdp-server3.so.3 -> libfreerdp-server3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libfreerdp-server3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libfreerdp-server3.so.3 -> libfreerdp-server3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libfreerdp-server3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/libfreerdp-shadow-subsystem3.so -> libfreerdp-shadow-subsystem3.so.3
-lrwxrwxrwx	root/root	usr/lib/libfreerdp-shadow-subsystem3.so.3 -> libfreerdp-shadow-subsystem3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libfreerdp-shadow-subsystem3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libfreerdp-shadow-subsystem3.so.3 -> libfreerdp-shadow-subsystem3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libfreerdp-shadow-subsystem3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/libfreerdp-shadow3.so -> libfreerdp-shadow3.so.3
-lrwxrwxrwx	root/root	usr/lib/libfreerdp-shadow3.so.3 -> libfreerdp-shadow3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libfreerdp-shadow3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libfreerdp-shadow3.so.3 -> libfreerdp-shadow3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libfreerdp-shadow3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/libfreerdp3.so -> libfreerdp3.so.3
-lrwxrwxrwx	root/root	usr/lib/libfreerdp3.so.3 -> libfreerdp3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libfreerdp3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libfreerdp3.so.3 -> libfreerdp3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libfreerdp3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/librdtk0.so -> librdtk0.so.0
 lrwxrwxrwx	root/root	usr/lib/librdtk0.so.0 -> librdtk0.so.0.2.0
 -rwxr-xr-x	root/root	usr/lib/librdtk0.so.0.2.0
@@ -86,11 +86,11 @@ lrwxrwxrwx	root/root	usr/lib/libuwac0.so -> libuwac0.so.0
 lrwxrwxrwx	root/root	usr/lib/libuwac0.so.0 -> libuwac0.so.0.2.0
 -rwxr-xr-x	root/root	usr/lib/libuwac0.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libwinpr-tools3.so -> libwinpr-tools3.so.3
-lrwxrwxrwx	root/root	usr/lib/libwinpr-tools3.so.3 -> libwinpr-tools3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libwinpr-tools3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libwinpr-tools3.so.3 -> libwinpr-tools3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libwinpr-tools3.so.3.9.0
 lrwxrwxrwx	root/root	usr/lib/libwinpr3.so -> libwinpr3.so.3
-lrwxrwxrwx	root/root	usr/lib/libwinpr3.so.3 -> libwinpr3.so.3.8.0
--rwxr-xr-x	root/root	usr/lib/libwinpr3.so.3.8.0
+lrwxrwxrwx	root/root	usr/lib/libwinpr3.so.3 -> libwinpr3.so.3.9.0
+-rwxr-xr-x	root/root	usr/lib/libwinpr3.so.3.9.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/FreeRDP/
 drwxr-xr-x	root/root	usr/share/FreeRDP/images/
