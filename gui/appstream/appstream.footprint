@@ -1,0 +1,37 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/appstreamcli
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/appstreamcli-compose
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/AppStream-1.0.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/AppStreamCompose-1.0.typelib
+lrwxrwxrwx	root/root	usr/lib/libappstream-compose.so -> libappstream-compose.so.0
+lrwxrwxrwx	root/root	usr/lib/libappstream-compose.so.0 -> libappstream-compose.so.1.0.4
+-rwxr-xr-x	root/root	usr/lib/libappstream-compose.so.1.0.4
+lrwxrwxrwx	root/root	usr/lib/libappstream.so -> libappstream.so.5
+-rwxr-xr-x	root/root	usr/lib/libappstream.so.1.0.4
+lrwxrwxrwx	root/root	usr/lib/libappstream.so.5 -> libappstream.so.1.0.4
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/appstream/
+-rw-r--r--	root/root	usr/share/appstream/appstream.conf
+drwxr-xr-x	root/root	usr/share/gettext/
+drwxr-xr-x	root/root	usr/share/gettext/its/
+-rw-r--r--	root/root	usr/share/gettext/its/metainfo.its
+-rw-r--r--	root/root	usr/share/gettext/its/metainfo.loc
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/AppStream-1.0.gir
+-rw-r--r--	root/root	usr/share/gir-1.0/AppStreamCompose-1.0.gir
+drwxr-xr-x	root/root	usr/share/installed-tests/
+drwxr-xr-x	root/root	usr/share/installed-tests/appstream/
+-rw-r--r--	root/root	usr/share/installed-tests/appstream/metainfo-validate.test
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/appstream/
+-rw-r--r--	root/root	usr/share/licenses/appstream/COPYING
+drwxr-xr-x	root/root	usr/share/metainfo/
+-rw-r--r--	root/root	usr/share/metainfo/org.freedesktop.appstream.cli.metainfo.xml
+-rw-r--r--	root/root	usr/share/metainfo/org.freedesktop.appstream.compose.metainfo.xml
+drwxr-xr-x	root/root	usr/share/vala/
+drwxr-xr-x	root/root	usr/share/vala/vapi/
+-rw-r--r--	root/root	usr/share/vala/vapi/appstream.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/appstream.vapi
