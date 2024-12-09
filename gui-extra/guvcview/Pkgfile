@@ -1,16 +1,17 @@
 description="Simple GTK interface for capturing and viewing video from UVC devices"
 url="http://guvcview.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Daniel,Spiky"
+license="GPL2"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Daniel,Tnut"
 
 makedepends=(eudev libusb ffmpeg gtk3 v4l-utils portaudio gsl)
 run=(desktop-file-utils)
 
 
 name=guvcview
-version=2.1.0
-release=2
+version=2.2.1
 
 makedepends=(eudev libusb ffmpeg gtk3 v4l-utils portaudio gsl)
 run=(desktop-file-utils)
@@ -25,10 +26,15 @@ build() {
 
 cd $name-$version
 
-./configure --prefix=/usr \
---disable-static --disable-debian-menu
+mkdir build
+cd    build
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+-DUSE_SFML=ON \
+..
+
 make
 make DESTDIR=$PKG install
-# Obsolet libs
-rm $PKG/usr/lib/libgview{render,encoder,v4l2core,audio}.la
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
