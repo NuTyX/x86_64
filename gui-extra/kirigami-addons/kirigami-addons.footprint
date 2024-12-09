@@ -7,8 +7,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6KirigamiAddons/
 -rw-r--r--	root/root	usr/lib/cmake/KF6KirigamiAddons/KirigamiAddonsTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6KirigamiAddons/KirigamiAddonsTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsStatefulApp.so -> libKirigamiAddonsStatefulApp.so.6
--rwxr-xr-x	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.6 -> libKirigamiAddonsStatefulApp.so.1.4.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.6 -> libKirigamiAddonsStatefulApp.so.1.6.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
@@ -24,6 +24,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/FloatingButton.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/FloatingToolBar.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/MessageDialog.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/RadioSelector.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/SearchPopupField.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/SegmentedButton.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/components/componentsplugin.qmltypes
@@ -54,6 +55,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/delegates/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/delegates/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/AboutKDE.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/AboutKDEPage.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/AboutPage.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/AbstractFormDelegate.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormArrow.qml
@@ -70,7 +72,9 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormGridContainer.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormHeader.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormPasswordFieldDelegate.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormPlaceholderMessageDelegate.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormRadioDelegate.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormRadioSelectorDelegate.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormSectionText.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormSpinBoxDelegate.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/FormSwitchDelegate.qml
@@ -82,6 +86,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/libformcardplugin.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/ContentItemLoader.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/FormCardUnits.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/SpinButton.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/labs/
@@ -173,3 +178,4 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/kdevappwizard/
 drwxr-xr-x	root/root	usr/share/kdevappwizard/templates/
 -rw-r--r--	root/root	usr/share/kdevappwizard/templates/kirigamiaddons6.tar.bz2
+-rw-r--r--	root/root	usr/share/kdevappwizard/templates/librarymanager6.tar.bz2
