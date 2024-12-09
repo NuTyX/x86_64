@@ -1,17 +1,16 @@
 description="Mousepad is a simple GTK+ text editor for the Xfce desktop environment."
 url="http://www.xfce.org/projects/mousepad/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Tyrry,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tyrry,Fabienwang,Tnut"
 
 makedepends=(dbus-glib xorg-libxrandr xorg-libxinerama
-             xorg-libsm xfconf gspell)
+             xorg-libsm xfconf gspell libxfce4ui)
 run=(gtk-update-icon-cache desktop-file-utils startup-notification gtksourceview4)
 
 set=(xfce4)
 
 name=mousepad
-version=0.6.2
-release=1
+version=0.6.3
 
 source=(http://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
