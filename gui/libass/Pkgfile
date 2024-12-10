@@ -1,12 +1,14 @@
 description="Portable subtitle renderer for Advanced Substation Alpha/Substation Alpha subtitle format"
 url="https://github.com/libass"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(freetype fribidi xorg-fontconfig harfbuzz)
 
 name=libass
 version=0.17.3
+release=2
 
 source=(${url}/$name/releases/download/$version/$name-$version.tar.xz)
 
