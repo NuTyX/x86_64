@@ -8,8 +8,10 @@ contributors="Pierre,Rems,Spiky"
 
 makedepends=(qtbase qtdeclarative qtgraphicaleffects)
 
+set=(qt5)
+
 name=qtquickcontrols2
-version=5.15.12
+version=5.15.16
 _name="${name}-everywhere-opensource-src"
 
 source=(kf5-1.patch
