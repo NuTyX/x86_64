@@ -10,8 +10,10 @@ makedepends=(qtbase qtdeclarative qttools pciutils xorg-libxtst xorg-libxcursor 
 
 PKGMK_GROUPS=()
 
+set=(qt5)
+
 name=qtdoc
-version=5.15.12
+version=5.15.16
 _name="qt-everywhere-opensource-src"
 
 source=(no-qmake.patch qt5-webengine-python3.patch 
