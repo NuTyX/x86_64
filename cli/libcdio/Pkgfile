@@ -4,19 +4,27 @@ url="http://www.gnu.org/software/libcdio/"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
-makedepends=(autoconf automake m4 libcddb ncurses)
+makedepends=(perl ncurses texinfo help2man)
 
 name=libcdio
 version=2.1.0
+release=2
 
-source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+source=(version.texi
+        https://download.tuxfamily.org/nutyx/sources/$name/$name-$version.tar.xz)
 
+prepare() {
+ cp version.texi $name-$version/doc
+}
 build() {
 cd $name-$version
 
-autoreconf -fi
-
-./configure --prefix=/usr --disable-static --disable-vcd-info --enable-cpp-progs
+./configure --prefix=/usr  \
+         --disable-static  \
+        --disable-vcd-info \
+        --enable-cpp-progs \
+        --disable-cddb     \
+        --enable-maintainer-mode
 make
 make DESTDIR=$PKG install
 
@@ -28,13 +36,4 @@ rm $PKG/usr/lib/libudf.la
 sed -e "/define CDIO_LIBCDIO_SOURCE_PATH/s|.*|/* #undef CDIO_LIBCDIO_SOURCE_PATH */|" \
       -i $PKG/usr/include/cdio/cdio_config.h
 
-}
-
-uptodate() {
-local url ext
-url="https://ftp.gnu.org/gnu/$name/"
-ext=".tar.gz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url?C=M\;O=A|grep $name-[0-9]|grep [0-9]$ext$| \
-sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
 }
