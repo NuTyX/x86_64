@@ -8,8 +8,10 @@ contributors="Pierre,Rems,Spiky"
 
 makedepends=(qtbase)
 
+set=(qt5)
+
 name=qtnetworkauth
-version=5.15.12
+version=5.15.16
 _name="${name}-everywhere-opensource-src"
 
 source=(https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/${_name}-${version}.tar.xz)
