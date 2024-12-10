@@ -1,0 +1,43 @@
+diff -Naur a/configure.ac b/configure.ac
+--- a/configure.ac	2020-12-21 02:09:29.000000000 +0100
++++ b/configure.ac	2024-12-10 22:09:02.410402615 +0100
+@@ -50,7 +50,7 @@
+ # Save this value here, since automake will set cflags later
+ cflags_set=${CFLAGS+set}
+ 
+-AM_INIT_AUTOMAKE([no-define -Wno-portability dist-bzip2])
++AM_INIT_AUTOMAKE([no-define -Wno-portability dist-bzip2 foreign])
+ 
+ # Support silent build rules, requires at least automake-1.11. Enable
+ # by either passing --enable-silent-rules to configure or passing V=0
+diff -Naur a/gdk/x11/gdkxid.c b/gdk/x11/gdkxid.c
+--- a/gdk/x11/gdkxid.c	2020-12-18 06:29:40.000000000 +0100
++++ b/gdk/x11/gdkxid.c	2024-12-10 22:08:35.720514507 +0100
+@@ -58,7 +58,7 @@
+ 					    (GEqualFunc) gdk_xid_equal);
+ 
+   if (g_hash_table_lookup (display_x11->xid_ht, xid))
+-    g_warning ("XID collision, trouble ahead");
++    g_debug ("XID collision, trouble ahead");
+ 
+   g_hash_table_insert (display_x11->xid_ht, xid, data);
+ }
+diff -Naur a/gtk/gtkmodules.c b/gtk/gtkmodules.c
+--- a/gtk/gtkmodules.c	2020-12-18 06:29:40.000000000 +0100
++++ b/gtk/gtkmodules.c	2024-12-10 22:08:45.583803563 +0100
+@@ -229,13 +229,8 @@
+   gchar *module_name;
+ 
+   module_name = _gtk_find_module (name, "modules");
+-  if (!module_name)
+-    {
+-      /* As last resort, try loading without an absolute path (using system
+-       * library path)
+-       */
+-      module_name = g_module_build_path (NULL, name);
+-    }
++  if (module_name == NULL)
++    return NULL;
+ 
+   module = g_module_open (module_name, G_MODULE_BIND_LOCAL | G_MODULE_BIND_LAZY);
+ 
