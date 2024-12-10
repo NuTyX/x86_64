@@ -1,10 +1,13 @@
 description="System daemon for managing color devices"
 url="http://www.freedesktop.org/software/colord/"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=colord
 version=1.4.7
+release=2
+
 makedepends=(meson libgudev sqlite polkit lcms2 argyllcms gobject-introspection libusb dbus vala libgusb)
 source=(http://www.freedesktop.org/software/$name/releases/$name-$version.tar.xz)
 
