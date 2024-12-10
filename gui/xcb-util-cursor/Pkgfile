@@ -3,13 +3,14 @@ url="http://cgit.freedesktop.org/xcb/util-cursor"
 
 license="Custom:MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 makedepends=(libxcb  xcb-util-renderutil xcb-util-image)
 
 name=xcb-util-cursor
 version=0.1.5
+release=2
 
 source=(https://xorg.freedesktop.org/archive/individual/lib/$name-$version.tar.xz)
 
