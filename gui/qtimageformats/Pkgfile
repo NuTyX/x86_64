@@ -8,17 +8,14 @@ packager="tnut <tnut@nutyx.org>"
 
 makedepends=(qtbase libwebp libmng jasper)
 
+set=(qt5)
+
 name=qtimageformats
-version=5.15.12
+version=5.15.16
 _name="${name}-everywhere-opensource-src"
 
-source=(kf5-1.patch
-        https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/${_name}-${version}.tar.xz)
+source=(https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/${_name}-${version}.tar.xz)
 
-prepare() {
- cd ${_name/-opensource/}-${version}
- patch -Np1 -i ../kf5-1.patch
-}
 build() {
 mkdir build
 cd    build
