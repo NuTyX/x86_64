@@ -10,6 +10,8 @@ makedepends=(perl e2fsprogs bison gawk)
 
 name=kerberos
 version=1.21.3
+release=2
+
 runyx_version=20201011
 
 source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
@@ -44,6 +46,14 @@ chmod -v 755 $PKG/bin/ksu
 
 install -v -dm755 $PKG/usr/share/doc/krb5-$version
 cp -vfr ../doc/*  $PKG/usr/share/doc/krb5-$version
+
+# Thoses libs are needed
+ln -sv db2.so    $PKG/usr/lib/krb5/plugins/kdb/db2.so.0
+ln -sv k5tls.so  $PKG/usr/lib/krb5/plugins/tls/k5tls.so.0
+for i in otp.so pkinit.so spake.so test.so
+do
+   ln -sv $i    $PKG/usr/lib/krb5/plugins/preauth/$i.0
+done
 
 # Service
 cd $SRC/runyx-${runyx_version}
