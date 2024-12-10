@@ -32,6 +32,11 @@ rm $PKG/usr/lib/speech-dispatcher/spd_alsa.la
 rm $PKG/usr/lib/speech-dispatcher/spd_oss.la
 rm $PKG/usr/lib/speech-dispatcher/spd_pulse.la
 
+# Broken one
+rm $PKG/usr/libexec/speech-dispatcher-modules/sd_kali
+rm $PKG/usr/libexec/speech-dispatcher-modules/sd_voxin
+
+
 install -Dm644 COPYING.GPL-2 $PKG/usr/share/licenses/$name/COPYING.GPL-2
 install -Dm644 COPYING.GPL-3 $PKG/usr/share/licenses/$name/COPYING.GPL-3
 install -Dm644 COPYING.LGPL $PKG/usr/share/licenses/$name/COPYING.LGPL
