@@ -8,8 +8,10 @@ packager="tnut <tnut@nutyx.org>"
 
 makedepends=(qtbase speech-dispatcher)
 
+set=(qt5)
+
 name=qtspeech
-version=5.15.12
+version=5.15.16
 _name="${name}-everywhere-opensource-src"
 
 source=(kf5-1.patch
