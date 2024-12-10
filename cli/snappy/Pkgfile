@@ -1,15 +1,16 @@
 description="A fast compressor/decompressor library"
-url="http://code.google.com/p/snappy/"
+url="https://code.google.com/p/snappy/"
 
 maintainers="https://code.google.com/p/snappy/people/list"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 PKGMK_KEEP_SOURCES="no"
 makedepends=(cmake llvm gtest benchmark)
 
 name=snappy
 version=1.2.1
+release=2
 
 source=(snappy.pc
         https://github.com/google/snappy/archive/$version.tar.gz
