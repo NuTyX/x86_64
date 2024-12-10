@@ -3,14 +3,15 @@ url="http://librsvg.sourceforge.net/"
 
 liense="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(gdk-pixbuf libcroco pango vala rustc cargo-c
              gi-docgen python-docutils python-smartypants)
 
 name=librsvg
 version=2.59.2
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/librsvg/-/archive/$version/$name-$version.tar.gz)
 build() {
@@ -23,7 +24,7 @@ cd    build
 meson setup ..      \
 --prefix=/usr       \
 -Dtests=false       \
---buildtype=release \
+--buildtype=plain   \
 -Ddocs=disabled
 
 meson compile
@@ -31,13 +32,4 @@ meson compile
 DESTDIR=$PKG meson install --no-rebuild
 
 install -Dm644 ../COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
-}
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/$name"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
 }
