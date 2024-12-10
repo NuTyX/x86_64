@@ -1,13 +1,14 @@
 description="Library full of GTK+ widgets for mobile phones"
 url="A library full of GTK+ widgets for mobile phones"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson ninja gtk3 libglade gobject-introspection vala)
 
 name=libhandy
 version=1.8.3
+release=2
 
 source=(https://ftp.gnome.org/pub/gnome/sources/libhandy/${version:0:3}/libhandy-$version.tar.xz)
 
