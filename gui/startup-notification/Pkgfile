@@ -1,6 +1,8 @@
 description="Monitor and display application startup"
 url="http://freedesktop.org/wiki/Software/startup-notification"
 
+license="LGPL"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
@@ -8,7 +10,7 @@ makedepends=(xorg-libx11 xcb-util)
 
 name=startup-notification
 version=0.12
-release=4
+release=5
 
 source=(http://www.freedesktop.org/software/$name/releases/$name-$version.tar.gz)
 
