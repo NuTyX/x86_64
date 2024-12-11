@@ -1,0 +1,38 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/signond.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/signond
+-rwxr-xr-x	root/root	usr/bin/signonpluginprocess
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/SignOnQt6/
+-rw-r--r--	root/root	usr/lib/cmake/SignOnQt6/SignOnQt6Config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SignOnQt6/SignOnQt6ConfigVersion.cmake
+lrwxrwxrwx	root/root	usr/lib/libsignon-extension.so -> libsignon-extension.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-extension.so.1 -> libsignon-extension.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-extension.so.1.0 -> libsignon-extension.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsignon-extension.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-plugins-common.so -> libsignon-plugins-common.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-plugins-common.so.1 -> libsignon-plugins-common.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-plugins-common.so.1.0 -> libsignon-plugins-common.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsignon-plugins-common.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-plugins.so -> libsignon-plugins.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-plugins.so.1 -> libsignon-plugins.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-plugins.so.1.0 -> libsignon-plugins.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsignon-plugins.so.1.0.0
+-rw-r--r--	root/root	usr/lib/libsignon-qt6.a
+lrwxrwxrwx	root/root	usr/lib/libsignon-qt6.so -> libsignon-qt6.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-qt6.so.1 -> libsignon-qt6.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsignon-qt6.so.1.0 -> libsignon-qt6.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsignon-qt6.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/signon/
+-rwxr-xr-x	root/root	usr/lib/signon/libexampleplugin.so
+-rwxr-xr-x	root/root	usr/lib/signon/libpasswordplugin.so
+-rwxr-xr-x	root/root	usr/lib/signon/libssotest2plugin.so
+-rwxr-xr-x	root/root	usr/lib/signon/libssotestplugin.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/share/dbus-1/services/com.google.code.AccountsSSO.SingleSignOn.service
+-rw-r--r--	root/root	usr/share/dbus-1/services/com.nokia.SingleSignOn.Backup.service
