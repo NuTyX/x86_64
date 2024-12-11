@@ -1,14 +1,16 @@
 description="A library to delight your users with fancy features"
 url="http://www.gnome.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
 makedepends=(meson vala gobject-introspection gtk3)
 
 name=libdazzle
 version=3.44.0
-release=2
+release=3
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 build=meson
