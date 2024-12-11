@@ -1,14 +1,16 @@
 description="Extensions to Xfce by os-cillation"
 url="http://www.xfce.org/"
 
-packager="Tnut <tnut@nutyx.org>"
-contributors="Tyrry,Greg,Tnut,Spiky"
+license="GPL-2.0-or-later AND LGPL-2.1-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Tyrry,Greg,Spiky"
 
 makedepends=(gtk3 perl-uri libxfce4ui libxfce4util gtk-doc)
 
 name=exo
 version=4.18.0
-release=2
+release=3
 
 source=(http://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
