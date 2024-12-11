@@ -1,6 +1,6 @@
-diff -Naur sox-14.4.2-orig/src/Makefile.am sox-14.4.2/src/Makefile.am
---- sox-14.4.2-orig/src/Makefile.am	2015-04-08 17:11:09.555343005 -0400
-+++ sox-14.4.2/src/Makefile.am	2015-04-08 17:11:25.115317153 -0400
+diff -Naur a/src/Makefile.am b/src/Makefile.am
+--- a/src/Makefile.am	2014-10-30 04:29:54.000000000 +0100
++++ b/src/Makefile.am	2024-12-11 15:08:09.800126287 +0100
 @@ -95,7 +95,7 @@
  
  libsox_la_CFLAGS = @WARN_CFLAGS@
@@ -10,3 +10,14 @@ diff -Naur sox-14.4.2-orig/src/Makefile.am sox-14.4.2/src/Makefile.am
  
  if HAVE_WIN32_LTDL
    libsox_la_SOURCES += win32-ltdl.c win32-ltdl.h
+diff -Naur a/src/sox_sample_test.h b/src/sox_sample_test.h
+--- a/src/sox_sample_test.h	2012-01-23 23:27:33.000000000 +0100
++++ b/src/sox_sample_test.h	2024-12-11 15:08:54.047150312 +0100
+@@ -20,6 +20,7 @@
+ #endif
+ #include <assert.h>
+ #include "sox.h"
++#include <math.h>
+ 
+ #define TEST_UINT(bits) \
+   uint##bits = 0; \
