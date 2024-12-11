@@ -8,6 +8,7 @@ license="GPL, CDDL"
 
 name=virtualbox
 version=7.1.4
+release=2
 
 run=(qtbase desktop-file-utils)
 
@@ -17,6 +18,8 @@ _name=Oracle_VirtualBox_Extension_Pack
 
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
 [ "`uname -m`" == "x86_64"   ] && _ARCH=amd64
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(http://download.virtualbox.org/virtualbox/$version/VirtualBox-${version}-${buildr}-Linux_${_ARCH}.run
         http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${buildr}.vbox-extpack
