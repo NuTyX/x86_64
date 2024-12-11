@@ -8,7 +8,9 @@ makedepends=(cards doxygen xorgproto fltk xorg-libx11 xorg-libxext
              xorg-libxfixes xorg-libxft xorg-libxinerama mesa)
 
 name=flcards
-version=2.93.2
+version=2.93.3
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 # [ "$release" != "1" ] &&  patchname="flcards-$version-consolidate-$release.patch"
 
