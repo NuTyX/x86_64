@@ -1,19 +1,21 @@
 description='The one stop solution to all your e-book needs'
 url='https://calibre-ebook.com/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=calibre
 version=7.16.0
+release=2
 
 makedepends=(bash-completion xdg-utils)
 run=(libglvnd xorg-fontconfig libxkbcommon xorg-libxcomposite
      xorg-libxdamage xorg-libxrandr xorg-libxtst xorg-libxshmfence
      xorg-libxkbfile hicolor-icon-theme desktop-file-utils
-     gtk-update-icon-cache shared-mime-info) 
+     gtk-update-icon-cache shared-mime-info qt6-base)
 
 PKGMK_IGNORE_UNPACK="yes"
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://download.calibre-ebook.com/$version/$name-$version-x86_64.txz)
 
 
