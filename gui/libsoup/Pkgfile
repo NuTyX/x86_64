@@ -1,8 +1,10 @@
 description="HTTP client/server library for GNOME"
 url="https://wiki,gnome.org/Projects/libsoup"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Tnut"
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Spiky"
 
 makedepends=(libxml2 gobject-introspection vala sqlite
              ninja meson libpsl kerberos)
@@ -10,7 +12,7 @@ run=(glib-networking)
 
 name=libsoup
 version=2.74.3
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
@@ -24,13 +26,4 @@ meson --prefix=/usr \
       ..
 ninja
 DESTDIR=$PKG ninja install
-}
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/$name"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
 }
