@@ -11,10 +11,11 @@ run=(alsa-lib gtk3 desktop-file-utils openssl nss at-spi2-core
 _commit=gf2c48e6f
 name=spotify
 version=1.2.48.405
-release=1
+release=2
 
 _curl_version="curl-8.9.1"
 
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://curl.haxx.se/download/${_curl_version}.tar.gz
         http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}.${_commit}_amd64.deb)
 
