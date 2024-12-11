@@ -1,8 +1,10 @@
 description='Provides a C++ interface to Cairo'
 url='http://cairographics.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+license="LGPL, MPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cairo libsigc++-3)
 
@@ -10,6 +12,7 @@ name=cairomm-gtk-4
 _name=cairomm
 
 version=1.18.0
+release=2
 
 source=(http://cairographics.org/releases/$_name-$version.tar.xz)
 
@@ -26,13 +29,4 @@ meson setup .. \
 ninja
 
 DESTDIR=$PKG ninja install
-}
-
-uptodate() {
-local url ext
-
-url="https://www.cairographics.org/releases/"
-ext=".tar.gz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url|grep $name-[0-9]|grep $ext$|sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
 }
