@@ -3,13 +3,14 @@ url="http://www.gnu.org/directory/libs/LibGTop.html"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="B,Juglas,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="B,Juglas,Rems,Spiky"
 
 makedepends=(gtk-doc intltool gobject-introspection)
 
 name=libgtop
 version=2.41.3
+release=2
 
 source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
