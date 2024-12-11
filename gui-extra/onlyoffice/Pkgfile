@@ -11,7 +11,10 @@ makedepends=(gtk3 nss gstreamer gstreamer-plugins-base gstreamer-plugins-ugly tt
 
 name=onlyoffice
 version=8.2.0
+release=2
+
 PKGMK_IGNORE_UNPACK="yes"
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/$name-desktopeditors_amd64.deb)
 
 prepare() {
