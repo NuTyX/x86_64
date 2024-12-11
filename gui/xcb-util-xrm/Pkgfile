@@ -1,12 +1,16 @@
 description="XCB utility functions for the X resource manager"
 url="https://github.com/Airblader/xcb-util-xrm"
 
+license="MIT"
+
 packager="tnut <tnut@nutyx.org>"
+contributors=""
 
 makedepends=(xcb-util xorg-util-macros xorg-libx11)
 
 name=xcb-util-xrm
 version=1.3
+release=2
 
 source=(https://github.com/Airblader/xcb-util-xrm/releases/download/v${version}/xcb-util-xrm-${version}.tar.gz)
 
