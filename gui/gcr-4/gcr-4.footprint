@@ -1,0 +1,30 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gcr-viewer-gtk4
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/Gck-2.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/Gcr-4.typelib
+lrwxrwxrwx	root/root	usr/lib/libgck-2.so -> libgck-2.so.2
+lrwxrwxrwx	root/root	usr/lib/libgck-2.so.2 -> libgck-2.so.2.3.0
+-rwxr-xr-x	root/root	usr/lib/libgck-2.so.2.3.0
+lrwxrwxrwx	root/root	usr/lib/libgcr-4.so -> libgcr-4.so.4
+lrwxrwxrwx	root/root	usr/lib/libgcr-4.so.4 -> libgcr-4.so.4.3.0
+-rwxr-xr-x	root/root	usr/lib/libgcr-4.so.4.3.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+-rw-r--r--	root/root	usr/lib/systemd/user/gcr-ssh-agent.service
+-rw-r--r--	root/root	usr/lib/systemd/user/gcr-ssh-agent.socket
+drwxr-xr-x	root/root	usr/libexec/
+-rwxr-xr-x	root/root	usr/libexec/gcr-ssh-agent
+-rwxr-xr-x	root/root	usr/libexec/gcr4-ssh-askpass
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/Gck-2.gir
+-rw-r--r--	root/root	usr/share/gir-1.0/Gcr-4.gir
+drwxr-xr-x	root/root	usr/share/vala/
+drwxr-xr-x	root/root	usr/share/vala/vapi/
+-rw-r--r--	root/root	usr/share/vala/vapi/gck-2.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/gck-2.vapi
+-rw-r--r--	root/root	usr/share/vala/vapi/gcr-4.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/gcr-4.vapi
