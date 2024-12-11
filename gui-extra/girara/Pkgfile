@@ -1,13 +1,14 @@
 description="User interface library focused on simplicity and minimalism"
 url="http://pwmt.org/projects/girara"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rocket"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rocket, Spiky"
 
 makedepends=(glib gtk3 meson)
 
 name=girara
 version=0.4.4
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/pwmt/${name}/archive/${version}.tar.gz)
