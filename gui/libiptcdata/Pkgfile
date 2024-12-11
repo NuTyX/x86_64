@@ -1,11 +1,14 @@
 description="Library for manipulating the IPTC metadata" 
 url="http://libiptcdata.sourceforge.net/" 
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Indoo,Tnut"
+license="LGPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Indoo,Spiky"
 
 name=libiptcdata
 version=1.0.5
+release=2
 
 source=(https://github.com/ianw/libiptcdata/releases/download/release_1_0_5/$name-$version.tar.gz)
 
