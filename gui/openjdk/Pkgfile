@@ -8,9 +8,11 @@ run=(make-ca)
 
 name=openjdk
 version=8u141
-release=3
+release=4
 
 _version=1.8.0.141
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(http://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-${_version}/OpenJDK-${_version}-`uname -m`-bin.tar.xz)
 
