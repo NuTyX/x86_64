@@ -17,6 +17,7 @@ version=131.0.6778.69
 release=1
 
 re2version=2024-04-01
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
 build() {
