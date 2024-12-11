@@ -3,11 +3,11 @@ url="https://discordapp.com/"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Sundev79,Skythrew,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Sundev79,Skythrew,Spiky"
 
 name=discord
-version=0.0.76
+version=0.0.77
 
 run=(gtk3 libnotify xorg-libxscrnsaver
      glibc alsa-lib nspr nss pulseaudio
@@ -15,6 +15,7 @@ run=(gtk3 libnotify xorg-libxscrnsaver
      desktop-file-utils gtk-update-icon-cache shared-mime-info)
 
 PKGMK_KEEP_SOURCES="no"
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(https://dl.discordapp.net/apps/linux/$version/$name-$version.tar.gz
         terms licenses)
