@@ -1,11 +1,14 @@
 description='A powerful and versatile slicer for Resin 3D printers'
 url='https://mango3d.io/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="BlogofraisFR"
+license="Mango 3D"
 
+packager="tnut <tnut@nutyx.org>"
+contributors="BlogofraisFR, Spiky"
 
 name=lycheeslicer
-version=5.4.3
+version=7.1.3
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(https://mango-lychee.nyc3.cdn.digitaloceanspaces.com/LycheeSlicer-$version.deb)
