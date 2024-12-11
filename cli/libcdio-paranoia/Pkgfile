@@ -1,6 +1,8 @@
 description="GNU Compact Disc Input and Control Library"
 url="http://www.gnu.org/software/libcdio/"
 
+license="GPL-3.0-or-later"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
@@ -8,7 +10,7 @@ makedepends=(libcdio)
 
 name=libcdio-paranoia
 version=10.2
-release=4
+release=5
 
 source=( http://ftp.gnu.org/gnu/libcdio/libcdio-paranoia-${version}+0.94+1.tar.bz2)
 
@@ -21,12 +23,4 @@ build() {
 # Obsolets libs
 rm $PKG/usr/lib/libcdio_{cdda,paranoia}.la
 
-}
-uptodate() {
-local url ext
-url="https://ftp.gnu.org/gnu/libcdio/"
-ext=".tar.bz2"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url?C=M\;O=A|grep $name-[0-9]|grep [0-9]$ext$| \
-sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
 }
