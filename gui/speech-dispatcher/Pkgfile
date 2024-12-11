@@ -11,7 +11,7 @@ makedepends=(automake texinfo intltool dotconf
 
 name=speech-dispatcher
 version=0.11.5
-release=3
+release=5
 
 source=(https://github.com/brailcom/speechd/releases/download/$version/$name-$version.tar.gz)
 build() {
@@ -35,6 +35,8 @@ rm $PKG/usr/lib/speech-dispatcher/spd_pulse.la
 # Broken one
 rm $PKG/usr/libexec/speech-dispatcher-modules/sd_kali
 rm $PKG/usr/libexec/speech-dispatcher-modules/sd_voxin
+rm $PKG/usr/libexec/speech-dispatcher-modules/sd_baratinoo
+
 
 
 install -Dm644 COPYING.GPL-2 $PKG/usr/share/licenses/$name/COPYING.GPL-2
