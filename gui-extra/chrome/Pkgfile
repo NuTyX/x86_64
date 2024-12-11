@@ -1,7 +1,7 @@
 makedepends=(alsa-lib gtk3 cups xorg-libxscrnsaver xorg-libxtst nss)
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
 
 description="The popular and trusted web browser by Google (Stable Channel)"
 url="https://www.google.com/chrome"
@@ -11,8 +11,10 @@ run=(xorg-libxscrnsaver hicolor-icon-theme desktop-file-utils
 
 name=chrome
 version=130.0.6723.58
+release=2
 
 PKGMK_KEEP_SOURCES="no"
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
