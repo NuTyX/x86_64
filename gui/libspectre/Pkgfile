@@ -1,5 +1,5 @@
 description="library for the made of documents postscript"
-url="http://libspectre.freedesktop.org/wiki/"
+url="https://libspectre.freedesktop.org/wiki/"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
@@ -8,6 +8,7 @@ makedepends=(ghostscript)
 
 name=libspectre
 version=0.2.12
+release=2
 
 source=(http://libspectre.freedesktop.org/releases/$name-$version.tar.gz)
 
