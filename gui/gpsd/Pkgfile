@@ -1,12 +1,14 @@
 description="GPS daemon and library to support USB/serial GPS devices"
 url="http://catb.org/gpsd/"
 
+license="BSD"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=gpsd
 version=3.25
-release=2
+release=3
 
 makedepends=(tar asciidoc bluez docbook-xsl gtk3 libusb python qtbase scons
              python-gobject python-cairo)
