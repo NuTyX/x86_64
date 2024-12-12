@@ -1,6 +1,8 @@
 description="X virtual keyboard library."
 url="https://www.yoctoproject.org/tools-resources/projects/matchbox"
 
+license="GPL"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
@@ -8,7 +10,7 @@ makedepends=(xorg-libxtst)
 
 name=libfakekey
 version=0.3
-release=2
+release=3
 
 source=(http://git.yoctoproject.org/cgit/cgit.cgi/$name/snapshot/$name-$version.tar.gz)
 
