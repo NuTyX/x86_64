@@ -3,13 +3,14 @@ url="https://github.com/frankosterfeld/qtkeychain"
 
 license="BSD"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(libsecret qt6-base cmake qt6-tools qt6-declarative)
 
 name=qtkeychain-qt6
 version=0.14.3
+release=2
 
 _name=qtkeychain
 
