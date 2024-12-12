@@ -3,16 +3,17 @@ url="https://brave.com/"
 
 name=brave-browser
 version=1.71.114
+release=2
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 run=(make-ca ttf-liberation dejavu-ttf
     hicolor-icon-theme desktop-file-utils
     gtk-update-icon-cache shared-mime-info)
 
 PKGMK_KEEP_SOURCES="no"
-
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(http://downloads.tuxfamily.org/nutyx/sources/$name/libffmpeg.so
         https://github.com/brave/$name/releases/download/v$version/$name-$version-1.x86_64.rpm)
 
