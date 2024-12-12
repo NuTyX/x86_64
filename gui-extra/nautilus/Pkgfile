@@ -1,10 +1,10 @@
 description="GNOME file manager"
-url="http://live.gnome.org/Nautilus"
+url="https://apps.gnome.org/Nautilus"
 
-license="GPL3"
+license="GPL-3.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Fabienwang,Spicy"
 
 run=(desktop-file-utils gtk-update-icon-cache tracker-miners
      shared-mime-info libportal gtk4)
@@ -15,7 +15,7 @@ set=(gnome budgie)
 
 name=nautilus
 version=46.2
-
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
