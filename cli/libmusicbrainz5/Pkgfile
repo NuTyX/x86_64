@@ -1,29 +1,36 @@
 description="Library That Provides Access to the MusicBrainz Server"
-url="http://musicbrainz.org/doc/libmusicbrainz"
+url="https://musicbrainz.org/doc/libmusicbrainz"
+
+license="LGPL-2.1-only"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
-makedepends=(cmake expat neon doxygen)
+makedepends=(libxml2 cmake expat neon doxygen)
 
 name=libmusicbrainz5
 version=5.1.0
-release=3
+release=4
 
-source=(https://github.com/metabrainz/libmusicbrainz/releases/download/release-$version/libmusicbrainz-$version.tar.gz)
+source=(libmusicbrainz5-5.patch libmusicbrainz5-16.patch libmusicbrainz5-19.patch
+        https://github.com/metabrainz/libmusicbrainz/releases/download/release-$version/libmusicbrainz-$version.tar.gz)
 
-build() {
+prepare() {
 cd libmusicbrainz-$version
-mkdir build
-cd build
-cmake .. \
+patch -Np1 -i ../libmusicbrainz5-5.patch
+patch -Np1 -i ../libmusicbrainz5-16.patch
+patch -Np1 -i ../libmusicbrainz5-19.patch
+}
+build() {
+cmake -S libmusicbrainz-$version -B build -G Ninja \
 -DCMAKE_INSTALL_PREFIX:PATH=/usr \
--DBUILD_SHARED_LIBS:BOOL=ON \
--DBUILD_STATIC_LIBS:BOOL=OFF
-make
-doxygen ../Doxyfile
-make DESTDIR=$PKG install
-# Documentation
+-DCMAKE_BUILD_TYPE=None
+
+cmake --build build
+cmake --build build --target docs
+
+DESTDIR=$PKG cmake --install build
+
 mkdir -p $PKG/usr/share/doc/$name-$version
-cp -vr docs/ $PKG/usr/share/doc/$name-$version
+cp -r build/docs/ $PKG/usr/share/doc/$name-$version
 }
