@@ -3,8 +3,8 @@ url="https://github.com/BuddiesOfBudgie/magpie/"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(gobject-introspection meson sysprof xorg-server xorg-libsm
              gnome-desktop gnome-settings-daemon graphene colord dconf
@@ -15,7 +15,7 @@ set=(budgie)
 
 name=magpie-wm
 version=0.9.3
-release=2
+release=3
 
 source=(https://github.com/BuddiesOfBudgie/magpie/releases/download/v${version}/magpie-$version.tar.xz)
 
