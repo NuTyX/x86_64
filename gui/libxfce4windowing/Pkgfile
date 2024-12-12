@@ -3,13 +3,14 @@ url='https://docs.xfce.org/xfce/libxfce4windowing/start'
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(gdk-pixbuf gtk3 libwnck xorg-libx11 wayland gobject-introspection gtk-doc)
 
 name=libxfce4windowing
 version=4.19.3
+release=2
 
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
