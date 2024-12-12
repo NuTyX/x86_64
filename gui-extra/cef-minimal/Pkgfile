@@ -5,7 +5,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors=""
 
 makedepends=(cmake xorg-libx11 xorg-libxcomposite
-             at-spi2-core)
+             at-spi2-core cairo cups mesa)
 run=()
 
 name=cef-minimal
