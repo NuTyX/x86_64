@@ -11,6 +11,7 @@ set=(mate)
 name=mate-libweather
 _name=libmateweather
 version=1.28.0
+release=2
 
 source=(https://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
