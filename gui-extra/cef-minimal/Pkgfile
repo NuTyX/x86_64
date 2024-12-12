@@ -4,7 +4,8 @@ url="https://bitbucket.org/chromiumembedded/cef"
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(cmake)
+makedepends=(cmake xorg-libx11 xorg-libxcomposite
+             at-spi2-core)
 run=()
 
 name=cef-minimal
