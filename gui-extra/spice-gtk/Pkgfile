@@ -1,17 +1,17 @@
 description="GTK+ client library for SPICE"
 url="https://www.spice-space.org/"
 
-contributors="Rems,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(attr gtk3 libcacard spice-protocol libjpeg-turbo pulseaudio
              opus usbredir gobject-introspection usbutils vala
              gstreamer-plugins-bad gstreamer-plugins-good python-six 
              gstreamer-plugins-libav cyrus-sasl lz4 json-glib python-parsing)
 
-run=(acl) 
 name=spice-gtk
 version=0.42
+release=2
 
 source=(https://www.spice-space.org/download/gtk/$name-$version.tar.xz)
 
