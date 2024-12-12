@@ -1,0 +1,20 @@
+diff -Naur --color a/configure b/configure
+--- a/configure	2023-07-27 23:49:43.000000000 +0200
++++ b/configure	2024-12-12 11:46:01.778464499 +0100
+@@ -21093,14 +21093,13 @@
+   fi
+ 
+   use_gpgrt_config=""
+-  if test x"${LIBGCRYPT_CONFIG}" = x -a x"$GPGRT_CONFIG" != x -a "$GPGRT_CONFIG" != "no"; then
++    GPGRT_CONFIG="/usr/bin/gpgrt-config"
+     if $GPGRT_CONFIG libgcrypt --exists; then
+-      LIBGCRYPT_CONFIG="$GPGRT_CONFIG libgcrypt"
++      LIBGCRYPT_CONFIG="$GPGRT_CONFIG libgcrypt --version"
+       { $as_echo "$as_me:${as_lineno-$LINENO}: Use gpgrt-config as libgcrypt-config" >&5
+ $as_echo "$as_me: Use gpgrt-config as libgcrypt-config" >&6;}
+       use_gpgrt_config=yes
+     fi
+-  fi
+   if test -z "$use_gpgrt_config"; then
+     if test x"${LIBGCRYPT_CONFIG}" = x ; then
+       case "${SYSROOT}" in
