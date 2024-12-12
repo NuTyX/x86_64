@@ -1,6 +1,8 @@
 description="Openbox is a highly configurable window manager."
 url="http://openbox.org/wiki/Main_Page"
 
+license="GPL"
+
 packager="tnut <tnut@nutyx.org>"
 
 makedepends=(autoconf sed grep
@@ -10,7 +12,7 @@ run=( startup-notification dbus )
 
 name=openbox
 version=3.6.1
-release=8
+release=9
 
 source=(http://openbox.org/dist/openbox/$name-$version.tar.gz \
         openbox.xinitrc openbox-3.6.1-consolidate-1.patch)
