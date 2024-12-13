@@ -1,8 +1,10 @@
-description="Tools which simplify and make the network more directly manageable."
-url="http://projects.gnome.org/NetworkManager/"
+description="Network connection manager and user applications"
+url="https://networkmanager.dev/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Rems,Tnut"
+license="LGPL-2.1-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Rems,Spiky"
 
 makedepends=(libndp libgudev dbus-glib iptables libnl
              nss wireless-tools polkit upower vala grep
@@ -16,6 +18,7 @@ _name=NetworkManager
 
 name=networkmanager
 version=1.50.0
+release=2
 
 runyx_version=20201011
 
@@ -41,7 +44,7 @@ meson --prefix        /usr       \
       -Dmodem_manager=false      \
       -Ddocs=true                \
       -Dsystemdsystemunitdir=/lib/systemd/system \
-      -Dvapi=false	         \
+      -Dvapi=true                \
       ../${_name}-$version
 ninja
 DESTDIR=$PKG ninja install
