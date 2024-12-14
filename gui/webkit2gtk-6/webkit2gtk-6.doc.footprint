@@ -511,6 +511,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.SecurityOrigin.ref.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.SecurityOrigin.to_string.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.SecurityOrigin.unref.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.apply_from_key_file.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_allow_file_access_from_file_urls.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_allow_modal_dialogs.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_allow_top_navigation_to_data_urls.html
@@ -523,6 +524,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_default_monospace_font_size.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_disable_web_security.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_draw_compositing_indicators.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_enable_2d_canvas_acceleration.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_enable_back_forward_navigation_gestures.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_enable_caret_browsing.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.get_enable_developer_extras.html
@@ -579,6 +581,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_default_monospace_font_size.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_disable_web_security.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_draw_compositing_indicators.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_enable_2d_canvas_acceleration.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_enable_back_forward_navigation_gestures.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_enable_caret_browsing.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/method.Settings.set_enable_developer_extras.html
@@ -901,6 +904,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.default-monospace-font-size.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.disable-web-security.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.draw-compositing-indicators.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.enable-2d-canvas-acceleration.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.enable-back-forward-navigation-gestures.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.enable-caret-browsing.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/property.Settings.enable-developer-extras.html
@@ -1009,6 +1013,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.AuthenticationRequest.authenticated.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.AuthenticationRequest.cancelled.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.AutomationSession.create-web-view.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.AutomationSession.will-close.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.BackForwardList.changed.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.ColorChooserRequest.finished.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk-6.0/signal.CookieManager.changed.html
