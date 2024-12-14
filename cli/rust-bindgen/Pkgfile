@@ -7,17 +7,10 @@ contributors=""
 makedepends=(rustc llvm)
 
 name=rust-bindgen
-version=0.71.0
-release=2
+version=0.71.1
 
-source=(https://github.com/rust-lang/rust-bindgen/archive/v$version/$name-$version.tar.gz
-        0001-Unbreak-shell-completion-and-version-without-header.patch)
+source=(https://github.com/rust-lang/rust-bindgen/archive/v$version/$name-$version.tar.gz)
 
-prepare() {
-cd $name-$version
-patch -Np1 -i ../0001-Unbreak-shell-completion-and-version-without-header.patch
-
-}
 
 build() {
 cd $name-$version
