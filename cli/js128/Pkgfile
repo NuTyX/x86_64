@@ -7,10 +7,15 @@ contributors=""
 makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip cbindgen)
 
 name=js128
-version=128.5.0
+version=128.5.1
 
 source=(https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz)
 
+prepare() {
+cd firefox-$version
+
+sed -i 's/icu-i18n/icu-uc &/' js/moz.configure
+}
 
 build() {
 cd firefox-$version
