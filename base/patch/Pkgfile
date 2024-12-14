@@ -1,11 +1,16 @@
 description="The GNU patch tool"
 url="http://www.gnu.org/software/patch/patch.html"
+
+license="GPL"
+
 maintainer="Larry Wall,Paul Eggert,Wayne Davison,David MacKenzie,Andreas Gruenbacher"
 packager="tnut <tnut@nutyx.org>"
 
 name=patch
 version=2.7.6
-release=2
+release=3
+
+makedepends=(attr)
 
 set=(devel)
 
