@@ -8,15 +8,17 @@ makedepends=(python c-ares icu zlib libuv libnghttp2)
 
 name=node
 alias=(nodejs node-js)
-version=22.1.0
-release=2
+version=22.12.0
 
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
         system-c-ares.patch)
 
 prepare() {
-  patch -d node-v$version -Rp1 < system-c-ares.patch
+#  patch -d node-v$version -Rp1 < system-c-ares.patch
+cd node-v$version
+sed '/pkgicu/s/icu-i18n/& icu-uc/' -i configure.py
 }
+
 build() {
 
 	cd node-v$version
