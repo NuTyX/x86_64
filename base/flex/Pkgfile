@@ -1,8 +1,9 @@
 description="A tool for generating text-scanning programs"
 url="http://flex.sourceforge.net"
 
-maintainer="Will Estes,John Millaway,Aaron Stone,Vern Paxson,Van Jacobson,Jef Poskanzer,Kevin Gong,Vern Paxson"
+license="Custom"
 
+maintainer="Will Estes,John Millaway,Aaron Stone,Vern Paxson,Van Jacobson,Jef Poskanzer,Kevin Gong,Vern Paxson"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre B"
 
@@ -10,7 +11,7 @@ makedepends=(m4)
 
 name=flex
 version=2.6.4
-release=3
+release=4
 
 set=(devel)
 
