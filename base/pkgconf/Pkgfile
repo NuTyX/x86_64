@@ -1,5 +1,5 @@
 description='Package compiler and linker metadata toolkit'
-url='http://pkgconf.org/'
+url='https://gitea.treehouse.systems/ariadne/pkgconf'
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
@@ -8,8 +8,7 @@ set=(devel)
 
 name=pkgconf
 version=2.3.0
-
-set=(chroot)
+release=2
 
 source=(https://distfiles.ariadne.space/$name/$name-$version.tar.xz)
 
