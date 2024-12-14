@@ -1,5 +1,7 @@
 description="The MPFR package contains functions for multiple precision math"
-url="http://www.mpfr.org"
+url="https://www.mpfr.org"
+
+license="GPL-3.0-or-later, LGPL-3.0-or-later"
 
 maintainer="Guillaume Hanrot,Vincent Lefèvre,Patrick Pélissier,Philippe Théveny and Paul Zimmermann"
 contributors="Pierre,Spiky"
@@ -9,7 +11,7 @@ makedepends=(gmp texinfo)
 
 name=mpfr
 version=4.2.1
-release=3
+release=4
 
 set=(chroot)
 
