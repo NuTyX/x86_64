@@ -8,6 +8,7 @@ makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip)
 
 name=js115
 version=115.18.0
+release=2
 
 source=(https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz)
 
@@ -15,6 +16,7 @@ source=(https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/fi
 prepare() {
 cd firefox-$version
 
+sed -i 's/icu-i18n/icu-uc &/' js/moz.configure
 grep -rl \"rU\" | xargs sed -i 's/"rU"/"r"/'
 }
 
