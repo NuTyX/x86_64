@@ -1,15 +1,17 @@
 description="A free library for arbitrary precision arithmetic."
 url="http://gmplib.org/"
 
+license="GPL-2.0-or-later, LGPL-3.0-or-later"
+
 paintainer="Torb,Granlund and many more"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(m4 texinfo)
 
 name=gmp
 version=6.3.0
-release=2
+release=3
 
 set=(chroot)
 
