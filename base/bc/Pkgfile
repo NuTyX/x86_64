@@ -1,5 +1,5 @@
 description="The Bc package contains an arbitrary precision numeric processing language."
-url="http://ftp.gnu.org/gnu/bc/"
+url="https://www.gnu.org/software/bc/"
 
 license="GPL-2.0-only"
 
@@ -8,10 +8,11 @@ contributors="Spkiy"
 
 name=bc
 version=1.07.1
+release=2
 
 makedepends=(texinfo)
 
-source=(http://ftp.gnu.org/gnu/bc/bc-$version.tar.gz)
+source=(https://ftp.gnu.org/gnu/bc/bc-$version.tar.gz)
 
 build() {
 cd $name-$version
