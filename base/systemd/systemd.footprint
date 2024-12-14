@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/portablectl
 -rwxr-xr-x	root/root	bin/systemctl
 -rwxr-xr-x	root/root	bin/systemd-ask-password
+lrwxrwxrwx	root/root	bin/systemd-confext -> systemd-sysext
 -rwxr-xr-x	root/root	bin/systemd-creds
 -rwxr-xr-x	root/root	bin/systemd-escape
 -rwxr-xr-x	root/root	bin/systemd-hwdb
@@ -21,6 +22,8 @@ drwxr-xr-x	root/root	etc/X11/xinit/
 drwxr-xr-x	root/root	etc/X11/xinit/xinitrc.d/
 -rwxr-xr-x	root/root	etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 drwxr-xr-x	root/root	etc/binfmt.d/
+drwx------	root/root	etc/credstore.encrypted/
+drwx------	root/root	etc/credstore/
 drwxr-xr-x	root/root	etc/kernel/
 drwxr-xr-x	root/root	etc/kernel/install.d/
 drwxr-xr-x	root/root	etc/modules-load.d/
@@ -51,7 +54,7 @@ drwxr-xr-x	root/root	lib/modprobe.d/
 drwxr-xr-x	root/root	lib/security/
 -rwxr-xr-x	root/root	lib/security/pam_systemd.so
 drwxr-xr-x	root/root	lib/systemd/
--rwxr-xr-x	root/root	lib/systemd/libsystemd-core-253.so
+-rwxr-xr-x	root/root	lib/systemd/libsystemd-core-254.so
 drwxr-xr-x	root/root	lib/systemd/network/
 -rw-r--r--	root/root	lib/systemd/network/80-6rd-tunnel.network
 -rw-r--r--	root/root	lib/systemd/network/80-container-host0.network
@@ -128,6 +131,8 @@ lrwxrwxrwx	root/root	lib/systemd/system/initrd-root-fs.target.wants/systemd-repa
 -rw-r--r--	root/root	lib/systemd/system/initrd-udevadm-cleanup-db.service
 -rw-r--r--	root/root	lib/systemd/system/initrd-usr-fs.target
 -rw-r--r--	root/root	lib/systemd/system/initrd.target
+drwxr-xr-x	root/root	lib/systemd/system/initrd.target.wants/
+lrwxrwxrwx	root/root	lib/systemd/system/initrd.target.wants/systemd-battery-check.service -> ../systemd-battery-check.service
 -rw-r--r--	root/root	lib/systemd/system/kexec.target
 -rw-r--r--	root/root	lib/systemd/system/kmod-static-nodes.service
 -rw-r--r--	root/root	lib/systemd/system/ldconfig.service
@@ -178,6 +183,7 @@ lrwxrwxrwx	root/root	lib/systemd/system/sockets.target.wants/systemd-journald-de
 lrwxrwxrwx	root/root	lib/systemd/system/sockets.target.wants/systemd-journald.socket -> ../systemd-journald.socket
 lrwxrwxrwx	root/root	lib/systemd/system/sockets.target.wants/systemd-udevd-control.socket -> ../systemd-udevd-control.socket
 lrwxrwxrwx	root/root	lib/systemd/system/sockets.target.wants/systemd-udevd-kernel.socket -> ../systemd-udevd-kernel.socket
+-rw-r--r--	root/root	lib/systemd/system/soft-reboot.target
 -rw-r--r--	root/root	lib/systemd/system/sound.target
 -rw-r--r--	root/root	lib/systemd/system/suspend-then-hibernate.target
 -rw-r--r--	root/root	lib/systemd/system/suspend.target
@@ -223,8 +229,10 @@ lrwxrwxrwx	root/root	lib/systemd/system/sysinit.target.wants/systemd-update-utmp
 -rw-r--r--	root/root	lib/systemd/system/systemd-ask-password-wall.path
 -rw-r--r--	root/root	lib/systemd/system/systemd-ask-password-wall.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-backlight@.service
+-rw-r--r--	root/root	lib/systemd/system/systemd-battery-check.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-binfmt.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-boot-check-no-failures.service
+-rw-r--r--	root/root	lib/systemd/system/systemd-confext.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-coredump.socket
 -rw-r--r--	root/root	lib/systemd/system/systemd-coredump@.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-exit.service
@@ -233,7 +241,6 @@ lrwxrwxrwx	root/root	lib/systemd/system/sysinit.target.wants/systemd-update-utmp
 -rw-r--r--	root/root	lib/systemd/system/systemd-growfs-root.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-growfs@.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-halt.service
--rw-r--r--	root/root	lib/systemd/system/systemd-hibernate-resume@.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-hibernate.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-hostnamed.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-hwdb-update.service
@@ -271,6 +278,7 @@ lrwxrwxrwx	root/root	lib/systemd/system/sysinit.target.wants/systemd-update-utmp
 -rw-r--r--	root/root	lib/systemd/system/systemd-repart.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-rfkill.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-rfkill.socket
+-rw-r--r--	root/root	lib/systemd/system/systemd-soft-reboot.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-suspend-then-hibernate.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-suspend.service
 -rw-r--r--	root/root	lib/systemd/system/systemd-sysctl.service
@@ -314,6 +322,7 @@ drwxr-xr-x	root/root	lib/systemd/system/user@0.service.d/
 -rw-r--r--	root/root	lib/systemd/system/var-lib-machines.mount
 -rwxr-xr-x	root/root	lib/systemd/systemd
 -rwxr-xr-x	root/root	lib/systemd/systemd-backlight
+-rwxr-xr-x	root/root	lib/systemd/systemd-battery-check
 -rwxr-xr-x	root/root	lib/systemd/systemd-binfmt
 -rwxr-xr-x	root/root	lib/systemd/systemd-boot-check-no-failures
 -rwxr-xr-x	root/root	lib/systemd/systemd-cgroups-agent
@@ -356,6 +365,7 @@ lrwxrwxrwx	root/root	lib/systemd/systemd-udevd -> ../../sbin/udevadm
 -rwxr-xr-x	root/root	lib/systemd/systemd-volatile-root
 -rwxr-xr-x	root/root	lib/systemd/systemd-xdg-autostart-condition
 drwxr-xr-x	root/root	sbin/
+lrwxrwxrwx	root/root	sbin/mount.ddi -> ../usr/bin/systemd-dissect
 lrwxrwxrwx	root/root	sbin/systemd-init -> ../lib/systemd/systemd
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -382,6 +392,7 @@ lrwxrwxrwx	root/root	usr/bin/systemd-umount -> systemd-mount
 -rwxr-xr-x	root/root	usr/bin/timedatectl
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/binfmt.d/
+drwxr-xr-x	root/root	usr/lib/credstore/
 drwxr-xr-x	root/root	usr/lib/environment.d/
 lrwxrwxrwx	root/root	usr/lib/environment.d/99-environment.conf -> ../../../etc/environment
 drwxr-xr-x	root/root	usr/lib/kernel/
@@ -543,6 +554,7 @@ drwxr-xr-x	root/root	usr/share/factory/etc/
 -rw-r--r--	root/root	usr/share/factory/etc/issue
 -rw-r--r--	root/root	usr/share/factory/etc/locale.conf
 -rw-r--r--	root/root	usr/share/factory/etc/nsswitch.conf
+-rw-r--r--	root/root	usr/share/factory/etc/vconsole.conf
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.hostname1.policy

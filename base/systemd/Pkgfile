@@ -16,21 +16,21 @@ PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja util-linux dbus
 makedepends=(acl libcap kmod m4 gperf pam libxcrypt)
 
 name=systemd
-version=253
-release=2
+version=254
+release=1
 
 PKGMK_IGNORE_FOOTPRINT='no'
 PKGMK_IGNORE_RUNTIMEDEPS='yes'
 PKGMK_GROUPS=(devel doc man lib)
 
-source=(consolidate.patch
+source=(consolidate-1.patch
         http://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 
 prepare() {
 ln -sf /bin/true /usr/bin/xsltproc
 cd $name-$version
-patch -Np1 -i ../consolidate.patch
+patch -Np1 -i ../consolidate-1.patch
 }
 build() {
 cd $name-$version
