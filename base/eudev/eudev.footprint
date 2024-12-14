@@ -1,8 +1,11 @@
 drwxr-xr-x	root/root	bin/
 drwxr-xr-x	root/root	etc/
+drwx------	root/root	etc/credstore.encrypted/
+drwx------	root/root	etc/credstore/
 drwxr-xr-x	root/root	etc/udev/
 -r--r--r--	root/root	etc/udev/hwdb.bin
 drwxr-xr-x	root/root	etc/udev/hwdb.d/
+-rw-r--r--	root/root	etc/udev/iocost.conf
 drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/udev/rules.d/55-lfs.rules
 -rw-r--r--	root/root	etc/udev/rules.d/81-cdrom.rules
@@ -10,8 +13,8 @@ drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/udev/udev.conf
 drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib/libudev.so -> libudev.so.1
-lrwxrwxrwx	root/root	lib/libudev.so.1 -> libudev.so.1.7.6
--rwxr-xr-x	root/root	lib/libudev.so.1.7.6
+lrwxrwxrwx	root/root	lib/libudev.so.1 -> libudev.so.1.7.7
+-rwxr-xr-x	root/root	lib/libudev.so.1.7.7
 drwxr-xr-x	root/root	lib/systemd/
 drwxr-xr-x	root/root	lib/systemd/network/
 -rw-r--r--	root/root	lib/systemd/network/99-default.link
@@ -48,10 +51,12 @@ drwxr-xr-x	root/root	lib/udev/hwdb.d/
 -rw-r--r--	root/root	lib/udev/hwdb.d/70-mouse.hwdb
 -rw-r--r--	root/root	lib/udev/hwdb.d/70-pda.hwdb
 -rw-r--r--	root/root	lib/udev/hwdb.d/70-pointingstick.hwdb
+-rw-r--r--	root/root	lib/udev/hwdb.d/70-sound-card.hwdb
 -rw-r--r--	root/root	lib/udev/hwdb.d/70-touchpad.hwdb
 -rw-r--r--	root/root	lib/udev/hwdb.d/80-ieee1394-unit-function.hwdb
 -rw-r--r--	root/root	lib/udev/hwdb.d/README
 -rw-r--r--	root/root	lib/udev/init-net-rules.sh
+-rwxr-xr-x	root/root	lib/udev/iocost
 -rwxr-xr-x	root/root	lib/udev/mtd_probe
 -rw-r--r--	root/root	lib/udev/rule_generator.functions
 drwxr-xr-x	root/root	lib/udev/rules.d/
@@ -59,6 +64,7 @@ drwxr-xr-x	root/root	lib/udev/rules.d/
 -rw-r--r--	root/root	lib/udev/rules.d/60-autosuspend.rules
 -rw-r--r--	root/root	lib/udev/rules.d/60-block.rules
 -rw-r--r--	root/root	lib/udev/rules.d/60-cdrom_id.rules
+-rw-r--r--	root/root	lib/udev/rules.d/60-dmi-id.rules
 -rw-r--r--	root/root	lib/udev/rules.d/60-drm.rules
 -rw-r--r--	root/root	lib/udev/rules.d/60-evdev.rules
 -rw-r--r--	root/root	lib/udev/rules.d/60-fido-id.rules
@@ -83,6 +89,7 @@ drwxr-xr-x	root/root	lib/udev/rules.d/
 -rw-r--r--	root/root	lib/udev/rules.d/80-drivers.rules
 -rw-r--r--	root/root	lib/udev/rules.d/80-net-setup-link.rules
 -rw-r--r--	root/root	lib/udev/rules.d/81-net-dhcp.rules
+-rw-r--r--	root/root	lib/udev/rules.d/90-iocost.rules
 -rw-r--r--	root/root	lib/udev/rules.d/90-vconsole.rules
 -rw-r--r--	root/root	lib/udev/rules.d/99-systemd.rules
 -rw-r--r--	root/root	lib/udev/rules.d/README
@@ -95,6 +102,7 @@ drwxr-xr-x	root/root	sbin/
 lrwxrwxrwx	root/root	sbin/udevd -> udevadm
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/credstore/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/

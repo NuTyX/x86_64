@@ -1,12 +1,17 @@
 description="The Gawk package contains programs for manipulating text files."
 url="http://www.gnu.org/software/gawk/"
 
+license="GPL-3.0-or-later"
+
 maintainer="Paul Rubin,Paul Finlason,Richard Stallman,David Trueman and,Arnold Robbins"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
 
+makedepends=(gmp mpfr)
+
 name=gawk
 version=5.3.1
+release=2
 
 source=(http://ftp.gnu.org/gnu/gawk/gawk-$version.tar.xz)
 
