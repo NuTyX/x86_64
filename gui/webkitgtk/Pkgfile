@@ -8,21 +8,25 @@ contributors="Pierre,Greg,Fanch,Tnut"
 
 makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
              gstreamer-plugins-bad xorg-libxt gtk2 gtk3 gtk-doc
-             hunspell hyphen icu libgudev libsecret libsoup sysprof
+             hunspell hyphen icu libgudev libsecret libsoup3 sysprof
              libwebp mesa ruby sqlite enchant geoclue2 libavif
              gobject-introspection hicolor-icon-theme llvm wpebackend-fdo
              harfbuzz gtk-doc libnotify wayland woff2 libmanette unifdef)
              
 name=webkitgtk
-version=2.46.3
+version=2.46.4
 
 source=(http://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
-prepare() {
-echo 'add_compile_definitions("U_DEFINE_FALSE_AND_TRUE=1")' >> $name-$version/Source/WTF/wtf/CMakeLists.txt
-sed -i /U_HIDE_DEPRECATE/d $name-$version/Source/WTF/wtf/Platform.h
 
-export NINJAJOBS=25
+export NINJAJOBS=15
+
+prepare() {
+cd webkitgtk-$version
+
+sed '/U_SHOW_CPLUSPLUS_API/a#define U_SHOW_CPLUSPLUS_HEADER_API 0' \
+    -i Source/WTF/wtf/Platform.h
 }
+
 build() {
 cd $name-$version
 mkdir -p build
@@ -38,7 +42,6 @@ cmake -G Ninja                     \
       -DUSE_LIBHYPHEN=OFF          \
       -DENABLE_MINIBROWSER=ON      \
       -DUSE_WOFF2=ON               \
-      -DUSE_SOUP2=ON               \
       -DUSE_GTK4=OFF               \
       -DUSE_LIBBACKTRACE=OFF       \
       -DUSE_JPEGXL=OFF             \
