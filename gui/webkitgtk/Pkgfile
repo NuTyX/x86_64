@@ -8,13 +8,14 @@ contributors="Pierre,Greg,Fanch,Tnut"
 
 makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
              gstreamer-plugins-bad xorg-libxt gtk2 gtk3 gtk-doc
-             hunspell hyphen icu libgudev libsecret libsoup3 sysprof
+             hunspell hyphen icu libgudev libsecret libsoup sysprof
              libwebp mesa ruby sqlite enchant geoclue2 libavif
              gobject-introspection hicolor-icon-theme llvm wpebackend-fdo
              harfbuzz gtk-doc libnotify wayland woff2 libmanette unifdef)
              
 name=webkitgtk
 version=2.46.4
+release=2
 
 source=(http://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
 
@@ -43,6 +44,7 @@ cmake -G Ninja                     \
       -DENABLE_MINIBROWSER=ON      \
       -DUSE_WOFF2=ON               \
       -DUSE_GTK4=OFF               \
+      -DUSE_SOUP2=ON               \
       -DUSE_LIBBACKTRACE=OFF       \
       -DUSE_JPEGXL=OFF             \
       -DENABLE_GTKDOC=ON           \
