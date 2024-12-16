@@ -1,17 +1,17 @@
 description="A global menu plugin for the Xfce panel"
 url="https://gitlab.com/vala-panel-project/vala-panel-appmenu/"
 
-packager="Schrodinger72 <schrodinger@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Schrodinger72"
 
-makedepends=(libxfce4util libxfce4ui xfce4-panel glib gtk3 meson bamf)
-run=(vala)
+makedepends=(libxfce4util libxfce4ui xfce4-panel)
+run=(appmenu-gtk-module)
 
 set=(xfce4-extra)
 
 name=xfce4-appmenu-plugin
 _name=vala-panel-appmenu
-version=0.7.6
+version=24.05
 
 source=(https://gitlab.com/vala-panel-project/${_name}/-/archive/${version}/${_name}-${version}.tar.gz)
 
@@ -29,4 +29,16 @@ build() {
     ..
   ninja
   DESTDIR=$PKG ninja install
+}
+package() {
+
+  # part of appmenu-gtk-module
+  rm $PKG/usr/lib/gtk-2.0/modules/libappmenu-gtk-module.so
+  rm $PKG/usr/lib/gtk-3.0/modules/libappmenu-gtk-module.so
+  rm $PKG/usr/lib/libappmenu-gtk*
+  rm $PKG/usr/lib/systemd/user/appmenu-gtk-module.service
+  rm $PKG/usr/share/glib-2.0/schemas/org.appmenu.gtk-module.gschema.xml
+  rm -r $PKG/usr/include/appmenu-gtk-parser
+  rm $PKG/usr/lib/pkgconfig/appmenu-gtk*
+  mv $PKG/usr/share/licenses/{appmenu-gtk-module,$name}
 }
