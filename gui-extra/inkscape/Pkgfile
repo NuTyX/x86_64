@@ -8,10 +8,10 @@ contributors="Spiky"
 
 name=inkscape
 version=1.4
-release=1
+release=2
 
 source=(https://inkscape.org/gallery/item/53679/inkscape-$version.tar.xz
-        poppler-24.10.diff poppler-24.11.diff)
+        $name-$version-consolidate-1.patch)
 
 makedepends=(cmake boost git gtkmm python lcms2 gsl libxslt gc
              dbus-glib lcms2 libjpeg-turbo poppler-glib gspell
@@ -23,8 +23,7 @@ run=(desktop-file-utils hicolor-icon-theme gtk-update-icon-cache
 prepare() {
  mv $name-${version}_* $name
  cd $name
- patch -Np1 -i ../poppler-24.10.diff
- patch -Np1 -i ../poppler-24.11.diff
+ patch -Np1 -i ../$name-$version-consolidate-1.patch
 }
 
 build() {
