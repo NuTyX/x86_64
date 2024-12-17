@@ -1,5 +1,10 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/libexec/
+-rwxr-xr-x	root/root	usr/lib/libexec/kde_ufw_plugin_helper.py
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/kde_ufw_plugin_helper
 -rwxr-xr-x	root/root	usr/lib/libkcm_firewall_core.so
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
@@ -11,11 +16,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_firewall.so
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/kde_ufw_plugin_helper.py
-drwxr-xr-x	root/root	usr/libexec/kf6/
-drwxr-xr-x	root/root	usr/libexec/kf6/kauth/
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/kde_ufw_plugin_helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kcm_firewall.desktop
