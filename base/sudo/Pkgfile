@@ -1,13 +1,16 @@
 description="Give certain users (or groups) the ability to run some commands as root."
-url="http://www.sudo.ws"
+url="https://www.sudo.ws"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(pam)
 
+set=(core)
+
 name=sudo
 version=1.9.15p5
+release=2
 
 source=($url/dist/$name-$version.tar.gz)
 
