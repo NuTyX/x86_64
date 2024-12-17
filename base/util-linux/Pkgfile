@@ -5,8 +5,7 @@ maintainer="Karel Zak kzak at redhat dot com"
 packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Fabienwang,Spiky"
 
-makedepends=(eudev file ncurses readline systemd zlib
-             libxcrypt)
+makedepends=(eudev file ncurses readline zlib libxcrypt)
 
 set=(core)
 
@@ -39,31 +38,12 @@ mkdir -pv $PKG/var/lib/hwclock
 	--disable-runuser    \
 	--disable-pylibmount \
 	--disable-static     \
+          --without-systemd    \
+--without-systemdsystemunitdir \
 	--without-python
 
 make
 make DESTDIR=$PKG  install
-mkdir -p $PKG/sbin
-mv $PKG/usr/sbin/agetty $PKG/sbin
-#
-## service
-SERVICEDIR=/lib/init/services
-
-mkdir -p $PKG/etc/init/{single,multi}
-
-for i in 1 2 3 4 5 6
-do
-  mkdir -p $PKG$SERVICEDIR/agetty-$i
-  echo "#!/bin/sh
-exec chpst -P /sbin/agetty -J tty$i 9600" > \
-  $PKG$SERVICEDIR/agetty-$i/run
-  chmod 755 $PKG$SERVICEDIR/agetty-$i/run
-  ln -sv $SERVICEDIR/agetty-$i \
-  $PKG/etc/init/single/agetty-$i
-  ln -sv $SERVICEDIR/agetty-$i \
-  $PKG/etc/init/multi/agetty-$i
-
-done
 }
 devel()
 {
