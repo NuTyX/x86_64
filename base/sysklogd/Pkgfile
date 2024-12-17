@@ -1,9 +1,11 @@
 description="Logging system messages, such as those given by the kernel."
-url="http://www.infodrom.org/projects/sysklogd/"
+url="https://www.infodrom.org/projects/sysklogd/"
 
 name=sysklogd
 version=2.6.2
-release=2
+release=3
+
+set=(core)
 
 contributors="Pierre B"
 packager="tnut <tnut@nutyx.org>"
