@@ -74,6 +74,20 @@ lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.2.
 lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so -> libcolorcorrect.so.6
 lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so.6 -> libcolorcorrect.so.6.2.4
 -rwxr-xr-x	root/root	usr/lib/libcolorcorrect.so.6.2.4
+drwxr-xr-x	root/root	usr/lib/libexec/
+-rwxr-xr-x	root/root	usr/lib/libexec/baloorunner
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/fontinst
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/fontinst_helper
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/fontinst_x11
+-rwxr-xr-x	root/root	usr/lib/libexec/kfontprint
+-rwxr-xr-x	root/root	usr/lib/libexec/ksmserver-logout-greeter
+-rwxr-xr-x	root/root	usr/lib/libexec/plasma-changeicons
+-rwxr-xr-x	root/root	usr/lib/libexec/plasma-dbus-run-session-if-needed
+-rwxr-xr-x	root/root	usr/lib/libexec/plasma-fallback-session-restore
+-rwxr-xr-x	root/root	usr/lib/libexec/plasma-fallback-session-save
+-rwxr-xr-x	root/root	usr/lib/libexec/plasma-sourceenv.sh
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so -> libkfontinst.so.6
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.2.4
 -rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.2.4
@@ -392,20 +406,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace-x11.target
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace.target
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-xembedsniproxy.service
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/baloorunner
-drwxr-xr-x	root/root	usr/libexec/kf6/
-drwxr-xr-x	root/root	usr/libexec/kf6/kauth/
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/fontinst
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/fontinst_helper
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/fontinst_x11
--rwxr-xr-x	root/root	usr/libexec/kfontprint
--rwxr-xr-x	root/root	usr/libexec/ksmserver-logout-greeter
--rwxr-xr-x	root/root	usr/libexec/plasma-changeicons
--rwxr-xr-x	root/root	usr/libexec/plasma-dbus-run-session-if-needed
--rwxr-xr-x	root/root	usr/libexec/plasma-fallback-session-restore
--rwxr-xr-x	root/root	usr/libexec/plasma-fallback-session-save
--rwxr-xr-x	root/root	usr/libexec/plasma-sourceenv.sh
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kcm_autostart.desktop
