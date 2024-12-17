@@ -1,5 +1,5 @@
 description="A free library for arbitrary precision arithmetic."
-url="http://gmplib.org/"
+url="https://gmplib.org/"
 
 license="GPL-2.0-or-later, LGPL-3.0-or-later"
 
@@ -11,9 +11,9 @@ makedepends=(m4 texinfo)
 
 name=gmp
 version=6.3.0
-release=3
+release=4
 
-set=(chroot)
+set=(chroot core)
 
 PKGMK_KEEP_LA_LIBS="yes"
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.xz)
