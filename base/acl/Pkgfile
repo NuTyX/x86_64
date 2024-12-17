@@ -8,9 +8,9 @@ makedepends=(attr)
 
 name=acl
 version=2.3.2
-release=2
+release=3
 
-set=(chroot)
+set=(chroot core)
 
 PKGMK_LOCALES=()
 source=( http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
