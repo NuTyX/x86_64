@@ -1,15 +1,17 @@
 description="The Kmod package contains libraries and utilities for loading kernel modules."
-url="http://www.kernel.org/pub/linux/kernel/people/rusty/modules"
+url="https://www.kernel.org/pub/linux/kernel/people/rusty/modules"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
+
+set=(core)
 
 makedepends=(xz zstd openssl)
 PKGMK_GROUPS=(devel doc man)
 
 name=kmod
 version=33
-release=2
+release=3
 
 source=(http://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz )
 
