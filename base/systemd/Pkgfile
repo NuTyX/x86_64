@@ -18,22 +18,15 @@ makedepends=(acl libcap kmod m4 gperf pam libxcrypt)
 set=(core)
 
 name=systemd
-version=254
+version=257
 release=1
 
 PKGMK_IGNORE_FOOTPRINT='no'
 PKGMK_IGNORE_RUNTIMEDEPS='yes'
-PKGMK_GROUPS=(devel doc man lib)
 
-source=(consolidate-1.patch
-        http://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
+source=(http://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 
-prepare() {
-ln -sf /bin/true /usr/bin/xsltproc
-cd $name-$version
-patch -Np1 -i ../consolidate-1.patch
-}
 build() {
 cd $name-$version
 
@@ -41,27 +34,19 @@ mkdir build
 cd    build
 
 meson --prefix=/usr           \
---sysconfdir=/etc             \
---localstatedir=/var          \
--Dfirstboot=false             \
--Dinstall-tests=false         \
--Dkmod-path=/bin/kmod         \
--Dmount-path=/bin/mount       \
--Dsplit-usr=true              \
--Drpmmacrosdir=no             \
--Dsulogin-path=/sbin/sulogin  \
--Dumount-path=/bin/umount     \
--Dman=false                   \
--Dresolve=false               \
--Dsysvinit-path=              \
--Dsysvrcnd-path=              \
--Dtimesyncd=false             \
--Dsysusers=false              \
--Duserdb=false                \
--Dlocaled=false               \
--Dpam=true                    \
--Dpamconfdir=/etc/pam.d       \
--Dmode=release                \
+--buildtype=release           \
+-D firstboot=false            \
+-D install-tests=false        \
+-D ldconfig=false             \
+-D sysusers=false             \
+-D homed=disabled             \
+-D split-usr=false            \
+-D rpmmacrosdir=no            \
+-D man=disabled               \
+-D userdb=false               \
+-D pam=true                   \
+-D pamconfdir=/etc/pam.d      \
+-D mode=release               \
 ..
 
 ninja
@@ -75,58 +60,4 @@ do
    $PKG/usr/share/man
 done
 
-
-# systemd-initclt hack
-cp ../units/systemd-initctl.socket \
-$PKG/lib/systemd/system
-sed s@{{ROOTLIBEXECDIR}}@/lib/systemd@ \
- ../units/systemd-initctl.service.in \
-> $PKG/lib/systemd/system/systemd-initctl.service
-ln -sv ../systemd-initctl.socket  \
-$PKG/lib/systemd/system/sockets.target.wants/systemd-initctl.socket
-
-# Figure out what this file was for
-# install -m0644 ../tmpfiles.d/legacy.conf $PKG/usr/lib/tmpfiles.d
-
-mv $PKG/{,s}bin/udevadm
-ln -sv ../lib/systemd/systemd $PKG/sbin/systemd-init
-ln -svf ../../sbin/udevadm $PKG/lib/systemd/systemd-udevd
-
-# eudev Package files
-rm $PKG/sbin/udevadm
-rm -r $PKG/{lib,etc}/udev
-rm $PKG/usr/include/libudev.h
-rm $PKG/usr/lib/pkgconfig/libudev.pc
-rm $PKG/usr/share/pkgconfig/udev.pc
-rm $PKG/lib/libudev*
-rm $PKG/lib/systemd/network/99-default.link
-rm $PKG/usr/share/bash-completion/completions/udevadm
-rm $PKG/usr/share/zsh/site-functions/_udevadm
-
-# sysvinit package files
-rm $PKG/sbin/{halt,init,poweroff,reboot,shutdown}
-
-# Prevent systemd from resetting the maximum PID value
-rm -f $PKG/usr/lib/sysctl.d/50-pid-max.conf
-
-rm /usr/bin/xsltproc
-
-# elogind package files
-rm $PKG/{bin/loginctl,usr/bin/busctl}
-rm $PKG/usr/share/bash-completion/completions/loginctl
-rm $PKG/usr/share/dbus-1/system-services/org.freedesktop.login1.service
-rm -r $PKG/usr/share/factory/etc/pam.d
-rm $PKG/usr/share/polkit-1/actions/org.freedesktop.login1.policy
-rm $PKG/usr/share/zsh/site-functions/_loginctl
-rm $PKG/lib/systemd/system/multi-user.target.wants/systemd-logind.service
-rm $PKG/lib/systemd/system/systemd-logind.service
-}
-lib() {
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
-lib/lib* lib/systemd/libsystemd-shared*
-
-rm lib/lib* lib/systemd/libsystemd-shared*
-rm -d lib || true
 }

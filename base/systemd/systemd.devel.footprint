@@ -1,4 +1,5 @@
 drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/libudev.h
 drwxr-xr-x	root/root	usr/include/systemd/
 -rw-r--r--	root/root	usr/include/systemd/_sd-common.h
 -rw-r--r--	root/root	usr/include/systemd/sd-bus-protocol.h
@@ -11,10 +12,15 @@ drwxr-xr-x	root/root	usr/include/systemd/
 -rw-r--r--	root/root	usr/include/systemd/sd-hwdb.h
 -rw-r--r--	root/root	usr/include/systemd/sd-id128.h
 -rw-r--r--	root/root	usr/include/systemd/sd-journal.h
+-rw-r--r--	root/root	usr/include/systemd/sd-json.h
 -rw-r--r--	root/root	usr/include/systemd/sd-login.h
 -rw-r--r--	root/root	usr/include/systemd/sd-messages.h
 -rw-r--r--	root/root	usr/include/systemd/sd-path.h
+-rw-r--r--	root/root	usr/include/systemd/sd-varlink-idl.h
+-rw-r--r--	root/root	usr/include/systemd/sd-varlink.h
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsystemd.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libudev.pc
 drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/systemd.pc
+-rw-r--r--	root/root	usr/share/pkgconfig/udev.pc
