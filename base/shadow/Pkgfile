@@ -2,15 +2,16 @@ description="The Shadow package contains programs for handling passwords in a se
 url="https://shadow-maint.github.io/shadow/"
 
 maintainer="pkg-shadow-devel@lists.alioth.debian.org"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(libxcrypt pam)
 
 name=shadow
 version=4.16.0
+release=2
 
-set=(chroot)
+set=(chroot core)
 
 PKGMK_LOCALES=()
 source=(https://github.com/shadow-maint/shadow/releases/download/$version/shadow-$version.tar.xz)
