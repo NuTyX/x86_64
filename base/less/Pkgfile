@@ -1,10 +1,17 @@
 description="The Less package contains a text file viewer."
-url="http://www.greenwoodsoftware.com/less/"
+url="https://www.greenwoodsoftware.com/less/"
+
 maintainer="Mark Nudelman"
-packager="spiky <spiky@nutyx.org>"
+contributors="Spiky"
+packager="tnut <tnut@nutyx.org>"
+
+set=(core)
+
+makedepends=(ncurses)
 
 name=less
 version=668
+release=2
 
 source=(http://www.greenwoodsoftware.com/less/less-$version.tar.gz)
 
