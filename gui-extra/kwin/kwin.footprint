@@ -18,6 +18,9 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin-6.0-reset-active-mouse-screen
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin-6.1-remove-gridview-expose-shortcuts
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin5_update_default_rules
+drwxr-xr-x	root/root	usr/lib/libexec/
+-rwxr-xr-x	root/root	usr/lib/libexec/kwin-applywindowdecoration
+-rwxr-xr-x	root/root	usr/lib/libexec/kwin_killer_helper
 lrwxrwxrwx	root/root	usr/lib/libkcmkwincommon.so.6 -> libkcmkwincommon.so.6.2.4
 -rwxr-xr-x	root/root	usr/lib/libkcmkwincommon.so.6.2.4
 lrwxrwxrwx	root/root	usr/lib/libkwin.so -> libkwin.so.6
@@ -115,9 +118,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kwin_wayland.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kwin_x11.service
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/kwin-applywindowdecoration
--rwxr-xr-x	root/root	usr/libexec/kwin_killer_helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kcm_kwin_effects.desktop
