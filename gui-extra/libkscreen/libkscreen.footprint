@@ -14,6 +14,9 @@ lrwxrwxrwx	root/root	usr/lib/libKF6Screen.so.8 -> libKF6Screen.so.6.2.4
 lrwxrwxrwx	root/root	usr/lib/libKF6ScreenDpms.so -> libKF6ScreenDpms.so.8
 -rwxr-xr-x	root/root	usr/lib/libKF6ScreenDpms.so.6.2.4
 lrwxrwxrwx	root/root	usr/lib/libKF6ScreenDpms.so.8 -> libKF6ScreenDpms.so.6.2.4
+drwxr-xr-x	root/root	usr/lib/libexec/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kscreen_backend_launcher
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -25,9 +28,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kscreen/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kscreen.service
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/kf6/
--rwxr-xr-x	root/root	usr/libexec/kf6/kscreen_backend_launcher
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
