@@ -1,13 +1,17 @@
 description="Searches input(s) file(s) for lines containing a match to a specified pattern."
-url="http://www.gnu.org/software/grep/"
+url="https://www.gnu.org/software/grep/"
 
 maintainer="Jim Meyering jim at meyering dot net,Paolo Bonzini bonzini at gnu dot org"
-packager="spiky <spiky@nutyx.org>"
+contributors="Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(perl)
 
+set=(core)
+
 name=grep
 version=3.11
+release=2
 
 PKGMK_LOCALES=()
 
