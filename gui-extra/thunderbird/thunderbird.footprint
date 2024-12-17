@@ -1,9 +1,6 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/ld.so.conf.d/
--rw-r--r--	root/root	etc/ld.so.conf.d/thunderbird.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/thunderbird -> ../lib/thunderbird/thunderbird
+lrwxrwxrwx	root/root	usr/bin/thunderbird -> /usr/lib/thunderbird/thunderbird
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/thunderbird/
 -rw-r--r--	root/root	usr/lib/thunderbird/application.ini
@@ -29,8 +26,7 @@ drwxr-xr-x	root/root	usr/lib/thunderbird/defaults/messenger/
 -rw-r--r--	root/root	usr/lib/thunderbird/defaults/messenger/mailViews.dat
 drwxr-xr-x	root/root	usr/lib/thunderbird/defaults/pref/
 -rw-r--r--	root/root	usr/lib/thunderbird/defaults/pref/channel-prefs.js
-drwxr-xr-x	root/root	usr/lib/thunderbird/defaults/preferences/
--rw-r--r--	root/root	usr/lib/thunderbird/defaults/preferences/vendor.js
+-rw-r--r--	root/root	usr/lib/thunderbird/defaults/pref/vendor.js
 -rw-r--r--	root/root	usr/lib/thunderbird/dependentlibs.list
 drwxr-xr-x	root/root	usr/lib/thunderbird/extensions/
 drwxr-xr-x	root/root	usr/lib/thunderbird/fonts/
@@ -42,6 +38,7 @@ drwxr-xr-x	root/root	usr/lib/thunderbird/isp/
 -rw-r--r--	root/root	usr/lib/thunderbird/isp/POPFile.sfd
 -rw-r--r--	root/root	usr/lib/thunderbird/isp/SpamAssassin.sfd
 -rw-r--r--	root/root	usr/lib/thunderbird/isp/SpamPal.sfd
+-rwxr-xr-x	root/root	usr/lib/thunderbird/libgkcodecs.so
 -rwxr-xr-x	root/root	usr/lib/thunderbird/liblgpllibs.so
 -rwxr-xr-x	root/root	usr/lib/thunderbird/libmozavcodec.so
 -rwxr-xr-x	root/root	usr/lib/thunderbird/libmozavutil.so
@@ -54,7 +51,6 @@ drwxr-xr-x	root/root	usr/lib/thunderbird/isp/
 -rw-r--r--	root/root	usr/lib/thunderbird/omni.ja
 -rwxr-xr-x	root/root	usr/lib/thunderbird/pingsender
 -rw-r--r--	root/root	usr/lib/thunderbird/platform.ini
--rwxr-xr-x	root/root	usr/lib/thunderbird/plugin-container
 -rw-r--r--	root/root	usr/lib/thunderbird/removed-files
 -rwxr-xr-x	root/root	usr/lib/thunderbird/rnp-cli
 -rwxr-xr-x	root/root	usr/lib/thunderbird/rnpkeys
@@ -87,6 +83,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/thunderbird.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/thunderbird.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg
