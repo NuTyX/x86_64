@@ -4,13 +4,17 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Rems,Spiky"
 maintainer="Thomas E. Dickey dickey at invisible-island dot net"
 
-url="http://hightek.org/dialog/"
+url="https://hightek.org/dialog/"
 description="To create nice user interfaces to shell scripts or other scripting languages."
 
 makedepends=(ncurses)
 
+set=(core)
+
 name=dialog
 version=1.3-20240619
+release=2
+
 PKGMK_LOCALES=()
 
 source=(https://invisible-mirror.net/archives/$name/$name-${version}.tgz)
