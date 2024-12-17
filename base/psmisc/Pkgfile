@@ -1,13 +1,17 @@
 description="Set of some small useful utilities that use the proc filesystem."
-url="http://psmisc.sourceforge.net/"
+url="https://psmisc.sourceforge.net/"
 
 maintainer="Werner Almesberger werner at almesberger dot net,Craig Small csmall at small dot dropbear dot id dot au,Trent Waddington trent dot waddington at gmail dot com"
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(ncurses)
 
+set=(core)
+
 name=psmisc
 version=23.7
+release=2
 
 PKGMK_LOCALES=()
 source=(https://sourceforge.net/projects/$name/files/$name/$name-$version.tar.xz)
