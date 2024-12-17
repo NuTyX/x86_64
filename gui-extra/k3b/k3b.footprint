@@ -2,6 +2,10 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/k3b
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/libexec/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/k3bhelper
 lrwxrwxrwx	root/root	usr/lib/libk3bdevice.so -> libk3bdevice.so.8
 lrwxrwxrwx	root/root	usr/lib/libk3bdevice.so.8 -> libk3bdevice.so.8.0.0
 -rwxr-xr-x	root/root	usr/lib/libk3bdevice.so.8.0.0
@@ -32,10 +36,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/k3b_plugins/kcms/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/videodvd.so
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/kf6/
-drwxr-xr-x	root/root	usr/libexec/kf6/kauth/
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/k3bhelper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rwxr-xr-x	root/root	usr/share/applications/org.kde.k3b.desktop
