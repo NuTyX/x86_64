@@ -12,11 +12,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kdeconnect-sms
 -rwxr-xr-x	root/root	usr/bin/kdeconnectd
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libkdeconnectcore.so.24 -> libkdeconnectcore.so.24.08.3
--rwxr-xr-x	root/root	usr/lib/libkdeconnectcore.so.24.08.3
+lrwxrwxrwx	root/root	usr/lib/libkdeconnectcore.so.24 -> libkdeconnectcore.so.24.12.0
+-rwxr-xr-x	root/root	usr/lib/libkdeconnectcore.so.24.12.0
 -rw-r--r--	root/root	usr/lib/libkdeconnectinterfaces.a
-lrwxrwxrwx	root/root	usr/lib/libkdeconnectpluginkcm.so.24 -> libkdeconnectpluginkcm.so.24.08.3
--rwxr-xr-x	root/root	usr/lib/libkdeconnectpluginkcm.so.24.08.3
+lrwxrwxrwx	root/root	usr/lib/libkdeconnectpluginkcm.so.24 -> libkdeconnectpluginkcm.so.24.12.0
+-rwxr-xr-x	root/root	usr/lib/libkdeconnectpluginkcm.so.24.12.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/
@@ -75,6 +75,12 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/kde-qmlmodule.version
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/kdeconnectdeclarativeplugin.qmltypes
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/libkdeconnectdeclarativeplugin.so
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/kde-qmlmodule.version
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/kdeconnect_findthisdevice_qmlhelper.qmltypes
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/libkdeconnect_findthisdevice_qmlhelper.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/qmldir
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/qmldir
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/Thunar/
