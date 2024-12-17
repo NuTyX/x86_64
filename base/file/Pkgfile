@@ -2,13 +2,14 @@ description="Utility for determining the type of a given file or files."
 url="ftp://ftp.fu-berlin.de/unix/tools/file/"
 
 maintainer="Christos Zoulas"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=file
 version=5.46
+release=2
 
-set=(chroot)
+set=(chroot core)
 
 source=(ftp://ftp.astron.com/pub/file/file-$version.tar.gz)
 
