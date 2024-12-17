@@ -3,6 +3,14 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/drkonqi-coredump-gui
 -rwxr-xr-x	root/root	usr/bin/drkonqi-sentry-data
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/libexec/
+-rwxr-xr-x	root/root	usr/lib/libexec/drkonqi
+-rwxr-xr-x	root/root	usr/lib/libexec/drkonqi-coredump-cleanup
+-rwxr-xr-x	root/root	usr/lib/libexec/drkonqi-coredump-launcher
+-rwxr-xr-x	root/root	usr/lib/libexec/drkonqi-coredump-processor
+-rwxr-xr-x	root/root	usr/lib/libexec/drkonqi-sentry-postman
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/drkonqi-polkit-helper
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/drkonqi/
@@ -33,14 +41,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/drkonqi-coredump-
 drwxr-xr-x	root/root	usr/lib/systemd/user/timers.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/user/timers.target.wants/drkonqi-coredump-cleanup.timer -> ../drkonqi-coredump-cleanup.timer
 lrwxrwxrwx	root/root	usr/lib/systemd/user/timers.target.wants/drkonqi-sentry-postman.timer -> ../drkonqi-sentry-postman.timer
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/drkonqi
--rwxr-xr-x	root/root	usr/libexec/drkonqi-coredump-cleanup
--rwxr-xr-x	root/root	usr/libexec/drkonqi-coredump-launcher
--rwxr-xr-x	root/root	usr/libexec/drkonqi-coredump-processor
--rwxr-xr-x	root/root	usr/libexec/drkonqi-sentry-postman
-drwxr-xr-x	root/root	usr/libexec/kf6/
--rwxr-xr-x	root/root	usr/libexec/kf6/drkonqi-polkit-helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.kde.drkonqi.coredump.gui.desktop
@@ -53,13 +53,13 @@ drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
 drwxr-xr-x	root/root	usr/share/drkonqi/
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/INSTALLER
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/LICENSE
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/METADATA
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/RECORD
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/WHEEL
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.8.30.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/LICENSE
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/METADATA
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/RECORD
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/WHEEL
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2024.12.14.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/__init__.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/__main__.py
