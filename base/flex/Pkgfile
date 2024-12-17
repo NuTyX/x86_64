@@ -1,5 +1,5 @@
 description="A tool for generating text-scanning programs"
-url="http://flex.sourceforge.net"
+url="https://flex.sourceforge.net"
 
 license="Custom"
 
@@ -11,9 +11,9 @@ makedepends=(m4)
 
 name=flex
 version=2.6.4
-release=4
+release=5
 
-set=(devel)
+set=(devel core)
 
 PKGMK_LOCALES=()
 source=(https://github.com/westes/flex/releases/download/v${version}/flex-$version.tar.gz)
