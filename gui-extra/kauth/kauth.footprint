@@ -10,8 +10,12 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6Auth/
 -rw-r--r--	root/root	usr/lib/cmake/KF6Auth/KF6AuthToolsTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6Auth/KF6AuthToolsTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6AuthCore.so -> libKF6AuthCore.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6AuthCore.so.6 -> libKF6AuthCore.so.6.8.0
--rwxr-xr-x	root/root	usr/lib/libKF6AuthCore.so.6.8.0
+lrwxrwxrwx	root/root	usr/lib/libKF6AuthCore.so.6 -> libKF6AuthCore.so.6.9.0
+-rwxr-xr-x	root/root	usr/lib/libKF6AuthCore.so.6.9.0
+drwxr-xr-x	root/root	usr/lib/libexec/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/kauth-policy-gen
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -20,10 +24,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kauth/backend/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kauth/backend/kauth_backend_plugin.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kauth/helper/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kauth/helper/kauth_helper_plugin.so
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/kf6/
-drwxr-xr-x	root/root	usr/libexec/kf6/kauth/
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/kauth-policy-gen
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
