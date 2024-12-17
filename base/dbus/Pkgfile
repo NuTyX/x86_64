@@ -1,5 +1,5 @@
 description="Freedesktop.org message bus system"
-url="http://www.freedesktop.org/wiki/Software/dbus/"
+url="https://www.freedesktop.org/wiki/Software/dbus/"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Jayce,Tnut"
@@ -14,9 +14,11 @@ contributors="Pierre,Jayce,Tnut"
 # makedepends=(systemd expat) and --enable-systemd
 
 makedepends=(systemd expat)
+set=(core)
 
 name=dbus
 version=1.14.10
+release=2
 
 runyx_version=20201011
 
