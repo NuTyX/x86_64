@@ -1,12 +1,15 @@
 description="The Man-DB package contains programs for finding and viewing man pages."
-url="http://savannah.nongnu.org/projects/man-db"
+url="https://savannah.nongnu.org/projects/man-db"
 
 maintainer="Colin Watson cjwatson at debian dot org"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
+
+set=(core)
 
 name=man-db
 version=2.13.0
+release=2
 
 makedepends=(gdbm libpipeline)
 run=(groff less)
