@@ -1,14 +1,17 @@
 description="Pluggable Authentication Modules to choose how applications authenticate users."
-url="http://www.kernel.org/pub/libs/pam"
+url="https://www.kernel.org/pub/libs/pam"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
+
+set=(core)
 
 PKGMK_DEPENDS=(python meson ninja)
 makedepends=(intltool texinfo libxcrypt)
 
 name=pam
 version=1.7.0
+release=2
 
 PKGMK_LOCALES=()
 
