@@ -18,6 +18,12 @@ lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensors.so.2 -> libKSysGuardSensors.so.
 lrwxrwxrwx	root/root	usr/lib/libKSysGuardSystemStats.so -> libKSysGuardSystemStats.so.2
 lrwxrwxrwx	root/root	usr/lib/libKSysGuardSystemStats.so.2 -> libKSysGuardSystemStats.so.6.2.4
 -rwxr-xr-x	root/root	usr/lib/libKSysGuardSystemStats.so.6.2.4
+drwxr-xr-x	root/root	usr/lib/libexec/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/ksysguardprocesslist_helper
+drwxr-xr-x	root/root	usr/lib/libexec/ksysguard/
+-rwxr-xr-x	root/root	usr/lib/libexec/ksysguard/ksgrd_network_helper
 lrwxrwxrwx	root/root	usr/lib/libprocesscore.so -> libprocesscore.so.10
 lrwxrwxrwx	root/root	usr/lib/libprocesscore.so.10 -> libprocesscore.so.6.2.4
 -rwxr-xr-x	root/root	usr/lib/libprocesscore.so.6.2.4
@@ -64,12 +70,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/sensors/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/sensors/kde-qmlmodule.version
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/sensors/libSensorsplugin.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/sensors/qmldir
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/kf6/
-drwxr-xr-x	root/root	usr/libexec/kf6/kauth/
--rwxr-xr-x	root/root	usr/libexec/kf6/kauth/ksysguardprocesslist_helper
-drwxr-xr-x	root/root	usr/libexec/ksysguard/
--rwxr-xr-x	root/root	usr/libexec/ksysguard/ksgrd_network_helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
