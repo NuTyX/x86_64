@@ -1,5 +1,5 @@
 description="Library for the arithmetic of complex numbers with arbitrarily high precision."
-url="http://www.multiprecision.org/"
+url="https://www.multiprecision.org/"
 
 maintainer="Andreas Enge,Philipe Théveny,Paul Zimmermann"
 contributors="Pierre B"
@@ -9,9 +9,9 @@ makedepends=(gmp mpfr)
 
 name=mpc
 version=1.2.1
-release=3
+release=4
 
-set=(chroot)
+set=(chroot core)
 
 source=(https://ftp.gnu.org/gnu/mpc/mpc-$version.tar.gz )
 build()
