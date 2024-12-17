@@ -1,13 +1,15 @@
 description="Provides informations about LSB status (Linux Standards Base) of the distribution."
-url="http://www.linuxbase.org/"
+url="https://www.linuxbase.org/"
 
 maintainer="Sven-Hendrik Haase"
 contributors="Geantbrun"
 packager="tnut <tnut@nutyx.org>"
 
+set=(core)
+
 name=lsb-release
 version=1.4
-release=1
+release=2
 
 alias=(lsb_release)
 
