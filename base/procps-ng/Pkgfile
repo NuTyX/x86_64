@@ -1,15 +1,18 @@
 description="Utilities for monitoring your system and its processes."
-url="http://procps.sourceforge.net/"
+url="https://procps.sourceforge.net/"
 
 license="GPL LGPL"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(pkgconf ncurses)
 
+set=(core)
+
 name=procps-ng
 version=4.0.4
+release=2
 
 PKGMK_LOCALES=()
 source=(https://sourceforge.net/projects/$name/files/Production/$name-$version.tar.xz)
