@@ -72,8 +72,6 @@ install -vm644 $(find ../rules.d/*.rules \
 install -vm644 hwdb.d/*  ../hwdb.d/{*.hwdb,README} $PKG/usr/lib/udev/hwdb.d/
 install -vm755 $udev_helpers                       $PKG/usr/lib/udev
 install -vm644 ../network/99-default.link          $PKG/usr/lib/udev/network
-
-cd -
-
-make DESTDIR=$PKG -f udev-lfs-20230818/Makefile.lfs install
+cd ../../
+make -f udev-lfs-20230818/Makefile.lfs DESTDIR=$PKG install
 }
