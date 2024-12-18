@@ -7,6 +7,7 @@ lrwxrwxrwx	root/root	usr/include/elogind/sd-bus.h -> systemd/sd-bus.h
 lrwxrwxrwx	root/root	usr/include/elogind/sd-daemon.h -> systemd/sd-daemon.h
 lrwxrwxrwx	root/root	usr/include/elogind/sd-device.h -> systemd/sd-device.h
 lrwxrwxrwx	root/root	usr/include/elogind/sd-event.h -> systemd/sd-event.h
+lrwxrwxrwx	root/root	usr/include/elogind/sd-gpt.h -> systemd/sd-gpt.h
 lrwxrwxrwx	root/root	usr/include/elogind/sd-hwdb.h -> systemd/sd-hwdb.h
 lrwxrwxrwx	root/root	usr/include/elogind/sd-id128.h -> systemd/sd-id128.h
 lrwxrwxrwx	root/root	usr/include/elogind/sd-journal.h -> systemd/sd-journal.h
@@ -21,11 +22,14 @@ drwxr-xr-x	root/root	usr/include/elogind/systemd/
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-daemon.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-device.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-event.h
+-rw-r--r--	root/root	usr/include/elogind/systemd/sd-gpt.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-hwdb.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-id128.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-journal.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-login.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-messages.h
 -rw-r--r--	root/root	usr/include/elogind/systemd/sd-path.h
+lrwxrwxrwx	root/root	usr/include/systemd -> elogind
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libelogind.pc
+lrwxrwxrwx	root/root	usr/lib/pkgconfig/libsystemd.pc -> libelogind.pc

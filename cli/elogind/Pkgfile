@@ -5,11 +5,11 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=elogind
-version=246.10
-release=4
+version=255.5
+release=1
 
 PKGMK_GROUPS=(doc devel man)
-makedepends=(shadow dbus meson ninja eudev glib libseccomp)
+makedepends=(gperf python-jinja shadow pam dbus meson ninja eudev glib)
 
 
 source=(https://github.com/${name}/${name}/archive/v${version}/$name-$version.tar.gz)
@@ -22,11 +22,13 @@ build() {
 cd $name-$version
 mkdir build
 cd    build
-meson --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var            \
-      -Dpamlibdir=/usr/lib/security   \
-      -Dcgroup-controller=elogind     \
-      -Ddbuspolicydir=/etc/dbus-1/system.d ..
+meson --prefix=/usr                   \
+      --buildtype=release             \
+      -D man=auto                     \
+      -D docdir=/usr/share/doc/$name-$version \
+      -D cgroup-controller=elogind    \
+      -D dev-kvm-mode=0660            \
+      -D dbuspolicydir=/etc/dbus-1/system.d ..
 ninja
 
 DESTDIR=$PKG ninja install
@@ -34,6 +36,7 @@ DESTDIR=$PKG ninja install
 ln -sfv  libelogind.pc $PKG/usr/lib/pkgconfig/libsystemd.pc
 ln -sfvn elogind $PKG/usr/include/systemd
 
+mkdir $PKG/etc/pam.d
 cat > $PKG/etc/pam.d/elogind-user << "EOF"
 # Begin /etc/pam.d/elogind-user
 
@@ -53,7 +56,4 @@ password required    pam_deny.so
 # End /etc/pam.d/elogind-user
 EOF
 
-# systemd package files
-rm $PKG/usr/include/systemd
-rm $PKG/usr/lib/pkgconfig/libsystemd.pc
 }
