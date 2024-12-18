@@ -13,8 +13,6 @@ version=257
 release=1
 
 PKGMK_DEPENDS=(shadow perl python python-markupsafe python-jinja m4 gperf util-linux pam acl)
-PKGMK_IGNORE_FOOTPRINT='no'
-PKGMK_IGNORE_RUNTIMEDEPS='yes'
 
 source=(https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz
         https://github.com/systemd/systemd/archive/v${version:0:3}/systemd-$version.tar.gz)
