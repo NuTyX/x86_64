@@ -7,10 +7,11 @@ run=(shadow)
 
 name=rsync
 version=3.3.0
+release=2
 
-runyx_version=20201011
+scriptsversion=20241218
 
-source=(http://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
+source=(http://downloads.tuxfamily.org/nutyx/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
 	http://rsync.samba.org/ftp/$name/$name-$version.tar.gz)
 
 prepare(){
@@ -38,18 +39,7 @@ make DESTDIR=$PKG install
 
 
 # Service
-
-cd ../runyx-${runyx_version}
+cd ../nutyx-scripts-${scriptsversion}
 make DESTDIR=$PKG install-sysv-rsyncd
-make DESTDIR=$PKG install-runyx-rsyncd
-make DESTDIR=$PKG install-sysd-rsyncd
 
-
-}
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init lib/systemd
-rm -r etc/rc.d etc/init lib/init lib/systemd
 }
