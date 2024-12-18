@@ -6,8 +6,9 @@ contributors="Pierre,Tnut"
 
 name=polkit
 version=125
+release=2
 
-makedepends=(pam systemd gettext glib duktape gobject-introspection elogind
+makedepends=(pam gettext glib duktape gobject-introspection elogind
              patch autoconf intltool perl-xml-parser libxslt docbook-xsl)
 source=(https://github.com/$name-org/$name/archive/$version/$name-$version.tar.gz)
 
@@ -21,7 +22,6 @@ if ! (getent passwd $SN > /dev/null); then
    useradd -c "PolicyKit Daemon Owner" -d /etc/polkit-1 \
    -u $IDN -g $SN -s /bin/false $SN
 fi
-sed -i '/systemd_sysusers_dir/s/^/#/' $name-$version/meson.build
 }
 build() {
 cd $name-$version
@@ -29,27 +29,16 @@ cd $name-$version
 mkdir build
 cd    build
 
-meson --prefix=/usr                       \
-      --buildtype=release                 \
-      -Dman=false                         \
-      -Dsession_tracking=elogind       \
-      -Dtests=true                        \
-      -Djs_engine=duktape                 \
-      ..
-
+meson setup ..                     \
+      --prefix=/usr                \
+      --buildtype=release          \
+      -D man=false                 \
+      -D session_tracking=elogind  \
+      -D systemdsystemunitdir=/tmp \
+      -D tests=true                \
+      -D js_engine=duktape
 ninja
 
 DESTDIR=$PKG ninja install
 
-mkdir -p $PKG/etc/pam.d
-cat > $PKG/etc/pam.d/polkit-1 << "EOF"
-# Begin /etc/pam.d/polkit-1
-
-auth     include        system-auth
-account  include        system-account
-password include        system-password
-session  include        system-session
-
-# End /etc/pam.d/polkit-1
-EOF
 }
