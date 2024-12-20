@@ -2,7 +2,7 @@ description="The Eudev package contains programs for dynamic creation of device 
 url="https://www.freedesktop.org/wiki/Software/systemd/"
 
 packager="tnut <tnut@nutyx.org>"
-contributors=""
+contributors="Spiky"
 
 makedepends=(gettext libcap kmod meson ninja libxcrypt)
 
@@ -10,7 +10,7 @@ set=(core)
 
 name=eudev
 version=257
-release=1
+release=2
 
 PKGMK_DEPENDS=(shadow perl python python-markupsafe python-jinja m4 gperf util-linux pam acl)
 
@@ -54,11 +54,14 @@ ninja udevadm systemd-hwdb                                           \
       $(realpath libudev.so --relative-to .)                         \
       $udev_helpers
 
-install -vm755 -d $PKG{/usr/{bin,lib,sbin},/etc}/udev/{hwdb.d,rules.d,network}
+install -vm755 -d $PKG/{usr/{bin,lib,sbin},etc}/udev/{hwdb.d,rules.d,network}
+install -vm755 -d $PKG/sbin
 install -vm755 -d $PKG/usr/{include,{lib,share}/pkgconfig}
 install -vm755 udevadm                             $PKG/usr/bin/
 install -vm755 systemd-hwdb                        $PKG/usr/bin/udev-hwdb
 ln      -svfn  ../bin/udevadm                      $PKG/usr/sbin/udevd
+ln      -svfn  ../usr/bin/udevadm                  $PKG/sbin/udevd
+ln      -svfn  ../usr/bin/udevadm                  $PKG/sbin/udevadm
 cp      -av    libudev.so{,*[0-9]}                 $PKG/usr/lib/
 install -vm644 ../src/libudev/libudev.h            $PKG/usr/include/
 install -vm644 src/libudev/*.pc                    $PKG/usr/lib/pkgconfig/

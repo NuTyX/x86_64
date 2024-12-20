@@ -5,6 +5,9 @@ drwxr-xr-x	root/root	etc/udev/network/
 drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/udev/rules.d/55-lfs.rules
 -rw-r--r--	root/root	etc/udev/udev.conf
+drwxr-xr-x	root/root	sbin/
+lrwxrwxrwx	root/root	sbin/udevadm -> ../usr/bin/udevadm
+lrwxrwxrwx	root/root	sbin/udevd -> ../usr/bin/udevadm
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/udev-hwdb
