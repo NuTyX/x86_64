@@ -11,7 +11,7 @@ set=(core)
 
 name=util-linux
 version=2.40.2
-release=4
+release=5
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
@@ -44,6 +44,8 @@ mkdir -pv $PKG/var/lib/hwclock
 
 make
 make DESTDIR=$PKG  install
+mkdir $PKG/sbin
+ln -sv ../usr/sbin/agetty $PKG/sbin/agetty
 }
 devel()
 {
