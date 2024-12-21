@@ -1,9 +1,7 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/default/
 drwxr-xr-x	root/root	etc/mysql/
 -rw-r--r--	root/root	etc/mysql/my.cnf.example
 drwxr-xr-x	root/root	etc/sysconfig/
-drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/aria_chk
@@ -13,7 +11,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/aria_read_log
 -rwxr-xr-x	root/root	usr/bin/aria_s3_copy
 -rwxr-xr-x	root/root	usr/bin/galera_new_cluster
--rwxr-xr-x	root/root	usr/bin/galera_recovery
 -rwxr-xr-x	root/root	usr/bin/innochecksum
 lrwxrwxrwx	root/root	usr/bin/mariabackup -> mariadb-backup
 -rwxr-xr-x	root/root	usr/bin/mariadb
@@ -38,7 +35,6 @@ lrwxrwxrwx	root/root	usr/bin/mariadb-config -> mariadb_config
 -rwxr-xr-x	root/root	usr/bin/mariadb-ldb
 -rwxr-xr-x	root/root	usr/bin/mariadb-plugin
 -rwxr-xr-x	root/root	usr/bin/mariadb-secure-installation
--rwxr-xr-x	root/root	usr/bin/mariadb-service-convert
 -rwxr-xr-x	root/root	usr/bin/mariadb-setpermission
 -rwxr-xr-x	root/root	usr/bin/mariadb-show
 -rwxr-xr-x	root/root	usr/bin/mariadb-slap
@@ -316,14 +312,6 @@ drwxr-xr-x	root/root	usr/share/mysql/swahili/
 -rw-r--r--	root/root	usr/share/mysql/swahili/errmsg.sys
 drwxr-xr-x	root/root	usr/share/mysql/swedish/
 -rw-r--r--	root/root	usr/share/mysql/swedish/errmsg.sys
-drwxr-xr-x	root/root	usr/share/mysql/systemd/
--rw-r--r--	root/root	usr/share/mysql/systemd/mariadb-extra@.socket
--rw-r--r--	root/root	usr/share/mysql/systemd/mariadb.service
--rw-r--r--	root/root	usr/share/mysql/systemd/mariadb@.service
--rw-r--r--	root/root	usr/share/mysql/systemd/mariadb@.socket
-lrwxrwxrwx	root/root	usr/share/mysql/systemd/mysql.service -> ./mariadb.service
-lrwxrwxrwx	root/root	usr/share/mysql/systemd/mysqld.service -> ./mariadb.service
--rw-r--r--	root/root	usr/share/mysql/systemd/use_galera_new_cluster.conf
 drwxr-xr-x	root/root	usr/share/mysql/ukrainian/
 -rw-r--r--	root/root	usr/share/mysql/ukrainian/errmsg.sys
 -rw-r--r--	root/root	usr/share/mysql/wsrep.cnf

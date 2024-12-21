@@ -1,8 +1,10 @@
 description="MariaDB is a fork and a replacement for the MySQL relational database management system."
-url="http://www.mariadb.org/en/about/"
+url="https://www.mariadb.org/en/about/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+license="GPL-2.0-only"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(lzo cmake libevent boost libxml2 cracklib pcre ruby libaio openssl
              libxcrypt)
@@ -10,11 +12,12 @@ run=(shadow mariadb.lib)
 
 name=mariadb
 version=11.6.2
+release=2
 
-runyx_version=20201011
+scriptsversion=20241218
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
+        https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz)
 
 PKGMK_GROUPS=(devel lib man doc service)
 
@@ -135,15 +138,6 @@ EOF
 rm -r $PKG/usr/share/mysql/test
 
 # Service
-cd $SRC/runyx-${runyx_version}
+cd $SRC/nutyx-scripts-${scriptsversion}
 make DESTDIR=$PKG install-sysv-mysql
-make DESTDIR=$PKG install-runyx-mysql
-make DESTDIR=$PKG install-sysd-mysqld
-}
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init lib/systemd
-rm -r etc/rc.d etc/init lib/init lib/systemd
 }
