@@ -1,15 +1,15 @@
 description="The Vim package contains a powerful text editor."
-url="http://www.vim.org/"
+url="https://www.vim.org/"
 
 license="custom:VIM"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(gpm ncurses)
 
 name=vim
-version=9.1.0866
+version=9.1.0927
 
 source=(https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz)
 build()
