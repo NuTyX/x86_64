@@ -52,7 +52,6 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-gosuncn.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-haier.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-huawei.so
--rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-intel.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-iridium.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-linktop.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-longcheer.so
@@ -79,7 +78,6 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-wavecom.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-x22x.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-zte.so
--rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-fibocom.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-foxconn.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-icera.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-novatel.so
@@ -89,12 +87,9 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-xmm.so
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/ModemManager-1.0.typelib
-lrwxrwxrwx	root/root	usr/lib/libmm-glib.so -> libmm-glib.so.0
-lrwxrwxrwx	root/root	usr/lib/libmm-glib.so.0 -> libmm-glib.so.0.10.0
--rwxr-xr-x	root/root	usr/lib/libmm-glib.so.0.10.0
-drwxr-xr-x	root/root	usr/lib/systemd/
-drwxr-xr-x	root/root	usr/lib/systemd/system/
--rw-r--r--	root/root	usr/lib/systemd/system/ModemManager.service
+lrwxrwxrwx	root/root	usr/lib/libmm-glib.so -> libmm-glib.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libmm-glib.so.0 -> libmm-glib.so.0.8.0
+-rwxr-xr-x	root/root	usr/lib/libmm-glib.so.0.8.0
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/ModemManager
 drwxr-xr-x	root/root	usr/share/
@@ -105,13 +100,10 @@ drwxr-xr-x	root/root	usr/share/ModemManager/fcc-unlock.available.d/
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/03f0:4e1d -> 1199
 -rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/105b
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/105b:e0ab -> 105b
-lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/105b:e0c3 -> 105b
 -rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/1199
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1199:9079 -> 1199
 -rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac:1001 -> 1eac
--rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c
-lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c:030a -> 2c7c
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/413c:81a3 -> 1199
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/413c:81a8 -> 1199
 -rw-r--r--	root/root	usr/share/ModemManager/mm-foxconn-t77w968-carrier-mapping.conf
@@ -130,7 +122,6 @@ drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Modem3gpp.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.ModemCdma.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Oma.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Sar.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Signal.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Simple.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Time.xml
