@@ -1,5 +1,7 @@
 description="A featureful, general-purpose sound server"
-url="http://www.pulseaudio.org"
+url="https://www.freedesktop.org/wiki/Software/PulseAudio/"
+
+license="LGPL-2.1-or-later"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Rems,Spiky"
@@ -14,7 +16,7 @@ run=(bluez sbc)
 
 name=pulseaudio
 version=17.0
-release=2
+release=3
 
 source=(https://freedesktop.org/software/$name/releases/$name-$version.tar.xz)
 
