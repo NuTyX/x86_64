@@ -1,5 +1,5 @@
 description="GNOME Password Management daemon"
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/gnome-keyring"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Fanch,Jayce,Spiky"
@@ -8,7 +8,7 @@ makedepends=(dbus gcr pam libxslt libcap-ng gnupg openssh valgrind)
 
 name=gnome-keyring
 version=46.2
-release=2
+release=3
 
 set=(gnome)
 
