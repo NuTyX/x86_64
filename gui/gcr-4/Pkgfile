@@ -1,5 +1,5 @@
 description="A library for bits of crypto UI and parsing"
-url="http://www.gnome.org/"
+url="https://www.gnome.org/"
 
 license="LGPL2.1-or-later"
 
@@ -13,7 +13,7 @@ run=(shared-mime-info desktop-file-utils)
 
 name=gcr-4
 version=4.3.0
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/gcr/${version:0:3}/gcr-$version.tar.xz)
 

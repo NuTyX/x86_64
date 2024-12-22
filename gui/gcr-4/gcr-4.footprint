@@ -11,10 +11,6 @@ lrwxrwxrwx	root/root	usr/lib/libgck-2.so.2 -> libgck-2.so.2.3.0
 lrwxrwxrwx	root/root	usr/lib/libgcr-4.so -> libgcr-4.so.4
 lrwxrwxrwx	root/root	usr/lib/libgcr-4.so.4 -> libgcr-4.so.4.3.0
 -rwxr-xr-x	root/root	usr/lib/libgcr-4.so.4.3.0
-drwxr-xr-x	root/root	usr/lib/systemd/
-drwxr-xr-x	root/root	usr/lib/systemd/user/
--rw-r--r--	root/root	usr/lib/systemd/user/gcr-ssh-agent.service
--rw-r--r--	root/root	usr/lib/systemd/user/gcr-ssh-agent.socket
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/gcr-ssh-agent
 -rwxr-xr-x	root/root	usr/libexec/gcr4-ssh-askpass
