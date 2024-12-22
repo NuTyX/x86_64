@@ -18,12 +18,9 @@ _name=NetworkManager
 
 name=networkmanager
 version=1.50.0
-release=2
+release=3
 
-runyx_version=20201011
-
-source=(http://download.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	https://download.gnome.org/sources/$_name/${version:0:4}/$_name-$version.tar.xz)
+source=(https://download.gnome.org/sources/$_name/${version:0:4}/$_name-$version.tar.xz)
 
 build() {
 
@@ -77,17 +74,4 @@ polkit.addRule(function(action, subject) {
 });
 EOF
 
-# Runit service
-cd ../runyx-${runyx_version}
-make DESTDIR=$PKG install-runyx-networkmanager
-}
-
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/${_name}"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
 }

@@ -11,14 +11,7 @@ drwxr-xr-x	root/root	etc/NetworkManager/dispatcher.d/pre-up.d/
 drwxr-xr-x	root/root	etc/NetworkManager/dnsmasq-shared.d/
 drwxr-xr-x	root/root	etc/NetworkManager/dnsmasq.d/
 drwxr-xr-x	root/root	etc/NetworkManager/system-connections/
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/networkmanager -> /lib/init/services/networkmanager
 drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/networkmanager/
--rwxrwxr-x	root/root	lib/init/services/networkmanager/run
 drwxr-xr-x	root/root	lib/systemd/
 drwxr-xr-x	root/root	lib/systemd/system/
 -rw-r--r--	root/root	lib/systemd/system/NetworkManager-dispatcher.service
