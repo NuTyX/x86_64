@@ -3,16 +3,16 @@ url='https://www.qt.io/'
 
 license="GPL3 LGPL3 FDL custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(qt6)
 
 name=qt6-base
 version=6.8.1
-release=2
+release=3
 
-makedepends=(libb2 cmake ninja systemd icu at-spi2-core mtdev 
+makedepends=(libb2 cmake ninja icu at-spi2-core mtdev
              cups gstreamer-plugins-base xcb-util xcb-util-renderutil
              vulkan-headers shared-mime-info sqlite libinput
              double-conversion alsa-lib xcb-util-image xcb-util-keysyms
