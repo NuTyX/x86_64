@@ -3,14 +3,15 @@ url="https://pipewire.org"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
 makedepends=(meson dbus doxygen python-docutils ffmpeg glib graphviz gstreamer
              gstreamer-plugins-base sbc valgrind libsndfile xmltoman) 
 
 name=pipewire
 version=1.2.7
+releas=2
 
 source=(https://github.com/PipeWire/pipewire/archive/$version/$name-$version.tar.gz)
 
