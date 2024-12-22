@@ -13,14 +13,14 @@ run=(samba.lib)
 
 name=samba
 version=4.21.2
-release=2
+release=3
 
-runyx_version=20201011
+scriptsversion=20241218
 
 PKGMK_GROUPS=(lib man devel service doc)
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	https://download.samba.org/pub/samba/stable/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
+        https://download.samba.org/pub/samba/stable/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
@@ -83,26 +83,10 @@ rm $PKG/usr/lib/python3.12/site-packages/_tdb_text.py
 rm $PKG/usr/lib/python3.12/site-packages/tdb.cpython-312-${_ARCH}-linux-gnu.so
 
 # service
-cd $SRC/runyx-${runyx_version}
+cd $SRC/nutyx-scripts-${scriptsversion}
 make DESTDIR=$PKG install-sysv-samba
 make DESTDIR=$PKG install-sysv-winbindd
-sed -i s@install-samba@install-sysd-samba@ services/sysd/Makefile
-make DESTDIR=$PKG install-sysd-samba
-make DESTDIR=$PKG install-sysd-winbindd
-make DESTDIR=$PKG install-runyx-samba
-make DESTDIR=$PKG install-runyx-winbindd
 }
-
-service() {
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-lib/{systemd,init} etc/{init,rc.d}
-
-rm -r etc/{rc.d,init}
-rm -r lib/{init,systemd}
-}
-
 lib() {
 cd $PKG
 bsdtar -cf \
@@ -127,12 +111,4 @@ usr/lib/pkgconfig usr/include
 rm -r usr/{include,lib/pkgconfig}
 rm -d usr/include || true
 rm -d usr/lib || true
-}
-uptodate() {
-local ext url name LINX
-LYNX="lynx -read_timeout=20 -dump -listonly -nonumbers "
-ext=".tar.gz"
-url="https://download.samba.org/pub/samba/stable"
-name="samba-"
-$LYNX $url/?C=N\;O=A|grep "$ext$"|grep "$url/$name"|sed "s@$ext\$@@"|sed "s@$url/$name@@"|tail -1
 }
