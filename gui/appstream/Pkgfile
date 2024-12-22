@@ -3,14 +3,15 @@ url='https://distributions.freedesktop.org/wiki/AppStream'
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson xmlto gobject-introspection gtk-doc itstool vala gperf
-             curl librsvg yaml libsoup libxmlb libepoxy)
+             curl librsvg yaml libsoup libxmlb libepoxy elogind)
 
 name=appstream
 version=1.0.4
+release=2
 
 source=(https://www.freedesktop.org/software/appstream/releases/AppStream-$version.tar.xz)
 
