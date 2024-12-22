@@ -1,16 +1,16 @@
 description="Advanced key-value store"
-url="http://redis.io/"
+url="https://redis.io/"
 
 license="BSD"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Spiky"
 
-makedepends=(jemalloc grep shadow systemd)
+makedepends=(jemalloc grep shadow)
 
 name=redis
 version=7.2.5
-release=2
+release=3
 
 source=(http://download.redis.io/releases/redis-$version.tar.gz
 redis.rc
