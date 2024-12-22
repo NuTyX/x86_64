@@ -4,10 +4,8 @@ url="http://www.cups.org"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
 
-makedepends=(pam libusb avahi python gnutls
-             libxcrypt)
-run=(xdg-utils gtk-update-icon-cache
-     cups.lib)
+makedepends=(pam libusb avahi python gnutls libxcrypt)
+run=(xdg-utils gtk-update-icon-cache cups.lib)
 
 set=(cups printer)
 
@@ -15,11 +13,11 @@ PKGMK_GROUPS=(devel man lib)
 
 name=cups
 version=2.4.11
-release=3
+release=4
 
-runyx_version=20201011
+scriptsversion=20241218
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz \
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz \
 	https://github.com/OpenPrinting/cups/releases/download/v${version}/$name-$version-source.tar.gz \
 	99-printer.rules)
 prepare() {
@@ -64,9 +62,8 @@ build() {
 		$PKG/usr/share/applications/cups.desktop
 	fi
 	# Service
-	cd ../runyx-${runyx_version}
+	cd ../nutyx-scripts-${scriptsversion}
 	make DESTDIR=$PKG install-sysv-$name
-	make DESTDIR=$PKG install-runyx-$name
 
 
 	# Supprimer les filtres faisant parti de cups-filters
