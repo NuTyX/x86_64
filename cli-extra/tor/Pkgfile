@@ -1,15 +1,16 @@
 description="Tor is a anonymous network and proxy."
-url="http://www.torproject.org/"
+url="https://www.torproject.org/"
 
 license="BSD"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
-makedepends=(systemd libevent openssl zlib)
+makedepends=(libevent openssl zlib)
 
 name=tor
 version=0.4.8.13
+release=2
 
 source=(https://www.torproject.org/dist/tor-$version.tar.gz
 	tor.rc
