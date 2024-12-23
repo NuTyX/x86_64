@@ -1,28 +1,29 @@
 description='Collection of graphical tools for PackageKit to be used in the GNOME desktop'
-url=''
+url='http://www.packagekit.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+license="GPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson intltool itstool docbook-xsl libcanberra
              desktop-file-utils gtk3 libnotify packagekit)
-run=()
 set=(gnome)
 
 name=gnome-packagekit
 version=43.0
+release=2
 
 source=(https://download.gnome.org/sources/gnome-packagekit/43/$name-$version.tar.xz)
 
 build() {
 
 meson setup $name-$version build \
-       --prefix=/usr          \
-            --buildtype=release
+       --prefix=/usr             \
+       --buildtype=plain
 
 meson compile -C build
 
 DESTDIR=$PKG meson install -C build
-
 
 }
