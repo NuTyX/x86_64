@@ -1,10 +1,10 @@
 description="Window manager for gnome."
-url="https://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/mutter"
 
-license="GPL2"
+license="GPL2-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Fanch,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
 
 makedepends=(meson ninja glib xorg-libsm graphene libdisplay-info
              gnome-desktop gnome-settings-daemon libwacom libxkbcommon upower
@@ -16,6 +16,7 @@ set=(gnome)
 
 name=mutter
 version=47.1
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
