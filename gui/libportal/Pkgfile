@@ -7,10 +7,11 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 makedepends=(meson ninja glib gtk-doc vala gobject-introspection gtk3 gtk4
-             qtbase qtx11extras)
+             qt6-base python-dbusmock)
 
 name=libportal
 version=0.8.1
+release=2
 
 source=(https://github.com/flatpak/libportal/releases/download/$version/libportal-$version.tar.xz)
 
@@ -20,8 +21,9 @@ build() {
          mkdir build
          cd    build
 
-         meson setup .. \
-         --prefix=/usr  \
+         meson setup ..    \
+         --prefix=/usr     \
+         --buildtype=plain \
          -Ddocs=false         
 
 ninja
