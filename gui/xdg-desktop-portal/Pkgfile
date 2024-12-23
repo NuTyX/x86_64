@@ -7,15 +7,14 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(python xmlto docbook-xsl git libportal
-             geoclue2 glib pipewire bubblewrap)
+             geoclue2 glib pipewire bubblewrap umockdev)
 run=(fuse)
 
 name=xdg-desktop-portal
 version=1.18.4
 
-prepare () {
-git clone https://github.com/flatpak/$name $name-$version
-}
+source=(https://github.com/flatpak/$name/releases/download/$version/$name-$version.tar.xz)
+
 build() {
 cd $name-$version
 
@@ -23,12 +22,15 @@ mkdir build
 cd    build
 
 meson setup .. \
-       --prefix=/usr          \
-       --buildtype=plain
+       --prefix=/usr  \
+       --buildtype=plain \
+       -D pytest=disabled
 
 ninja
 
 DESTDIR=$PKG ninja install
+
+rm -rf $PKG/usr/lib/systemd
 
 install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
