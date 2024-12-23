@@ -15,7 +15,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kcminit
 lrwxrwxrwx	root/root	usr/bin/kcminit_startup -> kcminit
 -rwxr-xr-x	root/root	usr/bin/kcolorschemeeditor
--rwxr-xr-x	root/root	usr/bin/kde-systemd-start-condition
 -rwxr-xr-x	root/root	usr/bin/kfontinst
 -rwxr-xr-x	root/root	usr/bin/kfontview
 -rwxr-xr-x	root/root	usr/bin/krunner
@@ -392,19 +391,14 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/taskmanager/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-baloorunner.service
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-core.target
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-gmenudbusmenuproxy.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kcminit-phase1.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kcminit.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-krunner.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-ksmserver.service
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-ksplash-ready.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-ksplash.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-plasmashell.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-restoresession.service
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace-wayland.target
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace-x11.target
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace.target
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-xembedsniproxy.service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
