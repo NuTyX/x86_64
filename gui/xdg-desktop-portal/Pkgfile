@@ -3,8 +3,8 @@ url='https://github.com/flatpak/xdg-desktop-portal'
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python xmlto docbook-xsl git libportal
              geoclue2 glib pipewire bubblewrap)
@@ -24,7 +24,7 @@ cd    build
 
 meson setup .. \
        --prefix=/usr          \
-       --buildtype=release
+       --buildtype=plain
 
 ninja
 
