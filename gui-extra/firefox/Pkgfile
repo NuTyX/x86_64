@@ -3,14 +3,14 @@ url="https://www.mozilla.com/firefox/"
 
 license="MPL-2.0, GPL-2.0-or-later, LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Fabienwang,Spiky"
 
 categories=(Network WebBrowser)
 
 makedepends=(wget python node cbindgen libwebp nspr libevent rustc
              dbus-glib autoconf2-13 libnotify yasm llvm)
-run=(pulseaudio icu sqlite libvpx nss gtk3 zip unzip
+run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
      gstreamer gstreamer-plugins-base gstreamer-plugins-good
      gstreamer-plugins-libav shared-mime-info
      startup-notification desktop-file-utils hicolor-icon-theme
@@ -18,12 +18,12 @@ run=(pulseaudio icu sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=132.0.2
+version=133.0.3
 
 locale_version=$version
 
 source=(firefox.desktop
-	https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz
+        https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz
         cbindgen-0.27.patch)
 
 pack_remove_locale() {
@@ -47,8 +47,7 @@ cd $name-$version
 (for i in {43..47}; do
    sed '/ZWJ/s/}/,CLASS_CHARACTER&/' -i intl/lwbrk/LineBreaker.cpp || exit $?
  done)
-
-#patch -Np1 -i ../cbindgen-0.27.patch
+sed -i 's/icu-i18n/icu-uc &/' js/moz.configure
 }
 
 build() {
