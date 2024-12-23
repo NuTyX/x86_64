@@ -14,7 +14,7 @@ makedepends=(doxygen alsa-lib bzip2 fribidi gmp gsm jack ladspa lame
 
 name=ffmpeg
 version=7.1
-release=3
+release=4
 
 _CONF_OPTS="    --prefix=/usr \
     --disable-static \
@@ -59,10 +59,15 @@ _CONF_OPTS="    --prefix=/usr \
 source=(${url}releases/ffmpeg-$version.tar.xz
         ffmpeg-7.0.1-chromium_method-1.patch)
 
-build() {
+prepare() {
   cd ffmpeg-$version
   patch -Np1 -i ../ffmpeg-7.0.1-chromium_method-1.patch
-  sed -i 's/-lflite"/-lflite -lasound"/' configure
+ 
+  sed -e 's/X265_BUILD >= 210/(&) \&\& (X265_BUILD < 213)/' \
+    -i libavcodec/libx265.c
+}
+build() {
+  cd ffmpeg-$version
   ./configure ${_CONF_OPTS} \
     --docdir=/usr/share/doc/$name-$version
   
