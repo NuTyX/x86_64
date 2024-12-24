@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/urcu-qsbr.h
 -rw-r--r--	root/root	usr/include/urcu.h
 drwxr-xr-x	root/root	usr/include/urcu/
+-rw-r--r--	root/root	usr/include/urcu/annotate.h
 -rw-r--r--	root/root	usr/include/urcu/arch.h
 drwxr-xr-x	root/root	usr/include/urcu/arch/
 -rw-r--r--	root/root	usr/include/urcu/arch/aarch64.h
@@ -44,7 +45,6 @@ drwxr-xr-x	root/root	usr/include/urcu/map/
 -rw-r--r--	root/root	usr/include/urcu/map/urcu-mb.h
 -rw-r--r--	root/root	usr/include/urcu/map/urcu-memb.h
 -rw-r--r--	root/root	usr/include/urcu/map/urcu-qsbr.h
--rw-r--r--	root/root	usr/include/urcu/map/urcu-signal.h
 -rw-r--r--	root/root	usr/include/urcu/map/urcu.h
 -rw-r--r--	root/root	usr/include/urcu/pointer.h
 -rw-r--r--	root/root	usr/include/urcu/rcuhlist.h
@@ -63,8 +63,6 @@ drwxr-xr-x	root/root	usr/include/urcu/static/
 -rw-r--r--	root/root	usr/include/urcu/static/urcu-mb.h
 -rw-r--r--	root/root	usr/include/urcu/static/urcu-memb.h
 -rw-r--r--	root/root	usr/include/urcu/static/urcu-qsbr.h
--rw-r--r--	root/root	usr/include/urcu/static/urcu-signal-nr.h
--rw-r--r--	root/root	usr/include/urcu/static/urcu-signal.h
 -rw-r--r--	root/root	usr/include/urcu/static/urcu.h
 -rw-r--r--	root/root	usr/include/urcu/static/wfcqueue.h
 -rw-r--r--	root/root	usr/include/urcu/static/wfqueue.h
@@ -76,7 +74,10 @@ drwxr-xr-x	root/root	usr/include/urcu/static/
 drwxr-xr-x	root/root	usr/include/urcu/uatomic/
 -rw-r--r--	root/root	usr/include/urcu/uatomic/aarch64.h
 -rw-r--r--	root/root	usr/include/urcu/uatomic/alpha.h
+-rw-r--r--	root/root	usr/include/urcu/uatomic/api.h
 -rw-r--r--	root/root	usr/include/urcu/uatomic/arm.h
+-rw-r--r--	root/root	usr/include/urcu/uatomic/builtins-generic.h
+-rw-r--r--	root/root	usr/include/urcu/uatomic/builtins.h
 -rw-r--r--	root/root	usr/include/urcu/uatomic/gcc.h
 -rw-r--r--	root/root	usr/include/urcu/uatomic/generic.h
 -rw-r--r--	root/root	usr/include/urcu/uatomic/hppa.h
@@ -98,7 +99,6 @@ drwxr-xr-x	root/root	usr/include/urcu/uatomic/
 -rw-r--r--	root/root	usr/include/urcu/urcu-memb.h
 -rw-r--r--	root/root	usr/include/urcu/urcu-poll.h
 -rw-r--r--	root/root	usr/include/urcu/urcu-qsbr.h
--rw-r--r--	root/root	usr/include/urcu/urcu-signal.h
 -rw-r--r--	root/root	usr/include/urcu/urcu.h
 -rw-r--r--	root/root	usr/include/urcu/urcu_ref.h
 -rw-r--r--	root/root	usr/include/urcu/wfcqueue.h
@@ -110,5 +110,4 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburcu-mb.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburcu-memb.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburcu-qsbr.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/liburcu-signal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburcu.pc
