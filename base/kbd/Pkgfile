@@ -2,16 +2,15 @@ description="The Kbd package contains key-table files, console fonts, and keyboa
 url="ftp://devel.altlinux.org/legion/kbd/"
 
 maintainer="Risto Kankkunen's"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(autoconf check m4 perl)
 
 set=(core)
 
 name=kbd
-version=2.6.4
-release=2
+version=2.7
 
 PKGMK_LOCALES=()
 
