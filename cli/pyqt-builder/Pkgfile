@@ -2,8 +2,9 @@ description='The PEP 517 compliant PyQt build system'
 url='https://pypi.org/project/PyQt-builder/'
 
 license="GPL"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-packaging sip)
 
@@ -12,6 +13,7 @@ _name="pyqt_builder"
 alias=(${_name})
 
 version=1.17.0
+release=2
 
 source=(https://pypi.io/packages/source/p/pyqt_builder/pyqt_builder-$version.tar.gz)
 
