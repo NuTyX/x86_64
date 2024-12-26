@@ -6,11 +6,12 @@ contributors="Pierre,Tnut"
 
 name=polkit
 version=125
-release=2
+release=3
 
 makedepends=(pam gettext glib duktape gobject-introspection elogind
              patch autoconf intltool perl-xml-parser libxslt docbook-xsl)
-source=(https://github.com/$name-org/$name/archive/$version/$name-$version.tar.gz)
+source=(polkit-1
+        https://github.com/$name-org/$name/archive/$version/$name-$version.tar.gz)
 
 prepare() {
 SN="polkitd"
@@ -31,7 +32,7 @@ cd    build
 
 meson setup ..                     \
       --prefix=/usr                \
-      --buildtype=release          \
+      --buildtype=plain            \
       -D man=false                 \
       -D session_tracking=elogind  \
       -D systemdsystemunitdir=/tmp \
@@ -41,4 +42,8 @@ ninja
 
 DESTDIR=$PKG ninja install
 
+rm -r $PKG/tmp
+rm -rf $PKG/usr/lib/{sysusers,tmpfiles}.d
+
+install -D -m644 ../../polkit-1 $PKG/etc/pam.d/polkit-1
 }

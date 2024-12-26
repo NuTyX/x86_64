@@ -1,10 +1,10 @@
 description="IBus is an Intelligent Input Bus."
-url="http://ibus.googlecode.com"
+url="https://ibus.googlecode.com"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributor=""
+packager="tnut <tnut@nutyx.org>"
+contributor="Spiky"
 
 makedepends=(dconf iso-codes gobject-introspection gtk3 gtk4 dbus-launch
              libnotify vala python libxkbcommon libdbusmenu-gtk)
@@ -30,6 +30,7 @@ NOCONFIGURE=1 ./autogen.sh
             --disable-emoji-dict    \
             --disable-unicode-dict  \
             --disable-python2       \
+            --disable-systemd-services \
             --with-python=python3
 
 rm -f tools/main.c
