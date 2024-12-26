@@ -15,24 +15,17 @@ PKGMK_GROUPS=(man devel doc )
 
 name=glib
 version=2.82.2
+release=2
+
 giversion=1.82.0
 
 source=(https://download.gnome.org/sources/gobject-introspection/${giversion:0:4}/gobject-introspection-$giversion.tar.xz
+        https://sourceforge.net/projects/nutyx/files/sources/background-nutyx/background-nutyx-0.0.1.tar.xz
         https://download.gnome.org/sources/glib/${version:0:4}/$name-$version.tar.xz
         glib-skip_warnings-3.patch)
-prepare () {
-  URL="http://downloads.tuxfamily.org/nutyx/WallPapers"
-  for i in nutyx-12-beta2.jpg nutyx-21-red.jpg nutyx-21-green.jpg \
-  nutyx-black.jpg nutyx-dreamy-sky.jpg lxde-black.jpg nutyx-10.0.jpg \
-  nutyx-11.0.jpg nutyx-9.0.94.jpg nutyx-9.0.95.jpg nutyx-eagle.jpg \
-  nutyx2.png nutyx9.png NuTyX-vide.jpg NuTyX-LXDE-10.0.jpg NuTyX-9.92.jpg \
-  NuTyX-9.91-2.jpg NuTyX-bad-jocker.jpg NuTyX-20.12.1.jpg NuTyX-23.06-1.jpg \
-  NuTyX-20.12.1-dark.jpg nutyx-12-beta2-flat.jpg NuTyX-23.06-3.jpg NuTyX-23.06-4.jpg
-  do
-   wget $URL/$i
-   install -D -m644 $i $PKG/usr/share/backgrounds/nutyx/$i
-  done
-  
+
+prepare() {
+
   mkdir build
 
   cd $name-$version
@@ -82,5 +75,7 @@ build () {
 }
 
 package() {
+  mkdir -p $PKG/usr/share/backgrounds
+  mv nutyx $PKG/usr/share/backgrounds
   DESTDIR=$PKG ninja -C build install
 }
