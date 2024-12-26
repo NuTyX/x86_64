@@ -25,6 +25,7 @@ build() {
                     --enable-ofono \
                     --enable-sim-hardcoded \
                     --enable-hwsim \
+                    --disable-systemd-service \
                     --disable-tools
 
   make
