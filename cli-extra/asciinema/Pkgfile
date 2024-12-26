@@ -1,15 +1,15 @@
 description="Un terminal qui vous permettra d'enregistrer les commandes que vous taperez"
 url="https://asciinema.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Delta,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Delta,Tnut"
 
 makedepends=(python-setuptools)
 run=(python)
 
 name=asciinema
 version=2.1.0
-release=4
+release=5
 _name=$name
 
 
