@@ -3,8 +3,8 @@ url='http://www.packagekit.org/'
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson intltool itstool docbook-xsl libcanberra
              desktop-file-utils gtk3 libnotify packagekit)
@@ -12,7 +12,7 @@ set=(gnome)
 
 name=gnome-packagekit
 version=43.0
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/gnome-packagekit/43/$name-$version.tar.xz)
 
