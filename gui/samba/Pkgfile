@@ -3,8 +3,8 @@ url="https://www.samba.org"
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
 
 makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
              docbook-xsl avahi gnutls libgpg-error popt talloc lmdb
@@ -13,7 +13,7 @@ run=(samba.lib)
 
 name=samba
 version=4.21.2
-release=3
+release=4
 
 scriptsversion=20241218
 
@@ -79,8 +79,8 @@ ln -v -sf /usr/bin/smbspool $PKG/usr/lib/cups/backend/smb
 
 _ARCH="x86_64"
 [ "$PKGMK_ARCH" = "i686" ] && _ARCH=i386
-rm $PKG/usr/lib/python3.12/site-packages/_tdb_text.py
-rm $PKG/usr/lib/python3.12/site-packages/tdb.cpython-312-${_ARCH}-linux-gnu.so
+rm $PKG/usr/lib/python3.13/site-packages/_tdb_text.py
+rm $PKG/usr/lib/python3.13/site-packages/tdb.cpython-313-${_ARCH}-linux-gnu.so
 
 # service
 cd $SRC/nutyx-scripts-${scriptsversion}
