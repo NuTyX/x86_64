@@ -1,15 +1,15 @@
 description="Podcast subscription sync tool"
-url="http://thp.io/2010/mygpoclient"
+url="https://github.com/gpodder/mygpoclient"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Chris,F.,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Chris,F.,Spiky"
 
 makedepends=(python-setuptools)
 run=(python)
 
 name=mygpoclient
 version=1.9
-release=4
+release=5
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/gpodder/$name/archive/$version.tar.gz)
