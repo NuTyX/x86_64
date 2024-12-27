@@ -1,15 +1,15 @@
 description="Linux Infrared Remote Control utilities"
 url="http://www.lirc.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(alsa-lib xorg-libx11 libftdi libusb-compat
              help2man alsa-lib xorg-libx11 libxslt python-setuptools)
 
 name=lirc
 version=0.10.2
-release=3
+release=4
 
 source=(http://prdownloads.sourceforge.net/${name}/${name}-${version}.tar.bz2
 	lirc.logrotate
