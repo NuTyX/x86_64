@@ -1,15 +1,35 @@
 description="Python bindings for the libsmbclient library from the samba project."
 url="https://pypi.python.org/pypi/pysmbc/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python samba)
 
 name=python-smbc
-version=1.0.23
-release=5
+_name="pysmbc"
+alias=(${_name})
 
-_name=pysmbc
-source=(https://pypi.io/packages/source/p/pysmbc/pysmbc-$version.tar.gz)
-build=python3
+version=1.0.25.1
+
+PKGMK_KEEP_SOURCES="no"
+
+source=(https://github.com/hamano/pysmbc/archive/refs/tags/$version.tar.gz)
+
+build() {
+
+      cd ${_name}-$version
+
+  pip3 wheel -w dist \
+    --no-build-isolation \
+    --no-deps $PWD
+  pip3 install --no-index \
+    --find-links dist \
+    --no-cache-dir    \
+    --no-user         \
+    --root=$PKG       \
+    ${_name}
+
+ find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
+}
+
