@@ -3,14 +3,13 @@ url="http://www.xfce.org/"
 
 licence="LGPL-2.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Tyrry,Fanch,Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tyrry,Fanch,Greg,Tnut"
 
 makedepends=(gtk3 libxfce4ui libxfce4util)
 
 name=garcon
-version=4.18.2
-release=2
+version=4.20.0
 
 source=(http://archive.xfce.org/src/xfce/garcon/${version:0:4}/${name}-$version.tar.bz2)
 		
