@@ -9,8 +9,7 @@ contributors="Rems,Tnut"
 makedepends=(nasm openjdk cmake)
 
 name=libjpeg-turbo
-version=3.0.4
-release=2
+version=3.1.0
 
 source=(https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/$version/$name-$version.tar.gz)
 
@@ -28,7 +27,8 @@ make
 make DESTDIR=$PKG \
 exampledir="/usr/share/doc/${name}-$version" \
                   install
-install -m 644 jpegint.h "${PKG}/usr/include" # required by other software
+
+install -m 644 ../$name-$version/src/jpegint.h "${PKG}/usr/include" # required by other software
 
 install -Dm644 LICENSE.md $PKG/usr/share/licenses/$name/LICENSE.md
 }
