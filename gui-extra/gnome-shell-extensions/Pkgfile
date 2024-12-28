@@ -3,15 +3,15 @@ url="http://www.gnome.org/"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Spiky,Remy,Fabienwang"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Remy,Fabienwang,Tnut"
 
 makedepends=(libgtop meson ninja)
 
 set=(gnome)
 
 name=gnome-shell-extensions
-version=47.1
+version=47.2
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
