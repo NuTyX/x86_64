@@ -3,16 +3,15 @@ url='https://apps.gnome.org/fr/app/org.gnome.Console/'
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Skythrew,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Skythrew,Tnut"
 
 makedepends=(vte libgtop libadwaita meson)
 run=()
 set=(gnome)
 
 name=gnome-console
-version=46.0
-release=3
+version=47.1
 
 source=(https://gitlab.gnome.org/GNOME/console/-/archive/$version/console-$version.tar.gz)
 
