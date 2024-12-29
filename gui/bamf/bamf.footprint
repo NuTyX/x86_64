@@ -1,0 +1,25 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bamf/
+-rwxr-xr-x	root/root	usr/lib/bamf/bamfdaemon
+-rwxr-xr-x	root/root	usr/lib/bamf/bamfdaemon-dbus-runner
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/Bamf-3.typelib
+lrwxrwxrwx	root/root	usr/lib/libbamf3.so -> libbamf3.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libbamf3.so.2 -> libbamf3.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib/libbamf3.so.2.0.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+-rw-r--r--	root/root	usr/lib/systemd/user/bamfdaemon.service
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.ayatana.bamf.service
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/Bamf-3.gir
+drwxr-xr-x	root/root	usr/share/upstart/
+drwxr-xr-x	root/root	usr/share/upstart/sessions/
+-rw-r--r--	root/root	usr/share/upstart/sessions/bamfdaemon.conf
+drwxr-xr-x	root/root	usr/share/vala/
+drwxr-xr-x	root/root	usr/share/vala/vapi/
+-rw-r--r--	root/root	usr/share/vala/vapi/libbamf3.vapi
