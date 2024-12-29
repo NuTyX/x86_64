@@ -1,7 +1,8 @@
 description="Xorg VMWare mouse input driver."
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 name=xorg-xf86-input-vmmouse
 version=13.2.0
+release=2
 _name=${name/xorg-/}
 makedepends=(xorg-server)
 source=(http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.xz)
