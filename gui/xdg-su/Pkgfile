@@ -1,14 +1,14 @@
 description="Run a program as root with the most environment appropriate available graphical authentication agent"
 url="https://github.com/tarakbumba/xdg-su"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(links xmlto docbook-xsl)
 
 name=xdg-su
 version=1.2.3
-release=2
+release=3
 
 source=(https://github.com/tarakbumba/$name/archive/$name-$version.tar.gz)
 
