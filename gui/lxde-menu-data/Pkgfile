@@ -1,12 +1,12 @@
 description="Provides files required to build freedesktop.org menu spec-compliant desktop menus for LXDE"
 url="http://lxde.org/"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(intltool perl-xml-parser)
 
 name=lxde-menu-data
 version=0.1.5
-release=2
+release=3
 
 _name=lxmenu-data
 source=(http://downloads.sourceforge.net/lxde/${_name}-$version.tar.xz)
