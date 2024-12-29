@@ -7,13 +7,14 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Berlius,Jayce,Greg,Fabienwang,Tnut"
 
 makedepends=(readline apache libxml2 aspell aspell-dict libxslt enchant
-             pth freetype libexif libjpeg-turbo libpng libtiff pcre
+             freetype libexif libjpeg-turbo libpng libtiff pcre
              xorg-server curl db mariadb openldap postgresql sqlite 
              unixodbc openssl cyrus-sasl kerberos)
 
 
 name=php
 version=8.3.15
+release=2
 
 source=(http://php.net/distributions/$name-$version.tar.xz)
 
