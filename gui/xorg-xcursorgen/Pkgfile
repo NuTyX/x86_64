@@ -7,6 +7,7 @@ url="http://xorg.freedesktop.org"
 
 name=xorg-xcursorgen
 version=1.0.8
+release=2
 _name=${name/xorg-/}
 makedepends=(xorg-libx11 xorg-libxcursor libpng)
 source=(http://ftp.x.org/pub/individual/app/${_name}-$version.tar.xz)
