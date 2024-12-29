@@ -2,12 +2,11 @@ description='A command line tool that generates XDG menus for several window man
 url='https://github.com/gapan/xdgmenumaker'
 
 license="GPL3"
-packager="Tnut <tnut@nutyx.org>"
-contributors="Miyo"
+packager="spiky <spiky@nutyx.org>"
+contributors="Miyo,Tnut"
 
 name=xdgmenumaker
-version=2.0
-release=3
+version=2.3
 
 makedepends=(gtk3 txt2tags)
 run=(python-xdg python-gobject python-pillow)
