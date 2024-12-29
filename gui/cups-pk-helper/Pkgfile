@@ -1,12 +1,13 @@
 description="The cups-pk-helper package contains a PolicyKit helper used to configure Cups with fine-grained privileges."
 url="http://www.freedesktop.org/software/cups-pk-helper/releases"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(polkit intltool cups)
 
 name=cups-pk-helper
 version=0.2.7
+release=2
 
 source=(http://www.freedesktop.org/software/$name/releases/$name-$version.tar.xz)
 
