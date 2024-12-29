@@ -1,13 +1,13 @@
 description="Xorg VirtualBox video driver."
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=xorg-xf86-video-vboxvideo
-version=1.0.0
-release=2
+version=1.0.1
 
 _name=${name/xorg-/}
 makedepends=(xorg-server)
-source=(http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.bz2)
+
+source=(http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.xz)
 
 build=xorg
 
