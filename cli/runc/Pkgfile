@@ -6,10 +6,10 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(go libseccomp git)
 
 name=runc
-version=1.1.11
+version=1.2.2
 
 source=(https://github.com/opencontainers/runc/archive/v${version}/$name-${version}.tar.gz \
-    http://jaeger.morpheus.net/linux/crux/files/$name-man-pages-$version.tar.xz)
+        https://crux.nu/files/$name-man-pages-$version.tar.xz)
 
 build() {
     mkdir -pv src/github.com/opencontainers
@@ -20,7 +20,7 @@ build() {
     export PATH=/usr/lib/go/bin:$PATH
     export BUILDTAGS="seccomp"
     # use the long commit hash here
-    make COMMIT=52b36a2dd837e8462de8e01458bf02cf9eea47dd
+    make COMMIT=7cb363254b69e10320360b63fb73e0ffb5da7bf2
 
     install -D -m 0755 $name $PKG/usr/bin/$name
     install -d -m 0755 $PKG/usr/share/man/man8
