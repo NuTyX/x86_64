@@ -1,14 +1,15 @@
-description='https://github.com/valr/cbatticon'
+description='Lightweight battery icon for the system tray'
 url='https://github.com/valr/cbatticon'
 license="GPL2"
 
-packager="Tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gtk3 libnotify git)
 
 name=cbatticon
 version=1.6.13
+release=2
 
 prepare() {
   git clone $url
