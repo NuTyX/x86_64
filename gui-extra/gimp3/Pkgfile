@@ -6,19 +6,20 @@ license="LGPL3 GPL3"
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr
+makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr 
              gegl poppler-glib glib-networking libmng alsa-lib libwmf
              babl libmypaint mypaint-brushes lcms2 libgexiv2 aalib
-             harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib python-packaging)
+             harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib)
 
 name=gimp3
-version=2.99.18
-release=3
+version=3.0.0
+release=2
+_version=3.0
 
-source=(https://download.gimp.org/pub/gimp/v2.99/gimp-$version.tar.xz)
+source=(https://download.gimp.org/gimp/v${_version}/gimp-$version-RC1.tar.xz)
 
 build() {
-cd gimp-$version
+cd gimp-$version-RC1
 
 mkdir gimp-build
 cd    gimp-build
@@ -26,7 +27,6 @@ cd    gimp-build
       meson setup .. \
       --prefix=/usr  \
       --sysconfdir=/etc \
-      -Dpython=disabled \
       -Dgi-docgen=disabled \
       -Dbug-report-url=https://github.com/NuTyX/packages-x86_64/issues \
       --buildtype=release
