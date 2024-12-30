@@ -1,15 +1,32 @@
 description="A very advanced and programmable command interpreter (shell) for UNIX"
 url="http://www.zsh.org"
 
-contributors="Alienus,Fanch,Greg,Spiky,Tnut"
-packager="Spiky <spiky@nutyx.org>"
+contributors="Alienus,Fanch,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
-makedepends=(ncurses gawk grep pcre texinfo)
+makedepends=(ncurses gawk grep pcre2 texinfo libcap )
 
 name=zsh
 version=5.9
+release=2
 
 source=(http://www.zsh.org/pub/$name-$version.tar.xz)
+
+prepare() {
+
+cd $name-$version
+sed -e 's/set_from_init_file/texinfo_&/' \
+    -i Doc/Makefile.in
+
+sed -e 's/^main/int &/'      \
+    -e 's/exit(/return(/'    \
+    -i aczsh.m4 configure.ac
+
+sed -e 's/test = /&(char**)/' \
+    -i configure.ac
+
+autoconf
+}
 
 build(){
     cd $name-$version
