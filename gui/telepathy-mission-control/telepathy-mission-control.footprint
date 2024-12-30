@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mc-tool
+-rwxr-xr-x	root/root	usr/bin/mc-wait-for-name
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libmission-control-plugins.so -> libmission-control-plugins.so.0.5.1
+lrwxrwxrwx	root/root	usr/lib/libmission-control-plugins.so.0 -> libmission-control-plugins.so.0.5.1
+-rwxr-xr-x	root/root	usr/lib/libmission-control-plugins.so.0.5.1
+drwxr-xr-x	root/root	usr/lib/telepathy/
+-rwxr-xr-x	root/root	usr/lib/telepathy/mission-control-5
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.freedesktop.Telepathy.AccountManager.service
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.freedesktop.Telepathy.MissionControl5.service
+drwxr-xr-x	root/root	usr/share/glib-2.0/
+drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
+-rw-r--r--	root/root	usr/share/glib-2.0/schemas/im.telepathy.MissionControl.FromEmpathy.gschema.xml
