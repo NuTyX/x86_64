@@ -4,13 +4,23 @@ url="https://tug.org/texlive/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(cairo gmp mpfr icu xorg-pixman xorg-libxaw)
+makedepends=(cairo gmp mpfr icu xorg-pixman xorg-libxaw libpng)
 
 name=libsynctex
-version=20230313
+version=20240312
 
-source=(ftp://tug.org/texlive/historic/2023/texlive-$version-source.tar.xz)
+source=(https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-$version-source.tar.xz
+        texlive-20240312-source-upstream_fixes-1.patch)
 
+prepare() {
+cd texlive-$version-source
+
+sed -e '182 s/internal_font_number/boolean/' \
+    -e '301 s/internal_font_number/boolean/' \
+    -i texk/web2c/pdftexdir/pdftex.ch
+
+patch -Np1 -i ../texlive-20240312-source-upstream_fixes-1.patch
+}
 build() {
 cd texlive-$version-source
 
@@ -26,6 +36,7 @@ cd    build
 --with-system-icu \
 --with-system-gmp \
 --with-system-mpfr \
+--with-system-libpng \
 --disable-native-texlive-build \
 --disable-static \
 --enable-shared \
