@@ -1,13 +1,14 @@
 description="Simple Directmedia Layer, a library multiplatforme"
 url="http://www.libsdl.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(alsa-lib nasm libusb pulseaudio xorg-libx11 xorg-libxext)
 
 name=sdl1
 version=1.2.15
+release=2
 
 source=(http://www.libsdl.org/release/SDL-$version.tar.gz)
 build() {
