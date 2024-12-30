@@ -1,14 +1,15 @@
 description='Tool which allows you to compose wallpapers'
 url='https://github.com/himdel/hsetroot'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=()
 run=(imlib2 xorg-libxinerama)
 
 name=hsetroot
 version=1.0.5
+release=2
 
 source=($url/archive/$version/$name-$version.tar.gz)
 
