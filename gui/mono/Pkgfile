@@ -9,6 +9,7 @@ contributors="Tnut,BlogofraisFR"
 makedepends=(cmake libgdiplus python zlib git)
 name=mono
 version=6.12.0.205
+release=2
 
 source=(https://download.mono-project.com/sources/$name/preview/$name-$version.tar.xz
         mono.binfmt.d)
