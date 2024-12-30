@@ -1,15 +1,15 @@
 description="Zeroconf module for Apache"
 url="http://0pointer.de/lennart/projects/mod_dnssd"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,B,Tnut"
 
 makedepends=(avahi apache libxcrypt)
 
 _name=mod_dnssd
 name=mod-dnssd
 version=0.6
-release=3
+release=4
 
 source=(http://0pointer.de/lennart/projects/${_name}/${_name}-${version}.tar.gz
         fix_undefined_reference.patch)
