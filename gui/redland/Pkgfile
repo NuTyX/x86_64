@@ -1,14 +1,14 @@
 description="Library that provides a high-level interface to RDF data"
 url="http://download.librdf.org/source/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(rasqal db sqlite libiodbc)
 
 name=redland
 version=1.0.17
-release=6
+release=7
 
 source=(rpath.diff
 	http://download.librdf.org/source/$name-$version.tar.gz)
