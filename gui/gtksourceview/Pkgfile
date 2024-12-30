@@ -8,10 +8,14 @@ makedepends=(gtk3 libxml2)
 
 name=gtksourceview
 version=3.24.11
-release=4
+release=5
 
 source=(https://download.gnome.org/sources/gtksourceview/${version:0:4}/${name}-$version.tar.xz)
 
+prepare() {
+cd $name-$version
+sed -i 's/g_object_ref (buffer)/g_object_ref (GTK_SOURCE_BUFFER (buffer))/' gtksourceview/gtksourceview.c
+}
 package() {
 # Obsolet lib
 rm $PKG/usr/lib/libgtksourceview-3.0.la
