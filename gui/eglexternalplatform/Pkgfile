@@ -9,13 +9,18 @@ run=(libglvnd)
 set=()
 
 name=eglexternalplatform
-version=1.1
-release=2
+version=1.2
 
 source=(https://github.com/NVIDIA/eglexternalplatform/archive/refs/tags/${version}.tar.gz)
 
 build() {
-cd $name-$version
-install -Dt "${PKG}/usr/include/EGL" -m644 interface/*
-install -Dt "${PKG}/usr/share/pkgconfig" -m644 *.pc
+
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --includedir=include/EGL \
+    --libdir=share \
+    --buildtype=plain
+
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
 }
