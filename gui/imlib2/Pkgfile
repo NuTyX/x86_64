@@ -11,6 +11,7 @@ makedepends=(aalib giflib xorg-libxext libtiff freetype
 
 name=imlib2
 version=1.12.3
+release=2
 
 source=(http://downloads.sourceforge.net/enlightenment/$name-$version.tar.xz)
 build() {
