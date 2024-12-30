@@ -2,13 +2,14 @@ description='sans-serif font set from Ubuntu'
 url='https://design.ubuntu.com/font/'
 
 
-packager="Tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 license="UBUNTU FONT LICENCE Version 1.0"
 
 name=fonts-ubuntu
 version=0.83
+release=2
 
 run=(xorg-mkfontscale)
 
