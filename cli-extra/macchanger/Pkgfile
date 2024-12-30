@@ -1,12 +1,14 @@
 description="Utility for viewing/manipulating the MAC address of network interfaces"
 url="http://www.gnu.org/software/macchanger"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
+
+makedepends=(autoconf texinfo)
 
 name=macchanger
 version=1.7.0
-release=2
+release=3
 
 source=(https://github.com/alobbs/macchanger/archive/$version.tar.gz)
 
