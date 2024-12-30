@@ -1,13 +1,14 @@
 description="OpenGL Extension Wrangler Library" 
 url="http://glew.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(mesa xorg-libxmu xorg-libxi xorg-glu)
 
 name=glew
 version=2.2.0
+release=2
 
 source=(http://downloads.sourceforge.net/glew/$version/$name-$version.tgz)
 
