@@ -1,13 +1,14 @@
 description="Can probe disks on the system for other operating systems, and add them to the boot loader"
 url="http://joeyh.name/code/os-prober/"
 
-contributors="Chris,Farrell,Timcowchip,Tnut,Greg,Spiky"
-packager="Spiky <spiky@nutyx.org>"
+contributors="Chris,Farrell,Timcowchip,Tnut,Greg"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(bash)
 
 name=os-prober
 version=1.81
+release=2
 
 source=(http://ftp.de.debian.org/debian/pool/main/o/os-prober/os-prober_$version.tar.xz)
 
