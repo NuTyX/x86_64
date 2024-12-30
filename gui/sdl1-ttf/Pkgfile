@@ -1,13 +1,14 @@
 description="TrueType library for libsdl."
 url="http://www.libsdl.org/projects/SDL_ttf/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Fanch"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Tnut"
 
 makedepends=(freetype sdl1)
 
 name=sdl1-ttf
 version=2.0.11
+release=2
 
 source=($name-$version-consolidate-1.patch
         http://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-$version.tar.gz)
