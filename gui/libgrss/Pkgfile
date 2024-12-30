@@ -1,14 +1,14 @@
 description="Glib based library to manage RSS and Atom feeds"
 url="http://www.gnome.org"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Tnut"
 
 makedepends=(libxml2 glib libsoup gobject-introspection gtk-doc)
 run=(desktop-file-utils gtk-update-icon-cache)
 
 name=libgrss
 version=0.7.0
-release=3
+release=4
 
 source=(https://download.gnome.org/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
