@@ -1,8 +1,8 @@
 description="Library that provides a Qt5 implementation of the DBusMenu protocol"
 url="https://www.kde.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(cmake qtbase)
 
@@ -10,7 +10,7 @@ set=(lxqt)
 
 name=libdbusmenu-qt
 version=0.9.3+16.04.20160218
-release=1
+release=2
 
 source=(http://archive.ubuntu.com/ubuntu/pool/main/libd/$name/${name}_$version.orig.tar.gz)
 
