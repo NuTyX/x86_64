@@ -1,15 +1,15 @@
 description="Provides word-processor-style highlighting and replacement of misspelled words in a GtkTextView widget"
 url="http://gtkspell.sourceforge.net/"
 
-packager="Tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Tnut"
 
 makedepends=(gtk3 enchant)
 
 name=gtkspell
 _name=gtkspell3
 version=3.0.10
-release=4
+release=5
 
 source=(https://downloads.sourceforge.net/sourceforge/$name/${_name}-$version.tar.xz)
 
