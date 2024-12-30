@@ -1,12 +1,13 @@
 description="Xorg Misc Ethiopic  fonts."
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 PKGMK_GROUPS=(doc man)
 url="http://xorg.freedesktop.org"
 
 name=font-misc-ethiopic
 version=1.0.4
+release=2
 
 makedepends=(xorg-mkfontscale xorg-fontconfig
              xorg-font-util xorg-font-alias xorg-encodings)
