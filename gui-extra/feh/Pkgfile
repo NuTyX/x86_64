@@ -6,11 +6,12 @@ license="Custom:MIT"
 packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Geantbrun,Fabienwang"
 
-makedepends=(libpng giblib libexif xorg-libxt xorg-libxcursor
+makedepends=(libpng imlib2 libexif xorg-libxt xorg-libxcursor
              xorg-libxdamage xorg-libxrandr xorg-libxinerama curl)
 
 name=feh
 version=3.10.3
+release=2
 
 source=(http://feh.finalrewind.org/$name-$version.tar.bz2)
 
