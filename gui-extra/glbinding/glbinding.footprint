@@ -1,0 +1,27 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/glmeta
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libglbinding-aux.so -> libglbinding-aux.so.3
+lrwxrwxrwx	root/root	usr/lib/libglbinding-aux.so.3 -> libglbinding-aux.so.3.3.0
+-rwxr-xr-x	root/root	usr/lib/libglbinding-aux.so.3.3.0
+lrwxrwxrwx	root/root	usr/lib/libglbinding.so -> libglbinding.so.3
+lrwxrwxrwx	root/root	usr/lib/libglbinding.so.3 -> libglbinding.so.3.3.0
+-rwxr-xr-x	root/root	usr/lib/libglbinding.so.3.3.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/glbinding/
+-rw-r--r--	root/root	usr/share/glbinding/AUTHORS
+-rw-r--r--	root/root	usr/share/glbinding/LICENSE
+-rw-r--r--	root/root	usr/share/glbinding/README.md
+-rw-r--r--	root/root	usr/share/glbinding/VERSION
+drwxr-xr-x	root/root	usr/share/glbinding/cmake/
+-rw-r--r--	root/root	usr/share/glbinding/cmake/FindKHR.cmake
+drwxr-xr-x	root/root	usr/share/glbinding/cmake/KHRplatform/
+-rw-r--r--	root/root	usr/share/glbinding/cmake/KHRplatform/KHRplatform-export.cmake
+drwxr-xr-x	root/root	usr/share/glbinding/cmake/glbinding-aux/
+-rw-r--r--	root/root	usr/share/glbinding/cmake/glbinding-aux/glbinding-aux-export-none.cmake
+-rw-r--r--	root/root	usr/share/glbinding/cmake/glbinding-aux/glbinding-aux-export.cmake
+drwxr-xr-x	root/root	usr/share/glbinding/cmake/glbinding/
+-rw-r--r--	root/root	usr/share/glbinding/cmake/glbinding/glbinding-export-none.cmake
+-rw-r--r--	root/root	usr/share/glbinding/cmake/glbinding/glbinding-export.cmake
+-rw-r--r--	root/root	usr/share/glbinding/glbinding-config.cmake
