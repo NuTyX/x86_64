@@ -7,7 +7,7 @@ contributors="Timcowchip,Greg,Tnut"
 makedepends=(xorg-server xorg-libxt xorg-libxft xorg-libxmu mesa
              libpng libjpeg-turbo cairo librsvg)
 name=jwm
-version=2.4.3
+version=2.4.6
 
 source=(https://github.com/joewing/jwm/releases/download/v${version}/$name-$version.tar.xz
 		jwm.desktop)
