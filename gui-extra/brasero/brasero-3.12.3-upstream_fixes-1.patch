@@ -1,0 +1,62 @@
+Submitted By:            Douglas R. Reno <renodr at linuxfromscratch dot org>
+Date:                    2024-08-27
+Initial Package Version: 3.12.3
+Upstream Status:         Applied
+Origin:                  Upstream
+Description:             Fixes building Brasero with GCC-14. The issue is caused
+                         by an incompatible type error.
+
+diff -Naurp brasero-3.12.3.orig/libbrasero-burn/brasero-drive-properties.c brasero-3.12.3/libbrasero-burn/brasero-drive-properties.c
+--- brasero-3.12.3.orig/libbrasero-burn/brasero-drive-properties.c	2024-08-27 21:38:59.469124915 -0500
++++ brasero-3.12.3/libbrasero-burn/brasero-drive-properties.c	2024-08-27 21:40:18.117665051 -0500
+@@ -835,23 +835,19 @@ brasero_drive_properties_set_property (G
+ 				       GParamSpec *pspec)
+ {
+ 	BraseroDrivePropertiesPrivate *priv;
+-	BraseroBurnSession *session;
+ 
+ 	priv = BRASERO_DRIVE_PROPERTIES_PRIVATE (object);
+ 
+ 	switch (property_id) {
+ 	case PROP_SESSION: /* Readable and only writable at creation time */
+-		/* NOTE: no need to unref a potential previous session since
+-		 * it's only set at construct time */
+-		session = g_value_get_object (value);
+-		priv->session = g_object_ref (session);
++		priv->session = g_object_ref (g_value_get_object(value));
+ 
+ 		brasero_drive_properties_update (BRASERO_DRIVE_PROPERTIES (object));
+-		priv->valid_sig = g_signal_connect (session,
++		priv->valid_sig = g_signal_connect (priv->session,
+ 						    "is-valid",
+ 						    G_CALLBACK (brasero_drive_properties_is_valid_cb),
+ 						    object);
+-		priv->output_sig = g_signal_connect (session,
++		priv->output_sig = g_signal_connect (priv->session,
+ 						     "output-changed",
+ 						     G_CALLBACK (brasero_drive_properties_output_changed_cb),
+ 						     object);
+diff -Naurp brasero-3.12.3.orig/libbrasero-utils/brasero-metadata.c brasero-3.12.3/libbrasero-utils/brasero-metadata.c
+--- brasero-3.12.3.orig/libbrasero-utils/brasero-metadata.c	2024-08-27 21:38:59.467124927 -0500
++++ brasero-3.12.3/libbrasero-utils/brasero-metadata.c	2024-08-27 21:40:51.473482427 -0500
+@@ -665,7 +665,7 @@ brasero_metadata_install_missing_plugins
+ 
+ 	context = gst_install_plugins_context_new ();
+ 	gst_install_plugins_context_set_xid (context, brasero_metadata_get_xid (self));
+-	status = gst_install_plugins_async ((gchar **) details->pdata,
++	status = gst_install_plugins_async ((const gchar* const*) details->pdata,
+ 					    context,
+ 					    brasero_metadata_install_plugins_result,
+ 					    downloads);
+diff -Naurp brasero-3.12.3.orig/libbrasero-utils/brasero-pk.c brasero-3.12.3/libbrasero-utils/brasero-pk.c
+--- brasero-3.12.3.orig/libbrasero-utils/brasero-pk.c	2024-08-27 21:38:59.467124927 -0500
++++ brasero-3.12.3/libbrasero-utils/brasero-pk.c	2024-08-27 21:41:07.512397036 -0500
+@@ -230,7 +230,7 @@ brasero_pk_install_gstreamer_plugin (Bra
+ 
+ 	context = gst_install_plugins_context_new ();
+ 	gst_install_plugins_context_set_xid (context, xid);
+-	status = gst_install_plugins_async ((gchar **) gst_plugins->pdata,
++	status = gst_install_plugins_async ((const gchar* const*) gst_plugins->pdata,
+ 	                                    context,
+ 	                                    brasero_pk_install_gst_plugin_result,
+ 	                                    package);
