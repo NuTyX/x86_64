@@ -1,35 +1,24 @@
 description="Brisk menu an efficient menu for the MATE"
 url="https://github.com/solus-project/brisk-menu"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="jayce, Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Greg,Tnut"
 
-makedepends=(git mate-desktop mate-menus mate-panel meson ninja)
+makedepends=(mate-desktop mate-menus mate-panel meson ninja)
 set=(mate)
 
 name=brisk-menu
-version=0.6.1-g25a7def
+version=0.6.2
 
-prepare() {
-git clone https://github.com/getsolus/brisk-menu.git
-cd $name
-I=$(git describe)
-if [ "$version" != "0.6.1-${I/*-/}" ]; then
-	echo "Version has changed"
-	exit 1
-fi
-cd ..
-}
+source=(https://github.com/getsolus/brisk-menu/releases/download/v$version/brisk-menu-v$version.tar.xz)
 
 build() {
-	cd $name
-	meson --buildtype plain build --prefix=/usr
-	ninja -C build
-	DESTDIR=$PKG ninja -C build install
-}
-uptodate() {
-feed=https://github.com/solut-project/$name/releases.atom
-exec="lynx -read_timeout=20 -dump -listonly -nonumbers $feed"
-$exec $feed | grep release | grep title | head -1 | \
-sed -e "s@ @@g" -e "s@<title>$name@@" -e "s@release</title>@@"
+
+    meson setup --prefix /usr \
+    --buildtype  plain        \
+    $name-$version            builddir
+
+    meson compile -C          builddir
+
+DESTDIR=$PKG meson install -C builddir
 }
