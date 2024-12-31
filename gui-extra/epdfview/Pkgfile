@@ -1,8 +1,8 @@
 description="Lightweight PDF document viewer"
 url="http://freecode.com/projects/epdfview"
 
-packager="Tnut <tnut@nutyx.org>"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(poppler-glib gtk2)
 run=(desktop-file-utils hicolor-icon-theme)
@@ -12,7 +12,7 @@ set=(lxde)
 name=epdfview
 alias=(ePDFView)
 version=0.1.8
-release=7
+release=8
 
 source=(http://anduin.linuxfromscratch.org/BLFS/epdfview/$name-$version.tar.bz2
 	$name-$version-fixes-2.patch)
