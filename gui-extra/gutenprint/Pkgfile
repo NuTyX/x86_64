@@ -1,12 +1,12 @@
 description="Top quality printer drivers for POSIX systems"
 url="http://gimp-print.sourceforge.net"
 
-contributors="PierreB,Greg,Spiky"
-packager="Tnut <tnut@nutyx.org>"
+contributors="PierreB,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 name=gutenprint
 version=5.3.4
-release=2
+release=3
 
 makedepends=(cups gimp)
 
@@ -20,7 +20,10 @@ cd $name-$version
 sed -i 's|$(PACKAGE)/doc|doc/$(PACKAGE)-$(VERSION)|' \
        {,doc/,doc/developer/}Makefile.in
 
-./configure --prefix=/usr --disable-static
+./configure --prefix=/usr --disable-static \
+            --without-gimp2    \
+            --without-gimp2-as-gutenprint
+
 make
 make DESTDIR=$PKG install
 
