@@ -8,5 +8,19 @@ run=(geany)
 
 name=geany-plugins
 version=2.0
+release=2
 
 source=(http://plugins.geany.org/geany-plugins/$name-$version.tar.bz2)
+
+
+build() {
+  cd $name-$version
+  export CFLAGS+=' -Wno-incompatible-pointer-types -w' PYTHON=/usr/bin/python
+  ./configure \
+    --libexecdir=/usr/lib \
+    --prefix=/usr
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+  make
+
+make DESTDIR=$PKG install
+}
