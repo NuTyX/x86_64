@@ -8,9 +8,19 @@ makedepends=(xorg-server)
 
 name=blackbox
 version=0.77
+release=2
 
 PKGMK_KEEP_SOURCES="no"
-source=(https://github.com/bbidulock/blackboxwm/archive/${version}.tar.gz)
+source=(https://github.com/bbidulock/blackboxwm/archive/${version}.tar.gz
+        120_include-ctime-header.patch)
+
+prepare() {
+cd blackboxwm-$version
+  patch -Np1 -i ../120_include-ctime-header.patch # Fix build
+  sed -e '/AC_DISABLE_SHARED/d' -i configure.ac # Build shared library
+  ./autogen.sh
+}
+
 
 build () {
 
