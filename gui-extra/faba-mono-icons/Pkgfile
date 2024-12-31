@@ -1,15 +1,15 @@
 description="Faba Mono Icons is a supplementary theme to Faba Icon Theme. It consists only of monochrome panel icons"
 url="https://github.com/snwh/faba-mono-icons"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce, Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Greg,Tnut"
 
 makedepends=(git faba-icon-theme)
 run=(gtk-update-icon-cache)
 
 name=faba-mono-icons
 version=94.560b521
-release=2
+release=3
 
 build() {
    git clone https://github.com/snwh/${name}
