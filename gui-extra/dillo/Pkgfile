@@ -10,6 +10,7 @@ makedepends=(perl fltk libpng libjpeg-turbo openssl)
 
 name=dillo
 version=3.1.1
+release=2
 
 source=(https://github.com/dillo-browser/dillo/releases/download/v$version/dillo-$version.tar.gz
        )
