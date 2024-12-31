@@ -4,11 +4,12 @@ url="https://bluefish.openoffice.nl/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
-makedepends=(pcre enchant gtk2)
+makedepends=(pcre enchant gtk3)
 run=(desktop-file-utils)
 
 name=bluefish
 version=2.2.15
+release=2
 
 source=(https://www.bennewitz.com/bluefish/stable/source/$name-$version.tar.bz2)
 
