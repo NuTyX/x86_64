@@ -1,14 +1,15 @@
 description="Emulator with builtin DOS for running DOS Games"
 url="http://dosbox.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org"
-contributors="Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(sdl1-net zlib sdl1-sound
             libglade libpng alsa-lib xorg-glu)
 
 name=dosbox
 version=0.74.3
+release=2
 
 source=(http://download.sourceforge.net/$name/$name-0.74-2.tar.gz
 )
