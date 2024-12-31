@@ -1,14 +1,14 @@
 description="Arc icon theme"
 url="https://github.com/horst3180/arc-icon-theme"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Greg,Tnut"
 
 run=(gtk-update-icon-cache hicolor-icon-theme)
 
 name=arc-icon-theme
 version=20161122
-release=2
+release=3
 
 source=(https://github.com/horst3180/$name/archive/$version.tar.gz)
 
