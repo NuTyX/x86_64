@@ -24,36 +24,41 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xgettext
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gettext/
--rwxr-xr-x	root/root	usr/lib/gettext/cldr-plurals
--rwxr-xr-x	root/root	usr/lib/gettext/hostname
--rwxr-xr-x	root/root	usr/lib/gettext/project-id
--rwxr-xr-x	root/root	usr/lib/gettext/urlget
--rwxr-xr-x	root/root	usr/lib/gettext/user-email
 lrwxrwxrwx	root/root	usr/lib/libasprintf.so -> libasprintf.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libasprintf.so.0 -> libasprintf.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libasprintf.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgettextlib-0.22.5.so
-lrwxrwxrwx	root/root	usr/lib/libgettextlib.so -> libgettextlib-0.22.5.so
-lrwxrwxrwx	root/root	usr/lib/libgettextpo.so -> libgettextpo.so.0.5.10
-lrwxrwxrwx	root/root	usr/lib/libgettextpo.so.0 -> libgettextpo.so.0.5.10
--rwxr-xr-x	root/root	usr/lib/libgettextpo.so.0.5.10
--rwxr-xr-x	root/root	usr/lib/libgettextsrc-0.22.5.so
-lrwxrwxrwx	root/root	usr/lib/libgettextsrc.so -> libgettextsrc-0.22.5.so
-lrwxrwxrwx	root/root	usr/lib/libtextstyle.so -> libtextstyle.so.0.2.1
-lrwxrwxrwx	root/root	usr/lib/libtextstyle.so.0 -> libtextstyle.so.0.2.1
--rwxr-xr-x	root/root	usr/lib/libtextstyle.so.0.2.1
+-rwxr-xr-x	root/root	usr/lib/libgettextlib-0.23.so
+lrwxrwxrwx	root/root	usr/lib/libgettextlib.so -> libgettextlib-0.23.so
+lrwxrwxrwx	root/root	usr/lib/libgettextpo.so -> libgettextpo.so.0.5.11
+lrwxrwxrwx	root/root	usr/lib/libgettextpo.so.0 -> libgettextpo.so.0.5.11
+-rwxr-xr-x	root/root	usr/lib/libgettextpo.so.0.5.11
+-rwxr-xr-x	root/root	usr/lib/libgettextsrc-0.23.so
+lrwxrwxrwx	root/root	usr/lib/libgettextsrc.so -> libgettextsrc-0.23.so
+lrwxrwxrwx	root/root	usr/lib/libtextstyle.so -> libtextstyle.so.0.2.2
+lrwxrwxrwx	root/root	usr/lib/libtextstyle.so.0 -> libtextstyle.so.0.2.2
+-rwxr-xr-x	root/root	usr/lib/libtextstyle.so.0.2.2
 -rwxr-xr-x	root/root	usr/lib/preloadable_libintl.so
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/gettext/
+-rwxr-xr-x	root/root	usr/libexec/gettext/cldr-plurals
+-rwxr-xr-x	root/root	usr/libexec/gettext/hostname
+-rwxr-xr-x	root/root	usr/libexec/gettext/project-id
+-rwxr-xr-x	root/root	usr/libexec/gettext/urlget
+-rwxr-xr-x	root/root	usr/libexec/gettext/user-email
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/gettext-0.22.5/
-drwxr-xr-x	root/root	usr/share/gettext-0.22.5/its/
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/glade.loc
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/glade1.its
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/glade2.its
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/gsettings.its
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/gsettings.loc
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/gtkbuilder.its
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/metainfo.its
--rw-r--r--	root/root	usr/share/gettext-0.22.5/its/metainfo.loc
+drwxr-xr-x	root/root	usr/share/gettext-0.23/
+drwxr-xr-x	root/root	usr/share/gettext-0.23/its/
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/docbook.loc
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/docbook4.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/docbook5.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/glade.loc
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/glade1.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/glade2.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/gsettings.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/gsettings.loc
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/gtkbuilder.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/metainfo.its
+-rw-r--r--	root/root	usr/share/gettext-0.23/its/metainfo.loc
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/gettext/
 -rw-r--r--	root/root	usr/share/licenses/gettext/COPYING

@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/share/gettext/
 -rw-r--r--	root/root	usr/share/gettext/ABOUT-NLS
 -rw-r--r--	root/root	usr/share/gettext/archive.dir.tar.xz
 -rwxr-xr-x	root/root	usr/share/gettext/config.rpath
+-rw-r--r--	root/root	usr/share/gettext/disclaim-translations.txt
 -rw-r--r--	root/root	usr/share/gettext/gettext.h
 -rw-r--r--	root/root	usr/share/gettext/javaversion.class
 -rw-r--r--	root/root	usr/share/gettext/msgunfmt.tcl
@@ -32,9 +33,9 @@ drwxr-xr-x	root/root	usr/share/gettext/po/
 -rw-r--r--	root/root	usr/share/gettext/po/boldquot.sed
 -rw-r--r--	root/root	usr/share/gettext/po/en@boldquot.header
 -rw-r--r--	root/root	usr/share/gettext/po/en@quot.header
--rw-r--r--	root/root	usr/share/gettext/po/insert-header.sin
+-rw-r--r--	root/root	usr/share/gettext/po/insert-header.sed
 -rw-r--r--	root/root	usr/share/gettext/po/quot.sed
--rw-r--r--	root/root	usr/share/gettext/po/remove-potcdate.sin
+-rw-r--r--	root/root	usr/share/gettext/po/remove-potcdate.sed
 drwxr-xr-x	root/root	usr/share/gettext/projects/
 drwxr-xr-x	root/root	usr/share/gettext/projects/GNOME/
 -rwxr-xr-x	root/root	usr/share/gettext/projects/GNOME/team-address
@@ -53,6 +54,12 @@ drwxr-xr-x	root/root	usr/share/gettext/projects/TP/
 -rwxr-xr-x	root/root	usr/share/gettext/projects/TP/trigger
 -rw-r--r--	root/root	usr/share/gettext/projects/index
 -rwxr-xr-x	root/root	usr/share/gettext/projects/team-address
+drwxr-xr-x	root/root	usr/share/gettext/schema/
+-rw-r--r--	root/root	usr/share/gettext/schema/its-extensions.xsd
+-rw-r--r--	root/root	usr/share/gettext/schema/its.xsd10
+-rw-r--r--	root/root	usr/share/gettext/schema/its.xsd11
+-rw-r--r--	root/root	usr/share/gettext/schema/locating-rules.xsd10
+-rw-r--r--	root/root	usr/share/gettext/schema/locating-rules.xsd11
 drwxr-xr-x	root/root	usr/share/gettext/styles/
 -rw-r--r--	root/root	usr/share/gettext/styles/po-default.css
 -rw-r--r--	root/root	usr/share/gettext/styles/po-emacs-x.css

@@ -4,16 +4,15 @@ url="https://www.gnu.org/software/gettext/"
 license="GPL3"
 
 maintainer="Ulrich Drepper"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 set=(devel core)
 
 makedepends=(acl attr ncurses)
 
 name=gettext
-version=0.22.5
-release=2
+version=0.23
 
 PKGMK_LOCALES=()
 
