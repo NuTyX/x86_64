@@ -8,6 +8,7 @@ makedepends=(cairo cmake curl dbus-glib xorg-glu gtk3)
 
 name=cairo-dock
 version=3.5.0
+release=2
 
 source=(https://github.com/Cairo-Dock/cairo-dock-core/archive/refs/tags/$version.tar.gz)
 
