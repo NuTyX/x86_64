@@ -2,6 +2,7 @@ drwxrwxr-x	root/root	usr/src/linux-5.4/
 -rw-rw-r--	root/root	usr/src/linux-5.4/.clang-format
 -rw-rw-r--	root/root	usr/src/linux-5.4/.cocciconfig
 -rw-r--r--	root/root	usr/src/linux-5.4/.config
+-rw-r--r--	root/root	usr/src/linux-5.4/.config.old
 -rw-rw-r--	root/root	usr/src/linux-5.4/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/linux-5.4/.gitattributes
 -rw-rw-r--	root/root	usr/src/linux-5.4/.gitignore
@@ -12295,6 +12296,9 @@ drwxr-xr-x	root/root	usr/src/linux-5.4/include/config/proc/
 -rw-r--r--	root/root	usr/src/linux-5.4/include/config/proc/events.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-5.4/include/config/proc/fs.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-5.4/include/config/proc/kcore.h (EMPTY)
+drwxr-xr-x	root/root	usr/src/linux-5.4/include/config/proc/mem/
+drwxr-xr-x	root/root	usr/src/linux-5.4/include/config/proc/mem/always/
+-rw-r--r--	root/root	usr/src/linux-5.4/include/config/proc/mem/always/force.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-5.4/include/config/proc/page/
 -rw-r--r--	root/root	usr/src/linux-5.4/include/config/proc/page/monitor.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-5.4/include/config/proc/pid/
@@ -25595,6 +25599,7 @@ drwxrwxr-x	root/root	usr/src/linux-5.4/net/core/
 -rw-r--r--	root/root	usr/src/linux-5.4/net/core/skmsg.o
 -rw-rw-r--	root/root	usr/src/linux-5.4/net/core/sock.c
 -rw-r--r--	root/root	usr/src/linux-5.4/net/core/sock.o
+-rw-r--r--	root/root	usr/src/linux-5.4/net/core/sock_destructor.h
 -rw-rw-r--	root/root	usr/src/linux-5.4/net/core/sock_diag.c
 -rw-r--r--	root/root	usr/src/linux-5.4/net/core/sock_diag.o
 -rw-rw-r--	root/root	usr/src/linux-5.4/net/core/sock_map.c
