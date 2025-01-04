@@ -12,10 +12,8 @@ run=(gtk-update-icon-cache shared-mime-info hicolor-icon-theme desktop-file-util
 alias=(telegram)
 
 name=telegram-desktop
-version=5.9.0
-release=2
+version=5.10.0
 
-PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://updates.tdesktop.com/tlinux/tsetup.$version.tar.xz
        	tg.protocol https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon16.png
 	https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon32.png
