@@ -3,17 +3,16 @@ url="https://www.aquamaniac.de/rdm/"
 
 license="LGPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gnutls libgcrypt openssl gtk3)
 
 name=gwenhywfar
-version=5.10.2
-release=2
+version=5.12.0
 
 source=(0001-Prepare-.pc-and-.cmake-for-static-builds.patch
-        https://www.aquamaniac.de/rdm/attachments/download/501/$name-$version.tar.gz)
+        https://www.aquamaniac.de/rdm/attachments/download/529/$name-$version.tar.gz)
 prepare() {
   cd $name-$version
   patch -Np1 -i ../0001-Prepare-.pc-and-.cmake-for-static-builds.patch
