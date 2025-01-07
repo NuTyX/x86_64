@@ -1,1 +1,3 @@
 dbus-uuidgen --ensure
+rm -rf etc/machine-id
+ln -sfv /var/lib/dbus/machine-id etc/machine-id

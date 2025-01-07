@@ -8,7 +8,7 @@ makedepends=(expat)
 
 name=dbus
 version=1.14.10
-release=3
+release=4
 scriptsversion=20241218
 
 PKGMK_GROUPS=(doc devel)
@@ -32,7 +32,6 @@ build() {
 
     chown -v root:messagebus $PKG/usr/libexec/dbus-daemon-launch-helper
     chmod -v      4750       $PKG/usr/libexec/dbus-daemon-launch-helper
-    ln -sfv /var/lib/dbus/machine-id $PKG/etc
     # service
     cd ../nutyx-scripts-$scriptsversion
     make DESTDIR=$PKG install-sysv-dbus
