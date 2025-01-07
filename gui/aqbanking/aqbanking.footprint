@@ -30,17 +30,18 @@ drwxr-xr-x	root/root	usr/lib/aqbanking/plugins/44/imexporters/
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/imexporters/yellownet.xml
 drwxr-xr-x	root/root	usr/lib/aqbanking/plugins/44/providers/
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqebics.xml
+-rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqgivve.xml
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqhbci.xml
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqnone.xml
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqofxconnect.xml
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqpaypal.xml
 drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/aqbanking-6.5/
--rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.5/aqbanking-config-version.cmake
--rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.5/aqbanking-config.cmake
-lrwxrwxrwx	root/root	usr/lib/libaqbanking.so -> libaqbanking.so.44.5.4
-lrwxrwxrwx	root/root	usr/lib/libaqbanking.so.44 -> libaqbanking.so.44.5.4
--rwxr-xr-x	root/root	usr/lib/libaqbanking.so.44.5.4
+drwxr-xr-x	root/root	usr/lib/cmake/aqbanking-6.6/
+-rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.6/aqbanking-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.6/aqbanking-config.cmake
+lrwxrwxrwx	root/root	usr/lib/libaqbanking.so -> libaqbanking.so.44.6.0
+lrwxrwxrwx	root/root	usr/lib/libaqbanking.so.44 -> libaqbanking.so.44.6.0
+-rwxr-xr-x	root/root	usr/lib/libaqbanking.so.44.6.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/aqbanking.m4
@@ -60,6 +61,10 @@ drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqebics/dialogs/
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqebics/dialogs/dlg_edituser.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqebics/dialogs/dlg_newkeyfile.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqebics/dialogs/dlg_user_special.dlg
+drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqgivve/
+drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqgivve/dialogs/
+-rw-r--r--	root/root	usr/share/aqbanking/backends/aqgivve/dialogs/dlg_cardselect.dlg
+-rw-r--r--	root/root	usr/share/aqbanking/backends/aqgivve/dialogs/dlg_edituser.dlg
 drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqhbci/
 drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/chipcard.png
@@ -121,6 +126,7 @@ drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/csv/profiles/
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/aqmoney2.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/bankaustria.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/cli-transfers.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/comdirect-prices.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/comdirect.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/consors-tagesgeld.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/csv/profiles/default.conf
@@ -168,6 +174,8 @@ drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/q43/profiles/
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/sepa/
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/sepa/profiles/
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/sepa/profiles/001_001_02.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/sepa/profiles/001_001_03.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/sepa/profiles/001_001_09.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/sepa/profiles/001_002_03.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/sepa/profiles/001_003_03.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/sepa/profiles/008_001_01.conf
@@ -186,20 +194,24 @@ drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/swift/profiles/
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/xml/
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/xml/data/
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_052_001_02.xml
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_053_001_02.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_053_001_04.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/ofx1.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/ofx2.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_001_001_03.xml
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_001_001_09.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_001_003_03.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_008_001_02.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_008_003_02.xml
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/xml/profiles/
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_052_001_02.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_053_001_02.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_053_001_04.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/default.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/ofx1.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/ofx2.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/pain_001_001_03.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/pain_001_001_09.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/pain_001_003_03.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/pain_008_001_02.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/pain_008_003_02.conf

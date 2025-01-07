@@ -3,16 +3,15 @@ url="https://www.aquamaniac.de/rdm/projects/aqbanking"
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(tar gwenhywfar xmlsec)
 
 name=aqbanking
-version=6.5.4
-release=2
+version=6.6.0
 
-source=(https://www.aquamaniac.de/rdm/attachments/download/499/$name-$version.tar.gz)
+source=(https://www.aquamaniac.de/rdm/attachments/download/531/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
