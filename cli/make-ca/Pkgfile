@@ -8,9 +8,11 @@ run=(gawk nss p11-kit)
 
 name=make-ca
 version=1.14
-release=4
+release=5
 
 set=(devel)
+
+PKGMK_KEEP_SOURCES="no"
 
 source=(https://hg.mozilla.org/projects/nss/raw-file/tip/lib/ckfw/builtins/certdata.txt
         https://github.com/lfs-book/$name/archive/v$version/$name-$version.tar.gz)
