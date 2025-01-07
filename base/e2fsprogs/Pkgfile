@@ -2,8 +2,8 @@ description="Utilities for handling the ext2,3 and 4 files system."
 url="https://e2fsprogs.sourceforge.net/"
 
 maintainer="Ted Ts'o tytso at mit dot edu,tytso at alum dot mit dot edu"
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(core)
 
@@ -11,12 +11,11 @@ makedepends=(util-linux texinfo sed)
 PKGMK_GROUPS=(devel man doc)
 
 name=e2fsprogs
-version=1.47.1
-release=3
+version=1.47.2
 
 PKGMK_LOCALES=()
 
-source=(http://prdownloads.sourceforge.net/$name/$name-$version.tar.gz)
+source=(https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v$version/$name-$version.tar.xz)
 
 build()
 {
