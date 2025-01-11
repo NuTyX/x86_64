@@ -13,10 +13,15 @@ drwxr-xr-x	root/root	etc/gdm/PreSession/
 -rwxr-xr-x	root/root	etc/gdm/PreSession/Default
 -rwxr-xr-x	root/root	etc/gdm/Xsession
 -rw-r--r--	root/root	etc/gdm/custom.conf
+drwxr-xr-x	root/root	etc/pam.d/
+-rw-r--r--	root/root	etc/pam.d/gdm-autologin
+-rw-r--r--	root/root	etc/pam.d/gdm-fingerprint
+-rw-r--r--	root/root	etc/pam.d/gdm-launch-environment
+-rw-r--r--	root/root	etc/pam.d/gdm-password
+-rw-r--r--	root/root	etc/pam.d/gdm-smartcard
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gdm-config
--rwxr-xr-x	root/root	usr/bin/gdm-screenshot
 -rwxr-xr-x	root/root	usr/bin/gdmflexiserver
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
