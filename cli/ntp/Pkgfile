@@ -1,21 +1,25 @@
 description="Client and server to keep the time synchronized between various computers over a network."
-url="http://www.ntp.org/"
+url="https://www.ntp.org/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Minzords,Spiky"
 
-makedepends=(libcap perl-io-socket-ssl perl-net-ssleay)
+makedepends=(autoconf m4 libtool libcap perl-io-socket-ssl perl-net-ssleay)
 run=(wget shadow)
 
 name=ntp
-version=4.2.8p15
-release=4
-runyx_version=20201011
+version=4.2.8p18
+release=1
+scripts_version=20241218
 
-source=(https://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/$name-4.2/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
+        https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/$name-4.2/$name-$version.tar.gz
+        ntp-fix-build.patch)
 
 prepare() {
+cd $name-$version
+patch -Np1 -i ../ntp-fix-build.patch
+autoreconf -fiv
 UN=ntp
 if ! (getent group $UN > /dev/null); then
    groupadd -g 87 $UN
@@ -87,15 +91,6 @@ restrict ::1
 EOF
 
 # service
-cd ../runyx-${runyx_version}
+cd ../nutyx-scripts-${scripts_version}
 make DESTDIR=$PKG install-sysv-ntpd
-make DESTDIR=$PKG install-sysd-ntpd
-make DESTDIR=$PKG install-runyx-ntpd
-}
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init lib/systemd
-rm -r etc/rc.d etc/init lib/init lib/systemd
 }

@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K46ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K46ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K46ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S26ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S26ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S26ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K46ntpd -> ../init.d/ntpd
+drwxr-xr-x	root/root	etc/rc.d/rcS.d/
