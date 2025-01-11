@@ -1,8 +1,8 @@
 description="Free version of the SSH connectivity tools"
-url="http://www.openssh.org/"
+url="https://www.openssh.org/"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut,Spiky"
+packager="tnut <tnut@nutyx.org>"
 license="BSD"
 
 makedepends=(openssl libedit libxcrypt)
@@ -10,11 +10,12 @@ run=(shadow)
 
 name=openssh
 version=9.9p1
+release=2
 
-runyx_version=20201011
+scripts_version=20241218
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
+        https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/$name-$version.tar.gz)
 
 prepare() {
 groupadd -g 50 sshd
@@ -66,17 +67,13 @@ mv $PKG/etc/ssh/sshd_config{,.default}
 #
 ## Services
 #
-cd $SRC/runyx-${runyx_version}
+cd $SRC/nutyx-scripts-${scripts_version}
 make DESTDIR=$PKG install-sysv-sshd
-make DESTDIR=$PKG install-sysd-sshd
-make DESTDIR=$PKG install-runyx-sshd
 }
 service() {
 cd $PKG
 bsdtar -r -f \
 $PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/ssh/sshd_config.default var usr/sbin etc/init lib/init \
-lib/systemd
-rm -r etc/rc.d etc/ssh/sshd_config.default var usr/sbin etc/init lib/init \
-lib/systemd
+etc/rc.d etc/ssh/sshd_config.default var usr/sbin
+rm -r etc/rc.d etc/ssh/sshd_config.default var usr/sbin
 }
