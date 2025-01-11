@@ -3,19 +3,18 @@ url='https://pypi.org/project/PyQt-builder/'
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
-makedepends=(python-setuptools python-wheel python-packaging sip)
+makedepends=(python-setuptools python-wheel sip)
 
 name=pyqt-builder
 _name="pyqt_builder"
 alias=(${_name})
 
-version=1.17.0
-release=2
+version=1.17.1
 
-source=(https://pypi.io/packages/source/p/pyqt_builder/pyqt_builder-$version.tar.gz)
+source=(https://files.pythonhosted.org/packages/4d/07/da6140518dea6cf99b5dd5eac928f93813d7b2dd9f42ff9c193421d2b171/pyqt_builder-$version.tar.gz)
 
 build() {
 
@@ -33,7 +32,7 @@ build() {
 
  find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
 
-install -Dm644 pyqtbuild/bundle/qt_wheel_distinfo/LICENSE $PKG/usr/share/licenses/$name/LICENSE
-#install -Dm644 LICENSE-GPL2 $PKG/usr/share/licenses/$name/LICENSE-GPL2
+#install -Dm644 pyqtbuild/bundle/qt_wheel_distinfo/LICENSE $PKG/usr/share/licenses/$name/LICENSE
+#install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
 #install -Dm644 LICENSE-GPL3 $PKG/usr/share/licenses/$name/LICENSE-GPL3
 }
