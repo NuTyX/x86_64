@@ -1,22 +1,21 @@
 description="Lightweight X11 Display Manager based on Gtk"
 url="https://en.wikipedia.org/wiki/LightDM"
 
-packager="Spiky <spiky@nutyx.org>"
-contributors="Rems,Daniel,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Daniel,Spiky"
 
 set=(lightdm)
 
 name=lightdm
 version=1.32.0
-runyx_version=20201011
+release=2
 
 PKGMK_GROUPS=(man devel doc)
 
 makedepends=(gtk3 libgcrypt pam pcre gobject-introspection xorg-libxklavier vala)
 run=(xorg-xinit)
 
-source=(https://github.com/CanonicalLtd/$name/releases/download/$version/$name-$version.tar.xz
-        http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz)
+source=(https://github.com/CanonicalLtd/$name/releases/download/$version/$name-$version.tar.xz)
 
 prepare() {
 SN="lightdm"
@@ -59,18 +58,6 @@ install -v -dm755 -o lightdm -g lightdm $PKG/var/lib/lightdm
 install -v -dm755 -o lightdm -g lightdm $PKG/var/lib/lightdm-data
 install -v -dm755 -o lightdm -g lightdm $PKG/var/cache/lightdm
 install -v -dm770 -o lightdm -g lightdm $PKG/var/log/lightdm
-
-# Service
-cd $SRC/runyx-${runyx_version}
-make DESTDIR=$PKG install-sysd-$name
-mkdir -p $PKG/{etc/init/multi,lib/init/services/lightdm}
-cat > $PKG/lib/init/services/lightdm/run << "EOF"
-#!/bin/sh
-[ -e /run/dbus/system_bus_socket ] || exit 1
-exec /usr/bin/lightdm
-EOF
-chmod 755 $PKG/lib/init/services/lightdm/run
-ln -sv /lib/init/services/lightdm $PKG/etc/init/multi/lightdm
 
 # Obsolets libs
 rm $PKG/usr/lib/liblightdm-gobject-1.la
