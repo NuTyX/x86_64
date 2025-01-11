@@ -2,16 +2,15 @@ description="System utilities for handling file systems consoles partitions and 
 url="https://freshmeat.net/projects/util-linux/"
 
 maintainer="Karel Zak kzak at redhat dot com"
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Fabienwang,Tnut"
 
 makedepends=(eudev file ncurses readline zlib libxcrypt)
 
 set=(core)
 
 name=util-linux
-version=2.40.2
-release=5
+version=2.40.3
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
