@@ -15,6 +15,18 @@ set=(gnome)
 name=gnome-photos
 version=44.0
 
+unset MAKEFLAGS
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
-build=meson
+build(){
+ unset MAKEFLAGS
+
+ meson setup --prefix /usr   \
+  --buildtype plain          \
+  $name-$version    builddir
+
+ meson compile -C   builddir
+
+ DESTDIR=$PKG                \
+ meson install -C   builddir
+}
