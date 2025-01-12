@@ -1,6 +1,8 @@
 description='The Common desktop Environment (CDE)'
 url='https://sourceforge.net/projects/cdesktopenv/'
 
+license="LGPL V2"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
@@ -12,16 +14,15 @@ makedepends=(git m4 tcl flex bison ncompress printproto rpcsvc-proto libjpeg-tur
 run=(font-adobe-100dpi font-adobe-utopia-100dpi font-bh-100dpi font-bitstream-100dpi
      font-bh-lucidatypewriter-100dpi xorg-xsetroot ksh gawk rpcbind)
 
-source=(cde.service)
-
 name=cde
-version=git-76812a
+version=git-fbc948
 
 prepare() {
   # Hope they is a better way
   localedef -i en_US -f UTF-8 en_US.UTF8
   git clone http://git.code.sf.net/p/cdesktopenv/code
   cd code/$name
+  git checkout fbc948
   ./autogen.sh
 }
 build() {
@@ -38,20 +39,4 @@ mkdir -p $PKG/usr/share/xsessions
 cp contrib/desktopentry/cde.desktop \
 $PKG/usr/share/xsessions
 
-# service
-mkdir -p $PKG/lib/systemd/system
-install -m644 ../../cde.service \
-$PKG/lib/systemd/system/cde.service
-
-SERVICEDIR=lib/init/services/${name}
-mkdir -p $PKG/$SERVICEDIR
-cat > $PKG/$SERVICEDIR/run << "EOF"
-#!/bin/sh
-sv check dbus >/dev/null || exit 1
-exec /usr/dt/bin/dtlogin
-EOF
-chmod 755 $PKG/$SERVICEDIR/run
-install -d -m 755 $PKG/etc/init/multi
-ln -sv /$SERVICEDIR $PKG/etc/init/multi/${name}
 }
-
