@@ -1,5 +1,5 @@
 description='Desktop-independent graphical login manager for X11'
-url='http://sourceforge.net/projects/slim.berlios/'
+url='https://sourceforge.net/projects/slim.berlios/'
 
 license="GPL2"
 
@@ -8,7 +8,7 @@ contributors="Spiky"
 
 name=slim
 version=1.4.0
-release=2
+release=3
 
 makedepends=(pam cmake git freeglut xorg-libxmu libpng
              libjpeg-turbo xorg-libxft xorg-libxrandr
@@ -17,8 +17,10 @@ run=(xorg-xinit)
 
 PKGMK_GROUPS=(man)
 
-source=(http://downloads.tuxfamily.org/nutyx/files/lxdm-nutyx-12-beta3.jpg
-	https://sourceforge.net/projects/slim-fork/files/$name-$version.tar.gz
+sourceforge="https://sourceforge.net/projects"
+
+source=($sourceforge/nutyx/files/sources/lxdm/lxdm-nutyx-12-beta3.jpg
+        $sourceforge/slim-fork/files/$name-$version.tar.gz
         $name-$version-conglo-1.patch panel.png)
 
 prepare() {
@@ -54,15 +56,5 @@ EOF
    install -m 644 $SRC/$i $PKG/usr/share/slim/themes/default/$i
   done
   install -m 644 $SRC/lxdm-nutyx-12-beta3.jpg $PKG/usr/share/slim/themes/default/background.jpg
-
-# Runyx service
-mkdir -p $PKG/{etc/init/multi,lib/init/services/slim}
-cat > $PKG/lib/init/services/slim/run << "EOF"
-#!/bin/sh
-[ -e /run/dbus/system_bus_socket ] || exit 1
-exec /usr/bin/slim -nodeamon
-EOF
-chmod 755 $PKG/lib/init/services/slim/run
-ln -sv /lib/init/services/slim $PKG/etc/init/multi/slim
 
 }
