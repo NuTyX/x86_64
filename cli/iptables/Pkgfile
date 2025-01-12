@@ -1,5 +1,7 @@
 description="The principal firewall tool for Linux."
-url="http://www.iptables.org/"
+url="https://www.iptables.org/"
+
+license="GPL2"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
@@ -7,10 +9,10 @@ contributors="Pierre,Tnut"
 name=iptables
 version=1.8.10
 release=2
-runyx_version=20201011
+scripts_version=20241218
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	https://www.netfilter.org/projects/iptables/files/$name-$version.tar.xz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
+        https://www.netfilter.org/projects/iptables/files/$name-$version.tar.xz)
 
 build() {
 
@@ -32,24 +34,12 @@ do
 done
 
 # service
-cd ../runyx-${runyx_version}
+cd ../nutyx-scripts-${scripts_version}
 make DESTDIR=$PKG install-sysv-$name
-make DESTDIR=$PKG install-sysd-$name
-make DESTDIR=$PKG install-runyx-$name
 
 
 
 # Obsolet libs
 rm $PKG/usr/lib/libip{{6,4}tc,q}.la
 rm $PKG/usr/lib/libxtables.la
-}
-
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init \
-lib/systemd
-rm -r etc/rc.d etc/init lib/init \
-lib/systemd
 }

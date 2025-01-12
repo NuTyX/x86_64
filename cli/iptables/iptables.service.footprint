@@ -1,6 +1,3 @@
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/iptables -> /lib/init/services/iptables
 drwxr-xr-x	root/root	etc/rc.d/
 drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr--	root/root	etc/rc.d/init.d/iptables
@@ -15,11 +12,3 @@ drwxr-xr-x	root/root	etc/rc.d/rc5.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S19iptables -> ../init.d/iptables
 drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 drwxr-xr-x	root/root	etc/rc.d/rcS.d/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/iptables/
--rwxrwxr-x	root/root	lib/init/services/iptables/finish
--rwxrwxr-x	root/root	lib/init/services/iptables/run
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/iptables.service

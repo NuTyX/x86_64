@@ -1,5 +1,4 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/default/
 drwxr-xr-x	root/root	etc/sysconfig/
 drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib/libip4tc.so.2 -> libip4tc.so.2.0.0
@@ -139,7 +138,6 @@ lrwxrwxrwx	root/root	usr/lib/libip4tc.so -> ../../lib/libip4tc.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libip6tc.so -> ../../lib/libip6tc.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libipq.so -> ../../lib/libipq.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libxtables.so -> ../../lib/libxtables.so.12.7.0
-drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/xtables/
 -rw-r--r--	root/root	usr/share/xtables/iptables.xslt
