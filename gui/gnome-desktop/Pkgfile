@@ -1,8 +1,8 @@
 description="Provide an API shared by apps on GNOME desktop using GTK 3."
 url="https://gitlab.gnome.org/GNOME/gnome-desktop"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Tnut"
 
 makedepends=(meson ninja itstool gtk3 gtk4 docbook-xml libxml2
              libseccomp gobject-introspection startup-notification)
@@ -11,7 +11,7 @@ run=(gsettings-desktop-schemas freefont-ttf iso-codes
 
 name=gnome-desktop
 version=44.1
-release=3
+release=4
 
 PKGMK_GROUPS=(devel lib doc man)
 
