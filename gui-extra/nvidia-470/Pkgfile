@@ -3,9 +3,11 @@ url="https://www.nvidia.com"
 
 packager="tnut <tnut@nutyx.org>"
 
+conflicts=(nvidia nvidia-390)
+
 name=nvidia-470
 version=470.256.02
-release=2
+release=4
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
