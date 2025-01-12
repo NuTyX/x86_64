@@ -1,16 +1,6 @@
-Submitted By: Bruce Dubbs <bdubbs at linuxfromscratch dot org>
-Date: 2018-03-30
-Initial Package Version: 2.89
-Upstream Status: Not Submitted
-Origin: Self
-Description: Remove programs superceeded by other packages: wall, mountpoint, 
-             last, lastb, logsave, mesg, sulogin, and utmpdump.
-
-Rediffed for version 3.06.
-
-diff -urNa a/src/Makefile b/src/Makefile
---- a/src/Makefile	2022-12-16 18:07:55.000000000 +0100
-+++ b/src/Makefile	2022-12-17 15:32:29.687817248 +0100
+diff -Naur a/src/Makefile b/src/Makefile
+--- a/src/Makefile	2025-01-03 22:09:46.000000000 +0100
++++ b/src/Makefile	2025-01-12 19:46:12.576373121 +0100
 @@ -23,19 +23,22 @@
  
  # For some known distributions we do not build all programs, otherwise we do.
@@ -27,7 +17,7 @@ diff -urNa a/src/Makefile b/src/Makefile
 -MAN8	+= shutdown.8 telinit.8 fstab-decode.8 logsave.8
 +#MAN8	= halt.8 init.8 killall5.8 pidof.8 poweroff.8 reboot.8 runlevel.8
 +MAN8	= halt.8 init.8 killall5.8         poweroff.8 reboot.8 runlevel.8
-+MAN8	+= shutdown.8 telinit.8 fstab-decode.8 
++MAN8	+= shutdown.8 telinit.8 fstab-decode.8
  
  ifeq ($(DISTRO),)
 -SBIN	+= sulogin bootlogd
@@ -43,22 +33,22 @@ diff -urNa a/src/Makefile b/src/Makefile
  endif
  
  ifeq ($(DISTRO),Debian)
-@@ -213,10 +216,10 @@
- 		ln -sf halt $(ROOT)/sbin/reboot
- 		ln -sf halt $(ROOT)/sbin/poweroff
- 		ln -sf init $(ROOT)/sbin/telinit
--		ln -sf ../sbin/killall5 $(ROOT)/bin/pidof
--		if [ ! -f $(ROOT)/usr/bin/lastb ]; then \
--			ln -sf last $(ROOT)/usr/bin/lastb; \
+@@ -216,10 +219,10 @@
+ 		ln -sf halt $(ROOT)$(base_sbindir)/reboot
+ 		ln -sf halt $(ROOT)$(base_sbindir)/poweroff
+ 		ln -sf init $(ROOT)$(base_sbindir)/telinit
+-		ln -sf $(base_sbindir)/killall5 $(ROOT)$(base_bindir)/pidof
+-		if [ ! -f $(ROOT)$(bindir)/lastb ]; then \
+-			ln -sf last $(ROOT)$(bindir)/lastb; \
 -		fi
-+		#ln -sf ../sbin/killall5 $(ROOT)/bin/pidof
-+		#if [ ! -f $(ROOT)/usr/bin/lastb ]; then \
-+		#	ln -sf last $(ROOT)/usr/bin/lastb; \
-+		#fi
- 		$(INSTALL_DIR) $(ROOT)/usr/include/
- 		$(INSTALL_DATA) initreq.h $(ROOT)/usr/include/
- 		for man in $(MANPAGES) ; do \
-@@ -229,8 +232,8 @@
++#		ln -sf $(base_sbindir)/killall5 $(ROOT)$(base_bindir)/pidof
++#		if [ ! -f $(ROOT)$(bindir)/lastb ]; then \
++#			ln -sf last $(ROOT)$(bindir)/lastb; \
++#		fi
+ 		$(INSTALL_DIR) $(ROOT)$(includedir)/
+ 		$(INSTALL_DATA) initreq.h $(ROOT)$(includedir)/
+ 		for lang in  '' $(patsubst ../man/po/%.po,%,$(wildcard ../man/po/??.po)); do \
+@@ -246,8 +249,8 @@
  		#
  		# This part is skipped on Debian systems, the
  		# debian.preinst script takes care of it.
@@ -66,8 +56,8 @@ diff -urNa a/src/Makefile b/src/Makefile
 -		 echo "Creating /run/initctl"; \
 -		 rm -f /run/initctl; \
 -		 mknod -m 600 /run/initctl p; fi
-+		#@if [ ! -p /run/initctl ]; then \
-+		#echo "Creating /run/initctl"; \
-+		#rm -f /run/initctl; \
-+		#mknod -m 600 /run/initctl p; fi
++#		@if [ ! -p /run/initctl ]; then \
++#		 echo "Creating /run/initctl"; \
++#		 rm -f /run/initctl; \
++#		 mknod -m 600 /run/initctl p; fi
  endif
