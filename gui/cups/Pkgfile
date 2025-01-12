@@ -1,5 +1,7 @@
 description="The Common Unix Printing System (CUPS) is a print spooler and associated utilities"
-url="http://www.cups.org"
+url="https://www.cups.org"
+
+license="Apache-2.0 WITH LLVM-exception AND BSD-3-Clause AND Zlib AND BSD-2-Clause"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
@@ -13,13 +15,13 @@ PKGMK_GROUPS=(devel man lib)
 
 name=cups
 version=2.4.11
-release=4
+release=5
 
 scriptsversion=20241218
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz \
-	https://github.com/OpenPrinting/cups/releases/download/v${version}/$name-$version-source.tar.gz \
-	99-printer.rules)
+        https://github.com/OpenPrinting/cups/releases/download/v${version}/$name-$version-source.tar.gz \
+        99-printer.rules)
 prepare() {
 
 SN="lpadmin"
