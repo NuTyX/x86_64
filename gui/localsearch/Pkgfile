@@ -1,19 +1,21 @@
 description='The Localsearch package contains a filesystem indexer as well as a metadata extractor'
-url=' https://download.gnome.org/sources/localsearch'
+url='https://download.gnome.org/sources/localsearch'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+license="GPL-2.0-or-later"
 
-makedepends=(gstreamer-plugins-base tinysparql exempi gexiv2 giflib
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(gstreamer-plugins-base tinysparql exempi libgexiv2 giflib
              libexif libgxps  libseccomp poppler taglib ffmpeg upower)
 run=(gstreamer-plugins-good gstreamer-plugins-libav)
 set=()
 
 name=localsearch
 version=3.8.2
-release=4
+release=2
 
-source=(https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.2.tar.xz)
+source=(https://download.gnome.org/sources/localsearch/${version:0:3}/$name-$version.tar.xz)
 
 prepare() {
 cd $name-$version
