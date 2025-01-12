@@ -1,5 +1,5 @@
 description="Connect your computer to a network which uses DHCP to assign network addresses."
-url="http://roy.marples.name/projects/dhcpcd"
+url="https://roy.marples.name/projects/dhcpcd"
 
 license="BSD-2-Clause"
 
@@ -8,12 +8,13 @@ packager="spiky <spiky@nutyx.org>"
 
 name=dhcpcd
 version=10.1.0
+release=2
 
 makedepends=(shadow)
 
-runyx_version=20201011
-source=(http://download.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	https://github.com/NetworkConfiguration/dhcpcd/releases/download/v${version}/$name-$version.tar.xz)
+scripts_version=20241218
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
+        https://github.com/NetworkConfiguration/dhcpcd/releases/download/v${version}/$name-$version.tar.xz)
 
 prepare() {
 groupadd -g 52 $name
@@ -32,37 +33,8 @@ make DESTDIR=$PKG install
 
 #
 ## service
-cd ../runyx-${runyx_version}
+cd ../nutyx-scripts-${scripts_version}
 make DESTDIR=$PKG -C services/sysv install-service-dhcpcd
-
-
-SERVICEDIR=/lib/init/services/${name}
-mkdir -p $PKG/{var/log/${name},$SERVICEDIR/{,log}}
-cat > $PKG/$SERVICEDIR/run << "EOF"
-#!/bin/sh
-for file in /etc/sysconfig/ifconfig.*
-do
-	. $file
-	[ "$SERVICE" != "dhcpcd" ] && continue
-	interface="$interface ${file##*/ifconfig.}"
-done
-
-exec dhcpcd -B $interface
-EOF
-
-cat > $PKG/$SERVICEDIR/log/run << "EOF"
-#!/bin/sh
-exec chpst svlogd -tt /var/log/dhcpcd
-EOF
-chmod 755 $PKG/$SERVICEDIR/{run,/log/run}
-for i in single multi
-do
-  mkdir -p $PKG/etc/init/$i
-  ln -sv /lib/init/services/$name $PKG/etc/init/$i/$name
-done
-
-make DESTDIR=$PKG install-sysd-dhcpcd
-sed -i "s@^Before@# Before@" $PKG/lib/systemd/system/dhcpcd@.service
 
 install -Dm644 $SRC/$name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }

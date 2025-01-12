@@ -6,9 +6,6 @@ drwxr-xr-x	root/root	etc/cron.weekly/
 -rw-r-----	root/fcron	etc/fcron.allow
 -rw-r-----	root/fcron	etc/fcron.conf
 -rw-r-----	root/fcron	etc/fcron.deny
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/fcron -> /lib/init/services/fcron
 -rw-r--r--	root/root	etc/pam.conf
 drwxr-xr-x	root/root	etc/pam.d/
 -rw-r--r--	root/root	etc/pam.d/fcron
@@ -32,13 +29,6 @@ drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K08fcron -> ../init.d/fcron
 drwxr-xr-x	root/root	etc/rc.d/rcS.d/
 drwxr-xr-x	root/root	etc/sysconfig/
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/fcron/
-drwxrwxr-x	root/root	lib/init/services/fcron/log/
--rwxrwxr-x	root/root	lib/init/services/fcron/log/run
--rwxrwxr-x	root/root	lib/init/services/fcron/run
 drwxr-xr-x	root/root	run/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/

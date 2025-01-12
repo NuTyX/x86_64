@@ -1,9 +1,4 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/default/
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/netfs -> /lib/init/services/netfs
-lrwxrwxrwx	root/root	etc/init/multi/rpcbind -> /lib/init/services/rpcbind
 drwxr-xr-x	root/root	etc/rc.d/
 drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr--	root/root	etc/rc.d/init.d/netfs
@@ -31,23 +26,8 @@ lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K47netfs -> ../init.d/netfs
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K49rpcbind -> ../init.d/rpcbind
 drwxr-xr-x	root/root	etc/rc.d/rcS.d/
 drwxr-xr-x	root/root	etc/sysconfig/
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/netfs/
--rwxrwxr-x	root/root	lib/init/services/netfs/finish
--rwxrwxr-x	root/root	lib/init/services/netfs/run
-drwxr-xr-x	root/root	lib/init/services/rpcbind/
--rwxrwxr-x	root/root	lib/init/services/rpcbind/finish
--rwxrwxr-x	root/root	lib/init/services/rpcbind/run
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/rpcbind.service
--rw-r--r--	root/root	lib/systemd/system/rpcbind.socket
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/rpcbind
 -rwxr-xr-x	root/root	sbin/rpcinfo
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/share/
