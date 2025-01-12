@@ -1,0 +1,57 @@
+description='The Localsearch package contains a filesystem indexer as well as a metadata extractor'
+url=' https://download.gnome.org/sources/localsearch'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(gstreamer-plugins-base tinysparql exempi gexiv2 giflib
+             libexif libgxps  libseccomp poppler taglib ffmpeg upower)
+run=(gstreamer-plugins-good gstreamer-plugins-libav)
+set=()
+
+name=localsearch
+version=3.8.2
+release=4
+
+source=(https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.2.tar.xz)
+
+prepare() {
+cd $name-$version
+
+rm -fv /etc/xdg/autostart/tracker-miner-fs-3.desktop                           
+rm -fv /usr/lib/systemd/user/tracker-miner-fs-3.service                        
+rm -fv /usr/lib/systemd/user/tracker-miner-fs-control-3.service                
+rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.service 
+rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Writeback.service   
+rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.service
+
+}
+build() {
+cd $name-$version
+
+mkdir build
+cd    build
+
+   meson setup .. \
+       --prefix=/usr          \
+       --buildtype=release    \
+       -D landlock=enabled    \
+       -D systemd_user_services=false \
+       -D man=false
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+  #we don't need tracker3 files again...
+  rm -f $PKG/usr/lib/girepository-1.0/Tracker*.typelib
+  rm -f $PKG/usr/lib/libtracker-sparql*.so
+  rm -f $PKG/usr/lib/libtracker-sparql*.so.0
+  rm -f $PKG/usr/share/dbus-1/services/org.freedesktop.portal.Tracker.service
+  rm -f $PKG/usr/share/gir-1.0/Tracker*.gir
+  rm -f $PKG/usr/share/vala/vapi/tracker-sparql*.deps
+  rm -f $PKG/usr/share/vala/vapi/tracker-sparql*.vapi
+
+  rm -f $PKG/usr/lib/pkgconfig/tracker-sparql-3.0.pc
+
+}
