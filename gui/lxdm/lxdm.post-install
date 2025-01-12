@@ -71,14 +71,3 @@ black=" > etc/lxdm/lxdm.conf
   chmod 640 etc/lxdm/lxdm.conf
   log_success_msg2  "File ${WARNING}/etc/lxdm/lxdm.conf ${NORMAL} created"
 fi
-
-SERVICE="/lib/systemd/system/lxdm.service"
-if [ ! -L etc/systemd/system/display-manager.service ];then
-  mkdir -p etc/systemd/system
-  ln -sf $SERVICE etc/systemd/system/display-manager.service && \
-  log_success_msg2  "${INFO} Created symlink /etc/systemd/system/display-manager.service -> $SERVICE${NORMAL}"
-else
-  ACTIVE_SERVICE="$(readlink /etc/systemd/system/display-manager.service)"
-  [ "${ACTIVE_SERVICE}" != "$SERVICE" ] && \
-  log_warning_msg "${WARNING} symlink /etc/systemd/system/display-manager.service -> ${ACTIVE_SERVICE} exist${NORMAL}"
-fi
