@@ -1,8 +1,10 @@
 description="portmap replacement which supports RPC over various protocols"
-url="http://rpcbind.sourceforge.net/"
+url="https://rpcbind.sourceforge.net/"
+
+license="BSD-3 Clause"
 
 contributors="Alienus,Tnut"
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(libtirpc)
 
@@ -10,11 +12,14 @@ PKGMK_GROUPS=(man)
 
 name=rpcbind
 version=1.2.7
+release=2
 
-runyx_version=20201011
-source=(http://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	http://downloads.sourceforge.net/rpcbind/rpcbind-$version.tar.bz2
-	http://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-$version-vulnerability_fixes-1.patch)
+sourceforge="https://sourceforge.net/projects"
+scripts_version=20241218
+
+source=($sourceforge/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
+        $sourceforge/rpcbind/files/$name/$version/$name-$version.tar.bz2
+        http://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-$version-vulnerability_fixes-1.patch)
 
 build() {
     cd rpcbind-$version
@@ -31,26 +36,7 @@ build() {
     make DESTDIR=$PKG install
 
     # service
-    cd ../runyx-${runyx_version}
+    cd ../nutyx-scripts-${scripts_version}
     make DESTDIR=$PKG install-sysv-rpcbind
     make DESTDIR=$PKG install-sysv-netfs
-
-    make DESTDIR=$PKG install-runyx-rpcbind
-    make DESTDIR=$PKG install-runyx-netfs
-    sed -i 's@/usr/bin@/sbin@' \
-    $PKG/lib/init/services/rpcbind/run
-
-
-    make DESTDIR=$PKG install-sysd-rpcbind
- 
-}
-
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init \
-lib/systemd
-rm -r etc/rc.d etc/init lib/init \
-lib/systemd
 }
