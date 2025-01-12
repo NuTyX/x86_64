@@ -7,7 +7,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Fanch,Jayce,Remy,Fabienwang,Spicy,Tnut"
 
 run=(desktop-file-utils gtk-update-icon-cache
-     shared-mime-info libportal gtk4)
+     shared-mime-info libportal gtk4 localsearch)
 makedepends=(gnome-autoar libnotify gnome-desktop gvfs
              gobject-introspection exempi libexif libgexiv2
              libcloudproviders meson gtk-doc libhandy bubblewrap libadwaita)
@@ -15,7 +15,7 @@ set=(gnome budgie)
 
 name=nautilus
 version=47.1
-release=2
+release=3
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
