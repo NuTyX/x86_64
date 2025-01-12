@@ -1,0 +1,13 @@
+diff --git a/scripts/mybld.in b/scripts/mybld.in
+index 6efef15..2b1930d 100755
+--- a/scripts/mybld.in
++++ b/scripts/mybld.in
+@@ -388,7 +388,7 @@ find_set () {
+   do
+      for n in $c/*/Pkgfile
+      do
+-         set=$(. $n; echo $set)
++         set=($(. $n; echo "${set[@]}"))
+          [ -z $set ] && continue
+          for s in ${set[@]}
+          do
