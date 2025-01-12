@@ -1,9 +1,6 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/default/
--rw-r--r--	root/root	etc/default/saslauthd
 drwxr-xr-x	root/root	etc/sysconfig/
 -rw-r--r--	root/root	etc/sysconfig/saslauthd
-drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libsasl2.so -> libsasl2.so.3.0.0
@@ -31,8 +28,6 @@ lrwxrwxrwx	root/root	usr/lib/sasl2/libsasldb.so.3 -> libsasldb.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/sasl2/libscram.so -> libscram.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/sasl2/libscram.so.3 -> libscram.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/sasl2/libscram.so.3.0.0
-drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
--rw-r--r--	root/root	usr/lib/tmpfiles.d/saslauthd.conf
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/pluginviewer
 -rwxr-xr-x	root/root	usr/sbin/saslauthd
