@@ -1,23 +1,24 @@
 description="The BlueZ package contains the Bluetooth protocol stack for Linux."
-url="http://www.bluez.org/"
+url="https://www.bluez.org/"
 
-license="LGPL2.1 GPL2"
+license="GPL-2.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(readline dbus libical libvorbis alsa-lib
              libusb-compat libsndfile cups glib)
 
 name=bluez
 version=5.79
+release=2
 
-runyx_version=20201011
+scripts_version=20241218
 
 PKGMK_GROUPS=(man devel doc)
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	    https://www.kernel.org/pub/linux/bluetooth/$name-$version.tar.xz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
+        https://www.kernel.org/pub/linux/bluetooth/$name-$version.tar.xz)
 
 
 build() {
@@ -38,7 +39,8 @@ cd $name-$version
     --enable-dund \
     --enable-cups \
     --disable-test \
-    --disable-manpages    \
+    --disable-manpages \
+    --disable-systemd \
     --enable-library
 make
 make DESTDIR=$PKG install
@@ -82,10 +84,6 @@ install -Dm644 COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
 rm $PKG/usr/lib/libbluetooth.la
 
 # Service
-cd $SRC/runyx-${runyx_version}
+cd $SRC/nutyx-scripts-${scripts_version}
 make DESTDIR=$PKG install-sysv-bluetooth
-mkdir -p $PKG/etc/sysconfig
-#ln -sv ../sysv/sysconfig services/runyx/
-sed -i 's@${EXTDIR}/@${PKG}/etc/@' services/runyx/Makefile
-make DESTDIR=$PKG install-runyx-bluetooth
 }
