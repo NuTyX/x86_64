@@ -4,14 +4,13 @@ url="https://pypi.org/project/urllib3/#description"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(python-setuptools python-wheel python-hatchling)
+makedepends=(python-setuptools python-wheel python-hatch-vcs )
 
 name=python-urllib3
 _name="urllib3"
 alias=(${_name})
 
-version=2.2.1
-release=4
+version=2.3.0
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://pypi.org/packages/source/u/urllib3/urllib3-$version.tar.gz)
