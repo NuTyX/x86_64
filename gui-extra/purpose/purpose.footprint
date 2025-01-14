@@ -7,11 +7,11 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6Purpose/
 -rw-r--r--	root/root	usr/lib/cmake/KF6Purpose/KF6PurposeTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6Purpose/KF6PurposeTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6Purpose.so -> libKF6Purpose.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6Purpose.so.6 -> libKF6Purpose.so.6.9.0
--rwxr-xr-x	root/root	usr/lib/libKF6Purpose.so.6.9.0
+lrwxrwxrwx	root/root	usr/lib/libKF6Purpose.so.6 -> libKF6Purpose.so.6.10.0
+-rwxr-xr-x	root/root	usr/lib/libKF6Purpose.so.6.10.0
 lrwxrwxrwx	root/root	usr/lib/libKF6PurposeWidgets.so -> libKF6PurposeWidgets.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6PurposeWidgets.so.6 -> libKF6PurposeWidgets.so.6.9.0
--rwxr-xr-x	root/root	usr/lib/libKF6PurposeWidgets.so.6.9.0
+lrwxrwxrwx	root/root	usr/lib/libKF6PurposeWidgets.so.6 -> libKF6PurposeWidgets.so.6.10.0
+-rwxr-xr-x	root/root	usr/lib/libKF6PurposeWidgets.so.6.10.0
 drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/purposeprocess
@@ -41,6 +41,11 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/AlternativesView.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/JobView.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/kde-qmlmodule.version
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/kde-qmlmodule.version
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/kdeconnectQml.qmltypes
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/libkdeconnectQml.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/qmldir
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/libpurposequickplugin.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/phabricator/
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/phabricator/libphabricatorquickplugin.so
