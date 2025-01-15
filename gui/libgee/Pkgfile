@@ -12,7 +12,7 @@ name=libgee
 version=0.20.6
 release=2
 
-source=(https://download.tuxfamily.org/nutyx/sources/$name/${version:0:4}/$name-$version.tar.xz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.xz)
 
 package() {
 # Obsolet lib
