@@ -1,8 +1,8 @@
 description="Word processing similar to MS® Word, suitable for a wide variety of word processing tasks"
 url="https://www.abisource.com/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre.,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre.,Greg,Spiky"
 
 makedepends=(icu boost cairo aspell fribidi enchant wv
              librsvg gtk2 redland
@@ -11,21 +11,20 @@ run=(desktop-file-utils)
 
 name=abiword
 version=3.0.5
-release=4
+release=5
 
-source=(${url}downloads/$name/$version/source/$name-$version.tar.gz
-        https://download.tuxfamily.org/nutyx/files/$name-3.0.4-consolidate-1.patch)
+source=(http://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.gz)
 		
 prepare() {
 
 cd $name-$version
-patch -Np1 -i ../$name-3.0.4-consolidate-1.patch
+sed -e '/libxml/a #include <libxml/xmlmemory.h>' \
+    -i src/af/util/xp/ut_stringbuf.cpp
 
-find plugins -name plugin.m4 | xargs cat > plugin-configure.m4
-sed -i 's/enchant >=/enchant-2 >=/' configure.ac
-
-libtoolize --force
-autoreconf -fiv
+sed -e "s/free_suggestions/free_string_list/" \
+    -e "s/_to_personal//"                     \
+    -e "s/in_session/added/"                  \
+    -i src/af/xap/xp/enchant_checker.cpp
 }
 
 build() {
