@@ -1,6 +1,3 @@
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/haveged -> /lib/init/services/haveged
 drwxr-xr-x	root/root	etc/rc.d/
 drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr--	root/root	etc/rc.d/init.d/haveged
@@ -19,10 +16,3 @@ lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S21haveged -> ../init.d/haveged
 drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K90haveged -> ../init.d/haveged
 drwxr-xr-x	root/root	etc/rc.d/rcS.d/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/haveged/
--rwxrwxr-x	root/root	lib/init/services/haveged/run
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/haveged.service
