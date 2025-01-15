@@ -1,26 +1,22 @@
 description="Google Noto TTF fonts"
 url="https://www.google.com/get/noto/"
 
-packager="fabienwang <fabienwang@nutyx.org>"
-contributors="Tnut, Pierre B"
+license="Apache 2.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Fabien, Pierre B"
 
 makedepends=(xorg-fontconfig)
 
 name=noto-fonts
-version=20201206
+version=2025.01.01
 
-source=(https://download.tuxfamily.org/nutyx/sources/$name/$name-$version.tar.xz
-	66-noto-mono.conf 66-noto-sans.conf 66-noto-serif.conf)
+source=(https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-$version.tar.gz)
 
 build() {
+  cd notofonts.github.io-noto-monthly-release-$version
+
   mkdir -p $PKG/usr/share/fonts/noto
-  install -m644 ttf/Noto*/*.ttf $PKG/usr/share/fonts/noto
-
-  mkdir -p $PKG/usr/share/fonts/TTF
-  for font in Arimo Cousine Tinos; do
-    install -m644 ttf/$font/*.ttf $PKG/usr/share/fonts/TTF
-  done
-
-  # fontconfig files
-  install -Dm644 $SRC/*.conf -t $PKG/etc/fonts/conf.avail/
+  install -Dm644 fonts/*/unhinted/ttf/Noto*.tt[fc] -t $PKG/usr/share/fonts/noto
+  install -m644 fonts/*/hinted/ttf/Noto*.tt[fc] -t $PKG/usr/share/fonts/noto
 }
