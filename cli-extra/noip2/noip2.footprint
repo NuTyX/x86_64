@@ -1,9 +1,4 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/noip2 -> /lib/init/services/noip2
-drwxr-xr-x	root/root	etc/init/single/
-lrwxrwxrwx	root/root	etc/init/single/noip2 -> /lib/init/services/noip2
 drwxr-xr-x	root/root	etc/rc.d/
 drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr-x	root/root	etc/rc.d/init.d/noip2
@@ -21,18 +16,6 @@ drwxr-xr-x	root/root	etc/rc.d/rc5.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S32noip2 -> ../init.d/noip2
 drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K28noip2 -> ../init.d/noip2
-drwxr-xr-x	root/root	etc/systemd/
-drwxr-xr-x	root/root	etc/systemd/system/
-drwxr-xr-x	root/root	etc/systemd/system/multi-user/
-lrwxrwxrwx	root/root	etc/systemd/system/multi-user/noip2.service -> /lib/systemd/system/noip2.service
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/noip2/
--rwxr-xr-x	root/root	lib/init/services/noip2/run
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/noip2.service
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/noip2

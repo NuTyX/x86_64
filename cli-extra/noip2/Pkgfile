@@ -11,7 +11,7 @@ release=6
 PKGMK_GROUPS=()
 PKGMK_KEEP_SOURCES='no'
 source=(noip2-2.1.9-consolidate-2.patch
-	http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz)
+        https://www.no-ip.com/client/linux/noip-duc-linux.tar.gz)
 
 build(){
 cd noip-$version
@@ -69,30 +69,4 @@ for i in 3 4 5
 do
   ln -sf  ../init.d/$name $PKG/etc/rc.d/rc${i}.d/S32$name
 done
-# runyx
-mkdir -p $PKG/{etc/init/{single,multi},lib/init/services/$name}
-cat > $PKG/lib/init/services/$name/run << "EOF"
-#!/bin/sh
-exec 2>&1
-exec /usr/bin/noip2 -f
-EOF
-chmod 755 $PKG/lib/init/services/$name/run
-ln -sv /lib/init/services/$name $PKG/etc/init/single/$name
-ln -sv /lib/init/services/$name $PKG/etc/init/multi/$name
-# systemd
-mkdir -p $PKG/lib/systemd/system
-mkdir -p $PKG/etc/systemd/system/multi-user
-cat > $PKG/lib/systemd/system/$name.service << "EOF"
-[Unit]
-Description="No-IP Dynamic DNS Update Client"
-
-[Service]
-ExecStart=/usr/bin/noip2
-RestartSec=3
-
-[Install]
-WantedBy=multi-user.target
-EOF
-ln -sv /lib/systemd/system/$name.service \
-$PKG/etc/systemd/system/multi-user/$name.service
 }
