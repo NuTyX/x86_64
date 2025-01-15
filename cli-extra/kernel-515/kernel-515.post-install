@@ -1,6 +1,6 @@
 if [ -f boot/initrd-515 ]; then
-    mkinitramfs 5.15.175-NuTyX-515
+    mkinitramfs 5.15.176-NuTyX-515
     rm boot/initrd-515
-    mv boot/initrd-5.15.175-NuTyX-515 boot/initrd-515
+    mv boot/initrd-5.15.176-NuTyX-515 boot/initrd-515
 fi
 
