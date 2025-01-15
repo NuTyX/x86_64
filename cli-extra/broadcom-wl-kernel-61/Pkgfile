@@ -11,7 +11,7 @@ version=6.30.223.271
 release=29
 
 
-source=(http://download.tuxfamily.org/nutyx/files/broadcom-wl-$version.tar.xz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/broadcom-wl/broadcom-wl-$version.tar.xz)
 
 build() {
 KERNEL_VERSION="$(basename /lib/modules/*)"
