@@ -12,7 +12,7 @@ release=2
 
 makedepends=(perl)
 
-source=(https://download.tuxfamily.org/nutyx/sources/$name/$name-$version.tar.xz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.xz)
 
 build() {
  cd $name-$version
