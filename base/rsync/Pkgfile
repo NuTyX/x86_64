@@ -6,13 +6,12 @@ contributors="Spiky"
 run=(shadow)
 
 name=rsync
-version=3.3.0
-release=2
+version=3.4.0
 
 scriptsversion=20241218
 
-source=(http://downloads.tuxfamily.org/nutyx/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
-	http://rsync.samba.org/ftp/$name/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
+        https://www.samba.org/ftp/$name/$name-$version.tar.gz)
 
 prepare(){
 UN=rsyncd
@@ -41,5 +40,4 @@ make DESTDIR=$PKG install
 # Service
 cd ../nutyx-scripts-${scriptsversion}
 make DESTDIR=$PKG install-sysv-rsyncd
-
 }
