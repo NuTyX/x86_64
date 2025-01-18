@@ -5,8 +5,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
 name=polkit
-version=125
-release=3
+version=126
 
 makedepends=(pam gettext glib duktape gobject-introspection elogind
              patch autoconf intltool perl-xml-parser libxslt docbook-xsl)
@@ -36,8 +35,7 @@ meson setup ..                     \
       -D man=false                 \
       -D session_tracking=elogind  \
       -D systemdsystemunitdir=/tmp \
-      -D tests=true                \
-      -D js_engine=duktape
+      -D tests=true
 ninja
 
 DESTDIR=$PKG ninja install
