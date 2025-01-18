@@ -557,6 +557,8 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo/libgo.go
+drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo10/
+-rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo10/a.go
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo2/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo2/libgo2.go
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo3/
@@ -572,6 +574,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo9/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/libgo9/a.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/main.c
+-rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/main10.c
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/main2.c
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/main3.c
 -rw-r--r--	root/root	usr/lib/go/src/cmd/cgo/internal/testcarchive/testdata/main4.c
@@ -1021,6 +1024,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/compile/internal/importer/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/importer/support.go
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/compile/internal/importer/testdata/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/importer/testdata/a.go
+-rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/importer/testdata/alias.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/importer/testdata/b.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/importer/testdata/exports.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/importer/testdata/generics.go
@@ -8675,6 +8679,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/net/rpc/jsonrpc/
 -rw-r--r--	root/root	usr/lib/go/src/net/sendfile_stub.go
 -rw-r--r--	root/root	usr/lib/go/src/net/sendfile_test.go
 -rw-r--r--	root/root	usr/lib/go/src/net/sendfile_unix_alt.go
+-rw-r--r--	root/root	usr/lib/go/src/net/sendfile_unix_test.go
 -rw-r--r--	root/root	usr/lib/go/src/net/sendfile_windows.go
 -rw-r--r--	root/root	usr/lib/go/src/net/server_test.go
 drwxr-xr-x	root/root	usr/lib/go/src/net/smtp/
