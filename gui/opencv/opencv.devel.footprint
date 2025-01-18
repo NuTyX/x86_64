@@ -76,14 +76,10 @@ drwxr-xr-x	root/root	usr/include/opencv4/opencv2/core/hal/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_forward.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_lasx.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_lsx.hpp
+-rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_math.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_msa.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_neon.hpp
--rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv071.hpp
--rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv_010_compat_non-policy.hpp
--rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv_010_compat_overloaded-non-policy.hpp
--rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv_011_compat.hpp
--rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv_compat_overloaded.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_rvv_scalable.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_sse.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/hal/intrin_sse_em.hpp
@@ -188,7 +184,6 @@ drwxr-xr-x	root/root	usr/include/opencv4/opencv2/flann/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/flann_base.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/general.h
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/ground_truth.h
--rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/hdf5.h
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/heap.h
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/flann/index_testing.h
@@ -398,7 +393,6 @@ drwxr-xr-x	root/root	usr/include/opencv4/opencv2/video/legacy/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/video/video.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/videoio.hpp
 drwxr-xr-x	root/root	usr/include/opencv4/opencv2/videoio/
--rw-r--r--	root/root	usr/include/opencv4/opencv2/videoio/cap_ios.h
 drwxr-xr-x	root/root	usr/include/opencv4/opencv2/videoio/legacy/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/videoio/legacy/constants_c.h
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/videoio/registry.hpp
