@@ -6,7 +6,7 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(go libseccomp git)
 
 name=runc
-version=1.2.2
+version=1.2.4
 
 source=(https://github.com/opencontainers/runc/archive/v${version}/$name-${version}.tar.gz \
         https://crux.nu/files/$name-man-pages-$version.tar.xz)
