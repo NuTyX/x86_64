@@ -9,11 +9,11 @@ makedepends=(check meson ninja scim luajit giflib librsvg
              xorg-fontconfig libinput
              gstreamer-plugins-base fribidi poppler pulseaudio
              xorg-libxp libspectre xorg-libxscrnsaver bullet)
-run=(shared-mime-info)
+run=(shared-mime-info lua54-lgi)
 
 
 name=efl
-version=1.28.0
+version=1.27.0
 
 source=(https://download.enlightenment.org/rel/libs/$name/$name-$version.tar.xz)
 build() {
