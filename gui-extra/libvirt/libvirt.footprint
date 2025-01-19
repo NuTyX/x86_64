@@ -104,17 +104,17 @@ drwxr-xr-x	root/root	usr/lib/firewalld/zones/
 -rwxr-xr-x	root/root	usr/lib/libnss_libvirt.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_libvirt_guest.so.2
 lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so -> libvirt-admin.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so.0 -> libvirt-admin.so.0.10010.0
--rwxr-xr-x	root/root	usr/lib/libvirt-admin.so.0.10010.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so.0 -> libvirt-admin.so.0.11000.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-admin.so.0.11000.0
 lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so -> libvirt-lxc.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so.0 -> libvirt-lxc.so.0.10010.0
--rwxr-xr-x	root/root	usr/lib/libvirt-lxc.so.0.10010.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so.0 -> libvirt-lxc.so.0.11000.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-lxc.so.0.11000.0
 lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so -> libvirt-qemu.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so.0 -> libvirt-qemu.so.0.10010.0
--rwxr-xr-x	root/root	usr/lib/libvirt-qemu.so.0.10010.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so.0 -> libvirt-qemu.so.0.11000.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-qemu.so.0.11000.0
 lrwxrwxrwx	root/root	usr/lib/libvirt.so -> libvirt.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt.so.0 -> libvirt.so.0.10010.0
--rwxr-xr-x	root/root	usr/lib/libvirt.so.0.10010.0
+lrwxrwxrwx	root/root	usr/lib/libvirt.so.0 -> libvirt.so.0.11000.0
+-rwxr-xr-x	root/root	usr/lib/libvirt.so.0.11000.0
 drwxr-xr-x	root/root	usr/lib/libvirt/
 drwxr-xr-x	root/root	usr/lib/libvirt/connection-driver/
 -rwxr-xr-x	root/root	usr/lib/libvirt/connection-driver/libvirt_driver_ch.so
@@ -240,6 +240,7 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/ppc64_POWERPC_e5500.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/ppc64_POWERPC_e6500.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/ppc64_vendors.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_486-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_486.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Broadwell-IBRS.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Broadwell-noTSX-IBRS.xml
@@ -256,6 +257,7 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cascadelake-Server-v4.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cascadelake-Server-v5.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cascadelake-Server.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Conroe-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Conroe.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cooperlake-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cooperlake-v2.xml
@@ -267,6 +269,7 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Dhyana-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Dhyana-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Dhyana.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-Genoa-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-Genoa.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-IBPB.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-Milan-v1.xml
@@ -283,6 +286,7 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-v4.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v1.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Haswell-IBRS.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Haswell-noTSX-IBRS.xml
@@ -307,16 +311,23 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_IvyBridge-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_IvyBridge-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_IvyBridge.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_KnightsMill-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_KnightsMill.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Nehalem-IBRS.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Nehalem-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Nehalem-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Nehalem.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G1-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G1.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G2-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G2.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G3-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G3.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G4-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G4.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G5-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Opteron_G5.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Penryn-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Penryn.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SandyBridge-IBRS.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SandyBridge-v1.xml
@@ -352,21 +363,33 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Westmere-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Westmere-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Westmere.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_athlon-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_athlon.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_core2duo-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_core2duo.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_coreduo-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_coreduo.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_cpu64-rhel5.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_cpu64-rhel6.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_features.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_kvm32-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_kvm32.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_kvm64-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_kvm64.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_n270-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_n270.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentium-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentium.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentium2-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentium2.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentium3-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentium3.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_pentiumpro.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_phenom-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_phenom.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_qemu32-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_qemu32.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_qemu64-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_qemu64.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_vendors.xml
 drwxr-xr-x	root/root	usr/share/libvirt/schemas/
