@@ -2,7 +2,7 @@
 description="X color profile daemon. A simple bridge between colord and X."
 
 # Self-promotion
-packager="hakerdefo"
+packager="spiky <spiky@nutyx.org>"
 
 # Build dependencies
 makedepends=(xorg-libxdmcp xorg-libxau libxcb xorgproto xorg-libx11 m4 xorg-libxrandr colord glib xorg-libxext xorg-libxrender pcre libffi gvfs util-linux)
@@ -14,10 +14,9 @@ run=(colord)
 name=xiccd
 
 # Version of the package
-version=0.3.0
+version=0.4.1
 
 # Release of the package
-release=1
 
 # Location of the sources of the package to be built
 source=(https://github.com/agalakhov/${name}/archive/refs/tags/v${version}.tar.gz)
