@@ -6,23 +6,17 @@ license="APACHE"
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(cmake git)
+makedepends=(cmake spirv-headers)
 
 name=spirv-tools
-version=2024.2
+version=1.4.304.0
 
-#source=(https://github.com/KhronosGroup/SPIRV-Tools/archive/v$version/SPIRV-Tools-v$version.tar.gz)
+source=(https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-$version/SPIRV-Tools-$version.tar.gz)
 
 
 
 prepare() {
-#mv SPIRV-Tools-$version $name-$version
-
-GIT_SSL_NO_VERIFY=true git clone https://github.com/KhronosGroup/SPIRV-Headers.git
-GIT_SSL_NO_VERIFY=true git clone https://github.com/KhronosGroup/SPIRV-Tools.git $name-$version
-
-cd $name-$version
-git tag $version
+mv SPIRV-Tools-vulkan-sdk-$version $name-$version
 }
 
 
@@ -38,7 +32,7 @@ cmake -GNinja \
       -DSPIRV_WERROR=Off \
       -DBUILD_SHARED_LIBS=ON \
       -DSPIRV_TOOLS_BUILD_STATIC=OFF \
-      -DSPIRV-Headers_SOURCE_DIR="$SRC/SPIRV-Headers" \
+      -D SPIRV-Headers_SOURCE_DIR=/usr \
       ..
 
 ninja
