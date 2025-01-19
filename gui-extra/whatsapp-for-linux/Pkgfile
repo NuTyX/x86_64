@@ -14,11 +14,15 @@ run=(hicolor-icon-theme desktop-file-utils
      gstreamer-plugins-good gstreamer-plugins-bad)
 
 name=whatsapp-for-linux
-version=1.6.5
+version=1.7.0
 
 PKGMK_KEEP_SOURCES="no"
 
-source=(https://github.com/eneshecan/$name/archive/refs/tags/v${version}.tar.gz)
+source=(https://github.com/xeco23/WasIstLos/archive/refs/tags/v$version.tar.gz)
+
+prepare() {
+mv WasIstLos-$version $name-$version
+}
 
 build() {
 cd $name-$version
