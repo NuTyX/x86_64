@@ -11,8 +11,7 @@ makedepends=(ninja meson cairo libthai freetype xorg-libxft gobject-introspectio
 
 
 name=pango
-version=1.54.0
-release=2
+version=1.56.1
 
 source=(https://gitlab.gnome.org/GNOME/pango/-/archive/$version/$name-$version.tar.gz)
 build() {
