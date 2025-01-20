@@ -5,14 +5,14 @@ maintainer="Karel Zak kzak at redhat dot com"
 packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Fabienwang,Spiky"
 
-makedepends=(eudev file ncurses readline systemd zlib
+makedepends=(file ncurses readline systemd zlib
              libxcrypt)
 
 set=(core)
 
 name=util-linux
 version=2.40.2
-release=3
+release=4
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
