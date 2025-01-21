@@ -1,6 +1,8 @@
 description="Pluggable Authentication Modules to choose how applications authenticate users."
 url="https://www.kernel.org/pub/libs/pam"
 
+license="GPL-2.0-only"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
@@ -11,7 +13,7 @@ makedepends=(intltool texinfo libxcrypt)
 
 name=pam
 version=1.7.0
-release=2
+release=3
 
 PKGMK_LOCALES=()
 
