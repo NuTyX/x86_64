@@ -5,14 +5,12 @@ maintainer="Karel Zak kzak at redhat dot com"
 packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Fabienwang,Spiky"
 
-makedepends=(file ncurses readline systemd zlib
-             libxcrypt)
+makedepends=(file ncurses readline systemd zlib libxcrypt)
 
 set=(core)
 
 name=util-linux
-version=2.40.2
-release=4
+version=2.40.4
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
@@ -43,27 +41,8 @@ mkdir -pv $PKG/var/lib/hwclock
 
 make
 make DESTDIR=$PKG  install
-mkdir -p $PKG/sbin
-mv $PKG/usr/sbin/agetty $PKG/sbin
-#
-## service
-SERVICEDIR=/lib/init/services
-
-mkdir -p $PKG/etc/init/{single,multi}
-
-for i in 1 2 3 4 5 6
-do
-  mkdir -p $PKG$SERVICEDIR/agetty-$i
-  echo "#!/bin/sh
-exec chpst -P /sbin/agetty -J tty$i 9600" > \
-  $PKG$SERVICEDIR/agetty-$i/run
-  chmod 755 $PKG$SERVICEDIR/agetty-$i/run
-  ln -sv $SERVICEDIR/agetty-$i \
-  $PKG/etc/init/single/agetty-$i
-  ln -sv $SERVICEDIR/agetty-$i \
-  $PKG/etc/init/multi/agetty-$i
-
-done
+mkdir $PKG/sbin
+ln -sv ../usr/sbin/agetty $PKG/sbin/agetty
 }
 devel()
 {
