@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/free
+-rwxr-xr-x	root/root	usr/bin/hugetop
 -rwxr-xr-x	root/root	usr/bin/pgrep
 -rwxr-xr-x	root/root	usr/bin/pidof
 -rwxr-xr-x	root/root	usr/bin/pidwait
@@ -16,9 +17,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/w
 -rwxr-xr-x	root/root	usr/bin/watch
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libproc2.so -> libproc2.so.0.0.2
-lrwxrwxrwx	root/root	usr/lib/libproc2.so.0 -> libproc2.so.0.0.2
--rwxr-xr-x	root/root	usr/lib/libproc2.so.0.0.2
+lrwxrwxrwx	root/root	usr/lib/libproc2.so -> libproc2.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libproc2.so.1 -> libproc2.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libproc2.so.1.0.0
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/sysctl
 drwxr-xr-x	root/root	usr/share/
