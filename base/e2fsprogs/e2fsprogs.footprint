@@ -10,17 +10,6 @@ lrwxrwxrwx	root/root	lib/libext2fs.so.2 -> libext2fs.so.2.4
 -rwxr-xr-x	root/root	lib/libext2fs.so.2.4
 lrwxrwxrwx	root/root	lib/libss.so.2 -> libss.so.2.0
 -rwxr-xr-x	root/root	lib/libss.so.2.0
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/e2scrub@.service
--rw-r--r--	root/root	lib/systemd/system/e2scrub_all.service
--rw-r--r--	root/root	lib/systemd/system/e2scrub_all.timer
--rw-r--r--	root/root	lib/systemd/system/e2scrub_fail@.service
--rw-r--r--	root/root	lib/systemd/system/e2scrub_reap.service
-drwxr-xr-x	root/root	lib/udev/
-drwxr-xr-x	root/root	lib/udev/rules.d/
--rw-r--r--	root/root	lib/udev/rules.d/64-ext4.rules
--rw-r--r--	root/root	lib/udev/rules.d/96-e2scrub.rules
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/chattr
@@ -37,6 +26,17 @@ lrwxrwxrwx	root/root	usr/lib/libe2p.so -> /lib/libe2p.so.2
 lrwxrwxrwx	root/root	usr/lib/libext2fs.so -> /lib/libext2fs.so.2
 -rw-r--r--	root/root	usr/lib/libss.a
 lrwxrwxrwx	root/root	usr/lib/libss.so -> /lib/libss.so.2
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/e2scrub@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/e2scrub_all.service
+-rw-r--r--	root/root	usr/lib/systemd/system/e2scrub_all.timer
+-rw-r--r--	root/root	usr/lib/systemd/system/e2scrub_fail@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/e2scrub_reap.service
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/64-ext4.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/96-e2scrub.rules
 drwxr-xr-x	root/root	usr/libexec/
 drwxr-xr-x	root/root	usr/libexec/e2fsprogs/
 -rwxr-xr-x	root/root	usr/libexec/e2fsprogs/e2scrub_fail
