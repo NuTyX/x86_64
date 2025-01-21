@@ -15,6 +15,8 @@ drwxr-xr-x	root/root	usr/share/licenses/vim/
 -rw-r--r--	root/root	usr/share/licenses/vim/LICENSE
 drwxr-xr-x	root/root	usr/share/vim/
 drwxr-xr-x	root/root	usr/share/vim/vim91/
+-rw-r--r--	root/root	usr/share/vim/vim91/LICENSE
+-rw-r--r--	root/root	usr/share/vim/vim91/README.txt
 drwxr-xr-x	root/root	usr/share/vim/vim91/autoload/
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/README.txt
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/RstFold.vim
@@ -49,9 +51,6 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/autoload/dist/
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/javaformat.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/javascriptcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/modula2.vim
--rw-r--r--	root/root	usr/share/vim/vim91/autoload/netrw.vim
--rw-r--r--	root/root	usr/share/vim/vim91/autoload/netrwSettings.vim
--rw-r--r--	root/root	usr/share/vim/vim91/autoload/netrw_gitignore.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/paste.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/phpcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/python.vim
@@ -424,6 +423,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/jsonnet.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/julia.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/just.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/karel.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/kdl.vim
@@ -736,6 +736,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/indent/
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/julia.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/indent/just.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/kdl.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/kotlin.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/krl.vim
@@ -1014,6 +1015,19 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/matchit/doc/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/matchit/doc/tags
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/matchit/plugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/matchit/plugin/matchit.vim
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/LICENSE.txt
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/README.md
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/autoload/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/autoload/netrw.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/autoload/netrwSettings.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/autoload/netrw_gitignore.vim
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/doc/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/doc/netrw.txt
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/plugin/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/plugin/netrwPlugin.vim
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/syntax/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/syntax/netrw.vim
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/nohlsearch/
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/nohlsearch/plugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/nohlsearch/plugin/nohlsearch.vim
@@ -1401,6 +1415,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/julia.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/syntax/just.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/karel.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/kdl.vim
@@ -1513,7 +1528,6 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/modula2/opt/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/neomuttlog.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/neomuttrc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/netrc.vim
--rw-r--r--	root/root	usr/share/vim/vim91/syntax/netrw.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/nginx.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/ninja.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/nix.vim
