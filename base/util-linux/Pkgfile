@@ -5,17 +5,20 @@ maintainer="Karel Zak kzak at redhat dot com"
 packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Fabienwang,Spiky"
 
-makedepends=(file ncurses readline systemd zlib libxcrypt)
+makedepends=(file ncurses readline zlib libxcrypt)
 
 set=(core)
 
 name=util-linux
 version=2.40.4
+release=2
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
 PKGMK_GROUPS=(devel doc man)
 PKGMK_LOCALES=()
+PKGMK_DEPENDS=(libcap systemd)
+
 
 build()
 {
