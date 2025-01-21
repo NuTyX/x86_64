@@ -11,18 +11,16 @@ contributors="Spiky"
 # 2/ build systemd with dbus that has no systemd libs
 # 3/ rebuild dbus with systemd so that dbus gets links to systemd
 
-PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja util-linux dbus)
+PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja dbus)
 
-makedepends=(acl libcap kmod m4 gperf pam libxcrypt)
+makedepends=(acl libcap kmod m4 gperf pam libxcrypt util-linux)
+run=(shadow)
 
 set=(core)
 
 name=systemd
 version=257
-release=1
-
-PKGMK_IGNORE_FOOTPRINT='no'
-PKGMK_IGNORE_RUNTIMEDEPS='yes'
+release=2
 
 source=(http://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
