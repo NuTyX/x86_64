@@ -4,7 +4,7 @@ url='https://github.com/mesonbuild/meson-python'
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(python-setuptools python-packaging pyproject-metadata)
+makedepends=(meson python-setuptools python-packaging pyproject-metadata)
 run=(patchelf)
 
 name=python-meson
@@ -12,7 +12,7 @@ _name="meson_python"
 alias=(${_name})
 
 version=0.15.0
-release=2
+release=3
 
 source=(https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-$version.tar.gz)
 
