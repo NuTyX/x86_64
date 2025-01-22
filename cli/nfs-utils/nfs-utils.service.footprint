@@ -1,18 +1,9 @@
-drwxr-xr-x	root/root	etc/rc.d/
-drwxr-xr-x	root/root	etc/rc.d/init.d/
--rwxr-xr--	root/root	etc/rc.d/init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc0.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K48nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc1.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K48nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc2.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K48nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc3.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S24nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc4.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S24nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc5.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S24nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rc6.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K48nfs-server -> ../init.d/nfs-server
-drwxr-xr-x	root/root	etc/rc.d/rcS.d/
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-client.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-client.target
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-server.service
+-rw-r--r--	root/root	usr/lib/systemd/system/proc-fs-nfsd.mount
+-rw-r--r--	root/root	usr/lib/systemd/system/rpc-mountd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/rpc-statd-notify.service
+-rw-r--r--	root/root	usr/lib/systemd/system/rpc-statd.service

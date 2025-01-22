@@ -1,18 +1,20 @@
 description="Userspace server and client tools necessary to use the kernel's NFS abilities."
-url="http://nfs.sourceforge.net"
+url="https://nfs.sourceforge.net"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(util-linux libnl libxml2 sqlite libevent libtirpc rpcbind rpcsvc-proto)
 run=(rpcbind)
 
 name=nfs-utils
 version=2.8.2
+release=2
 
-runyx_version=20201011
+scriptsversion=20250125
 
-source=(http://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	http://downloads.sourceforge.net/nfs/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
+	     https://downloads.sourceforge.net/nfs/$name-$version.tar.gz)
 
 run=(rpcbind)
 
@@ -44,19 +46,14 @@ chmod u+w,go+r $PKG/sbin/mount.nfs
 chown nobody.nogroup $PKG/var/lib/nfs
 
 # Services
-cd ../runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-nfs-server
-
-make DESTDIR=$PKG install-runyx-nfs-server
-sed -i s@install-nfs@install-sysd-nfs@ services/sysd/Makefile
-sed -i s@/usr/sbin@/sbin@ \
-$PKG/lib/init/services/nfs-server/finish
-sed -i s@/usr/sbin@/sbin@ \
-$PKG/lib/init/services/nfs-server/run
-
-sed -i 's@rpc.mountd@rpc.mountd --foreground@' \
-$PKG/lib/init/services/nfs-server/run
-
-
+cd ../nutyx-scripts-$scriptsversion
 make DESTDIR=$PKG install-sysd-nfs-server
+
+}
+service() {
+cd $PKG
+bsdtar -r -f \
+$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
+usr/lib/systemd
+rm -r usr/lib/systemd
 }
