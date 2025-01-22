@@ -10,13 +10,14 @@ run=(shadow mariadb.lib)
 
 name=mariadb
 version=11.6.2
+release=3
 
-runyx_version=20201011
+scriptsversion=20250125
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-	https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
+	  https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz)
 
-PKGMK_GROUPS=(devel lib man doc service)
+PKGMK_GROUPS=(devel lib man doc)
 
 prepare() {
 groupadd -g 40 mysql
@@ -135,15 +136,6 @@ EOF
 rm -r $PKG/usr/share/mysql/test
 
 # Service
-cd $SRC/runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-mysql
-make DESTDIR=$PKG install-runyx-mysql
+cd $SRC/nutyx-scripts-$scriptsversion
 make DESTDIR=$PKG install-sysd-mysqld
-}
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init lib/systemd
-rm -r etc/rc.d etc/init lib/init lib/systemd
 }
