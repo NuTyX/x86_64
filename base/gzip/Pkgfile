@@ -7,7 +7,7 @@ packager="tnut <tnut@nutyx.org>"
 
 name=gzip
 version=1.13
-release=3
+release=4
 
 set=(chroot core)
 
@@ -22,5 +22,5 @@ make
 make -k check || true
 make DESTDIR=$PKG install
 mkdir -p $PKG/bin
-mv -v $PKG/usr/bin/gzip $PKG/bin
+ln -sv $PKG/usr/bin/gzip $PKG/bin
 }
