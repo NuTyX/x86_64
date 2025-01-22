@@ -13,7 +13,7 @@ contributors="Spiky"
 
 PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja dbus)
 
-makedepends=(acl libcap kmod m4 gperf pam libxcrypt util-linux)
+makedepends=(acl libcap kmod m4 gperf kbd pam libxcrypt util-linux)
 run=(shadow)
 
 set=(core)
@@ -22,8 +22,14 @@ name=systemd
 version=257
 release=2
 
-source=(http://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
+source=(consolidate-2.patch
+        https://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
+prepare() {
+cd $name-$version
+patch -Np1 -i ../consolidate-2.patch
+}
+
 
 build() {
 cd $name-$version
@@ -42,7 +48,7 @@ meson --prefix=/usr           \
 -D rpmmacrosdir=no            \
 -D man=disabled               \
 -D userdb=false               \
--D pam=true                   \
+-D pam=enabled                \
 -D pamconfdir=/etc/pam.d      \
 -D mode=release               \
 ..
@@ -57,5 +63,8 @@ do
   mv ../../$name-man-pages-$version/man$i \
    $PKG/usr/share/man
 done
+mkdir $PKG/sbin
 
+ln -s ../usr/lib/systemd/systemd \
+$PKG/sbin/init
 }

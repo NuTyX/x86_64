@@ -1,0 +1,67 @@
+diff -Naur a/src/basic/path-util.h b/src/basic/path-util.h
+--- a/src/basic/path-util.h	2024-12-10 20:23:45.000000000 +0100
++++ b/src/basic/path-util.h	2025-01-22 10:59:30.881439669 +0100
+@@ -11,8 +11,8 @@
+ #include "strv.h"
+ #include "time-util.h"
+ 
+-#define PATH_SPLIT_BIN(x) x "sbin:" x "bin"
+-#define PATH_SPLIT_BIN_NULSTR(x) x "sbin\0" x "bin\0"
++#define PATH_SPLIT_BIN(x) x "bin:" x "sbin"
++#define PATH_SPLIT_BIN_NULSTR(x) x "bin\0" x "sbin\0"
+ 
+ #define PATH_MERGED_BIN(x) x "bin"
+ #define PATH_MERGED_BIN_NULSTR(x) x "bin\0"
+diff -Naur a/src/basic/unit-def.h b/src/basic/unit-def.h
+--- a/src/basic/unit-def.h	2024-12-10 20:23:45.000000000 +0100
++++ b/src/basic/unit-def.h	2025-01-22 10:46:26.382035587 +0100
+@@ -186,8 +186,8 @@
+ 
+ typedef enum SwapState {
+         SWAP_DEAD,
+-        SWAP_ACTIVATING,               /* /sbin/swapon is running, but the swap not yet enabled. */
+-        SWAP_ACTIVATING_DONE,          /* /sbin/swapon is running, and the swap is done. */
++        SWAP_ACTIVATING,               /* /usr/sbin/swapon is running, but the swap not yet enabled. */
++        SWAP_ACTIVATING_DONE,          /* /usr/sbin/swapon is running, and the swap is done. */
+         SWAP_ACTIVE,
+         SWAP_DEACTIVATING,
+         SWAP_DEACTIVATING_SIGTERM,
+diff -Naur a/src/core/swap.c b/src/core/swap.c
+--- a/src/core/swap.c	2024-12-10 20:23:45.000000000 +0100
++++ b/src/core/swap.c	2025-01-22 10:49:34.073645063 +0100
+@@ -779,7 +779,7 @@
+                 }
+         }
+ 
+-        r = exec_command_set(s->control_command, "/sbin/swapon", "--fixpgsz", NULL);
++        r = exec_command_set(s->control_command, "/usr/sbin/swapon", "--fixpgsz", NULL);
+         if (r < 0) {
+                 log_unit_warning_errno(UNIT(s), r, "Failed to initialize swapon command line: %m");
+                 goto fail;
+@@ -824,7 +824,7 @@
+         s->control_command = s->exec_command + SWAP_EXEC_DEACTIVATE;
+ 
+         r = exec_command_set(s->control_command,
+-                             "/sbin/swapoff",
++                             "/usr/sbin/swapoff",
+                              s->what,
+                              NULL);
+         if (r < 0) {
+@@ -1332,7 +1332,7 @@
+ 
+                 /* Dispatch this before we dispatch SIGCHLD, so that
+                  * we always get the events from /proc/swaps before
+-                 * the SIGCHLD of /sbin/swapon. */
++                 * the SIGCHLD of /usr/sbin/swapon. */
+                 r = sd_event_source_set_priority(m->swap_event_source, EVENT_PRIORITY_SWAP_TABLE);
+                 if (r < 0) {
+                         log_error_errno(r, "Failed to change /proc/swaps priority: %m");
+diff -Naur a/units/modprobe@.service b/units/modprobe@.service
+--- a/units/modprobe@.service	2024-12-10 20:23:45.000000000 +0100
++++ b/units/modprobe@.service	2025-01-22 10:50:54.037576999 +0100
+@@ -17,4 +17,4 @@
+ 
+ [Service]
+ Type=oneshot
+-ExecStart=-/sbin/modprobe -abq %i
++ExecStart=-modprobe -abq %i
