@@ -1,5 +1,5 @@
 description="The Kerberos network authentication system"
-url="http://web.mit.edu/kerberos/"
+url="https://web.mit.edu/kerberos/"
 
 alias=(krb krb5)
 
@@ -10,11 +10,11 @@ makedepends=(perl e2fsprogs bison gawk)
 
 name=kerberos
 version=1.21.3
-release=2
+release=3
 
-runyx_version=20201011
+scriptsversion=20250125
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
         http://web.mit.edu/$name/dist/krb5/${version:0:4}/krb5-$version.tar.gz)
 
 build()  {
@@ -56,9 +56,7 @@ do
 done
 
 # Service
-cd $SRC/runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-krb5
-make DESTDIR=$PKG install-runyx-krb5
+cd $SRC/nutyx-scripts-$scriptsversion
 make DESTDIR=$PKG install-sysd-krb5
 }
 
@@ -66,6 +64,6 @@ service() {
 cd $PKG
 bsdtar -r -f \
 $PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d etc/init lib/init lib/systemd
-rm -r etc/rc.d etc/init lib/init lib/systemd
+usr/lib/systemd
+rm -r usr/lib/systemd
 }
