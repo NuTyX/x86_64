@@ -3,13 +3,14 @@ url="https://git.sr.ht/~kennylevinsen/seatd/"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="BlogofraisFR"
+packager="tnut <tnut@nutyx.org>"
+contributors="BlogofraisFR,Spiky"
 
-makedepends=(meson python elogind)
+makedepends=(meson python)
 
 name=seatd
 version=0.9.1
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 
