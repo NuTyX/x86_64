@@ -1,18 +1,20 @@
 description="Lightweight Directory Access Protocol (LDAP) client and server"
-url="http://www.openldap.org"
+url="https://www.openldap.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(autoconf m4 shadow)
 
 name=openldap
 version=2.6.9
-runyx_version=20201011
+release=2
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	https://www.openldap.org/software/download/OpenLDAP/openldap-release/$name-$version.tgz
-	$name-$version-consolidated-1.patch)
+scriptsversion=20250125
+
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
+	    https://www.openldap.org/software/download/OpenLDAP/openldap-release/$name-$version.tgz
+	    $name-$version-consolidated-1.patch)
 prepare() {
 
 (getent group  ldap > /dev/null) || groupadd -g 83 ldap
@@ -39,17 +41,13 @@ make DESTDIR=$PKG install
 rm $PKG/usr/lib/liblber.la
 
 # Service
-cd ../runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-slapd
-make DESTDIR=$PKG install-runyx-slapd
+cd ../nutyx-scripts-$scriptsversion
 make DESTDIR=$PKG install-sysd-slapd
 }
 service() {
 cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-lib/{systemd,init} etc/{init,rc.d}
-
-rm -r etc/{rc.d,init}
-rm -r lib/{init,systemd}
+usr/lib/systemd
+rm -r usr/lib/systemd
 }
