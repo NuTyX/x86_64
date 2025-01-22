@@ -11,6 +11,7 @@ _name="pytz"
 alias=(${_name})
 
 version=2024.2
+release=3
 
 source=(https://pypi.io/packages/source/p/pytz/pytz-${version}.tar.gz
        0001-Use-the-system-zoneinfo-from-the-tzdata-package.patch)
