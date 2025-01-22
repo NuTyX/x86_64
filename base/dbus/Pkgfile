@@ -6,6 +6,7 @@ contributors="Pierre,Jayce,Tnut"
 
 # In case of rebuild systemd
 # dbus needs do be build once without systemd
+# in order to build systemd
 # 1/ dbus without systemd with following makedepends
 # makedepends=(expat) 
 # and --disable-systemd
@@ -27,21 +28,21 @@ source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr               \
-            --sysconfdir=/etc                     \
-            --localstatedir=/var                  \
-            --disable-doxygen-docs                \
-            --disable-xml-docs                    \
-            --disable-static                      \
-            --docdir=/usr/share/doc/dbus-$version \
-	  --with-system-socket=/run/dbus/system_bus_socket \
-            --enable-systemd
+	./configure --prefix=/usr                 \
+        --sysconfdir=/etc                     \
+        --localstatedir=/var                  \
+        --disable-doxygen-docs                \
+        --disable-xml-docs                    \
+        --disable-static                      \
+        --docdir=/usr/share/doc/dbus-$version \
+        --with-system-socket=/run/dbus/system_bus_socket \
+        --enable-systemd
 	make
 	make DESTDIR=$PKG install
 
 }
 package(){
-          ln -sfv /etc/machine-id $PKG/var/lib/dbus
-	rm $PKG/usr/lib/libdbus-1.la
-	rm $PKG/usr/bin/dbus-launch
+  ln -sfv /etc/machine-id $PKG/var/lib/dbus
+  rm $PKG/usr/lib/libdbus-1.la
+  rm $PKG/usr/bin/dbus-launch
 }
