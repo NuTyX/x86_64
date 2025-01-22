@@ -1,20 +1,22 @@
 description="Advanced object-relational database management system (ORDBMS)."
-url="http://www.postgresql.org/docs"
+url="https://www.postgresql.org/docs"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(readline flex bison perl python libxml2 libxslt openldap pam kerberos
              icu)
 run=(shadow)
 
-PKGMK_GROUPS=(lib doc man devel service)
+PKGMK_GROUPS=(lib doc man devel)
 
 name=postgresql
 version=16.6
-runyx_version=20201011
+release=2
 
-source=(https://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
+scriptsversion=20250125
+
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	https://ftp.postgresql.org/pub/source/v$version/$name-$version.tar.bz2)
 
 prepare() {
@@ -44,16 +46,7 @@ make DESTDIR=$PKG install
 make DESTDIR=$PKG install-docs
 
 # service
-cd $SRC/runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-postgresql
-make DESTDIR=$PKG install-runyx-postgresql
+cd $SRC/nutyx-scripts-$scriptsversion
 make DESTDIR=$PKG install-sysd-postgresql
 
-}
-service() {
-cd $PKG
-bsdtar -r -f \
-$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d usr/bin/initdb etc/init lib/init lib/systemd
-rm -r etc/rc.d usr/bin/initdb etc/init lib/init lib/systemd
 }
