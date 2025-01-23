@@ -3,6 +3,7 @@ packager="tnut <tnut@nutyx.org>"
 
 name=xorg-xf86-video-intel
 version=20210222
+release=2
 
 _name=${name/xorg-/}
 makedepends=(xcb-util xorg-libxscrnsaver xorg-libxtst xorg-libxrandr xorg-libxinerama
@@ -27,11 +28,4 @@ make DESTDIR=$PKG install
 # Obsolets libs
 rm $PKG/usr/lib/xorg/modules/drivers/intel_drv.la
 rm $PKG/usr/lib/libIntelXvMC.la
-}
-uptodate() {
-local ext url LYNX
-LYNX="lynx -read_timeout=20 -dump -listonly -nonumbers "
-ext=".tar.xz"
-url="http://anduin.linuxfromscratch.org/BLFS/${_name}"
-$LYNX $url/|grep "$ext$"|grep "$url/${_name}-"|sed "s@$ext\$@@"|sed "s@$url/${_name}-@@"|tail -1
 }
