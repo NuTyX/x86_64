@@ -8,7 +8,7 @@ makedepends=(iptables)
 
 name=ebtables
 version=2.0.10_4
-release=4
+release=5
 
 source=(https://downloads.sourceforge.net/${name}/${name}-v${version/_/-}.tar.gz
         ${name}.service ${name} )
@@ -39,32 +39,8 @@ make CFLAGS='-Wunused -Wall -Werror -Wno-error=unused-but-set-variable'
   rm $PKG/etc/ethertypes
 
   # services
-  mkdir -p $PKG/etc/{rc.d/init.d,init/multi}
-  mkdir -p $PKG/lib/systemd/system
-  mkdir -p $PKG/lib/init/services/$name
-  install -Dm 755 $SRC/$name \
-  $PKG/etc/rc.d/init.d/$name
+  mkdir -p $PKG/usr/lib/systemd/system
   install -Dm 644 $SRC/$name.service \
-  $PKG/lib/systemd/system/$name.service
-
-  cat > $PKG/lib/init/services/$name/run << "EOF"
-#!/bin/sh
-CONFIG_FILE='/etc/ebtables.conf'
-ebtables-restore < "$CONFIG_FILE"
-exec pause
-EOF
-  chmod 755 $PKG/lib/init/services/$name/run
-  ln -s /lib/init/services/$name $PKG/etc/init/multi/$name
-
-  for i in 3 4 5
-  do
-    mkdir -p $PKG/etc/rc.d/rc$i.d
-    ln -s ../init.d/$name $PKG/etc/rc.d/rc$i.d/S21$name
-  done
-  for i in 0 2 6
-  do
-    mkdir -p $PKG/etc/rc.d/rc$i.d
-    ln -s ../init.d/$name $PKG/etc/rc.d/rc$i.d/K97$name
-  done
+  $PKG/usr/lib/systemd/system/$name.service
 
 }
