@@ -10,7 +10,7 @@ makedepends=(ncurses gmp readline expat texinfo
 
 name=gdb
 version=15.2
-release=2
+release=3
 
 source=(https://ftp.gnu.org/gnu/gdb/$name-$version.tar.xz)
 build() {
