@@ -1,20 +1,29 @@
 description="Open Motif"
 url='https://sourceforge.net/projects/motif/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(flex xorgproto
              xorg-xbitmaps xorg-libxp xorg-libxft xorg-libxmu libpng libjpeg-turbo)
 
 name=openmotif
 version=2.3.8
+release=2
 
 source=(https://sourceforge.net/projects/motif/files/Motif%20${version}%20Source%20Code/motif-${version}.tar.gz)
 
 build() {
 cd motif-$version
+
+export CFLAGS+=" \
+    -Wno-error=implicit-function-declaration  \
+    -Wno-error=format-security"
+
 ./configure --prefix=/usr
+
+sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
 make
 make DESTDIR=$PKG install
 }
