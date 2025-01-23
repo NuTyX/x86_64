@@ -7,16 +7,10 @@ url="http://xorg.freedesktop.org"
 
 name=xorg-xcursorgen
 version=1.0.8
+release=2
+
 _name=${name/xorg-/}
 makedepends=(xorg-libx11 xorg-libxcursor libpng)
 source=(http://ftp.x.org/pub/individual/app/${_name}-$version.tar.xz)
 
 build=xorg
-
-uptodate() {
-local ext url name LINX
-LYNX="lynx -read_timeout=20 -dump -listonly -nonumbers "
-ext=".tar.bz2"
-url="https://ftp.x.org/archive//individual//app"
-$LYNX $url/?C=M\;O=D|grep "$ext$"|grep "$url/${_name}-"|sed "s@$ext\$@@"|sed "s@$url/${_name}-@@"|head -1
-}
