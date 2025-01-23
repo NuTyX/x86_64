@@ -12,13 +12,11 @@ PKGMK_GROUPS=()
 
 name=lxdm
 version=0.5.3
-release=33
+release=34
 
-runyx_version=20201011
 source=(lxdm-$version-nutyx-2.patch login.png
-	https://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	http://downloads.tuxfamily.org/nutyx/files/lxdm-nutyx-12-beta3.jpg
-	http://downloads.sourceforge.net/$name/$name-$version.tar.xz)
+        https://downloads.tuxfamily.org/nutyx/files/lxdm-nutyx-12-beta3.jpg
+        https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
 
 build() {
 
@@ -63,8 +61,4 @@ $PKG/usr/share/lxdm/themes/Industrial/nutyx.jpg
 # Let keep it as an example
 mv $PKG/etc/lxdm/lxdm.conf{,.example}
 
-# service
-cd ../runyx-${runyx_version}
-make DESTDIR=$PKG install-runyx-$name
-sed -i '/agetty/d' $PKG/lib/init/services/lxdm/run
 }

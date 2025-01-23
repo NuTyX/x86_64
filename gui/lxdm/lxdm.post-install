@@ -1,9 +1,5 @@
 . lib/lsb/init-functions
 
-if [ -f etc/inittab ]; then
-   sed -i "s/^id:[3-5]/id:5/" etc/inittab
-   log_success_msg2  "Init default set to 5 in the ${WARNING}/etc/inittab ${NORMAL}file"
-fi
 
 if [ ! -f etc/lxdm/lxdm.conf ]; then
   echo "[base]
@@ -72,7 +68,7 @@ black=" > etc/lxdm/lxdm.conf
   log_success_msg2  "File ${WARNING}/etc/lxdm/lxdm.conf ${NORMAL} created"
 fi
 
-SERVICE="/lib/systemd/system/lxdm.service"
+SERVICE="/usr/lib/systemd/system/lxdm.service"
 if [ ! -L etc/systemd/system/display-manager.service ];then
   mkdir -p etc/systemd/system
   ln -sf $SERVICE etc/systemd/system/display-manager.service && \
