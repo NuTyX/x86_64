@@ -7,6 +7,8 @@ _name=xclock
 name=xorg-xclock
 alias=(xclock)
 version=1.1.1
+release=2
+
 makedepends=(xorg-libxft xorg-server xorg-libxaw xorg-libxmu)
 source=(http://ftp.x.org/pub/individual//app/${_name}-$version.tar.xz)
 
