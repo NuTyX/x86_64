@@ -8,7 +8,7 @@ makedepends=(xorg-server)
 
 name=freefont-ttf
 version=20120503
-release=3
+release=4
 
 source=(http://ftp.gnu.org/gnu/freefont/$name-$version.zip)
 
@@ -17,12 +17,4 @@ build() {
         install -v -d -m755 $PKG/usr/share/fonts/freefont
         install -v -m644 *.ttf $PKG/usr/share/fonts/freefont/
 
-}
-uptodate() {
-local url ext
-url="http://ftp.gnu.org/gnu/freefont/"
-ext=".zip"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url?C=M\;O=A|grep $name-[0-9]|grep [0-9]$ext$| \
-sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
 }
