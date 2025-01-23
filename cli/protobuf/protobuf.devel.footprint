@@ -14,6 +14,7 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/
 -rw-r--r--	root/root	usr/include/google/protobuf/arenaz_sampler.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/code_generator.h
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/code_generator_lite.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/command_line_interface.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/cpp/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/cpp/enum.h
@@ -79,7 +80,6 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/java/full/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/helpers.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/internal_helpers.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/java_features.pb.h
--rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/kotlin_generator.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/java/lite/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/lite/enum.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/lite/enum_field.h
@@ -98,6 +98,10 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/java/lite/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/names.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/options.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/shared_code_generator.h
+drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/kotlin/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/kotlin/file.h
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/kotlin/generator.h
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/kotlin/message.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/objectivec/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/objectivec/enum.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/objectivec/enum_field.h
@@ -137,6 +141,7 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/rust/accessors/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/accessors/accessors.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/accessors/default_value.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/accessors/generator.h
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/accessors/with_presence.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/context.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/crate_mapping.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/enum.h
@@ -147,6 +152,7 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/rust/accessors/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/relative_path.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/rust_field_type.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/rust_keywords.h
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/rust/upb_helpers.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/scc.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/subprocess.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/versions.h
@@ -371,6 +377,7 @@ drwxr-xr-x	root/root	usr/include/upb/reflection/
 -rw-r--r--	root/root	usr/include/upb/reflection/def.hpp
 -rw-r--r--	root/root	usr/include/upb/reflection/def_pool.h
 -rw-r--r--	root/root	usr/include/upb/reflection/def_type.h
+-rw-r--r--	root/root	usr/include/upb/reflection/descriptor_bootstrap.h
 -rw-r--r--	root/root	usr/include/upb/reflection/enum_def.h
 -rw-r--r--	root/root	usr/include/upb/reflection/enum_reserved_range.h
 -rw-r--r--	root/root	usr/include/upb/reflection/enum_value_def.h
@@ -408,6 +415,7 @@ drwxr-xr-x	root/root	usr/include/upb/util/
 -rw-r--r--	root/root	usr/include/upb/util/def_to_proto.h
 -rw-r--r--	root/root	usr/include/upb/util/required_fields.h
 drwxr-xr-x	root/root	usr/include/upb/wire/
+-rw-r--r--	root/root	usr/include/upb/wire/byte_size.h
 -rw-r--r--	root/root	usr/include/upb/wire/decode.h
 -rw-r--r--	root/root	usr/include/upb/wire/encode.h
 -rw-r--r--	root/root	usr/include/upb/wire/eps_copy_input_stream.h
@@ -416,10 +424,15 @@ drwxr-xr-x	root/root	usr/include/upb/wire/internal/
 -rw-r--r--	root/root	usr/include/upb/wire/reader.h
 -rw-r--r--	root/root	usr/include/upb/wire/types.h
 drwxr-xr-x	root/root	usr/include/upb_generator/
--rw-r--r--	root/root	usr/include/upb_generator/mangle.h
+drwxr-xr-x	root/root	usr/include/upb_generator/common/
+-rw-r--r--	root/root	usr/include/upb_generator/common/names.h
+drwxr-xr-x	root/root	usr/include/upb_generator/minitable/
+-rw-r--r--	root/root	usr/include/upb_generator/minitable/names.h
+-rw-r--r--	root/root	usr/include/upb_generator/minitable/names_internal.h
 -rw-r--r--	root/root	usr/include/utf8_range.h
 -rw-r--r--	root/root	usr/include/utf8_validity.h
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/protobuf-lite.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/protobuf.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/upb.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/utf8_range.pc
