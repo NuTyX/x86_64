@@ -46,8 +46,10 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/flatpak-update.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/flatpak.1.gz
 drwxr-xr-x	root/root	usr/share/man/man5/
--rw-r--r--	root/root	usr/share/man/man5/flatpak-flatpakref.5.gz
--rw-r--r--	root/root	usr/share/man/man5/flatpak-flatpakrepo.5.gz
+lrwxrwxrwx	root/root	usr/share/man/man5/flatpak-flatpakref.5.gz -> flatpakref.5.gz
+lrwxrwxrwx	root/root	usr/share/man/man5/flatpak-flatpakrepo.5.gz -> flatpakrepo.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/flatpak-installation.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/flatpak-metadata.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/flatpak-remote.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/flatpakref.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/flatpakrepo.5.gz

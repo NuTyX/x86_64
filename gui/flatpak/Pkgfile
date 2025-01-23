@@ -3,41 +3,25 @@ url='https://flatpak.org/'
 
 license="LGPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fabienwang,Tnut"
 
 makedepends=(glib libsoup gpgme polkit fuse2 libostree json-glib
-             appstream libseccomp python-parsing)
+             appstream libseccomp python-parsing socat)
 run=(make-ca bubblewrap gnupg)
 
 name=flatpak
-version=1.15.6
-release=4
+version=1.15.91
 
 source=(https://dl.flathub.org/repo/flathub.flatpakrepo
         https://github.com/flatpak/flatpak/releases/download/$version/flatpak-$version.tar.xz)
 
+build=meson
+
 prepare() {
-cd $name-$version
-./autogen.sh
+  localedef -i C -f UTF-8 /usr/lib/locale/C.UTF-8 #Never complain, never explain
 }
 
-build() {
-
-cd $name-$version
-
-./configure --prefix=/usr \
---sysconfdir=/etc \
---localstatedir=/var \
---with-priv-mode=setuid \
---with-system-helper-user=flatpak
-
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-
-make
-
-make DESTDIR=$PKG install
-}
 package() {
 install -Dm644 flathub.flatpakrepo \
 $PKG/etc/flatpak/remotes.d/flathub.flatpakrepo
