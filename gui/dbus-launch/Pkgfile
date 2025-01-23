@@ -9,6 +9,7 @@ makedepends=(systemd expat xorg-libx11)
 name=dbus-launch
 _name=dbus
 version=1.14.10
+release=3
 
 source=(http://dbus.freedesktop.org/releases/dbus/${_name}-$version.tar.xz)
 
