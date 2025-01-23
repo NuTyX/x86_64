@@ -1,19 +1,18 @@
 description="Xorg ati video driver."
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=xorg-xf86-video-ati
-version=19.1.0
-release=2
+version=22.0.0
 
 _name=${name/xorg-/}
 makedepends=(mesa xorg-server)
 
 source=(xorg-xf86-video-ati-upstream_fixes-1.patch
-        http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.bz2)
+        http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.xz)
 
 prepare() {
 cd ${_name}-$version
-patch -Np1 -i ../xorg-xf86-video-ati-upstream_fixes-1.patch
+#patch -Np1 -i ../xorg-xf86-video-ati-upstream_fixes-1.patch
 }
 
 build=xorg
