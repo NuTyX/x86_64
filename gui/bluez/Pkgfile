@@ -11,13 +11,11 @@ makedepends=(readline dbus libical libvorbis alsa-lib
 
 name=bluez
 version=5.79
-
-runyx_version=20201011
+release=2
 
 PKGMK_GROUPS=(man devel doc)
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	    https://www.kernel.org/pub/linux/bluetooth/$name-$version.tar.xz)
+source=(https://www.kernel.org/pub/linux/bluetooth/$name-$version.tar.xz)
 
 
 build() {
@@ -81,11 +79,4 @@ install -Dm644 COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
 # Obsolet lib
 rm $PKG/usr/lib/libbluetooth.la
 
-# Service
-cd $SRC/runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-bluetooth
-mkdir -p $PKG/etc/sysconfig
-#ln -sv ../sysv/sysconfig services/runyx/
-sed -i 's@${EXTDIR}/@${PKG}/etc/@' services/runyx/Makefile
-make DESTDIR=$PKG install-runyx-bluetooth
 }
