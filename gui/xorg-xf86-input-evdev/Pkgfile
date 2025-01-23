@@ -1,13 +1,13 @@
 description="Xorg evdev input drivers"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 name=xorg-xf86-input-evdev
-version=2.10.6
-release=2
+version=2.11.0
 
 _name=${name/xorg-/}
 makedepends=(mtdev libevdev xorg-server)
-source=(http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.bz2)
+
+source=(http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.xz)
 
 build=xorg
 
