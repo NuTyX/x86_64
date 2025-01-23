@@ -1,0 +1,38 @@
+description='Tinysparql is a low-footprint RDF triple store with a SPARQL 1.1 interface'
+url=' https://download.gnome.org/sources/tinysparql'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(json-glib vala icu libsoup3 python-gobject asciidoc)
+run=()
+
+name=tinysparql
+version=3.8.2
+release=2
+
+source=( https://download.gnome.org/sources/tinysparql/3.8/$name-$version.tar.xz)
+
+prepare() {
+cd $name-$version
+
+mv docs/reference/libtracker-sparql/doc/{Tsparql-3.0,$name-$version} &&
+sed '/docs_name/s/Tsparql-3.0/$name-$version/' \
+    -i docs/reference/libtracker-sparql/meson.build
+}
+
+build() {
+cd $name-$version
+
+mkdir build
+cd    build
+
+    meson setup --prefix /usr \
+    --buildtype  release      \
+    -D man=false              \
+    -D systemd_user_services=false
+
+ninja
+
+DESTDIR=$PKG ninja install
+}
