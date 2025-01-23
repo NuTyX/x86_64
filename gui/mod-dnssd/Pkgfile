@@ -9,7 +9,7 @@ makedepends=(avahi apache libxcrypt)
 _name=mod_dnssd
 name=mod-dnssd
 version=0.6
-release=3
+release=4
 
 source=(http://0pointer.de/lennart/projects/${_name}/${_name}-${version}.tar.gz
         fix_undefined_reference.patch)
