@@ -8,6 +8,7 @@ makedepends=(telepathy-glib libgnome-keyring networkmanager dconf libxslt)
 
 name=telepathy-mission-control
 version=5.16.6
+release=2
 
 source=(http://${name%-*-*}.freedesktop.org/releases/$name/$name-$version.tar.gz)
 
