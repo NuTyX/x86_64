@@ -9,8 +9,7 @@ contributors="Tyrry,Greg,Spiky"
 makedepends=(libxfce4util dbus-glib perl-glib gtk-doc gobject-introspection)
 
 name=xfconf
-version=4.18.3
-release=2
+version=4.20.0
 
 source=(http://archive.xfce.org/src/xfce/${name}/${version%.*}/${name}-$version.tar.bz2)
 
