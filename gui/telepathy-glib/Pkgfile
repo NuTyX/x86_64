@@ -1,16 +1,24 @@
 description="GLib bindings for the Telepathy D-Bus protocol"
 url="http://telepathy.freedesktop.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B, Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
 
 makedepends=(diffutils dbus-glib libxslt)
 run=(gobject-introspection vala)
 
 name=telepathy-glib
 version=0.24.2
+release=2
 
-source=(http://${name%-*}.freedesktop.org/releases/$name/$name-$version.tar.gz)
+source=(http://${name%-*}.freedesktop.org/releases/$name/$name-$version.tar.gz
+        telepathy-glib.patch)
+
+prepare() {
+cd $name-$version
+
+patch -Np1 -i ../telepathy-glib.patch
+}
 
 build() {
 
