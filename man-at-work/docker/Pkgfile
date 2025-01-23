@@ -6,7 +6,7 @@ packager="spiky <spiky@nutyx.org>"
 
 makedepends=(lvm2 btrfs-progs)
 
-run=(start-stop-daemon iptables runc containerd cgroupfs-mount)
+run=(systemd start-stop-daemon iptables runc containerd cgroupfs-mount)
 
 name=docker
 version=20.10.23
@@ -56,11 +56,6 @@ build() {
         install -m 0644 $SRC/man${M}/* $PKG/usr/share/man/man${M}/
     done
 
-    install -D -m 0755 $SRC/$name \
-        $PKG/etc/rc.d/init.d/$name
-    install -D -m 0644 $SRC/$name.conf \
-        $PKG/etc/$name.conf
-
     ln -s containerd $PKG/usr/bin/docker-containerd
     ln -s containerd-shim $PKG/usr/bin/docker-containerd-shim
     ln -s ctr $PKG/usr/bin/docker-containerd-ctr
@@ -73,25 +68,11 @@ build() {
     install -D -m 0644 cli-$version/contrib/completion/bash/docker \
         $PKG/etc/bash_completion.d/docker
 
-    # service
-    install -D -m 0755 $SRC/$name \
-        $PKG/etc/rc.d/init.d/$name
+   mkdir -p $PKG/usr/lib/systemd/system
 
-    for i in 3 4 5
-    do
-      mkdir -p $PKG/etc/rc.d/rc$i.d
-      ln -sv ../init.d/$name $PKG/etc/rc.d/rc$i.d/S45$name
-    done
-    for i in 0 1 6
-    do
-      mkdir -p $PKG/etc/rc.d/rc$i.d
-      ln -sv ../init.d/$name $PKG/etc/rc.d/rc$i.d/K10$name
-    done
-
-   mkdir -p $PKG/lib/systemd/system
    install -Dm644  moby-$version/contrib/init/systemd/docker.service \
-     $PKG/lib/systemd/system/docker.service
+     $PKG/usr/lib/systemd/system/docker.service
    install -Dm644  moby-$version/contrib/init/systemd/docker.socket \
-     $PKG/lib/systemd/system/docker.socket
+     $PKG/usr/lib/systemd/system/docker.socket
 
 }
