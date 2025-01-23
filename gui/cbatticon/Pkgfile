@@ -9,6 +9,7 @@ makedepends=(gtk3 libnotify git)
 
 name=cbatticon
 version=1.6.13
+release=2
 
 prepare() {
   git clone $url
