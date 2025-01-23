@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/NetworkManager-1.50.0/
-drwxr-xr-x	root/root	usr/share/doc/NetworkManager-1.50.0/examples/
--rw-r--r--	root/root	usr/share/doc/NetworkManager-1.50.0/examples/server.conf
+drwxr-xr-x	root/root	usr/share/doc/NetworkManager-1.51.4/
+drwxr-xr-x	root/root	usr/share/doc/NetworkManager-1.51.4/examples/
+-rw-r--r--	root/root	usr/share/doc/NetworkManager-1.51.4/examples/server.conf
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/NetworkManager/
@@ -29,6 +29,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/NetworkManager/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.Hsr.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.IPTunnel.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.Infiniband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.Ipvlan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.Loopback.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.Lowpan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/gdbus-org.freedesktop.NetworkManager.Device.Macsec.html
@@ -70,7 +71,6 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/NetworkManager/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/left.png
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/license.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/manpages.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/nm-cloud-setup.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/nm-dbus-types.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/nm-initrd-generator.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/nm-online.html
@@ -125,6 +125,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/NetworkManager/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-ip-tunnel.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-ipv4.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-ipv6.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-ipvlan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-link.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-loopback.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/NetworkManager/settings-macsec.html
@@ -179,6 +180,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/libnm/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceHsr.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceIPTunnel.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceInfiniband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceIpvlan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceLoopback.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceMacsec.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMDeviceMacvlan.html
@@ -227,6 +229,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/libnm/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingIPConfig.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingIPTunnel.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingInfiniband.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingIpvlan.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingLink.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingLoopback.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/libnm/NMSettingMacsec.html

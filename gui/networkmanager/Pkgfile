@@ -17,14 +17,14 @@ alias=(NetworkManager)
 _name=NetworkManager
 
 name=networkmanager
-version=1.50.0
-release=2
+version=1.51.4
 
-runyx_version=20201011
+source=(https://download.gnome.org/sources/$_name/${version%.*}/$_name-$version.tar.xz)
 
-source=(http://download.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	https://download.gnome.org/sources/$_name/${version:0:4}/$_name-$version.tar.xz)
-
+prepare() {
+ cd ${_name}-$version
+ grep -rl '^#!.*python$' | xargs sed -i '1s/python/&3/'
+}
 build() {
 
 mkdir build && cd build
@@ -42,8 +42,10 @@ meson --prefix        /usr       \
       -Dovs=false                \
       -Dppp=false                \
       -Dmodem_manager=false      \
+      -Dnm_cloud_setup=false     \
       -Ddocs=true                \
-      -Dsystemdsystemunitdir=/lib/systemd/system \
+      -Dsystemdsystemunitdir=no  \
+      -Dsystemd_journal=false    \
       -Dvapi=true                \
       ../${_name}-$version
 ninja
@@ -77,17 +79,4 @@ polkit.addRule(function(action, subject) {
 });
 EOF
 
-# Runit service
-cd ../runyx-${runyx_version}
-make DESTDIR=$PKG install-runyx-networkmanager
-}
-
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/${_name}"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
 }
