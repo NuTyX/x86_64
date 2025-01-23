@@ -1,14 +1,14 @@
 description='database of photographic lenses and a library that allows advanced access to the database'
 url='https://lensfun.github.io/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(cmake glib libpng doxygen python-docutils)
 
 name=lensfun
 version=0.3.4
-release=2
+release=3
 
 source=(https://github.com/lensfun/lensfun/archive/v$version/$name-$version.tar.gz
 	python.patch
