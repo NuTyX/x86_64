@@ -12,7 +12,7 @@ _name="python-dbus"
 alias=(${_name})
 
 version=1.3.2
-release=2
+release=3
 
 _name=dbus-python
 alias=(dbus-python)
@@ -40,11 +40,4 @@ build() {
 #rm $PKG/usr/lib/python3.12/site-packages/_dbus_bindings.la
 #rm $PKG/usr/lib/python3.12/site-packages/_dbus_glib_bindings.la
 
-}
-uptodate() {
-local url ext
-ext=".tar.gz"
-url="https://dbus.freedesktop.org/releases/dbus-python"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep $name-[0-9]|grep $ext$|head -1|sed "s@$url/$name-@@"|sed "s/$ext//"
 }
