@@ -8,6 +8,7 @@ makedepends=(intltool glib gobject-introspection)
 
 name=gnome-menus
 version=3.36.0
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
