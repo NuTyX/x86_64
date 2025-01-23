@@ -1,17 +1,17 @@
 description="Accessing the list of user accounts and information attached to those accounts." 
 url="http://www.freedesktop.org/wiki/Software/AccountsService/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierrei,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierrei,Jayce,Spiky"
 
 makedepends=(meson ninja xmlto libxslt polkit libxcrypt
-             elogind gobject-introspection vala)
+             gobject-introspection vala)
 
 set=(gnome kde6)
 
 name=accountsservice
 version=23.13.9
-release=4
+release=5
 
 source=(http://www.freedesktop.org/software/$name/$name-$version.tar.xz)
 
@@ -32,7 +32,6 @@ mkdir build
 cd    build
 meson --prefix=/usr             \
       -Dadmin_group=adm         \
-      -Delogind=true            \
       ..
 
 grep 'print_indent'     ../subprojects/mocklibc-1.0/src/netgroup.c \
