@@ -10,12 +10,12 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xmlmerge
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/gwengui-cpp-5.10/
--rw-r--r--	root/root	usr/lib/cmake/gwengui-cpp-5.10/gwengui-cpp-config-version.cmake
--rw-r--r--	root/root	usr/lib/cmake/gwengui-cpp-5.10/gwengui-cpp-config.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/gwenhywfar-5.10/
--rw-r--r--	root/root	usr/lib/cmake/gwenhywfar-5.10/gwenhywfar-config-version.cmake
--rw-r--r--	root/root	usr/lib/cmake/gwenhywfar-5.10/gwenhywfar-config.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/gwengui-cpp-5.12/
+-rw-r--r--	root/root	usr/lib/cmake/gwengui-cpp-5.12/gwengui-cpp-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gwengui-cpp-5.12/gwengui-cpp-config.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/gwenhywfar-5.12/
+-rw-r--r--	root/root	usr/lib/cmake/gwenhywfar-5.12/gwenhywfar-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gwenhywfar-5.12/gwenhywfar-config.cmake
 drwxr-xr-x	root/root	usr/lib/gwenhywfar/
 drwxr-xr-x	root/root	usr/lib/gwenhywfar/plugins/
 drwxr-xr-x	root/root	usr/lib/gwenhywfar/plugins/79/
@@ -38,15 +38,15 @@ lrwxrwxrwx	root/root	usr/lib/gwenhywfar/plugins/79/dbio/xmldb.so -> xmldb.so.0.0
 lrwxrwxrwx	root/root	usr/lib/gwenhywfar/plugins/79/dbio/xmldb.so.0 -> xmldb.so.0.0.1
 -rwxr-xr-x	root/root	usr/lib/gwenhywfar/plugins/79/dbio/xmldb.so.0.0.1
 -rw-r--r--	root/root	usr/lib/gwenhywfar/plugins/79/dbio/xmldb.xml
-lrwxrwxrwx	root/root	usr/lib/libgwengui-cpp.so -> libgwengui-cpp.so.79.10.2
-lrwxrwxrwx	root/root	usr/lib/libgwengui-cpp.so.79 -> libgwengui-cpp.so.79.10.2
--rwxr-xr-x	root/root	usr/lib/libgwengui-cpp.so.79.10.2
-lrwxrwxrwx	root/root	usr/lib/libgwengui-gtk3.so -> libgwengui-gtk3.so.79.10.2
-lrwxrwxrwx	root/root	usr/lib/libgwengui-gtk3.so.79 -> libgwengui-gtk3.so.79.10.2
--rwxr-xr-x	root/root	usr/lib/libgwengui-gtk3.so.79.10.2
-lrwxrwxrwx	root/root	usr/lib/libgwenhywfar.so -> libgwenhywfar.so.79.10.2
-lrwxrwxrwx	root/root	usr/lib/libgwenhywfar.so.79 -> libgwenhywfar.so.79.10.2
--rwxr-xr-x	root/root	usr/lib/libgwenhywfar.so.79.10.2
+lrwxrwxrwx	root/root	usr/lib/libgwengui-cpp.so -> libgwengui-cpp.so.79.12.0
+lrwxrwxrwx	root/root	usr/lib/libgwengui-cpp.so.79 -> libgwengui-cpp.so.79.12.0
+-rwxr-xr-x	root/root	usr/lib/libgwengui-cpp.so.79.12.0
+lrwxrwxrwx	root/root	usr/lib/libgwengui-gtk3.so -> libgwengui-gtk3.so.79.12.0
+lrwxrwxrwx	root/root	usr/lib/libgwengui-gtk3.so.79 -> libgwengui-gtk3.so.79.12.0
+-rwxr-xr-x	root/root	usr/lib/libgwengui-gtk3.so.79.12.0
+lrwxrwxrwx	root/root	usr/lib/libgwenhywfar.so -> libgwenhywfar.so.79.12.0
+lrwxrwxrwx	root/root	usr/lib/libgwenhywfar.so.79 -> libgwenhywfar.so.79.12.0
+-rwxr-xr-x	root/root	usr/lib/libgwenhywfar.so.79.12.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gwenhywfar.m4
@@ -65,6 +65,7 @@ drwxr-xr-x	root/root	usr/share/gwenhywfar/gwenbuild/
 drwxr-xr-x	root/root	usr/share/gwenhywfar/gwenbuild/builders/
 drwxr-xr-x	root/root	usr/share/gwenhywfar/gwenbuild/builders/posix/
 -rw-r--r--	root/root	usr/share/gwenhywfar/gwenbuild/builders/posix/app.gwb
+-rw-r--r--	root/root	usr/share/gwenhywfar/gwenbuild/builders/posix/avrhexfile.gwb
 -rw-r--r--	root/root	usr/share/gwenhywfar/gwenbuild/builders/posix/cbuilder.gwb
 -rw-r--r--	root/root	usr/share/gwenhywfar/gwenbuild/builders/posix/cxxapp.gwb
 -rw-r--r--	root/root	usr/share/gwenhywfar/gwenbuild/builders/posix/cxxbuilder.gwb
@@ -104,6 +105,7 @@ drwxr-xr-x	root/root	usr/share/gwenhywfar/typemaker2/c/
 -rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_param_tree.tm2
 -rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_stringlist2.tm2
 -rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_time.tm2
+-rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_timestamp.tm2
 -rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_xmlnode.tm2
 -rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_xmlnode_list.tm2
 -rw-r--r--	root/root	usr/share/gwenhywfar/typemaker2/c/gwen_xmlnode_list2.tm2

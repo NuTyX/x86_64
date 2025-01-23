@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/include/gwenhywfar5/gwenhywfar/
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/bindata.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/buffer.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/cgui.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/condvar.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/configmgr.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/configmgr_be.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/cryptalgo.h
@@ -41,6 +42,13 @@ drwxr-xr-x	root/root	usr/include/gwenhywfar5/gwenhywfar/
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/dialog_be.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/directory.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endianfns.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint_ipc.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint_msgio.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint_multilayer.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint_multilayer_p.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint_tcpc.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/endpoint_tcpd.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/error.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/fastbuffer.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/fslock.h
@@ -68,6 +76,9 @@ drwxr-xr-x	root/root	usr/include/gwenhywfar5/gwenhywfar/
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/inetaddr.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/inetsocket.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/inherit.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/json.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/json_dump.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/json_read.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/libloader.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/list.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/list1.h
@@ -81,6 +92,8 @@ drwxr-xr-x	root/root	usr/include/gwenhywfar5/gwenhywfar/
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/memory.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/misc.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/misc2.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/msg.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/msg_ipc.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/msgengine.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/multicache.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/mutex.h
@@ -95,8 +108,10 @@ drwxr-xr-x	root/root	usr/include/gwenhywfar5/gwenhywfar/
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/pathmanager.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/plugin.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/plugindescr.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/portable_endian.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/process.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/refptr.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/request.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/ringbuffer.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/sar.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/sighead.h
@@ -120,6 +135,7 @@ drwxr-xr-x	root/root	usr/include/gwenhywfar5/gwenhywfar/
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/testmodule.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/text.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/threadlocaldata.h
+-rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/timestamp.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/tlv.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/tree.h
 -rw-r--r--	root/root	usr/include/gwenhywfar5/gwenhywfar/tree2.h
