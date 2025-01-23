@@ -1,25 +1,16 @@
 description="The libgudev package contains GObject bindings for libudev."
-url="http://www.codeforge.com/s/0/libgudev"
+url="https://www.codeforge.com/s/0/libgudev"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
-makedepends=(meson ninja eudev glib gobject-introspection gtk-doc)
+makedepends=(systemd meson ninja glib gobject-introspection gtk-doc)
 
 name=libgudev
 version=238
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/libgudev/$version/libgudev-$version.tar.xz)
 
 build=meson
 
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/$name"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
-}
