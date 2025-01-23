@@ -1,13 +1,14 @@
 description="Text document format for short documents, articles, books and UNIX man pages"
-url="http://www.methods.co.nz/asciidoc/"
+url="https://asciidoc.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Alienus,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Remy,Spiky"
 
 makedepends=(autoconf docbook-xsl libxslt python)
 
 name=asciidoc
 version=10.2.1
+release=2
 
 source=(https://github.com/${name}/${name}-py3/archive/$version/$name-$version.tar.gz)
 
