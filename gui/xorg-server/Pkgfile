@@ -13,7 +13,7 @@ makedepends=(meson ninja meson libtirpc libepoxy libxcvt mesa
              xorg-xkeyboard-config wayland)
 
 name=xorg-server
-version=21.1.14
+version=21.1.15
 
 source=(xorg-server-21.1.13-tearfree_backport-2.patch
 	https://ftp.x.org/pub/individual/xserver/$name-$version.tar.xz)
