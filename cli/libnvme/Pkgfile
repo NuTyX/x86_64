@@ -3,13 +3,14 @@ url='https://github.com/linux-nvme/libnvme'
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(dbus json-c keyutils swig)
 
 name=libnvme
 version=1.11.1
+release=2
 
 source=(https://github.com/linux-nvme/$name/archive/refs/tags/v${version}/$name-$version.tar.gz)
 
