@@ -6,7 +6,7 @@ contributors="Fanch,Greg,Tnut"
 
 name=tinyxml
 version=2.6.2
-release=3
+release=4
 
 source=(http://download.sourceforge.net/project/$name/$name/$version/${name}_${version//./_}.zip \
         entity.patch $name-use-stl.patch)
