@@ -1,9 +1,3 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/canberra-system-bootup.service
--rw-r--r--	root/root	lib/systemd/system/canberra-system-shutdown-reboot.service
--rw-r--r--	root/root	lib/systemd/system/canberra-system-shutdown.service
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/canberra-boot
@@ -34,6 +28,11 @@ lrwxrwxrwx	root/root	usr/lib/libcanberra-gtk3.so.0 -> libcanberra-gtk3.so.0.1.9
 lrwxrwxrwx	root/root	usr/lib/libcanberra.so -> libcanberra.so.0.2.5
 lrwxrwxrwx	root/root	usr/lib/libcanberra.so.0 -> libcanberra.so.0.2.5
 -rwxr-xr-x	root/root	usr/lib/libcanberra.so.0.2.5
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/canberra-system-bootup.service
+-rw-r--r--	root/root	usr/lib/systemd/system/canberra-system-shutdown-reboot.service
+-rw-r--r--	root/root	usr/lib/systemd/system/canberra-system-shutdown.service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gdm/
 drwxr-xr-x	root/root	usr/share/gdm/autostart/
