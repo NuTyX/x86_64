@@ -1,15 +1,15 @@
 description="Moka is a stylized Linux desktop icon set, designed to be clear, simple and consistent."
 url="https://github.com/moka-project/moka-icon-theme"
 
-contributors="Jayce"
-packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(faba-icon-theme faba-mono-icons meson ninja)
 run=(gtk-update-icon-cache)
 
 name=moka-icon-theme
 version=5.4.0
-release=2
+release=3
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/snwh/$name/archive/v$version.tar.gz)
