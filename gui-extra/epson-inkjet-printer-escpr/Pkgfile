@@ -4,17 +4,27 @@ url="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre B, tnut"
 
-makedepends=(cups ghostscript)
+makedepends=(autoconf cups ghostscript)
 
 name=epson-inkjet-printer-escpr
-version=1.7.9
+version=1.8.6
 
-source=(https://download3.ebz.epson.net/dsc/f/03/00/12/50/95/322b8d6b915ab85add33d41f04ba5130866aadbe/$name-$version-1lsb3.2.tar.gz
+source=(https://download3.ebz.epson.net/dsc/f/03/00/16/21/79/6d53e6ec3f8c1e55733eb7860e992a425883bf88/epson-inkjet-printer-escpr-1.8.6-1.src.rpm
         bug_x86_64.patch)
+
+prepare() {
+cd $SRC
+tar xzf $name-$version-1.tar.gz
+
+cd $name-$version
+  autoreconf -vif
+}
 
 build() {
   cd $name-$version
-patch -Np1 -i ../bug_x86_64.patch
+#patch -Np1 -i ../bug_x86_64.patch
+
+CFLAGS="${CFLAGS} -Wno-implicit-function-declaration"
   ./configure --prefix=/usr \
               --with-cupsfilterdir=/usr/lib/cups/filter \
               --with-cupsppddir=/usr/share/ppd
