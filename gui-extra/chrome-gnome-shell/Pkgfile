@@ -1,8 +1,8 @@
 description="Native browser connector for integration with extensions.gnome.org"
 url="https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(cmake jq git gnome-shell)
 run=(python-requests python-gobject)
@@ -11,7 +11,7 @@ set=(gnome)
 
 name=chrome-gnome-shell
 version=10.1
-release=4
+release=5
 
 source=(https://gitlab.gnome.org/GNOME/chrome-gnome-shell/-/archive/v${version}/$name-v${version}.tar.gz)
 
