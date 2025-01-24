@@ -12,6 +12,7 @@ drwxr-xr-x	root/root	usr/lib/aisleriot/guile/3.0/aisleriot/
 -rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/athena.go
 -rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/auld-lang-syne.go
 -rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/aunt-mary.go
+-rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/australian-patience.go
 -rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/backbone.go
 -rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/bakers-dozen.go
 -rw-r--r--	root/root	usr/lib/aisleriot/guile/3.0/bakers-game.go
@@ -122,6 +123,7 @@ drwxr-xr-x	root/root	usr/share/aisleriot/cards/
 -rw-r--r--	root/root	usr/share/aisleriot/cards/ornamental.svgz
 -rw-r--r--	root/root	usr/share/aisleriot/cards/paris.svgz
 -rw-r--r--	root/root	usr/share/aisleriot/cards/pixelangelo.svgz
+-rw-r--r--	root/root	usr/share/aisleriot/cards/pixelangelo_compact.svgz
 -rw-r--r--	root/root	usr/share/aisleriot/cards/plastic.svgz
 -rw-r--r--	root/root	usr/share/aisleriot/cards/simplistic.svgz
 -rw-r--r--	root/root	usr/share/aisleriot/cards/swiss-XVII.svgz
@@ -168,6 +170,7 @@ drwxr-xr-x	root/root	usr/share/help/C/aisleriot/
 -rw-r--r--	root/root	usr/share/help/C/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/C/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/C/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/C/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/C/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/C/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/C/aisleriot/bakers_game.xml
@@ -266,6 +269,7 @@ drwxr-xr-x	root/root	usr/share/help/ca/aisleriot/
 -rw-r--r--	root/root	usr/share/help/ca/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/ca/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/ca/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/ca/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/ca/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/ca/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/ca/aisleriot/bakers_game.xml
@@ -364,6 +368,7 @@ drwxr-xr-x	root/root	usr/share/help/cs/aisleriot/
 -rw-r--r--	root/root	usr/share/help/cs/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/cs/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/cs/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/cs/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/cs/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/cs/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/cs/aisleriot/bakers_game.xml
@@ -462,6 +467,7 @@ drwxr-xr-x	root/root	usr/share/help/de/aisleriot/
 -rw-r--r--	root/root	usr/share/help/de/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/de/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/de/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/de/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/de/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/de/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/de/aisleriot/bakers_game.xml
@@ -560,6 +566,7 @@ drwxr-xr-x	root/root	usr/share/help/el/aisleriot/
 -rw-r--r--	root/root	usr/share/help/el/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/el/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/el/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/el/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/el/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/el/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/el/aisleriot/bakers_game.xml
@@ -658,6 +665,7 @@ drwxr-xr-x	root/root	usr/share/help/en_GB/aisleriot/
 -rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/en_GB/aisleriot/bakers_game.xml
@@ -756,6 +764,7 @@ drwxr-xr-x	root/root	usr/share/help/es/aisleriot/
 -rw-r--r--	root/root	usr/share/help/es/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/es/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/es/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/es/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/es/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/es/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/es/aisleriot/bakers_game.xml
@@ -854,6 +863,7 @@ drwxr-xr-x	root/root	usr/share/help/eu/aisleriot/
 -rw-r--r--	root/root	usr/share/help/eu/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/eu/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/eu/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/eu/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/eu/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/eu/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/eu/aisleriot/bakers_game.xml
@@ -952,6 +962,7 @@ drwxr-xr-x	root/root	usr/share/help/fr/aisleriot/
 -rw-r--r--	root/root	usr/share/help/fr/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/fr/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/fr/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/fr/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/fr/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/fr/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/fr/aisleriot/bakers_game.xml
@@ -1050,6 +1061,7 @@ drwxr-xr-x	root/root	usr/share/help/gl/aisleriot/
 -rw-r--r--	root/root	usr/share/help/gl/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/gl/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/gl/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/gl/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/gl/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/gl/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/gl/aisleriot/bakers_game.xml
@@ -1148,6 +1160,7 @@ drwxr-xr-x	root/root	usr/share/help/hu/aisleriot/
 -rw-r--r--	root/root	usr/share/help/hu/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/hu/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/hu/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/hu/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/hu/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/hu/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/hu/aisleriot/bakers_game.xml
@@ -1246,6 +1259,7 @@ drwxr-xr-x	root/root	usr/share/help/id/aisleriot/
 -rw-r--r--	root/root	usr/share/help/id/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/id/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/id/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/id/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/id/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/id/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/id/aisleriot/bakers_game.xml
@@ -1344,6 +1358,7 @@ drwxr-xr-x	root/root	usr/share/help/oc/aisleriot/
 -rw-r--r--	root/root	usr/share/help/oc/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/oc/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/oc/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/oc/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/oc/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/oc/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/oc/aisleriot/bakers_game.xml
@@ -1442,6 +1457,7 @@ drwxr-xr-x	root/root	usr/share/help/pt_BR/aisleriot/
 -rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/pt_BR/aisleriot/bakers_game.xml
@@ -1540,6 +1556,7 @@ drwxr-xr-x	root/root	usr/share/help/ru/aisleriot/
 -rw-r--r--	root/root	usr/share/help/ru/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/ru/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/ru/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/ru/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/ru/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/ru/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/ru/aisleriot/bakers_game.xml
@@ -1638,6 +1655,7 @@ drwxr-xr-x	root/root	usr/share/help/sl/aisleriot/
 -rw-r--r--	root/root	usr/share/help/sl/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/sl/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/sl/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/sl/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/sl/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/sl/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/sl/aisleriot/bakers_game.xml
@@ -1736,6 +1754,7 @@ drwxr-xr-x	root/root	usr/share/help/sr/aisleriot/
 -rw-r--r--	root/root	usr/share/help/sr/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/sr/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/sr/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/sr/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/sr/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/sr/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/sr/aisleriot/bakers_game.xml
@@ -1834,6 +1853,7 @@ drwxr-xr-x	root/root	usr/share/help/sr@latin/aisleriot/
 -rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/sr@latin/aisleriot/bakers_game.xml
@@ -1932,6 +1952,7 @@ drwxr-xr-x	root/root	usr/share/help/sv/aisleriot/
 -rw-r--r--	root/root	usr/share/help/sv/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/sv/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/sv/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/sv/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/sv/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/sv/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/sv/aisleriot/bakers_game.xml
@@ -2030,6 +2051,7 @@ drwxr-xr-x	root/root	usr/share/help/uk/aisleriot/
 -rw-r--r--	root/root	usr/share/help/uk/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/uk/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/uk/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/uk/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/uk/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/uk/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/uk/aisleriot/bakers_game.xml
@@ -2128,6 +2150,7 @@ drwxr-xr-x	root/root	usr/share/help/zh_CN/aisleriot/
 -rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/athena.xml
 -rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/auld_lang_syne.xml
 -rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/aunt_mary.xml
+-rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/australian_patience.xml
 -rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/backbone.xml
 -rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/bakers_dozen.xml
 -rw-r--r--	root/root	usr/share/help/zh_CN/aisleriot/bakers_game.xml
