@@ -3,19 +3,19 @@ url="https://apps.gnome.org/Nautilus"
 
 license="GPL-3.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Fabienwang,Spicy"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Fabienwang,Spicy,Tnut"
 
-run=(desktop-file-utils gtk-update-icon-cache tracker-miners
-     shared-mime-info libportal gtk4)
-makedepends=(gnome-autoar libnotify gnome-desktop tracker gvfs
+run=(desktop-file-utils gtk-update-icon-cache
+     shared-mime-info libportal gtk4 localsearch)
+makedepends=(gnome-autoar libnotify gnome-desktop gvfs
              gobject-introspection exempi libexif libgexiv2
              libcloudproviders meson gtk-doc libhandy bubblewrap libadwaita)
 set=(gnome budgie)
 
 name=nautilus
-version=46.2
-release=2
+version=47.1
+release=3
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
