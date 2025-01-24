@@ -13,12 +13,6 @@ drwxr-xr-x	root/root	etc/gdm/PreSession/
 -rwxr-xr-x	root/root	etc/gdm/PreSession/Default
 -rwxr-xr-x	root/root	etc/gdm/Xsession
 -rw-r--r--	root/root	etc/gdm/custom.conf
-drwxr-xr-x	root/root	etc/pam.d/
--rw-r--r--	root/root	etc/pam.d/gdm-autologin
--rw-r--r--	root/root	etc/pam.d/gdm-fingerprint
--rw-r--r--	root/root	etc/pam.d/gdm-launch-environment
--rw-r--r--	root/root	etc/pam.d/gdm-password
--rw-r--r--	root/root	etc/pam.d/gdm-smartcard
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gdm-config
@@ -31,6 +25,12 @@ lrwxrwxrwx	root/root	usr/lib/libgdm.so.1 -> libgdm.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libgdm.so.1.0.0
 drwxr-xr-x	root/root	usr/lib/security/
 -rwxr-xr-x	root/root	usr/lib/security/pam_gdm.so
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/gdm.service
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+drwxr-xr-x	root/root	usr/lib/systemd/user/gnome-session@gnome-login.target.d/
+-rw-r--r--	root/root	usr/lib/systemd/user/gnome-session@gnome-login.target.d/session.conf
 drwxr-xr-x	root/root	usr/lib/udev/
 drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/61-gdm.rules
