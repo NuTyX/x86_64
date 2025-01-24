@@ -3,8 +3,8 @@ url="https://www.gnome.org/"
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Fanch,Rems,Spiky,Skythrew"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Fanch,Rems,Skythrew,Tnut"
 
 makedepends=(dconf gtk3 vte nautilus gnome-shell yelp-tools)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
@@ -12,8 +12,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 set=(cinnamon)
 
 name=gnome-terminal
-version=3.54.1
-release=1
+version=3.54.2
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
