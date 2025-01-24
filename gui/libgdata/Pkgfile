@@ -4,12 +4,24 @@ url="http://live.gnome.org/libgdata"
 packager="spiky <spiky@nutyx.org>"
 contributors="Fanch, Jayce, tnut"
 
-makedepends=(liboauth libsoup json-glib gnome-online-accounts gcr uhttpmock gtk-doc
-             git gobject-introspection)
+makedepends=(liboauth libsoup json-glib gnome-online-accounts gcr gtk-doc
+             git gobject-introspection vala)
 
 name=libgdata
 version=0.18.1
+release=2
 
 source=(https://ftp.gnome.org/pub/GNOME/sources/$name/${version%.*}/$name-$version.tar.xz)
 
-build=meson
+build() {
+
+    meson setup --prefix /usr \
+    --buildtype  release      \
+    -D gtk_doc=false          \
+    -D always_build_tests=false \
+    $name-$version            builddir
+
+    meson compile -C          builddir
+
+DESTDIR=$PKG meson install -C builddir
+}
