@@ -1,8 +1,8 @@
 description='MacOS Mojave icon pack by zayronxio'
 url='https://github.com/zayronxio/Mojave-CT'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(git)
 run=(gtk-update-icon-cache hicolor-icon-theme)
@@ -10,6 +10,7 @@ set=()
 
 name=mojave-ct-icon-theme
 version=51da5e4
+release=2
 
 source=()
 
