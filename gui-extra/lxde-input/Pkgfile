@@ -1,8 +1,8 @@
 description="Mouse and Keyboard config tools for lxde"
 url="http://lxde.org/"
 
-contributors="geantbrun, Greg"
-packager="Tnut <tnut@nutyx.org>"
+contributors="Geantbrun,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gtk3 intltool)
 
@@ -12,7 +12,7 @@ name=lxde-input
 alias=(lxinput)
 _name=lxinput
 version=0.3.5
-release=3
+release=4
  
 source=(http://downloads.sourceforge.net/lxde/${_name}-$version.tar.xz)
 
