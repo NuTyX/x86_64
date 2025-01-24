@@ -1,33 +1,40 @@
 description='Desktop publishing software'
-url='http://www.scribus.net'
+url='https://www.scribus.net'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
-makedepends=(icu cmake boost aspell cups qttools qtdeclarative gnutls kerberos podofo librevenge
-             boost ghostscript lcms2 libxml2 cairo poppler)
+makedepends=(icu cmake boost aspell cups qttools qtdeclarative gnutls kerberos
+             podofo librevenge boost ghostscript lcms2 libxml2 cairo poppler)
+
 run=(shared-mime-info desktop-file-utils)
 
 name=scribus
 version=1.6.2
-release=4
+release=5
 
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
+source=($name-$version-consolidate-1.patch
+        https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
 
+prepare() {
+    cd $name-$version
+    patch -Np1 -i ../$name-$version-consolidate-1.patch
+}
 build() {
-	cd $name-$version
-	mkdir build
-	cd build
-	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_SKIP_RPATH=ON \
-                -DWANT_CPP17=ON \
-                -DLIB_SUFFIX=""
-	make
-	make DESTDIR=$PKG install
-	ln -sv /usr/share/scribus/icons/1_5_0/lab.png $PKG/usr/share/scribus/icons/1_5_1/lab.png
-        ln -sv /usr/share/scribus/icons/1_5_0/spot.png $PKG/usr/share/scribus/icons/1_5_1/spot.png
-        ln -sv /usr/share/scribus/icons/1_5_0/register.png $PKG/usr/share/scribus/icons/1_5_1/register.png
-        install -Dm644 ../scribus.desktop \
-	$PKG/usr/share/applications/scribus.desktop
+    cd $name-$version
+    mkdir build
+    cd build
+    cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_SKIP_RPATH=ON \
+        -DWANT_CPP17=ON \
+        -DLIB_SUFFIX=""
+
+    make
+    make DESTDIR=$PKG install
+    ln -sv /usr/share/scribus/icons/1_5_0/lab.png $PKG/usr/share/scribus/icons/1_5_1/lab.png
+    ln -sv /usr/share/scribus/icons/1_5_0/spot.png $PKG/usr/share/scribus/icons/1_5_1/spot.png
+    ln -sv /usr/share/scribus/icons/1_5_0/register.png $PKG/usr/share/scribus/icons/1_5_1/register.png
+    install -Dm644 ../scribus.desktop \
+        $PKG/usr/share/applications/scribus.desktop
         
 }
