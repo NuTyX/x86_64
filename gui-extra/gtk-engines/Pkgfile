@@ -1,14 +1,14 @@
 description="The GTK Engines package contains eight themes/engines and two additional engines for GTK2"
 url="https://download.gnome.org/sources/gtk-engines"
 
-contributors="Berlius,Greg,Spiky"
-packager="Tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gtk2 gtk3 lua gnome-common)
 
 name=gtk-engines
 version=2.21.0
-release=2
+release=3
 
 _commit=e23eb81ade8c815dcd4da026ab7a2b7307a4f326
 
