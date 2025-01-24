@@ -1,0 +1,46 @@
+makedepends=(qtbase qttools cmake llvm)
+
+packager="spiky <spiky@nutyx.org>"
+maintainer="Rems"
+
+url="http://cppcheck.sourceforge.net/"
+description="A tool for static C/C++ code analysis"
+
+name=cppcheck
+version=2.16.0
+
+
+makedepends=(qt6-base qt6-tools cmake llvm)
+
+PKGMK_KEEP_SOURCES="no"
+
+source=(https://github.com/danmar/cppcheck/archive/${version}.tar.gz
+        translations-location.patch)
+
+prepare() {
+  cd $name-$version
+  patch -Np1 -i ../translations-location.patch
+}
+build() {
+  cd $name-$version
+  export CXXFLAGS+=" -DNDEBUG"
+
+  cmake -B build \
+      -S . \
+      -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D USE_MATCHCOMPILER=yes \
+      -D HAVE_RULES=yes \
+      -D BUILD_GUI=yes \
+      -D BUILD_SHARED_LIBS:BOOL=OFF \
+      -D FILESDIR=/usr/share/cppcheck \
+      -D USE_QT6=ON
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+
+
+  #Fix location of language files
+  install -vd "${PKG}"/usr/share/cppcheck/cfg/lang
+  mv $PKG/usr/bin/cppcheck_*.qm $PKG/usr/share/cppcheck/cfg/lang/
+}
