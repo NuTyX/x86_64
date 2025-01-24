@@ -5,7 +5,7 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gedit/
 drwxr-xr-x	root/root	usr/lib/gedit/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/gedit/girepository-1.0/Gedit-3.0.typelib
--rwxr-xr-x	root/root	usr/lib/gedit/libgedit-48.so
+-rwxr-xr-x	root/root	usr/lib/gedit/libgedit-48.1.so
 drwxr-xr-x	root/root	usr/lib/gedit/plugins/
 -rw-r--r--	root/root	usr/lib/gedit/plugins/docinfo.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/filebrowser.plugin
@@ -15,29 +15,21 @@ drwxr-xr-x	root/root	usr/lib/gedit/plugins/
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libquickhighlight.so
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libsort.so
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libspell.so
+-rwxr-xr-x	root/root	usr/lib/gedit/plugins/libtextsize.so
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libtime.so
 -rw-r--r--	root/root	usr/lib/gedit/plugins/modelines.plugin
--rw-r--r--	root/root	usr/lib/gedit/plugins/pythonconsole.plugin
-drwxr-xr-x	root/root	usr/lib/gedit/plugins/pythonconsole/
--rw-r--r--	root/root	usr/lib/gedit/plugins/pythonconsole/__init__.py
--rw-r--r--	root/root	usr/lib/gedit/plugins/pythonconsole/config.py
--rw-r--r--	root/root	usr/lib/gedit/plugins/pythonconsole/console.py
 -rw-r--r--	root/root	usr/lib/gedit/plugins/quickhighlight.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/sort.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/spell.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/textsize.plugin
-drwxr-xr-x	root/root	usr/lib/gedit/plugins/textsize/
--rw-r--r--	root/root	usr/lib/gedit/plugins/textsize/__init__.py
--rw-r--r--	root/root	usr/lib/gedit/plugins/textsize/signals.py
--rw-r--r--	root/root	usr/lib/gedit/plugins/textsize/viewactivatable.py
 -rw-r--r--	root/root	usr/lib/gedit/plugins/time.plugin
-drwxr-xr-x	root/root	usr/lib/python3.12/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/gi/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/gi/overrides/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/gi/overrides/Gedit.py
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/gi/overrides/__pycache__/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/gi/overrides/__pycache__/Gedit.cpython-312.pyc
+drwxr-xr-x	root/root	usr/lib/python3.13/
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/gi/
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/gi/overrides/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/gi/overrides/Gedit.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/gi/overrides/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/gi/overrides/__pycache__/Gedit.cpython-313.pyc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.gnome.gedit.desktop
@@ -50,16 +42,12 @@ drwxr-xr-x	root/root	usr/share/gedit/gir-1.0/
 drwxr-xr-x	root/root	usr/share/gedit/plugins/
 drwxr-xr-x	root/root	usr/share/gedit/plugins/modelines/
 -rw-r--r--	root/root	usr/share/gedit/plugins/modelines/language-mappings
-drwxr-xr-x	root/root	usr/share/gedit/plugins/pythonconsole/
-drwxr-xr-x	root/root	usr/share/gedit/plugins/pythonconsole/ui/
--rw-r--r--	root/root	usr/share/gedit/plugins/pythonconsole/ui/config.ui
 drwxr-xr-x	root/root	usr/share/glib-2.0/
 drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.enums.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.filebrowser.enums.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.filebrowser.gschema.xml
--rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.pythonconsole.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.spell.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.time.enums.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.time.gschema.xml
@@ -67,7 +55,6 @@ drwxr-xr-x	root/root	usr/share/help/
 drwxr-xr-x	root/root	usr/share/help/C/
 drwxr-xr-x	root/root	usr/share/help/C/gedit/
 drwxr-xr-x	root/root	usr/share/help/C/gedit/figures/
--rw-r--r--	root/root	usr/share/help/C/gedit/figures/gedit-html-snippet.png
 -rw-r--r--	root/root	usr/share/help/C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-brief-intro.page
@@ -86,13 +73,10 @@ drwxr-xr-x	root/root	usr/share/help/C/gedit/figures/
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-printing.page
@@ -108,7 +92,6 @@ drwxr-xr-x	root/root	usr/share/help/C/gedit/figures/
 drwxr-xr-x	root/root	usr/share/help/ar/
 drwxr-xr-x	root/root	usr/share/help/ar/gedit/
 drwxr-xr-x	root/root	usr/share/help/ar/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-brief-intro.page
@@ -127,13 +110,10 @@ lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-printing.page
@@ -149,9 +129,8 @@ lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/bg/
 drwxr-xr-x	root/root	usr/share/help/bg/gedit/
 drwxr-xr-x	root/root	usr/share/help/bg/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/bg/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-close-file.page
@@ -168,13 +147,10 @@ lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-printing.page
@@ -190,7 +166,6 @@ lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/ca/
 drwxr-xr-x	root/root	usr/share/help/ca/gedit/
 drwxr-xr-x	root/root	usr/share/help/ca/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-brief-intro.page
@@ -209,13 +184,10 @@ lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-printing.page
@@ -231,7 +203,6 @@ lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/cs/
 drwxr-xr-x	root/root	usr/share/help/cs/gedit/
 drwxr-xr-x	root/root	usr/share/help/cs/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-brief-intro.page
@@ -250,13 +221,10 @@ lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-printing.page
@@ -272,9 +240,8 @@ lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/da/
 drwxr-xr-x	root/root	usr/share/help/da/gedit/
 drwxr-xr-x	root/root	usr/share/help/da/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/da/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-close-file.page
@@ -291,13 +258,10 @@ lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-printing.page
@@ -313,9 +277,8 @@ lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/de/
 drwxr-xr-x	root/root	usr/share/help/de/gedit/
 drwxr-xr-x	root/root	usr/share/help/de/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/de/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-close-file.page
@@ -332,13 +295,10 @@ lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-printing.page
@@ -354,9 +314,8 @@ lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/el/
 drwxr-xr-x	root/root	usr/share/help/el/gedit/
 drwxr-xr-x	root/root	usr/share/help/el/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/el/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-close-file.page
@@ -373,13 +332,10 @@ lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-printing.page
@@ -395,7 +351,6 @@ lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/en_GB/
 drwxr-xr-x	root/root	usr/share/help/en_GB/gedit/
 drwxr-xr-x	root/root	usr/share/help/en_GB/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-brief-intro.page
@@ -414,13 +369,10 @@ lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-printing.page
@@ -436,7 +388,6 @@ lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit3-screenshot.png ->
 drwxr-xr-x	root/root	usr/share/help/es/
 drwxr-xr-x	root/root	usr/share/help/es/gedit/
 drwxr-xr-x	root/root	usr/share/help/es/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-brief-intro.page
@@ -455,13 +406,10 @@ lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-printing.page
@@ -477,7 +425,6 @@ lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/eu/
 drwxr-xr-x	root/root	usr/share/help/eu/gedit/
 drwxr-xr-x	root/root	usr/share/help/eu/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-brief-intro.page
@@ -496,13 +443,10 @@ lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-printing.page
@@ -518,7 +462,6 @@ lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/fi/
 drwxr-xr-x	root/root	usr/share/help/fi/gedit/
 drwxr-xr-x	root/root	usr/share/help/fi/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-brief-intro.page
@@ -537,13 +480,10 @@ lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-printing.page
@@ -559,9 +499,8 @@ lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/fr/
 drwxr-xr-x	root/root	usr/share/help/fr/gedit/
 drwxr-xr-x	root/root	usr/share/help/fr/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/fr/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-close-file.page
@@ -578,13 +517,10 @@ lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-printing.page
@@ -600,7 +536,6 @@ lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/gl/
 drwxr-xr-x	root/root	usr/share/help/gl/gedit/
 drwxr-xr-x	root/root	usr/share/help/gl/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-brief-intro.page
@@ -619,13 +554,10 @@ lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-printing.page
@@ -641,9 +573,8 @@ lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/hu/
 drwxr-xr-x	root/root	usr/share/help/hu/gedit/
 drwxr-xr-x	root/root	usr/share/help/hu/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/hu/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-close-file.page
@@ -660,13 +591,10 @@ lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-printing.page
@@ -682,7 +610,6 @@ lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/id/
 drwxr-xr-x	root/root	usr/share/help/id/gedit/
 drwxr-xr-x	root/root	usr/share/help/id/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-brief-intro.page
@@ -701,13 +628,10 @@ lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-printing.page
@@ -723,7 +647,6 @@ lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/it/
 drwxr-xr-x	root/root	usr/share/help/it/gedit/
 drwxr-xr-x	root/root	usr/share/help/it/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-brief-intro.page
@@ -742,13 +665,10 @@ lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-printing.page
@@ -764,7 +684,6 @@ lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/ja/
 drwxr-xr-x	root/root	usr/share/help/ja/gedit/
 drwxr-xr-x	root/root	usr/share/help/ja/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-brief-intro.page
@@ -783,13 +702,10 @@ lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-printing.page
@@ -805,7 +721,6 @@ lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/ko/
 drwxr-xr-x	root/root	usr/share/help/ko/gedit/
 drwxr-xr-x	root/root	usr/share/help/ko/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-brief-intro.page
@@ -824,13 +739,10 @@ lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-printing.page
@@ -846,7 +758,6 @@ lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/lv/
 drwxr-xr-x	root/root	usr/share/help/lv/gedit/
 drwxr-xr-x	root/root	usr/share/help/lv/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-brief-intro.page
@@ -865,13 +776,10 @@ lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-printing.page
@@ -887,7 +795,6 @@ lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/oc/
 drwxr-xr-x	root/root	usr/share/help/oc/gedit/
 drwxr-xr-x	root/root	usr/share/help/oc/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-brief-intro.page
@@ -906,13 +813,10 @@ lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-printing.page
@@ -928,9 +832,8 @@ lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/pl/
 drwxr-xr-x	root/root	usr/share/help/pl/gedit/
 drwxr-xr-x	root/root	usr/share/help/pl/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/pl/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-close-file.page
@@ -947,13 +850,10 @@ lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-printing.page
@@ -969,9 +869,8 @@ lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/pt_BR/
 drwxr-xr-x	root/root	usr/share/help/pt_BR/gedit/
 drwxr-xr-x	root/root	usr/share/help/pt_BR/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/pt_BR/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-close-file.page
@@ -988,13 +887,10 @@ lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-printing.page
@@ -1010,9 +906,8 @@ lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit3-screenshot.png ->
 drwxr-xr-x	root/root	usr/share/help/ro/
 drwxr-xr-x	root/root	usr/share/help/ro/gedit/
 drwxr-xr-x	root/root	usr/share/help/ro/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ro/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-close-file.page
@@ -1029,13 +924,10 @@ lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-printing.page
@@ -1051,7 +943,6 @@ lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/ru/
 drwxr-xr-x	root/root	usr/share/help/ru/gedit/
 drwxr-xr-x	root/root	usr/share/help/ru/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-brief-intro.page
@@ -1070,13 +961,10 @@ lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-printing.page
@@ -1092,7 +980,6 @@ lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/sl/
 drwxr-xr-x	root/root	usr/share/help/sl/gedit/
 drwxr-xr-x	root/root	usr/share/help/sl/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-brief-intro.page
@@ -1111,13 +998,10 @@ lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-printing.page
@@ -1133,9 +1017,8 @@ lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/sv/
 drwxr-xr-x	root/root	usr/share/help/sv/gedit/
 drwxr-xr-x	root/root	usr/share/help/sv/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
-lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/sv/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-brief-intro.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-close-file.page
@@ -1152,13 +1035,10 @@ lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-printing.page
@@ -1174,7 +1054,6 @@ lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/te/
 drwxr-xr-x	root/root	usr/share/help/te/gedit/
 drwxr-xr-x	root/root	usr/share/help/te/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-brief-intro.page
@@ -1193,13 +1072,10 @@ lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-printing.page
@@ -1215,7 +1091,6 @@ lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/th/
 drwxr-xr-x	root/root	usr/share/help/th/gedit/
 drwxr-xr-x	root/root	usr/share/help/th/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-brief-intro.page
@@ -1234,13 +1109,10 @@ lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-printing.page
@@ -1256,7 +1128,6 @@ lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/uk/
 drwxr-xr-x	root/root	usr/share/help/uk/gedit/
 drwxr-xr-x	root/root	usr/share/help/uk/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-brief-intro.page
@@ -1275,13 +1146,10 @@ lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-printing.page
@@ -1297,7 +1165,6 @@ lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit3-screenshot.png -> ..
 drwxr-xr-x	root/root	usr/share/help/zh_CN/
 drwxr-xr-x	root/root	usr/share/help/zh_CN/gedit/
 drwxr-xr-x	root/root	usr/share/help/zh_CN/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-brief-intro.page
@@ -1316,13 +1183,10 @@ lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-printing.page
@@ -1338,7 +1202,6 @@ lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit3-screenshot.png ->
 drwxr-xr-x	root/root	usr/share/help/zh_HK/
 drwxr-xr-x	root/root	usr/share/help/zh_HK/gedit/
 drwxr-xr-x	root/root	usr/share/help/zh_HK/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-brief-intro.page
@@ -1357,13 +1220,10 @@ lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-printing.page
@@ -1379,7 +1239,6 @@ lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit3-screenshot.png ->
 drwxr-xr-x	root/root	usr/share/help/zh_TW/
 drwxr-xr-x	root/root	usr/share/help/zh_TW/gedit/
 drwxr-xr-x	root/root	usr/share/help/zh_TW/gedit/figures/
-lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit-html-snippet.png -> ../../../C/gedit/figures/gedit-html-snippet.png
 lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-brief-intro.page
@@ -1398,13 +1257,10 @@ lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugin-guide.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-doc-stats.page
--rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-external-tools.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-insert-date-time.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-install.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-modelines.page
--rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-pyconsole.page
--rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-snippets.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-sort.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-text-size.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-printing.page
