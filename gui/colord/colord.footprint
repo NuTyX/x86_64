@@ -1,8 +1,3 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/udev/
-drwxr-xr-x	root/root	lib/udev/rules.d/
--rw-r--r--	root/root	lib/udev/rules.d/69-cd-sensors.rules
--rw-r--r--	root/root	lib/udev/rules.d/95-cd-devices.rules
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cd-create-profile
@@ -33,6 +28,10 @@ lrwxrwxrwx	root/root	usr/lib/libcolordprivate.so.2 -> libcolordprivate.so.2.0.5
 lrwxrwxrwx	root/root	usr/lib/libcolorhug.so -> libcolorhug.so.2
 lrwxrwxrwx	root/root	usr/lib/libcolorhug.so.2 -> libcolorhug.so.2.0.5
 -rwxr-xr-x	root/root	usr/lib/libcolorhug.so.2.0.5
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/69-cd-sensors.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/95-cd-devices.rules
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/colord
 -rwxr-xr-x	root/root	usr/libexec/colord-session
