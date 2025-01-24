@@ -136,6 +136,14 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/lirc/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/lirc/client.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/lirc/database.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/lirc/paths.py
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/irexec.service
+-rw-r--r--	root/root	usr/lib/systemd/system/lircd-setup.service
+-rw-r--r--	root/root	usr/lib/systemd/system/lircd-uinput.service
+-rw-r--r--	root/root	usr/lib/systemd/system/lircd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/lircd.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/lircmd.service
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/lirc.conf
 drwxr-xr-x	root/root	usr/share/
