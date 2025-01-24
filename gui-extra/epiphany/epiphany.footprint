@@ -3,11 +3,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/epiphany
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/epiphany/
+-rwxr-xr-x	root/root	usr/lib/epiphany/libephyautofill.so
 -rwxr-xr-x	root/root	usr/lib/epiphany/libephymain.so
 -rwxr-xr-x	root/root	usr/lib/epiphany/libephymisc.so
 -rwxr-xr-x	root/root	usr/lib/epiphany/libephysync.so
 drwxr-xr-x	root/root	usr/lib/epiphany/web-process-extensions/
--rwxr-xr-x	root/root	usr/lib/epiphany/web-process-extensions/libephywebextension.so
 -rwxr-xr-x	root/root	usr/lib/epiphany/web-process-extensions/libephywebprocessextension.so
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/epiphany-search-provider
@@ -141,7 +141,7 @@ drwxr-xr-x	root/root	usr/share/help/da/epiphany/
 -rw-r--r--	root/root	usr/share/help/da/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/da/epiphany/media/
 lrwxrwxrwx	root/root	usr/share/help/da/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/da/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/da/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/da/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/da/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/da/epiphany/pref-css.page
@@ -170,8 +170,8 @@ drwxr-xr-x	root/root	usr/share/help/de/epiphany/
 -rw-r--r--	root/root	usr/share/help/de/epiphany/introduction.page
 -rw-r--r--	root/root	usr/share/help/de/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/de/epiphany/media/
-lrwxrwxrwx	root/root	usr/share/help/de/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/de/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/de/epiphany/media/epiphany-plain-3-36.png
+-rw-r--r--	root/root	usr/share/help/de/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/de/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/de/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/de/epiphany/pref-css.page
@@ -291,7 +291,7 @@ drwxr-xr-x	root/root	usr/share/help/fr/epiphany/
 -rw-r--r--	root/root	usr/share/help/fr/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/fr/epiphany/media/
 lrwxrwxrwx	root/root	usr/share/help/fr/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/fr/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/fr/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/fr/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/fr/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/fr/epiphany/pref-css.page
@@ -440,8 +440,8 @@ drwxr-xr-x	root/root	usr/share/help/it/epiphany/
 -rw-r--r--	root/root	usr/share/help/it/epiphany/introduction.page
 -rw-r--r--	root/root	usr/share/help/it/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/it/epiphany/media/
-lrwxrwxrwx	root/root	usr/share/help/it/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/it/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/it/epiphany/media/epiphany-plain-3-36.png
+-rw-r--r--	root/root	usr/share/help/it/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/it/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/it/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/it/epiphany/pref-css.page
@@ -530,8 +530,8 @@ drwxr-xr-x	root/root	usr/share/help/pl/epiphany/
 -rw-r--r--	root/root	usr/share/help/pl/epiphany/introduction.page
 -rw-r--r--	root/root	usr/share/help/pl/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/pl/epiphany/media/
-lrwxrwxrwx	root/root	usr/share/help/pl/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/pl/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/pl/epiphany/media/epiphany-plain-3-36.png
+-rw-r--r--	root/root	usr/share/help/pl/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/pl/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/pl/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/pl/epiphany/pref-css.page
@@ -561,7 +561,7 @@ drwxr-xr-x	root/root	usr/share/help/pt_BR/epiphany/
 -rw-r--r--	root/root	usr/share/help/pt_BR/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/pt_BR/epiphany/media/
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/pt_BR/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/pt_BR/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/pt_BR/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/epiphany/pref-css.page
@@ -651,7 +651,7 @@ drwxr-xr-x	root/root	usr/share/help/sv/epiphany/
 -rw-r--r--	root/root	usr/share/help/sv/epiphany/legal.xml
 drwxr-xr-x	root/root	usr/share/help/sv/epiphany/media/
 lrwxrwxrwx	root/root	usr/share/help/sv/epiphany/media/epiphany-plain-3-36.png -> ../../../C/epiphany/media/epiphany-plain-3-36.png
-lrwxrwxrwx	root/root	usr/share/help/sv/epiphany/media/epiphany-private-3-36.png -> ../../../C/epiphany/media/epiphany-private-3-36.png
+-rw-r--r--	root/root	usr/share/help/sv/epiphany/media/epiphany-private-3-36.png
 lrwxrwxrwx	root/root	usr/share/help/sv/epiphany/media/org.gnome.Epiphany.svg -> ../../../C/epiphany/media/org.gnome.Epiphany.svg
 -rw-r--r--	root/root	usr/share/help/sv/epiphany/pref-cookies.page
 -rw-r--r--	root/root	usr/share/help/sv/epiphany/pref-css.page
