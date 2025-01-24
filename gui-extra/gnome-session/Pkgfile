@@ -1,7 +1,7 @@
 description="start up the GNOME Desktop environment"
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/gnome-sessionhttps://gitlab.gnome.org/GNOME/gnome-session"
 
-license="GPL2"
+license="GPL2-or-later"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Fanch,Rems,Spiky"
@@ -13,7 +13,7 @@ set=(gnome)
 
 name=gnome-session
 version=47.0.1
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
@@ -26,8 +26,8 @@ mkdir build
 cd build
 
 meson setup .. \
-      --prefix=/usr \
-      -Dman=false \
+      --prefix=/usr   \
+      -Dman=false     \
       -Ddocbook=false
 
 ninja
