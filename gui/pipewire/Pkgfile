@@ -11,6 +11,7 @@ makedepends=(meson dbus doxygen python-docutils ffmpeg glib graphviz gstreamer
 
 name=pipewire
 version=1.2.7
+release=2
 
 source=(https://github.com/PipeWire/pipewire/archive/$version/$name-$version.tar.gz)
 
