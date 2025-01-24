@@ -1,7 +1,7 @@
 description="Faba is a sexy and modern icon theme with Tango influences"
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
-contributors="Greg, Jayce, Rems"
+contributors="Greg,Jayce,Rems,Tnut"
 url="https://github.com/snwh/faba-icon-theme"
 
 makedepends=(meson ninja)
@@ -9,7 +9,7 @@ run=(gtk-update-icon-cache)
 
 name=faba-icon-theme
 version=4.3
-release=2
+release=3
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/snwh/$name/archive/v$version.tar.gz)
