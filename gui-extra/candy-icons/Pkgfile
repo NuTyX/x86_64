@@ -1,12 +1,12 @@
 description="Candy icon theme"
 url="https://github.com/EliverLara/candy-icons"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(git)
 run=(gtk-update-icon-cache hicolor-icon-theme)
 name=candy-icons
-version=20201023
+version=20241001
 
 prepare() {
   git clone https://github.com/EliverLara/candy-icons.git
