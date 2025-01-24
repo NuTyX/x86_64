@@ -1,13 +1,14 @@
 description="CD/DVD burning application"
 url="http://sourceforge.net/projects/gnomebaker/"
 
-contributors="Timcowchip, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Timcowchip,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(git fltk libburn libisoburn)
 
 name=flburn
 version=3cc464
+release=2
 
 build() {
 
