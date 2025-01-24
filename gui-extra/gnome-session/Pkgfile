@@ -6,13 +6,14 @@ license="GPL2"
 packager="tnut <tnut@nutyx.org>"
 contributors="Fanch,Rems,Spiky"
 
-makedepends=(dconf dbus-glib docbook-xml docbook-xsl elogind
+makedepends=(dconf dbus-glib docbook-xml docbook-xsl
              gnome-desktop json-glib libxslt mesa meson upower xmlto)
 
 set=(gnome)
 
 name=gnome-session
 version=47.0.1
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
