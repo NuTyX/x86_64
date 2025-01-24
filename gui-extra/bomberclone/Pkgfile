@@ -1,14 +1,14 @@
 description="A clone of Atomic Bomberman."
 url="http://www.bomberclone.de/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Berlius, Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
 
 makedepends=(sdl1-mixer sdl1-image)
 
 name=bomberclone
 version=0.11.9
-release=3
+release=4
 
 source=(https://downloads.sourceforge.net/project/$name/$name/$name-$version.tar.gz
 		bomberclone-0.11.9-build-fix.patch
