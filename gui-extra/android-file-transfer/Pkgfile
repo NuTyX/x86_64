@@ -10,14 +10,10 @@ set=(android)
 
 name=android-file-transfer
 version=4.3
+release=2
 
-source=(gcc13.patch 
-        https://github.com/whoozle/android-file-transfer-linux/archive/refs/tags/v$version.tar.gz)
+source=(https://github.com/whoozle/android-file-transfer-linux/archive/refs/tags/v$version.tar.gz)
 
-#prepare() {
-#cd $name-linux-$version
-#patch -Np1 -i ../gcc13.patch
-#}
 
 build() {
 cd $name-linux-$version
