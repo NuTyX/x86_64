@@ -1,8 +1,8 @@
 description="An iTunes-like music playback and management application"
 url="https://www.rhythmbox.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Tnut"
 
 makedepends=(gobject-introspection intltool gtk3 gdk-pixbuf libsoup3 libpeas
              libxml2 tdb json-glib totem-pl-parser libmtp webkitgtk
@@ -13,8 +13,8 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 set=(gnome)
 
 name=rhythmbox
-version=3.4.7
-release=2
+version=3.4.8
+release=4
 
 source=(https://download.gnome.org/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
