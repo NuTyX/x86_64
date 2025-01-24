@@ -9,13 +9,9 @@ contributors="Daniel,Spiky"
 makedepends=(libusb ffmpeg gtk3 v4l-utils portaudio gsl)
 run=(desktop-file-utils)
 
-
 name=guvcview
 version=2.2.1
 release=2
-
-makedepends=(libusb ffmpeg gtk3 v4l-utils portaudio gsl)
-run=(desktop-file-utils)
 
 source=(https://sourceforge.net/projects/$name/files/source/$name-src-$version.tar.bz2)
 
