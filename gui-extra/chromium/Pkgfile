@@ -3,9 +3,9 @@ url="https://www.chromium.org/Home"
 
 license="BSD"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 maintainer="Arch Linux"
-contributors="Spiky"
+contributors="Tnut"
 
 run=(minizip gtk3 ffmpeg flac dbus freetype brotli woff2
      xorg-libxscrnsaver libxslt nss snappy json-glib llvm
@@ -13,13 +13,24 @@ run=(minizip gtk3 ffmpeg flac dbus freetype brotli woff2
      gtk-update-icon-cache shared-mime-info abseil-cpp)
 
 name=chromium
-version=131.0.6778.69
-release=2
+version=132.0.6834.83
+
+icuversion=75.1
 
 re2version=2024-04-01
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 
-source=(https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
+source=(https://github.com/unicode-org/icu/releases/download/\
+release-${icuversion//./-}/icu4c-${icuversion//./_}-src.tgz
+        https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
+
+
+prepare() {
+cd icu/source
+./configure
+make
+}
+
 build() {
 
 mv usr $PKG
@@ -28,4 +39,12 @@ mkdir -p $PKG/etc/ld.so.conf.d
 rm $PKG/usr/lib/chromium/libvulkan.so.1
 
 echo "/usr/lib/chromium" > $PKG/etc/ld.so.conf.d/$name.conf
+}
+
+package() {
+for LIB in libicui18n.so libicuuc.so libicudata.so
+do
+   cp icu/source/lib/$LIB.$icuversion \
+   $PKG/usr/lib/chromium/$LIB.$icuversion
+done
 }
