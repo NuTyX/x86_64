@@ -4,10 +4,11 @@ url='https://www.nvidia.com'
 packager="Tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
+conflicts=(nvidia nvidia-470)
 
 name=nvidia-390
 version=390.157
-release=2
+release=3
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 
