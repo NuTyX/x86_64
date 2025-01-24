@@ -8,7 +8,7 @@ makedepends=(intltool gtk3 libcanberra)
 
 name=notification-daemon
 version=3.20.0
-release=4
+release=5
 
 source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
