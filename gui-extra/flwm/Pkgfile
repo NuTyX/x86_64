@@ -1,13 +1,14 @@
 description="Fast Light Window Manager"
 url="http://flwm.sourceforge.net/"
 
-contributors="Timcowchip, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Timcowchip,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(git fltk)
 
 name=flwm
 version=02904d9
+release=2
 
 source=(flwm.desktop)
 
