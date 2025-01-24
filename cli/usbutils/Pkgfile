@@ -6,11 +6,12 @@ license="GPL2 GPL3"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
-makedepends=(python meson ninja libusb-compat)
+makedepends=(systemd python meson ninja libusb-compat)
 run=(hwdata)
 
 name=usbutils
 version=018
+release=2
 
 source=(http://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-$version.tar.xz)
 
