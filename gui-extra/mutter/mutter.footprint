@@ -1,7 +1,3 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/udev/
-drwxr-xr-x	root/root	lib/udev/rules.d/
--rw-r--r--	root/root	lib/udev/rules.d/61-mutter.rules
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/mutter
@@ -34,6 +30,9 @@ lrwxrwxrwx	root/root	usr/lib/mutter-15/libmutter-mtk-15.so.0 -> libmutter-mtk-15
 -rwxr-xr-x	root/root	usr/lib/mutter-15/libmutter-mtk-15.so.0.0.0
 drwxr-xr-x	root/root	usr/lib/mutter-15/plugins/
 -rwxr-xr-x	root/root	usr/lib/mutter-15/plugins/libdefault.so
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/61-mutter.rules
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/mutter-restart-helper
 -rwxr-xr-x	root/root	usr/libexec/mutter-x11-frames
