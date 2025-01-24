@@ -15,7 +15,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kcminit
 lrwxrwxrwx	root/root	usr/bin/kcminit_startup -> kcminit
 -rwxr-xr-x	root/root	usr/bin/kcolorschemeeditor
--rwxr-xr-x	root/root	usr/bin/kde-systemd-start-condition
 -rwxr-xr-x	root/root	usr/bin/kfontinst
 -rwxr-xr-x	root/root	usr/bin/kfontview
 -rwxr-xr-x	root/root	usr/bin/krunner
@@ -69,11 +68,11 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.0-keep-custom-position-of-panels
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
 lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so -> libbatterycontrol.so.6
-lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so -> libcolorcorrect.so.6
-lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so.6 -> libcolorcorrect.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libcolorcorrect.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so.6 -> libcolorcorrect.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libcolorcorrect.so.6.2.5
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/baloorunner
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
@@ -89,30 +88,30 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-fallback-session-save
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-sourceenv.sh
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so -> libkfontinst.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so -> libkfontinstui.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libklipper.so -> libklipper.so.6
-lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libklipper.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libklipper.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libkmpris.so -> libkmpris.so.6
-lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.2.5
 -rwxr-xr-x	root/root	usr/lib/libkrdb.so
 lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so -> libkworkspace6.so.6
-lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so -> libnotificationmanager.so.1
-lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so -> libplasma-geolocation-interface.so.6
-lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so.6 -> libplasma-geolocation-interface.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libplasma-geolocation-interface.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so.6 -> libplasma-geolocation-interface.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libplasma-geolocation-interface.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so -> libtaskmanager.so.6
-lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.2.4
--rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.2.4
+lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.2.5
+-rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.2.5
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so -> libweather_ion.so.7
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so.7 -> libweather_ion.so.7.0.0
 -rwxr-xr-x	root/root	usr/lib/libweather_ion.so.7.0.0
@@ -392,19 +391,14 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/taskmanager/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-baloorunner.service
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-core.target
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-gmenudbusmenuproxy.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kcminit-phase1.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kcminit.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-krunner.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-ksmserver.service
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-ksplash-ready.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-ksplash.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-plasmashell.service
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-restoresession.service
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace-wayland.target
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace-x11.target
--rw-r--r--	root/root	usr/lib/systemd/user/plasma-workspace.target
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-xembedsniproxy.service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
