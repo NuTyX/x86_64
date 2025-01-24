@@ -1,14 +1,16 @@
 description="Small and fast music player using the ncurses library"
-url="http://cmus.sf.net/"
+url="https://cmus.github.io/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Chris,F.,Tnut"
+license="GPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Chris,F.,Spiky"
 
 makedepends=(alsa-lib alsa-plugins flac libid3tag libmad
              libogg libmpcdec libvorbis)
 
 name=cmus
-version=2.11.0
+version=2.12.0
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/cmus/cmus/archive/v${version}.tar.gz)
