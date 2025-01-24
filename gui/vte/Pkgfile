@@ -8,7 +8,7 @@ makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection)
 
 name=vte
 version=0.76.0
-release=3
+release=4
 
 prepare() {
 git clone https://gitlab.gnome.org/GNOME/vte.git
@@ -27,13 +27,4 @@ meson  --prefix=/usr \
 ninja
 
 DESTDIR=$PKG ninja install
-}
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/${_name}"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
 }
