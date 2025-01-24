@@ -10,6 +10,7 @@ set=(mate)
 name=mate-libmixer
 _name=libmatemixer
 version=1.28.0
+release=2
 
 source=(https://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
