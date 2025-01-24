@@ -8,6 +8,7 @@ makedepends=(cmake doxygen mesa libglade)
 
 name=glbinding
 version=3.3.0
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/cginternals/$name/archive/v$version.tar.gz)
