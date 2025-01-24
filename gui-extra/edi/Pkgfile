@@ -1,14 +1,14 @@
 description='The Enlightenment IDE'
 url='https://git.enlightenment.org/enlightenment/edi'
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson ninja efl)
 
 name=edi
 version=0.8.0
-release=6
+release=7
 
 source=(meson.patch
         https://github.com/Enlightenment/edi/releases/download/v$version/edi-$version.tar.xz)
