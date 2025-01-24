@@ -1,12 +1,11 @@
 description='The one stop solution to all your e-book needs'
 url='https://calibre-ebook.com/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=calibre
-version=7.16.0
-release=2
+version=7.22.0
 
 makedepends=(bash-completion xdg-utils)
 run=(libglvnd xorg-fontconfig libxkbcommon xorg-libxcomposite
