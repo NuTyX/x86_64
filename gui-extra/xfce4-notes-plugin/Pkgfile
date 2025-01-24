@@ -1,16 +1,16 @@
 description="A notes plugin for the XFCE4 GUI"
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fabienwang,Tnut"
 
-makedepends=(intltool libxfce4util libxfce4ui xfce4-panel libunique1)
+makedepends=(intltool libxfce4util libxfce4ui xfce4-panel libunique1 gtksourceview4)
 run=(hicolor-icon-theme)
 
 set=(xfce4-extra)
 
 name=xfce4-notes-plugin
-version=1.11.0
+version=1.11.1
 
 source=(http://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
 
