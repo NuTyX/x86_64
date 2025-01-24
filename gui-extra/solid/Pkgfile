@@ -7,12 +7,14 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(qtdeclarative qt6-base qt6-tools qt6-declarative extra-cmake-modules)
-run=(eudev upower udisks2 media-player-info gvfs)
+run=(upower udisks2 media-player-info gvfs)
 
 set=(kde6-frameworks)
 
 name=solid
 version=6.9.0
+release=2
+
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
 build=kde6
