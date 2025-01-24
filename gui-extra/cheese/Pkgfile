@@ -1,8 +1,8 @@
 description="Use your webcam to take photos and videos, apply fancy special effects and share the fun with others"
 url="https://wiki.gnome.org/Apps/Cheese"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Remy,Tnut"
 
 set=(gnome)
 
@@ -13,12 +13,18 @@ run=(gtk-update-icon-cache)
 
 name=cheese
 version=44.1
-release=2
+release=3
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz
+        cheese-gcc14.patch
+        cheese-json.patch)
+
 prepare() {
 cd $name-$version
 sed -i "s/&version;/$version/" docs/reference/cheese{,-docs}.xml
+
+patch -Np1 -i ../cheese-gcc14.patch
+patch -Np1 -i ../cheese-json.patch
 }
 
 build() {
