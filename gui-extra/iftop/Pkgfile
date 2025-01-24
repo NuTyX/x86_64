@@ -1,11 +1,12 @@
 description='Display bandwidth usage on an interface'
 url='http://www.ex-parrot.com/~pdw/iftop/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Ndawka"
+packager="spiky <spiky@nutyx.org>"
+contributors="Ndawka,Tnut"
 
 name=iftop
 version=1.0pre4
+release=2
 
 makedepends=(ncurses libpcap)
 
