@@ -3,17 +3,18 @@ url="http://guvcview.sourceforge.net/"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Daniel,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Daniel,Spiky"
 
-makedepends=(eudev libusb ffmpeg gtk3 v4l-utils portaudio gsl)
+makedepends=(libusb ffmpeg gtk3 v4l-utils portaudio gsl)
 run=(desktop-file-utils)
 
 
 name=guvcview
 version=2.2.1
+release=2
 
-makedepends=(eudev libusb ffmpeg gtk3 v4l-utils portaudio gsl)
+makedepends=(libusb ffmpeg gtk3 v4l-utils portaudio gsl)
 run=(desktop-file-utils)
 
 source=(https://sourceforge.net/projects/$name/files/source/$name-src-$version.tar.bz2)
