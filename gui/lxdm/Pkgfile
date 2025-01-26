@@ -12,7 +12,7 @@ PKGMK_GROUPS=()
 
 name=lxdm
 version=0.5.3
-release=34
+release=35
 
 source=(lxdm-$version-nutyx-2.patch login.png
         https://downloads.tuxfamily.org/nutyx/files/lxdm-nutyx-12-beta3.jpg
@@ -42,8 +42,7 @@ EOF
 
 ./configure --sysconfdir=/etc \
 	--prefix=/usr \
-	--with-pam \
-	--with-systemdsystemunitdir=/lib/systemd/system
+	--with-pam
 
 make
   
