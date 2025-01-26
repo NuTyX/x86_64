@@ -8,14 +8,16 @@ set=(lightdm)
 
 name=lightdm
 version=1.32.0
-release=2
+release=3
 
+scriptsversion=20250125
 PKGMK_GROUPS=(man devel doc)
 
 makedepends=(gtk3 libgcrypt pam pcre gobject-introspection xorg-libxklavier vala)
 run=(xorg-xinit)
 
-source=(https://github.com/CanonicalLtd/$name/releases/download/$version/$name-$version.tar.xz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
+        https://github.com/CanonicalLtd/$name/releases/download/$version/$name-$version.tar.xz)
 
 prepare() {
 SN="lightdm"
@@ -62,4 +64,8 @@ install -v -dm770 -o lightdm -g lightdm $PKG/var/log/lightdm
 
 # Obsolets libs
 rm $PKG/usr/lib/liblightdm-gobject-1.la
+
+# service
+cd $SRC/nutyx-scripts-$scriptsversion
+make DESTDIR=$PKG install-sysd-$name
 }
