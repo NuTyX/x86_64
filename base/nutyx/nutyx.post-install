@@ -1,17 +1,3 @@
  . lib/lsb/init-functions
 
-# /etc/hostname file
-if [ ! -f etc/hostname ]; then
-   echo "nutyx" > etc/hostname && \
-   log_success_msg2  "${INFO} Created /etc/hostname file ${NORMAL}"
-fi
-
-# /etc/locale.conf
-if [ ! -f etc/locale.conf ]; then
-   if [ -f etc/profile.d/i18n.sh ]; then
-    . etc/profile.d/i18n.sh
-    echo "LANG=$LANG" > etc/locale.conf && \
-    log_success_msg2  "${INFO} Created /etc/locale.conf file ${NORMAL}"
-   fi
-f
 [ -f /etc/profile.d/i18n.sh ]  && setup-nutyx -ul

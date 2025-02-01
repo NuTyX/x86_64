@@ -69,7 +69,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
--rwxr-xr-x	root/root	usr/lib/systemd/system/setup-nutyx.service
+-rw-r--r--	root/root	usr/lib/systemd/system/setup-nutyx.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/sysinit.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/setup-nutyx.service -> ../setup-nutyx.service
 drwxr-xr-x	root/root	usr/sbin/

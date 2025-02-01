@@ -6,11 +6,12 @@
 #  (at your option) any later version.
 
 [Unit]
-Description=Configuration NuTyX
+Description=NuTyX Configuration
+Documentation=man:nutyx(1)
+Documentation=man:genfstab(8)
+Documentation=man:ifup(8)
 DefaultDependencies=no
-After=systemd-tmpfiles-setup.service
 Before=sysinit.target shutdown.target
-
 
 [Service]
 Type=oneshot

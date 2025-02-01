@@ -9,7 +9,7 @@ makedepends=(zstd util-linux)
 set=(chroot)
 
 name=nutyx
-version=25.02.2
+version=25.02.5
 release=1
 
 # nutyx patch version
@@ -29,7 +29,7 @@ make DESTDIR=$PKG install
 
 install -d -m 755 $PKG/usr/lib/systemd/system/sysinit.target.wants
 
-install -m 755 ../setup-nutyx.service \
+install -m 644 ../setup-nutyx.service \
   $PKG/usr/lib/systemd/system
 ln -sv ../setup-nutyx.service \
 $PKG/usr/lib/systemd/system/sysinit.target.wants 
