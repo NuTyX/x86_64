@@ -20,14 +20,14 @@ set=(core)
 
 name=systemd
 version=257
-release=2
+release=3
 
-source=(consolidate-2.patch
-        https://download.tuxfamily.org/nutyx/sources/$name/$name-man-pages-$version.tar.xz
+source=(consolidate-3.patch
+        https://sourceforge.net/projects/nutyx/files/sources/$name/$name-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 prepare() {
 cd $name-$version
-patch -Np1 -i ../consolidate-2.patch
+patch -Np1 -i ../consolidate-3.patch
 }
 
 
