@@ -8,11 +8,11 @@ packager="spiky <spiky@nutyx.org>"
 
 name=dhcpcd
 version=10.1.0
-release=2
+release=3
 
 makedepends=(shadow)
 
-scripts_version=20241218
+scripts_version=20250201
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
         https://github.com/NetworkConfiguration/dhcpcd/releases/download/v${version}/$name-$version.tar.xz)
 
@@ -24,13 +24,15 @@ useradd -c 'dhcpcd PrivSep' -d /var/lib/$name \
 build() {
 install -v m700 -d $PKG/var/lib/$name
 cd $name-$version
-./configure \
---libexecdir=/lib/$name \
---dbdir=/var/lib/$name \
+./configure --prefix=/usr   \
+--libexecdir=/usr/lib/$name \
+--dbdir=/var/lib/$name      \
+--runstatedir=/run          \
 --privsepuser=dhcpcd
 make
 make DESTDIR=$PKG install
-
+mkdir $PKG/sbin
+ln -sv ../usr/sbin/dhcpcd $PKG/sbin/dhcpcd
 #
 ## service
 cd ../nutyx-scripts-${scripts_version}
