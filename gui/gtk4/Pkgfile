@@ -10,15 +10,16 @@ makedepends=(git meson python python-docutils sassc gobject-introspection docboo
              vulkan-headers vulkan-icd-loader shaderc)
 
 run=(glib cairo pango fribidi gdk-pixbuf libpng libtiff libjpeg-turbo libepoxy mesa harfbuzz
-     libxkbcommon graphene iso-codes tracker colord wayland wayland-protocols
+     libxkbcommon graphene iso-codes colord wayland wayland-protocols
      desktop-file-utils adwaita-icon-theme shared-mime-info
      json-glib ffmpeg dconf gstreamer-plugins-bad librsvg xorg-libxinerama xorg-libxrandr
-     xorg-libxcursor xorg-libxi xorg-libxrender librest)
+     xorg-libxcursor xorg-libxi xorg-libxrender librest tinysparql)
 set=()
 
 name=gtk4
 version=4.16.12
 release=2
+
 PKGMK_GROUPS=(devel doc lib man)
 source=(https://gitlab.gnome.org/GNOME/gtk/-/archive/$version/gtk-$version.tar.gz)
 
