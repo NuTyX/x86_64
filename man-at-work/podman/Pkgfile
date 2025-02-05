@@ -9,7 +9,7 @@ run=()
 set=()
 
 name=podman
-version=5.3.1
+version=5.3.2
 
 source=(https://github.com/containers/podman/archive/v$version/$name-$version.tar.gz)
 
@@ -21,7 +21,7 @@ cd $name-$version
 	make  BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
 	make install PREFIX=/usr DESTDIR=$PKG LIBEXECDIR=/usr/lib
 
-	# not use in venom: usr/lib/systemd
+	# Remove systemd usr/lib/systemd
 	rm -rf $PKG/usr/lib/systemd
 
 }
