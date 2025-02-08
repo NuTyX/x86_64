@@ -1,15 +1,17 @@
 description="Next generation of the python high-level scripting language"
-url="http://www.python.org"
+url="https://www.python.org"
 
-contributors="Alienus,Tnut"
-packager="spiky <spiky@nutyx.org>"
+license="PSF-2.0"
+
+contributors="Alienus,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(bzip2 xz gdbm zlib util-linux ncurses sqlite expat libffi
              libxcrypt)
 alias=(python3 Python)
 
 name=python
-version=3.13.1
+version=3.13.2
 
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz
         https://www.python.org/ftp/python/doc/$version/python-$version-docs-html.tar.bz2
@@ -52,21 +54,21 @@ bsdtar -xf Python-$version.tar.xz
 
 # Install all HTML Docs files with desktop menu integration
 
-    install -v -dm755 $PKG/usr/share/doc/$name-$version/html
+    install -v -dm755 $PKG/usr/share/doc/$name/html
     cd $SRC
     tar --strip-components=1 \
         --no-same-owner \
         --no-same-permissions \
-        -C $PKG/usr/share/doc/$name-$version/html \
+        -C $PKG/usr/share/doc/$name/html \
         -xvf $SRC/python-$version-docs-html.tar.bz2
 
-    find $PKG/usr/share/doc/$name-$version -type d -exec chmod 0755 {} \;
-    find $PKG/usr/share/doc/$name-$version -type f -exec chmod 0644 {} \;
+    find $PKG/usr/share/doc/$name -type d -exec chmod 0755 {} \;
+    find $PKG/usr/share/doc/$name -type f -exec chmod 0644 {} \;
 
     mkdir -p $PKG/usr/share/applications
     echo "[Desktop Entry]
 Categories=Development;Documentation
-Exec=xdg-open file:///usr/share/doc/$name-$version/html/index.html
+Exec=xdg-open file:///usr/share/doc/$name/html/index.html
 Icon=$name
 StartupNotify=false
 Terminal=false
@@ -81,7 +83,7 @@ cd $PKG
 bsdtar -cf \
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
-usr/share/doc/$name-$version \
+usr/share/doc/$name \
 usr/share/applications/$name.desktop \
 usr/share/icons/hicolor/16x16/apps/$name.png
 
