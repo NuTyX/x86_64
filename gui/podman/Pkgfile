@@ -1,6 +1,8 @@
 description='Tool and library for running OCI-based containers in pods'
 url='https://github.com/containers/libpod'
 
+license="APACHE"
+
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
@@ -24,4 +26,5 @@ cd $name-$version
 	# Remove systemd usr/lib/systemd
 	rm -rf $PKG/usr/lib/systemd
 
+       install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
