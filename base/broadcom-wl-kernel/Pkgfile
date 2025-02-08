@@ -8,15 +8,16 @@ run=(kernel)
 
 name=broadcom-wl-kernel
 version=6.30.223.271
-release=37
+release=38
 
 
-source=(kernel-6.12.patch
+source=(kernel-6.12.patch kernel-6.13.patch
         https://sourceforge.net/projects/nutyx/files/sources/broadcom-wl/broadcom-wl-$version.tar.xz)
 
 prepare() {
 cd broadcom-wl-$version
 patch -Np1 -i ../kernel-6.12.patch
+patch -Np1 -i ../kernel-6.13.patch
 }
 
 build() {
