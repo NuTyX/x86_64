@@ -17,41 +17,41 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nvidia-xconfig
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gbm/
-lrwxrwxrwx	root/root	usr/lib/gbm/nvidia-drm_gbm.so -> ../libnvidia-allocator.so.550.142
--rwxr-xr-x	root/root	usr/lib/libEGL_nvidia.so.550.142
--rwxr-xr-x	root/root	usr/lib/libGLESv1_CM_nvidia.so.550.142
--rwxr-xr-x	root/root	usr/lib/libGLESv2_nvidia.so.550.142
--rwxr-xr-x	root/root	usr/lib/libGLX_nvidia.so.550.142
--rwxr-xr-x	root/root	usr/lib/libcuda.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-allocator.so.550.142
+lrwxrwxrwx	root/root	usr/lib/gbm/nvidia-drm_gbm.so -> ../libnvidia-allocator.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libEGL_nvidia.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libGLESv1_CM_nvidia.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libGLESv2_nvidia.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libGLX_nvidia.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libcuda.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-allocator.so.550.144.03
 -rwxr-xr-x	root/root	usr/lib/libnvidia-api.so.1
--rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.550.142
+-rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.550.144.03
 -rwxr-xr-x	root/root	usr/lib/libnvidia-egl-gbm.so.1.1.1
--rwxr-xr-x	root/root	usr/lib/libnvidia-eglcore.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-glsi.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-glvkspirv.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-gpucomp.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-gtk2.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-gtk3.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-ngx.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-opticalflow.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-ptxjitcompiler.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-rtcore.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.550.142
--rwxr-xr-x	root/root	usr/lib/libnvoptix.so.550.142
+-rwxr-xr-x	root/root	usr/lib/libnvidia-eglcore.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-glsi.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-glvkspirv.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-gpucomp.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-gtk2.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-gtk3.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ngx.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-opticalflow.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ptxjitcompiler.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-rtcore.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/libnvoptix.so.550.144.03
 drwxr-xr-x	root/root	usr/lib/nvidia/
 drwxr-xr-x	root/root	usr/lib/nvidia/wine/
 -rwxr-xr-x	root/root	usr/lib/nvidia/wine/_nvngx.dll
 -rwxr-xr-x	root/root	usr/lib/nvidia/wine/nvngx.dll
 drwxr-xr-x	root/root	usr/lib/nvidia/xorg/
-lrwxrwxrwx	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so -> libglxserver_nvidia.so.550.142
-lrwxrwxrwx	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so.1 -> libglxserver_nvidia.so.550.142
--rwxr-xr-x	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so.550.142
+lrwxrwxrwx	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so -> libglxserver_nvidia.so.550.144.03
+lrwxrwxrwx	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so.1 -> libglxserver_nvidia.so.550.144.03
+-rwxr-xr-x	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so.550.144.03
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system-sleep/
 -rwxr-xr-x	root/root	usr/lib/systemd/system-sleep/nvidia
@@ -61,7 +61,7 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/nvidia-resume.service
 -rw-r--r--	root/root	usr/lib/systemd/system/nvidia-suspend.service
 drwxr-xr-x	root/root	usr/lib/vdpau/
--rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.550.142
+-rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.550.144.03
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
@@ -82,8 +82,8 @@ drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/nvidia-utils/
 -rw-r--r--	root/root	usr/share/licenses/nvidia-utils/LICENSE
 drwxr-xr-x	root/root	usr/share/nvidia/
--rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-550.142-key-documentation
--rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-550.142-rc
+-rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-550.144.03-key-documentation
+-rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-550.144.03-rc
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rwxr-xr-x	root/root	usr/share/pixmaps/nvidia-settings.png
 drwxr-xr-x	root/root	usr/share/vulkan/
