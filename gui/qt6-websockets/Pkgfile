@@ -11,7 +11,7 @@ makedepends=(qt6-base cmake qt6-declarative)
 set=(qt6)
 
 name=qt6-websockets
-version=6.8.1
+version=6.8.2
 
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz)
 
