@@ -15,7 +15,7 @@ set=(gnome)
 
 name=gdm
 version=47.0
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
@@ -30,10 +30,6 @@ build() {
 
 cd $name-$version
 
-sed -e 's@systemd@elogind@'                                \
-    -e '/elogind/isession  required       pam_loginuid.so' \
-    -i data/pam-lfs/gdm-launch-environment.pam
-
 mkdir build
 cd    build
 meson setup .. \
@@ -42,6 +38,7 @@ meson setup .. \
       --localstatedir=/var       \
       --libdir=/usr/lib          \
       -D gdm-xsession=true       \
+      -D default-pam-config=lfs  \
       -D run-dir=/run/gdm
 
 ninja
