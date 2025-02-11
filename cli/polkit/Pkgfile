@@ -5,8 +5,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
 name=polkit
-version=125
-release=3
+version=126
 
 makedepends=(pam systemd gettext glib duktape gobject-introspection
              patch autoconf intltool perl-xml-parser libxslt docbook-xsl)
@@ -35,7 +34,6 @@ meson --prefix=/usr                       \
       -Dman=false                         \
       -Dsession_tracking=logind           \
       -Dtests=true                        \
-      -Djs_engine=duktape                 \
       ..
 
 ninja
