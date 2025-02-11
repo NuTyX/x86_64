@@ -10,6 +10,7 @@ set=(chroot)
 
 name=nutyx
 version=25.02.6
+release=1
 
 # nutyx patch version
 [ "$release" != "1" ] && patchname="$name-$version-consolidate-$release.patch"
