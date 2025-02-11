@@ -4,15 +4,15 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/COPYING
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.6.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/COPYING
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/__pycache__/
@@ -180,6 +180,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixin
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/islinker.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/metrowerks.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/pgi.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/tasking.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/ti.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/visualstudio.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/__pycache__/xc16.cpython-313.pyc
@@ -196,6 +197,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixin
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/islinker.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/metrowerks.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/pgi.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/tasking.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/ti.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/visualstudio.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/compilers/mixins/xc16.py
@@ -404,6 +406,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/clangformat.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/clangtidy.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/cleantrees.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/clippy.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/cmake_run_ctgt.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/copy.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/coverage.cpython-313.pyc
@@ -434,6 +437,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/clangformat.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/clangtidy.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/cleantrees.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/clippy.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/cmake_run_ctgt.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/cmd_or_ps.ps1
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/copy.py
