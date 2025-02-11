@@ -1,3 +1,3 @@
- . lib/lsb/init-functions
-
-[ -f /etc/profile.d/i18n.sh ]  && setup-nutyx -ul
+if [ -f etc/profile.d/i18n.sh ]; then 
+  setup-nutyx -ul
+fi
