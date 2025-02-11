@@ -4,10 +4,9 @@ url="https://github.com/sahlberg/libnfs"
 packager="spiky <spiky@nutyx.org>"
 
 name=libnfs
-version=5.0.3
-release=2
+version=6.0.2
 
-makedepends=(libtool autoconf automake)
+makedepends=(libtool autoconf automake kerberos)
 
 source=(https://github.com/sahlberg/$name/archive/$name-$version.tar.gz)
 
