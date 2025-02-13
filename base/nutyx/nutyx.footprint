@@ -1,12 +1,54 @@
 drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/which
 drwxr-xr-x	root/root	etc/
+lrwxrwxrwx	root/root	etc/init.d -> rc.d/init.d
 lrwxrwxrwx	root/root	etc/mtab -> ../proc/self/mounts
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+lrwxrwxrwx	root/root	etc/rc.d/init.d/halt -> ../../../lib/lsb/init-functions
+-rwxr-xr-x	root/root	etc/rc.d/init.d/init_single
+lrwxrwxrwx	root/root	etc/rc.d/init.d/network -> ../../../lib/lsb/init-functions
+lrwxrwxrwx	root/root	etc/rc.d/init.d/random -> ../../../lib/lsb/init-functions
+-rwxr-xr-x	root/root	etc/rc.d/init.d/rc
+lrwxrwxrwx	root/root	etc/rc.d/init.d/reboot -> ../../../lib/lsb/init-functions
+lrwxrwxrwx	root/root	etc/rc.d/init.d/sendsignals -> ../../../lib/lsb/init-functions
+lrwxrwxrwx	root/root	etc/rc.d/init.d/setup-nutyx -> ../../../sbin/setup-nutyx
+lrwxrwxrwx	root/root	etc/rc.d/init.d/sysklogd -> ../../../lib/lsb/init-functions
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K45random -> ../init.d/random
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K98init_single -> ../init.d/init_single
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S60sendsignals -> ../init.d/sendsignals
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S99halt -> ../init.d/halt
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K80network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K90sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/S25random -> ../init.d/random
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K80network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/S25random -> ../init.d/random
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S20network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S25random -> ../init.d/random
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S20network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S25random -> ../init.d/random
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S20network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S25random -> ../init.d/random
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K45random -> ../init.d/random
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K98init_single -> ../init.d/init_single
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S60sendsignals -> ../init.d/sendsignals
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S99reboot -> ../init.d/reboot
+drwxr-xr-x	root/root	etc/rc.d/rcS.d/
+lrwxrwxrwx	root/root	etc/rc.d/rcS.d/S00init_single -> ../init.d/init_single
 drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib/lsb -> services
 drwxr-xr-x	root/root	lib/services/
 -rwxr-xr-x	root/root	lib/services/init-functions
 -rw-r--r--	root/root	lib/services/init.in
+-rwxr-xr-x	root/root	lib/services/ipv4-static
+-rwxr-xr-x	root/root	lib/services/ipv4-static-route
 drwxr-xr-x	root/root	lib/services/setup-nutyx/
 -rw-r--r--	root/root	lib/services/setup-nutyx/setup-nutyx.locales.gz
 drwx------	root/root	root/
@@ -17,6 +59,8 @@ lrwxrwxrwx	root/root	sbin/chroot-nutyx -> install-nutyx
 -rwxr-xr-x	root/root	sbin/flushmem
 lrwxrwxrwx	root/root	sbin/generate-nutyx -> install-nutyx
 -rwxr-xr-x	root/root	sbin/genfstab
+-rwxr-xr-x	root/root	sbin/ifdown
+-rwxr-xr-x	root/root	sbin/ifup
 -rwxr-xr-x	root/root	sbin/install-nutyx
 -rwxr-xr-x	root/root	sbin/mkinitramfs
 -rwxr-xr-x	root/root	sbin/setup-nutyx
@@ -28,8 +72,14 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/setup-nutyx.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/sysinit.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/setup-nutyx.service -> ../setup-nutyx.service
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/xdm-nutyx
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	var/
 lrwxrwxrwx	root/root	var/lock -> /run/lock
 drwxr-xr-x	root/root	var/log/
+-rw-r--r--	root/root	var/log/bootlog (EMPTY)
+-rw-r--r--	root/root	var/log/btmp (EMPTY)
+-rw-r--r--	root/root	var/log/lastlog (EMPTY)
+-rw-r--r--	root/root	var/log/wtmp (EMPTY)
 lrwxrwxrwx	root/root	var/run -> /run
