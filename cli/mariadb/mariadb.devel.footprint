@@ -43,6 +43,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/
 -rw-r--r--	root/root	usr/include/mysql/server/my_alloca.h
 -rw-r--r--	root/root	usr/include/mysql/server/my_attribute.h
 -rw-r--r--	root/root	usr/include/mysql/server/my_byteorder.h
+-rw-r--r--	root/root	usr/include/mysql/server/my_cmp.h
 -rw-r--r--	root/root	usr/include/mysql/server/my_compiler.h
 -rw-r--r--	root/root	usr/include/mysql/server/my_config.h
 -rw-r--r--	root/root	usr/include/mysql/server/my_dbug.h
@@ -94,6 +95,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/mysql/psi/
 -rw-r--r--	root/root	usr/include/mysql/server/mysql/service_encryption_scheme.h
 -rw-r--r--	root/root	usr/include/mysql/server/mysql/service_json.h
 -rw-r--r--	root/root	usr/include/mysql/server/mysql/service_kill_statement.h
+-rw-r--r--	root/root	usr/include/mysql/server/mysql/service_log_warnings.h
 -rw-r--r--	root/root	usr/include/mysql/server/mysql/service_logger.h
 -rw-r--r--	root/root	usr/include/mysql/server/mysql/service_md5.h
 -rw-r--r--	root/root	usr/include/mysql/server/mysql/service_my_crypt.h
@@ -132,7 +134,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/atomic/solaris.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/authors.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/backup.h
--rw-r--r--	root/root	usr/include/mysql/server/private/bounded_queue.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/bloom_filters.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/char_buffer.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/charset_collations.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/client_settings.h
@@ -194,6 +196,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_subselect.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_sum.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_timefunc.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/item_vectorfunc.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_vers.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_windowfunc.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_xmlfunc.h
@@ -389,6 +392,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_prepare.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_priv.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_profile.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sql_queue.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_reload.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_rename.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_repl.h
@@ -416,6 +420,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_real.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_string.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_timeofday.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_vector.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_udf.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_union.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_update.h
@@ -441,6 +446,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/tztime.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/uniques.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/unireg.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/vector_mhnsw.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/violite.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/waiting_threads.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/welcome_copyright_notice.h
