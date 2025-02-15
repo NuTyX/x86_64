@@ -7,13 +7,12 @@ contributors="Tnut"
 makedepends=(python-setuptools python-wheel)
 
 name=python-markupsafe
-_name="MarkupSafe"
+_name="markupsafe"
 alias=(${_name})
 
-version=2.1.5
-release=4
+version=3.0.2
 
-source=(https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-$version.tar.gz)
+source=(https://pypi.io/packages/source/m/markupsafe/markupsafe-$version.tar.gz)
 
 build() {
 
