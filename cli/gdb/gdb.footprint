@@ -4,6 +4,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gdb
 -rwxr-xr-x	root/root	usr/bin/gdb-add-index
 -rwxr-xr-x	root/root	usr/bin/gdbserver
+-rwxr-xr-x	root/root	usr/bin/gstack
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libinproctrace.so
 drwxr-xr-x	root/root	usr/share/
@@ -17,7 +18,7 @@ drwxr-xr-x	root/root	usr/share/gdb/python/gdb/command/
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/command/__init__.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/command/explore.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/command/frame_filters.py
--rw-r--r--	root/root	usr/share/gdb/python/gdb/command/missing_debug.py
+-rw-r--r--	root/root	usr/share/gdb/python/gdb/command/missing_files.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/command/pretty_printers.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/command/prompt.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/command/type_printers.py
@@ -31,6 +32,7 @@ drwxr-xr-x	root/root	usr/share/gdb/python/gdb/dap/
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/evaluate.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/events.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/frames.py
+-rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/globalvars.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/io.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/launch.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/dap/locations.py
@@ -54,11 +56,13 @@ drwxr-xr-x	root/root	usr/share/gdb/python/gdb/function/
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/function/caller_is.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/function/strfns.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/missing_debug.py
+-rw-r--r--	root/root	usr/share/gdb/python/gdb/missing_files.py
+-rw-r--r--	root/root	usr/share/gdb/python/gdb/missing_objfile.py
 drwxr-xr-x	root/root	usr/share/gdb/python/gdb/printer/
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/printer/__init__.py
--rw-r--r--	root/root	usr/share/gdb/python/gdb/printer/bound_registers.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/printing.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/prompt.py
+-rw-r--r--	root/root	usr/share/gdb/python/gdb/ptwrite.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/styling.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/types.py
 -rw-r--r--	root/root	usr/share/gdb/python/gdb/unwinder.py
