@@ -10,10 +10,13 @@ makedepends=(meson ninja wayland wayland-protocols
              xorg-xkeyboard-config libxcb doxygen xorg-util-macros)
 
 name=libxkbcommon
-version=1.7.0
-release=2
+version=1.8.0
 
-source=(http://xkbcommon.org/download/libxkbcommon-$version.tar.xz)
+source=(https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-$version/$name-$version.tar.gz)
+
+prepare() {
+mv $name-xkbcommon-$version $name-$version
+}
 
 build() {
 cd $name-$version
