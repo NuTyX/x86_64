@@ -67,6 +67,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/__pycache_
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/__pycache__/ufo.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/benchmark.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/cli.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/cu2qu.c
+-rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/cu2qu.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/cu2qu.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/errors.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/cu2qu/ufo.py
@@ -109,6 +111,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/__pycache
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/ast.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/builder.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/error.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/lexer.c
+-rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/lexer.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/lexer.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/location.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/feaLib/lookupDebugInfo.py
@@ -175,6 +179,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/misc/__pycache__
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/__pycache__/xmlReader.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/__pycache__/xmlWriter.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/arrayTools.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/bezierTools.c
+-rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/misc/bezierTools.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/bezierTools.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/classifyTools.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/misc/cliTools.py
@@ -279,6 +285,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/pens/__pycache__
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/filterPen.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/freetypePen.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/hashPointPen.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/momentsPen.c
+-rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/pens/momentsPen.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/momentsPen.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/perimeterPen.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/pens/pointInsidePen.py
@@ -308,6 +316,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/__pycache_
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/__pycache__/qu2cu.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/benchmark.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/cli.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/qu2cu.c
+-rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/qu2cu.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/qu2cu/qu2cu.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/subset/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/subset/__init__.py
@@ -656,6 +666,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/instancer
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/interpolatableTestContourOrder.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/interpolatableTestStartingPoint.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/interpolate_layout.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/iup.c
+-rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/iup.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/iup.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/merger.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/varLib/models.py
@@ -679,15 +691,15 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fontTools/voltLib/__pycach
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/voltLib/lexer.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/voltLib/parser.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/fontTools/voltLib/voltToFea.py
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.55.3.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/fonttools-4.56.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/python-fonttools/
