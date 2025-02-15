@@ -1,14 +1,13 @@
 description="Text-mode interface for Git."
 url="http://jonas.nitro.dk/tig/"
 
-contributors="Greg,Rems,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Rems,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(git ncurses asciidoc xmlto)
 
 name=tig
-version=2.5.10
-release=2
+version=2.5.12
 
 source=(https://github.com/jonas/$name/releases/download/$name-$version/$name-$version.tar.gz)
 
