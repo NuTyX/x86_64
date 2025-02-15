@@ -7,8 +7,7 @@ contributors="Rems,Tnut"
 makedepends=(libtool autoconf git)
 
 name=webrtc-audio-processing
-version=0.3.1
-release=3
+version=2.1
 
 prepare () {
 git clone https://anongit.freedesktop.org/git/pulseaudio/webrtc-audio-processing $name
