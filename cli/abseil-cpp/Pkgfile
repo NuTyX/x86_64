@@ -1,14 +1,13 @@
 description='Collection of C++ library code designed to augment the C++ standard library'
 url='https://abseil.io'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(cmake)
 
 name=abseil-cpp
-version=20240722.0
-release=2
+version=20240722.1
 
 source=(https://github.com/abseil/abseil-cpp/archive/$version/$name-$version.tar.gz)
 
