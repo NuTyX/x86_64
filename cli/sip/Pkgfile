@@ -3,15 +3,14 @@ url='https://www.riverbankcomputing.com/software/sip/intro'
 
 license="SIP"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-setuptools python-setuptools-scm python-packaging
              python-build python-installer python-toml python-ply)
 
 name=sip
-version=6.9.1
-release=2
+version=6.10.0
 
 source=(https://pypi.python.org/packages/source/s/sip/sip-$version.tar.gz)
 
