@@ -12,6 +12,7 @@ makedepends=(ninja meson cairo libthai freetype xorg-libxft gobject-introspectio
 
 name=pango
 version=1.56.1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/pango/-/archive/$version/$name-$version.tar.gz)
 build() {
@@ -22,7 +23,8 @@ cd    build
 
 meson setup .. \
        --prefix=/usr          \
-            --buildtype=release
+            --buildtype=release \
+            -D introspection=enabled
 
 ninja
 
