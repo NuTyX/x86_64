@@ -1,14 +1,13 @@
 description="Utility to deliver and manage a complete PKI configuration"
 url="https://github.com/djlucas/make-ca/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 run=(gawk nss p11-kit)
 
 name=make-ca
-version=1.14
-release=5
+version=1.15
 
 set=(devel)
 
