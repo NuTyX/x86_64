@@ -4,13 +4,13 @@ url="http://gegl.org/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
-makedepends=(asciidoc babl gtk2 librsvg ruby lua ffmpeg librsvg meson
+makedepends=(asciidoc babl librsvg ruby lua ffmpeg librsvg meson
              openexr exiv2 graphviz libjpeg-turbo libwebp libraw
              python-gobject sdl gobject-introspection json-glib )
 run=(vala)
 
 name=gegl
-version=0.4.52
+version=0.4.54
 
 source=(https://download.gimp.org/pub/$name/${version:0:3}/$name-$version.tar.xz)
 
