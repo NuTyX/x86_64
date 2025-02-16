@@ -1,22 +1,25 @@
 description="Outline and bitmap font editor"
 url="http://fontforge.sourceforge.net"
 
-packager="Tnut <tnut@nutyx.org>"
-contributors="Pierre,Tnut,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=fontforge
 version=20230101
-release=4
+release=5
 
 makedepends=(cmake xorgproto m4 shared-mime-info freetype libxml2 cairo gtk3
              pango giflib libjpeg-turbo libpng libtiff)
 run=(shared-mime-info desktop-file-utils)
 
 source=(po.patch
+        fontforge-20230101-security_fixes-1.patch
         https://github.com/$name/$name/releases/download/$version/$name-$version.tar.xz)
 
 prepare() {
    cd $name-$version
+
+   patch -Np1 -i ../fontforge-20230101-security_fixes-1.patch
    patch -Np1 -i ../po.patch
 }
 build() {
