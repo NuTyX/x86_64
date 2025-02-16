@@ -1,15 +1,14 @@
 description="Contains graphics libraries mainly aimed at real-time computer vision."
 url="https://opencv.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(cmake unzip ffmpeg gstreamer-plugins-base gtk3 jasper libjpeg-turbo
              libpng libtiff libwebp v4l-utils xine-lib python doxygen)
 
 name=opencv
-version=4.10.0
-release=2
+version=4.11.0
 
 source=( https://github.com/opencv/opencv/archive/$version/opencv-$version.tar.gz)
 
