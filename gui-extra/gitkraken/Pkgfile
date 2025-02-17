@@ -1,8 +1,8 @@
 description="The intuitive, fast, and beautiful cross-platform Git client."
 url="https://www.gitkraken.com/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(nss gtk3 libsecret xorg-libxkbfile)
 run=(gtk-update-icon-cache shared-mime-info
@@ -10,6 +10,9 @@ run=(gtk-update-icon-cache shared-mime-info
 
 name=gitkraken
 version=10.6.0
+release=2
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(
     "https://release.axocdn.com/linux/GitKraken-v${version}.tar.gz"
