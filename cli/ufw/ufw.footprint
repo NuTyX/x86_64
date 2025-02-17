@@ -23,13 +23,6 @@ drwxr-xr-x	root/root	etc/ufw/applications.d/
 -rw-rw-r--	root/root	etc/ufw/ufw.conf
 -rw-r--r--	root/root	etc/ufw/user.rules
 -rw-r--r--	root/root	etc/ufw/user6.rules
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/ufw.service
-drwxr-xr-x	root/root	lib/ufw/
--rwxrwxr-x	root/root	lib/ufw/ufw-init
--rwxrwxr-x	root/root	lib/ufw/ufw-init-functions
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.13/
@@ -57,6 +50,12 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/ufw/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/ufw/frontend.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/ufw/parser.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/ufw/util.py
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/ufw.service
+drwxr-xr-x	root/root	usr/lib/ufw/
+-rwxrwxr-x	root/root	usr/lib/ufw/ufw-init
+-rwxrwxr-x	root/root	usr/lib/ufw/ufw-init-functions
 drwxr-xr-x	root/root	usr/sbin/
 -rwxrwxr-x	root/root	usr/sbin/ufw
 drwxr-xr-x	root/root	usr/share/

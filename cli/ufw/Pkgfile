@@ -8,7 +8,7 @@ contributors="Spiky"
 
 name=ufw
 version=0.36.2
-release=5
+release=6
 
 makedepends=(python-setuptools)
 run=(iptables python)
@@ -18,6 +18,8 @@ source=(service
 
 prepare() {
   cd $name-$version
+  # we put all the files in usr now when possible
+  sed -i -e 's|/lib|/usr/lib|' setup.py
 
   # don't force-enable tcp selective acks
   sed -i -e '/net\/ipv4\/tcp_sack/s/^/#/g' conf/sysctl.conf
@@ -29,30 +31,6 @@ build() {
   python3 setup.py install --root=$PKG
 
   install -Dm644 shell-completion/bash $PKG/usr/share/bash-completion/completions/ufw
-  install -Dm644 ../service $PKG/lib/systemd/system/ufw.service
+  install -Dm644 ../service $PKG/usr/lib/systemd/system/ufw.service
   chmod 644 $PKG/etc/ufw/*.rules
-
-  # service
-  mkdir -p $PKG/etc/rc.d/init.d
-  ln -sv /lib/ufw/ufw-init $PKG/etc/rc.d/init.d/$name
-  for i in 2 3 4 5
-  do
-     mkdir $PKG/etc/rc.d/rc${i}.d
-    ln -sv ../init.d/$name \
-  $PKG/etc/rc.d/rc${i}.d/S80$name
-  done
-
-  for i in 0 1 6
-  do
-    mkdir $PKG/etc/rc.d/rc${i}.d
-    ln -sv ../init.d/$name \
-    $PKG/etc/rc.d/rc${i}.d/K05$name
-  done
-}
-service() {
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-etc/rc.d
-
-rm -r etc/rc.d
 }
