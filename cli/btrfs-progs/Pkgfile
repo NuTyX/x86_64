@@ -9,8 +9,7 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(systemd e2fsprogs lzo util-linux zlib)
 
 name=btrfs-progs
-version=6.12
-release=2
+version=6.13
 
 source=(https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz)
 
