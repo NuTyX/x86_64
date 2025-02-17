@@ -9,14 +9,14 @@ run=()
 set=()
 
 name=unoconv
-version=0.9
+version=0.9.0
 
 source=()
 
 prepare() {
 git clone https://github.com/unoconv/unoconv.git
 
-mv unoconv unoconv-0.9
+mv unoconv unoconv-$version
 }
 build() {
 cd $name-$version
