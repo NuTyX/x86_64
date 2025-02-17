@@ -2,26 +2,28 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.7.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev-1.9.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/device.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/ecodes.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/ecodes_runtime.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/eventio.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/eventio_async.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/events.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/evtest.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/ff.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/genecodes.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/genecodes_c.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/genecodes_py.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/uinput.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/util.cpython-313.pyc
 -rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev/_ecodes.cpython-313-x86_64-linux-gnu.so
@@ -29,13 +31,16 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev/__pycache__/
 -rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/evdev/_uinput.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/device.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/ecodes.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/ecodes_runtime.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/eventio.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/eventio_async.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/events.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/evtest.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/ff.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/genecodes.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/genecodes_c.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/genecodes_py.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/input.c
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/uinput.c
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/uinput.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/evdev/util.py
