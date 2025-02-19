@@ -1,15 +1,15 @@
 description='A cross-platform application and UI framework, QtCharts files'
 url='http://qt-project.org/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(qt6-base qt6-declarative)
 
 set=(qt6)
 
 name=qt6-charts
-version=6.8.1
+version=6.8.2
 
 _name=${name/6-/}-everywhere-src
 
