@@ -3,13 +3,13 @@ url='https://www.qt.io/'
 
 license="GPL3 LGPL3 FDL Custom"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(qt6)
 
 name=qt6-imageformats
-version=6.8.1
+version=6.8.2
 
 makedepends=(cmake ninja qt6-base
              jasper libmng libwebp )
