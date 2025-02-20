@@ -1,8 +1,8 @@
 description="Free version of the SSH connectivity tools"
 url="https://www.openssh.org/"
 
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 license="BSD"
 
@@ -10,8 +10,7 @@ makedepends=(openssl libedit libxcrypt)
 run=(shadow)
 
 name=openssh
-version=9.9p1
-release=2
+version=9.9p2
 
 scriptsversion=20250125
 
