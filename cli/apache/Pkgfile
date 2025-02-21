@@ -1,15 +1,14 @@
 description="An open-source HTTP server for modern operating systems."
 url="https://httpd.apache.org/ABOUT_APACHE.html"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(sed grep pcre apr-util sqlite expat libxcrypt)
 run=(shadow)
 
 name=apache
-version=2.4.62
-release=3
+version=2.4.63
 
 scriptsversion=20250125
 
