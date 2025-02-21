@@ -3,8 +3,8 @@ url="https://www.samba.org"
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
 
 makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
              docbook-xsl avahi gnutls libgpg-error popt talloc lmdb
@@ -12,8 +12,7 @@ makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
 run=(samba.lib)
 
 name=samba
-version=4.21.3
-release=2
+version=4.21.4
 
 scriptsversion=20250125
 
