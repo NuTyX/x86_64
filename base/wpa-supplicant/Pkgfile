@@ -8,7 +8,7 @@ makedepends=(readline libnl dbus)
 
 name=wpa-supplicant
 version=2.10
-release=2
+release=3
 
 source=(https://w1.fi/releases/wpa_supplicant-$version.tar.gz)
 
@@ -65,20 +65,7 @@ $PKG/etc/dbus-1/system.d/wpa_supplicant.conf
 
 
 # Services
-install -v -d -m755 $PKG/lib/systemd/system
-install -v -m644 systemd/*.service $PKG/lib/systemd/system/
+install -v -d -m755 $PKG/usr/lib/systemd/system
+install -v -m644 systemd/*.service $PKG/usr/lib/systemd/system/
 
-install -v -d -m755 $PKG/lib/init/services/wpa-supplicant
-cat > $PKG/lib/init/services/wpa-supplicant/run << "EOF"
-#!/bin/sh
-for FILE in /etc/wpa_supplicant.conf.*
-do
-   INTERFACE="${FILE/*./}"
-   [ -z $INTERFACE ] && continue
-   OPTIONS+="$OPTIONS -c$FILE -i$INTERFACE"
-done
-exec 2>&1
-exec wpa_supplicant $OPTIONS
-EOF
-chmod 755 $PKG/lib/init/services/wpa-supplicant/run
 }
