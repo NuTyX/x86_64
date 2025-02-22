@@ -2,8 +2,8 @@ description="Distributed version control system designed to handle small to very
 url="http://git-scm.com/"
 
 maintainer="Junio C Hamano, Linus Torvalds"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rems,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Fabienwang,Spiky"
 
 makedepends=(gettext)
 name=git
@@ -23,13 +23,13 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 
-mkdir -p $PKG/usr/share/{man,doc/git-$version}
+mkdir -p $PKG/usr/share/{man,doc/$name}
 
 cd $SRC
 for i in *.txt *.html howto RelNotes technical
 do
 	cp -a $i \
-	$PKG/usr/share/doc/git-$version
+	$PKG/usr/share/doc/$name
 done
 
 mv man* \
@@ -37,7 +37,7 @@ $PKG/usr/share/man
 
 chown -R root:root $PKG/usr/share/{man,doc}
 
-find $PKG/usr/share/doc/git-$version -type d -exec chmod 755 {} \;
-find $PKG/usr/share/doc/git-$version -type f -exec chmod 644 {} \;
+find $PKG/usr/share/doc/$name -type d -exec chmod 755 {} \;
+find $PKG/usr/share/doc/$name -type f -exec chmod 644 {} \;
 
 }
