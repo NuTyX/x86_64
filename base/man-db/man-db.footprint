@@ -1,10 +1,5 @@
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/man_db.conf
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/man-db.service
--rw-r--r--	root/root	lib/systemd/system/man-db.timer
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/apropos -> whatis
@@ -25,12 +20,16 @@ lrwxrwxrwx	root/root	usr/lib/man-db/libman.so -> libman-2.13.0.so
 lrwxrwxrwx	root/root	usr/lib/man-db/libmandb.so -> libmandb-2.13.0.so
 -rwxr-xr-x	root/root	usr/lib/man-db/manconv
 -rwxr-xr-x	root/root	usr/lib/man-db/zsoelim
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/man-db.service
+-rw-r--r--	root/root	usr/lib/systemd/system/man-db.timer
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/man-db.conf
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/accessdb
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/man-2.13.0/
--rw-r--r--	root/root	usr/share/doc/man-2.13.0/man-db-manual.ps
--rw-r--r--	root/root	usr/share/doc/man-2.13.0/man-db-manual.txt
+drwxr-xr-x	root/root	usr/share/doc/man-db/
+-rw-r--r--	root/root	usr/share/doc/man-db/man-db-manual.ps
+-rw-r--r--	root/root	usr/share/doc/man-db/man-db-manual.txt

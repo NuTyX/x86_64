@@ -9,7 +9,7 @@ set=(core)
 
 name=man-db
 version=2.13.0
-release=2
+release=3
 
 makedepends=(gdbm libpipeline)
 run=(groff less)
@@ -23,10 +23,11 @@ build()
 cd man-db-$version
 PKG_CONFIG_PATH="/usr/lib/pkgconfig" ./configure --prefix=/usr \
 --libexecdir=/usr/lib \
---docdir=/usr/share/doc/man-$version \
+--docdir=/usr/share/doc/$name \
 --sysconfdir=/etc --disable-setuid \
 --with-browser=/usr/bin/lynx --with-vgrind=/usr/bin/vgrind \
---with-grap=/usr/bin/grap
+--with-grap=/usr/bin/grap \
+--with-systemdsystemunitdir=/usr/lib/systemd/system
 
 make
 # Certains test fails
