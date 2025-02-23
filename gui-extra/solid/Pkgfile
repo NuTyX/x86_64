@@ -3,8 +3,8 @@ url="https://www.kde.org/"
 
 license="LGPL-2.0-only LGPL-3.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(qtdeclarative qt6-base qt6-tools qt6-declarative extra-cmake-modules)
 run=(upower udisks2 media-player-info gvfs)
@@ -12,8 +12,7 @@ run=(upower udisks2 media-player-info gvfs)
 set=(kde6-frameworks)
 
 name=solid
-version=6.10.0
-release=2
+version=6.11.0
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
