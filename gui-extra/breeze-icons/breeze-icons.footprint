@@ -7,8 +7,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6BreezeIcons/
 -rw-r--r--	root/root	usr/lib/cmake/KF6BreezeIcons/KF6BreezeIconsTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6BreezeIcons/KF6BreezeIconsTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6BreezeIcons.so -> libKF6BreezeIcons.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6BreezeIcons.so.6 -> libKF6BreezeIcons.so.6.10.0
--rwxr-xr-x	root/root	usr/lib/libKF6BreezeIcons.so.6.10.0
+lrwxrwxrwx	root/root	usr/lib/libKF6BreezeIcons.so.6 -> libKF6BreezeIcons.so.6.11.0
+-rwxr-xr-x	root/root	usr/lib/libKF6BreezeIcons.so.6.11.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/breeze-dark/
@@ -19,6 +19,8 @@ drwxr-xr-x	root/root	usr/share/icons/breeze-dark/actions/12/
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/object-fill.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/object-stroke-style.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/object-stroke.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/12/open-link-symbolic.svg -> open-link.svg
+-rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/open-link.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/transform-affect-gradient.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/transform-affect-pattern.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/12/transform-affect-rounded-corners.svg
@@ -9565,6 +9567,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/applets/48/weather-overcast.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/applets/48/weather-storm-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/applets/48/weather-storm.svg
 drwxr-xr-x	root/root	usr/share/icons/breeze-dark/applets/64/
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/applets/64/applets-screenshooter.svg -> preferences-system-windows-effect-screenshot.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/applets/64/osd-duplicate.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/applets/64/osd-rotate-ccw.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/applets/64/osd-rotate-cw.svg
@@ -16190,6 +16193,8 @@ drwxr-xr-x	root/root	usr/share/icons/breeze/actions/12/
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/12/object-fill.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/12/object-stroke-style.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/12/object-stroke.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/12/open-link-symbolic.svg -> open-link.svg
+-rw-r--r--	root/root	usr/share/icons/breeze/actions/12/open-link.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/12/transform-affect-gradient.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/12/transform-affect-pattern.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/12/transform-affect-rounded-corners.svg
@@ -25749,6 +25754,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/applets/48/weather-overcast.svg -> w
 -rw-r--r--	root/root	usr/share/icons/breeze/applets/48/weather-storm-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/applets/48/weather-storm.svg
 drwxr-xr-x	root/root	usr/share/icons/breeze/applets/64/
+lrwxrwxrwx	root/root	usr/share/icons/breeze/applets/64/applets-screenshooter.svg -> preferences-system-windows-effect-screenshot.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/applets/64/osd-duplicate.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/applets/64/osd-rotate-ccw.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/applets/64/osd-rotate-cw.svg
