@@ -13,17 +13,16 @@ run=(minizip gtk3 ffmpeg flac dbus freetype brotli woff2
      gtk-update-icon-cache shared-mime-info abseil-cpp)
 
 name=chromium
-version=132.0.6834.83
-release=2
+version=133.0.6943.126
 
 icuversion=75.1
 
-re2version=2024-04-01
+re2version=2024-07-02
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 
 source=(https://github.com/unicode-org/icu/releases/download/\
 release-${icuversion//./-}/icu4c-${icuversion//./_}-src.tgz
-        https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
+        https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-2-x86_64.pkg.tar.zst)
 
 
 prepare() {
