@@ -7,11 +7,11 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 makedepends=(python xmlto docbook-xsl git libportal
-             geoclue2 glib pipewire bubblewrap)
+             geoclue2 glib pipewire bubblewrap umockdev)
 run=(fuse)
 
 name=xdg-desktop-portal
-version=1.18.4
+version=1.20.0
 
 prepare () {
 git clone https://github.com/flatpak/$name $name-$version
@@ -24,7 +24,8 @@ cd    build
 
 meson setup .. \
        --prefix=/usr          \
-       --buildtype=release
+       --buildtype=release    \
+       -D tests=disabled
 
 ninja
 
