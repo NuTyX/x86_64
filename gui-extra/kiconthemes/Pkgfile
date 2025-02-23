@@ -3,13 +3,13 @@ url='https://community.kde.org/Frameworks'
 
 license="LGPL-2.0-only LGPL-3.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(kde6-frameworks)
 
 name=kiconthemes
-version=6.10.0
+version=6.11.0
 
 makedepends=(qt6-base qt6-tools qt6-svg extra-cmake-modules breeze-icons
              karchive kconfig kconfigwidgets ki18n kcolorscheme kwidgetsaddons)
