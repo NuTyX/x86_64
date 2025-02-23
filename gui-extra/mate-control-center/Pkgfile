@@ -12,29 +12,28 @@ run=(shared-mime-info murrine desktop-file-utils mate-icon-theme)
 set=(mate)
 
 name=mate-control-center
-version=1.28.0
+version=1.28.1
 
-source=(https://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
+source=(https://github.com/mate-desktop/$name/archive/refs/tags/v$version.tar.gz)
 
 build() {
 
 cd $name-$version
 
-sed -i "s@usr/bin/passwd@bin/passwd@" \
-capplets/about-me/mate-about-me-password.c
+mkdir build
+cd    build
 
-./configure  --prefix=/usr \
+#sed -i "s@usr/bin/passwd@bin/passwd@" \
+#capplets/about-me/mate-about-me-password.c
+
+meson setup .. \
+--prefix=/usr \
 --sysconfdir=/etc \
---localstatedir=/var \
---disable-static \
---disable-update-mimedb
-make
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-make DESTDIR=$PKG install
-rm -f  $PKG/usr/share/applications/mimeinfo.cache
-#rm $PKG/usr/lib/libmate-window-settings.la
-#rm $PKG/usr/lib/libmate-slab.la
-#rm $PKG/usr/lib/window-manager-settings/libmarco.la
+--localstatedir=/var
+
+ninja
+
+DESTDIR=$PKG ninja install
 }
 
 uptodate() {
