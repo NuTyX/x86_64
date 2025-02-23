@@ -9,11 +9,10 @@ makedepends=(aspell aspell-dict cyrus-sasl gnupg gpgme libidn
 run=(shadow sqlite)
 
 name=mutt
-version=2.2.13
-release=2
-_version=2.2.13
+version=2.2.14
+_version=2.2.14
 
-source=(ftp://ftp.mutt.org/pub/mutt/$name-${_version}.tar.gz)
+source=(https://bitbucket.org/mutt/mutt/downloads/$name-$version.tar.gz)
  
 prepare() {
 SN="mail"
