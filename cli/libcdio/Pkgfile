@@ -11,7 +11,7 @@ version=2.1.0
 release=2
 
 source=(version.texi
-        https://download.tuxfamily.org/nutyx/sources/$name/$name-$version.tar.xz)
+        https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.xz)
 
 prepare() {
  cp version.texi $name-$version/doc
