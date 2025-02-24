@@ -20,8 +20,8 @@ mkdir build
 cd    build
 
 meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
+     --prefix=/usr          \
+     --buildtype=plain
 
 ninja
 
