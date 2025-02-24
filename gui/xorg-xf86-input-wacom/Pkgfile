@@ -1,7 +1,15 @@
 description="Xorg Wacom tablet driver."
-packager="spiky <spiky@nutyx.org>"
+url="https://github.com/linuxwacom/xf86-input-wacom"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
 name=xorg-xf86-input-wacom
 version=1.2.3
+release=2
+
 _name=${name/xorg-/}
 makedepends=(xorg-libxi xorg-libxinerama xorg-libxrandr xorg-server)
 
@@ -12,7 +20,7 @@ build() {
 	./configure --prefix=/usr \
 	--sysconfdir=/etc \
 	--localstatedir=/var \
-	--with-systemd-unit-dir=/lib/systemd/system
+	--with-systemd-unit-dir=/usr/lib/systemd/system
 
 	make
 	make DESTDIR=$PKG install
