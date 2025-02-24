@@ -1,8 +1,8 @@
 description="Feature-rich cron implementation"
 url="http://fcron.free.fr"
 
-contributors="Pierre,Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(vim pam libxcrypt)
 
@@ -10,11 +10,8 @@ name=fcron
 version=3.3.1
 release=3
 
-runyx_version=20201011
-
 PKGMK_GROUPS=(doc man)
-source=(http://downloads.tuxfamily.org/nutyx/sources/runyx/runyx-${runyx_version}.tar.xz
-        http://fcron.free.fr/archives/$name-$version.src.tar.gz)
+source=(http://fcron.free.fr/archives/$name-$version.src.tar.gz)
 
 prepare() {
 
@@ -59,8 +56,4 @@ do
 install -d -m755 $PKG/etc/cron.$j
 done
 
-# Service
-cd $SRC/runyx-${runyx_version}
-make DESTDIR=$PKG install-sysv-fcron
-make DESTDIR=$PKG install-runyx-fcron
 }
