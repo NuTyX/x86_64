@@ -18,6 +18,7 @@ _name=NetworkManager
 
 name=networkmanager
 version=1.51.4
+release=2
 
 source=(https://download.gnome.org/sources/$_name/${version%.*}/$_name-$version.tar.xz)
 
@@ -31,9 +32,7 @@ mkdir build && cd build
 
 CXXFLAGS+="-02 -fPIC"            \
 meson --prefix        /usr       \
-      -Dudev_dir=/lib/udev       \
-      -Dsession_tracking=elogind \
-      -Dsession_tracking="no"    \
+      -Dsession_tracking=systemd \
       -Dlibaudit=no              \
       -Dlibpsl=false             \
       -Dnmtui=true               \
@@ -44,14 +43,11 @@ meson --prefix        /usr       \
       -Dmodem_manager=false      \
       -Dnm_cloud_setup=false     \
       -Ddocs=true                \
-      -Dsystemdsystemunitdir=no  \
-      -Dsystemd_journal=false    \
       -Dvapi=true                \
       ../${_name}-$version
 ninja
 DESTDIR=$PKG ninja install
 
-mv $PKG/usr/share/doc/NetworkManager{,-$version}
 # create a VPN directory
 install -d $PKG/etc/$_name/VPN
 
