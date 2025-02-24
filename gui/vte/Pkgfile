@@ -1,17 +1,21 @@
 description="Vte is a library (libvte) implementing a terminal emulator widget for GTK+ 3"
-url="http://developer.gnome.org/arch/gnome/widgets/vte.html"
+url="https://wiki.gnome.org/Apps/Terminal/VTE"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Pierre,Jayce,Tnut,Skythrew"
+license="GPL-3.0-or-later, LGPL-3.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Pierre,Jayce,Spiky,Skythrew"
 
 makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection)
 
 name=vte
-version=0.76.0
-release=4
+version=0.78.3
+release=1
 
 prepare() {
 git clone https://gitlab.gnome.org/GNOME/vte.git
+cd $name
+git checkout $version
 }
 
 build() {
@@ -21,7 +25,7 @@ cd    build
 
 meson  --prefix=/usr \
 --sysconfdir=/etc \
--Dfribidi=false \
+-Dfribidi=false   \
 -Dgtk4=true
 
 ninja
