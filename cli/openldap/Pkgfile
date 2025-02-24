@@ -8,11 +8,10 @@ makedepends=(autoconf m4 shadow)
 
 name=openldap
 version=2.6.9
+scripts_version=20250125
 release=2
 
-scriptsversion=20250125
-
-source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
+source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
 	    https://www.openldap.org/software/download/OpenLDAP/openldap-release/$name-$version.tgz
 	    $name-$version-consolidated-1.patch)
 prepare() {
@@ -41,13 +40,6 @@ make DESTDIR=$PKG install
 rm $PKG/usr/lib/liblber.la
 
 # Service
-cd ../nutyx-scripts-$scriptsversion
+cd ../nutyx-scripts-${scripts_version}
 make DESTDIR=$PKG install-sysd-slapd
-}
-service() {
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib/systemd
-rm -r usr/lib/systemd
 }
