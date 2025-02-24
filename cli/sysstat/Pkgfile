@@ -1,12 +1,14 @@
 description="Utilities to monitor system performance and usage activity."
-url="http://pagesperso-orange.fr/sebastien.godard/"
+url="https://github.com/sysstat/sysstat"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Pierre,Spiky"
 license="GPL2"
 
 name=sysstat
 version=12.7.7
+release=2
+
 PKGMK_KEEP_SOURCES="no"
 
 source=(https://github.com/sysstat/sysstat/archive/refs/tags/v$version.tar.gz)
@@ -26,9 +28,9 @@ conf_dir=/etc/sysconfig   \
 make
 make DESTDIR=$PKG install
 
-install -vdm755 $PKG/lib/systemd/system/
-install -v -m644 sysstat.service $PKG/lib/systemd/system/sysstat.service
-sed -i "/^Also=/d" $PKG/lib/systemd/system/sysstat.service
+install -vdm755 $PKG/usr/lib/systemd/system/
+install -v -m644 sysstat.service $PKG/usr/lib/systemd/system/sysstat.service
+sed -i "/^Also=/d" $PKG/usr/lib/systemd/system/sysstat.service
 
 install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
