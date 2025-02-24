@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/include/qcoro6/QCoro/
 -rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroGenerator
 -rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroIODevice
 -rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroImageProvider
+-rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroLazyTask
 -rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroLocalSocket
 -rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroNetwork
 -rw-r--r--	root/root	usr/include/qcoro6/QCoro/QCoroNetworkReply
@@ -36,8 +37,10 @@ drwxr-xr-x	root/root	usr/include/qcoro6/qcoro/
 drwxr-xr-x	root/root	usr/include/qcoro6/qcoro/impl/
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/connect.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/isqprivatesignal.h
+-rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/lazytask.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/task.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/taskawaiterbase.h
+-rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/taskbase.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/taskfinalsuspend.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/taskpromise.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/impl/taskpromisebase.h
@@ -57,6 +60,7 @@ drwxr-xr-x	root/root	usr/include/qcoro6/qcoro/impl/
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcorogenerator.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcoroimageprovider.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcoroiodevice.h
+-rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcorolazytask.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcorolocalsocket.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcoronetwork.h
 -rw-r--r--	root/root	usr/include/qcoro6/qcoro/qcoronetwork_export.h
