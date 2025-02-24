@@ -1,9 +1,10 @@
 description="Mobile broadband modem management service."
-url="http://www.freedesktop.org/wiki/Software/ModemManager/"
+url="https://www.freedesktop.org/wiki/Software/ModemManager/"
 
 license="GPL2 LGPL2.1"
 
 packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(dbus libgudev gobject-introspection libmbim libqmi polkit gtk-doc)
 
