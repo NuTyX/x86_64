@@ -3,14 +3,13 @@ url='https://kde.org/plasma-desktop/'
 
 license="LGPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(kde6 kde6-plasma)
 
 name=powerdevil
-version=6.2.5
-release=2
+version=6.3.1
 
 makedepends=(libxcb qt6-base qt6-declarative extra-cmake-modules kdoctools
              kauth kcmutils kconfig kcoreaddons kcrash kdbusaddons kglobalaccel
