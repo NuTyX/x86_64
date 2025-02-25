@@ -10,17 +10,17 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6KIO/
 -rw-r--r--	root/root	usr/lib/cmake/KF6KIO/KF6KIOTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6KIO/KF6KIOTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOCore.so -> libKF6KIOCore.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOCore.so.6 -> libKF6KIOCore.so.6.10.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOCore.so.6.10.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOCore.so.6 -> libKF6KIOCore.so.6.11.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOCore.so.6.11.0
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOFileWidgets.so -> libKF6KIOFileWidgets.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOFileWidgets.so.6 -> libKF6KIOFileWidgets.so.6.10.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOFileWidgets.so.6.10.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOFileWidgets.so.6 -> libKF6KIOFileWidgets.so.6.11.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOFileWidgets.so.6.11.0
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOGui.so -> libKF6KIOGui.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOGui.so.6 -> libKF6KIOGui.so.6.10.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOGui.so.6.10.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOGui.so.6 -> libKF6KIOGui.so.6.11.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOGui.so.6.11.0
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOWidgets.so -> libKF6KIOWidgets.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOWidgets.so.6 -> libKF6KIOWidgets.so.6.10.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOWidgets.so.6.10.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOWidgets.so.6 -> libKF6KIOWidgets.so.6.11.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOWidgets.so.6.11.0
 drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/kiod6
@@ -42,6 +42,8 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/kio_http.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/kio_remote.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/kio_trash.so
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio_dnd/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio_dnd/dropintonewfolder.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kiod/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kiod/kioexecd.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kiod/kpasswdserver.so
@@ -81,6 +83,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/boo.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/bug.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/call.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/caniuse.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/cia.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/citeseer.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/codeberg.desktop
@@ -96,6 +99,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/deepl.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/dictfr.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/docbook.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/dockerhub.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/doi.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/duckduckgo.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/duckduckgo_info.desktop
@@ -155,6 +159,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/leo.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/linguee.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/magnatune.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/mdn.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/metacrawler.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/microsoft_cpp.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/msdn.desktop
@@ -165,8 +170,10 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/multitran-itru.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/multitran-nlru.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/netcraft.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/nixpkgs.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/nl-telephone.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/nl-teletekst.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/npm.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/opendesktop.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/opensuse.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/pgpkeys.desktop
