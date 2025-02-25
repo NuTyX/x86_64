@@ -12,8 +12,7 @@ makedepends=(lxqt-build-tools liblxqt qt6-svg libkscreen xorg-libxcursor
 set=(lxqt)
 
 name=lxqt-config
-version=2.1.0
-release=2
+version=2.1.1
 
 source=(https://github.com/lxqt/$name/releases/download/$version/$name-$version.tar.xz)
 
