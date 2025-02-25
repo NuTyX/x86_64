@@ -3,16 +3,16 @@ url='https://kde.org/plasma-desktop/'
 
 license="LGPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(kde6 kde6-plasma)
 
 name=plasma5support
-version=6.2.5
+version=6.3.1
 
 makedepends=(qt6-base qt6-declarative qt6-tools extra-cmake-modules libksysguard
-             kconfig kcoreaddons ki18n solid knotifications kguiaddons)
+             kconfig kcoreaddons ki18n solid knotifications kguiaddons kidletime)
 
 run=(xdg-utils hicolor-icon-theme )
 
