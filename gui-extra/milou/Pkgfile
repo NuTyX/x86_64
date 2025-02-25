@@ -6,10 +6,10 @@ license="LGPL-2.0-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-set=(kde6 kde-plasma)
+set=(kde6 kde6-plasma)
 
 name=milou
-version=6.2.4
+version=6.3.1
 
 makedepends=(qt6-base qt6-declarative extra-cmake-modules kdoctools
              kirigami krunner ksvg libplasma)
