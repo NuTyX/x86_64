@@ -1,7 +1,3 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/xdg/
-drwxr-xr-x	root/root	etc/xdg/menus/
--rw-r--r--	root/root	etc/xdg/menus/kinfocenter.menu
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/kinfocenter -> /usr/bin/systemsettings
@@ -11,6 +7,7 @@ drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/kinfocenter-dmidecode-helper
+-rwxr-xr-x	root/root	usr/lib/libexec/kinfocenter-opengl-helper
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/
@@ -21,6 +18,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_audio_information.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_block_devices.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_cpu.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_edid.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_egl.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_firmware_security.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_glx.so
@@ -52,8 +50,6 @@ drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.kinfocenter.dmidecode.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
 -rw-r--r--	root/root	usr/share/dbus-1/system.d/org.kde.kinfocenter.dmidecode.conf
-drwxr-xr-x	root/root	usr/share/desktop-directories/
--rw-r--r--	root/root	usr/share/desktop-directories/kinfocenter.directory
 drwxr-xr-x	root/root	usr/share/kinfocenter/
 drwxr-xr-x	root/root	usr/share/kinfocenter/categories/
 -rw-r--r--	root/root	usr/share/kinfocenter/categories/basicinformation.desktop
@@ -61,6 +57,8 @@ drwxr-xr-x	root/root	usr/share/kinfocenter/categories/
 -rw-r--r--	root/root	usr/share/kinfocenter/categories/graphicalinfocategory.desktop
 -rw-r--r--	root/root	usr/share/kinfocenter/categories/lostfoundcategory.desktop
 -rw-r--r--	root/root	usr/share/kinfocenter/categories/networkinfocategory.desktop
+drwxr-xr-x	root/root	usr/share/kinfocenter/edid/
+-rw-r--r--	root/root	usr/share/kinfocenter/edid/edid.sh
 drwxr-xr-x	root/root	usr/share/kinfocenter/firmware_security/
 -rw-r--r--	root/root	usr/share/kinfocenter/firmware_security/fwupdmgr.sh
 drwxr-xr-x	root/root	usr/share/metainfo/
