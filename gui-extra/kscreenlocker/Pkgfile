@@ -6,10 +6,10 @@ license="LGPL-2.0-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-set=(kde6)
+set=(kde6 kde6-plasma)
 
 name=kscreenlocker
-version=6.2.4
+version=6.3.1
 
 makedepends=(xorg-libx11 libxcb xorg-libxi qt6-base qt6-declarative
              xcb-util-keysyms extra-cmake-modules kcmutils kdoctools
