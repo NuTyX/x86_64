@@ -1,0 +1,27 @@
+description='Tool and library for running OCI-based containers in pods'
+url='https://github.com/containers/libpod'
+
+license="APACHE"
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(grep man-db go-md2man libseccomp gpgme)
+run=()
+set=()
+
+name=podman
+version=5.4.0
+
+source=(https://github.com/containers/podman/archive/v$version/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+
+	export PATH=/usr/lib/go/bin:$PATH
+	export GOFLAGS="-buildmode=pie"
+	make  BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
+	make install PREFIX=/usr DESTDIR=$PKG LIBEXECDIR=/usr/lib
+
+       install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
+}

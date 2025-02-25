@@ -1,14 +1,14 @@
 description="Streaming audio over the Internet"
-url="http://www.icecast.org/"
+url="https://www.icecast.org/"
 
-contributors="Hugo,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Hugo,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(curl libvorbis libxslt speex libtheora)
 
 name=icecast
 version=2.4.4
-release=4
+release=5
 
 source=(http://downloads.us.xiph.org/releases/$name/$name-$version.tar.gz
 	icecast.service)
@@ -17,7 +17,7 @@ build(){
 cd $name-$version
 
 ./configure --prefix=/usr \
-	    --sysconfdir=/etc \
+	  --sysconfdir=/etc \
             --localstatedir=/var
 
 make
@@ -26,5 +26,5 @@ make DESTDIR=$PKG install
 
 install -d -g99 -o99 $PKG/var/log/icecast
 
-install -Dm0644 $SRC/icecast.service $PKG/lib/systemd/system/icecast.service
+install -Dm0644 $SRC/icecast.service $PKG/usr/lib/systemd/system/icecast.service
 }

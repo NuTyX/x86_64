@@ -11,6 +11,8 @@ version=1.15
 
 set=(devel)
 
+PKGMK_KEEP_SOURCES="no"
+
 source=(https://hg.mozilla.org/projects/nss/raw-file/tip/lib/ckfw/builtins/certdata.txt
         https://github.com/lfs-book/$name/archive/v$version/$name-$version.tar.gz)
 

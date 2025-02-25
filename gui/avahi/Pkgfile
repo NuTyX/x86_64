@@ -1,14 +1,14 @@
 description="Multicast/unicast DNS-SD framework"
 url="http://www.avahi.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Jayce,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Jayce,Rems,Spiky"
 
 makedepends=(intltool libevent glib gobject-introspection libdaemon dbus)
 
 name=avahi
 version=0.8
-release=3
+release=4
 
 source=( https://github.com/lathiat/avahi/releases/download/v$version/avahi-$version.tar.gz)
 
@@ -35,7 +35,8 @@ cd $name-$version
 --disable-gtk \
 --disable-monodoc \
 --enable-core-docs \
---with-systemdsystemunitdir=/lib/systemd/system
+--with-distro=none   \
+--with-dbus-system-address='unix:path=/run/dbus/system_bus_socket'
 make
 make DESTDIR=$PKG install
 
