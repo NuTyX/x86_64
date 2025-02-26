@@ -104,6 +104,8 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/trash/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/private/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/private/desktopcontainment/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/private/desktopcontainment/folder/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/private/desktopcontainment/folder/folderplugin.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/private/desktopcontainment/folder/kde-qmlmodule.version
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/private/desktopcontainment/folder/libfolderplugin.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/private/desktopcontainment/folder/qmldir
 drwxr-xr-x	root/root	usr/lib/systemd/
@@ -205,7 +207,7 @@ drwxr-xr-x	root/root	usr/share/kcm_recentFiles/workspace/
 drwxr-xr-x	root/root	usr/share/kcm_recentFiles/workspace/settings/
 drwxr-xr-x	root/root	usr/share/kcm_recentFiles/workspace/settings/qml/
 drwxr-xr-x	root/root	usr/share/kcm_recentFiles/workspace/settings/qml/recentFiles/
--rw-r--r--	root/root	usr/share/kcm_recentFiles/workspace/settings/qml/recentFiles/BlacklistApplicationView.qml
+-rw-r--r--	root/root	usr/share/kcm_recentFiles/workspace/settings/qml/recentFiles/ExcludedApplicationView.qml
 drwxr-xr-x	root/root	usr/share/kcmkeys/
 -rw-r--r--	root/root	usr/share/kcmkeys/kde3.kksrc
 -rw-r--r--	root/root	usr/share/kcmkeys/kde4.kksrc
@@ -227,7 +229,6 @@ drwxr-xr-x	root/root	usr/share/kglobalaccel/
 -rw-r--r--	root/root	usr/share/kglobalaccel/org.kde.plasma.emojier.desktop
 drwxr-xr-x	root/root	usr/share/knotifications6/
 -rw-r--r--	root/root	usr/share/knotifications6/kaccess.notifyrc
--rw-r--r--	root/root	usr/share/knotifications6/kcm_touchpad.notifyrc
 drwxr-xr-x	root/root	usr/share/knsrcfiles/
 -rw-r--r--	root/root	usr/share/knsrcfiles/krunner.knsrc
 -rw-r--r--	root/root	usr/share/knsrcfiles/ksplash.knsrc
@@ -257,6 +258,7 @@ drwxr-xr-x	root/root	usr/share/metainfo/
 drwxr-xr-x	root/root	usr/share/plasma/
 drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/af.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/ak.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/am.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ar.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ar_SA.dict
@@ -267,10 +269,12 @@ drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/bew.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/bg.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/bgn.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/blo.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/bn.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/br.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/bs.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ca.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/ca_ES_VALENCIA.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ccp.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ceb.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/chr.dict
@@ -287,7 +291,6 @@ drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/en_001.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/en_AU.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/en_CA.dict
--rw-r--r--	root/root	usr/share/plasma/emoji/en_GB.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/en_IN.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/es.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/es_419.dict
@@ -302,11 +305,13 @@ drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/fo.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/fr.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/fr_CA.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/frr.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ga.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/gd.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/gl.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/gu.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ha.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/ha_NE.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/he.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/hi.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/hi_Latn.dict
@@ -324,6 +329,7 @@ drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/ka.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/kab.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/kk.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/kk_Arab.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/kl.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/km.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/kn.dict
@@ -354,6 +360,7 @@ drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/or.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/pa.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/pa_Arab.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/pap.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/pcm.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/pl.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ps.dict
@@ -394,6 +401,7 @@ drwxr-xr-x	root/root	usr/share/plasma/emoji/
 -rw-r--r--	root/root	usr/share/plasma/emoji/uk.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/ur.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/uz.dict
+-rw-r--r--	root/root	usr/share/plasma/emoji/vec.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/vi.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/wo.dict
 -rw-r--r--	root/root	usr/share/plasma/emoji/xh.dict
