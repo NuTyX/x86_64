@@ -3,13 +3,13 @@ url='https://www.kde.org/'
 
 license="LGPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(kde6 kde6-gear)
 
 name=kio-extras
-version=24.12.1
+version=24.12.2
 
 makedepends=(gperf openexr qcoro-qt6 taglib
              qt6-base qt6-5compat qt6-svg qt6-imageformats
