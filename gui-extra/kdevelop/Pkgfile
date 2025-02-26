@@ -3,8 +3,8 @@ url="https://www.kdevelop.org/"
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(kcmutils knotifyconfig ktexteditor libksysguard
              ktexttemplate ktextwidgets kwidgetsaddons kwindowsystem
@@ -24,7 +24,7 @@ run=(hicolor-icon-theme astyle)
 set=(kde6-gear)
 
 name=kdevelop
-version=24.12.1
+version=24.12.2
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 build=kde6
