@@ -66,14 +66,15 @@ drwxr-xr-x	root/root	usr/lib/cmake/LibTaskManager/
 drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasma6.0-remove-dpi-settings
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasma6.0-remove-old-shortcuts
+-rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasma6.3-update-clipboard-database-2-to-3
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.0-keep-custom-position-of-panels
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
 lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so -> libbatterycontrol.so.6
-lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.3.1
 lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so -> libcolorcorrect.so.6
-lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so.6 -> libcolorcorrect.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libcolorcorrect.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libcolorcorrect.so.6 -> libcolorcorrect.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libcolorcorrect.so.6.3.1
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/baloorunner
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
@@ -89,30 +90,26 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-fallback-session-save
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-sourceenv.sh
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so -> libkfontinst.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.3.1
 lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so -> libkfontinstui.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.3.1
 lrwxrwxrwx	root/root	usr/lib/libklipper.so -> libklipper.so.6
-lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libklipper.so.6.2.5
-lrwxrwxrwx	root/root	usr/lib/libkmpris.so -> libkmpris.so.6
-lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libklipper.so.6.3.1
+lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.3.1
 -rwxr-xr-x	root/root	usr/lib/libkrdb.so
 lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so -> libkworkspace6.so.6
-lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.3.1
 lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so -> libnotificationmanager.so.1
-lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.2.5
-lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so -> libplasma-geolocation-interface.so.6
-lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so.6 -> libplasma-geolocation-interface.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libplasma-geolocation-interface.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.3.1
 lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so -> libtaskmanager.so.6
-lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.3.1
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so -> libweather_ion.so.7
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so.7 -> libweather_ion.so.7.0.0
 -rwxr-xr-x	root/root	usr/lib/libweather_ion.so.7.0.0
@@ -126,8 +123,10 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/devicenotifications.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/donationmessage.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/freespacenotifier.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/geotimezoned.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/ktimezoned.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/mprisservice.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/oom-notifier.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/plasma-session-shortcuts.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/plasma_accentcolor_service.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/soliduiserver.so
@@ -203,29 +202,17 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_fontinst.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_activities.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_applicationjobs.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_apps.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_bbcukmet.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_clipboard.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_dwd.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_envcan.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_executable.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_geolocation.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_mouse.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_noaa.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_notifications.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_packagekit.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_time.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_weather.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_wettercom.so
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/geolocationprovider/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/geolocationprovider/plasma-geolocation-gps.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/geolocationprovider/plasma-geolocation-ip.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasmacalendarplugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasmacalendarplugins/holidays/
 -rw-r--r--	root/root	usr/lib/qt6/plugins/plasmacalendarplugins/holidays/HolidaysConfig.qml
@@ -483,6 +470,7 @@ drwxr-xr-x	root/root	usr/share/desktop-directories/
 -rw-r--r--	root/root	usr/share/desktop-directories/kf5-games-strategy.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/kf5-games.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/kf5-graphics.directory
+-rw-r--r--	root/root	usr/share/desktop-directories/kf5-help.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/kf5-internet-terminal.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/kf5-internet.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/kf5-main.directory
@@ -541,6 +529,7 @@ drwxr-xr-x	root/root	usr/share/kconf_update/
 -rw-r--r--	root/root	usr/share/kconf_update/migrate-calendar-to-plugin-id.upd
 -rw-r--r--	root/root	usr/share/kconf_update/plasma6.0-remove-dpi-settings.upd
 -rw-r--r--	root/root	usr/share/kconf_update/plasma6.0-remove-old-shortcuts.upd
+-rw-r--r--	root/root	usr/share/kconf_update/plasma6.3-update-clipboard-database-2-to-3.upd
 -rw-r--r--	root/root	usr/share/kconf_update/plasmashell-6.0-keep-custom-position-of-panels.upd
 -rw-r--r--	root/root	usr/share/kconf_update/plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels.upd
 drwxr-xr-x	root/root	usr/share/kfontinst/
@@ -570,6 +559,8 @@ drwxr-xr-x	root/root	usr/share/knotifications6/
 -rw-r--r--	root/root	usr/share/knotifications6/devicenotifications.notifyrc
 -rw-r--r--	root/root	usr/share/knotifications6/donationmessage.notifyrc
 -rw-r--r--	root/root	usr/share/knotifications6/freespacenotifier.notifyrc
+-rw-r--r--	root/root	usr/share/knotifications6/libnotificationmanager.notifyrc
+-rw-r--r--	root/root	usr/share/knotifications6/oom-notifier.notifyrc
 -rw-r--r--	root/root	usr/share/knotifications6/phonon.notifyrc
 drwxr-xr-x	root/root	usr/share/knsrcfiles/
 -rw-r--r--	root/root	usr/share/knsrcfiles/colorschemes.knsrc
@@ -802,6 +793,7 @@ drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/cont
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/CalendarView.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/DigitalClock.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/NoTimezoneWarning.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/Tooltip.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/configAppearance.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.digitalclock/contents/ui/configCalendar.qml
@@ -843,17 +835,29 @@ drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/con
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/CompactRepresentation.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/DraggableDelegate.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/DraggableFileArea.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/EditContextMenu.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/FullRepresentation.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/JobDetails.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/JobItem.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/NotificationHeader.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/NotificationItem.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/NotificationPopup.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/NotificationReplyField.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/SelectableLabel.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/ThumbnailStrip.qml
+drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/ActionContainer.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/Body.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/DraggableFileArea.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/EditContextMenu.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/FooterLoader.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/HeadingButtons.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/Icon.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/JobDetails.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/JobIconItem.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/JobItem.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/ModelInterface.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/NotificationHeader.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/NotificationReplyField.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/Summary.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/components/ThumbnailStrip.qml
+drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/delegates/
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/delegates/BaseDelegate.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/delegates/DelegateHistory.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/delegates/DelegateHistoryGrouped.qml
+-rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/delegates/DelegatePopup.qml
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/global/
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/global/Globals.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/global/PulseAudio.qml
@@ -988,14 +992,9 @@ drwxr-xr-x	root/root	usr/share/plasma/weather/
 -rw-r--r--	root/root	usr/share/plasma/weather/noaa_station_list.xml
 drwxr-xr-x	root/root	usr/share/plasma5support/
 drwxr-xr-x	root/root	usr/share/plasma5support/services/
--rw-r--r--	root/root	usr/share/plasma5support/services/activities.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/applicationjobs.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/apps.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/notifications.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/org.kde.places.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/org.kde.plasma.clipboard.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/packagekit.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/powermanagementservice.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/statusnotifieritem.operations
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
