@@ -8,15 +8,22 @@ drwxr-xr-x	root/root	usr/lib/cmake/Plasma5Support/
 -rw-r--r--	root/root	usr/lib/cmake/Plasma5Support/Plasma5SupportTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Plasma5Support/Plasma5SupportTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so -> libPlasma5Support.so.6
-lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so.6 -> libPlasma5Support.so.6.2.5
--rwxr-xr-x	root/root	usr/lib/libPlasma5Support.so.6.2.5
+lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so.6 -> libPlasma5Support.so.6.3.1
+-rwxr-xr-x	root/root	usr/lib/libPlasma5Support.so.6.3.1
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_apps.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_devicenotifications.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_hotplug.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_keystate.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_mouse.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_packagekit.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_soliddevice.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
@@ -30,10 +37,14 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/plasma5support/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/plasma5support/
 drwxr-xr-x	root/root	usr/share/plasma5support/services/
+-rw-r--r--	root/root	usr/share/plasma5support/services/apps.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/dataengineservice.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/hotplug.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/modifierkeystate.operations
+-rw-r--r--	root/root	usr/share/plasma5support/services/org.kde.places.operations
+-rw-r--r--	root/root	usr/share/plasma5support/services/packagekit.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/plasmoidservice.operations
+-rw-r--r--	root/root	usr/share/plasma5support/services/powermanagementservice.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/soliddevice.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/storage.operations
 drwxr-xr-x	root/root	usr/share/qlogging-categories6/
