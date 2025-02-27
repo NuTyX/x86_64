@@ -1,28 +1,4 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/rc.d/
-drwxr-xr-x	root/root	etc/rc.d/init.d/
--rwxr-xr--	root/root	etc/rc.d/init.d/alsa
-drwxr-xr-x	root/root	etc/rc.d/rc0.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K35alsa -> ../init.d/alsa
-drwxr-xr-x	root/root	etc/rc.d/rc1.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K35alsa -> ../init.d/alsa
-drwxr-xr-x	root/root	etc/rc.d/rc2.d/
-drwxr-xr-x	root/root	etc/rc.d/rc3.d/
-drwxr-xr-x	root/root	etc/rc.d/rc4.d/
-drwxr-xr-x	root/root	etc/rc.d/rc5.d/
-drwxr-xr-x	root/root	etc/rc.d/rc6.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K35alsa -> ../init.d/alsa
-drwxr-xr-x	root/root	etc/rc.d/rcS.d/
-lrwxrwxrwx	root/root	etc/rc.d/rcS.d/S60alsa -> ../init.d/alsa
-drwxr-xr-x	root/root	etc/sysconfig/
 drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/alsa-restore.service
--rw-r--r--	root/root	lib/systemd/system/alsa-state.service
-drwxr-xr-x	root/root	lib/systemd/system/sound.target.wants/
-lrwxrwxrwx	root/root	lib/systemd/system/sound.target.wants/alsa-restore.service -> ../alsa-restore.service
-lrwxrwxrwx	root/root	lib/systemd/system/sound.target.wants/alsa-state.service -> ../alsa-state.service
 drwxr-xr-x	root/root	lib/udev/
 drwxr-xr-x	root/root	lib/udev/rules.d/
 -rw-r--r--	root/root	lib/udev/rules.d/90-alsa-restore.rules
