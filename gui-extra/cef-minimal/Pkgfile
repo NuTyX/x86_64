@@ -9,9 +9,9 @@ makedepends=(cmake xorg-libx11 xorg-libxcomposite
 run=()
 
 name=cef-minimal
-version=127.3.5
-_commit=g114ea2a
-_chromium_version=127.0.6533.120
+version=133.4.0
+_commit=g760a2c4
+_chromium_version=133.0.6943.127
 PKGMK_KEEP_SOURCES="no"
 
 source=(https://cef-builds.spotifycdn.com/cef_binary_${version}+${_commit}+chromium-${_chromium_version}_linux64_minimal.tar.bz2)

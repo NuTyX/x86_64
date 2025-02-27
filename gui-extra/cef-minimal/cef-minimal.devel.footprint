@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	opt/cef/include/base/
 -rw-r--r--	root/root	opt/cef/include/base/cef_callback_list.h
 -rw-r--r--	root/root	opt/cef/include/base/cef_cancelable_callback.h
 -rw-r--r--	root/root	opt/cef/include/base/cef_compiler_specific.h
+-rw-r--r--	root/root	opt/cef/include/base/cef_dump_without_crashing.h
 -rw-r--r--	root/root	opt/cef/include/base/cef_lock.h
 -rw-r--r--	root/root	opt/cef/include/base/cef_logging.h
 -rw-r--r--	root/root	opt/cef/include/base/cef_macros.h
@@ -54,8 +55,6 @@ drwxr-xr-x	root/root	opt/cef/include/capi/
 -rw-r--r--	root/root	opt/cef/include/capi/cef_download_item_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_drag_data_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_drag_handler_capi.h
--rw-r--r--	root/root	opt/cef/include/capi/cef_extension_capi.h
--rw-r--r--	root/root	opt/cef/include/capi/cef_extension_handler_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_file_util_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_find_handler_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_focus_handler_capi.h
@@ -102,6 +101,7 @@ drwxr-xr-x	root/root	opt/cef/include/capi/
 -rw-r--r--	root/root	opt/cef/include/capi/cef_stream_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_string_visitor_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_task_capi.h
+-rw-r--r--	root/root	opt/cef/include/capi/cef_task_manager_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_thread_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_trace_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_unresponsive_process_callback_capi.h
@@ -113,6 +113,7 @@ drwxr-xr-x	root/root	opt/cef/include/capi/
 -rw-r--r--	root/root	opt/cef/include/capi/cef_xml_reader_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/cef_zip_reader_capi.h
 drwxr-xr-x	root/root	opt/cef/include/capi/test/
+-rw-r--r--	root/root	opt/cef/include/capi/test/cef_api_version_test_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/test/cef_test_helpers_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/test/cef_test_server_capi.h
 -rw-r--r--	root/root	opt/cef/include/capi/test/cef_translator_test_capi.h
@@ -140,6 +141,7 @@ drwxr-xr-x	root/root	opt/cef/include/capi/views/
 -rw-r--r--	root/root	opt/cef/include/capi/views/cef_window_delegate_capi.h
 -rw-r--r--	root/root	opt/cef/include/cef_accessibility_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_api_hash.h
+-rw-r--r--	root/root	opt/cef/include/cef_api_versions.h
 -rw-r--r--	root/root	opt/cef/include/cef_app.h
 -rw-r--r--	root/root	opt/cef/include/cef_audio_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_auth_callback.h
@@ -164,14 +166,13 @@ drwxr-xr-x	root/root	opt/cef/include/capi/views/
 -rw-r--r--	root/root	opt/cef/include/cef_download_item.h
 -rw-r--r--	root/root	opt/cef/include/cef_drag_data.h
 -rw-r--r--	root/root	opt/cef/include/cef_drag_handler.h
--rw-r--r--	root/root	opt/cef/include/cef_extension.h
--rw-r--r--	root/root	opt/cef/include/cef_extension_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_file_util.h
 -rw-r--r--	root/root	opt/cef/include/cef_find_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_focus_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_frame.h
 -rw-r--r--	root/root	opt/cef/include/cef_frame_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_i18n_util.h
+-rw-r--r--	root/root	opt/cef/include/cef_id_mappers.h
 -rw-r--r--	root/root	opt/cef/include/cef_image.h
 -rw-r--r--	root/root	opt/cef/include/cef_jsdialog_handler.h
 -rw-r--r--	root/root	opt/cef/include/cef_keyboard_handler.h
@@ -214,6 +215,7 @@ drwxr-xr-x	root/root	opt/cef/include/capi/views/
 -rw-r--r--	root/root	opt/cef/include/cef_stream.h
 -rw-r--r--	root/root	opt/cef/include/cef_string_visitor.h
 -rw-r--r--	root/root	opt/cef/include/cef_task.h
+-rw-r--r--	root/root	opt/cef/include/cef_task_manager.h
 -rw-r--r--	root/root	opt/cef/include/cef_thread.h
 -rw-r--r--	root/root	opt/cef/include/cef_trace.h
 -rw-r--r--	root/root	opt/cef/include/cef_unresponsive_process_callback.h
@@ -221,11 +223,13 @@ drwxr-xr-x	root/root	opt/cef/include/capi/views/
 -rw-r--r--	root/root	opt/cef/include/cef_v8.h
 -rw-r--r--	root/root	opt/cef/include/cef_values.h
 -rw-r--r--	root/root	opt/cef/include/cef_version.h
+-rw-r--r--	root/root	opt/cef/include/cef_version_info.h
 -rw-r--r--	root/root	opt/cef/include/cef_waitable_event.h
 -rw-r--r--	root/root	opt/cef/include/cef_x509_certificate.h
 -rw-r--r--	root/root	opt/cef/include/cef_xml_reader.h
 -rw-r--r--	root/root	opt/cef/include/cef_zip_reader.h
 drwxr-xr-x	root/root	opt/cef/include/internal/
+-rw-r--r--	root/root	opt/cef/include/internal/cef_dump_without_crashing_internal.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_export.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_linux.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_logging_internal.h
@@ -245,9 +249,11 @@ drwxr-xr-x	root/root	opt/cef/include/internal/
 -rw-r--r--	root/root	opt/cef/include/internal/cef_types_content_settings.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_types_geometry.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_types_linux.h
+-rw-r--r--	root/root	opt/cef/include/internal/cef_types_osr.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_types_runtime.h
 -rw-r--r--	root/root	opt/cef/include/internal/cef_types_wrappers.h
 drwxr-xr-x	root/root	opt/cef/include/test/
+-rw-r--r--	root/root	opt/cef/include/test/cef_api_version_test.h
 -rw-r--r--	root/root	opt/cef/include/test/cef_test_helpers.h
 -rw-r--r--	root/root	opt/cef/include/test/cef_test_server.h
 -rw-r--r--	root/root	opt/cef/include/test/cef_translator_test.h
