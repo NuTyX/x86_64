@@ -5,12 +5,12 @@ url="https://www.sublimetext.com/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Hugo,Sundev79,DocWOPR"
 
-makedepends=(libpng gtk2)
+makedepends=(libpng gtk3)
 run=(python)
 name=sublime-text
-version=4169
+version=4.4192
 
-source=(https://download.sublimetext.com/sublime_text_build_${version}_x64.tar.xz)
+source=(https://download.sublimetext.com/sublime_text_build_${version:2}_x64.tar.xz)
 
 build(){
  cd sublime_text
