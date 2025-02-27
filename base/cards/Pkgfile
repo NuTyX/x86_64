@@ -23,7 +23,7 @@ set=(chroot)
 
 [ "$release" != "1" ] &&  patchname="$name-$version-consolidate-$release.patch"
 
-source=(https://downloads.tuxfamily.org/nutyx/sources/$name/$name-$version.tar.gz)
+source=(https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.gz)
 
 [ -z "$patchname" ] || source+=" $patchname"
 
