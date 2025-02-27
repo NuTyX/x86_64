@@ -11,12 +11,6 @@ drwxr-xr-x	root/root	etc/NetworkManager/dispatcher.d/pre-up.d/
 drwxr-xr-x	root/root	etc/NetworkManager/dnsmasq-shared.d/
 drwxr-xr-x	root/root	etc/NetworkManager/dnsmasq.d/
 drwxr-xr-x	root/root	etc/NetworkManager/system-connections/
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/udev/
-drwxr-xr-x	root/root	lib/udev/rules.d/
--rw-r--r--	root/root	lib/udev/rules.d/84-nm-drivers.rules
--rw-r--r--	root/root	lib/udev/rules.d/85-nm-unmanaged.rules
--rw-r--r--	root/root	lib/udev/rules.d/90-nm-thunderbolt.rules
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nm-online
@@ -45,6 +39,17 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 lrwxrwxrwx	root/root	usr/lib/libnm.so -> libnm.so.0
 lrwxrwxrwx	root/root	usr/lib/libnm.so.0 -> libnm.so.0.1.0
 -rwxr-xr-x	root/root	usr/lib/libnm.so.0.1.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/NetworkManager-dispatcher.service
+-rw-r--r--	root/root	usr/lib/systemd/system/NetworkManager-wait-online.service
+-rw-r--r--	root/root	usr/lib/systemd/system/NetworkManager.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nm-priv-helper.service
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/84-nm-drivers.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/85-nm-unmanaged.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/90-nm-thunderbolt.rules
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/nm-daemon-helper
 -rwxr-xr-x	root/root	usr/libexec/nm-dhcp-helper
