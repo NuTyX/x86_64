@@ -1,0 +1,32 @@
+description='Utility to convert markdown to man pages'
+url='https://github.com/cpuguy83/go-md2man'
+
+license="MIT"
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(go)
+run=()
+set=()
+
+name=go-md2man
+version=2.0.6
+release=2
+
+source=(https://github.com/cpuguy83/go-md2man/archive/v$version/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+
+	export PATH=/usr/lib/go/bin:$PATH
+
+	export GOFLAGS="-buildmode=pie -trimpath"
+	export CGO_LDFLAGS="$LDFLAGS"
+	go build -o go-md2man .
+	./go-md2man -in=go-md2man.1.md -out=go-md2man.1
+	install -Dm755 go-md2man "$PKG/usr/bin/go-md2man"
+	install -Dm755 go-md2man.1 "$PKG/usr/share/man/man1/go-md2man.1"
+
+    install -Dm644 LICENSE.md $PKG/usr/share/licenses/$name/LICENSE.md
+}
