@@ -4,6 +4,22 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libhandle.so -> ../../lib/libhandle.so.1
 lrwxrwxrwx	root/root	usr/lib/libhandle.so.1 -> libhandle.so.1.0.3
 -rwxr-xr-x	root/root	usr/lib/libhandle.so.1.0.3
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/system-xfs_scrub.slice
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub_all.service
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub_all.timer
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub_all_fail.service
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub_fail@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub_media@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/xfs_scrub_media_fail@.service
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/64-xfs.rules
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/xfsprogs/
+-rwxr-xr-x	root/root	usr/libexec/xfsprogs/xfs_scrub_fail
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/fsck.xfs
 -rwxr-xr-x	root/root	usr/sbin/mkfs.xfs
@@ -42,6 +58,6 @@ drwxr-xr-x	root/root	usr/share/xfsprogs/mkfs/
 -rw-r--r--	root/root	usr/share/xfsprogs/mkfs/lts_6.12.conf
 -rw-r--r--	root/root	usr/share/xfsprogs/mkfs/lts_6.6.conf
 -rw-r--r--	root/root	usr/share/xfsprogs/xfs_scrub_all.cron
-drwxr-xr-x	root/root	usr/var/
-drwxr-xr-x	root/root	usr/var/lib/
-drwxr-xr-x	root/root	usr/var/lib/xfsprogs/
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/xfsprogs/
