@@ -8,7 +8,7 @@ makedepends=(libtool automake doxygen)
 
 name=fuse2
 version=2.9.9
-release=2
+release=3
 
 source=(https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz
         fuse-2.9.9-closefrom-glibc-2-34.patch)
