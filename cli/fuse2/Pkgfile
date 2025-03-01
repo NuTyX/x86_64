@@ -1,8 +1,8 @@
 description="Library that makes it possible to implement a filesystem in a userspace program."
-url="http://fuse.sourceforge.net/"
+url="https://github.com/libfuse/libfuse"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Spiky"
 
 makedepends=(libtool automake doxygen)
 
@@ -49,4 +49,6 @@ cp -Rv doc/html \
 
 # Obsolets libs
 rm $PKG/usr/lib/lib{fuse,ulockmgr}.la
+# Obsolet init
+rm -r $PKG/etc/init.d
 }
