@@ -19,11 +19,11 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=257
-release=3
+version=257.3
+release=1
 
 source=(consolidate-3.patch
-        https://sourceforge.net/projects/nutyx/files/sources/$name/$name-man-pages-$version.tar.xz
+        https://download.sourceforge.net/nutyx/$name-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 prepare() {
 cd $name-$version
