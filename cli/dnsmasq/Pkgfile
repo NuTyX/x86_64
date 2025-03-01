@@ -17,7 +17,7 @@ build() {
    make COPTS="-DHAVE_DNSSEC" PREFIX=/usr
    make COPTS="-DHAVE_DNSSEC" PREFIX=/usr DESTDIR=$PKG install
 
-   install -d $PKG/{var/lib/dhcp,usr/share/dnsmasq}
+   install -d $PKG/{var/lib/dhcp,etc,usr/share/dnsmasq}
    install -m 644 dnsmasq.conf.example $PKG/etc/dnsmasq.conf
    install -m 644 trust-anchors.conf $PKG/usr/share/dnsmasq/
 }
