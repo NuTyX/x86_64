@@ -7,6 +7,11 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/podman/
 -rwxr-xr-x	root/root	usr/lib/podman/quadlet
 -rwxr-xr-x	root/root	usr/lib/podman/rootlessport
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
+lrwxrwxrwx	root/root	usr/lib/systemd/system-generators/podman-system-generator -> ../../podman/quadlet
+drwxr-xr-x	root/root	usr/lib/systemd/user-generators/
+lrwxrwxrwx	root/root	usr/lib/systemd/user-generators/podman-user-generator -> ../../podman/quadlet
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/podman.conf
 drwxr-xr-x	root/root	usr/share/
