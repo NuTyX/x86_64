@@ -2,12 +2,6 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/dbus-1/
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/avahi-dbus.conf
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/avahi-daemon.service
--rw-r--r--	root/root	lib/systemd/system/avahi-daemon.socket
--rw-r--r--	root/root	lib/systemd/system/avahi-dnsconfd.service
 drwxr-xr-x	root/root	run/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -49,6 +43,11 @@ lrwxrwxrwx	root/root	usr/lib/libavahi-gobject.so.0 -> libavahi-gobject.so.0.0.5
 lrwxrwxrwx	root/root	usr/lib/libavahi-libevent.so -> libavahi-libevent.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libavahi-libevent.so.1 -> libavahi-libevent.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libavahi-libevent.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/avahi-daemon.service
+-rw-r--r--	root/root	usr/lib/systemd/system/avahi-daemon.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/avahi-dnsconfd.service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/avahi/
 -rw-r--r--	root/root	usr/share/avahi/avahi-service.dtd
