@@ -1,0 +1,31 @@
+description='Manipulate well-formed Roman numerals'
+url='https://github.com/AA-Turner/roman-numerals/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(python-flit-core python-build python-installer python-wheel)
+
+name=python-roman-numerals-py
+_name="roman_numerals_py"
+alias=(${_name})
+
+version=3.1.0
+
+source=(https://pypi.org/packages/source/r/roman_numerals_py/roman_numerals_py-$version.tar.gz)
+
+build() {
+cd ${_name}-$version
+
+  pip3 wheel -w dist \
+    --no-build-isolation \
+    --no-deps $PWD
+  pip3 install --no-index \
+    --find-links dist \
+    --no-cache-dir    \
+    --no-user         \
+    --root=$PKG       \
+    ${_name}
+
+ find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
+}
