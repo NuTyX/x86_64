@@ -1,14 +1,14 @@
 description="Ethernet bridge filtering utilities"
 url="http://ebtables.sourceforge.net/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Yaolinux,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Yaolinux,Spiky"
 
 makedepends=(iptables)
 
 name=ebtables
 version=2.0.10_4
-release=5
+release=6
 
 source=(https://downloads.sourceforge.net/${name}/${name}-v${version/_/-}.tar.gz
         ${name}.service ${name} )
@@ -28,8 +28,8 @@ make CFLAGS='-Wunused -Wall -Werror -Wno-error=unused-but-set-variable'
     SYSCONFIGDIR=/etc
   popd
 
-# rm package ebtables rc.d scripts
-
+  # rm package ebtables rc.d scripts
+  rm -r $PKG/etc/rc.d
 
   # default config file
   mv $PKG/etc/$name-config $PKG/etc/$name.conf.default
