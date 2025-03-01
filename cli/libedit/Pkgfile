@@ -1,13 +1,13 @@
 description="Command line editor library providing generic line editing, history, and tokenization functions."
 url="http://thrysoee.dk/editline/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg, Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(ncurses)
 
 name=libedit
-version=20240808_3.1
+version=20250104_3.1
 _version=${version/_/-}
 
 source=(http://thrysoee.dk/editline/libedit-${_version}.tar.gz)
