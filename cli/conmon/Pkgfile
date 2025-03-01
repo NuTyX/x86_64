@@ -1,0 +1,22 @@
+description='OCI container runtime monitor'
+url='https://github.com/containers/conmon'
+
+license="APACHE"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
+
+name=conmon
+version=2.1.13
+
+makedepends=(git glib)
+
+build() {
+
+git clone https://github.com/containers/conmon
+
+cd conmon
+make PREFIX=/usr LIBEXECDIR=/usr/lib DESTDIR=$PKG
+
+install -Dm755 bin/conmon $PKG/usr/bin/conmon
+}
