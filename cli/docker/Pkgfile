@@ -1,8 +1,8 @@
 description='An open platform for distributed applications for developers and sysadmins'
 url='https://www.docker.com/community-edition'
 
-contributors="MattHoush,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="MattHoush,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(lvm2 btrfs-progs)
 
@@ -10,6 +10,7 @@ run=(systemd start-stop-daemon iptables runc containerd cgroupfs-mount)
 
 name=docker
 version=27.5.1
+release=2
 
 PKGMK_GROUPS=(man)
 
@@ -59,8 +60,6 @@ build() {
         install -m 0644 $SRC/man${M}/* $PKG/usr/share/man/man${M}/
     done
 
-    install -D -m 0755 $SRC/$name \
-        $PKG/etc/rc.d/init.d/$name
     install -D -m 0644 $SRC/$name.conf \
         $PKG/etc/$name.conf
 
