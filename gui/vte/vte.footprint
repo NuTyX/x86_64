@@ -13,8 +13,8 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 lrwxrwxrwx	root/root	usr/lib/libvte-2.91-gtk4.so -> libvte-2.91-gtk4.so.0
 -rwxr-xr-x	root/root	usr/lib/libvte-2.91-gtk4.so.0
 lrwxrwxrwx	root/root	usr/lib/libvte-2.91.so -> libvte-2.91.so.0
-lrwxrwxrwx	root/root	usr/lib/libvte-2.91.so.0 -> libvte-2.91.so.0.7900.0
--rwxr-xr-x	root/root	usr/lib/libvte-2.91.so.0.7900.0
+lrwxrwxrwx	root/root	usr/lib/libvte-2.91.so.0 -> libvte-2.91.so.0.7800.3
+-rwxr-xr-x	root/root	usr/lib/libvte-2.91.so.0.7800.3
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 drwxr-xr-x	root/root	usr/lib/systemd/user/vte-spawn-.scope.d/
@@ -22,9 +22,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/user/vte-spawn-.scope.d/
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/vte-urlencode-cwd
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/applications/
--rw-r--r--	root/root	usr/share/applications/vte-gtk3.desktop
--rw-r--r--	root/root	usr/share/applications/vte-gtk4.desktop
 drwxr-xr-x	root/root	usr/share/gir-1.0/
 -rw-r--r--	root/root	usr/share/gir-1.0/Vte-2.91.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/Vte-3.91.gir
@@ -45,10 +42,3 @@ drwxr-xr-x	root/root	usr/share/vala/vapi/
 -rw-r--r--	root/root	usr/share/vala/vapi/vte-2.91-gtk4.vapi
 -rw-r--r--	root/root	usr/share/vala/vapi/vte-2.91.deps
 -rw-r--r--	root/root	usr/share/vala/vapi/vte-2.91.vapi
-drwxr-xr-x	root/root	usr/share/vte-2.91/
-drwxr-xr-x	root/root	usr/share/vte-2.91/terminfo/
-drwxr-xr-x	root/root	usr/share/vte-2.91/terminfo/x/
--rw-r--r--	root/root	usr/share/vte-2.91/terminfo/x/xterm-256color
-drwxr-xr-x	root/root	usr/share/xdg-terminals/
-lrwxrwxrwx	root/root	usr/share/xdg-terminals/vte-gtk3.desktop -> ../applications/vte-gtk3.desktop
-lrwxrwxrwx	root/root	usr/share/xdg-terminals/vte-gtk4.desktop -> ../applications/vte-gtk4.desktop
