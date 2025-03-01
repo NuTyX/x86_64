@@ -1,6 +1,6 @@
 diff -Naur a/base/sixext.py b/base/sixext.py
---- a/base/sixext.py	2023-11-27 16:06:40.000000000 +0100
-+++ b/base/sixext.py	2024-05-21 21:29:07.822143694 +0200
+--- a/base/sixext.py	2024-05-22 06:33:43.000000000 +0200
++++ b/base/sixext.py	2025-03-01 17:32:00.305660842 +0100
 @@ -110,11 +110,11 @@
  
  
@@ -16,8 +16,8 @@ diff -Naur a/base/sixext.py b/base/sixext.py
  
      def to_unicode(s, enc=None):
 diff -Naur a/configure.in b/configure.in
---- a/configure.in	2023-11-27 16:06:40.000000000 +0100
-+++ b/configure.in	2024-05-21 21:33:33.143692346 +0200
+--- a/configure.in	2024-05-22 06:33:43.000000000 +0200
++++ b/configure.in	2025-03-01 17:37:01.545574805 +0100
 @@ -618,7 +618,7 @@
  
  if test "$class_driver" = "no" && test "$hpijs_only_build" = "no" && test "$hpcups_only_build" = "no"; then
@@ -77,8 +77,8 @@ diff -Naur a/configure.in b/configure.in
  if test "$hpijs_only_build" = "no" && test "$scan_build" = "yes" && test "$hpcups_only_build" = "no"; then
     AC_CHECK_LIB([sane], [sane_open], [LIBS="$LIBS"], [AC_MSG_ERROR([cannot find sane-backends-devel support (or --disable-scan-build)], 12)])
 diff -Naur a/createPPD.sh b/createPPD.sh
---- a/createPPD.sh	2023-11-27 16:06:40.000000000 +0100
-+++ b/createPPD.sh	2024-05-21 21:35:18.024258514 +0200
+--- a/createPPD.sh	2024-05-22 06:33:43.000000000 +0200
++++ b/createPPD.sh	2025-03-01 17:38:18.443070552 +0100
 @@ -55,16 +55,16 @@
  	else
  		cp prnt/ps/hp-postscript*.ppd ppd/classppd/ps
@@ -99,7 +99,7 @@ diff -Naur a/createPPD.sh b/createPPD.sh
  	#done
  
  	cat > class_cups_drv.inc <<EOF
-@@ -83,14 +83,14 @@
+@@ -83,7 +83,7 @@
  install -d ppd/hpcups
  ppdc -d ppd/hpcups prnt/drv/hpcups.drv
  for i in ppd/hpcups/*.ppd; do
@@ -108,17 +108,9 @@ diff -Naur a/createPPD.sh b/createPPD.sh
  done
  
  install -d ppd/hpijs
- ppdc -d ppd/hpijs prnt/drv/hpijs.drv
- echo "gzip ppd files..."
- for i in ppd/hpijs/*.ppd; do
--      gzip -c "$i" > "$i.gz"
-+      gzip -nc "$i" > "$i.gz"
- done
- echo "building foomatic_drv.inc..."
- ./hpijs-drv > foomatic_drv.inc $shadow
 diff -Naur a/Makefile.am b/Makefile.am
---- a/Makefile.am	2023-11-27 16:06:40.000000000 +0100
-+++ b/Makefile.am	2024-05-21 22:39:21.032597669 +0200
+--- a/Makefile.am	2024-05-22 06:33:43.000000000 +0200
++++ b/Makefile.am	2025-03-01 17:43:42.496564980 +0100
 @@ -167,7 +167,7 @@
  dist_hplip_SCRIPTS = hpssd.py __init__.py hpdio.py
  endif #HPLIP_CLASS_DRIVER
@@ -183,9 +175,9 @@ diff -Naur a/Makefile.am b/Makefile.am
  	fi
  endif #HPLIP_CLASS_DRIVER
 diff -Naur a/Makefile.in b/Makefile.in
---- a/Makefile.in	2023-11-27 16:15:31.000000000 +0100
-+++ b/Makefile.in	2024-05-21 21:41:19.822889916 +0200
-@@ -10212,19 +10212,19 @@
+--- a/Makefile.in	2024-05-22 06:42:34.000000000 +0200
++++ b/Makefile.in	2025-03-01 17:49:20.263541595 +0100
+@@ -10236,19 +10236,19 @@
  
  
  install-data-hook:
@@ -215,7 +207,7 @@ diff -Naur a/Makefile.in b/Makefile.in
  @HPLIP_BUILD_TRUE@	fi
  #	   If scanner build, add hpaio entry to sane dll.conf.
  @HPLIP_BUILD_TRUE@@HPLIP_CLASS_DRIVER_FALSE@	if [ "$(scan_build)" = "yes" ]; then \
-@@ -10236,15 +10236,15 @@
+@@ -10260,15 +10260,15 @@
  @HPLIP_BUILD_TRUE@@HPLIP_CLASS_DRIVER_FALSE@		  echo "Adding hpaio entry to /etc/sane.d/dll.conf." ; \
  @HPLIP_BUILD_TRUE@@HPLIP_CLASS_DRIVER_FALSE@		  echo hpaio >>$(DESTDIR)/etc/sane.d/dll.conf ; \
  @HPLIP_BUILD_TRUE@@HPLIP_CLASS_DRIVER_FALSE@	   fi; \
@@ -240,8 +232,8 @@ diff -Naur a/Makefile.in b/Makefile.in
  @HPLIP_BUILD_TRUE@@HPLIP_CLASS_DRIVER_FALSE@	fi
  #	   Create hp-xxx commands in bindir.
 diff -Naur a/prnt/hpcups/CommonDefinitions.h b/prnt/hpcups/CommonDefinitions.h
---- a/prnt/hpcups/CommonDefinitions.h	2023-11-27 16:06:40.000000000 +0100
-+++ b/prnt/hpcups/CommonDefinitions.h	2024-05-21 21:22:28.596406512 +0200
+--- a/prnt/hpcups/CommonDefinitions.h	2024-05-22 06:33:43.000000000 +0200
++++ b/prnt/hpcups/CommonDefinitions.h	2025-03-01 17:50:29.247619132 +0100
 @@ -40,6 +40,7 @@
  #include <fcntl.h>
  #include <sys/stat.h>
@@ -251,8 +243,8 @@ diff -Naur a/prnt/hpcups/CommonDefinitions.h b/prnt/hpcups/CommonDefinitions.h
  #include <stdarg.h>
  #include <stdio.h>
 diff -Naur a/prnt/hpijs/hpcupsfax.cpp b/prnt/hpijs/hpcupsfax.cpp
---- a/prnt/hpijs/hpcupsfax.cpp	2023-11-27 16:06:40.000000000 +0100
-+++ b/prnt/hpijs/hpcupsfax.cpp	2024-05-21 21:22:56.949914907 +0200
+--- a/prnt/hpijs/hpcupsfax.cpp	2024-05-22 06:33:43.000000000 +0200
++++ b/prnt/hpijs/hpcupsfax.cpp	2025-03-01 17:52:28.708907980 +0100
 @@ -43,6 +43,7 @@
  #include <arpa/inet.h>
  #include <math.h>
@@ -261,9 +253,197 @@ diff -Naur a/prnt/hpijs/hpcupsfax.cpp b/prnt/hpijs/hpcupsfax.cpp
  #include <cups/raster.h>
  #include <string>
  #ifdef FALSE
+diff -Naur a/prnt/hpps/pserror.c b/prnt/hpps/pserror.c
+--- a/prnt/hpps/pserror.c	2024-05-22 06:33:43.000000000 +0200
++++ b/prnt/hpps/pserror.c	2025-03-01 18:02:45.395600653 +0100
+@@ -24,7 +24,7 @@
+ void message(int flags, char *format, ...)
+ {
+   va_list args ;
+-  static column = 0 ;		/* current screen column for message wrap */
++  static int column = 0 ;	/* current screen column for message wrap */
+   char msgbuf[MAX_MESSAGE] ;	/* buffer in which to put the message */
+   char *bufptr = msgbuf ;	/* message buffer pointer */
+ 
+diff -Naur a/scan/sane/hpaio.c b/scan/sane/hpaio.c
+--- a/scan/sane/hpaio.c	2024-05-22 06:33:44.000000000 +0200
++++ b/scan/sane/hpaio.c	2025-03-01 18:18:48.159555576 +0100
+@@ -50,6 +50,7 @@
+ #include "sclpml.h"
+ #include "escl.h"
+ #include "io.h"
++#include "orblite.h"
+ #include "orblitei.h"
+ 
+ 
+@@ -378,7 +379,7 @@
+    ResetDeviceList(&DeviceList);
+    DevDiscovery(localOnly);
+    *deviceList = (const SANE_Device **)DeviceList;
+-   SANE_Device*** devList;
++   const SANE_Device*** devList;
+    orblite_get_devices(devList, localOnly);
+ 
+    return SANE_STATUS_GOOD;
+diff -Naur a/scan/sane/orblite.c b/scan/sane/orblite.c
+--- a/scan/sane/orblite.c	2024-05-22 06:33:44.000000000 +0200
++++ b/scan/sane/orblite.c	2025-03-01 18:25:35.944049732 +0100
+@@ -19,10 +19,14 @@
+ #undef NDEBUG
+ #include "orblitei.h"
+ #include "orblite.h"//Added New
++#include <dlfcn.h>
+ #include <math.h>
+ #include "utils.h"
+ #include "io.h"
+ 
++#define DEBUG_DECLARE_ONLY
++#include "sanei_debug.h"
++
+ #ifdef __cplusplus
+  }
+ #endif 
+@@ -63,28 +67,28 @@
+ 		SANE_NAME_SCAN_TL_X, SANE_TITLE_SCAN_TL_X, SANE_DESC_SCAN_TL_X,  // name, title, desc
+ 		SANE_TYPE_FIXED, SANE_UNIT_MM, sizeof(SANE_Fixed),// type, unit, size
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_RANGE, (SANE_Char**)&SANE_rangeLeft  // constraint_type, constraint
++		SANE_CONSTRAINT_RANGE, (const SANE_Char**)&SANE_rangeLeft  // constraint_type, constraint
+ 	},
+ 
+ 	{
+ 		SANE_NAME_SCAN_TL_Y, SANE_TITLE_SCAN_TL_Y, SANE_DESC_SCAN_TL_Y,  // name, title, desc
+ 		SANE_TYPE_FIXED, SANE_UNIT_MM, sizeof(SANE_Fixed),// type, unit, size
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_RANGE, (SANE_Char**)&SANE_rangeTop  // constraint_type, constraint
++		SANE_CONSTRAINT_RANGE, (const SANE_Char**)&SANE_rangeTop  // constraint_type, constraint
+ 	},
+   
+ 	{
+ 		SANE_NAME_SCAN_BR_X, SANE_TITLE_SCAN_BR_X, SANE_DESC_SCAN_BR_X,  // name, title, desc
+ 		SANE_TYPE_FIXED, SANE_UNIT_MM, sizeof(SANE_Fixed),// type, unit, size
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_RANGE, (SANE_Char**)&SANE_rangeRight  // constraint_type, constraint
++		SANE_CONSTRAINT_RANGE, (const SANE_Char**)&SANE_rangeRight  // constraint_type, constraint
+ 	},
+ 
+ 	{
+ 		SANE_NAME_SCAN_BR_Y, SANE_TITLE_SCAN_BR_Y, SANE_DESC_SCAN_BR_Y,  // name, title, desc
+ 		SANE_TYPE_FIXED, SANE_UNIT_MM, sizeof(SANE_Fixed),// type, unit, size
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_RANGE, (SANE_Char**)&SANE_rangeBottom  // constraint_type, constraint
++		SANE_CONSTRAINT_RANGE, (const SANE_Char**)&SANE_rangeBottom  // constraint_type, constraint
+ 	},
+    
+ 	// optResolution,                                       // resolution group  
+@@ -92,7 +96,7 @@
+ 		SANE_NAME_SCAN_RESOLUTION, SANE_TITLE_SCAN_RESOLUTION, SANE_DESC_SCAN_RESOLUTION, // name, title, desc
+ 		SANE_TYPE_INT, SANE_UNIT_DPI, sizeof(SANE_Word),  // type, unit, size,
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_WORD_LIST, (SANE_Char**)SANE_resolutions // constraint type, constraint
++		SANE_CONSTRAINT_WORD_LIST, (const SANE_Char**)SANE_resolutions // constraint type, constraint
+ 	},
+ 
+ 	// optMode,                                            // color/depth group
+@@ -100,7 +104,7 @@
+ 		SANE_NAME_SCAN_MODE, SANE_TITLE_SCAN_MODE, SANE_DESC_SCAN_MODE, // name, title, desc
+ 		SANE_TYPE_STRING, SANE_UNIT_NONE, 256,  // type, unit, size,
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_STRING_LIST, (SANE_Char**)SANE_modes   // constraint type, constraint
++		SANE_CONSTRAINT_STRING_LIST, (const SANE_Char**)SANE_modes   // constraint type, constraint
+ 	},
+  
+ 	// optSource, 
+@@ -108,7 +112,7 @@
+ 		SANE_NAME_SCAN_SOURCE, SANE_TITLE_SCAN_SOURCE, SANE_DESC_SCAN_SOURCE, // name, title, desc
+ 		SANE_TYPE_STRING, SANE_UNIT_NONE, 256,  // type, unit, size,
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_STRING_LIST, (SANE_Char**)SANE_sources   // constraint type, constraint
++		SANE_CONSTRAINT_STRING_LIST, (const SANE_Char**)SANE_sources   // constraint type, constraint
+ 	},
+  
+ 	// optPaperSize, 
+@@ -116,7 +120,7 @@
+ 		SANE_NAME_PAPER_SIZE, SANE_TITLE_PAPER_SIZE, SANE_DESC_PAPER_SIZE, // name, title, desc
+ 		SANE_TYPE_STRING, SANE_UNIT_NONE, 256,  // type, unit, size,
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_STRING_LIST, (SANE_Char**)SANE_paper_sizes   // constraint type, constraint
++		SANE_CONSTRAINT_STRING_LIST, (const SANE_Char**)SANE_paper_sizes   // constraint type, constraint
+ 	},
+  
+ 	// optPaperSize, 
+@@ -124,7 +128,7 @@
+ 		SANE_NAME_PAPER_SIZE, SANE_TITLE_PAPER_SIZE, SANE_DESC_PAPER_SIZE, // name, title, desc
+ 		SANE_TYPE_INT, SANE_UNIT_DPI, sizeof(SANE_Word),  // type, unit, size,
+ 		SANE_CAP_SOFT_SELECT | SANE_CAP_SOFT_DETECT,      // cap(ability)
+-		SANE_CONSTRAINT_WORD_LIST, (SANE_Char**)SANE_resolutions // constraint type, constraint
++		SANE_CONSTRAINT_WORD_LIST, (const SANE_Char**)SANE_resolutions // constraint type, constraint
+ 	},
+ #ifdef NOTDEF
+ // default template
+@@ -193,27 +197,6 @@
+ 
+ }
+ 
+-static int bb_unload(SANE_THandle ps)
+-{
+-   _DBG("Calling orblite bb_unload: \n");
+-   if (ps->bb_handle)
+-   {
+-      dlclose(ps->bb_handle);
+-      ps->bb_handle = NULL;
+-   }
+-   if (ps->hpmud_handle)
+-   {
+-      dlclose(ps->hpmud_handle);
+-      ps->hpmud_handle = NULL;
+-   }
+-//   if (ps->math_handle)
+-//   { 
+-//      dlclose(ps->math_handle);
+-//      ps->math_handle = NULL;
+-//   }
+-   return 0;
+-}
+-
+ SANE_Status 
+ orblite_init (SANE_Int * version_code, SANE_Auth_Callback authorize)
+ {
+@@ -273,6 +256,7 @@
+ 	SANE_Auth_Callback authorize;
+ 	const SANE_Device *** device_list;
+ 	SANE_Bool local_only;
++	void * temp_handle;
+ 	
+ 	
+ 	// Allocate handle, set all handle values to zero
+@@ -304,7 +288,9 @@
+ 	if (stat != SANE_STATUS_GOOD)
+ 		return stat;
+ 
+-	stat = g_handle->bb_orblite_open(devicename, &g_handle);
++	temp_handle = g_handle;
++	stat = g_handle->bb_orblite_open(devicename, &temp_handle);
++	g_handle = temp_handle;
+ 	if (stat == SANE_STATUS_GOOD)
+ 		*handle = g_handle;
+ 
+diff -Naur a/scan/sane/sclpml.c b/scan/sane/sclpml.c
+--- a/scan/sane/sclpml.c	2024-05-22 06:33:44.000000000 +0200
++++ b/scan/sane/sclpml.c	2025-03-01 18:12:53.195637886 +0100
+@@ -46,6 +46,9 @@
+ #define DEBUG_DECLARE_ONLY
+ #include "sanei_debug.h"
+ 
++/* This file is not built with _GNU_SOURCE. */
++char *strcasestr(const char *, const char *);
++
+ //# define  SCLPML_DEBUG
+ # ifdef SCLPML_DEBUG
+    # define _DBG(args...) syslog(LOG_INFO, __FILE__ " " STRINGIZE(__LINE__) ": " args)
 diff -Naur a/upgrade.py b/upgrade.py
---- a/upgrade.py	2023-11-27 16:06:41.000000000 +0100
-+++ b/upgrade.py	2024-05-21 21:25:03.134017987 +0200
+--- a/upgrade.py	2024-05-22 06:33:44.000000000 +0200
++++ b/upgrade.py	2025-03-01 17:53:15.242743387 +0100
 @@ -208,6 +208,9 @@
  if os.getenv("HPLIP_DEBUG"):
      log.set_level('debug')

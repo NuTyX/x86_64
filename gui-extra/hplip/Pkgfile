@@ -10,8 +10,8 @@ makedepends=(grep autoconf libtool
 
 
 name=hplip
-version=3.23.12
-release=3
+version=3.24.4
+release=1
 
 source=(consolidate.patch
         http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
@@ -27,7 +27,10 @@ prepare() {
 build() {
  export PYTHON=/usr/bin/python3
  cd $name-$version
-  ./configure --prefix=/usr \
+ export CFLAGS+=" -Wno-deprecated-declarations \
+-Wno-implicit-function-declaration \
+-Wno-return-mismatch"
+ ./configure --prefix=/usr \
       --disable-doc-build \
       --enable-lite-build \
       --disable-network-build \
