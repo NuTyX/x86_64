@@ -2,11 +2,8 @@
 
 SERVICE="/usr/lib/systemd/system/slim.service"
 if [ ! -L etc/systemd/system/display-manager.service ];then
-  mkdir -p etc/systemd/system
-  ln -sf $SERVICE etc/systemd/system/display-manager.service && \
-  log_success_msg2  "${INFO} Created symlink /etc/systemd/system/display-manager.service -> $SERVICE${NORMAL}"
+  systemctl enable slim
 else
   ACTIVE_SERVICE="$(readlink /etc/systemd/system/display-manager.service)"
-  [ "${ACTIVE_SERVICE}" != "$SERVICE" ] && \
-  log_warning_msg "${WARNING} symlink /etc/systemd/system/display-manager.service -> ${ACTIVE_SERVICE} exist${NORMAL}"
+  log_warning_msg "${WARNING} network-manager already exist: ${ACTIVE_SERVICE}${NORMAL}"
 fi
