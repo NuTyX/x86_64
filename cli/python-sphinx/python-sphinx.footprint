@@ -7,15 +7,15 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.1.3.dist-info/licenses/LICENSE.rst
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx-8.2.1.dist-info/licenses/LICENSE.rst
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/__main__.py
@@ -81,10 +81,8 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/__pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/__pycache__/_assets.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/__pycache__/_build_info.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/__pycache__/transforms.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/_assets.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/_build_info.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/html/transforms.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/builders/latex/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/builders/latex/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/builders/latex/__pycache__/
@@ -121,9 +119,11 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/directives/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__pycache__/__init__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__pycache__/admonitions.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__pycache__/code.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__pycache__/other.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/__pycache__/patches.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/admonitions.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/code.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/other.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/directives/patches.py
@@ -217,7 +217,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/__init__.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/apidoc.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/autosectionlabel.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/coverage.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/doctest.cpython-313.pyc
@@ -233,7 +232,20 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/mathjax.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/todo.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/__pycache__/viewcode.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__main__.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/__init__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/__main__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/_cli.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/_extension.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/_generate.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/__pycache__/_shared.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/_cli.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/_extension.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/_generate.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/apidoc/_shared.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/autodoc/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/ext/autodoc/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/ext/autodoc/__pycache__/
@@ -326,6 +338,11 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca/LC_MESSAG
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca/LC_MESSAGES/sphinx.js
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca/LC_MESSAGES/sphinx.mo
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca/LC_MESSAGES/sphinx.po
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca@valencia/
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca@valencia/LC_MESSAGES/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca@valencia/LC_MESSAGES/sphinx.js
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca@valencia/LC_MESSAGES/sphinx.mo
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/ca@valencia/LC_MESSAGES/sphinx.po
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/locale/cak/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/locale/cak/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/locale/cak/LC_MESSAGES/sphinx.js
@@ -958,6 +975,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/_files.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/_importer.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/_inventory_file_reader.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/_io.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/_lines.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/_pathlib.cpython-313.pyc
@@ -971,7 +989,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/docfields.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/docstrings.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/docutils.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/exceptions.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/fileutil.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/http_date.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/i18n.cpython-313.pyc
@@ -995,6 +1012,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/typing.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/_files.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/_importer.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/_inventory_file_reader.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/_io.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/_lines.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/_pathlib.py
@@ -1008,7 +1026,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/sphinx/util/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/docfields.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/docstrings.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/docutils.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/exceptions.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/fileutil.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/http_date.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/sphinx/util/i18n.py
