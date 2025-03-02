@@ -3,8 +3,8 @@ url="https://libvirt.org/"
 
 licens="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Yaolinux,DocWOPR,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Yaolinux,DocWOPR,Spiky"
 
 makedepends=(bash-completion bridge-utils cyrus-sasl dbus
              fuse gettext gnutls libcap-ng libgcrypt libnl
@@ -17,11 +17,11 @@ run=(qemu dmidecode dnsmasq ebtables iptables)
 
 name=libvirt
 version=11.0.0
+release=2
 
 PKGMK_GROUPS=(doc man devel)
 
-source=(libvirtd
-         https://libvirt.org/sources/$name-$version.tar.xz)
+source=(https://libvirt.org/sources/$name-$version.tar.xz)
 
 build() {
 
@@ -36,23 +36,8 @@ build() {
   ninja
   DESTDIR=$PKG ninja  install
 
-  mkdir -p $PKG/etc/sysconfig/modules.d
-  cat > $PKG/etc/sysconfig/modules.d/libvirt.conf << "EOF"
-tun
-EOF
 
 install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 install -Dm644 ../COPYING.LESSER $PKG/usr/share/licenses/$name/COPYING.LESSER
 
-  # service
-  mkdir -p $PKG/etc/rc.d/init.d
-
-  install -m0755 ../../libvirtd \
-  $PKG/etc/rc.d/init.d/libvirtd
-
-   for i in 3 4 5
-   do
-      mkdir -p $PKG/etc/rc.d/rc$i.d
-      ln -sv ../init.d/libvirtd $PKG/etc/rc.d/rc$i.d/S45libvirtd
-   done
 }
