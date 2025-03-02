@@ -1,8 +1,5 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/default/
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/nginx -> /lib/init/services/nginx
 drwxr-xr-x	root/root	etc/nginx/
 -rw-r--r--	root/root	etc/nginx/fastcgi.conf
 -rw-r--r--	root/root	etc/nginx/fastcgi.conf.default
@@ -21,33 +18,6 @@ drwxr-xr-x	root/root	etc/nginx/html/
 -rw-r--r--	root/root	etc/nginx/uwsgi_params
 -rw-r--r--	root/root	etc/nginx/uwsgi_params.default
 -rw-r--r--	root/root	etc/nginx/win-utf
-drwxr-xr-x	root/root	etc/rc.d/
-drwxr-xr-x	root/root	etc/rc.d/init.d/
--rwxr-xr--	root/root	etc/rc.d/init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc0.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K28nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc1.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K28nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc2.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K28nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc3.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S32nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc4.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S32nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc5.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S32nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rc6.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K28nginx -> ../init.d/nginx
-drwxr-xr-x	root/root	etc/rc.d/rcS.d/
-drwxr-xr-x	root/root	etc/sysconfig/
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/nginx/
--rwxrwxr-x	root/root	lib/init/services/nginx/run
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/nginx.service
 drwxr-xr-x	root/root	srv/
 drwxr-xr-x	root/root	srv/www/
 drwxr-xr-x	root/root	usr/
@@ -56,6 +26,9 @@ drwxr-xr-x	root/root	usr/html/
 -rw-r--r--	root/root	usr/html/index.html
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/nginx/
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/nginx.service
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/nginx
