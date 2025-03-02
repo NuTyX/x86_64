@@ -1,21 +1,3 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/rc.d/
-drwxr-xr-x	root/root	etc/rc.d/init.d/
--rwxr-xr-x	root/root	etc/rc.d/init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc0.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K00pm2 -> ../init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc1.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K00pm2 -> ../init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc2.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc2.d/Sd99pm2 -> ../init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc3.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc3.d/Sd99pm2 -> ../init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc4.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc4.d/Sd99pm2 -> ../init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc5.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc5.d/Sd99pm2 -> ../init.d/pm2
-drwxr-xr-x	root/root	etc/rc.d/rc6.d/
-lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K00pm2 -> ../init.d/pm2
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/pm2 -> ../lib/node_modules/pm2/bin/pm2
@@ -650,6 +632,15 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modul
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/dayjs/plugin/weekYear.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/dayjs/plugin/weekday.d.ts
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/dayjs/plugin/weekday.js
+drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/LICENSE
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/README.md
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/package.json
+drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/src/
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/src/browser.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/src/common.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/src/index.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/debug/src/node.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/lru-cache/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/lru-cache/LICENSE
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/agent/node_modules/lru-cache/README.md
@@ -973,6 +964,15 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/async/waterfall.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/async/whilst.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/async/wrapSync.js
+drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/LICENSE
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/README.md
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/package.json
+drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/src/
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/src/browser.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/src/common.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/src/index.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/debug/src/node.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/eventemitter2/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/eventemitter2/LICENSE.txt
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/io/node_modules/eventemitter2/README.md
@@ -1194,6 +1194,15 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modu
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/async/waterfall.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/async/whilst.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/async/wrapSync.js
+drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/LICENSE
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/README.md
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/package.json
+drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/src/
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/src/browser.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/src/common.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/src/index.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/debug/src/node.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/eventemitter2/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/eventemitter2/LICENSE.txt
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/@pm2/js-api/node_modules/eventemitter2/README.md
@@ -2566,50 +2575,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/follow-redirects/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/follow-redirects/https.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/follow-redirects/index.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/follow-redirects/package.json
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/LICENSE
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/README.md
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/copy/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/copy/copy-sync.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/copy/copy.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/copy/index.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/empty/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/empty/index.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/file.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/link.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/symlink-paths.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/symlink-type.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/ensure/symlink.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/esm.mjs
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/fs/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/fs/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/index.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/json/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/json/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/json/jsonfile.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/json/output-json-sync.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/json/output-json.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/mkdirs/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/mkdirs/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/mkdirs/make-dir.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/mkdirs/utils.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/move/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/move/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/move/move-sync.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/move/move.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/output-file/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/output-file/index.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/path-exists/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/path-exists/index.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/remove/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/remove/index.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/util/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/util/stat.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/lib/util/utimes.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/fs-extra/package.json
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/function-bind/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/function-bind/.eslintrc
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/function-bind/.github/
@@ -2681,14 +2646,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/glob-parent/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/glob-parent/README.md
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/glob-parent/index.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/glob-parent/package.json
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/LICENSE
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/README.md
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/clone.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/graceful-fs.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/legacy-streams.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/package.json
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/graceful-fs/polyfills.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/has-flag/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/has-flag/index.d.ts
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/has-flag/index.js
@@ -2996,13 +2953,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/json-stringify-safe/
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/json-stringify-safe/test/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/json-stringify-safe/test/mocha.opts
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/json-stringify-safe/test/stringify_test.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/CHANGELOG.md
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/LICENSE
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/README.md
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/package.json
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/jsonfile/utils.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/lazy/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/lazy/.npmignore
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/lazy/README.md
@@ -4905,6 +4855,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/audio.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/battery.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/bluetooth.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/bluetoothVendors.js
 -rwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/cli.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/cpu.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/systeminformation/lib/docker.js
@@ -4989,11 +4940,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/tx2/test/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/tx2/test/event.mocha.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/tx2/test/issue.mocha.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/tx2/test/metric.mocha.js
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/universalify/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/universalify/LICENSE
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/universalify/README.md
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/universalify/index.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/universalify/package.json
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/vizion/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/vizion/.travis.yml
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/vizion/CHANGELOG.md
@@ -5268,3 +5214,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/root/tests/
 -rw-r--r--	root/root	usr/lib/node_modules/root/tests/test-routes.js
 -rw-r--r--	root/root	usr/lib/node_modules/root/tests/test-sub-app-route.js
 -rw-r--r--	root/root	usr/lib/node_modules/root/tests/test-urls.js
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/pm2.service
