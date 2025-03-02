@@ -1,26 +1,24 @@
 description='Makes applications run faster by prefetching binaries and shared objects'
-url='http://sourceforge.net/projects/preload'
+url='https://sourceforge.net/projects/preload'
 
 packager="tnut <tnut@nutyx.org>"
-contributors=""
+contributors="Spiky"
 
 makedepends=(automake m4 sed grep
              glib bash help2man)
 
 name=preload
 version=0.6.4
+release=2
+
 PKGMK_GROUPS=(doc man)
 
-source=(consolidate.patch
-        http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+source=(preload
+        https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
 
 cd $name-$version
-
-patch -Np1 -i ../consolidate.patch
-
-autoreconf -i
 
 ./configure --prefix=/usr \
 --sysconfdir=/etc \
@@ -28,14 +26,12 @@ autoreconf -i
 --localstatedir=/var
 
 make -j 1
-make DESTDIR=$PKG install
+make DESTDIR=$PKG sysconfdir=/etc/conf.d install
 
-mv $PKG/etc/sysconfig/preload{,.example}
+install -Dm644 $SRC/preload $PKG/usr/lib/systemd/system/preload.service
 
-# service launcher
-for i in 3 4 5
-do
-   mkdir -p $PKG/etc/rc.d/rc$i.d
-   ln -sv ../init.d/$name $PKG/etc/rc.d/rc$i.d/S75$name
-done
+rm -rf $PKG/etc/rc.d
+rm -rf $PKG/var/lib/preload/preload.state
+rm -rf $PKG/var/log/preload.log
+sed -r -i 's#^((map|exe)prefix =) (.+)$#\1 /opt;\3#' $PKG/etc/conf.d/preload.conf
 }
