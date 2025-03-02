@@ -6,7 +6,7 @@ contributors='Spiky'
 
 name=noip2
 version=2.1.9-1
-release=5
+release=6
 
 PKGMK_GROUPS=()
 PKGMK_KEEP_SOURCES='no'
@@ -21,68 +21,10 @@ mkdir -p $PKG/{usr/bin,etc}
 cp noip2 $PKG/usr/bin/
 
 ## service
-# sysV
-mkdir -p $PKG/etc/rc.d/init.d
-cat  > $PKG/etc/rc.d/init.d/noip2 << "EOF"
-#/bin/sh
-
-. /lib/lsb/init-functions
-
-NAME=noip2
-DAEMON=/usr/bin/$NAME
-
-start() {
-        log_info_msg "Starting dynamic address update..."
-        $DAEMON
-        evaluate_retval
-}
-
-stop() {
-       log_info_msg "Stopping dynamic address update..."
-       kill $(pidof $NAME)
-       evaluate_retval
-}
-
-case $1 in
-         start)
-                 start
-                 ;;
-         stop)
-                 stop
-                 ;;
-         restart)
-                 stop
-                 start
-                 ;;
-         *)
-                 echo "Syntax: $0 {start|stop|restart}"
-                 ;;
-esac
-EOF
-chmod 755 $PKG/etc/rc.d/init.d/$name
-mkdir -p $PKG/etc/rc.d/rc{0,1,2,3,4,5,6}.d
-for i in 0 1 2 6
-do
-    ln -sf  ../init.d/$name $PKG/etc/rc.d/rc${i}.d/K28$name
-done
-for i in 3 4 5
-do
-  ln -sf  ../init.d/$name $PKG/etc/rc.d/rc${i}.d/S32$name
-done
-# runyx
-mkdir -p $PKG/{etc/init/{single,multi},lib/init/services/$name}
-cat > $PKG/lib/init/services/$name/run << "EOF"
-#!/bin/sh
-exec 2>&1
-exec /usr/bin/noip2 -f
-EOF
-chmod 755 $PKG/lib/init/services/$name/run
-ln -sv /lib/init/services/$name $PKG/etc/init/single/$name
-ln -sv /lib/init/services/$name $PKG/etc/init/multi/$name
 # systemd
-mkdir -p $PKG/lib/systemd/system
+mkdir -p $PKG/usr/lib/systemd/system
 mkdir -p $PKG/etc/systemd/system/multi-user
-cat > $PKG/lib/systemd/system/$name.service << "EOF"
+cat > $PKG/usr/lib/systemd/system/$name.service << "EOF"
 [Unit]
 Description="No-IP Dynamic DNS Update Client"
 
@@ -93,6 +35,6 @@ RestartSec=3
 [Install]
 WantedBy=multi-user.target
 EOF
-ln -sv /lib/systemd/system/$name.service \
+ln -sv /usr/lib/systemd/system/$name.service \
 $PKG/etc/systemd/system/multi-user/$name.service
 }
