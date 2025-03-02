@@ -4969,7 +4969,6 @@ drwxr-xr-x	root/root	usr/src/linux-6.6/include/config/
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/AD525X_DPOT_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/AD525X_DPOT_SPI (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ADAPTEC_STARFIRE (EMPTY)
--rw-r--r--	root/root	usr/src/linux-6.6/include/config/ADDRESS_MASKING (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ADFS_FS (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ADIN1100_PHY (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ADIN_PHY (EMPTY)
@@ -11809,7 +11808,6 @@ drwxr-xr-x	root/root	usr/src/linux-6.6/include/config/
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SEQ_MIDI (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SEQ_MIDI_EMUL (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SEQ_MIDI_EVENT (EMPTY)
--rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SEQ_UMP_CLIENT (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SEQ_VIRMIDI (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SERIAL_GENERIC (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/SND_SERIAL_U16550 (EMPTY)
@@ -13842,6 +13840,7 @@ drwxr-xr-x	root/root	usr/src/linux-6.6/include/config/
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZRAM_DEF_COMP_ZSTD (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZRAM_MEMORY_TRACKING (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZRAM_MULTI_COMP (EMPTY)
+-rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZRAM_TRACK_ENTRY_ACTIME (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZRAM_WRITEBACK (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZSMALLOC (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.6/include/config/ZSMALLOC_CHAIN_SIZE (EMPTY)
@@ -27342,6 +27341,8 @@ drwxrwxr-x	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/map_tests/
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/map_tests/sk_storage_map.c
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/map_tests/task_storage_map.c
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/netcnt_common.h
+-rw-r--r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/netlink_helpers.c
+-rw-r--r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/netlink_helpers.h
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/network_helpers.c
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/network_helpers.h
 drwxrwxr-x	root/root	usr/src/linux-6.6/tools/testing/selftests/bpf/prog_tests/
@@ -29581,6 +29582,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.6/tools/testing/selftests/net/hsr/
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/net/ipv6_flowlabel.c
 -rwxrwxr-x	root/root	usr/src/linux-6.6/tools/testing/selftests/net/ipv6_flowlabel.sh
 -rw-rw-r--	root/root	usr/src/linux-6.6/tools/testing/selftests/net/ipv6_flowlabel_mgr.c
+-rw-r--r--	root/root	usr/src/linux-6.6/tools/testing/selftests/net/ipv6_route_update_soft_lockup.sh
 -rwxrwxr-x	root/root	usr/src/linux-6.6/tools/testing/selftests/net/l2_tos_ttl_inherit.sh
 -rwxrwxr-x	root/root	usr/src/linux-6.6/tools/testing/selftests/net/l2tp.sh
 -rw-r--r--	root/root	usr/src/linux-6.6/tools/testing/selftests/net/lib.sh
