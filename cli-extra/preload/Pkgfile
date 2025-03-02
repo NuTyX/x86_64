@@ -30,7 +30,9 @@ make DESTDIR=$PKG sysconfdir=/etc/conf.d install
 
 install -Dm644 $SRC/preload $PKG/usr/lib/systemd/system/preload.service
 
-rm -rf $PKG/etc/rc.d
+rm -rf $PKG/etc/conf.d/rc.d
+rm -rf $PKG/etc/conf.d/sysconfig
+
 rm -rf $PKG/var/lib/preload/preload.state
 rm -rf $PKG/var/log/preload.log
 sed -r -i 's#^((map|exe)prefix =) (.+)$#\1 /opt;\3#' $PKG/etc/conf.d/preload.conf
