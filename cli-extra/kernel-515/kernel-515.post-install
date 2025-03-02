@@ -1,6 +1,0 @@
-if [ -f boot/initrd-515 ]; then
-    mkinitramfs 5.15.169-NuTyX-515
-    rm boot/initrd-515
-    mv boot/initrd-5.15.169-NuTyX-515 boot/initrd-515
-fi
-
