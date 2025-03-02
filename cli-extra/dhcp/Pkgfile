@@ -6,12 +6,13 @@ packager="spiky <spiky@nutyx.org>"
 
 name=dhcp
 version=4.4.3
+release=2
 
 makedepends=(perl)
 
-runyx_version=20201011
+scripts_version=20250201
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
+source=(https://downloads.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.tar.xz
 	ftp://ftp.isc.org/isc/dhcp/$version/dhcp-$version.tar.gz
 	dhclient.conf dhcpd.conf )
 
@@ -49,16 +50,12 @@ build() {
 	install -v -dm 755 $PKG/etc/sysconfig
 
 	# Service
-	cd $SRC/runyx-${runyx_version}
-	make DESTDIR=$PKG -C services/sysv install-service-dhclient
-        make DESTDIR=$PKG -C services/runyx install-service-dhclient
+	cd $SRC/nutyx-scripts-${scripts_version}
 	make DESTDIR=$PKG install-sysd-dhclient
 
 
 	install -v -dm 755 $PKG/var/lib/dhcpd
 
 	cp -v $SRC/dhcpd.conf $PKG/etc/dhcp/dhcpd.conf
-	make DESTDIR=$PKG install-sysv-dhcpd
 	make DESTDIR=$PKG install-sysd-dhcpd
-	make DESTDIR=$PKG install-runyx-dhcpd
 }
