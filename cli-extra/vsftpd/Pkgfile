@@ -1,5 +1,5 @@
 description='Contains a very secure and very small FTP daemon.'
-url="https://security.appspot.com/"
+url="https://security.appspot.com/vsftpd.html"
 
 packager="tnut <tnut@nutyx.org>"
 
@@ -8,12 +8,12 @@ run=(pam shadow)
 
 name=vsftpd
 version=3.0.5
-release=2
+release=3
 
-runyx_version=20201011
+scripts_version=20250201
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	    https://security.appspot.com/downloads/$name-$version.tar.gz)
+source=(https://downloads.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.tar.xz
+        https://security.appspot.com/downloads/$name-$version.tar.gz)
 
 prepare() {
 
@@ -99,16 +99,6 @@ pam_service_name=vsftpd
 EOF
 
  # Service
- cd $SRC/runyx-${runyx_version}
- make DESTDIR=$PKG install-sysv-vsftpd
+ cd $SRC/nutyx-scripts-${scripts_version}
  make DESTDIR=$PKG install-sysd-vsftpd
- make DESTDIR=$PKG install-runyx-vsftpd
-}
-service() {
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-lib/{systemd,init} etc/{init,rc.d}
-
-rm -r etc/{rc.d,init}
-rm -r lib/{init,systemd}
 }
