@@ -1,8 +1,8 @@
 description="Spice agent for Linux guests"
 url="https://www.spice-space.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
 
 makedepends=(alsa-lib dbus glib xorg-libpciaccess xorg-libxfixes
              xorg-libxinerama xorg-libxrandr spice-protocol
@@ -10,20 +10,23 @@ makedepends=(alsa-lib dbus glib xorg-libpciaccess xorg-libxfixes
 
 name=spice-vdagent
 version=0.22.1
+release=2
 
 source=(https://www.spice-space.org/download/releases/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
  
-./configure --prefix=/usr \
-            --sysconfdir=/etc \
+./configure --prefix=/usr               \
+            --sysconfdir=/etc           \
+            --with-session-info=systemd \
+            --with-init-script=systemd  \
             --localstatedir=/var
 make
 make DESTDIR=$PKG install
 
 rm -r $PKG/var
 
-install -dm755 "$PKG/etc/sysconfig/"
-echo 'SPICE_VDAGENTD_EXTRA_ARGS=""' > "$PKG/etc/sysconfig/spice-vdagentd"
+install -dm755 "$PKG/etc/conf.d/"
+echo 'SPICE_VDAGENTD_EXTRA_ARGS=""' > "$PKG/etc/conf.d/spice-vdagentd"
 }
