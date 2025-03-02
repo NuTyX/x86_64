@@ -8,7 +8,7 @@ contributors="Spiky"
 
 name=gpsd
 version=3.25
-release=5
+release=6
 
 makedepends=(tar asciidoc bluez docbook-xsl gtk3 libusb python qtbase scons
              python-gobject python-cairo)
@@ -34,16 +34,6 @@ build() {
  # Missing files
  install -Dm755 gpsinit -t $PKG/usr/bin
  chmod 755 $PKG/usr/bin/*
-
- mkdir -p $PKG/etc/sysconfig
- cat > $PKG/etc/sysconfig/gpsd.example << "EOF"
-# Default settings for gpsd.
-START_DAEMON="true"
-GPSD_OPTIONS=""
-DEVICES=""
-USBAUTO="true"
-GPSD_SOCKET="/var/run/gpsd.sock"
-EOF
 
 install -Dm644 $name-$version/gpsd.rules $PKG/lib/udev/rules.d/25-gpsd-usb.rules
 install -Dm755 gpsd.hotplug $PKG/lib/udev/gpsd.hotplug
