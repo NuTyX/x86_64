@@ -8,6 +8,14 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/tor-print-ed-signing-cert
 -rwxr-xr-x	root/root	usr/bin/tor-resolve
 -rwxr-xr-x	root/root	usr/bin/torify
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/tor.service
+drwxr-xr-x	root/root	usr/lib/sysusers.d/
+-rw-r--r--	root/root	usr/lib/sysusers.d/tor.conf
+drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/tor.conf
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/tor-gencert.1

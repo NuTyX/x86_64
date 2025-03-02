@@ -10,10 +10,10 @@ makedepends=(systemd libevent openssl zlib)
 
 name=tor
 version=0.4.8.14
+release=2
 
 source=(https://www.torproject.org/dist/tor-$version.tar.gz
-	tor.rc
-	tor-config.patch)
+        tor-config.patch tor tor.sysusers tor.tmpfiles)
 
 prepare() {
 	cd $name-$version
@@ -34,7 +34,11 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	
+
+          install -Dm 644 $SRC/tor $PKG/usr/lib/systemd/system/tor.service
+          install -Dm 644 $SRC/tor.sysusers $PKG/usr/lib/sysusers.d/tor.conf
+          install -Dm 644 $SRC/tor.tmpfiles $PKG/usr/lib/tmpfiles.d/tor.conf
+
 	install -d $PKG/usr/var/lib/tor
 	chown root:root $PKG/usr/var/lib/tor
 	touch \
@@ -56,7 +60,6 @@ build() {
 	touch $PKG/var/log/tor/notices.log
 	find $PKG/var/log/tor/ -type f -exec chown root:root {} \; -execdir chmod 0640 {} \;
 
-	install -m 0750 -D $SRC/tor.rc $PKG/etc/rc.d/init.d/tor
 
         install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
