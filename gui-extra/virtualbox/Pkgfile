@@ -1,13 +1,14 @@
 description="VirtualBox is a powerfull 32 and 64 bits virtualization product (binary version)"
 url="http://virtualbox.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 license="GPL, CDDL"
 
 name=virtualbox
 version=7.1.6
+release=2
 
 run=(qtbase desktop-file-utils)
 
@@ -43,15 +44,13 @@ build() {
 	mv $PKG/opt/VirtualBox/virtualbox.desktop $PKG/usr/share/applications/virtualbox.desktop
 	chmod +s $PKG/opt/VirtualBox/{VirtualBoxVM,VBoxHeadless,VBoxVolInfo,VBoxNetDHCP,VBoxNetAdpCtl}
 
-	for DIR in sysconfig/modules.d modules-load.d
-	do	
-	mkdir -p $PKG/etc/$DIR
-	cat > $PKG/etc/$DIR/virtualbox.conf << "EOF"
+	mkdir -p $PKG/etc/modules-load.d
+
+	cat > $PKG/etc/modules-load.d/virtualbox.conf << "EOF"
 vboxdrv
 vboxnetadp
 vboxnetflt
 EOF
-	done
 	mkdir -p $PKG/etc/udev/rules.d
 	cp $SRC/virtualbox.60-vboxdrv.rules $PKG/etc/udev/rules.d/60-vboxdrv.rules
 
@@ -71,5 +70,4 @@ EOF
 
        cd $SRC
        install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
-#       install -Dm644 COPYING.CDDL $PKG/usr/share/licenses/$name/COPYING.CDDL
 }
