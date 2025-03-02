@@ -1,15 +1,17 @@
 description="Daemon that generates an unpredictable stream of random numbers and feeds the /dev/random"
-url="http://www.issihosts.com/haveged/"
+url="https://www.issihosts.com/haveged/"
 
-contributors="Berlius,Greg"
-packager="spiky <spiky@nutyx.org>"
+contributors="Berlius,Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=haveged
 version=1.9.19
-runyx_version=20201011
+scripts_version=20250201
+release=2
 
-source=(http://download.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	https://github.com/jirka-h/$name/archive/v$version.tar.gz)
+
+source=(http://download.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.tar.xz
+        https://github.com/jirka-h/$name/archive/v$version.tar.gz)
 
 build () {
 
@@ -19,21 +21,11 @@ build () {
     make
     make DESTDIR=$PKG install
 
-	mkdir -pv    $PKG/usr/share/doc/haveged-$version
-	cp -v README $PKG/usr/share/doc/haveged-$version
+    mkdir -pv    $PKG/usr/share/doc/haveged-$version
+    cp -v README $PKG/usr/share/doc/haveged-$version
 	
-	# Service
-	cd ../runyx-${runyx_version}
-	make DESTDIR=$PKG install-sysv-haveged
-	make DESTDIR=$PKG install-sysd-haveged
-	make DESTDIR=$PKG install-runyx-haveged
+    # Service
+    cd ../nutyx-scripts-${scripts_version}
+    make DESTDIR=$PKG install-sysd-haveged
 
-}
-service() {
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-lib/{systemd,init} etc/{init,rc.d}
- 
-rm -r etc/{rc.d,init}
-rm -r lib/{init,systemd}
 }
