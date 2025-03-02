@@ -1,19 +1,7 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/default/
-drwxr-xr-x	root/root	etc/init/
-drwxr-xr-x	root/root	etc/init/multi/
-lrwxrwxrwx	root/root	etc/init/multi/proftpd -> /lib/init/services/proftpd
 -rw-r--r--	root/root	etc/proftpd.conf
 -rw-r--r--	root/root	etc/proftpd.conf.example
-drwxr-xr-x	root/root	etc/sysconfig/
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/init/
-drwxr-xr-x	root/root	lib/init/services/
-drwxr-xr-x	root/root	lib/init/services/proftpd/
--rwxrwxr-x	root/root	lib/init/services/proftpd/run
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/proftpd.service
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ftpasswd
@@ -27,6 +15,9 @@ lrwxrwxrwx	root/root	usr/bin/proftpdshell -> /bin/false
 -rwxr-xr-x	root/root	usr/bin/prxs
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/proftpd/
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/proftpd.service
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/libexec/
 drwxr-xr-x	root/root	usr/sbin/
