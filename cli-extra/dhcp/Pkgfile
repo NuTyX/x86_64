@@ -1,8 +1,8 @@
 description="The ISC DHCP package contains both the client and server programs for DHCP."
 url="ftp://ftp.isc.org/isc/dhcp"
 
-contributors="Berlius,Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Berlius,Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=dhcp
 version=4.4.3
@@ -47,7 +47,6 @@ build() {
 	cp -v $SRC/dhclient.conf $PKG/etc/dhcp/dhclient.conf
 
 	install -v -dm 755 $PKG/var/lib/dhclient
-	install -v -dm 755 $PKG/etc/sysconfig
 
 	# Service
 	cd $SRC/nutyx-scripts-${scripts_version}
