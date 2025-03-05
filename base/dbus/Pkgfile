@@ -36,7 +36,7 @@ build() {
         --disable-static                      \
         --docdir=/usr/share/doc/dbus-$version \
         --with-system-socket=/run/dbus/system_bus_socket \
-        --enable-systemd
+        --disable-systemd
 	make
 	make DESTDIR=$PKG install
 
