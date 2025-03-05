@@ -20,7 +20,7 @@ set=(core)
 
 name=systemd
 version=257.3
-release=1
+release=2
 
 source=(consolidate-3.patch
         https://download.sourceforge.net/nutyx/$name-man-pages-$version.tar.xz
@@ -67,4 +67,5 @@ mkdir $PKG/sbin
 
 ln -s ../usr/lib/systemd/systemd \
 $PKG/sbin/init
+rm $PKG/usr/share/factory/etc/vconsole.conf
 }
