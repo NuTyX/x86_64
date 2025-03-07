@@ -10,8 +10,7 @@ run=(libglvnd)
 conflicts=(nvidia-390 nvidia-470)
 
 name=nvidia
-version=550.142
-release=1
+version=570.124.04
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://us.download.nvidia.com/XFree86/Linux-x86_64/${version}/NVIDIA-Linux-x86_64-${version}.run
