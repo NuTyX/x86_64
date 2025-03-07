@@ -1,5 +1,0 @@
-if [ -f boot/initrd-surface ]; then
-    mkinitramfs 6.6.59-NuTyX-66-surface
-    rm boot/initrd-surface
-    mv boot/initrd-6.6.59-NuTyX-66-surface boot/initrd-surface
-fi
