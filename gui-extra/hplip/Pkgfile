@@ -5,13 +5,13 @@ contributors="Greg,Rems,BlogofraisFR,Spiky"
 packager="tnut <tnut@nutyx.org>"
 
 makedepends=(grep autoconf libtool
-             python cups foomatic-filters libusb net-snmp
+             python cups libusb net-snmp
              libjpeg-turbo sane)
 
 
 name=hplip
 version=3.24.4
-release=1
+release=2
 
 source=(consolidate.patch
         http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
@@ -55,6 +55,7 @@ package() {
  
  # remove rc script
  rm -vrf $PKG/etc/init.d
+ rm -r $PKG/usr/lib/systemd
 
  # add mixed license file
  install -Dt $PKG/usr/share/licenses/$name -m644 COPYING
