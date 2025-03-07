@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-66
-version=6.6.80
+version=6.6.81
 
 alias=(linux-66)
 INITRD="initrd-${name/*-/}"
@@ -126,11 +126,11 @@ doc() {
 cd $PKG
 mkdir -p usr/share/doc
 mv $SRC/linux-${_version}/Documentation \
-usr/share/doc/linux-$version
+usr/share/doc/$name
 
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
-usr/share/doc/linux-$version
+usr/share/doc/$name
 
 rm -r usr
 }

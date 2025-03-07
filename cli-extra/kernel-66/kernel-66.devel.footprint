@@ -2033,6 +2033,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/
 -rw-rw-r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/Makefile
 -rw-rw-r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/amd.c
 -rw-r--r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/amd.o
+-rw-r--r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/amd_shas.c
 -rw-r--r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/built-in.a
 -rw-rw-r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/core.c
 -rw-r--r--	root/root	usr/src/linux-6.6/arch/x86/kernel/cpu/microcode/core.o
@@ -18750,6 +18751,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.6/include/trace/events/
 -rw-rw-r--	root/root	usr/src/linux-6.6/include/trace/events/i2c_slave.h
 -rw-rw-r--	root/root	usr/src/linux-6.6/include/trace/events/ib_mad.h
 -rw-rw-r--	root/root	usr/src/linux-6.6/include/trace/events/ib_umad.h
+-rw-r--r--	root/root	usr/src/linux-6.6/include/trace/events/icmp.h
 -rw-rw-r--	root/root	usr/src/linux-6.6/include/trace/events/initcall.h
 -rw-rw-r--	root/root	usr/src/linux-6.6/include/trace/events/intel-sst.h
 -rw-rw-r--	root/root	usr/src/linux-6.6/include/trace/events/intel_ifs.h
