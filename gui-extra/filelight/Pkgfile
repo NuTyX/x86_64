@@ -3,8 +3,8 @@ url='https://apps.kde.org/filelight/'
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(qt6-base qt6-declarative extra-cmake-modules kdoctools kconfig
              kcoreaddons ki18n kwidgetsaddons kxmlgui)
@@ -15,7 +15,7 @@ run=(kirigami kirigami-addons kio hicolor-icon-theme kquickcharts
 set=(kde6 kde6-gear)
 
 name=filelight
-version=24.12.2
+version=24.12.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
