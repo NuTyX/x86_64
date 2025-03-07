@@ -8,7 +8,7 @@ makedepends=(libtool automake doxygen)
 
 name=fuse2
 version=2.9.9
-release=3
+release=4
 
 source=(https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz
         fuse-2.9.9-closefrom-glibc-2-34.patch)
@@ -51,4 +51,9 @@ cp -Rv doc/html \
 rm $PKG/usr/lib/lib{fuse,ulockmgr}.la
 # Obsolet init
 rm -r $PKG/etc/init.d
+mkdir -p $PKG/etc/modules-load.d
+cat > $PKG/etc/modules-load.d/fuse2.conf << "EOF"
+fuse
+EOF
+
 }
