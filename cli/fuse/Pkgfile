@@ -8,7 +8,7 @@ makedepends=(python meson ninja doxygen)
 
 name=fuse
 version=3.14.1
-release=2
+release=3
 
 source=(https://github.com/libfuse/libfuse/releases/download/$name-$version/$name-$version.tar.xz)
 
@@ -51,5 +51,10 @@ EOF
 install -v -m755 -d $PKG/usr/share/doc/fuse-$version
 install -v -m644    $name-$version/doc/{README.NFS,kernel.txt} \
                     $PKG/usr/share/doc/fuse-$version
-cp -Rv $name-$version/doc/html  $PKG/usr/share/doc/fuse-$version
+cp -Rv $name-$version/doc/html  $PKG/usr/share/doc/fuse
+
+mkdir -p $PKG/etc/modules-load.d
+cat > $PKG/etc/modules-load.d/fuse.conf << "EOF"
+fuse
+EOF
 }
