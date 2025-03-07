@@ -3,13 +3,13 @@ url='https://apps.kde.org/kio-admin/'
 
 license="LGPL-2.0-or-later, GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6 kde6-gear)
 
 name=kio-admin
-version=24.12.2
+version=24.12.3
 
 makedepends=(ffmpeg qt6-base extra-cmake-modules kconfig kcoreaddons kio)
 
