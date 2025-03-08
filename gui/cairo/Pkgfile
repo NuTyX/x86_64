@@ -2,8 +2,8 @@
 description="Cairo is a 2D graphics library with support for multiple output devices."
 url="http://www.cairographics.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
 
 makedepends=( m4 sed grep gtk-doc meson
              lzo libpng glib xorg-pixman xorg-fontconfig
@@ -11,7 +11,7 @@ makedepends=( m4 sed grep gtk-doc meson
 
 name=cairo
 version=1.18.2
-release=4
+release=5
 
 source=(https://gitlab.freedesktop.org/cairo/cairo/-/archive/$version/cairo-$version.tar.bz2)
 
