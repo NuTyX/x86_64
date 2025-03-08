@@ -1,13 +1,14 @@
 description="A system and process level monitor."
 url="http://www.atoptool.nl/"
 
-contributors="Rems"
-packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(ncurses glib zlib)
 
 name=atop
 version=2.11.0
+release=2
 
 source=(http://www.atoptool.nl/download/atop-${version/_/-}.tar.gz)
 
@@ -17,7 +18,8 @@ prepare() {
 
 build() {
   cd $name-$version
-  make DESTDIR=$PKG install SBINPATH=/usr/bin
+  make DESTDIR=$PKG install SBINPATH=/usr/bin \
+  SYSDPATH=/usr/lib/systemd/system
 }
 
 package() {
