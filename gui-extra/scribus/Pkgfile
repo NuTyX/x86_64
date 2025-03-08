@@ -10,15 +10,15 @@ makedepends=(icu cmake boost aspell cups qttools qtdeclarative gnutls kerberos
 run=(shared-mime-info desktop-file-utils)
 
 name=scribus
-version=1.6.2
-release=5
+version=1.6.3
+release=2
 
 source=($name-$version-consolidate-1.patch
         https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
 
 prepare() {
-    cd $name-$version
-    patch -Np1 -i ../$name-$version-consolidate-1.patch
+   cd $name-$version
+   patch -Np1 -i ../$name-$version-consolidate-1.patch
 }
 build() {
     cd $name-$version
