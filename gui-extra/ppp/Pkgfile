@@ -1,13 +1,14 @@
 description="A daemon which implements the Point-to-Point Protocol for dial-up networking"
 url="http://ppp.samba.org/index"
 
-contributors="Pierre B., Rems, tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre.,Rems,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(libpcap)
 
 name=ppp
 version=2.5.2
+release=2
 
 source=(http://samba.org/ftp/$name/$name-$version.tar.gz
 	ppp.systemd)
