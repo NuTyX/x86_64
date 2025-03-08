@@ -8,10 +8,6 @@ drwxr-xr-x	root/root	etc/geoclue/
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/autostart/
 -rw-r--r--	root/root	etc/xdg/autostart/geoclue-demo-agent.desktop
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/systemd/
-drwxr-xr-x	root/root	lib/systemd/system/
--rw-r--r--	root/root	lib/systemd/system/geoclue.service
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
@@ -19,6 +15,9 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 lrwxrwxrwx	root/root	usr/lib/libgeoclue-2.so -> libgeoclue-2.so.0
 lrwxrwxrwx	root/root	usr/lib/libgeoclue-2.so.0 -> libgeoclue-2.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgeoclue-2.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/geoclue.service
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/geoclue
 drwxr-xr-x	root/root	usr/libexec/geoclue-2.0/
