@@ -12,6 +12,7 @@ PKGMK_GROUPS=(devel doc)
 
 name=kernel-612
 version=6.12.18
+release=2
 
 alias=(linux-612)
 INITRD="initrd-${name/*-/}"
@@ -72,7 +73,6 @@ cp  .config    \
 $PKG/boot/config-${KERNEL_VERSION}
 cp  arch/x86_64/boot/bzImage \
 $PKG/boot/${KERNEL}
-ln -sf ${KERNEL} $PKG/boot/${name}
 
 
 # Reorgenise the sources
