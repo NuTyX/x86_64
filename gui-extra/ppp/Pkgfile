@@ -23,5 +23,5 @@ build() {
 	make
 #	make DESTDIR=$PKG install-etcppp
 	make DESTDIR=$PKG install
-install -D -m644 ../ppp.systemd $PKG/lib/systemd/system/ppp@.service	
+install -D -m644 ../ppp.systemd $PKG/usr/lib/systemd/system/ppp@.service	
 }
