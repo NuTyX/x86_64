@@ -16,7 +16,8 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=128.7.1esr
+version=128.8.0esr
+release=1
 
 source=(https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
         $name.desktop)
@@ -37,7 +38,9 @@ rm usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 }
 
 build() {
-
+  export CC=gcc CXX=g++ AR=gcc-ar NM=gcc-nm RANLIB=gcc-ranlib
+  unset CFLAGS
+  unset CXXFLAGS
   cd $name-*
 
   cat > mozconfig << "EOF"
@@ -64,11 +67,11 @@ ac_add_options --with-distribution-id=NuTyX
 
 # System libraries
 ac_add_options --with-system-zlib
-ac_add_options --with-system-bz2
+# ac_add_options --with-system-bz2
 # ac_add_options --with-system-icu
 ac_add_options --with-system-jpeg
 # does not have APNG support
-# ac_add_options --with-system-png
+ac_add_options --with-system-png
 ac_add_options --with-system-libvpx
 ac_add_options --with-system-nspr
 ac_add_options --with-system-nss
@@ -78,7 +81,7 @@ ac_add_options --with-system-ffi
 ac_add_options --with-system-pixman
 
 # Features
-ac_add_options --enable-alsa
+# ac_add_options --enable-alsa
 ac_add_options --disable-jack
 ac_add_options --disable-crashreporter
 ac_add_options --disable-updater
@@ -95,7 +98,7 @@ ac_add_options --without-wasm-sandboxed-libraries
 EOF
    
 
-  export CC=clang CXX=clang++ AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib
+  export CC=gcc CXX=g++ AR=gcc-ar NM=gcc-nm RANLIB=gcc-ranlib
 
   export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
   export MOZBUILD_STATE_PATH=${PWD}/mozbuild
