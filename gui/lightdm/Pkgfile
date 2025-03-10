@@ -8,7 +8,7 @@ set=(lightdm)
 
 name=lightdm
 version=1.32.0
-release=3
+release=4
 
 scriptsversion=20250125
 PKGMK_GROUPS=(man devel doc)
@@ -33,8 +33,6 @@ fi
 build() {
  
  cd $name-$version 
-
- sed -i s/systemd/elogind/ data/pam/*
  
  ./configure \
      --prefix=/usr \
