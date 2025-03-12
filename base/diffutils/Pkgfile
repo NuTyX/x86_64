@@ -2,15 +2,14 @@ description="Programs that show the differences between files or directories."
 url="https://www.gnu.org/software/diffutils/"
 
 maintainer="Paul Eggert,Mike Haertel,David Hayes,Len Tower and many more."
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="Spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(core)
 
 name=diffutils
-version=3.10
-release=2
+version=3.11
 
 PKGMK_LOCALES=()
 
-source=(http://ftp.gnu.org/gnu/$name/diffutils-$version.tar.xz )
+source=(https://ftp.gnu.org/gnu/$name/diffutils-$version.tar.xz )
