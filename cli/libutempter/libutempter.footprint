@@ -1,9 +1,11 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libutempter.a
 lrwxrwxrwx	root/root	usr/lib/libutempter.so -> libutempter.so.0
-lrwxrwxrwx	root/root	usr/lib/libutempter.so.0 -> libutempter.so.1.2.1
--rwxr-xr-x	root/root	usr/lib/libutempter.so.1.2.1
+lrwxrwxrwx	root/root	usr/lib/libutempter.so.0 -> libutempter.so.1.2.3
+-rwxr-xr-x	root/root	usr/lib/libutempter.so.1.2.3
 drwxr-xr-x	root/root	usr/lib/utempter/
 -rwxr-sr-x	root/utmp	usr/lib/utempter/utempter
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/libutempter/
+-rw-r--r--	root/root	usr/share/licenses/libutempter/COPYING

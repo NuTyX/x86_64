@@ -1,18 +1,26 @@
 description="Interface for terminal emulators to record user sessions to utmp and wtmp files."
 url="ftp://ftp.altlinux.org/pub/people/ldv/utempter"
+
+license="LGPL2.1"
+
 packager="spiky <spiky@nutyx.org>"
 
 name=libutempter
-version=1.2.1
-release=2
+version=1.2.3
 
-source=(http://ftp.altlinux.org/pub/people/ldv/utempter/$name-$version.tar.gz)
+source=(https://github.com/altlinux/libutempter/archive/refs/tags/$version-alt1.tar.gz)
 
-build(){
-    cd $name-$version
+prepare() {
+mv $name-$version-* $name-$version
+}
+
+build() {
+    cd $name-$version/$name
 
     make
     make DESTDIR=$PKG install
     chown root:utmp $PKG/usr/lib/utempter/utempter
     chmod 2755 $PKG/usr/lib/utempter/utempter
+
+    install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
