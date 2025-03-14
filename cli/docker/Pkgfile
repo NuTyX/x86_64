@@ -1,16 +1,15 @@
 description='An open platform for distributed applications for developers and sysadmins'
 url='https://www.docker.com/community-edition'
 
-contributors="MattHoush,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="MattHoush,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(lvm2 btrfs-progs)
 
 run=(systemd start-stop-daemon iptables runc containerd cgroupfs-mount)
 
 name=docker
-version=27.5.1
-release=2
+version=28.0.1
 
 PKGMK_GROUPS=(man)
 
@@ -55,7 +54,7 @@ build() {
         $PKG/usr/bin/docker-proxy
 
 
-    for M in 1 5 8; do
+    for M in 1 5; do
         install -d -m 0755 $PKG/usr/share/man/man${M}
         install -m 0644 $SRC/man${M}/* $PKG/usr/share/man/man${M}/
     done
