@@ -1,12 +1,11 @@
 description="Provide a portable, high level programming interface to various calling conventions."
 url="http://sourceware.org/libffi/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=libffi
-version=3.4.6
-release=2
+version=3.4.7
 
 source=(https://github.com/$name/$name/releases/download/v$version/$name-$version.tar.gz )
 
