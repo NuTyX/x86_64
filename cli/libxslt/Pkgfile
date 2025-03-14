@@ -1,8 +1,8 @@
 description="XSLT libraries used for extending libxml2 libraries to support XSLT files."
 url="http://xmlsoft.org/XSLT/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,RÃ©my,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rÿ©My,Tnut"
 
 makedepends=(automake autoconf m4 sed grep
              libxml2 libgcrypt python)
@@ -10,8 +10,7 @@ makedepends=(automake autoconf m4 sed grep
 run=(libxslt.lib)
 
 name=libxslt
-version=1.1.42
-release=3
+version=1.1.43
 
 PKGMK_GROUPS=(lib man devel doc)
 source=(https://download.gnome.org/sources/$name/1.1/$name-$version.tar.xz)
@@ -31,7 +30,7 @@ cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/lib{e,}xslt*
-rm -r usr/lib/libxslt-plugins
+#rm -r usr/lib/libxslt-plugins
 rm usr/lib/libexslt* usr/lib/libxslt*
 rm -d usr/lib || true
 }
