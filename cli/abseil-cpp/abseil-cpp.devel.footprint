@@ -46,6 +46,7 @@ drwxr-xr-x	root/root	usr/include/absl/base/internal/
 -rw-r--r--	root/root	usr/include/absl/base/internal/sysinfo.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/thread_identity.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/throw_delegate.h
+-rw-r--r--	root/root	usr/include/absl/base/internal/tracing.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/tsan_mutex_interface.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/unaligned_access.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/unscaledcycleclock.h
@@ -216,6 +217,7 @@ drwxr-xr-x	root/root	usr/include/absl/log/internal/
 -rw-r--r--	root/root	usr/include/absl/log/internal/proto.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/strip.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/structured.h
+-rw-r--r--	root/root	usr/include/absl/log/internal/structured_proto.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/test_actions.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/test_helpers.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/test_matchers.h
@@ -539,6 +541,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_proto.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_strip.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_structured.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_structured_proto.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_voidify.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_severity.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_sink.pc
@@ -611,6 +614,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_throw_delegate.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_time.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_time_zone.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_tracing_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_type_traits.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_utf8_for_code_point.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_utility.pc
