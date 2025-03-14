@@ -1,17 +1,16 @@
 description="GNU Compact Disc Input and Control Library"
 url="http://www.gnu.org/software/libcdio/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
-makedepends=(perl ncurses texinfo help2man)
+makedepends=(libtool perl ncurses texinfo help2man)
 
 name=libcdio
-version=2.1.0
-release=2
+version=2.2.0
 
 source=(version.texi
-        https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.xz)
+        https://github.com/$name/$name/releases/download/$version/$name-$version.tar.bz2)
 
 prepare() {
  cp version.texi $name-$version/doc
@@ -19,12 +18,15 @@ prepare() {
 build() {
 cd $name-$version
 
+autoreconf -fvi
 ./configure --prefix=/usr  \
          --disable-static  \
         --disable-vcd-info \
         --enable-cpp-progs \
         --disable-cddb     \
         --enable-maintainer-mode
+
+sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 make
 make DESTDIR=$PKG install
 
