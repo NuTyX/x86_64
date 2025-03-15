@@ -10,6 +10,7 @@ makedepends=(cups xorg-fontconfig ghostscript lcms2 qpdf hicolor-icon-theme)
 
 name=libcupsfilters
 version=2.1.1
+release=2
 
 source=(https://github.com/OpenPrinting/libcupsfilters/releases/download/$version/$name-$version.tar.xz)
 
