@@ -18,6 +18,7 @@ drwxr-xr-x	root/root	etc/speech-dispatcher/modules/
 -rw-r--r--	root/root	etc/speech-dispatcher/modules/llia_phon-generic.conf
 -rw-r--r--	root/root	etc/speech-dispatcher/modules/mary-generic.conf
 -rw-r--r--	root/root	etc/speech-dispatcher/modules/mimic3-generic.conf
+-rw-r--r--	root/root	etc/speech-dispatcher/modules/openjtalk.conf
 -rw-r--r--	root/root	etc/speech-dispatcher/modules/swift-generic.conf
 -rw-r--r--	root/root	etc/speech-dispatcher/modules/voxin.conf
 -rw-r--r--	root/root	etc/speech-dispatcher/speechd.conf
@@ -31,18 +32,25 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libspeechd.so -> libspeechd.so.2.6.0
 lrwxrwxrwx	root/root	usr/lib/libspeechd.so.2 -> libspeechd.so.2.6.0
 -rwxr-xr-x	root/root	usr/lib/libspeechd.so.2.6.0
+lrwxrwxrwx	root/root	usr/lib/libspeechd_module.so -> libspeechd_module.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libspeechd_module.so.0 -> libspeechd_module.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libspeechd_module.so.0.0.0
 drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/speechd/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/__init__.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/__init__.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/_test.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/_test.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/_test.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/client.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/client.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/client.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/paths.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/paths.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/__pycache__/paths.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/_test.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd/client.py
@@ -51,10 +59,13 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/speechd_config/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/__init__.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/__init__.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/buildconfig.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/buildconfig.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/buildconfig.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/config.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/config.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/__pycache__/config.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/buildconfig.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/speechd_config/config.py
@@ -65,12 +76,16 @@ drwxr-xr-x	root/root	usr/lib/speech-dispatcher/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/speech-dispatcherd.service
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+-rw-r--r--	root/root	usr/lib/systemd/user/speech-dispatcher.service
+-rw-r--r--	root/root	usr/lib/systemd/user/speech-dispatcher.socket
 drwxr-xr-x	root/root	usr/libexec/
 drwxr-xr-x	root/root	usr/libexec/speech-dispatcher-modules/
 -rwxr-xr-x	root/root	usr/libexec/speech-dispatcher-modules/sd_cicero
 -rwxr-xr-x	root/root	usr/libexec/speech-dispatcher-modules/sd_dummy
 -rwxr-xr-x	root/root	usr/libexec/speech-dispatcher-modules/sd_festival
 -rwxr-xr-x	root/root	usr/libexec/speech-dispatcher-modules/sd_generic
+-rwxr-xr-x	root/root	usr/libexec/speech-dispatcher-modules/sd_openjtalk
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/speech-dispatcher/
@@ -125,11 +140,13 @@ drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/base/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/base/font-variants.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/base/orca-chars.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/base/orca.dic
--rw-r--r--	root/root	usr/share/speech-dispatcher/locale/base/symbols.dic
+-rw-r--r--	root/root	usr/share/speech-dispatcher/locale/base/symbols-fallback.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/be/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/be/emojis.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/be/orca-chars.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/be/orca.dic
+drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/bew/
+-rw-r--r--	root/root	usr/share/speech-dispatcher/locale/bew/emojis.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/bg/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/bg/emojis.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/bg/orca-chars.dic
@@ -173,6 +190,8 @@ drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/cs/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/cs/orca-chars.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/cs/orca.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/cs/symbols.dic
+drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/cv/
+-rw-r--r--	root/root	usr/share/speech-dispatcher/locale/cv/emojis.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/cy/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/cy/emojis.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/da/
@@ -483,6 +502,8 @@ drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/qu/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/qu/emojis.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/quc/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/quc/emojis.dic
+drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/rhg/
+-rw-r--r--	root/root	usr/share/speech-dispatcher/locale/rhg/emojis.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/rm/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/rm/emojis.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/ro/
@@ -546,6 +567,7 @@ drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/sw_KE/
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/ta/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/ta/emojis.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/ta/orca-chars.dic
+-rw-r--r--	root/root	usr/share/speech-dispatcher/locale/ta/orca.dic
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/ta/symbols.dic
 drwxr-xr-x	root/root	usr/share/speech-dispatcher/locale/te/
 -rw-r--r--	root/root	usr/share/speech-dispatcher/locale/te/emojis.dic
