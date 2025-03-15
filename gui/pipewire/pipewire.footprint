@@ -41,8 +41,8 @@ drwxr-xr-x	root/root	usr/lib/alsa-lib/
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpipewire.so
 lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so -> libpipewire-0.3.so.0
-lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1207.0
--rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1207.0
+lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1401.0
+-rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1401.0
 drwxr-xr-x	root/root	usr/lib/pipewire-0.3/
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-access.so
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-adapter.so
@@ -103,11 +103,17 @@ drwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-bluez5.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-aac.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-faststream.so
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-g722.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-opus-g.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-opus.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-sbc.so
 drwxr-xr-x	root/root	usr/lib/spa-0.2/control/
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/control/libspa-control.so
+drwxr-xr-x	root/root	usr/lib/spa-0.2/filter-graph/
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/filter-graph/libspa-filter-graph-plugin-builtin.so
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/filter-graph/libspa-filter-graph-plugin-ladspa.so
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/filter-graph/libspa-filter-graph.so
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/libspa.so
 drwxr-xr-x	root/root	usr/lib/spa-0.2/support/
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/support/libspa-dbus.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/support/libspa-journal.so
@@ -189,6 +195,7 @@ drwxr-xr-x	root/root	usr/share/alsa-card-profile/mixer/profile-sets/
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/dell-dock-tb16-usb-audio.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/force-speaker-and-int-mic.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/force-speaker.conf
+-rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/hdmi-ac3.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/hp-tbt-dock-120w-g2.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/hp-tbt-dock-audio-module.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/kinect-audio.conf
@@ -216,9 +223,6 @@ drwxr-xr-x	root/root	usr/share/licenses/pipewire/
 -rw-r--r--	root/root	usr/share/licenses/pipewire/COPYING
 -rw-r--r--	root/root	usr/share/licenses/pipewire/LICENSE
 drwxr-xr-x	root/root	usr/share/pipewire/
--rw-r--r--	root/root	usr/share/pipewire/client-rt.conf
-drwxr-xr-x	root/root	usr/share/pipewire/client-rt.conf.avail/
--rw-r--r--	root/root	usr/share/pipewire/client-rt.conf.avail/20-upmix.conf
 -rw-r--r--	root/root	usr/share/pipewire/client.conf
 drwxr-xr-x	root/root	usr/share/pipewire/client.conf.avail/
 -rw-r--r--	root/root	usr/share/pipewire/client.conf.avail/20-upmix.conf
@@ -230,6 +234,7 @@ drwxr-xr-x	root/root	usr/share/pipewire/filter-chain/
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-make-LFE.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-matrix-spatialiser.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-mix-FL-FR.conf
+-rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-upmix-5.1-filter.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-virtual-surround-5.1-kemar.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-virtual-surround-7.1-hesuvi.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/source-duplicate-FL.conf

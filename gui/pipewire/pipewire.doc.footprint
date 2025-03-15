@@ -34,6 +34,8 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/audio-capture_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/audio-dsp-filter_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/audio-dsp-src_8c-example.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/audio-src-ring2_8c-example.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/audio-src-ring_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/audio-src_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/audio_2dsp-utils_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/audio_2dsp-utils_8h_source.html
@@ -115,6 +117,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_6bd25c25867debc7a223753ea0a0854b.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_6c89d1ed406002b4e6ebce07fb51a507.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_7129a66c92fe7beef816c2ac906ef0b3.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_74d196f5cd72a1645749b796df28e947.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_74ee4c511a6ff81cc2259ced20be9e7a.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_829a904a692ff3f12932cec80d53c448.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dir_847b9498d3ba6844b1972c87baa25147.html
@@ -145,6 +148,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dynamic_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/dynsections.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/encoded_8h_source.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/endian_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/enum-types_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/enum-types_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/examples.html
@@ -157,6 +161,8 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/factory_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/file_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/file_8h_source.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/filter-graph_8h.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/filter-graph_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/flac-utils_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/flac-utils_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/flac_8h.html
@@ -310,6 +316,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/globals_vars.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/globals_w.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/globals_z.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/gmain_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/graph_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/graph_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/graph_legend.dot
@@ -442,6 +449,8 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__device.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__dict.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__dict.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__filter__graph.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__filter__graph.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__graph.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__graph.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__handle.html
@@ -456,6 +465,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__json.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__json__pod.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__json__pod.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__json__utils.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__keys.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__keys.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/group__spa__list.html
@@ -539,6 +549,8 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/iter_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/iter_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/jquery.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/json-core_8h.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/json-core_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/json-pod_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/json-pod_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/json_8h.html
@@ -613,6 +625,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex20.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex21.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex22.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex23.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex3.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex4.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/navtreeindex5.js
@@ -715,6 +728,10 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_rtp_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_session_manager.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_snapcast_discover.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_spa_device.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_spa_device_factory.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_spa_node.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_spa_node_factory.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_vban_recv.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_vban_send.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/page_module_x11_bell.html
@@ -846,6 +863,8 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/ra_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/ra_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/ratelimit_8h_source.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/raw-json_8h.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/raw-json_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/resize.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/resource_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/resource_8h_source.html
@@ -928,6 +947,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/search/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/search/files_f.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/search/functions_0.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/search/functions_1.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/search/functions_2.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/search/groups_0.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/search/groups_1.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/search/groups_10.js
@@ -1020,6 +1040,7 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/search/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2examples_2example-control_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2examples_2local-libcamera_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2examples_2local-v4l2_8c-example.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2examples_2local-videotestsrc_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2include_2spa_2control_2control_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2include_2spa_2control_2control_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/spa_2include_2spa_2debug_2context_8h.html
@@ -1421,6 +1442,14 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/search/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__event.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__event__body.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__event__body.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph__events.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph__events.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph__info.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph__info.js
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph__methods.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__filter__graph__methods.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__fraction.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__fraction.js
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/structspa__graph.html
@@ -1693,6 +1722,8 @@ drwxr-xr-x	root/root	usr/share/doc/pipewire/html/search/
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/tutorial6_8c-example.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/types_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/types_8h_source.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/ump-utils_8h.html
+-rw-r--r--	root/root	usr/share/doc/pipewire/html/ump-utils_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/utils_2dict_8h.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/utils_2dict_8h_source.html
 -rw-r--r--	root/root	usr/share/doc/pipewire/html/utils_2type-info_8h.html

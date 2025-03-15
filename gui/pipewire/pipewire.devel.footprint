@@ -70,6 +70,7 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/buffer/
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/control/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/control/control.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/control/type-info.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/control/ump-utils.h
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/debug/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/debug/buffer.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/debug/context.h
@@ -81,6 +82,8 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/debug/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/debug/node.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/debug/pod.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/debug/types.h
+drwxr-xr-x	root/root	usr/include/spa-0.2/spa/filter-graph/
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/filter-graph/filter-graph.h
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/graph/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/graph/graph.h
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/interfaces/
@@ -130,6 +133,7 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/audio/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/opus.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/ra-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/ra.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw-json.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw.h
@@ -212,8 +216,10 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/utils/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/defs.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/dict.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/dll.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/endian.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/enum-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/hook.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/json-core.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/json-pod.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/json.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/utils/keys.h
