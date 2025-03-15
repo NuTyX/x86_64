@@ -3,8 +3,8 @@ url='http://cairographics.org/'
 
 license="LGPL, MPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(cairo libsigc++-3)
 
@@ -12,7 +12,7 @@ name=cairomm-gtk-4
 _name=cairomm
 
 version=1.18.0
-release=2
+release=3
 
 source=(http://cairographics.org/releases/$_name-$version.tar.xz)
 
