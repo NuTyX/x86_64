@@ -10,19 +10,14 @@ makedepends=(gobject-introspection glib libgit2 meson python-gobject
              vala git )
 
 name=libgit2-glib
-version=1.2.0
-release=5
+version=1.2.1
 
-source=(libgit2_1.8.0.patch
-        Unbreak-micro-version.patch
-        Adjust-API-for-libgit2-1.9.0.patch
+source=(Fix-definition-of-GGIT_VERSION_HEX.patch
         https://download.gnome.org/sources/$name/1.2/$name-$version.tar.xz)
 
 prepare() {
  cd $name-$version
- patch -Np1 -i ../Unbreak-micro-version.patch
- patch -Np1 -i ../libgit2_1.8.0.patch
- patch -Np1 -i ../Adjust-API-for-libgit2-1.9.0.patch
+ patch -Np1 -i ../Fix-definition-of-GGIT_VERSION_HEX.patch
 
 }
 build() {
