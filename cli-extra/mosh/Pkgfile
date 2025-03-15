@@ -1,14 +1,14 @@
 description="Mobile shell, surviving disconnects with local echo and line editing."
 url="http://mosh.mit.edu/"
 
-contributors="Alienus,Fanch,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Fanch,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(pkgconf protobuf ncurses zlib openssh openssl perl-io-tty libutempter)
 
 name=mosh
 version=1.4.0
-release=3
+release=4
 
 source=(https://github.com/mobile-shell/mosh/archive/refs/tags/$name-$version.tar.gz)
 
