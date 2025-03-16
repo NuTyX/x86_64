@@ -11,7 +11,7 @@ makedepends=(extra-cmake-modules openexr karchive)
 set=(kde6-frameworks)
 
 name=kimageformats
-version=6.11.0
+version=6.12.0
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/$name-$version.tar.xz)
 
