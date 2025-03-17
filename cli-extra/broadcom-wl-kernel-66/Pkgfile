@@ -4,25 +4,25 @@ url='https://docs.broadcom.com/docs/12358410'
 packager="tnut <tnut@nutyx.org>"
 contributors="Skythrew,Spiky"
 
-run=(kernel-66)
-
 name=broadcom-wl-kernel-66
 version=6.30.223.271
 release=16
 
+run=(kernel-66)
+KERNELNAME="${name#broadcom-wl-}"
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/broadcom-wl/broadcom-wl-$version.tar.xz)
 
 build() {
-KERNEL_VERSION="$(basename /lib/modules/*)"
+KERNEL_VERSION="$(basename /lib/modules/6.6.*)"
 cd broadcom-wl-${version}
 
-make -C /lib/modules/${KERNEL_VERSION}/build M=$(pwd)
+make -C /usr/lib/modules/${KERNEL_VERSION}/build M=$(pwd)
 
 install -Dm755 wl.ko \
-$PKG/lib/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless/wl.ko
+$PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/net/wireless/wl.ko
 
-xz $PKG/lib/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless/wl.ko
+xz $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/net/wireless/wl.ko
 
 #Blacklist some kernel modules
 mkdir -pv $PKG/etc/modprobe.d
