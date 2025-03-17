@@ -1,13 +1,16 @@
-description="NVIDIA modules for the 6.6 longterm support Linux Kernel version."
-url="https://www.nvidia.com"
+description='Legacy NVIDIA modules (470.xx series) for the 6.6 longterm support Linux Kernel version.'
+url='https://www.nvidia.com'
 
 packager="tnut <tnut@nutyx.org>"
+
+license="custom"
 
 name=nvidia-470-kernel-66
 version=470.256.02
 release=6
 
 run=(kernel-66)
+KERNELNAME="${name#nvidia-470-}"
 
 source=(0001-Fix-conftest-to-ignore-implicit-function-declaration.patch
         0002-Fix-conftest-to-use-a-short-wchar_t.patch
@@ -16,8 +19,8 @@ source=(0001-Fix-conftest-to-ignore-implicit-function-declaration.patch
 build()
 {
  sh NVIDIA-Linux-x86_64-$version.run --extract-only
-
  cd NVIDIA-Linux-x86_64-$version/kernel
+ 
  patch -Np1 -i ../../0001-Fix-conftest-to-ignore-implicit-function-declaration.patch
  patch -Np1 -i ../../0002-Fix-conftest-to-use-a-short-wchar_t.patch
  patch -Np1 -i ../../0003-Fix-conftest-to-use-nv_drm_gem_vmap-which-has-the-se.patch
@@ -25,11 +28,11 @@ build()
  sed -i "s@nv_dma_resv_add_excl_fence@dma_resv_add_excl_fence@" nvidia-drm/nvidia-dma-resv-helper.h
  sed -i "s@nv_dma_resv_add_excl_fence@dma_resv_add_excl_fence@" nvidia-drm/nvidia-drm-prime-fence.c
 
- modules_dir="$(basename /lib/modules/*)"
+ modules_dir="$(basename /usr/lib/modules/6.6.*)"
 
  SYSSRC="/usr/src/*" make modules
- install -dm0755 $PKG/lib/modules/${modules_dir}/kernel/drivers/video
- install -m 0644 *.ko $PKG/lib/modules/${modules_dir}/kernel/drivers/video
+ install -dm0755 $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
+ install -m 0644 *.ko $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
  echo "depmod -a ${modules_dir}" > $PKGMK_ROOT/$name.post-install
  
 }
