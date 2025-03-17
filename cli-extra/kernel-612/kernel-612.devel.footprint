@@ -10,8 +10,10 @@ drwxrwxr-x	root/root	usr/src/linux-6.12/
 -rw-r--r--	root/root	usr/src/linux-6.12/.checked-atomic-instrumented.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.12/.checked-atomic-long.h (EMPTY)
 -rw-rw-r--	root/root	usr/src/linux-6.12/.clang-format
+-rw-r--r--	root/root	usr/src/linux-6.12/.clippy.toml
 -rw-rw-r--	root/root	usr/src/linux-6.12/.cocciconfig
 -rw-r--r--	root/root	usr/src/linux-6.12/.config
+-rw-r--r--	root/root	usr/src/linux-6.12/.config.old
 -rw-rw-r--	root/root	usr/src/linux-6.12/.editorconfig
 -rw-rw-r--	root/root	usr/src/linux-6.12/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/linux-6.12/.gitattributes
@@ -6375,6 +6377,8 @@ drwxr-xr-x	root/root	usr/src/linux-6.12/include/config/
 -rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_CHIPONE_ICN6211 (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_CHRONTEL_CH7033 (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_CIRRUS_QEMU (EMPTY)
+-rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_CLIENT_SELECTION (EMPTY)
+-rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_CLIENT_SETUP (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_CROS_EC_ANX7688 (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_DISPLAY_CONNECTOR (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-6.12/include/config/DRM_DISPLAY_DP_AUX_BUS (EMPTY)
@@ -14260,6 +14264,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.12/include/drm/display/
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_buddy.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_cache.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_client.h
+-rw-r--r--	root/root	usr/src/linux-6.12/include/drm/drm_client_setup.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_color_mgmt.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_connector.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_crtc.h
@@ -14276,6 +14281,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.12/include/drm/display/
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_exec.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_fb_dma_helper.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_fb_helper.h
+-rw-r--r--	root/root	usr/src/linux-6.12/include/drm/drm_fbdev_client.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_fbdev_dma.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_fbdev_shmem.h
 -rw-rw-r--	root/root	usr/src/linux-6.12/include/drm/drm_fbdev_ttm.h
@@ -23520,6 +23526,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.12/lib/zstd/decompress/
 -rw-r--r--	root/root	usr/src/linux-6.12/lib/zstd/zstd_compress_module.o
 -rw-rw-r--	root/root	usr/src/linux-6.12/lib/zstd/zstd_decompress_module.c
 -rw-r--r--	root/root	usr/src/linux-6.12/lib/zstd/zstd_decompress_module.o
+-rw-r--r--	root/root	usr/src/linux-6.12/localversion
 -rw-r--r--	root/root	usr/src/linux-6.12/modules.builtin
 -rw-r--r--	root/root	usr/src/linux-6.12/modules.builtin.modinfo
 -rw-r--r--	root/root	usr/src/linux-6.12/modules.order
@@ -23533,6 +23540,7 @@ drwxrwxr-x	root/root	usr/src/linux-6.12/rust/bindings/
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/build_error.rs
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/compiler_builtins.rs
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/exports.c
+-rw-r--r--	root/root	usr/src/linux-6.12/rust/ffi.rs
 drwxrwxr-x	root/root	usr/src/linux-6.12/rust/helpers/
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/blk.c
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/bug.c
@@ -23550,14 +23558,17 @@ drwxrwxr-x	root/root	usr/src/linux-6.12/rust/helpers/
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/spinlock.c
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/task.c
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/uaccess.c
+-rw-r--r--	root/root	usr/src/linux-6.12/rust/helpers/vmalloc.c
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/wait.c
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/helpers/workqueue.c
 drwxrwxr-x	root/root	usr/src/linux-6.12/rust/kernel/
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/kernel/alloc.rs
 drwxrwxr-x	root/root	usr/src/linux-6.12/rust/kernel/alloc/
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/allocator.rs
--rw-rw-r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/box_ext.rs
--rw-rw-r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/vec_ext.rs
+-rw-r--r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/allocator_test.rs
+-rw-r--r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/kbox.rs
+-rw-r--r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/kvec.rs
+-rw-r--r--	root/root	usr/src/linux-6.12/rust/kernel/alloc/layout.rs
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/kernel/block.rs
 drwxrwxr-x	root/root	usr/src/linux-6.12/rust/kernel/block/
 -rw-rw-r--	root/root	usr/src/linux-6.12/rust/kernel/block/mq.rs

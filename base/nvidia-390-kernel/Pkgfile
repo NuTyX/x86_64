@@ -1,15 +1,18 @@
-description='NVIDIA modules for the latest stable Linux Kernel version.'
+description='Legacy NVIDIA version (390.xx series) for the latest stable Linux Kernel version.'
 url='https://www.nvidia.com'
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=()
-run=(kernel)
+license="custom"
 
 name=nvidia-390-kernel
 version=390.157
 release=35
+
+run=(kernel)
+KERNELNAME="${name#nvidia-390-}"
+
 
 source=(https://download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
         kernel-4.16+-memory-encryption.patch kernel-6.4.patch kernel-6.5.patch kernel-6.6.patch
@@ -17,9 +20,7 @@ source=(https://download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x
         kernel-6.12.patch kernel-6.13.patch)
 
 build() {
-sh NVIDIA-Linux-x86_64-$version.run --extract-only
-
-
+ sh NVIDIA-Linux-x86_64-$version.run --extract-only
  cd NVIDIA-Linux-x86_64-$version
 
  patch -Np1 -i ../kernel-4.16+-memory-encryption.patch
@@ -35,10 +36,10 @@ sh NVIDIA-Linux-x86_64-$version.run --extract-only
  patch -Np1 -i ../kernel-6.13.patch
 
  cd kernel
- modules_dir="$(basename /lib/modules/*)"
+ modules_dir="$(basename /usr/lib/modules/*)"
 
  SYSSRC="/usr/src/*" make modules
- install -dm0755 $PKG/lib/modules/${modules_dir}/kernel/drivers/video
- install -m 0644 *.ko $PKG/lib/modules/${modules_dir}/kernel/drivers/video
+ install -dm0755 $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
+ install -m 0644 *.ko $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
  echo "depmod -a ${modules_dir}" > $PKGMK_ROOT/$name.post-install
 }
