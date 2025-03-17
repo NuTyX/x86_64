@@ -13,25 +13,25 @@ release=3
 
 buildr=167084
 _VBARCH=amd64
+KERNELNAME="${name#vboxhost-}"
+
 source=(http://download.virtualbox.org/virtualbox/${version}/VirtualBox-${version}-${buildr}-Linux_${_VBARCH}.run)
 
 build(){
 
-KERNEL_VERSION="$(basename /lib/modules/*)"
+KERNEL_VERSION="$(basename /usr/lib/modules/6.12.*)"
 
 sh VirtualBox-${version}-${buildr}-Linux_${_VBARCH}.run --target vb --keep --noexec
 cd vb
 tar xfj VirtualBox.tar.bz2
 cd src/vboxhost
-
 sed -i "s/netif_rx_ni/netif_rx/" vboxnetflt/linux/VBoxNetFlt-linux.c
-
 KERN_VER=${KERNEL_VERSION} make
 
 for i in *.ko
 do
 	install -D -m0644 $i \
-	$PKG/lib/modules/${KERNEL_VERSION}/kernel/drivers/virt/vboxhost/$i
+	$PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/virt/vboxhost/$i
 done
 
 echo "depmod -a ${KERNEL_VERSION}" > $PKGMK_ROOT/$name.post-install
