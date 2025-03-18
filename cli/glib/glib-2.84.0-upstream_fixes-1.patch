@@ -1,0 +1,50 @@
+Submitted By:            Douglas R. Reno <renodr at linuxfromscratch dot org>
+Date:                    2025-03-17
+Initial Package Version: 2.84.0
+Upstream Status:         Applied
+Origin:                  Upstream (MR 4550)
+Description:             This patch fixes a regression that occurs with
+                         gobject-introspection-1.84.0 because g-i introduced
+                         a new element (<doc:format name="..."/>) which was not
+                         handled within glib until after gobject-introspection
+                         was released. This patch prevents the GIR parser from
+                         throwing an error that the element is invalid by adding
+                         it into the GIR parser.
+
+diff -Naurp glib-2.84.0.orig/girepository/girparser.c glib-2.84.0/girepository/girparser.c
+--- glib-2.84.0.orig/girepository/girparser.c	2025-03-06 07:09:13.000000000 -0600
++++ glib-2.84.0/girepository/girparser.c	2025-03-17 13:06:38.781427173 -0500
+@@ -107,7 +107,8 @@ typedef enum
+   STATE_ALIAS,
+   STATE_TYPE,
+   STATE_ATTRIBUTE,
+-  STATE_PASSTHROUGH
++  STATE_PASSTHROUGH,
++  STATE_DOC_FORMAT, /* 35 */
+ } ParseState;
+ 
+ typedef struct _ParseContext ParseContext;
+@@ -3159,6 +3160,11 @@ start_element_handler (GMarkupParseConte
+           state_switch (ctx, STATE_PASSTHROUGH);
+           goto out;
+         }
++      else if (strcmp ("doc:format", element_name) == 0)
++        {
++          state_switch (ctx, STATE_DOC_FORMAT);
++          goto out;
++        }
+       break;
+ 
+     case 'e':
+@@ -3844,6 +3850,11 @@ end_element_handler (GMarkupParseContext
+         }
+       break;
+ 
++    case STATE_DOC_FORMAT:
++      if (require_end_element (context, ctx, "doc:format", element_name, error))
++         state_switch(ctx, STATE_REPOSITORY);
++      break;
++
+     case STATE_PASSTHROUGH:
+       ctx->unknown_depth -= 1;
+       g_assert (ctx->unknown_depth >= 0);
