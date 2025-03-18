@@ -9,8 +9,7 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(go btrfs-progs git libseccomp)
 
 name=containerd
-version=2.0.3
-release=2
+version=2.0.4
 PKGMK_KEEP_SOURCES="no"
 
 source=(https://github.com/containerd/containerd/archive/refs/tags/v${version}.tar.gz)
