@@ -19,7 +19,7 @@ alias=(linux)
 INITRD="initrd-stable"
 KERNEL="kernel-stable"
 
-source=($url/pub/linux/kernel/v5.x/linux-${_version}.tar.xz config)
+source=($url/pub/linux/kernel/v6.x/linux-${_version}.tar.xz config)
 if [ "${_version}" != "${version}" ]; then
   patchname="patch-$version.xz"
   source+=" $url/pub/linux/kernel/v6.x/$patchname"
