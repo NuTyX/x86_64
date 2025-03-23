@@ -2,13 +2,12 @@ description="Distributed version control system designed to handle small to very
 url="http://git-scm.com/"
 
 maintainer="Junio C Hamano, Linus Torvalds"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Rems,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Fabienwang,Tnut"
 
 makedepends=(gettext)
 name=git
-version=2.48.1
-release=2
+version=2.49.0
 
 source=(https://mirrors.edge.kernel.org/pub/software/scm/$name/$name{,-manpages,-htmldocs}-$version.tar.xz)
 
@@ -26,7 +25,7 @@ make DESTDIR=$PKG install
 mkdir -p $PKG/usr/share/{man,doc/$name}
 
 cd $SRC
-for i in *.txt *.html howto RelNotes technical
+for i in man* *.html howto RelNotes technical
 do
 	cp -a $i \
 	$PKG/usr/share/doc/$name
