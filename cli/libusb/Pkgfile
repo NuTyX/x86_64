@@ -1,14 +1,13 @@
 description="The libusb package contains a library used by some applications for USB device access."
 url="https://libusb.wiki.sourceforge.net/"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
 makedepends=(systemd doxygen)
 
 name=libusb
-version=1.0.27
-release=3
+version=1.0.28
 
 source=( https://github.com//libusb/libusb/releases/download/v$version/libusb-$version.tar.bz2)
 
