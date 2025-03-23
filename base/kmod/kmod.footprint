@@ -1,17 +1,29 @@
-drwxr-xr-x	root/root	bin/
-lrwxrwxrwx	root/root	bin/depmod -> kmod
-lrwxrwxrwx	root/root	bin/insmod -> kmod
--rwxr-xr-x	root/root	bin/kmod
-lrwxrwxrwx	root/root	bin/lsmod -> kmod
-lrwxrwxrwx	root/root	bin/modinfo -> kmod
-lrwxrwxrwx	root/root	bin/modprobe -> kmod
-lrwxrwxrwx	root/root	bin/rmmod -> kmod
-drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libkmod.so.2 -> libkmod.so.2.5.0
--rwxr-xr-x	root/root	lib/libkmod.so.2.5.0
-drwxr-xr-x	root/root	sbin/
-lrwxrwxrwx	root/root	sbin/depmod -> ../bin/kmod
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/depmod.d/
+drwxr-xr-x	root/root	etc/modprobe.d/
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/kmod
+drwxr-xr-x	root/root	usr/sbin/
+lrwxrwxrwx	root/root	usr/sbin/depmod -> ../bin/kmod
+lrwxrwxrwx	root/root	usr/sbin/insmod -> ../bin/kmod
+lrwxrwxrwx	root/root	usr/sbin/lsmod -> ../bin/kmod
+lrwxrwxrwx	root/root	usr/sbin/modinfo -> ../bin/kmod
+lrwxrwxrwx	root/root	usr/sbin/modprobe -> ../bin/kmod
+lrwxrwxrwx	root/root	usr/sbin/rmmod -> ../bin/kmod
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fish/
+drwxr-xr-x	root/root	usr/share/fish/vendor_functions.d/
+-rw-r--r--	root/root	usr/share/fish/vendor_functions.d/insmod.fish
+-rw-r--r--	root/root	usr/share/fish/vendor_functions.d/lsmod.fish
+-rw-r--r--	root/root	usr/share/fish/vendor_functions.d/rmmod.fish
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/kmod/
+-rw-r--r--	root/root	usr/share/licenses/kmod/COPYING
 drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/kmod.pc
+drwxr-xr-x	root/root	usr/share/zsh/
+drwxr-xr-x	root/root	usr/share/zsh/site-functions/
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_insmod
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_lsmod
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_rmmod

@@ -1,42 +1,42 @@
 description="The Kmod package contains libraries and utilities for loading kernel modules."
 url="https://www.kernel.org/pub/linux/kernel/people/rusty/modules"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+license="LGPL2.1"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 set=(core)
 
-makedepends=(xz zstd openssl)
+makedepends=(meson ninja glibc zlib xz zstd openssl)
 PKGMK_GROUPS=(devel doc man)
 
 name=kmod
-version=33
-release=3
+version=34.1
 
 source=(http://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz )
 
 build()
 {
-cd $name-$version
-./configure --prefix=/usr \
---bindir=/bin \
---sysconfdir=/etc \
---with-rootlibdir=/lib \
---with-xz \
---with-zlib \
---with-zstd \
---with-openssl \
---disable-manpages
 
-make
-make DESTDIR=$PKG install
-mkdir -p $PKG/sbin
-for target in insmod modinfo modprobe rmmod lsmod; do
-  ln -sfv kmod $PKG/bin/$target
-done
-for target in depmod; do
-  ln -sfv ../bin/kmod $PKG/sbin/$target
-done
+cd $name-$version
+
+mkdir build
+cd    build
+
+meson setup .. \
+            --prefix=/usr       \
+            --sbindir=/usr/sbin \
+            --buildtype=release \
+            -D docs=false       \
+            -D manpages=false
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+
 }
 devel()
 {
