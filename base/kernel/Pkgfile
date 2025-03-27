@@ -11,18 +11,18 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel
-version=6.13.7
+version=6.14
 _version=${version%.*}
-release=1
+[ "${version:0:1}" == "${version%.*}" ] && _version=$version
 
 alias=(linux)
 INITRD="initrd-stable"
 KERNEL="kernel-stable"
 
-source=($url/pub/linux/kernel/v6.x/linux-${_version}.tar.xz config)
+source=($url/pub/linux/kernel/v${version:0:1}.x/linux-${_version}.tar.xz config)
 if [ "${_version}" != "${version}" ]; then
   patchname="patch-$version.xz"
-  source+=" $url/pub/linux/kernel/v6.x/$patchname"
+  source+=" $url/pub/linux/kernel/v${version:0:1}.x/$patchname"
 fi
 
 prepare() {
@@ -55,16 +55,16 @@ cp .config $PKG/boot/config-$KERNELRELEASE
 cp $IMAGENAME $PKG/boot/$KERNEL
 ln -sf $KERNEL $PKG/boot/$name
 
-mv $SRC/linux-${_version} $PKG/usr/src/
-mv $PKG/usr/src/linux-${_version}/Documentation \
+mv $SRC/linux-${_version} $PKG/usr/src/$name
+ln -sv $name $PKG/usr/src/linux-${_version}
+mv $PKG/usr/src/$name/Documentation \
 $PKG/usr/share/doc/$name
 
 # Reorganise files
 cd $PKG/lib/modules
 
 rm $KERNELRELEASE/build
-ln -sv /usr/src/linux-${_version} $KERNELRELEASE/build
-ln -sv /usr/src/linux-${_version} $KERNELRELEASE/source
+ln -sv /usr/src/$name $KERNELRELEASE/build
 
 mv $KERNELRELEASE $PKG/usr/lib/modules/$name
 
@@ -93,7 +93,7 @@ mv usr/src/linux-${_version}/arch/.x86 usr/src/linux-${_version}/arch/x86
 
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/src/linux-${_version}
+usr/src
 rm -r usr/src
 }
 
