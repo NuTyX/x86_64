@@ -18,7 +18,7 @@ run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=136.0.1
+version=136.0.3
 
 locale_version=$version
 
@@ -52,11 +52,7 @@ sed -i 's/icu-i18n/icu-uc &/' js/moz.configure
 
 build() {
 
-export AR=llvm-ar
-export NM=llvm-nm
-export RANLIB=llvm-ranlib
-export CC=clang
-export CXX=clang++
+export AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib CC=clang CXX=clang++
 
 cd $name-$version
 
@@ -153,6 +149,7 @@ ac_add_options --with-system-zlib
 # As a result of this, use the following command to permanently disable
 # telemetry reporting in Firefox.
 unset MOZ_TELEMETRY_REPORTING
+export MOZ_APP_REMOTINGNAME=firefox
 
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
 EOF
