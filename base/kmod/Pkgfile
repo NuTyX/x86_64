@@ -25,10 +25,11 @@ mkdir build
 cd    build
 
 meson setup .. \
-            --prefix=/usr       \
-            --sbindir=/usr/sbin \
-            --buildtype=release \
-            -D docs=false       \
+            --prefix=/usr                 \
+            --sbindir=/usr/sbin           \
+            --buildtype=release           \
+            -D moduledir=/usr/lib/modules \
+            -D docs=false                 \
             -D manpages=false
 
 ninja
@@ -37,6 +38,8 @@ DESTDIR=$PKG ninja install
 
 install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 
+mkdir $PKG/bin
+ln -sv /usr/sbin/modprobe $PKG/bin/modprobe 
 }
 devel()
 {
