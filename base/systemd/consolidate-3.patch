@@ -121,7 +121,7 @@ diff -Naur a/units/modprobe@.service b/units/modprobe@.service
  [Service]
  Type=oneshot
 -ExecStart=-/sbin/modprobe -abq %i
-+ExecStart=-/bin/modprobe -abq %i
++ExecStart=-/usr/sbin/modprobe -abq %i
 diff -Naur a/units/serial-getty@.service.in b/units/serial-getty@.service.in
 --- a/units/serial-getty@.service.in	2024-12-10 20:23:45.000000000 +0100
 +++ b/units/serial-getty@.service.in	2025-02-01 16:39:43.275726116 +0100
