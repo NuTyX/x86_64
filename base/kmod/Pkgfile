@@ -12,7 +12,7 @@ makedepends=(meson ninja glibc zlib xz zstd openssl)
 PKGMK_GROUPS=(devel doc man)
 
 name=kmod
-version=34.1
+version=34.2
 
 source=(http://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz )
 
@@ -46,11 +46,10 @@ devel()
 cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib \
+usr/lib/pkgconfig \
 usr/include \
 usr/share/bash-completion
-rm -r usr/lib \
+rm -r usr/lib/pkgconfig \
 usr/include \
 usr/share/bash-completion
 }
-
