@@ -1,6 +1,6 @@
 diff -Naur a/src/basic/path-util.h b/src/basic/path-util.h
---- a/src/basic/path-util.h	2024-12-10 20:23:45.000000000 +0100
-+++ b/src/basic/path-util.h	2025-02-01 16:35:43.587159621 +0100
+--- a/src/basic/path-util.h	2025-03-06 15:38:30.000000000 +0100
++++ b/src/basic/path-util.h	2025-03-29 20:43:15.313426730 +0100
 @@ -11,8 +11,8 @@
  #include "strv.h"
  #include "time-util.h"
@@ -13,8 +13,8 @@ diff -Naur a/src/basic/path-util.h b/src/basic/path-util.h
  #define PATH_MERGED_BIN(x) x "bin"
  #define PATH_MERGED_BIN_NULSTR(x) x "bin\0"
 diff -Naur a/src/basic/unit-def.h b/src/basic/unit-def.h
---- a/src/basic/unit-def.h	2024-12-10 20:23:45.000000000 +0100
-+++ b/src/basic/unit-def.h	2025-02-01 16:35:43.587159621 +0100
+--- a/src/basic/unit-def.h	2025-03-06 15:38:30.000000000 +0100
++++ b/src/basic/unit-def.h	2025-03-29 20:43:15.313426730 +0100
 @@ -186,8 +186,8 @@
  
  typedef enum SwapState {
@@ -27,8 +27,8 @@ diff -Naur a/src/basic/unit-def.h b/src/basic/unit-def.h
          SWAP_DEACTIVATING,
          SWAP_DEACTIVATING_SIGTERM,
 diff -Naur a/src/core/swap.c b/src/core/swap.c
---- a/src/core/swap.c	2024-12-10 20:23:45.000000000 +0100
-+++ b/src/core/swap.c	2025-02-01 16:35:43.587159621 +0100
+--- a/src/core/swap.c	2025-03-06 15:38:30.000000000 +0100
++++ b/src/core/swap.c	2025-03-29 20:43:15.316760095 +0100
 @@ -779,7 +779,7 @@
                  }
          }
@@ -56,9 +56,57 @@ diff -Naur a/src/core/swap.c b/src/core/swap.c
                  r = sd_event_source_set_priority(m->swap_event_source, EVENT_PRIORITY_SWAP_TABLE);
                  if (r < 0) {
                          log_error_errno(r, "Failed to change /proc/swaps priority: %m");
+diff -Naur a/src/kernel-install/50-depmod.install b/src/kernel-install/50-depmod.install
+--- a/src/kernel-install/50-depmod.install	2025-03-06 15:38:30.000000000 +0100
++++ b/src/kernel-install/50-depmod.install	2025-03-29 20:49:23.646939867 +0100
+@@ -23,30 +23,30 @@
+ COMMAND="${1:?}"
+ KERNEL_VERSION="${2:?}"
+ 
+-[ -w "/lib/modules" ] || exit 0
++[ -w "/usr/lib/modules" ] || exit 0
+ 
+ case "$COMMAND" in
+     add)
+-        [ -d "/lib/modules/$KERNEL_VERSION/kernel" ] || exit 0
++        [ -d "/usr/lib/modules/$KERNEL_VERSION/kernel" ] || exit 0
+         command -v depmod >/dev/null || exit 0
+         [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && echo "+depmod -a $KERNEL_VERSION"
+         exec depmod -a "$KERNEL_VERSION"
+         ;;
+     remove)
+         [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && \
+-            echo "Removing /lib/modules/${KERNEL_VERSION}/modules.dep and associated files"
++            echo "Removing /usr/lib/modules/${KERNEL_VERSION}/modules.dep and associated files"
+         exec rm -f \
+-            "/lib/modules/$KERNEL_VERSION/modules.alias" \
+-            "/lib/modules/$KERNEL_VERSION/modules.alias.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.builtin.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.builtin.alias.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.dep" \
+-            "/lib/modules/$KERNEL_VERSION/modules.dep.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.devname" \
+-            "/lib/modules/$KERNEL_VERSION/modules.softdep" \
+-            "/lib/modules/$KERNEL_VERSION/modules.weakdep" \
+-            "/lib/modules/$KERNEL_VERSION/modules.symbols" \
+-            "/lib/modules/$KERNEL_VERSION/modules.symbols.bin"
++            "/usr/lib/modules/$KERNEL_VERSION/modules.alias" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.alias.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.builtin.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.builtin.alias.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.dep" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.dep.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.devname" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.softdep" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.weakdep" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.symbols" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.symbols.bin"
+         ;;
+     *)
+         exit 0
 diff -Naur a/test/units/TEST-35-LOGIN.sh b/test/units/TEST-35-LOGIN.sh
---- a/test/units/TEST-35-LOGIN.sh	2024-12-10 20:23:45.000000000 +0100
-+++ b/test/units/TEST-35-LOGIN.sh	2025-02-01 16:40:47.336234276 +0100
+--- a/test/units/TEST-35-LOGIN.sh	2025-03-06 15:38:30.000000000 +0100
++++ b/test/units/TEST-35-LOGIN.sh	2025-03-29 20:43:15.316760095 +0100
 @@ -351,7 +351,7 @@
  [Service]
  Type=simple
@@ -69,8 +117,8 @@ diff -Naur a/test/units/TEST-35-LOGIN.sh b/test/units/TEST-35-LOGIN.sh
  EOF
      systemctl daemon-reload
 diff -Naur a/tmpfiles.d/home.conf b/tmpfiles.d/home.conf
---- a/tmpfiles.d/home.conf	2024-12-10 20:23:45.000000000 +0100
-+++ b/tmpfiles.d/home.conf	2025-02-01 16:41:52.003414095 +0100
+--- a/tmpfiles.d/home.conf	2025-03-06 15:38:30.000000000 +0100
++++ b/tmpfiles.d/home.conf	2025-03-29 20:43:15.316760095 +0100
 @@ -7,5 +7,4 @@
  
  # See tmpfiles.d(5) for details.
@@ -78,8 +126,8 @@ diff -Naur a/tmpfiles.d/home.conf b/tmpfiles.d/home.conf
 -Q /home 0755 - - -
  q /srv 0755 - - -
 diff -Naur a/units/console-getty.service.in b/units/console-getty.service.in
---- a/units/console-getty.service.in	2024-12-10 20:23:45.000000000 +0100
-+++ b/units/console-getty.service.in	2025-02-01 16:40:08.879262529 +0100
+--- a/units/console-getty.service.in	2025-03-06 15:38:30.000000000 +0100
++++ b/units/console-getty.service.in	2025-03-29 20:43:15.316760095 +0100
 @@ -22,7 +22,7 @@
  [Service]
  # The '-o' option value tells agetty to replace 'login' arguments with '--' for
@@ -90,8 +138,8 @@ diff -Naur a/units/console-getty.service.in b/units/console-getty.service.in
  Restart=always
  UtmpIdentifier=cons
 diff -Naur a/units/container-getty@.service.in b/units/container-getty@.service.in
---- a/units/container-getty@.service.in	2024-12-10 20:23:45.000000000 +0100
-+++ b/units/container-getty@.service.in	2025-02-01 16:39:00.682055007 +0100
+--- a/units/container-getty@.service.in	2025-03-06 15:38:30.000000000 +0100
++++ b/units/container-getty@.service.in	2025-03-29 20:43:15.316760095 +0100
 @@ -27,7 +27,7 @@
  [Service]
  # The '-o' option value tells agetty to replace 'login' arguments with '--' for
@@ -102,8 +150,8 @@ diff -Naur a/units/container-getty@.service.in b/units/container-getty@.service.
  Restart=always
  RestartSec=0
 diff -Naur a/units/getty@.service.in b/units/getty@.service.in
---- a/units/getty@.service.in	2024-12-10 20:23:45.000000000 +0100
-+++ b/units/getty@.service.in	2025-02-01 16:38:21.938414497 +0100
+--- a/units/getty@.service.in	2025-03-06 15:38:30.000000000 +0100
++++ b/units/getty@.service.in	2025-03-29 20:43:15.316760095 +0100
 @@ -36,7 +36,7 @@
  [Service]
  # The '-o' option value tells agetty to replace 'login' arguments with '--' for
@@ -113,9 +161,21 @@ diff -Naur a/units/getty@.service.in b/units/getty@.service.in
  Type=idle
  Restart=always
  RestartSec=0
+diff -Naur a/units/kmod-static-nodes.service.in b/units/kmod-static-nodes.service.in
+--- a/units/kmod-static-nodes.service.in	2025-03-06 15:38:30.000000000 +0100
++++ b/units/kmod-static-nodes.service.in	2025-03-29 20:44:01.417203153 +0100
+@@ -12,7 +12,7 @@
+ DefaultDependencies=no
+ Before=sysinit.target systemd-tmpfiles-setup-dev-early.service
+ ConditionCapability=CAP_SYS_MODULE
+-ConditionFileNotEmpty=/lib/modules/%v/modules.devname
++ConditionFileNotEmpty=/usr/lib/modules/%v/modules.devname
+ 
+ [Service]
+ Type=oneshot
 diff -Naur a/units/modprobe@.service b/units/modprobe@.service
---- a/units/modprobe@.service	2024-12-10 20:23:45.000000000 +0100
-+++ b/units/modprobe@.service	2025-02-01 16:37:12.761199500 +0100
+--- a/units/modprobe@.service	2025-03-06 15:38:30.000000000 +0100
++++ b/units/modprobe@.service	2025-03-29 20:43:15.316760095 +0100
 @@ -17,4 +17,4 @@
  
  [Service]
@@ -123,8 +183,8 @@ diff -Naur a/units/modprobe@.service b/units/modprobe@.service
 -ExecStart=-/sbin/modprobe -abq %i
 +ExecStart=-/usr/sbin/modprobe -abq %i
 diff -Naur a/units/serial-getty@.service.in b/units/serial-getty@.service.in
---- a/units/serial-getty@.service.in	2024-12-10 20:23:45.000000000 +0100
-+++ b/units/serial-getty@.service.in	2025-02-01 16:39:43.275726116 +0100
+--- a/units/serial-getty@.service.in	2025-03-06 15:38:30.000000000 +0100
++++ b/units/serial-getty@.service.in	2025-03-29 20:43:15.316760095 +0100
 @@ -32,7 +32,7 @@
  [Service]
  # The '-o' option value tells agetty to replace 'login' arguments with '--' for
