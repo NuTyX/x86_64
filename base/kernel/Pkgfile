@@ -47,7 +47,7 @@ IMAGENAME=$(make -s image_name)
 # make menuconfig
 make
 cp .config ${PKGMK_ROOT}/config
-make INSTALL_MOD_PATH=$PKG modules_install
+make INSTALL_MOD_PATH=$PKG/usr DEPMOD=/dev/null modules_install
 depmod -b $PKG -a $KERNELRELEASE
 
 cp System.map $PKG/boot/System.map-$KERNELRELEASE
@@ -61,15 +61,12 @@ mv $PKG/usr/src/$name/Documentation \
 $PKG/usr/share/doc/$name
 
 # Reorganise files
-cd $PKG/lib/modules
+cd $PKG/usr/lib/modules
+mv $KERNELRELEASE $name
+ln -sv $name $PKG/usr/lib/modules/$KERNELRELEASE
 
 rm $KERNELRELEASE/build
 ln -sv /usr/src/$name $KERNELRELEASE/build
-
-mv $KERNELRELEASE $PKG/usr/lib/modules/$name
-
-ln -sv ../../usr/lib/modules/$name $KERNELRELEASE
-ln -sv $name $PKG/usr/lib/modules/$KERNELRELEASE
 
 # Firmware are in linux-firmware
 rm -rf $PKG/lib/firmware
