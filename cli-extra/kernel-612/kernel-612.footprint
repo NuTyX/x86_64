@@ -1,16 +1,13 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.12.20-1-nutyx
--rw-r--r--	root/root	boot/config-6.12.20-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.12.21-1-nutyx
+-rw-r--r--	root/root	boot/config-6.12.21-1-nutyx
 -rw-r--r--	root/root	boot/kernel-612
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/modules/
-lrwxrwxrwx	root/root	lib/modules/6.12.20-1-nutyx -> ../../usr/lib/modules/kernel-612
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.12.20-1-nutyx -> kernel-612
+lrwxrwxrwx	root/root	usr/lib/modules/6.12.21-1-nutyx -> kernel-612
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/
-lrwxrwxrwx	root/root	usr/lib/modules/kernel-612/build -> /usr/src/linux-6.12
+lrwxrwxrwx	root/root	usr/lib/modules/kernel-612/build -> /usr/src/kernel-612
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/arch/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/arch/x86/
@@ -7546,4 +7543,3 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/sound/xen/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/modules.symbols
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/modules.symbols.bin
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/modules.weakdep
-lrwxrwxrwx	root/root	usr/lib/modules/kernel-612/source -> /usr/src/linux-6.12

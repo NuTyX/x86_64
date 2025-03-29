@@ -1,8 +1,8 @@
 url='https://www.kernel.org'
 description='The 6.12 longterm support linux kernel version'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Sundev79,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Sundev79,Spiky"
 makedepends=(bison flex perl gmp mpc libelf diffutils)
 run=(nutyx kmod busybox)
 
@@ -11,12 +11,11 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-612
-version=6.12.20
+version=6.12.21
 _version=${version%.*}
 
 alias=(linux-612)
 INITRD="initrd-${name/*-/}"
-KERNEL="${name}"
 
 source=($url/pub/linux/kernel/v6.x/linux-${_version}.tar.xz config)
 if [ "${_version}" != "${version}" ]; then
@@ -46,28 +45,24 @@ IMAGENAME=$(make -s image_name)
 # make menuconfig
 make
 cp .config ${PKGMK_ROOT}/config
-make INSTALL_MOD_PATH=$PKG modules_install
+make INSTALL_MOD_PATH=$PKG/usr DEPMOD=/dev/null modules_install
 depmod -b $PKG -a $KERNELRELEASE
 
 cp System.map $PKG/boot/System.map-$KERNELRELEASE
 cp .config $PKG/boot/config-$KERNELRELEASE
-cp $IMAGENAME $PKG/boot/$KERNEL
+cp $IMAGENAME $PKG/boot/$name
 
 mv $SRC/linux-${_version} $PKG/usr/src/
 mv $PKG/usr/src/linux-${_version}/Documentation \
 $PKG/usr/share/doc/$name
 
 # Reorganise files
-cd $PKG/lib/modules
+cd $PKG/usr/lib/modules
+mv $KERNELRELEASE $name
+ln -sv $name $KERNELRELEASE
 
 rm $KERNELRELEASE/build
-ln -sv /usr/src/linux-${_version} $KERNELRELEASE/build
-ln -sv /usr/src/linux-${_version} $KERNELRELEASE/source
-
-mv $KERNELRELEASE $PKG/usr/lib/modules/$name
-
-ln -sv ../../usr/lib/modules/$name $KERNELRELEASE
-ln -sv $name $PKG/usr/lib/modules/$KERNELRELEASE
+ln -sv /usr/src/$name $KERNELRELEASE/build
 
 # Firmware are in linux-firmware
 rm -rf $PKG/lib/firmware
@@ -91,7 +86,7 @@ mv usr/src/linux-${_version}/arch/.x86 usr/src/linux-${_version}/arch/x86
 
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/src/linux-${_version}
+usr/src
 rm -r usr/src
 }
 
