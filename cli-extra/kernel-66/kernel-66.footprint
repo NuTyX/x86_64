@@ -1,16 +1,13 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.6.84-1-nutyx
--rw-r--r--	root/root	boot/config-6.6.84-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.6.85-1-nutyx
+-rw-r--r--	root/root	boot/config-6.6.85-1-nutyx
 -rw-r--r--	root/root	boot/kernel-66
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/modules/
-lrwxrwxrwx	root/root	lib/modules/6.6.84-1-nutyx -> ../../usr/lib/modules/kernel-66
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.6.84-1-nutyx -> kernel-66
+lrwxrwxrwx	root/root	usr/lib/modules/6.6.85-1-nutyx -> kernel-66
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/
-lrwxrwxrwx	root/root	usr/lib/modules/kernel-66/build -> /usr/src/linux-6.6
+lrwxrwxrwx	root/root	usr/lib/modules/kernel-66/build -> /usr/src/kernel-66
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/arch/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/arch/x86/
@@ -7333,4 +7330,3 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/virt/lib/
 -rw-r--r--	root/root	usr/lib/modules/kernel-66/modules.symbols
 -rw-r--r--	root/root	usr/lib/modules/kernel-66/modules.symbols.bin
 -rw-r--r--	root/root	usr/lib/modules/kernel-66/modules.weakdep
-lrwxrwxrwx	root/root	usr/lib/modules/kernel-66/source -> /usr/src/linux-6.6
