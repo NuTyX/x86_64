@@ -1,13 +1,13 @@
 description="Combines tiny versions of many common UNIX utilities."
 url="https://busybox.net/about.html"
 
-packager="Tnut <tnut@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(git musl)
 
 name=busybox
 version=1.36.1
-release=2
+release=3
 
 set=(chroot)
 
