@@ -19,14 +19,12 @@ source=(http://download.virtualbox.org/virtualbox/${version}/VirtualBox-${versio
 
 build(){
 
-KERNEL_VERSION="$(basename /usr/lib/modules/6.12.*)"
-
 sh VirtualBox-${version}-${buildr}-Linux_${_VBARCH}.run --target vb --keep --noexec
 cd vb
 tar xfj VirtualBox.tar.bz2
 cd src/vboxhost
 sed -i "s/netif_rx_ni/netif_rx/" vboxnetflt/linux/VBoxNetFlt-linux.c
-KERN_VER=${KERNEL_VERSION} make
+KERN_VER=$KERNELNAME KERN_DIR=/usr/lib/modules/$KERNELNAME/build make
 
 for i in *.ko
 do
@@ -34,5 +32,5 @@ do
 	$PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/virt/vboxhost/$i
 done
 
-echo "depmod -a ${KERNEL_VERSION}" > $PKGMK_ROOT/$name.post-install
+echo "depmod -a $(basename /usr/lib/modules/6.12.*)" > $PKGMK_ROOT/$name.post-install
 }
