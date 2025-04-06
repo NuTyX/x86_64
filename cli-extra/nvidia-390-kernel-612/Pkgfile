@@ -37,7 +37,7 @@ build() {
  cd kernel
  modules_dir="$(basename /usr/lib/modules/6.12.*)"
 
- SYSSRC="/usr/src/*" make modules
+ SYSSRC="/usr/src/kernel-612" make modules
  install -dm0755 $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
  install -m 0644 *.ko $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
  echo "depmod -a ${modules_dir}" > $PKGMK_ROOT/$name.post-install
