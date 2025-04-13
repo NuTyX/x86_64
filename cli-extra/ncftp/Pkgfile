@@ -7,10 +7,10 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(ncurses inetutils)
 
 name=ncftp
-version=3.2.7	
+version=3.2.9	
 
 source=(ncftp-reproducible.patch
-        https://www.ncftp.com/public_ftp/ncftp/$name-$version-src.tar.xz)
+        https://www.ncftp.com/public_ftp/ncftp/$name-$version-src.tar.gz)
  
 build() {
 
