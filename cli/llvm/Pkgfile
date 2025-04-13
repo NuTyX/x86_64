@@ -8,7 +8,7 @@ contributors="Pierre,Remy,Tnut"
 makedepends=(grep python cmake ninja libxml2 git)
 
 name=llvm
-version=19.1.7
+version=20.1.1
 
 PKGMK_GROUPS=(lib man devel doc)
 _url="https://github.com/llvm/llvm-project/releases/download/llvmorg-$version"
@@ -34,6 +34,8 @@ mv ../clang-$version.src tools/clang
 mv ../third-party-$version.src ../third-party
 
 grep -rl '#!.*python' | xargs sed -i '1s/python$/python3/'
+
+sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 
 mkdir build
 cd    build
