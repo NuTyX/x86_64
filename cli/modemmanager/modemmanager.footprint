@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ModemManager/
 drwxr-xr-x	root/root	etc/ModemManager/connection.d/
 drwxr-xr-x	root/root	etc/ModemManager/fcc-unlock.d/
+drwxr-xr-x	root/root	etc/ModemManager/modem-setup.d/
 drwxr-xr-x	root/root	etc/dbus-1/
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.ModemManager1.conf
@@ -15,6 +16,7 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-altair-lte.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-anydata.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-broadmobi.so
+-rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-cellient.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-cinterion.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-dell.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-dlink.so
@@ -30,7 +32,9 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-linktop.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-longcheer.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-motorola.so
+-rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-mtk-legacy.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-mtk.so
+-rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-netprisma.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-nokia-icera.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-nokia.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-novatel-lte.so
@@ -40,6 +44,7 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-pantech.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-qcom-soc.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-quectel.so
+-rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-rolling.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-samsung.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-sierra-legacy.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-plugin-sierra.so
@@ -55,22 +60,26 @@ drwxr-xr-x	root/root	usr/lib/ModemManager/fcc-unlock.d/
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-fibocom.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-foxconn.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-icera.so
+-rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-mtk.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-novatel.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-option.so
+-rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-quectel.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-sierra.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-telit.so
 -rwxr-xr-x	root/root	usr/lib/ModemManager/libmm-shared-xmm.so
+drwxr-xr-x	root/root	usr/lib/ModemManager/modem-setup.d/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/ModemManager-1.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libmm-glib.so -> libmm-glib.so.0
-lrwxrwxrwx	root/root	usr/lib/libmm-glib.so.0 -> libmm-glib.so.0.10.0
--rwxr-xr-x	root/root	usr/lib/libmm-glib.so.0.10.0
+lrwxrwxrwx	root/root	usr/lib/libmm-glib.so.0 -> libmm-glib.so.0.11.0
+-rwxr-xr-x	root/root	usr/lib/libmm-glib.so.0.11.0
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/ModemManager.service
 drwxr-xr-x	root/root	usr/lib/udev/
 drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-broadmobi-port-types.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-cellient.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-cinterion-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-dell-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-dlink-port-types.rules
@@ -82,10 +91,12 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-huawei-net-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-linktop-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-longcheer-port-types.rules
--rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-mtk-port-types.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-mtk-legacy-port-types.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-netprisma-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-nokia-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-qcom-soc.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-quectel-port-types.rules
+-rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-rolling-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-sierra.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-simtech-port-types.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/77-mm-telit-port-types.rules
@@ -107,13 +118,21 @@ lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/105b:e0ab -> 
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/105b:e0c3 -> 105b
 -rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/1199
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1199:9079 -> 1199
--rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac
-lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac:1001 -> 1eac
+-rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/14c3
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/14c3:4d75 -> 14c3
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac:1001 -> 2c7c
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac:1004 -> 2c7c
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/1eac:1007 -> 2c7c
 -rwx------	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c:030a -> 2c7c
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c:0313 -> 2c7c
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c:0314 -> 2c7c
+lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/2c7c:0801 -> 2c7c
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/413c:81a3 -> 1199
 lrwxrwxrwx	root/root	usr/share/ModemManager/fcc-unlock.available.d/413c:81a8 -> 1199
 -rw-r--r--	root/root	usr/share/ModemManager/mm-foxconn-t77w968-carrier-mapping.conf
+drwxr-xr-x	root/root	usr/share/ModemManager/modem-setup.available.d/
+-rwx------	root/root	usr/share/ModemManager/modem-setup.available.d/0000:0000
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mmcli
@@ -121,6 +140,8 @@ drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Bearer.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Call.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Cbm.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.CellBroadcast.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Firmware.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Location.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ModemManager1.Modem.Messaging.xml
