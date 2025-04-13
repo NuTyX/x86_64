@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/share/cmake/VulkanHeaders/
 drwxr-xr-x	root/root	usr/share/vulkan/
 drwxrwxr-x	root/root	usr/share/vulkan/registry/
 -rw-rw-r--	root/root	usr/share/vulkan/registry/apiconventions.py
+-rw-rw-r--	root/root	usr/share/vulkan/registry/base_generator.py
 -rw-rw-r--	root/root	usr/share/vulkan/registry/cgenerator.py
 -rw-rw-r--	root/root	usr/share/vulkan/registry/generator.py
 -rwxrwxr-x	root/root	usr/share/vulkan/registry/parse_dependency.py
@@ -19,5 +20,6 @@ drwxrwxr-x	root/root	usr/share/vulkan/registry/spec_tools/
 -rwxrwxr-x	root/root	usr/share/vulkan/registry/stripAPI.py
 -rw-rw-r--	root/root	usr/share/vulkan/registry/validusage.json
 -rw-rw-r--	root/root	usr/share/vulkan/registry/video.xml
--rw-rw-r--	root/root	usr/share/vulkan/registry/vk.xml
+-rwxrwxr-x	root/root	usr/share/vulkan/registry/vk.xml
 -rwxrwxr-x	root/root	usr/share/vulkan/registry/vkconventions.py
+-rw-rw-r--	root/root	usr/share/vulkan/registry/vulkan_object.py
