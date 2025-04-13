@@ -8,6 +8,7 @@ makedepends=(git cmake glslang spirv-tools spirv-headers)
 
 name=shaderc
 version=2025.1
+release=2
 
 source=(https://github.com/google/shaderc/archive/refs/tags/v$version.tar.gz)
 
