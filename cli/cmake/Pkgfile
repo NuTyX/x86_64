@@ -9,7 +9,7 @@ set=(devel)
 makedepends=(ncurses expat libuv curl libarchive jsoncpp rhash)
 
 name=cmake
-version=3.31.6
+version=4.0.1
 
 source=($url/files/v${version%.*}/$name-$version.tar.gz)
 
@@ -28,7 +28,7 @@ make
 
 make DESTDIR=$PKG install
 
-install -Dm644 Copyright.txt $PKG/usr/share/licenses/$name/Copyright.txt
+install -Dm644 LICENSE.rst $PKG/usr/share/licenses/$name/LICENSE.rst
 install -Dm644 Licenses/LGPLv2.1.txt $PKG/usr/share/licenses/$name/LGPLv2.1.txt
 install -Dm644 Licenses/LGPLv3.txt $PKG/usr/share/licenses/$name/LGPLv3.txt
 install -Dm644 Licenses/README.rst $PKG/usr/share/licenses/$name/README.rst
