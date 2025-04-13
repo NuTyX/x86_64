@@ -10,8 +10,7 @@ makedepends=(meson ninja python glib libgudev libmbim bash-completion
              perl-locale-gettext libqrtr-glib help2man)
 
 name=libqmi
-version=1.34.0
-release=2
+version=1.36.0
 
 source=(https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/$version/$name-$version.tar.gz)
 
