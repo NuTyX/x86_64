@@ -3,15 +3,14 @@ url="http://librsvg.sourceforge.net/"
 
 liense="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(gdk-pixbuf libcroco pango vala rustc cargo-c
              gi-docgen python-docutils python-smartypants)
 
 name=librsvg
-version=2.59.2
-release=2
+version=2.60.0
 
 source=(https://gitlab.gnome.org/GNOME/librsvg/-/archive/$version/$name-$version.tar.gz)
 build() {
