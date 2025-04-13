@@ -1,14 +1,13 @@
 description="A virtual printer for cups to produce PDF files."
 url="http://www.ciups-pdf.de/"
 
-packager="tnut<tnut@nutyx.org>"
-contributors="Hugo"
+packager="spiky <spiky@nutyx.org>"
+contributors="Hugo,Tnut"
 
 makedepends=(cups ghostscript)
 
 name=cups-pdf
-version=3.0.1
-release=3
+version=3.0.2
 
 source=(http://www.cups-pdf.de/src/cups-pdf_$version.tar.gz)
 
