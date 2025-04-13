@@ -7,9 +7,9 @@ contributors="Tnut"
 makedepends=(cairo gmp mpfr icu xorg-pixman xorg-libxaw)
 
 name=libsynctex
-version=20240312
+version=20250308
 
-source=(ftp://tug.org/texlive/historic/2023/texlive-$version-source.tar.xz)
+source=(https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-$version-source.tar.xz)
 
 build() {
 cd texlive-$version-source
