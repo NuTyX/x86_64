@@ -3,15 +3,14 @@ url="https://nfs.sourceforge.net"
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(util-linux libnl libxml2 sqlite libevent libtirpc rpcbind rpcsvc-proto)
 run=(rpcbind)
 
 name=nfs-utils
-version=2.8.2
-release=2
+version=2.8.3
 
 scriptsversion=20250125
 
