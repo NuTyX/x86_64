@@ -7,9 +7,10 @@ contributors="Tnut"
 set=(core)
 
 name=expat
-version=2.7.0
+version=2.7.1
+_version=2_7_1
 
-source=(http://prdownloads.sourceforge.net/$name/$name-$version.tar.bz2)
+source=(https://github.com/libexpat/libexpat/releases/download/R_${_version}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
