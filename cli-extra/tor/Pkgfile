@@ -9,8 +9,7 @@ contributors="Greg,Tnut"
 makedepends=(systemd libevent openssl zlib)
 
 name=tor
-version=0.4.8.14
-release=2
+version=0.4.8.16
 
 source=(https://www.torproject.org/dist/tor-$version.tar.gz
         tor-config.patch tor tor.sysusers tor.tmpfiles)
