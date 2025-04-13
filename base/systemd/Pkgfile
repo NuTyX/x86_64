@@ -1,8 +1,8 @@
 description="Programs for controlling the startup, running, and shutdown of the system."
 url="https://www.freedesktop.org/wiki/Software/systemd/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 # Those dependencies are need to compile the package
 # but not listed to avoid circular dependencies:
@@ -20,7 +20,7 @@ set=(core)
 
 name=systemd
 version=257.4
-release=2
+release=3
 
 source=(consolidate-4.patch
         https://download.sourceforge.net/nutyx/$name-man-pages-$version.tar.xz
