@@ -4,14 +4,13 @@ url="https://github.com/mintchaos/typogrify"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(python-setuptools python-wheel python-smartypants)
+makedepends=(python-setuptools python-wheel python-smartypants python-hatchling)
 
 name=python-typogrify
 _name="typogrify"
 alias=(${_name})
 
-version=2.0.7
-release=9
+version=2.1.0
 
 source=(https://pypi.python.org/packages/source/${_name::1}/${_name}/${_name}-$version.tar.gz)
 
