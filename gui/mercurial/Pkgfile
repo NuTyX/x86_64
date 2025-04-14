@@ -10,7 +10,7 @@ makedepends=(gnupg subversion
 run=(openssh python)
 
 name=mercurial
-version=6.9.3
+version=7.0.1
 
 source=(https://www.mercurial-scm.org/release/mercurial-$version.tar.gz
 mercurial.profile
@@ -18,7 +18,6 @@ mercurial.profile
 build() {
   cd $name-$version/
   export PYTHON=python3
-  make build
 
   make doc
   make DESTDIR=$PKG PREFIX=/usr install-bin
