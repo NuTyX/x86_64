@@ -10,10 +10,9 @@ makedepends=(python-cairo gobject-introspection xorg-libxxf86vm libffi meson nin
 run=(python)
 
 name=python-gobject
-version=3.50.0
-release=3
+version=3.52.3
 
-source=(https://download.gnome.org/sources/pygobject/${version%.*}/pygobject-$version.tar.xz)
+source=(https://download.gnome.org/sources/pygobject/${version%.*}/pygobject-$version.tar.gz)
 
 build() {
 cd pygobject-$version
