@@ -101,6 +101,7 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gsk/broadway/
 drwxr-xr-x	root/root	usr/include/gtk-4.0/gsk/gl/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gl/gskglrenderer.h
 drwxr-xr-x	root/root	usr/include/gtk-4.0/gsk/gpu/
+-rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gpu/gskglrenderer.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gpu/gskvulkanrenderer.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gsk.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskcairorenderer.h
@@ -171,6 +172,11 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gtk/deprecated/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtklockbutton.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkmessagedialog.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkrender.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkshortcutlabel.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkshortcutsgroup.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkshortcutssection.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkshortcutsshortcut.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkshortcutswindow.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkshow.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkstatusbar.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/deprecated/gtkstylecontext.h
@@ -348,12 +354,7 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gtk/deprecated/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcut.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutaction.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutcontroller.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutlabel.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutmanager.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutsgroup.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutssection.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutsshortcut.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcutswindow.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkshortcuttrigger.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtksignallistitemfactory.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtksingleselection.h
