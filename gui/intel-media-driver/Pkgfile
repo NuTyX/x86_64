@@ -9,7 +9,7 @@ contributors="Tnut"
 makedepends=(cmake intel-gmmlib libva xorg-libpciaccess)
 
 name=intel-media-driver
-version=25.1.3
+version=25.1.4
 
 source=(https://github.com/intel/media-driver/archive/refs/tags/intel-media-$version.tar.gz)
 
@@ -29,6 +29,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr   \
       -DINSTALL_DRIVER_SYSCONF=OFF  \
       -DBUILD_TYPE=Release          \
       -DMEDIA_BUILD_FATAL_WARNINGS=OFF \
+      -DCMAKE_POLICY_VERSION_MINIMUM=3.5.0 \
       -Wno-dev ..
 
 make
