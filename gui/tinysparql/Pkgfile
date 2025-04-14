@@ -4,21 +4,22 @@ url=' https://download.gnome.org/sources/tinysparql'
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(json-glib vala icu libsoup3 python-gobject asciidoc)
+makedepends=(json-glib vala icu libsoup3 python-gobject asciidoc gi-docgen)
 run=()
 
 name=tinysparql
-version=3.8.2
-release=2
+version=3.9.1
 
-source=( https://download.gnome.org/sources/tinysparql/3.8/$name-$version.tar.xz)
+source=(https://download.gnome.org/sources/$name/3.9/$name-$version.tar.xz)
 
 prepare() {
 cd $name-$version
 
-mv docs/reference/libtracker-sparql/doc/{Tsparql-3.0,$name-$version} &&
-sed '/docs_name/s/Tsparql-3.0/$name-$version/' \
-    -i docs/reference/libtracker-sparql/meson.build
+rm -fv /usr/lib/systemd/user/tracker-xdg-portal-3.service
+
+sed -e "s/'generate'/&, '--no-namespace-dir'/"         \
+    -e "/--output-dir/s/@OUTPUT@/&\/$name-$version/" \
+    -i docs/reference/meson.build
 }
 
 build() {
