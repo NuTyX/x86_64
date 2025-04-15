@@ -139,6 +139,10 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.UserStyleSheet.new.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.UserStyleSheet.new_for_world.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebContext.new.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebExtensionMatchPattern.new_all_hosts_and_schemes.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebExtensionMatchPattern.new_all_urls.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebExtensionMatchPattern.new_with_scheme.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebExtensionMatchPattern.new_with_string.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebView.new.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebViewSessionState.new.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/ctor.WebsitePolicies.new.html
@@ -174,6 +178,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/enum.UserStyleLevel.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/enum.WebExtensionMode.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/enum.WebProcessTerminationReason.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/environment-variables.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.DownloadError.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.FaviconDatabaseError.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.JavascriptError.html
@@ -184,11 +189,13 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.SnapshotError.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.UserContentFilterError.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.UserMessageError.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/error.WebExtensionMatchPatternError.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.EditorTypingAttributes.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.FindOptions.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.HitTestResultContext.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.InputHints.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.SnapshotOptions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.WebExtensionMatchPatternOptions.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/flags.WebsiteDataTypes.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/fonts.css
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/func.CHECK_VERSION.html
@@ -568,6 +575,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.get_sans_serif_font_family.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.get_serif_font_family.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.get_user_agent.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.get_webrtc_udp_ports_range.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.get_zoom_text_only.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_allow_file_access_from_file_urls.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_allow_modal_dialogs.html
@@ -626,6 +634,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_serif_font_family.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_user_agent.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_user_agent_with_application_details.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_webrtc_udp_ports_range.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.Settings.set_zoom_text_only.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.URIRequest.get_http_headers.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.URIRequest.get_http_method.html
@@ -705,6 +714,16 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebContext.set_web_process_extensions_directory.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebContext.set_web_process_extensions_initialization_user_data.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebEditor.get_page.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.get_host.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.get_matches_all_hosts.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.get_matches_all_urls.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.get_path.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.get_scheme.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.get_string.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.matches_pattern.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.matches_url.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.ref.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebExtensionMatchPattern.unref.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebHitTestResult.context_is_editable.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebHitTestResult.context_is_image.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WebHitTestResult.context_is_link.html
@@ -855,6 +874,8 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WindowProperties.get_statusbar_visible.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/method.WindowProperties.get_toolbar_visible.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/migrating-to-webkitgtk-6.0.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/overview.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/profiling.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.AutomationSession.id.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.ColorChooserRequest.rgba.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.Download.allow-overwrite.html
@@ -947,6 +968,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.Settings.sans-serif-font-family.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.Settings.serif-font-family.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.Settings.user-agent.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.Settings.webrtc-udp-ports-range.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.Settings.zoom-text-only.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.URIRequest.uri.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.URIResponse.content-length.html
@@ -1009,6 +1031,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.WindowProperties.scrollbars-visible.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.WindowProperties.statusbar-visible.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/property.WindowProperties.toolbar-visible.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/remote-inspector.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/search.js
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/signal.AuthenticationRequest.authenticated.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/signal.AuthenticationRequest.cancelled.html
@@ -1116,6 +1139,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/struct.UserContentFilter.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/struct.UserScript.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/struct.UserStyleSheet.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/struct.WebExtensionMatchPattern.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/struct.WebViewSessionState.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/struct.WebsiteData.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/style.css
@@ -1139,6 +1163,8 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/webkit2gtk/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.UserMessage.error_quark.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.UserMessageError.quark.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.WebContext.get_default.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.WebExtensionMatchPattern.register_custom_URL_scheme.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.WebExtensionMatchPatternError.quark.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.WebFormManager.input_element_auto_fill.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.WebFormManager.input_element_is_auto_filled.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/webkit2gtk/type_func.WebFormManager.input_element_is_user_edited.html

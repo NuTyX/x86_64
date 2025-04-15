@@ -1,0 +1,92 @@
+Submitted By:            Douglas R. Reno <renodr at linuxfromscratch dot org>
+Date:                    2025-03-21
+Initial Package Version: 2.48.0
+Origin:                  Upstream
+Upstream Status:         Applied, submitted by Xi
+Description:             Fixes building WebKitGTK-2.48.0 against non-debug
+                         builds of the gstreamer stack (which is how we have
+                         it set in BLFS). This works by moving definitions
+                         around into correct locations.
+
+From 36765b04788a4f386ebf81278ac42eaca8260d1f Mon Sep 17 00:00:00 2001
+From: Xi Ruoyao <xry111@xry111.site>
+Date: Sat, 15 Mar 2025 06:06:27 -0700
+Subject: [PATCH] Cherry-pick 292218@main (2b5f8c207511).
+ https://bugs.webkit.org/show_bug.cgi?id=289849
+
+    webkitgtk-2.48.0 fails to build with GST_DISABLE_GST_DEBUG
+    https://bugs.webkit.org/show_bug.cgi?id=289849
+
+    Reviewed by Philippe Normand.
+
+    Move definitions needed even though GST_DISABLE_GST_DEBUG out of #ifndef
+    GST_DISABLE_GST_DEBUG.
+
+    * Source/WebCore/platform/audio/gstreamer/PlatformRawAudioDataGStreamer.cpp:
+    (WebCore::PlatformRawAudioData::copyTo):
+    * Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp:
+    (WebCore::AppendPipeline::streamTypeToStringLower):
+    * Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h:
+    (WebCore::AppendPipeline::streamTypeToStringLower):
+
+    Canonical link: https://commits.webkit.org/292218@main
+
+Canonical link: https://commits.webkit.org/290945.70@webkitglib/2.48
+---
+ .../platform/audio/gstreamer/PlatformRawAudioDataGStreamer.cpp  | 2 +-
+ .../WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp  | 2 +-
+ Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Source/WebCore/platform/audio/gstreamer/PlatformRawAudioDataGStreamer.cpp b/Source/WebCore/platform/audio/gstreamer/PlatformRawAudioDataGStreamer.cpp
+index 8c568fdc63037..93e33ddae553a 100644
+--- a/Source/WebCore/platform/audio/gstreamer/PlatformRawAudioDataGStreamer.cpp
++++ b/Source/WebCore/platform/audio/gstreamer/PlatformRawAudioDataGStreamer.cpp
+@@ -227,11 +227,11 @@ void PlatformRawAudioData::copyTo(std::span<uint8_t> destination, AudioSampleFor
+     auto sourceFormat = audioData.format();
+     const auto& sourceSample = audioData.sample();
+     bool isDestinationInterleaved = isAudioSampleFormatInterleaved(format);
++    auto sourceOffset = frameOffset.value_or(0);
+ 
+ #ifndef GST_DISABLE_GST_DEBUG
+     [[maybe_unused]] auto [gstSourceFormat, sourceLayout] = convertAudioSampleFormatToGStreamerFormat(sourceFormat);
+     auto [gstDestinationFormat, destinationLayout] = convertAudioSampleFormatToGStreamerFormat(format);
+-    auto sourceOffset = frameOffset.value_or(0);
+     const char* destinationFormatDescription = gst_audio_format_to_string(gstDestinationFormat);
+     GST_TRACE("Copying %s %s data at planeIndex %zu, destination format is %s %s, source offset: %zu", layoutToString(sourceLayout), gst_audio_format_to_string(gstSourceFormat), planeIndex, layoutToString(destinationLayout), destinationFormatDescription, sourceOffset);
+ #endif
+diff --git a/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp b/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp
+index 327e3928729f4..22d7fe21343ad 100644
+--- a/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp
++++ b/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp
+@@ -1093,6 +1093,7 @@ const char* AppendPipeline::streamTypeToString(StreamType streamType)
+         return "(Unsupported stream type)";
+     }
+ }
++#endif
+ 
+ const char* AppendPipeline::streamTypeToStringLower(StreamType streamType)
+ {
+@@ -1111,7 +1112,6 @@ const char* AppendPipeline::streamTypeToStringLower(StreamType streamType)
+         return "(unsupported_stream_type)";
+     }
+ }
+-#endif
+ 
+ #if !LOG_DISABLED
+ static GstPadProbeReturn appendPipelinePadProbeDebugInformation(GstPad* pad, GstPadProbeInfo* info, struct PadProbeInformation* padProbeInformation)
+diff --git a/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h b/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h
+index 1964728d24527..0b6f9b1124f43 100644
+--- a/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h
++++ b/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h
+@@ -62,8 +62,8 @@ class AppendPipeline {
+     enum StreamType { Audio, Video, Text, Unknown, Invalid };
+ #ifndef GST_DISABLE_GST_DEBUG
+     static const char * streamTypeToString(StreamType);
+-    static const char * streamTypeToStringLower(StreamType);
+ #endif
++    static const char * streamTypeToStringLower(StreamType);
+ 
+     struct Track {
+         // Track objects are created on pad-added for the first initialization segment, and destroyed after
+

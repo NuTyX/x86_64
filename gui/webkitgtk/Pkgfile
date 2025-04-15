@@ -11,10 +11,10 @@ makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
              hunspell hyphen icu libgudev libsecret libsoup sysprof
              libwebp mesa ruby sqlite enchant geoclue2 libavif
              gobject-introspection hicolor-icon-theme llvm wpebackend-fdo
-             harfbuzz gtk-doc libnotify wayland woff2 libmanette unifdef)
+             harfbuzz gtk-doc libnotify wayland woff2 unifdef)
              
 name=webkitgtk
-version=2.46.5
+version=2.48.1
 
 source=(http://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
 
@@ -51,6 +51,8 @@ cmake -G Ninja                     \
       -DUSE_WPE_RENDERER=OFF       \
       -DENABLE_BUBBLEWRAP_SANDBOX=OFF \
       -DUSE_GSTREAMER_TRANSCODER=OFF \
+      -D ENABLE_GAMEPAD=OFF        \
+      -D ENABLE_SPEECH_SYNTHESIS=OFF \
       -Wno-dev ..
 ninja || ninja -j1
 DESTDIR=$PKG ninja install || DESTDIR=$PKG ninja -j1 install
