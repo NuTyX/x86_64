@@ -7,12 +7,13 @@ contributors="Tnut"
 set=(qt6)
 
 name=qt6-declarative
-version=6.8.2
+version=6.9.0
 
 makedepends=(cmake ninja qt6-base qt6-shadertools
             at-spi2-core python)
 
-source=(https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz)
+source=(
+https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz)
 
 build() {
  export CXXFLAGS+=" -ffat-lto-objects"
