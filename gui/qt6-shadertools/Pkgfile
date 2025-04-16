@@ -9,11 +9,12 @@ contributors="Tnut"
 set=(qt6)
 
 name=qt6-shadertools
-version=6.8.2
+version=6.9.0
 
 makedepends=(cmake ninja qt6-base)
 
-source=(https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz)
+source=(https://mirrors.20i.com/pub/qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz)
+#https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz
 
 build() {
  cmake -S qtshadertools-everywhere-src-$version -B build -G Ninja
