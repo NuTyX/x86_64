@@ -402,7 +402,6 @@ drwxr-xr-x	root/root	usr/share/evolution/icons/hicolor/16x16/status/
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/security-high.png
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/security-low.png
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/security-medium.png
--rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/stock_check-filled.png
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/stock_score-high.png
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/stock_score-higher.png
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/16x16/status/stock_score-highest.png
@@ -1067,6 +1066,7 @@ drwxr-xr-x	root/root	usr/share/evolution/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/evolution-mail-symbolic.svg
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/evolution-memos-symbolic.svg
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/evolution-tasks-symbolic.svg
+-rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/gcr-gnupg.svg
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/im-aim.svg
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/im-icq.svg
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/apps/im-jabber.svg
@@ -1079,6 +1079,7 @@ drwxr-xr-x	root/root	usr/share/evolution/icons/hicolor/scalable/emblems/
 drwxr-xr-x	root/root	usr/share/evolution/icons/hicolor/scalable/status/
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/status/rss-symbolic.svg
 -rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/status/rss.svg
+-rw-r--r--	root/root	usr/share/evolution/icons/hicolor/scalable/status/stock_check-filled-symbolic.svg
 drwxr-xr-x	root/root	usr/share/evolution/images/
 -rw-r--r--	root/root	usr/share/evolution/images/confidential-stamp.jpg
 -rw-r--r--	root/root	usr/share/evolution/images/draft-paper.png
@@ -1101,20 +1102,20 @@ drwxr-xr-x	root/root	usr/share/evolution/ui/
 -rw-r--r--	root/root	usr/share/evolution/ui/contact-editor.ui
 -rw-r--r--	root/root	usr/share/evolution/ui/contact-list-editor.ui
 -rw-r--r--	root/root	usr/share/evolution/ui/e-calendar-preferences.ui
--rw-r--r--	root/root	usr/share/evolution/ui/e-html-editor-manager.ui
--rw-r--r--	root/root	usr/share/evolution/ui/e-send-options.ui
+-rw-r--r--	root/root	usr/share/evolution/ui/e-comp-editor.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/e-html-editor.eui
 -rw-r--r--	root/root	usr/share/evolution/ui/e-table-config.ui
 -rw-r--r--	root/root	usr/share/evolution/ui/e-timezone-dialog.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-calendars.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-composer.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-contacts.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-mail-reader.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-mail-viewer.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-mail.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-memos.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-shell.ui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-calendars.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-composer.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-contacts.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-mail-reader.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-mail-viewer.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-mail.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-memos.eui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-shell.eui
 -rw-r--r--	root/root	usr/share/evolution/ui/evolution-shortcuts.ui
--rw-r--r--	root/root	usr/share/evolution/ui/evolution-tasks.ui
+-rw-r--r--	root/root	usr/share/evolution/ui/evolution-tasks.eui
 -rw-r--r--	root/root	usr/share/evolution/ui/filter.ui
 -rw-r--r--	root/root	usr/share/evolution/ui/fullname.ui
 -rw-r--r--	root/root	usr/share/evolution/ui/gal-view-instance-save-as-dialog.ui
@@ -1215,6 +1216,7 @@ drwxr-xr-x	root/root	usr/share/help/C/evolution/
 -rw-r--r--	root/root	usr/share/help/C/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/C/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/contacts-libreoffice.page
@@ -1268,6 +1270,7 @@ drwxr-xr-x	root/root	usr/share/help/C/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/C/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/C/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/C/evolution/intro-main-window.page
@@ -1448,6 +1451,7 @@ drwxr-xr-x	root/root	usr/share/help/ca/evolution/
 -rw-r--r--	root/root	usr/share/help/ca/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/ca/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/contacts-libreoffice.page
@@ -1501,6 +1505,7 @@ drwxr-xr-x	root/root	usr/share/help/ca/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/ca/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/ca/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/ca/evolution/intro-main-window.page
@@ -1681,6 +1686,7 @@ drwxr-xr-x	root/root	usr/share/help/cs/evolution/
 -rw-r--r--	root/root	usr/share/help/cs/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/cs/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/contacts-libreoffice.page
@@ -1734,6 +1740,7 @@ drwxr-xr-x	root/root	usr/share/help/cs/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/cs/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/cs/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/cs/evolution/intro-main-window.page
@@ -1914,6 +1921,7 @@ drwxr-xr-x	root/root	usr/share/help/de/evolution/
 -rw-r--r--	root/root	usr/share/help/de/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/de/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/contacts-libreoffice.page
@@ -1967,6 +1975,7 @@ drwxr-xr-x	root/root	usr/share/help/de/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/de/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/de/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/de/evolution/intro-main-window.page
@@ -2147,6 +2156,7 @@ drwxr-xr-x	root/root	usr/share/help/el/evolution/
 -rw-r--r--	root/root	usr/share/help/el/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/el/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/contacts-libreoffice.page
@@ -2200,6 +2210,7 @@ drwxr-xr-x	root/root	usr/share/help/el/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/el/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/el/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/el/evolution/intro-main-window.page
@@ -2380,6 +2391,7 @@ drwxr-xr-x	root/root	usr/share/help/en_GB/evolution/
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/en_GB/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/contacts-libreoffice.page
@@ -2433,6 +2445,7 @@ drwxr-xr-x	root/root	usr/share/help/en_GB/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/en_GB/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/en_GB/evolution/intro-main-window.page
@@ -2613,6 +2626,7 @@ drwxr-xr-x	root/root	usr/share/help/es/evolution/
 -rw-r--r--	root/root	usr/share/help/es/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/es/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/contacts-libreoffice.page
@@ -2666,6 +2680,7 @@ drwxr-xr-x	root/root	usr/share/help/es/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/es/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/es/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/es/evolution/intro-main-window.page
@@ -2846,6 +2861,7 @@ drwxr-xr-x	root/root	usr/share/help/eu/evolution/
 -rw-r--r--	root/root	usr/share/help/eu/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/eu/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/contacts-libreoffice.page
@@ -2899,6 +2915,7 @@ drwxr-xr-x	root/root	usr/share/help/eu/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/eu/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/eu/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/eu/evolution/intro-main-window.page
@@ -3079,6 +3096,7 @@ drwxr-xr-x	root/root	usr/share/help/fr/evolution/
 -rw-r--r--	root/root	usr/share/help/fr/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/fr/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/contacts-libreoffice.page
@@ -3132,6 +3150,7 @@ drwxr-xr-x	root/root	usr/share/help/fr/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/fr/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/fr/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/fr/evolution/intro-main-window.page
@@ -3312,6 +3331,7 @@ drwxr-xr-x	root/root	usr/share/help/gl/evolution/
 -rw-r--r--	root/root	usr/share/help/gl/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/gl/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/contacts-libreoffice.page
@@ -3365,6 +3385,7 @@ drwxr-xr-x	root/root	usr/share/help/gl/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/gl/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/gl/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/gl/evolution/intro-main-window.page
@@ -3545,6 +3566,7 @@ drwxr-xr-x	root/root	usr/share/help/hu/evolution/
 -rw-r--r--	root/root	usr/share/help/hu/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/hu/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/contacts-libreoffice.page
@@ -3598,6 +3620,7 @@ drwxr-xr-x	root/root	usr/share/help/hu/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/hu/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/hu/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/hu/evolution/intro-main-window.page
@@ -3778,6 +3801,7 @@ drwxr-xr-x	root/root	usr/share/help/id/evolution/
 -rw-r--r--	root/root	usr/share/help/id/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/id/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/contacts-libreoffice.page
@@ -3831,6 +3855,7 @@ drwxr-xr-x	root/root	usr/share/help/id/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/id/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/id/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/id/evolution/intro-main-window.page
@@ -4011,6 +4036,7 @@ drwxr-xr-x	root/root	usr/share/help/mk/evolution/
 -rw-r--r--	root/root	usr/share/help/mk/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/mk/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/contacts-libreoffice.page
@@ -4064,6 +4090,7 @@ drwxr-xr-x	root/root	usr/share/help/mk/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/mk/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/mk/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/mk/evolution/intro-main-window.page
@@ -4244,6 +4271,7 @@ drwxr-xr-x	root/root	usr/share/help/oc/evolution/
 -rw-r--r--	root/root	usr/share/help/oc/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/oc/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/contacts-libreoffice.page
@@ -4297,6 +4325,7 @@ drwxr-xr-x	root/root	usr/share/help/oc/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/oc/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/oc/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/oc/evolution/intro-main-window.page
@@ -4477,6 +4506,7 @@ drwxr-xr-x	root/root	usr/share/help/pt/evolution/
 -rw-r--r--	root/root	usr/share/help/pt/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/pt/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/contacts-libreoffice.page
@@ -4530,6 +4560,7 @@ drwxr-xr-x	root/root	usr/share/help/pt/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/pt/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/pt/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/pt/evolution/intro-main-window.page
@@ -4710,6 +4741,7 @@ drwxr-xr-x	root/root	usr/share/help/pt_BR/evolution/
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/pt_BR/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/contacts-libreoffice.page
@@ -4763,6 +4795,7 @@ drwxr-xr-x	root/root	usr/share/help/pt_BR/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/pt_BR/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/evolution/intro-main-window.page
@@ -4943,6 +4976,7 @@ drwxr-xr-x	root/root	usr/share/help/ru/evolution/
 -rw-r--r--	root/root	usr/share/help/ru/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/ru/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/contacts-libreoffice.page
@@ -4996,6 +5030,7 @@ drwxr-xr-x	root/root	usr/share/help/ru/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/ru/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/ru/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/ru/evolution/intro-main-window.page
@@ -5176,6 +5211,7 @@ drwxr-xr-x	root/root	usr/share/help/sl/evolution/
 -rw-r--r--	root/root	usr/share/help/sl/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/sl/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/contacts-libreoffice.page
@@ -5229,6 +5265,7 @@ drwxr-xr-x	root/root	usr/share/help/sl/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/sl/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/sl/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/sl/evolution/intro-main-window.page
@@ -5409,6 +5446,7 @@ drwxr-xr-x	root/root	usr/share/help/sv/evolution/
 -rw-r--r--	root/root	usr/share/help/sv/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/sv/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/contacts-libreoffice.page
@@ -5462,6 +5500,7 @@ drwxr-xr-x	root/root	usr/share/help/sv/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/sv/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/sv/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/sv/evolution/intro-main-window.page
@@ -5642,6 +5681,7 @@ drwxr-xr-x	root/root	usr/share/help/te/evolution/
 -rw-r--r--	root/root	usr/share/help/te/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/te/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/contacts-libreoffice.page
@@ -5695,6 +5735,7 @@ drwxr-xr-x	root/root	usr/share/help/te/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/te/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/te/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/te/evolution/intro-main-window.page
@@ -5875,6 +5916,7 @@ drwxr-xr-x	root/root	usr/share/help/uk/evolution/
 -rw-r--r--	root/root	usr/share/help/uk/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/uk/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/contacts-libreoffice.page
@@ -5928,6 +5970,7 @@ drwxr-xr-x	root/root	usr/share/help/uk/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/uk/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/uk/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/uk/evolution/intro-main-window.page
@@ -6108,6 +6151,7 @@ drwxr-xr-x	root/root	usr/share/help/zh_CN/evolution/
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/calendar-webdav.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/contacts-add-automatically.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/contacts-autocompletion.page
+-rw-r--r--	root/root	usr/share/help/zh_CN/evolution/contacts-carddav.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/contacts-google.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/contacts-ldap.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/contacts-libreoffice.page
@@ -6161,6 +6205,7 @@ drwxr-xr-x	root/root	usr/share/help/zh_CN/evolution/figures/
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/import-single-files.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/import-supported-file-formats.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/index.page
+-rw-r--r--	root/root	usr/share/help/zh_CN/evolution/intro-account-types.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/intro-first-run.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/intro-keyboard-shortcuts.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/evolution/intro-main-window.page

@@ -57,7 +57,6 @@ drwxr-xr-x	root/root	usr/include/evolution/calendar/gui/
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-month-view.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-select-names-editable.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-select-names-renderer.h
--rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-send-options-utils.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-task-table.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-timezone-entry.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-to-do-pane.h
@@ -80,7 +79,6 @@ drwxr-xr-x	root/root	usr/include/evolution/calendar/gui/
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/ea-week-view-main-item.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/ea-week-view.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/itip-utils.h
--rw-r--r--	root/root	usr/include/evolution/calendar/gui/misc.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/print.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/tag-calendar.h
 drwxr-xr-x	root/root	usr/include/evolution/composer/
@@ -174,10 +172,8 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-dialog-utils.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-dialog-widgets.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-ellipsized-combo-box-text.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-emoticon-action.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-emoticon-chooser-menu.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-emoticon-chooser.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-emoticon-tool-button.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-emoticon.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-event.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-file-request.h
@@ -229,7 +225,6 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-markdown-utils.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-marshal.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-menu-bar.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-menu-tool-action.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-menu-tool-button.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-misc-utils.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-mktemp.h
@@ -248,7 +243,6 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-plugin-ui.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-plugin.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-poolv.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-popup-action.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-popup-menu.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-port-entry.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-preferences-window.h
@@ -260,8 +254,6 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-proxy-link-selector.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-proxy-preferences.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-proxy-selector.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-reflow-model.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-reflow.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-rule-context.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-rule-editor.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-search-bar.h
@@ -270,7 +262,6 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-selection-model-simple.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-selection-model.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-selection.h
--rw-r--r--	root/root	usr/include/evolution/e-util/e-send-options.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-simple-async-result.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-sorter-array.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-sorter.h
@@ -334,6 +325,13 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-tree-table-adapter.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-tree-view-frame.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-tree.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-action-group.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-action.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-customize-dialog.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-customizer.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-manager.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-menu.h
+-rw-r--r--	root/root	usr/include/evolution/e-util/e-ui-parser.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-unicode.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-url-entry.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/e-util-enums.h
@@ -360,13 +358,11 @@ drwxr-xr-x	root/root	usr/include/evolution/e-util/
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table-click-to-add-factory.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table-click-to-add.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table-column-header.h
--rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table-factory.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table-item-factory.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table-item.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-table.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-text-factory.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-text.h
--rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-tree-factory.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-e-tree.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-factory.h
 -rw-r--r--	root/root	usr/include/evolution/e-util/gal-a11y-util.h
@@ -422,14 +418,10 @@ drwxr-xr-x	root/root	usr/include/evolution/libgnomecanvas/
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvasgroupfactory.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvasitem.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvasitemfactory.h
--rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvastext.h
--rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvastextfactory.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvaswidget.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gailcanvaswidgetfactory.h
--rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas-i18n.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas-pixbuf.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas-rect.h
--rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas-text.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas-util.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas-widget.h
 -rw-r--r--	root/root	usr/include/evolution/libgnomecanvas/gnome-canvas.h
@@ -474,7 +466,6 @@ drwxr-xr-x	root/root	usr/include/evolution/mail/
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-folder-tweaks.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-free-form-exp.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-junk-options.h
--rw-r--r--	root/root	usr/include/evolution/mail/e-mail-label-action.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-label-dialog.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-label-list-store.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-label-manager.h
@@ -530,7 +521,6 @@ drwxr-xr-x	root/root	usr/include/evolution/shell/
 -rw-r--r--	root/root	usr/include/evolution/shell/e-shell-common.h
 -rw-r--r--	root/root	usr/include/evolution/shell/e-shell-content.h
 -rw-r--r--	root/root	usr/include/evolution/shell/e-shell-enumtypes.h
--rw-r--r--	root/root	usr/include/evolution/shell/e-shell-headerbar.h
 -rw-r--r--	root/root	usr/include/evolution/shell/e-shell-searchbar.h
 -rw-r--r--	root/root	usr/include/evolution/shell/e-shell-sidebar.h
 -rw-r--r--	root/root	usr/include/evolution/shell/e-shell-switcher.h
