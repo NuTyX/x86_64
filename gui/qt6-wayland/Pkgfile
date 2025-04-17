@@ -9,12 +9,13 @@ contributors="Tnut"
 set=(qt6)
 
 name=qt6-wayland
-version=6.8.2
+version=6.9.0
 
 makedepends=(cmake ninja qt6-base
              qt6-declarative xorg-libxcomposite)
 
-source=(https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtwayland-everywhere-src-$version.tar.xz)
+source=(
+https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtwayland-everywhere-src-$version.tar.xz)
 
 build() {
  cmake -S qtwayland-everywhere-src-$version -B build -G Ninja
