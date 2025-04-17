@@ -14,10 +14,10 @@ drwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-dummy.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-epub.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-gif.so
--rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-gstreamer.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-html.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-icon.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-jpeg.so
+-rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-libav.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-mp3.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-msoffice-xml.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-msoffice.so
@@ -93,9 +93,9 @@ drwxr-xr-x	root/root	usr/share/localsearch3/extract-rules/
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/11-msoffice-xml.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/15-executable.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/15-games.rule
--rw-r--r--	root/root	usr/share/localsearch3/extract-rules/15-gstreamer-guess.rule
+-rw-r--r--	root/root	usr/share/localsearch3/extract-rules/15-libav-guess.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/15-text.rule
--rw-r--r--	root/root	usr/share/localsearch3/extract-rules/90-gstreamer-audio-generic.rule
--rw-r--r--	root/root	usr/share/localsearch3/extract-rules/90-gstreamer-video-generic.rule
+-rw-r--r--	root/root	usr/share/localsearch3/extract-rules/90-libav-audio-generic.rule
+-rw-r--r--	root/root	usr/share/localsearch3/extract-rules/90-libav-video-generic.rule
 drwxr-xr-x	root/root	usr/share/localsearch3/miners/
 lrwxrwxrwx	root/root	usr/share/localsearch3/miners/org.freedesktop.Tracker3.Miner.Files.service -> /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.service

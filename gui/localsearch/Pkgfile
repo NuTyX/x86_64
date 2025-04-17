@@ -3,8 +3,8 @@ url='https://download.gnome.org/sources/localsearch'
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gstreamer-plugins-base tinysparql exempi libgexiv2 giflib
              libexif libgxps  libseccomp poppler taglib ffmpeg upower)
@@ -12,8 +12,7 @@ run=(gstreamer-plugins-good gstreamer-plugins-libav)
 set=()
 
 name=localsearch
-version=3.8.2
-release=2
+version=3.9.0
 
 source=(https://download.gnome.org/sources/localsearch/${version:0:3}/$name-$version.tar.xz)
 
