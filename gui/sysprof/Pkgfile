@@ -1,14 +1,13 @@
 description='Kernel based performance profiler'
 url='https://wiki.gnome.org/Apps/Sysprof'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(pango gtk4 libunwind polkit yelp-tools libdex libadwaita libpanel)
 
 name=sysprof
-version=47.2
-release=2
+version=48.0
 
 source=(https://gitlab.gnome.org/GNOME/sysprof/-/archive/$version/$name-$version.tar.gz)
 
