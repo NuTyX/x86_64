@@ -3,14 +3,13 @@ url="https://wiki.gnome.org/Apps/Terminal/VTE"
 
 license="GPL-3.0-or-later, LGPL-3.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg,Pierre,Jayce,Spiky,Skythrew"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Pierre,Jayce,Skythrew,Tnut"
 
-makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection)
+makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection fast_float)
 
 name=vte
-version=0.78.3
-release=1
+version=0.80.1
 
 prepare() {
 git clone https://gitlab.gnome.org/GNOME/vte.git
