@@ -9,12 +9,13 @@ contributors="Tnut"
 set=(qt6)
 
 name=qt6-quick3d
-version=6.8.2
+version=6.9.0
 
 _name=${name/6-/}-everywhere-src
 makedepends=(cmake ninja assimp qt6-shadertools qt6-quicktimeline)
 
-source=(https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/${_name}-$version.tar.xz)
+source=(
+https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/${_name}-$version.tar.xz)
 
 build() {
  cmake -S ${_name}-$version -B build -G Ninja
