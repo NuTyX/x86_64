@@ -4,32 +4,28 @@ url="http://nodejs.org/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Alienus,Greg,Tnut"
 
-makedepends=(python c-ares icu zlib libuv libnghttp2)
+makedepends=(python c-ares icu zlib libuv libnghttp2 brotli)
 
 name=node
 alias=(nodejs node-js)
-version=22.12.0
+version=22.14.0
 
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
         system-c-ares.patch)
 
-prepare() {
-#  patch -d node-v$version -Rp1 < system-c-ares.patch
-cd node-v$version
-sed '/pkgicu/s/icu-i18n/& icu-uc/' -i configure.py
-}
 
 build() {
 
 	cd node-v$version
 	./configure \
-		--prefix=/usr \
-		--shared-zlib \
-		--shared-libuv \
-		--shared-openssl \
-		--shared-cares \
-		--shared-nghttp2 \
-		--with-intl=system-icu
+	    --prefix=/usr          \
+            --shared-brotli        \
+            --shared-cares         \
+            --shared-libuv         \
+            --shared-openssl       \
+            --shared-nghttp2       \
+            --shared-zlib          \
+            --with-intl=system-icu 
 
 	make
 	make DESTDIR=$PKG install
