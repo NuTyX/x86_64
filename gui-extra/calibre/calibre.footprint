@@ -710,7 +710,9 @@ drwxr-xr-x	root/root	usr/share/calibre/lib/calibre-extensions/
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6Positioning.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6PrintSupport.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6Qml.so.6
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6QmlMeta.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6QmlModels.so.6
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6QmlWorkerScript.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6Quick.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6QuickWidgets.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6Sensors.so.6
@@ -726,11 +728,11 @@ drwxr-xr-x	root/root	usr/share/calibre/lib/calibre-extensions/
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6Widgets.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6XcbQpa.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libQt6Xml.so.6
--rwxr-xr-x	root/root	usr/share/calibre/lib/libavcodec.so.60
--rwxr-xr-x	root/root	usr/share/calibre/lib/libavdevice.so.60
--rwxr-xr-x	root/root	usr/share/calibre/lib/libavfilter.so.9
--rwxr-xr-x	root/root	usr/share/calibre/lib/libavformat.so.60
--rwxr-xr-x	root/root	usr/share/calibre/lib/libavutil.so.58
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libavcodec.so.61
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libavdevice.so.61
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libavfilter.so.10
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libavformat.so.61
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libavutil.so.59
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libbrotlicommon.so.1
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libbrotlidec.so.1
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libbrotlienc.so.1
@@ -769,15 +771,15 @@ drwxr-xr-x	root/root	usr/share/calibre/lib/calibre-extensions/
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libpng16.so.16
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libpodofo.so.2
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libpoppler.so.130
--rwxr-xr-x	root/root	usr/share/calibre/lib/libpostproc.so.57
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libpostproc.so.58
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libpython3.11.so.1.0
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libreadline.so.8
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libsharpyuv.so.0
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libsqlite3.so.0
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libssl.so.3
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libstemmer.so.0
--rwxr-xr-x	root/root	usr/share/calibre/lib/libswresample.so.4
--rwxr-xr-x	root/root	usr/share/calibre/lib/libswscale.so.7
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libswresample.so.5
+-rwxr-xr-x	root/root	usr/share/calibre/lib/libswscale.so.8
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libtiff.so.6
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libuchardet.so.0
 -rwxr-xr-x	root/root	usr/share/calibre/lib/libunrar.so
@@ -844,6 +846,7 @@ drwxr-xr-x	root/root	usr/share/calibre/plugins/tls/
 -rw-r--r--	root/root	usr/share/calibre/plugins/tls/libqcertonlybackend.so
 -rw-r--r--	root/root	usr/share/calibre/plugins/tls/libqopensslbackend.so
 drwxr-xr-x	root/root	usr/share/calibre/plugins/wayland-decoration-client/
+-rw-r--r--	root/root	usr/share/calibre/plugins/wayland-decoration-client/libadwaita.so
 -rw-r--r--	root/root	usr/share/calibre/plugins/wayland-decoration-client/libbradient.so
 drwxr-xr-x	root/root	usr/share/calibre/plugins/wayland-graphics-integration-client/
 -rw-r--r--	root/root	usr/share/calibre/plugins/wayland-graphics-integration-client/libdmabuf-server.so
@@ -932,6 +935,7 @@ drwxr-xr-x	root/root	usr/share/calibre/resources/hyphenation/
 -rw-r--r--	root/root	usr/share/calibre/resources/hyphenation/locales.json
 -rw-r--r--	root/root	usr/share/calibre/resources/hyphenation/sha1sum
 -rw-r--r--	root/root	usr/share/calibre/resources/icons.rcc
+-rw-r--r--	root/root	usr/share/calibre/resources/icudtl.dat
 -rw-r--r--	root/root	usr/share/calibre/resources/images.qrc
 drwxr-xr-x	root/root	usr/share/calibre/resources/images/
 -rw-r--r--	root/root	usr/share/calibre/resources/images/add_book.png
@@ -1076,6 +1080,7 @@ drwxr-xr-x	root/root	usr/share/calibre/resources/images/mimetypes/
 -rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/gif.png
 -rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/html.png
 -rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/jpeg.png
+-rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/kfx.png
 -rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/lit.png
 -rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/lrf.png
 -rw-r--r--	root/root	usr/share/calibre/resources/images/mimetypes/lrx.png
@@ -1267,6 +1272,7 @@ drwxr-xr-x	root/root	usr/share/calibre/resources/templates/
 -rw-r--r--	root/root	usr/share/calibre/resources/templates/html_export_default.tmpl
 -rw-r--r--	root/root	usr/share/calibre/resources/templates/html_export_default_index.tmpl
 -rw-r--r--	root/root	usr/share/calibre/resources/templates/inline_toc_styles.css
+-rw-r--r--	root/root	usr/share/calibre/resources/templates/kobo.js
 -rw-r--r--	root/root	usr/share/calibre/resources/templates/lrf.xsl
 -rw-r--r--	root/root	usr/share/calibre/resources/templates/new_book.html
 -rw-r--r--	root/root	usr/share/calibre/resources/templates/new_nav.html
