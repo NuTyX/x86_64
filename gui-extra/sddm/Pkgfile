@@ -41,6 +41,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr             \
       -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d \
       -DBUILD_TESTING=OFF  \
       -DBUILD_MAN_PAGES=ON \
+      -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
       -Wno-dev ..
 make
 make DESTDIR=$PKG install
