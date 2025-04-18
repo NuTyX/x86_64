@@ -13,8 +13,10 @@ drwxr-xr-x	root/root	usr/lib/evince/4/backends/
 -rwxr-xr-x	root/root	usr/lib/evince/4/backends/libdjvudocument.so
 -rwxr-xr-x	root/root	usr/lib/evince/4/backends/libpdfdocument.so
 -rwxr-xr-x	root/root	usr/lib/evince/4/backends/libtiffdocument.so
+-rwxr-xr-x	root/root	usr/lib/evince/4/backends/libxpsdocument.so
 -rw-r--r--	root/root	usr/lib/evince/4/backends/pdfdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/4/backends/tiffdocument.evince-backend
+-rw-r--r--	root/root	usr/lib/evince/4/backends/xpsdocument.evince-backend
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EvinceDocument-3.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EvinceView-3.0.typelib
@@ -454,7 +456,7 @@ drwxr-xr-x	root/root	usr/share/help/da/evince/
 -rw-r--r--	root/root	usr/share/help/da/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/da/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/da/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/da/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/da/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/da/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/da/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/da/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -532,7 +534,7 @@ drwxr-xr-x	root/root	usr/share/help/de/evince/
 -rw-r--r--	root/root	usr/share/help/de/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/de/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/de/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/de/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/de/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/de/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/de/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/de/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -610,7 +612,7 @@ drwxr-xr-x	root/root	usr/share/help/el/evince/
 -rw-r--r--	root/root	usr/share/help/el/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/el/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/el/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/el/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/el/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/el/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/el/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/el/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -1078,7 +1080,7 @@ drwxr-xr-x	root/root	usr/share/help/fr/evince/
 -rw-r--r--	root/root	usr/share/help/fr/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/fr/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/fr/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/fr/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/fr/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/fr/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/fr/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/fr/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -1234,7 +1236,7 @@ drwxr-xr-x	root/root	usr/share/help/hu/evince/
 -rw-r--r--	root/root	usr/share/help/hu/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/hu/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/hu/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/hu/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/hu/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/hu/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/hu/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/hu/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -1390,7 +1392,7 @@ drwxr-xr-x	root/root	usr/share/help/it/evince/
 -rw-r--r--	root/root	usr/share/help/it/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/it/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/it/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/it/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/it/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/it/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/it/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/it/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -1546,7 +1548,7 @@ drwxr-xr-x	root/root	usr/share/help/ko/evince/
 -rw-r--r--	root/root	usr/share/help/ko/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/ko/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/ko/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/ko/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/ko/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/ko/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/ko/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/ko/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -1858,7 +1860,7 @@ drwxr-xr-x	root/root	usr/share/help/pl/evince/
 -rw-r--r--	root/root	usr/share/help/pl/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/pl/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/pl/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/pl/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/pl/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/pl/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/pl/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/pl/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -1936,7 +1938,7 @@ drwxr-xr-x	root/root	usr/share/help/pt_BR/evince/
 -rw-r--r--	root/root	usr/share/help/pt_BR/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/pt_BR/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/pt_BR/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/pt_BR/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -2560,7 +2562,7 @@ drwxr-xr-x	root/root	usr/share/help/uk/evince/
 -rw-r--r--	root/root	usr/share/help/uk/evince/editing.page
 drwxr-xr-x	root/root	usr/share/help/uk/evince/figures/
 lrwxrwxrwx	root/root	usr/share/help/uk/evince/figures/add-text-annotation.png -> ../../../C/evince/figures/add-text-annotation.png
-lrwxrwxrwx	root/root	usr/share/help/uk/evince/figures/annotations-nav-to-page.png -> ../../../C/evince/figures/annotations-nav-to-page.png
+-rw-r--r--	root/root	usr/share/help/uk/evince/figures/annotations-nav-to-page.png
 lrwxrwxrwx	root/root	usr/share/help/uk/evince/figures/emblem-system-symbolic.svg -> ../../../C/evince/figures/emblem-system-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/help/uk/evince/figures/org.gnome.Evince.svg -> ../../../C/evince/figures/org.gnome.Evince.svg
 lrwxrwxrwx	root/root	usr/share/help/uk/evince/figures/zoom.png -> ../../../C/evince/figures/zoom.png
@@ -2931,6 +2933,7 @@ drwxr-xr-x	root/root	usr/share/metainfo/
 -rw-r--r--	root/root	usr/share/metainfo/evince-djvudocument.metainfo.xml
 -rw-r--r--	root/root	usr/share/metainfo/evince-pdfdocument.metainfo.xml
 -rw-r--r--	root/root	usr/share/metainfo/evince-tiffdocument.metainfo.xml
+-rw-r--r--	root/root	usr/share/metainfo/evince-xpsdocument.metainfo.xml
 -rw-r--r--	root/root	usr/share/metainfo/org.gnome.Evince.metainfo.xml
 drwxr-xr-x	root/root	usr/share/thumbnailers/
 -rw-r--r--	root/root	usr/share/thumbnailers/evince.thumbnailer

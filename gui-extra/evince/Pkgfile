@@ -3,8 +3,8 @@ url="https://gnome.org"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Remy,Fanch,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Remy,Fanch,Fabienwang,Tnut"
 
 makedepends=(gtk3 gstreamer-plugins-base yelp-xsl
              itstool gobject-introspection meson ninja
@@ -16,8 +16,7 @@ run=(adwaita-icon-theme gsettings-desktop-schemas
 set=(gnome)
 
 name=evince
-version=46.3.1
-release=2
+version=48.0
 
 source=(https://gitlab.gnome.org/GNOME/evince/-/archive/$version/$name-$version.tar.gz)
 
