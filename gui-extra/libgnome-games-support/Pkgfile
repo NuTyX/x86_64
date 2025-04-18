@@ -1,13 +1,36 @@
+description='Code shared between GNOME games'
+url='https://gitlab.gnome.org/GNOME/libgnome-games-support'
+
+license="GPL3, LGPL3"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="tnut, Schrodinger72"
 
-makedepends=(vala git autoconf-archive libgee gtk3)
+makedepends=(vala git autoconf-archive libgee gtk4)
 
 set=(gnome)
 
 name=libgnome-games-support
-version=1.8.2
+version=2.0.1
 
-source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/libgnome-games-support/-/archive/$version/$name-$version.tar.gz)
 
-build=meson
+build() {
+
+cd $name-$version
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=plain
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 ../COPYING.LESSER $PKG/usr/share/licenses/$name/COPYING.LESSER
+}
+
