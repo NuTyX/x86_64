@@ -3,8 +3,8 @@ url="https://launchpad.net/simple-scan"
 
 license="GPL-3.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Greg,Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Rems,Tnut"
 
 set=(gnome-extra)
 
@@ -13,8 +13,8 @@ makedepends=(sane dconf gtk4 colord libgusb ninja meson yelp-tools
 run=(hicolor-icon-theme)
 
 name=simple-scan
-version=46.0
+version=48.1
 
-source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/simple-scan/-/archive/$version/$name-$version.tar.gz)
 
 build=meson
