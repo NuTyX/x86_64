@@ -15,9 +15,16 @@ run=(xorg-server zenity pipewire xorg-xwayland)
 set=(gnome)
 
 name=mutter
-version=47.6
+version=48.2
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+
+prepare() {
+cd $name-$version
+
+sed "/tests_c_args =/s/$/ + ['-U', 'G_DISABLE_ASSERT']/" -i src/tests/meson.build &&
+sed "/c_args:/a '-U', 'G_DISABLE_ASSERT'," -i src/tests/cogl/unit/meson.build
+}
 
 build() {
 cd $name-$version
@@ -29,6 +36,7 @@ meson setup .. \
       --prefix=/usr \
       --buildtype=release \
       -D profiler=false   \
+      -D bash_completion=false \
       -D tests=disabled
 
 ninja
