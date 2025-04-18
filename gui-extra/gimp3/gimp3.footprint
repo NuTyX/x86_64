@@ -35,7 +35,7 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercis
 -rw-r--r--	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/goat-exercise-c.c
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/goat-exercise-py3.py
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/goat-exercise-vala
--rwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/goat-exercise-vala.vala
+-rw-r--r--	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/goat-exercise-vala.vala
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/ar/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/ar/LC_MESSAGES/
@@ -498,35 +498,35 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Gimp-3.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GimpUi-3.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so -> libgimp-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimp-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimp-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so -> libgimp-scriptfu-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimp-scriptfu-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimp-scriptfu-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so -> libgimpbase-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpbase-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpbase-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so -> libgimpcolor-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpcolor-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpcolor-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so -> libgimpconfig-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpconfig-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpconfig-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so -> libgimpmath-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpmath-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpmath-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so -> libgimpmodule-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpmodule-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpmodule-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so -> libgimpthumb-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpthumb-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpthumb-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so -> libgimpui-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpui-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpui-3.0.so.0.0.2
 lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so -> libgimpwidgets-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgimpwidgets-3.0.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.0.2
+-rwxr-xr-x	root/root	usr/lib/libgimpwidgets-3.0.so.0.0.2
 drwxr-xr-x	root/root	usr/libexec/
 lrwxrwxrwx	root/root	usr/libexec/gimp-debug-tool -> gimp-debug-tool-3.0
 lrwxrwxrwx	root/root	usr/libexec/gimp-debug-tool-3 -> gimp-debug-tool-3.0
@@ -1337,6 +1337,10 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-text-dir-ttb-rtl.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-text-layer-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-text-layer.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-toggle-off-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-toggle-off.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-toggle-on-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-toggle-on.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-toilet-paper-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-toilet-paper.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/gimp-tool-airbrush-symbolic.svg
@@ -1489,14 +1493,22 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-bottom.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-down-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-down.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-first-rtl.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-first-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-first-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-first.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-home-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-home.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-last-rtl.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-last-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-last-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-last.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-next-rtl.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-next-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-next-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-next.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-previous-rtl.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-previous-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-previous-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-previous.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/go-top-symbolic.svg
@@ -1539,7 +1551,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/media-skip-backward.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/media-skip-forward-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/media-skip-forward.svg
--rwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/object-flip-horizontal-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/object-flip-horizontal-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/object-flip-horizontal.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/object-flip-vertical-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/object-flip-vertical.svg
@@ -1557,6 +1569,10 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-fullscreen.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-refresh-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-refresh.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-shrink-wrap-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-shrink-wrap.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-zoom-fill-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/view-zoom-fill.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/window-new-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/window-new.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Default/scalable/apps/zoom-fit-best-symbolic.svg
@@ -1937,7 +1953,59 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/96x96/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/index.theme
 drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/
 drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-business-card.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-cmyk.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-space-linear.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-space-non-linear.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-space-perceptual.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-water.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-dashboard.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-detach.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-display.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-effects-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-effects.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-even-horizontal-gap.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-even-vertical-gap.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-file-manager.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-gegl.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-alpha-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-alpha.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-content-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-content.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-multi-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-multi.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-path-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-path.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-position-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-position.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-visibility-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-visibility.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-menu-left.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-menu-right.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pattern.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-center.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-east.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-north-east.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-north-west.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-north.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-south-east.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-south-west.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-south.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-pivot-west.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-prefs-folders-mypaint-brushes.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-prefs-image-windows-appearance.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-prefs-image-windows-snapping.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-prefs-import-export.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-prefs-playground.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-shred.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-smartphone.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-symmetry.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-toggle-off-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-toggle-off.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-toggle-on-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-toggle-on.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-airbrush.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-align.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-blur.svg
@@ -1948,6 +2016,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-clone.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-color-balance.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-color-picker.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-color-temperature.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-colorize.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-crop.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-curves.svg
@@ -1955,6 +2024,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-dodge.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-ellipse-select.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-eraser.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-exposure.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-flip.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-foreground-select.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-free-select.svg
@@ -1970,6 +2040,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-move.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-mypaint-brush.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-n-point-deformation.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-offset.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-paint-select.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-paintbrush.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-path.svg
@@ -1981,6 +2052,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-rotate.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-scale.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-seamless-clone.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-shadows-highlights.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-shear.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-smudge.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-text.svg
@@ -1989,6 +2061,21 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-unified-transform.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-warp.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-tool-zoom.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-transform-3d-camera.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-transform-3d-move.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-transform-3d-rotate.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-no.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-ok.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-select-color.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-select-font.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-shrink-wrap-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-shrink-wrap.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-zoom-fill-symbolic.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-zoom-fill.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/zoom-fit-best.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/zoom-in.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/zoom-original.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/zoom-out.svg
 drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/hicolor/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/hicolor/index.theme
 drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/hicolor/scalable/

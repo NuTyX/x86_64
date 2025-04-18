@@ -12,14 +12,13 @@ makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr
              harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib)
 
 name=gimp3
-version=3.0.0
-release=2
+version=3.0.2
 _version=3.0
 
-source=(https://download.gimp.org/gimp/v${_version}/gimp-$version-RC1.tar.xz)
+source=(https://download.gimp.org/gimp/v${_version}/gimp-$version.tar.xz)
 
 build() {
-cd gimp-$version-RC1
+cd gimp-$version
 
 mkdir gimp-build
 cd    gimp-build
