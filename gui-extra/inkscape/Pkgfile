@@ -3,15 +3,15 @@ url='https://inkscape.org/'
 
 license="GPL2 GPL3 LGPL2 LGPL3 MPL OFL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=inkscape
 version=1.4
-release=4
+release=5
 
 source=(https://inkscape.org/gallery/item/53679/inkscape-$version.tar.xz
-        $name-$version-consolidate-3.patch) 
+        $name-$version-consolidate-3.patch inkscape-1.4-poppler_fixes-2.patch) 
 
 makedepends=(cmake boost git gtkmm python lcms2 gsl libxslt gc
              dbus-glib lcms2 libjpeg-turbo poppler-glib gspell
@@ -23,7 +23,7 @@ run=(desktop-file-utils hicolor-icon-theme gtk-update-icon-cache
 prepare() {
  mv $name-${version}_* $name
  cd $name
- patch -Np1 -i ../$name-$version-consolidate-3.patch
+ patch -Np1 -i ../inkscape-1.4-poppler_fixes-2.patch
 
 }
 
@@ -34,6 +34,7 @@ build() {
 	cmake -H${name} -Bbuild \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX:PATH=/usr \
+                -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
 		-DWITH_DBUS=ON \
 
 	cmake --build build
