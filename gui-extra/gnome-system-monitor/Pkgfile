@@ -7,13 +7,13 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Jayce,Remy,Fanch,Tnut"
 
 makedepends=(meson adwaita-icon-theme itstool gtkmm4
-             libgtop libwnck librsvg gnome-icon-theme)
+             libgtop libwnck librsvg gnome-icon-theme catch2)
 run=(gsettings-desktop-schemas desktop-file-utils libhandy libadwaita)
 
 set=(gnome)
 
 name=gnome-system-monitor
-version=47.1
+version=48.1
 
 source=(http://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
@@ -25,7 +25,7 @@ cd build
 
 meson setup .. \
       --prefix=/usr \
-      -Dsystemd=false
+      --buildtype=release
 
 ninja
 DESTDIR=$PKG ninja install
