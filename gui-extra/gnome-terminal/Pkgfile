@@ -12,9 +12,9 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 set=(cinnamon)
 
 name=gnome-terminal
-version=3.54.4
+version=3.56.1
 
-source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
 prepare() {
 cd $name-$version
