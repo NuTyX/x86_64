@@ -1,0 +1,32 @@
+description='Spellcheck library for GTK 4'
+url='https://gitlab.gnome.org/GNOME/libspelling'
+
+license="LGPL2.1"
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(gi-docgen enchant vala gobject-introspection gtk4 gtksourceview5
+             icu pango sysprof)
+
+name=libspelling
+version=0.4.8
+
+source=(https://gitlab.gnome.org/GNOME/libspelling/-/archive/$version/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+}
