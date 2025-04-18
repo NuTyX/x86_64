@@ -13,8 +13,10 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pg_archivecleanup
 -rwxr-xr-x	root/root	usr/bin/pg_basebackup
 -rwxr-xr-x	root/root	usr/bin/pg_checksums
+-rwxr-xr-x	root/root	usr/bin/pg_combinebackup
 -rwxr-xr-x	root/root	usr/bin/pg_config
 -rwxr-xr-x	root/root	usr/bin/pg_controldata
+-rwxr-xr-x	root/root	usr/bin/pg_createsubscriber
 -rwxr-xr-x	root/root	usr/bin/pg_ctl
 -rwxr-xr-x	root/root	usr/bin/pg_dump
 -rwxr-xr-x	root/root	usr/bin/pg_dumpall
@@ -29,6 +31,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pg_upgrade
 -rwxr-xr-x	root/root	usr/bin/pg_verifybackup
 -rwxr-xr-x	root/root	usr/bin/pg_waldump
+-rwxr-xr-x	root/root	usr/bin/pg_walsummary
 -rwxr-xr-x	root/root	usr/bin/pgbench
 -rwxr-xr-x	root/root	usr/bin/postgres
 -rwxr-xr-x	root/root	usr/bin/psql
@@ -40,7 +43,6 @@ drwxr-xr-x	root/root	usr/share/postgresql/
 drwxr-xr-x	root/root	usr/share/postgresql/extension/
 -rw-r--r--	root/root	usr/share/postgresql/extension/plpgsql--1.0.sql
 -rw-r--r--	root/root	usr/share/postgresql/extension/plpgsql.control
--rw-r--r--	root/root	usr/share/postgresql/fix-CVE-2024-4317.sql
 -rw-r--r--	root/root	usr/share/postgresql/information_schema.sql
 -rw-r--r--	root/root	usr/share/postgresql/pg_hba.conf.sample
 -rw-r--r--	root/root	usr/share/postgresql/pg_ident.conf.sample
