@@ -3,8 +3,8 @@ url="http://www.gnome.org/"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Remy,Tnut"
 
 makedepends=(adwaita-icon-theme gtk4 itstool
              librsvg gobject-introspection
@@ -14,7 +14,7 @@ run=(desktop-file-utils gtk-update-icon-cache gsettings-desktop-schemas libhandy
 set=(gnome)
 
 name=baobab
-version=47.0
+version=48.0
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
