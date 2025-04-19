@@ -1,0 +1,45 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/xdg/
+drwxr-xr-x	root/root	etc/xdg/libfm/
+-rw-r--r--	root/root	etc/xdg/libfm/libfm.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/libfm-pref-apps
+-rwxr-xr-x	root/root	usr/bin/lxshortcut
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libfm-gtk3.so -> libfm-gtk3.so.4.2.0
+lrwxrwxrwx	root/root	usr/lib/libfm-gtk3.so.4 -> libfm-gtk3.so.4.2.0
+-rwxr-xr-x	root/root	usr/lib/libfm-gtk3.so.4.2.0
+lrwxrwxrwx	root/root	usr/lib/libfm.so -> libfm.so.4.2.0
+lrwxrwxrwx	root/root	usr/lib/libfm.so.4 -> libfm.so.4.2.0
+-rwxr-xr-x	root/root	usr/lib/libfm.so.4.2.0
+drwxr-xr-x	root/root	usr/lib/libfm/
+drwxr-xr-x	root/root	usr/lib/libfm/modules/
+-rwxr-xr-x	root/root	usr/lib/libfm/modules/gtk-fileprop-x-desktop.so
+-rwxr-xr-x	root/root	usr/lib/libfm/modules/gtk-fileprop-x-shortcut.so
+-rwxr-xr-x	root/root	usr/lib/libfm/modules/gtk-menu-actions.so
+-rwxr-xr-x	root/root	usr/lib/libfm/modules/gtk-menu-trash.so
+-rwxr-xr-x	root/root	usr/lib/libfm/modules/vfs-menu.so
+-rwxr-xr-x	root/root	usr/lib/libfm/modules/vfs-search.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/libfm-pref-apps.desktop
+-rw-r--r--	root/root	usr/share/applications/lxshortcut.desktop
+drwxr-xr-x	root/root	usr/share/libfm/
+-rw-r--r--	root/root	usr/share/libfm/archivers.list
+drwxr-xr-x	root/root	usr/share/libfm/images/
+-rw-r--r--	root/root	usr/share/libfm/images/folder.png
+-rw-r--r--	root/root	usr/share/libfm/images/unknown.png
+-rw-r--r--	root/root	usr/share/libfm/terminals.list
+drwxr-xr-x	root/root	usr/share/libfm/ui/
+-rw-r--r--	root/root	usr/share/libfm/ui/app-chooser.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/ask-rename.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/choose-icon.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/exec-file.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/file-prop.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/filesearch.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/preferred-apps.ui
+-rw-r--r--	root/root	usr/share/libfm/ui/progress.ui
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/packages/
+-rw-r--r--	root/root	usr/share/mime/packages/libfm.xml
