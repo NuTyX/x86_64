@@ -3,15 +3,14 @@ url='https://www.virtualbox.org'
 
 license="GPL, CDDL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 run=(kernel-66)
 name=vboxhost-kernel-66
-version=7.1.6
-release=3
+version=7.1.8
 
-buildr=167084
+buildr=168469
 _VBARCH=amd64
 KERNELNAME="${name#vboxhost-}"
 
