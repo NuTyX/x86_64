@@ -9,18 +9,23 @@ makedepends=(libxfce4util libxfce4ui exo vte)
 set=(xfce4-extra)
 
 name=xfce4-terminal
-version=1.1.4
+version=1.1.5
 
-source=(https://archive.xfce.org/src/apps/${name}/${version:0:3}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/apps/${name}/${version:0:3}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
 
-    ./configure --prefix=/usr
+    mkdir build
+cd    build
 
-make
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
 
-make DESTDIR=$PKG install
+ninja
 
-install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
