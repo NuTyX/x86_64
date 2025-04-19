@@ -4,22 +4,18 @@ url="http://lxde.org/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Geantbrun,Tnut"
 
-makedepends=(libfm-extra)
+makedepends=(libfm-extra gtk-doc)
 
 name=menu-cache
-version=1.1.0
-release=3
+version=1.1.1
 
-source=(http://downloads.sourceforge.net/lxde/$name-$version.tar.xz
-        menu-cache-1.1.0-consolidated_fixes-1.patch)
-
-prepare() {
-cd $name-$version
-patch -Np1 -i ../menu-cache-1.1.0-consolidated_fixes-1.patch
-}
+source=(https://github.com/lxde/menu-cache/archive/$version/$name-$version.tar.gz)
 
 build() {
+
 cd $name-$version
+
+ ./autogen.sh
 ./configure --prefix=/usr  --disable-static
 make
 make DESTDIR=$PKG install
