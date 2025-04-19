@@ -8,7 +8,7 @@ makedepends=(xdg-desktop-portal python git xdg-desktop-portal-gnome)
 run=(gtk3 gsettings-desktop-schemas xdg-desktop-portal)
 
 name=xdg-desktop-portal-gtk
-version=1.15.2
+version=1.15.3
 
 prepare () {
 git clone https://github.com/flatpak/$name $name-$version
