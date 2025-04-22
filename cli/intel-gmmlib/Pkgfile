@@ -3,13 +3,13 @@ url='https://github.com/intel/gmmlib/'
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cmake)
 
 name=intel-gmmlib
-version=22.6.0
+version=22.7.1
 
 source=(https://github.com/intel/gmmlib/archive/refs/tags/$name-$version.tar.gz)
 
@@ -26,6 +26,7 @@ cd    build
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr   \
       -DBUILD_TYPE=Release          \
+      -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
       -Wno-dev ..
 
 make
