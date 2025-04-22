@@ -1,12 +1,12 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.14.0-1-nutyx
--rw-r--r--	root/root	boot/config-6.14.0-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.14.3-1-nutyx
+-rw-r--r--	root/root	boot/config-6.14.3-1-nutyx
 lrwxrwxrwx	root/root	boot/kernel -> kernel-stable
 -rw-r--r--	root/root	boot/kernel-stable
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.14.0-1-nutyx -> kernel
+lrwxrwxrwx	root/root	usr/lib/modules/6.14.3-1-nutyx -> kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel/build -> /usr/src/kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/
@@ -3982,7 +3982,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/net/dsa/xrs700x/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/net/eql.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/net/ethernet/
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/net/ethernet/3com/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/net/ethernet/3com/3c509.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/net/ethernet/3com/3c574_cs.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/net/ethernet/3com/3c589_cs.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/net/ethernet/3com/3c59x.ko.xz
@@ -5695,13 +5694,11 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/3w-9xxx.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/3w-sas.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/3w-xxxx.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/53c700.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/BusLogic.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/a100u2w.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/aacraid/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/aacraid/aacraid.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/advansys.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/aha1740.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/aic7xxx/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/aic7xxx/aic79xx.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/aic7xxx/aic7xxx.ko.xz
@@ -5806,7 +5803,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/qla4xxx/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/scsi_transport_srp.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/ses.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/sg.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/sim710.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/smartpqi/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/smartpqi/smartpqi.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/scsi/snic/
@@ -8164,6 +8160,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/sound/x86/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/x86/snd-hdmi-lpe-audio.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/sound/xen/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/xen/snd_xen_front.ko.xz
+drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/virt/
+drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/virt/lib/
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/virt/lib/irqbypass.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/modules.alias
 -rw-r--r--	root/root	usr/lib/modules/kernel/modules.alias.bin
 -rw-r--r--	root/root	usr/lib/modules/kernel/modules.builtin
