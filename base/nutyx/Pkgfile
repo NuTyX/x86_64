@@ -9,7 +9,7 @@ makedepends=(zstd util-linux)
 set=(chroot)
 
 name=nutyx
-version=25.04.1
+version=25.04.2
 release=1
 
 # nutyx patch version
@@ -19,7 +19,7 @@ PKGMK_GROUPS=(man)
 PKGMK_IGNORE_RUNTIMEDEPS=yes
 
 source=(setup-nutyx.service
-        https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.xz)
+        https://download.sourceforge.net/nutyx/files/$name-$version.tar.xz)
 [ -z "$patchname" ] || source+=" $patchname"
 
 build () {
