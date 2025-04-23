@@ -27,9 +27,14 @@ source=(https://download.qt.io/official_releases/qt/${version:0:3}/$version/subm
 prepare() {
 cd ${_name}-$version
 
-sed -e '189 s/=/& false/' \
-    -e '190 d'            \
-    -i.orig src/3rdparty/chromium/third_party/webrtc/webrtc.gni
+pushd src/3rdparty/chromium/third_party/webrtc/modules &&
+
+  sed -e "88 s/proxy_/reinterpret_cast<pw_node*>(&)/"       \
+      -e "120s/that->proxy_/reinterpret_cast<pw_node*>(&)/" \
+      -i video_capture/linux/pipewire_session.cc            &&
+
+popd
+
 }
 build() {
 ## Do not change ninja jobs ##
