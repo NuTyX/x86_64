@@ -24,6 +24,7 @@ source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/
 prepare() {
  cd ${_name}-$version
  grep -rl '^#!.*python$' | xargs sed -i '1s/python/&3/'
+ sed -i "s/2\.0/3\.0/g" tools/generate-docs-nm-settings-docs-gir.py
 }
 build() {
 
@@ -41,7 +42,7 @@ meson --prefix        /usr       \
       -Dppp=false                \
       -Dmodem_manager=false      \
       -Dnm_cloud_setup=false     \
-      -Ddocs=true                \
+      -Ddocs=false               \
       -Dvapi=true                \
       ../${_name}-$version
 ninja
