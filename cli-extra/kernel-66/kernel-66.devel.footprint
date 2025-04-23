@@ -12,6 +12,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/
 -rw-rw-r--	root/root	usr/src/kernel-66/.clang-format
 -rw-rw-r--	root/root	usr/src/kernel-66/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel-66/.config
+-rw-r--r--	root/root	usr/src/kernel-66/.config.old
 -rw-rw-r--	root/root	usr/src/kernel-66/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel-66/.gitattributes
 -rw-rw-r--	root/root	usr/src/kernel-66/.gitignore
@@ -1727,7 +1728,6 @@ drwxrwxr-x	root/root	usr/src/kernel-66/arch/x86/kernel/
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.early-quirks.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.early_printk.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.ebda.o.cmd
--rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.eisa.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.espfix_64.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.ftrace.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/.ftrace_64.o.cmd
@@ -2166,7 +2166,6 @@ drwxrwxr-x	root/root	usr/src/kernel-66/arch/x86/kernel/cpu/sgx/
 -rw-rw-r--	root/root	usr/src/kernel-66/arch/x86/kernel/ebda.c
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/ebda.o
 -rw-rw-r--	root/root	usr/src/kernel-66/arch/x86/kernel/eisa.c
--rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/eisa.o
 -rw-rw-r--	root/root	usr/src/kernel-66/arch/x86/kernel/espfix_64.c
 -rw-r--r--	root/root	usr/src/kernel-66/arch/x86/kernel/espfix_64.o
 drwxrwxr-x	root/root	usr/src/kernel-66/arch/x86/kernel/fpu/
@@ -6879,12 +6878,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/EFI_VARS_PSTORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/EFI_VARS_PSTORE_DEFAULT_DISABLE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/EFS_FS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/EISA (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/EISA_NAMES (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/EISA_PCI_EISA (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/EISA_VIRTUAL_ROOT (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/EISA_VLB_PRIMING (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/EL3 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/ELFCORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/ELF_CORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/ENA_ETHERNET (EMPTY)
@@ -7413,7 +7406,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_DYNAMIC_FTRACE_WITH_REGS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_EBPF_JIT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_EFFICIENT_UNALIGNED_ACCESS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_EISA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_EXIT_THREAD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_FAST_GUP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/HAVE_FENTRY (EMPTY)
@@ -9685,7 +9677,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_CADENCE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_CAVIUM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_CHELSIO (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_CIRRUS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_CISCO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_CORTINA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/NET_VENDOR_DAVICOM (EMPTY)
@@ -11141,7 +11132,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_AACRAID (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_ACARD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_ADVANSYS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_AHA1740 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_AIC79XX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_AIC7XXX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_AIC94XX (EMPTY)
@@ -11209,7 +11199,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SAS_HOST_SMP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SAS_LIBSAS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SCAN_ASYNC (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SIM710 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SMARTPQI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SNIC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/SCSI_SPI_ATTRS (EMPTY)
