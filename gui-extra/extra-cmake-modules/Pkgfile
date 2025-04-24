@@ -3,15 +3,15 @@ url="https://www.kde.org/"
 
 license="LGPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cmake)
 
 set=(kde6-frameworks)
 
 name=extra-cmake-modules
-version=6.12.0
+version=6.13.0
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
