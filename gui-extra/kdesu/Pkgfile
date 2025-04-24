@@ -3,13 +3,13 @@ url='https://community.kde.org/Frameworks'
 
 license="LGPL-2.0-only LGPL-3.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6-frameworks)
 
 name=kdesu
-version=6.12.0
+version=6.13.0
 
 makedepends=(qt6-base qt6-tools extra-cmake-modules
              kcoreaddons ki18n kconfig kpty)
