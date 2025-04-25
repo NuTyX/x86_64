@@ -1,12 +1,12 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.14.3-1-nutyx
--rw-r--r--	root/root	boot/config-6.14.3-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.14.4-1-nutyx
+-rw-r--r--	root/root	boot/config-6.14.4-1-nutyx
 lrwxrwxrwx	root/root	boot/kernel -> kernel-stable
 -rw-r--r--	root/root	boot/kernel-stable
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.14.3-1-nutyx -> kernel
+lrwxrwxrwx	root/root	usr/lib/modules/6.14.4-1-nutyx -> kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel/build -> /usr/src/kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/
