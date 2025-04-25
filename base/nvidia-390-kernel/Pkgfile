@@ -8,7 +8,7 @@ license="custom"
 
 name=nvidia-390-kernel
 version=390.157
-release=36
+release=37
 
 run=(kernel)
 KERNELNAME="${name#nvidia-390-}"
@@ -37,10 +37,9 @@ build() {
  patch -Np1 -i ../kernel-6.14.patch
 
  cd kernel
- modules_dir="$(basename /usr/lib/modules/*)"
 
  SYSSRC="/usr/src/kernel" make modules
  install -dm0755 $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
  install -m 0644 *.ko $PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/video
- echo "depmod -a ${modules_dir}" > $PKGMK_ROOT/$name.post-install
+ echo "depmod -a $(basename /usr/lib/modules/*)" > $PKGMK_ROOT/$name.post-install
 }
