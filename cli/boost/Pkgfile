@@ -9,7 +9,8 @@ makedepends=(icu python)
 name=boost
 version=1.88.0
 
-source=(https://archives.boost.io/release/$version/source/${name}_${version//./_}.tar.gz)
+source=(https://download.sourceforge.net/nutyx/boost.cards-1.87.0-1.zst
+        https://archives.boost.io/release/$version/source/${name}_${version//./_}.tar.gz)
 
 prepare() {
  sed -i '/#include.*phoenix.*tuple.hpp.*/d' \
@@ -26,4 +27,14 @@ cd ${name}_${version//./_}
 
 ./b2 install threading=multi link=shared
 ln -svf detail/sha1.hpp $PKG/usr/include/boost/uuid/sha1.hpp
+}
+package() {
+cd $SRC
+bsdtar xf boost.cards-1.87.0-1.zst
+for lib in date_time filesystem atomic locale chrono thread program_options \
+regex system
+do
+  cp -v usr/lib/libboost_$lib.so.1.87.0 \
+  $PKG/usr/lib/
+done
 }
