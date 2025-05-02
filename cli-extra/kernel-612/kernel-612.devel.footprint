@@ -6098,12 +6098,15 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CHACHA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CHACHA20POLY1305 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CHACHA_GENERIC (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CHACHA_INTERNAL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CURVE25519 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CURVE25519_GENERIC (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_CURVE25519_INTERNAL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_DES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_GF128MUL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_POLY1305 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_POLY1305_GENERIC (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_POLY1305_INTERNAL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_POLY1305_RSIZE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_SHA1 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CRYPTO_LIB_SHA256 (EMPTY)
@@ -32592,6 +32595,8 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/turbostat/
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/turbostat/added_perf_counters.py
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/turbostat/defcolumns.py
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/turbostat/smi_aperf_mperf.py
+drwxr-xr-x	root/root	usr/src/kernel-612/tools/testing/selftests/ublk/
+-rwxr-xr-x	root/root	usr/src/kernel-612/tools/testing/selftests/ublk/test_stripe_04.sh
 drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/uevent/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/uevent/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/uevent/Makefile
