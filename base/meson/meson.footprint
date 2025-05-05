@@ -4,15 +4,16 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/COPYING
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.7.2.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/licenses/COPYING
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/meson-1.8.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/__pycache__/
@@ -411,6 +412,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/copy.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/coverage.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/delwithsuffix.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/depaccumulate.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/depfixer.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/depscan.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/dirchanger.cpython-313.pyc
@@ -427,6 +429,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/regen_checker.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/reprotest.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/run_tool.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/rustdoc.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/scanbuild.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/symbolextractor.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycache__/tags.cpython-313.pyc
@@ -443,6 +446,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/copy.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/coverage.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/delwithsuffix.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/depaccumulate.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/depfixer.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/depscan.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/dirchanger.py
@@ -459,6 +463,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/regen_checker.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/reprotest.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/run_tool.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/rustdoc.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/scanbuild.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/symbolextractor.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/mesonbuild/scripts/tags.py
