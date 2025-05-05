@@ -19,11 +19,11 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=257.4
-release=3
+version=257.5
+_version=257.4
 
 source=(consolidate-4.patch
-        https://download.sourceforge.net/nutyx/$name-man-pages-$version.tar.xz
+        https://download.sourceforge.net/nutyx/$name-man-pages-${_version}.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 prepare() {
 cd $name-$version
@@ -60,7 +60,7 @@ DESTDIR=$PKG ninja install
 mkdir -p $PKG/usr/share/man
 for i in 1 3 5 7 8
 do
-  mv ../../$name-man-pages-$version/man$i \
+  mv ../../$name-man-pages-${_version}/man$i \
    $PKG/usr/share/man
 done
 mkdir $PKG/sbin
