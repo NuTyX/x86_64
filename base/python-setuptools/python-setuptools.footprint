@@ -15,15 +15,16 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pkg_resources/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pkg_resources/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pkg_resources/api_tests.txt
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pkg_resources/py.typed (EMPTY)
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-75.8.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/
@@ -54,7 +55,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/msvc.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/namespaces.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/package_index.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/sandbox.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/unicode_utils.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/version.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/warnings.cpython-313.pyc
@@ -145,8 +145,25 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/comp
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/__pycache__/__init__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/__pycache__/numpy.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/__pycache__/py39.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/numpy.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compat/py39.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/base.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/cygwin.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/errors.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/msvc.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/unix.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/__pycache__/zos.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/base.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/cygwin.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/errors.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/msvc.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/unix.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/compilers/C/zos.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/core.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/cygwinccompiler.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/debug.py
@@ -493,26 +510,28 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/typing_
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/typing_extensions-4.12.2.dist-info/RECORD
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/typing_extensions-4.12.2.dist-info/WHEEL
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/typing_extensions.py
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/LICENSE.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.43.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/LICENSE.txt
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/entry_points.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__main__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/__main__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/_bdist_wheel.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/_setuptools_logging.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/bdist_wheel.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/macosx_libfile.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/metadata.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/util.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/__pycache__/wheelfile.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/_bdist_wheel.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/_setuptools_logging.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/bdist_wheel.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/cli/
@@ -535,6 +554,9 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/v
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/__pycache__/__init__.cpython-313.pyc
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/LICENSE.APACHE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/LICENSE.BSD
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/wheel/vendored/packaging/__pycache__/__init__.cpython-313.pyc
@@ -701,7 +723,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/config/_validat
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/msvc.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/namespaces.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/package_index.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/sandbox.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/script (dev).tmpl
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/script.tmpl
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/unicode_utils.py
