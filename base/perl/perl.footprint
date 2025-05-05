@@ -10,7 +10,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/json_pp
 -rwxr-xr-x	root/root	usr/bin/libnetcfg
 -rwxr-xr-x	root/root	usr/bin/perl
--rwxr-xr-x	root/root	usr/bin/perl5.40.1
+-rwxr-xr-x	root/root	usr/bin/perl5.40.2
 -rwxr-xr-x	root/root	usr/bin/perlbug
 -rwxr-xr-x	root/root	usr/bin/perldoc
 -rwxr-xr-x	root/root	usr/bin/perlivp
@@ -418,7 +418,6 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Filter/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Filter/Util/
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Filter/Util/Call.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/FindBin.pm
--rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/GDBM_File.pm
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Getopt/
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Getopt/Long.pm
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Getopt/Long/
@@ -547,7 +546,6 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Module/Load/
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Module/Load/Conditional.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Module/Loaded.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Module/Metadata.pm
--rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/NDBM_File.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/NEXT.pm
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Net/
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Net/Cmd.pm
@@ -572,7 +570,6 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/Net/FTP/
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Net/protoent.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Net/servent.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/O.pm
--rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/ODBM_File.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/Opcode.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/POSIX.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/POSIX.pod
@@ -1160,8 +1157,6 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Filter/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Filter/Util/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Filter/Util/Call/
 -rwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Filter/Util/Call/Call.so
-drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/GDBM_File/
--rwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/GDBM_File/GDBM_File.so
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Hash/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Hash/Util/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Hash/Util/FieldHash/
@@ -1185,10 +1180,6 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Math/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Math/BigInt/
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Math/BigInt/FastCalc/
 -rwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Math/BigInt/FastCalc/FastCalc.so
-drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/NDBM_File/
--rwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/NDBM_File/NDBM_File.so
-drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/ODBM_File/
--rwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/ODBM_File/ODBM_File.so
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Opcode/
 -rwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/Opcode/Opcode.so
 drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/auto/POSIX/
@@ -1344,8 +1335,10 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.40/core_perl/pod/
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5380delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5381delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5382delta.pod
+-rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5383delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5400delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5401delta.pod
+-rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl5402delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl561delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl56delta.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.40/core_perl/pod/perl581delta.pod
