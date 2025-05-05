@@ -1,14 +1,14 @@
 description="Commands for Manipulating POSIX Access Control Lists."
 url="http://savannah.nongnu.org/projects/acl"
 
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(attr)
 
 name=acl
 version=2.3.2
-release=3
+release=4
 
 set=(chroot core)
 
