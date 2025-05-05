@@ -4,14 +4,13 @@ url="https://www.mpfr.org"
 license="GPL-3.0-or-later, LGPL-3.0-or-later"
 
 maintainer="Guillaume Hanrot,Vincent Lefèvre,Patrick Pélissier,Philippe Théveny and Paul Zimmermann"
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gmp texinfo)
 
 name=mpfr
-version=4.2.1
-release=5
+version=4.2.2
 
 set=(chroot core)
 
