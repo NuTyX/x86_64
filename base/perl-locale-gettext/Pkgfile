@@ -1,7 +1,7 @@
 description="Permits access from Perl to the gettext() family of functions"
 url="https://metacpan.org/pod/Locale::gettext"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Alienus,Tnut"
 
 makedepends=(gettext)
@@ -9,7 +9,7 @@ run=(perl)
 
 name=perl-locale-gettext
 version=1.07
-release=3
+release=4
 
 source=(http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-$version.tar.gz)
 
