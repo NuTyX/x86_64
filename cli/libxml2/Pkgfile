@@ -46,10 +46,11 @@ devel() {
 cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib/cmake usr/lib/pkgconfig usr/lib/cmake \
+usr/lib/cmake usr/lib/pkgconfig \
 usr/include
 
-#rm -r usr/lib/{cmake,pkgconfig}}
+
+rm -r usr/{include,lib/{cmake,pkgconfig}}
 rm -d usr/lib || true
 }
 
