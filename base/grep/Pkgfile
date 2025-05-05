@@ -2,16 +2,15 @@ description="Searches input(s) file(s) for lines containing a match to a specifi
 url="https://www.gnu.org/software/grep/"
 
 maintainer="Jim Meyering jim at meyering dot net,Paolo Bonzini bonzini at gnu dot org"
-contributors="Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(perl)
 
 set=(core)
 
 name=grep
-version=3.11
-release=2
+version=3.12
 
 PKGMK_LOCALES=()
 
