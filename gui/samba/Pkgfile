@@ -8,12 +8,11 @@ contributors="Pierre,Greg,Tnut"
 
 makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
              docbook-xsl avahi gnutls libgpg-error popt talloc lmdb
-             python icu cups kerberos libcap openldap tdb perl-json perl-yapp)
+             python icu cups kerberos libcap openldap tdb perl-json)
 run=(samba.lib)
 
 name=samba
-version=4.22.0
-release=2
+version=4.22.1
 
 scriptsversion=20250125
 
@@ -24,9 +23,6 @@ source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx
 
 build() {
 cd $name-$version
-
-sed -r 's/nss_(setpw|endpw|setgr|endgr)ent/my_&/' \
-    -i nsswitch/nsstest.c
 
 python3 -m venv pyvenv &&
 ./pyvenv/bin/pip3 install cryptography pyasn1 iso8601
