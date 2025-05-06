@@ -17,10 +17,12 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/code_generator_lite.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/command_line_interface.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/cpp/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/cpp/generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/cpp/helpers.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/cpp/names.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/cpp/options.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/csharp/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/csharp/csharp_generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/csharp/names.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/importer.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/java/
@@ -32,8 +34,11 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/java/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/name_resolver.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/names.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/options.h
+drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/kotlin/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/kotlin/generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/notices.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/objectivec/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/objectivec/generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/objectivec/line_consumer.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/objectivec/names.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/objectivec/nsobject_methods.h
@@ -44,7 +49,12 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/php/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/plugin.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/plugin.pb.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/plugin.proto
+drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/python/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/python/generator.h
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/python/pyi_generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/retention.h
+drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/ruby/
+-rw-r--r--	root/root	usr/include/google/protobuf/compiler/ruby/ruby_generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/scc.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/subprocess.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/versions.h
