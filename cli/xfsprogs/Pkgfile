@@ -1,14 +1,13 @@
 description="XFS filesystem administration and debugging tools"
 url="https://xfs.wiki.kernel.org"
 
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(git gzip gettext inih util-linux liburcu systemd)
 
 name=xfsprogs
-version=6.13.0
-release=2
+version=6.14.0
 
 source=(https://www.kernel.org/pub/linux/utils/fs/xfs/$name/$name-$version.tar.xz)
 
