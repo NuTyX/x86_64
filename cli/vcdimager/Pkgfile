@@ -8,9 +8,16 @@ makedepends=(libcdio libxml2 popt)
 
 name=vcdimager
 version=2.0.1
-release=7
+release=8
 
-source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz
+        libxml214.patch)
+
+prepare() {
+cd $name-$version
+
+patch -Np1 -i ../libxml214.patch
+}
 
 package() {
 # Obsolet lib
