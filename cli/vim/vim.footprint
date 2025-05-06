@@ -163,6 +163,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/compiler/
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/gfortran.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/ghc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/gjs.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/compiler/gleam_build.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/gm2.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/gnat.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/go.vim
@@ -264,6 +265,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/aap.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/abap.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/abaqus.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/abnf.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/ada.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/alsaconf.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/ant.vim
@@ -323,6 +325,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/cuda.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/cvsrc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/dart.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/dax.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/deb822sources.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/debchangelog.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/debcontrol.vim
@@ -382,6 +385,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/gpg.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/gprof.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/graphql.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/groff.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/groovy.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/group.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/grub.vim
@@ -439,6 +443,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/leo.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/less.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/lex.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/lf.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/lftp.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/libao.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/limits.vim
@@ -470,6 +475,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/markdown.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/masm.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/matlab.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/mbsync.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/mediawiki.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/mermaid.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/meson.vim
@@ -522,6 +528,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/poefilter.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/poke.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/postscr.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/pq.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/prisma.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/procmail.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/prolog.vim
@@ -546,6 +553,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/rasi.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/readline.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/registry.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/remind.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/requirements.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/rescript.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/reva.vim
@@ -854,6 +862,8 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/keymap/
 -rw-r--r--	root/root	usr/share/vim/vim91/keymap/armenian-eastern_utf-8.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/keymap/armenian-western_utf-8.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/keymap/belarusian-jcuken.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/keymap/brazilian_portuguese-abnt.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/keymap/brazilian_portuguese-compact.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/keymap/bulgarian-bds.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/keymap/bulgarian-phonetic.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/keymap/canfr-win.vim
@@ -1253,6 +1263,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/d.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/dart.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/datascript.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/syntax/dax.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/dcd.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/dcl.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/deb822sources.vim
@@ -1349,6 +1360,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/gitrebase.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/gitsendemail.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/gkrellmrc.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/syntax/gleam.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/glsl.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/gnash.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/gnuplot.vim
@@ -1501,6 +1513,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/master.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/matlab.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/maxima.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/syntax/mbsync.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/mediawiki.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/mel.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/mermaid.vim
@@ -1608,6 +1621,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/modula2/opt/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/povini.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/ppd.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/ppwiz.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/syntax/pq.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/prescribe.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/privoxy.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/procmail.vim
@@ -1963,6 +1977,8 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/tutor/sr/
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.es.utf-8
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.fr
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.fr.utf-8
+-rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.gl
+-rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.gl.utf-8
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.hr
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.hr.cp1250
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.hr.utf-8
@@ -2011,6 +2027,8 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/tutor/sr/
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.zh_cn.utf-8
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor1.zh_tw.utf-8
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor2
+-rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor2.gl
+-rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor2.gl.utf-8
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor2.it
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor2.it.utf-8
 -rw-r--r--	root/root	usr/share/vim/vim91/tutor/tutor2.ru.utf-8
