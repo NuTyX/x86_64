@@ -25,17 +25,17 @@ drwxr-xr-x	root/root	usr/etc/profile.d/
 -rw-r--r--	root/root	usr/etc/profile.d/debuginfod.csh
 -rw-r--r--	root/root	usr/etc/profile.d/debuginfod.sh
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libasm-0.192.so
+-rwxr-xr-x	root/root	usr/lib/libasm-0.193.so
 -rw-r--r--	root/root	usr/lib/libasm.a
 lrwxrwxrwx	root/root	usr/lib/libasm.so -> libasm.so.1
-lrwxrwxrwx	root/root	usr/lib/libasm.so.1 -> libasm-0.192.so
--rwxr-xr-x	root/root	usr/lib/libdebuginfod-0.192.so
-lrwxrwxrwx	root/root	usr/lib/libdebuginfod.so -> libdebuginfod-0.192.so
-lrwxrwxrwx	root/root	usr/lib/libdebuginfod.so.1 -> libdebuginfod-0.192.so
--rwxr-xr-x	root/root	usr/lib/libdw-0.192.so
+lrwxrwxrwx	root/root	usr/lib/libasm.so.1 -> libasm-0.193.so
+-rwxr-xr-x	root/root	usr/lib/libdebuginfod-0.193.so
+lrwxrwxrwx	root/root	usr/lib/libdebuginfod.so -> libdebuginfod-0.193.so
+lrwxrwxrwx	root/root	usr/lib/libdebuginfod.so.1 -> libdebuginfod-0.193.so
+-rwxr-xr-x	root/root	usr/lib/libdw-0.193.so
 -rw-r--r--	root/root	usr/lib/libdw.a
 lrwxrwxrwx	root/root	usr/lib/libdw.so -> libdw.so.1
-lrwxrwxrwx	root/root	usr/lib/libdw.so.1 -> libdw-0.192.so
+lrwxrwxrwx	root/root	usr/lib/libdw.so.1 -> libdw-0.193.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/fish/
 drwxr-xr-x	root/root	usr/share/fish/vendor_conf.d/
