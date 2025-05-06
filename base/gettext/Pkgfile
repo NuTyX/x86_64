@@ -12,7 +12,7 @@ set=(devel core)
 makedepends=(acl attr ncurses)
 
 name=gettext
-version=0.24
+version=0.24.1
 
 PKGMK_LOCALES=()
 
@@ -36,7 +36,7 @@ devel()
 cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/${name}.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/include usr/share/aclocal usr/share/gettext
+usr/include usr/share/gettext
 
-rm -r usr/include usr/share/aclocal usr/share/gettext
+rm -r usr/include usr/share/gettext
 }
