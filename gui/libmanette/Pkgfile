@@ -4,9 +4,10 @@ url="https://wiki.gnome.org/Apps/Games"
 packager="spiky <spiky@nutyx.org>"
 
 name=libmanette
-version=0.2.9
+version=0.2.12
 
-makedepends=(meson ninja vala libevdev libgudev gobject-introspection)
+makedepends=(meson ninja vala libevdev libgudev gobject-introspection hidapi)
+
 source=(https://download.gnome.org/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
 build=meson
