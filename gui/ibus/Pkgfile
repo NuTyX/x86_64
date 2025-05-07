@@ -11,8 +11,7 @@ makedepends=(dconf iso-codes gobject-introspection gtk3 gtk4 dbus-launch
 run=(python-dbus python-gobject)
 
 name=ibus
-version=1.5.31
-release=2
+version=1.5.32
 
 source=(https://github.com/ibus/ibus/archive/refs/tags/$version.tar.gz)
 
