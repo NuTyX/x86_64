@@ -1,0 +1,30 @@
+description='Simple library for communicating with USB and Bluetooth HID devices'
+url='https://github.com/libusb/hidapi'
+
+license=(GPL3 BSD)
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(cmake libusb)
+
+name=hidapi
+version=0.14.0
+
+source=(https://github.com/libusb/hidapi/archive/refs/tags/hidapi-$version.tar.gz)
+
+build() {
+cd $name-$name-$version
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+      -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
+make
+make DESTDIR=$PKG install
+
+install -Dm644 LICENSE-bsd.txt $PKG/usr/share/licenses/$name/LICENSE-bsd.txt
+install -Dm644 LICENSE-gpl3.txt $PKG/usr/share/licenses/$name/LICENSE-gpl3.txt
+install -Dm644 LICENSE-orig.txt $PKG/usr/share/licenses/$name/LICENSE-orig.txt
+install -Dm644 LICENSE.txt $PKG/usr/share/licenses/$name/LICENSE.txt
+}
