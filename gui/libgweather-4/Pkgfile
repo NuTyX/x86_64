@@ -12,6 +12,7 @@ run=(gtk-update-icon-cache)
 
 name=libgweather-4
 version=4.4.4
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/libgweather/-/archive/$version/libgweather-$version.tar.gz
         disable-metar-test.patch)
