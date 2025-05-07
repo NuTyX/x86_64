@@ -5,14 +5,15 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
-             gstreamer-plugins-bad xorg-libxt gtk2 gtk3 gtk-doc
+             gstreamer-plugins-bad xorg-libxt gtk3 gtk-doc
              hunspell hyphen icu libgudev libsecret libsoup3 sysprof
-             libwebp mesa ruby sqlite enchant geoclue2 libavif
+             libwebp mesa ruby sqlite enchant geoclue2 libavif libmanette
              gobject-introspection hicolor-icon-theme llvm wpebackend-fdo
              harfbuzz gtk-doc libnotify wayland woff2 unifdef)
 
 name=webkit2gtk-4
 version=2.48.1
+release=2
 
 source=(https://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
 
