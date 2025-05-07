@@ -4,13 +4,14 @@ url="http://gparted.sourceforge.net/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Greg,Tnut"
 
-makedepends=(gtk2 parted gtkmm libsigc++ lvm2 docbook-xsl polkit intltool
+makedepends=(parted gtkmm libsigc++ lvm2 docbook-xsl polkit intltool
              perl-xml-parser)
 run=(polkit ntfs-3g jfsutils btrfs-progs reiserfsprogs xfsprogs dosfstools mtools)
 
 
 name=gparted
 version=1.7.0
+release=2
 
 source=(https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
