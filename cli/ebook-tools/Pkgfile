@@ -8,7 +8,7 @@ makedepends=(cmake libxml2 libzip)
 
 name=ebook-tools
 version=0.2.2
-release=4
+release=5
 
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
@@ -18,7 +18,9 @@ mkdir build
 cd build
 cmake ../$name-$version        \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=/usr
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
 make
 make DESTDIR=$PKG install
 
