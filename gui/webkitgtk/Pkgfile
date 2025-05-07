@@ -9,12 +9,13 @@ contributors="Pierre,Greg,Fanch,Tnut"
 makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
              gstreamer-plugins-bad xorg-libxt gtk2 gtk3 gtk-doc
              hunspell hyphen icu libgudev libsecret libsoup sysprof
-             libwebp mesa ruby sqlite enchant geoclue2 libavif
+             libwebp mesa ruby sqlite enchant geoclue2 libavif libmanette
              gobject-introspection hicolor-icon-theme llvm wpebackend-fdo
              harfbuzz gtk-doc libnotify wayland woff2 unifdef)
              
 name=webkitgtk
 version=2.48.1
+release=2
 
 source=(http://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
 
