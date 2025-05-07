@@ -7,10 +7,9 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 name=appmenu-gtk-module
-version=24.05
-release=2
+version=25.04
 
-makedepends=(gtk2 gtk3 meson)
+makedepends=(gtk3 meson)
 source=(https://gitlab.com/vala-panel-project/vala-panel-appmenu/-/archive/$version/vala-panel-appmenu-$version.tar.gz
         80-appmenu-gtk-module.sh)
 
