@@ -1,15 +1,15 @@
 description="Storage volume encryption keys and storing them separately from volumes to handle forgotten passphrases."
 url="https://releases.pagure.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(systemd python nss cryptsetup glib gpgme swig)
 run=(python)
 
 name=volume_key
 version=0.3.12
-release=10
+release=11
 
 source=(  https://releases.pagure.org/volume_key/volume_key-$version.tar.xz )
 
