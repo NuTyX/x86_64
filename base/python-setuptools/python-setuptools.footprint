@@ -15,16 +15,14 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pkg_resources/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pkg_resources/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pkg_resources/api_tests.txt
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pkg_resources/py.typed (EMPTY)
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.0.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools-80.3.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/
@@ -37,6 +35,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/_normalization.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/_path.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/_reqs.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/_scripts.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/_shutil.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/_static.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/archive_util.cpython-313.pyc
@@ -54,7 +53,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/monkey.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/msvc.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/namespaces.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/package_index.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/unicode_utils.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/version.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/__pycache__/warnings.cpython-313.pyc
@@ -191,6 +189,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_distutils/comp
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_normalization.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_path.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_reqs.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_scripts.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_shutil.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/_static.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/_vendor/
@@ -722,7 +721,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/setuptools/config/_validat
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/monkey.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/msvc.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/namespaces.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/package_index.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/script (dev).tmpl
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/script.tmpl
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/setuptools/unicode_utils.py
