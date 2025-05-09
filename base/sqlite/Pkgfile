@@ -6,7 +6,7 @@ contributors="Pierre,Remy,Tnut"
 
 
 name=sqlite
-version=3480000
+version=3490200
 
 source=(https://sqlite.org/2025/sqlite-autoconf-$version.tar.gz)
 
@@ -28,5 +28,5 @@ build() {
 
   make DESTDIR=$PKG install
 
-  rm $PKG/usr/lib/libsqlite3.la
+#  rm $PKG/usr/lib/libsqlite3.la
 }
