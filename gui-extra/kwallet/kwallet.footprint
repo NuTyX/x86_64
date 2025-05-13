@@ -1,5 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ksecretd
 -rwxr-xr-x	root/root	usr/bin/kwallet-query
 -rwxr-xr-x	root/root	usr/bin/kwalletd6
 drwxr-xr-x	root/root	usr/lib/
@@ -10,21 +11,22 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6Wallet/
 -rw-r--r--	root/root	usr/lib/cmake/KF6Wallet/KF6WalletTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6Wallet/KF6WalletTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6Wallet.so -> libKF6Wallet.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6Wallet.so.6 -> libKF6Wallet.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKF6Wallet.so.6.13.0
-lrwxrwxrwx	root/root	usr/lib/libKF6WalletBackend.so.6 -> libKF6WalletBackend.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKF6WalletBackend.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKF6Wallet.so.6 -> libKF6Wallet.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKF6Wallet.so.6.14.0
+lrwxrwxrwx	root/root	usr/lib/libKF6WalletBackend.so.6 -> libKF6WalletBackend.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKF6WalletBackend.so.6.14.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
--rw-r--r--	root/root	usr/share/applications/org.kde.kwalletd6.desktop
+-rw-r--r--	root/root	usr/share/applications/org.kde.ksecretd.desktop
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/kf6_org.kde.KWallet.xml
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.kwalletd5.service
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.kwalletd6.service
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.secretservicecompat.service
 drwxr-xr-x	root/root	usr/share/knotifications6/
--rw-r--r--	root/root	usr/share/knotifications6/kwalletd6.notifyrc
+-rw-r--r--	root/root	usr/share/knotifications6/ksecretd.notifyrc
 drwxr-xr-x	root/root	usr/share/qlogging-categories6/
 -rw-r--r--	root/root	usr/share/qlogging-categories6/kwallet.categories
 -rw-r--r--	root/root	usr/share/qlogging-categories6/kwallet.renamecategories
