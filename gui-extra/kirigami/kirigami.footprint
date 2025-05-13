@@ -16,26 +16,29 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6KirigamiPlatform/
 -rw-r--r--	root/root	usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKirigami.so -> libKirigami.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigami.so.6 -> libKirigami.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigami.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigami.so.6 -> libKirigami.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigami.so.6.14.0
 lrwxrwxrwx	root/root	usr/lib/libKirigamiDelegates.so -> libKirigamiDelegates.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigamiDelegates.so.6 -> libKirigamiDelegates.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigamiDelegates.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiDelegates.so.6 -> libKirigamiDelegates.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiDelegates.so.6.14.0
 lrwxrwxrwx	root/root	usr/lib/libKirigamiDialogs.so -> libKirigamiDialogs.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigamiDialogs.so.6 -> libKirigamiDialogs.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigamiDialogs.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiDialogs.so.6 -> libKirigamiDialogs.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiDialogs.so.6.14.0
 lrwxrwxrwx	root/root	usr/lib/libKirigamiLayouts.so -> libKirigamiLayouts.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigamiLayouts.so.6 -> libKirigamiLayouts.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigamiLayouts.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiLayouts.so.6 -> libKirigamiLayouts.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiLayouts.so.6.14.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiLayoutsPrivate.so -> libKirigamiLayoutsPrivate.so.6
+lrwxrwxrwx	root/root	usr/lib/libKirigamiLayoutsPrivate.so.6 -> libKirigamiLayoutsPrivate.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiLayoutsPrivate.so.6.14.0
 lrwxrwxrwx	root/root	usr/lib/libKirigamiPlatform.so -> libKirigamiPlatform.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigamiPlatform.so.6 -> libKirigamiPlatform.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigamiPlatform.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiPlatform.so.6 -> libKirigamiPlatform.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiPlatform.so.6.14.0
 lrwxrwxrwx	root/root	usr/lib/libKirigamiPrimitives.so -> libKirigamiPrimitives.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigamiPrimitives.so.6 -> libKirigamiPrimitives.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigamiPrimitives.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiPrimitives.so.6 -> libKirigamiPrimitives.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiPrimitives.so.6.14.0
 lrwxrwxrwx	root/root	usr/lib/libKirigamiPrivate.so -> libKirigamiPrivate.so.6
-lrwxrwxrwx	root/root	usr/lib/libKirigamiPrivate.so.6 -> libKirigamiPrivate.so.6.13.0
--rwxr-xr-x	root/root	usr/lib/libKirigamiPrivate.so.6.13.0
+lrwxrwxrwx	root/root	usr/lib/libKirigamiPrivate.so.6 -> libKirigamiPrivate.so.6.14.0
+-rwxr-xr-x	root/root	usr/lib/libKirigamiPrivate.so.6.14.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
@@ -110,6 +113,12 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/KirigamiLayouts.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/kde-qmlmodule.version
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/libKirigamiLayoutsplugin.so
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/private/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/private/ColumnViewSeparator.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/private/KirigamiLayoutsPrivate.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/private/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/private/libKirigamiLayoutsPrivateplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/private/qmldir
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/layouts/qmldir
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/libKirigamiplugin.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/platform/
@@ -176,6 +185,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/GenericDrawerIcon.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/IconPropertiesGroup.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/MenuIcon.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/NavigationButton.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/PassiveNotificationsManager.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/private/qmldir
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigami/templates/qmldir
