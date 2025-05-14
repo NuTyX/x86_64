@@ -3,14 +3,14 @@ url="https://musicbrainz.org/doc/libmusicbrainz"
 
 license="LGPL-2.1-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libxml2 cmake expat neon doxygen)
 
 name=libmusicbrainz5
 version=5.1.0
-release=4
+release=5
 
 source=(libmusicbrainz5-5.patch libmusicbrainz5-16.patch libmusicbrainz5-19.patch
         https://github.com/metabrainz/libmusicbrainz/releases/download/release-$version/libmusicbrainz-$version.tar.gz)
@@ -24,7 +24,8 @@ patch -Np1 -i ../libmusicbrainz5-19.patch
 build() {
 cmake -S libmusicbrainz-$version -B build -G Ninja \
 -DCMAKE_INSTALL_PREFIX:PATH=/usr \
--DCMAKE_BUILD_TYPE=None
+-DCMAKE_BUILD_TYPE=None \
+-DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 cmake --build build
 cmake --build build --target docs
