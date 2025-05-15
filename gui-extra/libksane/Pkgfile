@@ -3,8 +3,8 @@ url="https://www.kde.org/"
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Fabienwang,Tnut"
 
 set=(kde6 kde6-gear)
 
@@ -12,7 +12,7 @@ makedepends=(ksanecore extra-cmake-modules qt6-base ki18n kwallet ktextwidgets
              kwidgetsaddons)
 
 name=libksane
-version=25.04.0
+version=25.04.1
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
