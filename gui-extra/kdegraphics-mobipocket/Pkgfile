@@ -3,15 +3,15 @@ url='https://kde.org/'
 
 license='GPL-2.0-or-later, LGPL-2.0-or-later'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(kde6 kde6-gear)
 
 makedepends=(qt6-base qt6-5compat extra-cmake-modules)
 
 name=kdegraphics-mobipocket
-version=25.04.0
+version=25.04.1
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
