@@ -4,9 +4,10 @@ packager="spiky <spiky@nutyx.org>"
 
 name=libpng
 version=1.6.48
+release=2
 
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.xz
-	https://downloads.sourceforge.net/sourceforge/libpng-apng/$name-1.6.47-apng.patch.gz)
+	https://downloads.sourceforge.net/sourceforge/libpng-apng/$name-$version-apng.patch.gz)
 
 build() {
 cd $name-$version
