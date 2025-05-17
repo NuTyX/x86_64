@@ -1,6 +1,8 @@
 description="A dictionary plugin for the XFCE Graphical interface"
 url="http://goodies.xfce.org/projects/applications/xfce4-dict"
 
+license="GPL2"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
@@ -10,14 +12,23 @@ run=(hicolor-icon-theme)
 set=(xfce4-extra)
 
 name=xfce4-dict
-version=0.8.8
+version=0.8.9
 
-source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr \
---sysconfdir=/etc
-make
-make DESTDIR=$PKG install
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
