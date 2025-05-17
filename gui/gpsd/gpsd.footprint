@@ -15,6 +15,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gpsdecode
 -rwxr-xr-x	root/root	usr/bin/gpsfake
 -rwxr-xr-x	root/root	usr/bin/gpsinit
+-rwxr-xr-x	root/root	usr/bin/gpslogntp
 -rwxr-xr-x	root/root	usr/bin/gpsmon
 -rwxr-xr-x	root/root	usr/bin/gpspipe
 -rwxr-xr-x	root/root	usr/bin/gpsplot
@@ -39,9 +40,10 @@ lrwxrwxrwx	root/root	usr/lib/libgpsdpacket.so.30 -> libgpsdpacket.so.30.0.0
 -rwxr-xr-x	root/root	usr/lib/libgpsdpacket.so.30.0.0
 drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/gps-3.25.egg-info
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/gps-3.26.egg-info
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/gps/
 -rwxr-xr-x	root/root	usr/lib/python3.13/site-packages/gps/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/gps/__main__.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/gps/aiogps.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/gps/client.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/gps/clienthelpers.py
