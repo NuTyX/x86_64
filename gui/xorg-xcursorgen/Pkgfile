@@ -6,8 +6,7 @@ PKGMK_GROUPS=(doc man)
 url="http://xorg.freedesktop.org"
 
 name=xorg-xcursorgen
-version=1.0.8
-release=2
+version=1.0.9
 
 _name=${name/xorg-/}
 makedepends=(xorg-libx11 xorg-libxcursor libpng)
