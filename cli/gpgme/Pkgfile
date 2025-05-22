@@ -7,7 +7,7 @@ contributors="Pierre,Tnut"
 makedepends=(libassuan libgpg-error python)
 
 name=gpgme
-version=1.24.2
+version=1.24.3
 
 source=(https://www.gnupg.org/ftp/gcrypt/$name/$name-$version.tar.bz2)
 build() {
