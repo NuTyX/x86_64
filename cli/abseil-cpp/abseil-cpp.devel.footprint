@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/include/absl/base/
 -rw-r--r--	root/root	usr/include/absl/base/config.h
 -rw-r--r--	root/root	usr/include/absl/base/const_init.h
 -rw-r--r--	root/root	usr/include/absl/base/dynamic_annotations.h
+-rw-r--r--	root/root	usr/include/absl/base/fast_type_id.h
 drwxr-xr-x	root/root	usr/include/absl/base/internal/
 -rw-r--r--	root/root	usr/include/absl/base/internal/atomic_hook.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/atomic_hook_test_helper.h
@@ -21,15 +22,13 @@ drwxr-xr-x	root/root	usr/include/absl/base/internal/
 -rw-r--r--	root/root	usr/include/absl/base/internal/errno_saver.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/exception_safety_testing.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/exception_testing.h
--rw-r--r--	root/root	usr/include/absl/base/internal/fast_type_id.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/hide_ptr.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/identity.h
--rw-r--r--	root/root	usr/include/absl/base/internal/inline_variable.h
--rw-r--r--	root/root	usr/include/absl/base/internal/inline_variable_testing.h
--rw-r--r--	root/root	usr/include/absl/base/internal/invoke.h
+-rw-r--r--	root/root	usr/include/absl/base/internal/iterator_traits.h
+-rw-r--r--	root/root	usr/include/absl/base/internal/iterator_traits_test_helper.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/low_level_alloc.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/low_level_scheduling.h
--rw-r--r--	root/root	usr/include/absl/base/internal/nullability_impl.h
+-rw-r--r--	root/root	usr/include/absl/base/internal/nullability_deprecated.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/per_thread_tls.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/poison.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/pretty_function.h
@@ -85,6 +84,7 @@ drwxr-xr-x	root/root	usr/include/absl/container/internal/
 -rw-r--r--	root/root	usr/include/absl/container/internal/hash_generator_testing.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hash_policy_testing.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hash_policy_traits.h
+-rw-r--r--	root/root	usr/include/absl/container/internal/hashtable_control_bytes.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hashtable_debug.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hashtable_debug_hooks.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hashtablez_sampler.h
@@ -93,6 +93,7 @@ drwxr-xr-x	root/root	usr/include/absl/container/internal/
 -rw-r--r--	root/root	usr/include/absl/container/internal/node_slot_policy.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/raw_hash_map.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/raw_hash_set.h
+-rw-r--r--	root/root	usr/include/absl/container/internal/raw_hash_set_resize_impl.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/test_allocator.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/test_instance_tracker.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/tracked.h
@@ -123,6 +124,7 @@ drwxr-xr-x	root/root	usr/include/absl/debugging/
 -rw-r--r--	root/root	usr/include/absl/debugging/failure_signal_handler.h
 drwxr-xr-x	root/root	usr/include/absl/debugging/internal/
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/address_is_readable.h
+-rw-r--r--	root/root	usr/include/absl/debugging/internal/addresses.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/bounded_utf8_length_sequence.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/decode_rust_punycode.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/demangle.h
@@ -189,6 +191,7 @@ drwxr-xr-x	root/root	usr/include/absl/hash/internal/
 -rw-r--r--	root/root	usr/include/absl/hash/internal/hash_test.h
 -rw-r--r--	root/root	usr/include/absl/hash/internal/low_level_hash.h
 -rw-r--r--	root/root	usr/include/absl/hash/internal/spy_hash_state.h
+-rw-r--r--	root/root	usr/include/absl/hash/internal/weakly_mixed_integer.h
 drwxr-xr-x	root/root	usr/include/absl/log/
 -rw-r--r--	root/root	usr/include/absl/log/absl_check.h
 -rw-r--r--	root/root	usr/include/absl/log/absl_log.h
@@ -261,6 +264,7 @@ drwxr-xr-x	root/root	usr/include/absl/random/internal/
 -rw-r--r--	root/root	usr/include/absl/random/internal/chi_square.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/distribution_caller.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/distribution_test_util.h
+-rw-r--r--	root/root	usr/include/absl/random/internal/entropy_pool.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/explicit_seed_seq.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/fast_uniform_bits.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/fastmath.h
@@ -273,7 +277,6 @@ drwxr-xr-x	root/root	usr/include/absl/random/internal/
 -rw-r--r--	root/root	usr/include/absl/random/internal/nonsecure_base.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/pcg_engine.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/platform.h
--rw-r--r--	root/root	usr/include/absl/random/internal/pool_urbg.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/randen.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/randen_detect.h
 -rw-r--r--	root/root	usr/include/absl/random/internal/randen_engine.h
@@ -413,20 +416,13 @@ drwxr-xr-x	root/root	usr/include/absl/time/internal/cctz/src/
 -rw-r--r--	root/root	usr/include/absl/time/time.h
 drwxr-xr-x	root/root	usr/include/absl/types/
 -rw-r--r--	root/root	usr/include/absl/types/any.h
--rw-r--r--	root/root	usr/include/absl/types/bad_any_cast.h
--rw-r--r--	root/root	usr/include/absl/types/bad_optional_access.h
--rw-r--r--	root/root	usr/include/absl/types/bad_variant_access.h
 -rw-r--r--	root/root	usr/include/absl/types/compare.h
 drwxr-xr-x	root/root	usr/include/absl/types/internal/
--rw-r--r--	root/root	usr/include/absl/types/internal/optional.h
 -rw-r--r--	root/root	usr/include/absl/types/internal/span.h
--rw-r--r--	root/root	usr/include/absl/types/internal/variant.h
 -rw-r--r--	root/root	usr/include/absl/types/optional.h
 -rw-r--r--	root/root	usr/include/absl/types/span.h
 -rw-r--r--	root/root	usr/include/absl/types/variant.h
 drwxr-xr-x	root/root	usr/include/absl/utility/
-drwxr-xr-x	root/root	usr/include/absl/utility/internal/
--rw-r--r--	root/root	usr/include/absl/utility/internal/if_constexpr.h
 -rw-r--r--	root/root	usr/include/absl/utility/utility.h
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_absl_check.pc
@@ -438,7 +434,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_any_invocable.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_atomic_hook.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bad_any_cast.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/absl_bad_any_cast_impl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bad_optional_access.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bad_variant_access.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_base.pc
@@ -509,13 +504,15 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hash_container_defaults.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hash_function_defaults.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hash_policy_traits.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_control_bytes.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_debug.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_debug_hooks.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtablez_sampler.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/absl_if_constexpr.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_inlined_vector.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_inlined_vector_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_int128.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_iterator_traits_internal.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_iterator_traits_test_helper_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_kernel_timeout_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_layout.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_leak_check.pc
@@ -571,6 +568,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_distributions.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_distribution_caller.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_distribution_test_util.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_entropy_pool.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_fast_uniform_bits.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_fastmath.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_generate_real.pc
@@ -579,7 +577,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_nonsecure_base.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_pcg_engine.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_platform.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_pool_urbg.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_randen.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_randen_engine.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_randen_hwaes.pc
@@ -595,6 +592,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_seed_sequences.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_hash_map.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_hash_set.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_hash_set_resize_impl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_logging_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_sample_recorder.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_scoped_set_env.pc
@@ -621,3 +619,4 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_variant.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_vlog_config_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_vlog_is_on.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_weakly_mixed_integer.pc
