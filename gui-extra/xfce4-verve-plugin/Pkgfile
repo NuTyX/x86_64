@@ -1,6 +1,8 @@
 description="Command line plugin Xfce4 panel."
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-verve-plugin"
 
+license="GPL2"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Fabienwang,PierreB,Greg,Tnut"
 
@@ -8,21 +10,24 @@ makedepends=(libxfce4util libxfce4ui xfce4-panel)
 set=(xfce4-extra)
 
 name=xfce4-verve-plugin
-version=2.0.4
+version=2.1.0
 
-source=(http://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+source=(http://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 
 cd $name-$version
 
-./configure --prefix=/usr \
---disable-debug
+mkdir build
+cd    build
 
-make
-make DESTDIR=$PKG install
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
 
-# LICENSE
+ninja
 
-install -Dm0644 COPYING $PKG/usr/share/licenses/$name/COPYING 
+DESTDIR=$PKG ninja install
+
+install -Dm0644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
