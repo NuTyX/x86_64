@@ -12,19 +12,25 @@ makedepends=(libxfce4util libxfce4ui xfce4-panel libunique1
 set=(xfce4-extra)
 
 name=xfce4-clipman-plugin
-version=1.6.7
+version=1.7.0
 
-source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 
 cd $name-$version
 
-./configure --prefix=/usr \
-    --sysconfdir=/etc
+mkdir build
+cd    build
 
-make
-make DESTDIR=$PKG install
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
 
-install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING	
+ninja
+
+DESTDIR=$PKG ninja install
+
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING	
 }
