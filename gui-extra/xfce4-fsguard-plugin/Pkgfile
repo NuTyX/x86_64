@@ -1,6 +1,8 @@
 description="File system usage monitor plugin for the Xfce4 panel"
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-fsguard-plugin"
 
+license="Custom"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Tyrry,Greg,Fabianwang,Tnut"
 
@@ -9,15 +11,24 @@ makedepends=(libxfce4util libxfce4ui xfce4-panel)
 set=(xfce4-extra)
 
 name=xfce4-fsguard-plugin
-version=1.1.4
+version=1.2.0
 
-source=(https://archive.xfce.org/src/panel-plugins/$name/${version:0:3}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version:0:3}/$name-$version.tar.xz)
 
 build() {
 
 cd $name-$version
-./configure --prefix=/usr \
---sysconfdir=/etc
-make
-make DESTDIR=$PKG install
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
