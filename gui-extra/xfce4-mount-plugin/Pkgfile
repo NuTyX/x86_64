@@ -1,6 +1,8 @@
 description="Mount/umount plugin for the Xfce panel."
 url="https://docs.xfce.org/panel-plugins/xfce4-mount-plugin"
 
+license="GPL2"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
@@ -10,17 +12,24 @@ run=(hicolor-icon-theme)
 set=(xfce4-extra)
 
 name=xfce4-mount-plugin
-version=1.1.7
+version=1.2.0
 
-source=(https://archive.xfce.org/src/panel-plugins/$name/${version:0:3}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version:0:3}/$name-$version.tar.xz)
 
 build() {
 
 cd $name-$version
-./configure --prefix=/usr \
---sysconfdir=/etc \
---localstatedir=/var \
---disable-static
-make
-make DESTDIR=$PKG install
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
