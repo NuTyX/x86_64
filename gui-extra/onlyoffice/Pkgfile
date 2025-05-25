@@ -3,15 +3,14 @@ url='https://www.onlyoffice.com/'
 
 license="AGPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gtk3 nss gstreamer gstreamer-plugins-base gstreamer-plugins-ugly ttf-liberation 
              dejavu-ttf ttf-carlito ttf-ms-fonts desktop-file-utils hicolor-icon-theme libreoffice)
 
 name=onlyoffice
-version=8.2.0
-release=2
+version=8.3.3
 
 PKGMK_IGNORE_UNPACK="yes"
 PKGMK_IGNORE_RUNTIMELIBS="yes"
