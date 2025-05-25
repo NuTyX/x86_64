@@ -1,6 +1,8 @@
 description="Alternate menu for Xfce4"
 url="http://gottcode.org/xfce4-whiskermenu-plugin/"
 
+license="GPL2"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
@@ -9,9 +11,9 @@ makedepends=(libxfce4util libxfce4ui
 set=(xfce4-extra)
 
 name=xfce4-whiskermenu-plugin
-version=2.9.2
+version=2.10.0
 
-source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 
@@ -24,5 +26,7 @@ cmake \
 
 make
 make DESTDIR=$PKG install
+
+install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 
 }
