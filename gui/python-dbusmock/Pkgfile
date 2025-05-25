@@ -13,8 +13,7 @@ name=python-dbusmock
 _name="python_dbusmock"
 alias=(${_name})
 
-version=0.34.3
-release=3
+version=0.35.0
 
 source=(https://github.com/martinpitt/${name}/releases/download/$version/dist.${_name}-$version.tar.gz)
 
