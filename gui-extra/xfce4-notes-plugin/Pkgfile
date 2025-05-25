@@ -1,6 +1,8 @@
 description="A notes plugin for the XFCE4 GUI"
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin"
 
+license="GPL2"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Fabienwang,Tnut"
 
@@ -10,15 +12,23 @@ run=(hicolor-icon-theme)
 set=(xfce4-extra)
 
 name=xfce4-notes-plugin
-version=1.11.2
+version=1.12.0
 
-source=(http://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+source=(http://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
 
-./configure --prefix=/usr \
-    --sysconfdir=/etc
-make
-make DESTDIR=$PKG install
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
