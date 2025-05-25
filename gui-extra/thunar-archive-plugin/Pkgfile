@@ -10,18 +10,24 @@ makedepends=(xfce4-dev-tools)
 run=(desktop-file-utils thunar)
 
 name=thunar-archive-plugin
-version=0.5.3
+version=0.6.0
 
-source=(https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/${version%.*}/${name}-${version}.tar.bz2)
+source=(https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/${version%.*}/${name}-${version}.tar.xz)
 
 build() {
-  cd $name-$version
-  ./configure --prefix=/usr \
-    --libexecdir=/usr/lib/xfce4 \
-    --localstatedir=/var \
-    --disable-static
-  make
-  make DESTDIR=$PKG install
 
- install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
+cd $name-$version
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+ install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
