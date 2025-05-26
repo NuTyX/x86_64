@@ -1,19 +1,18 @@
 description='A proprietary music streaming service'
 url='http://www.spotify.com'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 run=(alsa-lib gtk3 desktop-file-utils openssl nss at-spi2-core
      xorg-libsm xorg-libxscrnsaver gnutls hicolor-icon-theme
      gtk-update-icon-cache shared-mime-info libayatana-appindicator)
 
-_commit=gf2c48e6f
+_commit=g126b0d89
 name=spotify
-version=1.2.48.405
-release=2
+version=1.2.63.394
 
-_curl_version="curl-8.9.1"
+_curl_version="curl-8.13.0"
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 source=(https://curl.haxx.se/download/${_curl_version}.tar.gz
