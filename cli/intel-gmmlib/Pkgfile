@@ -3,13 +3,13 @@ url='https://github.com/intel/gmmlib/'
 
 license="MIT"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(cmake)
 
 name=intel-gmmlib
-version=22.7.1
+version=22.7.2
 
 source=(https://github.com/intel/gmmlib/archive/refs/tags/$name-$version.tar.gz)
 
