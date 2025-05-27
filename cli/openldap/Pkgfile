@@ -1,15 +1,16 @@
 description="Lightweight Directory Access Protocol (LDAP) client and server"
 url="https://www.openldap.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+license="Custom"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(autoconf m4 shadow)
 
 name=openldap
-version=2.6.9
+version=2.6.10
 scripts_version=20250125
-release=2
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
 	    https://www.openldap.org/software/download/OpenLDAP/openldap-release/$name-$version.tgz
@@ -20,10 +21,12 @@ prepare() {
 (getent passwd ldap > /dev/null) || useradd  -c "OpenLDAP Daemon Owner" \
          -d /var/lib/openldap -u 83 \
          -g ldap -s /bin/false ldap
+
 cd $name-$version
 patch -Np1 -i ../$name-$version-consolidated-1.patch
 autoconf
 }
+
 build() {
 cd $name-$version
 
@@ -38,6 +41,8 @@ make
 make DESTDIR=$PKG install
 
 rm $PKG/usr/lib/liblber.la
+
+install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
 
 # Service
 cd ../nutyx-scripts-${scripts_version}
