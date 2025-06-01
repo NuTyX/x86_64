@@ -8,6 +8,7 @@ makedepends=()
 run=(dmidecode smartmontools parted libconfig)
 name=nwipe
 version=0.37
+release=2
 
 source=(https://github.com/martijnvanbrummelen/$name/archive/v${version}/$name-$version.tar.gz)
 
