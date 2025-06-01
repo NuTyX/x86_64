@@ -7,12 +7,12 @@ contributors="Tnut"
 run=(xorg-fontconfig glib pulseaudio xorg-libsm xorg-libx11 libxcb
      xorg-libxcomposite xorg-libxfixes xorg-libxi xorg-libxrandr
      xorg-libxrender xorg-libxshmfence libxslt mesa nss
-     xcb-util-image xcb-util-keysyms hicolor-icon-theme
+     xcb-util-image xcb-util-keysyms hicolor-icon-theme qt3d
      desktop-file-utils gtk-update-icon-cache shared-mime-info)
 
 name=zoom
 build=1840
-version=6.4.10
+version=6.4.12
 
 PKGMK_KEEP_SOURCES="no"
 
