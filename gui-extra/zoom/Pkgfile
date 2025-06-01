@@ -1,8 +1,8 @@
 description='Video Conferencing and Web Conferencing Service'
 url='https://zoom.us/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 run=(xorg-fontconfig glib pulseaudio xorg-libsm xorg-libx11 libxcb
      xorg-libxcomposite xorg-libxfixes xorg-libxi xorg-libxrandr
@@ -12,11 +12,12 @@ run=(xorg-fontconfig glib pulseaudio xorg-libsm xorg-libx11 libxcb
 
 name=zoom
 build=1840
-version=5.17.1
+version=6.4.10
 
 PKGMK_KEEP_SOURCES="no"
 
-source=(https://cdn.zoom.us/prod/$version.$build/zoom_x86_64.pkg.tar.xz )
+source=(https://zoom.us/client/latest/zoom_x86_64.pkg.tar.xz)
+
 prepare() {
  sed -i 's/Zoom\.png/Zoom/g' usr/share/applications/Zoom.desktop
 
