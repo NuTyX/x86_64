@@ -1,33 +1,45 @@
 description="GNU Image Manipulation Program"
 url="https://www.gimp.org/"
 
+license="LGPL3 GPL3"
+
 contributors="PierreB,Greg,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(gtk2 curl libexif xorg-libxmu xorg-libxpm openexr
+makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr 
              gegl poppler-glib glib-networking libmng alsa-lib libwmf
              babl libmypaint mypaint-brushes lcms2 libgexiv2 aalib
-             harfbuzz libjpeg-turbo librsvg libtiff libxml2)
+             harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib)
+
 run=(shared-mime-info desktop-file-utils hicolor-icon-theme
      gtk-update-icon-cache)
 
 name=gimp
-version=2.10.38
-release=2
+version=3.0.4
+_version=3.0
 
-source=(https://download.gimp.org/pub/gimp/v2.10/gimp-$version.tar.bz2)
+source=(https://download.gimp.org/gimp/v${_version}/gimp-$version.tar.xz)
 
 
 build() {
 
-cd $name-$version
+cd gimp-$version
 
-export CFLAGS+=" -Wno-incompatible-pointer-types"
+mkdir gimp-build
+cd    gimp-build
 
-./configure --prefix=/usr --sysconfdir=/etc --disable-python \
-  --with-bug-report-url=https://github.com/NuTyX/packages-x86_64/issues
-make
+      meson setup .. \
+      --prefix=/usr  \
+      --sysconfdir=/etc \
+      -Dgi-docgen=disabled \
+      -Dbug-report-url=https://github.com/NuTyX/packages-x86_64/issues \
+      --buildtype=release
 
-make DESTDIR=$PKG install
+ninja
 
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 ../libgimp/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
