@@ -8,7 +8,7 @@ contributors="Pierre.,Rémy,Tnut"
 makedepends=(make-ca cmake curl llvm python libssh2)
 
 name=rustc
-version=1.85.1
+version=1.87.0
 
 source=(http://static.rust-lang.org/dist/$name-$version-src.tar.gz
        rustc-1.85.1-llvm_20-1.patch)
@@ -16,7 +16,7 @@ source=(http://static.rust-lang.org/dist/$name-$version-src.tar.gz
 prepare() {
 cd $name-$version-src
 
-patch -Np1 -i ../rustc-1.85.1-llvm_20-1.patch
+#patch -Np1 -i ../rustc-1.85.1-llvm_20-1.patch
 }
 
 build() {
