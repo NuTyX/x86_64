@@ -11,12 +11,12 @@ name=cython
 _name="Cython"
 alias=(${_name})
 
-version=3.1.1
+version=3.1.2
 
 makedepends=(python-setuptools python-wheel)
 run=(python)
 
-source=(https://github.com/$name/$name/archive/$version.tar.gz)
+source=(https://github.com/cython/cython/archive/refs/tags/$version.tar.gz)
 
 build() {
 
