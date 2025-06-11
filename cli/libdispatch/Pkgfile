@@ -8,6 +8,7 @@ makedepends=(llvm libbsd cmake ninja)
 
 name=libdispatch
 version=6.1
+release=2
 
 source=(https://github.com/apple/swift-corelibs-$name/archive/refs/tags/swift-5.5-RELEASE.tar.gz)
 
