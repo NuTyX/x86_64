@@ -9,7 +9,7 @@ makedepends=(lvm2 btrfs-progs)
 run=(systemd start-stop-daemon iptables runc containerd cgroupfs-mount)
 
 name=docker
-version=28.1.1
+version=28.2.2
 
 PKGMK_GROUPS=(man)
 
