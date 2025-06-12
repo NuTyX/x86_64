@@ -7,8 +7,7 @@ contributors=""
 makedepends=(libsigc++ meson ninja git doxygen)
 
 name=mm-common
-version=1.0.6
-release=2
+version=1.0.7
 
 source=(https://gitlab.gnome.org/GNOME/mm-common/-/archive/$version/$name-$version.tar.gz
         https://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/libstdc++.tag)
