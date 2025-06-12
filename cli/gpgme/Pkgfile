@@ -7,7 +7,7 @@ contributors="Pierre,Tnut"
 makedepends=(libassuan libgpg-error python)
 
 name=gpgme
-version=1.24.3
+version=2.0.0
 
 source=(https://www.gnupg.org/ftp/gcrypt/$name/$name-$version.tar.bz2)
 build() {
@@ -17,5 +17,5 @@ cd $name-$version
 --disable-gpg-test
 make
 make DESTDIR=$PKG install
-rm $PKG/usr/lib/libgpgme{,pp}.la
+#rm $PKG/usr/lib/libgpgme{,pp}.la
 }
