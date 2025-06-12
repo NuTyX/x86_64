@@ -1,16 +1,37 @@
 description="Stylesheets for Yelp."
 url="http://www.gnome.org/"
 
+license="GPL2.1, GPL2, MIT"
+
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(itstool libxslt intltool perl-xml-parser)
+makedepends=(meson itstool libxslt intltool perl-xml-parser)
 
 name=yelp-xsl
-version=42.1
-release=2
+version=42.4
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/yelp-xsl/-/archive/$version/$name-$version.tar.gz)
 
+build() {
+cd $name-$version
+
+mkdir build
+cd    build
+
+meson setup .. \
+     --prefix=/usr          \
+     --buildtype=release
+
+ninja
+
+DESTDIR=$PKG ninja install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 ../COPYING.LGPL $PKG/usr/share/licenses/$name/COPYING.LGPL
+install -Dm644 ../COPYING.GPL $PKG/usr/share/licenses/$name/COPYING.GPL
+install -Dm644 ../COPYING.MIT $PKG/usr/share/licenses/$name/COPYING.MIT
+
+}
 uptodate(){
 local latest lastversion url
 url="https://download.gnome.org/sources/$name"
