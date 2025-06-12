@@ -1,14 +1,16 @@
 description="Graphical user interface toolkit for X"
 url="http://www.fltk.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+license="custom"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 makedepends=(libjpeg-turbo libpng xorg-libxft xorg-libxi xorg-libxinerama mesa doxygen)
 
 name=fltk
-version=1.3.10
+version=1.4.3
 
-source=(http://fltk.org/pub/fltk/$version/$name-$version-source.tar.gz)
+source=(https://github.com/fltk/fltk/releases/download/release-$version/fltk-$version-source.tar.gz)
 build() {
 cd $name-$version
 
@@ -25,6 +27,8 @@ make DESTDIR=$PKG docdir=/usr/share/doc/fltk-$version install
 
 make -C test DESTDIR=$PKG docdir=/usr/share/doc/fltk-$version install-linux
 make -C documentation DESTDIR=$PKG docdir=/usr/share/doc/fltk-$version install-linux
+
+install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 
 # Remove games
 rm $PKG/usr/bin/{blocks,checkers,sudoku}
