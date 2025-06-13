@@ -524,6 +524,9 @@ drwxr-xr-x	root/root	usr/lib/python3.13/_pyrepl/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/_threading_handler.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/_threading_handler.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/_threading_handler.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/base_eventqueue.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/base_eventqueue.cpython-313.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/base_eventqueue.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/commands.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/commands.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/commands.cpython-313.pyc
@@ -581,8 +584,12 @@ drwxr-xr-x	root/root	usr/lib/python3.13/_pyrepl/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/windows_console.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/windows_console.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/windows_console.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/windows_eventqueue.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/windows_eventqueue.cpython-313.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/__pycache__/windows_eventqueue.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/_minimal_curses.py
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/_threading_handler.py
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/base_eventqueue.py
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/commands.py
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/completing_reader.py
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/console.py
@@ -603,6 +610,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/_pyrepl/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/unix_eventqueue.py
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/utils.py
 -rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/windows_console.py
+-rw-r--r--	root/root	usr/lib/python3.13/_pyrepl/windows_eventqueue.py
 -rw-r--r--	root/root	usr/lib/python3.13/_sitebuiltins.py
 -rw-r--r--	root/root	usr/lib/python3.13/_strptime.py
 -rw-r--r--	root/root	usr/lib/python3.13/_sysconfigdata__linux_x86_64-linux-gnu.py
@@ -1529,7 +1537,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/ensurepip/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/ensurepip/__pycache__/_uninstall.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/ensurepip/__pycache__/_uninstall.cpython-313.pyc
 drwxr-xr-x	root/root	usr/lib/python3.13/ensurepip/_bundled/
--rw-r--r--	root/root	usr/lib/python3.13/ensurepip/_bundled/pip-25.0.1-py3-none-any.whl
+-rw-r--r--	root/root	usr/lib/python3.13/ensurepip/_bundled/pip-25.1.1-py3-none-any.whl
 -rw-r--r--	root/root	usr/lib/python3.13/ensurepip/_uninstall.py
 -rw-r--r--	root/root	usr/lib/python3.13/enum.py
 -rw-r--r--	root/root	usr/lib/python3.13/filecmp.py
@@ -2535,16 +2543,17 @@ drwxr-xr-x	root/root	usr/lib/python3.13/re/__pycache__/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/README.txt
 lrwxrwxrwx	root/root	usr/lib/python3.13/site-packages/pep517 -> /usr/lib/python3.13/site-packages/pip/_vendor/pep517
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/AUTHORS.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/LICENSE.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.0.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/AUTHORS.txt
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/LICENSE.txt
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip-25.1.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/__main__.py
@@ -2612,6 +2621,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__p
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/inspect.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/install.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/list.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/lock.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/search.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/show.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__pycache__/uninstall.cpython-313.pyc
@@ -2629,6 +2639,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/__p
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/inspect.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/install.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/list.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/lock.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/search.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/show.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/commands/uninstall.py
@@ -2698,6 +2709,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/index.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/installation_report.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/link.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/pylock.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/scheme.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/search_scope.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pycache__/selection_prefs.cpython-313.pyc
@@ -2709,6 +2721,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/__pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/index.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/installation_report.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/link.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/pylock.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/scheme.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/search_scope.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/models/selection_prefs.py
@@ -2774,11 +2787,13 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/constructors.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/req_dependency_group.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/req_file.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/req_install.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/req_set.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/__pycache__/req_uninstall.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/constructors.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/req_dependency_group.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/req_file.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/req_install.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_internal/req/req_set.py
@@ -2929,6 +2944,21 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/certifi/__pyca
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/certifi/cacert.pem
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/certifi/core.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/certifi/py.typed (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__main__.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/__init__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/__main__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/_implementation.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/_lint_dependency_groups.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/_pip_wrapper.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__pycache__/_toml_compat.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_implementation.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_lint_dependency_groups.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_pip_wrapper.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_toml_compat.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/dependency_groups/py.typed (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/distlib/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/distlib/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/distlib/__pycache__/
@@ -3067,7 +3097,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/__main__.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/cmdline.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/console.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/filter.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/formatter.cpython-313.pyc
@@ -3081,7 +3110,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/token.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/unistring.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/__pycache__/util.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/cmdline.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/console.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/filter.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/filters/
@@ -3094,31 +3122,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/forma
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/_mapping.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/bbcode.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/groff.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/html.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/img.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/irc.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/latex.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/other.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/pangomarkup.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/rtf.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/svg.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/terminal.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__pycache__/terminal256.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/_mapping.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/bbcode.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/groff.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/html.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/img.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/irc.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/latex.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/other.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/pangomarkup.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/rtf.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/svg.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/terminal.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/terminal256.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/lexer.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/__init__.py
@@ -3200,18 +3204,22 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/__p
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/__pycache__/__init__.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/__pycache__/providers.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/__pycache__/reporters.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/__pycache__/resolvers.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/__pycache__/structs.cpython-313.pyc
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/compat/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/compat/__init__.py (EMPTY)
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/compat/__pycache__/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/compat/__pycache__/__init__.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/compat/__pycache__/collections_abc.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/compat/collections_abc.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/providers.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/reporters.py
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/__init__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/abstract.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/criterion.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/exceptions.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/resolution.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/abstract.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/criterion.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/exceptions.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/resolution.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/resolvelib/structs.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/rich/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/rich/__init__.py
@@ -3381,6 +3389,13 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli/__pycach
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli/_re.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli/_types.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli/py.typed
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/__pycache__/__init__.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/__pycache__/_writer.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/_writer.py
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/tomli_w/py.typed
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/truststore/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/pip/_vendor/truststore/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/pip/_vendor/truststore/__pycache__/
@@ -6232,6 +6247,9 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest_errors.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest_errors.cpython-313.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest_errors.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest_no_docstrings.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest_no_docstrings.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/sample_doctest_no_docstrings.cpython-313.pyc
@@ -6251,6 +6269,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/doctest_aliases.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/doctest_lineno.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/sample_doctest.py
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/sample_doctest_errors.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/sample_doctest_no_docstrings.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/sample_doctest_no_doctests.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/sample_doctest_skip.py
@@ -6260,7 +6279,9 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/test_doctest/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/test_doctest2.txt
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/test_doctest3.txt
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/test_doctest4.txt
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/test_doctest_errors.txt
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/test_doctest_skip.txt
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_doctest/test_doctest_skip2.txt
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_docxmlrpc.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_dtrace.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_dynamic.py
@@ -7552,6 +7573,9 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/support.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/support.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/support.cpython-313.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_eventqueue.cpython-313.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_eventqueue.cpython-313.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_eventqueue.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_input.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_input.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_input.cpython-313.pyc
@@ -7570,9 +7594,6 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_unix_console.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_unix_console.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_unix_console.cpython-313.pyc
--rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_unix_eventqueue.cpython-313.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_unix_eventqueue.cpython-313.opt-2.pyc
--rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_unix_eventqueue.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_utils.cpython-313.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_utils.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_utils.cpython-313.pyc
@@ -7580,13 +7601,13 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_windows_console.cpython-313.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/__pycache__/test_windows_console.cpython-313.pyc
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/support.py
+-rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_eventqueue.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_input.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_interact.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_keymap.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_pyrepl.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_reader.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_unix_console.py
--rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_unix_eventqueue.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_utils.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_pyrepl/test_windows_console.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/test_queue.py
@@ -8387,8 +8408,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/test/typinganndata/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/test/typinganndata/ann_module9.py
 -rw-r--r--	root/root	usr/lib/python3.13/test/typinganndata/mod_generics_cache.py
 drwxr-xr-x	root/root	usr/lib/python3.13/test/wheeldata/
--rw-r--r--	root/root	usr/lib/python3.13/test/wheeldata/setuptools-67.6.1-py3-none-any.whl
--rw-r--r--	root/root	usr/lib/python3.13/test/wheeldata/wheel-0.43.0-py3-none-any.whl
+-rw-r--r--	root/root	usr/lib/python3.13/test/wheeldata/setuptools-79.0.1-py3-none-any.whl
 -rw-r--r--	root/root	usr/lib/python3.13/test/win_console_handler.py
 drwxr-xr-x	root/root	usr/lib/python3.13/test/xmltestdata/
 drwxr-xr-x	root/root	usr/lib/python3.13/test/xmltestdata/c14n-20/
@@ -8536,6 +8556,7 @@ drwxr-xr-x	root/root	usr/lib/python3.13/tomllib/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/tomllib/_parser.py
 -rw-r--r--	root/root	usr/lib/python3.13/tomllib/_re.py
 -rw-r--r--	root/root	usr/lib/python3.13/tomllib/_types.py
+-rw-r--r--	root/root	usr/lib/python3.13/tomllib/mypy.ini
 -rwxr-xr-x	root/root	usr/lib/python3.13/trace.py
 -rw-r--r--	root/root	usr/lib/python3.13/traceback.py
 -rw-r--r--	root/root	usr/lib/python3.13/tracemalloc.py
