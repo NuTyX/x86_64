@@ -3,8 +3,8 @@ url="http://qt-project.org/"
 
 license="GPL3, LGPL3, FDL, custom"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
 makedepends=(qtbase qtdeclarative qttools pciutils xorg-libxtst xorg-libxcursor xorg-libxrandr)
 
@@ -13,7 +13,7 @@ PKGMK_GROUPS=()
 set=(qt5)
 
 name=qtdoc
-version=5.15.16
+version=5.15.17
 _name="qt-everywhere-opensource-src"
 
 source=(no-qmake.patch qt5-webengine-python3.patch 
@@ -24,7 +24,7 @@ prepare() {
  ln -s /usr/bin/{rcc,uic,moc,qmake} bin/
  patch -Np1 -i ../../no-qmake.patch
  cd ../qtwebengine
- patch -Np1 -i ../../qt5-webengine-python3.patch
+# patch -Np1 -i ../../qt5-webengine-python3.patch
  cd ../qttools
  ln -s /usr/bin
 }
