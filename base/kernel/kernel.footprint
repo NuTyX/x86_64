@@ -1,12 +1,12 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.14.5-1-nutyx
--rw-r--r--	root/root	boot/config-6.14.5-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.15.2-1-nutyx
+-rw-r--r--	root/root	boot/config-6.15.2-1-nutyx
 lrwxrwxrwx	root/root	boot/kernel -> kernel-stable
 -rw-r--r--	root/root	boot/kernel-stable
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.14.5-1-nutyx -> kernel
+lrwxrwxrwx	root/root	usr/lib/modules/6.15.2-1-nutyx -> kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel/build -> /usr/src/kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/
@@ -672,6 +672,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gnss/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gnss/gnss-usb.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gnss/gnss.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpio/
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpio/dev-sync-probe.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpio/gpio-74x164.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpio/gpio-74xx-mmio.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpio/gpio-adnp.ko.xz
@@ -816,6 +817,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/cadenc
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/tc358767.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/tc358768.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/tc358775.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/tda998x.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/thc63lvd1024.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/ti-dlpc3433.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/bridge/ti-sn65dsi83.ko.xz
@@ -832,6 +834,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/display/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_buddy.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_dma_helper.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_exec.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_gpusvm.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_gpuvm.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_kms_helper.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/drm_mipi_dbi.ko.xz
@@ -852,11 +855,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/hisilicon/hib
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/hisilicon/hibmc/hibmc-drm.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/hyperv/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/hyperv/hyperv_drm.ko.xz
-drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i2c/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i2c/ch7006.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i2c/sil164.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i2c/tda9950.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i2c/tda998x.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i915/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i915/i915.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/i915/kvmgt.ko.xz
@@ -865,7 +863,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/logicvc/
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/mgag200/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/mgag200/mgag200.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/nouveau/
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/nouveau/ch7006.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/nouveau/nouveau.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/nouveau/sil164.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/panel/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/panel/panel-abt-y030xx067a.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/gpu/drm/panel/panel-arm-versatile.ko.xz
@@ -1778,9 +1778,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/iio/chemical/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/chemical/vz89x.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/cros_ec_sensors/
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/cros_ec_sensors/cros-ec-sensors-core.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/cros_ec_sensors/cros_ec_lid_angle.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/cros_ec_sensors/cros_ec_sensors.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/cros_ec_sensors/cros_ec_sensors_core.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/hid-sensors/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.xz
@@ -2335,7 +2335,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/mma8450.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/palmas-pwrbutton.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/pcap_keys.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/pcf50633-input.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/pcf8574_keypad.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/pcspkr.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/input/misc/powermate.ko.xz
@@ -2587,12 +2586,12 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/leds/rgb/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/rgb/leds-ncp5623.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/rgb/leds-pwm-multicolor.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/rgb/leds-qcom-lpg.ko.xz
-drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simple/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simple/simatic-ipc-leds-gpio-apollolake.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simple/simatic-ipc-leds-gpio-core.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simple/simatic-ipc-leds-gpio-elkhartlake.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simple/simatic-ipc-leds-gpio-f7188x.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simple/simatic-ipc-leds.ko.xz
+drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simatic/
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simatic/simatic-ipc-leds-gpio-apollolake.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simatic/simatic-ipc-leds-gpio-core.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simatic/simatic-ipc-leds-gpio-elkhartlake.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simatic/simatic-ipc-leds-gpio-f7188x.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/simatic/simatic-ipc-leds.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/leds/trigger/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/trigger/ledtrig-activity.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/leds/trigger/ledtrig-backlight.ko.xz
@@ -2671,6 +2670,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/core/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/core/cec.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/i2c/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/i2c/ch7322.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/i2c/tda9950.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/platform/
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/platform/cec-gpio/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/cec/platform/cec-gpio/cec-gpio.ko.xz
@@ -3212,6 +3212,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-rc6-mce.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-real-audio-220-32-keys.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-reddo.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-siemens-gigaset-rc20.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-snapstream-firefly.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-streamzap.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/rc/keymaps/rc-su3000.ko.xz
@@ -3555,9 +3556,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/ntxec.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/ocelot-soc.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/palmas.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/pcf50633-adc.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/pcf50633-gpio.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/pcf50633.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/qcom-pm8008.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/qnap-mcu.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/mfd/rave-sp.ko.xz
@@ -4981,8 +4979,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/phy/intel/
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/phy/marvell/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/phy/marvell/phy-pxa-28nm-hsic.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/phy/marvell/phy-pxa-28nm-usb2.ko.xz
-drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/phy/microchip/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/phy/microchip/lan966x_serdes.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/phy/motorola/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/phy/motorola/phy-cpcap-usb.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/phy/motorola/phy-mapphone-mdm6600.ko.xz
@@ -5076,6 +5072,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/platform/chrome/wilco
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/platform/goldfish/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/goldfish/goldfish_pipe.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/platform/mellanox/
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/mellanox/mlx-platform.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/mellanox/mlxreg-hotplug.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/mellanox/mlxreg-io.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/mellanox/mlxreg-lc.ko.xz
@@ -5218,7 +5215,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/intel/wm
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/lg-laptop.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/meegopad_anx7428.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/meraki-mx100.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/mlx-platform.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/msi-ec.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/msi-laptop.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/platform/x86/msi-wmi-platform.ko.xz
@@ -5317,7 +5313,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/max8998_charger.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/mm8013.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/mt6360_charger.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/pcf50633-charger.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/qcom_battmgr.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/rk817_charger.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/power/supply/rt5033_battery.ko.xz
@@ -5502,7 +5497,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/palmas-regulator.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/pca9450-regulator.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/pcap-regulator.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/pcf50633-regulator.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/pf8x00-regulator.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/pfuze100-regulator.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/regulator/pv88060-regulator.ko.xz
@@ -5651,7 +5645,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcap.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcf2123.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcf2127.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcf50633.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcf85063.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcf8523.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/rtc/rtc-pcf85363.ko.xz
@@ -6485,7 +6478,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/mt6370-backlight.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/otm3225a.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/pandora_bl.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/pcf50633-backlight.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/platform_lcd.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/pwm_bl.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/video/backlight/qcom-wled.ko.xz
@@ -6821,16 +6813,12 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/smb/server/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/smb/server/ksmbd.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/squashfs/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/squashfs/squashfs.ko.xz
-drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/sysv/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/sysv/sysv.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/ubifs/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/ubifs/ubifs.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/udf/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/udf/udf.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/ufs/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/ufs/ufs.ko.xz
-drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/unicode/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/unicode/utf8-selftest.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/vboxsf/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/fs/vboxsf/vboxsf.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/fs/xfs/
@@ -7703,6 +7691,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-acp-sof-mach.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-acp63.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-acp70.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-amd-acpi-mach.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-amd-sdw-acpi.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-soc-acpi-amd-match.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp_audio_dma.ko.xz
