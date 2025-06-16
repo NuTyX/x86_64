@@ -76,6 +76,7 @@ drwxr-xr-x	root/root	usr/libexec/xscreensaver/
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/distort
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/drift
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/droste
+-rwxr-xr-x	root/root	usr/libexec/xscreensaver/dumpsterfire
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/dymaxionmap
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/endgame
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/energystream
@@ -132,6 +133,7 @@ drwxr-xr-x	root/root	usr/libexec/xscreensaver/
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/highvoltage
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/hilbert
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/hopalong
+-rwxr-xr-x	root/root	usr/libexec/xscreensaver/hopffibration
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/hydrostat
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/hypertorus
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/hypnowheel
@@ -148,6 +150,7 @@ drwxr-xr-x	root/root	usr/libexec/xscreensaver/
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/kaleidocycle
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/kallisti
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/klein
+-rwxr-xr-x	root/root	usr/libexec/xscreensaver/klondike
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/kumppa
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/lament
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/lavalite
@@ -188,6 +191,7 @@ drwxr-xr-x	root/root	usr/libexec/xscreensaver/
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/piecewise
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/pinion
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/pipes
+-rwxr-xr-x	root/root	usr/libexec/xscreensaver/platonicfolding
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/polyhedra
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/polyominoes
 -rwxr-xr-x	root/root	usr/libexec/xscreensaver/polytopes
@@ -354,6 +358,7 @@ drwxr-xr-x	root/root	usr/share/xscreensaver/config/
 -rw-r--r--	root/root	usr/share/xscreensaver/config/distort.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/drift.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/droste.xml
+-rw-r--r--	root/root	usr/share/xscreensaver/config/dumpsterfire.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/dymaxionmap.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/endgame.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/energystream.xml
@@ -410,6 +415,7 @@ drwxr-xr-x	root/root	usr/share/xscreensaver/config/
 -rw-r--r--	root/root	usr/share/xscreensaver/config/highvoltage.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/hilbert.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/hopalong.xml
+-rw-r--r--	root/root	usr/share/xscreensaver/config/hopffibration.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/hydrostat.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/hypertorus.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/hypnowheel.xml
@@ -426,6 +432,7 @@ drwxr-xr-x	root/root	usr/share/xscreensaver/config/
 -rw-r--r--	root/root	usr/share/xscreensaver/config/kaleidocycle.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/kallisti.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/klein.xml
+-rw-r--r--	root/root	usr/share/xscreensaver/config/klondike.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/kumppa.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/lament.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/lavalite.xml
@@ -465,6 +472,7 @@ drwxr-xr-x	root/root	usr/share/xscreensaver/config/
 -rw-r--r--	root/root	usr/share/xscreensaver/config/piecewise.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/pinion.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/pipes.xml
+-rw-r--r--	root/root	usr/share/xscreensaver/config/platonicfolding.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/polyhedra.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/polyominoes.xml
 -rw-r--r--	root/root	usr/share/xscreensaver/config/polytopes.xml
