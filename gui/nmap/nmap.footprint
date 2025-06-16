@@ -5,7 +5,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nmap
 lrwxrwxrwx	root/root	usr/bin/nmapfe -> zenmap
 -rwxr-xr-x	root/root	usr/bin/nping
--rwxr-xr-x	root/root	usr/bin/uninstall_ndiff
 lrwxrwxrwx	root/root	usr/bin/xnmap -> zenmap
 -rwxr-xr-x	root/root	usr/bin/zenmap
 drwxr-xr-x	root/root	usr/lib/
@@ -13,6 +12,17 @@ drwxr-xr-x	root/root	usr/lib/python3.13/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/__pycache__/ndiff.cpython-313.pyc
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/direct_url.json
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff-7.96.dist-info/top_level.txt
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/ndiff.py
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/radialnet/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/radialnet/__init__.py
@@ -92,17 +102,18 @@ drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/radialnet/util/__pycache__
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/radialnet/util/geometry.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/radialnet/util/integration.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/radialnet/util/misc.py
-drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/COPYING_HIGWIDGETS
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/direct_url.json
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.95.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/direct_url.json
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/licenses/COPYING_HIGWIDGETS
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmap-7.97.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.13/site-packages/zenmapCore/
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmapCore/BasePaths.py
 -rw-r--r--	root/root	usr/lib/python3.13/site-packages/zenmapCore/DelayedObject.py
@@ -867,6 +878,8 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/metasploit-msgrpc-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/metasploit-xmlrpc-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mikrotik-routeros-brute.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/mikrotik-routeros-username-brute.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/mikrotik-routeros-version.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mmouse-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mmouse-exec.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/modbus-discover.nse
@@ -1077,6 +1090,7 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/supermicro-ipmi-conf.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/svn-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-asn.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-eui64.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-map4to6.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-multicast-echo.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-multicast-invalid-dst.nse
