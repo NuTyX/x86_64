@@ -1,8 +1,8 @@
 description='Desktop publishing software'
 url='https://www.scribus.net'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(icu cmake boost aspell cups qttools qtdeclarative gnutls kerberos
              podofo librevenge boost ghostscript lcms2 libxml2 cairo poppler)
@@ -11,9 +11,15 @@ run=(shared-mime-info desktop-file-utils)
 
 name=scribus
 version=1.6.4
-release=1
+release=2
 
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
+source=(https://sourceforge.net/projects/scribus/files/scribus/1.6.4/scribus-1.6.4.tar.xz
+        fix_build_with_poppler_25.06.0.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../fix_build_with_poppler_25.06.0.patch
+}
 
 build() {
     cd $name-$version
