@@ -1,0 +1,32 @@
+description='C++ bindings for GPGME'
+url='https://gnupg.org/software/gpgme/index.html'
+
+license="GPL2 LGPL2.1"
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(gpgme libgpg-error rhash libuv jsoncpp)
+
+name=gpgmepp
+version=2.0.0
+
+source=(https://gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-$version.tar.xz)
+
+build() {
+cd $name-$version
+
+mkdir build
+cd    build
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_BUILD_TYPE=Release \
+      ..
+
+make
+make DESTDIR=$PKG install
+
+install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 ../COPYING.LESSER $PKG/usr/share/licenses/$name/COPYING.LESSER
+install -Dm644 ../COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
+}
