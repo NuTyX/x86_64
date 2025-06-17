@@ -10,8 +10,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/2Geom/
 -rw-r--r--	root/root	usr/lib/cmake/2Geom/2GeomTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/2Geom/2GeomTargets.cmake
 drwxr-xr-x	root/root	usr/lib/inkscape/
-lrwxrwxrwx	root/root	usr/lib/inkscape/libinkscape_base.so -> libinkscape_base.so.1.4.0.0
--rwxr-xr-x	root/root	usr/lib/inkscape/libinkscape_base.so.1.4.0.0
+lrwxrwxrwx	root/root	usr/lib/inkscape/libinkscape_base.so -> libinkscape_base.so.1.4.2.0
+-rwxr-xr-x	root/root	usr/lib/inkscape/libinkscape_base.so.1.4.2.0
 lrwxrwxrwx	root/root	usr/lib/lib2geom.so -> lib2geom.so.1.4.0
 -rwxr-xr-x	root/root	usr/lib/lib2geom.so.1.4.0
 drwxr-xr-x	root/root	usr/share/
@@ -232,6 +232,8 @@ drwxr-xr-x	root/root	usr/share/inkscape/extensions/barcode/
 -rw-r--r--	root/root	usr/share/inkscape/extensions/cgm_input.inx
 -rw-r--r--	root/root	usr/share/inkscape/extensions/cgm_input.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/cgm_parse.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/clean_up_path.inx
+-rw-r--r--	root/root	usr/share/inkscape/extensions/clean_up_path.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/color_blackandwhite.inx
 -rw-r--r--	root/root	usr/share/inkscape/extensions/color_blackandwhite.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/color_brighter.inx
@@ -615,6 +617,7 @@ drwxr-xr-x	root/root	usr/share/inkscape/extensions/inkex/paths/
 -rw-r--r--	root/root	usr/share/inkscape/extensions/inkex/paths/quadratic.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/inkex/ports.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/inkex/properties.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/inkex/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/share/inkscape/extensions/inkex/styles.py
 drwxr-xr-x	root/root	usr/share/inkscape/extensions/inkex/tester/
 -rw-r--r--	root/root	usr/share/inkscape/extensions/inkex/tester/__init__.py
@@ -800,14 +803,46 @@ drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inka
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/parser/utils.py
 drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/__init__.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/adjustment.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/convert.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/curve.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/enhance.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/fill.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/raster.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/shape.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/styles.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/text.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/svg/util.py
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-afdesign/inkaf/utils.py
+drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-curve/
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/LICENSE
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn-curve.inx
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn.inx
+drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/__main__.py
+drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/__init__.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/artboard.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/base.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/group.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/guide.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/image.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/path.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/styles.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/elements/text.py
+drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/decode.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/decode_vn.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/extract.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/read.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/reader/text.py
+drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/svg/
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/svg/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/svg/convert.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/utils.py
+-rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-curve/inkvn/vninput.py
 drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-xaml/
 -rw-r--r--	root/root	usr/share/inkscape/extensions/other/extension-xaml/LICENSE.txt
 drwxr-xr-x	root/root	usr/share/inkscape/extensions/other/extension-xaml/docs/
@@ -4702,7 +4737,8 @@ drwxr-xr-x	root/root	usr/share/inkscape/ui/
 -rw-r--r--	root/root	usr/share/inkscape/ui/highlight-colors.css
 -rw-r--r--	root/root	usr/share/inkscape/ui/image-properties.glade
 -rw-r--r--	root/root	usr/share/inkscape/ui/inkscape-about.glade
--rw-r--r--	root/root	usr/share/inkscape/ui/inkscape-start.glade
+-rw-r--r--	root/root	usr/share/inkscape/ui/inkscape-splash.glade
+-rw-r--r--	root/root	usr/share/inkscape/ui/inkscape-welcome.glade
 -rw-r--r--	root/root	usr/share/inkscape/ui/inkview-controls.ui
 -rw-r--r--	root/root	usr/share/inkscape/ui/inline-css.lang
 -rw-r--r--	root/root	usr/share/inkscape/ui/mac.css
@@ -4745,6 +4781,7 @@ drwxr-xr-x	root/root	usr/share/inkscape/ui/syntax-themes/
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-measure.ui
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-mesh.ui
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-node.ui
+-rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-objectpicker.ui
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-page.ui
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-paintbucket.ui
 -rw-r--r--	root/root	usr/share/inkscape/ui/toolbar-pencil.ui
