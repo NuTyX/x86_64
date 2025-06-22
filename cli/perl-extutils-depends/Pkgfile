@@ -1,15 +1,14 @@
 description="perl module"
 url="https://metacpan.org/pod/ExtUtils::Depends"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 run=(perl)
 
 name=perl-extutils-depends
-version=0.8001
-release=2
+version=0.8002
 
-source=(http://www.cpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-$version.tar.gz)
+source=(https://www.cpan.org/authors/id/E/ET/ETJ/ExtUtils-Depends-$version.tar.gz)
 
 build() {
 cd ExtUtils-Depends-$version
