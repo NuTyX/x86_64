@@ -8,8 +8,7 @@ license="GPL"
 makedepends=(glib aspell dbus-glib)
 
 name=enchant
-version=2.8.2
-release=2
+version=2.8.9
 
 source=(https://github.com/rrthomas/$name/releases/download/v$version/$name-$version.tar.gz)
 
@@ -31,7 +30,7 @@ build() {
 	ln -sfv enchant-2.pc $PKG/usr/lib/pkgconfig/enchant.pc
 
 # Obsolets libs
-rm $PKG/usr/lib/enchant-2/enchant_aspell.la
+#rm $PKG/usr/lib/enchant-2/enchant_aspell.la
 rm $PKG/usr/lib/libenchant-2.la
 
 install -Dm644 COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
