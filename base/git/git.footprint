@@ -55,6 +55,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff-files
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff-index
+-rwxr-xr-x	root/root	usr/lib/git-core/git-diff-pairs
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff-tree
 -rwxr-xr-x	root/root	usr/lib/git-core/git-difftool
 -rwxr-xr-x	root/root	usr/lib/git-core/git-difftool--helper
@@ -211,6 +212,9 @@ drwxr-xr-x	root/root	usr/lib/git-core/mergetools/
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/xxdiff
 -rwxr-xr-x	root/root	usr/lib/git-core/scalar
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/bash-completion/
+drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+-rw-r--r--	root/root	usr/share/bash-completion/completions/git
 drwxr-xr-x	root/root	usr/share/git-core/
 drwxr-xr-x	root/root	usr/share/git-core/templates/
 -rw-r--r--	root/root	usr/share/git-core/templates/description
@@ -306,6 +310,7 @@ drwxr-xr-x	root/root	usr/share/gitk/lib/msgs/
 -rw-r--r--	root/root	usr/share/gitk/lib/msgs/pt_pt.msg
 -rw-r--r--	root/root	usr/share/gitk/lib/msgs/ru.msg
 -rw-r--r--	root/root	usr/share/gitk/lib/msgs/sv.msg
+-rw-r--r--	root/root	usr/share/gitk/lib/msgs/ta.msg
 -rw-r--r--	root/root	usr/share/gitk/lib/msgs/vi.msg
 -rw-r--r--	root/root	usr/share/gitk/lib/msgs/zh_cn.msg
 drwxr-xr-x	root/root	usr/share/gitweb/
