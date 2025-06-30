@@ -15,13 +15,13 @@ lrwxrwxrwx	root/root	usr/lib/libunwind-setjmp.so -> libunwind-setjmp.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libunwind-setjmp.so.0 -> libunwind-setjmp.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libunwind-setjmp.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libunwind-x86_64.a
-lrwxrwxrwx	root/root	usr/lib/libunwind-x86_64.so -> libunwind-x86_64.so.8.1.0
-lrwxrwxrwx	root/root	usr/lib/libunwind-x86_64.so.8 -> libunwind-x86_64.so.8.1.0
--rwxr-xr-x	root/root	usr/lib/libunwind-x86_64.so.8.1.0
+lrwxrwxrwx	root/root	usr/lib/libunwind-x86_64.so -> libunwind-x86_64.so.8.2.0
+lrwxrwxrwx	root/root	usr/lib/libunwind-x86_64.so.8 -> libunwind-x86_64.so.8.2.0
+-rwxr-xr-x	root/root	usr/lib/libunwind-x86_64.so.8.2.0
 -rw-r--r--	root/root	usr/lib/libunwind.a
-lrwxrwxrwx	root/root	usr/lib/libunwind.so -> libunwind.so.8.1.0
-lrwxrwxrwx	root/root	usr/lib/libunwind.so.8 -> libunwind.so.8.1.0
--rwxr-xr-x	root/root	usr/lib/libunwind.so.8.1.0
+lrwxrwxrwx	root/root	usr/lib/libunwind.so -> libunwind.so.8.2.0
+lrwxrwxrwx	root/root	usr/lib/libunwind.so.8 -> libunwind.so.8.2.0
+-rwxr-xr-x	root/root	usr/lib/libunwind.so.8.2.0
 drwxr-xr-x	root/root	usr/libexec/
 drwxr-xr-x	root/root	usr/libexec/libunwind/
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Gperf-simple
@@ -32,6 +32,7 @@ drwxr-xr-x	root/root	usr/libexec/libunwind/
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Gtest-init
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Gtest-resume-sig
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Gtest-resume-sig-rt
+-rwxr-xr-x	root/root	usr/libexec/libunwind/Gtest-sig-context
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Gtest-trace
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Gx64-test-dwarf-expressions
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Lperf-simple
@@ -47,6 +48,7 @@ drwxr-xr-x	root/root	usr/libexec/libunwind/
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Ltest-nomalloc
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Ltest-resume-sig
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Ltest-resume-sig-rt
+-rwxr-xr-x	root/root	usr/libexec/libunwind/Ltest-sig-context
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Ltest-trace
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Ltest-varargs
 -rwxr-xr-x	root/root	usr/libexec/libunwind/Lx64-test-dwarf-expressions
