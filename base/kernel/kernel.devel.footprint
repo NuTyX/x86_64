@@ -24450,6 +24450,7 @@ drwxrwxr-x	root/root	usr/src/kernel/rust/helpers/
 -rw-rw-r--	root/root	usr/src/kernel/rust/helpers/bug.c
 -rw-rw-r--	root/root	usr/src/kernel/rust/helpers/build_assert.c
 -rw-rw-r--	root/root	usr/src/kernel/rust/helpers/build_bug.c
+-rw-r--r--	root/root	usr/src/kernel/rust/helpers/completion.c
 -rw-rw-r--	root/root	usr/src/kernel/rust/helpers/cpumask.c
 -rw-rw-r--	root/root	usr/src/kernel/rust/helpers/cred.c
 -rw-rw-r--	root/root	usr/src/kernel/rust/helpers/device.c
@@ -24547,6 +24548,7 @@ drwxrwxr-x	root/root	usr/src/kernel/rust/kernel/sync/
 -rw-rw-r--	root/root	usr/src/kernel/rust/kernel/sync/arc.rs
 drwxrwxr-x	root/root	usr/src/kernel/rust/kernel/sync/arc/
 -rw-rw-r--	root/root	usr/src/kernel/rust/kernel/sync/arc/std_vendor.rs
+-rw-r--r--	root/root	usr/src/kernel/rust/kernel/sync/completion.rs
 -rw-rw-r--	root/root	usr/src/kernel/rust/kernel/sync/condvar.rs
 -rw-rw-r--	root/root	usr/src/kernel/rust/kernel/sync/lock.rs
 drwxrwxr-x	root/root	usr/src/kernel/rust/kernel/sync/lock/
@@ -34157,6 +34159,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/x86/bugs/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/x86/raw_syscall_helper_32.S
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/x86/sigaltstack.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/x86/sigreturn.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/x86/sigtrap_loop.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/x86/single_step_syscall.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/x86/srso.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/x86/syscall_arg_fault.c
