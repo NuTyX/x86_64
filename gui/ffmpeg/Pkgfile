@@ -56,12 +56,13 @@ _CONF_OPTS="    --prefix=/usr \
     --enable-openssl "
 
 source=(${url}releases/ffmpeg-$version.tar.xz
-        ffmpeg-7.1.1-chromium_method-1.patch)
+        ffmpeg-7.1.1-v4l2-fix1.patch    
+        ffmpeg-7.0.1-chromium_method-1.patch)
 
 prepare() {
   cd ffmpeg-$version
-  patch -Np1 -i ../ffmpeg-7.1.1-chromium_method-1.patch
- 
+  patch -Np1 -i ../ffmpeg-7.1.1-v4l2-fix1.patch
+  patch -Np1 -i ../ffmpeg-7.0.1-chromium_method-1.patch
   sed -e 's/X265_BUILD >= 210/(&) \&\& (X265_BUILD < 213)/' \
     -i libavcodec/libx265.c
 }
