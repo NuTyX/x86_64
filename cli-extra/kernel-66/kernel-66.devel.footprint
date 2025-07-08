@@ -9017,6 +9017,7 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MISC_RTSX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MISC_RTSX_PCI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MISC_RTSX_USB (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_ITS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_RFDS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_SPECTRE_BHI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MKISS (EMPTY)
@@ -12798,7 +12799,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/UNIX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/UNIX98_PTYS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/UNIX_DIAG (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/UNIX_SCM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/UNWINDER_ORC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/UPROBES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/UPROBE_EVENTS (EMPTY)
@@ -22142,6 +22142,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/lib/livepatch/
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/logic_iomem.c
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/logic_pio.c
 -rw-r--r--	root/root	usr/src/kernel-66/lib/logic_pio.o
+-rw-r--r--	root/root	usr/src/kernel-66/lib/longest_symbol_kunit.c
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/lru_cache.c
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lru_cache.ko
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lru_cache.mod
@@ -22182,12 +22183,15 @@ drwxrwxr-x	root/root	usr/src/kernel-66/lib/lz4/
 drwxrwxr-x	root/root	usr/src/kernel-66/lib/lzo/
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/.built-in.a.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/.lzo1x_compress.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/.lzo1x_compress_safe.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/.lzo1x_decompress_safe.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/.modules.order.cmd
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/lzo/Makefile
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/built-in.a
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/lzo/lzo1x_compress.c
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/lzo1x_compress.o
+-rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/lzo1x_compress_safe.c
+-rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/lzo1x_compress_safe.o
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/lzo/lzo1x_decompress_safe.c
 -rw-r--r--	root/root	usr/src/kernel-66/lib/lzo/lzo1x_decompress_safe.o
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/lzo/lzodefs.h
@@ -27387,6 +27391,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/cgroup_v1v2.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/cgrp_kfunc.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/cgrp_local_storage.c
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/changes_pkt_data.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/check_mtu.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/cls_redirect.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/prog_tests/connect_force_port.c
@@ -27792,6 +27797,8 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/cgrp_ls_recursion.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/cgrp_ls_sleepable.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/cgrp_ls_tp_btf.c
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/changes_pkt_data.c
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/changes_pkt_data_freplace.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/connect4_dropper.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/connect4_prog.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/connect6_prog.c
@@ -30749,6 +30756,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/x86/
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/raw_syscall_helper_32.S
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/sigaltstack.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/sigreturn.c
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/sigtrap_loop.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/single_step_syscall.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/syscall_arg_fault.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/x86/syscall_nt.c
