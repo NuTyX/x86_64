@@ -13,22 +13,12 @@ run=(minizip gtk3 ffmpeg flac dbus freetype brotli woff2
      gtk-update-icon-cache shared-mime-info abseil-cpp)
 
 name=chromium
-version=138.0.7204.49
+version=138.0.7204.92
 
-icuversion=75.1
-
-re2version=2024-07-02
+re2version=2024-04-01
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 
-source=(https://github.com/unicode-org/icu/releases/download/\
-release-${icuversion//./-}/icu4c-${icuversion//./_}-src.tgz
-        https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
-
-prepare() {
-cd icu/source
-./configure
-make
-}
+source=(https://mirror.puzzle.ch/archlinux/pool/packages/$name-$version-1-x86_64.pkg.tar.zst)
 
 build() {
 
@@ -38,12 +28,4 @@ mkdir -p $PKG/etc/ld.so.conf.d
 rm $PKG/usr/lib/chromium/libvulkan.so.1
 
 echo "/usr/lib/chromium" > $PKG/etc/ld.so.conf.d/$name.conf
-}
-
-package() {
-for LIB in libicui18n.so libicuuc.so libicudata.so
-do
-   cp icu/source/lib/$LIB.$icuversion \
-   $PKG/usr/lib/chromium/$LIB.$icuversion
-done
 }
