@@ -30,6 +30,7 @@ meson setup .. \
 ninja
 
 DESTDIR=$PKG ninja install
+rm -r $PKG/usr/include/{GL,KHR}
 
 install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 } 
