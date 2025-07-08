@@ -9,7 +9,7 @@ contributors="Greg,Pierre,Jayce,Skythrew,Tnut"
 makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection fast_float)
 
 name=vte
-version=0.80.1
+version=0.80.3
 
 prepare() {
 git clone https://gitlab.gnome.org/GNOME/vte.git
