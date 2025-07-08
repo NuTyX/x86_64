@@ -16,7 +16,7 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=128.10.0esr
+version=140.0esr
 
 source=(https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
         $name.desktop)
@@ -37,9 +37,6 @@ rm usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 }
 
 build() {
-  export CC=gcc CXX=g++ AR=gcc-ar NM=gcc-nm RANLIB=gcc-ranlib
-  unset CFLAGS
-  unset CXXFLAGS
   cd $name-*
 
   cat > mozconfig << "EOF"
@@ -47,12 +44,8 @@ ac_add_options --enable-application=comm/mail
 
 ac_add_options --prefix=/usr
 ac_add_options --enable-release
-ac_add_options --enable-linker=gold
 ac_add_options --enable-hardening
 ac_add_options --enable-optimize
-ac_add_options --enable-rust-simd
-# https://bugzilla.mozilla.org/show_bug.cgi?id=1423822
-ac_add_options --disable-elf-hack
 
 # Branding
 ac_add_options --enable-official-branding
