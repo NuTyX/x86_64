@@ -1,0 +1,70 @@
+description="PHP is PHP Hypertext Preprocesor."
+url="https://www.php.net"
+
+license="PHP"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Berlius,Jayce,Greg,Fabienwang,Tnut"
+
+makedepends=(readline apache libxml2 aspell aspell-dict libxslt enchant
+             freetype libexif libjpeg-turbo libpng libtiff pcre libzip
+             curl db mariadb openldap postgresql sqlite oniguruma
+             unixodbc openssl cyrus-sasl kerberos libzip)
+
+
+name=php
+version=8.4.10
+
+source=(apache.conf
+        https://php.net/distributions/$name-$version.tar.xz)
+
+build () {
+
+    cd $name-$version
+    CFLAGS="${CFLAGS} -fPIC"
+
+    ./configure --prefix=/usr            \
+            --sysconfdir=/etc/php        \
+            --localstatedir=/var         \
+            --with-config-file-path=/etc/php \
+            --with-config-file-scan-dir=/etc/php/conf.d \
+            --with-layout=GNU            \
+            --mandir=/usr/share/man      \
+            --disable-rpath              \
+            --with-zlib                  \
+            --enable-bcmath=shared       \
+            --enable-calendar=shared     \
+            --enable-dba=shared          \
+            --enable-exif=shared         \
+            --enable-gd=shared           \
+            --enable-intl=shared         \
+            --enable-mbstring            \
+            --with-zip=shared            \
+            --with-bz2=shared            \
+            --with-curl=shared           \
+            --with-enchant=shared        \
+            --with-gettext=shared        \
+            --with-iconv=shared          \
+            --with-readline              \
+            --with-openssl               \
+            --with-pdo-mysql=shared      \
+            --with-mysqli=shared         \
+            --with-mysql-sock=/run/mysqld/mysqld.sock \
+            --with-apxs2             
+            
+    make
+    make -j1 INSTALL_ROOT=$PKG \
+    install-{modules,cli,build,headers,programs,pharcmd}
+
+    rm -f $PKG/usr/lib/php/modules/*.a
+
+    install -d -m755 $PKG/etc/php/conf.d
+    install -D -m644 php.ini-production \
+    $PKG/etc/php/php.ini
+
+    install -D -m755 .libs/libphp.so \
+    $PKG/usr/lib/httpd/modules/libphp.so
+
+    install -D -m644 ../apache.conf \
+    $PKG/etc/httpd/extra/httpd-php.conf
+}
