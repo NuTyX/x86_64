@@ -9094,6 +9094,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_GDS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_IBPB_ENTRY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_IBRS_ENTRY (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_ITS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_L1TF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_MDS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_MMIO_STALE_DATA (EMPTY)
@@ -15802,6 +15803,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/include/linux/decompress/
 drwxrwxr-x	root/root	usr/src/kernel-612/include/linux/device/
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/device/bus.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/device/class.h
+-rw-r--r--	root/root	usr/src/kernel-612/include/linux/device/devres.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/device/driver.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/device_cgroup.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/devm-helpers.h
@@ -22782,6 +22784,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/lib/kunit/
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/logic_iomem.c
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/logic_pio.c
 -rw-r--r--	root/root	usr/src/kernel-612/lib/logic_pio.o
+-rw-r--r--	root/root	usr/src/kernel-612/lib/longest_symbol_kunit.c
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/lru_cache.c
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lru_cache.ko
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lru_cache.mod
@@ -22824,12 +22827,15 @@ drwxrwxr-x	root/root	usr/src/kernel-612/lib/lz4/
 drwxrwxr-x	root/root	usr/src/kernel-612/lib/lzo/
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/.built-in.a.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/.lzo1x_compress.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/.lzo1x_compress_safe.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/.lzo1x_decompress_safe.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/.modules.order.cmd
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/lzo/Makefile
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/built-in.a
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/lzo/lzo1x_compress.c
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/lzo1x_compress.o
+-rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/lzo1x_compress_safe.c
+-rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/lzo1x_compress_safe.o
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/lzo/lzo1x_decompress_safe.c
 -rw-r--r--	root/root	usr/src/kernel-612/lib/lzo/lzo1x_decompress_safe.o
 -rw-rw-r--	root/root	usr/src/kernel-612/lib/lzo/lzodefs.h
@@ -32663,6 +32669,13 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/x86/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/amx.c
+drwxr-xr-x	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/Makefile
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/common.py
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/its_indirect_alignment.py
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/its_permutations.py
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/its_ret_alignment.py
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/bugs/its_sysfs.py
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/x86/check_cc.sh
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/check_initial_reg_state.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/clang_helpers_32.S
@@ -32682,6 +32695,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/x86/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/raw_syscall_helper_32.S
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/sigaltstack.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/sigreturn.c
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/sigtrap_loop.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/single_step_syscall.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/srso.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/x86/syscall_arg_fault.c
