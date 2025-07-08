@@ -15,10 +15,10 @@ run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus
      telepathy-mission-control gtk-update-icon-cache
      gnome-settings-daemon libsoup3)
 
-set=(gnome budgie)
+set=(gnome)
 
 name=gnome-shell
-version=48.2
+version=48.3
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
