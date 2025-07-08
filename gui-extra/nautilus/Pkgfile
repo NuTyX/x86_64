@@ -11,10 +11,10 @@ run=(desktop-file-utils gtk-update-icon-cache
 makedepends=(gnome-autoar libnotify gnome-desktop gvfs
              gobject-introspection exempi libexif libgexiv2
              libcloudproviders meson gtk-doc libhandy bubblewrap libadwaita)
-set=(gnome budgie)
+set=(gnome)
 
 name=nautilus
-version=48.2
+version=48.3
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
