@@ -73,9 +73,11 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/perl5381delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl5382delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl5383delta.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/perl5384delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl5400delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl5401delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl5402delta.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/perl5420delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl561delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl56delta.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/perl581delta.1.gz
@@ -403,6 +405,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/ExtUtils::ParseXS.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ExtUtils::ParseXS::Constants.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ExtUtils::ParseXS::Eval.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ExtUtils::ParseXS::Node.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ExtUtils::ParseXS::Utilities.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ExtUtils::Typemaps.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ExtUtils::Typemaps::Cmd.3.gz
@@ -450,6 +453,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/I18N::LangTags::List.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/I18N::Langinfo.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/IO.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/IO::Compress.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/IO::Compress::Base.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/IO::Compress::Bzip2.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/IO::Compress::Deflate.3.gz
@@ -594,6 +598,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/Pod::Usage.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/SDBM_File.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Safe.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/Scalar::List::Utils.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Scalar::Util.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Search::Dict.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/SelectSaver.3.gz
@@ -703,6 +708,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Compare::String.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Compare::Undef.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Compare::Wildcard.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/Test2::Env.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Event.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Event::Bail.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Event::Diag.3.gz
@@ -822,6 +828,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Util::HashBase.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Util::Importer.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Util::Ref.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/Test2::Util::Sig.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Util::Stash.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Util::Sub.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Util::Table.3.gz
@@ -838,7 +845,6 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/Test2::Workflow::Task::Group.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test::Builder.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test::Builder::Formatter.3.gz
--rw-r--r--	root/root	usr/share/man/man3/Test::Builder::IO::Scalar.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test::Builder::Module.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test::Builder::Tester.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Test::Builder::Tester::Color.3.gz
@@ -934,6 +940,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/re.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sigtrap.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sort.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/source::encoding.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/stable.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/strict.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/subs.3.gz
