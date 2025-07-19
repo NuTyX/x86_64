@@ -7,23 +7,29 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 name=snowball
-version=2.2.0
-release=2
+version=3.0.1
 
 makedepends=(perl)
 
-source=(https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.xz)
+source=(https://github.com/snowballstem/snowball/archive/refs/tags/v${version}.tar.gz
+        dynamiclib.patch)
+
+prepare() {
+
+cd $name-$version
+  patch -Np1 -i ../dynamiclib.patch
+}
 
 build() {
  cd $name-$version
  make
- install -Dt $PKG/usr/bin snowball stemwords
- install -Dt $PKG/usr/share/licenses/$name -m644 COPYING
-
- install -Dt $PKG/usr/include -m644 include/libstemmer.h
- install -Dm644 libstemmer.so.0 \
- $PKG/usr/lib/libstemmer.so.0.0.0
-
- ln -s libstemmer.so.0.0.0 $PKG/usr/lib/libstemmer.so.0
- ln -s libstemmer.so.0 $PKG/usr/lib/libstemmer.so
+ install -d $PKG/usr/{bin,lib}
+  install -t $PKG/usr/bin snowball stemwords
+  install -Dt $PKG/usr/share/licenses/$name -m644 COPYING
+  install -Dm644 {.,$PKG/usr}/include/libstemmer.h
+  install libstemmer.a $PKG/usr/lib
+  # dynamiclib.patch already puts into $PWD the shared libs
+  # libstemmer.so.$version and two symlinks to it, so just copy them
+  # (without dereferencing)
+  cp -P libstemmer.so* $PKG/usr/lib
 }
