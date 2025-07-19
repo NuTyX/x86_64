@@ -8,21 +8,19 @@ contributors="Pierre.,Rémy,Tnut"
 makedepends=(make-ca cmake curl llvm python libssh2)
 
 name=rustc
-version=1.87.0
-release=2
+version=1.88.0
 
-source=(http://static.rust-lang.org/dist/$name-$version-src.tar.gz
-       rustc-1.85.1-llvm_20-1.patch)
-
-prepare() {
-cd $name-$version-src
-
-#patch -Np1 -i ../rustc-1.85.1-llvm_20-1.patch
-}
+source=(http://static.rust-lang.org/dist/$name-$version-src.tar.gz)
 
 build() {
    cd $name-$version-src
    cat <<EOF > config.toml
+
+# Tell x.py the editors have reviewed the content of this file
+# and updated it to follow the major changes of the building system,
+# so x.py will not warn us to do such a review.
+change-id = 140732
+
 # see src/bootstrap/config.toml.example for more possible options
 [llvm]
 # by default, rust will build for a myriad of architectures
@@ -55,7 +53,7 @@ vendor = true
 
 [install]
 prefix = "/usr"
-docdir = "share/doc/rustc-1.85.1"
+docdir = "share/doc/rustc-1.88.0"
 
 [rust]
 channel = "stable"
@@ -69,6 +67,12 @@ codegen-tests = false
 # it's only intended for developers working on standard library
 # and tools, and it only works with the Rust Git repository.
 download-rustc = false
+
+# Don't build lld which does not belong to this package and seems not
+# so useful for BLFS.  Even if it turns out to be really useful we'd build
+# it as a part of the LLVM package instead.
+lld = false
+
 
 [target.x86_64-unknown-linux-gnu]
 # NB the output of llvm-config (i.e. help options) may be
