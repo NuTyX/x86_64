@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/neon-config.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/ne_add_request_header.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ne_addr_canonical.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_addr_destroy.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_addr_error.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_addr_first.3.gz
@@ -28,6 +29,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/ne_get_request_target.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_get_response_header.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_get_response_location.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ne_get_response_retry_after.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_get_scheme.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_get_server_hostport.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_get_session_flag.3.gz
@@ -86,6 +88,8 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_decrypt.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_encrypted.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_free.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_fromuri.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_import.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_name.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_owner.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ne_ssl_clicert_read.3.gz
