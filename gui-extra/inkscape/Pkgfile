@@ -8,9 +8,10 @@ contributors="Tnut"
 
 name=inkscape
 version=1.4.2
+release=2
 
 source=(https://inkscape.org/gallery/item/56344/inkscape-$version.tar.xz
-        inkscape-1.4.2-poppler_fixes-1.patch) 
+        inkscape-1.4.2-poppler_fixes-3.patch) 
 
 makedepends=(cmake boost git gtkmm python lcms2 gsl libxslt gc
              dbus-glib lcms2 libjpeg-turbo poppler-glib gspell
@@ -22,7 +23,7 @@ run=(desktop-file-utils hicolor-icon-theme gtk-update-icon-cache
 prepare() {
  mv $name-${version}_* $name
  cd $name
- patch -Np1 -i ../inkscape-1.4.2-poppler_fixes-1.patch
+ patch -Np1 -i ../inkscape-1.4.2-poppler_fixes-3.patch
 
 }
 
