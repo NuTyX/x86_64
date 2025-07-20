@@ -3,14 +3,13 @@ url='https://github.com/martinpitt/umockdev/'
 
 license="LGPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson ninja libgudev libpcap vala)
 
 name=umockdev
-version=0.18.4
-release=1
+version=0.19.1
 
 source=(https://github.com/martinpitt/$name/releases/download/$version/$name-$version.tar.xz)
 
