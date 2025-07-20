@@ -2,14 +2,15 @@ description="Utility for transferring files with URL syntax to many protocols"
 url="http://curl.haxx.se"
 
 maintainer="Daniel Stenberg"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 license="MIT"
 
 makedepends=(openssl libidn2 libpsl zlib zstd)
 
 name=curl
 version=8.15.0
+release=3
 
 set=(chroot)
 
@@ -19,45 +20,21 @@ source=(https://curl.se/ca/cacert.pem
 
 PKGMK_GROUPS=(devel doc man)
 
-prepare() {
-  cd $name-$version
-#  patch -Np1 -i ../$name-$version-consolidate-1.patch
-}
-
 build() {
 cd $name-$version
-./configure --prefix=/usr            \
---bindir=/bin  --with-openssl        \
+./configure    \
+--prefix=/usr  \
+--with-openssl \
 --with-ca-path=/etc/ssl/certs        \
 --with-ca-bundle=/etc/ssl/cacert.pem \
 --enable-threaded-resolver
 make
 make DESTDIR=$PKG install
 
-find docs \( -name Makefile\* \
-          -o -name \*.1       \
-          -o -name \*.3 \)    \
-          -exec rm {} \;
-
 install -v -d -m755 $PKG/usr/share/doc/$name
 cp -v -R docs/* \
 $PKG/usr/share/doc/$name
 
-
-# reorganise the libs
-mkdir $PKG/lib
-mv $PKG/usr/lib/libcurl.so.4.8.0 \
-$PKG/lib/
-for LIB in libcurl.so{,.4}
-	do 
-		ln -sv libcurl.so.4.8.0 $PKG/lib/$LIB
-		rm $PKG/usr/lib/$LIB
-		ln -sv ../../lib/libcurl.so.4.8.0 \
-		$PKG/usr/lib/$LIB
-done
-
-ln -sv ../../lib/libcurl.so.4.8.0 \
-$PKG/usr/lib/libcurl.so.4.8.0
 
 rm $PKG/usr/lib/libcurl.la
 install -Dm 644 $SRC/cacert.pem $PKG/etc/ssl/cacert.pem
