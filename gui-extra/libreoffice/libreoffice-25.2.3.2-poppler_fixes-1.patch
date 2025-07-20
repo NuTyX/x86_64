@@ -1,3 +1,14 @@
+Submitted By:            Douglas R. Reno <renodr at linuxfromscratch dot org>
+Date:                    2025-05-19
+Initial Package Version: 24.2.3.2
+Origin:                  Upstream
+Upstream Status:         Applied
+Description:             Fixes building Libreoffice with poppler-25.05.0
+                         by adjusting arguments to be Object::null()
+                         instead of Object(objNull). Massive thanks goes to
+                         Marty Jack for finding this and putting it into the
+                         Libreoffice ticket (#21524)
+
 From 0ee2636304ac049f21415c67e92040f7d6c14d35 Mon Sep 17 00:00:00 2001
 From: Xisco Fauli <xiscofauli@libreoffice.org>
 Date: Mon, 5 May 2025 10:03:10 +0200
@@ -15,7 +26,7 @@ diff --git a/sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx b/sdext/sourc
 index dcc1932f7ad7..604ba3b7db2c 100644
 --- a/sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx
 +++ b/sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx
-@@ -1320,11 +1320,19 @@ poppler_bool PDFOutDev::tilingPatternFill(GfxState *state, Gfx *, Catalog *,
+@@ -1317,11 +1317,19 @@ poppler_bool PDFOutDev::tilingPatternFill(GfxState *state, Gfx *, Catalog *,
          }
      }
  
