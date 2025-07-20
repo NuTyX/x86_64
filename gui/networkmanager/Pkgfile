@@ -17,9 +17,9 @@ alias=(NetworkManager)
 _name=NetworkManager
 
 name=networkmanager
-version=1.52.0
+version=1.52.1
 
-source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.52.0/downloads/NetworkManager-$version.tar.xz)
+source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/$version/downloads/NetworkManager-$version.tar.xz)
 
 prepare() {
  cd ${_name}-$version
