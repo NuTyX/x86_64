@@ -154,6 +154,8 @@ drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/hwcap.h
 -rw-r--r--	root/root	usr/include/bits/in.h
 -rw-r--r--	root/root	usr/include/bits/indirect-return.h
+-rw-r--r--	root/root	usr/include/bits/inet-fortified-decl.h
+-rw-r--r--	root/root	usr/include/bits/inet-fortified.h
 -rw-r--r--	root/root	usr/include/bits/initspin.h
 -rw-r--r--	root/root	usr/include/bits/inotify.h
 -rw-r--r--	root/root	usr/include/bits/ioctl-types.h
@@ -272,6 +274,7 @@ drwxr-xr-x	root/root	usr/include/bits/platform/
 -rw-r--r--	root/root	usr/include/bits/termios-c_iflag.h
 -rw-r--r--	root/root	usr/include/bits/termios-c_lflag.h
 -rw-r--r--	root/root	usr/include/bits/termios-c_oflag.h
+-rw-r--r--	root/root	usr/include/bits/termios-cbaud.h
 -rw-r--r--	root/root	usr/include/bits/termios-misc.h
 -rw-r--r--	root/root	usr/include/bits/termios-struct.h
 -rw-r--r--	root/root	usr/include/bits/termios-tcflow.h
@@ -1489,7 +1492,6 @@ drwxr-xr-x	root/root	usr/include/sys/platform/
 -rw-r--r--	root/root	usr/include/sysexits.h
 -rw-r--r--	root/root	usr/include/syslog.h
 -rw-r--r--	root/root	usr/include/tar.h
--rw-r--r--	root/root	usr/include/termio.h
 -rw-r--r--	root/root	usr/include/termios.h
 -rw-r--r--	root/root	usr/include/tgmath.h
 -rw-r--r--	root/root	usr/include/thread_db.h
