@@ -19,7 +19,8 @@ makedepends=(systemd expat)
 set=(core)
 
 name=dbus
-version=1.16.2
+version=1.14.10
+release=9
 
 
 PKGMK_GROUPS=(doc devel)
@@ -27,24 +28,21 @@ source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-	mkdir build
-        cd    build
-
-        meson setup .. \
-        --prefix=/usr          \
-        --buildtype=release    \
-        --wrap-mode=nofallback
-
-	ninja
-
-DESTDIR=$PKG ninja install
+	./configure --prefix=/usr                 \
+        --sysconfdir=/etc                     \
+        --localstatedir=/var                  \
+        --disable-doxygen-docs                \
+        --disable-xml-docs                    \
+        --disable-static                      \
+        --docdir=/usr/share/doc/dbus-$version \
+        --with-system-socket=/run/dbus/system_bus_socket \
+        --enable-systemd
+	make
+	make DESTDIR=$PKG install
 
 }
 package(){
-
-  chown -v root:messagebus $PKG/usr/libexec/dbus-daemon-launch-helper
-  chmod -v      4750       $PKG/usr/libexec/dbus-daemon-launch-helper
-
   ln -sfv /etc/machine-id $PKG/var/lib/dbus
+  rm $PKG/usr/lib/libdbus-1.la
   rm $PKG/usr/bin/dbus-launch
 }
