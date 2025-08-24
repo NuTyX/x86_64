@@ -14,7 +14,6 @@ drwxrwxr-x	root/root	usr/src/kernel/
 -rw-rw-r--	root/root	usr/src/kernel/.clippy.toml
 -rw-rw-r--	root/root	usr/src/kernel/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel/.config
--rw-r--r--	root/root	usr/src/kernel/.config.old
 -rw-rw-r--	root/root	usr/src/kernel/.editorconfig
 -rw-rw-r--	root/root	usr/src/kernel/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel/.gitattributes
@@ -3858,10 +3857,6 @@ drwxrwxr-x	root/root	usr/src/kernel/crypto/
 -rw-r--r--	root/root	usr/src/kernel/crypto/.streebog_generic.mod.cmd
 -rw-r--r--	root/root	usr/src/kernel/crypto/.streebog_generic.mod.o.cmd
 -rw-r--r--	root/root	usr/src/kernel/crypto/.streebog_generic.o.cmd
--rw-r--r--	root/root	usr/src/kernel/crypto/.tcrypt.ko.cmd
--rw-r--r--	root/root	usr/src/kernel/crypto/.tcrypt.mod.cmd
--rw-r--r--	root/root	usr/src/kernel/crypto/.tcrypt.mod.o.cmd
--rw-r--r--	root/root	usr/src/kernel/crypto/.tcrypt.o.cmd
 -rw-r--r--	root/root	usr/src/kernel/crypto/.testmgr.o.cmd
 -rw-r--r--	root/root	usr/src/kernel/crypto/.twofish_common.ko.cmd
 -rw-r--r--	root/root	usr/src/kernel/crypto/.twofish_common.mod.cmd
@@ -4583,11 +4578,6 @@ drwxrwxr-x	root/root	usr/src/kernel/crypto/krb5/
 -rw-r--r--	root/root	usr/src/kernel/crypto/streebog_generic.o
 -rw-rw-r--	root/root	usr/src/kernel/crypto/tcrypt.c
 -rw-rw-r--	root/root	usr/src/kernel/crypto/tcrypt.h
--rw-r--r--	root/root	usr/src/kernel/crypto/tcrypt.ko
--rw-r--r--	root/root	usr/src/kernel/crypto/tcrypt.mod
--rw-r--r--	root/root	usr/src/kernel/crypto/tcrypt.mod.c
--rw-r--r--	root/root	usr/src/kernel/crypto/tcrypt.mod.o
--rw-r--r--	root/root	usr/src/kernel/crypto/tcrypt.o
 -rw-rw-r--	root/root	usr/src/kernel/crypto/tea.c
 -rw-rw-r--	root/root	usr/src/kernel/crypto/testmgr.c
 -rw-rw-r--	root/root	usr/src/kernel/crypto/testmgr.h
@@ -4959,7 +4949,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/AD2S1200 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AD2S1210 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AD2S90 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/AD3530R (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AD3552R (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AD3552R_HS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AD3552R_LIB (EMPTY)
@@ -5163,8 +5152,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/AMD_PMF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AMD_PTDMA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AMD_QDMA (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/AMD_SBRMI_HWMON (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/AMD_SBRMI_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AMD_SFH_HID (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AMD_WBRF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/AMD_XGBE (EMPTY)
@@ -5553,7 +5540,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_BQ27XXX_DT_UPDATES_NVM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_BQ27XXX_HDQ (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_BQ27XXX_I2C (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_CHAGALL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_CPCAP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_CW2015 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BATTERY_DA9030 (EMPTY)
@@ -5668,7 +5654,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/BLK_DEV_UBLK (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BLK_DEV_WRITE_MOUNTED (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BLK_DEV_ZONED (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/BLK_DEV_ZONED_LOOP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BLK_ICQ (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BLK_INLINE_ENCRYPTION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/BLK_INLINE_ENCRYPTION_FALLBACK (EMPTY)
@@ -5937,6 +5922,7 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_AUTO_VAR_INIT_PATTERN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_AUTO_VAR_INIT_ZERO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_AUTO_VAR_INIT_ZERO_BARE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_COUNTED_BY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_ENTRY_PADDING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_IBT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_INT128 (EMPTY)
@@ -5944,6 +5930,7 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_KASAN_SW_TAGS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_MARCH_NATIVE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_MIN_FUNCTION_ALIGNMENT (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_MULTIDIMENSIONAL_NONSTRING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_NAMED_AS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_NAMED_AS_FIXED_SANITIZERS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_NO_PROFILE_FN_ATTR (EMPTY)
@@ -6029,7 +6016,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MAX77693 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MAX77976 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MAX8903 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MAX8971 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MAX8997 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MAX8998 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CHARGER_MP2629 (EMPTY)
@@ -6266,7 +6252,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_ARIA_AESNI_AVX_X86_64 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_ARIA_GFNI_AVX512_X86_64 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_AUTHENC (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_BENCHMARK (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_BLAKE2B (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_BLAKE2S_X86 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_BLOWFISH (EMPTY)
@@ -6319,7 +6304,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT_420XX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT_4XXX (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT_6XXX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT_C3XXX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT_C3XXXVF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CRYPTO_DEV_QAT_C62X (EMPTY)
@@ -6477,7 +6461,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/DA9062_WATCHDOG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DA9063_WATCHDOG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DA9150_GPADC (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DASHARO_ACPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DAVICOM_PHY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DAX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DCA (EMPTY)
@@ -6757,7 +6740,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BACKLIGHT_QUIRKS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BOE_BF060Y8M_AJ0 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BOE_HIMAX8279D (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BOE_TD4320 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BOE_TH101MB31UIG002_28A (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BOE_TV101WUM_LL2 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_BOE_TV101WUM_NL6 (EMPTY)
@@ -6768,7 +6750,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_ELIDA_KD35T133 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_FEIXIN_K101_IM2BA02 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_FEIYANG_FY07024DI26A30D (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_HIMAX_HX8279 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_HIMAX_HX83102 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_HIMAX_HX83112A (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_HIMAX_HX8394 (EMPTY)
@@ -6805,7 +6786,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_NOVATEK_NT36523 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_NOVATEK_NT36672A (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_NOVATEK_NT36672E (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_NOVATEK_NT37801 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_NOVATEK_NT39016 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_OLIMEX_LCD_OLINUXINO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_ORIENTATION_QUIRKS (EMPTY)
@@ -6859,7 +6839,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_TPO_TD043MTEA1 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_TPO_TPG110 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_TRULY_NT35597_WQXGA (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_VISIONOX_G2647FB105 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_VISIONOX_R66451 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_VISIONOX_RM69299 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_PANEL_VISIONOX_RM692E5 (EMPTY)
@@ -6887,9 +6866,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_SSD130X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_SSD130X_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_SSD130X_SPI (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_ST7571_I2C (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_ST7586 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/DRM_ST7735R (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_SUBALLOC_HELPER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_SYSFB_HELPER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/DRM_THINE_THC63LVD1024 (EMPTY)
@@ -8258,7 +8234,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/IGC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/IGC_LEDS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/IIO (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/IIO_ADC_HELPER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/IIO_ADIS_LIB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/IIO_ADIS_LIB_BUFFER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/IIO_BACKEND (EMPTY)
@@ -8546,7 +8521,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_MRFLD_ADC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_MRFLD_PWRBTN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_OAKTRAIL (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_OC_WATCHDOG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_PCH_THERMAL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_PLR_TPMI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/INTEL_PMC_CORE (EMPTY)
@@ -9145,7 +9119,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TI_LMU_COMMON (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TLC591XX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TPS6105X (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TPS6131X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TRIGGERS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TRIGGER_ACTIVITY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/LEDS_TRIGGER_BACKLIGHT (EMPTY)
@@ -9622,7 +9595,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/MHI_WWAN_MBIM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MHP_DEFAULT_ONLINE_TYPE_OFFLINE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MHP_MEMMAP_ON_MEMORY (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/MHZ19B (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MICREL_KS8995MA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MICREL_PHY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MICROCHIP_PHY (EMPTY)
@@ -9699,7 +9671,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/MLX90632 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MLX90635 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MLXFW (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/MLXREG_DPU (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MLXREG_HOTPLUG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MLXREG_IO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/MLXREG_LC (EMPTY)
@@ -10042,7 +10013,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/NCN26000_PHY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/NCSI_OEM_CMD_GET_MAC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/NCSI_OEM_CMD_KEEP_PHY (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/NCT7201 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ND_BTT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ND_CLAIM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ND_PFN (EMPTY)
@@ -10783,7 +10753,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/OVERLAY_FS_REDIRECT_ALWAYS_FOLLOW (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/OVERLAY_FS_REDIRECT_DIR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/OVERLAY_FS_XINO_AUTO (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/OXP_EC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/P2SB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/P54_COMMON (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/P54_LEDS (EMPTY)
@@ -11071,7 +11040,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/PNPACPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/PNP_DEBUG_MESSAGES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/POLYNOMIAL (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/PORTWELL_EC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/POSIX_CPU_TIMERS_TASK_WORK (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/POSIX_MQUEUE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/POSIX_MQUEUE_SYSCTL (EMPTY)
@@ -11192,7 +11160,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/PWM_LPSS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/PWM_LPSS_PCI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/PWM_LPSS_PLATFORM (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/PWM_MC33XS2410 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/PWM_NTXEC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/PWM_PCA9685 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/PWM_STMPE (EMPTY)
@@ -11349,7 +11316,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_ACT8865 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_ACT8945A (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_AD5398 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_ADP5055 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_ARIZONA_LDO1 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_ARIZONA_MICSUPP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/REGULATOR_AS3711 (EMPTY)
@@ -11549,7 +11515,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/RN5T618_WATCHDOG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ROCKCHIP_PHY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ROCKER (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/ROHM_BD79124 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ROHM_BM1390 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ROHM_BU27034 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ROMFS_BACKED_BY_BLOCK (EMPTY)
@@ -11991,7 +11956,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SECURITY_YAMA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SEG_LED_GPIO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SEL3350_PLATFORM (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SEN0322 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSEAIR_SUNRISE_CO2 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSIRION_SGP30 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSIRION_SGP40 (EMPTY)
@@ -12106,8 +12070,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_JC42 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_K10TEMP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_K8TEMP (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_KBATT (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_KFAN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_LENOVO_EC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_LINEAGE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SENSORS_LIS3LV02D (EMPTY)
@@ -12747,7 +12709,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS43130 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS4341 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS4349 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS48L32 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS530X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS530X_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_CS53L30 (EMPTY)
@@ -12765,8 +12726,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_ES8328 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_ES8328_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_ES8328_SPI (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_ES8375 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_ES8389 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_ES83XX_DSM_COMMON (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_FRAMER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_FSL_ASRC (EMPTY)
@@ -12936,8 +12895,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RT721_SDCA_SDW (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RT722_SDCA_SDW (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RT9120 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RT9123 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RT9123P (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RTQ9128 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_RT_SDW_COMMON (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_SDCA (EMPTY)
@@ -13001,7 +12958,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_TSCS454 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_UDA1334 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_UDA1342 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_USB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WCD9335 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WCD934X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WCD937X (EMPTY)
@@ -13041,7 +12997,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WM8974 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WM8978 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WM8985 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WM8998 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WM_ADSP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WSA881X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/SND_SOC_WSA883X (EMPTY)
@@ -13642,7 +13597,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/TULIP_NAPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/TULIP_NAPI_HW_MITIGATION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/TUN (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/TUXEDO_NB04_WMI_AB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/TWL4030_CORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/TWL4030_MADC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/TWL4030_WATCHDOG (EMPTY)
@@ -14123,7 +14077,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/USB_XHCI_PCI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/USB_XHCI_PCI_RENESAS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/USB_XHCI_PLATFORM (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/USB_XHCI_SIDEBAND (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/USB_XUSBATM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/USB_YUREX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/USERFAULTFD (EMPTY)
@@ -14183,6 +14136,7 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/VGA_CONSOLE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VHOST (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VHOST_CROSS_ENDIAN_LEGACY (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/VHOST_ENABLE_FORK_OWNER_CONTROL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VHOST_IOTLB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VHOST_MENU (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VHOST_NET (EMPTY)
@@ -14318,8 +14272,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OG01A1B (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV01A10 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV02A10 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV02C10 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV02E10 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV08D10 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV08X40 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_OV13858 (EMPTY)
@@ -14400,8 +14352,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_V4L2_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_V4L2_SUBDEV_API (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_V4L2_TPG (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_VD55G1 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_VD56G3 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_VGXY61 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_VISL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_VP27SMPX (EMPTY)
@@ -14431,9 +14381,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_PCI_LIB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_PCI_LIB_LEGACY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_PMEM (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_RTC (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_RTC_CLASS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_RTC_PTP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_VDPA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_VFIO_PCI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIRTIO_VFIO_PCI_ADMIN_LEGACY (EMPTY)
@@ -33248,6 +33195,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/perf_events/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/Makefile
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/config
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/mmap.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/remove_on_exec.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/settings
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/perf_events/sigtrap_threads.c
@@ -34715,6 +34663,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/verification/dot2/
 -rw-rw-r--	root/root	usr/src/kernel/tools/verification/dot2/dot2k.py
 drwxrwxr-x	root/root	usr/src/kernel/tools/verification/dot2/dot2k_templates/
 -rw-rw-r--	root/root	usr/src/kernel/tools/verification/dot2/dot2k_templates/Kconfig
+-rw-r--r--	root/root	usr/src/kernel/tools/verification/dot2/dot2k_templates/Kconfig_container
 -rw-rw-r--	root/root	usr/src/kernel/tools/verification/dot2/dot2k_templates/main.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/verification/dot2/dot2k_templates/main_container.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/verification/dot2/dot2k_templates/main_container.h
