@@ -107,7 +107,6 @@ drwxr-xr-x	root/root	usr/lib/kernel/install.d/
 -rwxr-xr-x	root/root	usr/lib/kernel/install.d/50-depmod.install
 -rwxr-xr-x	root/root	usr/lib/kernel/install.d/90-loaderentry.install
 -rwxr-xr-x	root/root	usr/lib/kernel/install.d/90-uki-copy.install
--rw-r--r--	root/root	usr/lib/kernel/uki.conf
 -rwxr-xr-x	root/root	usr/lib/libnss_myhostname.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_mymachines.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_resolve.so.2
@@ -644,6 +643,7 @@ drwxr-xr-x	root/root	usr/lib/udev/hwdb.d/
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-cameras.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-hardware-wallets.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-joystick.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-maker-tools.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-mouse.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-pda.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-pointingstick.hwdb
