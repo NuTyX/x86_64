@@ -1,12 +1,12 @@
 description='NVIDIA modules for the latest stable Linux Kernel version.'
 url='https://www.nvidia.com/en-us/drivers/unix/'
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 license="custom"
 
 name=nvidia-kernel
-version=570.169
+version=570.172.08
 
 run=(kernel)
 KERNELNAME="${name#nvidia-}"
