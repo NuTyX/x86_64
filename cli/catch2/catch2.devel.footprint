@@ -39,6 +39,7 @@ drwxr-xr-x	root/root	usr/include/catch2/benchmark/detail/
 -rw-r--r--	root/root	usr/include/catch2/catch_template_test_macros.hpp
 -rw-r--r--	root/root	usr/include/catch2/catch_test_case_info.hpp
 -rw-r--r--	root/root	usr/include/catch2/catch_test_macros.hpp
+-rw-r--r--	root/root	usr/include/catch2/catch_test_run_info.hpp
 -rw-r--r--	root/root	usr/include/catch2/catch_test_spec.hpp
 -rw-r--r--	root/root	usr/include/catch2/catch_timer.hpp
 -rw-r--r--	root/root	usr/include/catch2/catch_tostring.hpp
@@ -87,6 +88,7 @@ drwxr-xr-x	root/root	usr/include/catch2/internal/
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_debug_console.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_debugger.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_decomposer.hpp
+-rw-r--r--	root/root	usr/include/catch2/internal/catch_deprecation_macro.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_enforce.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_enum_values_registry.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_errno_guard.hpp
@@ -139,15 +141,16 @@ drwxr-xr-x	root/root	usr/include/catch2/internal/
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_test_failure_exception.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_test_macro_impl.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_test_registry.hpp
--rw-r--r--	root/root	usr/include/catch2/internal/catch_test_run_info.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_test_spec_parser.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_textflow.hpp
+-rw-r--r--	root/root	usr/include/catch2/internal/catch_thread_support.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_to_string.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_uncaught_exceptions.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_uniform_floating_point_distribution.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_uniform_integer_distribution.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_unique_name.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_unique_ptr.hpp
+-rw-r--r--	root/root	usr/include/catch2/internal/catch_unreachable.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_void_type.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_wildcard_pattern.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_windows_h_proxy.hpp
@@ -185,6 +188,3 @@ drwxr-xr-x	root/root	usr/include/catch2/reporters/
 -rw-r--r--	root/root	usr/include/catch2/reporters/catch_reporter_teamcity.hpp
 -rw-r--r--	root/root	usr/include/catch2/reporters/catch_reporter_xml.hpp
 -rw-r--r--	root/root	usr/include/catch2/reporters/catch_reporters_all.hpp
-drwxr-xr-x	root/root	usr/share/pkgconfig/
--rw-r--r--	root/root	usr/share/pkgconfig/catch2-with-main.pc
--rw-r--r--	root/root	usr/share/pkgconfig/catch2.pc
