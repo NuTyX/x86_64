@@ -5714,6 +5714,7 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_AUTO_VAR_INIT_PATTERN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_AUTO_VAR_INIT_ZERO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_AUTO_VAR_INIT_ZERO_BARE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_COUNTED_BY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_ENTRY_PADDING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_IBT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/CC_HAS_INT128 (EMPTY)
@@ -9020,6 +9021,7 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_ITS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_RFDS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_SPECTRE_BHI (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-66/include/config/MITIGATION_TSA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MKISS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MLX4_CORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MLX4_CORE_GEN2 (EMPTY)
@@ -23214,6 +23216,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/scripts/gdb/linux/
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/genpd.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/interrupts.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/lists.py
+-rw-r--r--	root/root	usr/src/kernel-66/scripts/gdb/linux/mapletree.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/mm.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/modules.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/page_owner.py
@@ -23229,6 +23232,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/scripts/gdb/linux/
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/utils.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/vfs.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/linux/vmalloc.py
+-rw-r--r--	root/root	usr/src/kernel-66/scripts/gdb/linux/xarray.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/gdb/vmlinux-gdb.py
 -rwxrwxr-x	root/root	usr/src/kernel-66/scripts/gen-randstruct-seed.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/scripts/generate_initcall_order.pl
@@ -29593,6 +29597,9 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/diag.sh
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_connect.c
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_connect.sh
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_connect_checksum.sh
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_connect_mmap.sh
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_connect_sendfile.sh
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_inq.c
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_join.sh
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/net/mptcp/mptcp_lib.sh
@@ -29755,6 +29762,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/config
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/mmap.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/remove_on_exec.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/settings
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/perf_events/sigtrap_threads.c
