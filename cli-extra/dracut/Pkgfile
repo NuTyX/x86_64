@@ -4,10 +4,10 @@ url="https://www.kernel.org/pub/linux/utils/boot/dracut/dracut.html"
 contributors="Tnut, Greg, tnut"
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(pkgconf kmod asciidoc)
+makedepends=(pkgconf kmod asciidoctor)
 
 name=dracut
-version=107
+version=108
 
 source=(https://github.com/dracut-ng/dracut-ng/archive/$version/$name-$version.tar.gz)
 
