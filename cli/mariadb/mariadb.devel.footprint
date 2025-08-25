@@ -263,6 +263,8 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/mysqld_default_groups.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/mysqld_suffix.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/mysys_err.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/opt_hints.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/opt_hints_parser.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_histogram_json.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_range.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_rewrite_date_cmp.h
@@ -316,9 +318,11 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/rpl_rli.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/rpl_tblmap.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/rpl_utility.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/scan_char.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/scheduler.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/scope.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/select_handler.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/select_result.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/semisync.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/semisync_master.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/semisync_master_ack_receiver.h
@@ -326,16 +330,19 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/service_versions.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/session_tracker.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/set_var.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/simple_parser.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/simple_tokenizer.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/slave.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/socketpair.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/source_revision.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_cache.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sp_cursor.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_head.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_instr.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_pcontext.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_rcontext.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sp_rcontext_handler.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/span.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/spatial.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_acl.h
@@ -420,6 +427,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_int.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_json.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_real.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_ref.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_string.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_timeofday.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_vector.h
@@ -430,6 +438,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_view.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_window.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/ssl_compat.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/statement_rcontext.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/strfunc.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/structs.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sys_vars_shared.h

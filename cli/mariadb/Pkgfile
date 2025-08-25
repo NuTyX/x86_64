@@ -11,9 +11,9 @@ makedepends=(lzo cmake libevent boost libxml2 cracklib pcre ruby libaio openssl
 run=(shadow mariadb.lib)
 
 name=mariadb
-version=11.8.2
+version=12.0.2
 
-scriptsversion=20250125
+scriptsversion=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	  https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz)
@@ -30,6 +30,9 @@ build() {
 cd $name-$version
 
 sed -i "s@data/test@\${INSTALL_MYSQLTESTDIR}@g" sql/CMakeLists.txt
+
+sed -i 's/regex system/regex/' \
+       storage/columnstore/columnstore/cmake/boost.cmake
 
 mkdir build
 cd build
