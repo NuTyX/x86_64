@@ -5469,6 +5469,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/BNXT_SRIOV (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/BOARD_TPCI200 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/BONDING (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/BOOT_VESA_SUPPORT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/BPF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/BPF_EVENTS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/BPF_JIT (EMPTY)
@@ -5682,6 +5683,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_AUTO_VAR_INIT_PATTERN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_AUTO_VAR_INIT_ZERO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_AUTO_VAR_INIT_ZERO_BARE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_COUNTED_BY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_ENTRY_PADDING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_IBT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_INT128 (EMPTY)
@@ -5722,6 +5724,8 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CEPH_LIB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CEPH_LIB_PRETTYDEBUG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CEPH_LIB_USE_DNS_RESOLVER (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CFAG12864B (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CFAG12864B_RATE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CFG80211 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CFG80211_CRDA_SUPPORT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CFG80211_DEBUGFS (EMPTY)
@@ -6245,11 +6249,13 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_SMBIOS_SMM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_SMBIOS_WMI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_SMO8800 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_UART_BACKLIGHT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI_AIO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI_DDV (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI_DESCRIPTOR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI_LED (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI_PRIVACY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DELL_WMI_SYSMAN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DETECT_HUNG_TASK (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/DEVFREQ_GOV_PASSIVE (EMPTY)
@@ -6980,7 +6986,9 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FAT_DEFAULT_IOCHARSET (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FAT_DEFAULT_UTF8 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FAT_FS (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FBNIC (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_BACKLIGHT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_CFB_COPYAREA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_CFB_FILLRECT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_CFB_IMAGEBLIT (EMPTY)
@@ -6989,14 +6997,18 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_DEVICE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_DMAMEM_HELPERS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_DMAMEM_HELPERS_DEFERRED (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_EFI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_IOMEM_FOPS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_IOMEM_HELPERS (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_NOTIFY (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_OPENCORES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_SYSMEM_FOPS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_SYSMEM_HELPERS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_SYSMEM_HELPERS_DEFERRED (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_SYS_COPYAREA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_SYS_FILLRECT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_SYS_IMAGEBLIT (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FB_VESA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FCOE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FCOE_FNIC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FDDI (EMPTY)
@@ -7046,6 +7058,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FPGA_MGR_MACHXO2_SPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FPGA_MGR_MICROCHIP_SPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FPGA_MGR_XILINX_CORE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/FPGA_MGR_XILINX_SELECTMAP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FPGA_MGR_XILINX_SPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FPGA_REGION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/FRAMEBUFFER_CONSOLE (EMPTY)
@@ -7603,6 +7616,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PICOLCD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PICOLCD_BACKLIGHT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PICOLCD_CIR (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PICOLCD_FB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PICOLCD_LCD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PICOLCD_LEDS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HID_PID (EMPTY)
@@ -7693,6 +7707,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HSI_CHAR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HSR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HSU_DMA (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/HT16K33 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HTE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HUAWEI_WMI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HUGETLBFS (EMPTY)
@@ -8678,6 +8693,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/LEGACY_TIOCSTI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/LEGACY_VSYSCALL_NONE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/LENOVO_SE10_WDT (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/LENOVO_WMI_CAMERA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/LENOVO_YMC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/LG_LAPTOP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/LIB80211 (EMPTY)
@@ -9110,6 +9126,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_SRSO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_SSB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_TAA (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_TSA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MITIGATION_UNRET_ENTRY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MKISS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MLX4_CORE (EMPTY)
@@ -11277,6 +11294,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SCHED_OMIT_FRAME_POINTER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SCHED_SMT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SCHED_TRACER (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/SCREEN_INFO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SCSI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SCSI_3W_9XXX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SCSI_3W_SAS (EMPTY)
@@ -12667,6 +12685,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSCON_REBOOT_MODE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSCTL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSCTL_EXCEPTION_TRACE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSFB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSFS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSFS_SYSCALL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SYSTEM76_ACPI (EMPTY)
@@ -13507,6 +13526,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/VGA_CONSOLE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/VHOST (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/VHOST_CROSS_ENDIAN_LEGACY (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/VHOST_ENABLE_FORK_OWNER_CONTROL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/VHOST_IOTLB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/VHOST_MENU (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/VHOST_NET (EMPTY)
@@ -13987,6 +14007,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_DEV_EVTCHN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_DOM0 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_EFI (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_FBDEV_FRONTEND (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_FRONT_PGDIR_SHBUF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_GNTDEV (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/XEN_GRANT_DEV_ALLOC (EMPTY)
@@ -24010,6 +24031,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/scripts/gdb/linux/
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/interrupts.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/kasan.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/lists.py
+-rw-r--r--	root/root	usr/src/kernel-612/scripts/gdb/linux/mapletree.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/mm.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/modules.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/page_owner.py
@@ -24025,6 +24047,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/scripts/gdb/linux/
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/utils.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/vfs.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/linux/vmalloc.py
+-rw-r--r--	root/root	usr/src/kernel-612/scripts/gdb/linux/xarray.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/gdb/vmlinux-gdb.py
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/gen-randstruct-seed.sh
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/generate_builtin_ranges.awk
@@ -31313,6 +31336,9 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/diag.sh
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_connect.c
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_connect.sh
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_connect_checksum.sh
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_connect_mmap.sh
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_connect_sendfile.sh
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_inq.c
 -rwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_join.sh
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/net/mptcp/mptcp_lib.sh
@@ -31574,6 +31600,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/config
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/mmap.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/remove_on_exec.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/settings
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/perf_events/sigtrap_threads.c

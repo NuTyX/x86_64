@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.12.36-1-nutyx
--rw-r--r--	root/root	boot/config-6.12.36-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.12.43-1-nutyx
+-rw-r--r--	root/root	boot/config-6.12.43-1-nutyx
 -rw-r--r--	root/root	boot/kernel-612
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.12.36-1-nutyx -> kernel-612
+lrwxrwxrwx	root/root	usr/lib/modules/6.12.43-1-nutyx -> kernel-612
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-612/build -> /usr/src/kernel-612
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/
@@ -276,9 +276,12 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/atm/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/atm/solos-pci.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/atm/suni.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/cfag12864b.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/cfag12864bfb.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/charlcd.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/hd44780.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/hd44780_common.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/ht16k33.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/img-ascii-lcd.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/ks0108.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/auxdisplay/lcd2s.ko.xz
@@ -655,6 +658,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/fpga/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/fpga/of-fpga-region.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/fpga/xilinx-core.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/fpga/xilinx-pr-decoupler.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/fpga/xilinx-selectmap.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/fpga/xilinx-spi.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/fsi/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/fsi/fsi-core.ko.xz
@@ -832,7 +836,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/display/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_gpuvm.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_kms_helper.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_mipi_dbi.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_panel_orientation_quirks.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_shmem_helper.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_suballoc_helper.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/gpu/drm/drm_ttm_helper.ko.xz
@@ -4495,6 +4498,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-rbtn.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-smbios.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-smo8800.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-uart-backlight.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-wmi-aio.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-wmi-ddv.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/dell/dell-wmi-descriptor.ko.xz
@@ -4578,6 +4582,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/inte
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/intel_ips.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/intel_scu_ipcutil.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/intel_scu_pltdrv.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/lenovo-wmi-camera.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/lenovo-ymc.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/lenovo-yoga-tab2-pro-1380-fastcharger.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/platform/x86/lenovo-yogabook.ko.xz
@@ -5840,16 +5845,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/backlight/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/backlight/vgg2432a4.ko.xz
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/backlight/wm831x_bl.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/
-drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/cfbcopyarea.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/cfbfillrect.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/cfbimgblt.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/fb.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/fb_io_fops.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/fb_sys_fops.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/syscopyarea.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/sysfillrect.ko.xz
--rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/core/sysimgblt.ko.xz
+-rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/video/fbdev/ocfb.ko.xz
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/virt/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-612/kernel/drivers/virt/acrn/
 -rw-r--r--	root/root	usr/lib/modules/kernel-612/kernel/drivers/virt/acrn/acrn.ko.xz
