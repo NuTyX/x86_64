@@ -72,7 +72,9 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/autoload/rust/
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/tutor.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/typeset.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/typst.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/autoload/vim.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/vimball.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/autoload/vimcomplete.vim
 drwxr-xr-x	root/root	usr/share/vim/vim91/autoload/xml/
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/xml/html32.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/autoload/xml/html401f.vim
@@ -203,6 +205,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/compiler/
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/perl.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/perlcritic.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/php.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/compiler/phpstan.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/pip_compile.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/podchecker.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/powershell.vim
@@ -517,6 +520,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/odin.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/ondir.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/opencl.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/openscad.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/openvpn.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/org.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/pamconf.vim
@@ -638,6 +642,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/typescript.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/typescriptreact.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/typst.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/uc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/uci.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/udevconf.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/udevperm.vim
@@ -1025,7 +1030,6 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/doc/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/doc/tags
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/ftdetect/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/ftdetect/editorconfig.vim
--rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/mkzip.sh
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/plugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/editorconfig/plugin/editorconfig.vim
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/helptoc/
