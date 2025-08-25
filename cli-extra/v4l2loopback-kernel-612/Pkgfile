@@ -1,12 +1,11 @@
 description='v4l2loopback driver for the 6.12 LTS linux kernel version'
 url='https://github.com/umlaeute/v4l2loopback'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=v4l2loopback-kernel-612
-version=0.13.2
-release=6
+version=0.15.1
 
 run=(kernel-612)
 KERNELNAME="${name#v4l2loopback-}"
