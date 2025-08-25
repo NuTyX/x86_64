@@ -3,27 +3,24 @@ url="https://rpcbind.sourceforge.net/"
 
 license="BSD-3 Clause"
 
-contributors="Alienus,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(libtirpc)
 
 PKGMK_GROUPS=(man)
 
 name=rpcbind
-version=1.2.7
-release=2
+version=1.2.8
 
-scriptsversion=20250125
+scriptsversion=20250201
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
-	https://downloads.sourceforge.net/rpcbind/rpcbind-$version.tar.bz2
-	https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-$version-vulnerability_fixes-1.patch)
+	https://downloads.sourceforge.net/rpcbind/rpcbind-$version.tar.bz2)
 
 build() {
     cd rpcbind-$version
     sed -i "/servname/s:rpcbind:sunrpc:" src/rpcbind.c
 
-    patch -Np1 -i ../rpcbind-$version-vulnerability_fixes-1.patch
     ./configure --prefix=/usr       \
                 --bindir=/sbin      \
 		--sbindir=/sbin     \
