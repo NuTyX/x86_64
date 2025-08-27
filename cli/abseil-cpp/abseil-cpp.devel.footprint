@@ -28,7 +28,6 @@ drwxr-xr-x	root/root	usr/include/absl/base/internal/
 -rw-r--r--	root/root	usr/include/absl/base/internal/iterator_traits_test_helper.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/low_level_alloc.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/low_level_scheduling.h
--rw-r--r--	root/root	usr/include/absl/base/internal/nullability_deprecated.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/per_thread_tls.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/poison.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/pretty_function.h
@@ -189,7 +188,6 @@ drwxr-xr-x	root/root	usr/include/absl/hash/internal/
 -rw-r--r--	root/root	usr/include/absl/hash/internal/city.h
 -rw-r--r--	root/root	usr/include/absl/hash/internal/hash.h
 -rw-r--r--	root/root	usr/include/absl/hash/internal/hash_test.h
--rw-r--r--	root/root	usr/include/absl/hash/internal/low_level_hash.h
 -rw-r--r--	root/root	usr/include/absl/hash/internal/spy_hash_state.h
 -rw-r--r--	root/root	usr/include/absl/hash/internal/weakly_mixed_integer.h
 drwxr-xr-x	root/root	usr/include/absl/log/
@@ -248,9 +246,11 @@ drwxr-xr-x	root/root	usr/include/absl/numeric/internal/
 -rw-r--r--	root/root	usr/include/absl/numeric/internal/bits.h
 -rw-r--r--	root/root	usr/include/absl/numeric/internal/representation.h
 drwxr-xr-x	root/root	usr/include/absl/profiling/
+-rw-r--r--	root/root	usr/include/absl/profiling/hashtable.h
 drwxr-xr-x	root/root	usr/include/absl/profiling/internal/
 -rw-r--r--	root/root	usr/include/absl/profiling/internal/exponential_biased.h
 -rw-r--r--	root/root	usr/include/absl/profiling/internal/periodic_sampler.h
+-rw-r--r--	root/root	usr/include/absl/profiling/internal/profile_builder.h
 -rw-r--r--	root/root	usr/include/absl/profiling/internal/sample_recorder.h
 drwxr-xr-x	root/root	usr/include/absl/random/
 -rw-r--r--	root/root	usr/include/absl/random/bernoulli_distribution.h
@@ -403,6 +403,7 @@ drwxr-xr-x	root/root	usr/include/absl/time/internal/cctz/include/cctz/
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/include/cctz/time_zone.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/include/cctz/zone_info_source.h
 drwxr-xr-x	root/root	usr/include/absl/time/internal/cctz/src/
+-rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/test_time_zone_names.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_fixed.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_if.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_impl.h
@@ -507,6 +508,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_control_bytes.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_debug.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_debug_hooks.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_profiler.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtablez_sampler.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_inlined_vector.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_inlined_vector_internal.pc
@@ -545,7 +547,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_sink_registry.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_streamer.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_structured.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/absl_low_level_hash.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_malloc_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_memory.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_meta.pc
@@ -564,6 +565,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_poison.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_prefetch.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_pretty_function.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_profile_builder.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_bit_gen_ref.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_distributions.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_random_internal_distribution_caller.pc
