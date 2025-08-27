@@ -1,5 +1,5 @@
-description="Base system of NuTyX, contains all folders and startup scripts."
-url="https://github.com/nutyx"
+description="The internationalization tool collection."
+url="https://launchpad.net/intltool"
 
 packager="spiky <spiky@nutyx.org>"
 
@@ -7,7 +7,7 @@ makedepends=(perl-xml-parser)
 
 name=intltool
 version=0.51.0
-release=4
+release=5
 
 source=(http://launchpad.net/$name/trunk/$version/+download/$name-$version.tar.gz)
 
