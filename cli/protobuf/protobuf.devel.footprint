@@ -26,7 +26,6 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/csharp/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/csharp/names.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/importer.h
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/java/
--rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/context.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/doc_comment.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/java/helpers.h
@@ -171,6 +170,7 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/util/
 -rw-r--r--	root/root	usr/include/google/protobuf/util/delimited_message_util.h
 -rw-r--r--	root/root	usr/include/google/protobuf/util/field_comparator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/util/field_mask_util.h
+-rw-r--r--	root/root	usr/include/google/protobuf/util/internal_timeval.h
 -rw-r--r--	root/root	usr/include/google/protobuf/util/json_util.h
 -rw-r--r--	root/root	usr/include/google/protobuf/util/message_differencer.h
 -rw-r--r--	root/root	usr/include/google/protobuf/util/time_util.h
@@ -264,6 +264,7 @@ drwxr-xr-x	root/root	usr/include/upb/mini_table/internal/
 drwxr-xr-x	root/root	usr/include/upb/port/
 -rw-r--r--	root/root	usr/include/upb/port/atomic.h
 -rw-r--r--	root/root	usr/include/upb/port/def.inc
+-rw-r--r--	root/root	usr/include/upb/port/sanitizers.h
 -rw-r--r--	root/root	usr/include/upb/port/undef.inc
 -rw-r--r--	root/root	usr/include/upb/port/vsnprintf_compat.h
 drwxr-xr-x	root/root	usr/include/upb/reflection/
@@ -313,12 +314,18 @@ drwxr-xr-x	root/root	usr/include/upb/util/
 drwxr-xr-x	root/root	usr/include/upb/wire/
 -rw-r--r--	root/root	usr/include/upb/wire/byte_size.h
 -rw-r--r--	root/root	usr/include/upb/wire/decode.h
+drwxr-xr-x	root/root	usr/include/upb/wire/decode_fast/
+-rw-r--r--	root/root	usr/include/upb/wire/decode_fast/combinations.h
+-rw-r--r--	root/root	usr/include/upb/wire/decode_fast/data.h
+-rw-r--r--	root/root	usr/include/upb/wire/decode_fast/select.h
 -rw-r--r--	root/root	usr/include/upb/wire/encode.h
 -rw-r--r--	root/root	usr/include/upb/wire/eps_copy_input_stream.h
 drwxr-xr-x	root/root	usr/include/upb/wire/internal/
--rw-r--r--	root/root	usr/include/upb/wire/internal/decode_fast.h
+-rw-r--r--	root/root	usr/include/upb/wire/internal/decoder.h
+-rw-r--r--	root/root	usr/include/upb/wire/internal/reader.h
 -rw-r--r--	root/root	usr/include/upb/wire/reader.h
 -rw-r--r--	root/root	usr/include/upb/wire/types.h
+-rw-r--r--	root/root	usr/include/upb/wire/writer.h
 -rw-r--r--	root/root	usr/include/utf8_range.h
 -rw-r--r--	root/root	usr/include/utf8_validity.h
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
