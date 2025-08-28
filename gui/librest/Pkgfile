@@ -10,14 +10,10 @@ makedepends=(libsoup3 gobject-introspection)
 run=(json-glib)
 
 name=librest
-version=0.9.1
-release=3
+version=0.10.2
 
-source=(https://download.gnome.org/sources/rest/${version%.*}/rest-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/librest/-/archive/$version/librest-$version.tar.gz)
 
-prepare() {
-mv rest-$version $name-$version
-}
 
 build() {
 cd $name-$version
