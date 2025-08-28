@@ -1,15 +1,14 @@
 description="Suite to create, manipulate and view DjVu ('déjà vu') documents"
 url="http://djvu.sourceforge.net"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Alienus"
+packager="spiky <spiky@nutyx.org>"
+contributors="Alienus,Tnut"
 
 makedepends=(autoconf automake m4 sed grep librsvg libtiff libjpeg-turbo)
 run=(librsvg hicolor-icon-theme)
 
 name=djvulibre
-version=3.5.28
-release=3
+version=3.5.29
 
 source=(
 http://downloads.sourceforge.net/djvu/$name-$version.tar.gz)
