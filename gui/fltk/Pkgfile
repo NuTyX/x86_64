@@ -8,7 +8,7 @@ contributors="Pierre,Tnut"
 makedepends=(libjpeg-turbo libpng xorg-libxft xorg-libxi xorg-libxinerama mesa doxygen)
 
 name=fltk
-version=1.3.11
+version=1.4.4
 
 source=(https://github.com/fltk/fltk/releases/download/release-$version/fltk-$version-source.tar.gz)
 build() {
