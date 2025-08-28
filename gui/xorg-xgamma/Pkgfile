@@ -6,8 +6,7 @@ PKGMK_GROUPS=(doc man)
 url="http://xorg.freedesktop.org"
 
 name=xorg-xgamma
-version=1.0.7
-release=2
+version=1.0.8
 _name=${name/xorg-/}
 makedepends=(xorgproto xorg-libx11 xorg-libxxf86vm)
 source=(http://ftp.x.org/pub/individual/app/${_name}-$version.tar.xz)
