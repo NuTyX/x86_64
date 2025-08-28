@@ -10,8 +10,7 @@ makedepends=(gdk-pixbuf libcroco pango vala rustc cargo-c
              gi-docgen python-docutils python-smartypants)
 
 name=librsvg
-version=2.60.0
-release=2
+version=2.61.0
 
 source=(https://gitlab.gnome.org/GNOME/librsvg/-/archive/$version/$name-$version.tar.gz)
 build() {
