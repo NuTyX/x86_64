@@ -10,7 +10,7 @@ makedepends=(gdk-pixbuf gtk3 libwnck xorg-libx11 wayland gobject-introspection g
              libdisplay-info xfce4-dev-tools)
 
 name=libxfce4windowing
-version=4.20.3
+version=4.20.4
 
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
