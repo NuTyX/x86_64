@@ -8,8 +8,8 @@ makedepends=(perl-io-tty)
 run=(perl)
 
 name=perl-ipc-run
-version=20231003.0
-source=(http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IPC-Run-$version.tar.gz)
+version=20250809.0
+source=(https://www.cpan.org/authors/id/N/NJ/NJM/IPC-Run-$version.tar.gz)
 
 build() {
     cd IPC-Run-$version
