@@ -7,8 +7,7 @@ contributors="Pierre,Tnut"
 makedepends=(acl attr systemd libgudev expat libatasmart libxslt polkit gobject-introspection docbook-xsl libblockdev)
 
 name=udisks2
-version=2.10.1
-release=3
+version=2.10.2
 
 source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz2)
 
