@@ -312,7 +312,7 @@ drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/adblocker_resources/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/adblocker_resources/redirectable_resources.json
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-bundle.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-common-bundle.js
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-service-worker-37c54ab3047f73cecf956703a9da5d0d.js
+-rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-service-worker-44f35fc00393a2f46f75c53ff0ff646f.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/bundle-mailreader-worker.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/bundle.js
 drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/components/
@@ -392,9 +392,6 @@ drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/default-bookmarks/
 drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/menus/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/menus/contextmenu.json
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/menus/mainmenu.json
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/mobile-markdown-bundle.js
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/mobile-style.css
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/mobile-style.js (EMPTY)
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/prefs_definitions.json
 drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/resources/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/ToolbarIconFallback.svg
@@ -417,7 +414,6 @@ drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/resources/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/bg_richard-horvath-_nWaeTF6qo0-unsplash.webp
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/calendar_caldav.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/calendar_web.png
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/chat_notification_icon.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/check-selected.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/check-selected@2x.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/contact-company.png
@@ -1011,24 +1007,9 @@ drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/resources/theme/vivaldi/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/unsynced_file.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/vivaldi-icon-macos.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/vivaldi_calendar_default.png
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/vivaldi_chat_default.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/vivaldi_mail_default.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/vivaldi_rss_default.png
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/vpn-dialog@2x.webp
-drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_1.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_10.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_11.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_12.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_13.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_2.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_3.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_4.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_5.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_6.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_7.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_8.jpg
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/wallpapers/wallpaper_9.jpg
 drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/resources/weather_icons_svg/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/weather_icons_svg/clearsky_day.svg
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/resources/weather_icons_svg/clearsky_night.svg
@@ -1163,7 +1144,6 @@ drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/user_files/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/user_files/Transform_3D.css
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/user_files/Transitions_Forced.css
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/user_files/Transitions_Removed.css
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/vendor-bundle.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/window.html
 -rwxr-xr-x	root/root	opt/vivaldi/update-ffmpeg
 -rw-r--r--	root/root	opt/vivaldi/v8_context_snapshot.bin
