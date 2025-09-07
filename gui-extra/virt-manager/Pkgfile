@@ -9,8 +9,7 @@ run=(gtk-vnc gtksourceview4 libxml2 libosinfo libvirt libvirt-glib libvirt-pytho
      python-cairo python-gobject python-lxml python-requests spice-gtk vte)
 
 name=virt-manager
-version=5.0.0
-release=6
+version=5.1.0
 
 source=(https://github.com/virt-manager/$name/archive/refs/tags/v$version.tar.gz)
 
