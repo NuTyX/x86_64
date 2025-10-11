@@ -7,7 +7,7 @@ contributors="Tnut"
 makedepends=(perl)
 
 name=openssl
-version=3.5.2
+version=3.5.4
 
 set=(chroot)
 
@@ -30,8 +30,7 @@ make
 make DESTDIR=$PKG MANDIR=/usr/share/man \
 MANSUFFIX=ssl install
 
-mv -v $PKG/usr/share/doc/openssl{,-$version}
-cp -vfr doc/*     $PKG/usr/share/doc/openssl-$version
+cp -vfr doc/*     $PKG/usr/share/doc/openssl
 
 }
 devel()
