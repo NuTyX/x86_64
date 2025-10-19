@@ -137,6 +137,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/cmdline-opts/
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/fail-with-body.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/fail.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/false-start.md
+-rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/follow.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/form-escape.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/form-string.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/form.md
@@ -217,9 +218,11 @@ drwxr-xr-x	root/root	usr/share/doc/curl/cmdline-opts/
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/ntlm-wb.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/ntlm.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/oauth2-bearer.md
+-rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/out-null.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/output-dir.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/output.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/parallel-immediate.md
+-rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/parallel-max-host.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/parallel-max.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/parallel.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/pass.md
@@ -466,6 +469,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/url2file.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/urlapi.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/websocket-cb.Po
+-rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/websocket-updown.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/websocket.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/10-at-a-time.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/CMakeLists.txt
@@ -507,7 +511,6 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/ghiper.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/headerapi.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/hiperfifo.c
--rw-r--r--	root/root	usr/share/doc/curl/examples/href_extractor.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/hsts-preload.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/htmltidy.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/htmltitle.cpp
@@ -603,6 +606,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/usercertinmem.c
 -rwxr-xr-x	root/root	usr/share/doc/curl/examples/version-check.pl
 -rw-r--r--	root/root	usr/share/doc/curl/examples/websocket-cb.c
+-rw-r--r--	root/root	usr/share/doc/curl/examples/websocket-updown.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/websocket.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/xmlstream.c
 drwxr-xr-x	root/root	usr/share/doc/curl/internals/
@@ -738,6 +742,8 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_fdset.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_get_handles.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_get_handles.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_get_offt.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_get_offt.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_info_read.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_info_read.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_init.3
@@ -810,6 +816,8 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_ws_recv.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_ws_send.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_ws_send.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_ws_start_frame.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_ws_start_frame.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/libcurl-easy.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/libcurl-easy.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/libcurl-env-dbg.3
@@ -994,6 +1002,16 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_USED_PROXY.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_XFER_ID.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_XFER_ID.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_ADDED.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_ADDED.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_CURRENT.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_CURRENT.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_DONE.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_DONE.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_PENDING.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_PENDING.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_RUNNING.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMINFO_XFERS_RUNNING.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3
@@ -1008,6 +1026,8 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_MAX_PIPELINE_LENGTH.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_MAX_TOTAL_CONNECTIONS.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_MAX_TOTAL_CONNECTIONS.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NETWORK_CHANGED.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NETWORK_CHANGED.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PIPELINING.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PIPELINING.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PIPELINING_SERVER_BL.3
