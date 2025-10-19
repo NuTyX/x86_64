@@ -9,8 +9,7 @@ makedepends=(zstd util-linux)
 set=(chroot)
 
 name=nutyx
-version=25.04.2
-release=2
+version=25.10.1
 
 # nutyx patch version
 [ "$release" != "1" ] && patchname="$name-$version-consolidate-$release.patch"
