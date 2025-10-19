@@ -2,13 +2,13 @@ description="Utilities for showing and setting the basic system characteristics"
 url="https://www.gnu.org/software/coreutils/"
 
 maintainer="Jim Meyering meyering at redhat dot com"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(autoconf automake gettext)
 
 name=coreutils
-version=9.7
+version=9.8
 
 set=(chroot core)
 
