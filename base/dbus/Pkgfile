@@ -8,13 +8,12 @@ contributors="Pierre,Jayce,Tnut"
 # dbus needs do be build once without systemd
 # in order to build systemd
 # 1/ dbus without systemd with following makedepends
-# makedepends=(expat) 
-# and --disable-systemd
+# makedepends=(python meson expat)
 # 2/ build systemd with dbus
-# 3/ build dbus with systemd with folling makedepends
-# makedepends=(systemd expat) and --enable-systemd
+# 3/ build dbus with systemd with following makedepends
+# makedepends=(python meson systemd expat)
 
-makedepends=(systemd expat)
+makedepends=(python meson systemd expat)
 
 set=(core)
 
@@ -26,8 +25,8 @@ PKGMK_GROUPS=(doc devel)
 source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.xz)
 
 build() {
-	cd $name-$version
-	mkdir build
+        cd $name-$version
+        mkdir build
         cd    build
 
         meson setup .. \
@@ -35,7 +34,7 @@ build() {
         --buildtype=release    \
         --wrap-mode=nofallback
 
-	ninja
+        ninja
 
 DESTDIR=$PKG ninja install
 
