@@ -13,7 +13,7 @@ build() {
 cd automake-$version
 
 ./configure --prefix=/usr \
---docdir=$PKG/usr/share/doc/automake-$version
+--docdir=$PKG/usr/share/doc/automake
 make
 make prefix=$PKG/usr install
 }
