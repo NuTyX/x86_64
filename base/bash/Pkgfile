@@ -20,8 +20,8 @@ build()
 cd bash-$version
 
 ./configure --prefix=/usr \
---htmldir=/usr/share/doc/bash-$version \
---docdir=/usr/share/doc/bash-$version \
+--htmldir=/usr/share/doc/bash \
+--docdir=/usr/share/doc/bash \
 --without-bash-malloc \
 --with-installed-readline
 
