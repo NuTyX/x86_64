@@ -2,13 +2,13 @@ description="The Iana-Etc package provides data for network services and protoco
 url="https://www.sethwklein.net/iana-etc"
 
 maintainer="Seth W. Klein sk at sethwklein dot net"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(core)
 
 name=iana-etc
-version=20250612
+version=20250926
 
 source=(https://github.com/Mic92/iana-etc/releases/download/$version/$name-$version.tar.gz)
 
