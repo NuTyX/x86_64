@@ -1,15 +1,15 @@
 description='nilfs-utils'
 url='http://nilfs.sourceforge.net/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(util-linux)
 run=()
 set=()
 
 name=nilfs-utils
-version=2.2.11
+version=2.2.12
 
 source=(http://nilfs.sourceforge.net/download/$name-$version.tar.bz2)
 
