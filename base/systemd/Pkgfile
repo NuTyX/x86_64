@@ -7,9 +7,9 @@ contributors="Tnut"
 # Those dependencies are need to compile the package
 # but not listed to avoid circular dependencies:
 # When rebuild systemd:
-# 1/ rebuild dbus first without systemd --disable-systemd in dbus package
+# 1/ rebuild dbus first without systemd  in dbus package by removing systemd dependency
 # 2/ build systemd with dbus that has no systemd libs
-# 3/ rebuild dbus with systemd so that dbus gets links to systemd
+# 3/ rebuild dbus with systemd as dependency so that dbus gets links to systemd
 
 PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja)
 
@@ -19,17 +19,10 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=257.8
-_version=257.8
+version=258.1
 
-source=(consolidate-4.patch
-        https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-257.6.tar.xz
+source=(https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
-#prepare() {
-#cd $name-$version
-#patch -Np1 -i ../consolidate-4.patch
-#}
-
 
 build() {
 cd $name-$version
@@ -45,7 +38,6 @@ meson --prefix=/usr           \
 -D ldconfig=false             \
 -D sysusers=false             \
 -D homed=disabled             \
--D split-usr=false            \
 -D rpmmacrosdir=no            \
 -D man=disabled               \
 -D userdb=false               \
@@ -62,7 +54,7 @@ DESTDIR=$PKG ninja install
 mkdir -p $PKG/usr/share/man
 for i in 1 3 5 7 8
 do
-  mv ../../$name-man-pages-257.6/man$i \
+  mv ../../$name-man-pages-$version/man$i \
    $PKG/usr/share/man
 done
 mkdir $PKG/sbin

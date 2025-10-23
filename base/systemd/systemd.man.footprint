@@ -38,9 +38,11 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/systemd-notify.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-nspawn.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-path.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/systemd-pty-forward.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-run.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-sbsign.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-socket-activate.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/systemd-ssh-issue.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-ssh-proxy.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-stdio-bridge.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-tty-ask-password-agent.1.gz
@@ -48,6 +50,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/systemd-vpick.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/timedatectl.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/userdbctl.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/varlinkctl.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/SD_ALERT.3.gz
@@ -170,6 +173,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd-journal.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd-json.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd-login.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd-path.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd-varlink.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_booted.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_add_fallback.3.gz
@@ -332,6 +336,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_close_container.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_copy.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_dump.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_dump_json.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_enter_container.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_exit_container.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_message_get_allow_interactive_authorization.3.gz
@@ -485,6 +490,20 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_unref.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_unrefp.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_bus_wait.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_all_parents.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_parent.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_property.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_property_required.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_subsystem.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_sysattr.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_sysname.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_match_tag.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_add_nomatch_sysname.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_allow_uninitialized.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_get_device_first.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_get_device_next.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_get_subsystem_first.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_get_subsystem_next.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_new.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_ref.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_device_enumerator_unref.3.gz
@@ -738,6 +757,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_pid_notifyf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_pid_notifyf_with_fds.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_pidfd_get_cgroup.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_pidfd_get_inode_id.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_pidfd_get_machine_name.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_pidfd_get_owner_uid.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_pidfd_get_session.3.gz
@@ -772,6 +792,13 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_uid_get_sessions.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_uid_get_state.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_uid_is_on_seat.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_get_description.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_push_dup_fd.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_push_fd.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_send.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_sendb.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_sendbo.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_varlink_set_description.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_watchdog_enabled.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/udev_device_get_action.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/udev_device_get_current_tags_list_entry.3.gz
@@ -896,6 +923,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/systemd-user.conf.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.automount.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.device.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/systemd.dns-delegate.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.dnssd.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.exec.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/systemd.kill.5.gz
@@ -939,6 +967,7 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/systemd.directives.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.environment-generator.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.generator.7.gz
+-rw-r--r--	root/root	usr/share/man/man7/systemd.image-filter.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.image-policy.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.index.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.journal-fields.7.gz
@@ -967,7 +996,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/poweroff.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/rc-local.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/reboot.8.gz
--rw-r--r--	root/root	usr/share/man/man8/runlevel.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/shutdown.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-ask-password-console.path.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-ask-password-console.service.8.gz
@@ -983,6 +1011,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-boot-check-no-failures.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-bsod.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-bsod.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-confext-initrd.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-confext.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-confext.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-coredump.8.gz
@@ -993,6 +1022,12 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-cryptsetup@.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-debug-generator.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-environment-d-generator.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-factory-reset-complete.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-factory-reset-generator.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-factory-reset-request.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-factory-reset.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-factory-reset.socket.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-factory-reset@.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck-root.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck-usr.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck.8.gz
@@ -1016,9 +1051,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-import-generator.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-importd.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-importd.service.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-initctl.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-initctl.service.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-initctl.socket.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-integritysetup-generator.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-integritysetup.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-integritysetup@.service.8.gz
@@ -1037,6 +1069,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-localed.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-logind.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-logind.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-loop@.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-machine-id-commit.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-machined.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-machined.service.8.gz
@@ -1063,8 +1096,9 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-poweroff.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-pstore.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-pstore.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-quotacheck-root.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-quotacheck.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-quotacheck.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-quotacheck@.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-random-seed.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-random-seed.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-rc-local-generator.8.gz
@@ -1090,6 +1124,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-suspend.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysctl.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysctl.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-sysext-initrd.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysext.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysext.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-system-update-generator.8.gz
@@ -1112,15 +1147,18 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udev-settle.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd-control.socket.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd-kernel.socket.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-udevd-varlink.socket.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-udevd.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-done.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-done.service.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-update-utmp-runlevel.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-utmp.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-update-utmp.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-user-sessions.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-user-sessions.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-userdbd.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-userdbd.service.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/systemd-validatefs@.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-vconsole-setup.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-vconsole-setup.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-veritysetup-generator.8.gz
@@ -1129,5 +1167,4 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-volatile-root.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-volatile-root.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-xdg-autostart-generator.8.gz
--rw-r--r--	root/root	usr/share/man/man8/telinit.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/udevadm.8.gz
