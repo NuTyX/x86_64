@@ -10,6 +10,7 @@ _name="meson"
 alias=(${_name})
 
 version=1.9.1
+release=2
 
 PKGMK_DEPENDS=(sqlite expat libffi python python-wheel python-setuptools)
 source=(skip-test.diff
