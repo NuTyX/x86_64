@@ -49,6 +49,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/descriptor.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/dict.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/exceptions.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/extension-modules.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/file.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/float.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/frame.rst.txt
@@ -63,6 +64,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/intro.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/iter.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/iterator.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/lifecycle.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/list.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/long.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/mapping.rst.txt
@@ -100,12 +102,15 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/deprecations/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/c-api-pending-removal-in-3.14.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/c-api-pending-removal-in-3.15.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/c-api-pending-removal-in-3.16.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/c-api-pending-removal-in-3.18.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/c-api-pending-removal-in-future.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/index.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.13.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.14.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.15.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.16.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.17.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.19.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-future.rst.txt
 drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/distributing/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/distributing/index.rst.txt
@@ -152,6 +157,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/howto/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/perf_profiling.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/pyporting.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/regex.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/remote_debugging.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/sockets.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/sorting.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/timerfd.rst.txt
@@ -166,6 +172,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/abc.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/aifc.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/allos.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/annotationlib.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/archiving.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/argparse.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/array.rst.txt
@@ -177,6 +184,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-exceptions.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-extending.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-future.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-graph.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-llapi-index.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-platforms.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/asyncio-policy.rst.txt
@@ -214,8 +222,11 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/collections.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/colorsys.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/compileall.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/compression.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/compression.zstd.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/concurrency.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/concurrent.futures.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/concurrent.interpreters.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/concurrent.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/configparser.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/constants.rst.txt
@@ -400,6 +411,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/statistics.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/stdtypes.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/string.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/string.templatelib.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/stringprep.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/struct.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/subprocess.rst.txt
@@ -535,6 +547,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/whatsnew/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.11.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.12.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.13.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.14.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.2.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.3.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/whatsnew/3.4.rst.txt
@@ -562,7 +575,6 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_static/
 -rw-r--r--	root/root	usr/share/doc/python/html/_static/og-image.png
 -rw-r--r--	root/root	usr/share/doc/python/html/_static/opensearch.xml
 -rw-r--r--	root/root	usr/share/doc/python/html/_static/plus.png
--rw-r--r--	root/root	usr/share/doc/python/html/_static/py.png
 -rw-r--r--	root/root	usr/share/doc/python/html/_static/py.svg
 -rw-r--r--	root/root	usr/share/doc/python/html/_static/pydoctheme.css
 -rw-r--r--	root/root	usr/share/doc/python/html/_static/pydoctheme_dark.css
@@ -599,6 +611,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/descriptor.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/dict.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/exceptions.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/extension-modules.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/file.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/float.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/frame.html
@@ -613,6 +626,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/intro.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/iter.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/iterator.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/lifecycle.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/list.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/long.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/mapping.html
@@ -650,12 +664,15 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/deprecations/
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/c-api-pending-removal-in-3.14.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/c-api-pending-removal-in-3.15.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/c-api-pending-removal-in-3.16.html
+-rw-r--r--	root/root	usr/share/doc/python/html/deprecations/c-api-pending-removal-in-3.18.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/c-api-pending-removal-in-future.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/index.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.13.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.14.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.15.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.16.html
+-rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.17.html
+-rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.19.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-future.html
 drwxr-xr-x	root/root	usr/share/doc/python/html/distributing/
 -rw-r--r--	root/root	usr/share/doc/python/html/distributing/index.html
@@ -733,6 +750,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/howto/
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/perf_profiling.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/pyporting.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/regex.html
+-rw-r--r--	root/root	usr/share/doc/python/html/howto/remote_debugging.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/sockets.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/sorting.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/timerfd.html
@@ -748,6 +766,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/library/abc.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/aifc.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/allos.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/annotationlib.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/archiving.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/argparse.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/array.html
@@ -759,6 +778,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-exceptions.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-extending.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-future.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-graph.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-llapi-index.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-platforms.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/asyncio-policy.html
@@ -796,9 +816,12 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/library/collections.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/colorsys.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/compileall.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/compression.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/compression.zstd.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/concurrency.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/concurrent.futures.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/concurrent.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/concurrent.interpreters.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/configparser.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/constants.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/contextlib.html
@@ -982,6 +1005,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/library/statistics.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/stdtypes.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/string.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/string.templatelib.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/stringprep.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/struct.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/subprocess.html
@@ -1121,6 +1145,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/whatsnew/
 -rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.11.html
 -rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.12.html
 -rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.13.html
+-rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.14.html
 -rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.2.html
 -rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.3.html
 -rw-r--r--	root/root	usr/share/doc/python/html/whatsnew/3.4.html
