@@ -2,15 +2,15 @@ description="The Kbd package contains key-table files, console fonts, and keyboa
 url="ftp://devel.altlinux.org/legion/kbd/"
 
 maintainer="Risto Kankkunen's"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(autoconf check m4 perl)
 
 set=(core)
 
 name=kbd
-version=2.8.0
+version=2.9.0
 
 PKGMK_LOCALES=()
 
@@ -32,8 +32,8 @@ make
 make check || true
 make DESTDIR=$PKG install
 
-mkdir -pv $PKG/usr/share/doc/$name-$version
+mkdir -pv $PKG/usr/share/doc/$name
 cp -R -v docs/doc/* \
-$PKG/usr/share/doc/$name-$version
+$PKG/usr/share/doc/$name
 
 }

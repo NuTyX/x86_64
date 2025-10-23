@@ -384,6 +384,8 @@ drwxr-xr-x	root/root	usr/share/keymaps/i386/dvorak/
 drwxr-xr-x	root/root	usr/share/keymaps/i386/fgGIod/
 -rw-r--r--	root/root	usr/share/keymaps/i386/fgGIod/tr_f-latin5.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/fgGIod/trf.map.gz
+drwxr-xr-x	root/root	usr/share/keymaps/i386/hcesar/
+-rw-r--r--	root/root	usr/share/keymaps/i386/hcesar/hcesar.map.gz
 drwxr-xr-x	root/root	usr/share/keymaps/i386/include/
 -rw-r--r--	root/root	usr/share/keymaps/i386/include/applkey.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/include/azerty-layout.inc
@@ -555,11 +557,12 @@ drwxr-xr-x	root/root	usr/share/keymaps/i386/qwertz/
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/hu.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sg-latin1-lk450.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sg-latin1.map.gz
+-rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sg-mac.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sg.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sk-prog-qwertz.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sk-qwertz.map.gz
 -rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/slovene.map.gz
--rw-r--r--	root/root	usr/share/keymaps/i386/qwertz/sr-latin.map.gz
+lrwxrwxrwx	root/root	usr/share/keymaps/i386/qwertz/sr-latin.map.gz -> slovene.map.gz
 drwxr-xr-x	root/root	usr/share/keymaps/include/
 -rw-r--r--	root/root	usr/share/keymaps/include/compose.8859_7
 -rw-r--r--	root/root	usr/share/keymaps/include/compose.8859_8
