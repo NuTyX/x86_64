@@ -3,13 +3,13 @@ url="https://www.vim.org/"
 
 license="custom:VIM"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(gpm ncurses)
 
 name=vim
-version=9.1.1734
+version=9.1.1841
 
 source=(https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz)
 build()
@@ -23,7 +23,7 @@ echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
 make
 mkdir -p $PKG/usr/share/locale
 
-make DESTDIR=$PKG DEST_HELP=$PKG/usr/share/doc/vim-$version \
+make DESTDIR=$PKG DEST_HELP=$PKG/usr/share/doc/$name \
 LANGSUBLOC=/usr/share/locale install
 
 ln -sv vim $PKG/usr/bin/vi
@@ -31,7 +31,7 @@ for L in $PKG/usr/share/man/{,*/}man1/vim.1; do
         ln -sv vim.1 $(dirname $L)/vi.1
 done
 
-ln -sv ../vim/vim${version/./}/doc $PKG/usr/share/doc/vim-$version
+ln -sv ../vim/vim${version/./}/doc $PKG/usr/share/doc/$name
 
 rm -rf $PKG/usr/share/applications
 rm -rf $PKG/usr/share/icons
