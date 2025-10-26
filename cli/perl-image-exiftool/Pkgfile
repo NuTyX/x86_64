@@ -1,18 +1,20 @@
 description="Generates and rewritten exif info in the raw files"
 url="https://metacpan.org/pod/Image::ExifTool"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Piernov,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Piernov,Spiky"
 
 run=(perl)
 
 name=perl-image-exiftool
-version=13.30
+version=13.36
 
-source=(https://exiftool.org/Image-ExifTool-$version.tar.gz)
+source=(https://github.com/exiftool/exiftool/archive/refs/tags/$version.tar.gz)
+
+PKGMK_KEEP_SOURCES="no"
 
 build() {
-cd Image-ExifTool-$version
+cd exiftool-$version
 perl Makefile.PL INSTALLDIRS=vendor
 make
 make DESTDIR=$PKG install
