@@ -3,16 +3,16 @@ url="https://httpd.apache.org/ABOUT_APACHE.html"
 
 license="APACHE"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(sed grep pcre apr-util sqlite expat libxcrypt)
 run=(shadow)
 
 name=apache
-version=2.4.63
+version=2.4.65
 
-scriptsversion=20250125
+scriptsversion=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	     https://archive.apache.org/dist/httpd/httpd-$version.tar.bz2
