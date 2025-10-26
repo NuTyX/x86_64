@@ -1,11 +1,12 @@
 description="Providing application developers a predictable API with which to access Data Sources"
 url="http://www.unixodbc.org/"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Tnut"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Spiky"
 
 name=unixodbc
-version=2.3.12
-release=2
+version=2.3.14
+release=1
 
 source=(ftp://ftp.unixodbc.org/pub/unixODBC/unixODBC-$version.tar.gz)
 
@@ -21,8 +22,8 @@ make DESTDIR=$PKG install
 find doc -name "Makefile*" -delete
 chmod 644 doc/{lst,ProgrammerManual/Tutorial}/*
 
-install -vm755 -d /usr/share/doc/unixODBC-$version
-cp -vR doc/* /usr/share/doc/unixODBC-$version
+install -vm755 -d /usr/share/doc/unixODBC
+cp -vR doc/* /usr/share/doc/unixODBC
 
 # Obsolets libs
 rm $PKG/usr/lib/libodbc{,cr,inst}.la
