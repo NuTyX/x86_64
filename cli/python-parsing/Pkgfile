@@ -1,14 +1,15 @@
 description="General parsing module for Python"
 url="https://github.com/pyparsing/pyparsing/"
-contributors="Rems,Tnut"
-packager="spiky <spiky@nutyx.org>"
+
+contributors="Rems,Spiky"
+packager="tnut <tnut@nutyx.org>"
  
 name=python-parsing
 _name="pyparsing"
 alias=(${_name})
 
-version=3.1.2
-release=5
+version=3.2.5
+release=1
 
 makedepends=(python-setuptools python-wheel)
 run=(python)
