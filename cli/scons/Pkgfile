@@ -3,8 +3,8 @@ url="https://scons.org"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -12,7 +12,7 @@ name=scons
 _name="SCons"
 alias=(${_name})
 
-version=4.9.1
+version=4.10.0
 
 source=(https://sourceforge.net/projects/scons/files/scons/$version/SCons-$version.tar.gz)
 build () 
