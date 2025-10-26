@@ -1,14 +1,14 @@
 description="Text file format converter"
-url="http://waterlan.home.xs4all.nl/dos2unix.html"
+url="https://waterlan.home.xs4all.nl/dos2unix.html"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=dos2unix
-version=7.5.2
-release=2
+version=7.5.3
+release=1
 
-source=(http://waterlan.home.xs4all.nl/$name/$name-$version.tar.gz)
+source=(https://waterlan.home.xs4all.nl/$name/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
