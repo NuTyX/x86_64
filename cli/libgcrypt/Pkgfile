@@ -17,9 +17,9 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 
-install -v -dm755 $PKG/usr/share/doc/libgcrypt-$version
+install -v -dm755 $PKG/usr/share/doc/libgcrypt
 install -v -m644 README doc/{README.apichanges,fips*,libgcrypt*} \
-$PKG/usr/share/doc/libgcrypt-$version
+$PKG/usr/share/doc/libgcrypt
 
 # Obsolet lib
 
