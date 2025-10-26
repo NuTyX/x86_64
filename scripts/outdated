@@ -79,14 +79,17 @@ datediff() {
     echo $diff
 }
 update_repo() {
-  rm -rf "$HOME$ARCHDIR"
-  mkdir -p "$HOME$ARCHDIR"
+  rm -rfv "$HOME$ARCHDIR"
+  mkdir -pv "$HOME$ARCHDIR"
   cd "$HOME$ARCHDIR"
-  for ALG in core extra community
+  for ALG in core extra
   do
 	curl -s $ARCHDEPOTURL/$ALG/os/x86_64/$ALG.db -o $ALG.db|| continue
 	if [ -f $ALG.db ];then
 	   bsdtar --list --file $ALG.db|grep /$ >> list
+    else
+        echo "file $ALG.db not found, cannot proceed"
+        exit
 	fi
   done
   for AFULLNAME in $(cat $HOME$ARCHDIR/list)
@@ -348,6 +351,8 @@ getarchname() {
   esac
 }
 
+## Begin here
+#
 ########################################################################
 # ARGUMENTS PARSING
 ########################################################################
@@ -406,7 +411,6 @@ fi
 debug "update:$UPDATE summary:$SUMMARY notfound:$NOTFOUND collections:$PARAMS
 "
 
-
 ########################################################################
 # -u|--update  =>  UPDATE REPOS
 ########################################################################
@@ -448,31 +452,12 @@ do
     getarchname
 
     [ "$ARCHNAME" == "" ] && continue
-
-    # test AUR existence?
-#    if [ ! -f $PKGBUILD ];then
-#      if [ ! -z "$ARCHNAME" ]; then
-#        #debug "curl -s -o /tmp/PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=$ARCHNAME"
-#        $(curl -s -o /tmp/PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=$ARCHNAME)
-#        if [ "$?" -eq 0 ]; then
-#         #debug "AUR package found: $ARCHNAME"
-#	      PKGBUILD="/tmp/PKGBUILD"
-#        fi
-#      fi
-#    fi
-	
     
-    if [ ! -f $PKGBUILD ];then
-      PNFn=$((PNFn + 1))
-      T_NOTFOUND+="$(basename $i) "
-      continue
-    fi
-
     PFn=$((PFn + 1))
     . $i/Pkgfile
     
-    [ -f "$HOME$ARCHDIR/$PKGNAME" ] && \
-    . $HOME$ARCHDIR/$PKGNAME
+    [ -f "$HOME$ARCHDIR/$ARCHNAME" ] && \
+    . $HOME$ARCHDIR/$ARCHNAME
 
     if [ -z "$pkgver" ]; then
       PNFn=$((PNFn + 1))
