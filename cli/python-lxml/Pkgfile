@@ -1,8 +1,8 @@
 description="Python3 binding for the libxml2 and libxslt libraries"
 url=" https://files.pythonhosted.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel libxslt)
 run=()
@@ -11,7 +11,7 @@ name=python-lxml
 _name="lxml"
 alias=(${_name})
 
-version=6.0.1
+version=6.0.2
 
 source=(https://files.pythonhosted.org/packages/source/l/lxml/lxml-$version.tar.gz)
 
