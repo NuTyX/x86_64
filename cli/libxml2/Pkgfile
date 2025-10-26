@@ -1,15 +1,15 @@
 description="Libraries and utilities used for parsing XML files."
 url="http://xmlsoft.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Fanch,Schrodinger72,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fanch,Schrodinger72,Spiky"
 
 makedepends=(libtool automake python)
 
 name=libxml2
-version=2.14.5
+version=2.15.1
 
-PKGMK_GROUPS=(lib man devel doc)
+PKGMK_GROUPS=(lib man devel)
 source=(https://gitlab.gnome.org/GNOME/libxml2/-/archive/v${version}/$name-v${version}.tar.gz)
 
 prepare() {
@@ -49,16 +49,6 @@ $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/cmake usr/lib/pkgconfig \
 usr/include
 
-
 rm -r usr/{include,lib/{cmake,pkgconfig}}
 rm -d usr/lib || true
-}
-
-doc() {
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
-usr/share/doc usr/share/gtk-doc
-rm -r usr/share/{doc,gtk-doc}
-rm -d usr/share || true
 }
