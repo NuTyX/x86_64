@@ -1,13 +1,17 @@
 description="Library for color text mode, widget based user interfaces."
-url="http://releases.paagure.org/newt"
-packager="spiky <spiky@nutyx.org>"
+url="https://paagure.io/newt"
 
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+license="GPL-2.0-only"
 name=newt
-version=0.52.23
-release=2
+version=0.52.25
+release=1
+
 makedepends=(popt slang)
 
-source=( http://fedorahosted.org/releases/n/e/$name/$name-$version.tar.gz )
+source=(https://fedorahosted.org/releases/n/e/$name/$name-$version.tar.gz )
 build() {
 cd $name-$version
 sed -e 's/^LIBNEWT =/#&/' \
