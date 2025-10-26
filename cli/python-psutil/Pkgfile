@@ -1,8 +1,8 @@
 description="A cross-platform process and system utilities module for Python3"
 url="https://github.com/giampaolo/psutil"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Dania,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Dania,Spiky"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -10,8 +10,8 @@ name=python-psutil
 _name="psutil"
 alias=(${_name})
 
-version=7.0.0
-release=2
+version=7.1.0
+release=1
 
 source=(https://github.com/giampaolo/psutil/archive/release-$version.tar.gz)
 
