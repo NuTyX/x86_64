@@ -1,36 +1,28 @@
 description="A set of C++ libraries for multimedia streaming"
 url="http://www.live555.com/liveMedia/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=live
-version=2023.01.19
-release=2
+version=2025.05.24
+release=1
 
 source=(https://download.videolan.org/contrib/live555/$name.$version.tar.gz)
 
-build() {
-cd $SRC/live
+prepare() {
+ cd live
+ find . -name Makefile.head | xargs sed -e 's|/local||g' -i # Fix prefix
+}
 
-  sed \
-      -e 's/$(INCLUDES) -I. -O2 -DSOCKLEN_T/$(INCLUDES) -I. -O2 -I. -fPIC -DRTSPCLIENT_SYNCHRONOUS_INTERFACE=1 -DSOCKLEN_T/g' \
-      -e 's/\(LIBRARY_LINK =\).*/\1 $(LD) -o/g' \
-      -e 's/\(LIBRARY_LINK_OPTS =\).*/\1 $(LINK_OPTS) -r -Bstatic/g' \
-      -i config.linux
+build() {
+cd live
+
   ./genMakefiles linux
-  sed -i "s@xlocale.h@locale.h@" liveMedia/include/Locale.hh
+  sed -E 's|(-DSOCKLEN_T=socklen_t)|\1 -fPIC -DRTSPCLIENT_SYNCHRONOUS_INTERFACE=1|g' -i config.linux-with-shared-libraries
+  CXXFLAGS+=' -std=c++20' \
   make
 
-
-  for dir in BasicUsageEnvironment groupsock liveMedia UsageEnvironment; do
-    install -dm755 $PKG/usr/{bin,lib,include/${dir}}
-    install -m644 ${dir}/*.a $PKG/usr/lib
-    install -m644 ${dir}/include/*.h* $PKG/usr/include/${dir}
-  done
-
-  for testprog in `find testProgs -type f -perm 755`; do
-    install ${testprog} $PKG/usr/bin
-  done
+   make DESTDIR=$PKG install
 
 }
