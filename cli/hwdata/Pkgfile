@@ -3,15 +3,15 @@ url='https://github.com/vcrhonek/hwdata'
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(git)
 
 alias=(hwids)
 
 name=hwdata
-version=0.399
+version=0.400
 
 source=(https://github.com/vcrhonek/hwdata/archive/refs/tags/v${version}.tar.gz)
 
