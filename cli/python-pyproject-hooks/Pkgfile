@@ -1,8 +1,8 @@
 description='A low-level library for calling build-backends in pyproject.toml-based project'
 url='https://github.com/pypa/pyproject-hooks'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-flit-core)
 
@@ -11,7 +11,7 @@ _name="pyproject_hooks"
 alias=(${_name})
 
 version=1.2.0
-release=4
+release=5
 
 source=(https://files.pythonhosted.org/packages/source/p/pyproject_hooks/pyproject_hooks-$version.tar.gz)
 
