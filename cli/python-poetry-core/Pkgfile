@@ -1,8 +1,8 @@
 description='Poetry PEP 517 Build Backend & Core Utilities'
 url='https://github.com/python-poetry/poetry-core'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -10,7 +10,7 @@ name=python-poetry-core
 _name="poetry-core"
 alias=(${_name})
 
-version=2.1.3
+version=2.2.1
 
 source=(https://github.com/python-poetry/poetry-core/archive/$version/$name-$version.tar.gz)
 
