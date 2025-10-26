@@ -16,7 +16,7 @@ cd $name-$version
 [ "${CARCH}" = "x86_64" ] && export CFLAGS="${CFLAGS} -fPIC"
 
 ./configure --prefix=/usr \
---docdir=/usr/share/doc/pcre-$version \
+--docdir=/usr/share/doc/pcre2 \
 --enable-unicode \
 --enable-jit     \
 --enable-pcre2-16 \
