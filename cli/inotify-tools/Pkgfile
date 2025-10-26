@@ -1,13 +1,13 @@
 description='C library and a set of command-line programs for Linux providing a simple interface to inotify'
 url='https://github.com/inotify-tools/inotify-tools'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(autoconf automake libtool)
 name=inotify-tools
-version=4.23.9.0
-release=2
+version=4.25.9.0
+release=1
 
 source=(https://github.com/inotify-tools/inotify-tools/archive/$version/$name-$version.tar.gz)
 

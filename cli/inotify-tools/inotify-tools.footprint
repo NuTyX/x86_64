@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/fsnotifywait
--rwxr-xr-x	root/root	usr/bin/fsnotifywatch
+lrwxrwxrwx	root/root	usr/bin/fsnotifywait -> inotifywait
+lrwxrwxrwx	root/root	usr/bin/fsnotifywatch -> inotifywatch
 -rwxr-xr-x	root/root	usr/bin/inotifywait
 -rwxr-xr-x	root/root	usr/bin/inotifywatch
 drwxr-xr-x	root/root	usr/lib/
