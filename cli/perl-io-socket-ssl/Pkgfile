@@ -1,14 +1,14 @@
 description='Nearly transparent SSL encapsulation for IO::Socket::INET'
 url='http://search.cpan.org/dist/IO-Socket-SSL/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(perl perl-net-ssleay perl-uri)
 run=(perl)
 
 name=perl-io-socket-ssl
-version=2.094
+version=2.095
 
 source=(https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-${version}.tar.gz)
 
