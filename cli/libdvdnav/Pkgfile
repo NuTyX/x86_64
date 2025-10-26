@@ -1,16 +1,18 @@
-description="The library for xine-dvdnav plugin"
-url="http://mplayerhq.hu"
+description="Library to navigate DVD video disks"
+url="https://www.videolan.org/developers/libdvdnav.html"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre B, tnut"
+
+licence="GPL-2.0-or-later"
 
 makedepends=(autoconf automake m4 libtool libdvdread)
 
 name=libdvdnav
 version=6.1.1
-release=2
+release=3
 
-source=(http://download.videolan.org/videolan/$name/$version/$name-$version.tar.bz2)
+source=(https://download.videolan.org/videolan/$name/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
@@ -19,7 +21,7 @@ autoreconf -fi
 
 ./configure --prefix=/usr \
 --disable-static \
---docdir=/usr/share/doc/$name-$version
+--docdir=/usr/share/doc/$name
 
 make
 make DESTDIR=$PKG install
