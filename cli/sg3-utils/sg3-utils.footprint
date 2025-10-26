@@ -40,6 +40,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/sg_readcap
 -rwxr-xr-x	root/root	usr/bin/sg_reassign
 -rwxr-xr-x	root/root	usr/bin/sg_referrals
+-rwxr-xr-x	root/root	usr/bin/sg_rem_rest_elem
+-rwxr-xr-x	root/root	usr/bin/sg_rep_density
 -rwxr-xr-x	root/root	usr/bin/sg_rep_pip
 -rwxr-xr-x	root/root	usr/bin/sg_rep_zones
 -rwxr-xr-x	root/root	usr/bin/sg_requests
@@ -49,6 +51,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/sg_rtpg
 -rwxr-xr-x	root/root	usr/bin/sg_safte
 -rwxr-xr-x	root/root	usr/bin/sg_sanitize
+-rwxr-xr-x	root/root	usr/bin/sg_sat_datetime
 -rwxr-xr-x	root/root	usr/bin/sg_sat_identify
 -rwxr-xr-x	root/root	usr/bin/sg_sat_phy_event
 -rwxr-xr-x	root/root	usr/bin/sg_sat_read_gplog
@@ -69,18 +72,20 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/sg_verify
 -rwxr-xr-x	root/root	usr/bin/sg_vpd
 -rwxr-xr-x	root/root	usr/bin/sg_wr_mode
+-rwxr-xr-x	root/root	usr/bin/sg_write_attr
 -rwxr-xr-x	root/root	usr/bin/sg_write_buffer
 -rwxr-xr-x	root/root	usr/bin/sg_write_long
 -rwxr-xr-x	root/root	usr/bin/sg_write_same
 -rwxr-xr-x	root/root	usr/bin/sg_write_verify
 -rwxr-xr-x	root/root	usr/bin/sg_write_x
 -rwxr-xr-x	root/root	usr/bin/sg_xcopy
+-rwxr-xr-x	root/root	usr/bin/sg_z_act_query
 -rwxr-xr-x	root/root	usr/bin/sg_zone
 -rwxr-xr-x	root/root	usr/bin/sginfo
 -rwxr-xr-x	root/root	usr/bin/sgm_dd
 -rwxr-xr-x	root/root	usr/bin/sgp_dd
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libsgutils2-1.47.so.2 -> libsgutils2-1.47.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libsgutils2-1.47.so.2.0.0
-lrwxrwxrwx	root/root	usr/lib/libsgutils2.so -> libsgutils2-1.47.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libsgutils2-1.48.so.2 -> libsgutils2-1.48.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib/libsgutils2-1.48.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libsgutils2.so -> libsgutils2-1.48.so.2.0.0
 drwxr-xr-x	root/root	usr/share/
