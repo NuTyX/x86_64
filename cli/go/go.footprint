@@ -60,7 +60,8 @@ drwxr-xr-x	root/root	usr/lib/go/lib/fips140/
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/Makefile
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/fips140.sum
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/inprocess.txt
--rw-r--r--	root/root	usr/lib/go/lib/fips140/v1.0.0.zip
+-rw-r--r--	root/root	usr/lib/go/lib/fips140/v1.0.0-c2097c7c.zip
+-rw-r--r--	root/root	usr/lib/go/lib/fips140/v1.0.0.txt
 drwxr-xr-x	root/root	usr/lib/go/lib/time/
 -rw-r--r--	root/root	usr/lib/go/lib/time/mkzip.go
 -rwxr-xr-x	root/root	usr/lib/go/lib/time/update.bash
@@ -139,6 +140,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/archive/tar/testdata/
 -rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/gnu-nil-sparse-hole.tar
 -rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/gnu-not-utf8.tar
 -rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/gnu-sparse-big.tar
+-rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/gnu-sparse-many-zeros.tar.bz2
 -rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/gnu-utf8.tar
 -rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/gnu.tar
 -rw-r--r--	root/root	usr/lib/go/src/archive/tar/testdata/hardlink.tar
@@ -10543,6 +10545,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/runtime/debug/testdata/fuzz/FuzzParseBuildIn
 -rw-r--r--	root/root	usr/lib/go/src/runtime/debuglog_off.go
 -rw-r--r--	root/root	usr/lib/go/src/runtime/debuglog_on.go
 -rw-r--r--	root/root	usr/lib/go/src/runtime/debuglog_test.go
+-rw-r--r--	root/root	usr/lib/go/src/runtime/decoratemappings_test.go
 -rw-r--r--	root/root	usr/lib/go/src/runtime/defer_test.go
 -rw-r--r--	root/root	usr/lib/go/src/runtime/defs1_linux.go
 -rw-r--r--	root/root	usr/lib/go/src/runtime/defs1_netbsd_386.go
@@ -15011,6 +15014,7 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7023.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7538b.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7547.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7550.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue75569.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7590.go
 drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/a.go
