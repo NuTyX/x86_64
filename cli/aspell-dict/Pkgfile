@@ -1,13 +1,14 @@
 description="Various dictionaries for Aspell"
-url="http://aspell.net"
+url="https://aspell.net"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(aspell)
 
 name=aspell-dict
-version=0.60.8
-release=2
+version=0.60.8.1
+release=1
 
 fr_ver=0.50-3
 de_ver=0.50-2
@@ -33,7 +34,7 @@ source=(https://ftp.gnu.org/gnu/aspell/dict/fr/aspell-fr-${fr_ver}.tar.bz2
 	)
 
 build() {
-for i in fr de es it nl pt nn da sv en
+for i in fr de es it nl pt nn da sv
 do
   cd aspell-$i*
   ./configure
@@ -41,4 +42,10 @@ do
   make DESTDIR=$PKG install
   cd ..
 done
+
+cd aspell6-en-${en_ver}
+./configure
+make
+make DESTDIR=$PKG install
+
 }
