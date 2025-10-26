@@ -1,13 +1,14 @@
 description="File path utility"
 url="https://metacpan.org/pod/Path::Tiny"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre, Spiky"
 
 run=(perl)
 
 name=perl-path-tiny
-version=0.146
+version=0.150
+release=1
 
 source=(https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-$version.tar.gz)
 
