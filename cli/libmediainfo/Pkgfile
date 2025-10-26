@@ -3,13 +3,13 @@ url="http://mediainfo.sourceforge.net/"
 
 license="BSD"
 
-contributors="Alienus,Fanch,Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Alienus,Fanch,Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(libmms libzen curl pkgconf)
 
 name=libmediainfo
-version=25.07
+version=25.09
 
 source=(https://mediaarea.net/download/source/$name/$version/"${name}"_$version.tar.xz)
 
