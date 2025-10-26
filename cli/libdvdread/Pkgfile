@@ -1,18 +1,19 @@
 description="Provides a simple foundation for reading DVD video disks"
-url="http://mplayerhq.hu"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+url="https://www.videolan.org/developers/libdvdnav.html"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=libdvdread
 version=6.1.3
-release=2
+release=3
 
-source=(http://download.videolan.org/videolan/$name/$version/$name-$version.tar.bz2)
+source=(https://download.videolan.org/videolan/$name/$version/$name-$version.tar.bz2)
 build() {
 cd $name-$version
 ./configure --prefix=/usr \
 --disable-static \
---docdir=/usr/share/libdvdread-$version
+--docdir=/usr/share/libdvdread
 make
 make DESTDIR=$PKG install
 
