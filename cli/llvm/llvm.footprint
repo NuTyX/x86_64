@@ -1,13 +1,13 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/FileCheck
--rwxr-xr-x	root/root	usr/bin/amdgpu-arch
+lrwxrwxrwx	root/root	usr/bin/amdgpu-arch -> offload-arch
 -rwxr-xr-x	root/root	usr/bin/analyze-build
 -rwxr-xr-x	root/root	usr/bin/bugpoint
 -rwxr-xr-x	root/root	usr/bin/c-index-test
-lrwxrwxrwx	root/root	usr/bin/clang -> clang-20
+lrwxrwxrwx	root/root	usr/bin/clang -> clang-21
 lrwxrwxrwx	root/root	usr/bin/clang++ -> clang
--rwxr-xr-x	root/root	usr/bin/clang-20
+-rwxr-xr-x	root/root	usr/bin/clang-21
 -rwxr-xr-x	root/root	usr/bin/clang-check
 lrwxrwxrwx	root/root	usr/bin/clang-cl -> clang
 lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
@@ -70,6 +70,7 @@ lrwxrwxrwx	root/root	usr/bin/llvm-lib -> llvm-ar
 -rwxr-xr-x	root/root	usr/bin/llvm-mc
 -rwxr-xr-x	root/root	usr/bin/llvm-mca
 -rwxr-xr-x	root/root	usr/bin/llvm-ml
+lrwxrwxrwx	root/root	usr/bin/llvm-ml64 -> llvm-ml
 -rwxr-xr-x	root/root	usr/bin/llvm-modextract
 -rwxr-xr-x	root/root	usr/bin/llvm-mt
 -rwxr-xr-x	root/root	usr/bin/llvm-nm
@@ -100,7 +101,8 @@ lrwxrwxrwx	root/root	usr/bin/llvm-strip -> llvm-objcopy
 -rwxr-xr-x	root/root	usr/bin/llvm-undname
 lrwxrwxrwx	root/root	usr/bin/llvm-windres -> llvm-rc
 -rwxr-xr-x	root/root	usr/bin/llvm-xray
--rwxr-xr-x	root/root	usr/bin/nvptx-arch
+lrwxrwxrwx	root/root	usr/bin/nvptx-arch -> offload-arch
+-rwxr-xr-x	root/root	usr/bin/offload-arch
 -rwxr-xr-x	root/root	usr/bin/opt
 -rwxr-xr-x	root/root	usr/bin/reduce-chunk-list
 -rwxr-xr-x	root/root	usr/bin/sancov
