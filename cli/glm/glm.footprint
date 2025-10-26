@@ -65,7 +65,7 @@ drwxr-xr-x	root/root	usr/include/glm/detail/
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec3.inl
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec4.hpp
 -rw-r--r--	root/root	usr/include/glm/detail/type_vec4.inl
--rw-r--r--	root/root	usr/include/glm/detail/type_vec4_simd.inl
+-rw-r--r--	root/root	usr/include/glm/detail/type_vec_simd.inl
 -rw-r--r--	root/root	usr/include/glm/exponential.hpp
 -rw-r--r--	root/root	usr/include/glm/ext.hpp
 drwxr-xr-x	root/root	usr/include/glm/ext/
@@ -318,7 +318,7 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/gtx/fast_square_root.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/fast_trigonometry.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/fast_trigonometry.inl
--rw-r--r--	root/root	usr/include/glm/gtx/float_notmalize.inl
+-rw-r--r--	root/root	usr/include/glm/gtx/float_normalize.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/functions.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/functions.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/gradient_paint.hpp
@@ -333,6 +333,8 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/gtx/intersect.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/io.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/io.inl
+-rw-r--r--	root/root	usr/include/glm/gtx/iteration.hpp
+-rw-r--r--	root/root	usr/include/glm/gtx/iteration.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/log_base.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/log_base.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/matrix_cross_product.hpp
@@ -390,6 +392,8 @@ drwxr-xr-x	root/root	usr/include/glm/gtx/
 -rw-r--r--	root/root	usr/include/glm/gtx/std_based_type.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/string_cast.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/string_cast.inl
+-rw-r--r--	root/root	usr/include/glm/gtx/structured_bindings.hpp
+-rw-r--r--	root/root	usr/include/glm/gtx/structured_bindings.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/texture.hpp
 -rw-r--r--	root/root	usr/include/glm/gtx/texture.inl
 -rw-r--r--	root/root	usr/include/glm/gtx/transform.hpp
