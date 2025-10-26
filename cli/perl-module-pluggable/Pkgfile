@@ -1,17 +1,23 @@
 description="automatically give your module the ability to have plugins"
 url="https://metacpan.org/release/Module-Pluggable"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(perl)
 
 name=perl-module-pluggable
-version=5.2
-release=3
+version=6.3
+release=1
 
-source=(https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Module-Pluggable-$version.tar.gz)
+PKGMK_IGNORE_UNPACK="yes"
+source=(https://search.cpan.org/CPAN/authors/id/S/SI/SIMONW/Module-Pluggable-$version.tar.gz)
 
+prepare() {
+localedef -i en_US -f UTF-8 en_US.UTF-8
+LC_ALL=en_US.UTF-8 LANG=en_US.utf-8 \
+tar -p -o -C $SRC -xf ${PKGMK_SOURCE_DIR}/Module-Pluggable-$version.tar.gz
+}
 build() {
 cd Module-Pluggable-$version
 perl Makefile.PL INSTALLDIRS=vendor
