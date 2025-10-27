@@ -1,21 +1,23 @@
 description="The Rust programming language is designed to be a safe, \
 concurrent, practical language."
-url="http://static.rust-lang.org/"
+url="https://static.rust-lang.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre.,Rémy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre.,Rémy,Spiky"
+
+alias=(rust)
 
 makedepends=(make-ca cmake curl llvm python libssh2)
 
 name=rustc
-version=1.89.0
+version=1.90.0
 
-source=(http://static.rust-lang.org/dist/$name-$version-src.tar.gz)
+source=(https://static.rust-lang.org/dist/$name-$version-src.tar.gz)
+
 
 build() {
    cd $name-$version-src
    cat <<EOF > config.toml
-
 # Tell x.py the editors have reviewed the content of this file
 # and updated it to follow the major changes of the building system,
 # so x.py will not warn us to do such a review.
@@ -53,7 +55,7 @@ vendor = true
 
 [install]
 prefix = "/usr"
-docdir = "share/doc/rustc-1.88.0"
+docdir = "share/doc/rustc"
 
 [rust]
 channel = "stable"
@@ -72,7 +74,6 @@ download-rustc = false
 # so useful for BLFS.  Even if it turns out to be really useful we'd build
 # it as a part of the LLVM package instead.
 lld = false
-
 
 [target.x86_64-unknown-linux-gnu]
 # NB the output of llvm-config (i.e. help options) may be
