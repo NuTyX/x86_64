@@ -1,14 +1,16 @@
 description="OpenJPEG is an open-source implementation of the JPEG-2000 standard."
-url="http://www.ijg.org/"
+url="https://www.ijg.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
+
+license="BSD-2-Clause, MIT"
 
 makedepends=(cmake lcms2 libpng libtiff doxygen)
 
 name=openjpeg
-version=2.5.0
-release=3
+version=2.5.4
+release=1
 
 source=(https://github.com/uclouvain/${name}/archive/v$version/${name}-$version.tar.gz)
 build() {
