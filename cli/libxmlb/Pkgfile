@@ -3,13 +3,13 @@ url='https://github.com/hughsie/libxmlb'
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson gobject-introspection gtk-doc)
 
 name=libxmlb
-version=0.3.23
+version=0.3.24
 
 source=(https://github.com/hughsie/libxmlb/releases/download/$version/$name-$version.tar.xz)
 
