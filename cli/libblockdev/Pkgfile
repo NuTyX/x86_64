@@ -3,8 +3,8 @@ url="https://github.com/storaged-project/libblockdev"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python python-pygments glib gobject-introspection libbytesize lvm2
              volume_key parted gtk-doc yaml libnvme e2fsprogs libatasmart json-glib)
@@ -12,7 +12,7 @@ run=(gptfdisk)
 
 
 name=libblockdev
-version=3.3.1
+version=3.4.0
 
 source=(https://github.com/storaged-project/$name/releases/download/$version/$name-$version.tar.gz)
 
