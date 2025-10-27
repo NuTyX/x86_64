@@ -3,14 +3,14 @@ url="https://github.com/eqrion/cbindgen/blob/master/README.md"
 
 license="MPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
 
 makedepends=(rustc)
 
 name=cbindgen
-version=0.29.0
-release=4
+version=0.29.2
+release=1
 
 source=(https://github.com/mozilla/cbindgen/archive/refs/tags/v${version}.tar.gz)
 
@@ -21,7 +21,7 @@ cargo build --release
 mkdir -p $PKG/usr/bin
 
 install -Dm755 target/release/$name $PKG/usr/bin/$name
-install -Dt "$PKG/usr/share/doc/$name-$version" -m644 README.md
+install -Dt "$PKG/usr/share/doc/$name" -m644 README.md
 
 install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
