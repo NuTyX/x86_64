@@ -79,8 +79,8 @@ datediff() {
     echo $diff
 }
 update_repo() {
-  rm -rfv "$HOME$ARCHDIR"
-  mkdir -pv "$HOME$ARCHDIR"
+  rm -rf "$HOME$ARCHDIR"
+  mkdir -p "$HOME$ARCHDIR"
   cd "$HOME$ARCHDIR"
   for ALG in core extra
   do
