@@ -3,12 +3,13 @@ url="http://www.gnome.org/"
 
 license="GPL2.1, GPL2, MIT"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson itstool libxslt intltool perl-xml-parser)
 
 name=yelp-xsl
-version=42.4
+version=49.0
 
 source=(https://gitlab.gnome.org/GNOME/yelp-xsl/-/archive/$version/$name-$version.tar.gz)
 
