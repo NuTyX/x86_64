@@ -1,5 +1,5 @@
 description="Utilities and scripts for suspend and hibernate power management"
-url="http://pm-utils.freedesktop.org"
+url="https://pm-utils.freedesktop.org"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
@@ -33,4 +33,11 @@ build() {
   rm -f "${PKG}/usr/lib/pm-utils/power.d/"{harddrive,disable_wol}
 
   rm -fr "${PKG}/usr/share/doc"
+}
+uptodate() {
+local url ext
+ext=".tar.gz"
+url="https://pm-utils.freedesktop.org/releases/"
+lynx -read_timeout=20 -dump -listonly -nonumbers \
+$url/?C=N\;O=D|grep $name|grep $ext$|head -1|sed "s@$url/$name-@@"|sed "s/$ext//"
 }
