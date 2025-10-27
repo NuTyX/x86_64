@@ -1,13 +1,13 @@
 description='Collection of tools, libraries and tests for shader compilation'
 url='https://github.com/google/shaderc'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(git cmake glslang spirv-tools spirv-headers)
 
 name=shaderc
-version=2025.3
+version=2025.4
 
 source=(https://github.com/google/shaderc/archive/refs/tags/v$version.tar.gz)
 
