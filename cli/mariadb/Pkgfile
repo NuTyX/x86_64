@@ -38,8 +38,8 @@ mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release                        \
       -DCMAKE_INSTALL_PREFIX=/usr                       \
-      -DINSTALL_DOCDIR=share/doc/mariadb-$version       \
-      -DINSTALL_DOCREADMEDIR=share/doc/mariadb-$version \
+      -DINSTALL_DOCDIR=share/doc/mariadb                \
+      -DINSTALL_DOCREADMEDIR=share/doc/mariadb          \
       -DINSTALL_MANDIR=share/man                        \
       -DINSTALL_MYSQLSHAREDIR=share/mysql               \
       -DINSTALL_MYSQLTESTDIR=share/mysql/test           \
