@@ -1,8 +1,8 @@
 description='Handles managing your python package versions in scm metadata.'
 url='https://github.com/pypa/setuptools_scm'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-flit-core
              python-typing_extensions python-packaging)
@@ -11,7 +11,7 @@ name=python-setuptools-scm
 _name="setuptools-scm"
 alias=(${_name})
 
-version=9.2.0
+version=9.2.2
 
 source=(https://github.com/pypa/setuptools_scm/archive/refs/tags/v$version.tar.gz)
 
