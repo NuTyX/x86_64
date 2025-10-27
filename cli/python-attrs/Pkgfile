@@ -3,8 +3,8 @@ url='https://www.attrs.org'
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-hatch-fancy-pypi-readme python-hatch-vcs)
 
@@ -12,7 +12,7 @@ name=python-attrs
 _name="attrs"
 alias=(${_name})
 
-version=25.3.0
+version=25.4.0
 
 source=(https://files.pythonhosted.org/packages/source/a/attrs/attrs-$version.tar.gz)
 
