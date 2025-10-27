@@ -1,24 +1,27 @@
 description="Manage user directories like ~/Desktop and ~/Music"
 url="http://www.freedesktop.org/wiki/Software/xdg-user-dirs"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 maintainer="Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>"
 
-makedepends=(libxslt docbook-xsl)
+makedepends=(meson libxslt docbook-xsl)
 
 name=xdg-user-dirs
-version=0.18
-release=2
+version=0.19
+release=1
 
 PKGMK_LOCALES=()
 
-source=(http://user-dirs.freedesktop.org/releases/$name-$version.tar.gz
-        xdg-user-dirs)
+source=($name
+        https://gitlab.freedesktop.org/xdg/$name/-/archive/v$version/$name-v$version.tar.bz2)
 
-build() {
-  cd $name-$version
-  ./configure --prefix=/usr --sysconfdir=/etc
-  make
-  make DESTDIR=$PKG install
-  install -D ../$name $PKG/etc/X11/xinit/xinitrc.d/xdg-user-dirs
+prepare() {
+ mv $name-v$version $name-$version
+}
+
+build=meson
+
+package() {
+  install -D $name $PKG/etc/X11/xinit/xinitrc.d/xdg-user-dirs
 }
