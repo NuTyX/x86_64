@@ -1,33 +1,25 @@
 description='HTTP/2 State-Machine based protocol implementation'
 url='https://pypi.org/project/h2/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(python-setuptools python-hyperframe python-hpack)
+makedepends=(python-wheel python-installer python-setuptools python-hyperframe python-hpack)
 
 name=python-h2
 _name="h2"
 alias=(${_name})
 
-version=4.2.0
-release=2
+version=4.3.0
 
-source=(https://files.pythonhosted.org/packages/1b/38/d7f80fd13e6582fb8e0df8c9a653dcc02b03ca34f4d72f34869298c5baf8/h2-4.2.0.tar.gz)
+source=(https://files.pythonhosted.org/packages/1d/17/afa56379f94ad0fe8defd37d6eb3f89a25404ffc71d4d848893d270325fc/h2-$version.tar.gz)
 
 build() {
 
-      cd ${_name}-$version
+  cd ${_name}-$version
 
-  pip3 wheel -w dist \
-    --no-build-isolation \
-    --no-deps $PWD
-  pip3 install --no-index \
-    --find-links dist \
-    --no-cache-dir    \
-    --no-user         \
-    --root=$PKG       \
-    ${_name}
+  python -m build --wheel --no-isolation
+  python -m installer --destdir=$PKG dist/*.whl
 
- find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
+  install -Dm644 LICENSE -t $PKG/usr/share/licenses/$name
 }
