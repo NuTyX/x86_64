@@ -3,13 +3,13 @@ url="http://mpg123.de/"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Spiky"
 
 makedepends=(alsa-lib)
 
 name=mpg123
-version=1.33.1
+version=1.33.2
 
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 build() {
