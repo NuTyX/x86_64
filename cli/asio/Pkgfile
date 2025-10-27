@@ -1,16 +1,24 @@
 description="Cross-platform C++ library for ASynchronous network I/O"
-url="http://asio.sourceforge.net"
+url="https://asio.sourceforge.net"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg, tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg, Spiky"
 
 makedepends=(boost)
 
 name=asio
-version=1.24.0
-release=3
+version=1.36.0
+release=1
 
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+PKGMK_IGNORE_UNPACK="yes"
+
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+prepare() {
+localedef -i en_US -f UTF-8 en_US.UTF-8
+LC_ALL=en_US.UTF-8 LANG=en_US.utf-8 \
+tar -p -o -C $SRC -xf ${PKGMK_SOURCE_DIR}/$name-$version.tar.bz2
+}
 
 package() {
 cd $name-$version
