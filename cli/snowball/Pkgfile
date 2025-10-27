@@ -11,6 +11,8 @@ version=3.0.1
 
 makedepends=(perl)
 
+PKGMK_KEEP_SOURCES="no"
+
 source=(https://github.com/snowballstem/snowball/archive/refs/tags/v${version}.tar.gz
         dynamiclib.patch)
 
