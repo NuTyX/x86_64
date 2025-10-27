@@ -1,8 +1,8 @@
 description="Useful for extracting specially formatted comments from the code to create API docs. "
 url="http://www.gnome.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Spiky"
 
 makedepends=(meson ninja docbook-xml docbook-xsl itstool libxslt glib)
 run=(python-six python-pygments)
@@ -10,8 +10,8 @@ run=(python-six python-pygments)
 PKGMK_GROUPS=()
 
 name=gtk-doc
-version=1.34.0
-release=3
+version=1.35.1
+release=1
 
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
