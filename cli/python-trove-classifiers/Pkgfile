@@ -1,8 +1,8 @@
 description='Canonical source for classifiers on PyPI (pypi.org)'
 url='https://github.com/pypa/trove-classifiers'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-calver)
 
@@ -10,7 +10,7 @@ name=python-trove-classifiers
 _name="trove_classifiers"
 alias=(${_name})
 
-version=2025.8.26.11
+version=2025.9.11.17
 
 source=(https://pypi.org/packages/source/t/trove_classifiers/trove_classifiers-$version.tar.gz)
 
