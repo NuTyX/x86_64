@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/
 drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/aead.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/allocator.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/api.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/argon2.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/argon2fmt.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/asn1_obj.h
@@ -26,6 +27,8 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/certstor_system.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/chacha_rng.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/cipher_mode.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/cmce.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/cmce_parameter_set.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/compiler.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/compression.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/concepts.h
@@ -42,8 +45,11 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/dl_group.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/dlies.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/dsa.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/ec_apoint.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/ec_group.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/ec_point.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/ec_point_format.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/ec_scalar.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/ecc_key.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/ecdh.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/ecdsa.h
@@ -72,6 +78,8 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/mac.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/mceliece.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/mem_ops.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/ml_dsa.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/ml_kem.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/mutex.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/nist_keywrap.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/numthry.h
@@ -82,6 +90,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/p11_ecc_key.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/p11_ecdh.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/p11_ecdsa.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/p11_mechanism.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/p11_object.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/p11_randomgenerator.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/p11_rsa.h
@@ -106,6 +115,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/pkix_types.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/processor_rng.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/psk_db.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/pss_params.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/pubkey.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/pwdhash.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/reducer.h
@@ -116,6 +126,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-r--r--	root/root	usr/include/botan-3/botan/rsa.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/scrypt.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/secmem.h
+-rw-r--r--	root/root	usr/include/botan-3/botan/slh_dsa.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/sm2.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/sodium.h
 -rw-r--r--	root/root	usr/include/botan-3/botan/sp_parameters.h
