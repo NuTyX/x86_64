@@ -1,8 +1,8 @@
 description='Tool and a library for bi-directional translation between SPIR-V and LLVM IR'
 url='https://github.com/KhronosGroup/SPIRV-LLVM-Translator/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(llvm libxml2 spirv-tools spirv-headers ninja)
 
@@ -10,7 +10,8 @@ name=spirv-llvm-translator
 _name="SPIRV-LLVM-Translator"
 alias=(${_name})
 
-version=20.1.5
+version=21.1.1
+release=1
 
 source=(https://github.com/KhronosGroup/${_name}/archive/refs/tags/v$version.tar.gz)
 
