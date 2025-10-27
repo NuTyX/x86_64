@@ -4,32 +4,27 @@ url="http://xmlsoft.org/"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Fanch,Schrodinger72,Spiky"
 
-makedepends=(libtool automake python)
+makedepends=(git meson libtool automake python)
 
 name=libxml2
 version=2.15.1
+release=2
 
 PKGMK_GROUPS=(lib man devel)
+PKGMK_DEPENDS=(doxygen)
 source=(https://gitlab.gnome.org/GNOME/libxml2/-/archive/v${version}/$name-v${version}.tar.gz)
 
-prepare() {
-mv $name-v${version} $name-$version
-}
 
 build() {
-cd $name-$version
-
-autoreconf -fiv
-./configure       \
-    --prefix=/usr \
-    --sysconfdir=/etc \
-    --disable-static  \
-    --with-history \
-    --with-legacy  \
-    --with-python=/usr/bin/python
-make
-make DESTDIR=$PKG install
-rm $PKG/usr/lib/$name.la
+meson setup --prefix /usr \
+  --buildtype plain \
+  -D legacy=enabled \
+  -D python=enabled \
+  libxml2-v$version  \
+  builddir
+meson compile -C builddir
+DESTDIR=$PKG \
+meson install -C builddir
 }
 
 lib() {
