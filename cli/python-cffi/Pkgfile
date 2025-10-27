@@ -1,8 +1,8 @@
 description="Foreign Function Interface for Python calling C code"
 url="https://cffi.readthedocs.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-pycparser)
 
@@ -10,8 +10,8 @@ name=python-cffi
 _name="cffi"
 alias=(${_name})
 
-version=1.17.1
-release=4
+version=2.0.0
+release=1
 
 source=(https://github.com/python-cffi/cffi/archive/refs/tags/v$version.tar.gz)
 
