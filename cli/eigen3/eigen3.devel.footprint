@@ -128,6 +128,7 @@ drwxr-xr-x	root/root	usr/include/eigen3/Eigen/src/Core/arch/AltiVec/
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProduct.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProductCommon.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProductMMA.h
+-rw-r--r--	root/root	usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixVectorProduct.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
 drwxr-xr-x	root/root	usr/include/eigen3/Eigen/src/Core/arch/CUDA/
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
@@ -348,7 +349,6 @@ drwxr-xr-x	root/root	usr/include/eigen3/Eigen/src/SparseLU/
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h
--rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
 -rw-r--r--	root/root	usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h
