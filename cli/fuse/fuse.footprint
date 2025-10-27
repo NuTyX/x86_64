@@ -2,14 +2,12 @@ drwxr-xr-x	root/root	bin/
 -rwsr-xr-x	root/root	bin/fusermount3
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/fuse.conf
-drwxr-xr-x	root/root	etc/modules-load.d/
--rw-r--r--	root/root	etc/modules-load.d/fuse.conf
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libfuse3.so.3 -> libfuse3.so.3.14.1
--rwxr-xr-x	root/root	lib/libfuse3.so.3.14.1
+-rwxr-xr-x	root/root	lib/libfuse3.so.3.17.4
+lrwxrwxrwx	root/root	lib/libfuse3.so.4 -> libfuse3.so.3.17.4
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/mount.fuse3
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libfuse3.so -> ../../lib/libfuse3.so.3.14.1
+lrwxrwxrwx	root/root	usr/lib/libfuse3.so -> ../../lib/libfuse3.so.3.17.4
 drwxr-xr-x	root/root	usr/share/
