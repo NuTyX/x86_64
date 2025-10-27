@@ -1,8 +1,8 @@
 description='A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir"'
 url='https://pypi.org/project/platformdirs/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-hatch-vcs)
 
@@ -10,7 +10,8 @@ name=python-platformdirs
 _name="platformdirs"
 alias=(${_name})
 
-version=4.4.0
+version=4.5.0
+release=1
 
 source=(https://pypi.python.org/packages/source/p/platformdirs/platformdirs-$version.tar.gz)
 
