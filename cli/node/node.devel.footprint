@@ -8,7 +8,6 @@ drwxr-xr-x	root/root	usr/include/node/cppgc/
 -rw-r--r--	root/root	usr/include/node/cppgc/cross-thread-persistent.h
 -rw-r--r--	root/root	usr/include/node/cppgc/custom-space.h
 -rw-r--r--	root/root	usr/include/node/cppgc/default-platform.h
--rw-r--r--	root/root	usr/include/node/cppgc/ephemeron-pair.h
 -rw-r--r--	root/root	usr/include/node/cppgc/explicit-management.h
 -rw-r--r--	root/root	usr/include/node/cppgc/garbage-collected.h
 -rw-r--r--	root/root	usr/include/node/cppgc/heap-consistency.h
@@ -23,6 +22,7 @@ drwxr-xr-x	root/root	usr/include/node/cppgc/internal/
 -rw-r--r--	root/root	usr/include/node/cppgc/internal/caged-heap-local-data.h
 -rw-r--r--	root/root	usr/include/node/cppgc/internal/caged-heap.h
 -rw-r--r--	root/root	usr/include/node/cppgc/internal/compiler-specific.h
+-rw-r--r--	root/root	usr/include/node/cppgc/internal/conditional-stack-allocated.h
 -rw-r--r--	root/root	usr/include/node/cppgc/internal/finalizer-trait.h
 -rw-r--r--	root/root	usr/include/node/cppgc/internal/gc-info.h
 -rw-r--r--	root/root	usr/include/node/cppgc/internal/logging.h
@@ -95,6 +95,7 @@ drwxr-xr-x	root/root	usr/include/node/libplatform/
 -rw-r--r--	root/root	usr/include/node/v8-promise.h
 -rw-r--r--	root/root	usr/include/node/v8-proxy.h
 -rw-r--r--	root/root	usr/include/node/v8-regexp.h
+-rw-r--r--	root/root	usr/include/node/v8-sandbox.h
 -rw-r--r--	root/root	usr/include/node/v8-script.h
 -rw-r--r--	root/root	usr/include/node/v8-snapshot.h
 -rw-r--r--	root/root	usr/include/node/v8-source-location.h
