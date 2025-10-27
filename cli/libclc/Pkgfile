@@ -3,13 +3,13 @@ url='https://libclc.llvm.org/'
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cmake ninja spirv-llvm-translator)
 
 name=libclc
-version=20.1.6
+version=21.1.4
 
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/$name-$version.src.tar.xz)
 
