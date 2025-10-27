@@ -21,7 +21,7 @@ cmake -DWITH_JAVA=ON \
       -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_INSTALL_LIBDIR=/usr/lib \
       -DCMAKE_BUILD_TYPE=RELEASE \
-      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/libjpeg-turbo2-$version
+      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/libjpeg-turbo2
 
 make
 make DESTDIR=$PKG \
