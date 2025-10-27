@@ -3,13 +3,13 @@ url="http://ruby-lang.org"
 
 license="BSD custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Minzord,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Minzord,Spiky"
 
 makedepends=(doxygen openssl yaml libxcrypt)
 
 name=ruby
-version=3.4.5
+version=3.4.7
 
 source=(http://cache.ruby-lang.org/pub/ruby/${version:0:3}/ruby-$version.tar.xz)
 
