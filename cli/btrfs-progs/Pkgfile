@@ -3,13 +3,13 @@ url="http://btrfs.wiki.kernel.org/"
 
 license="GPL2"
 
-contributors="Alienus"
-packager="spiky <spiky@nutyx.org>"
+contributors="Alienus, Spiky"
+packager="tnut <tnut@nutyx.org>"
 
-makedepends=(systemd e2fsprogs lzo util-linux zlib)
+makedepends=(systemd zstd e2fsprogs lzo util-linux zlib)
 
 name=btrfs-progs
-version=6.16
+version=6.17
 
 source=(https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz)
 
@@ -22,5 +22,4 @@ cd $name-v$version
 make
 make DESTDIR=$PKG install
 
-install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
