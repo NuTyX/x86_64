@@ -3,14 +3,14 @@ url="http://freshmeat.net/projects/libv4l"
 
 license="GPL2 GPL2.1 LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(systemd llvm libjpeg-turbo alsa-lib)
 
 name=v4l-utils
-version=1.30.1
-release=2
+version=1.32.0
+release=1
 
 source=(http://linuxtv.org/downloads/v4l-utils/$name-$version.tar.xz)
 
