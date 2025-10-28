@@ -9,7 +9,7 @@ makedepends=(autoconf libtool python-setuptools
 
 name=libpwquality
 version=1.4.5
-release=5
+release=6
 
 source=(python.patch
         https://github.com/$name/$name/releases/download/$name-$version/$name-$version.tar.bz2)
