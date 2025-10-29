@@ -12,6 +12,7 @@ alias=(python3 Python)
 
 name=python
 version=3.14.0
+release=2
 
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz
         https://www.python.org/ftp/python/doc/$version/python-$version-docs-html.tar.bz2
@@ -28,7 +29,7 @@ bsdtar -xf Python-$version.tar.xz
                 --enable-shared \
                 --with-system-expat \
                 --with-system-ffi \
-		--with-ensurepip=yes
+	      --with-ensurepip=no
 	make
 # Remove the tkinter stuff
 #rm Lib/test/test_tk.py
