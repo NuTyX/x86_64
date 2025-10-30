@@ -1,12 +1,13 @@
 description='A monitor of system resources, bpytop ported to C++'
 url='https://github.com/aristocratos/btop'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
+license="Apache-2.0"
 
 name=btop
-version=1.4.4
+version=1.4.5
 
 source=($url/archive/v$version/$name-$version.tar.gz)
 
