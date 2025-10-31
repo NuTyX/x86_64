@@ -1,8 +1,8 @@
 description="X keyboard configuration database"
-url="http://www.freedesktop.org/wiki/Software_2fXKeyboardConfig"
+url="https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky,Greg"
 
 _name=xkeyboard-config
 name=xorg-xkeyboard-config
@@ -11,11 +11,11 @@ makedepends=(intltool xorgproto xorg-libx11 perl-xml-parser)
 
 _name=xkeyboard-config
 name=xorg-xkeyboard-config
-version=2.44
+version=2.46
 
 alias=(xkeyboard-config)
 
-source=( http://xorg.freedesktop.org/archive/individual/data/${_name}/${_name}-$version.tar.xz)
+source=(https://xorg.freedesktop.org/archive/individual/data/${_name}/${_name}-$version.tar.xz)
 
 prepare() {
 cd ${_name}-$version
