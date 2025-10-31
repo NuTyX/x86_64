@@ -1,15 +1,19 @@
 description="libXext, library Common X extensions client"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+url="https://gitlab.freedesktop.org/xorg/lib/libxext"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxext
-version=1.3.5
-release=2
+version=1.3.6
+release=1
+
 _name=libXext
+alias=(libXext libxext)
+
 makedepends=(xorgproto xorg-libx11)
 
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+source=(https://xorg.freedesktop.org/releases/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
