@@ -3,13 +3,13 @@ url="https://mediaarea.net/"
 
 license="BSD"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Remy"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(libmediainfo)
 
 name=mediainfo
-version=25.07
+version=25.09
 
 source=(https://mediaarea.net/download/source/$name/$version/"${name}"_$version.tar.xz)
 
