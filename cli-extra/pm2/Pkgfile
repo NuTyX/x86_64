@@ -1,13 +1,13 @@
 description="Advanced, production process manager for Node.js"
 url="https://pm2.keymetrics.io/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(node)
 
 name=pm2
-version=6.0.10
+version=6.0.13
 
 source=(pm2
         https://registry.npmjs.org/$name/-/$name-$version.tgz)
