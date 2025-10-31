@@ -1,19 +1,23 @@
-description="library libXt for Xorg"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="X11 toolkit intrinsics library"
+url="https://xorg.freedesktop.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxt
-version=1.3.0
-release=2
+version=1.3.1
+release=1
+
+alias=(libxt libXt)
 _name=libXt
+
 makedepends=(xorgproto xorg-libsm xorg-libx11)
 
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+source=($url/releases/individual/lib/${_name}-$version.tar.xz)
 
 build() {
 
-cd libXt-$version
+cd ${_name}-$version
 ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
 --with-appdefaultdir=/etc/X11/app-defaults --disable-static
 make
