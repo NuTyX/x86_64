@@ -1,14 +1,16 @@
-description="xorg lib libxshmfence"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="a library that exposes a event API on top of Linux futexes"
+url="https://xorg.freedesktop.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxshmfence
-version=1.3.2
-release=2
+version=1.3.3
+release=1
+
 _name=libxshmfence
 makedepends=(xorgproto xorg-libx11)
-source=(http://ftp.x.org/pub/individual//lib/libxshmfence-$version.tar.xz)
+source=($url/archive/individual/lib/libxshmfence-$version.tar.xz)
 
 build=xorg
 
