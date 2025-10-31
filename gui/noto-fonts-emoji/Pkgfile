@@ -1,13 +1,13 @@
 description='Noto Emoji fonts'
 url='https://github.com/googlefonts/noto-emoji'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Skythrew,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Skythrew,Spiky"
 
 PKGMK_KEEP_SOURCES="no"
 
 name=noto-fonts-emoji
-version=2.048
+version=2.051
 
 source=(https://github.com/googlefonts/noto-emoji/archive/refs/tags/v$version.tar.gz)
 
