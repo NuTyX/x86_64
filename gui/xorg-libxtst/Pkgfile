@@ -1,15 +1,19 @@
-description="libXtst, library Xorg"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="library for XTEST & RECORD extensions"
+url="https://gitlab.freedesktop.org/xorg/liblibxtst"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxtst
 alias=(libXtst)
-version=1.2.4
-release=2
+version=1.2.5
+release=1
+
 _name=libXtst
+alias=(libXtst libxtst)
+
 makedepends=(xorgproto xorg-libx11 xorg-libxext xorg-libxi)
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+source=(https://xorg.freedesktop.org/releases/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
