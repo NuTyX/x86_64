@@ -1,18 +1,20 @@
-description="Library X Video Motion Compensation extension client"
-url="http://xorg.freedesktop.org"
+description="X11 Video Motion Compensation extension library"
+url="https://gitlab.freedesktop.org/xorg/lib/libxvmc"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxvmc
-alias=(libXvMC)
-version=1.0.13
-release=3
+alias=(libXvMC libxvmc)
+
+version=1.0.14
+release=1
 
 _name=libXvMC
+
 makedepends=(xorg-libx11 xorg-libxext xorg-libxv)
 
-source=(https://www.x.org/archive/individual/lib/${_name}-$version.tar.xz)
+source=(https://xorg.freedesktop.org/releases/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
