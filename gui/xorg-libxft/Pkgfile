@@ -1,15 +1,19 @@
-description="libXft, library X are rendering client"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="FreeType-based font drawing library for X"
+url="https://xorg.freedesktop.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxft
-version=2.3.8
-release=2
+version=2.3.9
+release=1
+
 _name=libXft
+alias=(libXft libxft)
+
 makedepends=(xorg-libxrender freetype xorg-fontconfig)
 
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+source=($url/releases/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
