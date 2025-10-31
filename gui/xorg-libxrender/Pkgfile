@@ -1,15 +1,20 @@
-description="libXrender, library X Render extension client"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="X rendering extension client library"
+url="https://xorg.freedesktop.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxrender
-alias=(libXrender)
-version=0.9.11
-release=2
+alias=(libXrender libxrender)
+
+version=0.9.12
+release=1
+
 _name=libXrender
+
 makedepends=(xorgproto xorg-libx11)
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+
+source=($url/archive/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
