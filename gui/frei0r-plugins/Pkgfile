@@ -1,15 +1,15 @@
-description="A  minimalistic plugin API for video sources and filters"
-url="http://www.piksel.org/frei0r"
+description="A minimalistic plugin API for video sources and filters"
+url="https://www.piksel.org/frei0r"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(cmake gavl doxygen)
 
 name=frei0r-plugins
-version=2.4.0
+version=2.5.0
 
 source=(https://github.com/dyne/frei0r/archive/refs/tags/v$version.tar.gz)
 
