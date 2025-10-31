@@ -1,15 +1,19 @@
-description="libXfont2, library Xorg"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="X11 font rasterisation library"
+url="https://xorg.freedesktop.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-libxfont2
 alias=(libXfont2)
-version=2.0.6
-release=2
+version=2.0.7
+release=1
+
 _name=libXfont2
+alias=(libXfont2 libxfont2)
+
 makedepends=(freetype xorgproto xorg-xtrans xorg-libfontenc)
-source=(http://ftp.x.org/pub/individual//lib/libXfont2-$version.tar.xz)
+source=($url/archive/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
