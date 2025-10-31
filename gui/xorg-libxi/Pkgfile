@@ -1,16 +1,21 @@
-description="libXi, library X Input client"
-url="http://xorg.freedesktop.org"
+description="X11 Input extension library"
+url="https://xorg.freedesktop.org"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Greg,Tnut"
 
 name=xorg-libxi
-alias=(libXi)
-version=1.8.1
-release=2
+
+alias=(libXi libxi)
+
+version=1.8.2
+release=1
+
 _name=libXi
+
 makedepends=(xorgproto xorg-libx11 xorg-libxext xorg-libxfixes)
 
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.gz)
+source=($url/releases/individual/lib/${_name}-$version.tar.gz)
 
 build=xorg
 
