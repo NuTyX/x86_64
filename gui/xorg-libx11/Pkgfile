@@ -1,5 +1,5 @@
 description="libx11, library for client X"
-url="http://xorg.freedesktop.org"
+url="https://gitlab.freedesktop.org/xorg/lib/libx11"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Greg,Spiky"
@@ -7,11 +7,12 @@ contributors="Pierre,Greg,Spiky"
 makedepends=(pkgconf xorgproto libxcb xorg-xtrans)
 
 name=xorg-libx11
-alias=(libX11)
-version=1.8.10
+alias=(libX11 libx11)
+
+version=1.8.12
 _name=libX11
 
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+source=(https://xorg.freedesktop.org/releases/individual/lib/${_name}-$version.tar.xz)
 
 build() {
 cd ${_name}-$version
