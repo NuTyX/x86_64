@@ -1,14 +1,17 @@
-description="libxi, X Authorization routines"
-url="http://xorg.freedesktop.org"
+description="X11 authorisation library"
+url="https://xorg.freedesktop.org"
+
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Greg,Tnut"
 
 name=xorg-libxau
-version=1.0.11
-release=2
+version=1.0.12
+release=1
 _name=libXau
+alias=(libXau libxau)
+
 makedepends=(xorgproto)
-source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)
+source=($url/releases/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
