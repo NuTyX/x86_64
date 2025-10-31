@@ -3,14 +3,14 @@ url="https://github.com/sharkdp/bat"
 
 license="APACHE MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Rems,Spiky"
 
 makedepends=(git make-ca libssh2 cmake rustc)
 
 name=bat
-version=0.25.0
-release=2
+version=0.26.0
+release=1
 
 PKGMK_KEEP_SOURCES='NO'
 source=(https://github.com/sharkdp/$name/archive/v$version.tar.gz)
