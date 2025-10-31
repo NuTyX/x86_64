@@ -1,17 +1,19 @@
-description="library for the manipulation of pixels"
-url="http://xorg.freedesktop.org"
+description="The pixel-manipulation library for X and cairo"
+url="https://gitlab.freedesktop.org/pixman/pixman"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+license="MIT"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 name=xorg-pixman
 _name=pixman
 alias=(pixman)
-version=0.43.2
-release=2
+version=0.46.4
+release=1
 
 makedepends=(meson ninja libpng python)
-source=( https://www.cairographics.org/releases/${_name}-$version.tar.gz)
+source=(https://www.cairographics.org/releases/${_name}-$version.tar.gz)
 
 prepare() {
 mv ${_name}-$version $name-$version
