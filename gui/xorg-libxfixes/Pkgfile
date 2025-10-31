@@ -1,14 +1,18 @@
-description="Library Fixes extension client"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre B, tnut"
+description="X11 miscellaneous 'fixes' extension library"
+url="https://xorg.freedesktop.org"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre B, Spiky"
 
 name=xorg-libxfixes
-version=6.0.1
-release=2
+version=6.0.2
+release=1
+
 _name=libXfixes
+alias=(libXfixes libxfixes)
+
 makedepends=(xorgproto xorg-libx11)
-source=(http://ftp.x.org/pub/individual/lib/libXfixes-$version.tar.xz)
+source=($url/releases/individual/lib/${_name}-$version.tar.xz)
 
 build=xorg
 
