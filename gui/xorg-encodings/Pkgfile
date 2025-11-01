@@ -1,15 +1,20 @@
-description="Utilities for the polices print of X"
-url="http://xorg.freedesktop.org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+description="X.org font encoding files"
+url="https://gitlab.freedesktop.org/xorg/font/encodings"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 
 name=xorg-encodings
 _name=${name/xorg-/}
-version=1.0.7
-release=2
+
+version=1.1.0
+release=1
+
+alias=(encodings)
+
 makedepends=(xorg-util-macros xorg-mkfontscale)
-source=(http://ftp.x.org/pub/individual//font/${_name}-$version.tar.xz)
+source=(https://xorg.freedesktop.org/releases/individual/font/${_name}-$version.tar.xz)
 
 build() {
 
