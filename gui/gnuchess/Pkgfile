@@ -1,13 +1,13 @@
 description="Play chess against the computer on a terminal and an engine for graphical chess frontends"
 url="https://www.gnu.org/software/chess/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(bash)
 
 name=gnuchess
-version=6.2.11
+version=6.3.0
 
 source=(https://ftp.gnu.org/pub/gnu/chess/$name-$version.tar.gz)
 
