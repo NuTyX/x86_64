@@ -3,13 +3,13 @@ url='https://alacritty.org/'
 
 license="APACHE MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="BlogofraisFR"
+packager="tnut <tnut@nutyx.org>"
+contributors="BlogofraisFR,Spiky"
 
 makedepends=(make rustc xorg-fontconfig xcb-util-renderutil)
 
 name=alacritty
-version=0.15.1
+version=0.16.1
 
 PKGMK_KEEP_SOURCES="no"
 
