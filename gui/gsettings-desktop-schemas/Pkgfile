@@ -1,15 +1,15 @@
 description="Shared GSettings schemas for the desktop"
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Fanch,Tnut,Skythrew"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fanch,Spiky,Skythrew"
 
 makedepends=(meson ninja intltool glib gobject-introspection perl-xml-parser adobe-source-code-pro-fonts)
 
 name=gsettings-desktop-schemas
-version=48.0
+version=49.1
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
