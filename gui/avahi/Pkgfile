@@ -1,5 +1,5 @@
 description="Multicast/unicast DNS-SD framework"
-url="http://www.avahi.org/"
+url="https://www.avahi.org/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Jayce,Rems,Spiky"
@@ -8,7 +8,7 @@ makedepends=(intltool libevent glib gobject-introspection libdaemon dbus)
 
 name=avahi
 version=0.8
-release=4
+release=1
 
 source=( https://github.com/lathiat/avahi/releases/download/v$version/avahi-$version.tar.gz)
 
