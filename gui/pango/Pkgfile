@@ -1,17 +1,17 @@
 description="Library for layout and rendering of text"
-url="http://www.pango.org/"
+url="https://www.pango.org/"
 
 license="LGPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(ninja meson cairo libthai freetype xorg-libxft gobject-introspection
              harfbuzz xorg-libxxf86vm gtk-doc fribidi)
 
 
 name=pango
-version=1.56.4
+version=1.57.0
 
 source=(https://gitlab.gnome.org/GNOME/pango/-/archive/$version/$name-$version.tar.gz)
 build() {
