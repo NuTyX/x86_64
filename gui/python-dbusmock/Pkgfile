@@ -3,8 +3,8 @@ url="https://github.com/martinpitt/python-dbusmock"
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 run=(python-dbus python-gobject)
 makedepends=(python-setuptools)
@@ -13,7 +13,7 @@ name=python-dbusmock
 _name="python_dbusmock"
 alias=(${_name})
 
-version=0.36.0
+version=0.37.1
 
 source=(https://github.com/martinpitt/${name}/releases/download/$version/dist.${_name}-$version.tar.gz)
 
