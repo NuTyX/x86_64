@@ -1,34 +1,27 @@
 description="Freedesktop.org message bus system"
-url="http://www.freedesktop.org/wiki/Software/dbus/"
+url="https://www.freedesktop.org/wiki/Software/dbus/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Jayce,Spiky"
 
-makedepends=(systemd expat xorg-libx11)
+makedepends=(meson systemd expat xorg-libx11)
 
 name=dbus-launch
 _name=dbus
-version=1.14.10
-release=5
+version=1.16.2
+release=1
 
 source=(https://dbus.freedesktop.org/releases/dbus/${_name}-$version.tar.xz)
 
 build() {
-	cd ${_name}-$version
-	./configure --prefix=/usr                     \
-            --sysconfdir=/etc                     \
-            --localstatedir=/var                  \
-            --disable-doxygen-docs                \
-            --disable-xml-docs                    \
-            --disable-static                      \
-            --docdir=/usr/share/doc/dbus-$version \
-            --with-console-auth-dir=/run/console  \
-            --with-system-pid-file=/run/dbus/pid  \
-            --with-system-socket=/run/dbus/system_bus_socket \
-	  --with-systemdsystemunitdir=/usr/lib/systemd/system  \
-            --enable-systemd
-	make -C dbus
-	make -C tools dbus-launch
-	mkdir -p $PKG/usr/bin
-	/usr/bin/install -c tools/.libs/dbus-launch $PKG/usr/bin/dbus-launch
+  cd ${_name}-$version
+  mkdir build
+  cd build
+  meson setup .. \
+   --buildtype=release    \
+   --prefix=/usr          \
+   --wrap-mode=nofallback
+  ninja
+  mkdir -p $PKG/usr/bin
+ /usr/bin/install -c tools/dbus-launch $PKG/usr/bin/dbus-launch
 }
