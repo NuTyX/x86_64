@@ -1,16 +1,16 @@
 description="Library and tools used to manipulate, convert and view Scalable Vector Graphic images."
-url="http://librsvg.sourceforge.net/"
+url="https://librsvg.sourceforge.net/"
 
 liense="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(gdk-pixbuf libcroco pango vala rustc cargo-c
              gi-docgen python-docutils python-smartypants)
 
 name=librsvg
-version=2.61.0
+version=2.61.1
 
 source=(https://gitlab.gnome.org/GNOME/librsvg/-/archive/$version/$name-$version.tar.gz)
 build() {
