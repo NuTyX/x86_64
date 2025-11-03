@@ -34,15 +34,15 @@ lrwxrwxrwx	root/root	usr/lib/libnss_wins.so -> /lib/libnss_wins.so.2
 lrwxrwxrwx	root/root	usr/lib/libsamba-errors.so -> libsamba-errors.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libsamba-errors.so.1 -> libsamba-errors.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libsamba-errors.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libsamba-passdb.so -> libsamba-passdb.so.0.29.0
-lrwxrwxrwx	root/root	usr/lib/libsamba-passdb.so.0 -> libsamba-passdb.so.0.29.0
--rwxr-xr-x	root/root	usr/lib/libsamba-passdb.so.0.29.0
+lrwxrwxrwx	root/root	usr/lib/libsamba-passdb.so -> libsamba-passdb.so.0.30.0
+lrwxrwxrwx	root/root	usr/lib/libsamba-passdb.so.0 -> libsamba-passdb.so.0.30.0
+-rwxr-xr-x	root/root	usr/lib/libsamba-passdb.so.0.30.0
 lrwxrwxrwx	root/root	usr/lib/libsamba-util.so -> libsamba-util.so.0.0.1
 lrwxrwxrwx	root/root	usr/lib/libsamba-util.so.0 -> libsamba-util.so.0.0.1
 -rwxr-xr-x	root/root	usr/lib/libsamba-util.so.0.0.1
-lrwxrwxrwx	root/root	usr/lib/libsmbclient.so -> libsmbclient.so.0.8.0
-lrwxrwxrwx	root/root	usr/lib/libsmbclient.so.0 -> libsmbclient.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libsmbclient.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libsmbclient.so -> libsmbclient.so.0.8.1
+lrwxrwxrwx	root/root	usr/lib/libsmbclient.so.0 -> libsmbclient.so.0.8.1
+-rwxr-xr-x	root/root	usr/lib/libsmbclient.so.0.8.1
 lrwxrwxrwx	root/root	usr/lib/libsmbconf.so -> libsmbconf.so.0.0.1
 lrwxrwxrwx	root/root	usr/lib/libsmbconf.so.0 -> libsmbconf.so.0.0.1
 -rwxr-xr-x	root/root	usr/lib/libsmbconf.so.0.0.1
@@ -129,12 +129,15 @@ lrwxrwxrwx	root/root	usr/lib/libwbclient.so.0 -> libwbclient.so.0.16
 -rwxr-xr-x	root/root	usr/lib/samba/libndr-samba4-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libnet-keytab-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libnetif-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libngtcp2-crypto-gnutls-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libngtcp2-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libnpa-tstream-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libnss-info-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libposix-eadb-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libprinter-driver-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libprinting-migrate-private-samba.so
--rwxr-xr-x	root/root	usr/lib/samba/libpyldb-util.cpython-313-x86-64-linux-gnu-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libpyldb-util.cpython-314-x86-64-linux-gnu-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libquic-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libregistry-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libreplace-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libroken-private-samba.so
@@ -143,11 +146,12 @@ lrwxrwxrwx	root/root	usr/lib/libwbclient.so.0 -> libwbclient.so.0.16
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-debug-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-hostconfig-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-modules-private-samba.so
--rwxr-xr-x	root/root	usr/lib/samba/libsamba-net-join.cpython-313-x86-64-linux-gnu-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libsamba-net-join.cpython-314-x86-64-linux-gnu-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-net-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-policy-private-samba.so
--rwxr-xr-x	root/root	usr/lib/samba/libsamba-python.cpython-313-x86-64-linux-gnu-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libsamba-python.cpython-314-x86-64-linux-gnu-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-security-private-samba.so
+-rwxr-xr-x	root/root	usr/lib/samba/libsamba-security-trusts-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba-sockets-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamba3-util-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsamdb-common-private-samba.so
@@ -156,7 +160,6 @@ lrwxrwxrwx	root/root	usr/lib/libwbclient.so.0 -> libwbclient.so.0.16
 -rwxr-xr-x	root/root	usr/lib/samba/libserver-id-db-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libserver-role-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libshares-private-samba.so
--rwxr-xr-x	root/root	usr/lib/samba/libsmb-transport-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsmbclient-raw-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsmbd-base-private-samba.so
 -rwxr-xr-x	root/root	usr/lib/samba/libsmbd-shim-private-samba.so

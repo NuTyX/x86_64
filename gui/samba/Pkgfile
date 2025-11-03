@@ -3,8 +3,8 @@ url="https://www.samba.org"
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
              docbook-xsl avahi gnutls libgpg-error popt talloc lmdb
@@ -12,9 +12,9 @@ makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
 run=(samba.lib)
 
 name=samba
-version=4.22.4
+version=4.23.2
 
-scriptsversion=20250125
+scriptsversion=20250201
 
 PKGMK_GROUPS=(lib man devel doc)
 
@@ -75,8 +75,8 @@ ln -v -sf /usr/bin/smbspool $PKG/usr/lib/cups/backend/smb
 
 _ARCH="x86_64"
 [ "$PKGMK_ARCH" = "i686" ] && _ARCH=i386
-rm $PKG/usr/lib/python3.13/site-packages/_tdb_text.py
-rm $PKG/usr/lib/python3.13/site-packages/tdb.cpython-313-${_ARCH}-linux-gnu.so
+rm $PKG/usr/lib/python3.14/site-packages/_tdb_text.py
+rm $PKG/usr/lib/python3.14/site-packages/tdb.cpython-314-${_ARCH}-linux-gnu.so
 
 # service
 cd $SRC/nutyx-scripts-$scriptsversion
