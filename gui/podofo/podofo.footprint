@@ -1,28 +1,12 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/podofobox
--rwxr-xr-x	root/root	usr/bin/podofocolor
--rwxr-xr-x	root/root	usr/bin/podofocountpages
--rwxr-xr-x	root/root	usr/bin/podofocrop
--rwxr-xr-x	root/root	usr/bin/podofoencrypt
--rwxr-xr-x	root/root	usr/bin/podofogc
--rwxr-xr-x	root/root	usr/bin/podofoimg2pdf
--rwxr-xr-x	root/root	usr/bin/podofoimgextract
--rwxr-xr-x	root/root	usr/bin/podofoimpose
--rwxr-xr-x	root/root	usr/bin/podofoincrementalupdates
--rwxr-xr-x	root/root	usr/bin/podofomerge
--rwxr-xr-x	root/root	usr/bin/podofonooc
--rwxr-xr-x	root/root	usr/bin/podofopages
--rwxr-xr-x	root/root	usr/bin/podofopdfinfo
--rwxr-xr-x	root/root	usr/bin/podofosign
--rwxr-xr-x	root/root	usr/bin/podofotxt2pdf
--rwxr-xr-x	root/root	usr/bin/podofotxtextract
--rwxr-xr-x	root/root	usr/bin/podofouncompress
--rwxr-xr-x	root/root	usr/bin/podofoxmp
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libpodofo.so -> libpodofo.so.0.9.8
--rwxr-xr-x	root/root	usr/lib/libpodofo.so.0.9.8
+lrwxrwxrwx	root/root	usr/lib/libpodofo.so -> libpodofo.so.2
+-rwxr-xr-x	root/root	usr/lib/libpodofo.so.0.10.4
+lrwxrwxrwx	root/root	usr/lib/libpodofo.so.2 -> libpodofo.so.0.10.4
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/podofo/
 -rw-r--r--	root/root	usr/share/licenses/podofo/COPYING
+drwxr-xr-x	root/root	usr/share/podofo/
+-rw-r--r--	root/root	usr/share/podofo/podofo-config-noconfig.cmake
+-rw-r--r--	root/root	usr/share/podofo/podofo-config.cmake
