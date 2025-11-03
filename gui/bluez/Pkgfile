@@ -3,14 +3,14 @@ url="https://www.bluez.org/"
 
 license="GPL2.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(readline dbus libical libvorbis alsa-lib
              libusb-compat libsndfile cups glib)
 
 name=bluez
-version=5.83
+version=5.84
 
 PKGMK_GROUPS=(man devel doc)
 
