@@ -1,13 +1,13 @@
 description="A virtual 3D GPU library, allows guest operating system to use the host GPU to accelerate 3D rendering"
 url="https://virgil3d.github.io/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rÿ©My,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rémy,Spiky"
 
 makedepends=(meson ninja mesa libepoxy)
 
 name=virglrenderer
-version=1.1.1
+version=1.2.0
 
 source=(https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/$version/virglrenderer-$version.tar.gz)
 
