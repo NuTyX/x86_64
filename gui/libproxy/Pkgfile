@@ -3,14 +3,14 @@ url='https://libproxy.github.io/libproxy/'
 
 license="LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(git meson vala duktape gi-docgen gobject-introspection)
 run=(gsettings-desktop-schemas)
 
 name=libproxy
-version=0.5.10
+version=0.5.11
 
 prepare() {
  git clone https://github.com/libproxy/libproxy
