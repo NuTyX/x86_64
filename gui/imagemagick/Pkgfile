@@ -1,16 +1,16 @@
 description="An image viewing/manipulation program"
-url="http://www.imagemagick.org/"
+url="https://www.imagemagick.org/"
 
 license="custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(freetype ghostscript lcms2 libgsf libxml2 libjpeg-turbo
               openexr libwmf libpng librsvg libwebp djvulibre)
 
 name=imagemagick
-version=7.1.2.3
+version=7.1.2.7
 _version="${version%.*}-${version##*.}"
 
 PKGMK_KEEP_SOURCES="no"
