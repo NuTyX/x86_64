@@ -1,16 +1,16 @@
 description="Keymap compiler and support library by the XKB specification"
-url="http://xkbcommon.org/"
+url="https://xkbcommon.org/"
 
-license="Custo"
+license="Custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(meson ninja wayland wayland-protocols
              xorg-xkeyboard-config libxcb doxygen xorg-util-macros)
 
 name=libxkbcommon
-version=1.11.0
+version=1.12.2
 
 source=(https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-$version/$name-$version.tar.gz)
 
