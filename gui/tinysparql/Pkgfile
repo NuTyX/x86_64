@@ -1,16 +1,16 @@
 description='Tinysparql is a low-footprint RDF triple store with a SPARQL 1.1 interface'
-url=' https://download.gnome.org/sources/tinysparql'
+url='https://download.gnome.org/sources/tinysparql'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(json-glib vala icu libsoup3 python-gobject asciidoc gi-docgen)
 run=()
 
 name=tinysparql
-version=3.9.2
+version=3.10.1
 
-source=(https://download.gnome.org/sources/$name/3.9/$name-$version.tar.xz)
+source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
 prepare() {
 cd $name-$version
