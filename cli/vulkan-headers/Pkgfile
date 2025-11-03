@@ -9,11 +9,11 @@ contributors="Rems,Spiky"
 makedepends=(cmake ninja)
 
 name=vulkan-headers
-version=1.4.328.1
+version=1.4.331
 
 PKGMK_KEEP_SOURCES="no"
 
-source=(https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-$version.tar.gz)
+source=(https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v$version.tar.gz)
 
 prepare() {
 
@@ -27,7 +27,7 @@ cd build
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release \
-      ../SPIRV-Headers-vulkan-sdk-$version \
+      ../Vulkan-Headers-$version \
       -G Ninja
 ninja
 DESTDIR=$PKG ninja install
