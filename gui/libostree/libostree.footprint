@@ -22,16 +22,15 @@ drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/ostree-boot-complete.service
 -rw-r--r--	root/root	usr/lib/systemd/system/ostree-finalize-staged-hold.service
--rw-r--r--	root/root	usr/lib/systemd/system/ostree-finalize-staged.path
 -rw-r--r--	root/root	usr/lib/systemd/system/ostree-finalize-staged.service
 -rw-r--r--	root/root	usr/lib/systemd/system/ostree-prepare-root.service
 -rw-r--r--	root/root	usr/lib/systemd/system/ostree-remount.service
+-rw-r--r--	root/root	usr/lib/systemd/system/ostree-state-overlay@.service
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/ostree-tmpfiles.conf
 drwxr-xr-x	root/root	usr/libexec/
 drwxr-xr-x	root/root	usr/libexec/libostree/
 -rwxr-xr-x	root/root	usr/libexec/libostree/grub2-15_ostree
--rwxr-xr-x	root/root	usr/libexec/libostree/ostree-trivial-httpd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
