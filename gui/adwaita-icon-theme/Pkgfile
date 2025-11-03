@@ -1,16 +1,17 @@
 description="Adwaita icon theme."
-url="http://www.gnome.org/"
+url="https://www.gnome.org/"
 
 license="LGPL3 CCPL:by-sa"
 
-maintainer="http://linuxfromscratch.org/"
-packager="spiky <spiky@nutyx.org>"
+maintainer="https://linuxfromscratch.org/"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson ninja)
 run=(hicolor-icon-theme gtk-update-icon-cache icon-naming-utils librsvg)
 
 name=adwaita-icon-theme
-version=48.1
+version=49.0
 
 source=(https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/archive/$version/$name-$version.tar.gz)
 
@@ -29,14 +30,4 @@ DESTDIR=$PKG ninja install
 
 install -Dm644 $SRC/$name-$version/COPYING_LGPL $PKG/usr/share/licenses/$name/COPYING_LGPL
 install -Dm644 $SRC/$name-$version/COPYING_CCBYSA3 $PKG/usr/share/licenses/$name/COPYING_CCBYSA3
-}
-
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/$name"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f5`"
-echo "$lastversion"
 }
