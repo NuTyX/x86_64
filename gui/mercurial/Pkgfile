@@ -1,8 +1,8 @@
 description="A scalable distributed SCM tool"
 url="http://mercurial.selenic.com"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Berlius,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Spiky"
 
 makedepends=(gnupg subversion
              python-docutils)
@@ -10,13 +10,14 @@ makedepends=(gnupg subversion
 run=(openssh python)
 
 name=mercurial
-version=7.1
+version=7.1.1
 
 source=(https://www.mercurial-scm.org/release/mercurial-$version.tar.gz
 mercurial.profile
 )
 build() {
   cd $name-$version/
+  sed -i '/try:/,+3s/^/#/' doc/hgmanpage.py
   export PYTHON=python3
 
   make doc
