@@ -1,13 +1,13 @@
 description="General purpose library for WPE WebKit and the WPE Renderer"
 url="https://wpewebkit.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(mesa libxkbcommon)
 
 name=libwpe
-version=1.16.2
+version=1.16.3
 
 source=(https://wpewebkit.org/releases/$name-$version.tar.xz)
 
