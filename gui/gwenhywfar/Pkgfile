@@ -9,17 +9,13 @@ contributors="Spiky"
 makedepends=(gnutls libgcrypt openssl gtk3)
 
 name=gwenhywfar
-version=5.12.0
+version=5.12.1
 
-source=(0001-Prepare-.pc-and-.cmake-for-static-builds.patch
-        https://www.aquamaniac.de/rdm/attachments/download/501/$name-$version.tar.gz)
-prepare() {
-  cd $name-$version
-  patch -Np1 -i ../0001-Prepare-.pc-and-.cmake-for-static-builds.patch
-  autoreconf -fiv
-}
+source=(https://www.aquamaniac.de/rdm/attachments/download/533/$name-$version.tar.gz)
+
 build() {
 cd $name-$version 
+GPGRT_CONFIG="/usr/bin/gpgrt-config" \
 ./configure --prefix=/usr \
 --sysconfdir=/etc \
 --enable-system-certs \
