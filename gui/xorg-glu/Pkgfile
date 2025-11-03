@@ -1,20 +1,22 @@
-description="library graphic 3D table OpenGL"
-url="http://www.xorg-mesa3d.org"
+description="Mesa OpenGL utility library"
+url="https://gitlab.freedesktop.org/mesa/glu"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Greg,Spiky"
 
-makedepends=(mesa)
+makedepends=(python meson mesa)
 
 name=xorg-glu
 _name=glu
-version=9.0.2
-release=2
 
-source=(ftp://ftp.freedesktop.org/pub/mesa/${_name}/${_name}-$version.tar.xz)
+alias=(glu)
 
-build=xorg
+version=9.0.3
+release=1
 
-package() {
-rm $PKG/usr/lib/libGLU.la
+source=(https://mesa.freedesktop.org/archive/${_name}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
 }
+build=meson
