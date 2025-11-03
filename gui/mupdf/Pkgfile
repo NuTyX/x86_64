@@ -1,11 +1,12 @@
 description="Lightweight PDF and XPS viewer"
-url="http://www.mupdf.com"
-packager="spiky <spiky@nutyx.org>"
+url="https://www.mupdf.com"
 
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 license="AGPL3"
 
 name=mupdf
-version=1.26.7
+version=1.26.10
 
 makedepends=(lcms2 harfbuzz libjpeg-turbo openjpeg freeglut xorg-libx11
              xorg-libxcursor xorg-libxext xorg-libxrandr xorg-libxinerama freetype)
@@ -47,9 +48,9 @@ make prefix=$PKG/usr shared=yes \
 docdir=$PKG/usr/share/doc/$name-$version \
 install
 
-ln -sfv libmupdf.so.26.7 /usr/lib/libmupdf.so.26
+ln -sfv libmupdf.so.26.10 /usr/lib/libmupdf.so.26
 ln -sfv libmupdf.so.26 /usr/lib/libmupdf.so
-chmod 755 $PKG/usr/lib/libmupdf.so.26.7
+chmod 755 $PKG/usr/lib/libmupdf.so.26.10
 
 ln -svf mupdf-x11 $PKG/usr/bin/mupdf
 
