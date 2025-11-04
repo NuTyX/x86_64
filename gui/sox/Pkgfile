@@ -8,24 +8,18 @@ contributors="Spiky"
 
 makedepends=(libsndfile libpng lame opencore-amr
              gsm libao libmad libid3tag wavpack
-             pulseaudio opusfile)
+             pulseaudio opusfile autoconf m4 libtool)
 
 
 name=sox
-version=14.4.2
-release=7
+version=14.6.1
+release=1
 
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2
-       consolidate-1.patch)
+source=(https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-$version.tar.gz)
 
 build() {
-  cd $name-$version
-  sed -i 's|man1/sox.1 soxeffect.7|man1/sox.1.gz soxeffect.7.gz|' Makefile.in
-
-  patch -p1 -i ../consolidate-1.patch
-
-  aclocal
-  automake
+  cd ${name}_ng
+  autoreconf -vfi
 
   ./configure --prefix=/usr \
               --sysconfdir=/etc \
