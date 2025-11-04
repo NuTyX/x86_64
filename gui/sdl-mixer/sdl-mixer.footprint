@@ -2,9 +2,21 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
 drwxr-xr-x	root/root	usr/lib/cmake/SDL2_mixer/
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/FindFLAC.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/FindFluidSynth.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/FindOpusFile.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/FindVorbis.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findgme.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findlibxmp-lite.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findlibxmp.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findmodplug.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findmpg123.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findtremor.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/Findwavpack.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/PkgConfigHelper.cmake
 -rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/sdl2_mixer-config-version.cmake
 -rw-r--r--	root/root	usr/lib/cmake/SDL2_mixer/sdl2_mixer-config.cmake
-lrwxrwxrwx	root/root	usr/lib/libSDL2_mixer-2.0.so.0 -> libSDL2_mixer-2.0.so.0.800.0
--rwxr-xr-x	root/root	usr/lib/libSDL2_mixer-2.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libSDL2_mixer-2.0.so.0 -> libSDL2_mixer-2.0.so.0.800.1
+-rwxr-xr-x	root/root	usr/lib/libSDL2_mixer-2.0.so.0.800.1
 -rw-r--r--	root/root	usr/lib/libSDL2_mixer.a
-lrwxrwxrwx	root/root	usr/lib/libSDL2_mixer.so -> libSDL2_mixer-2.0.so.0.800.0
+lrwxrwxrwx	root/root	usr/lib/libSDL2_mixer.so -> libSDL2_mixer-2.0.so.0.800.1
