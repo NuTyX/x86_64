@@ -4,7 +4,6 @@ drwxr-xr-x	root/root	usr/include/libavcodec/
 -rw-r--r--	root/root	usr/include/libavcodec/adts_parser.h
 -rw-r--r--	root/root	usr/include/libavcodec/avcodec.h
 -rw-r--r--	root/root	usr/include/libavcodec/avdct.h
--rw-r--r--	root/root	usr/include/libavcodec/avfft.h
 -rw-r--r--	root/root	usr/include/libavcodec/bsf.h
 -rw-r--r--	root/root	usr/include/libavcodec/codec.h
 -rw-r--r--	root/root	usr/include/libavcodec/codec_desc.h
@@ -19,6 +18,7 @@ drwxr-xr-x	root/root	usr/include/libavcodec/
 -rw-r--r--	root/root	usr/include/libavcodec/mediacodec.h
 -rw-r--r--	root/root	usr/include/libavcodec/packet.h
 -rw-r--r--	root/root	usr/include/libavcodec/qsv.h
+-rw-r--r--	root/root	usr/include/libavcodec/smpte_436m.h
 -rw-r--r--	root/root	usr/include/libavcodec/vdpau.h
 -rw-r--r--	root/root	usr/include/libavcodec/version.h
 -rw-r--r--	root/root	usr/include/libavcodec/version_major.h
@@ -59,6 +59,7 @@ drwxr-xr-x	root/root	usr/include/libavutil/
 -rw-r--r--	root/root	usr/include/libavutil/cast5.h
 -rw-r--r--	root/root	usr/include/libavutil/channel_layout.h
 -rw-r--r--	root/root	usr/include/libavutil/common.h
+-rw-r--r--	root/root	usr/include/libavutil/container_fifo.h
 -rw-r--r--	root/root	usr/include/libavutil/cpu.h
 -rw-r--r--	root/root	usr/include/libavutil/crc.h
 -rw-r--r--	root/root	usr/include/libavutil/csp.h
@@ -82,12 +83,14 @@ drwxr-xr-x	root/root	usr/include/libavutil/
 -rw-r--r--	root/root	usr/include/libavutil/hdr_dynamic_vivid_metadata.h
 -rw-r--r--	root/root	usr/include/libavutil/hmac.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext.h
+-rw-r--r--	root/root	usr/include/libavutil/hwcontext_amf.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_cuda.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_d3d11va.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_d3d12va.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_drm.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_dxva2.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_mediacodec.h
+-rw-r--r--	root/root	usr/include/libavutil/hwcontext_oh.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_opencl.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_qsv.h
 -rw-r--r--	root/root	usr/include/libavutil/hwcontext_vaapi.h
@@ -116,6 +119,7 @@ drwxr-xr-x	root/root	usr/include/libavutil/
 -rw-r--r--	root/root	usr/include/libavutil/random_seed.h
 -rw-r--r--	root/root	usr/include/libavutil/rational.h
 -rw-r--r--	root/root	usr/include/libavutil/rc4.h
+-rw-r--r--	root/root	usr/include/libavutil/refstruct.h
 -rw-r--r--	root/root	usr/include/libavutil/replaygain.h
 -rw-r--r--	root/root	usr/include/libavutil/ripemd.h
 -rw-r--r--	root/root	usr/include/libavutil/samplefmt.h
@@ -123,6 +127,7 @@ drwxr-xr-x	root/root	usr/include/libavutil/
 -rw-r--r--	root/root	usr/include/libavutil/sha512.h
 -rw-r--r--	root/root	usr/include/libavutil/spherical.h
 -rw-r--r--	root/root	usr/include/libavutil/stereo3d.h
+-rw-r--r--	root/root	usr/include/libavutil/tdrdi.h
 -rw-r--r--	root/root	usr/include/libavutil/tea.h
 -rw-r--r--	root/root	usr/include/libavutil/threadmessage.h
 -rw-r--r--	root/root	usr/include/libavutil/time.h
@@ -136,10 +141,6 @@ drwxr-xr-x	root/root	usr/include/libavutil/
 -rw-r--r--	root/root	usr/include/libavutil/video_enc_params.h
 -rw-r--r--	root/root	usr/include/libavutil/video_hint.h
 -rw-r--r--	root/root	usr/include/libavutil/xtea.h
-drwxr-xr-x	root/root	usr/include/libpostproc/
--rw-r--r--	root/root	usr/include/libpostproc/postprocess.h
--rw-r--r--	root/root	usr/include/libpostproc/version.h
--rw-r--r--	root/root	usr/include/libpostproc/version_major.h
 drwxr-xr-x	root/root	usr/include/libswresample/
 -rw-r--r--	root/root	usr/include/libswresample/swresample.h
 -rw-r--r--	root/root	usr/include/libswresample/version.h
@@ -154,6 +155,5 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libavfilter.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libavformat.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libavutil.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/libpostproc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libswresample.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libswscale.pc

@@ -1,8 +1,8 @@
 description="Complete and free Internet live audio and video broadcasting solution"
-url="http://ffmpeg.org/"
+url="https://ffmpeg.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Greg,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Greg,Fabienwang,Spiky"
 
 makedepends=(doxygen alsa-lib bzip2 fribidi gmp gsm jack ladspa lame
     libavc1394 libiec61883 libmodplug libraw1394 libssh libtheora
@@ -13,7 +13,7 @@ makedepends=(doxygen alsa-lib bzip2 fribidi gmp gsm jack ladspa lame
     xorg-libxfixes zlib libva libvdpau ffnvcodec-headers)
 
 name=ffmpeg
-version=7.1.1
+version=8.0
 
 _CONF_OPTS="    --prefix=/usr \
     --disable-static \
@@ -55,21 +55,12 @@ _CONF_OPTS="    --prefix=/usr \
     --enable-nvenc \
     --enable-openssl "
 
-source=(${url}releases/ffmpeg-$version.tar.xz
-        ffmpeg-7.1.1-v4l2-fix1.patch    
-        ffmpeg-7.0.1-chromium_method-1.patch)
+source=(${url}releases/ffmpeg-$version.tar.xz)
 
-prepare() {
-  cd ffmpeg-$version
-  patch -Np1 -i ../ffmpeg-7.1.1-v4l2-fix1.patch
-  patch -Np1 -i ../ffmpeg-7.0.1-chromium_method-1.patch
-  sed -e 's/X265_BUILD >= 210/(&) \&\& (X265_BUILD < 213)/' \
-    -i libavcodec/libx265.c
-}
 build() {
   cd ffmpeg-$version
   ./configure ${_CONF_OPTS} \
-    --docdir=/usr/share/doc/$name-$version
+    --docdir=/usr/share/doc/$name
   
   make
   gcc tools/qt-faststart.c -o tools/qt-faststart
@@ -77,6 +68,6 @@ build() {
   install -v -m755 tools/qt-faststart \
     $PKG/usr/bin
   
-  install -v -m755 -d $PKG/usr/share/doc/$name-$version
-  install -v -m644 doc/*.txt $PKG/usr/share/doc/$name-$version
+  install -v -m755 -d $PKG/usr/share/doc/$name
+  install -v -m644 doc/*.txt $PKG/usr/share/doc/$name
 }
