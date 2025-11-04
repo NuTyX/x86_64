@@ -1,35 +1,27 @@
 description="Outline and bitmap font editor"
-url="http://fontforge.sourceforge.net"
+url="https://fontforge.sourceforge.net"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+license="BSD"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=fontforge
-version=20230101
-release=5
+version=20251009
+release=1
 
 makedepends=(cmake xorgproto m4 shared-mime-info freetype libxml2 cairo gtk3
-             pango giflib libjpeg-turbo libpng libtiff)
+             pango giflib libjpeg-turbo libpng libtiff gtkmm libspiro)
 run=(shared-mime-info desktop-file-utils)
 
-source=(po.patch
-        fontforge-20230101-security_fixes-1.patch
-        https://github.com/$name/$name/releases/download/$version/$name-$version.tar.xz)
+source=(https://github.com/$name/$name/releases/download/$version/$name-$version.tar.xz)
 
-prepare() {
-   cd $name-$version
-
-   patch -Np1 -i ../fontforge-20230101-security_fixes-1.patch
-   patch -Np1 -i ../po.patch
-}
 build() {
     mkdir build
     cd build
 
     cmake -DCMAKE_INSTALL_PREFIX=/usr  \
           -DCMAKE_BUILD_TYPE=Release   \
-          -DENABLE_LIBSPIRO=OFF        \
-          -DENABLE_LIBUNINAMESLIST=OFF \
           -DENABLE_DOCS=OFF            \
           -Wno-dev ../$name-$version
     make
