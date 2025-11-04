@@ -1,28 +1,34 @@
 description="A simple, fast, cross-platform, and object-oriented multimedia API"
-url="http://www.sfml-dev.org/"
+url="https://www.sfml-dev.org/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(mesa cmake doxygen systemd libsndfile xorg-xrandr openal glew freetype xorg-libx11)
+makedepends=(mesa cmake doxygen systemd libsndfile xorg-xrandr
+             openal glew freetype xorg-libx11 ninja)
 
 name=sfml
-version=2.6.2
-release=3
+version=3.0.2
+release=1
 
 PKGMK_KEEP_SOURCES="no"
 
 source=(https://github.com/SFML/SFML/archive/$version.tar.gz)
 
 build() {
-cd SFML-$version
-mkdir build && cd build
-  cmake .. \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DSFML_USE_SYSTEM_DEPS=ON \
-      -DSFML_BUILD_EXAMPLES=1 \
-      -DSFML_BUILD_DOC=1 \
-      -DSFML_INSTALL_PKGCONFIG_FILES=1 \
+  cmake -B build       \
+      -S SFML-$version \
+      -G Ninja         \
+      -DCMAKE_INSTALL_PREFIX=/usr       \
+      -DSFML_USE_SYSTEM_DEPS=ON         \
+      -DSFML_BUILD_EXAMPLES=ON          \
+      -DSFML_BUILD_DOC=ON               \
+      -DSFML_INSTALL_PKGCONFIG_FILES=ON \
       -DSFML_PKGCONFIG_INSTALL_PREFIX=/usr/share/pkgconfig
-make DESTDIR=$PKG install
+  ninja -C build
+  ninja -C build doc
+  
+  DESTDIR=$PKG/ ninja -C build install
+  install -Dm644 SFML-$version/license.md \
+  $PKG/usr/share/licenses/$name/LICENSE
 }

@@ -2,24 +2,36 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
 drwxr-xr-x	root/root	usr/lib/cmake/SFML/
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindDRM.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindEGL.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindFLAC.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindFreetype.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindGBM.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindGLES.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindUDev.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/FindVorbis.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLAudioDependencies.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLAudioStaticTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLAudioStaticTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLConfigDependencies.cmake
 -rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLSharedTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLSharedTargets.cmake
-lrwxrwxrwx	root/root	usr/lib/libsfml-audio.so -> libsfml-audio.so.2.6
-lrwxrwxrwx	root/root	usr/lib/libsfml-audio.so.2.6 -> libsfml-audio.so.2.6.2
--rwxr-xr-x	root/root	usr/lib/libsfml-audio.so.2.6.2
-lrwxrwxrwx	root/root	usr/lib/libsfml-graphics.so -> libsfml-graphics.so.2.6
-lrwxrwxrwx	root/root	usr/lib/libsfml-graphics.so.2.6 -> libsfml-graphics.so.2.6.2
--rwxr-xr-x	root/root	usr/lib/libsfml-graphics.so.2.6.2
-lrwxrwxrwx	root/root	usr/lib/libsfml-network.so -> libsfml-network.so.2.6
-lrwxrwxrwx	root/root	usr/lib/libsfml-network.so.2.6 -> libsfml-network.so.2.6.2
--rwxr-xr-x	root/root	usr/lib/libsfml-network.so.2.6.2
-lrwxrwxrwx	root/root	usr/lib/libsfml-system.so -> libsfml-system.so.2.6
-lrwxrwxrwx	root/root	usr/lib/libsfml-system.so.2.6 -> libsfml-system.so.2.6.2
--rwxr-xr-x	root/root	usr/lib/libsfml-system.so.2.6.2
-lrwxrwxrwx	root/root	usr/lib/libsfml-window.so -> libsfml-window.so.2.6
-lrwxrwxrwx	root/root	usr/lib/libsfml-window.so.2.6 -> libsfml-window.so.2.6.2
--rwxr-xr-x	root/root	usr/lib/libsfml-window.so.2.6.2
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLGraphicsDependencies.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLGraphicsStaticTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLGraphicsStaticTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLNetworkStaticTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLNetworkStaticTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLSystemDependencies.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLSystemStaticTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLSystemStaticTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLWindowDependencies.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLWindowStaticTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/SFML/SFMLWindowStaticTargets.cmake
+-rw-r--r--	root/root	usr/lib/libsfml-audio-s.a
+-rw-r--r--	root/root	usr/lib/libsfml-graphics-s.a
+-rw-r--r--	root/root	usr/lib/libsfml-network-s.a
+-rw-r--r--	root/root	usr/lib/libsfml-system-s.a
+-rw-r--r--	root/root	usr/lib/libsfml-window-s.a
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/sfml/
+-rw-r--r--	root/root	usr/share/licenses/sfml/LICENSE
