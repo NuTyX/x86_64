@@ -1,13 +1,13 @@
 description="A simple library to load images of various formats as SDL surfaces (Version 2)"
-url="http://crawl.develz.org/"
+url="https://github.com/libsdl-org/SDL_image"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Remy,Spiky"
 
 makedepends=(sdl libpng libtiff libjpeg-turbo libwebp cmake)
 
 name=sdl-image
-version=2.8.2
+version=2.8.8
 
 source=(https://github.com/libsdl-org/SDL_image/releases/download/release-$version/SDL2_image-$version.tar.gz)
 
