@@ -1,14 +1,14 @@
 description="TrueType library for libsdl."
-url="http://www.libsdl.org/projects/SDL_ttf/"
+url="https://www.libsdl.org/projects/SDL_ttf/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
 makedepends=(freetype sdl)
 
 name=sdl-ttf
-version=2.20.2
-release=2
+version=2.24.0
+release=1
 
 source=(https://github.com/libsdl-org/SDL_ttf/releases/download/release-$version/SDL2_ttf-$version.tar.gz)
 
