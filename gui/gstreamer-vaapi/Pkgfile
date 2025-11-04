@@ -1,8 +1,8 @@
 description="GStreamer Multimedia Framework"
 url="http://gstreamer.freedesktop.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Remy,Spiky"
 
 license="LGPL"
 
@@ -10,7 +10,7 @@ makedepends=(meson ninja
              gstreamer-plugins-base gstreamer-plugins-bad libva)
 
 name=gstreamer-vaapi
-version=1.26.5
+version=1.26.7
 
 source=(https://gstreamer.freedesktop.org/src/$name/$name-$version.tar.xz)
 
