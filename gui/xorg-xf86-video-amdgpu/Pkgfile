@@ -1,22 +1,19 @@
 description="Xorg AMDGPU video driver."
-packager="spiky <spiky@nutyx.org>"
-contributors="Remy,Minzords,Tnut"
+url="https://xorg.freedesktop.org/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Remy,Minzords,Spiky"
 
 name=xorg-xf86-video-amdgpu
-version=23.0.0
-release=2
+version=25.0.0
+release=1
 
 _name=${name/xorg-/}
-makedepends=(mesa xorg-server)
-source=(http://ftp.x.org/pub/individual//driver/${_name}-$version.tar.xz)
+makedepends=(python meson mesa xorg-server)
+
+source=($url/releases/individual/driver/${_name}-$version.tar.xz)
 
 prepare() {
-
-sed -i 's/^miPointerSpriteFuncRec/extern &/' ${_name}-$version/src/drmmode_display.h
-
+  mv ${_name}-$version $name-$version
 }
-build=xorg
-
-package() {
-rm $PKG/usr/lib/xorg/modules/drivers/amdgpu_drv.la
-}
+build=meson
