@@ -1,8 +1,8 @@
 description="GObject-based multi-platform GUI toolkit"
 url="https://www.gtk.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 license="GPL2"
 
@@ -17,7 +17,7 @@ run=(glib cairo pango fribidi gdk-pixbuf libpng libtiff libjpeg-turbo libepoxy m
 set=()
 
 name=gtk4
-version=4.18.6
+version=4.20.2
 
 PKGMK_GROUPS=(devel doc lib man)
 source=(https://gitlab.gnome.org/GNOME/gtk/-/archive/$version/gtk-$version.tar.gz)
