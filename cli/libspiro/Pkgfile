@@ -1,0 +1,29 @@
+description='Library that simplifies the drawing of beautiful curves'
+url='https://github.com/fontforge/libspiro'
+
+license="GPL-3.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=libspiro
+version=20240903
+
+makedepends=(autoconf automake m4 libtool)
+
+PKGMK_KEEP_SOURCES="no"
+source=($url/archive/refs/tags/$version.tar.gz)
+
+prepare() {
+ cd $name-$version
+ autoreconf -fiv
+}
+build() {
+  cd $name-$version
+  ./configure \
+   --prefix=/usr \
+   --sysconfdir=/etc \
+   --localstatedir=/var
+  make
+  make DESTDIR=$PKG install
+}
