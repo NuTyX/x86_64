@@ -1,7 +1,7 @@
 description="GEneric Graphics Library, which is a graph base image processing format"
-url="http://gegl.org/"
+url="https://gegl.org/"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Tnut"
 
 makedepends=(asciidoc babl librsvg ruby lua ffmpeg librsvg meson
@@ -10,7 +10,7 @@ makedepends=(asciidoc babl librsvg ruby lua ffmpeg librsvg meson
 run=(vala)
 
 name=gegl
-version=0.4.62
+version=0.4.64
 
 source=(https://download.gimp.org/pub/$name/${version:0:3}/$name-$version.tar.xz)
 
