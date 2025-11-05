@@ -1,10 +1,10 @@
 description="connector Python (3) for the library cairo"
-url="http://www.cairographics.org/"
+url="https://www.cairographics.org/"
 
 license="LGPL MPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,<,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(python python-wheel cairo)
 
@@ -13,7 +13,7 @@ _name="pycairo"
 alias=(${_name})
 
 version=1.28.0
-release=2
+release=3
 
 source=(https://github.com/pygobject/pycairo/releases/download/v$version/pycairo-$version.tar.gz)
 
