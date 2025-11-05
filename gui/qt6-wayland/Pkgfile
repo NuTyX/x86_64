@@ -3,19 +3,19 @@ url='https://www.qt.io/'
 
 license="LGPL3, GPL3, FDL, Custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(qt6)
 
 name=qt6-wayland
-version=6.9.2
+version=6.10.0
 
 makedepends=(cmake ninja qt6-base
              qt6-declarative xorg-libxcomposite)
 
 source=(
-https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtwayland-everywhere-src-$version.tar.xz)
+https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/qtwayland-everywhere-src-$version.tar.xz)
 
 build() {
  cmake -S qtwayland-everywhere-src-$version -B build -G Ninja
