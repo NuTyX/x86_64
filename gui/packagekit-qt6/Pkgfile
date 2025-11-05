@@ -1,13 +1,13 @@
 description='Qt6 bindings for PackageKit'
-url='http://www.packagekit.org/'
+url='https://www.packagekit.org/'
 
 license="LGPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=packagekit-qt6
-version=1.1.3
+version=1.1.4
 
 makedepends=(cmake qt6-base)
 run=(packagekit)
