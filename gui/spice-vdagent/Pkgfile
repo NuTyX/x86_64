@@ -9,8 +9,8 @@ makedepends=(alsa-lib dbus glib xorg-libpciaccess xorg-libxfixes
              desktop-file-utils xorg-libdrm)
 
 name=spice-vdagent
-version=0.22.1
-release=2
+version=0.23.0
+release=1
 
 source=(https://www.spice-space.org/download/releases/$name-$version.tar.bz2)
 
@@ -24,8 +24,6 @@ cd $name-$version
             --localstatedir=/var
 make
 make DESTDIR=$PKG install
-
-rm -r $PKG/var
 
 install -dm755 "$PKG/etc/conf.d/"
 echo 'SPICE_VDAGENTD_EXTRA_ARGS=""' > "$PKG/etc/conf.d/spice-vdagentd"
