@@ -1,17 +1,17 @@
 description="Display graphical dialog boxes from shell scripts."
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/zenity"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(itstool gtk4 yelp-tools libadwaita libnotify)
 
 name=zenity
-version=4.1.99
+version=4.2.0
 
-source=(https://gitlab.gnome.org/GNOME/zenity/-/archive/$version/$name-$version.tar.gz)
+source=($url/-/archive/$version/$name-$version.tar.gz)
 
 build() {
 
