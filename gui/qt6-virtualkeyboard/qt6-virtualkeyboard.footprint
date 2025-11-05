@@ -2,20 +2,20 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libQt6HunspellInputMethod.prl
 lrwxrwxrwx	root/root	usr/lib/libQt6HunspellInputMethod.so -> libQt6HunspellInputMethod.so.6
-lrwxrwxrwx	root/root	usr/lib/libQt6HunspellInputMethod.so.6 -> libQt6HunspellInputMethod.so.6.9.2
--rwxr-xr-x	root/root	usr/lib/libQt6HunspellInputMethod.so.6.9.2
+lrwxrwxrwx	root/root	usr/lib/libQt6HunspellInputMethod.so.6 -> libQt6HunspellInputMethod.so.6.10.0
+-rwxr-xr-x	root/root	usr/lib/libQt6HunspellInputMethod.so.6.10.0
 -rw-r--r--	root/root	usr/lib/libQt6VirtualKeyboard.prl
 lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboard.so -> libQt6VirtualKeyboard.so.6
-lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboard.so.6 -> libQt6VirtualKeyboard.so.6.9.2
--rwxr-xr-x	root/root	usr/lib/libQt6VirtualKeyboard.so.6.9.2
+lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboard.so.6 -> libQt6VirtualKeyboard.so.6.10.0
+-rwxr-xr-x	root/root	usr/lib/libQt6VirtualKeyboard.so.6.10.0
 -rw-r--r--	root/root	usr/lib/libQt6VirtualKeyboardQml.prl
 lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboardQml.so -> libQt6VirtualKeyboardQml.so.6
-lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboardQml.so.6 -> libQt6VirtualKeyboardQml.so.6.9.2
--rwxr-xr-x	root/root	usr/lib/libQt6VirtualKeyboardQml.so.6.9.2
+lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboardQml.so.6 -> libQt6VirtualKeyboardQml.so.6.10.0
+-rwxr-xr-x	root/root	usr/lib/libQt6VirtualKeyboardQml.so.6.10.0
 -rw-r--r--	root/root	usr/lib/libQt6VirtualKeyboardSettings.prl
 lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboardSettings.so -> libQt6VirtualKeyboardSettings.so.6
-lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboardSettings.so.6 -> libQt6VirtualKeyboardSettings.so.6.9.2
--rwxr-xr-x	root/root	usr/lib/libQt6VirtualKeyboardSettings.so.6.9.2
+lrwxrwxrwx	root/root	usr/lib/libQt6VirtualKeyboardSettings.so.6 -> libQt6VirtualKeyboardSettings.so.6.10.0
+-rwxr-xr-x	root/root	usr/lib/libQt6VirtualKeyboardSettings.so.6.10.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/Qt6HunspellInputMethod.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/Qt6VirtualKeyboard.pc
@@ -23,10 +23,10 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/Qt6VirtualKeyboardSettings.pc
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/metatypes/
--rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6hunspellinputmethod_release_metatypes.json
--rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6virtualkeyboard_release_metatypes.json
--rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6virtualkeyboardqml_release_metatypes.json
--rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6virtualkeyboardsettings_release_metatypes.json
+-rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6hunspellinputmethod_metatypes.json
+-rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6virtualkeyboard_metatypes.json
+-rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6virtualkeyboardqml_metatypes.json
+-rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6virtualkeyboardsettings_metatypes.json
 drwxr-xr-x	root/root	usr/lib/qt6/modules/
 -rw-r--r--	root/root	usr/lib/qt6/modules/HunspellInputMethod.json
 -rw-r--r--	root/root	usr/lib/qt6/modules/VirtualKeyboard.json
@@ -135,4 +135,4 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Builtin/
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/QtQuick/VirtualKeyboard/libqtvkbplugin.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/QtQuick/VirtualKeyboard/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/sbom/
--rw-r--r--	root/root	usr/lib/qt6/sbom/qtvirtualkeyboard-6.9.2.spdx
+-rw-r--r--	root/root	usr/lib/qt6/sbom/qtvirtualkeyboard-6.10.0.spdx
