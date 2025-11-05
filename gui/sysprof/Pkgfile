@@ -1,13 +1,13 @@
 description='Kernel based performance profiler'
 url='https://wiki.gnome.org/Apps/Sysprof'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(pango gtk4 libunwind polkit yelp-tools libdex libadwaita libpanel)
 
 name=sysprof
-version=48.1
+version=49.0
 
 source=(https://gitlab.gnome.org/GNOME/sysprof/-/archive/$version/$name-$version.tar.gz)
 
@@ -18,8 +18,8 @@ mkdir build
 cd    build
 
 meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
+ --prefix=/usr \
+ --buildtype=release
 
 ninja
 
