@@ -3,14 +3,14 @@ url="https://gitlab.gnome.org/GNOME/gtksourceview"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson gobject-introspection vala gtk-doc pcre2 gtk4)
 
 name=gtksourceview5
-version=5.16.0
-release=2
+version=5.18.0
+release=1
 
 source=(https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/$version/gtksourceview-$version.tar.gz)
 
