@@ -10,6 +10,7 @@ set=(qt6)
 
 name=qt6-base
 version=6.10.0
+release=2
 
 makedepends=(libb2 cmake ninja systemd icu at-spi2-core mtdev 
              cups gstreamer-plugins-base xcb-util xcb-util-renderutil
@@ -44,6 +45,8 @@ build() {
 package() {
 
   cd $PKG
+  sed -i "s@../../lib@../lib@g" \
+  $SRC/build/user_facing_tool_links.txt
   mkdir -p usr/bin
   while read _line
   do
