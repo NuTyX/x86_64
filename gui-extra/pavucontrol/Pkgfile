@@ -1,13 +1,13 @@
 description="PulseAudio Volume Control"
-url="http://freedesktop.org/software/pulseaudio/pavucontrol/"
+url="https://freedesktop.org/software/pulseaudio/pavucontrol/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(pulseaudio libcanberra intltool lynx git gtkmm4 libsigc++-3 json-glib)
 
 name=pavucontrol
-version=6.1
+version=6.2
 
 source=(https://www.freedesktop.org/software/pulseaudio/$name/$name-$version.tar.xz)
 
