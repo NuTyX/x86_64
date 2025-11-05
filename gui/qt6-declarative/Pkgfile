@@ -1,19 +1,19 @@
 description='Classes for QML and JavaScript languages'
 url='https://www.qt.io/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(qt6)
 
 name=qt6-declarative
-version=6.9.2
+version=6.10.0
 
 makedepends=(cmake ninja qt6-base qt6-shadertools
             at-spi2-core python)
 
 source=(
-https://download.qt.io/official_releases/qt/${version:0:3}/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz)
+https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz)
 
 build() {
  export CXXFLAGS+=" -ffat-lto-objects"
