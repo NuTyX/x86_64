@@ -3,8 +3,8 @@ url="https://ibus.googlecode.com"
 
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributor=""
+packager="tnut <tnut@nutyx.org>"
+contributor="Spiky"
 
 makedepends=(dconf iso-codes gobject-introspection gtk3 gtk4 dbus-launch
              libnotify vala python libxkbcommon libdbusmenu-gtk)
@@ -12,6 +12,7 @@ run=(python-dbus python-gobject)
 
 name=ibus
 version=1.5.32
+release=2
 
 source=(https://github.com/ibus/ibus/archive/refs/tags/$version.tar.gz)
 
