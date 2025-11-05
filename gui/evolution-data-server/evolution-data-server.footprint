@@ -53,9 +53,9 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EDataServer-1.2.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EDataServerUI-1.2.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EDataServerUI4-1.0.typelib
-lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so -> libcamel-1.2.so.64
-lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so.64 -> libcamel-1.2.so.64.0.0
--rwxr-xr-x	root/root	usr/lib/libcamel-1.2.so.64.0.0
+lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so -> libcamel-1.2.so.66
+lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so.66 -> libcamel-1.2.so.66.0.0
+-rwxr-xr-x	root/root	usr/lib/libcamel-1.2.so.66.0.0
 lrwxrwxrwx	root/root	usr/lib/libebackend-1.2.so -> libebackend-1.2.so.11
 lrwxrwxrwx	root/root	usr/lib/libebackend-1.2.so.11 -> libebackend-1.2.so.11.0.0
 -rwxr-xr-x	root/root	usr/lib/libebackend-1.2.so.11.0.0
@@ -186,10 +186,12 @@ drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/component
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-client-revision-view
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-client-send-objects
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-component
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-component-bag
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-meta-backend
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-recur
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-reminders
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-cal-utils
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-camel-db
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-contact
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-contact-types
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-ebook-add-contact
@@ -204,6 +206,7 @@ drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/component
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-ebook-remove-contact-by-id
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-ebook-remove-contacts
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-fixture
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-folder-thread
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-indices-updater
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-intervaltree
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-phone-number
@@ -219,9 +222,11 @@ drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/component
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-sqlite-cursor-set-target
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-sqlite-get-contact
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-sqlite-query
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-store-search
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-type-param
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-untyped-phones
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-vcard-parsing
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-vee-folder
 drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/
 -rw-r--r--	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/custom-1.vcf
 -rw-r--r--	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/custom-10.vcf
@@ -350,6 +355,10 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gnome.Evolution-alarm-notify.svg
 drwxr-xr-x	root/root	usr/share/installed-tests/
 drwxr-xr-x	root/root	usr/share/installed-tests/evolution-data-server/
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/cameltest-misc-test-camel-db.test
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/cameltest-misc-test-folder-thread.test
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/cameltest-misc-test-store-search.test
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/cameltest-misc-test-vee-folder.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/e-source-registry-test.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/libedataserver-test.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-book-cache-create-cursor.test
@@ -407,6 +416,7 @@ drwxr-xr-x	root/root	usr/share/installed-tests/evolution-data-server/
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-client-remove-object.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-client-revision-view.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-client-send-objects.test
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-component-bag.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-component.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-meta-backend.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-cal-recur.test

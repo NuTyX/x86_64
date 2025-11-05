@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	usr/include/evolution-data-server/camel/
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-filter-input-stream.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-filter-output-stream.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-filter-search.h
--rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-folder-search.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-folder-summary.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-folder-thread.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-folder.h
@@ -75,7 +74,6 @@ drwxr-xr-x	root/root	usr/include/evolution-data-server/camel/
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-nntp-address.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-null-output-stream.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-object-bag.h
--rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-object.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-offline-folder.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-offline-settings.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-offline-store.h
@@ -96,12 +94,14 @@ drwxr-xr-x	root/root	usr/include/evolution-data-server/camel/
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-sasl-xoauth2.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-sasl.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-search-private.h
--rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-search-sql-sexp.h
+-rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-search-utils.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-service.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-session.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-settings.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-sexp.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-smime-context.h
+-rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-store-db.h
+-rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-store-search.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-store-settings.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-store-summary.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-store.h
@@ -122,7 +122,6 @@ drwxr-xr-x	root/root	usr/include/evolution-data-server/camel/
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-url.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-utf8.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-utils.h
--rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-vee-data-cache.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-vee-folder.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-vee-message-info.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/camel/camel-vee-store.h
@@ -194,6 +193,7 @@ drwxr-xr-x	root/root	usr/include/evolution-data-server/libecal/
 -rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-alarm.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-alarms.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-attendee.h
+-rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-bag.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-datetime.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-id.h
 -rw-r--r--	root/root	usr/include/evolution-data-server/libecal/e-cal-component-organizer.h

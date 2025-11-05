@@ -1,9 +1,9 @@
 description="Programs that work with contacts, tasks, and calendar information"
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/evolution/-/wikis/home"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 contributors="Fanch,Jayce,Remy,Tnut"
 
 makedepends=(vim db libcanberra gnome-online-accounts gnome-common gperf icu
@@ -11,7 +11,7 @@ makedepends=(vim db libcanberra gnome-online-accounts gnome-common gperf icu
              gobject-introspection kerberos gtk4 openldap gcr-4 webkit2gtk-6)
 
 name=evolution-data-server
-version=3.56.2
+version=3.58.1
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
