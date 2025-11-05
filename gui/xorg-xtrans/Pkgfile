@@ -18,5 +18,5 @@ build=xorg
 
 package() {
  cd ${_name}-$version
- install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING"
+ install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
