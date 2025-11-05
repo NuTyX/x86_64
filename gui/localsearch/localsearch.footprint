@@ -27,6 +27,7 @@ drwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-raw.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-text.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-tiff.so
+-rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-webp.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-xps.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/libtracker-extract.so
 drwxr-xr-x	root/root	usr/lib/localsearch-3.0/trackertestutils/
@@ -49,6 +50,9 @@ drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/localsearch-extractor-3
 -rwxr-xr-x	root/root	usr/libexec/localsearch-writeback-3
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/bash-completion/
+drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+-rw-r--r--	root/root	usr/share/bash-completion/completions/localsearch
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.Tracker3.Miner.Files.Index.xml
@@ -67,8 +71,6 @@ drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.freedesktop.Tracker3.Miner.Files.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.freedesktop.TrackerMiners3.enums.xml
 drwxr-xr-x	root/root	usr/share/localsearch3/
-drwxr-xr-x	root/root	usr/share/localsearch3/domain-ontologies/
--rw-r--r--	root/root	usr/share/localsearch3/domain-ontologies/default.rule
 drwxr-xr-x	root/root	usr/share/localsearch3/extract-rules/
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-abw.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-bmp.rule
@@ -89,6 +91,7 @@ drwxr-xr-x	root/root	usr/share/localsearch3/extract-rules/
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-raw.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-svg.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-tiff.rule
+-rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-webp.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-xps.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/11-msoffice-xml.rule
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/15-executable.rule
