@@ -1,19 +1,19 @@
 description="A help browser for viewing help files."
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/yelp"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(meson
-itstool intltool gtk-doc libxslt webkit2gtk-4 yelp-xsl gsettings-desktop-schemas libhandy)
+itstool intltool gtk-doc libxslt webkit2gtk-6 yelp-xsl gsettings-desktop-schemas libhandy)
 run=(desktop-file-utils hicolor-icon-theme )
 
 name=yelp
-version=42.3
+version=49.0
 
-source=(https://gitlab.gnome.org/GNOME/yelp/-/archive/$version/yelp-$version.tar.gz)
+source=($url/-/archive/$version/yelp-$version.tar.gz)
 
 build() {
 

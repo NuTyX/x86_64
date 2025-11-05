@@ -3,15 +3,15 @@ drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/gnome-help -> yelp
 -rwxr-xr-x	root/root	usr/bin/yelp
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libyelp.so -> libyelp.so.0
-lrwxrwxrwx	root/root	usr/lib/libyelp.so.0 -> libyelp.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libyelp.so.0.0.0
-drwxr-xr-x	root/root	usr/lib/yelp/
-drwxr-xr-x	root/root	usr/lib/yelp/web-extensions/
--rwxr-xr-x	root/root	usr/lib/yelp/web-extensions/libyelpwebextension.so
+lrwxrwxrwx	root/root	usr/lib/libyelp-1.so -> libyelp-1.so.0
+lrwxrwxrwx	root/root	usr/lib/libyelp-1.so.0 -> libyelp-1.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libyelp-1.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/yelp-1/
+drwxr-xr-x	root/root	usr/lib/yelp-1/web-process-extensions/
+-rwxr-xr-x	root/root	usr/lib/yelp-1/web-process-extensions/libyelpwebprocessextension.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
--rw-r--r--	root/root	usr/share/applications/yelp.desktop
+-rw-r--r--	root/root	usr/share/applications/org.gnome.Yelp.desktop
 drwxr-xr-x	root/root	usr/share/glib-2.0/
 drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.yelp.gschema.xml
@@ -27,7 +27,7 @@ drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/yelp/
 -rw-r--r--	root/root	usr/share/licenses/yelp/COPYING
 drwxr-xr-x	root/root	usr/share/metainfo/
--rw-r--r--	root/root	usr/share/metainfo/yelp.appdata.xml
+-rw-r--r--	root/root	usr/share/metainfo/org.gnome.Yelp.metainfo.xml
 drwxr-xr-x	root/root	usr/share/yelp-xsl/
 drwxr-xr-x	root/root	usr/share/yelp-xsl/xslt/
 drwxr-xr-x	root/root	usr/share/yelp-xsl/xslt/common/
@@ -56,24 +56,6 @@ drwxr-xr-x	root/root	usr/share/yelp/dtd/
 -rw-r--r--	root/root	usr/share/yelp/dtd/isonum.ent
 -rw-r--r--	root/root	usr/share/yelp/dtd/isopub.ent
 -rw-r--r--	root/root	usr/share/yelp/dtd/isotech.ent
-drwxr-xr-x	root/root	usr/share/yelp/icons/
-drwxr-xr-x	root/root	usr/share/yelp/icons/hicolor/
-drwxr-xr-x	root/root	usr/share/yelp/icons/hicolor/16x16/
-drwxr-xr-x	root/root	usr/share/yelp/icons/hicolor/16x16/status/
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/16x16/status/bookmark.png
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/16x16/status/yelp-page-task.png
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/16x16/status/yelp-page-tip.png
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/16x16/status/yelp-page-ui.png
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/16x16/status/yelp-page-video.png
-drwxr-xr-x	root/root	usr/share/yelp/icons/hicolor/scalable/
-drwxr-xr-x	root/root	usr/share/yelp/icons/hicolor/scalable/status/
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-problem-symbolic.svg
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-search-symbolic.svg
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-symbolic.svg
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-task-symbolic.svg
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-tip-symbolic.svg
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-ui-symbolic.svg
--rw-r--r--	root/root	usr/share/yelp/icons/hicolor/scalable/status/yelp-page-video-symbolic.svg
 drwxr-xr-x	root/root	usr/share/yelp/mathjax/
 -rw-r--r--	root/root	usr/share/yelp/mathjax/MathJax.js
 drwxr-xr-x	root/root	usr/share/yelp/mathjax/config/
