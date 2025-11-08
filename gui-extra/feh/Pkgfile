@@ -3,14 +3,14 @@ url="https://feh.finalrewind.org/"
 
 license="Custom:MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Geantbrun,Fabienwang"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Geantbrun,Fabienwang,Spiky"
 
 makedepends=(libpng imlib2 libexif xorg-libxt xorg-libxcursor
              xorg-libxdamage xorg-libxrandr xorg-libxinerama curl)
 
 name=feh
-version=3.11.1
+version=3.11.2
 
 source=(http://feh.finalrewind.org/$name-$version.tar.bz2)
 
