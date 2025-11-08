@@ -1,10 +1,10 @@
 description="Menu editor for gnome"
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/alacarte"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Spiky"
 
 makedepends=(gnome-menus python-gobject)
 run=(gtk-update-icon-cache gnome-menus python-gobject)
@@ -12,13 +12,17 @@ run=(gtk-update-icon-cache gnome-menus python-gobject)
 set=(gnome)
 
 name=alacarte
-version=3.56.0
+version=3.58.0
+source=($url/-/archive/$version/$name-$version.tar.bz2)
 
-source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
-
+prepare() {
+ cd $name-$version
+ NOCONFIGURE=1 ./autogen.sh
+}
 build() {
   cd $name-$version
-	./configure --prefix=/usr --disable-documentation
+	./configure --prefix=/usr --disable-documentation \
+          --sysconfdir=/etc --localstatedir=/var
 	make
 	make DESTDIR=$PKG install
 
