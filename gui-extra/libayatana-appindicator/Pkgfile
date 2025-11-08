@@ -3,14 +3,16 @@ url="https://github.com/AyatanaIndicators/libayatana-appindicator"
 
 license="GPL3 LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(extra-cmake-modules glib gtk3 gtk-sharp-3 gobject-introspection vala mono perl-xml-libxml)
+makedepends=(extra-cmake-modules glib gtk3 gobject-introspection
+             vala perl-xml-libxml)
 run=(libdbusmenu-gtk libayatana-indicator)
 
 name=libayatana-appindicator
 version=0.5.94
+release=2
 
 source=(https://github.com/AyatanaIndicators/$name/archive/refs/tags/$version.tar.gz)
 
@@ -21,6 +23,7 @@ mkdir build
 cd    build
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+      -DENABLE_BINDINGS_MONO=OFF   \
       -DENABLE_GTKDOC=ON           \
 ..
 make
