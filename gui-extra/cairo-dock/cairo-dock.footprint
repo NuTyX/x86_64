@@ -1,12 +1,18 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cairo-dock
+-rwxr-xr-x	root/root	usr/bin/cairo-dock-session
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cairo-dock/
 -rwxr-xr-x	root/root	usr/lib/cairo-dock/libcd-Help.so
 lrwxrwxrwx	root/root	usr/lib/libgldi.so -> libgldi.so.3
-lrwxrwxrwx	root/root	usr/lib/libgldi.so.3 -> libgldi.so.3.5.2
--rw-r--r--	root/root	usr/lib/libgldi.so.3.5.2
+lrwxrwxrwx	root/root	usr/lib/libgldi.so.3 -> libgldi.so.3.6.0
+-rw-r--r--	root/root	usr/lib/libgldi.so.3.6.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+-rw-r--r--	root/root	usr/lib/systemd/user/cairo-dock.service
+-rw-r--r--	root/root	usr/lib/systemd/user/gnome-session-x11@cairo-dock-compiz.target
+-rw-r--r--	root/root	usr/lib/systemd/user/gnome-session-x11@cairo-dock-metacity.target
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/cairo-dock-cairo.desktop
@@ -24,6 +30,7 @@ drwxr-xr-x	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/
 -rw-r--r--	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/background.svg
 -rw-r--r--	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/foreground.svg
 -rw-r--r--	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/needle.svg
+-rw-r--r--	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/preview
 -rw-r--r--	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/readme
 -rw-r--r--	root/root	usr/share/cairo-dock/gauges/Turbo-night-fuel/theme.xml
 drwxr-xr-x	root/root	usr/share/cairo-dock/icons/
@@ -116,6 +123,7 @@ drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01container.desktop
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01firefox.desktop
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01gnome-calculator.desktop
+-rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01gnome-terminal.desktop
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01libreoffice-calc.desktop
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01libreoffice-impress.desktop
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/launchers/01libreoffice-writer.desktop
@@ -137,8 +145,6 @@ drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Clipper/
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Clipper/Clipper.conf
 drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/GMenu/
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/GMenu/GMenu.conf
-drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Help/
--rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Help/Help.conf
 drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Indicator-Generic/
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Indicator-Generic/Indicator-Generic.conf
 drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Panel/plug-ins/Messaging-Menu/
@@ -234,5 +240,12 @@ drwxr-xr-x	root/root	usr/share/cairo-dock/themes/Default-Single/plug-ins/switche
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Single/plug-ins/switcher/switcher.conf
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Single/preview
 -rw-r--r--	root/root	usr/share/cairo-dock/themes/Default-Single/readme
+drwxr-xr-x	root/root	usr/share/gnome-session/
+drwxr-xr-x	root/root	usr/share/gnome-session/sessions/
+-rw-r--r--	root/root	usr/share/gnome-session/sessions/cairo-dock-compiz.session
+-rw-r--r--	root/root	usr/share/gnome-session/sessions/cairo-dock-metacity.session
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/cairo-dock.svg
+drwxr-xr-x	root/root	usr/share/xsessions/
+-rw-r--r--	root/root	usr/share/xsessions/cairo-dock-compiz.desktop
+-rw-r--r--	root/root	usr/share/xsessions/cairo-dock-metacity.desktop

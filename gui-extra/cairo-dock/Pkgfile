@@ -1,25 +1,26 @@
 description="Light eye-candy fully themable animated dock"
-url="https://glx-dock.org/"
+url="https://github.com/Cairo-Dock/cairo-dock-core"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Dania,Tnut"
+license="GPL-3.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Dania,Spiky"
 
 makedepends=(cairo cmake curl dbus-glib xorg-glu gtk3)
 
 name=cairo-dock
-version=3.5.2
+version=3.6.0
 
-source=(https://github.com/Cairo-Dock/cairo-dock-core/archive/refs/tags/$version.tar.gz)
+source=($url/archive/refs/tags/$version.tar.gz)
 
 build() {
-  cd $name-core-$version 
-  mkdir build
-  cd build
 
-  cmake .. \
-    -DCMAKE_BUILD_TYPE='Release' \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-    -DCMAKE_INSTALL_PREFIX='/usr'
-  make
-  make DESTDIR=$PKG install
+  cmake -B build                   \
+    -S $name-core-$version         \
+    -D CMAKE_BUILD_TYPE=None       \
+    -D enable-desktop-manager=True \
+    -D enable-systemd-service=True \
+    -D CMAKE_INSTALL_PREFIX='/usr'
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
 }
