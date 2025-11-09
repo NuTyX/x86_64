@@ -1,10 +1,10 @@
 description="start up the GNOME Desktop environment"
-url="https://gitlab.gnome.org/GNOME/gnome-sessionhttps://gitlab.gnome.org/GNOME/gnome-session"
+url="https://gitlab.gnome.org/GNOME/gnome-session"
 
 license="GPL2-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Rems,Spiky"
 
 makedepends=(dconf dbus-glib docbook-xml docbook-xsl
              gnome-desktop json-glib libxslt mesa meson upower xmlto)
@@ -12,14 +12,12 @@ makedepends=(dconf dbus-glib docbook-xml docbook-xsl
 set=(gnome)
 
 name=gnome-session
-version=48.0
+version=49.1
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=($url/-/archive/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
-
-sed 's@/bin/sh@/bin/sh -l@' -i gnome-session/gnome-session.in
 
 mkdir build
 cd build
@@ -33,7 +31,7 @@ ninja
 DESTDIR=$PKG ninja install
 
 # Uneeded duplicated entries
-rm $PKG/usr/share/{xsessions,wayland-sessions}/gnome.desktop
+rm $PKG/usr/share/wayland-sessions/gnome.desktop
 
 install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
 }
