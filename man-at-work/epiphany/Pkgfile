@@ -1,10 +1,10 @@
 description="A GNOME web browser based on the WebKit rendering engine."
-url="https://www.gnome.org/"
+url="https://apps.gnome.org/Epiphany"
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Remy,Fanch,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Remy,Fanch,Fabienwang,Spiky"
 
 makedepends=(icu ninja meson lsb-release libwnck avahi gcr-4
              libgnome-keyring libnotify json-glib webkit2gtk-6
@@ -16,7 +16,7 @@ run=(adwaita-icon-theme gsettings-desktop-schemas woff2 libxslt.lib
 set=(gnome)
 
 name=epiphany
-version=48.3
+version=49.1
 
 source=(https://gitlab.gnome.org/GNOME/epiphany/-/archive/$version/$name-$version.tar.gz)
 
