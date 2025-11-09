@@ -21,8 +21,9 @@ build() {
   cd ${name}_ng
   autoreconf -vfi
 
-  ./configure --prefix=/usr \
+  ./configure --prefix=/usr     \
               --sysconfdir=/etc \
+              --enable-replace  \
               --with-dyn-default \
               --with-distro="NuTyX"
 

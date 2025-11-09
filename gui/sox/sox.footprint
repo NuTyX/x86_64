@@ -1,10 +1,16 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/play -> play_ng
 lrwxrwxrwx	root/root	usr/bin/play_ng -> sox_ng
+lrwxrwxrwx	root/root	usr/bin/rec -> rec_ng
 lrwxrwxrwx	root/root	usr/bin/rec_ng -> sox_ng
+lrwxrwxrwx	root/root	usr/bin/sox -> sox_ng
 -rwxr-xr-x	root/root	usr/bin/sox_ng
+lrwxrwxrwx	root/root	usr/bin/soxi -> soxi_ng
 lrwxrwxrwx	root/root	usr/bin/soxi_ng -> sox_ng
 drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libsox.a -> libsox_ng.a
+lrwxrwxrwx	root/root	usr/lib/libsox.so -> libsox_ng.so
 -rw-r--r--	root/root	usr/lib/libsox_ng.a
 lrwxrwxrwx	root/root	usr/lib/libsox_ng.so -> libsox_ng.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsox_ng.so.3 -> libsox_ng.so.3.0.0
