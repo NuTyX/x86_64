@@ -1,10 +1,10 @@
 description="Clocks applications for GNOME"
-url="http://www.gnome.org/"
+url="http://apps.gnome.org/Clocks"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Remy,Spiky"
 
 makedepends=(meson ninja gtk4 libcanberra gnome-desktop libhandy
              libnotify libgweather-4 geoclue2 geocode-glib gsound)
@@ -13,9 +13,9 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache libadwai
 set=(gnome)
 
 name=gnome-clocks
-version=48.0
+version=49.0
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
