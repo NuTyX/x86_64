@@ -1,22 +1,25 @@
 description="Lightweight, advanced audio player focused simplicity and audio quality"
-url="http://audacious-media-player.org"
+url="https://audacious-media-player.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+license="BSD"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(glib qt6-base qt6-svg gtk2 python xorg-libsm gnome-icon-theme)
 run=(hicolor-icon-theme desktop-file-utils)
 
 name=audacious
-version=4.4.2
+version=4.5.1
 
-source=(http://distfiles.audacious-media-player.org/$name-$version.tar.bz2)
+source=(https://distfiles.audacious-media-player.org/$name-$version.tar.bz2)
 
 build() {
 
 	cd $name-$version
 	
 	./configure --prefix=/usr \
+          -Dgtk=false \
 	--with-buildstamp="NuTyX Linux"
 	make
 	make DESTDIR=$PKG install
