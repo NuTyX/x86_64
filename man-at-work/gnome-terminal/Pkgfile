@@ -1,10 +1,10 @@
 description="The GNOME Terminal Emulator"
-url="https://www.gnome.org/"
+url="https://wiki.gnome.org/Apps/Terminal"
 
-license="GPL"
+license="GPL-3.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Fanch,Rems,Skythrew,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Rems,Skythrew,Spiky"
 
 makedepends=(dconf gtk3 vte nautilus gnome-shell yelp-tools)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
@@ -12,9 +12,9 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 set=(cinnamon)
 
 name=gnome-terminal
-version=3.56.2
+version=3.58.0
 
-source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
 prepare() {
 cd $name-$version
