@@ -5,7 +5,9 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/applaunchcontext.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/cairocontext.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/cairoutils.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/cicpparams.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/clipboard.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/colorstate.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/contentformats.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/contentformatsbuilder.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/contentprovider.h
@@ -37,6 +39,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/graphene_rect.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/graphene_size.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/memorytexture.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/memorytexturebuilder.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/monitor.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/paintable.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/pixbuf.h
@@ -50,7 +53,9 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/
 drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/applaunchcontext_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/cairocontext_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/cicpparams_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/clipboard_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/colorstate_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/contentformats_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/contentformatsbuilder_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/contentprovider_p.h
@@ -79,6 +84,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/graphene_rect_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/graphene_size_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/memorytexture_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/memorytexturebuilder_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/monitor_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/paintable_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/pixbuf_p.h
@@ -114,6 +120,16 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/toplevelsurfaceimpl.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/value_cairo.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/wrap_init.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm.h
+drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gskmm/
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/enums.h
+drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gskmm/private/
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/enums_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/roundedrect_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/transform_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/roundedrect.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/transform.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/wrap_init.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm.h
 drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/aboutdialog.h
@@ -222,6 +238,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/filter.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/filterlistmodel.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/fixed.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/fixedlayout.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/fixedlayoutchild.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/flattenlistmodel.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/flowbox.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/flowboxchild.h
@@ -411,6 +429,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/filter_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/filterlistmodel_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/fixed_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/fixedlayout_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/fixedlayoutchild_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/flattenlistmodel_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/flowbox_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/flowboxchild_p.h
