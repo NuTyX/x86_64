@@ -1,10 +1,10 @@
 description="A system monitor for GNOME"
-url="http://library.gnome.org/users/gnome-system-monitor/"
+url="https://apps.gnome.org/SystemMonitor"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Remy,Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Remy,Fanch,Spiky"
 
 makedepends=(meson adwaita-icon-theme itstool gtkmm4
              libgtop libwnck librsvg gnome-icon-theme catch2)
@@ -13,9 +13,9 @@ run=(gsettings-desktop-schemas desktop-file-utils libhandy libadwaita)
 set=(gnome)
 
 name=gnome-system-monitor
-version=48.1
+version=49.1
 
-source=(http://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/gnome-system-monitor/-/archive/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
