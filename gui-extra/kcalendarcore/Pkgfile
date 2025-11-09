@@ -3,13 +3,13 @@ url='https://community.kde.org/Frameworks'
 
 license="LGPL-2.0-only LGPL-3.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6-frameworks)
 
 name=kcalendarcore
-version=6.14.0
+version=6.19.0
 
 makedepends=(libical extra-cmake-modules qt6-base doxygen qt6-tools)
 
