@@ -1,10 +1,10 @@
 description="Simple scanning utility"
-url="https://launchpad.net/simple-scan"
+url="https://apps.gnome.org/SimpleScan"
 
 license="GPL-3.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Rems,Spiky"
 
 set=(gnome-extra)
 
@@ -13,7 +13,7 @@ makedepends=(sane dconf gtk4 colord libgusb ninja meson yelp-tools
 run=(hicolor-icon-theme)
 
 name=simple-scan
-version=48.1
+version=49.1
 
 source=(https://gitlab.gnome.org/GNOME/simple-scan/-/archive/$version/$name-$version.tar.gz)
 
