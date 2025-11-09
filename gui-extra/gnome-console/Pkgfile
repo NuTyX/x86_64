@@ -3,17 +3,17 @@ url='https://apps.gnome.org/fr/app/org.gnome.Console/'
 
 license="GPL3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Skythrew,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Skythrew,Spiky"
 
 makedepends=(vte libgtop libadwaita meson)
 run=()
 set=(gnome)
 
 name=gnome-console
-version=48.0.1
+version=49.1
 
-source=(https://gitlab.gnome.org/GNOME/console/-/archive/$version/console-$version.tar.gz)
+source=(https://gitlab.gnome.org/GNOME/console/-/archive/$version/console-$version.tar.bz2)
 
 build() {
 cd console-$version
