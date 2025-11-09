@@ -8,14 +8,15 @@ makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip cbindge
 
 name=js140
 version=140.4.0
-release=1
+release=2
 
-source=(python-3.14.patch
+source=(python-3.14.patch js-config.patch
         https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz)
 
 prepare() {
  cd firefox-$version
  patch -Np1 -i ../python-3.14.patch
+ patch -Np1 -i ../js-config.patch
 }
 build() {
  cd firefox-$version
