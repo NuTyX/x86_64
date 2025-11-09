@@ -1,10 +1,10 @@
 description="A graphical directory tree analyzer"
-url="http://www.gnome.org/"
+url="https://apps.gnome.org/Baobab"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Remy,Spiky"
 
 makedepends=(adwaita-icon-theme gtk4 itstool
              librsvg gobject-introspection
@@ -14,23 +14,13 @@ run=(desktop-file-utils gtk-update-icon-cache gsettings-desktop-schemas libhandy
 set=(gnome)
 
 name=baobab
-version=48.0
+version=49.0
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/baobab/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
+build=meson
+
+package() {
 cd $name-$version
-
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
