@@ -3,8 +3,8 @@ url="https://live.gnome.org/GnomeTweakTool"
 
 license="GPL3 CC0-1.0"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut,Jayce,Schrodinger72"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky,Jayce,Schrodinger72"
 
 makedepends=(libhandy meson gtk4 libadwaita)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
@@ -13,10 +13,10 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 set=(gnome)
 
 name=gnome-tweaks
-version=46.1
-release=2
+version=49.0
+release=1
 
-source=(https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/$version/$name-$version.tar.gz)
+source=(https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
