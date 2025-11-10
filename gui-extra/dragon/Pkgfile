@@ -3,10 +3,11 @@ url="https://apps.kde.org/dragon/"
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(qt6-base extra-cmake-modules kconfig kconfigwidgets kcoreaddons
+makedepends=(qt6-base qt6-multimedia extra-cmake-modules kconfig
+             kconfigwidgets kcoreaddons kirigami
              kcrash kdbusaddons ki18n kio kparts kservice kwidgetsaddons
              kwindowsystem kxmlgui phonon solid kdoctools)
 run=(hicolor-icon-theme)
@@ -14,7 +15,7 @@ run=(hicolor-icon-theme)
 set=(kde6 kde6-gear)
 
 name=dragon
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
