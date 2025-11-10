@@ -7,17 +7,17 @@ drwxr-xr-x	root/root	usr/lib/cmake/KSysGuard/
 -rw-r--r--	root/root	usr/lib/cmake/KSysGuard/KSysGuardLibraryTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KSysGuard/KSysGuardLibraryTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKSysGuardFormatter.so -> libKSysGuardFormatter.so.2
-lrwxrwxrwx	root/root	usr/lib/libKSysGuardFormatter.so.2 -> libKSysGuardFormatter.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libKSysGuardFormatter.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libKSysGuardFormatter.so.2 -> libKSysGuardFormatter.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libKSysGuardFormatter.so.6.5.2
 lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensorFaces.so -> libKSysGuardSensorFaces.so.2
-lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensorFaces.so.2 -> libKSysGuardSensorFaces.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libKSysGuardSensorFaces.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensorFaces.so.2 -> libKSysGuardSensorFaces.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libKSysGuardSensorFaces.so.6.5.2
 lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensors.so -> libKSysGuardSensors.so.2
-lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensors.so.2 -> libKSysGuardSensors.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libKSysGuardSensors.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libKSysGuardSensors.so.2 -> libKSysGuardSensors.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libKSysGuardSensors.so.6.5.2
 lrwxrwxrwx	root/root	usr/lib/libKSysGuardSystemStats.so -> libKSysGuardSystemStats.so.2
-lrwxrwxrwx	root/root	usr/lib/libKSysGuardSystemStats.so.2 -> libKSysGuardSystemStats.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libKSysGuardSystemStats.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libKSysGuardSystemStats.so.2 -> libKSysGuardSystemStats.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libKSysGuardSystemStats.so.6.5.2
 drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
@@ -25,8 +25,8 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 drwxr-xr-x	root/root	usr/lib/libexec/ksysguard/
 -rwxr-xr-x	root/root	usr/lib/libexec/ksysguard/ksgrd_network_helper
 lrwxrwxrwx	root/root	usr/lib/libprocesscore.so -> libprocesscore.so.10
-lrwxrwxrwx	root/root	usr/lib/libprocesscore.so.10 -> libprocesscore.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libprocesscore.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libprocesscore.so.10 -> libprocesscore.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libprocesscore.so.6.5.2
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -34,8 +34,8 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/packagestructure/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/packagestructure/ksysguard_sensorface.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/ksysguard/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/ksysguard/process/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_gpu.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_network.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_nvidia.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/
@@ -47,6 +47,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/SensorFace.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/SensorFaces.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/SensorRangeSpinBox.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/SuffixSpinBox.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/kde-qmlmodule.version
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/libSensorFacesplugin.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/faces/private/
@@ -61,9 +62,9 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/formatter/
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/formatter/libFormatterplugin.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/formatter/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/
--rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/ProcessPlugin.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/kde-qmlmodule.version
--rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/libProcessPlugin.so
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/libprocesscoreplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/processcore.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/process/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/ksysguard/sensors/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/ksysguard/sensors/Sensors.qmltypes
