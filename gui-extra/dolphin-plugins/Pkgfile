@@ -3,14 +3,14 @@ url='https://apps.kde.org/dolphin_plugins'
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6 kde6-gear)
 
 name=dolphin-plugins
 
-version=25.04.1
+version=25.08.3
 
 makedepends=(qt6-base qt6-5compat extra-cmake-modules dolphin
              kcompletion kconfig kcoreaddons ki18n kio kjobwidgets
