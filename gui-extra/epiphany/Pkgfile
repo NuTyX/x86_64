@@ -7,8 +7,9 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Jayce,Remy,Fanch,Fabienwang,Spiky"
 
 makedepends=(icu ninja meson lsb-release libwnck avahi gcr-4
-             libgnome-keyring libnotify json-glib webkit2gtk-6
-             nss gnome-desktop libdazzle libhandy libportal libsoup3)
+             blueprint-compiler libgnome-keyring libnotify
+             json-glib webkit2gtk-6 nss gnome-desktop
+             libdazzle libhandy libportal libsoup3)
 run=(adwaita-icon-theme gsettings-desktop-schemas woff2 libxslt.lib
      gstreamer-plugins-base openjpeg libwebp enchant libadwaita
      desktop-file-utils gtk-update-icon-cache iso-codes make-ca)
