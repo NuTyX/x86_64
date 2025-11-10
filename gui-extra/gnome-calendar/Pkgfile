@@ -1,36 +1,25 @@
 description="GNOME calendar"
-url="http://www.gnome.org/"
+url="https://apps.gnome.org/Calendar"
 
 license="GPL3-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Remy,Spiky"
 
 makedepends=(libdazzle meson intltool libhandy
-             evolution-data-server python)
+             evolution-data-server python blueprint-compiler)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache libgweather-4 libadwaita
      geoclue2)
 
 set=(gnome)
 
 name=gnome-calendar
-version=48.1
+version=49.0.1
 
-source=(https://download.gnome.org/sources/${name}/${version:0:2}/${name}-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/${name}-$version.tar.bz2)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
