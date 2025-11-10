@@ -1,7 +1,7 @@
 description='Various text handling addons'
 url='https://invent.kde.org/libraries/ktextaddons'
 
-license="GPL"
+license="GPL-2.0-or-later"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
@@ -9,12 +9,12 @@ contributors="Spiky"
 set=(kde6)
 
 name=ktextaddons
-version=1.5.4
-release=3
+version=1.8.0
+release=1
 
 makedepends=(qt6-base qt6-speech qt6-tools extra-cmake-modules karchive kconfig
              kconfigwidgets ki18n kio kwidgetsaddons kxmlgui sonnet qtkeychain-qt6
-             syntax-highlighting)
+             syntax-highlighting ktextwidgets)
 
 source=(https://download.kde.org/stable/$name/$name-$version.tar.xz)
 

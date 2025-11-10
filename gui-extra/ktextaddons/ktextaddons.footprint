@@ -19,6 +19,12 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6TextAutoCorrectionWidgets/
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoCorrectionWidgets/KF6TextAutoCorrectionWidgetsQchTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoCorrectionWidgets/KF6TextAutoCorrectionWidgetsTargets-noconfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoCorrectionWidgets/KF6TextAutoCorrectionWidgetsTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/KF6TextAutoGenerateText/
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoGenerateText/KF6TextAutoGenerateTextConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoGenerateText/KF6TextAutoGenerateTextConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoGenerateText/KF6TextAutoGenerateTextQchTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoGenerateText/KF6TextAutoGenerateTextTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextAutoGenerateText/KF6TextAutoGenerateTextTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/KF6TextCustomEditor/
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextCustomEditor/KF6TextCustomEditorConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextCustomEditor/KF6TextCustomEditorConfigVersion.cmake
@@ -49,6 +55,12 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6TextGrammarCheck/
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextGrammarCheck/KF6TextGrammarCheckQchTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextGrammarCheck/KF6TextGrammarCheckTargets-noconfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextGrammarCheck/KF6TextGrammarCheckTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/KF6TextSpeechToText/
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextSpeechToText/KF6TextSpeechToTextConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextSpeechToText/KF6TextSpeechToTextConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextSpeechToText/KF6TextSpeechToTextQchTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextSpeechToText/KF6TextSpeechToTextTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KF6TextSpeechToText/KF6TextSpeechToTextTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/KF6TextTranslator/
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextTranslator/KF6TextTranslatorConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextTranslator/KF6TextTranslatorConfigVersion.cmake
@@ -61,42 +73,64 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6TextUtils/
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextUtils/KF6TextUtilsQchTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextUtils/KF6TextUtilsTargets-noconfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6TextUtils/KF6TextUtilsTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/textautogenerate-cmark-rc-copy/
+-rw-r--r--	root/root	usr/lib/cmake/textautogenerate-cmark-rc-copy/textautogenerate-cmark-rc-copy-targets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/textautogenerate-cmark-rc-copy/textautogenerate-cmark-rc-copy-targets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6TextAddonsWidgets.so -> libKF6TextAddonsWidgets.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextAddonsWidgets.so.1 -> libKF6TextAddonsWidgets.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextAddonsWidgets.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextAddonsWidgets.so.1 -> libKF6TextAddonsWidgets.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextAddonsWidgets.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoCorrectionCore.so -> libKF6TextAutoCorrectionCore.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoCorrectionCore.so.1 -> libKF6TextAutoCorrectionCore.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextAutoCorrectionCore.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoCorrectionCore.so.1 -> libKF6TextAutoCorrectionCore.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextAutoCorrectionCore.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoCorrectionWidgets.so -> libKF6TextAutoCorrectionWidgets.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoCorrectionWidgets.so.1 -> libKF6TextAutoCorrectionWidgets.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextAutoCorrectionWidgets.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoCorrectionWidgets.so.1 -> libKF6TextAutoCorrectionWidgets.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextAutoCorrectionWidgets.so.1.8.0
+lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoGenerateText.so -> libKF6TextAutoGenerateText.so.1
+lrwxrwxrwx	root/root	usr/lib/libKF6TextAutoGenerateText.so.1 -> libKF6TextAutoGenerateText.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextAutoGenerateText.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextCustomEditor.so -> libKF6TextCustomEditor.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextCustomEditor.so.1 -> libKF6TextCustomEditor.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextCustomEditor.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextCustomEditor.so.1 -> libKF6TextCustomEditor.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextCustomEditor.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextEditTextToSpeech.so -> libKF6TextEditTextToSpeech.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextEditTextToSpeech.so.1 -> libKF6TextEditTextToSpeech.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextEditTextToSpeech.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextEditTextToSpeech.so.1 -> libKF6TextEditTextToSpeech.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextEditTextToSpeech.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextEmoticonsCore.so -> libKF6TextEmoticonsCore.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextEmoticonsCore.so.1 -> libKF6TextEmoticonsCore.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextEmoticonsCore.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextEmoticonsCore.so.1 -> libKF6TextEmoticonsCore.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextEmoticonsCore.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextEmoticonsWidgets.so -> libKF6TextEmoticonsWidgets.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextEmoticonsWidgets.so.1 -> libKF6TextEmoticonsWidgets.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextEmoticonsWidgets.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextEmoticonsWidgets.so.1 -> libKF6TextEmoticonsWidgets.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextEmoticonsWidgets.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextGrammarCheck.so -> libKF6TextGrammarCheck.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextGrammarCheck.so.1 -> libKF6TextGrammarCheck.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextGrammarCheck.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextGrammarCheck.so.1 -> libKF6TextGrammarCheck.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextGrammarCheck.so.1.8.0
+lrwxrwxrwx	root/root	usr/lib/libKF6TextSpeechToText.so -> libKF6TextSpeechToText.so.1
+lrwxrwxrwx	root/root	usr/lib/libKF6TextSpeechToText.so.1 -> libKF6TextSpeechToText.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextSpeechToText.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextTranslator.so -> libKF6TextTranslator.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextTranslator.so.1 -> libKF6TextTranslator.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextTranslator.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextTranslator.so.1 -> libKF6TextTranslator.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextTranslator.so.1.8.0
 lrwxrwxrwx	root/root	usr/lib/libKF6TextUtils.so -> libKF6TextUtils.so.1
-lrwxrwxrwx	root/root	usr/lib/libKF6TextUtils.so.1 -> libKF6TextUtils.so.1.5.4
--rwxr-xr-x	root/root	usr/lib/libKF6TextUtils.so.1.5.4
+lrwxrwxrwx	root/root	usr/lib/libKF6TextUtils.so.1 -> libKF6TextUtils.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libKF6TextUtils.so.1.8.0
+lrwxrwxrwx	root/root	usr/lib/libtextautogenerate-cmark-rc-copy.so -> libtextautogenerate-cmark-rc-copy.so.0
+lrwxrwxrwx	root/root	usr/lib/libtextautogenerate-cmark-rc-copy.so.0 -> libtextautogenerate-cmark-rc-copy.so.0.31.0
+-rwxr-xr-x	root/root	usr/lib/libtextautogenerate-cmark-rc-copy.so.0.31.0
+lrwxrwxrwx	root/root	usr/lib/libtextautogenerategenericnetwork.so.1 -> libtextautogenerategenericnetwork.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libtextautogenerategenericnetwork.so.1.8.0
+lrwxrwxrwx	root/root	usr/lib/libtextautogenerateollama.so.1 -> libtextautogenerateollama.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libtextautogenerateollama.so.1.8.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/designer/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/designer/textcustomeditor.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/designer/texttranslatorwidgets6.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/speechtotext/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/speechtotext/speechtotext_google.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/speechtotext/speechtotext_whisper.so
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/textautogeneratetext/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/textautogeneratetext/autogeneratetext_genericnetwork.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/textautogeneratetext/autogeneratetext_ollama.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/translator/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/translator/translator_bing.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/translator/translator_deepl.so
