@@ -3,8 +3,8 @@ url="https://apps.kde.org/kdenlive/"
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(qt6-base qt6-declarative qt6-multimedia qt6-networkauth qt6-tools
              qt6-svg extra-cmake-modules kdoctools karchive kbookmarks kcodecs
@@ -20,7 +20,7 @@ run=(shared-mime-info frei0r-plugins hicolor-icon-theme libmediainfo opencv
 set=(kde6-gear)
 
 name=kdenlive
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
