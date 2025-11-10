@@ -3,16 +3,16 @@ url='https://kde.org/plasma-desktop/'
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6 kde6-plasma)
 
 name=polkit-kde-agent
-version=6.3.5
+version=6.5.2
 
 makedepends=(qt6-base qt6-5compat qt6-declarative extra-cmake-modules kdoctools
-kcoreaddons kcrash kdbusaddons ki18n kirigami kwindowsystem polkit-qt-1)
+kcoreaddons kcrash kdbusaddons ki18n kirigami kwindowsystem polkit-qt-1 knotifications)
 
 source=(https://download.kde.org/stable/plasma/$version/$name-1-$version.tar.xz)
 
