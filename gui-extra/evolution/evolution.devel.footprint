@@ -13,9 +13,11 @@ drwxr-xr-x	root/root	usr/include/evolution/calendar/gui/
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-alarm-list.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-bulk-edit-tasks.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-component-preview.h
+-rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-component-widget.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-config.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-data-model-subscriber.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-data-model.h
+-rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-day-column.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-dialogs.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-event.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-list-view.h
@@ -24,6 +26,7 @@ drwxr-xr-x	root/root	usr/include/evolution/calendar/gui/
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-model-tasks.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-model.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-ops.h
+-rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cal-range-model.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-calendar-view.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cell-date-edit-text.h
 -rw-r--r--	root/root	usr/include/evolution/calendar/gui/e-cell-estimated-duration.h
@@ -461,7 +464,6 @@ drwxr-xr-x	root/root	usr/include/evolution/mail/
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-enums.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-enumtypes.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-folder-create-dialog.h
--rw-r--r--	root/root	usr/include/evolution/mail/e-mail-folder-pane.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-folder-sort-order-dialog.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-folder-tweaks.h
 -rw-r--r--	root/root	usr/include/evolution/mail/e-mail-free-form-exp.h

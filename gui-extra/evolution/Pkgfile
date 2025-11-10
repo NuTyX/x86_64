@@ -1,10 +1,10 @@
 description="Manage your email, contacts and schedule."
-url="https://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/evolution/-/wikis/home"
 
 license="LGPL3 LGPL2 OpenLDAP"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Fanch,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Rems,Spiky"
 
 makedepends=(evolution-data-server gnome-autoar gnome-desktop
              highlight gstreamer libcanberra libgweather-4 gtkspell 
@@ -15,9 +15,9 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
      shared-mime-info gnome-icon-theme adwaita-icon-theme)
 
 name=evolution
-version=3.56.2
+version=3.58.1
 
-source=(https://gitlab.gnome.org/GNOME/evolution/-/archive/$version/$name-$version.tar.gz)
+source=(https://gitlab.gnome.org/GNOME/evolution/-/archive/$version/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
