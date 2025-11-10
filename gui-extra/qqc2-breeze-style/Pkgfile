@@ -3,13 +3,13 @@ url='https://kde.org/plasma-desktop/'
 
 license="LGPL-2.0-only LGPL-3.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6-plasma)
 
 name=qqc2-breeze-style
-version=6.3.5
+version=6.5.2
 
 makedepends=(qt6-base qt6-declarative extra-cmake-modules
              kcolorscheme kconfig kguiaddons kiconthemes
