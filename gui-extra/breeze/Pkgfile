@@ -3,13 +3,13 @@ url='https://www.kde.org/plasma-desktop/'
 
 license="GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6 kde6-plasma)
 
 name=breeze
-version=6.3.5
+version=6.5.2
 
 makedepends=(qt6-base qt6-svg qt6-declarative extra-cmake-modules frameworkintegration
              kcmutils kcolorscheme kconfig kcoreaddons kdecoration kguiaddons
