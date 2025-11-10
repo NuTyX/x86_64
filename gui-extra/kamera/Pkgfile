@@ -3,11 +3,11 @@ url="https://apps.kde.org/kamera/"
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(qt6-base libgphoto2 extra-cmake-modules kconfig kcmutils kdoctools
              kcoreaddons ki18n kwidgetsaddons kxmlgui)
@@ -17,7 +17,7 @@ run=(kio)
 set=(kde6 kde6-gear)
 
 name=kamera
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
