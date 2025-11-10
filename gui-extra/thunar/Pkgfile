@@ -1,10 +1,10 @@
 description="Modern file manager for Xfce"
-url="http://thunar.xfce.org"
+url="https://thunar.xfce.org"
 
 license="LGPL2 GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tyrry,Greg,Rems,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tyrry,Greg,Rems,Fabienwang,Spiky"
 
 makedepends=(libnotify libexif exo libxfce4ui xfce4-panel
              gvfs libpng libgudev libxfce4util)
@@ -13,9 +13,9 @@ run=(desktop-file-utils gtk-update-icon-cache
 set=(xfce4)
 
 name=thunar
-version=4.20.4
+version=4.20.6
 
-source=(http://archive.xfce.org/src/xfce/thunar/${version%.*}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/xfce/thunar/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 
