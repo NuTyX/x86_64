@@ -1,0 +1,20 @@
+description='Helpers for scheduling the dark-night cycle.'
+url='https://kde.org/plasma-desktop/'
+
+license="LGPL-2.0-only LGPL-3.0-only"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+set=(kde6-plasma)
+
+name=knighttime
+version=6.5.2
+
+makedepends=(qt6-base qt6-positioning qt6-tools ki18n 
+             extra-cmake-modules
+             kholidays kdbusaddons kcoreaddons kconfig)
+
+source=(https://download.kde.org/stable/plasma/$version/${name}-$version.tar.xz)
+
+build=kde6
