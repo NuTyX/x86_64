@@ -1,0 +1,19 @@
+description="Markup language and compiler for GTK 4 user interfaces"
+url="https://gnome.pages.gitlab.gnome.org/blueprint-compiler/"
+
+license="LGPL3-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(meson python-gobject python-spinx-furo)
+
+name=blueprint-compiler
+version=0.18.0
+
+source=(https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/$version/$name-$version.tar.gz)
+
+build=meson
+package() {
+  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+}
