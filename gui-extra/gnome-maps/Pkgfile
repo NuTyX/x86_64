@@ -1,10 +1,10 @@
 description="GNOME Maps is a map application for GNOME"
-url="http://www.gnome.org/"
+url="https://apps.gnome.org/Maps"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Fanch,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
 
 makedepends=(libchamplain meson clutter-gtk geocode-glib
              libgee folks libadwaita librest libshumate libportal)
@@ -14,24 +14,13 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 set=(gnome)
 
 name=gnome-maps
-version=48.4
+version=49.2
 
-source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
+build=meson
+
+package() {
 cd $name-$version
-
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-       --libdir=/usr/lib      \
-       --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
