@@ -3,15 +3,29 @@ url="https://www.kde.org/"
 
 license="LGPL-2.0-only LGPL-3.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6-frameworks)
 
 name=kguiaddons
-version=6.14.0
+version=6.19.0
 makedepends=(extra-cmake-modules qt6-tools qt6-wayland plasma-wayland-protocols)
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
-build=kde6
+build() {
+  cmake -B build -S $name-$version    \
+  -D CMAKE_INSTALL_PREFIX=/usr        \
+  -D CMAKE_SKIP_INSTALL_RPATH=ON      \
+  -D CMAKE_INSTALL_LIBDIR=lib         \
+  -D BUILD_TESTING=OFF                \
+  -D BUILD_PYTHON_BINDINGS=OFF        \
+  -D CMAKE_BUILD_TYPE=Release         \
+  -W no-dev
+
+  cmake --build build
+
+  DESTDIR=$PKG cmake --install build
+}
+
