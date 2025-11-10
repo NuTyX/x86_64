@@ -3,18 +3,18 @@ url='https://kde.org/plasma-desktop/'
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6 kde6-plasma)
 
 name=plasma-workspace
-version=6.3.5
+version=6.5.2
 
 makedepends=(icu freetype xorg-fontconfig gpsd zlib wayland xcb-util xcb-util-image
              libcanberra libqalculate xorg-libsm xorg-libx11 xorg-libxau libxcb
              libxcrypt xorg-libxcursor xorg-libxfixes xorg-libxft xorg-libxtst
-             qt6-base qt6-declarative qt6-5compat qt6-svg qt6-tools qt6-wayland
+             qt6-base qt6-declarative qt6-5compat qt6-svg qt6-tools qt6-wayland qt6-location
              qt6-virtualkeyboard qt6-positioning xorg-xrdb xorg-xsetroot appmenu-gtk-module
              extra-cmake-modules kdoctools libplasma plasma-wayland-protocols
              accountsservice appstream kunitconversion kactivitymanagerd karchive
