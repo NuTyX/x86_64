@@ -8,23 +8,32 @@ drwxr-xr-x	root/root	usr/lib/cmake/Plasma5Support/
 -rw-r--r--	root/root	usr/lib/cmake/Plasma5Support/Plasma5SupportTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Plasma5Support/Plasma5SupportTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so -> libPlasma5Support.so.6
-lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so.6 -> libPlasma5Support.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libPlasma5Support.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so.6 -> libPlasma5Support.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libPlasma5Support.so.6.5.2
+lrwxrwxrwx	root/root	usr/lib/libweather_ion.so -> libweather_ion.so.7
+lrwxrwxrwx	root/root	usr/lib/libweather_ion.so.7 -> libweather_ion.so.7.0.0
+-rwxr-xr-x	root/root	usr/lib/libweather_ion.so.7.0.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_apps.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_bbcukmet.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_devicenotifications.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_dwd.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_envcan.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_hotplug.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_keystate.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_mouse.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_noaa.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_packagekit.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_soliddevice.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_weather.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_wettercom.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/
@@ -35,6 +44,9 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/plasma5support/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/plasma5support/plasma5supportplugin.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/plasma5support/qmldir
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/plasma/
+drwxr-xr-x	root/root	usr/share/plasma/weather_legacy/
+-rw-r--r--	root/root	usr/share/plasma/weather_legacy/noaa_station_list.xml
 drwxr-xr-x	root/root	usr/share/plasma5support/
 drwxr-xr-x	root/root	usr/share/plasma5support/services/
 -rw-r--r--	root/root	usr/share/plasma5support/services/apps.operations
