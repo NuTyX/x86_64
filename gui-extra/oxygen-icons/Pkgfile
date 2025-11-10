@@ -1,14 +1,16 @@
 description="The Oxygen Icon Theme for KDE Frameworks"
-url="https://www.kde.org/"
+url="https://community.kde.org/Frameworks"
+
+license="LGPL-2.1-or-later"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Fabienwang,Spiky"
 
-set=(kde5-frameworks)
-
 name=oxygen-icons
-version=5.115.0
+version=6.1.0
 
-makedepends=(cmake qtbase extra-cmake-modules)
+makedepends=(cmake qt6-base extra-cmake-modules)
 
-source=(https://download.kde.org/stable/frameworks/${version%.*}/$name-$version.tar.xz)
-build=kde5
+source=(https://download.kde.org/stable/$name/$name-$version.tar.xz)
+
+build=kde6
