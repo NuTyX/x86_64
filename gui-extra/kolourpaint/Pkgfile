@@ -3,8 +3,8 @@ url="https://apps.kde.org/kolourpaint/"
 
 license="GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
 
 run=(hicolor-icon-theme)
 makedepends=(extra-cmake-modules kconfig kconfigwidgets
@@ -15,7 +15,7 @@ makedepends=(extra-cmake-modules kconfig kconfigwidgets
 set=(kde6 kde6-gear)
 
 name=kolourpaint
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
