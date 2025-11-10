@@ -3,8 +3,8 @@ url="https://apps.kde.org/kdeconnect/"
 
 license="LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(qt6-base qt6-declarative qt6-5compat qt6-multimedia qt6-wayland
              extra-cmake-modules kdoctools kpackage wayland-protocols sshfs
@@ -18,7 +18,7 @@ run=(qqc2-desktop-style)
 set=(kde6 kde6-gear)
 
 name=kdeconnect
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-kde-$version.tar.xz)
 

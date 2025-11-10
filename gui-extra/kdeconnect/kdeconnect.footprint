@@ -8,25 +8,15 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kdeconnect-cli
 -rwxr-xr-x	root/root	usr/bin/kdeconnect-handler
 -rwxr-xr-x	root/root	usr/bin/kdeconnect-indicator
--rwxr-xr-x	root/root	usr/bin/kdeconnect-settings
 -rwxr-xr-x	root/root	usr/bin/kdeconnect-sms
 -rwxr-xr-x	root/root	usr/bin/kdeconnectd
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libkdeconnectcore.so.25 -> libkdeconnectcore.so.25.04.1
--rwxr-xr-x	root/root	usr/lib/libkdeconnectcore.so.25.04.1
+lrwxrwxrwx	root/root	usr/lib/libkdeconnectcore.so.25 -> libkdeconnectcore.so.25.08.3
+-rwxr-xr-x	root/root	usr/lib/libkdeconnectcore.so.25.08.3
 -rw-r--r--	root/root	usr/lib/libkdeconnectinterfaces.a
-lrwxrwxrwx	root/root	usr/lib/libkdeconnectpluginkcm.so.25 -> libkdeconnectpluginkcm.so.25.04.1
--rwxr-xr-x	root/root	usr/lib/libkdeconnectpluginkcm.so.25.04.1
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/kdeconnect_clipboard_config.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/kdeconnect_findthisdevice_config.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/kdeconnect_pausemusic_config.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/kdeconnect_runcommand_config.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/kdeconnect_sendnotifications_config.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kcms/kdeconnect_share_config.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_battery.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_bigscreen.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_clipboard.so
@@ -61,10 +51,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kfileitemaction/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kfileitemaction/kdeconnectfileitemaction.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/kdeconnect.so
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kdeconnect.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/
@@ -87,8 +73,6 @@ drwxr-xr-x	root/root	usr/share/Thunar/
 drwxr-xr-x	root/root	usr/share/Thunar/sendto/
 -rw-r--r--	root/root	usr/share/Thunar/sendto/kdeconnect-thunar.desktop
 drwxr-xr-x	root/root	usr/share/applications/
--rw-r--r--	root/root	usr/share/applications/kcm_kdeconnect.desktop
--rw-r--r--	root/root	usr/share/applications/org.kde.kdeconnect-settings.desktop
 -rwxr-xr-x	root/root	usr/share/applications/org.kde.kdeconnect.app.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.kdeconnect.daemon.desktop
 -rwxr-xr-x	root/root	usr/share/applications/org.kde.kdeconnect.handler.desktop
@@ -154,7 +138,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/kdeconnectindicatordark.svg
 drwxr-xr-x	root/root	usr/share/kdeconnect/
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_clipboard_config.qml
--rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_findthisdevice_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_pausemusic_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_runcommand_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_sendnotifications_config.qml
@@ -162,7 +145,6 @@ drwxr-xr-x	root/root	usr/share/kdeconnect/
 drwxr-xr-x	root/root	usr/share/knotifications6/
 -rw-r--r--	root/root	usr/share/knotifications6/kdeconnect.notifyrc
 drwxr-xr-x	root/root	usr/share/metainfo/
--rw-r--r--	root/root	usr/share/metainfo/org.kde.kdeconnect.appdata.xml
 -rw-r--r--	root/root	usr/share/metainfo/org.kde.kdeconnect.metainfo.xml
 drwxr-xr-x	root/root	usr/share/nautilus-python/
 drwxr-xr-x	root/root	usr/share/nautilus-python/extensions/
