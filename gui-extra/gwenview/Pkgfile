@@ -3,10 +3,11 @@ url="https://apps.kde.org/gwenview/"
 
 license="GPL-2.0-or-later,LGPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(qt6-base qt6-svg qt6-wayland qt6-imageformats extra-cmake-modules
+makedepends=(qt6-base qt6-svg qt6-wayland qt6-imageformats qt6-multimedia 
+             extra-cmake-modules
              kdoctools kconfig wayland-protocols kimageannotator wayland
              kcolorscheme kcompletion kconfigwidgets kcoreaddons kfilemetadata
              kguiaddons ki18n kio kitemmodels kitemviews kjobwidgets kparts
@@ -18,7 +19,7 @@ run=(hicolor-icon-theme)
 set=(kde6 kde6-gear)
 
 name=gwenview
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
