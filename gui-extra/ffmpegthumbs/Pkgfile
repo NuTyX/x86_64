@@ -3,14 +3,14 @@ url='https://apps.kde.org/ffmpegthumbs/'
 
 license="LGPL-2.0-or-later, GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6 kde6-gear)
 
 
 name=ffmpegthumbs
-version=25.04.1
+version=25.08.3
 
 makedepends=(ffmpeg qt6-base extra-cmake-modules kconfig kcoreaddons kio)
 
