@@ -4,7 +4,7 @@ description="The latest development kernel version"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(gmp mpc bison flex perl libelf diffutils)
+makedepends=(gmp mpc bison flex perl libelf diffutils tar)
 run=(nutyx kmod busybox)
 
 alias=(linux-mainline)
@@ -15,7 +15,7 @@ PKGMK_GROUPS=(devel doc)
 PKGMK_KEEP_SOURCES="no"
 
 name=kernel-mainline
-version=6.9-rc2
+version=6.18-rc5
 SUFFIX="${name/*-/}"
 INITRD="initrd-$SUFFIX"
 KERNEL="$name"
@@ -34,108 +34,82 @@ source=(https://git.kernel.org/torvalds/t/linux-${_version}.tar.gz config)
 ## Time to build everything
 #
 
-build(){
-
+prepare() {
+mkdir -p $PKG/{boot,usr/{share/doc,src,lib/modules}}
 bsdtar -p -o -C $SRC -xf linux-${_version}.tar.gz
-
 cd linux-${_version}
 
-if [ -f $SRC/patch-$version.xz ]; then
-	xz -d -c  $SRC/patch-$version.xz | patch -Np1
-fi
+[ -f $SRC/patch-$version.xz ] && \
+xz -d -c  $SRC/patch-$version.xz | patch -Np1
 
-make mrproper
-cp $SRC/config ./.config
+echo "-$release-nutyx" > localversion
 
+cp ../config .config
+make olddefconfig
+diff -u ../config .config || true
+}
+
+build() {
+
+cd linux-${_version}
+KERNELRELEASE=$(make -s kernelrelease)
+IMAGENAME=$(make -s image_name)
 # make menuconfig
-
 make
+cp .config ${PKGMK_ROOT}/config
+ZSTD_CLEVEL=19                 \
+make INSTALL_MOD_PATH=$PKG/usr \
+INSTALL_MOD_STRIP="-s"         \
+DEPMOD=/dev/null modules_install
+depmod -b $PKG -a $KERNELRELEASE
 
-cp .config $SRC/config
+cp System.map $PKG/boot/System.map-$KERNELRELEASE
+cp .config $PKG/boot/config-$KERNELRELEASE
+cp $IMAGENAME $PKG/boot/$name
 
-## Modules
-#
-# Kernel modules
-cd $SRC/linux-${_version}
-ZSTD_CLEVEL=19 \
-make INSTALL_MOD_PATH=$PKG \
-INSTALL_MOD_STRIP=1 modules_install
+mv $SRC/linux-${_version} $PKG/usr/src/$name
+ln -sv $name $PKG/usr/src/linux-${_version}
+mv $PKG/usr/src/$name/Documentation \
+$PKG/usr/share/doc/$name
 
-KERNEL_VERSION="$(basename $PKG/lib/modules/*)"
+# Reorganise files
+cd $PKG/usr/lib/modules
+mv $KERNELRELEASE $name
+ln -sv $name $KERNELRELEASE
 
-# depmod needed
-depmod -b $PKG -a ${KERNEL_VERSION}
-
-# Install config and kernel files
-cd $SRC/linux-${_version}
-
-mkdir -p $PKG/boot
-
-cp  System.map \
-$PKG/boot/System_64.map-${KERNEL_VERSION}
-cp  .config    \
-$PKG/boot/config-${KERNEL_VERSION}
-cp  arch/x86_64/boot/bzImage \
-$PKG/boot/$KERNEL
-
-# Reorgenise the sources
-cd $PKG/lib/modules/${KERNEL_VERSION}/
-
-mkdir -p $PKG/usr/src
-
-mv $SRC/linux-${_version} $PKG/usr/src/
-rm build
-
-ln -sv /usr/src/linux-${_version} build
-ln -sv /usr/src/linux-${_version} source
-
-mkdir $SRC/linux-${_version}
-mv $PKG/usr/src/linux-${_version}/Documentation \
-$SRC/linux-${_version}
+rm $KERNELRELEASE/build
+ln -sv /usr/src/$name $KERNELRELEASE/build
 
 # Firmware are in linux-firmware
 rm -rf $PKG/lib/firmware
 
 # post-install autogen
 echo "if [ -f boot/$INITRD ]; then
-    mkinitramfs ${KERNEL_VERSION}
-    rm -f boot/$INITRD
-    mv boot/initrd-${KERNEL_VERSION} boot/$INITRD
+    mkinitramfs $KERNELRELEASE
+    rm boot/$INITRD
+    mv boot/initrd-$KERNELRELEASE boot/$INITRD
 fi" > $PKGMK_ROOT/$name.post-install
 
 }
 devel() {
-
 cd $PKG
-rm -r usr/src/linux-${_version}/{ipc,init,drivers,fs,mm,samples,security,sound,virt}
-find usr/src/linux-${_version}/ -type f -name "*.o" \
--o -name "*.ko" -o -name "*.cmd" -o -name "*.gcno"  -delete
-mv  usr/src/linux-${_version}/arch/x86 \
-usr/src/linux-${_version}/arch/.x86
-
+rm -r usr/src/linux-${_version}/{block,drivers,fs,ipc,init,net,mm,samples,security,sound,virt}
+find  usr/src/linux-${_version}/ -type f -name "*.o"  \
+-o -name "*.ko" -o -name "*.cmd" -o -name "*.gcno" -delete
+mv usr/src/linux-${_version}/arch/x86 usr/src/linux-${_version}/arch/.x86
 rm -rf usr/src/linux-${_version}/arch/*
-
-mv  usr/src/linux-${_version}/arch/.x86 \
-usr/src/linux-${_version}/arch/x86
-
+mv usr/src/linux-${_version}/arch/.x86 usr/src/linux-${_version}/arch/x86
 
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_BUILDVER}any.${PKGMK_PACKAGE_EXT} \
-usr/src/linux-${_version}
-
-rm -r usr
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
+usr/src
+rm -r usr/src
 }
 
 doc() {
-
 cd $PKG
-mkdir -p usr/share/doc
-mv $SRC/linux-${_version}/Documentation \
-usr/share/doc/linux-$version
-
 bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_BUILDVER}any.${PKGMK_PACKAGE_EXT} \
-usr/share/doc/linux-$version
-
-rm -r usr
+$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
+usr/share/doc/$name
+rm -r usr/share
 }

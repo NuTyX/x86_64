@@ -1,0 +1,5 @@
+if [ -f boot/initrd-mainline ]; then
+    mkinitramfs 6.18.0-rc5-1-nutyx
+    rm boot/initrd-mainline
+    mv boot/initrd-6.18.0-rc5-1-nutyx boot/initrd-mainline
+fi
