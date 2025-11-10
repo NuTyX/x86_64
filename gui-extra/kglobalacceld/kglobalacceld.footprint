@@ -10,8 +10,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/KGlobalAccelD/
 -rw-r--r--	root/root	usr/lib/cmake/KGlobalAccelD/KGlobalAccelDConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KGlobalAccelD/KGlobalAccelDTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KGlobalAccelD/KGlobalAccelDTargets.cmake
-lrwxrwxrwx	root/root	usr/lib/libKGlobalAccelD.so.0 -> libKGlobalAccelD.so.6.3.5
--rwxr-xr-x	root/root	usr/lib/libKGlobalAccelD.so.6.3.5
+lrwxrwxrwx	root/root	usr/lib/libKGlobalAccelD.so.0 -> libKGlobalAccelD.so.6.5.2
+-rwxr-xr-x	root/root	usr/lib/libKGlobalAccelD.so.6.5.2
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/kglobalacceld
 drwxr-xr-x	root/root	usr/lib/qt6/
@@ -21,3 +21,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/org.kde.kglobalacceld.platforms/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kglobalaccel.service
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/qlogging-categories6/
+-rw-r--r--	root/root	usr/share/qlogging-categories6/kglobalacceld.categories
