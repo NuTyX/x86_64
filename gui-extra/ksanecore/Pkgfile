@@ -3,15 +3,15 @@ url='https://www.kde.org/'
 
 license="GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(qt6-base extra-cmake-modules ki18n sane)
 
 set=(kde6 kde6-gear)
 
 name=ksanecore
-version=25.04.1
+version=25.08.3
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
