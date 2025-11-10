@@ -3,8 +3,8 @@ url="https://apps.gnome.org/Nautilus"
 
 license="GPL-3.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Fabienwang,Spicy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Fabienwang,Spiky"
 
 run=(desktop-file-utils gtk-update-icon-cache
      shared-mime-info libportal gtk4 localsearch)
@@ -14,7 +14,7 @@ makedepends=(gnome-autoar libnotify gnome-desktop gvfs
 set=(gnome)
 
 name=nautilus
-version=48.3
+version=49.1
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
