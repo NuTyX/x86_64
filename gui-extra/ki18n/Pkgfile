@@ -4,13 +4,13 @@ url="https://www.kde.org/"
 license="LGPL-2.0-only LGPL-3.0-only"
 
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(kde6-frameworks)
 
 name=ki18n
-version=6.14.0
+version=6.19.0
 
 makedepends=(iso-codes
              python extra-cmake-modules qt6-base qt6-declarative qt6-tools)
