@@ -8,16 +8,17 @@ run=(psmisc python-gobject python-yaml python-evdev
      unrar unzip p7zip curl xorg-xrandr python-dbus
      python-requests)
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=lutris
-version=0.5.18
+version=0.5.19
+PKGMK_KEEP_SOURCES="no"
 
-source=($url/releases/${name}_$version.tar.xz)
+source=(https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz)
 
 build() {
-cd $name
+cd $name-$version
 python setup.py build
 python setup.py install --root="$PKG" --optimize=1 --skip-build
 
