@@ -3,13 +3,14 @@ url="http://www.dillo.org/"
 
 license="GPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(perl fltk libpng libjpeg-turbo openssl)
 
 name=dillo
 version=3.2.0
+release=2
 
 source=(https://github.com/dillo-browser/dillo/releases/download/v$version/dillo-$version.tar.gz
        )
