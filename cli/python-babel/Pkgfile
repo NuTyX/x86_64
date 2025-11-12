@@ -1,8 +1,8 @@
 description='A collection of tools for internationalizing Python applications'
 url='http://babel.pocoo.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-pytz make-ca)
 
@@ -14,10 +14,14 @@ version=2.17.0
 release=2
 
 source=(https://github.com/python-babel/babel/archive/v$version/$name-$version.tar.gz
-        https://unicode.org/Public/cldr/41/core.zip)
+        http://unicode.org/Public/cldr/46/core.zip
+        http://unicode.org/Public/cldr/46/cldr-common-46.0.zip)
 
 prepare() {
-cp /sources/core.zip $SRC/babel-$version/cldr/cldr-core-41.zip
+cp $PKGMK_SOURCE_DIR/core.zip ${_name}-$version/cldr/cldr-core-46.zip
+cp $PKGMK_SOURCE_DIR/cldr-common-46.0.zip ${_name}-$version/cldr/cldr-common-46.0.zip
+
+
 }
 
 build() {
