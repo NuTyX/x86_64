@@ -36,10 +36,7 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/gdm.service
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 drwxr-xr-x	root/root	usr/lib/systemd/user/gnome-session@gnome-login.target.d/
--rw-r--r--	root/root	usr/lib/systemd/user/gnome-session@gnome-login.target.d/session.conf
-drwxr-xr-x	root/root	usr/lib/udev/
-drwxr-xr-x	root/root	usr/lib/udev/rules.d/
--rw-r--r--	root/root	usr/lib/udev/rules.d/61-gdm.rules
+-rw-r--r--	root/root	usr/lib/systemd/user/gnome-session@gnome-login.target.d/gnome-login.session.conf
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/gdm-host-chooser
 -rwxr-xr-x	root/root	usr/libexec/gdm-runtime-config
@@ -61,8 +58,6 @@ drwxr-xr-x	root/root	usr/share/gdm/greeter/
 drwxr-xr-x	root/root	usr/share/gdm/greeter/applications/
 -rw-r--r--	root/root	usr/share/gdm/greeter/applications/mime-dummy-handler.desktop
 -rw-r--r--	root/root	usr/share/gdm/greeter/applications/mimeapps.list
-drwxr-xr-x	root/root	usr/share/gdm/greeter/autostart/
--rw-r--r--	root/root	usr/share/gdm/greeter/autostart/orca-autostart.desktop
 -rw-r--r--	root/root	usr/share/gdm/locale.alias
 drwxr-xr-x	root/root	usr/share/gir-1.0/
 -rw-r--r--	root/root	usr/share/gir-1.0/Gdm-1.0.gir
