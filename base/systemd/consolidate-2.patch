@@ -105,18 +105,6 @@ diff -Naur a/src/kernel-install/50-depmod.install b/src/kernel-install/50-depmod
          ;;
      *)
          exit 0
-diff -Naur a/test/units/TEST-35-LOGIN.sh b/test/units/TEST-35-LOGIN.sh
---- a/test/units/TEST-35-LOGIN.sh	2025-10-13 17:01:55.000000000 +0200
-+++ b/test/units/TEST-35-LOGIN.sh	2025-11-16 19:15:26.806420321 +0100
-@@ -351,7 +351,7 @@
- [Service]
- Type=simple
- ExecStart=
--ExecStart=-/sbin/agetty --autologin logind-test-user --noclear %I $TERM
-+ExecStart=-/usr/sbin/agetty --autologin logind-test-user --noclear %I $TERM
- Restart=no
- EOF
-     systemctl daemon-reload
 diff -Naur a/tmpfiles.d/home.conf b/tmpfiles.d/home.conf
 --- a/tmpfiles.d/home.conf	2025-10-13 17:01:55.000000000 +0200
 +++ b/tmpfiles.d/home.conf	2025-11-16 19:15:43.416612261 +0100
