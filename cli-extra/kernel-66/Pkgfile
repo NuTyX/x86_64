@@ -1,8 +1,8 @@
 url='https://www.kernel.org'
 description='The 6.6 longterm support Linux kernel version'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Sundev79,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Sundev79,Spiky"
 makedepends=(bison flex perl gmp mpc libelf diffutils)
 run=(nutyx kmod busybox)
 
@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-66
-version=6.6.102
+version=6.6.116
 _version=${version%.*}
 
 alias=(linux-66)
@@ -45,7 +45,10 @@ IMAGENAME=$(make -s image_name)
 # make menuconfig
 make
 cp .config ${PKGMK_ROOT}/config
-make INSTALL_MOD_PATH=$PKG/usr DEPMOD=/dev/null modules_install
+ZSTD_CLEVEL=19                 \
+make INSTALL_MOD_PATH=$PKG/usr \
+INSTALL_MOD_STRIP=1            \
+DEPMOD=/dev/null modules_install
 depmod -b $PKG -a $KERNELRELEASE
 
 cp System.map $PKG/boot/System.map-$KERNELRELEASE
