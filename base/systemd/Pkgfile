@@ -19,11 +19,16 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=258.1
+version=258.2
 
-source=(https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
+source=(consolidate-2.patch
+        https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 
+prepare() {
+cd $name-$version
+patch -Np1 -i ../consolidate-2.patch
+}
 build() {
 cd $name-$version
 
