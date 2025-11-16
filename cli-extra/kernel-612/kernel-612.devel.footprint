@@ -14,6 +14,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/
 -rw-r--r--	root/root	usr/src/kernel-612/.clippy.toml
 -rw-rw-r--	root/root	usr/src/kernel-612/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel-612/.config
+-rw-r--r--	root/root	usr/src/kernel-612/.config.old
 -rw-rw-r--	root/root	usr/src/kernel-612/.editorconfig
 -rw-rw-r--	root/root	usr/src/kernel-612/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel-612/.gitattributes
@@ -5879,6 +5880,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_AUTO_VAR_INIT_PATTERN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_AUTO_VAR_INIT_ZERO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_AUTO_VAR_INIT_ZERO_BARE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_COUNTED_BY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_ENTRY_PADDING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_IBT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/CC_HAS_INT128 (EMPTY)
@@ -9296,11 +9298,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULES_TREE_LOOKUP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULES_USE_ELF_RELA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_ALLOW_MISSING_NAMESPACE_IMPORTS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_COMPRESS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_COMPRESS_ALL (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_COMPRESS_XZ (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_DEBUGFS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_DECOMPRESS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_FORCE_LOAD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_FORCE_UNLOAD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/MODULE_SIG (EMPTY)
@@ -11258,7 +11256,6 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_IPE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_LANDLOCK (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_LOADPIN (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_LOADPIN_ENFORCE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_LOCKDOWN_LSM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_NETWORK (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/SECURITY_NETWORK_XFRM (EMPTY)
@@ -21290,7 +21287,6 @@ drwxrwxr-x	root/root	usr/src/kernel-612/kernel/locking/
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/locking/ww_rt_mutex.c
 drwxrwxr-x	root/root	usr/src/kernel-612/kernel/module/
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/module/.built-in.a.cmd
--rw-r--r--	root/root	usr/src/kernel-612/kernel/module/.decompress.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/module/.kallsyms.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/module/.kmod.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/module/.main.o.cmd
@@ -21306,7 +21302,6 @@ drwxrwxr-x	root/root	usr/src/kernel-612/kernel/module/
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/module/built-in.a
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/module/debug_kmemleak.c
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/module/decompress.c
--rw-r--r--	root/root	usr/src/kernel-612/kernel/module/decompress.o
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/module/dups.c
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/module/internal.h
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/module/kallsyms.c
