@@ -24,7 +24,6 @@ lrwxrwxrwx	root/root	usr/lib/libkglobalaccelmodel.so.6 -> libkglobalaccelmodel.s
 -rwxr-xr-x	root/root	usr/lib/libkglobalaccelmodel.so.6.5.2
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/attica_kde.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kded/device_automounter.so
@@ -123,13 +122,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/plasma-kaccess.service
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/accounts/
-drwxr-xr-x	root/root	usr/share/accounts/providers/
-drwxr-xr-x	root/root	usr/share/accounts/providers/kde/
--rw-r--r--	root/root	usr/share/accounts/providers/kde/opendesktop.provider
-drwxr-xr-x	root/root	usr/share/accounts/services/
-drwxr-xr-x	root/root	usr/share/accounts/services/kde/
--rw-r--r--	root/root	usr/share/accounts/services/kde/opendesktop-rating.service
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kaccess.desktop
 -rw-r--r--	root/root	usr/share/applications/kcm_access.desktop
