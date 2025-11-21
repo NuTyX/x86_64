@@ -10,13 +10,14 @@ set=(kde6 kde6-plasma)
 
 name=kwin
 version=6.5.2
+release=3
 
 makedepends=(xorg-libx11 xorg-libdrm libxcb libepoxy libinput pipewire libxkbcommon
              mesa libplasma python wayland-protocols xorg-xwayland libdisplay-info
              qt6-base qt6-declarative qt6-5compat qt6-multimedia qt6-tools lcms2
              qt6-wayland qt6-sensors extra-cmake-modules kdoctools kcmutils kconfig
              kcolorscheme kconfigwidgets kcoreaddons kcrash kdbusaddons kdeclarative
-             kdecoration kglobalaccel kglobalacceld kguiaddons ki18n kidletime
+             kdecoration kglobalaccel kglobalacceld kguiaddons ki18n kidletime breeze
              kirigami kitemmodels knewstuff knotifications kpackage knighttime
              kscreenlocker kservice ksvg kwayland kwidgetsaddons kwindowsystem
              kxmlgui plasma-wayland-protocols krunner plasma-activities wayland)
@@ -26,3 +27,7 @@ run=(kquickcharts)
 source=(https://download.kde.org/stable/plasma/${version:0:5}/$name-$version.tar.xz)
 
 build=kde6
+
+package() {
+ rm -r $PKG/usr/lib/systemd/
+}
