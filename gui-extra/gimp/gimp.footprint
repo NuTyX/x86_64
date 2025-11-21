@@ -28,7 +28,6 @@ drwxr-xr-x	root/root	usr/lib/gimp/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/environ/
 -rw-r--r--	root/root	usr/lib/gimp/3.0/environ/default.env
--rw-r--r--	root/root	usr/lib/gimp/3.0/environ/python.env
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/goat-exercise-c
@@ -498,35 +497,35 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Gimp-3.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GimpUi-3.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so -> libgimp-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimp-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimp-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so -> libgimp-scriptfu-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimp-scriptfu-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimp-scriptfu-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so -> libgimpbase-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpbase-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpbase-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so -> libgimpcolor-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpcolor-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpcolor-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so -> libgimpconfig-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpconfig-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpconfig-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so -> libgimpmath-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpmath-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpmath-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so -> libgimpmodule-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpmodule-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpmodule-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so -> libgimpthumb-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpthumb-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpthumb-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so -> libgimpui-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpui-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpui-3.0.so.0.6.0
 lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so -> libgimpwidgets-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.0.4
--rwxr-xr-x	root/root	usr/lib/libgimpwidgets-3.0.so.0.0.4
+lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgimpwidgets-3.0.so.0.6.0
 drwxr-xr-x	root/root	usr/libexec/
 lrwxrwxrwx	root/root	usr/libexec/gimp-debug-tool -> gimp-debug-tool-3.0
 lrwxrwxrwx	root/root	usr/libexec/gimp-debug-tool-3 -> gimp-debug-tool-3.0
@@ -1968,6 +1967,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-even-vertical-gap.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-file-manager.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-gegl.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-group-layer.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-alpha-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-alpha.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-lock-content-symbolic.svg
@@ -2064,6 +2064,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-transform-3d-camera.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-transform-3d-move.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-transform-3d-rotate.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-cancel.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-no.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-ok.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-select-color.svg
