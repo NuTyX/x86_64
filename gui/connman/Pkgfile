@@ -3,15 +3,14 @@ url="https://01.org/connman"
 
 license="GPL-2.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Dania,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Dania,Rems,Spiky"
 
 makedepends=(bluez wpa-supplicant openvpn iwd dbus iptables gnutls glib polkit libmnl)
 
 name=connman
 version=1.45
-
-set=(enlightenment)
+release=2
 
 PKGMK_GROUPS=(devel man)
 source=(https://www.kernel.org/pub/linux/network/$name/$name-$version.tar.xz
