@@ -1,0 +1,40 @@
+description="Simply a pdf document viewer"
+url="https://mate-desktop.org/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Greg,Jayce,Spiky"
+
+makedepends=(djvulibre libsecret libspectre
+             poppler-glib poppler webkitgtk libsynctex)
+
+name=atril
+version=1.28.2
+release=1
+
+source=(mate-desktop.patch
+        https://github.com/mate-desktop/atril/archive/refs/tags/v$version.tar.gz)
+
+prepare() {
+  cd $name-$version
+  sed -i "/mate_desktop/d" meson.build
+
+  patch -Np1 -i ../mate-desktop.patch
+}
+build() {
+
+  cd $name-$version
+
+  mkdir build
+  cd    build
+  meson setup       \
+  --prefix=/usr     \
+  --buildtype=plain \
+  ..
+
+  ninja
+
+  DESTDIR=$PKG ninja install
+}
+package() {
+  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+}
