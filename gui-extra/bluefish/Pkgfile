@@ -1,14 +1,15 @@
 description="A powerful HTML editor for experienced web designers and programmers"
 url="https://bluefish.openoffice.nl/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Spiky"
 
 makedepends=(pcre enchant gtk3)
 run=(desktop-file-utils)
 
 name=bluefish
 version=2.2.17
+release=2
 
 source=(https://www.bennewitz.com/bluefish/stable/source/$name-$version.tar.bz2)
 
