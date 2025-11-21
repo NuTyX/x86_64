@@ -1,0 +1,43 @@
+description="Next generation of the python high-level scripting language"
+url="https://www.python.org"
+
+license="PSF-2.0"
+
+contributors="Alienus,Spiky"
+packager="tnut <tnut@nutyx.org>"
+
+makedepends=(bzip2 xz gdbm zlib util-linux ncurses sqlite expat libffi
+             libxcrypt)
+
+name=python-313
+version=3.13.9
+release=1
+
+source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz)
+
+PKGMK_GROUPS=(devel man doc)
+PKGMK_IGNORE_UNPACK="yes"
+
+build() {
+bsdtar -xf Python-$version.tar.xz
+	cd Python-$version
+	CXX="/usr/bin/g++" \
+	./configure --prefix=/usr \
+            --enable-shared         \
+            --with-system-expat     \
+	  --with-ensurepip=no     \
+            --enable-optimizations  \
+            --without-static-libpython
+	make
+
+	make DESTDIR=$PKG install
+
+}
+package() {
+for i in usr/bin/idle3 usr/bin/pydoc3 usr/bin/python3 \
+   usr/bin/python3-config usr/lib/libpython3.so \
+   /usr/lib/pkgconfig/python3-embed.pc /usr/lib/pkgconfig/python3.pc
+do
+    rm $PKG/$i
+done
+}
