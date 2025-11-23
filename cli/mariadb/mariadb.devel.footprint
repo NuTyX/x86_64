@@ -164,6 +164,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/events.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/field.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/field_comp.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/field_composite.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/filesort.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/filesort_utils.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/ft_global.h
@@ -187,6 +188,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/innodb_priv.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_cmpfunc.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/item_composite.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_create.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_func.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/item_geofunc.h
@@ -207,11 +209,13 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/keycaches.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex_charset.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/lex_hash.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex_ident.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex_ident_cli.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex_ident_sys.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex_string.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lex_symbol.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/lex_token.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lf.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/lock.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/log.h
@@ -271,6 +275,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/atomic/
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_subselect.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_trace.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_trace_context.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/opt_trace_ddl_info.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/opt_vcol_substitution.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/optimizer_costs.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/optimizer_defaults.h
@@ -343,6 +348,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_pcontext.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_rcontext.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sp_rcontext_handler.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sp_type_def.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/span.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/spatial.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_acl.h
@@ -421,6 +427,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_truncate.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_tvc.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_composite.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_fixedbin.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_fixedbin_storage.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_geom.h
@@ -428,6 +435,7 @@ drwxr-xr-x	root/root	usr/include/mysql/server/private/providers/lzo/
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_json.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_real.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_ref.h
+-rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_row.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_string.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_timeofday.h
 -rw-r--r--	root/root	usr/include/mysql/server/private/sql_type_vector.h
