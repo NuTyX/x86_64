@@ -512,6 +512,8 @@ drwxr-xr-x	root/root	usr/share/doc/git/RelNotes/
 -rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.50.1.adoc
 -rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.51.0.adoc
 -rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.51.1.adoc
+-rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.51.2.adoc
+-rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.52.0.adoc
 -rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.6.0.adoc
 -rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.6.1.adoc
 -rw-r--r--	root/root	usr/share/doc/git/RelNotes/2.6.2.adoc
@@ -620,6 +622,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/RelNotes/
 -rw-r--r--	root/root	usr/share/doc/git/git-init.html
 -rw-r--r--	root/root	usr/share/doc/git/git-instaweb.html
 -rw-r--r--	root/root	usr/share/doc/git/git-interpret-trailers.html
+-rw-r--r--	root/root	usr/share/doc/git/git-last-modified.html
 -rw-r--r--	root/root	usr/share/doc/git/git-log.html
 -rw-r--r--	root/root	usr/share/doc/git/git-ls-files.html
 -rw-r--r--	root/root	usr/share/doc/git/git-ls-remote.html
@@ -664,6 +667,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/RelNotes/
 -rw-r--r--	root/root	usr/share/doc/git/git-repack.html
 -rw-r--r--	root/root	usr/share/doc/git/git-replace.html
 -rw-r--r--	root/root	usr/share/doc/git/git-replay.html
+-rw-r--r--	root/root	usr/share/doc/git/git-repo.html
 -rw-r--r--	root/root	usr/share/doc/git/git-request-pull.html
 -rw-r--r--	root/root	usr/share/doc/git/git-rerere.html
 -rw-r--r--	root/root	usr/share/doc/git/git-reset.html
@@ -723,6 +727,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/RelNotes/
 -rw-r--r--	root/root	usr/share/doc/git/gitformat-chunk.html
 -rw-r--r--	root/root	usr/share/doc/git/gitformat-commit-graph.html
 -rw-r--r--	root/root	usr/share/doc/git/gitformat-index.html
+-rw-r--r--	root/root	usr/share/doc/git/gitformat-loose.html
 -rw-r--r--	root/root	usr/share/doc/git/gitformat-pack.html
 -rw-r--r--	root/root	usr/share/doc/git/gitformat-signature.html
 -rw-r--r--	root/root	usr/share/doc/git/gitglossary.html
@@ -857,6 +862,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/man1/
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-init.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-instaweb.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-interpret-trailers.1
+-rw-r--r--	root/root	usr/share/doc/git/man1/git-last-modified.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-log.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-ls-files.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-ls-remote.1
@@ -900,6 +906,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/man1/
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-repack.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-replace.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-replay.1
+-rw-r--r--	root/root	usr/share/doc/git/man1/git-repo.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-request-pull.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-rerere.1
 -rw-r--r--	root/root	usr/share/doc/git/man1/git-reset.1
@@ -955,6 +962,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/man5/
 -rw-r--r--	root/root	usr/share/doc/git/man5/gitformat-chunk.5
 -rw-r--r--	root/root	usr/share/doc/git/man5/gitformat-commit-graph.5
 -rw-r--r--	root/root	usr/share/doc/git/man5/gitformat-index.5
+-rw-r--r--	root/root	usr/share/doc/git/man5/gitformat-loose.5
 -rw-r--r--	root/root	usr/share/doc/git/man5/gitformat-pack.5
 -rw-r--r--	root/root	usr/share/doc/git/man5/gitformat-signature.5
 -rw-r--r--	root/root	usr/share/doc/git/man5/githooks.5
@@ -1009,10 +1017,13 @@ drwxr-xr-x	root/root	usr/share/doc/git/technical/
 -rw-r--r--	root/root	usr/share/doc/git/technical/bundle-uri.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/bundle-uri.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/commit-graph.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/commit-graph.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/directory-rename-detection.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/directory-rename-detection.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/hash-function-transition.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/hash-function-transition.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/large-object-promisors.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/large-object-promisors.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/long-running-process-protocol.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/long-running-process-protocol.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/multi-pack-index.adoc
@@ -1020,6 +1031,7 @@ drwxr-xr-x	root/root	usr/share/doc/git/technical/
 -rw-r--r--	root/root	usr/share/doc/git/technical/pack-heuristics.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/pack-heuristics.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/packfile-uri.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/packfile-uri.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/parallel-checkout.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/parallel-checkout.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/partial-clone.adoc
@@ -1031,8 +1043,11 @@ drwxr-xr-x	root/root	usr/share/doc/git/technical/
 -rw-r--r--	root/root	usr/share/doc/git/technical/reftable.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/reftable.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/remembering-renames.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/remembering-renames.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/repository-version.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/repository-version.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/rerere.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/rerere.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/scalar.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/scalar.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/send-pack-pipeline.adoc
@@ -1040,7 +1055,9 @@ drwxr-xr-x	root/root	usr/share/doc/git/technical/
 -rw-r--r--	root/root	usr/share/doc/git/technical/shallow.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/shallow.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/sparse-checkout.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/sparse-checkout.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/sparse-index.adoc
+-rw-r--r--	root/root	usr/share/doc/git/technical/sparse-index.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/trivial-merge.adoc
 -rw-r--r--	root/root	usr/share/doc/git/technical/trivial-merge.html
 -rw-r--r--	root/root	usr/share/doc/git/technical/unit-tests.adoc
