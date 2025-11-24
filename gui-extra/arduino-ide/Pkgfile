@@ -1,0 +1,35 @@
+description='Arduino prototyping platform IDE, rewrite based on the Theia IDE framework.'
+url='https://github.com/arduino/arduino-ide'
+
+packager="tnut <tnut@nutyx.org>"
+contributors=""
+
+alias=(arduino-ide-bin)
+makedepends=(unzip)
+run=(fuse2)
+set=(arduino)
+
+name=arduino-ide
+version=2.3.6
+release=3
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
+PKGMK_KEEP_SOURCES="no"
+PKGMK_NO_STRIP="yes"
+
+
+source=($name.desktop $name.sh
+        https://raw.githubusercontent.com/arduino/arduino-ide/155f0aebaf0e4e77a80f33a3422856ae5d3ad8e7/electron-app/resources/icons/512x512.png
+        https://github.com/arduino/$name/releases/download/$version/${name}_${version}_Linux_64bit.zip)
+
+build() {
+  install -dm755 $PKG/{usr/{bin,lib},etc/modules-load.d}
+  install -Dm644 $name.desktop $PKG/usr/share/applications/$name.desktop
+  install -m755  $name.sh $PKG/usr/bin/$name
+  install -Dm644 512x512.png \
+  $PKG/usr/share/icons/hicolor/512x512/apps/arduino-ide-v2.png
+
+  cp -a arduino-ide_${version}_Linux_64bit $PKG/usr/lib/$name
+
+  echo "fuse"                 > $PKG/etc/modules-load.d/$name.conf
+}
