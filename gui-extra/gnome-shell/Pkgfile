@@ -19,25 +19,11 @@ set=(gnome)
 
 name=gnome-shell
 version=49.1
-
+PKGMK_MESON_OPTIONS="-Dtests=false"
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-      --prefix=/usr \
-      --libdir=/usr/lib \
-      --buildtype=plain \
-      -Dtests=false     \
-      -Dsystemd=false
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
