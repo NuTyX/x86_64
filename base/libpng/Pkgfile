@@ -1,9 +1,9 @@
 description="Libraries used by other programs for reading and writing PNG files."
 url="http://www.libpng.org/pub/png/libpng.html"
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 name=libpng
-version=1.6.50
+version=1.6.51
 
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.xz
 	https://downloads.sourceforge.net/sourceforge/libpng-apng/$name-$version-apng.patch.gz)
