@@ -12,22 +12,12 @@ set=(gnome)
 
 name=tecla
 version=49.0
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/tecla/-/archive/$version/$name-$version.tar.gz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup ..\
-      --prefix=/usr \
-      --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
+package() {
+install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
