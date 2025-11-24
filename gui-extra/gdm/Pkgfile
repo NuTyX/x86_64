@@ -15,6 +15,13 @@ set=(gnome)
 
 name=gdm
 version=49.1
+release=2
+
+PKGMK_MESON_OPTIONS="-Dgdm-xsession=true \
+-Ddefault-pam-config=lfs \
+-Drun-dir=/run/gdm  \
+--localstatedir=/var \
+--libdir=/usr/lib"
 
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
@@ -25,23 +32,8 @@ getent passwd gdm || ( useradd -c "GDM Daemon Owner" \
         -g gdm -s /bin/false gdm )
 passwd -ql gdm
 }
-build() {
+build=meson
 
-cd $name-$version
-
-mkdir build
-cd    build
-meson setup .. \
-      --prefix=/usr              \
-      --buildtype=plain          \
-      --localstatedir=/var       \
-      --libdir=/usr/lib          \
-      -D gdm-xsession=true       \
-      -D default-pam-config=lfs  \
-      -D run-dir=/run/gdm
-
-ninja
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
