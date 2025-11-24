@@ -16,7 +16,10 @@ set=(gnome)
 
 name=mutter
 version=49.1.1
+release=2
 
+PKGMK_MESON_OPTIONS="-Dx11=True -Dprofiler=false -Dbash_completion=false \
+-Dtests=disabled"
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
 prepare() {
@@ -26,22 +29,7 @@ sed "/tests_c_args =/s/$/ + ['-U', 'G_DISABLE_ASSERT']/" -i src/tests/meson.buil
 sed "/c_args:/a '-U', 'G_DISABLE_ASSERT'," -i src/tests/cogl/unit/meson.build
 }
 
-build() {
-cd $name-$version
-
-mkdir build
-cd    build
-
-meson setup .. \
-      --prefix=/usr \
-      --buildtype=release \
-      -D profiler=false   \
-      -D bash_completion=false \
-      -D tests=disabled
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+build=meson
+package() {
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
