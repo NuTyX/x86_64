@@ -13,25 +13,17 @@ set=(gnome)
 
 name=gnome-session
 version=49.1
+release=2
+
+PKGMK_MESON_OPTIONS="-Dx11=True -Dman=False -Ddocbook=False"
 
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd build
-
-meson setup .. \
-      --prefix=/usr   \
-      -Dman=false     \
-      -Ddocbook=false
-
-ninja
-DESTDIR=$PKG ninja install
-
+package() {
 # Uneeded duplicated entries
 rm $PKG/usr/share/wayland-sessions/gnome.desktop
 
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
