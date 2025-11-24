@@ -14,24 +14,12 @@ makedepends=(gnome-autoar libnotify gnome-desktop gvfs
 set=(gnome)
 
 name=nautilus
-version=49.1
+version=49.2
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
-build() {
-  cd $name-$version
+build=meson
 
-  mkdir -p build
-  cd build
-  meson setup .. \
-        --prefix=/usr  \
-        --sysconfdir=/etc \
-        --libdir=/usr/lib \
-        -Dpackagekit=false \
-        -Dselinux=false
-
-  ninja
-  DESTDIR=$PKG ninja install
-
-  install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
+package() {
+  install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
