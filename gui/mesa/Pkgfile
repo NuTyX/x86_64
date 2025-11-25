@@ -18,7 +18,7 @@ run=(libglvnd)
 alias=(xorg-mesa Mesa mesa3d Mesa3D mesa3)
 
 name=mesa
-version=25.2.5
+version=25.2.7
 
 source=(LICENSE
         https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
@@ -29,11 +29,11 @@ cd $name-$version
 mkdir build
 cd    build
 
-meson setup                          \
-      --prefix=/usr                  \
-      -Dbuildtype=release            \
+meson setup                      \
+      --prefix=/usr              \
+      -Dbuildtype=plain          \
       -Dgallium-drivers="crocus,iris,nouveau,r300,r600,radeonsi,svga,virgl,zink" \
-      -Dvulkan-drivers=auto \
+      -Dvulkan-drivers=auto      \
       -Dgallium-vdpau=enabled    \
       -Dgallium-va=enabled       \
       -Dglx=dri                  \
