@@ -1,35 +1,18 @@
 description="Additional Wayland protocols"
 url=" https://wayland.freedesktop.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 license="MIT"
 
 makedepends=(pkgconf wayland)
 
 name=wayland-protocols
-version=1.45
+version=1.46
 
 source=(https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/$version/downloads/$name-$version.tar.xz)
 
-build() {
-
-  cd $name-$version
-  
-  meson setup build \
-  --prefix=/usr --buildtype=release
-  
-  meson compile -C build
-
-  DESTDIR=$PKG meson install -C build
-
-install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING  
-}
-uptodate() {
-local url ext
-
-url="https://wayland.freedesktop.org/releases"
-ext=".tar.xz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url.html|grep $name|head -1|sed "s@$url/$name-@@"|sed "s@$ext@@"
+build=meson
+package() {
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING  
 }
