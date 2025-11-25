@@ -3,12 +3,13 @@ url="http://xiph.org/ao/"
 
 license="GPL2 GPL3 LGPL3"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(libelf zlib bzip2 xz)
 
 name=elfutils
-version=0.193
+version=0.194
 
 source=(https://sourceware.org/elfutils/ftp/$version/elfutils-$version.tar.bz2 )
 
