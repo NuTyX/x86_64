@@ -1,13 +1,13 @@
 description="Freedesktop.org backend for WPE WebKit"
 url="https://wpewebkit.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(libepoxy wayland-protocols libwpe)
 
 name=wpebackend-fdo
-version=1.16.0
+version=1.16.1
 
 source=(https://wpewebkit.org/releases/$name-$version.tar.xz)
 
