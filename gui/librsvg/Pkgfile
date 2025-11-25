@@ -10,25 +10,12 @@ makedepends=(gdk-pixbuf libcroco pango vala rustc cargo-c
              gi-docgen python-docutils python-smartypants)
 
 name=librsvg
-version=2.61.1
+version=2.61.3
 
 source=(https://gitlab.gnome.org/GNOME/librsvg/-/archive/$version/$name-$version.tar.gz)
-build() {
-cd $name-$version
+PKGMK_MESON_OPTIONS="-Dtests=false -Ddocs=disabled"
+build=meson
 
-
-mkdir build
-cd    build
-
-meson setup ..      \
---prefix=/usr       \
--Dtests=false       \
---buildtype=plain   \
--Ddocs=disabled
-
-meson compile
-
-DESTDIR=$PKG meson install --no-rebuild
-
-install -Dm644 ../COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
+package() {
+install -Dm644 $name-$version/COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
 }
