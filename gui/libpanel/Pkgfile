@@ -7,22 +7,8 @@ contributors="Spiky"
 makedepends=(gobject-introspection vala gtk4 graphene hicolor-icon-theme libadwaita)
 
 name=libpanel
-version=1.10.2
+version=1.10.3
 
 source=(https://gitlab.gnome.org/GNOME/libpanel/-/archive/$version/$name-$version.tar.gz)
-
-build() {
-cd $name-$version
-
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release \
-            -Ddocs=disabled
-
-ninja
-
-DESTDIR=$PKG ninja install
-}
+PKGMK_MESON_OPTIONS="-Ddocs=disabled"
+build=meson
