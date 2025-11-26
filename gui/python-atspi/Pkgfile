@@ -4,17 +4,14 @@ url="https://www.cairographics.org/"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
 
-makedepends=(alsa-lib expat pulseaudio at-spi2-core python-gobject)
+makedepends=(meson alsa-lib expat pulseaudio at-spi2-core python-gobject)
 
 name=python-atspi
-version=2.46.1
-release=5
+version=2.58.0
 
 source=(http://ftp.gnome.org/pub/gnome/sources/pyatspi/${version%.*}/pyatspi-$version.tar.xz)
 
-build() {
-cd pyatspi-$version
-./configure --prefix=/usr
-make
-make DESTDIR=$PKG install
+prepare() {
+  mv pyatspi-$version $name-$version
 }
+build=meson
