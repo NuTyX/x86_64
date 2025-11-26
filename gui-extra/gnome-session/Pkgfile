@@ -12,8 +12,7 @@ makedepends=(dconf dbus-glib docbook-xml docbook-xsl
 set=(gnome)
 
 name=gnome-session
-version=49.1
-release=2
+version=49.2
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dman=False -Ddocbook=False"
 
