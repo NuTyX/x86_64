@@ -9,24 +9,13 @@ contributors="Spiky"
 makedepends=(meson sassc gobject-introspection vala gtk4 appstream)
 
 name=libadwaita
-version=1.8.1
+version=1.8.2
 
 source=(https://gitlab.gnome.org/GNOME/libadwaita/-/archive/$version/$name-$version.tar.gz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-meson
-
-DESTDIR=$PKG meson install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
 
