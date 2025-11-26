@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/glib/"
 
 license="LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
 alias=(glib2)
 
@@ -15,7 +15,7 @@ makedepends=(flex bison libffi pcre2 python-packaging
 PKGMK_GROUPS=(man devel doc )
 
 name=glib
-version=2.86.1
+version=2.86.2
 
 giversion=1.86.0
 
