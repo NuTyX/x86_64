@@ -10,7 +10,9 @@ makedepends=(gcr-4 kerberos libgnome-keyring libnotify librest libsecret
 run=(gtk-update-icon-cache keyutils)
 
 name=gnome-online-accounts
-version=3.56.1
+version=3.56.2
+
+PKGMK_MESON_OPTIONS="-Dgtk_doc=true"
 
 source=(https://gitlab.gnome.org/GNOME/gnome-online-accounts/-/archive/$version/$name-$version.tar.gz)
 
@@ -22,19 +24,5 @@ prepare() {
   sed -i '/-Werror=implicit-function-declaration/d' $name-$version/meson.build
 }
 
-build() {
+build=meson
 
-cd $name-$version
-
-   mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release \
-            -D gtk_doc=true
-
-ninja
-
-DESTDIR=$PKG ninja install
-}
