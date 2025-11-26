@@ -9,34 +9,14 @@ contributors="Greg,Spiky"
 makedepends=(itstool gtk4 yelp-tools libadwaita libnotify)
 
 name=zenity
-version=4.2.0
+version=4.2.1
 
 source=($url/-/archive/$version/$name-$version.tar.gz)
+PKGMK_MESON_OPTIONS="--sysconfdir=/etc --localstatedir=/var"
 
-build() {
+build=meson
 
-cd $name-$version
-   mkdir build
-   cd    build
-
-meson --prefix=/usr           \
---sysconfdir=/etc             \
---localstatedir=/var          \
---buildtype=release           \
-..
-ninja
-
- DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
 
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/${name}"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
-}
