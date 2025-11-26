@@ -3,8 +3,8 @@ url="https://xorg.freedesktop.org"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
 
 makedepends=(meson ninja meson libtirpc libepoxy libxcvt mesa
              nettle xorgproto xorg-xkbcomp xorg-font-util xcb-util-keysyms
@@ -13,7 +13,7 @@ makedepends=(meson ninja meson libtirpc libepoxy libxcvt mesa
              xorg-xkeyboard-config wayland)
 
 name=xorg-server
-version=21.1.18
+version=21.1.20
 
 source=(xorg-server-21.1.16-tearfree_backport-1.patch
 	https://ftp.x.org/pub/individual/xserver/$name-$version.tar.xz)
