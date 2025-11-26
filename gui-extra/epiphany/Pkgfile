@@ -17,20 +17,13 @@ run=(adwaita-icon-theme gsettings-desktop-schemas woff2 libxslt.lib
 set=(gnome)
 
 name=epiphany
-version=49.1
+version=49.2
+PKGMK_MESON_OPTIONS="-Dunit_tests=disabled --libdir=/usr/lib"
 
 source=(https://gitlab.gnome.org/GNOME/epiphany/-/archive/$version/$name-$version.tar.gz)
 
-build() {
+build=meson
 
-meson setup $name-$version build \
-            --prefix=/usr \
-            --libdir=/usr/lib \
-            -Dunit_tests=disabled
-
-meson compile -C build
-
-DESTDIR=$PKG meson install -C build
-
-install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
