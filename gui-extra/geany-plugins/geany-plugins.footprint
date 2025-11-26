@@ -20,6 +20,7 @@ drwxr-xr-x	root/root	usr/lib/geany/
 -rwxr-xr-x	root/root	usr/lib/geany/latex.so
 -rwxr-xr-x	root/root	usr/lib/geany/lineoperations.so
 -rwxr-xr-x	root/root	usr/lib/geany/lipsum.so
+-rwxr-xr-x	root/root	usr/lib/geany/lsp.so
 -rwxr-xr-x	root/root	usr/lib/geany/overview.so
 -rwxr-xr-x	root/root	usr/lib/geany/pairtaghighlighter.so
 -rwxr-xr-x	root/root	usr/lib/geany/pohelper.so
@@ -36,6 +37,8 @@ lrwxrwxrwx	root/root	usr/lib/libgeanypluginutils.so.0 -> libgeanypluginutils.so.
 -rwxr-xr-x	root/root	usr/lib/libgeanypluginutils.so.0.0.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/geany-plugins/
+drwxr-xr-x	root/root	usr/share/geany-plugins/lsp/
+-rw-r--r--	root/root	usr/share/geany-plugins/lsp/lsp.conf
 drwxr-xr-x	root/root	usr/share/geany-plugins/overview/
 -rw-r--r--	root/root	usr/share/geany-plugins/overview/prefs.ui
 drwxr-xr-x	root/root	usr/share/geany-plugins/pohelper/

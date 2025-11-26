@@ -1,16 +1,16 @@
 description="Many plugins for geany"
 url="https://plugins.geany.org/"
 
-contributors="Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 run=(geany)
 
 name=geany-plugins
-version=2.0
-release=2
+version=2.1
+release=1
 
-source=(http://plugins.geany.org/geany-plugins/$name-$version.tar.bz2)
+source=(https://plugins.geany.org/geany-plugins/$name-$version.tar.bz2)
 
 
 build() {
