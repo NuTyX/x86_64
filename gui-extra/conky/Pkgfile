@@ -1,17 +1,17 @@
 description="Lightweight system monitor for X"
-url="http://conky.sourceforge.net"
+url="https://github.com/brndnmtthws/conky"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Geantbrun, Greg, tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Geantbrun, Greg, Spiky"
 
 makedepends=(git cmake wireless-tools glib lua cairo curl imlib2 docbook2x xorg-libxdamage
              xorg-libxft pulseaudio xorg-libxscrnsaver)
 
 name=conky
-version=1.22.1
+version=1.22.2
 
 PKGMK_KEEP_SOURCES="no"
-source=(https://github.com/brndnmtthws/$name/archive/refs/tags/v${version}.tar.gz)
+source=($url/archive/refs/tags/v${version}.tar.gz)
 
 build() {
 cd $name-$version
