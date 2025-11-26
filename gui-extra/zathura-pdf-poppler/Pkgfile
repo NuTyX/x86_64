@@ -1,13 +1,14 @@
 description='pdf support to zathura using the poppler rendering engine'
 url='https://pwmt.org/projects/zathura-pdf-poppler'
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(ninja meson zathura)
 run=( poppler-glib)
 
 name=zathura-pdf-poppler
-version=0.3.3
+version=0.3.4
 
 source=(${url}/download/${name}-${version}.tar.xz)
 
