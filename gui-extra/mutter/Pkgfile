@@ -15,8 +15,7 @@ run=(xorg-server zenity pipewire xorg-xwayland)
 set=(gnome)
 
 name=mutter
-version=49.1.1
-release=2
+version=49.2
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
