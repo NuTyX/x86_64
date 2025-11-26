@@ -1,13 +1,13 @@
 description='Minimalistic document viewer'
 url='https://pwmt.org/projects/zathura/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(girara json-glib)
 
 name=zathura
-version=0.5.12
+version=0.5.14
 
 source=(https://github.com/pwmt/zathura/archive/$version/$name-$version.tar.gz)
 
