@@ -9,25 +9,9 @@ contributors="Greg,Pierre,Jayce,Skythrew,Spiky"
 makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection fast_float)
 
 name=vte
-version=0.82.1
+version=0.82.2
 
-prepare() {
-git clone https://gitlab.gnome.org/GNOME/vte.git
-cd $name
-git checkout $version
-}
+PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dfribidi=false"
+source=(https://gitlab.gnome.org/GNOME/vte/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
-cd $name
-mkdir build
-cd    build
-
-meson  --prefix=/usr \
---sysconfdir=/etc \
--Dfribidi=false   \
--Dgtk4=true
-
-ninja
-
-DESTDIR=$PKG ninja install
-}
+build=meson
