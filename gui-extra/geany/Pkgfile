@@ -3,17 +3,17 @@ url="https://www.geany.org"
 
 license="GPL2"
 
-contributors="Pierre,Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(gtk3)
 run=(hicolor-icon-theme desktop-file-utils)
 
 name=geany
-version=2.0
-release=2
+version=2.1
+release=1
 
-source=(http://download.$name.org/$name-$version.tar.bz2)
+source=(https://download.$name.org/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
