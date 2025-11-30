@@ -1,16 +1,33 @@
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
--rw-r--r--	root/root	lib/firmware/qat_402xx.bin
--rw-r--r--	root/root	lib/firmware/qat_402xx_mmp.bin
--rw-r--r--	root/root	lib/firmware/qat_4xxx.bin
--rw-r--r--	root/root	lib/firmware/qat_4xxx_mmp.bin
--rw-r--r--	root/root	lib/firmware/qat_895xcc.bin
--rw-r--r--	root/root	lib/firmware/qat_895xcc_mmp.bin
--rw-r--r--	root/root	lib/firmware/qat_c3xxx.bin
--rw-r--r--	root/root	lib/firmware/qat_c3xxx_mmp.bin
--rw-r--r--	root/root	lib/firmware/qat_c62x.bin
--rw-r--r--	root/root	lib/firmware/qat_c62x_mmp.bin
-lrwxrwxrwx	root/root	lib/firmware/qat_mmp.bin -> qat_895xcc_mmp.bin
+drwxr-xr-x	root/root	lib/firmware/intel/
+drwxr-xr-x	root/root	lib/firmware/intel/qat/
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_402xx.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_402xx_mmp.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_420xx.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_420xx_mmp.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_4xxx.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_4xxx_mmp.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_895xcc.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_895xcc_mmp.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_c3xxx.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_c3xxx_mmp.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_c62x.bin
+-rw-r--r--	root/root	lib/firmware/intel/qat/qat_c62x_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/qat/qat_mmp.bin -> qat_895xcc_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_402xx.bin -> intel/qat/qat_402xx.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_402xx_mmp.bin -> intel/qat/qat_402xx_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_420xx.bin -> intel/qat/qat_420xx.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_420xx_mmp.bin -> intel/qat/qat_420xx_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_4xxx.bin -> intel/qat/qat_4xxx.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_4xxx_mmp.bin -> intel/qat/qat_4xxx_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_895xcc.bin -> intel/qat/qat_895xcc.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_895xcc_mmp.bin -> intel/qat/qat_895xcc_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_c3xxx.bin -> intel/qat/qat_c3xxx.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_c3xxx_mmp.bin -> intel/qat/qat_c3xxx_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_c62x.bin -> intel/qat/qat_c62x.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_c62x_mmp.bin -> intel/qat/qat_c62x_mmp.bin
+lrwxrwxrwx	root/root	lib/firmware/qat_mmp.bin -> intel/qat/qat_895xcc_mmp.bin
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
