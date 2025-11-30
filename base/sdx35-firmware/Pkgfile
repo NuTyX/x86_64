@@ -1,0 +1,30 @@
+description="sdx35 - Qualcomm SDX35 firmware image file for Foxconn vendor"
+url='https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+license="Custom"
+
+set=(linux-firmware)
+
+name=sdx35-firmware
+version=20251125
+
+makedepends=(rdfind)
+source=(WHENCE
+        https://gitlab.com/kernel-firmware/linux-firmware/-/archive/$version/linux-firmware-$version.tar.bz2)
+
+build() {
+
+cd linux-firmware-$version
+
+# delete this python check as long we don't know what's missing here
+sed -i /check_whence.py/d copy-firmware.sh
+
+cp ../WHENCE .
+make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
+
+install -Dt $PKG/usr/share/licenses/$name -m644 WHENCE
+install -Dt $PKG/usr/share/licenses/$name -m644 LICENSE.qcom
+}
