@@ -12,6 +12,7 @@ run=(rt2800usb-firmware)
 
 name=rt2870sta-firmware
 version=20251125
+release=2
 
 makedepends=(rdfind)
 source=(WHENCE
@@ -26,7 +27,7 @@ sed -i /check_whence.py/d copy-firmware.sh
 
 cp ../WHENCE .
 make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
-ln -sv rt2870.bin $PKG/lib/firmware/rt3090.bin
+ln -sv rt2870.bin $PKG/lib/firmware/rt3070.bin
 install -Dt $PKG/usr/share/licenses/$name -m644 WHENCE
 install -Dt $PKG/usr/share/licenses/$name -m644 LICENCE.ralink-firmware.txt
 }
