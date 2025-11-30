@@ -39,6 +39,7 @@ lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.beagle,beaglev-starlig
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-r0.txt -> brcmfmac43430-sdio.AP6212.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.bin -> ../cypress/cyfmac43430-sdio.bin
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.clm_blob -> ../cypress/cyfmac43430-sdio.clm_blob
+lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.friendlyarm,nanopi-neo4.txt -> brcmfmac43430-sdio.AP6212.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.friendlyarm,nanopi-r1.txt -> brcmfmac43430-sdio.AP6212.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43430-sdio.ilife-S806.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
@@ -56,12 +57,14 @@ lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43430-sdio.starfive,visionfive-v1
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43455-sdio.AW-CM256SM.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt
+-rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43455-sdio.Radxa-ROCK Pi X.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.Raspberry Pi Foundation-Raspberry Pi 4 Model B.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.Raspberry Pi Foundation-Raspberry Pi Compute Module 4.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43455-sdio.acepc-t8.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.beagle,am5729-beagleboneai.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.bin -> ../cypress/cyfmac43455-sdio.bin
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.clm_blob -> ../cypress/cyfmac43455-sdio.clm_blob
+lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.khadas,vim.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.pine64,pinenote-v1.1.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.pine64,pinenote-v1.2.txt -> brcmfmac43455-sdio.AW-CM256SM.txt
@@ -77,7 +80,9 @@ lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,5-compute-module.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,500.txt -> brcmfmac43455-sdio.raspberrypi,4-model-b.txt
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac4350-pcie.bin
 -rw-r--r--	root/root	lib/firmware/brcm/brcmfmac4350c2-pcie.bin
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4354-sdio.bin -> ../cypress/cyfmac4354-sdio.bin
@@ -92,6 +97,7 @@ lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-pcie.clm_blob -> ../cypress/
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.bin -> ../cypress/cyfmac4356-sdio.bin
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.clm_blob -> ../cypress/cyfmac4356-sdio.clm_blob
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.firefly,firefly-rk3399.txt -> brcmfmac4356-sdio.AP6356S.txt
+lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.friendlyarm,nanopc-t4.txt -> brcmfmac4356-sdio.AP6356S.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.friendlyarm,nanopi-m4.txt -> brcmfmac4356-sdio.AP6356S.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.khadas,vim2.txt -> brcmfmac4356-sdio.AP6356S.txt
 lrwxrwxrwx	root/root	lib/firmware/brcm/brcmfmac4356-sdio.vamrs,rock960.txt -> brcmfmac4356-sdio.AP6356S.txt
