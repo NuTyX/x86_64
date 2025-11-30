@@ -1,11 +1,12 @@
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
-lrwxrwxrwx	root/root	lib/firmware/INT8866RCA2.bin -> ti/tas2563/INT8866RCA2.bin
-lrwxrwxrwx	root/root	lib/firmware/TAS2XXX3870.bin -> ti/tas2563/TAS2XXX3870.bin
+lrwxrwxrwx	root/root	lib/firmware/INT8866RCA2.bin -> ti/audio/tas2563/INT8866RCA2.bin
+lrwxrwxrwx	root/root	lib/firmware/TAS2XXX3870.bin -> ti/audio/tas2563/TAS2XXX3870.bin
 drwxr-xr-x	root/root	lib/firmware/ti/
-drwxr-xr-x	root/root	lib/firmware/ti/tas2563/
--rw-r--r--	root/root	lib/firmware/ti/tas2563/INT8866RCA2.bin
--rw-r--r--	root/root	lib/firmware/ti/tas2563/TAS2XXX3870.bin
+drwxr-xr-x	root/root	lib/firmware/ti/audio/
+drwxr-xr-x	root/root	lib/firmware/ti/audio/tas2563/
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas2563/INT8866RCA2.bin
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas2563/TAS2XXX3870.bin
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
