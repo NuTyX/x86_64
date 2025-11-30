@@ -8,19 +8,25 @@ license="Custom"
 
 set=(linux-firmware)
 
+run=(rt2800usb-firmware)
+
 name=rt2860sta-firmware
-version=20240410
+version=20251125
 
 makedepends=(rdfind)
 source=(WHENCE
-        https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-$version.tar.gz)
+        https://gitlab.com/kernel-firmware/linux-firmware/-/archive/$version/linux-firmware-$version.tar.bz2)
 
 build() {
 
 cd linux-firmware-$version
-cp ../WHENCE .
-make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware install
 
+# delete this python check as long we don't know what's missing here
+sed -i /check_whence.py/d copy-firmware.sh
+
+cp ../WHENCE .
+install -d $PKG/lib/firmware
+ln -sv rt2860.bin $PKG/lib/firmware/rt3090.bin
 install -Dt $PKG/usr/share/licenses/$name -m644 WHENCE
 install -Dt $PKG/usr/share/licenses/$name -m644 LICENCE.ralink-firmware.txt
 }
