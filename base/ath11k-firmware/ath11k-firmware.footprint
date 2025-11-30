@@ -75,8 +75,15 @@ drwxr-xr-x	root/root	lib/firmware/ath11k/QCA6390/hw2.0/
 -rw-r--r--	root/root	lib/firmware/ath11k/QCA6390/hw2.0/amss.bin
 -rw-r--r--	root/root	lib/firmware/ath11k/QCA6390/hw2.0/board-2.bin
 -rw-r--r--	root/root	lib/firmware/ath11k/QCA6390/hw2.0/m3.bin
+drwxr-xr-x	root/root	lib/firmware/ath11k/QCA6698AQ/
+drwxr-xr-x	root/root	lib/firmware/ath11k/QCA6698AQ/hw2.1/
+-rw-r--r--	root/root	lib/firmware/ath11k/QCA6698AQ/hw2.1/Notice.txt
+-rw-r--r--	root/root	lib/firmware/ath11k/QCA6698AQ/hw2.1/amss.bin
+-rw-r--r--	root/root	lib/firmware/ath11k/QCA6698AQ/hw2.1/board-2.bin
+-rw-r--r--	root/root	lib/firmware/ath11k/QCA6698AQ/hw2.1/m3.bin
 drwxr-xr-x	root/root	lib/firmware/ath11k/QCN9074/
 drwxr-xr-x	root/root	lib/firmware/ath11k/QCN9074/hw1.0/
+-rw-r--r--	root/root	lib/firmware/ath11k/QCN9074/hw1.0/.notice
 -rw-r--r--	root/root	lib/firmware/ath11k/QCN9074/hw1.0/Notice.txt
 -rw-r--r--	root/root	lib/firmware/ath11k/QCN9074/hw1.0/amss.bin
 -rw-r--r--	root/root	lib/firmware/ath11k/QCN9074/hw1.0/board-2.bin
@@ -85,8 +92,10 @@ drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6750/
 drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6750/hw1.0/
 -rw-r--r--	root/root	lib/firmware/ath11k/WCN6750/hw1.0/Notice.txt
 -rw-r--r--	root/root	lib/firmware/ath11k/WCN6750/hw1.0/board-2.bin
+drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6750/hw1.0/qcm6490/
+-rw-r--r--	root/root	lib/firmware/ath11k/WCN6750/hw1.0/qcm6490/wpss.mbn
 drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6750/hw1.0/sc7280/
--rw-r--r--	root/root	lib/firmware/ath11k/WCN6750/hw1.0/sc7280/wpss.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/ath11k/WCN6750/hw1.0/sc7280/wpss.mbn
 lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6750/hw1.0/wpss.mdt -> sc7280/wpss.mbn
 drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6855/
 drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6855/hw2.0/
@@ -94,15 +103,28 @@ drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6855/hw2.0/
 -rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/amss.bin
 -rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/board-2.bin
 -rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/m3.bin
+drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6855/hw2.0/nfa765/
+-rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/nfa765/Notice.txt
+-rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/nfa765/amss.bin
+-rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/nfa765/m3.bin
 -rw-r--r--	root/root	lib/firmware/ath11k/WCN6855/hw2.0/regdb.bin
 drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6855/hw2.1/
 lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6855/hw2.1/amss.bin -> ../hw2.0/amss.bin
 lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6855/hw2.1/board-2.bin -> ../hw2.0/board-2.bin
 lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6855/hw2.1/m3.bin -> ../hw2.0/m3.bin
+drwxr-xr-x	root/root	lib/firmware/ath11k/WCN6855/hw2.1/nfa765/
+lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6855/hw2.1/nfa765/amss.bin -> ../../hw2.0/nfa765/amss.bin
+lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6855/hw2.1/nfa765/m3.bin -> ../../hw2.0/nfa765/m3.bin
 lrwxrwxrwx	root/root	lib/firmware/ath11k/WCN6855/hw2.1/regdb.bin -> ../hw2.0/regdb.bin
+drwxr-xr-x	root/root	lib/firmware/qcom/
+drwxr-xr-x	root/root	lib/firmware/qcom/qcm6490/
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcm6490/wpss.mbn -> ../../ath11k/WCN6750/hw1.0/qcm6490/wpss.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/wpss.mbn -> ../../ath11k/WCN6750/hw1.0/qcm6490/wpss.mbn
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/ath11k-firmware/
 -rw-r--r--	root/root	usr/share/licenses/ath11k-firmware/LICENSE.QualcommAtheros_ath10k
+-rw-r--r--	root/root	usr/share/licenses/ath11k-firmware/LICENSE.qcom
 -rw-r--r--	root/root	usr/share/licenses/ath11k-firmware/WHENCE
