@@ -4,23 +4,29 @@ drwxr-xr-x	root/root	lib/firmware/nvidia/
 drwxr-xr-x	root/root	lib/firmware/nvidia/ad102/
 drwxr-xr-x	root/root	lib/firmware/nvidia/ad102/gsp/
 -rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/booter_load-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/booter_load-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/booter_unload-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/booter_unload-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/bootloader-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/bootloader-570.144.bin
 lrwxrwxrwx	root/root	lib/firmware/nvidia/ad102/gsp/gsp-535.113.01.bin -> ../../ga102/gsp/gsp-535.113.01.bin
-drwxr-xr-x	root/root	lib/firmware/nvidia/ad103/
-lrwxrwxrwx	root/root	lib/firmware/nvidia/ad103/gsp -> ../ad102/gsp
-drwxr-xr-x	root/root	lib/firmware/nvidia/ad104/
-lrwxrwxrwx	root/root	lib/firmware/nvidia/ad104/gsp -> ../ad102/gsp
-drwxr-xr-x	root/root	lib/firmware/nvidia/ad106/
-lrwxrwxrwx	root/root	lib/firmware/nvidia/ad106/gsp -> ../ad102/gsp
-drwxr-xr-x	root/root	lib/firmware/nvidia/ad107/
-lrwxrwxrwx	root/root	lib/firmware/nvidia/ad107/gsp -> ../ad102/gsp
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ad102/gsp/gsp-570.144.bin -> ../../ga102/gsp/gsp-570.144.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ad102/gsp/scrubber-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ad103 -> ad102
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ad104 -> ad102
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ad106 -> ad102
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ad107 -> ad102
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga100/
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga100/gsp/
 -rw-r--r--	root/root	lib/firmware/nvidia/ga100/gsp/booter_load-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga100/gsp/booter_load-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ga100/gsp/booter_unload-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga100/gsp/booter_unload-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ga100/gsp/bootloader-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga100/gsp/bootloader-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ga100/gsp/gen_bootloader-570.144.bin -> ../../tu102/gsp/gen_bootloader-570.144.bin
 lrwxrwxrwx	root/root	lib/firmware/nvidia/ga100/gsp/gsp-535.113.01.bin -> ../../tu102/gsp/gsp-535.113.01.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/ga100/gsp/gsp-570.144.bin -> ../../tu102/gsp/gsp-570.144.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga102/
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga102/acr/
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/acr/ucode_ahesasc.bin
@@ -34,9 +40,13 @@ drwxr-xr-x	root/root	lib/firmware/nvidia/ga102/gr/
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/gr/gpccs_sig.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga102/gsp/
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/booter_load-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/booter_load-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/booter_unload-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/booter_unload-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/bootloader-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/bootloader-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/gsp-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/ga102/gsp/gsp-570.144.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga102/nvdec/
 -rw-r--r--	root/root	lib/firmware/nvidia/ga102/nvdec/scrubber.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/ga102/sec2/
@@ -120,6 +130,26 @@ lrwxrwxrwx	root/root	lib/firmware/nvidia/ga107/sec2/desc.bin -> ../../ga102/sec2
 lrwxrwxrwx	root/root	lib/firmware/nvidia/ga107/sec2/hs_bl_sig.bin -> ../../ga102/sec2/hs_bl_sig.bin
 lrwxrwxrwx	root/root	lib/firmware/nvidia/ga107/sec2/image.bin -> ../../ga102/sec2/image.bin
 lrwxrwxrwx	root/root	lib/firmware/nvidia/ga107/sec2/sig.bin -> ../../ga102/sec2/sig.bin
+drwxr-xr-x	root/root	lib/firmware/nvidia/gb100/
+drwxr-xr-x	root/root	lib/firmware/nvidia/gb100/gsp/
+-rw-r--r--	root/root	lib/firmware/nvidia/gb100/gsp/bootloader-570.144.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/gb100/gsp/fmc-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb100/gsp/gsp-570.144.bin -> ../../ga102/gsp/gsp-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb102 -> gb100
+drwxr-xr-x	root/root	lib/firmware/nvidia/gb202/
+drwxr-xr-x	root/root	lib/firmware/nvidia/gb202/gsp/
+-rw-r--r--	root/root	lib/firmware/nvidia/gb202/gsp/bootloader-570.144.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/gb202/gsp/fmc-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb202/gsp/gsp-570.144.bin -> ../../ga102/gsp/gsp-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb203 -> gb202
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb205 -> gb202
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb206 -> gb202
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gb207 -> gb202
+drwxr-xr-x	root/root	lib/firmware/nvidia/gh100/
+drwxr-xr-x	root/root	lib/firmware/nvidia/gh100/gsp/
+-rw-r--r--	root/root	lib/firmware/nvidia/gh100/gsp/bootloader-570.144.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/gh100/gsp/fmc-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/gh100/gsp/gsp-570.144.bin -> ../../ga102/gsp/gsp-570.144.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/gk20a/
 -rw-r--r--	root/root	lib/firmware/nvidia/gk20a/fecs_data.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/gk20a/fecs_inst.bin
@@ -426,9 +456,14 @@ drwxr-xr-x	root/root	lib/firmware/nvidia/tu102/gr/
 -rw-r--r--	root/root	lib/firmware/nvidia/tu102/gr/sw_veid_bundle_init.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/tu102/gsp/
 -rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/booter_load-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/booter_load-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/booter_unload-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/booter_unload-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/bootloader-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/bootloader-570.144.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/gen_bootloader-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/gsp-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu102/gsp/gsp-570.144.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/tu102/nvdec/
 -rw-r--r--	root/root	lib/firmware/nvidia/tu102/nvdec/scrubber.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/tu102/sec2/
@@ -519,9 +554,14 @@ drwxr-xr-x	root/root	lib/firmware/nvidia/tu116/gr/
 -rw-r--r--	root/root	lib/firmware/nvidia/tu116/gr/sw_veid_bundle_init.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/tu116/gsp/
 -rw-r--r--	root/root	lib/firmware/nvidia/tu116/gsp/booter_load-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu116/gsp/booter_load-570.144.bin
 -rw-r--r--	root/root	lib/firmware/nvidia/tu116/gsp/booter_unload-535.113.01.bin
+-rw-r--r--	root/root	lib/firmware/nvidia/tu116/gsp/booter_unload-570.144.bin
 lrwxrwxrwx	root/root	lib/firmware/nvidia/tu116/gsp/bootloader-535.113.01.bin -> ../../tu102/gsp/bootloader-535.113.01.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/tu116/gsp/bootloader-570.144.bin -> ../../tu102/gsp/bootloader-570.144.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/tu116/gsp/gen_bootloader-570.144.bin -> ../../tu102/gsp/gen_bootloader-570.144.bin
 lrwxrwxrwx	root/root	lib/firmware/nvidia/tu116/gsp/gsp-535.113.01.bin -> ../../tu102/gsp/gsp-535.113.01.bin
+lrwxrwxrwx	root/root	lib/firmware/nvidia/tu116/gsp/gsp-570.144.bin -> ../../tu102/gsp/gsp-570.144.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/tu116/nvdec/
 -rw-r--r--	root/root	lib/firmware/nvidia/tu116/nvdec/scrubber.bin
 drwxr-xr-x	root/root	lib/firmware/nvidia/tu116/sec2/
