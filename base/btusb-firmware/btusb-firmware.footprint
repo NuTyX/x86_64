@@ -13,16 +13,34 @@ drwxr-xr-x	root/root	lib/firmware/intel/
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0040-4150.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0041-0041.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0041-0041.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0041.ddc (EMPTY)
--rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0041.sfi (EMPTY)
--rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0291.ddc (EMPTY)
--rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0291.sfi (EMPTY)
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0041.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0041.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0291.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0291.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-1050.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-1050.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-4150.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0093-4150.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-0041.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-1050.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-1050.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-4150.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-4150.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041-iml.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041-pci.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041-pci.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041-usb.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041-usb.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0041.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291-iml.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291-pci.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291-pci.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291-usb.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291-usb.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-0190-0291.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0291-0291.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0291-0291.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-1040-0041.ddc
@@ -94,12 +112,13 @@ drwxr-xr-x	root/root	lib/firmware/rtl_bt/
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8192ee_fw.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8192eu_fw.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723a_fw.bin
+lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8723b_config.bin -> rtl8723bs_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723b_fw.bin
 lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8723bs_config-OBDA0623.bin -> rtl8723bs_config.bin
 lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8723bs_config-OBDA8723.bin -> rtl8723bs_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723bs_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723bs_fw.bin
-lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8723cs_xx_config.bin -> rtl8723bs_config.bin
+-rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723cs_xx_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723cs_xx_fw.bin
 lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8723d_config.bin -> rtl8821c_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8723d_fw.bin
@@ -108,6 +127,8 @@ lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8723d_config.bin -> rtl8821c_config.
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8761b_fw.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8761bu_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8761bu_fw.bin
+-rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8761cu_config.bin
+-rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8761cu_fw.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8812ae_fw.bin
 lrwxrwxrwx	root/root	lib/firmware/rtl_bt/rtl8821a_config.bin -> rtl8821c_config.bin
 -rw-r--r--	root/root	lib/firmware/rtl_bt/rtl8821a_fw.bin
