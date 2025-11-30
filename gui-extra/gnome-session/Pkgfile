@@ -13,6 +13,7 @@ set=(gnome)
 
 name=gnome-session
 version=49.2
+release=2
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dman=False -Ddocbook=False"
 
@@ -22,7 +23,7 @@ build=meson
 
 package() {
 # Uneeded duplicated entries
-rm $PKG/usr/share/wayland-sessions/gnome.desktop
+rm $PKG/usr/share/{xsessions,wayland-sessions}/gnome.desktop
 
 install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
