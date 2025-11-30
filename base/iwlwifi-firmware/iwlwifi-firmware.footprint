@@ -1,155 +1,355 @@
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
--rw-r--r--	root/root	lib/firmware/iwlwifi-100-5.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-1000-5.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-105-6.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-135-6.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-2000-6.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-2030-6.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-3160-17.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-3168-29.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-3945-2.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-4965-2.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-5000-5.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-5150-2.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-6000-4.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-6000g2a-6.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-6000g2b-6.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-6050-5.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-7260-17.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-7265-17.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-7265D-29.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-8000C-34.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-8000C-36.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-8265-34.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-8265-36.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-9000-pu-b0-jf-b0-34.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-9000-pu-b0-jf-b0-38.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-9000-pu-b0-jf-b0-46.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-9260-th-b0-jf-b0-34.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-9260-th-b0-jf-b0-38.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-9260-th-b0-jf-b0-46.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-92.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-94.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0.pnvm
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-50.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-cc-a0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-90.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-92.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-94.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0.pnvm
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0.pnvm
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0.pnvm
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-hr-b0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-hr-b0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ma-b0-hr-b0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-78.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-79.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-81.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-84.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf-a0.pnvm
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-78.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-79.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-81.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-84.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0.pnvm
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-79.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-81.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-84.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-59.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-66.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-72.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-73.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-74.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-77.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-78.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-79.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-81.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-83.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-84.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-86.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-89.ucode
--rw-r--r--	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0.pnvm
+drwxr-xr-x	root/root	lib/firmware/intel/
+drwxr-xr-x	root/root	lib/firmware/intel/iwlwifi/
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-100-5.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-1000-5.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-105-6.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-135-6.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-2000-6.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-2030-6.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-3160-17.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-3168-29.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-3945-2.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-4965-2.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-5000-5.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-5150-2.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-6000-4.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-6000g2a-6.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-6000g2b-6.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-6050-5.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-7260-17.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-7265-17.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-7265D-29.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-8000C-34.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-8000C-36.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-8265-34.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-8265-36.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-9000-pu-b0-jf-b0-34.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-9000-pu-b0-jf-b0-38.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-9000-pu-b0-jf-b0-46.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-9260-th-b0-jf-b0-34.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-9260-th-b0-jf-b0-38.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-9260-th-b0-jf-b0-46.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-100.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-101.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-92.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-93.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-94.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-96.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-97.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0-98.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-fm-c0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0-100.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0-92.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0-94.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0-96.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0-97.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0-98.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-gf-a0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-hr-b0-100.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-hr-b0-93.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-hr-b0-96.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-hr-b0-98.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-bz-b0-hr-b0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-50.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-cc-a0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-100.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-101.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-90.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-92.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-94.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-96.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-97.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0-98.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-gl-c0-fm-c0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf-a0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf-a0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf-a0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf-a0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf4-a0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf4-a0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf4-a0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-gf4-a0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-hr-b0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-hr-b0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ma-b0-hr-b0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-sc-a0-wh-b0-101.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-78.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-79.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-81.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-84.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf-a0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-78.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-79.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-81.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-84.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-gf4-a0.pnvm
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-79.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-81.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-84.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-hr-b0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-jf-b0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-jf-b0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-jf-b0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-so-a0-jf-b0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-59.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-66.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-72.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-73.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-74.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-77.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-78.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-79.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-81.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-83.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-84.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-86.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0-89.ucode
+-rw-r--r--	root/root	lib/firmware/intel/iwlwifi/iwlwifi-ty-a0-gf-a0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-100-5.ucode -> intel/iwlwifi/iwlwifi-100-5.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-1000-5.ucode -> intel/iwlwifi/iwlwifi-1000-5.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-105-6.ucode -> intel/iwlwifi/iwlwifi-105-6.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-135-6.ucode -> intel/iwlwifi/iwlwifi-135-6.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-2000-6.ucode -> intel/iwlwifi/iwlwifi-2000-6.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-2030-6.ucode -> intel/iwlwifi/iwlwifi-2030-6.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-3160-17.ucode -> intel/iwlwifi/iwlwifi-3160-17.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-3168-29.ucode -> intel/iwlwifi/iwlwifi-3168-29.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-3945-2.ucode -> intel/iwlwifi/iwlwifi-3945-2.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-4965-2.ucode -> intel/iwlwifi/iwlwifi-4965-2.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-5000-5.ucode -> intel/iwlwifi/iwlwifi-5000-5.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-5150-2.ucode -> intel/iwlwifi/iwlwifi-5150-2.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-6000-4.ucode -> intel/iwlwifi/iwlwifi-6000-4.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-6000g2a-6.ucode -> intel/iwlwifi/iwlwifi-6000g2a-6.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-6000g2b-6.ucode -> intel/iwlwifi/iwlwifi-6000g2b-6.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-6050-5.ucode -> intel/iwlwifi/iwlwifi-6050-5.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-7260-17.ucode -> intel/iwlwifi/iwlwifi-7260-17.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-7265-17.ucode -> intel/iwlwifi/iwlwifi-7265-17.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-7265D-29.ucode -> intel/iwlwifi/iwlwifi-7265D-29.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-8000C-34.ucode -> intel/iwlwifi/iwlwifi-8000C-34.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-8000C-36.ucode -> intel/iwlwifi/iwlwifi-8000C-36.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-8265-34.ucode -> intel/iwlwifi/iwlwifi-8265-34.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-8265-36.ucode -> intel/iwlwifi/iwlwifi-8265-36.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-9000-pu-b0-jf-b0-34.ucode -> intel/iwlwifi/iwlwifi-9000-pu-b0-jf-b0-34.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-9000-pu-b0-jf-b0-38.ucode -> intel/iwlwifi/iwlwifi-9000-pu-b0-jf-b0-38.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-9000-pu-b0-jf-b0-46.ucode -> intel/iwlwifi/iwlwifi-9000-pu-b0-jf-b0-46.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-9260-th-b0-jf-b0-34.ucode -> intel/iwlwifi/iwlwifi-9260-th-b0-jf-b0-34.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-9260-th-b0-jf-b0-38.ucode -> intel/iwlwifi/iwlwifi-9260-th-b0-jf-b0-38.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-9260-th-b0-jf-b0-46.ucode -> intel/iwlwifi/iwlwifi-9260-th-b0-jf-b0-46.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-50.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-59.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-66.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-72.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-73.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-74.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-hr-b0-77.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-hr-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-50.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-59.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-66.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-72.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-73.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-74.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-b0-jf-b0-77.ucode -> intel/iwlwifi/iwlwifi-Qu-b0-jf-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-50.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-59.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-66.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-72.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-73.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-74.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-hr-b0-77.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-hr-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-50.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-59.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-66.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-72.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-73.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-74.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-Qu-c0-jf-b0-77.ucode -> intel/iwlwifi/iwlwifi-Qu-c0-jf-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-50.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-59.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-66.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-72.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-73.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-74.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-hr-b0-77.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-hr-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-50.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-59.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-66.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-72.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-73.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-74.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-QuZ-a0-jf-b0-77.ucode -> intel/iwlwifi/iwlwifi-QuZ-a0-jf-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-100.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-100.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-101.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-101.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-92.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-92.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-93.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-93.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-94.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-94.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-96.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-96.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-97.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-97.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0-98.ucode -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0-98.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-fm-c0.pnvm -> intel/iwlwifi/iwlwifi-bz-b0-fm-c0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0-100.ucode -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0-100.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0-92.ucode -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0-92.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0-94.ucode -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0-94.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0-96.ucode -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0-96.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0-97.ucode -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0-97.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0-98.ucode -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0-98.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-gf-a0.pnvm -> intel/iwlwifi/iwlwifi-bz-b0-gf-a0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-hr-b0-100.ucode -> intel/iwlwifi/iwlwifi-bz-b0-hr-b0-100.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-hr-b0-93.ucode -> intel/iwlwifi/iwlwifi-bz-b0-hr-b0-93.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-hr-b0-96.ucode -> intel/iwlwifi/iwlwifi-bz-b0-hr-b0-96.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-hr-b0-98.ucode -> intel/iwlwifi/iwlwifi-bz-b0-hr-b0-98.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-bz-b0-hr-b0.pnvm -> intel/iwlwifi/iwlwifi-bz-b0-hr-b0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-50.ucode -> intel/iwlwifi/iwlwifi-cc-a0-50.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-59.ucode -> intel/iwlwifi/iwlwifi-cc-a0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-66.ucode -> intel/iwlwifi/iwlwifi-cc-a0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-72.ucode -> intel/iwlwifi/iwlwifi-cc-a0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-73.ucode -> intel/iwlwifi/iwlwifi-cc-a0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-74.ucode -> intel/iwlwifi/iwlwifi-cc-a0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-cc-a0-77.ucode -> intel/iwlwifi/iwlwifi-cc-a0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-100.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-100.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-101.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-101.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-83.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-86.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-90.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-90.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-92.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-92.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-94.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-94.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-96.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-96.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-97.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-97.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0-98.ucode -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0-98.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-gl-c0-fm-c0.pnvm -> intel/iwlwifi/iwlwifi-gl-c0-fm-c0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0-83.ucode -> intel/iwlwifi/iwlwifi-ma-b0-gf-a0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0-86.ucode -> intel/iwlwifi/iwlwifi-ma-b0-gf-a0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0-89.ucode -> intel/iwlwifi/iwlwifi-ma-b0-gf-a0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf-a0.pnvm -> intel/iwlwifi/iwlwifi-ma-b0-gf-a0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0-83.ucode -> intel/iwlwifi/iwlwifi-ma-b0-gf4-a0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0-86.ucode -> intel/iwlwifi/iwlwifi-ma-b0-gf4-a0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0-89.ucode -> intel/iwlwifi/iwlwifi-ma-b0-gf4-a0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-gf4-a0.pnvm -> intel/iwlwifi/iwlwifi-ma-b0-gf4-a0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-hr-b0-83.ucode -> intel/iwlwifi/iwlwifi-ma-b0-hr-b0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-hr-b0-86.ucode -> intel/iwlwifi/iwlwifi-ma-b0-hr-b0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ma-b0-hr-b0-89.ucode -> intel/iwlwifi/iwlwifi-ma-b0-hr-b0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-sc-a0-wh-b0-101.ucode -> intel/iwlwifi/iwlwifi-sc-a0-wh-b0-101.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-72.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-73.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-74.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-77.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-78.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-78.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-79.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-79.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-81.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-81.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-83.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-84.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-84.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-86.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0-89.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf-a0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf-a0.pnvm -> intel/iwlwifi/iwlwifi-so-a0-gf-a0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-72.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-73.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-74.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-77.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-78.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-78.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-79.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-79.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-81.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-81.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-83.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-84.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-84.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-86.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0-89.ucode -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-gf4-a0.pnvm -> intel/iwlwifi/iwlwifi-so-a0-gf4-a0.pnvm
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-72.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-73.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-74.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-77.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-79.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-79.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-81.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-81.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-83.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-84.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-84.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-86.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-hr-b0-89.ucode -> intel/iwlwifi/iwlwifi-so-a0-hr-b0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-72.ucode -> intel/iwlwifi/iwlwifi-so-a0-jf-b0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-73.ucode -> intel/iwlwifi/iwlwifi-so-a0-jf-b0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-74.ucode -> intel/iwlwifi/iwlwifi-so-a0-jf-b0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-so-a0-jf-b0-77.ucode -> intel/iwlwifi/iwlwifi-so-a0-jf-b0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-59.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-59.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-66.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-66.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-72.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-72.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-73.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-73.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-74.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-74.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-77.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-77.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-78.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-78.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-79.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-79.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-81.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-81.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-83.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-83.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-84.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-84.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-86.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-86.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0-89.ucode -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0-89.ucode
+lrwxrwxrwx	root/root	lib/firmware/iwlwifi-ty-a0-gf-a0.pnvm -> intel/iwlwifi/iwlwifi-ty-a0-gf-a0.pnvm
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
