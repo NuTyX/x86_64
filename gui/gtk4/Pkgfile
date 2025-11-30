@@ -18,28 +18,25 @@ set=()
 
 name=gtk4
 version=4.20.3
+release=2
 
 PKGMK_GROUPS=(devel doc lib man)
+PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dbroadway-backend=true \
+-Dtracker=enabled -Dcolord=enabled -Dintrospection=enabled"
+
 source=(https://gitlab.gnome.org/GNOME/gtk/-/archive/$version/gtk-$version.tar.gz)
 
-build() {
-cd gtk-$version
-mkdir build
-cd    build
-
-meson setup ..          \
---prefix=/usr           \
---buildtype=plain       \
---sysconfdir=/etc       \
--Dbroadway-backend=true \
--Dtracker=enabled       \
--Dcolord=enabled        \
--Dintrospection=enabled
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+prepare() {
+ mv gtk-$version $name-$version
 }
+build=meson
 
+package() {
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 /dev/stdin $PKG/usr/share/gtk-4.0/settings.ini << END
+[Settings]
+gtk-icon-theme-name = Adwaita
+gtk-theme-name = Adwaita
+gtk-font-name = Adwaita Sans 11
+END
+}
