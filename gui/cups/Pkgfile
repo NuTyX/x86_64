@@ -15,7 +15,7 @@ PKGMK_GROUPS=(devel man lib)
 
 name=cups
 version=2.4.14
-release=1
+release=2
 
 source=(https://github.com/OpenPrinting/cups/releases/download/v${version}/$name-$version-source.tar.gz
         99-printer.rules)
@@ -45,14 +45,14 @@ build() {
 	./configure --libdir=/usr/lib \
 		--with-rcdir=/tmp/cupsinit \
 		--with-system-groups=lpadmin \
-		--with-docdir=/usr/share/cups/doc-$version \
+		--with-docdir=/usr/share/cups/doc \
 		--disable-libusb
 	make
 	make BUILDROOT=$PKG install
 
 	rm -rf $PKG/tmp
 	mkdir -p $PKG/usr/share/doc
-	ln -svnf ../cups/doc-$version $PKG/usr/share/doc/cups-$version
+	ln -svnf ../cups/doc $PKG/usr/share/doc/cups
 	
 	# Lanceur
 	if [ ! -f $PKG/usr/share/applications/cups.desktop ]; then
