@@ -20,14 +20,15 @@ set=(core)
 
 name=systemd
 version=258.2
+release=2
 
-source=(consolidate-2.patch
+source=(consolidate-3.patch
         https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 
 prepare() {
 cd $name-$version
-patch -Np1 -i ../consolidate-2.patch
+patch -Np1 -i ../consolidate-3.patch
 }
 build() {
 cd $name-$version
