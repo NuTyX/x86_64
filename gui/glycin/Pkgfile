@@ -4,6 +4,13 @@ url="http://www.gtkmm.org"
 packager="tnut <tnut@nutyx.org>"
 contributors=""
 
+# Circular dependencies
+# when glycin needs to be update
+# 1/ rebuild gdk-pixbuf with PKGMK_MESON_OPTIONS="-Dothers=enabled -Dglycin=disabled"
+# 2/ upgrade glycin
+# 3/ rebuild gdk-pixbuf with PKGMK_MESON_OPTIONS="-Dbuiltin_loaders=glycin -Dthumbnailer=disabled \
+#    -Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled"
+
 makedepends=(meson ninja xorg-fontconfig libjxl
              libheif lcms2 libseccomp rustc gtk4)
 
