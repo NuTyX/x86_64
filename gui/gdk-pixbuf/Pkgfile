@@ -4,15 +4,27 @@ url="http://www.gtk.org/"
 contributors="Greg,Pierre,Jayce,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(gobject-introspection jasper xorg-libxcomposite libtiff
-             libpng libjpeg-turbo meson ninja)
+# Circular dependencies
+# when glycin needs to be update
+# 1/ rebuild gdk-pixbuf with PKGMK_MESON_OPTIONS="-Dothers=enabled -Dglycin=disabled"
+#    and comment PKGMK_DEPENDS
+# 2/ upgrade glycin
+# 3/ rebuild gdk-pixbuf with PKGMK_MESON_OPTIONS="-Dbuiltin_loaders=glycin -Dthumbnailer=disabled \
+#    -Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled"
+#    uncomment PKGMK_DEPENDS
+
+makedepends=(gobject-introspection meson ninja
+            lcms2 xorg-fontconfig libseccomp)
 run=(shared-mime-info)
 
 name=gdk-pixbuf
 version=2.44.4
-release=1
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
-PKGMK_MESON_OPTIONS="-Dothers=enabled -Dglycin=disabled"
+# PKGMK_MESON_OPTIONS="-Dothers=enabled -Dglycin=disabled"
+PKGMK_DEPENDS=(glycin)
+PKGMK_MESON_OPTIONS="-Dbuiltin_loaders=glycin -Dthumbnailer=disabled \
+-Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled"
 
 build=meson
