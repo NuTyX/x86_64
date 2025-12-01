@@ -11,6 +11,7 @@ makedepends=(readline dbus libical libvorbis alsa-lib
 
 name=bluez
 version=5.85
+release=2
 
 PKGMK_GROUPS=(man devel doc)
 
@@ -69,8 +70,8 @@ install -m644 profiles/network/network.conf \
 	profiles/input/input.conf \
 	$PKG/etc/bluetooth
 
-install -v -dm755 $PKG/usr/share/doc/$name-$version
-install -v -m644 doc/*.txt $PKG/usr/share/doc/$name-$version
+install -v -dm755 $PKG/usr/share/doc/$name
+install -v -m644 doc/*.txt $PKG/usr/share/doc/$name
 
 install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 install -Dm644 COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
