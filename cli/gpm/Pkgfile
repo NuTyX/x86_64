@@ -1,25 +1,25 @@
 description="General Purpose Mouse: mouse server for the console and xterm."
 url="https://unix.schottelius.org/gpm"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnu@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(autoconf automake m4 libtool sed grep bison)
 name=gpm
 version=1.20.7
-release=11
+release=12
 
 scriptsversion=20250125
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
-	    gpm-1.20.7-consolidated-1.patch
+	    gpm-1.20.7-consolidated-1.patch gpm-1.20.7-gcc15_fixes-1.patch
 	    http://www.nico.schottelius.org/software/$name/archives/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
 
 	patch -Np1 -i ../gpm-1.20.7-consolidated-1.patch
-
+          patch -Np1 -i ../gpm-1.20.7-gcc15_fixes-1.patch
 	./autogen.sh
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
