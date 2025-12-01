@@ -1,8 +1,8 @@
 description="HTTP and reverse proxy, mail proxy, and a generic TCP/UDP proxy server"
 url="https://nginx.org/en/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 maintainer="http://hg.nginx.org/nginx"
 
@@ -11,6 +11,7 @@ PKGMK_GROUPS=(man)
 
 name=nginx
 version=1.28.0
+release=2
 
 scripts_version=20250201
 
