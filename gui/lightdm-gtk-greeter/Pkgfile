@@ -1,18 +1,18 @@
 description="Gtk greeter for lightdm"
 url="https://en.wikipedia.org/wiki/LightDM"
 
-packager="spiky <spiky@nutyx.org>"
-contributor="Rems, Dania"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems, Dania, Spiky"
 
 set=(lightdm)
 
 makedepends=(autoconf automake m4 xfce4-dev-tools
-             lightdm exo gobject-introspection)
+             glycin lightdm exo gobject-introspection)
 
 
 name=lightdm-gtk-greeter
 version=2.0.9
-release=3
+release=4
 
 makedepends=(lightdm exo gobject-introspection)
 
@@ -39,10 +39,10 @@ CFLAGS+=" -Wno-declaration-after-statement \
 --disable-libido \
 --disable-libindicator \
 --disable-static \
---docdir=/usr/share/doc/lightdm-gtk-greeter-$version
+--docdir=/usr/share/doc/$name
 
 make
 make DESTDIR=$PKG install
-sed -i "s@#background=@background=/usr/share/backgrounds/nutyx/nutyx-10.0.jpg@" \
+sed -i "s@#background=@background=/usr/share/backgrounds/nutyx/nutyx-black.jpg@" \
 $PKG/etc/lightdm/lightdm-gtk-greeter.conf
 }
