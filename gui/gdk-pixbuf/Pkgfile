@@ -1,17 +1,16 @@
 description="Toolkit for image loading and pixel buffer manipulation."
-url="http://www.gtk.org/"
+url="https://wiki.gnome.org/Projects/GdkPixbuf"
 
-contributors="Greg,Pierre,Jayce,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Pierre,Jayce,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 # Circular dependencies
-# when glycin needs to be update
-# 1/ rebuild gdk-pixbuf with PKGMK_MESON_OPTIONS="-Dothers=enabled -Dglycin=disabled"
-#    and comment PKGMK_DEPENDS
-# 2/ upgrade glycin
-# 3/ rebuild gdk-pixbuf with PKGMK_MESON_OPTIONS="-Dbuiltin_loaders=glycin -Dthumbnailer=disabled \
-#    -Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled"
-#    uncomment PKGMK_DEPENDS
+# when gdk-pixbuf needs to be update
+# 1/ uncomment PKGMK_MESON_OPTIONS+= and comment prepare function
+# 2/ (re)build gdk-pixbuf
+# 3/ rebuild glycin as normal
+# 4/ comment PKGMK_MESON_OPTIONS+= and uncomment prepare function
+# 5/ rebuild gdk-pixbuf
 
 makedepends=(gobject-introspection meson ninja
             lcms2 xorg-fontconfig libseccomp)
@@ -22,9 +21,15 @@ version=2.44.4
 release=2
 
 source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
-# PKGMK_MESON_OPTIONS="-Dothers=enabled -Dglycin=disabled"
-PKGMK_DEPENDS=(glycin)
+
 PKGMK_MESON_OPTIONS="-Dbuiltin_loaders=glycin -Dthumbnailer=disabled \
--Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled"
+-Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled -D installed_tests=false \
+-Dothers=enabled --wrap-mode=nofallback"
+
+# PKGMK_MESON_OPTIONS+=" -Dglycin=disabled"
+prepare() {
+  pkgadd ${PKGMK_PACKAGE_DIR}/glycin.cards-*
+  pkgadd ${PKGMK_PACKAGE_DIR}/glycin.devel.cards-*
+}
 
 build=meson
