@@ -1,12 +1,13 @@
 description='NVIDIA modules for the 6.6 longterm support Linux Kernel version.'
 url='https://www.nvidia.com/en-us/drivers/unix/'
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 license="custom"
 
 name=nvidia-kernel-66
-version=570.172.08
+version=580.105.08
 
 run=(kernel-66)
 KERNELNAME="${name#nvidia-}"
