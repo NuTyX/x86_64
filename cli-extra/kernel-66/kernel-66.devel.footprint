@@ -12,6 +12,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/
 -rw-rw-r--	root/root	usr/src/kernel-66/.clang-format
 -rw-rw-r--	root/root	usr/src/kernel-66/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel-66/.config
+-rw-r--r--	root/root	usr/src/kernel-66/.config.old
 -rw-rw-r--	root/root	usr/src/kernel-66/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel-66/.gitattributes
 -rw-rw-r--	root/root	usr/src/kernel-66/.gitignore
@@ -9110,7 +9111,7 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULES_TREE_LOOKUP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULES_USE_ELF_RELA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULE_ALLOW_MISSING_NAMESPACE_IMPORTS (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULE_COMPRESS_XZ (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULE_COMPRESS_ZSTD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULE_DEBUGFS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULE_FORCE_LOAD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/MODULE_FORCE_UNLOAD (EMPTY)
@@ -10561,7 +10562,6 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/QUOTA_TREE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/R6040 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/R8169 (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-66/include/config/R8712U (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/RADIO_ADAPTERS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/RADIO_MAXIRADIO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/RADIO_SAA7706H (EMPTY)
@@ -15099,6 +15099,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/include/linux/amba/
 -rw-rw-r--	root/root	usr/src/kernel-66/include/linux/arm_ffa.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/linux/arm_sdei.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/linux/armada-37xx-rwtm-mailbox.h
+-rw-r--r--	root/root	usr/src/kernel-66/include/linux/array_size.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/linux/ascii85.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/linux/asn1.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/linux/asn1_ber_bytecode.h
@@ -28693,6 +28694,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/mlxsw
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/mlxsw/vxlan_flooding.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/mlxsw/vxlan_ipv6.sh
 drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/Makefile
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/devlink.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/devlink_in_netns.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/devlink_trap.sh
@@ -28706,6 +28708,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netde
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/hw_stats_l3.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/nexthop.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/psample.sh
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/settings
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/tc-mq-visibility.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/netdevsim/udp_tunnel_nic.sh
 drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/drivers/net/ocelot/
