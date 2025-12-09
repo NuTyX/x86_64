@@ -4,32 +4,18 @@ url="https://wiki.gnome.org/Projects/GdkPixbuf"
 contributors="Greg,Pierre,Jayce,Spiky"
 packager="tnut <tnut@nutyx.org>"
 
-# Circular dependencies
-# when gdk-pixbuf needs to be update
-# 1/ uncomment PKGMK_MESON_OPTIONS+= and comment prepare function
-# 2/ (re)build gdk-pixbuf
-# 3/ rebuild glycin as normal
-# 4/ comment PKGMK_MESON_OPTIONS+= and uncomment prepare function
-# 5/ rebuild gdk-pixbuf
-
 makedepends=(gobject-introspection meson ninja
-            lcms2 xorg-fontconfig libseccomp)
+            lcms2 xorg-fontconfig libseccomp libglycin)
 run=(shared-mime-info)
 
 name=gdk-pixbuf
 version=2.44.4
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 PKGMK_MESON_OPTIONS="-Dbuiltin_loaders=glycin -Dthumbnailer=disabled \
 -Dpng=disabled -Dtiff=disabled -Djpeg=disabled -Dgif=disabled -D installed_tests=false \
 -Dothers=enabled --wrap-mode=nofallback"
-
-# PKGMK_MESON_OPTIONS+=" -Dglycin=disabled"
-prepare() {
-  pkgadd ${PKGMK_PACKAGE_DIR}/glycin.cards-*
-  pkgadd ${PKGMK_PACKAGE_DIR}/glycin.devel.cards-*
-}
 
 build=meson
