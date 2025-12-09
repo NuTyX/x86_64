@@ -1,0 +1,22 @@
+description="It contains the libraries of the glycin package."
+url="https://gnome.pages.gitlab.gnome.org/glycin/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors=""
+
+makedepends=(meson ninja xorg-fontconfig gobject-introspection
+             rustc libseccomp lcms2 libheif)
+
+name=libglycin
+version=2.0.7
+
+source=(https://download.gnome.org/sources/glycin/${version%.*}/glycin-$version.tar.xz)
+
+PKGMK_MESON_OPTIONS="-Dlibglycin-gtk4=false -Dintrospection=false -Dglycin-loaders=false \
+-Dvapi=false -Dglycin-thumbnailer=false"
+
+prepare() {
+ mv glycin-$version libglycin-$version
+}
+
+build=meson
