@@ -7,14 +7,13 @@ contributors="Rems, Dania, Spiky"
 set=(lightdm)
 
 makedepends=(autoconf automake m4 xfce4-dev-tools
-             glycin lightdm exo gobject-introspection)
-
+             lightdm exo gobject-introspection)
+run=(glycin)
 
 name=lightdm-gtk-greeter
 version=2.0.9
-release=4
+release=5
 
-makedepends=(lightdm exo gobject-introspection)
 
 source=(https://github.com/Xubuntu/lightdm-gtk-greeter/archive/lightdm-gtk-greeter-$version.tar.gz)
 
