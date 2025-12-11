@@ -13,12 +13,10 @@ PKGMK_GROUPS=(devel doc)
 name=kernel-618
 version=6.18
 release=1
-
 _version=${version%.*}
 [ "${version:0:1}" == "${version%.*}" ] && _version=$version
-
 alias=(linux-618)
-INITRD="kernel-${name/*-/}"
+INITRD="initrd-${name/*-/}"
 
 source=($url/pub/linux/kernel/v${version:0:1}.x/linux-${_version}.tar.xz config)
 if [ "${_version}" != "${version}" ]; then
@@ -56,8 +54,7 @@ depmod -b $PKG -a $KERNELRELEASE
 
 cp System.map $PKG/boot/System.map-$KERNELRELEASE
 cp .config $PKG/boot/config-$KERNELRELEASE
-cp $IMAGENAME $PKG/boot/$KERNEL
-ln -sf $KERNEL $PKG/boot/$name
+cp $IMAGENAME $PKG/boot/$name
 
 mv $SRC/linux-${_version} $PKG/usr/src/$name
 ln -sv $name $PKG/usr/src/linux-${_version}
@@ -67,7 +64,7 @@ $PKG/usr/share/doc/$name
 # Reorganise files
 cd $PKG/usr/lib/modules
 mv $KERNELRELEASE $name
-ln -sv $name $PKG/usr/lib/modules/$KERNELRELEASE
+ln -sv $name $KERNELRELEASE
 
 rm $KERNELRELEASE/build
 ln -sv /usr/src/$name $KERNELRELEASE/build

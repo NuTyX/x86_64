@@ -1,5 +1,5 @@
-if [ -f boot/kernel-618 ]; then
+if [ -f boot/initrd-618 ]; then
     mkinitramfs 6.18.0-1-nutyx
-    rm boot/kernel-618
-    mv boot/initrd-6.18.0-1-nutyx boot/kernel-618
+    rm boot/initrd-618
+    mv boot/initrd-6.18.0-1-nutyx boot/initrd-618
 fi
