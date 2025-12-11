@@ -24,6 +24,13 @@ lrwxrwxrwx	root/root	sbin/generate-nutyx -> install-nutyx
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system-preset/
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/10-networkd.preset
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/20-resolved.preset
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/30-getty.preset
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/40-time.preset
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/50-journald.preset
+-rw-r--r--	root/root	usr/lib/systemd/system-preset/80-disable-all.preset
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/setup-nutyx.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/sysinit.target.wants/

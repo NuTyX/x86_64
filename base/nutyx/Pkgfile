@@ -9,7 +9,7 @@ makedepends=(zstd util-linux)
 set=(chroot)
 
 name=nutyx
-version=25.12.0
+version=25.12.1
 release=1
 
 # nutyx patch version
@@ -28,10 +28,31 @@ cd $name-$version
 make DESTDIR=$PKG install
 
 install -d -m 755 $PKG/usr/lib/systemd/system/sysinit.target.wants
-
 install -m 644 ../setup-nutyx.service \
   $PKG/usr/lib/systemd/system
 ln -sv ../setup-nutyx.service \
 $PKG/usr/lib/systemd/system/sysinit.target.wants 
 
+install -d -m 755 $PKG/usr/lib/systemd/system-preset
+echo "enable systemd-networkd.service
+enable systemd-networkd-wait-online.service
+enable systemd-network-generator.service" > \
+$PKG/usr/lib/systemd/system-preset/10-networkd.preset
+
+echo "enable systemd-resolved
+enable systemd-resolved.service" > \
+$PKG/usr/lib/systemd/system-preset/20-resolved.preset
+
+echo "enable getty@.service
+enable console-getty.service" > \
+$PKG/usr/lib/systemd/system-preset/30-getty.preset
+
+echo "enable systemd-timesyncd.service" > \
+$PKG/usr/lib/systemd/system-preset/40-time.preset
+
+echo "enable systemd-journald-audit.socket" > \
+$PKG/usr/lib/systemd/system-preset/50-journald.preset
+
+echo "disable *" > \
+$PKG/usr/lib/systemd/system-preset/80-disable-all.preset
 }
