@@ -1,0 +1,107 @@
+description='The 6.18 longterm support linux kernel version'
+url='https://www.kernel.org'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+makedepends=(bison flex perl gmp mpc libelf diffutils tar)
+run=(nutyx kmod busybox)
+
+PKGMK_IGNORE_UNPACK="yes"
+PKGMK_NO_STRIP="yes"
+PKGMK_GROUPS=(devel doc)
+
+name=kernel-618
+version=6.18
+release=1
+
+_version=${version%.*}
+[ "${version:0:1}" == "${version%.*}" ] && _version=$version
+
+alias=(linux-618)
+INITRD="kernel-${name/*-/}"
+
+source=($url/pub/linux/kernel/v${version:0:1}.x/linux-${_version}.tar.xz config)
+if [ "${_version}" != "${version}" ]; then
+  patchname="patch-$version.xz"
+  source+=" $url/pub/linux/kernel/v${version:0:1}.x/$patchname"
+fi
+
+prepare() {
+mkdir -p $PKG/{boot,usr/{share/doc,src,lib/modules}}
+bsdtar -p -o -C $SRC -xf linux-${_version}.tar.xz
+cd linux-${_version}
+
+[ -f $SRC/patch-$version.xz ] && \
+xz -d -c  $SRC/patch-$version.xz | patch -Np1
+
+echo "-$release-nutyx" > localversion
+
+cp ../config .config
+make olddefconfig
+diff -u ../config .config || true
+}
+
+build() {
+cd linux-${_version}
+KERNELRELEASE=$(make -s kernelrelease)
+IMAGENAME=$(make -s image_name)
+# make menuconfig
+make
+cp .config ${PKGMK_ROOT}/config
+ZSTD_CLEVEL=19                 \
+make INSTALL_MOD_PATH=$PKG/usr \
+INSTALL_MOD_STRIP=1            \
+DEPMOD=/dev/null modules_install
+depmod -b $PKG -a $KERNELRELEASE
+
+cp System.map $PKG/boot/System.map-$KERNELRELEASE
+cp .config $PKG/boot/config-$KERNELRELEASE
+cp $IMAGENAME $PKG/boot/$KERNEL
+ln -sf $KERNEL $PKG/boot/$name
+
+mv $SRC/linux-${_version} $PKG/usr/src/$name
+ln -sv $name $PKG/usr/src/linux-${_version}
+mv $PKG/usr/src/$name/Documentation \
+$PKG/usr/share/doc/$name
+
+# Reorganise files
+cd $PKG/usr/lib/modules
+mv $KERNELRELEASE $name
+ln -sv $name $PKG/usr/lib/modules/$KERNELRELEASE
+
+rm $KERNELRELEASE/build
+ln -sv /usr/src/$name $KERNELRELEASE/build
+
+# Firmware are in linux-firmware
+rm -rf $PKG/lib/firmware
+
+# post-install autogen
+echo "if [ -f boot/$INITRD ]; then
+    mkinitramfs $KERNELRELEASE
+    rm boot/$INITRD
+    mv boot/initrd-$KERNELRELEASE boot/$INITRD
+fi" > $PKGMK_ROOT/$name.post-install
+
+}
+devel() {
+cd $PKG
+rm -r usr/src/linux-${_version}/{block,drivers,fs,ipc,init,net,mm,samples,security,sound,virt}
+find  usr/src/linux-${_version}/ -type f -name "*.o"  \
+-o -name "*.ko" -o -name "*.cmd" -o -name "*.gcno" -delete
+mv usr/src/linux-${_version}/arch/x86 usr/src/linux-${_version}/arch/.x86
+rm -rf usr/src/linux-${_version}/arch/*
+mv usr/src/linux-${_version}/arch/.x86 usr/src/linux-${_version}/arch/x86
+
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
+usr/src
+rm -r usr/src
+}
+
+doc() {
+cd $PKG
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/$name.doc${PKGMK_PACKAGE_EXT}$version-$release \
+usr/share/doc/$name
+rm -r usr/share
+}
