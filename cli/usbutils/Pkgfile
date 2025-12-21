@@ -10,8 +10,7 @@ makedepends=(systemd python meson ninja libusb-compat)
 run=(hwdata)
 
 name=usbutils
-version=018
-release=2
+version=019
 
 source=(http://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-$version.tar.xz)
 
