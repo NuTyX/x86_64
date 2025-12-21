@@ -2,16 +2,16 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.14/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/WHEEL
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/licenses/CONTRIBUTORS.txt
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-3.3.11.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/WHEEL
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/licenses/CONTRIBUTORS.txt
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid-4.0.2.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pkginfo__.py
@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/__pkginfo__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/_ast.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/_backport_stdlib_names.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/arguments.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/astroid_manager.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/bases.cpython-314.pyc
@@ -43,7 +42,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/typing.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/__pycache__/util.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/_ast.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/_backport_stdlib_names.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/arguments.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/astroid_manager.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/bases.py
@@ -71,7 +69,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_mechanize.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_multiprocessing.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_namedtuple_enum.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_nose.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_numpy_core_einsumfunc.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_numpy_core_fromnumeric.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_numpy_core_function_base.cpython-314.pyc
@@ -96,6 +93,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_six.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_sqlalchemy.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_ssl.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_statistics.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_subprocess.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_threading.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/brain_type.cpython-314.pyc
@@ -123,7 +121,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_mechanize.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_multiprocessing.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_namedtuple_enum.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_nose.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_numpy_core_einsumfunc.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_numpy_core_fromnumeric.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_numpy_core_function_base.py
@@ -148,6 +145,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/astroid/brain/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_six.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_sqlalchemy.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_ssl.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_statistics.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_subprocess.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_threading.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/astroid/brain/brain_type.py
