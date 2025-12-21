@@ -6,26 +6,20 @@ contributors="Pierre B, tnut"
 
 licence="GPL-2.0-or-later"
 
-makedepends=(autoconf automake m4 libtool libdvdread)
+makedepends=(meson libdvdread)
 
 name=libdvdnav
-version=6.1.1
-release=3
+version=7.0.0
 
-source=(https://download.videolan.org/videolan/$name/$version/$name-$version.tar.bz2)
+source=(https://get.videolan.org/$name/$version/$name-$version.tar.xz)
 
-build() {
+prepre() {
 cd $name-$version
+sed -i "/get_option/s/libdvdnav/&-7.0.0/" meson.build
+}
 
-autoreconf -fi
+build=meson
 
-./configure --prefix=/usr \
---disable-static \
---docdir=/usr/share/doc/$name
-
-make
-make DESTDIR=$PKG install
-
-# Obsolet lib
-rm $PKG/usr/lib/$name.la
+package() {
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
