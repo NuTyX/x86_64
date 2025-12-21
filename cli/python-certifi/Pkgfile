@@ -3,8 +3,8 @@ url="https://pypi.python.org/pypi/certifi"
 
 license="MPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -12,7 +12,7 @@ name=python-certifi
 _name=certifi
 alias=(${_name})
 
-version=2025.10.05
+version=2025.11.12
 
 PKGMK_KEEP_SOURCES="no"
 
