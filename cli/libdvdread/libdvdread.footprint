@@ -1,13 +1,10 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libdvdread.so -> libdvdread.so.8.0.0
-lrwxrwxrwx	root/root	usr/lib/libdvdread.so.8 -> libdvdread.so.8.0.0
--rwxr-xr-x	root/root	usr/lib/libdvdread.so.8.0.0
+-rw-r--r--	root/root	usr/lib/libdvdread.a
+lrwxrwxrwx	root/root	usr/lib/libdvdread.so -> libdvdread.so.8
+lrwxrwxrwx	root/root	usr/lib/libdvdread.so.8 -> libdvdread.so.8.1.0
+-rwxr-xr-x	root/root	usr/lib/libdvdread.so.8.1.0
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/libdvdread/
--rw-r--r--	root/root	usr/share/libdvdread/AUTHORS
--rw-r--r--	root/root	usr/share/libdvdread/COPYING
--rw-r--r--	root/root	usr/share/libdvdread/ChangeLog
--rw-r--r--	root/root	usr/share/libdvdread/NEWS
--rw-r--r--	root/root	usr/share/libdvdread/README.md
--rw-r--r--	root/root	usr/share/libdvdread/TODO
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/libdvdread/
+-rw-r--r--	root/root	usr/share/licenses/libdvdread/COPYING
