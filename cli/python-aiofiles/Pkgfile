@@ -4,14 +4,13 @@ url='https://pypi.org/project/aiofiles/'
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(python-setuptools python-wheel python-hatchling)
+makedepends=(python-setuptools python-wheel python-hatchling python-hatch-vcs)
 
 name=python-aiofiles
 _name="aiofiles"
 alias=(${_name})
 
-version=24.1.0
-release=6
+version=25.1.0
 
 source=(https://github.com/Tinche/aiofiles/archive/v$version/$name-$version.tar.gz)
 
@@ -19,6 +18,7 @@ build() {
 
   cd ${_name}-$version
 
+SETUPTOOLS_SCM_PRETEND_VERSION=$version \
   pip3 wheel -w dist \
     --no-build-isolation \
     --no-deps $PWD
