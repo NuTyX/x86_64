@@ -1770,6 +1770,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/compile/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/testdata/script/embedbad.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/testdata/script/issue70173.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/testdata/script/issue73947.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/compile/testdata/script/issue75461.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/testdata/script/script_test_basics.txt
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/covdata/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/covdata/argsmerge.go
@@ -5687,8 +5688,6 @@ drwxr-xr-x	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_generic.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_loong64.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_loong64.s
--rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_mips64x.s
--rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_mipsx.s
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_ppc64x.s
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/subtle/xor_riscv64.s
 drwxr-xr-x	root/root	usr/lib/go/src/crypto/internal/fips140/tls12/
@@ -15016,6 +15015,7 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7023.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7550.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue75569.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7590.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue76008.go
 drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/a.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/b.go
