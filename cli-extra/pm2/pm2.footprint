@@ -7,8 +7,6 @@ lrwxrwxrwx	root/root	usr/bin/pm2-runtime -> ../lib/node_modules/pm2/bin/pm2-runt
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/node_modules/
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/
-drwxr-xr-x	root/root	usr/lib/node_modules/pm2/.claude/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/.claude/settings.local.json
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/.gitattributes
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/.mocharc.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/CHANGELOG.md
@@ -25,6 +23,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/bin/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/bin/pm2.ps1
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/bun.lock
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/constants.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/e2e_time
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/index.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/API.js
@@ -2885,7 +2884,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/js-git/test/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/js-git/test/test-pack-ops.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/js-git/test/test-zlib.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/js-yaml/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/js-yaml/CHANGELOG.md
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/js-yaml/LICENSE
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/js-yaml/README.md
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/js-yaml/bin/
@@ -4554,7 +4552,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/safer-buffer/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/safer-buffer/safer.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/safer-buffer/tests.js
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/sax/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/sax/LICENSE
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/sax/LICENSE.md
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/sax/README.md
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/node_modules/sax/lib/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/node_modules/sax/lib/sax.js
