@@ -10,10 +10,9 @@ name=pyproject-metadata
 _name="pyproject-metadata"
 alias=(${_name})
 
-version=0.7.1
-release=5
+version=0.10.0
 
-source=(https://files.pythonhosted.org/packages/source/p/pyproject-metadata/$name-$version.tar.gz)
+source=(https://github.com/pypa/pyproject-metadata/archive/refs/tags/$version.tar.gz)
 
 build() {
 
