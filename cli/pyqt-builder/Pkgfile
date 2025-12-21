@@ -3,8 +3,8 @@ url='https://pypi.org/project/PyQt-builder/'
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-setuptools python-wheel sip)
 
@@ -12,7 +12,7 @@ name=pyqt-builder
 _name="pyqt_builder"
 alias=(${_name})
 
-version=1.19.0
+version=1.19.1
 
 source=(https://pypi.io/packages/source/p/pyqt_builder/pyqt_builder-$version.tar.gz)
 
