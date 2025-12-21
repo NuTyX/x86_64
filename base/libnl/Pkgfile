@@ -9,10 +9,10 @@ contributors="Pierre,Tnut"
 makedepends=(bison flex)
 
 name=libnl
-version=3.11.0
+version=3.12.0
 
-source=(https://github.com/thom311/libnl/releases/download/libnl3_11_0/$name-doc-$version.tar.gz
-        https://github.com/thom311/libnl/releases/download/libnl3_11_0/$name-$version.tar.gz)
+source=(https://github.com/thom311/libnl/releases/download/libnl3_12_0/$name-doc-$version.tar.gz
+        https://github.com/thom311/libnl/releases/download/libnl3_12_0/$name-$version.tar.gz)
 build() {
 cd $name-$version
 ./configure --prefix=/usr \
