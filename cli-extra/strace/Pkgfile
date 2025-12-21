@@ -1,14 +1,14 @@
 description="A diagnostic, debugging and instructional userspace tracer"
 url="https://strace.io/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 license="GPL"
 
 makedepends=(perl libunwind)
 
 name=strace
-version=6.17
+version=6.18
 
 source=(https://github.com/strace/strace/releases/download/v${version}/$name-$version.tar.xz)
 
