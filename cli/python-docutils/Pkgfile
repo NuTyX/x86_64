@@ -1,8 +1,8 @@
 description="Set of tools for processing plaintext docs into formats such as HTML, XML, or LaTeX"
 url="http://docutils.sourceforge.net"
 
-contributors="Rocket,Greg,Rems,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Rocket,Greg,Rems,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -10,11 +10,9 @@ name=python-docutils
 _name="docutils"
 alias=(${_name})
 
-version=0.22.2
-release=1
+version=0.22.4
 
-source=(
-https://files.pythonhosted.org/packages/4a/c0/89fe6215b443b919cb98a5002e107cb5026854ed1ccb6b5833e0768419d1/docutils-$version.tar.gz)
+source=(https://downloads.sourceforge.net/docutils/docutils-$version.tar.gz)
 
 build() {
 
