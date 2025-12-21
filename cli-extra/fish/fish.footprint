@@ -1076,6 +1076,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cache_sourced_completions.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cached.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cancel_commandline.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_canonicalize_builtin.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_change_key_bindings.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cmd__complete_args.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_commandline_is_singlequoted.fish
@@ -1129,6 +1130,9 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_crux_packages.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cursor_konsole.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cursor_xterm.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_data_list_files.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_data_with_directory.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_data_with_file.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_describe_command.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_echo.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_edit_command_if_at_cursor.fish
@@ -1141,10 +1145,13 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_first_token.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_git_repository.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_nth_token.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_is_standalone.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_switch.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_token_n.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_zfs_feature_enabled.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_list_current_token.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_locale_vars.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_macos_set_env.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_make_cache_dir.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_make_completion_signals.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_man_page.fish
@@ -1227,6 +1234,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_vcs_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_whatis.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_whatis_current_token.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_with_status.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__ssh_history_completions.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__terlar_git_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/_validate_int.fish
@@ -1371,6 +1379,7 @@ drwxr-xr-x	root/root	usr/share/fish/man/man1/
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_should_add_to_history.1
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_status_to_signal.1
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_svn_prompt.1
+-rw-r--r--	root/root	usr/share/fish/man/man1/fish_tab_title.1
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_title.1
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_update_completions.1
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_vcs_prompt.1
@@ -1439,7 +1448,6 @@ drwxr-xr-x	root/root	usr/share/fish/man/man1/
 -rw-r--r--	root/root	usr/share/fish/man/man1/while.1
 drwxr-xr-x	root/root	usr/share/fish/tools/
 -rwxr-xr-x	root/root	usr/share/fish/tools/create_manpage_completions.py
--rwxr-xr-x	root/root	usr/share/fish/tools/deroff.py
 drwxr-xr-x	root/root	usr/share/fish/tools/web_config/
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/favicon.png
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/fishconfig.css

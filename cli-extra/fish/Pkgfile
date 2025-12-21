@@ -3,13 +3,13 @@ url="https://fishshell.com/"
 
 license="GPL2 LGPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg,Fanch,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Fanch,Remy,Tnut"
 
 makedepends=(cmake rustc doxygen)
 
 name=fish
-version=4.1.2
+version=4.2.1
 
 source=(https://github.com/fish-shell/fish-shell/releases/download/$version/$name-$version.tar.xz)
 
