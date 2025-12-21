@@ -183,6 +183,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/cmdline-opts/
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/keepalive-time.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/key-type.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/key.md
+-rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/knownhosts.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/krb.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/libcurl.md
 -rw-r--r--	root/root	usr/share/doc/curl/cmdline-opts/limit-rate.md
@@ -357,6 +358,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/cmdline-opts/
 -rw-r--r--	root/root	usr/share/doc/curl/curl-config.1
 -rw-r--r--	root/root	usr/share/doc/curl/curl-config.md
 drwxr-xr-x	root/root	usr/share/doc/curl/examples/
+-rw-r--r--	root/root	usr/share/doc/curl/examples/.checksrc
 drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/10-at-a-time.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/address-scope.Po
@@ -417,6 +419,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/ipv6.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/keepalive.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/localport.Po
+-rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/log_failed_transfers.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/maxconnects.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/multi-app.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/multi-debugcallback.Po
@@ -465,6 +468,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/smtp-tls.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/smtp-vrfy.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/sslbackend.Po
+-rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/synctime.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/unixsocket.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/url2file.Po
 -rw-r--r--	root/root	usr/share/doc/curl/examples/.deps/urlapi.Po
@@ -545,6 +549,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/ipv6.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/keepalive.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/localport.c
+-rw-r--r--	root/root	usr/share/doc/curl/examples/log_failed_transfers.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/maxconnects.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/multi-app.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/multi-debugcallback.c
@@ -748,6 +753,10 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_info_read.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_init.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_init.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_notify_disable.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_notify_disable.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_notify_enable.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_notify_enable.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_perform.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_perform.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/curl_multi_poll.3
@@ -1028,6 +1037,10 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_MAX_TOTAL_CONNECTIONS.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NETWORK_CHANGED.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NETWORK_CHANGED.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NOTIFYDATA.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NOTIFYDATA.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NOTIFYFUNCTION.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_NOTIFYFUNCTION.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PIPELINING.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PIPELINING.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PIPELINING_SERVER_BL.3
@@ -1688,7 +1701,6 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/testcurl.1
 -rw-r--r--	root/root	usr/share/doc/curl/testcurl.md
 drwxr-xr-x	root/root	usr/share/doc/curl/tests/
--rw-r--r--	root/root	usr/share/doc/curl/tests/CI.md
 -rw-r--r--	root/root	usr/share/doc/curl/tests/FILEFORMAT.md
 -rw-r--r--	root/root	usr/share/doc/curl/tests/HTTP.md
 -rw-r--r--	root/root	usr/share/doc/curl/tests/TEST-SUITE.md

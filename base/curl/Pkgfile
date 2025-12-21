@@ -2,14 +2,14 @@ description="Utility for transferring files with URL syntax to many protocols"
 url="http://curl.haxx.se"
 
 maintainer="Daniel Stenberg"
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 license="MIT"
 
 makedepends=(openssl libidn2 libpsl zlib zstd)
 
 name=curl
-version=8.16.0
+version=8.17.0
 
 set=(chroot)
 
