@@ -1,14 +1,14 @@
 description="Framing layer of HTTP/2 is implemented as a reusable C library"
 url="https://nghttp2.org/"
 
-packager="tnut <tnt@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 license=("MIT")
 
 makedepends=(autoconf automake itstool pkgconf)
 
 name=libnghttp2
-version=1.67.1
+version=1.68.0
 
 source=(https://github.com/nghttp2/nghttp2/releases/download/v${version}/nghttp2-$version.tar.xz)
 
