@@ -1,19 +1,18 @@
 description="A secure and highly configurable FTP daemon for serving large file archives over a network"
 url="http://proftpd.org"
 
-contributors="Berlius,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
-makedepends=(libcap pam mariadb openssl pcre postgresql)
+makedepends=(libcap pam mariadb openssl pcre2 postgresql)
 
 name=proftpd
-version=1.3.8
-release=3
+version=1.3.9
 
 scripts_version=20250201
 
 source=(https://downloads.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.tar.xz
-        https://ftp.proftpd.org/distrib/source/$name-$version.tar.gz
+         https://github.com/proftpd/proftpd/archive/v$version/$name-$version.tar.gz
 	proftpd.conf)
 
 prepare() {
