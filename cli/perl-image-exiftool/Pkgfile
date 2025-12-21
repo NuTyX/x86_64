@@ -1,13 +1,13 @@
 description="Generates and rewritten exif info in the raw files"
 url="https://metacpan.org/pod/Image::ExifTool"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Piernov,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Piernov,Tnut"
 
 run=(perl)
 
 name=perl-image-exiftool
-version=13.36
+version=13.44
 
 source=(https://github.com/exiftool/exiftool/archive/refs/tags/$version.tar.gz)
 
