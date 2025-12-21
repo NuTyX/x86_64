@@ -195,6 +195,7 @@ drwxr-xr-x	root/root	usr/lib/guile/3.0/ccache/oop/goops/
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/composite-slot.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/describe.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/internal.go
+-rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/keyword-formals.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/save.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/simple.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/oop/goops/stklos.go
@@ -283,7 +284,10 @@ drwxr-xr-x	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-171/
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-171/meta.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-18.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-19.go
+-rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-197.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-2.go
+-rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-207.go
+-rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-244.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-26.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-27.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-28.go
@@ -303,6 +307,8 @@ drwxr-xr-x	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-4/
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-6.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-60.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-64.go
+drwxr-xr-x	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-64/
+-rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-64/automake.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-67.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-69.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/srfi/srfi-71.go
@@ -384,9 +390,9 @@ drwxr-xr-x	root/root	usr/lib/guile/3.0/ccache/web/
 drwxr-xr-x	root/root	usr/lib/guile/3.0/ccache/web/server/
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/web/server/http.go
 -rw-r--r--	root/root	usr/lib/guile/3.0/ccache/web/uri.go
-lrwxrwxrwx	root/root	usr/lib/libguile-3.0.so -> libguile-3.0.so.1.7.0
-lrwxrwxrwx	root/root	usr/lib/libguile-3.0.so.1 -> libguile-3.0.so.1.7.0
--rwxr-xr-x	root/root	usr/lib/libguile-3.0.so.1.7.0
+lrwxrwxrwx	root/root	usr/lib/libguile-3.0.so -> libguile-3.0.so.1.7.1
+lrwxrwxrwx	root/root	usr/lib/libguile-3.0.so.1 -> libguile-3.0.so.1.7.1
+-rwxr-xr-x	root/root	usr/lib/libguile-3.0.so.1.7.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/guile.m4
@@ -394,7 +400,7 @@ drwxr-xr-x	root/root	usr/share/gdb/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/
 drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/lib/
--rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libguile-3.0.so.1.7.0-gdb.scm
+-rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libguile-3.0.so.1.7.1-gdb.scm
 drwxr-xr-x	root/root	usr/share/guile/
 drwxr-xr-x	root/root	usr/share/guile/3.0/
 -rw-r--r--	root/root	usr/share/guile/3.0/guile-procedures.txt
@@ -590,6 +596,7 @@ drwxr-xr-x	root/root	usr/share/guile/3.0/oop/goops/
 -rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/composite-slot.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/describe.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/internal.scm
+-rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/keyword-formals.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/save.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/simple.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/oop/goops/stklos.scm
@@ -678,7 +685,14 @@ drwxr-xr-x	root/root	usr/share/guile/3.0/srfi/srfi-171/
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-171/meta.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-18.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-19.scm
+-rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-197.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-2.scm
+-rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-207.scm
+drwxr-xr-x	root/root	usr/share/guile/3.0/srfi/srfi-207/
+drwxr-xr-x	root/root	usr/share/guile/3.0/srfi/srfi-207/upstream/
+-rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-207/upstream/base64.scm
+-rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-207/upstream/bytestrings-impl.scm
+-rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-244.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-26.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-27.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-28.scm
@@ -701,7 +715,7 @@ drwxr-xr-x	root/root	usr/share/guile/3.0/srfi/srfi-42/
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-60.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-64.scm
 drwxr-xr-x	root/root	usr/share/guile/3.0/srfi/srfi-64/
--rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-64/testing.scm
+-rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-64/automake.scm
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-67.scm
 drwxr-xr-x	root/root	usr/share/guile/3.0/srfi/srfi-67/
 -rw-r--r--	root/root	usr/share/guile/3.0/srfi/srfi-67/compare.scm
