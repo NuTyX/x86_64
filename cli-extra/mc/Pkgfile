@@ -8,11 +8,12 @@ makedepends=(e2fsprogs glib slang)
 
 name=mc
 version=4.8.33
+release=2
 
-makedepends=(pcre glib gpm slang cdrtools gawk p7zip perl zip)
+makedepends=(glib gpm slang cdrtools gawk p7zip perl zip)
 
 
-source=(${url}downloads/$name-$version.tar.xz)
+source=(http://ftp.midnight-commander.org/mc-$version.tar.xz)
 
 build() {
 
