@@ -4,16 +4,15 @@ url='https://pypi.python.org/pypi/tinycss'
 packager="spiky <spiky@nutyx.org>"
 contributors="Fanch,Tnut"
 
-makedepends=(python-setuptools python-wheel cython)
+makedepends=(python-setuptools python-wheel python-webencodings)
 
 name=python-tinycss
-_name="tinycss"
+_name="tinycss2"
 alias=(${_name})
 
-version=0.4
-release=10
+version=1.5.1
 
-source=(https://pypi.io/packages/source/t/tinycss/tinycss-$version.tar.gz)
+source=(https://pypi.io/packages/source/t/tinycss2/tinycss2-$version.tar.gz)
 
 build() {
 
