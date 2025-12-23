@@ -4,16 +4,16 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.14/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/licenses/COPYING
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.9.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/licenses/COPYING
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/meson-1.10.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/
@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/_typing.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/arglist.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/build.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/cmdline.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/coredata.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/depfile.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/envconfig.cpython-314.pyc
@@ -48,6 +49,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/options.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/programs.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/rewriter.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/__pycache__/tooldetect.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/_pathlib.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/_typing.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/arglist.py
@@ -79,6 +81,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycache__/vs2017backend.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycache__/vs2019backend.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycache__/vs2022backend.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycache__/vs2026backend.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycache__/xcodebackend.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/backends.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/ninjabackend.py
@@ -90,6 +93,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/vs2017backend.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/vs2019backend.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/vs2022backend.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/vs2026backend.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/backend/xcodebackend.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/build.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/cargo/
@@ -135,6 +139,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/cmake/data/__py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/cmake/toolchain.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/cmake/traceparser.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/cmake/tracetargets.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/cmdline.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/__pycache__/
@@ -184,11 +189,11 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixin
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/intel.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/islinker.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/metrowerks.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/microchip.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/pgi.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/tasking.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/ti.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/visualstudio.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/__pycache__/xc16.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/apple.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/arm.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/ccrx.py
@@ -201,11 +206,11 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixin
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/intel.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/islinker.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/metrowerks.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/microchip.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/pgi.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/tasking.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/ti.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/visualstudio.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/mixins/xc16.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/objc.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/objcpp.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/compilers/rust.py
@@ -349,6 +354,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/_qt.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/cmake.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/codegen.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/cuda.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/dlang.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/external_project.cpython-314.pyc
@@ -368,11 +374,13 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/qt6.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/rust.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/simd.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/snippets.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/sourceset.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/wayland.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycache__/windows.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/_qt.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/cmake.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/codegen.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/cuda.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/dlang.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/external_project.py
@@ -392,6 +400,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/qt6.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/rust.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/simd.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/snippets.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/sourceset.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/wayland.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/modules/windows.py
@@ -428,6 +437,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/itstool.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/meson_exe.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/msgfmthelper.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/pickle_env.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/pycompile.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/python_info.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycache__/regen_checker.cpython-314.pyc
@@ -462,6 +472,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/__pycac
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/itstool.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/meson_exe.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/msgfmthelper.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/pickle_env.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/pycompile.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/python_info.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/scripts/regen_checker.py
@@ -507,22 +518,19 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/templates/__pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/templates/samplefactory.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/templates/sampleimpl.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/templates/valatemplates.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/tooldetect.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/core.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/platform.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/posix.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/universal.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/vsenv.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/__pycache__/win32.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/core.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/platform.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/posix.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/universal.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/vsenv.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/utils/win32.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/wrap/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/mesonbuild/wrap/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/mesonbuild/wrap/__pycache__/
