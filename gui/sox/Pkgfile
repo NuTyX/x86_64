@@ -3,8 +3,8 @@ url="https://sox.sourceforge.net/"
 
 license="GPL2, LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(libsndfile libpng lame opencore-amr
              gsm libao libmad libid3tag wavpack
@@ -12,8 +12,7 @@ makedepends=(libsndfile libpng lame opencore-amr
 
 
 name=sox
-version=14.6.1
-release=1
+version=14.7.0.3
 
 source=(https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-$version.tar.gz)
 
