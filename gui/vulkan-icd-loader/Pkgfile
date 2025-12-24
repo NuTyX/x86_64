@@ -1,13 +1,13 @@
 description='Vulkan Installable Client Driver (ICD) Loader'
 url='https://www.khronos.org/vulkan/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(cmake python-lxml xorg-libx11 xorg-libxrandr wayland vulkan-headers)
 
 name=vulkan-icd-loader
-version=1.4.331
+version=1.4.335
 
 PKGMK_KEEP_SOURCES="no"
 
