@@ -1,14 +1,15 @@
 description="Desktop Management Interface table related utilities"
 url="https://www.nongnu.org/dmidecode"
 
+license="GPL2"
+
 packager="spiky <spiky@nutyx.org>"
 contributor="rems"
 
 name=dmidecode
-version=3.6
-release=2
+version=3.7
 
-source=(https://download.savannah.nongnu.org/releases/$name/$name-$version.tar.xz)
+source=(https://download.savannah.gnu.org/releases/$name/$name-$version.tar.xz)
 
 build() {
   cd $name-$version
@@ -17,4 +18,6 @@ build() {
 
   make prefix=/usr CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
   make prefix=/usr DESTDIR=$PKG install
+
+ install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
