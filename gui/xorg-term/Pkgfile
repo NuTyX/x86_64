@@ -1,12 +1,12 @@
 description="xterm is a terminal emulator for the X Window System."
 url="https://invisible-island.net/xterm"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Greg,Remy"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Remy,Tnut"
 
 alias=(xterm)
 name=xorg-term
-version=403
+version=404
 makedepends=(xorg-fontconfig xorg-libxft xorg-libxaw xorg-luit
              xorg-libxkbfile libutempter xorg-xbitmaps freetype)
 run=(xorg-luit)
