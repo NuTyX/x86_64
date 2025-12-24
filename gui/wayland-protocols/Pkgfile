@@ -1,14 +1,14 @@
 description="Additional Wayland protocols"
 url=" https://wayland.freedesktop.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
 license="MIT"
 
 makedepends=(pkgconf wayland)
 
 name=wayland-protocols
-version=1.46
+version=1.47
 
 source=(https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/$version/downloads/$name-$version.tar.xz)
 
