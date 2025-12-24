@@ -3,16 +3,16 @@ url="https://www.php.net"
 
 license="PHP"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Berlius,Jayce,Greg,Fabienwang,Tnut"
 
 makedepends=(readline apache libxml2 aspell aspell-dict libxslt enchant
-             freetype libexif libjpeg-turbo libpng libtiff pcre libzip
+             freetype libexif libjpeg-turbo libpng libtiff pcre2 libzip
              curl db mariadb openldap postgresql sqlite oniguruma
              unixodbc openssl cyrus-sasl kerberos libzip)
 
 name=php
-version=8.5.0
+version=8.5.1
 
 source=(apache.conf
         https://php.net/distributions/$name-$version.tar.xz)
