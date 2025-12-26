@@ -1,13 +1,13 @@
 description="The Libevdev package contains common functions for Xorg input drivers."
 url="https://www.freedesktop.org/wiki/Software/libevdev/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python)
 
 name=libevdev
-version=1.13.5
+version=1.13.6
 _name="$name"
 source=(https://www.freedesktop.org/software/libevdev/$name-$version.tar.xz)
 
