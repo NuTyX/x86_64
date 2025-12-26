@@ -5,12 +5,12 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(
 	meson cmake ninja python libev xorg-libx11 libepoxy
 	libxcb xcb-util xcb-util-image xcb-util-renderutil
-	xorg-libxext xorg-pixman uthash libconfig pcre freeglut
+	xorg-libxext xorg-pixman uthash libconfig pcre2 freeglut
 )
 
 name=picom
 version=12.5
-release=2
+release=3
 
 source=(https://github.com/yshui/picom/archive/refs/tags/v${version}.tar.gz)
 
