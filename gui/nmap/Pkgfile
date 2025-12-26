@@ -1,15 +1,16 @@
 description="Utility for network discovery and security auditing"
 url="http://insecure.org/nmap/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(python-setuptools python-build 
-             python-gobject pcre lua libpcap liblinear)
+             python-gobject pcre2 lua libpcap liblinear)
 run=()
 
 name=nmap
 version=7.98
+release=2
 
 source=(http://download.insecure.org/nmap/dist/$name-$version.tgz)
 
