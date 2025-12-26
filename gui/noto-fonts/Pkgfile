@@ -3,13 +3,13 @@ url="https://www.google.com/get/noto/"
 
 license="Apache 2.0"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fabien,Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fabien,Pierre,Tnut"
 
 makedepends=(xorg-fontconfig)
 
 name=noto-fonts
-version=2025.11.01
+version=2025.12.01
 
 source=(https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-$version.tar.gz)
 
