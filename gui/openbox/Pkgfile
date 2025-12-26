@@ -3,16 +3,16 @@ url="http://openbox.org/wiki/Main_Page"
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(autoconf sed grep
-             pcre pango freetype libpng xorg-fontconfig harfbuzz
+             pcre2 pango freetype libpng xorg-fontconfig harfbuzz
              imlib2 librsvg xcb-util libxcb libxml2)
 run=( startup-notification dbus )
 
 name=openbox
 version=3.6.1
-release=9
+release=10
 
 source=(http://openbox.org/dist/openbox/$name-$version.tar.gz \
         openbox.xinitrc openbox-3.6.1-consolidate-1.patch)
