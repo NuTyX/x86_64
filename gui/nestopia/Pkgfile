@@ -1,8 +1,8 @@
 description="NES emulator featuring cycle exact emulation, a ridiculous number of mappers, and lots of custom sound chips."
 url="http://0ldsk00l.ca/nestopia/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(mesa autoconf-archive)
 run=(sdl fltk zlib libarchive)
@@ -10,7 +10,7 @@ set=()
 
 name=nestopia
 version=1.52.0
-release=5
+release=6
 
 source=(https://github.com/0ldsk00l/nestopia/archive/refs/tags/$version.tar.gz)
 
