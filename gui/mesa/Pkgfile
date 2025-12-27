@@ -5,8 +5,8 @@ url="https://www.xorg-mesa3d.org"
 
 license="custom"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
 makedepends=(meson ninja libclc python-ply rust-bindgen cbindgen
              xorgproto pkgconf libtool xorg-xrandr wayland python-mako
@@ -18,7 +18,7 @@ run=(libglvnd)
 alias=(xorg-mesa Mesa mesa3d Mesa3D mesa3)
 
 name=mesa
-version=25.2.7
+version=25.3.2
 
 source=(LICENSE
         https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
@@ -34,7 +34,6 @@ meson setup                      \
       -Dbuildtype=plain          \
       -Dgallium-drivers="crocus,iris,nouveau,r300,r600,radeonsi,svga,virgl,zink" \
       -Dvulkan-drivers=auto      \
-      -Dgallium-vdpau=enabled    \
       -Dgallium-va=enabled       \
       -Dglx=dri                  \
       -Dvalgrind=disabled        \
