@@ -14,8 +14,7 @@ run=(xorg-xinit xorg-xhost xorg-xrdb upower iso-codes)
 set=(gnome)
 
 name=gdm
-version=49.2
-release=2
+version=48.0
 
 PKGMK_MESON_OPTIONS="-Dgdm-xsession=true \
 -Ddefault-pam-config=lfs \
@@ -23,7 +22,8 @@ PKGMK_MESON_OPTIONS="-Dgdm-xsession=true \
 --localstatedir=/var \
 --libdir=/usr/lib"
 
-source=($url/-/archive/$version/$name-$version.tar.bz2)
+source=($name-$version-fix-gcc15.patch
+        $url/-/archive/$version/$name-$version.tar.bz2)
 
 prepare() {
 getent group gdm || groupadd -g 21 gdm
@@ -31,6 +31,8 @@ getent passwd gdm || ( useradd -c "GDM Daemon Owner" \
         -d /var/lib/gdm -u 21 \
         -g gdm -s /bin/false gdm )
 passwd -ql gdm
+cd $name-$version
+patch -Np1 -i ../$name-$version-fix-gcc15.patch
 }
 build=meson
 
