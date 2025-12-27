@@ -1,0 +1,36 @@
+diff -Naur a/common/gdm-settings-utils.c b/common/gdm-settings-utils.c
+--- a/common/gdm-settings-utils.c	2025-03-17 23:07:15.000000000 +0700
++++ b/common/gdm-settings-utils.c	2025-12-27 14:08:14.323577537 +0700
+@@ -287,16 +287,16 @@
+ /* adapted from GKeyFile */
+ gboolean
+ gdm_settings_parse_value_as_boolean (const char *value,
+-                                     gboolean   *bool)
++                                     gboolean   *boolval)
+ {
+         g_return_val_if_fail (value != NULL, FALSE);
+-        g_return_val_if_fail (bool != NULL, FALSE);
++        g_return_val_if_fail (boolval != NULL, FALSE);
+ 
+         if (g_ascii_strcasecmp (value, "true") == 0 || strcmp (value, "1") == 0) {
+-                *bool = TRUE;
++                *boolval = TRUE;
+                 return TRUE;
+         } else if (g_ascii_strcasecmp (value, "false") == 0 || strcmp (value, "0") == 0) {
+-                *bool = FALSE;
++                *boolval = FALSE;
+                 return TRUE;
+         } else {
+                 return FALSE;
+diff -Naur a/common/gdm-settings-utils.h b/common/gdm-settings-utils.h
+--- a/common/gdm-settings-utils.h	2025-03-17 23:07:15.000000000 +0700
++++ b/common/gdm-settings-utils.h	2025-12-27 14:08:48.760773917 +0700
+@@ -44,7 +44,7 @@
+                                                                 GSList     **list);
+ 
+ gboolean                  gdm_settings_parse_value_as_boolean  (const char *value,
+-                                                                gboolean   *bool);
++                                                                gboolean   *boolval);
+ gboolean                  gdm_settings_parse_value_as_integer  (const char *value,
+                                                                 int        *intval);
+ gboolean                  gdm_settings_parse_value_as_double   (const char *value,
