@@ -3,14 +3,14 @@ url="https://www.imagemagick.org/"
 
 license="custom"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(freetype ghostscript lcms2 libgsf libxml2 libjpeg-turbo
               openexr libwmf libpng librsvg libwebp djvulibre)
 
 name=imagemagick
-version=7.1.2.8
+version=7.1.2.11
 _version="${version%.*}-${version##*.}"
 
 PKGMK_KEEP_SOURCES="no"
