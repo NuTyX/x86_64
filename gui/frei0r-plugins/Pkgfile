@@ -3,13 +3,13 @@ url="https://www.piksel.org/frei0r"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(cmake gavl doxygen)
 
 name=frei0r-plugins
-version=2.5.0
+version=2.5.1
 
 source=(https://github.com/dyne/frei0r/archive/refs/tags/v$version.tar.gz)
 
