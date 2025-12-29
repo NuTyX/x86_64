@@ -3,15 +3,15 @@ url='https://github.com/containers/libpod'
 
 license="APACHE"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(grep man-db go-md2man libseccomp gpgme)
 run=()
 set=()
 
 name=podman
-version=5.6.2
+version=5.7.1
 
 source=(https://github.com/containers/podman/archive/v$version/$name-$version.tar.gz)
 
