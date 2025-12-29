@@ -6,13 +6,12 @@ license="LGPL"
 packager="spiky <spiky@nutyx.org>"
 contributors="Fabienwang,Tnut"
 
-makedepends=(glib libsoup gpgme polkit fuse2 libostree json-glib
+makedepends=(glib libsoup3 gpgme polkit fuse2 libostree json-glib
              appstream libseccomp python-parsing socat)
 run=(make-ca bubblewrap gnupg)
 
 name=flatpak
-version=1.16.1
-release=2
+version=1.16.2
 
 source=(https://dl.flathub.org/repo/flathub.flatpakrepo
         https://github.com/flatpak/flatpak/releases/download/$version/flatpak-$version.tar.xz)
