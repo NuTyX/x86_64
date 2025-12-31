@@ -1,8 +1,8 @@
 description="Freedesktop.org message bus system"
 url="https://www.freedesktop.org/wiki/Software/dbus/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Jayce,Spiky"
 
 # In case of rebuild systemd
 # dbus needs do be build once without systemd
@@ -19,28 +19,16 @@ set=(core)
 
 name=dbus
 version=1.16.2
-
+release=2
 
 PKGMK_GROUPS=(doc devel)
+PKGMK_MESON_OPTIONS="--wrap-mode=nofallback"
+
 source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.xz)
 
-build() {
-        cd $name-$version
-        mkdir build
-        cd    build
+build=meson
 
-        meson setup .. \
-        --prefix=/usr          \
-        --buildtype=release    \
-        --wrap-mode=nofallback
-
-        ninja
-
-DESTDIR=$PKG ninja install
-
-}
 package(){
-
   chown -v root:messagebus $PKG/usr/libexec/dbus-daemon-launch-helper
   chmod -v      4750       $PKG/usr/libexec/dbus-daemon-launch-helper
 
