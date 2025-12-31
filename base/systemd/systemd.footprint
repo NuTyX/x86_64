@@ -20,6 +20,8 @@ lrwxrwxrwx	root/root	etc/profile.d/80-systemd-osc-context.sh -> ../../usr/lib/sy
 drwxr-xr-x	root/root	etc/ssh/
 drwxr-xr-x	root/root	etc/ssh/ssh_config.d/
 lrwxrwxrwx	root/root	etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf -> ../../../usr/lib/systemd/ssh_config.d/20-systemd-ssh-proxy.conf
+drwxr-xr-x	root/root	etc/ssh/sshd_config.d/
+lrwxrwxrwx	root/root	etc/ssh/sshd_config.d/20-systemd-userdb.conf -> ../../../usr/lib/systemd/sshd_config.d/20-systemd-userdb.conf
 drwxr-xr-x	root/root	etc/sysctl.d/
 drwxr-xr-x	root/root	etc/systemd/
 -rw-r--r--	root/root	etc/systemd/coredump.conf
@@ -97,6 +99,7 @@ lrwxrwxrwx	root/root	usr/bin/systemd-umount -> systemd-mount
 -rwxr-xr-x	root/root	usr/bin/systemd-vpick
 -rwxr-xr-x	root/root	usr/bin/timedatectl
 -rwxr-xr-x	root/root	usr/bin/udevadm
+-rwxr-xr-x	root/root	usr/bin/userdbctl
 -rwxr-xr-x	root/root	usr/bin/varlinkctl
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/binfmt.d/
@@ -210,6 +213,8 @@ drwxr-xr-x	root/root	usr/lib/systemd/repart/definitions/sysext.repart.d/
 -rw-r--r--	root/root	usr/lib/systemd/resolv.conf
 drwxr-xr-x	root/root	usr/lib/systemd/ssh_config.d/
 -rw-r--r--	root/root	usr/lib/systemd/ssh_config.d/20-systemd-ssh-proxy.conf
+drwxr-xr-x	root/root	usr/lib/systemd/sshd_config.d/
+-rw-r--r--	root/root	usr/lib/systemd/sshd_config.d/20-systemd-userdb.conf
 drwxr-xr-x	root/root	usr/lib/systemd/system-environment-generators/
 drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
 -rwxr-xr-x	root/root	usr/lib/systemd/system-generators/systemd-debug-generator
@@ -500,6 +505,9 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-update-done.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-update-utmp.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-user-sessions.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-userdb-load-credentials.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-userdbd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-userdbd.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-validatefs@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-vconsole-setup.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-volatile-root.service
@@ -577,6 +585,8 @@ lrwxrwxrwx	root/root	usr/lib/systemd/systemd-udevd -> ../../bin/udevadm
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-update-utmp
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-user-runtime-dir
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-user-sessions
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-userdbd
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-userwork
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-validatefs
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-vconsole-setup
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-volatile-root
@@ -622,6 +632,7 @@ drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/20-systemd-shell-extra.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/20-systemd-ssh-generator.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/20-systemd-stub.conf
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/20-systemd-userdb.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/README
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/credstore.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/etc.conf
@@ -771,6 +782,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-vpick
 -rw-r--r--	root/root	usr/share/bash-completion/completions/timedatectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/udevadm
+-rw-r--r--	root/root	usr/share/bash-completion/completions/userdbctl
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.LogControl1.xml
