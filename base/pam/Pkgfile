@@ -8,34 +8,24 @@ contributors="Tnut"
 
 set=(core)
 
-PKGMK_DEPENDS=(python meson ninja)
+PKGMK_DEPENDS=(python meson ninja systemd)
 makedepends=(intltool texinfo libxcrypt)
 
 name=pam
 version=1.7.1
 
 PKGMK_LOCALES=()
-
+PKGMK_MESON_OPTIONS="--libdir lib -Ddocdir=/usr/share/doc/Linux-PAM"
 source=(https://github.com/linux-pam/linux-pam/releases/download/v$version/Linux-PAM-$version.tar.xz)
+
 prepare() {
 
 mv Linux-PAM-$version \
    $name-$version
 }
 
-build() {
+build=meson
 
- meson setup --prefix    /usr    \
-             --buildtype plain   \
-             --libdir    lib     \
-             -D docdir=/usr/share/doc/Linux-PAM-$version \
- $name-$version                builddir
-
- meson compile -C              builddir
-
- DESTDIR=$PKG meson install -C builddir
-
-
+package() {
 chmod -v 4755 $PKG/usr/sbin/unix_chkpwd
-
 }
