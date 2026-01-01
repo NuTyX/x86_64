@@ -1,14 +1,14 @@
 description="A convenience library for the geocoding and reverse geocoding"
 url="https://en.wikipedia.org/wiki/Geocoding"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Tnut"
 
-makedepends=(json-glib libsoup libsoup3 gobject-introspection gtk-doc meson)
+makedepends=(json-glib libsoup3 gobject-introspection gtk-doc meson)
 
 name=geocode-glib
 version=3.26.4
-release=5
+release=6
 
 PKGMK_GROUPS=(man devel lib doc)
 
@@ -22,7 +22,7 @@ build() {
   mkdir {build,build-2}
   cd    build
   meson --prefix=/usr \
-	-Dsoup2=true \
+	-Dsoup2=false \
 	-D enable-installed-tests=false \
 	../$name-$version
   ninja
