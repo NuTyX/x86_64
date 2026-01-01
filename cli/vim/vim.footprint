@@ -211,6 +211,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/compiler/
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/podchecker.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/powershell.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/pylint.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/compiler/pyright.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/pytest.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/pyunit.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/raco.vim
@@ -245,6 +246,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/compiler/
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/tombi.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/ts-node.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/tsc.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/compiler/ty.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/typedoc.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/typst.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/compiler/vimdoc.vim
@@ -292,6 +294,8 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bash.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/basic.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bdf.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bicep-params.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bicep.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bindzone.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bitbake.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/ftplugin/bp.vim
@@ -707,6 +711,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/indent/
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/basic.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/bib.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/bitbake.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/indent/bpftrace.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/bst.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/bzl.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/indent/c.vim
@@ -1093,6 +1098,14 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/netrw/syntax/
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/nohlsearch/
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/nohlsearch/plugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/nohlsearch/plugin/nohlsearch.vim
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/autoload/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/autoload/osc52.vim
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/doc/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/doc/osc52.txt
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/doc/tags
+drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/plugin/
+-rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/osc52/plugin/osc52.vim
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/shellmenu/
 drwxr-xr-x	root/root	usr/share/vim/vim91/pack/dist/opt/shellmenu/plugin/
 -rw-r--r--	root/root	usr/share/vim/vim91/pack/dist/opt/shellmenu/plugin/shellmenu.vim
@@ -1229,6 +1242,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim91/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/bindzone.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/bitbake.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/blank.vim
+-rw-r--r--	root/root	usr/share/vim/vim91/syntax/bpftrace.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/bsdl.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/bst.vim
 -rw-r--r--	root/root	usr/share/vim/vim91/syntax/btm.vim
