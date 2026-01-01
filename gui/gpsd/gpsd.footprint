@@ -32,15 +32,19 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xgpsspeed
 -rwxr-xr-x	root/root	usr/bin/zerk
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libgps.so -> libgps.so.31.0.0
-lrwxrwxrwx	root/root	usr/lib/libgps.so.31 -> libgps.so.31.0.0
--rwxr-xr-x	root/root	usr/lib/libgps.so.31.0.0
-lrwxrwxrwx	root/root	usr/lib/libgpsdpacket.so -> libgpsdpacket.so.31.0.0
-lrwxrwxrwx	root/root	usr/lib/libgpsdpacket.so.31 -> libgpsdpacket.so.31.0.0
--rwxr-xr-x	root/root	usr/lib/libgpsdpacket.so.31.0.0
+-rw-r--r--	root/root	usr/lib/libQgpsmm.prl
+lrwxrwxrwx	root/root	usr/lib/libQgpsmm.so -> libQgpsmm.so.32.0.0
+lrwxrwxrwx	root/root	usr/lib/libQgpsmm.so.32 -> libQgpsmm.so.32.0.0
+-rwxr-xr-x	root/root	usr/lib/libQgpsmm.so.32.0.0
+lrwxrwxrwx	root/root	usr/lib/libgps.so -> libgps.so.32.0.0
+lrwxrwxrwx	root/root	usr/lib/libgps.so.32 -> libgps.so.32.0.0
+-rwxr-xr-x	root/root	usr/lib/libgps.so.32.0.0
+lrwxrwxrwx	root/root	usr/lib/libgpsdpacket.so -> libgpsdpacket.so.32.0.0
+lrwxrwxrwx	root/root	usr/lib/libgpsdpacket.so.32 -> libgpsdpacket.so.32.0.0
+-rwxr-xr-x	root/root	usr/lib/libgpsdpacket.so.32.0.0
 drwxr-xr-x	root/root	usr/lib/python3.14/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/gps-3.26.1.egg-info
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/gps-3.27.2.egg-info
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gps/
 -rwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gps/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/gps/__main__.py
@@ -68,6 +72,7 @@ drwxr-xr-x	root/root	usr/share/gpsd/doc/
 -rw-r--r--	root/root	usr/share/gpsd/doc/COPYING
 -rw-r--r--	root/root	usr/share/gpsd/doc/NEWS
 -rw-r--r--	root/root	usr/share/gpsd/doc/README.adoc
+-rw-r--r--	root/root	usr/share/gpsd/doc/SECURITY.md
 -rw-r--r--	root/root	usr/share/gpsd/doc/SUPPORT.adoc
 -rw-r--r--	root/root	usr/share/gpsd/doc/build.adoc
 -rw-r--r--	root/root	usr/share/gpsd/doc/example1.c.txt
