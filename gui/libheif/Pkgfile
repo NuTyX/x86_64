@@ -1,13 +1,13 @@
 description="The libheif package is an HEIF and AVIF file format decoder and encoder. "
 url="https://github.com/strukturag/libheif"
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(ninja cmake libaom)
 
 name=libheif
-version=1.20.2
+version=1.21.0
 
 source=( https://github.com/strukturag/$name/releases/download/v$version/$name-$version.tar.gz)
 
