@@ -4,15 +4,15 @@ url="http://freedesktop.org/software/geoclue/docs/"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 
 maintainer="Zeeshan Ali <zeeshanak at gnome dot org>"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Tnut"
 
-makedepends=(meson ninja  avahi libsoup json-glib modemmanager
+makedepends=(meson ninja  avahi libsoup3 json-glib modemmanager
              libnotify geoip python gobject-introspection intltool)
 
 name=geoclue2
 version=2.5.3
-release=5
+release=6
 
 source=(https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/$version/geoclue-$version.tar.bz2)
 
