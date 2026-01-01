@@ -1,19 +1,19 @@
 description="Lightweight X11 Display Manager based on Gtk"
 url="https://en.wikipedia.org/wiki/LightDM"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Rems,Daniel,Tnut"
 
 set=(lightdm)
 
 name=lightdm
 version=1.32.0
-release=4
+release=5
 
-scriptsversion=20250125
+scriptsversion=20250201
 PKGMK_GROUPS=(man devel doc)
 
-makedepends=(gtk3 libgcrypt pam pcre gobject-introspection xorg-libxklavier vala)
+makedepends=(gtk3 libgcrypt pam pcre2 gobject-introspection xorg-libxklavier vala)
 run=(xorg-xinit)
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
