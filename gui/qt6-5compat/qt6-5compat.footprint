@@ -2,8 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libQt6Core5Compat.prl
 lrwxrwxrwx	root/root	usr/lib/libQt6Core5Compat.so -> libQt6Core5Compat.so.6
-lrwxrwxrwx	root/root	usr/lib/libQt6Core5Compat.so.6 -> libQt6Core5Compat.so.6.10.0
--rwxr-xr-x	root/root	usr/lib/libQt6Core5Compat.so.6.10.0
+lrwxrwxrwx	root/root	usr/lib/libQt6Core5Compat.so.6 -> libQt6Core5Compat.so.6.10.1
+-rwxr-xr-x	root/root	usr/lib/libQt6Core5Compat.so.6.10.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/Qt6Core5Compat.pc
 drwxr-xr-x	root/root	usr/lib/qt6/
@@ -40,7 +40,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/ThresholdMask.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/ZoomBlur.qml
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/libqtgraphicaleffectsplugin.so
--rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/plugins.qmltypes
 drwxr-xr-x	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/private/
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/private/DropShadowBase.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/private/FastGlow.qml
@@ -53,5 +52,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/private/
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/private/plugins.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/private/qmldir
 -rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/qmldir
+-rw-r--r--	root/root	usr/lib/qt6/qml/Qt5Compat/GraphicalEffects/qtgraphicaleffectsplugin.qmltypes
 drwxr-xr-x	root/root	usr/lib/qt6/sbom/
--rw-r--r--	root/root	usr/lib/qt6/sbom/qt5compat-6.10.0.spdx
+-rw-r--r--	root/root	usr/lib/qt6/sbom/qt5compat-6.10.1.spdx
