@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.18.0-1-nutyx
--rw-r--r--	root/root	boot/config-6.18.0-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.18.2-1-nutyx
+-rw-r--r--	root/root	boot/config-6.18.2-1-nutyx
 -rw-r--r--	root/root	boot/kernel-618
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.18.0-1-nutyx -> kernel-618
+lrwxrwxrwx	root/root	usr/lib/modules/6.18.2-1-nutyx -> kernel-618
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-618/build -> /usr/src/kernel-618
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/
@@ -5423,8 +5423,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/media/ipu
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/media/ipu7/intel-ipu7-isys.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/media/ipu7/intel-ipu7.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/most/
-drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/most/i2c/
--rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/most/i2c/most_i2c.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/most/net/
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/most/net/most_net.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/drivers/staging/most/video/

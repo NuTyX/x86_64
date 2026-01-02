@@ -1,9 +1,5 @@
 . lib/lsb/init-functions
 
-if [ ! -f etc/sysconfig/mouse ]; then
-	echo "MDEVICE=\"/dev/input/mice\"
-PROTOCOL=\"imps2\"" > etc/sysconfig/mouse
-fi
 if [ ! -L etc/systemd/system/multi-user.target.wants/gpm.service ];then
   mkdir -p etc/systemd/system/multi-user.target.wants
   ln -sf /usr/lib/systemd/system/gpm.service etc/systemd/system/multi-user.target.wants/gpm.service && \

@@ -7,7 +7,7 @@ contributors="Pierre,Spiky"
 makedepends=(python meson ninja doxygen)
 
 name=fuse
-version=3.17.4
+version=3.18.1
 release=1
 
 source=(https://github.com/libfuse/libfuse/releases/download/fuse-$version/fuse-$version.tar.gz)
@@ -21,22 +21,10 @@ sed -i '/^udev/,$ s/^/#/' $name-$version/util/meson.build
 build=meson
 
 package() {
-mkdir -p $PKG/lib
-mv -v $PKG/usr/lib/libfuse3.so.* $PKG/lib
-ln -sfv ../../lib/libfuse3.so.$version $PKG/usr/lib/libfuse3.so 
-rm -rf $PKG/tmp
-
-mkdir $PKG/{,s}bin
-mv -vf $PKG/usr/bin/fusermount3  $PKG/bin
-mv -vf $PKG/usr/sbin/mount.fuse3 $PKG/sbin
-
-rm -d $PKG/usr/{,s}bin
-
-chmod u+s $PKG/bin/fusermount3
-
-mkdir -pv $PKG/etc
-
-cat > $PKG/etc/fuse.conf << "EOF"
+ rm -rf $PKG/tmp
+ chmod u+s $PKG/usr/bin/fusermount3
+ mkdir -pv $PKG/etc
+ cat > $PKG/etc/fuse.conf << "EOF"
 # Set the maximum number of FUSE mounts allowed to non-root users.
 # The default is 1000.
 #
@@ -48,8 +36,8 @@ cat > $PKG/etc/fuse.conf << "EOF"
 #user_allow_other
 EOF
 
-install -v -m755 -d $PKG/usr/share/doc/fuse-$version
-install -v -m644    $name-$version/doc/{README.NFS,kernel.txt} \
-                    $PKG/usr/share/doc/fuse-$version
-cp -Rv $name-$version/doc/html  $PKG/usr/share/doc/fuse-$version
+ install -v -m755 -d $PKG/usr/share/doc/$name
+ install -v -m644    $name-$version/doc/{README.NFS,kernel.txt} \
+                    $PKG/usr/share/doc/$name
+ cp -Rv $name-$version/doc/html  $PKG/usr/share/doc/$name
 }
