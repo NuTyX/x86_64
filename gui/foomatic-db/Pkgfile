@@ -9,8 +9,7 @@ makedepends=(libxml2)
 PKGMK_KEEP_SOURCES="no"
 
 name=foomatic-db
-version=20241109
-release=2
+version=20260102
 _version=4.0
 source=(https://www.openprinting.org/download/foomatic/$name-${_version}-$version.tar.xz)
 
