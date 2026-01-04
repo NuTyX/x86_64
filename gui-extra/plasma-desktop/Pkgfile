@@ -9,8 +9,7 @@ contributors="Spiky"
 set=(kde6 kde6-plasma)
 
 name=plasma-desktop
-version=6.5.2
-release=2
+version=6.5.4
 
 makedepends=(icu xorg-libx11 libxcb xorg-libxcursor xorg-libxi libxkbcommon
              xorg-libxkbfile xorg-xf86-input-evdev xorg-xf86-input-libinput
@@ -24,8 +23,7 @@ makedepends=(icu xorg-libx11 libxcb xorg-libxcursor xorg-libxi libxkbcommon
              libksysguard libplasma plasma-activities xdg-user-dirs
              plasma-workspace plasma5support polkit-kde-agent plasma-activities-stats
              powerdevil sdl solid sonnet systemsettings wayland xcb-util-keysyms
-             bluedevil ibus kscreen libaccounts-qt
-             packagekit-qt6 plasma-nm plasma-pa scim kaccounts-integration)
+             bluedevil ibus kscreen libaccounts-qt packagekit-qt6 plasma-nm plasma-pa scim)
 
 run=(noto-fonts-emoji kirigami kirigami-addons)
 
