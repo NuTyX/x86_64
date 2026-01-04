@@ -1,12 +1,15 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/exec_inspect.sh
 -rwxr-xr-x	root/root	usr/bin/kate
 -rwxr-xr-x	root/root	usr/bin/kwrite
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libkateprivate.so.25.08.3
+-rwxr-xr-x	root/root	usr/lib/libkateprivate.so.25.12.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/kio/kio_kateexec.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/bookmarksplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/cmaketoolsplugin.so
@@ -23,6 +26,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/katefiletreeplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/kategdbplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/kategitblameplugin.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/kategpgplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/katekonsoleplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/kateprojectplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/ktexteditor/katereplicodeplugin.so
