@@ -9,7 +9,7 @@ contributors="Pierre,Remy,Fabienwang,Spiky"
 categories=(Network WebBrowser)
 
 makedepends=(wget python node cbindgen libwebp nspr libevent rustc
-             dbus-glib autoconf2-13 libnotify yasm llvm)
+             dbus-glib autoconf2-13 libnotify yasm llvm xorg-libxcomposite)
 run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
      gstreamer gstreamer-plugins-base gstreamer-plugins-good
      gstreamer-plugins-libav shared-mime-info
@@ -18,7 +18,7 @@ run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=145.0.2
+version=146.0.1
 
 locale_version=$version
 
