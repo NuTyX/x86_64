@@ -1,0 +1,23 @@
+description="Dock Widgets Library by KDAB for Qt6"
+url="https://github.com/KDAB/KDDockWidgets"
+
+license="GPL-2.0-only GPL-3.0-only"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=kddockwidgets
+version=2.4.0
+
+makedepends=(fmt qt6-base qt6-declarative cmake nlohmann-json qt6-tools) 
+source=($url/releases/download/v$version/kddockwidgets-$version.tar.gz)
+
+build() {
+  cd KDDockWidgets-$version
+  cmake -DCMAKE_INSTALL_PREFIX=/usr \
+    -DKDDockWidgets_FRONTENDS='qtwidgets;qtquick' \
+    -DKDDockWidgets_QT6=true .
+  cmake --build .
+
+  DESTDIR=$PKG cmake --install .
+}
