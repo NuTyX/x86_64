@@ -6,10 +6,11 @@ license="LGPL3-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(meson python-gobject python-spinx-furo)
+makedepends=(meson python-gobject)
 
 name=blueprint-compiler
 version=0.18.0
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/$version/$name-$version.tar.gz)
 
