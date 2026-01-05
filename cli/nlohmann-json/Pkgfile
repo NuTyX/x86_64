@@ -1,0 +1,40 @@
+description="JSON for Modern C++"
+url="https://github.com/nlohmann/json"
+
+license="MIT"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(cmake git)
+
+name=nlohmann-json
+version=3.12.0
+_test_vers=3.1.0
+
+source=(https://github.com/nlohmann/json_test_data/archive/v${_test_vers}.tar.gz)
+PKGMK_KEEP_SOURCES="no"
+
+prepare() {
+ git clone $url.git $name
+ cd $name
+ git checkout v$version
+ git cherry-pick --no-commit 756ca22ec5b0d89b5d107b4c30891d1293650c87
+}
+build() {
+  cmake -B build \
+    -D BUILD_TESTING=ON \
+    -D CMAKE_BUILD_TYPE=None \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_INSTALL_LIBDIR=/usr/lib \
+    -D JSON_BuildTests=ON \
+    -D JSON_TestDataDirectory=json_test_data-${_test_vers}/ \
+    -D JSON_MultipleHeaders=ON \
+    -S $name -W no-dev
+  cmake --build build --verbose
+
+  DESTDIR=$PKG cmake --install build
+
+  install -vDm 644 $name/README.md -t $PKG/usr/share/doc/$name/
+  install -vDm 644 $name/LICENSE.MIT -t $PKG/usr/share/licenses/$name/
+}
