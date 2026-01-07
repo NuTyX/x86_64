@@ -1,5 +1,3 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/ksu
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/default/
 drwxr-xr-x	root/root	run/
@@ -14,6 +12,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/klist
 -rwxr-xr-x	root/root	usr/bin/kpasswd
 -rwxr-xr-x	root/root	usr/bin/krb5-config
+-rwsr-xr-x	root/root	usr/bin/ksu
 -rwxr-xr-x	root/root	usr/bin/kswitch
 -rwxr-xr-x	root/root	usr/bin/ktutil
 -rwxr-xr-x	root/root	usr/bin/kvno
@@ -26,20 +25,14 @@ drwxr-xr-x	root/root	usr/lib/krb5/plugins/
 drwxr-xr-x	root/root	usr/lib/krb5/plugins/authdata/
 drwxr-xr-x	root/root	usr/lib/krb5/plugins/kdb/
 -rwxr-xr-x	root/root	usr/lib/krb5/plugins/kdb/db2.so
-lrwxrwxrwx	root/root	usr/lib/krb5/plugins/kdb/db2.so.0 -> db2.so
 drwxr-xr-x	root/root	usr/lib/krb5/plugins/libkrb5/
 drwxr-xr-x	root/root	usr/lib/krb5/plugins/preauth/
 -rwxr-xr-x	root/root	usr/lib/krb5/plugins/preauth/otp.so
-lrwxrwxrwx	root/root	usr/lib/krb5/plugins/preauth/otp.so.0 -> otp.so
 -rwxr-xr-x	root/root	usr/lib/krb5/plugins/preauth/pkinit.so
-lrwxrwxrwx	root/root	usr/lib/krb5/plugins/preauth/pkinit.so.0 -> pkinit.so
 -rwxr-xr-x	root/root	usr/lib/krb5/plugins/preauth/spake.so
-lrwxrwxrwx	root/root	usr/lib/krb5/plugins/preauth/spake.so.0 -> spake.so
 -rwxr-xr-x	root/root	usr/lib/krb5/plugins/preauth/test.so
-lrwxrwxrwx	root/root	usr/lib/krb5/plugins/preauth/test.so.0 -> test.so
 drwxr-xr-x	root/root	usr/lib/krb5/plugins/tls/
 -rwxr-xr-x	root/root	usr/lib/krb5/plugins/tls/k5tls.so
-lrwxrwxrwx	root/root	usr/lib/krb5/plugins/tls/k5tls.so.0 -> k5tls.so
 lrwxrwxrwx	root/root	usr/lib/libgssapi_krb5.so -> libgssapi_krb5.so.2.2
 lrwxrwxrwx	root/root	usr/lib/libgssapi_krb5.so.2 -> libgssapi_krb5.so.2.2
 -rwxr-xr-x	root/root	usr/lib/libgssapi_krb5.so.2.2

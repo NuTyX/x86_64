@@ -11,10 +11,10 @@ contributors="Spiky"
 makedepends=(perl e2fsprogs bison gawk)
 
 name=kerberos
-version=1.21.3
-release=3
+version=1.22.1
+release=1
 
-scriptsversion=20250125
+scriptsversion=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
         http://web.mit.edu/$name/dist/krb5/${version:0:4}/krb5-$version.tar.gz)
@@ -36,26 +36,8 @@ sed -i -e '/eq 0/{N;s/12 //}'    plugins/kdb/db2/libdb2/test/run.test
 make
 make DESTDIR=$PKG install
 
-for LIBRARY in gssapi_krb5 gssrpc k5crypto kadm5clnt_mit kadm5srv_mit kdb5 krb5 krb5support verto; do
-	chmod -v 755 $PKG/usr/lib/lib$LIBRARY.so.*.*
-done
-
-unset LIBRARY
-
-mkdir $PKG/bin
-mv -v $PKG/usr/bin/ksu $PKG/bin
-chmod -v 755 $PKG/bin/ksu
-
-install -v -dm755 $PKG/usr/share/doc/krb5-$version
-cp -vfr ../doc/*  $PKG/usr/share/doc/krb5-$version
-
-# Thoses libs are needed
-ln -sv db2.so    $PKG/usr/lib/krb5/plugins/kdb/db2.so.0
-ln -sv k5tls.so  $PKG/usr/lib/krb5/plugins/tls/k5tls.so.0
-for i in otp.so pkinit.so spake.so test.so
-do
-   ln -sv $i    $PKG/usr/lib/krb5/plugins/preauth/$i.0
-done
+install -v -dm755 $PKG/usr/share/doc/krb5
+cp -vfr ../doc/*  $PKG/usr/share/doc/krb5
 
 # Service
 cd $SRC/nutyx-scripts-$scriptsversion
