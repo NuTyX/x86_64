@@ -1,11 +1,5 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/getsubids
--rwxr-xr-x	root/root	bin/login
--rwsr-xr-x	root/root	bin/passwd
--rwsr-xr-x	root/root	bin/su
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/login.defs
--rw-r--r--	root/root	etc/login.defs.orig
 drwxr-xr-x	root/root	etc/pam.d/
 -rw-r--r--	root/root	etc/pam.d/chage
 -rw-r--r--	root/root	etc/pam.d/chfn
@@ -29,11 +23,6 @@ drwxr-xr-x	root/root	etc/pam.d/
 -rw-r--r--	root/root	etc/pam.d/useradd
 -rw-r--r--	root/root	etc/pam.d/userdel
 -rw-r--r--	root/root	etc/pam.d/usermod
-drwxr-xr-x	root/root	lib/
--rw-r--r--	root/root	lib/libsubid.a
-lrwxrwxrwx	root/root	lib/libsubid.so -> libsubid.so.5.0.0
-lrwxrwxrwx	root/root	lib/libsubid.so.5 -> libsubid.so.5.0.0
--rwxr-xr-x	root/root	lib/libsubid.so.5.0.0
 drwxr-xr-x	root/root	sbin/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -42,11 +31,20 @@ drwxr-xr-x	root/root	usr/bin/
 -rwsr-xr-x	root/root	usr/bin/chsh
 -rwsr-xr-x	root/root	usr/bin/expiry
 -rwxr-xr-x	root/root	usr/bin/faillog
+-rwxr-xr-x	root/root	usr/bin/getsubids
 -rwsr-xr-x	root/root	usr/bin/gpasswd
+-rwxr-xr-x	root/root	usr/bin/login
 -rwsr-xr-x	root/root	usr/bin/newgidmap
 -rwsr-xr-x	root/root	usr/bin/newgrp
 -rwsr-xr-x	root/root	usr/bin/newuidmap
+-rwsr-xr-x	root/root	usr/bin/passwd
 lrwxrwxrwx	root/root	usr/bin/sg -> newgrp
+-rwsr-xr-x	root/root	usr/bin/su
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libsubid.a
+lrwxrwxrwx	root/root	usr/lib/libsubid.so -> libsubid.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libsubid.so.5 -> libsubid.so.5.0.0
+-rwxr-xr-x	root/root	usr/lib/libsubid.so.5.0.0
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/chgpasswd
 -rwxr-xr-x	root/root	usr/sbin/chpasswd

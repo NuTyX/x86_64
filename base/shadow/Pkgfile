@@ -2,13 +2,13 @@ description="The Shadow package contains programs for handling passwords in a se
 url="https://shadow-maint.github.io/shadow/"
 
 maintainer="pkg-shadow-devel@lists.alioth.debian.org"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(libxcrypt pam)
 
 name=shadow
-version=4.18.0
+version=4.19.0
 
 set=(chroot core)
 
@@ -28,39 +28,18 @@ sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' \
        -e 's@#\(SHA_CRYPT_..._ROUNDS 5000\)@\100@'       \
        -e 's@/var/spool/mail@/var/mail@' -i etc/login.defs
 
-./configure \
- --sysconfdir=/etc \
+./configure          \
+ --sysconfdir=/etc   \
+ --bindir=/usr/bin   \
+ --libdir=/usr/lib   \
  --with-{b,yes}crypt \
  --without-libbsd    \
+ --disable-logind    \
  --with-group-name-max-length=32
 
 make
 
 make DESTDIR=$PKG install
-mv -v $PKG/usr/bin/passwd $PKG/bin
-
-#
-# Following sed comment appropriate lines in etc/login.defs, and stop login
-# from performing these functions. First backup the etc/login.defs
-install -v -m644 $PKG/etc/login.defs{,.orig}
-for FUNCTION in FAIL_DELAY FAILLOG_ENAB \
-                LASTLOG_ENAB \
-                MAIL_CHECK_ENAB \
-                OBSCURE_CHECKS_ENAB \
-                PORTTIME_CHECKS_ENAB \
-                QUOTAS_ENAB \
-                CONSOLE MOTD_FILE \
-                FTMP_FILE NOLOGINS_FILE \
-                ENV_HZ PASS_MIN_LEN \
-                SU_WHEEL_ONLY \
-                CRACKLIB_DICTPATH \
-                PASS_CHANGE_TRIES \
-                PASS_ALWAYS_WARN \
-                CHFN_AUTH ENCRYPT_METHOD \
-                ENVIRON_FILE
-do
-    sed -i "s/^${FUNCTION}/# &/" $PKG/etc/login.defs
-done
 
 #
 # Configuration files for pam
