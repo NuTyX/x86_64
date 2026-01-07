@@ -11,7 +11,7 @@ set=(core)
 
 name=sed
 version=4.9
-release=2
+release=3
 
 PKGMK_LOCALES=()
 
@@ -25,12 +25,11 @@ if [ -L /tools ];then
 fi
 sed -i 's/panic-tests.sh//' Makefile.in
 
-./configure --prefix=/usr --bindir=/bin \
---libdir=/lib --htmldir=/usr/share/doc/sed-$version
+./configure --prefix=/usr --htmldir=/usr/share/doc/$name
 make
 make html
 make check || true
 make DESTDIR=$PKG install
-install -d m755 $PKG/usr/share/doc/sed-$version
-install -m644 doc/sed.html $PKG/usr/share/doc/sed-$version
+install -d m755 $PKG/usr/share/doc/$name
+install -m644 doc/sed.html $PKG/usr/share/doc/$name
 }
