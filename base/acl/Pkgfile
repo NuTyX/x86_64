@@ -2,13 +2,13 @@ description="Commands for Manipulating POSIX Access Control Lists."
 url="http://savannah.nongnu.org/projects/acl"
 
 contributors="Pierre,Spiky"
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(attr)
 
 name=acl
 version=2.3.2
-release=5
+release=6
 
 set=(chroot core)
 
@@ -25,12 +25,4 @@ INSTALL_GROUP=root \
 make
 make DESTDIR=$PKG install
 chmod -v 755 $PKG/usr/lib/libacl.so
-}
-
-devel () {
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib usr/include
-rm -rvf usr/lib usr/include
 }

@@ -3,4 +3,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/chacl
 -rwxr-xr-x	root/root	usr/bin/getfacl
 -rwxr-xr-x	root/root	usr/bin/setfacl
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libacl.a
+lrwxrwxrwx	root/root	usr/lib/libacl.so -> libacl.so.1.1.2302
+lrwxrwxrwx	root/root	usr/lib/libacl.so.1 -> libacl.so.1.1.2302
+-rwxr-xr-x	root/root	usr/lib/libacl.so.1.1.2302
 drwxr-xr-x	root/root	usr/share/
