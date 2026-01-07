@@ -1,21 +1,21 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/bridge
-lrwxrwxrwx	root/root	bin/ctstat -> lnstat
--rwxr-xr-x	root/root	bin/genl
--rwxr-xr-x	root/root	bin/ifstat
--rwxr-xr-x	root/root	bin/ip
--rwxr-xr-x	root/root	bin/lnstat
--rwxr-xr-x	root/root	bin/nstat
--rwxr-xr-x	root/root	bin/routel
--rwxr-xr-x	root/root	bin/rtacct
--rwxr-xr-x	root/root	bin/rtmon
-lrwxrwxrwx	root/root	bin/rtstat -> lnstat
--rwxr-xr-x	root/root	bin/ss
--rwxr-xr-x	root/root	bin/tc
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/iproute2/
 -rw-r--r--	root/root	usr/include/iproute2/bpf_elf.h
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/bridge
+lrwxrwxrwx	root/root	usr/sbin/ctstat -> lnstat
+-rwxr-xr-x	root/root	usr/sbin/genl
+-rwxr-xr-x	root/root	usr/sbin/ifstat
+-rwxr-xr-x	root/root	usr/sbin/ip
+-rwxr-xr-x	root/root	usr/sbin/lnstat
+-rwxr-xr-x	root/root	usr/sbin/nstat
+-rwxr-xr-x	root/root	usr/sbin/routel
+-rwxr-xr-x	root/root	usr/sbin/rtacct
+-rwxr-xr-x	root/root	usr/sbin/rtmon
+lrwxrwxrwx	root/root	usr/sbin/rtstat -> lnstat
+-rwxr-xr-x	root/root	usr/sbin/ss
+-rwxr-xr-x	root/root	usr/sbin/tc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/

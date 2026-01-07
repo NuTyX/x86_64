@@ -1,8 +1,8 @@
 url="https://www.kernel.org/pub/linux/utils/net/iproute2/"
 description="Programs for basic and advanced network routing."
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(libcap bison flex)
 
@@ -10,6 +10,7 @@ set=(core)
 
 name=iproute2
 version=6.18.0
+release=2
 
 PKGMK_GROUPS=(devel man doc)
 
@@ -19,16 +20,14 @@ build()
 {
 cd iproute2-$version
 sed -i /ARPD/d Makefile
-sed -i 's/arpd.8//' man/man8/Makefile
+rm -fv man/man8/arpd.8
 
-# disable building one module that requires iptables
-sed -i 's/m_ipt.o//' tc/Makefile
+make NETNS_RUN_DIR=/run/netns DESTDIR=$PKG
+make SBINDIR=/usr/sbin DESTDIR=$PKG \
+  DOCDIR=/usr/share/doc/iproute2 install
 
-make MANDIR=/usr/share/man INFODIR=/usr/share/info \
-	SBINDIR=/bin DESTDIR=$PKG
-make MANDIR=/usr/share/man SBINDIR=/bin \
-	INFODIR=/usr/share/info DESTDIR=$PKG \
-     DOCDIR=/usr/share/doc/iproute2-$version install
+install -vDm644 COPYING README* -t \
+  $PKG/usr/share/doc/iproute2
 }
 devel()
 {
