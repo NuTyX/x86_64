@@ -1,17 +1,16 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/cards
--rwxr-xr-x	root/root	bin/mybld
--rwxr-xr-x	root/root	bin/pkgadd
-lrwxrwxrwx	root/root	bin/pkginfo -> pkgadd
-lrwxrwxrwx	root/root	bin/pkgrm -> pkgadd
--rwxr-xr-x	root/root	bin/resolve-libs
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/cards.conf.example
 drwxr-xr-x	root/root	etc/profile.d/
 -rw-r--r--	root/root	etc/profile.d/cards.sh
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/setup-nutyx-log
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cards
+-rwxr-xr-x	root/root	usr/bin/mybld
+-rwxr-xr-x	root/root	usr/bin/pkgadd
+lrwxrwxrwx	root/root	usr/bin/pkginfo -> pkgadd
+lrwxrwxrwx	root/root	usr/bin/pkgrm -> pkgadd
+-rwxr-xr-x	root/root	usr/bin/resolve-libs
+-rwxr-xr-x	root/root	usr/bin/setup-nutyx-log
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/sounds/
 drwxr-xr-x	root/root	usr/share/sounds/cards/

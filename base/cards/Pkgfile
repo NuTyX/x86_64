@@ -16,7 +16,7 @@ PKGMK_GROUPS=(devel doc man lib)
 PKGMK_LOCALES=()
 
 name=cards
-version=3.3.1
+version=3.4.0
 release=1
 
 set=(chroot)
@@ -58,10 +58,10 @@ cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/include \
-usr/bin \
+usr/bin/pkgmk \
 etc/pkgmk.conf.example \
 usr/lib/pkgconfig
 
-rm -rf usr/bin usr/lib/pkgconfig \
+rm -rf usr/bin/pkgmk usr/lib/pkgconfig \
 usr/include etc/pkgmk.conf.example
 }
