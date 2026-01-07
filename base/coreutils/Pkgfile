@@ -2,13 +2,14 @@ description="Utilities for showing and setting the basic system characteristics"
 url="https://www.gnu.org/software/coreutils/"
 
 maintainer="Jim Meyering meyering at redhat dot com"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(autoconf automake gettext)
 
 name=coreutils
 version=9.9
+release=2
 
 set=(chroot core)
 
@@ -40,14 +41,11 @@ if [ -f /tools/bin/su ];then
 fi
 make DESTDIR=$PKG install
 
-mkdir -p $PKG/{bin,usr/sbin}
-mv -v $PKG/usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo} $PKG/bin
-mv -v $PKG/usr/bin/{false,ln,ls,mkdir,mknod,mv,pwd,rm} $PKG/bin
-mv -v $PKG/usr/bin/{rmdir,stty,sync,true,uname} $PKG/bin
+mkdir -p $PKG/usr/sbin
 mv -v $PKG/usr/bin/chroot $PKG/usr/sbin
+
 mkdir -p $PKG/usr/share/man/man8
 mv -v $PKG/usr/share/man/man1/chroot.1 $PKG/usr/share/man/man8/chroot.8
 sed -i s/\"1\"/\"8\"/1 $PKG/usr/share/man/man8/chroot.8
 
-mv -v $PKG/usr/bin/{head,sleep,nice,touch,[} $PKG/bin
 }	
