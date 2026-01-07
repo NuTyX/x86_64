@@ -2,8 +2,8 @@ description="System utilities for handling file systems consoles partitions and 
 url="https://freshmeat.net/projects/util-linux/"
 
 maintainer="Karel Zak kzak at redhat dot com"
-packager="spiky <spiky@nutyx.org>"
-contributors="Greg,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Fabienwang,Spiky"
 
 makedepends=(file ncurses readline zlib libxcrypt)
 
@@ -11,6 +11,7 @@ set=(core)
 
 name=util-linux
 version=2.41.3
+release=2
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
@@ -31,6 +32,8 @@ mkdir -pv $PKG/var/lib/hwclock
 	--docdir=/usr/share/doc/$name \
 	--disable-liblastlog2\
 	--disable-chfn-chsh  \
+          --bindir=/usr/bin    \
+          --libdir=/usr/lib    \
 	--sbindir=/usr/sbin  \
 	--disable-login      \
 	--disable-nologin    \
@@ -43,14 +46,12 @@ mkdir -pv $PKG/var/lib/hwclock
 
 make
 make DESTDIR=$PKG  install
-mkdir $PKG/sbin
-ln -sv ../usr/sbin/agetty $PKG/sbin/agetty
 }
 devel()
 {
 cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/${name}.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/include usr/lib usr/share/bash-completion
-rm -r usr/{include,lib,share/bash-completion}
+usr/include usr/lib/pkgconfig
+rm -r usr/{include,lib/pkgconfig}
 }

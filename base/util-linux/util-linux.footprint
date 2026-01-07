@@ -1,28 +1,3 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/dmesg
--rwxr-xr-x	root/root	bin/findmnt
--rwxr-xr-x	root/root	bin/kill
--rwxr-xr-x	root/root	bin/lsblk
--rwxr-xr-x	root/root	bin/lsfd
--rwxr-xr-x	root/root	bin/more
--rwsr-xr-x	root/root	bin/mount
--rwxr-xr-x	root/root	bin/mountpoint
--rwxr-xr-x	root/root	bin/pipesz
--rwsr-xr-x	root/root	bin/umount
--rwxr-xr-x	root/root	bin/wdctl
-drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libblkid.so.1 -> libblkid.so.1.1.0
--rwxr-xr-x	root/root	lib/libblkid.so.1.1.0
-lrwxrwxrwx	root/root	lib/libfdisk.so.1 -> libfdisk.so.1.1.0
--rwxr-xr-x	root/root	lib/libfdisk.so.1.1.0
-lrwxrwxrwx	root/root	lib/libmount.so.1 -> libmount.so.1.1.0
--rwxr-xr-x	root/root	lib/libmount.so.1.1.0
-lrwxrwxrwx	root/root	lib/libsmartcols.so.1 -> libsmartcols.so.1.1.0
--rwxr-xr-x	root/root	lib/libsmartcols.so.1.1.0
-lrwxrwxrwx	root/root	lib/libuuid.so.1 -> libuuid.so.1.3.0
--rwxr-xr-x	root/root	lib/libuuid.so.1.3.0
-drwxr-xr-x	root/root	sbin/
-lrwxrwxrwx	root/root	sbin/agetty -> ../usr/sbin/agetty
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bits
@@ -35,12 +10,14 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/colrm
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/coresched
+-rwxr-xr-x	root/root	usr/bin/dmesg
 -rwxr-xr-x	root/root	usr/bin/eject
 -rwxr-xr-x	root/root	usr/bin/enosys
 -rwxr-xr-x	root/root	usr/bin/exch
 -rwxr-xr-x	root/root	usr/bin/fadvise
 -rwxr-xr-x	root/root	usr/bin/fallocate
 -rwxr-xr-x	root/root	usr/bin/fincore
+-rwxr-xr-x	root/root	usr/bin/findmnt
 -rwxr-xr-x	root/root	usr/bin/flock
 -rwxr-xr-x	root/root	usr/bin/getopt
 -rwxr-xr-x	root/root	usr/bin/hardlink
@@ -52,14 +29,17 @@ lrwxrwxrwx	root/root	usr/bin/i386 -> setarch
 -rwxr-xr-x	root/root	usr/bin/ipcs
 -rwxr-xr-x	root/root	usr/bin/irqtop
 -rwxr-xr-x	root/root	usr/bin/isosize
+-rwxr-xr-x	root/root	usr/bin/kill
 -rwxr-xr-x	root/root	usr/bin/last
 lrwxrwxrwx	root/root	usr/bin/lastb -> last
 lrwxrwxrwx	root/root	usr/bin/linux32 -> setarch
 lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/logger
 -rwxr-xr-x	root/root	usr/bin/look
+-rwxr-xr-x	root/root	usr/bin/lsblk
 -rwxr-xr-x	root/root	usr/bin/lsclocks
 -rwxr-xr-x	root/root	usr/bin/lscpu
+-rwxr-xr-x	root/root	usr/bin/lsfd
 -rwxr-xr-x	root/root	usr/bin/lsipc
 -rwxr-xr-x	root/root	usr/bin/lsirq
 -rwxr-xr-x	root/root	usr/bin/lslocks
@@ -68,8 +48,12 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/lsns
 -rwxr-xr-x	root/root	usr/bin/mcookie
 -rwxr-xr-x	root/root	usr/bin/mesg
+-rwxr-xr-x	root/root	usr/bin/more
+-rwsr-xr-x	root/root	usr/bin/mount
+-rwxr-xr-x	root/root	usr/bin/mountpoint
 -rwxr-xr-x	root/root	usr/bin/namei
 -rwxr-xr-x	root/root	usr/bin/nsenter
+-rwxr-xr-x	root/root	usr/bin/pipesz
 -rwxr-xr-x	root/root	usr/bin/prlimit
 -rwxr-xr-x	root/root	usr/bin/rename
 -rwxr-xr-x	root/root	usr/bin/renice
@@ -84,6 +68,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/taskset
 -rwxr-xr-x	root/root	usr/bin/uclampset
 -rwxr-xr-x	root/root	usr/bin/ul
+-rwsr-xr-x	root/root	usr/bin/umount
 lrwxrwxrwx	root/root	usr/bin/uname26 -> setarch
 -rwxr-xr-x	root/root	usr/bin/unshare
 -rwxr-xr-x	root/root	usr/bin/utmpdump
@@ -91,8 +76,35 @@ lrwxrwxrwx	root/root	usr/bin/uname26 -> setarch
 -rwxr-xr-x	root/root	usr/bin/uuidparse
 -rwxr-xr-x	root/root	usr/bin/waitpid
 -rwxr-sr-x	root/tty	usr/bin/wall
+-rwxr-xr-x	root/root	usr/bin/wdctl
 -rwxr-xr-x	root/root	usr/bin/whereis
 lrwxrwxrwx	root/root	usr/bin/x86_64 -> setarch
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libblkid.so -> libblkid.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libblkid.so.1 -> libblkid.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libblkid.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libfdisk.so -> libfdisk.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libfdisk.so.1 -> libfdisk.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libfdisk.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libmount.so -> libmount.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libmount.so.1 -> libmount.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libmount.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libsmartcols.so -> libsmartcols.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libsmartcols.so.1 -> libsmartcols.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libsmartcols.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libuuid.so -> libuuid.so.1.3.0
+lrwxrwxrwx	root/root	usr/lib/libuuid.so.1 -> libuuid.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libuuid.so.1.3.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/fstrim.service
+-rw-r--r--	root/root	usr/lib/systemd/system/fstrim.timer
+-rw-r--r--	root/root	usr/lib/systemd/system/uuidd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/uuidd.socket
+drwxr-xr-x	root/root	usr/lib/sysusers.d/
+-rw-r--r--	root/root	usr/lib/sysusers.d/uuidd-sysusers.conf
+drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/uuidd-tmpfiles.conf
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/addpart
 -rwxr-xr-x	root/root	usr/sbin/agetty
@@ -136,6 +148,119 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/wipefs
 -rwxr-xr-x	root/root	usr/sbin/zramctl
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/bash-completion/
+drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+-rw-r--r--	root/root	usr/share/bash-completion/completions/addpart
+-rw-r--r--	root/root	usr/share/bash-completion/completions/bits
+-rw-r--r--	root/root	usr/share/bash-completion/completions/blkdiscard
+-rw-r--r--	root/root	usr/share/bash-completion/completions/blkid
+-rw-r--r--	root/root	usr/share/bash-completion/completions/blkpr
+-rw-r--r--	root/root	usr/share/bash-completion/completions/blkzone
+-rw-r--r--	root/root	usr/share/bash-completion/completions/blockdev
+-rw-r--r--	root/root	usr/share/bash-completion/completions/cal
+-rw-r--r--	root/root	usr/share/bash-completion/completions/cfdisk
+-rw-r--r--	root/root	usr/share/bash-completion/completions/chcpu
+-rw-r--r--	root/root	usr/share/bash-completion/completions/chmem
+-rw-r--r--	root/root	usr/share/bash-completion/completions/choom
+-rw-r--r--	root/root	usr/share/bash-completion/completions/chrt
+-rw-r--r--	root/root	usr/share/bash-completion/completions/col
+-rw-r--r--	root/root	usr/share/bash-completion/completions/colcrt
+-rw-r--r--	root/root	usr/share/bash-completion/completions/colrm
+-rw-r--r--	root/root	usr/share/bash-completion/completions/column
+-rw-r--r--	root/root	usr/share/bash-completion/completions/coresched
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ctrlaltdel
+-rw-r--r--	root/root	usr/share/bash-completion/completions/delpart
+-rw-r--r--	root/root	usr/share/bash-completion/completions/dmesg
+-rw-r--r--	root/root	usr/share/bash-completion/completions/eject
+-rw-r--r--	root/root	usr/share/bash-completion/completions/enosys
+-rw-r--r--	root/root	usr/share/bash-completion/completions/exch
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fadvise
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fallocate
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fdisk
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fincore
+-rw-r--r--	root/root	usr/share/bash-completion/completions/findfs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/findmnt
+-rw-r--r--	root/root	usr/share/bash-completion/completions/flock
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fsck
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fsck.cramfs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fsck.minix
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fsfreeze
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fstrim
+-rw-r--r--	root/root	usr/share/bash-completion/completions/getopt
+-rw-r--r--	root/root	usr/share/bash-completion/completions/hardlink
+-rw-r--r--	root/root	usr/share/bash-completion/completions/hexdump
+-rw-r--r--	root/root	usr/share/bash-completion/completions/hwclock
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ionice
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ipcmk
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ipcrm
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ipcs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/irqtop
+-rw-r--r--	root/root	usr/share/bash-completion/completions/isosize
+-rw-r--r--	root/root	usr/share/bash-completion/completions/last
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/lastb -> last
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ldattach
+-rw-r--r--	root/root	usr/share/bash-completion/completions/logger
+-rw-r--r--	root/root	usr/share/bash-completion/completions/look
+-rw-r--r--	root/root	usr/share/bash-completion/completions/losetup
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsblk
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsclocks
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lscpu
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsfd
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsipc
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsirq
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lslocks
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lslogins
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsmem
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsns
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mcookie
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mesg
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs.bfs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs.cramfs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mkfs.minix
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mkswap
+-rw-r--r--	root/root	usr/share/bash-completion/completions/more
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mount
+-rw-r--r--	root/root	usr/share/bash-completion/completions/mountpoint
+-rw-r--r--	root/root	usr/share/bash-completion/completions/namei
+-rw-r--r--	root/root	usr/share/bash-completion/completions/nsenter
+-rw-r--r--	root/root	usr/share/bash-completion/completions/partx
+-rw-r--r--	root/root	usr/share/bash-completion/completions/pipesz
+-rw-r--r--	root/root	usr/share/bash-completion/completions/pivot_root
+-rw-r--r--	root/root	usr/share/bash-completion/completions/prlimit
+-rw-r--r--	root/root	usr/share/bash-completion/completions/readprofile
+-rw-r--r--	root/root	usr/share/bash-completion/completions/rename
+-rw-r--r--	root/root	usr/share/bash-completion/completions/renice
+-rw-r--r--	root/root	usr/share/bash-completion/completions/resizepart
+-rw-r--r--	root/root	usr/share/bash-completion/completions/rev
+-rw-r--r--	root/root	usr/share/bash-completion/completions/rfkill
+-rw-r--r--	root/root	usr/share/bash-completion/completions/rtcwake
+-rw-r--r--	root/root	usr/share/bash-completion/completions/script
+-rw-r--r--	root/root	usr/share/bash-completion/completions/scriptlive
+-rw-r--r--	root/root	usr/share/bash-completion/completions/scriptreplay
+-rw-r--r--	root/root	usr/share/bash-completion/completions/setarch
+-rw-r--r--	root/root	usr/share/bash-completion/completions/setpgid
+-rw-r--r--	root/root	usr/share/bash-completion/completions/setsid
+-rw-r--r--	root/root	usr/share/bash-completion/completions/setterm
+-rw-r--r--	root/root	usr/share/bash-completion/completions/sfdisk
+-rw-r--r--	root/root	usr/share/bash-completion/completions/swaplabel
+-rw-r--r--	root/root	usr/share/bash-completion/completions/swapoff
+-rw-r--r--	root/root	usr/share/bash-completion/completions/swapon
+-rw-r--r--	root/root	usr/share/bash-completion/completions/taskset
+-rw-r--r--	root/root	usr/share/bash-completion/completions/uclampset
+-rw-r--r--	root/root	usr/share/bash-completion/completions/ul
+-rw-r--r--	root/root	usr/share/bash-completion/completions/umount
+-rw-r--r--	root/root	usr/share/bash-completion/completions/unshare
+-rw-r--r--	root/root	usr/share/bash-completion/completions/utmpdump
+-rw-r--r--	root/root	usr/share/bash-completion/completions/uuidd
+-rw-r--r--	root/root	usr/share/bash-completion/completions/uuidgen
+-rw-r--r--	root/root	usr/share/bash-completion/completions/uuidparse
+-rw-r--r--	root/root	usr/share/bash-completion/completions/waitpid
+-rw-r--r--	root/root	usr/share/bash-completion/completions/wall
+-rw-r--r--	root/root	usr/share/bash-completion/completions/wdctl
+-rw-r--r--	root/root	usr/share/bash-completion/completions/whereis
+-rw-r--r--	root/root	usr/share/bash-completion/completions/wipefs
+-rw-r--r--	root/root	usr/share/bash-completion/completions/zramctl
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/hwclock/
