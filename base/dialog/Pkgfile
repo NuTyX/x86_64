@@ -1,11 +1,9 @@
-[ "$PKGMK_ARCH" == "x86_64" ] && PKGMK_GROUPS=(devel man)
-
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
-maintainer="Thomas E. Dickey dickey at invisible-island dot net"
-
 url="https://hightek.org/dialog/"
 description="To create nice user interfaces to shell scripts or other scripting languages."
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Tnut"
+maintainer="Thomas E. Dickey dickey at invisible-island dot net"
 
 makedepends=(ncurses)
 
@@ -13,17 +11,19 @@ set=(core)
 
 name=dialog
 version=1.3-20250116
+release=2
 
 PKGMK_LOCALES=()
+PKGMK_GROUPS=(devel man)
 
 source=(https://invisible-mirror.net/archives/$name/$name-${version}.tgz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr \
---enable-nls --bindir=/bin \
---with-ncursesw \
---mandir=/usr/share/man
+./configure --prefix=/usr   \
+            --enable-nls    \
+            --with-ncursesw \
+            --mandir=/usr/share/man
 make
 make DESTDIR=$PKG install
 }
