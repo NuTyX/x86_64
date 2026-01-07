@@ -2,11 +2,12 @@ description="The Gzip package contains programs for compressing and decompressin
 url="https://www.gzip.org/"
 
 maintainer="Jean-loup Gailly jloup at gzip dot org,Mark Adler for the decompression code."
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=gzip
 version=1.14
+release=2
 
 set=(chroot core)
 
@@ -20,6 +21,4 @@ cd $name-$version
 make
 make -k check || true
 make DESTDIR=$PKG install
-mkdir -p $PKG/bin
-ln -sv $PKG/usr/bin/gzip $PKG/bin
 }
