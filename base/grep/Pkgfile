@@ -2,8 +2,8 @@ description="Searches input(s) file(s) for lines containing a match to a specifi
 url="https://www.gnu.org/software/grep/"
 
 maintainer="Jim Meyering jim at meyering dot net,Paolo Bonzini bonzini at gnu dot org"
-contributors="Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(perl)
 
@@ -11,6 +11,7 @@ set=(core)
 
 name=grep
 version=3.12
+release=2
 
 PKGMK_LOCALES=()
 
@@ -20,7 +21,7 @@ build()
 {
 cd grep-$version
 
-./configure --prefix=/usr --bindir=/bin
+./configure --prefix=/usr
 make
 make -k check || true
 make DESTDIR=$PKG install
