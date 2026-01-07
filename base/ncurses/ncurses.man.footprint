@@ -12,7 +12,9 @@ lrwxrwxrwx	root/root	usr/share/man/man1/reset.1.gz -> tset.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tput.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tset.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
+lrwxrwxrwx	root/root	usr/share/man/man3/A_COLOR.3x.gz -> curs_color.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BC.3x.gz -> curs_termcap.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/CCHARW_MAX.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLORS.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_BLACK.3x.gz -> curs_color.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_BLUE.3x.gz -> curs_color.3x.gz
@@ -29,6 +31,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/ERR.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ESCDELAY.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/FALSE.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/LINES.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/MEVENT.3x.gz -> curs_mouse.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/NCURSES_SCREEN_CB.3x.gz -> curs_threads.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/NCURSES_WINDOW_CB.3x.gz -> curs_threads.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OK.3x.gz -> curs_variables.3x.gz
@@ -467,6 +470,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/meta.3x.gz -> curs_inopts.3x.gz
 -rw-r--r--	root/root	usr/share/man/man3/mitem_userptr.3x.gz
 -rw-r--r--	root/root	usr/share/man/man3/mitem_value.3x.gz
 -rw-r--r--	root/root	usr/share/man/man3/mitem_visible.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/mmask_t.3x.gz -> curs_mouse.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mouse_trafo.3x.gz -> curs_mouse.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mouseinterval.3x.gz -> curs_mouse.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mouseinterval_sp.3x.gz -> curs_sp_funcs.3x.gz
@@ -486,7 +490,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/mvaddnwstr.3x.gz -> curs_addwstr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mvaddstr.3x.gz -> curs_addstr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mvaddwstr.3x.gz -> curs_addwstr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mvchgat.3x.gz -> curs_attr.3x.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/mvcur.3x.gz -> curs_terminfo.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/mvcur.3x.gz -> curs_kernel.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mvcur_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mvdelch.3x.gz -> curs_delch.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/mvderwin.3x.gz -> curs_window.3x.gz
