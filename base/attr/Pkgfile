@@ -4,12 +4,12 @@ url="https://savannah.nongnu.org/projects/attr"
 license="LGPL"
 
 maintainer="Andreas Gruenbacher <agruen>, Brandon Philips <philips>"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=attr
 version=2.5.2
-release=6
+release=7
 
 set=(chroot core)
 
@@ -26,21 +26,17 @@ INSTALL_GROUP=root \
 ./configure --prefix=/usr \
             --disable-static \
             --sysconfdir=/etc \
-            --docdir=/usr/share/doc/$name-$version \
-            --bindir=/bin
+            --docdir=/usr/share/doc/$name
 
 make
 make  DESTDIR=$PKG install
 chmod -v 755 $PKG/usr/lib/libattr.so
-mkdir $PKG/lib
-mv -v $PKG/usr/lib/libattr.so.* $PKG/lib
-ln -sfv ../../lib/libattr.so.1 $PKG/usr/lib/libattr.so
 }
 
 devel () {
 cd $PKG
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/${name}.devel${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib usr/include
-rm -rvf usr/lib usr/include
+usr/lib/pkgconfig usr/include
+rm -rvf usr/lib/pkgconfig usr/include
 }
