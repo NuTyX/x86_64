@@ -20,8 +20,8 @@ cd ncurses-$version
 
 ./configure --prefix=/usr   \
   --mandir=/usr/share/man   \
-  --infodir=/usr/share/info \
   --without-normal          \
+  --with-shared             \
   --with-cxx-shared         \
   --without-debug           \
   --enable-pc-files         \
