@@ -11,7 +11,7 @@ makedepends=(qt6-base qt6-declarative qt6-multimedia qt6-networkauth qt6-tools
              kcolorscheme kcompletion kconfig kconfigwidgets kcoreaddons kcrash
              kdbusaddons kfilemetadata kguiaddons ki18n kiconthemes kio kitemviews
              knewstuff knotifications knotifyconfig ktextwidgets kwidgetsaddons
-             kxmlgui mlt purpose ffmpeg kimageformats
+             kxmlgui mlt purpose ffmpeg kimageformats kddockwidgets
              plasma-desktop doxygen)
 
 run=(shared-mime-info frei0r-plugins hicolor-icon-theme libmediainfo opencv
@@ -20,8 +20,20 @@ run=(shared-mime-info frei0r-plugins hicolor-icon-theme libmediainfo opencv
 set=(kde6-gear)
 
 name=kdenlive
-version=25.08.3
+version=25.12.0
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
-build=kde6
+build() {
+  cmake -B build \
+                -S $name-$version \
+                -DCMAKE_INSTALL_PREFIX=/usr \
+                -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_INSTALL_LIBDIR=lib \
+                -DBUILD_TESTING=OFF \
+                -DFETCH_OTIO=ON \
+                -Wno-dev
+
+  cmake --build build
+  DESTDIR="$PKG" cmake --install build
+}
