@@ -11,7 +11,7 @@ set=(core)
 
 name=psmisc
 version=23.7
-release=2
+release=3
 
 PKGMK_LOCALES=()
 source=(https://sourceforge.net/projects/$name/files/$name/$name-$version.tar.xz)
@@ -22,8 +22,4 @@ cd psmisc-$version
 ./configure --prefix=/usr
 make
 make DESTDIR=$PKG install
-mkdir -p  $PKG/bin
-
-mv -v $PKG/usr/bin/fuser $PKG/bin
-mv -v $PKG/usr/bin/killall $PKG/bin
 }
