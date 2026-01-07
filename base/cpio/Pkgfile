@@ -8,20 +8,25 @@ set=(core)
 
 name=cpio
 version=2.15
-release=2
+release=3
 
 source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
 
 build() {
-	cd $name-$version
-	./configure \
-		--prefix=/usr \
-		--bindir=/bin \
-		--libexecdir=/tmp \
-		--mandir=/usr/share/man \
-		--infodir=/usr/share/info \
-		--enable-mt --with-rmt=/usr/libexec/rmt
-	make
-	make DESTDIR=$PKG install
-	rm -rf $PKG/tmp
+    cd $name-$version
+    sed -e "/^extern int (\*xstat)/s/()/(const char * restrict,  struct stat * restrict)/" \
+    -i src/extern.h
+
+    sed -e "/^int (\*xstat)/s/()/(const char * restrict,  struct stat * restrict)/" \
+    -i src/global.c
+
+    ./configure \
+    --prefix=/usr \
+    --libexecdir=/tmp \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --enable-mt --with-rmt=/usr/libexec/rmt
+    make
+    make DESTDIR=$PKG install
+    rm -rf $PKG/tmp
 }
