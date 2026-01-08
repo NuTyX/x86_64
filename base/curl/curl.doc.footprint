@@ -17,7 +17,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/
 -rw-r--r--	root/root	usr/share/doc/curl/EARLY-RELEASE.md
 -rw-r--r--	root/root	usr/share/doc/curl/ECH.md
 -rw-r--r--	root/root	usr/share/doc/curl/EXPERIMENTAL.md
--rw-r--r--	root/root	usr/share/doc/curl/FAQ
+-rw-r--r--	root/root	usr/share/doc/curl/FAQ.md
 -rw-r--r--	root/root	usr/share/doc/curl/FEATURES.md
 -rw-r--r--	root/root	usr/share/doc/curl/GOVERNANCE.md
 -rw-r--r--	root/root	usr/share/doc/curl/HELP-US.md
@@ -32,7 +32,8 @@ drwxr-xr-x	root/root	usr/share/doc/curl/
 -rw-r--r--	root/root	usr/share/doc/curl/INSTALL.md
 -rw-r--r--	root/root	usr/share/doc/curl/INTERNALS.md
 -rw-r--r--	root/root	usr/share/doc/curl/IPFS.md
--rw-r--r--	root/root	usr/share/doc/curl/KNOWN_BUGS
+-rw-r--r--	root/root	usr/share/doc/curl/KNOWN_BUGS.md
+-rw-r--r--	root/root	usr/share/doc/curl/KNOWN_RISKS.md
 -rw-r--r--	root/root	usr/share/doc/curl/MAIL-ETIQUETTE.md
 -rw-r--r--	root/root	usr/share/doc/curl/MANUAL.md
 -rw-r--r--	root/root	usr/share/doc/curl/Makefile
@@ -48,7 +49,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/
 -rw-r--r--	root/root	usr/share/doc/curl/SSL-PROBLEMS.md
 -rw-r--r--	root/root	usr/share/doc/curl/SSLCERTS.md
 -rw-r--r--	root/root	usr/share/doc/curl/THANKS
--rw-r--r--	root/root	usr/share/doc/curl/TODO
+-rw-r--r--	root/root	usr/share/doc/curl/TODO.md
 -rw-r--r--	root/root	usr/share/doc/curl/TheArtOfHttpScripting.md
 -rw-r--r--	root/root	usr/share/doc/curl/URL-SYNTAX.md
 -rw-r--r--	root/root	usr/share/doc/curl/VERSIONS.md
@@ -560,7 +561,6 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/multi-post.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/multi-single.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/multi-uv.c
--rw-r--r--	root/root	usr/share/doc/curl/examples/multithread.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/netrc.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/parseurl.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/persistent.c
@@ -604,7 +604,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/examples/.deps/
 -rw-r--r--	root/root	usr/share/doc/curl/examples/smtp-vrfy.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/sslbackend.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/synctime.c
--rw-r--r--	root/root	usr/share/doc/curl/examples/threaded-ssl.c
+-rw-r--r--	root/root	usr/share/doc/curl/examples/threaded.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/unixsocket.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/url2file.c
 -rw-r--r--	root/root	usr/share/doc/curl/examples/urlapi.c
@@ -631,10 +631,12 @@ drwxr-xr-x	root/root	usr/share/doc/curl/internals/
 -rw-r--r--	root/root	usr/share/doc/curl/internals/MULTI-EV.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/NEW-PROTOCOL.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/PORTING.md
+-rw-r--r--	root/root	usr/share/doc/curl/internals/RATELIMITS.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/README.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/SCORECARD.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/SPLAY.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/STRPARSE.md
+-rw-r--r--	root/root	usr/share/doc/curl/internals/TIME-KEEPING.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/TLS-SESSIONS.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/UINT_SETS.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/WEBSOCKET.md
