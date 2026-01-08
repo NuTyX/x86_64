@@ -17,6 +17,7 @@ drwxr-xr-x	root/root	usr/include/sodium/
 -rw-r--r--	root/root	usr/include/sodium/crypto_core_ed25519.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_core_hchacha20.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_core_hsalsa20.h
+-rw-r--r--	root/root	usr/include/sodium/crypto_core_keccak1600.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_core_ristretto255.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_core_salsa20.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_core_salsa2012.h
@@ -26,6 +27,7 @@ drwxr-xr-x	root/root	usr/include/sodium/
 -rw-r--r--	root/root	usr/include/sodium/crypto_hash.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_hash_sha256.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_hash_sha512.h
+-rw-r--r--	root/root	usr/include/sodium/crypto_ipcrypt.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_kdf.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_kdf_blake2b.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_kdf_hkdf_sha256.h
@@ -60,6 +62,10 @@ drwxr-xr-x	root/root	usr/include/sodium/
 -rw-r--r--	root/root	usr/include/sodium/crypto_verify_16.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_verify_32.h
 -rw-r--r--	root/root	usr/include/sodium/crypto_verify_64.h
+-rw-r--r--	root/root	usr/include/sodium/crypto_xof_shake128.h
+-rw-r--r--	root/root	usr/include/sodium/crypto_xof_shake256.h
+-rw-r--r--	root/root	usr/include/sodium/crypto_xof_turboshake128.h
+-rw-r--r--	root/root	usr/include/sodium/crypto_xof_turboshake256.h
 -rw-r--r--	root/root	usr/include/sodium/export.h
 -rw-r--r--	root/root	usr/include/sodium/randombytes.h
 -rw-r--r--	root/root	usr/include/sodium/randombytes_internal_random.h
