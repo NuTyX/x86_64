@@ -7,7 +7,7 @@ makedepends=(git musl)
 
 name=busybox
 version=1.36.1
-release=3
+release=4
 
 set=(chroot)
 
@@ -31,14 +31,14 @@ cp ../$name.config .config
 make CC=musl-gcc
 
 # mdev
-mkdir -p $PKG/{etc/mdev.d,bin,sbin}
+mkdir -p $PKG/{etc/mdev.d,bin}
 cd ..
 install -m0755  mdev-like-a-boss/mdev.conf $PKG/etc/mdev.conf
 cp -a mdev-like-a-boss/helpers $PKG/etc/mdev.d
 }
 package() {
-install -m0755 $name-$version/$name $PKG/sbin/$name
-for link in $($PKG/sbin/$name --list)
+install -m0755 $name-$version/$name $PKG/bin/$name
+for link in $($PKG/bin/$name --list)
 do
   found=no
   for i in $name bash sh ifup ifdown init halt reboot \
@@ -47,11 +47,8 @@ do
    [ "$link" == "$i" ] && found=yes
   done
   [ "$found" == "yes" ] && continue
-  if [ "$link" == "ash" ]; then
-    ln -s ../sbin/$name $PKG/bin/$link
-  else
-    ln -s ../sbin/$name $PKG/sbin/$link
-  fi
+
+  ln -s $name $PKG/bin/$link
 done
 
 }
