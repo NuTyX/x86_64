@@ -30,6 +30,7 @@ PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
 -Dnobody-group=nogroup -Dpam=enabled -Dpamconfdir=/etc/pam.d \
 -Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
+-Dumount-path=/usr/bin/umount"
 
 prepare() {
   cd $name-$version
