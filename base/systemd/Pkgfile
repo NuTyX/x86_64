@@ -20,7 +20,7 @@ set=(core)
 
 name=systemd
 version=258.2
-release=3
+release=4
 
 source=(consolidate-3.patch
         https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
@@ -29,7 +29,7 @@ source=(consolidate-3.patch
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
 -Dnobody-group=nogroup -Dpam=enabled -Dpamconfdir=/etc/pam.d \
--Drpmmacrosdir=no -Dsysusers=false"
+-Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
 
 prepare() {
   cd $name-$version
