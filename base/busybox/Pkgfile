@@ -7,7 +7,7 @@ makedepends=(git musl)
 
 name=busybox
 version=1.36.1
-release=4
+release=5
 
 set=(chroot)
 
@@ -41,7 +41,7 @@ install -m0755 $name-$version/$name $PKG/bin/$name
 for link in $($PKG/bin/$name --list)
 do
   found=no
-  for i in $name bash sh ifup ifdown init halt reboot \
+  for i in $name bash sh ifup ifdown init halt reboot login\
   shutdown poweroff chpst runit runsv sv runsvdir svlogd
   do
    [ "$link" == "$i" ] && found=yes
