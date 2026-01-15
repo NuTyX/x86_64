@@ -1,3 +1,5 @@
+drwxr-xr-x	root/root	bin/
+lrwxrwxrwx	root/root	bin/login -> ../usr/bin/login
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/login.defs
 drwxr-xr-x	root/root	etc/pam.d/
@@ -23,7 +25,6 @@ drwxr-xr-x	root/root	etc/pam.d/
 -rw-r--r--	root/root	etc/pam.d/useradd
 -rw-r--r--	root/root	etc/pam.d/userdel
 -rw-r--r--	root/root	etc/pam.d/usermod
-drwxr-xr-x	root/root	sbin/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwsr-xr-x	root/root	usr/bin/chage

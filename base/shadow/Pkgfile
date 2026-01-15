@@ -9,6 +9,7 @@ makedepends=(libxcrypt pam)
 
 name=shadow
 version=4.19.0
+release=2
 
 set=(chroot core)
 
@@ -254,5 +255,9 @@ fi
 if [ -f $PKG/etc/limits ]; then
  mv -v $PKG/etc/limits{,.NOUSE}
 fi
-rm $PKG/sbin/nologin
+
+mkdir $PKG/bin
+ln -sv ../usr/bin/login $PKG/bin/login
+
+rm -rv $PKG/sbin
 }
