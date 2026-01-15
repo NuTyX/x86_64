@@ -21,61 +21,61 @@ drwxr-xr-x	root/root	lib/udev/rules.d/
 -r--r--r--	root/root	lib/udev/rules.d/13-dm-disk.rules
 -r--r--r--	root/root	lib/udev/rules.d/69-dm-lvm.rules
 -r--r--r--	root/root	lib/udev/rules.d/95-dm-notify.rules
-drwxr-xr-x	root/root	sbin/
--r-xr-xr-x	root/root	sbin/blkdeactivate
--r-xr-xr-x	root/root	sbin/dmsetup
-lrwxrwxrwx	root/root	sbin/dmstats -> dmsetup
--r-xr-xr-x	root/root	sbin/fsadm
-lrwxrwxrwx	root/root	sbin/lvchange -> lvm
-lrwxrwxrwx	root/root	sbin/lvconvert -> lvm
-lrwxrwxrwx	root/root	sbin/lvcreate -> lvm
-lrwxrwxrwx	root/root	sbin/lvdisplay -> lvm
-lrwxrwxrwx	root/root	sbin/lvextend -> lvm
--r-xr-xr-x	root/root	sbin/lvm
--r-xr-xr-x	root/root	sbin/lvm_import_vdo
-lrwxrwxrwx	root/root	sbin/lvmconfig -> lvm
-lrwxrwxrwx	root/root	sbin/lvmdevices -> lvm
-lrwxrwxrwx	root/root	sbin/lvmdiskscan -> lvm
--r-xr-xr-x	root/root	sbin/lvmdump
--r-xr-xr-x	root/root	sbin/lvmpersist
-lrwxrwxrwx	root/root	sbin/lvmsadc -> lvm
-lrwxrwxrwx	root/root	sbin/lvmsar -> lvm
-lrwxrwxrwx	root/root	sbin/lvreduce -> lvm
-lrwxrwxrwx	root/root	sbin/lvremove -> lvm
-lrwxrwxrwx	root/root	sbin/lvrename -> lvm
-lrwxrwxrwx	root/root	sbin/lvresize -> lvm
-lrwxrwxrwx	root/root	sbin/lvs -> lvm
-lrwxrwxrwx	root/root	sbin/lvscan -> lvm
-lrwxrwxrwx	root/root	sbin/pvchange -> lvm
-lrwxrwxrwx	root/root	sbin/pvck -> lvm
-lrwxrwxrwx	root/root	sbin/pvcreate -> lvm
-lrwxrwxrwx	root/root	sbin/pvdisplay -> lvm
-lrwxrwxrwx	root/root	sbin/pvmove -> lvm
-lrwxrwxrwx	root/root	sbin/pvremove -> lvm
-lrwxrwxrwx	root/root	sbin/pvresize -> lvm
-lrwxrwxrwx	root/root	sbin/pvs -> lvm
-lrwxrwxrwx	root/root	sbin/pvscan -> lvm
-lrwxrwxrwx	root/root	sbin/vgcfgbackup -> lvm
-lrwxrwxrwx	root/root	sbin/vgcfgrestore -> lvm
-lrwxrwxrwx	root/root	sbin/vgchange -> lvm
-lrwxrwxrwx	root/root	sbin/vgck -> lvm
-lrwxrwxrwx	root/root	sbin/vgconvert -> lvm
-lrwxrwxrwx	root/root	sbin/vgcreate -> lvm
-lrwxrwxrwx	root/root	sbin/vgdisplay -> lvm
-lrwxrwxrwx	root/root	sbin/vgexport -> lvm
-lrwxrwxrwx	root/root	sbin/vgextend -> lvm
-lrwxrwxrwx	root/root	sbin/vgimport -> lvm
-lrwxrwxrwx	root/root	sbin/vgimportclone -> lvm
-lrwxrwxrwx	root/root	sbin/vgimportdevices -> lvm
-lrwxrwxrwx	root/root	sbin/vgmerge -> lvm
-lrwxrwxrwx	root/root	sbin/vgmknodes -> lvm
-lrwxrwxrwx	root/root	sbin/vgreduce -> lvm
-lrwxrwxrwx	root/root	sbin/vgremove -> lvm
-lrwxrwxrwx	root/root	sbin/vgrename -> lvm
-lrwxrwxrwx	root/root	sbin/vgs -> lvm
-lrwxrwxrwx	root/root	sbin/vgscan -> lvm
-lrwxrwxrwx	root/root	sbin/vgsplit -> lvm
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-r-xr-xr-x	root/root	usr/bin/blkdeactivate
+-r-xr-xr-x	root/root	usr/bin/dmsetup
+lrwxrwxrwx	root/root	usr/bin/dmstats -> dmsetup
+-r-xr-xr-x	root/root	usr/bin/fsadm
+lrwxrwxrwx	root/root	usr/bin/lvchange -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvconvert -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvcreate -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvdisplay -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvextend -> lvm
+-r-xr-xr-x	root/root	usr/bin/lvm
+-r-xr-xr-x	root/root	usr/bin/lvm_import_vdo
+lrwxrwxrwx	root/root	usr/bin/lvmconfig -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvmdevices -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvmdiskscan -> lvm
+-r-xr-xr-x	root/root	usr/bin/lvmdump
+-r-xr-xr-x	root/root	usr/bin/lvmpersist
+lrwxrwxrwx	root/root	usr/bin/lvmsadc -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvmsar -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvreduce -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvremove -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvrename -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvresize -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvs -> lvm
+lrwxrwxrwx	root/root	usr/bin/lvscan -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvchange -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvck -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvcreate -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvdisplay -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvmove -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvremove -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvresize -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvs -> lvm
+lrwxrwxrwx	root/root	usr/bin/pvscan -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgcfgbackup -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgcfgrestore -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgchange -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgck -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgconvert -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgcreate -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgdisplay -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgexport -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgextend -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgimport -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgimportclone -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgimportdevices -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgmerge -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgmknodes -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgreduce -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgremove -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgrename -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgs -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgscan -> lvm
+lrwxrwxrwx	root/root	usr/bin/vgsplit -> lvm
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libdevmapper.so -> ../../lib/libdevmapper.so.1.02
 lrwxrwxrwx	root/root	usr/lib/liblvm2cmd.so -> ../../lib/liblvm2cmd.so.2.03

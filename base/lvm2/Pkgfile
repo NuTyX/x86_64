@@ -3,20 +3,22 @@ url="http://sourceware.org/lvm2/"
 
 license="GPL2 LGPL2.1 BSD:2-Clause"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(systemd libaio util-linux)
 
 name=lvm2
 version=2.03.38
+release=2
 
 source=(https://sourceware.org/ftp/lvm2/LVM2.$version.tgz)
 build() {
 cd LVM2.$version
-./configure \
---prefix=/usr \
---exec-prefix= \
+./configure        \
+--prefix=/usr      \
+--sbindir=/usr/bin \
+--exec-prefix=     \
 --with-confdir=/etc \
 --mandir=/usr/share/man \
 --enable-cmdlib \
