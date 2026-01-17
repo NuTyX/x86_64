@@ -1,12 +1,14 @@
 description="The mdadm package contains administration tools for software RAID."
-url="http://www.cse.unsw.edu.au/~neilb/source/mdadm/"
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+url="https://git.kernel.org/pub/scm/utils/mdadm"
+
+contributors="Pierre,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(systemd)
 
 name=mdadm
 version=4.4
+release=2
 
 source=(http://www.kernel.org/pub/linux/utils/raid/$name/$name-$version.tar.xz)
 
@@ -17,5 +19,6 @@ sed -e "s/__u8 signature\[4\]/& __attribute__ ((nonstring))/" \
     -i platform-intel.h
 
 make
-make DESTDIR=$PKG install
+make DESTDIR=$PKG BINDIR=/usr/bin install
+make SYSTEMD_DIR=$PKG/usr/lib/systemd/system install-systemd
 }
