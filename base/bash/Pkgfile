@@ -2,19 +2,26 @@ description="The Bash package contains the Bourne-Again SHell."
 url='https://www.gnu.org/software/bash/'
 
 maintainer="Brian Fox,Chet Ramey and many more"
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(ncurses readline sed)
 
 name=bash
 version=5.3
+release=2
 
 set=(chroot)
 
 PKGMK_LOCALES=()
 
-source=(http://ftp.gnu.org/gnu/bash/bash-$version.tar.gz)
+source=($name-$version-consolidate-1.patch
+        https://ftp.gnu.org/gnu/bash/bash-$version.tar.gz)
 
+prepare() {
+ cd $name-$version
+ patch -Np1 -i ../$name-$version-consolidate-1.patch
+}
 build()
 {
 cd bash-$version
