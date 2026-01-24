@@ -11,9 +11,10 @@ makedepends=(gdk-pixbuf libcroco pango vala rustc cargo-c
 
 name=librsvg
 version=2.61.3
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/librsvg/-/archive/$version/$name-$version.tar.gz)
-PKGMK_MESON_OPTIONS="-Dtests=false -Ddocs=disabled"
+PKGMK_MESON_OPTIONS="-Dtests=false -Ddocs=disabled -Dpixbuf-loader=enabled"
 build=meson
 
 package() {
