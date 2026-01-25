@@ -6,7 +6,7 @@ contributors=""
 
 name=upgrade-nutyx
 version=20250115
-release=1
+release=2
 
 _notifier="cards-upgrade-notifier"
 
@@ -24,8 +24,8 @@ build() {
 cc ${_notifier}.c \
 $(pkg-config --cflags --libs gtk+-3.0) -o ${_notifier}
 
-mkdir -p $PKG/{sbin,usr/{bin,share/pixmaps}}
-install -m755 $name.in $PKG/sbin/$name
+mkdir -p $PKG/usr/{sbin,bin,share/pixmaps}
+install -m755 $name.in $PKG/usr/sbin/$name
 install -m755 ${_notifier} $PKG/usr/bin/${_notifier}
 install -m755 ${_notifier}-updates.png \
 $PKG/usr/share/pixmaps/${_notifier}-updates.png
