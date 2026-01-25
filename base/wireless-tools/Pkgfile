@@ -16,6 +16,6 @@ build() {
 cd wireless_tools.${version}
 patch -Np1 -i ../wireless_tools-${version}-fix_iwlist_scanning-1.patch
 make
-mkdir -p $PKG/{sbin,lib,usr/share/man}
+mkdir -p $PKG/usr/share/man
 make PREFIX=$PKG/usr INSTALL_MAN=$PKG/usr/share/man install
 }
