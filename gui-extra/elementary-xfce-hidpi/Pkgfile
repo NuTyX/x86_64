@@ -1,0 +1,26 @@
+description="This is an icon-theme maintained with Xfce in mind, but it should work on other desktops like Gnome3 as well."
+url="https://github.com/shimmerproject/elementary-xfce"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg, Spiky"
+
+makedepends=(librsvg gdk-pixbuf)
+run=(gtk-update-icon-cache)
+
+set=(xfce4)
+
+name=elementary-xfce-hidpi
+version=0.22
+
+PKGMK_KEEP_SOURCES="no"
+
+source=(https://github.com/shimmerproject/elementary-xfce/archive/v$version.tar.gz)
+
+build() {
+sed  -i /optipng/d elementary-xfce-$version/Makefile.in
+cd elementary-xfce-$version
+./configure --prefix=/usr
+make
+make DESTDIR=$PKG install
+rm -r $PKG/usr/share/icons/elementary-xfce{,-dark}
+}
