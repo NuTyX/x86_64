@@ -1,0 +1,12 @@
+diff --git a/scripts/install-nutyx.in b/scripts/install-nutyx.in
+index f76bbe5..35145ea 100755
+--- a/scripts/install-nutyx.in
++++ b/scripts/install-nutyx.in
+@@ -705,7 +705,6 @@ uuidd:x:80:
+ systemd-oom:x:81:
+ netdev:x:86:
+ unbound:x:88:
+-wheel:x:97:
+ users:x:999:
+ nogroup:x:65534:
+ EOF
