@@ -5,17 +5,16 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Rems,Tnut"
 
 name=qemu
-version=10.0.0
+version=10.2.0
 
-makedepends=(gtk2 gtk3 sdl libseccomp libcap-ng xorg-pixman
+makedepends=(gtk3 sdl libseccomp libcap-ng xorg-pixman
              python mesa vte virglrenderer lzo nettle
              cyrus-sasl libssh2 pulseaudio alsa-lib alsa-plugins
              alsa-utils check bluez libgcrypt gnutls libusb usbutils python-sphinx
              usbredir bridge-utils xorg-libdrm spice spice-protocol libaio libslirp)
 run=(desktop-file-utils ovmf)
 
-source=(configvm startvm virtio.patch
-        https://download.qemu.org/qemu-$version.tar.xz)
+source=(configvm startvm https://download.qemu.org/qemu-$version.tar.xz)
 
 prepare() {
 if ! (getent group kvm > /dev/null); then
@@ -29,8 +28,6 @@ done
 build() {
 
 cd qemu-$version
-
-#patch -Np1 -i ../virtio.patch
 
 mkdir -vp build
 cd build

@@ -620,4 +620,6 @@ RED='\033[31m'
 NORMAL='\033[0m'
 YELLOW='\033[33m'
 GREEN='\033[32m'
+printf "$YELLOW This script is obsolet and will be removed in the future, please setup-vm -c instead !!! $NORMAL \n"
+sleep 3
 main "$@"

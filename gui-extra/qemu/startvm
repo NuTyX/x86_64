@@ -230,4 +230,6 @@ ECHOCMD="$ECHOBIN -e"
 _NAME=$1
 _VM_FOLDER=$HOME/VM-qemu
 _FULLPATHNAME=${_VM_FOLDER}/${_NAME}
+printf "$YELLOW This script is obsolet and will be removed in the future, please use setup-vm instead !!! $NORMAL\n"
+sleep 3
 main "$@"
