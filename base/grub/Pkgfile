@@ -8,7 +8,7 @@ set=(core)
 
 name=grub
 version=2.12
-release=3
+release=4
 
 dejavu_version=2.37
 splash_version=21.03.0-rc4
@@ -18,7 +18,7 @@ makedepends=(automake m4 bison flex gettext texinfo python
 
 source=(https://downloads.sourceforge.net/nutyx/splash-${splash_version}.png
         https://ftp.gnu.org/gnu/unifont/unifont-13.0.06/unifont-13.0.06.pcf.gz
-        http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-${dejavu_version}.tar.bz2
+        http://downloads.sourceforge.net/nutyx/dejavu/dejavu-fonts-ttf-${dejavu_version}.tar.bz2
         https://ftp.gnu.org/gnu/grub/grub-$version.tar.xz
         grub ext2-fixe.patch grub.cfg)
 
@@ -47,9 +47,8 @@ build() {
 	cd grub-$version
 
 	./configure --prefix=/usr \
-		--sysconfdir=/etc       \
-		--sbindir=/sbin        \
-		--infodir=/usr/share/info \
+	      --sysconfdir=/etc       \
+	      --infodir=/usr/share/info \
                 --with-platform=pc \
                 --disable-efiemu \
                 --enable-grub-mkfont \
