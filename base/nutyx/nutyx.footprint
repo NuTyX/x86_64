@@ -1,12 +1,5 @@
 drwxr-xr-x	root/root	etc/
 lrwxrwxrwx	root/root	etc/mtab -> ../proc/self/mounts
-drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/lsb -> services
-drwxr-xr-x	root/root	lib/services/
--rwxr-xr-x	root/root	lib/services/init-functions
--rw-r--r--	root/root	lib/services/init.in
-drwxr-xr-x	root/root	lib/services/setup-nutyx/
--rw-r--r--	root/root	lib/services/setup-nutyx/setup-nutyx.locales.gz
 drwx------	root/root	root/
 lrwxrwxrwx	root/root	root/bashrc -> ../etc/bashrc
 lrwxrwxrwx	root/root	root/profile.d -> ../etc/profile.d
@@ -30,6 +23,9 @@ lrwxrwxrwx	root/root	usr/sbin/generate-nutyx -> install-nutyx
 -rwxr-xr-x	root/root	usr/sbin/setup-nutyx
 -rwxr-xr-x	root/root	usr/sbin/unsquash-nutyx
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/nutyx/
+-rw-r--r--	root/root	usr/share/nutyx/init.in
+-rw-r--r--	root/root	usr/share/nutyx/setup-nutyx.locales.gz
 drwxr-xr-x	root/root	var/
 lrwxrwxrwx	root/root	var/lock -> /run/lock
 drwxr-xr-x	root/root	var/log/
