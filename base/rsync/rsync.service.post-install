@@ -10,3 +10,4 @@ if [ ! -f etc/rsyncd.conf ]; then
 #   secrets file = /etc/rsyncd.secrets
 EOF
 fi
+systemctl enable rsyncd

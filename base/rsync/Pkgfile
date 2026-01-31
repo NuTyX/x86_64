@@ -1,15 +1,15 @@
 description="Synchronizing files over a network by sending just the differences in the files."
 url="https://samba.anu.edu.au/rsync/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 run=(shadow)
 
 name=rsync
 version=3.4.1
-release=2
+release=3
 
-scriptsversion=20250125
+scriptsversion=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
         https://www.samba.org/ftp/$name/$name-$version.tar.gz)
