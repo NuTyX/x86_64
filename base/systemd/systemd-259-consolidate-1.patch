@@ -1,0 +1,111 @@
+diff -Naur a/src/basic/unit-def.h b/src/basic/unit-def.h
+--- a/src/basic/unit-def.h	2025-12-18 00:02:36.000000000 +0100
++++ b/src/basic/unit-def.h	2026-01-31 11:34:40.467687464 +0100
+@@ -186,8 +186,8 @@
+ 
+ typedef enum SwapState {
+         SWAP_DEAD,
+-        SWAP_ACTIVATING,               /* /sbin/swapon is running, but the swap not yet enabled. */
+-        SWAP_ACTIVATING_DONE,          /* /sbin/swapon is running, and the swap is done. */
++        SWAP_ACTIVATING,               /* /usr/sbin/swapon is running, but the swap not yet enabled. */
++        SWAP_ACTIVATING_DONE,          /* /usr/sbin/swapon is running, and the swap is done. */
+         SWAP_ACTIVE,
+         SWAP_DEACTIVATING,
+         SWAP_DEACTIVATING_SIGTERM,
+diff -Naur a/src/core/swap.c b/src/core/swap.c
+--- a/src/core/swap.c	2025-12-18 00:02:36.000000000 +0100
++++ b/src/core/swap.c	2026-01-31 11:37:06.905170548 +0100
+@@ -1317,7 +1317,7 @@
+ 
+                 /* Dispatch this before we dispatch SIGCHLD, so that
+                  * we always get the events from /proc/swaps before
+-                 * the SIGCHLD of /sbin/swapon. */
++                 * the SIGCHLD of /usr/sbin/swapon. */
+                 r = sd_event_source_set_priority(m->swap_event_source, EVENT_PRIORITY_SWAP_TABLE);
+                 if (r < 0) {
+                         log_error_errno(r, "Failed to change /proc/swaps priority: %m");
+diff -Naur a/src/kernel-install/50-depmod.install b/src/kernel-install/50-depmod.install
+--- a/src/kernel-install/50-depmod.install	2025-12-18 00:02:36.000000000 +0100
++++ b/src/kernel-install/50-depmod.install	2026-01-31 11:46:28.122772093 +0100
+@@ -23,36 +23,36 @@
+ COMMAND="${1:?}"
+ KERNEL_VERSION="${2:?}"
+ 
+-[ -w "/lib/modules" ] || exit 0
++[ -w "/usr/lib/modules" ] || exit 0
+ 
+ case "$COMMAND" in
+     add)
+-        [ -d "/lib/modules/$KERNEL_VERSION/kernel" ] || exit 0
++        [ -d "/usr/lib/modules/$KERNEL_VERSION/kernel" ] || exit 0
+         command -v depmod >/dev/null || exit 0
+         [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && echo "+depmod -a $KERNEL_VERSION"
+         exec depmod -a "$KERNEL_VERSION"
+         ;;
+     remove)
+-        if [ -n "$KERNEL_INSTALL_BOOT_ENTRY_TYPE" ] && [ -d "/lib/modules/$KERNEL_VERSION/kernel" ]; then
++        if [ -n "$KERNEL_INSTALL_BOOT_ENTRY_TYPE" ] && [ -d "/usr/lib/modules/$KERNEL_VERSION/kernel" ]; then
+             [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && \
+                 echo "Multiple entry types may exist, not removing modules.dep or associated files."
+             exit 0
+         fi
+ 
+         [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && \
+-            echo "Removing /lib/modules/${KERNEL_VERSION}/modules.dep and associated files"
++            echo "Removing /usr/lib/modules/${KERNEL_VERSION}/modules.dep and associated files"
+         exec rm -f \
+-            "/lib/modules/$KERNEL_VERSION/modules.alias" \
+-            "/lib/modules/$KERNEL_VERSION/modules.alias.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.builtin.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.builtin.alias.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.dep" \
+-            "/lib/modules/$KERNEL_VERSION/modules.dep.bin" \
+-            "/lib/modules/$KERNEL_VERSION/modules.devname" \
+-            "/lib/modules/$KERNEL_VERSION/modules.softdep" \
+-            "/lib/modules/$KERNEL_VERSION/modules.weakdep" \
+-            "/lib/modules/$KERNEL_VERSION/modules.symbols" \
+-            "/lib/modules/$KERNEL_VERSION/modules.symbols.bin"
++            "/usr/lib/modules/$KERNEL_VERSION/modules.alias" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.alias.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.builtin.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.builtin.alias.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.dep" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.dep.bin" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.devname" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.softdep" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.weakdep" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.symbols" \
++            "/usr/lib/modules/$KERNEL_VERSION/modules.symbols.bin"
+         ;;
+     *)
+         exit 0
+diff -Naur a/tmpfiles.d/home.conf b/tmpfiles.d/home.conf
+--- a/tmpfiles.d/home.conf	2025-12-18 00:02:36.000000000 +0100
++++ b/tmpfiles.d/home.conf	2026-01-31 11:47:14.014241659 +0100
+@@ -7,5 +7,4 @@
+ 
+ # See tmpfiles.d(5) for details.
+ 
+-Q /home 0755 - - -
+ q /srv 0755 - - -
+diff -Naur a/units/kmod-static-nodes.service.in b/units/kmod-static-nodes.service.in
+--- a/units/kmod-static-nodes.service.in	2025-12-18 00:02:36.000000000 +0100
++++ b/units/kmod-static-nodes.service.in	2026-01-31 11:50:17.729128407 +0100
+@@ -13,7 +13,7 @@
+ DefaultDependencies=no
+ Before=sysinit.target systemd-tmpfiles-setup-dev-early.service
+ ConditionCapability=CAP_SYS_MODULE
+-ConditionFileNotEmpty=/lib/modules/%v/modules.devname
++ConditionFileNotEmpty=/usr/lib/modules/%v/modules.devname
+ ConditionPathExists={{KMOD}}
+ 
+ [Service]
+diff -Naur a/units/modprobe@.service b/units/modprobe@.service
+--- a/units/modprobe@.service	2025-12-18 00:02:36.000000000 +0100
++++ b/units/modprobe@.service	2026-01-31 11:53:20.395014143 +0100
+@@ -32,4 +32,4 @@
+ 
+ [Service]
+ Type=oneshot
+-ExecStart=-/sbin/modprobe -abq %i
++ExecStart=-/usr/sbin/modprobe -abq %i

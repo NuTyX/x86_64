@@ -19,22 +19,24 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=258.2
-release=4
+version=259
+release=1
 
-source=(consolidate-3.patch
+source=($name-$version-consolidate-1.patch
         https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
--Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
+-Dldconfig=false -Dhomed=disabled -Dmode=release \
 -Dnobody-group=nogroup -Dpam=enabled -Dpamconfdir=/etc/pam.d \
 -Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
--Dumount-path=/usr/bin/umount"
+-Dumount-path=/usr/bin/umount -Dswapon-path=/usr/sbin/swapon \
+-Dswapoff-path=/usr/sbin/swapoff -Dagetty-path=/usr/sbin/agetty \
+-Dkmod-path=/usr/bin/kmod"
 
 prepare() {
   cd $name-$version
-  patch -Np1 -i ../consolidate-3.patch
+  patch -Np1 -i ../$name-$version-consolidate-1.patch
 
   sed -e 's/GROUP="render"/GROUP="video"/' \
   -e 's/GROUP="sgx", //'                   \
