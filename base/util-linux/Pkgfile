@@ -11,9 +11,10 @@ set=(core)
 
 name=util-linux
 version=2.41.3
-release=2
+release=3
 
-source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
+source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz
+        $name-$version-consolidate-1.patch)
 
 PKGMK_GROUPS=(devel doc man)
 PKGMK_LOCALES=()
@@ -23,9 +24,7 @@ PKGMK_DEPENDS=(libcap systemd)
 build()
 {
 cd util-linux-$version
-
-# Blue is a very bad color for the info message ...
-sed -i "s@COLOR_BLUE@COLOR_CYAN@" disk-utils/cfdisk.c
+patch -Np1 -i ../$name-$version-consolidate-1.patch
 
 mkdir -pv $PKG/var/lib/hwclock
 ./configure ADJTIME_PATH=/var/lib/hwclock/adjtime \

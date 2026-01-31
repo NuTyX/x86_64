@@ -1,0 +1,1024 @@
+diff -Naur a/disk-utils/cfdisk.c b/disk-utils/cfdisk.c
+--- a/disk-utils/cfdisk.c	2025-12-15 13:25:47.651571459 +0100
++++ b/disk-utils/cfdisk.c	2026-01-31 11:24:22.966774489 +0100
+@@ -129,7 +129,7 @@
+ 	/* color            foreground, background */
+ 	[CFDISK_CL_WARNING]   = { COLOR_RED, -1 },
+ 	[CFDISK_CL_FREESPACE] = { COLOR_GREEN, -1 },
+-	[CFDISK_CL_INFO]      = { COLOR_BLUE, -1 }
++	[CFDISK_CL_INFO]      = { COLOR_CYAN, -1 }
+ };
+ #endif
+ 
+diff -Naur a/include/pathnames.h b/include/pathnames.h
+--- a/include/pathnames.h	2025-12-15 13:25:47.654571446 +0100
++++ b/include/pathnames.h	2026-01-31 11:18:15.553529519 +0100
+@@ -48,7 +48,7 @@
+ #define	_PATH_VAR_NOLOGIN	"/var/run/nologin"
+ 
+ #ifndef _PATH_LOGIN
+-# define _PATH_LOGIN		"/bin/login"
++# define _PATH_LOGIN		"/usr/bin/login"
+ #endif
+ #define _PATH_SHUTDOWN		"/sbin/shutdown"
+ #define _PATH_POWEROFF		"/sbin/poweroff"
+diff -Naur a/po-man/cs.po b/po-man/cs.po
+--- a/po-man/cs.po	2025-12-15 13:38:43.867253540 +0100
++++ b/po-man/cs.po	2026-01-31 11:19:42.336981957 +0100
+@@ -43532,7 +43532,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+ msgid ""
+-"Optionally invokes a non-standard login program instead of _/bin/login_."
++"Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -43647,7 +43647,7 @@
+ msgid ""
+ "Automatically log in the specified user without asking for a username or "
+ "password. Using this option causes an *-f* _username_ option and argument to "
+-"be added to the */bin/login* command line. See *--login-options*, which can "
++"be added to the */usr/bin/login* command line. See *--login-options*, which can "
+ "be used to modify this option's behavior."
+ msgstr ""
+ 
+@@ -43693,7 +43693,7 @@
+ #: ../term-utils/agetty.8.adoc:73
+ msgid ""
+ "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option "
+-"and argument are added to the _/bin/login_ command line."
++"and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -43824,7 +43824,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+ msgid ""
+-"Invoke the specified _login_program_ instead of /bin/login. This allows the "
++"Invoke the specified _login_program_ instead of /usr/bin/login. This allows the "
+ "use of a non-standard login program. Such a program could, for example, ask "
+ "for a dial-up password or use a different password file. See *--login-"
+ "options*."
+@@ -43938,7 +43938,7 @@
+ "input from the user who logs in and therefore will not be able to figure out "
+ "parity, character size, and newline processing of the connection. It "
+ "defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line "
+-"character. Beware that the program that *agetty* starts (usually /bin/login) "
++"character. Beware that the program that *agetty* starts (usually /usr/bin/login) "
+ "is run as root."
+ msgstr ""
+ 
+diff -Naur a/po-man/de.po b/po-man/de.po
+--- a/po-man/de.po	2025-09-15 19:27:05.480638768 +0200
++++ b/po-man/de.po	2026-01-31 11:19:42.340981999 +0100
+@@ -34509,8 +34509,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:20
+-msgid "*agetty* opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by *init*(8)."
+-msgstr "*agetty* öffnet einen TTY-Port, bittet um einen Anmeldenamen und startet den Befehl /bin/login. Es wird normalerweise durch *init*(8) aufgerufen."
++msgid "*agetty* opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by *init*(8)."
++msgstr "*agetty* öffnet einen TTY-Port, bittet um einen Anmeldenamen und startet den Befehl /usr/bin/login. Es wird normalerweise durch *init*(8) aufgerufen."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:22
+@@ -34549,8 +34549,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+-msgid "Optionally invokes a non-standard login program instead of _/bin/login_."
+-msgstr "Startet optional ein nicht vorgegebenes Anmeldeprogramm statt _/bin/login_."
++msgid "Optionally invokes a non-standard login program instead of _/usr/bin/login_."
++msgstr "Startet optional ein nicht vorgegebenes Anmeldeprogramm statt _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:31
+@@ -34644,8 +34644,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:63
+-msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
+-msgstr "Der angegebene Benutzer wird ohne Abfrage eines Benutzernamens oder Passworts automatisch angemeldet. Die Verwendung dieser Option führt dazu, dass die Option und das Argument *-f* _Benutzername_ zu der Befehlszeile von */bin/login* hinzugefügt werden. Siehe *--login-options*, die zur Veränderung des Verhaltens dieser Option verwendet werden kann."
++msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */usr/bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
++msgstr "Der angegebene Benutzer wird ohne Abfrage eines Benutzernamens oder Passworts automatisch angemeldet. Die Verwendung dieser Option führt dazu, dass die Option und das Argument *-f* _Benutzername_ zu der Befehlszeile von */usr/bin/login* hinzugefügt werden. Siehe *--login-options*, die zur Veränderung des Verhaltens dieser Option verwendet werden kann."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:65
+@@ -34676,13 +34676,13 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:73
+-msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/bin/login_ command line."
+-msgstr "Falls eine Option *--host* _Fake-Rechner_ angegeben wird, dann wird die Option und das Argument *-h* _Fake-Rechner_ zu der Befehlszeile von _/bin/login_ hinzugefügt."
++msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/usr/bin/login_ command line."
++msgstr "Falls eine Option *--host* _Fake-Rechner_ angegeben wird, dann wird die Option und das Argument *-h* _Fake-Rechner_ zu der Befehlszeile von _/usr/bin/login_ hinzugefügt."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+-msgid "If the *--nohostname* option is given, then an *-H* option is added to the */bin/login* command line."
+-msgstr "Falls die Option *--nohostname* angegeben wird, dann wird die Option *-H* zu der Befehlszeile von _/bin/login_ hinzugefügt."
++msgid "If the *--nohostname* option is given, then an *-H* option is added to the */usr/bin/login* command line."
++msgstr "Falls die Option *--nohostname* angegeben wird, dann wird die Option *-H* zu der Befehlszeile von _/usr/bin/login_ hinzugefügt."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:77
+@@ -34774,8 +34774,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+-msgid "Invoke the specified _login_program_ instead of /bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
+-msgstr "Ruft ein spezielles _Anmeldeprogramm_ statt /bin/login auf. Dies ermöglicht es, ein nicht standardisiertes Anmeldeprogramm zu verwenden. Beispielsweise könnte ein solches Programm nach einem Einwählpasswort fragen oder eine andere Passwort-Datei verwenden. Siehe *--login-options*."
++msgid "Invoke the specified _login_program_ instead of /usr/bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
++msgstr "Ruft ein spezielles _Anmeldeprogramm_ statt /usr/bin/login auf. Dies ermöglicht es, ein nicht standardisiertes Anmeldeprogramm zu verwenden. Beispielsweise könnte ein solches Programm nach einem Einwählpasswort fragen oder eine andere Passwort-Datei verwenden. Siehe *--login-options*."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:102
+@@ -34856,8 +34856,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:122
+-msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /bin/login) is run as root."
+-msgstr "Fragt den Benutzer nicht nach einem Anmeldenamen. Dies kann für Verbindungen mit der Option *--login-program* verwendet werden, um einen nicht standardmäßigen Anmeldeprozess wie eine Mailbox (BBS) aufzurufen. Beachten Sie, dass *agetty* mit der Option *--skip-login* keine Eingabezeichen von dem Benutzer erhält, der sich anmeldet, und daher nicht die Parität, Zeichenbreite und die Verarbeitung von Zeilenumbrüchen in der Verbindung erkennen kann. Als Vorgabe wird Space-Parität, 7-Bit-Zeichen und ASCII-CR (13) Zeilenumbruchzeichen verwendet. Achtung: Das von *agetty* gestartete Programm (normalerweise _/bin/login_) wird als root ausgeführt."
++msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /usr/bin/login) is run as root."
++msgstr "Fragt den Benutzer nicht nach einem Anmeldenamen. Dies kann für Verbindungen mit der Option *--login-program* verwendet werden, um einen nicht standardmäßigen Anmeldeprozess wie eine Mailbox (BBS) aufzurufen. Beachten Sie, dass *agetty* mit der Option *--skip-login* keine Eingabezeichen von dem Benutzer erhält, der sich anmeldet, und daher nicht die Parität, Zeichenbreite und die Verarbeitung von Zeilenumbrüchen in der Verbindung erkennen kann. Als Vorgabe wird Space-Parität, 7-Bit-Zeichen und ASCII-CR (13) Zeilenumbruchzeichen verwendet. Achtung: Das von *agetty* gestartete Programm (normalerweise _/usr/bin/login_) wird als root ausgeführt."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:123
+diff -Naur a/po-man/es.po b/po-man/es.po
+--- a/po-man/es.po	2025-12-15 13:38:43.868253535 +0100
++++ b/po-man/es.po	2026-01-31 11:19:42.345982052 +0100
+@@ -46143,7 +46143,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+ msgid ""
+-"Optionally invokes a non-standard login program instead of _/bin/login_."
++"Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ "Opcionalmente invoca un programa de acceso no estándar en vez de _/bin/"
+ "login_."
+@@ -46276,7 +46276,7 @@
+ msgid ""
+ "Automatically log in the specified user without asking for a username or "
+ "password. Using this option causes an *-f* _username_ option and argument to "
+-"be added to the */bin/login* command line. See *--login-options*, which can "
++"be added to the */usr/bin/login* command line. See *--login-options*, which can "
+ "be used to modify this option's behavior."
+ msgstr ""
+ 
+@@ -46320,7 +46320,7 @@
+ #: ../term-utils/agetty.8.adoc:73
+ msgid ""
+ "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option "
+-"and argument are added to the _/bin/login_ command line."
++"and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -46471,16 +46471,16 @@
+ #: ../term-utils/agetty.8.adoc:101
+ #, fuzzy
+ #| msgid ""
+-#| "Invoke the specified I<login_program> instead of /bin/login.  This allows "
++#| "Invoke the specified I<login_program> instead of /usr/bin/login.  This allows "
+ #| "the use of a non-standard login program (for example, one that asks for a "
+ #| "dial-up password or that uses a different password file)."
+ msgid ""
+-"Invoke the specified _login_program_ instead of /bin/login. This allows the "
++"Invoke the specified _login_program_ instead of /usr/bin/login. This allows the "
+ "use of a non-standard login program. Such a program could, for example, ask "
+ "for a dial-up password or use a different password file. See *--login-"
+ "options*."
+ msgstr ""
+-"Invoca el programa I<programa_login> en vez de /bin/login.  Esto permite el "
++"Invoca el programa I<programa_login> en vez de /usr/bin/login.  Esto permite el "
+ "uso de un programa de login no estándar (por ejemplo, uno que pida un "
+ "password al conectar por módem o que utilice un fichero de claves distinto)."
+ 
+@@ -46602,7 +46602,7 @@
+ #| "who logs in and therefore won't be able to figure out parity, character "
+ #| "size, and newline processing of the connection. It defaults to space "
+ #| "parity, 7 bit characters, and ASCII CR (13) end-of-line character.  "
+-#| "Beware that the program that B<agetty> starts (usually /bin/login)  is "
++#| "Beware that the program that B<agetty> starts (usually /usr/bin/login)  is "
+ #| "run as root."
+ msgid ""
+ "Do not prompt the user for a login name. This can be used in connection with "
+@@ -46611,7 +46611,7 @@
+ "input from the user who logs in and therefore will not be able to figure out "
+ "parity, character size, and newline processing of the connection. It "
+ "defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line "
+-"character. Beware that the program that *agetty* starts (usually /bin/login) "
++"character. Beware that the program that *agetty* starts (usually /usr/bin/login) "
+ "is run as root."
+ msgstr ""
+ "No preguntar al usuario por un nombre de login. Esto puede ser usado en "
+@@ -46621,7 +46621,7 @@
+ "paridad, tamaño de caracter, y procesado de nueva línea. Por defecto cae en "
+ "paridad espacio, caracteres de 7 bit, y el caracter ASCII CR (13) como fin-"
+ "de-línea.  Hay que tener en cuenta que el programa que B<agetty> arranca "
+-"(normalmente /bin/login)  se ejecuta como root."
++"(normalmente /usr/bin/login)  se ejecuta como root."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:123
+@@ -54335,7 +54335,7 @@
+ #~ "login command.  It is normally invoked by B<init>(8)."
+ #~ msgstr ""
+ #~ "B<agetty> abre un puerto tty, pide un nombre de entrada y ejecuta la "
+-#~ "orden /bin/login. Es llamado normalmente por I<init>(8)."
++#~ "orden /usr/bin/login. Es llamado normalmente por I<init>(8)."
+ 
+ #~ msgid "\\(bu"
+ #~ msgstr "\\(bu"
+@@ -54418,16 +54418,16 @@
+ 
+ #, fuzzy
+ #~| msgid ""
+-#~| "Invoke the specified I<login_program> instead of /bin/login.  This "
++#~| "Invoke the specified I<login_program> instead of /usr/bin/login.  This "
+ #~| "allows the use of a non-standard login program (for example, one that "
+ #~| "asks for a dial-up password or that uses a different password file)."
+ #~ msgid ""
+-#~ "Invoke the specified I<login_program> instead of /bin/login.  This allows "
++#~ "Invoke the specified I<login_program> instead of /usr/bin/login.  This allows "
+ #~ "the use of a non-standard login program.  Such a program could, for "
+ #~ "example, ask for a dial-up password or use a different password file. See "
+ #~ "B<--login-options>."
+ #~ msgstr ""
+-#~ "Invoca el programa I<programa_login> en vez de /bin/login.  Esto permite "
++#~ "Invoca el programa I<programa_login> en vez de /usr/bin/login.  Esto permite "
+ #~ "el uso de un programa de login no estandar (por ejemplo, uno que pida un "
+ #~ "password al conectar por modem o que utilice un fichero de claves "
+ #~ "distinto)."
+@@ -54468,7 +54468,7 @@
+ #~| "who logs in and therefore won't be able to figure out parity, character "
+ #~| "size, and newline processing of the connection. It defaults to space "
+ #~| "parity, 7 bit characters, and ASCII CR (13) end-of-line character.  "
+-#~| "Beware that the program that B<agetty> starts (usually /bin/login)  is "
++#~| "Beware that the program that B<agetty> starts (usually /usr/bin/login)  is "
+ #~| "run as root."
+ #~ msgid ""
+ #~ "Do not prompt the user for a login name.  This can be used in connection "
+@@ -54478,7 +54478,7 @@
+ #~ "be able to figure out parity, character size, and newline processing of "
+ #~ "the connection.  It defaults to space parity, 7 bit characters, and ASCII "
+ #~ "CR (13) end-of-line character.  Beware that the program that B<agetty> "
+-#~ "starts (usually /bin/login) is run as root."
++#~ "starts (usually /usr/bin/login) is run as root."
+ #~ msgstr ""
+ #~ "No preguntar al usuario por un nombre de login. Esto puede ser usado en "
+ #~ "conexión con la opción -l para invocar un proceso de login no-estandar "
+@@ -54487,7 +54487,7 @@
+ #~ "deducir la paridad, tamaño de caracter, y procesado de nueva línea. Por "
+ #~ "defecto cae en paridad espacio, caracteres de 7 bit, y el caracter ASCII "
+ #~ "CR (13) como fin-de-línea.  Hay que tener en cuenta que el programa que "
+-#~ "B<agetty> arranca (normalmente /bin/login)  se ejecuta como root."
++#~ "B<agetty> arranca (normalmente /usr/bin/login)  se ejecuta como root."
+ 
+ #, fuzzy
+ #~| msgid ""
+diff -Naur a/po-man/fr.po b/po-man/fr.po
+--- a/po-man/fr.po	2025-12-15 13:38:43.875253506 +0100
++++ b/po-man/fr.po	2026-01-31 11:19:42.353982137 +0100
+@@ -52294,7 +52294,7 @@
+ "login command. It is normally invoked by *init*(8)."
+ msgstr ""
+ "*agetty* ouvre un port de terminal, demande un nom d'utilisateur, puis "
+-"appelle la commande _/bin/login_. Il est normalement appelé par *init*(8).\n"
++"appelle la commande _/usr/bin/login_. Il est normalement appelé par *init*(8).\n"
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:22
+@@ -52368,7 +52368,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+ msgid ""
+-"Optionally invokes a non-standard login program instead of _/bin/login_."
++"Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ "Option pour appeler un programme de connexion non standard au lieu de _/bin/"
+ "login_."
+@@ -52508,12 +52508,12 @@
+ msgid ""
+ "Automatically log in the specified user without asking for a username or "
+ "password. Using this option causes an *-f* _username_ option and argument to "
+-"be added to the */bin/login* command line. See *--login-options*, which can "
++"be added to the */usr/bin/login* command line. See *--login-options*, which can "
+ "be used to modify this option's behavior."
+ msgstr ""
+ "Connecter automatiquement l’utilisateur indiqué sans demander un identifiant "
+ "ou un mot de passe. Utiliser cette option fait que l’option et l’argument *-"
+-"f* _nom_utilisateur_ sont ajoutés à la ligne de commande de _/bin/login_. "
++"f* _nom_utilisateur_ sont ajoutés à la ligne de commande de _/usr/bin/login_. "
+ "Consultez *--login-options* qui peut être utilisée pour modifier le "
+ "comportement de cette option."
+ 
+@@ -52568,10 +52568,10 @@
+ #: ../term-utils/agetty.8.adoc:73
+ msgid ""
+ "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option "
+-"and argument are added to the _/bin/login_ command line."
++"and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ "Si une option *--host* _hôte_factice_ est donnée, alors une option *-h* "
+-"_hôte_factice_ est ajoutée à la ligne de commande _/bin/login_."
++"_hôte_factice_ est ajoutée à la ligne de commande _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+@@ -52580,7 +52580,7 @@
+ "bin/login* command line."
+ msgstr ""
+ "Si l’option *--nohostname* est fournie, alors une option *-H* est ajoutée à "
+-"la ligne de commande _/bin/login_."
++"la ligne de commande _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:77
+@@ -52749,7 +52749,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+ msgid ""
+-"Invoke the specified _login_program_ instead of /bin/login. This allows the "
++"Invoke the specified _login_program_ instead of /usr/bin/login. This allows the "
+ "use of a non-standard login program. Such a program could, for example, ask "
+ "for a dial-up password or use a different password file. See *--login-"
+ "options*."
+@@ -52893,7 +52893,7 @@
+ "input from the user who logs in and therefore will not be able to figure out "
+ "parity, character size, and newline processing of the connection. It "
+ "defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line "
+-"character. Beware that the program that *agetty* starts (usually /bin/login) "
++"character. Beware that the program that *agetty* starts (usually /usr/bin/login) "
+ "is run as root."
+ msgstr ""
+ "Ne pas demander d'identifiant de connexion à l'utilisateur. Cela peut être "
+@@ -52904,7 +52904,7 @@
+ "processus de nouvelle ligne de la connexion. La configuration par défaut "
+ "est : parité 0, caractères 7 bits et le caractère fin de ligne est le retour "
+ "chariot RC en ASCII (13). Assurez vous que le programme lancé par *agetty* "
+-"(en général, _/bin/login_) est exécuté avec les droits du superutilisateur."
++"(en général, _/usr/bin/login_) est exécuté avec les droits du superutilisateur."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:123
+@@ -61601,18 +61601,18 @@
+ #~| msgid ""
+ #~| "Automatically log in the specified user without asking for a username or "
+ #~| "password.  Using this option causes an B<-f >I<username> option and "
+-#~| "argument to be added to the B</bin/login> command line.  See B<--login-"
++#~| "argument to be added to the B</usr/bin/login> command line.  See B<--login-"
+ #~| "options>, which can be used to modify this option's behavior."
+ #~ msgid ""
+ #~ "Automatically log in the specified user without asking for a username or "
+ #~ "password. Using this option causes an B<-f> I<username> option and "
+-#~ "argument to be added to the B</bin/login> command line. See B<--login-"
++#~ "argument to be added to the B</usr/bin/login> command line. See B<--login-"
+ #~ "options>, which can be used to modify this option\\(cqs behavior."
+ #~ msgstr ""
+ #~ "Connecter automatiquement l’utilisateur indiqué sans demander un "
+ #~ "identifiant ou un mot de passe. Utiliser cette option fait que l’option "
+ #~ "et l’argument B<-f>\\ I<username> sont ajoutés à la ligne de commande de "
+-#~ "B</bin/login>. Consultez B<--login-options> qui peut être utilisée pour "
++#~ "B</usr/bin/login>. Consultez B<--login-options> qui peut être utilisée pour "
+ #~ "modifier le comportement de cette option."
+ 
+ #, fuzzy
+@@ -62039,7 +62039,7 @@
+ #~ "login command.  It is normally invoked by B<init>(8)."
+ #~ msgstr ""
+ #~ "B<agetty> ouvre un port de terminal, demande un nom d'utilisateur, puis "
+-#~ "appelle la commande B</bin/login>. Il est normalement appelé par "
++#~ "appelle la commande B</usr/bin/login>. Il est normalement appelé par "
+ #~ "B<init>(8)."
+ 
+ #~ msgid "\\(bu"
+@@ -62113,10 +62113,10 @@
+ 
+ #~ msgid ""
+ #~ "If the B<--host> I<fakehost> option is given, then an B<-h> I<fakehost> "
+-#~ "option and argument are added to the B</bin/login> command line."
++#~ "option and argument are added to the B</usr/bin/login> command line."
+ #~ msgstr ""
+ #~ "Si une option B<--host> I<hôte_factice> est donnée, alors une option B<-"
+-#~ "h> I<hôte_factice> est ajoutée à la ligne de commande B</bin/login>."
++#~ "h> I<hôte_factice> est ajoutée à la ligne de commande B</usr/bin/login>."
+ 
+ #~ msgid ""
+ #~ "Specifies a \":\" delimited list of files and directories to be displayed "
+@@ -62202,7 +62202,7 @@
+ #~ "défaut, l'écran est effacé."
+ 
+ #~ msgid ""
+-#~ "Invoke the specified I<login_program> instead of /bin/login.  This allows "
++#~ "Invoke the specified I<login_program> instead of /usr/bin/login.  This allows "
+ #~ "the use of a non-standard login program.  Such a program could, for "
+ #~ "example, ask for a dial-up password or use a different password file. See "
+ #~ "B<--login-options>."
+@@ -62256,7 +62256,7 @@
+ #~ "be able to figure out parity, character size, and newline processing of "
+ #~ "the connection.  It defaults to space parity, 7 bit characters, and ASCII "
+ #~ "CR (13) end-of-line character.  Beware that the program that B<agetty> "
+-#~ "starts (usually /bin/login) is run as root."
++#~ "starts (usually /usr/bin/login) is run as root."
+ #~ msgstr ""
+ #~ "Ne pas demander d'identifiant de connexion à l'utilisateur. Cela peut "
+ #~ "être utilisé avec l'option B<--login-program> lors d'une procédure de "
+@@ -62266,7 +62266,7 @@
+ #~ "des caractères ni le processus de nouvelle ligne de la connexion. La "
+ #~ "configuration par défaut est : parité 0, caractères 7 bits et le "
+ #~ "caractère fin de ligne est le retour chariot RC en ASCII (13). Assurez "
+-#~ "vous que le programme lancé par B<agetty> (en général, B</bin/login>) est "
++#~ "vous que le programme lancé par B<agetty> (en général, B</usr/bin/login>) est "
+ #~ "exécuté avec les droits du superutilisateur."
+ 
+ #~ msgid ""
+diff -Naur a/po-man/ko.po b/po-man/ko.po
+--- a/po-man/ko.po	2025-12-15 13:38:43.878253493 +0100
++++ b/po-man/ko.po	2026-01-31 11:19:42.356982168 +0100
+@@ -42507,7 +42507,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+ msgid ""
+-"Optionally invokes a non-standard login program instead of _/bin/login_."
++"Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -42621,7 +42621,7 @@
+ msgid ""
+ "Automatically log in the specified user without asking for a username or "
+ "password. Using this option causes an *-f* _username_ option and argument to "
+-"be added to the */bin/login* command line. See *--login-options*, which can "
++"be added to the */usr/bin/login* command line. See *--login-options*, which can "
+ "be used to modify this option's behavior."
+ msgstr ""
+ 
+@@ -42665,7 +42665,7 @@
+ #: ../term-utils/agetty.8.adoc:73
+ msgid ""
+ "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option "
+-"and argument are added to the _/bin/login_ command line."
++"and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -42793,7 +42793,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+ msgid ""
+-"Invoke the specified _login_program_ instead of /bin/login. This allows the "
++"Invoke the specified _login_program_ instead of /usr/bin/login. This allows the "
+ "use of a non-standard login program. Such a program could, for example, ask "
+ "for a dial-up password or use a different password file. See *--login-"
+ "options*."
+@@ -42905,7 +42905,7 @@
+ "input from the user who logs in and therefore will not be able to figure out "
+ "parity, character size, and newline processing of the connection. It "
+ "defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line "
+-"character. Beware that the program that *agetty* starts (usually /bin/login) "
++"character. Beware that the program that *agetty* starts (usually /usr/bin/login) "
+ "is run as root."
+ msgstr ""
+ 
+diff -Naur a/po-man/pl.po b/po-man/pl.po
+--- a/po-man/pl.po	2025-09-21 13:52:04.117080278 +0200
++++ b/po-man/pl.po	2026-01-31 11:19:42.360982210 +0100
+@@ -34340,7 +34340,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:20
+-msgid "*agetty* opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by *init*(8)."
++msgid "*agetty* opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by *init*(8)."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -34380,7 +34380,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+-msgid "Optionally invokes a non-standard login program instead of _/bin/login_."
++msgid "Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -34475,7 +34475,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:63
+-msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
++msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */usr/bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -34507,12 +34507,12 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:73
+-msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/bin/login_ command line."
++msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+-msgid "If the *--nohostname* option is given, then an *-H* option is added to the */bin/login* command line."
++msgid "If the *--nohostname* option is given, then an *-H* option is added to the */usr/bin/login* command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -34605,7 +34605,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+-msgid "Invoke the specified _login_program_ instead of /bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
++msgid "Invoke the specified _login_program_ instead of /usr/bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
+ msgstr ""
+ 
+ #. type: Labeled list
+@@ -34687,7 +34687,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:122
+-msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /bin/login) is run as root."
++msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /usr/bin/login) is run as root."
+ msgstr ""
+ 
+ #. type: Labeled list
+diff -Naur a/po-man/pt_BR.po b/po-man/pt_BR.po
+--- a/po-man/pt_BR.po	2025-12-15 13:38:43.881253480 +0100
++++ b/po-man/pt_BR.po	2026-01-31 11:19:42.371982327 +0100
+@@ -45327,7 +45327,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+ msgid ""
+-"Optionally invokes a non-standard login program instead of _/bin/login_."
++"Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -45442,7 +45442,7 @@
+ msgid ""
+ "Automatically log in the specified user without asking for a username or "
+ "password. Using this option causes an *-f* _username_ option and argument to "
+-"be added to the */bin/login* command line. See *--login-options*, which can "
++"be added to the */usr/bin/login* command line. See *--login-options*, which can "
+ "be used to modify this option's behavior."
+ msgstr ""
+ 
+@@ -45486,7 +45486,7 @@
+ #: ../term-utils/agetty.8.adoc:73
+ msgid ""
+ "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option "
+-"and argument are added to the _/bin/login_ command line."
++"and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -45616,7 +45616,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+ msgid ""
+-"Invoke the specified _login_program_ instead of /bin/login. This allows the "
++"Invoke the specified _login_program_ instead of /usr/bin/login. This allows the "
+ "use of a non-standard login program. Such a program could, for example, ask "
+ "for a dial-up password or use a different password file. See *--login-"
+ "options*."
+@@ -45727,7 +45727,7 @@
+ "input from the user who logs in and therefore will not be able to figure out "
+ "parity, character size, and newline processing of the connection. It "
+ "defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line "
+-"character. Beware that the program that *agetty* starts (usually /bin/login) "
++"character. Beware that the program that *agetty* starts (usually /usr/bin/login) "
+ "is run as root."
+ msgstr ""
+ 
+diff -Naur a/po-man/ro.po b/po-man/ro.po
+--- a/po-man/ro.po	2025-09-15 19:17:04.742823210 +0200
++++ b/po-man/ro.po	2026-01-31 11:19:42.374982358 +0100
+@@ -34529,8 +34529,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:20
+-msgid "*agetty* opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by *init*(8)."
+-msgstr "*agetty* deschide un port tty, solicită un nume de autentificare și invocă comanda /bin/login. În mod normal, este invocată de *init*(8)."
++msgid "*agetty* opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by *init*(8)."
++msgstr "*agetty* deschide un port tty, solicită un nume de autentificare și invocă comanda /usr/bin/login. În mod normal, este invocată de *init*(8)."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:22
+@@ -34569,8 +34569,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+-msgid "Optionally invokes a non-standard login program instead of _/bin/login_."
+-msgstr "Opțional, invocă un program de autentificare non-standard în loc de _/bin/login_."
++msgid "Optionally invokes a non-standard login program instead of _/usr/bin/login_."
++msgstr "Opțional, invocă un program de autentificare non-standard în loc de _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:31
+@@ -34664,8 +34664,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:63
+-msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
+-msgstr "Autentifică automat utilizatorul specificat, fără a cere un nume de utilizator sau o parolă. Utilizarea acestei opțiuni determină adăugarea unei opțiuni și a unui argument *-f* _nume-utilizator_ la linia de comandă */bin/login*. Consultați opțiunea *--login-options*, care poate fi utilizată pentru a modifica comportamentul acestei opțiuni."
++msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */usr/bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
++msgstr "Autentifică automat utilizatorul specificat, fără a cere un nume de utilizator sau o parolă. Utilizarea acestei opțiuni determină adăugarea unei opțiuni și a unui argument *-f* _nume-utilizator_ la linia de comandă */usr/bin/login*. Consultați opțiunea *--login-options*, care poate fi utilizată pentru a modifica comportamentul acestei opțiuni."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:65
+@@ -34696,13 +34696,13 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:73
+-msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/bin/login_ command line."
+-msgstr "Dacă se dă opțiunea *--host* _gazdă-fictivă_, atunci o opțiune și un argument *-h* _gazdă-fictivă_ sunt adăugate la linia de comandă _/bin/login_."
++msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/usr/bin/login_ command line."
++msgstr "Dacă se dă opțiunea *--host* _gazdă-fictivă_, atunci o opțiune și un argument *-h* _gazdă-fictivă_ sunt adăugate la linia de comandă _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+-msgid "If the *--nohostname* option is given, then an *-H* option is added to the */bin/login* command line."
+-msgstr "Dacă se dă opțiunea *--nohostname*, atunci se adaugă o opțiune *-H* la linia de comandă */bin/login*."
++msgid "If the *--nohostname* option is given, then an *-H* option is added to the */usr/bin/login* command line."
++msgstr "Dacă se dă opțiunea *--nohostname*, atunci se adaugă o opțiune *-H* la linia de comandă */usr/bin/login*."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:77
+@@ -34794,8 +34794,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+-msgid "Invoke the specified _login_program_ instead of /bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
+-msgstr "Invocă programul _program-autentificare_ specificat în loc de /bin/login. Acest lucru permite utilizarea unui program de conectare non-standard. Un astfel de program ar putea, de exemplu, să ceară o parolă de apelare sau să utilizeze un fișier de parole diferit. A se vedea *--login-options*."
++msgid "Invoke the specified _login_program_ instead of /usr/bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
++msgstr "Invocă programul _program-autentificare_ specificat în loc de /usr/bin/login. Acest lucru permite utilizarea unui program de conectare non-standard. Un astfel de program ar putea, de exemplu, să ceară o parolă de apelare sau să utilizeze un fișier de parole diferit. A se vedea *--login-options*."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:102
+@@ -34876,8 +34876,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:122
+-msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /bin/login) is run as root."
+-msgstr "Nu solicită utilizatorului un nume de autentificare. Această opțiune poate fi utilizată împreună cu opțiunea *--login-program* pentru a invoca un proces de conectare non-standard, cum ar fi un sistem BBS. Rețineți că, în cazul opțiunii *--skip-login*, *agetty* nu primește nici o informație de la utilizatorul care se conectează și, prin urmare, nu va fi capabil să calculeze paritatea, dimensiunea caracterelor și procesarea noilor linii ale conexiunii. Se utilizează în mod implicit paritatea spațială, caractere de 7 biți și caracterul ASCII CR (13) de sfârșit de linie (retur de cărucior). Atenție la faptul că programul pe care îl pornește *agetty* (de obicei /bin/login) este rulat ca root."
++msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /usr/bin/login) is run as root."
++msgstr "Nu solicită utilizatorului un nume de autentificare. Această opțiune poate fi utilizată împreună cu opțiunea *--login-program* pentru a invoca un proces de conectare non-standard, cum ar fi un sistem BBS. Rețineți că, în cazul opțiunii *--skip-login*, *agetty* nu primește nici o informație de la utilizatorul care se conectează și, prin urmare, nu va fi capabil să calculeze paritatea, dimensiunea caracterelor și procesarea noilor linii ale conexiunii. Se utilizează în mod implicit paritatea spațială, caractere de 7 biți și caracterul ASCII CR (13) de sfârșit de linie (retur de cărucior). Atenție la faptul că programul pe care îl pornește *agetty* (de obicei /usr/bin/login) este rulat ca root."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:123
+diff -Naur a/po-man/sr.po b/po-man/sr.po
+--- a/po-man/sr.po	2025-11-02 09:27:05.977516507 +0100
++++ b/po-man/sr.po	2026-01-31 11:19:42.380982422 +0100
+@@ -34535,8 +34535,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:20
+-msgid "*agetty* opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by *init*(8)."
+-msgstr "*agetty* отвара прикључник конзоле, поставља упит за именом пријаве и призива наредбу „/bin/login“. Обично се призива са *init*(8)."
++msgid "*agetty* opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by *init*(8)."
++msgstr "*agetty* отвара прикључник конзоле, поставља упит за именом пријаве и призива наредбу „/usr/bin/login“. Обично се призива са *init*(8)."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:22
+@@ -34575,8 +34575,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+-msgid "Optionally invokes a non-standard login program instead of _/bin/login_."
+-msgstr "Опционално призива нестандардни пријавни програм уместо _/bin/login_."
++msgid "Optionally invokes a non-standard login program instead of _/usr/bin/login_."
++msgstr "Опционално призива нестандардни пријавни програм уместо _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:31
+@@ -34670,8 +34670,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:63
+-msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
+-msgstr "Аутоматски пријављује наведеног корисника без тражења корисничког имена или лозинке. Коришћење ове опције доводи до тога да опциа *-f* _корисничко-име_ и аргумент буду додати */bin/login* линији наредби. Видите *--login-options*, која се може користити за измену понашања ове опције."
++msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */usr/bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
++msgstr "Аутоматски пријављује наведеног корисника без тражења корисничког имена или лозинке. Коришћење ове опције доводи до тога да опциа *-f* _корисничко-име_ и аргумент буду додати */usr/bin/login* линији наредби. Видите *--login-options*, која се може користити за измену понашања ове опције."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:65
+@@ -34702,13 +34702,13 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:73
+-msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/bin/login_ command line."
+-msgstr "Ако је дата опција *--host* _лажнидомаћин_, тада се опција *-h* _лажнидомаћин_ и аргумент додају линији наредби _/bin/login_."
++msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/usr/bin/login_ command line."
++msgstr "Ако је дата опција *--host* _лажнидомаћин_, тада се опција *-h* _лажнидомаћин_ и аргумент додају линији наредби _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+-msgid "If the *--nohostname* option is given, then an *-H* option is added to the */bin/login* command line."
+-msgstr "Ако је дата опција *--nohostname*, тада се опција *-H* додаје линији наредби */bin/login*."
++msgid "If the *--nohostname* option is given, then an *-H* option is added to the */usr/bin/login* command line."
++msgstr "Ако је дата опција *--nohostname*, тада се опција *-H* додаје линији наредби */usr/bin/login*."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:77
+@@ -34800,8 +34800,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+-msgid "Invoke the specified _login_program_ instead of /bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
+-msgstr "Призива наведени _програм_пријаве_ уместо /bin/login. Ово омогућава коришћење нестандардног програма за пријаву. Такав програм би, на пример, могао да затражи лозинку мрежне парице или да користи другу датотеку лозинке. Видите *--login-options*."
++msgid "Invoke the specified _login_program_ instead of /usr/bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
++msgstr "Призива наведени _програм_пријаве_ уместо /usr/bin/login. Ово омогућава коришћење нестандардног програма за пријаву. Такав програм би, на пример, могао да затражи лозинку мрежне парице или да користи другу датотеку лозинке. Видите *--login-options*."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:102
+@@ -34882,8 +34882,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:122
+-msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /bin/login) is run as root."
+-msgstr "Не тражи од корисника име за пријаву. Ово се може користити у вези са опцијом *--login-program* за призивање нестандардног процеса пријављивања као што је BBS систем. Знајте да са опцијом *--skip-login*, *agetty* не добија никакав унос од корисника који се пријављује и стога неће моћи да утврди паритет, величину знака и обраду новог реда везе. Прелази на основност паритета размака, 7-битних знакова и АСКРИ CR (13) знак краја реда. Пазите да се програм који *agetty* покреће (обично /bin/login) покреће као администраторски."
++msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /usr/bin/login) is run as root."
++msgstr "Не тражи од корисника име за пријаву. Ово се може користити у вези са опцијом *--login-program* за призивање нестандардног процеса пријављивања као што је BBS систем. Знајте да са опцијом *--skip-login*, *agetty* не добија никакав унос од корисника који се пријављује и стога неће моћи да утврди паритет, величину знака и обраду новог реда везе. Прелази на основност паритета размака, 7-битних знакова и АСКРИ CR (13) знак краја реда. Пазите да се програм који *agetty* покреће (обично /usr/bin/login) покреће као администраторски."
+ 
+ #. type: Labeled list
+ #: ../term-utils/agetty.8.adoc:123
+diff -Naur a/po-man/uk.po b/po-man/uk.po
+--- a/po-man/uk.po	2025-09-15 16:32:04.868581868 +0200
++++ b/po-man/uk.po	2026-01-31 11:19:42.384982464 +0100
+@@ -34445,8 +34445,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:20
+-msgid "*agetty* opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by *init*(8)."
+-msgstr "*agetty* відкриває порт tty, просить ввести ім'я користувача і викликає команду /bin/login. Зазвичай, викликається *init*(8)."
++msgid "*agetty* opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by *init*(8)."
++msgstr "*agetty* відкриває порт tty, просить ввести ім'я користувача і викликає команду /usr/bin/login. Зазвичай, викликається *init*(8)."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:22
+@@ -34485,8 +34485,8 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+-msgid "Optionally invokes a non-standard login program instead of _/bin/login_."
+-msgstr "Якщо потрібно, викликає нестандартну програму входу до системи, замість _/bin/login_."
++msgid "Optionally invokes a non-standard login program instead of _/usr/bin/login_."
++msgstr "Якщо потрібно, викликає нестандартну програму входу до системи, замість _/usr/bin/login_."
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:31
+@@ -34580,7 +34580,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:63
+-msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
++msgid "Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */usr/bin/login* command line. See *--login-options*, which can be used to modify this option's behavior."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -34612,12 +34612,12 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:73
+-msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/bin/login_ command line."
++msgid "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+-msgid "If the *--nohostname* option is given, then an *-H* option is added to the */bin/login* command line."
++msgid "If the *--nohostname* option is given, then an *-H* option is added to the */usr/bin/login* command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -34710,7 +34710,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+-msgid "Invoke the specified _login_program_ instead of /bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
++msgid "Invoke the specified _login_program_ instead of /usr/bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*."
+ msgstr ""
+ 
+ #. type: Labeled list
+@@ -34792,7 +34792,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:122
+-msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /bin/login) is run as root."
++msgid "Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /usr/bin/login) is run as root."
+ msgstr ""
+ 
+ #. type: Labeled list
+diff -Naur a/po-man/util-linux-man.pot b/po-man/util-linux-man.pot
+--- a/po-man/util-linux-man.pot	2025-12-15 13:38:45.274247526 +0100
++++ b/po-man/util-linux-man.pot	2026-01-31 11:19:42.387982496 +0100
+@@ -41770,7 +41770,7 @@
+ #: ../term-utils/agetty.8.adoc:20
+ msgid ""
+ "*agetty* opens a tty port, prompts for a login name and invokes the "
+-"/bin/login command. It is normally invoked by *init*(8)."
++"/usr/bin/login command. It is normally invoked by *init*(8)."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -41824,7 +41824,7 @@
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:30
+-msgid "Optionally invokes a non-standard login program instead of _/bin/login_."
++msgid "Optionally invokes a non-standard login program instead of _/usr/bin/login_."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -41938,7 +41938,7 @@
+ msgid ""
+ "Automatically log in the specified user without asking for a username or "
+ "password. Using this option causes an *-f* _username_ option and argument to "
+-"be added to the */bin/login* command line. See *--login-options*, which can "
++"be added to the */usr/bin/login* command line. See *--login-options*, which can "
+ "be used to modify this option's behavior."
+ msgstr ""
+ 
+@@ -41982,14 +41982,14 @@
+ #: ../term-utils/agetty.8.adoc:73
+ msgid ""
+ "If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option "
+-"and argument are added to the _/bin/login_ command line."
++"and argument are added to the _/usr/bin/login_ command line."
+ msgstr ""
+ 
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:75
+ msgid ""
+ "If the *--nohostname* option is given, then an *-H* option is added to the "
+-"*/bin/login* command line."
++"*/usr/bin/login* command line."
+ msgstr ""
+ 
+ #. type: Plain text
+@@ -42110,7 +42110,7 @@
+ #. type: Plain text
+ #: ../term-utils/agetty.8.adoc:101
+ msgid ""
+-"Invoke the specified _login_program_ instead of /bin/login. This allows the "
++"Invoke the specified _login_program_ instead of /usr/bin/login. This allows the "
+ "use of a non-standard login program. Such a program could, for example, ask "
+ "for a dial-up password or use a different password file. See "
+ "*--login-options*."
+@@ -42221,7 +42221,7 @@
+ "input from the user who logs in and therefore will not be able to figure out "
+ "parity, character size, and newline processing of the connection. It "
+ "defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line "
+-"character. Beware that the program that *agetty* starts (usually /bin/login) "
++"character. Beware that the program that *agetty* starts (usually /usr/bin/login) "
+ "is run as root."
+ msgstr ""
+ 
+diff -Naur a/term-utils/agetty.8 b/term-utils/agetty.8
+--- a/term-utils/agetty.8	2025-12-15 13:59:54.139656363 +0100
++++ b/term-utils/agetty.8	2026-01-31 11:16:03.436496548 +0100
+@@ -34,7 +34,7 @@
+ \fBagetty\fP [options] \fIport\fP [\fIbaud_rate\fP...] [\fIterm\fP]
+ .SH "DESCRIPTION"
+ .sp
+-\fBagetty\fP opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by \fBinit\fP(8).
++\fBagetty\fP opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by \fBinit\fP(8).
+ .sp
+ \fBagetty\fP has several \fInon\-standard\fP features that are useful for hardwired and for dial\-in lines:
+ .sp
+@@ -112,7 +112,7 @@
+ .  sp -1
+ .  IP \(bu 2.3
+ .\}
+-Optionally invokes a non\-standard login program instead of \fI/bin/login\fP.
++Optionally invokes a non\-standard login program instead of \fI/usr/bin/login\fP.
+ .RE
+ .sp
+ .RS 4
+@@ -173,7 +173,7 @@
+ .sp
+ \fB\-a\fP, \fB\-\-autologin\fP \fIusername\fP
+ .RS 4
+-Automatically log in the specified user without asking for a username or password. Using this option causes an \fB\-f\fP \fIusername\fP option and argument to be added to the \fB/bin/login\fP command line. See \fB\-\-login\-options\fP, which can be used to modify this option\(cqs behavior.
++Automatically log in the specified user without asking for a username or password. Using this option causes an \fB\-f\fP \fIusername\fP option and argument to be added to the \fB/usr/bin/login\fP command line. See \fB\-\-login\-options\fP, which can be used to modify this option\(cqs behavior.
+ .sp
+ Note that \fB\-\-autologin\fP may affect the way in which \fBgetty\fP initializes the serial line, because on auto\-login \fBagetty\fP does not read from the line and it has no opportunity optimize the line setting.
+ .RE
+@@ -187,9 +187,9 @@
+ .RS 4
+ Typically the \fBlogin\fP(1) command is given a remote hostname when called by something such as \fBtelnetd\fP(8). This option allows \fBagetty\fP to pass what it is using for a hostname to \fBlogin\fP(1) for use in \fButmp\fP(5). See \fB\-\-host\fP, \fBlogin\fP(1), and \fButmp\fP(5).
+ .sp
+-If the \fB\-\-host\fP \fIfakehost\fP option is given, then an \fB\-h\fP \fIfakehost\fP option and argument are added to the \fI/bin/login\fP command line.
++If the \fB\-\-host\fP \fIfakehost\fP option is given, then an \fB\-h\fP \fIfakehost\fP option and argument are added to the \fI/usr/bin/login\fP command line.
+ .sp
+-If the \fB\-\-nohostname\fP option is given, then an \fB\-H\fP option is added to the \fB/bin/login\fP command line.
++If the \fB\-\-nohostname\fP option is given, then an \fB\-H\fP option is added to the \fB/usr/bin/login\fP command line.
+ .sp
+ See \fB\-\-login\-options\fP.
+ .RE
+@@ -231,7 +231,7 @@
+ .sp
+ \fB\-l\fP, \fB\-\-login\-program\fP \fIlogin_program\fP
+ .RS 4
+-Invoke the specified \fIlogin_program\fP instead of /bin/login. This allows the use of a non\-standard login program. Such a program could, for example, ask for a dial\-up password or use a different password file. See \fB\-\-login\-options\fP.
++Invoke the specified \fIlogin_program\fP instead of /usr/bin/login. This allows the use of a non\-standard login program. Such a program could, for example, ask for a dial\-up password or use a different password file. See \fB\-\-login\-options\fP.
+ .RE
+ .sp
+ \fB\-L\fP, \fB\-\-local\-line\fP[\fB=\fP\fImode\fP]
+@@ -268,7 +268,7 @@
+ .sp
+ \fB\-n\fP, \fB\-\-skip\-login\fP
+ .RS 4
+-Do not prompt the user for a login name. This can be used in connection with the \fB\-\-login\-program\fP option to invoke a non\-standard login process such as a BBS system. Note that with the \fB\-\-skip\-login\fP option, \fBagetty\fP gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end\-of\-line character. Beware that the program that \fBagetty\fP starts (usually /bin/login) is run as root.
++Do not prompt the user for a login name. This can be used in connection with the \fB\-\-login\-program\fP option to invoke a non\-standard login process such as a BBS system. Note that with the \fB\-\-skip\-login\fP option, \fBagetty\fP gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end\-of\-line character. Beware that the program that \fBagetty\fP starts (usually /usr/bin/login) is run as root.
+ .RE
+ .sp
+ \fB\-N\fP, \fB\-\-nonewline\fP
+diff -Naur a/term-utils/agetty.8.adoc b/term-utils/agetty.8.adoc
+--- a/term-utils/agetty.8.adoc	2025-12-15 13:25:47.775570929 +0100
++++ b/term-utils/agetty.8.adoc	2026-01-31 11:16:20.328449973 +0100
+@@ -16,7 +16,7 @@
+ 
+ == DESCRIPTION
+ 
+-*agetty* opens a tty port, prompts for a login name and invokes the /bin/login command. It is normally invoked by *init*(8).
++*agetty* opens a tty port, prompts for a login name and invokes the /usr/bin/login command. It is normally invoked by *init*(8).
+ 
+ *agetty* has several _non-standard_ features that are useful for hardwired and for dial-in lines:
+ 
+@@ -26,7 +26,7 @@
+ * Optionally does not display the contents of the _/etc/issue_ file.
+ * Optionally displays an alternative issue files or directories instead of _/etc/issue_ or _/etc/issue.d_.
+ * Optionally does not ask for a login name.
+-* Optionally invokes a non-standard login program instead of _/bin/login_.
++* Optionally invokes a non-standard login program instead of _/usr/bin/login_.
+ * Optionally turns on hardware flow control.
+ * Optionally forces the line to be local with no need for carrier detect.
+ 
+@@ -59,7 +59,7 @@
+ Assume that the tty is 8-bit clean, hence disable parity detection.
+ 
+ *-a*, *--autologin* _username_::
+-Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */bin/login* command line. See *--login-options*, which can be used to modify this option's behavior.
++Automatically log in the specified user without asking for a username or password. Using this option causes an *-f* _username_ option and argument to be added to the */usr/bin/login* command line. See *--login-options*, which can be used to modify this option's behavior.
+ +
+ Note that *--autologin* may affect the way in which *getty* initializes the serial line, because on auto-login *agetty* does not read from the line and it has no opportunity optimize the line setting.
+ 
+@@ -69,9 +69,9 @@
+ *-E*, *--remote*::
+ Typically the *login*(1) command is given a remote hostname when called by something such as *telnetd*(8). This option allows *agetty* to pass what it is using for a hostname to *login*(1) for use in *utmp*(5). See *--host*, *login*(1), and *utmp*(5).
+ +
+-If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/bin/login_ command line.
++If the *--host* _fakehost_ option is given, then an *-h* _fakehost_ option and argument are added to the _/usr/bin/login_ command line.
+ +
+-If the *--nohostname* option is given, then an *-H* option is added to the */bin/login* command line.
++If the *--nohostname* option is given, then an *-H* option is added to the */usr/bin/login* command line.
+ +
+ See *--login-options*.
+ 
+@@ -97,7 +97,7 @@
+ Do not clear the screen before prompting for the login name. By default the screen is cleared.
+ 
+ *-l*, *--login-program* _login_program_::
+-Invoke the specified _login_program_ instead of /bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*.
++Invoke the specified _login_program_ instead of /usr/bin/login. This allows the use of a non-standard login program. Such a program could, for example, ask for a dial-up password or use a different password file. See *--login-options*.
+ 
+ *-L*, *--local-line*[**=**__mode__]::
+ Control the CLOCAL line flag. The optional _mode_ argument is *auto*, *always* or *never*. If the _mode_ argument is omitted, then the default is *always*. If the *--local-line* option is not given at all, then the default is *auto*.
+@@ -118,7 +118,7 @@
+ Display supported baud rates. These are determined at compilation time.
+ 
+ *-n*, *--skip-login*::
+-Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /bin/login) is run as root.
++Do not prompt the user for a login name. This can be used in connection with the *--login-program* option to invoke a non-standard login process such as a BBS system. Note that with the *--skip-login* option, *agetty* gets no input from the user who logs in and therefore will not be able to figure out parity, character size, and newline processing of the connection. It defaults to space parity, 7 bit characters, and ASCII CR (13) end-of-line character. Beware that the program that *agetty* starts (usually /usr/bin/login) is run as root.
+ 
+ *-N*, *--nonewline*::
+ Do not print a newline before writing out _/etc/issue_.
+diff -Naur a/term-utils/agetty.c b/term-utils/agetty.c
+--- a/term-utils/agetty.c	2025-12-15 13:25:47.776570924 +0100
++++ b/term-utils/agetty.c	2026-01-31 11:13:54.979362039 +0100
+@@ -354,7 +354,7 @@
+ 
+ int main(int argc, char **argv)
+ {
+-	char *username = NULL;			/* login name, given to /bin/login */
++	char *username = NULL;			/* login name, given to /usr/bin/login */
+ 	struct chardata chardata;		/* will be set by get_logname() */
+ 	struct termios termios;			/* terminal mode bits */
+ 	struct options options = {
+diff -Naur a/tests/expected/paths/built-in b/tests/expected/paths/built-in
+--- a/tests/expected/paths/built-in	2025-10-22 12:27:30.711733018 +0200
++++ b/tests/expected/paths/built-in	2026-01-31 11:18:01.508919987 +0100
+@@ -5,7 +5,7 @@
+        _PATH_MAILDIR /var/mail
+       _PATH_MOTDFILE /etc/motd
+        _PATH_NOLOGIN /etc/nologin
+-         _PATH_LOGIN /bin/login
++         _PATH_LOGIN /usr/bin/login
+         _PATH_PASSWD /etc/passwd
+        _PATH_GSHADOW /etc/gshadow
+          _PATH_GROUP /etc/group
