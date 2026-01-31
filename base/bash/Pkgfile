@@ -9,7 +9,7 @@ makedepends=(ncurses readline sed)
 
 name=bash
 version=5.3
-release=2
+release=3
 
 set=(chroot)
 
@@ -36,6 +36,6 @@ make
 make DESTDIR=$PKG install
 
 mkdir -p $PKG/bin
-mv -vf $PKG/usr/bin/bash $PKG/bin
+ln -svf ../usr/bin/bash $PKG/bin/bash
 ln -s bash $PKG/bin/sh
 }

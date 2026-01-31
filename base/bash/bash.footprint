@@ -1,8 +1,9 @@
 drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/bash
+lrwxrwxrwx	root/root	bin/bash -> ../usr/bin/bash
 lrwxrwxrwx	root/root	bin/sh -> bash
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/bash
 -r-xr-xr-x	root/root	usr/bin/bashbug
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bash/
