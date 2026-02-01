@@ -1,11 +1,12 @@
 description="Application development toolkit for controlling system-wide privileges"
-url="http://hal.freedesktop.org/docs/polkit"
+url="https://github.com/polkit-org/polkit"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=polkit
 version=127
+release=2
 
 makedepends=(pam systemd gettext glib duktape gobject-introspection
              patch autoconf intltool perl-xml-parser libxslt docbook-xsl)
@@ -23,23 +24,12 @@ if ! (getent passwd $SN > /dev/null); then
 fi
 sed -i '/systemd_sysusers_dir/s/^/#/' $name-$version/meson.build
 }
-build() {
-cd $name-$version
+PKGMK_MESON_OPTIONS="-Dman=false -Dsession_tracking=logind \
+-Dtests=true"
 
-mkdir build
-cd    build
+build=meson
 
-meson --prefix=/usr                       \
-      --buildtype=release                 \
-      -Dman=false                         \
-      -Dsession_tracking=logind           \
-      -Dtests=true                        \
-      ..
-
-ninja
-
-DESTDIR=$PKG ninja install
-
+package() {
 mkdir -p $PKG/etc/pam.d
 cat > $PKG/etc/pam.d/polkit-1 << "EOF"
 # Begin /etc/pam.d/polkit-1
