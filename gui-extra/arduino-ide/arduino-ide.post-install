@@ -1,13 +1,11 @@
-. lib/lsb/init-functions
-
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 UN=dialout
-
-log_warning_msg "${WARNING}
+printf "${INFO}
 
 Your account needs to be part of the $UN group
 to be able to use arduino-ide:
 
   sudo usermod -a -G $UN <username>
 
-${NORMAL}"
-
+${NORMAL}\n"
