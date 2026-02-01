@@ -3,8 +3,8 @@ url="https://www.postgresql.org/docs"
 
 license="PostgreSQL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(systemd readline flex bison perl python libxml2 libxslt openldap pam kerberos
              icu docbook-xml docbook-xsl)
@@ -14,6 +14,7 @@ PKGMK_GROUPS=(lib doc man devel)
 
 name=postgresql
 version=18.1
+release=2
 
 scriptsversion=20250201
 

@@ -1,12 +1,13 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 if [ ! -d srv/pgsql/data ]; then
 	install -v -dm700 srv/pgsql/data
 	chown -R postgres:postgres srv/pgsql
-	log_success_msg "${WARNING} srv/pgsql/data created ${NORMAL}"
+	printf "${INFO} srv/pgsql/data created ${NORMAL}\n"
 	su - postgres -c '/usr/bin/initdb -D srv/pgsql/data'
 fi
 if [ ! -d run/postgresql ]; then
 	install -v -dm755 run/postgresql
 	chown -R postgres:postgres run/postgresql
-	log_success_msg "${WARNING} run/postgresql created ${NORMAL}"
+	printf "${INFO} run/postgresql created ${NORMAL}\n"
 fi
