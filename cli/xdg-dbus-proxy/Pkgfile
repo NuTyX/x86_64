@@ -1,0 +1,15 @@
+description="Filtering proxy for D-Bus connections"
+url="https://github.com/flatpak/xdg-dbus-proxy"
+
+license=(LGPL-2.1-or-later)
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=xdg-dbus-proxy
+version=0.1.6
+
+makedepends=(meson dbus glib)
+source=(https://github.com/flatpak/xdg-dbus-proxy/releases/download/$version/$name-$version.tar.xz)
+
+build=meson
