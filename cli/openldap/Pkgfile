@@ -3,14 +3,16 @@ url="https://www.openldap.org"
 
 license="Custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(autoconf m4 shadow)
 
 name=openldap
 version=2.6.10
-scripts_version=20250125
+release=2
+
+scripts_version=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
 	    https://www.openldap.org/software/download/OpenLDAP/openldap-release/$name-$version.tgz
