@@ -1,5 +1,5 @@
 description="Ethernet bridge filtering utilities"
-url="http://ebtables.sourceforge.net/"
+url="https://ebtables.sourceforge.net/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Yaolinux,Spiky"
@@ -8,7 +8,7 @@ makedepends=(iptables)
 
 name=ebtables
 version=2.0.10_4
-release=7
+release=8
 
 source=(https://downloads.sourceforge.net/${name}/${name}-v${version/_/-}.tar.gz
         ${name}.service ${name} )

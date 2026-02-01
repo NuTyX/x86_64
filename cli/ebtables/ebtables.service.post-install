@@ -1,10 +1,1 @@
-. lib/lsb/init-functions
-SERVICE="ebtables.service"
-LINK="systemd/system/multi-user.target.wants/$SERVICE"
-if [ ! -L etc/$LINK ]; then
-   mkdir -p etc/$(dirname $LINK)
-   ln -svf /usr/lib/systemd/system/$SERVICE \
-   etc/$LINK &&
-   log_success_msg2  \
-   "${INFO} Created symlink /etc/$LINK -> /usr/lib/systemd/system/$SERVICE${NORMAL}"
-fi
+systemctl enable ebtables
