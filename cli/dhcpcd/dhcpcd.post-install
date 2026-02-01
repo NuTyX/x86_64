@@ -1,4 +1,5 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 UN=dhcpcd
 ID=52
 
@@ -6,11 +7,11 @@ chmod 1777 var/tmp
 chmod 700 var/lib/$UN
 
 if ! (getent group $UN > /dev/null); then
-	log_info_msg "${INFO}Creating $UN group${NORMAL}\n"
+	printf "${INFO}Creating $UN group${NORMAL}\n"
 	groupadd -g $ID $UN
 fi
 if ! (getent passwd $UN > /dev/null); then
-	log_info_msg "${INFO}Creating $UN user${NORMAL}\n"
+	printf "${INFO}Creating $UN user${NORMAL}\n"
 	useradd  -c "dhcpcd PrivSep" -d /var/lib/$UN \
 	-g $UN -s /bin/false -u $ID $UN
 fi
