@@ -3,14 +3,15 @@ url="https://httpd.apache.org/ABOUT_APACHE.html"
 
 license="APACHE"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(sed grep pcre2 apr-util sqlite expat libxcrypt)
 run=(shadow)
 
 name=apache
 version=2.4.66
+release=2
 
 scriptsversion=20250201
 

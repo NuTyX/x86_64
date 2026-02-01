@@ -1,4 +1,5 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
 [ -f etc/httpd/httpd.conf.example ] && sed \
 -e 's@User apache@User http@'   \
@@ -8,12 +9,12 @@
 
 if [ ! -f etc/httpd/httpd.conf ]; then
 	cp etc/httpd/httpd.conf{.example,}
-      log_success_msg "${WARNING} /etc//httpd/httpd.conf created ${NORMAL}"
-      log_warning_msg "${WARNING} Double check /etc//httpd/httpd.conf and adapted to your needs ${NORMAL}"
+      printf "${INFO} /etc//httpd/httpd.conf created ${NORMAL}\n"
+      printf "${INFO} Double check /etc//httpd/httpd.conf and adapted to your needs ${NORMAL}\n"
 fi
 if [ ! -f srv/www/index.html ]; then
    cp srv/www/index.html{.apache.example,}
-   log_success_msg "${WARNING} /srv/www/index.html created ${NORMAL}"
+   printf "${INFO} /srv/www/index.html created ${NORMAL}\n"
 fi
 SYSTEMD_TMPFILE=$(which systemd-tmpfile)
 [ -z "$SYSTEMD_TMPFILE" ] || $SYSTEMD_TMPFILE --create httpd.conf
