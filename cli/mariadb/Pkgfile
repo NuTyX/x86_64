@@ -3,8 +3,8 @@ url="https://www.mariadb.org/en/about/"
 
 license="GPL-2.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(lzo cmake libevent boost libxml2 cracklib pcre2 ruby libaio openssl
              libxcrypt)
@@ -12,7 +12,7 @@ run=(shadow mariadb.lib)
 
 name=mariadb
 version=12.1.2
-release=2
+release=3
 
 scriptsversion=20250201
 
