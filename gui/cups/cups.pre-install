@@ -1,21 +1,22 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
 SN="lpadmin"
 IDN="19"
 
 if ! (getent group $SN > /dev/null); then
-   log_info_msg "${INFO}Creating $SN group${NORMAL}\n"
+   printf "${INFO}Creating $SN group${NORMAL}\n"
    groupadd -g $IDN $SN
 fi
 
 UN="lp"
 IDN="9"
 if ! (getent group $UN > /dev/null); then
-   log_info_msg "${INFO}Creating $UN group${NORMAL}\n"
+   printf "${INFO}Creating $UN group${NORMAL}\n"
    groupadd -g $IDN $UN
 fi
 if ! (getent passwd $UN > /dev/null); then
-   log_info_msg "${INFO}Creating $UN user${NORMAL}\n"
+   printf "${INFO}Creating $UN user${NORMAL}\n"
    useradd -c "Print Service User" -d /var/spool/cups \
    -u $IDN -g $UN -s /bin/false $UN
 fi

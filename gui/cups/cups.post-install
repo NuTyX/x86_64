@@ -1,7 +1,9 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 systemctl enable cups
 if [ ! -f /etc/cups/client.conf ]; then
   echo "ServerName /run/cups/cups.sock" > /etc/cups/client.conf
-  log_success_msg "${WARNING} /etc/cups/client.conf created ${NORMAL}"
-  log_warning_msg "${WARNING} Double check /etc/cups/client.conf and adapted to your needs ${NORMAL}"
+  printf "${INFO} /etc/cups/client.conf created ${NORMAL}\n"
+  printf "${INFO} Double check /etc/cups/client.conf and adapted to your needs ${NORMAL}\n"
 fi
+systemctl enable cups

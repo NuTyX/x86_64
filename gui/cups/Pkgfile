@@ -15,7 +15,7 @@ PKGMK_GROUPS=(devel man lib)
 
 name=cups
 version=2.4.16
-release=1
+release=2
 
 source=(https://github.com/OpenPrinting/cups/releases/download/v${version}/$name-$version-source.tar.gz
         99-printer.rules)
