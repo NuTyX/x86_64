@@ -1,7 +1,8 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 if [ ! -f etc/proftpd.conf ]; then
       cp etc/proftpd.conf{.example,}
-      log_success_msg "${WARNING} /etc/proftpd.conf created ${NORMAL}"
-      log_warning_msg "${WARNING} Double check /etc/proftpd.conf and adapted to your needs ${NORMAL}"
+      printf "${INFO} /etc/proftpd.conf created ${NORMAL}\n"
+      printf "${INFO} Double check /etc/proftpd.conf and adapted to your needs ${NORMAL}\n"
 fi
 
