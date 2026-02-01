@@ -1,6 +1,7 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
-log_success_msg2  "${WARNING} Install now the vboxhost-kernel package corresponding to your kernel version. ${NORMAL}"
+printf  "${INFO} Install now the vboxhost-kernel package corresponding to your kernel version. ${NORMAL}\n"
 
 echo "For USB 2.0 facility, on the console:
 # VBoxManage extpack install  /opt/VirtualBox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack-*

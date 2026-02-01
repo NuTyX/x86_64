@@ -10,9 +10,10 @@ drwxr-xr-x	root/root	etc/vbox/
 -rw-r--r--	root/root	etc/vbox/vbox.cfg
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/VirtualBox/
+-rw-r--r--	root/root	opt/VirtualBox/.autoreg (EMPTY)
 -rwxr-xr-x	root/root	opt/VirtualBox/DbgPlugInDiggers.so
 drwxr-xr-x	root/root	opt/VirtualBox/ExtensionPacks/
--rw-r--r--	root/root	opt/VirtualBox/ExtensionPacks/Oracle_VirtualBox_Extension_Pack-7.1.14-170994.vbox-extpack
+-rw-r--r--	root/root	opt/VirtualBox/ExtensionPacks/Oracle_VirtualBox_Extension_Pack-7.2.6-172322.vbox-extpack
 -rw-r--r--	root/root	opt/VirtualBox/LICENSE
 -rwxr-xr-x	root/root	opt/VirtualBox/UICommon.so
 drwxr-xr-x	root/root	opt/VirtualBox/UnattendedTemplates/
@@ -83,6 +84,8 @@ drwxr-xr-x	root/root	opt/VirtualBox/UnattendedTemplates/
 -rwxr-xr-x	root/root	opt/VirtualBox/VBoxSharedFolders.so
 -rwxr-xr-x	root/root	opt/VirtualBox/VBoxSysInfo.sh
 -rwxr-xr-x	root/root	opt/VirtualBox/VBoxVMM.so
+-rwxr-xr-x	root/root	opt/VirtualBox/VBoxVMMArm.so
+-rwxr-xr-x	root/root	opt/VirtualBox/VBoxVRDP.so
 -rwsr-sr-x	root/root	opt/VirtualBox/VBoxVolInfo
 -rwxr-xr-x	root/root	opt/VirtualBox/VBoxXPCOM.so
 -rwxr-xr-x	root/root	opt/VirtualBox/VBoxXPCOMC.so
@@ -226,6 +229,7 @@ drwxr-xr-x	root/root	opt/VirtualBox/icons/scalable/
 -rwxr-xr-x	root/root	opt/VirtualBox/libQt6PrintSupportVBox.so.6
 -rwxr-xr-x	root/root	opt/VirtualBox/libQt6SqlVBox.so.6
 -rwxr-xr-x	root/root	opt/VirtualBox/libQt6StateMachineVBox.so.6
+-rwxr-xr-x	root/root	opt/VirtualBox/libQt6WaylandClientVBox.so.6
 -rwxr-xr-x	root/root	opt/VirtualBox/libQt6WidgetsVBox.so.6
 -rwxr-xr-x	root/root	opt/VirtualBox/libQt6XcbQpaVBox.so.6
 -rwxr-xr-x	root/root	opt/VirtualBox/libQt6XmlVBox.so.6
@@ -295,14 +299,20 @@ drwxr-xr-x	root/root	opt/VirtualBox/nls/
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_zh_TW.qm
 drwxr-xr-x	root/root	opt/VirtualBox/plugins/
 drwxr-xr-x	root/root	opt/VirtualBox/plugins/platforms/
+-rwxr-xr-x	root/root	opt/VirtualBox/plugins/platforms/libqwayland-genericVBox.so
 -rwxr-xr-x	root/root	opt/VirtualBox/plugins/platforms/libqxcbVBox.so
 drwxr-xr-x	root/root	opt/VirtualBox/plugins/platformthemes/
 -rwxr-xr-x	root/root	opt/VirtualBox/plugins/platformthemes/libqgtk2VBox.so
 -rwxr-xr-x	root/root	opt/VirtualBox/plugins/platformthemes/libqgtk3VBox.so
+-rwxr-xr-x	root/root	opt/VirtualBox/plugins/platformthemes/libqxdgdesktopportalVBox.so
 drwxr-xr-x	root/root	opt/VirtualBox/plugins/sqldrivers/
 -rwxr-xr-x	root/root	opt/VirtualBox/plugins/sqldrivers/libqsqliteVBox.so
 drwxr-xr-x	root/root	opt/VirtualBox/plugins/styles/
 -rwxr-xr-x	root/root	opt/VirtualBox/plugins/styles/libqgtk2styleVBox.so
+drwxr-xr-x	root/root	opt/VirtualBox/plugins/wayland-decoration-client/
+-rwxr-xr-x	root/root	opt/VirtualBox/plugins/wayland-decoration-client/libbradientVBox.so
+drwxr-xr-x	root/root	opt/VirtualBox/plugins/wayland-shell-integration/
+-rwxr-xr-x	root/root	opt/VirtualBox/plugins/wayland-shell-integration/libxdg-shellVBox.so
 -rwxr-xr-x	root/root	opt/VirtualBox/postinst-common.sh
 -rwxr-xr-x	root/root	opt/VirtualBox/prerm-common.sh
 -rwxr-xr-x	root/root	opt/VirtualBox/routines.sh
