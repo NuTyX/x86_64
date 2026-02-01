@@ -1,9 +1,8 @@
-. lib/lsb/init-functions
-
-SERVICE="/usr/lib/systemd/system/slim.service"
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 if [ ! -L etc/systemd/system/display-manager.service ];then
   systemctl enable slim
 else
   ACTIVE_SERVICE="$(readlink /etc/systemd/system/display-manager.service)"
-  log_warning_msg "${WARNING} network-manager already exist: ${ACTIVE_SERVICE}${NORMAL}"
+  printf "${INFO} display-manager already exist: ${ACTIVE_SERVICE}${NORMAL}\n"
 fi
