@@ -1,4 +1,5 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 if [ ! -f etc/vimrc ]; then
 	cat > etc/vimrc << "EOF"
 " Begin /etc/vimrc
@@ -13,7 +14,7 @@ syntax on
 
 " End /etc/vimrc
 EOF
-	log_success_msg "/etc/vimrc created. ${SUCCESS}"
+	printf "${INFO} /etc/vimrc created. ${NORMAL}\n"
 else
-	log_warning_msg "${WARNING} /etc/vimrc already exist. ${NORMAL}"
+	printf "${INFO} /etc/vimrc already exist. ${NORMAL}\n"
 fi
