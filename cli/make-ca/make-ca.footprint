@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/make-ca/
 -rw-r--r--	root/root	etc/make-ca/CS.txt
+-rw-r--r--	root/root	etc/make-ca/ISRG_Root_X1.pem
 -rw-r--r--	root/root	etc/make-ca/make-ca.conf.dist
--rw-r--r--	root/root	etc/make-ca/mozilla-ca-root.pem
 drwxr-xr-x	root/root	etc/pki/
 -rw-r--r--	root/root	etc/pki/anchors.md5sums
 drwxr-xr-x	root/root	etc/pki/anchors/
@@ -31,14 +31,17 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/1d3472b9.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/1e08bfd1.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/1e09d511.p11-kit
--rw-r--r--	root/root	etc/pki/anchors/228f89db.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/244b5494.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/2923b3f9.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/2ae6433e.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/2b349938.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/2ccbdda3.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/2d803388.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/2dab9e33.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/30e1580d.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/3136ea36.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/32888f65.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/3323bb7e.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/3513523f.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/3bde41ac.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/3e359ba6.p11-kit
@@ -49,13 +52,11 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/406c9bb1.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/442adcac.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/4632c230.p11-kit
--rw-r--r--	root/root	etc/pki/anchors/46f053f0.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/48bec511.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/4b718d9b.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/4bfab552.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/4c3cbf99.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/4f316efb.p11-kit
--rw-r--r--	root/root	etc/pki/anchors/4fd49c6c.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/5443e9e3.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/54657681.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/5860aaa6.p11-kit
@@ -70,7 +71,7 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/607986c7.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/616816f6.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/626dceaf.p11-kit
--rw-r--r--	root/root	etc/pki/anchors/653b494a.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/6805c744.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/68dd7389.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/69cf9657.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/6a9bdba3.p11-kit
@@ -90,8 +91,6 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/7fa05551.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/7ffa47b4.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/8160b96c.p11-kit
--rw-r--r--	root/root	etc/pki/anchors/81f2d2b1.p11-kit
--rw-r--r--	root/root	etc/pki/anchors/8312c4c1.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/8508e720.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/865fbdf9.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/878d9bca.p11-kit
@@ -105,6 +104,7 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/930ac5d2.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/93bc0acc.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9482e63a.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/981901c3.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9846683b.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/988a38cb.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9b46e03d.p11-kit
@@ -112,6 +112,7 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/9bf03295.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9c8dfbd4.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9d04f354.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/9e654b62.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9ef4a08a.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/9f727ac7.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/a09a51ae.p11-kit
@@ -120,6 +121,7 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/a94d09e5.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/ade2cc8c.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/aee5f10d.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/b0d5255e.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/b0e59380.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/b1159c4c.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/b1b8a7f3.p11-kit
@@ -154,6 +156,7 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/de6d66f3.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/e113c810.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/e18bfb83.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/e1e8b7dc.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/e35234b1.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/e36a6752.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/e53e0c3b.p11-kit
@@ -172,11 +175,13 @@ drwxr-xr-x	root/root	etc/pki/anchors/
 -rw-r--r--	root/root	etc/pki/anchors/f30dd6ad.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/f387163d.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/f39fc864.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/f44703f1.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/f51bb24c.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/f84fab51.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/fa5da96b.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/fb717492.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/fc5a8f99.p11-kit
+-rw-r--r--	root/root	etc/pki/anchors/fd2eb50d.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/fd64f3fc.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/fe8a2cd8.p11-kit
 -rw-r--r--	root/root	etc/pki/anchors/feffd413.p11-kit
@@ -195,6 +200,7 @@ dr-xr-xr-x	root/root	etc/ssl/certs/
 lrwxrwxrwx	root/root	etc/ssl/certs/002c0b4f.0 -> GlobalSign_Root_R46.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/01419da9.0 -> Microsoft_ECC_Root_Certificate_Authority_2017.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/0179095f.0 -> BJCA_Global_Root_CA1.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/02265526.0 -> Entrust_Root_Certification_Authority_-_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/04f60c28.0 -> USERTrust_ECC_Certification_Authority.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/062cdee6.0 -> GlobalSign_Root_CA_-_R3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/064e0aa9.0 -> QuoVadis_Root_CA_2_G3.pem
@@ -214,6 +220,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/0f5dc4f3.0 -> UCA_Extended_Validation_Root.pe
 lrwxrwxrwx	root/root	etc/ssl/certs/0f6fa695.0 -> GDCA_TrustAUTH_R5_ROOT.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/1001acf7.0 -> GTS_Root_R1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/10531352.0 -> Starfield_Services_Root_Certificate_Authority_-_G2.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/106f3e4d.0 -> Entrust_Root_Certification_Authority_-_EC1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/128f4b91.0 -> Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/1422d63c.0 -> DIGITALSIGN_GLOBAL_ROOT_ECDSA_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/14bc7599.0 -> emSign_ECC_Root_CA_-_G3.pem
@@ -227,7 +234,9 @@ lrwxrwxrwx	root/root	etc/ssl/certs/1df5a75f.0 -> D-TRUST_Root_Class_3_CA_2_2009.
 lrwxrwxrwx	root/root	etc/ssl/certs/1e08bfd1.0 -> IdenTrust_Public_Sector_Root_CA_1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/1e09d511.0 -> T-TeleSec_GlobalRoot_Class_2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/1e1eab7c.0 -> T-TeleSec_GlobalRoot_Class_3.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/1e44ef15.0 -> D-TRUST_BR_Root_CA_2_2023.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/1e8e7201.0 -> GlobalSign_Root_CA_-_R3.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/1ec40989.0 -> GLOBALTRUST_2020.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/1f58a078.0 -> QuoVadis_Root_CA_2_G3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/219d9499.0 -> Go_Daddy_Class_2_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/228f89db.0 -> CommScope_Public_Trust_ECC_Root-01.pem
@@ -238,6 +247,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/252252d2.0 -> DigiCert_TLS_ECC_P384_Root_G5.p
 lrwxrwxrwx	root/root	etc/ssl/certs/2923b3f9.0 -> emSign_Root_CA_-_G1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/2add47b6.0 -> GlobalSign_ECC_Root_CA_-_R5.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/2ae6433e.0 -> CA_Disig_Root_R2.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/2b349938.0 -> AffirmTrust_Commercial.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/2c63f966.0 -> SSL.com_TLS_RSA_Root_CA_2022.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/2c9bcd6c.0 -> LAWtrust_Root_CA2__4096_.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/2d21b73c.0 -> Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
@@ -262,6 +272,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/3c899c73.0 -> OISTE_WISeKey_Global_Root_GC_CA
 lrwxrwxrwx	root/root	etc/ssl/certs/3c9a4d3b.0 -> ACCVRAIZ1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/3d3ee9f3.0 -> DIGITALSIGN_GLOBAL_ROOT_RSA_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/3e359ba6.0 -> BJCA_Global_Root_CA2.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/3e7271e8.0 -> Entrust.net_Premium_2048_Secure_Server_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/3fb36b73.0 -> NAVER_Global_Root_Certification_Authority.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/40193066.0 -> Certum_Trusted_Network_CA_2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/4042bcee.0 -> ISRG_Root_X1.pem
@@ -269,6 +280,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/40547a79.0 -> COMODO_Certification_Authority.
 lrwxrwxrwx	root/root	etc/ssl/certs/406c9bb1.0 -> emSign_Root_CA_-_C1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/41a3f684.0 -> Certum_EC-384_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/442adcac.0 -> Certum_Root_CA.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/455f1b52.0 -> Entrust_Root_Certification_Authority_-_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/4632c230.0 -> HARICA_Client_RSA_Root_CA_2021.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/47b283f6.0 -> TWCA_CYBER_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/48a195d8.0 -> Izenpe.com.pem
@@ -282,13 +294,11 @@ lrwxrwxrwx	root/root	etc/ssl/certs/4c95c52e.0 -> DIGITALSIGN_GLOBAL_ROOT_ECDSA_C
 lrwxrwxrwx	root/root	etc/ssl/certs/4f093780.0 -> Telekom_Security_SMIME_RSA_Root_2023.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/4f316efb.0 -> SwissSign_Gold_CA_-_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/4fd49c6c.0 -> CommScope_Public_Trust_RSA_Root-02.pem
-lrwxrwxrwx	root/root	etc/ssl/certs/5046c355.0 -> SwissSign_Silver_CA_-_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/52b525c7.0 -> QuoVadis_Root_CA_1_G3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/53a1b57a.0 -> HiPKI_Root_CA_-_G1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/5443e9e3.0 -> T-TeleSec_GlobalRoot_Class_3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/54657681.0 -> Buypass_Class_2_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/55b683c0.0 -> TWCA_Global_Root_CA_G2.pem
-lrwxrwxrwx	root/root	etc/ssl/certs/57bcb2da.0 -> SwissSign_Silver_CA_-_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/583d0756.0 -> SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/5860aaa6.0 -> Security_Communication_ECC_RootCA1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/5931b5bc.0 -> D-TRUST_EV_Root_CA_1_2020.pem
@@ -321,6 +331,8 @@ lrwxrwxrwx	root/root	etc/ssl/certs/69cf9657.0 -> Telekom_Security_SMIME_ECC_Root
 lrwxrwxrwx	root/root	etc/ssl/certs/6a9bdba3.0 -> SecureSign_Root_CA15.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/6b03dec0.0 -> GTS_Root_R3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/6b483515.0 -> Telekom_Security_TLS_ECC_Root_2020.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/6b99d060.0 -> Entrust_Root_Certification_Authority.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/6c85d883.0 -> D-TRUST_EV_Root_CA_2_2023.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/6d388b92.0 -> D-Trust_SBR_Root_CA_1_2022.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/6d41d539.0 -> Amazon_Root_CA_2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/6e8bf996.0 -> Certum_Root_CA.pem
@@ -353,6 +365,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/8312c4c1.0 -> CommScope_Public_Trust_RSA_Root
 lrwxrwxrwx	root/root	etc/ssl/certs/83e9984f.0 -> e-Szigno_Root_CA_2017.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/8508e720.0 -> Certainly_Root_E1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/85cde254.0 -> Starfield_Root_Certificate_Authority_-_G2.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/86212b19.0 -> AffirmTrust_Networking.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/865fbdf9.0 -> SSL.com_TLS_ECC_Root_CA_2022.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/869fbf79.0 -> emSign_ECC_Root_CA_-_C3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/8761519c.0 -> SecureSign_Root_CA14.pem
@@ -375,6 +388,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9282e51c.0 -> CFCA_EV_ROOT.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/930ac5d2.0 -> Actalis_Authentication_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9339512a.0 -> QuoVadis_Root_CA_3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/93851c9e.0 -> ANF_Secure_Server_Root_CA.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/93bc0acc.0 -> AffirmTrust_Networking.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9479c8c3.0 -> Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9482e63a.0 -> Certum_EC-384_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/94bd6eb5.0 -> HARICA_Client_RSA_Root_CA_2021.pem
@@ -390,6 +404,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9aef356c.0 -> Trustwave_Global_ECC_P384_Certi
 lrwxrwxrwx	root/root	etc/ssl/certs/9b46e03d.0 -> Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9b5697b0.0 -> Trustwave_Global_ECC_P256_Certification_Authority.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9bf03295.0 -> TrustAsia_Global_Root_CA_G3.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/9c8dfbd4.0 -> AffirmTrust_Premium_ECC.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9d04f354.0 -> DigiCert_Assured_ID_Root_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9d6523ce.0 -> ePKI_Root_Certification_Authority.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/9eeb53aa.0 -> DigiCert_SMIME_ECC_P384_Root_G5.pem
@@ -400,6 +415,10 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9f727ac7.0 -> HARICA_TLS_RSA_Root_CA_2021.pem
 -r--r--r--	root/root	etc/ssl/certs/AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
 -r--r--r--	root/root	etc/ssl/certs/ANF_Secure_Server_Root_CA.pem
 -r--r--r--	root/root	etc/ssl/certs/Actalis_Authentication_Root_CA.pem
+-r--r--r--	root/root	etc/ssl/certs/AffirmTrust_Commercial.pem
+-r--r--r--	root/root	etc/ssl/certs/AffirmTrust_Networking.pem
+-r--r--r--	root/root	etc/ssl/certs/AffirmTrust_Premium.pem
+-r--r--r--	root/root	etc/ssl/certs/AffirmTrust_Premium_ECC.pem
 -r--r--r--	root/root	etc/ssl/certs/Amazon_Root_CA_1.pem
 -r--r--r--	root/root	etc/ssl/certs/Amazon_Root_CA_2.pem
 -r--r--r--	root/root	etc/ssl/certs/Amazon_Root_CA_3.pem
@@ -435,7 +454,9 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9f727ac7.0 -> HARICA_TLS_RSA_Root_CA_2021.pem
 -r--r--r--	root/root	etc/ssl/certs/CommScope_Public_Trust_RSA_Root-02.pem
 -r--r--r--	root/root	etc/ssl/certs/Comodo_AAA_Services_root.pem
 -r--r--r--	root/root	etc/ssl/certs/D-TRUST_BR_Root_CA_1_2020.pem
+-r--r--r--	root/root	etc/ssl/certs/D-TRUST_BR_Root_CA_2_2023.pem
 -r--r--r--	root/root	etc/ssl/certs/D-TRUST_EV_Root_CA_1_2020.pem
+-r--r--r--	root/root	etc/ssl/certs/D-TRUST_EV_Root_CA_2_2023.pem
 -r--r--r--	root/root	etc/ssl/certs/D-TRUST_Root_CA_3_2013.pem
 -r--r--r--	root/root	etc/ssl/certs/D-TRUST_Root_Class_3_CA_2_2009.pem
 -r--r--r--	root/root	etc/ssl/certs/D-TRUST_Root_Class_3_CA_2_EV_2009.pem
@@ -455,9 +476,14 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9f727ac7.0 -> HARICA_TLS_RSA_Root_CA_2021.pem
 -r--r--r--	root/root	etc/ssl/certs/DigiCert_TLS_ECC_P384_Root_G5.pem
 -r--r--r--	root/root	etc/ssl/certs/DigiCert_TLS_RSA4096_Root_G5.pem
 -r--r--r--	root/root	etc/ssl/certs/DigiCert_Trusted_Root_G4.pem
+-r--r--r--	root/root	etc/ssl/certs/Entrust.net_Premium_2048_Secure_Server_CA.pem
+-r--r--r--	root/root	etc/ssl/certs/Entrust_Root_Certification_Authority.pem
+-r--r--r--	root/root	etc/ssl/certs/Entrust_Root_Certification_Authority_-_EC1.pem
+-r--r--r--	root/root	etc/ssl/certs/Entrust_Root_Certification_Authority_-_G2.pem
 -r--r--r--	root/root	etc/ssl/certs/Entrust_Root_Certification_Authority_-_G4.pem
 -r--r--r--	root/root	etc/ssl/certs/FIRMAPROFESIONAL_CA_ROOT-A_WEB.pem
 -r--r--r--	root/root	etc/ssl/certs/GDCA_TrustAUTH_R5_ROOT.pem
+-r--r--r--	root/root	etc/ssl/certs/GLOBALTRUST_2020.pem
 -r--r--r--	root/root	etc/ssl/certs/GTS_Root_R1.pem
 -r--r--r--	root/root	etc/ssl/certs/GTS_Root_R2.pem
 -r--r--r--	root/root	etc/ssl/certs/GTS_Root_R3.pem
@@ -525,7 +551,6 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9f727ac7.0 -> HARICA_TLS_RSA_Root_CA_2021.pem
 -r--r--r--	root/root	etc/ssl/certs/Starfield_Root_Certificate_Authority_-_G2.pem
 -r--r--r--	root/root	etc/ssl/certs/Starfield_Services_Root_Certificate_Authority_-_G2.pem
 -r--r--r--	root/root	etc/ssl/certs/SwissSign_Gold_CA_-_G2.pem
--r--r--r--	root/root	etc/ssl/certs/SwissSign_Silver_CA_-_G2.pem
 -r--r--r--	root/root	etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem
 -r--r--r--	root/root	etc/ssl/certs/T-TeleSec_GlobalRoot_Class_3.pem
 -r--r--r--	root/root	etc/ssl/certs/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
@@ -550,6 +575,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/9f727ac7.0 -> HARICA_TLS_RSA_Root_CA_2021.pem
 -r--r--r--	root/root	etc/ssl/certs/USERTrust_ECC_Certification_Authority.pem
 -r--r--r--	root/root	etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem
 -r--r--r--	root/root	etc/ssl/certs/XRamp_Global_CA_Root.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/a09a51ae.0 -> D-TRUST_EV_Root_CA_2_2023.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/a2c66da8.0 -> DigiCert_Trusted_Root_G4.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/a3418fda.0 -> GTS_Root_R4.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/a716d4ed.0 -> D-TRUST_EV_Root_CA_1_2020.pem
@@ -559,6 +585,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/a94d09e5.0 -> ACCVRAIZ1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/a9d40e02.0 -> certSIGN_Root_CA_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/ab59055e.0 -> GDCA_TrustAUTH_R5_ROOT.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/ade2cc8c.0 -> Telekom_Security_SMIME_RSA_Root_2023.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/aee5f10d.0 -> Entrust.net_Premium_2048_Secure_Server_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/af0a276f.0 -> Atos_TrustedRoot_Root_CA_ECC_G2_2020.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b0e59380.0 -> GlobalSign_ECC_Root_CA_-_R4.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b0ed035a.0 -> TWCA_Global_Root_CA.pem
@@ -567,8 +594,10 @@ lrwxrwxrwx	root/root	etc/ssl/certs/b1159c4c.0 -> DigiCert_Assured_ID_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b1b8a7f3.0 -> OISTE_WISeKey_Global_Root_GA_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b2d0810d.0 -> D-Trust_SBR_Root_CA_2_2022.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b30d5fda.0 -> D-TRUST_BR_Root_CA_1_2020.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/b3fb433b.0 -> Entrust_Root_Certification_Authority_-_EC1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b433981b.0 -> ANF_Secure_Server_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b66938e9.0 -> Secure_Global_CA.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/b727005e.0 -> AffirmTrust_Premium.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b74d2bd5.0 -> emSign_ECC_Root_CA_-_G3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b7a5b843.0 -> TWCA_Root_Certification_Authority.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/b7db1890.0 -> TWCA_Root_Certification_Authority.pem
@@ -583,6 +612,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/bc3f2570.0 -> Go_Daddy_Root_Certificate_Autho
 lrwxrwxrwx	root/root	etc/ssl/certs/bd43e1dd.0 -> Hongkong_Post_Root_CA_3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/bdacca6f.0 -> Secure_Global_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/bf53fb88.0 -> Microsoft_RSA_Root_Certificate_Authority_2017.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/bf64f35b.0 -> Entrust_Root_Certification_Authority.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/c01eb047.0 -> UCA_Global_G2_Root.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/c28a8a30.0 -> D-TRUST_Root_Class_3_CA_2_2009.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/c44cc0c0.0 -> DigiCert_TLS_RSA4096_Root_G5.pem
@@ -598,6 +628,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/cbb3f32b.0 -> SSL.com_TLS_ECC_Root_CA_2022.pe
 lrwxrwxrwx	root/root	etc/ssl/certs/cbd811bd.0 -> SSL.com_Client_ECC_Root_CA_2022.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/cbf06781.0 -> Go_Daddy_Root_Certificate_Authority_-_G2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/cc450945.0 -> Izenpe.com.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/ccc52f49.0 -> AffirmTrust_Premium_ECC.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/cd58d51e.0 -> Security_Communication_RootCA2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/cd8c0d63.0 -> AC_RAIZ_FNMT-RCM.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/ce5e74ef.0 -> Amazon_Root_CA_1.pem
@@ -621,6 +652,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/d887a5bb.0 -> Trustwave_Global_ECC_P384_Certi
 lrwxrwxrwx	root/root	etc/ssl/certs/d96b65e2.0 -> Certainly_Root_R1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/da0cfd1d.0 -> Sectigo_Public_Server_Authentication_Root_E46.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/da7377f6.0 -> UCA_Extended_Validation_Root.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/dbc54cab.0 -> AffirmTrust_Premium.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/dbff3a01.0 -> emSign_Root_CA_-_C1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/dc4d6a89.0 -> GlobalSign_Root_CA_-_R6.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/dc99f41e.0 -> Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
@@ -637,6 +669,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/e18bfb83.0 -> QuoVadis_Root_CA_3_G3.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/e35234b1.0 -> Certum_Trusted_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/e36a6752.0 -> Atos_TrustedRoot_2011.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/e442e424.0 -> QuoVadis_Root_CA_3_G3.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/e48193cf.0 -> AffirmTrust_Commercial.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/e53e0c3b.0 -> DigiCert_SMIME_ECC_P384_Root_G5.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/e73d606e.0 -> OISTE_WISeKey_Global_Root_GB_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/e7c037b4.0 -> GlobalSign_Root_E46.pem
@@ -674,6 +707,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/f459871d.0 -> emSign_Root_CA_-_G1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/f51bb24c.0 -> Certigna_Root_CA.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/f84fab51.0 -> LAWtrust_Root_CA2__4096_.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/f8fc53da.0 -> Certum_Trusted_Root_CA.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/fa5da96b.0 -> GLOBALTRUST_2020.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/fb5fa911.0 -> Amazon_Root_CA_2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/fb717492.0 -> Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/fc5a8f99.0 -> USERTrust_RSA_Certification_Authority.pem
@@ -685,6 +719,7 @@ lrwxrwxrwx	root/root	etc/ssl/certs/fe8a2cd8.0 -> SZAFIR_ROOT_CA2.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/feffd413.0 -> GlobalSign_Root_E46.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/ff34af3f.0 -> TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
 lrwxrwxrwx	root/root	etc/ssl/certs/ffa7f1eb.0 -> BJCA_Global_Root_CA1.pem
+lrwxrwxrwx	root/root	etc/ssl/certs/ffdd40f9.0 -> D-TRUST_BR_Root_CA_2_2023.pem
 -r--r--r--	root/root	etc/ssl/certs/vTrus_ECC_Root_CA.pem
 -r--r--r--	root/root	etc/ssl/certs/vTrus_Root_CA.pem
 drwxr-xr-x	root/root	usr/

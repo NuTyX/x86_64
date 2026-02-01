@@ -1,2 +1,3 @@
-. lib/lsb/init-functions
-log_info_msg "${INFO}run regularly the command: make-ca -g -f${NORMAL}\n"
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
+printf "${INFO}run regularly the command: make-ca -g -f${NORMAL}\n"

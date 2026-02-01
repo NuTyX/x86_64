@@ -7,13 +7,14 @@ contributors="Tnut"
 run=(gawk nss p11-kit)
 
 name=make-ca
-version=1.15
+version=1.16.1
+release=1
 
 set=(devel)
 
 PKGMK_KEEP_SOURCES="no"
 
-source=(https://hg.mozilla.org/projects/nss/raw-file/tip/lib/ckfw/builtins/certdata.txt
+source=(https://hg-edge.mozilla.org/projects/nss/raw-file/tip/lib/ckfw/builtins/certdata.txt
         https://github.com/lfs-book/$name/archive/v$version/$name-$version.tar.gz)
 
 build() {
@@ -27,5 +28,5 @@ make DESTDIR=$PKG install
 $PKG/usr/sbin/make-ca -r -D $PKG
 
 # And refresh it .. don't ask me
-$PKG/usr/sbin/make-ca -g -D $PKG
+# $PKG/usr/sbin/make-ca -g -D $PKG
 }
