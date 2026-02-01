@@ -3,18 +3,22 @@ url='https://flatpak.org/'
 
 license="LGPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fabienwang,Spiky"
 
 makedepends=(glib libsoup3 gpgme polkit fuse2 libostree json-glib
-             appstream libseccomp python-parsing socat)
+             appstream libseccomp python-parsing socat xdg-dbus-proxy)
 run=(make-ca bubblewrap gnupg)
 
 name=flatpak
-version=1.16.2
+version=1.16.3
+release=1
 
-source=(https://dl.flathub.org/repo/flathub.flatpakrepo
+source=(https://dl.flathub.org/repo/flathub.flatpakrepo flatpak-bindir.sh
         https://github.com/flatpak/flatpak/releases/download/$version/flatpak-$version.tar.xz)
+
+PKGMK_MESON_OPTIONS="-Dsystem_bubblewrap=bwrap -Dsystem_dbus_proxy=xdg-dbus-proxy \
+-Dtests=false -Ddbus_config_dir=/usr/share/dbus-1/system.d -Dselinux_module=disabled"
 
 build=meson
 
@@ -24,5 +28,7 @@ prepare() {
 
 package() {
 install -Dm644 flathub.flatpakrepo \
-$PKG/etc/flatpak/remotes.d/flathub.flatpakrepo
+  $PKG/etc/flatpak/remotes.d/flathub.flatpakrepo
+install -Dm644 flatpak-bindir.sh \
+  $PKG/etc/profile.d/flatpak-bindir.sh
 }

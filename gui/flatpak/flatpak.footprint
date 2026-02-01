@@ -1,11 +1,9 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/dbus-1/
-drwxr-xr-x	root/root	etc/dbus-1/system.d/
--rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.Flatpak.SystemHelper.conf
 drwxr-xr-x	root/root	etc/flatpak/
 drwxr-xr-x	root/root	etc/flatpak/remotes.d/
 -rw-r--r--	root/root	etc/flatpak/remotes.d/flathub.flatpakrepo
 drwxr-xr-x	root/root	etc/profile.d/
+-rw-r--r--	root/root	etc/profile.d/flatpak-bindir.sh
 -rw-r--r--	root/root	etc/profile.d/flatpak.csh
 -rw-r--r--	root/root	etc/profile.d/flatpak.sh
 drwxr-xr-x	root/root	usr/
@@ -17,8 +15,8 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Flatpak-1.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libflatpak.so -> libflatpak.so.0
-lrwxrwxrwx	root/root	usr/lib/libflatpak.so.0 -> libflatpak.so.0.11602.0
--rwxr-xr-x	root/root	usr/lib/libflatpak.so.0.11602.0
+lrwxrwxrwx	root/root	usr/lib/libflatpak.so.0 -> libflatpak.so.0.11603.0
+-rwxr-xr-x	root/root	usr/lib/libflatpak.so.0.11603.0
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system-environment-generators/
 -rwxr-xr-x	root/root	usr/lib/systemd/system-environment-generators/60-flatpak-system-only
@@ -35,8 +33,6 @@ drwxr-xr-x	root/root	usr/lib/sysusers.d/
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/flatpak.conf
 drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/flatpak-bwrap
--rwxr-xr-x	root/root	usr/libexec/flatpak-dbus-proxy
 -rwxr-xr-x	root/root	usr/libexec/flatpak-oci-authenticator
 -rwxr-xr-x	root/root	usr/libexec/flatpak-portal
 -rwxr-xr-x	root/root	usr/libexec/flatpak-session-helper
@@ -58,6 +54,8 @@ drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.freedesktop.portal.Flatpak.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.Flatpak.SystemHelper.service
+drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
+-rw-r--r--	root/root	usr/share/dbus-1/system.d/org.freedesktop.Flatpak.SystemHelper.conf
 drwxr-xr-x	root/root	usr/share/fish/
 drwxr-xr-x	root/root	usr/share/fish/vendor_completions.d/
 -rw-r--r--	root/root	usr/share/fish/vendor_completions.d/flatpak.fish
