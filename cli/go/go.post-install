@@ -1,3 +1,4 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
-log_info_msg "${INFO}go application is in /usr/lib/go/bin. Make sure to include it in PATH ${NORMAL}\n"
+printf "${INFO}go application is in /usr/lib/go/bin. Make sure to include it in PATH ${NORMAL}\n"
