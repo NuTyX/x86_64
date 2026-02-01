@@ -6,6 +6,7 @@ contributors="Rems,Tnut"
 
 name=qemu
 version=10.2.0
+release=2
 
 makedepends=(gtk3 sdl libseccomp libcap-ng xorg-pixman
              python mesa vte virglrenderer lzo nettle
@@ -17,9 +18,6 @@ run=(desktop-file-utils ovmf)
 source=(configvm startvm https://download.qemu.org/qemu-$version.tar.xz)
 
 prepare() {
-if ! (getent group kvm > /dev/null); then
-   groupadd -g 61 kvm
-fi
 for i in configvm startvm
 do
  install -D -m755 $i $PKG/usr/bin/$i
