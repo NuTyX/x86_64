@@ -17,6 +17,9 @@ lrwxrwxrwx	root/root	usr/lib/libgpm.so -> libgpm.so.2.1.0
 lrwxrwxrwx	root/root	usr/lib/libgpm.so.1 -> libgpm.so.2.1.0
 lrwxrwxrwx	root/root	usr/lib/libgpm.so.2 -> libgpm.so.2.1.0
 -rw-r--r--	root/root	usr/lib/libgpm.so.2.1.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/gpm.service
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/gpm
