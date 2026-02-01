@@ -1,18 +1,19 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
 UN=named
 
 if ! (getent group $UN > /dev/null); then
-	log_info_msg "${INFO}Creating $UN group${NORMAL}\n"
+	printf "${INFO}Creating $UN group${NORMAL}\n"
 	groupadd -g 20 $UN
 fi
 if ! (getent passwd $UN > /dev/null); then
-	log_info_msg "${INFO}Creating $UN user${NORMAL}\n"
+	printf "${INFO}Creating $UN user${NORMAL}\n"
 	useradd  -c "BIND Owner" \
 	-g $UN -s /bin/false -u 20 $UN
 fi
 if [ ! -d srv/named ]; then
-	log_info_msg "${INFO}Creating $UN directory${NORMAL}\n"
+	printf "${INFO}Creating $UN directory${NORMAL}\n"
 	install -d -m770 -o named -g named srv/named
 	mkdir -p srv/named/dev srv/named/etc/namedb/{slave,pz} \
 	usr/lib/engines var/run/named
