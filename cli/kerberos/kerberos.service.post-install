@@ -1,4 +1,5 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
 if [ ! -f etc/krb5.conf ]; then
   cat > /etc/krb5.conf << "EOF"
@@ -25,9 +26,9 @@ if [ ! -f etc/krb5.conf ]; then
 
 # End /etc/krb5.conf
 EOF
-   log_success_msg "${WARNING} /etc/krb5.conf created ${NORMAL}"
-   log_warning_msg "${WARNING} YOU MUST adapt /etc/krb5.conf to your needs.${NORMAL}"
-   log_warning_msg "${WARNING} Substitute your domain and proper hostname for the occurrences of the <belgarath> and <example.org> names.${NORMAL}"
+   printf "${INFO} /etc/krb5.conf created ${NORMAL}\n"
+   printf "${INFO} YOU MUST adapt /etc/krb5.conf to your needs.${NORMAL}\n"
+   printf "${INFO} Substitute your domain and proper hostname for the occurrences of the <belgarath> and <example.org> names.${NORMAL}\n"
 fi 
 systemctl enable krb5-kdc.service
 systemctl enable krb5-kpropd.service
