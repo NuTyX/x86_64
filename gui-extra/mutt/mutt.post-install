@@ -1,5 +1,6 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
 SN="mail"
-log_info_msg "${INFO}Changing $SN ownership of var/mail folder${NORMAL}\n"
+printf "${INFO}Changing $SN ownership of var/mail folder${NORMAL}\n"
 chgrp -v $SN var/mail
