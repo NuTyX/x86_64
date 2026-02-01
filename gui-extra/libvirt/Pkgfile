@@ -3,8 +3,8 @@ url="https://libvirt.org/"
 
 licens="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Yaolinux,DocWOPR,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Yaolinux,DocWOPR,Spiky"
 
 makedepends=(bash-completion bridge-utils cyrus-sasl dbus
              fuse gettext gnutls libcap-ng libgcrypt libnl
@@ -16,27 +16,18 @@ makedepends=(bash-completion bridge-utils cyrus-sasl dbus
 run=(qemu dmidecode dnsmasq ebtables iptables)
 
 name=libvirt
-version=11.7.0
+version=12.0.0
 
 PKGMK_GROUPS=(doc man devel)
 
 source=(https://libvirt.org/sources/$name-$version.tar.xz)
 
-build() {
+PKGMK_MESON_OPTIONS="--libexecdir=/usr/lib/${name} \
+-Dnetcf=disabled"
 
+build=meson
+package() {
   cd $name-$version
-
-  mkdir build
-  cd build
-  meson setup                         \
-        --prefix=/usr                 \
-        --libexecdir=/usr/lib/${name} \
-        -Dnetcf=disabled              
-  ninja
-  DESTDIR=$PKG ninja  install
-
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-install -Dm644 ../COPYING.LESSER $PKG/usr/share/licenses/$name/COPYING.LESSER
-
+  install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
+  install -Dm644 COPYING.LESSER $PKG/usr/share/licenses/$name/COPYING.LESSER
 }
