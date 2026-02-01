@@ -1,8 +1,9 @@
-. lib/lsb/init-functions
+INFO="\033[1;36m"
+NORMAL="\033[0;39m"
 
 if [ ! -L etc/systemd/system/display-manager.service ];then
   systemctl enable gdm
 else
   ACTIVE_SERVICE="$(readlink /etc/systemd/system/display-manager.service)"
-  log_warning_msg "${WARNING} display-manager already exist: ${ACTIVE_SERVICE}${NORMAL}"
+  printf "${INFO} display-manager already exist: ${ACTIVE_SERVICE}${NORMAL}\n"
 fi
