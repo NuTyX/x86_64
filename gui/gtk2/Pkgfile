@@ -13,14 +13,9 @@ makedepends=(gtk-doc shared-mime-info xorg-libxinerama xorg-libxrandr
 run=(gtk-update-icon-cache shared-mime-info desktop-file-utils)
 
 
-
-# Seul les paquets devel, doc et man sont splité, gtk étant une lib incontournable et le nombre
-# de fichiers binaires n'est pas très important. La variable PKGMK_GROUP redéfini les groupes
-# Ici, le groupe lib ne sera pas construit
-
 name=gtk2
 version=2.24.33
-release=5
+release=6
 
 source=(gtkrc.example consolidate-1.patch
         https://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz)
@@ -84,10 +79,4 @@ usr/include \
 usr/share/gir-1.0
 
 rm -r usr/{share/gir-1.0,lib/pkgconfig,include}
-}
-uptodate(){
-local lastversion
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-https://download.gnome.org/sources/gtk+/${version:0:4}/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
 }
