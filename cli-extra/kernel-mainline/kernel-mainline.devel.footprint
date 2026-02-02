@@ -20071,6 +20071,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/include/uapi/linux/counter/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/cycx_cfm.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/dcbnl.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/dccp.h
+-rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/dev_energymodel.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/devlink.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/dlm.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/dlm_device.h
@@ -20098,7 +20099,6 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/include/uapi/linux/dvb/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/elf-em.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/elf-fdpic.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/elf.h
--rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/energy_model.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/errno.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/errqueue.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/uapi/linux/erspan.h
@@ -24395,7 +24395,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/zstd/decompress/
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/zstd/zstd_decompress_module.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/localversion
 -rw-r--r--	root/root	usr/src/kernel-mainline/modules.builtin
--rwxr-xr-x	root/root	usr/src/kernel-mainline/modules.builtin.modinfo
+-rw-r--r--	root/root	usr/src/kernel-mainline/modules.builtin.modinfo
 -rw-r--r--	root/root	usr/src/kernel-mainline/modules.order
 drwxrwxr-x	root/root	usr/src/kernel-mainline/rust/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/.gitignore
@@ -25814,6 +25814,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/build/feature/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libelf.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libnuma.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libopencsd.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libopenssl.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libperl.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libpfm4.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/build/feature/test-libpython.c
@@ -26822,7 +26823,6 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/objtool/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/objtool/Build
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/objtool/Documentation/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/objtool/Documentation/objtool.txt
--rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/FEATURE-DUMP.objtool
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/objtool/Makefile
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/objtool/arch/
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/objtool/arch/loongarch/
@@ -26874,14 +26874,6 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/tools/objtool/arch/x86/lib/
 -rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/disas.o
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/objtool/elf.c
 -rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/elf.o
-drwxr-xr-x	root/root	usr/src/kernel-mainline/tools/objtool/feature/
--rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-all.make.output
--rwxr-xr-x	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-disassembler-init-styled.bin
--rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-disassembler-init-styled.d
--rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-disassembler-init-styled.make.output (EMPTY)
--rwxr-xr-x	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-libbfd.bin
--rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-libbfd.d
--rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/feature/test-libbfd.make.output (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/tools/objtool/fixdep
 -rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/fixdep-in.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/tools/objtool/fixdep.o
@@ -33205,6 +33197,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/hsr/
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/ipv6_force_forwarding.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/ipv6_fragmentation.c
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/ipv6_route_update_soft_lockup.sh
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/ipvtap_test.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/l2_tos_ttl_inherit.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/l2tp.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/lib.sh
@@ -34718,6 +34711,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_generic_12.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_generic_13.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_generic_14.sh
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_generic_15.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_loop_01.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_loop_02.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/ublk/test_loop_03.sh
@@ -35311,8 +35305,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-6.19-rc3/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-6.19-rc8/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-6.19-rc3 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-6.19-rc8 -> kernel-mainline

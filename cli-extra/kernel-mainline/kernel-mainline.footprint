@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.19.0-rc3-1-nutyx
--rw-r--r--	root/root	boot/config-6.19.0-rc3-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.19.0-rc8-1-nutyx
+-rw-r--r--	root/root	boot/config-6.19.0-rc8-1-nutyx
 -rw-r--r--	root/root	boot/kernel-mainline
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.19.0-rc3-1-nutyx -> kernel-mainline
+lrwxrwxrwx	root/root	usr/lib/modules/6.19.0-rc8-1-nutyx -> kernel-mainline
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-mainline/build -> /usr/src/kernel-mainline
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/
@@ -7706,7 +7706,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/virt/lib/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.builtin
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.builtin.alias.bin
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.builtin.bin
--rwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/modules.builtin.modinfo
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.builtin.modinfo
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.dep
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.dep.bin
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/modules.devname
