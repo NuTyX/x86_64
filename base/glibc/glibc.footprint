@@ -30,9 +30,6 @@ drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib64/
 lrwxrwxrwx	root/root	lib64/ld-linux-x86-64.so.2 -> ../lib/ld-linux-x86-64.so.2
 lrwxrwxrwx	root/root	lib64/ld-lsb-x86-64.so.3 -> ../lib/ld-linux-x86-64.so.2
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/ldconfig
--rwxr-xr-x	root/root	sbin/sln
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gencat
@@ -329,7 +326,7 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 -rw-r--r--	root/root	usr/lib/libc_nonshared.a
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.42.a
+-rw-r--r--	root/root	usr/lib/libm-2.43.a
 -rw-r--r--	root/root	usr/lib/libm.a
 -rw-r--r--	root/root	usr/lib/libm.so
 -rw-r--r--	root/root	usr/lib/libmcheck.a
@@ -354,6 +351,8 @@ drwxr-xr-x	root/root	usr/libexec/getconf/
 -rwxr-xr-x	root/root	usr/libexec/getconf/XBS5_LP64_OFF64
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/iconvconfig
+-rwxr-xr-x	root/root	usr/sbin/ldconfig
+-rwxr-xr-x	root/root	usr/sbin/sln
 -rwxr-xr-x	root/root	usr/sbin/zic
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/i18n/
@@ -698,6 +697,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/en_NZ
 -rw-r--r--	root/root	usr/share/i18n/locales/en_PH
 -rw-r--r--	root/root	usr/share/i18n/locales/en_SC
+-rw-r--r--	root/root	usr/share/i18n/locales/en_SE
 -rw-r--r--	root/root	usr/share/i18n/locales/en_SG
 -rw-r--r--	root/root	usr/share/i18n/locales/en_US
 -rw-r--r--	root/root	usr/share/i18n/locales/en_ZA
