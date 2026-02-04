@@ -1,0 +1,22 @@
+description='An easy to use, but flexible, composited Window Manager'
+url='https://kde.org/plasma-desktop/'
+
+license="LGPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+set=(kde6 kde6-plasma)
+
+name=aurorae
+version=6.5.4
+release=2
+
+makedepends=(extra-cmake-modules kcmutils kcolorscheme kconfig kcoreaddons
+             kdecoration ki18n kirigami
+             knewstuff kpackage ksvg qt6-base qt6-declarative qt6-tools)
+
+
+source=(https://download.kde.org/stable/plasma/${version:0:5}/$name-$version.tar.xz)
+
+build=kde6
