@@ -1,12 +1,12 @@
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/dumpexfat
--rwxr-xr-x	root/root	sbin/exfatattrib
--rwxr-xr-x	root/root	sbin/exfatfsck
--rwxr-xr-x	root/root	sbin/exfatlabel
-lrwxrwxrwx	root/root	sbin/fsck.exfat -> exfatfsck
--rwxr-xr-x	root/root	sbin/mkexfatfs
-lrwxrwxrwx	root/root	sbin/mkfs.exfat -> mkexfatfs
-lrwxrwxrwx	root/root	sbin/mount.exfat -> mount.exfat-fuse
--rwxr-xr-x	root/root	sbin/mount.exfat-fuse
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/dumpexfat
+-rwxr-xr-x	root/root	usr/sbin/exfatattrib
+-rwxr-xr-x	root/root	usr/sbin/exfatfsck
+-rwxr-xr-x	root/root	usr/sbin/exfatlabel
+lrwxrwxrwx	root/root	usr/sbin/fsck.exfat -> exfatfsck
+-rwxr-xr-x	root/root	usr/sbin/mkexfatfs
+lrwxrwxrwx	root/root	usr/sbin/mkfs.exfat -> mkexfatfs
+lrwxrwxrwx	root/root	usr/sbin/mount.exfat -> mount.exfat-fuse
+-rwxr-xr-x	root/root	usr/sbin/mount.exfat-fuse
 drwxr-xr-x	root/root	usr/share/
