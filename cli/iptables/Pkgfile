@@ -8,8 +8,8 @@ contributors="Pierre,Tnut"
 
 name=iptables
 version=1.8.11
-
-scriptsversion=20250125
+release=2
+scriptsversion=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	     https://www.netfilter.org/projects/iptables/files/$name-$version.tar.xz)
@@ -19,19 +19,10 @@ build() {
 cd $name-$version
 
 ./configure --prefix=/usr \
---sbindir=/sbin \
---with-xtlibdir=/lib/xtables \
 --enable-libipq \
 --disable-nftables
 make
 make DESTDIR=$PKG install
-
-ln -sfv ../../sbin/xtables-multi $PKG/usr/bin/iptables-xml
-for file in ip4tc ip6tc ipq xtables
-do
-   mv -v $PKG/usr/lib/lib${file}.so.* $PKG/lib
-   ln -sfv ../../lib/$(readlink $PKG/usr/lib/lib${file}.so) $PKG/usr/lib/lib${file}.so
-done
 
 # service
 cd ../nutyx-scripts-$scriptsversion
