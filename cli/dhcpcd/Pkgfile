@@ -1,5 +1,5 @@
 description="Connect your computer to a network which uses DHCP to assign network addresses."
-url="http://roy.marples.name/projects/dhcpcd"
+url="https://roy.marples.name/projects/dhcpcd"
 
 license="BSD-2-Clause"
 
@@ -9,7 +9,7 @@ contributors="Spiky"
 
 name=dhcpcd
 version=10.3.0
-release=2
+release=3
 
 makedepends=(shadow)
 
@@ -36,8 +36,6 @@ sed -i "s@mkdir@/bin/mkdir@" hooks/*
 --privsepuser=dhcpcd
 make
 make DESTDIR=$PKG install
-mkdir $PKG/sbin
-ln -sv ../usr/sbin/dhcpcd $PKG/sbin/dhcpcd
 #
 ## service
 cd ../nutyx-scripts-$scriptsversion
