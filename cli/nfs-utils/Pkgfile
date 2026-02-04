@@ -11,9 +11,9 @@ run=(rpcbind)
 
 name=nfs-utils
 version=2.8.4
-release=1
+release=2
 
-scriptsversion=20250125
+scriptsversion=20250201
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	     https://downloads.sourceforge.net/nfs/$name-$version.tar.gz)
@@ -21,41 +21,40 @@ source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx
 run=(rpcbind)
 
 prepare() {
-
-if ! (getent group nogroup > /dev/null); then
-   groupadd -g 99 nogroup
-fi
-if ! (getent passwd nobody > /dev/null); then
-   useradd -c "Unprivileged Nobody" -d /dev/null \
-   -g nogroup -s /bin/false -u 99 nobody
-fi
+cd $name-$version
+sed -i "s|sbindir = /sbin|sbindir = /usr/bin|g" utils/*/Makefile.am
+autoreconf -vfi
 }
+
 build() {
 # build package
 
 cd $name-$version
 ./configure --prefix=/usr \
 --sysconfdir=/etc         \
---sbindir=/sbin           \
+--sbindir=/usr/sbin       \
 --disable-nfsv4           \
 --disable-gss             \
-LIBS="-lsqlite3 -levent_core"
+LIBS="-lsqlite3 -levent_core" \
+--with-systemd
 
 make
-mkdir $PKG/sbin
 make DESTDIR=$PKG install
-chmod u+w,go+r $PKG/sbin/mount.nfs
+chmod u+w,go+r $PKG/usr/bin/mount.nfs
 chown nobody.nogroup $PKG/var/lib/nfs
 
 # Services
 cd ../nutyx-scripts-$scriptsversion
 make DESTDIR=$PKG install-sysd-nfs-server
-
+make DESTDIR=$PKG install-sysd-nfs-client
 }
 service() {
 cd $PKG
 bsdtar -r -f \
 $PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib/systemd
-rm -r usr/lib/systemd
+usr/lib/systemd/system/nfs-server.service usr/lib/systemd/system/proc-fs-nfsd.mount \
+usr/lib/systemd/system/rpc-statd.service
+
+rm -r usr/lib/systemd/system/nfs-server.service usr/lib/systemd/system/proc-fs-nfsd.mount \
+usr/lib/systemd/system/rpc-statd.service
 }

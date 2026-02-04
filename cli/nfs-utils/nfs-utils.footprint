@@ -1,36 +1,53 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/default/
 -rw-r--r--	root/root	etc/default/nfs-utils
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/exportfs
--rwxr-xr-x	root/root	sbin/fsidd
--rwsr-xr-x	root/root	sbin/mount.nfs
-lrwxrwxrwx	root/root	sbin/mount.nfs4 -> mount.nfs
--rwxr-xr-x	root/root	sbin/mountstats
--rwxr-xr-x	root/root	sbin/nfsconf
--rwxr-xr-x	root/root	sbin/nfsdclnts
--rwxr-xr-x	root/root	sbin/nfsdctl
--rwxr-xr-x	root/root	sbin/nfsiostat
--rwxr-xr-x	root/root	sbin/nfsref
--rwxr-xr-x	root/root	sbin/nfsstat
--rwxr-xr-x	root/root	sbin/rpc.mountd
--rwxr-xr-x	root/root	sbin/rpc.nfsd
--rwxr-xr-x	root/root	sbin/rpc.statd
--rwxr-xr-x	root/root	sbin/rpcctl
--rwxr-xr-x	root/root	sbin/rpcdebug
--rwxr-xr-x	root/root	sbin/showmount
--rwxr-xr-x	root/root	sbin/sm-notify
--rwxr-xr-x	root/root	sbin/start-statd
-lrwxrwxrwx	root/root	sbin/umount.nfs -> mount.nfs
-lrwxrwxrwx	root/root	sbin/umount.nfs4 -> mount.nfs
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwsr-xr-x	root/root	usr/bin/mount.nfs
+lrwxrwxrwx	root/root	usr/bin/mount.nfs4 -> mount.nfs
+lrwxrwxrwx	root/root	usr/bin/umount.nfs -> mount.nfs
+lrwxrwxrwx	root/root	usr/bin/umount.nfs4 -> mount.nfs
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
+-rwxr-xr-x	root/root	usr/lib/systemd/system-generators/nfs-server-generator
+-rwxr-xr-x	root/root	usr/lib/systemd/system-generators/nfsroot-generator
+-rwxr-xr-x	root/root	usr/lib/systemd/system-generators/rpc-pipefs-generator
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/fsidd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-client.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-client.target
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-mountd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nfs-utils.service
+-rw-r--r--	root/root	usr/lib/systemd/system/rpc-mountd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/rpc-statd-notify.service
+-rw-r--r--	root/root	usr/lib/systemd/system/rpc_pipefs.target
+-rw-r--r--	root/root	usr/lib/systemd/system/var-lib-nfs-rpc_pipefs.mount
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/lib/udev/
 drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/60-nfs.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/99-nfs.rules
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/nfsrahead
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/exportfs
+-rwxr-xr-x	root/root	usr/sbin/fsidd
+-rwxr-xr-x	root/root	usr/sbin/mountstats
+-rwxr-xr-x	root/root	usr/sbin/nfsconf
+-rwxr-xr-x	root/root	usr/sbin/nfsdclnts
+-rwxr-xr-x	root/root	usr/sbin/nfsdctl
+-rwxr-xr-x	root/root	usr/sbin/nfsiostat
+-rwxr-xr-x	root/root	usr/sbin/nfsref
+-rwxr-xr-x	root/root	usr/sbin/nfsstat
+-rwxr-xr-x	root/root	usr/sbin/rpc.mountd
+-rwxr-xr-x	root/root	usr/sbin/rpc.nfsd
+-rwxr-xr-x	root/root	usr/sbin/rpc.statd
+-rwxr-xr-x	root/root	usr/sbin/rpcctl
+-rwxr-xr-x	root/root	usr/sbin/rpcdebug
+-rwxr-xr-x	root/root	usr/sbin/showmount
+-rwxr-xr-x	root/root	usr/sbin/sm-notify
+-rwxr-xr-x	root/root	usr/sbin/start-statd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
