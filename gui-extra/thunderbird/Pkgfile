@@ -7,7 +7,7 @@ packager="tnut <tnut@nutyx.org>"
 maintainer="Pierre,Fabianwang,Rems,Spiky"
 
 makedepends=(rustc autoconf2-13 alsa-lib gtk3 zip unzip libevent libwebp python-313
-             nspr nss yasm dbus-glib doxygen libnotify openjdk sqlite wireless-tools
+             nspr nss yasm dbus-glib doxygen libnotify openjdk  sqlite wireless-tools
              xorg-libx11 xorg-libxt xorg-libxrandr cbindgen pulseaudio node libvpx
              mesa xorg-libxcomposite xorg-libxdamage)
 
@@ -16,7 +16,7 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=140.5.0esr
+version=140.7.1esr
 
 source=(https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
         $name.desktop)
@@ -88,7 +88,9 @@ ac_add_options --allow-addon-sideload
 ac_add_options --without-wasm-sandboxed-libraries
 
 EOF
-   
+
+  sed -e '1i\#![warn(dangerous_implicit_autorefs)]\r' \
+    -i third_party/rust/allocator-api2/src/stable/vec/mod.rs
 
   export CC=gcc CXX=g++ AR=gcc-ar NM=gcc-nm RANLIB=gcc-ranlib
 
@@ -96,6 +98,7 @@ EOF
   export MOZBUILD_STATE_PATH=${PWD}/mozbuild
   export PYTHON=/usr/bin/python3.13
   sed -i "s@env python3@env python3.13@" mach
+
   SHELL=/bin/sh ./mach build
 
   SHELL=/bin/sh DESTDIR="$PKG" MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none ./mach install
