@@ -5163,6 +5163,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYMMETRIC_KEY_TYPE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYMMETRIC_PUBLIC_KEY_SUBTYPE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYNC_CORE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYNC_KERNEL_PGTABLE_FREE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYNC_MEMCPY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYNC_PQ (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ASYNC_RAID6_RECOV (EMPTY)
@@ -12579,7 +12580,6 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_LOOPBACK_TEST (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_MASTER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_MEM (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_MICROCHIP_CORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_MICROCHIP_CORE_QSPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_MUX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/SPI_MXIC (EMPTY)
@@ -23100,6 +23100,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/lib/crypto/powerpc/
 -rw-rw-r--	root/root	usr/src/kernel-618/lib/crypto/powerpc/sha256-spe-asm.S
 -rw-rw-r--	root/root	usr/src/kernel-618/lib/crypto/powerpc/sha256.h
 drwxrwxr-x	root/root	usr/src/kernel-618/lib/crypto/riscv/
+-rw-r--r--	root/root	usr/src/kernel-618/lib/crypto/riscv/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-618/lib/crypto/riscv/chacha-riscv64-zvkb.S
 -rw-rw-r--	root/root	usr/src/kernel-618/lib/crypto/riscv/chacha.h
 -rw-rw-r--	root/root	usr/src/kernel-618/lib/crypto/riscv/poly1305-riscv.pl

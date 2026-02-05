@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.18.2-1-nutyx
--rw-r--r--	root/root	boot/config-6.18.2-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.18.8-1-nutyx
+-rw-r--r--	root/root	boot/config-6.18.8-1-nutyx
 -rw-r--r--	root/root	boot/kernel-618
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.18.2-1-nutyx -> kernel-618
+lrwxrwxrwx	root/root	usr/lib/modules/6.18.8-1-nutyx -> kernel-618
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-618/build -> /usr/src/kernel-618
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/
@@ -5353,7 +5353,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-lm70llp.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-loopback-test.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-microchip-core-qspi.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-microchip-core.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-mux.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-mxic.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-618/kernel/drivers/spi/spi-oc-tiny.ko.zst
