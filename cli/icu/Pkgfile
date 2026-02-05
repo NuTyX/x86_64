@@ -10,22 +10,21 @@ contributors="Pierre,Remy,Tnut"
 makedepends=(llvm doxygen)
 
 name=icu
-version=77.1
-release=3
+version=78.2
+release=1
 
 PKGMK_GROUPS=(lib devel man)
 PKGMK_IGNORE_UNPACK="yes"
 
 source=(https://github.com/unicode-org/icu/releases/download/\
-release-${version//./-}/icu4c-${version//./_}-src.tgz
+release-${version}/icu4c-${version}-sources.tgz
         https://github.com/unicode-org/icu/releases/download/\
-release-76-1/icu4c-76_1-src.tgz
-LICENSE)
+release-77-1/icu4c-77_1-src.tgz LICENSE)
 prepare () {
-bsdtar xf icu4c-76_1-src.tgz
-mv $name $name-76.1
-bsdtar xf icu4c-77_1-src.tgz
+bsdtar xf icu4c-$version-sources.tgz
 mv $name $name-$version
+bsdtar xf icu4c-77_1-src.tgz
+mv $name $name-77.1
 }
 
 build () {
@@ -37,17 +36,19 @@ make prefix=$PKG/usr install
 
 cd ../..
 
-cd $name-76.1/source
+cd $name-77.1/source
 
 ./configure --prefix=/usr/local
 make
 make prefix=$PKG/usr/local install
 
+
+
 install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
 package() {
 cd $SRC
-for lib in $PKG/usr/local/lib/*.so.76
+for lib in $PKG/usr/local/lib/*.so.77
 do
     cp -v $lib.1 \
     $PKG/usr/lib/
