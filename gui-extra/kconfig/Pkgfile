@@ -9,7 +9,7 @@ contributors="Spiky"
 set=(kde6-frameworks)
 
 name=kconfig
-version=6.21.0
+version=6.22.0
 makedepends=(extra-cmake-modules qt6-base qt6-tools)
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
