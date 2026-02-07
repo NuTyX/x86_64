@@ -45,6 +45,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/contextvars.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/conversion.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/coro.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/curses.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/datetime.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/descriptor.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/dict.rst.txt
@@ -79,6 +80,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/object.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/objimpl.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/perfmaps.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/picklebuffer.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/refcounting.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/reflection.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/sequence.rst.txt
@@ -110,6 +112,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/deprecations/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.15.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.16.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.17.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.18.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-3.19.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/deprecations/pending-removal-in-future.rst.txt
 drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/distributing/
@@ -607,6 +610,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/contextvars.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/conversion.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/coro.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/curses.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/datetime.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/descriptor.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/dict.html
@@ -641,6 +645,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/object.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/objimpl.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/perfmaps.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/picklebuffer.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/refcounting.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/reflection.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/sequence.html
@@ -672,6 +677,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/deprecations/
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.15.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.16.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.17.html
+-rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.18.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-3.19.html
 -rw-r--r--	root/root	usr/share/doc/python/html/deprecations/pending-removal-in-future.html
 drwxr-xr-x	root/root	usr/share/doc/python/html/distributing/
