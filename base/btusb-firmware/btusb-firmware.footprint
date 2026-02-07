@@ -1,3 +1,5 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/intel/
@@ -5,12 +7,12 @@ drwxr-xr-x	root/root	lib/firmware/intel/
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0040-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0040-1020.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0040-1020.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-0040-1050.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-0040-1050.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-0040-2120.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-0040-2120.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-0040-4150.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-0040-4150.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-0040-1050.ddc -> ibt-0040-0041.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-0040-1050.sfi -> ibt-0040-0041.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-0040-2120.ddc -> ibt-0040-1020.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-0040-2120.sfi -> ibt-0040-1020.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-0040-4150.ddc -> ibt-0040-0041.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-0040-4150.sfi -> ibt-0040-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0041-0041.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0041-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0093-0041.ddc
@@ -21,6 +23,19 @@ drwxr-xr-x	root/root	lib/firmware/intel/
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0093-1050.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0093-4150.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0093-4150.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0041-iml.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0041-pci.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0041-pci.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-01a1-iml.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-01a1-pci.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-01a1-pci.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-01a1-usb.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-01a1-usb.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0291-iml.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0291-pci.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0291-pci.sfi
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0291-usb.ddc
+-rw-r--r--	root/root	lib/firmware/intel/ibt-00a0-0291-usb.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-0041.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-0180-1050.ddc
@@ -47,52 +62,52 @@ drwxr-xr-x	root/root	lib/firmware/intel/
 -rw-r--r--	root/root	lib/firmware/intel/ibt-1040-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-1040-1020.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-1040-1020.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-1040-1050.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-1040-1050.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-1040-2120.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-1040-2120.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-1040-4150.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-1040-4150.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-1040-1050.ddc -> ibt-1040-0041.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-1040-1050.sfi -> ibt-1040-0041.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-1040-2120.ddc -> ibt-1040-1020.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-1040-2120.sfi -> ibt-1040-1020.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-1040-4150.ddc -> ibt-1040-0041.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-1040-4150.sfi -> ibt-1040-0041.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-11-5.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-11-5.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-12-16.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-12-16.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-17-0-1.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-17-0-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-17-1.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-17-1.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-17-1.ddc -> ibt-17-0-1.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-17-1.sfi -> ibt-17-0-1.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-17-16-1.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-17-16-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-17-2.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-17-2.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-17-2.ddc -> ibt-17-16-1.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-17-2.sfi -> ibt-17-16-1.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-18-0-1.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-18-0-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-18-1.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-18-1.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-18-1.ddc -> ibt-18-0-1.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-18-1.sfi -> ibt-18-0-1.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-18-16-1.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-18-16-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-18-2.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-18-2.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-0.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-0.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-1.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-3.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-3.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-18-2.ddc -> ibt-18-16-1.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-18-2.sfi -> ibt-18-16-1.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-0-0.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-0-0.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-0-1.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-0-1.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-0-3.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-0-3.sfi -> ibt-19-0-4.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-4.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-19-0-4.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-16-4.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-16-4.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-240-1.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-240-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-240-4.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-240-4.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-32-0.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-32-0.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-32-1.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-32-1.sfi
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-32-4.ddc
--rw-r--r--	root/root	lib/firmware/intel/ibt-19-32-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-16-4.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-16-4.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-240-1.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-240-1.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-240-4.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-240-4.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-32-0.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-32-0.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-32-1.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-32-1.sfi -> ibt-19-0-4.sfi
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-32-4.ddc -> ibt-19-0-4.ddc
+lrwxrwxrwx	root/root	lib/firmware/intel/ibt-19-32-4.sfi -> ibt-19-0-4.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-20-0-3.ddc
 -rw-r--r--	root/root	lib/firmware/intel/ibt-20-0-3.sfi
 -rw-r--r--	root/root	lib/firmware/intel/ibt-20-1-3.ddc
