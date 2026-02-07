@@ -1,3 +1,5 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/mediatek/
@@ -6,7 +8,8 @@ drwxr-xr-x	root/root	lib/firmware/mediatek/mt8183/
 drwxr-xr-x	root/root	lib/firmware/mediatek/mt8186/
 -rw-r--r--	root/root	lib/firmware/mediatek/mt8186/scp.img
 drwxr-xr-x	root/root	lib/firmware/mediatek/mt8188/
--rw-r--r--	root/root	lib/firmware/mediatek/mt8188/scp.img
+lrwxrwxrwx	root/root	lib/firmware/mediatek/mt8188/scp.img -> scp_c0.img
+-rw-r--r--	root/root	lib/firmware/mediatek/mt8188/scp_c0.img (EMPTY)
 drwxr-xr-x	root/root	lib/firmware/mediatek/mt8189/
 -rw-r--r--	root/root	lib/firmware/mediatek/mt8189/scp.img
 drwxr-xr-x	root/root	lib/firmware/mediatek/mt8192/
