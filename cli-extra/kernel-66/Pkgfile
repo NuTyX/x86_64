@@ -4,14 +4,14 @@ description='The 6.6 longterm support Linux kernel version'
 packager="tnut <tnut@nutyx.org>"
 contributors="Sundev79,Spiky"
 makedepends=(bison flex perl gmp mpc libelf diffutils)
-run=(nutyx kmod busybox)
+run=(nutyx kmod)
 
 PKGMK_IGNORE_UNPACK="yes"
 PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-66
-version=6.6.122
+version=6.6.123
 _version=${version%.*}
 
 alias=(linux-66)
