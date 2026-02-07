@@ -1,3 +1,5 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/qcom/
@@ -13,6 +15,15 @@ drwxr-xr-x	root/root	lib/firmware/qcom/apq8096/
 -rw-r--r--	root/root	lib/firmware/qcom/apq8096/mba.mbn
 -rw-r--r--	root/root	lib/firmware/qcom/apq8096/modem.mbn
 -rw-r--r--	root/root	lib/firmware/qcom/apq8096/modemr.jsn
+drwxr-xr-x	root/root	lib/firmware/qcom/glymur/
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/adsp.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/adsp_dtb.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/adspr.jsn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/adsps.jsn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/adspua.jsn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/cdsp.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/cdsp_dtb.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/glymur/cdspr.jsn (EMPTY)
 drwxr-xr-x	root/root	lib/firmware/qcom/kaanapali/
 -rw-r--r--	root/root	lib/firmware/qcom/kaanapali/adsp.mbn
 -rw-r--r--	root/root	lib/firmware/qcom/kaanapali/adsp_dtb.mbn
@@ -68,8 +79,9 @@ drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/radxa/
 drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/
 -rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/adsp.mbn
 -rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/adspr.jsn
--rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/adsps.jsn
 -rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/adspua.jsn
+-rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/cdsp.mbn (EMPTY)
+-rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/cdspr.jsn (EMPTY)
 drwxr-xr-x	root/root	lib/firmware/qcom/qcs8300/
 -rw-r--r--	root/root	lib/firmware/qcom/qcs8300/adsp.mbn
 -rw-r--r--	root/root	lib/firmware/qcom/qcs8300/adspr.jsn
