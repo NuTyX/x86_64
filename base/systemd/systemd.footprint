@@ -78,7 +78,6 @@ lrwxrwxrwx	root/root	usr/bin/systemd-confext -> systemd-sysext
 -rwxr-xr-x	root/root	usr/bin/systemd-detect-virt
 -rwxr-xr-x	root/root	usr/bin/systemd-dissect
 -rwxr-xr-x	root/root	usr/bin/systemd-escape
--rwxr-xr-x	root/root	usr/bin/systemd-firstboot
 -rwxr-xr-x	root/root	usr/bin/systemd-hwdb
 -rwxr-xr-x	root/root	usr/bin/systemd-id128
 -rwxr-xr-x	root/root	usr/bin/systemd-inhibit
@@ -375,7 +374,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-debu
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/sys-kernel-tracing.mount -> ../sys-kernel-tracing.mount
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-ask-password-console.path -> ../systemd-ask-password-console.path
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-binfmt.service -> ../systemd-binfmt.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-firstboot.service -> ../systemd-firstboot.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-hibernate-clear.service -> ../systemd-hibernate-clear.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-hwdb-update.service -> ../systemd-hwdb-update.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-journal-catalog-update.service -> ../systemd-journal-catalog-update.service
@@ -420,7 +418,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-factory-reset-request.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-factory-reset.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-factory-reset@.service
--rw-r--r--	root/root	usr/lib/systemd/system/systemd-firstboot.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-fsck-root.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-fsck@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-growfs-root.service
@@ -877,6 +874,7 @@ drwxr-xr-x	root/root	usr/share/mime/packages/
 -rw-r--r--	root/root	usr/share/mime/packages/io.systemd.xml
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.ask-password.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.credentials.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.mount-file-system.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.namespace-resource.policy

@@ -19,7 +19,7 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=259
+version=259.1
 release=1
 
 source=($name-$version-consolidate-1.patch
@@ -27,7 +27,7 @@ source=($name-$version-consolidate-1.patch
         https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
--Dldconfig=false -Dhomed=disabled -Dmode=release \
+-Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
 -Dnobody-group=nogroup -Dpam=enabled -Dpamconfdir=/etc/pam.d \
 -Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
 -Dumount-path=/usr/bin/umount -Dswapon-path=/usr/sbin/swapon \
