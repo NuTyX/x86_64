@@ -1,3 +1,5 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/HP/
@@ -6,16 +8,24 @@ drwxr-xr-x	root/root	lib/firmware/HP/ish/
 drwxr-xr-x	root/root	lib/firmware/LENOVO/
 drwxr-xr-x	root/root	lib/firmware/LENOVO/ish/
 -rw-r--r--	root/root	lib/firmware/LENOVO/ish/ish_lnlm_53c4ffad_2a17559f.bin
+-rw-r--r--	root/root	lib/firmware/LENOVO/ish/ish_lnlm_53c4ffad_a672a235.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/LENOVO/ish/ish_lnlm_53c4ffad_cb391961.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/LENOVO/ish/ish_lnlm_53c4ffad_ebb27e41.bin (EMPTY)
 drwxr-xr-x	root/root	lib/firmware/dell/
 drwxr-xr-x	root/root	lib/firmware/dell/ish/
 -rw-r--r--	root/root	lib/firmware/dell/ish/ish_lnlm_39ceeaf8_58.7727.0.bin
+-rw-r--r--	root/root	lib/firmware/dell/ish/ish_ptl_39ceeaf8_581.7779.0.bin (EMPTY)
 drwxr-xr-x	root/root	lib/firmware/intel/
 drwxr-xr-x	root/root	lib/firmware/intel/ish/
 -rw-r--r--	root/root	lib/firmware/intel/ish/ish_lnlm.bin
 lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_lnlm_12128606.bin -> ../../HP/ish/ish_lnlm_12128606.bin
 lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_lnlm_39ceeaf8.bin -> ../../dell/ish/ish_lnlm_39ceeaf8_58.7727.0.bin
 lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_lnlm_53c4ffad_2a17559f.bin -> ../../LENOVO/ish/ish_lnlm_53c4ffad_2a17559f.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_lnlm_53c4ffad_a672a235.bin -> ../../LENOVO/ish/ish_lnlm_53c4ffad_a672a235.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_lnlm_53c4ffad_cb391961.bin -> ../../LENOVO/ish/ish_lnlm_53c4ffad_cb391961.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_lnlm_53c4ffad_ebb27e41.bin -> ../../LENOVO/ish/ish_lnlm_53c4ffad_ebb27e41.bin
 -rw-r--r--	root/root	lib/firmware/intel/ish/ish_ptl.bin
+lrwxrwxrwx	root/root	lib/firmware/intel/ish/ish_ptl_39ceeaf8.bin -> ../../dell/ish/ish_ptl_39ceeaf8_581.7779.0.bin
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
