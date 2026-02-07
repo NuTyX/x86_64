@@ -13,7 +13,7 @@ run=(start-stop-daemon)
 PKGMK_GROUPS=(man)
 name=minidlna
 version=1.3.3
-release=5
+release=6
 
 source=(minidlna.conf consolidate.patch  minidlna
         https://downloads.sourceforge.net/project/$name/minidlna/${version}/${name}-${version}.tar.gz)

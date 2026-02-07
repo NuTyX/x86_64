@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=exec
 DynamicUser=yes
-ExecStart=/usr/bin/minidlnad -S
+ExecStart=/usr/sbin/minidlnad -S
 RuntimeDirectory=minidlna
 CacheDirectory=minidlna
 ProtectSystem=full
