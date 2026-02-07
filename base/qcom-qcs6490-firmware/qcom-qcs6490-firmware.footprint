@@ -1,9 +1,18 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/qcom/
 drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/
 -rw-r--r--	root/root	lib/firmware/qcom/qcs6490/QCS6490-RB3Gen2-tplg.bin
--rw-r--r--	root/root	lib/firmware/qcom/qcs6490/QCS6490-Radxa-Dragon-Q6A-tplg.bin
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/QCS6490-Radxa-Dragon-Q6A-tplg.bin -> radxa/dragon-q6a/QCS6490-Radxa-Dragon-Q6A-tplg.bin
+lrwxrwxrwx	root/root	lib/firmware/qcom/qcs6490/QCS6490-Thundercomm-RubikPi3-tplg.bin -> Thundercomm/RubikPi3/QCS6490-Thundercomm-RubikPi3-tplg.bin
+drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/Thundercomm/
+drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/Thundercomm/RubikPi3/
+-rw-r--r--	root/root	lib/firmware/qcom/qcs6490/Thundercomm/RubikPi3/QCS6490-Thundercomm-RubikPi3-tplg.bin (EMPTY)
+drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/radxa/
+drwxr-xr-x	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/
+-rw-r--r--	root/root	lib/firmware/qcom/qcs6490/radxa/dragon-q6a/QCS6490-Radxa-Dragon-Q6A-tplg.bin (EMPTY)
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
