@@ -7,9 +7,13 @@ contributors="Fanch,Greg,Jayce,Spiky"
 makedepends=(djvulibre libsecret libspectre
              poppler-glib poppler webkitgtk libsynctex)
 
+set=(xfce4-extra)
+
 name=atril
 version=1.28.2
-release=1
+release=2
+
+PKGMK_KEEP_SOURCES="no"
 
 source=(mate-desktop.patch
         https://github.com/mate-desktop/atril/archive/refs/tags/v$version.tar.gz)
@@ -20,21 +24,9 @@ prepare() {
 
   patch -Np1 -i ../mate-desktop.patch
 }
-build() {
 
-  cd $name-$version
+build=meson
 
-  mkdir build
-  cd    build
-  meson setup       \
-  --prefix=/usr     \
-  --buildtype=plain \
-  ..
-
-  ninja
-
-  DESTDIR=$PKG ninja install
-}
 package() {
   install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
