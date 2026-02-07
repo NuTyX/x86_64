@@ -9,11 +9,10 @@ license="Custom"
 set=(linux-firmware)
 
 name=rtl8192ee-firmware
-version=20251125
-
-run=(rtl8xxxu-firmware)
+version=20260110
 
 makedepends=(rdfind)
+run=(rtl8xxxu-firmware)
 source=(WHENCE
         https://gitlab.com/kernel-firmware/linux-firmware/-/archive/$version/linux-firmware-$version.tar.bz2)
 
@@ -23,11 +22,10 @@ cd linux-firmware-$version
 
 # delete this python check as long we don't know what's missing here
 sed -i /check_whence.py/d copy-firmware.sh
-
+# ignore broken links as it's irrelevant when using DESTDIR
+sed -i 's@err "Broken@warn "Brocken@' copy-firmware.sh
 cp ../WHENCE .
-
-install -d  $PKG/$FIRMWAREDIR/rtlwifi
-ln -sv rtl8192eu_nic.bin $PKG/$FIRMWAREDIR/rtlwifi/rtl8192eefw.bin
+make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
 
 install -Dt $PKG/usr/share/licenses/$name -m644 WHENCE
 install -Dt $PKG/usr/share/licenses/$name -m644 LICENCE.rtlwifi_firmware.txt
