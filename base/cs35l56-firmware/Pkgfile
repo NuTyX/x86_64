@@ -1,4 +1,4 @@
-description="cs35l56 - CS35L56 ALSA audio driver family (includes cs35l54)"
+description="cs35l56 - CS35L56 ALSA audio driver family (includes cs35l54, cs35l57 and cs35l63)"
 url='https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary'
 
 packager="tnut <tnut@nutyx.org>"
@@ -9,7 +9,7 @@ license="Custom"
 set=(linux-firmware)
 
 name=cs35l56-firmware
-version=20251125
+version=20260110
 
 makedepends=(rdfind)
 source=(WHENCE
@@ -21,7 +21,6 @@ cd linux-firmware-$version
 
 # delete this python check as long we don't know what's missing here
 sed -i /check_whence.py/d copy-firmware.sh
-
 cp ../WHENCE .
 make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
 

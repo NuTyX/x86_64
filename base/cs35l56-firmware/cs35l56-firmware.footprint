@@ -1,3 +1,5 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/cirrus/
@@ -277,6 +279,9 @@ lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233b-spkid0.wm
 lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233b-spkid1.wmfw -> cs35l56/CS35L56_Rev3.11.20.wmfw
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233c-amp1.bin
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233c-amp2.bin
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233c-spkid0-amp1.bin -> cs35l56-b0-dsp1-misc-17aa233c-amp1.bin
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233c-spkid0-amp2.bin -> cs35l56-b0-dsp1-misc-17aa233c-amp2.bin
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233c-spkid0.wmfw -> cs35l56/CS35L56_Rev3.11.28.wmfw
 lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa233c.wmfw -> cs35l56/CS35L56_Rev3.11.28.wmfw
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa2347-amp1.bin
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa2347-amp2.bin
@@ -348,6 +353,18 @@ lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa3932-amp2.bin 
 lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa3932-amp3.bin -> cs35l56-b0-dsp1-misc-17aa392e-amp3.bin
 lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa3932-amp4.bin -> cs35l56-b0-dsp1-misc-17aa392e-amp4.bin
 lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b0-dsp1-misc-17aa3932.wmfw -> cs35l56/CS35L56_Rev3.11.28.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-00-ampl.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-00-ampr.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-00.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-01-ampl.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-01-ampr.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-01.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-02-ampl.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-02-ampr.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-02.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-03-ampl.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-03-ampr.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l56-b2-dsp1-misc-10280dd6-03.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
 drwxr-xr-x	root/root	lib/firmware/cirrus/cs35l56/
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev3.11.11.1.wmfw
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev3.11.11.wmfw
@@ -360,6 +377,7 @@ drwxr-xr-x	root/root	lib/firmware/cirrus/cs35l56/
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev3.11.28.wmfw
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev3.11.28B.wmfw
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev3.13.3R.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev4.5.3.wmfw (EMPTY)
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l56/CS35L56_Rev4.5.9.wmfw
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280db3-spkid0-l2u2.bin
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280db3-spkid0-l2u3.bin
@@ -391,6 +409,34 @@ lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280db9-spkid0.wm
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280db9-spkid1-l3u0.bin
 -rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280db9-spkid1-l3u1.bin
 lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280db9-spkid1.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid0-l2u2.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid0-l2u3.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid0-l3u0.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid0-l3u1.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid0.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid1-l2u2.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid1-l2u3.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid1-l3u0.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid1-l3u1.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-10280dba-spkid1.wmfw -> cs35l56/CS35L56_Rev4.5.9.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid0-l1u0.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid0-l1u1.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid0-l2u2.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid0-l2u3.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid0.wmfw -> cs35l56/CS35L56_Rev4.5.3.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid1-l1u0.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid1-l1u1.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid1-l2u2.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid1-l2u3.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l57-b2-dsp1-misc-17aa2355-spkid1.wmfw -> cs35l56/CS35L56_Rev4.5.3.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l63-a1-dsp1-misc-17aa2352-l2u0.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l63-a1-dsp1-misc-17aa2352-l2u1.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l63-a1-dsp1-misc-17aa2352.wmfw -> cs35l63/CS35L63_Rev2.5.4.wmfw
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l63-a1-dsp1-misc-17aa2353-l2u0.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l63-a1-dsp1-misc-17aa2353-l2u1.bin (EMPTY)
+lrwxrwxrwx	root/root	lib/firmware/cirrus/cs35l63-a1-dsp1-misc-17aa2353.wmfw -> cs35l63/CS35L63_Rev2.5.4.wmfw
+drwxr-xr-x	root/root	lib/firmware/cirrus/cs35l63/
+-rw-r--r--	root/root	lib/firmware/cirrus/cs35l63/CS35L63_Rev2.5.4.wmfw (EMPTY)
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
