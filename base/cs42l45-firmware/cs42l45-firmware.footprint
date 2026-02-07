@@ -1,3 +1,5 @@
+-rw-r--r--	root/root	.META
+-rw-r--r--	root/root	.MTREE
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/sdca/
@@ -16,11 +18,30 @@ lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db4/3.bin -> ../db3/3.bin
 lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db4/4.bin -> ../db3/4.bin
 lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db4/42450005.bin -> ../db3/42450005.bin
 drwxr-xr-x	root/root	lib/firmware/sdca/1fa/1028/db9/
--rw-r--r--	root/root	lib/firmware/sdca/1fa/1028/db9/1.bin
--rw-r--r--	root/root	lib/firmware/sdca/1fa/1028/db9/2.bin
--rw-r--r--	root/root	lib/firmware/sdca/1fa/1028/db9/3.bin
--rw-r--r--	root/root	lib/firmware/sdca/1fa/1028/db9/4.bin
--rw-r--r--	root/root	lib/firmware/sdca/1fa/1028/db9/42450005.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db9/1.bin -> ../db3/1.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db9/2.bin -> ../db3/2.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db9/3.bin -> ../db3/3.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db9/4.bin -> ../db3/4.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/db9/42450005.bin -> ../db3/42450005.bin
+drwxr-xr-x	root/root	lib/firmware/sdca/1fa/1028/dba/
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/dba/1.bin -> ../db3/1.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/dba/2.bin -> ../db3/2.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/dba/3.bin -> ../db3/3.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/dba/4.bin -> ../db3/4.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/1028/dba/42450005.bin -> ../db3/42450005.bin
+drwxr-xr-x	root/root	lib/firmware/sdca/1fa/17aa/
+drwxr-xr-x	root/root	lib/firmware/sdca/1fa/17aa/2352/
+-rw-r--r--	root/root	lib/firmware/sdca/1fa/17aa/2352/1.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/sdca/1fa/17aa/2352/2.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/sdca/1fa/17aa/2352/3.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/sdca/1fa/17aa/2352/4.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/sdca/1fa/17aa/2352/42450005.bin (EMPTY)
+drwxr-xr-x	root/root	lib/firmware/sdca/1fa/17aa/2353/
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/17aa/2353/1.bin -> ../2352/1.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/17aa/2353/2.bin -> ../2352/2.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/17aa/2353/3.bin -> ../2352/3.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/17aa/2353/4.bin -> ../2352/4.bin
+lrwxrwxrwx	root/root	lib/firmware/sdca/1fa/17aa/2353/42450005.bin -> ../2352/42450005.bin
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
