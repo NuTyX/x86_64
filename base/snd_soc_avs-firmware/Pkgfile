@@ -9,7 +9,7 @@ license="Custom"
 set=(linux-firmware)
 
 name=snd_soc_avs-firmware
-version=20251125
+version=20260110
 
 makedepends=(rdfind)
 source=(WHENCE
@@ -21,7 +21,6 @@ cd linux-firmware-$version
 
 # delete this python check as long we don't know what's missing here
 sed -i /check_whence.py/d copy-firmware.sh
-
 cp ../WHENCE .
 make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
 
