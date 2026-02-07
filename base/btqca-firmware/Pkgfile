@@ -9,7 +9,7 @@ license="Custom"
 set=(linux-firmware)
 
 name=btqca-firmware
-version=20251125
+version=20260110
 
 makedepends=(rdfind)
 source=(WHENCE
@@ -21,11 +21,11 @@ cd linux-firmware-$version
 
 # delete this python check as long we don't know what's missing here
 sed -i /check_whence.py/d copy-firmware.sh
-
 cp ../WHENCE .
 make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
 
 install -Dt $PKG/usr/share/licenses/$name -m644 WHENCE
+install -Dt $PKG/usr/share/licenses/$name -m644 LICENSE.QualcommAtheros_ath10k
 install -Dt $PKG/usr/share/licenses/$name -m644 LICENSE.QualcommAtheros_ath10k
 install -Dt $PKG/usr/share/licenses/$name -m644 LICENSE.QualcommAtheros_ath10k
 }
