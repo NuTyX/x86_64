@@ -4,7 +4,7 @@ url='https://www.kernel.org'
 packager="tnut <tnut@nutyx.org>"
 contributors="Sundev79,Spiky"
 makedepends=(bison flex perl gmp mpc libelf diffutils tar)
-run=(nutyx kmod busybox)
+run=(nutyx kmod)
 
 PKGMK_IGNORE_UNPACK="yes"
 PKGMK_NO_STRIP="yes"
