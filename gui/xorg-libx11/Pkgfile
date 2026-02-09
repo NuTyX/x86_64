@@ -9,7 +9,7 @@ makedepends=(pkgconf xorgproto libxcb xorg-xtrans)
 name=xorg-libx11
 alias=(libX11 libx11)
 
-version=1.8.12
+version=1.8.13
 _name=libX11
 
 source=(https://xorg.freedesktop.org/releases/individual/lib/${_name}-$version.tar.xz)
