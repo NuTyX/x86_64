@@ -5,8 +5,8 @@ url="https://www.xorg-mesa3d.org"
 
 license="custom"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
 makedepends=(meson ninja libclc python-ply rust-bindgen cbindgen
              xorgproto pkgconf libtool xorg-xrandr wayland python-mako
@@ -23,21 +23,33 @@ version=25.3.2
 source=(LICENSE
         https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
 
-PKGMK_MESON_OPTIONS="-Dgallium-drivers="asahi,crocus,iris,i915,nouveau,r300,r600,radeonsi,svga,llvmpipe,softpipe,virgl,zink" \
--Damdgpu-virtio=true -Dgallium-rusticl-enable-drivers="asahi,freedreno,radeonsi" -Dgallium-rusticl=true \
--Dvulkan-drivers="amd,freedreno,intel,intel_hasvk,swrast,virtio,nouveau,asahi,gfxstream" \
--Dvulkan-layers="device-select,intel-nullhw,overlay,screenshot,anti-lag,vram-report-limit" \
--Dgallium-va=enabled -Dlmsensors=enabled -Dvideo-codecs=all -Dglx=dri -Dgles1=disabled -Dgles2=enabled \
--Dllvm=enabled -Dplatforms="x11,wayland" -Dglvnd=enabled -Dglx-direct=true"
+build() {
+cd $name-$version
 
-build=meson
+mkdir build
+cd    build
 
-package() {
+meson setup                      \
+      --prefix=/usr              \
+      -Dbuildtype=plain          \
+      -Dgallium-drivers="crocus,iris,nouveau,r300,r600,radeonsi,svga,virgl,zink" \
+      -Dvulkan-drivers=auto      \
+      -Dgallium-va=enabled       \
+      -Dglx=dri                  \
+      -Dvalgrind=disabled        \
+      -Dlibunwind=disabled       \
+      -Dplatforms="x11,wayland"  \
+      -Dglvnd=enabled            \
+      -Dglx-direct=true          \
+      ..
+ninja
+DESTDIR=$PKG ninja install
+
 install -m644 -Dt $PKG/usr/share/licenses/$name \
-LICENSE
+../../LICENSE
 
-install -v -dm755 $PKG/usr/share/doc/mesa
-cp -rfv $name-$version/docs/* $PKG/usr/share/doc/mesa
+install -v -dm755 $PKG/usr/share/doc/mesa-$version
+cp -rfv ../docs/* $PKG/usr/share/doc/mesa-$version
 
 # indirect rendering symlink
 ln -s libGLX_mesa.so.0 $PKG/usr/lib/libGLX_indirect.so.0
