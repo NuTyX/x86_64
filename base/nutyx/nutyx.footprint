@@ -1,8 +1,6 @@
 drwxr-xr-x	root/root	etc/
 lrwxrwxrwx	root/root	etc/mtab -> ../proc/self/mounts
 drwx------	root/root	root/
-lrwxrwxrwx	root/root	root/bashrc -> ../etc/bashrc
-lrwxrwxrwx	root/root	root/profile.d -> ../etc/profile.d
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/setup-vm
@@ -27,6 +25,6 @@ drwxr-xr-x	root/root	usr/share/nutyx/
 -rw-r--r--	root/root	usr/share/nutyx/init.in
 -rw-r--r--	root/root	usr/share/nutyx/setup-nutyx.locales.gz
 drwxr-xr-x	root/root	var/
-lrwxrwxrwx	root/root	var/lock -> /run/lock
+lrwxrwxrwx	root/root	var/lock -> ../run/lock
 drwxr-xr-x	root/root	var/log/
-lrwxrwxrwx	root/root	var/run -> /run
+lrwxrwxrwx	root/root	var/run -> ../run
