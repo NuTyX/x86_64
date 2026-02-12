@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.6.123-1-nutyx
--rw-r--r--	root/root	boot/config-6.6.123-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.6.124-1-nutyx
+-rw-r--r--	root/root	boot/config-6.6.124-1-nutyx
 -rw-r--r--	root/root	boot/kernel-66
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.6.123-1-nutyx -> kernel-66
+lrwxrwxrwx	root/root	usr/lib/modules/6.6.124-1-nutyx -> kernel-66
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-66/build -> /usr/src/kernel-66
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/
@@ -5848,9 +5848,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/fs/ext2/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/fs/f2fs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-66/kernel/fs/f2fs/f2fs.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/fs/fat/
--rw-r--r--	root/root	usr/lib/modules/kernel-66/kernel/fs/fat/fat.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-66/kernel/fs/fat/msdos.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-66/kernel/fs/fat/vfat.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/fs/freevxfs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-66/kernel/fs/freevxfs/freevxfs.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-66/kernel/fs/fscache/
