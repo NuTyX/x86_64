@@ -1,13 +1,13 @@
 description='Broadcom Wireless driver for the 6.12 LTS Linux kernel version'
 url='https://docs.broadcom.com/docs/12358410'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Skythrew,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Skythrew,Spiky"
 
 
 name=broadcom-wl-kernel-612
 version=6.30.223.271
-release=10
+release=11
 
 run=(kernel-612)
 KERNELNAME="${name#broadcom-wl-}"
