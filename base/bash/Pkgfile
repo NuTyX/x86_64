@@ -8,23 +8,24 @@ contributors="Spiky"
 makedepends=(ncurses readline sed)
 
 name=bash
-version=5.3
-release=3
+version=5.3.9
+_version=5.3
+release=1
 
 set=(chroot)
-
+PKGML_IGNORE_RUNTIMEDEPS="yes"
 PKGMK_LOCALES=()
 
 source=($name-$version-consolidate-1.patch
-        https://ftp.gnu.org/gnu/bash/bash-$version.tar.gz)
+        https://ftp.gnu.org/gnu/bash/bash-${_version}.tar.gz)
 
 prepare() {
- cd $name-$version
- patch -Np1 -i ../$name-$version-consolidate-1.patch
+ cd $name-${_version}
+ patch -Np1 -i ../$name-${_version}-consolidate-1.patch
 }
 build()
 {
-cd bash-$version
+cd bash-${_version}
 
 ./configure --prefix=/usr \
 --htmldir=/usr/share/doc/bash \
