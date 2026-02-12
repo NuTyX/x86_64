@@ -13,7 +13,7 @@ _version=5.3
 release=1
 
 set=(chroot)
-PKGML_IGNORE_RUNTIMEDEPS="yes"
+PKGMK_IGNORE_RUNTIMEDEPS="yes"
 PKGMK_LOCALES=()
 
 source=($name-$version-consolidate-1.patch
@@ -21,7 +21,7 @@ source=($name-$version-consolidate-1.patch
 
 prepare() {
  cd $name-${_version}
- patch -Np1 -i ../$name-${_version}-consolidate-1.patch
+ patch -Np1 -i ../$name-$version-consolidate-1.patch
 }
 build()
 {
