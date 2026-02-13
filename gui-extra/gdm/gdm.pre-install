@@ -14,3 +14,4 @@ if ! (getent passwd $SN > /dev/null); then
    -u $IDN -g $SN -s /bin/false $SN
    passwd -ql $SN
 fi
+rm -f etc/pam.d/gdm-launch-environment
