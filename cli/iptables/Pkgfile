@@ -3,14 +3,18 @@ url="https://www.iptables.org/"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=iptables
 version=1.8.11
-release=2
+release=3
+
+makedepends=(libmnl libnftnl)
+
 scriptsversion=20250201
 
+PKGMK_GROUPS=(man devel)
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	     https://www.netfilter.org/projects/iptables/files/$name-$version.tar.xz)
 
@@ -19,8 +23,8 @@ build() {
 cd $name-$version
 
 ./configure --prefix=/usr \
---enable-libipq \
---disable-nftables
+--enable-libipq
+
 make
 make DESTDIR=$PKG install
 
@@ -34,6 +38,11 @@ rm $PKG/usr/lib/libip{{6,4}tc,q}.la
 rm $PKG/usr/lib/libxtables.la
 }
 
+package() {
+for f in {arp,eb,ip,ip6}tables{,-restore,-save} iptables-xml; do
+  ln -sf xtables-nft-multi $PKG/usr/sbin/$f
+done
+}
 service() {
 cd $PKG
 bsdtar -r -f \
