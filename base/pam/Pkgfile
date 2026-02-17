@@ -12,7 +12,7 @@ PKGMK_DEPENDS=(python meson ninja systemd)
 makedepends=(intltool texinfo libxcrypt)
 
 name=pam
-version=1.7.1
+version=1.7.2
 
 PKGMK_LOCALES=()
 PKGMK_MESON_OPTIONS="--libdir lib -Ddocdir=/usr/share/doc/Linux-PAM"
