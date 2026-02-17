@@ -4,16 +4,15 @@ url='https://pypi.python.org/pypi/wheel'
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=( python python-flit-core)
+makedepends=(python python-flit-core python-packaging)
 
 name=python-wheel
 _name="wheel"
 alias=(${_name})
 
-version=0.45.1
-release=3
+version=0.46.3
 
-source=(https://files.pythonhosted.org/packages/source/${name:7:1}/${name#*-}/${name#*-}-$version.tar.gz)
+source=(https://pypi.org/packages/source/w/wheel/wheel-$version.tar.gz)
 
 PKGMK_IGNORE_UNPACK="yes"
 prepare() {
