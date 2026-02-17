@@ -11,8 +11,9 @@ _name="packaging"
 alias=(${_name})
 
 version=26.0
+release=2
 
-makedepends=(python-setuptools python-flit-core)
+makedepends=(python-flit-core)
 
 source=(https://pypi.io/packages/source/p/${_name}/${_name}-$version.tar.gz)
 
