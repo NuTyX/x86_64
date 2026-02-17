@@ -1,15 +1,15 @@
 description='Virtualbox Host modules for the latest stable Linux Kernel version'
 url='http://www.virtualbox.org'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 license="GPL, CDDL"
 
 run=(kernel)
 name=vboxhost-kernel
 version=7.2.6
-release=1
+release=2
 
 buildr=172322
 _VBARCH=amd64
