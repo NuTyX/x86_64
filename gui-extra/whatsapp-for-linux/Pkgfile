@@ -6,7 +6,7 @@ license="GPL3"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(cmake openssl libcanberra gtkmm webkitgtk libayatana-appindicator)
+makedepends=(openssl libcanberra gtkmm webkitgtk libayatana-appindicator)
 
 run=(hicolor-icon-theme desktop-file-utils
      gtk-update-icon-cache shared-mime-info
@@ -14,20 +14,19 @@ run=(hicolor-icon-theme desktop-file-utils
      gstreamer-plugins-good gstreamer-plugins-bad)
 
 name=whatsapp-for-linux
-version=1.6.5
+version=1.0.1
 
 PKGMK_KEEP_SOURCES="no"
 
-source=(https://github.com/eneshecan/$name/archive/refs/tags/v${version}.tar.gz)
+source=(https://github.com/sayedulsayem/whatsapp-linux-desktop/releases/download/v1.0.1/whatsapp-linux-desktop-1.0.1-amd64.deb)
 
 build() {
-cd $name-$version
+tar -xvf data.tar.xz --exclude=usr/share/doc -C "$PKG/"
 
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ..
-make
-make DESTDIR=$PKG install
+cd $PKG/usr/share
+sed -i 's/WhatsApp Desktop/whatsapp-for-linux/g' applications/whatsapp-linux-desktop.desktop
+sed -i 's/;Office//g' applications/whatsapp-linux-desktop.desktop
 
-install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
+mv $PKG/opt/'WhatsApp Desktop' $PKG/opt/$name
+
 }
