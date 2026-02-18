@@ -1,5 +1,5 @@
 if [ -f boot/initrd-618 ]; then
-    mkinitramfs 6.18.10-1-nutyx
+    mkinitramfs 6.18.12-1-nutyx
     rm boot/initrd-618
-    mv boot/initrd-6.18.10-1-nutyx boot/initrd-618
+    mv boot/initrd-6.18.12-1-nutyx boot/initrd-618
 fi
