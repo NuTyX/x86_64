@@ -7,14 +7,14 @@ contributors="Pierre,Fabienwang,Tnut"
 makedepends=(perl nspr sqlite)
 
 name=nss
-version=3.119.1
+version=3.120.1
 
-source=(https://archive.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-${version//./_}.tar.gz \
+source=(https://archive.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-${version//_/.}.tar.gz \
 	nss-standalone-1.patch)
 
-prepare() {
-mv $name-3_119_1 $name-$version
-}
+#prepare() {
+#mv $name-3_119_1 $name-$version
+#}
 
 build () {
 	cd $name-$version
