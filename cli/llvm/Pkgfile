@@ -2,13 +2,13 @@ description="Low Level Virtual Machine, collection of modular and \
 reusable compiler and toolchain."
 url="https://llvm.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Remy,Tnut"
 
 makedepends=(grep python cmake ninja libxml2 git)
 
 name=llvm
-version=21.1.4
+version=21.1.8
 
 PKGMK_GROUPS=(lib man devel doc)
 _url="https://github.com/llvm/llvm-project/releases/download/llvmorg-$version"
@@ -42,6 +42,7 @@ cd    build
 
 CC=gcc CXX=g++ \
 cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+        -D CMAKE_SKIP_INSTALL_RPATH=ON         \
 	-DLLVM_ENABLE_FFI=ON       \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DLLVM_BUILD_LLVM_DYLIB=ON \
