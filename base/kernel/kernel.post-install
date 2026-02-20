@@ -1,5 +1,5 @@
 if [ -f boot/initrd-stable ]; then
-    mkinitramfs 6.19.2-1-nutyx
+    mkinitramfs 6.19.3-1-nutyx
     rm boot/initrd-stable
-    mv boot/initrd-6.19.2-1-nutyx boot/initrd-stable
+    mv boot/initrd-6.19.3-1-nutyx boot/initrd-stable
 fi

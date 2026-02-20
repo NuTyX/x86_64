@@ -1,5 +1,5 @@
 description="Programs for controlling the startup, running, and shutdown of the system."
-url="https://www.freedesktop.org/wiki/Software/systemd/"
+url="https://systemd.io"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
@@ -52,10 +52,9 @@ package() {
     mv $name-man-pages-$version/man$i \
      $PKG/usr/share/man
   done
-  mkdir $PKG/sbin
 
-  ln -s ../usr/lib/systemd/systemd \
-  $PKG/sbin/init
+  ln -s ../lib/systemd/systemd \
+  $PKG/usr/bin/init
 
   rm $PKG/usr/share/factory/etc/vconsole.conf
 
