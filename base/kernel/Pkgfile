@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel
-version=6.19.2
+version=6.19.3
 _version=${version%.*}
 [ "${version:0:1}" == "${version%.*}" ] && _version=$version
 
@@ -19,7 +19,8 @@ alias=(linux)
 INITRD="initrd-stable"
 KERNEL="kernel-stable"
 
-source=($url/pub/linux/kernel/v${version:0:1}.x/linux-${_version}.tar.xz config)
+source=(init_path.patch
+        $url/pub/linux/kernel/v${version:0:1}.x/linux-${_version}.tar.xz config)
 if [ "${_version}" != "${version}" ]; then
   patchname="patch-$version.xz"
   source+=" $url/pub/linux/kernel/v${version:0:1}.x/$patchname"
@@ -32,6 +33,8 @@ cd linux-${_version}
 
 [ -f $SRC/patch-$version.xz ] && \
 xz -d -c  $SRC/patch-$version.xz | patch -Np1
+
+patch -Np1 -i ../init_path.patch
 
 echo "-$release-nutyx" > localversion
 
