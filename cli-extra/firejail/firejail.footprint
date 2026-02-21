@@ -437,6 +437,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/ghostwriter.profile
 -rw-r--r--	root/root	etc/firejail/gimp-2.10.profile
 -rw-r--r--	root/root	etc/firejail/gimp-2.8.profile
+-rw-r--r--	root/root	etc/firejail/gimp-3.0.profile
 -rw-r--r--	root/root	etc/firejail/gimp.profile
 -rw-r--r--	root/root	etc/firejail/gist-paste.profile
 -rw-r--r--	root/root	etc/firejail/gist.profile
@@ -494,6 +495,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/gnome-system-log.profile
 -rw-r--r--	root/root	etc/firejail/gnome-taquin.profile
 -rw-r--r--	root/root	etc/firejail/gnome-tetravex.profile
+-rw-r--r--	root/root	etc/firejail/gnome-text-editor.profile
 -rw-r--r--	root/root	etc/firejail/gnome-todo.profile
 -rw-r--r--	root/root	etc/firejail/gnome-twitch.profile
 -rw-r--r--	root/root	etc/firejail/gnome-weather.profile
@@ -542,6 +544,8 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/gunzip.profile
 -rw-r--r--	root/root	etc/firejail/guvcview.profile
 -rw-r--r--	root/root	etc/firejail/gwenview.profile
+-rw-r--r--	root/root	etc/firejail/gzdoom-common.profile
+-rw-r--r--	root/root	etc/firejail/gzdoom.profile
 -rw-r--r--	root/root	etc/firejail/gzexe.profile
 -rw-r--r--	root/root	etc/firejail/gzip.profile
 -rw-r--r--	root/root	etc/firejail/handbrake-gtk.profile
@@ -696,6 +700,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/lzcat.profile
 -rw-r--r--	root/root	etc/firejail/lzcmp.profile
 -rw-r--r--	root/root	etc/firejail/lzdiff.profile
+-rw-r--r--	root/root	etc/firejail/lzdoom.profile
 -rw-r--r--	root/root	etc/firejail/lzegrep.profile
 -rw-r--r--	root/root	etc/firejail/lzfgrep.profile
 -rw-r--r--	root/root	etc/firejail/lzgrep.profile
@@ -807,6 +812,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/ncdu.profile
 -rw-r--r--	root/root	etc/firejail/ncdu2.profile
 -rw-r--r--	root/root	etc/firejail/ncmpcpp.profile
+-rw-r--r--	root/root	etc/firejail/ne.profile
 -rw-r--r--	root/root	etc/firejail/nemo.profile
 -rw-r--r--	root/root	etc/firejail/neochat.profile
 -rw-r--r--	root/root	etc/firejail/neomutt.profile
@@ -869,6 +875,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/openmw-launcher.profile
 -rw-r--r--	root/root	etc/firejail/openmw.profile
 -rw-r--r--	root/root	etc/firejail/openoffice.org.profile
+-rw-r--r--	root/root	etc/firejail/openra.profile
 -rw-r--r--	root/root	etc/firejail/openshot-qt.profile
 -rw-r--r--	root/root	etc/firejail/openshot.profile
 -rw-r--r--	root/root	etc/firejail/openstego.profile
@@ -1197,6 +1204,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/transmission-show.profile
 -rw-r--r--	root/root	etc/firejail/tremc.profile
 -rw-r--r--	root/root	etc/firejail/tremulous.profile
+-rw-r--r--	root/root	etc/firejail/trivalent.profile
 -rw-r--r--	root/root	etc/firejail/trojita.profile
 -rw-r--r--	root/root	etc/firejail/truecraft.profile
 -rw-r--r--	root/root	etc/firejail/ts3client_runscript.sh.profile
@@ -1227,6 +1235,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/utox.profile
 -rw-r--r--	root/root	etc/firejail/uudeview.profile
 -rw-r--r--	root/root	etc/firejail/uzbl-browser.profile
+-rw-r--r--	root/root	etc/firejail/uzdoom.profile
 -rw-r--r--	root/root	etc/firejail/vesktop.profile
 -rw-r--r--	root/root	etc/firejail/viewnior.profile
 -rw-r--r--	root/root	etc/firejail/viking.profile
@@ -1255,6 +1264,7 @@ drwxr-xr-x	root/root	etc/firejail/firecfg.d/
 -rw-r--r--	root/root	etc/firejail/warmux.profile
 -rw-r--r--	root/root	etc/firejail/warsow.profile
 -rw-r--r--	root/root	etc/firejail/warzone2100.profile
+-rw-r--r--	root/root	etc/firejail/warzone2100.real.profile
 -rw-r--r--	root/root	etc/firejail/waterfox-classic.profile
 -rw-r--r--	root/root	etc/firejail/waterfox-current.profile
 -rw-r--r--	root/root	etc/firejail/waterfox.profile
@@ -1375,8 +1385,8 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/firejail/
 -rwxr-xr-x	root/root	usr/lib/firejail/etc-cleanup
 -rwxr-xr-x	root/root	usr/lib/firejail/fbuilder
+-rwxr-xr-x	root/root	usr/lib/firejail/fbwrap
 -rwx--x--x	root/root	usr/lib/firejail/fcopy
--rwxr-xr-x	root/root	usr/lib/firejail/fids
 -rwxr-xr-x	root/root	usr/lib/firejail/firejail-welcome.sh
 -rwxr-xr-x	root/root	usr/lib/firejail/fix_private-bin.py
 -rwxr-xr-x	root/root	usr/lib/firejail/fj-mkdeb.py
