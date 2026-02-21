@@ -12,29 +12,20 @@ makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr
              harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib)
 
 name=gimp
-version=3.0.6
-_version=3.0
+version=3.0.8
+
+PKGMK_MESON_OPTIONS="-Dgi-docgen=disabled \
+-Dbug-report-url=https://github.com/NuTyX/systemd/issues"
 
 source=(https://download.gimp.org/gimp/v${version:0:3}/gimp-$version.tar.xz)
 
-build() {
-cd gimp-$version
-
-mkdir gimp-build
-cd    gimp-build
-
-      meson setup .. \
-      --prefix=/usr  \
-      --sysconfdir=/etc \
-      -Dgi-docgen=disabled \
-      -Dbug-report-url=https://github.com/NuTyX/packages-x86_64/issues \
-      --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-install -Dm644 ../libgimp/COPYING $PKG/usr/share/licenses/$name/COPYING
+prepare() {
+ localedef -i en_US -f UTF-8 en_US.UTF-8
+}
+build=meson
+packager() {
+ cd $name-$version
+ install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
+ install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 libgimp/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
