@@ -1,0 +1,20 @@
+description="Collection of graphical tools for Software to be used in the GNOME desktop"
+url="https://apps.gnome.org/Software"
+
+license="GPL-2.0-or-later"
+set=(gnome)
+
+packager="tnut <tnut@nutyx.org"
+contributors="Spiky"
+
+name=gnome-software
+version=49.2
+
+makedepends=(flatpak packagekit appstream gnome-online-accounts gtk4 libadwaita libsoup)
+run=(gsettings-desktop-schemas)
+
+source=(https://download.gnome.org/sources/$name/${version::2}/$name-$version.tar.xz)
+
+PKGMK_MESON_OPTIONS="-Dfwupd=false -Dmalcontent=false"
+
+build=meson
