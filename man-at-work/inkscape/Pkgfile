@@ -3,15 +3,14 @@ url='https://inkscape.org/'
 
 license="GPL2 GPL3 LGPL2 LGPL3 MPL OFL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=inkscape
-version=1.4.2
-release=2
+version=1.4.3
+release=1
 
-source=(https://inkscape.org/gallery/item/56344/inkscape-$version.tar.xz
-        inkscape-1.4.2-poppler_fixes-3.patch) 
+source=(https://inkscape.org/gallery/item/58914/inkscape-$version.tar.xz)
 
 makedepends=(cmake boost git gtkmm python lcms2 gsl libxslt gc
              dbus-glib lcms2 libjpeg-turbo poppler-glib gspell
@@ -23,27 +22,26 @@ run=(desktop-file-utils hicolor-icon-theme gtk-update-icon-cache
 prepare() {
  mv $name-${version}_* $name
  cd $name
- patch -Np1 -i ../inkscape-1.4.2-poppler_fixes-3.patch
-
+ sed -i 's/gfree/g_free/' src/extension/internal/pdfinput/pdf-input.cpp
+ sed -e '/Stream.h/a#include <poppler/goo/gmem.h>' \
+  -e 's/reset/rewind/' \
+  -i src/extension/internal/pdfinput/svg-builder.cpp
 }
 
 build() {
 
-	mkdir -p build
-	export PKG_CONFIG_PATH='/usr/lib/imagemagick6/pkgconfig'
-	cmake -H${name} -Bbuild \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_INSTALL_PREFIX:PATH=/usr \
-                -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-		-DWITH_DBUS=ON \
-
-	cmake --build build
+    mkdir -p build
+    cmake -H${name} -Bbuild \
+	  -DCMAKE_BUILD_TYPE=Release \
+	  -DCMAKE_INSTALL_PREFIX:PATH=/usr \
+	  -W no-dev
+    cmake --build build
 }
 
 package() {
-	DESTDIR=$PKG cmake --build build --target install
+    DESTDIR=$PKG cmake --build build --target install
 
-install -Dm644 $name/COPYING $PKG/usr/share/licenses/$name/COPYING
-install -Dm644 $name/LICENSES/* $PKG/usr/share/licenses/$name/
+    install -Dm644 $name/COPYING $PKG/usr/share/licenses/$name/COPYING
+    install -Dm644 $name/LICENSES/* $PKG/usr/share/licenses/$name/
 }
 
