@@ -55,6 +55,7 @@ drwxr-xr-x	root/root	usr/include/catch2/generators/
 -rw-r--r--	root/root	usr/include/catch2/generators/catch_generators_all.hpp
 -rw-r--r--	root/root	usr/include/catch2/generators/catch_generators_random.hpp
 -rw-r--r--	root/root	usr/include/catch2/generators/catch_generators_range.hpp
+-rw-r--r--	root/root	usr/include/catch2/generators/catch_generators_throw.hpp
 drwxr-xr-x	root/root	usr/include/catch2/interfaces/
 -rw-r--r--	root/root	usr/include/catch2/interfaces/catch_interfaces_all.hpp
 -rw-r--r--	root/root	usr/include/catch2/interfaces/catch_interfaces_capture.hpp
@@ -101,6 +102,7 @@ drwxr-xr-x	root/root	usr/include/catch2/internal/
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_jsonwriter.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_lazy_expr.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_leak_detector.hpp
+-rw-r--r--	root/root	usr/include/catch2/internal/catch_lifetimebound.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_list.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_logical_traits.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_message_info.hpp
@@ -110,6 +112,7 @@ drwxr-xr-x	root/root	usr/include/catch2/internal/
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_optional.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_output_redirect.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_parse_numbers.hpp
+-rw-r--r--	root/root	usr/include/catch2/internal/catch_path_filter.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_platform.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_polyfills.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_preprocessor.hpp
@@ -143,6 +146,7 @@ drwxr-xr-x	root/root	usr/include/catch2/internal/
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_test_registry.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_test_spec_parser.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_textflow.hpp
+-rw-r--r--	root/root	usr/include/catch2/internal/catch_thread_local.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_thread_support.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_to_string.hpp
 -rw-r--r--	root/root	usr/include/catch2/internal/catch_uncaught_exceptions.hpp
