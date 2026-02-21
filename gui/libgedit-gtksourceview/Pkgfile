@@ -8,8 +8,7 @@ contributors=""
 makedepends=(gtk3 libxml2)
 
 name=libgedit-gtksourceview
-version=299.5.0
-release=2
+version=299.6.0
 
 source=(https://gitlab.gnome.org/World/gedit/$name/-/archive/$version/$name-$version.tar.gz)
 
@@ -28,5 +27,5 @@ ninja
 
 DESTDIR=$PKG ninja install
 
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 ../LICENSES/LGPL-2.1-or-later.txt $PKG/usr/share/licenses/$name/LGPL-2.1-or-later.txt
 }
