@@ -7,12 +7,12 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Fabienwang,Spiky"
 
 makedepends=(glib libsoup3 gpgme polkit fuse2 libostree json-glib
-             appstream libseccomp python-parsing socat xdg-dbus-proxy)
-run=(make-ca bubblewrap gnupg)
+             appstream libseccomp python-parsing socat)
+run=(make-ca bubblewrap gnupg xdg-dbus-proxy)
 
 name=flatpak
 version=1.16.3
-release=1
+release=2
 
 source=(https://dl.flathub.org/repo/flathub.flatpakrepo flatpak-bindir.sh
         https://github.com/flatpak/flatpak/releases/download/$version/flatpak-$version.tar.xz)
