@@ -1,0 +1,10 @@
+# Default values for useradd(8)
+#
+# The SHELL variable specifies the default login shell on your
+# system.
+SHELL=/usr/bin/bash
+
+# The SKEL variable specifies the directory containing "skeletal" user files;
+# in other words, files such as a sample .profile that will be copied to the
+# new user's home directory when it is created.
+SKEL=/etc/skel
