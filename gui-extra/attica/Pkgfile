@@ -9,7 +9,7 @@ contributors="Pierre,Fabienwang,Spiky"
 set=(kde6-frameworks)
 
 name=attica
-version=6.22.0
+version=6.23.0
 makedepends=(extra-cmake-modules qt6-base)
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
