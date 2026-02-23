@@ -8,7 +8,6 @@ drwxr-xr-x	root/root	etc/xdg/autostart/
 drwxr-xr-x	root/root	etc/xdg/menus/
 -rw-r--r--	root/root	etc/xdg/menus/plasma-applications.menu
 -rw-r--r--	root/root	etc/xdg/plasmanotifyrc
--rw-r--r--	root/root	etc/xdg/taskmanagerrulesrc
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gmenudbusmenuproxy
@@ -77,8 +76,8 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.5-remove-stop-activity-shortcut
 lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so -> libbatterycontrol.so.6
-lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.6.0
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/baloorunner
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
@@ -87,6 +86,7 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/fontinst_helper
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/fontinst_x11
 -rwxr-xr-x	root/root	usr/lib/libexec/kfontprint
+-rwxr-xr-x	root/root	usr/lib/libexec/ksecretprompter
 -rwxr-xr-x	root/root	usr/lib/libexec/ksmserver-logout-greeter
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-changeicons
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-dbus-run-session-if-needed
@@ -94,29 +94,29 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-fallback-session-save
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-sourceenv.sh
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so -> libkfontinst.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.6.0
 lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so -> libkfontinstui.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.6.0
 lrwxrwxrwx	root/root	usr/lib/libklipper.so -> libklipper.so.6
-lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libklipper.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libklipper.so.6.6.0
 lrwxrwxrwx	root/root	usr/lib/libklookandfeel.so -> libklookandfeel.so.6
-lrwxrwxrwx	root/root	usr/lib/libklookandfeel.so.6 -> libklookandfeel.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libklookandfeel.so.6.5.5
-lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libklookandfeel.so.6 -> libklookandfeel.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libklookandfeel.so.6.6.0
+lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.6.0
 -rwxr-xr-x	root/root	usr/lib/libkrdb.so
 lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so -> libkworkspace6.so.6
-lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.6.0
 lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so -> libnotificationmanager.so.1
-lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.6.0
 lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so -> libtaskmanager.so.6
-lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.6.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -163,16 +163,19 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/parts/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/parts/kfontviewpart.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/thumbcreator/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/thumbcreator/fontthumbnail.so
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/phonon_platform/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/phonon_platform/kde.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.activitybar.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.analogclock.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.appmenu.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.calendar.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.cameraindicator.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.clipboard.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.devicenotifier.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.digitalclock.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.icon.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.lock_logout.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.manage-inputmethod.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.mediacontroller.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.notifications.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.panelspacer.so
@@ -209,13 +212,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_wallpaper.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_fontinst.so
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_applicationjobs.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_clipboard.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_executable.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_notifications.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_time.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasmacalendarplugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasmacalendarplugins/holidays/
 -rw-r--r--	root/root	usr/lib/qt6/plugins/plasmacalendarplugins/holidays/HolidaysConfig.qml
@@ -247,17 +243,17 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/notificationmanager/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/notificationmanager/notificationmanager.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/notificationmanager/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/clock/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/clock/clockplugin.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/clock/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/clock/libclockplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/clock/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/lookandfeel/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/lookandfeel/kde-qmlmodule.version
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/lookandfeel/liblookandfeelqmlplugin.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/lookandfeel/lookandfeelqmlplugin.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/lookandfeel/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/
-drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/appmenu/
--rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/appmenu/appmenuplugin.qmltypes
--rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/appmenu/kde-qmlmodule.version
--rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/appmenu/libappmenuplugin.so
--rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/appmenu/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/battery/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/battery/batterycontrol.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/battery/kde-qmlmodule.version
@@ -427,6 +423,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kcm_style.desktop
 -rw-r--r--	root/root	usr/share/applications/kcm_users.desktop
 -rw-r--r--	root/root	usr/share/applications/kcm_wallpaper.desktop
+-rw-r--r--	root/root	usr/share/applications/org.kde.baloorunner.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.kcolorschemeeditor.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.kfontinst.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.kfontview.desktop
@@ -435,6 +432,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.kde.plasma-interactiveconsole.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.plasmashell.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.plasmawindowed.desktop
+-rw-r--r--	root/root	usr/share/applications/org.kde.secretprompter.desktop
 drwxr-xr-x	root/root	usr/share/config.kcfg/
 -rw-r--r--	root/root	usr/share/config.kcfg/colorssettings.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/cursorthemesettings.kcfg
@@ -461,6 +459,7 @@ drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.krunner.service
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.plasma.Notifications.service
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.runners.baloo.service
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.secretprompter.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.fontinst.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.localegenhelper.service
@@ -580,7 +579,6 @@ drwxr-xr-x	root/root	usr/share/knotifications6/
 -rw-r--r--	root/root	usr/share/knotifications6/freespacenotifier.notifyrc
 -rw-r--r--	root/root	usr/share/knotifications6/libnotificationmanager.notifyrc
 -rw-r--r--	root/root	usr/share/knotifications6/oom-notifier.notifyrc
--rw-r--r--	root/root	usr/share/knotifications6/phonon.notifyrc
 drwxr-xr-x	root/root	usr/share/knsrcfiles/
 -rw-r--r--	root/root	usr/share/knsrcfiles/colorschemes.knsrc
 -rw-r--r--	root/root	usr/share/knsrcfiles/gtk_themes.knsrc
@@ -716,67 +714,6 @@ drwxr-xr-x	root/root	usr/share/plasma/look-and-feel/org.kde.breezetwilight.deskt
 -rw-r--r--	root/root	usr/share/plasma/look-and-feel/org.kde.breezetwilight.desktop/contents/previews/preview.png
 -rw-r--r--	root/root	usr/share/plasma/look-and-feel/org.kde.breezetwilight.desktop/metadata.json
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.activitybar/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.activitybar/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.activitybar/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.activitybar/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.activitybar/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/config/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/config/config.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/config/main.xml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/ui/Hand.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/ui/configGeneral.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.analogclock/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/config/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/config/config.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/config/main.xml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/ui/MenuDelegate.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/ui/configGeneral.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.appmenu/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/config/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/config/config.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/config/main.xml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/images/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/images/mini-calendar.svgz
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/ui/configGeneral.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.calendar/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.cameraindicator/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.cameraindicator/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.cameraindicator/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.cameraindicator/contents/ui/FullRepresentation.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.cameraindicator/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.cameraindicator/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/contents/config/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/contents/config/main.xml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.clipboard/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/contents/config/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/contents/config/main.xml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.icon/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.manage-inputmethod/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.manage-inputmethod/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.manage-inputmethod/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.manage-inputmethod/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.manage-inputmethod/metadata.json
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor.cpu/
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor.cpu/contents/
 drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor.cpu/contents/config/
@@ -821,30 +758,6 @@ drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor/con
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor/contents/ui/config/FaceDetails.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor/contents/ui/main.qml
 -rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemmonitor/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/applet/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/applet/CompactApplet.qml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/config/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/config/config.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/config/main.xml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/ConfigEntries.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/ConfigGeneral.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/CurrentItemHighLight.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/ExpandedRepresentation.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/ExpanderArrow.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/HiddenItemsView.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/PlasmoidPopupsContainer.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/SystemTrayState.qml
-drwxr-xr-x	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/items/
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/items/AbstractItem.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/items/ItemLoader.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/items/PlasmoidItem.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/items/PulseAnimation.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/items/StatusNotifierItem.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/contents/ui/main.qml
--rw-r--r--	root/root	usr/share/plasma/plasmoids/org.kde.plasma.systemtray/metadata.json
 drwxr-xr-x	root/root	usr/share/plasma/wallpapers/
 drwxr-xr-x	root/root	usr/share/plasma/wallpapers/org.kde.color/
 drwxr-xr-x	root/root	usr/share/plasma/wallpapers/org.kde.color/contents/
@@ -895,12 +808,6 @@ drwxr-xr-x	root/root	usr/share/plasma/wallpapers/org.kde.slideshow/contents/ui/m
 -rw-r--r--	root/root	usr/share/plasma/wallpapers/org.kde.slideshow/contents/ui/mediacomponent/DayNightView.qml
 -rw-r--r--	root/root	usr/share/plasma/wallpapers/org.kde.slideshow/contents/ui/mediacomponent/StaticImageComponent.qml
 -rw-r--r--	root/root	usr/share/plasma/wallpapers/org.kde.slideshow/metadata.json
-drwxr-xr-x	root/root	usr/share/plasma5support/
-drwxr-xr-x	root/root	usr/share/plasma5support/services/
--rw-r--r--	root/root	usr/share/plasma5support/services/applicationjobs.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/notifications.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/org.kde.plasma.clipboard.operations
--rw-r--r--	root/root	usr/share/plasma5support/services/statusnotifieritem.operations
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.fontinst.policy

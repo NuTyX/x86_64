@@ -7,8 +7,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/KF6BreezeIcons/
 -rw-r--r--	root/root	usr/lib/cmake/KF6BreezeIcons/KF6BreezeIconsTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/KF6BreezeIcons/KF6BreezeIconsTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libKF6BreezeIcons.so -> libKF6BreezeIcons.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6BreezeIcons.so.6 -> libKF6BreezeIcons.so.6.22.0
--rwxr-xr-x	root/root	usr/lib/libKF6BreezeIcons.so.6.22.0
+lrwxrwxrwx	root/root	usr/lib/libKF6BreezeIcons.so.6 -> libKF6BreezeIcons.so.6.23.0
+-rwxr-xr-x	root/root	usr/lib/libKF6BreezeIcons.so.6.23.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/breeze-dark/
@@ -11683,6 +11683,8 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/32/games-config-custom-
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/32/games-config-custom.svg -> configure.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/32/games-config-options-symbolic.svg -> configure.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/32/games-config-options.svg -> configure.svg
+-rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/32/globe-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/32/globe.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/32/gnumeric-format-halign-distributed-symbolic.svg -> gnumeric-format-halign-distributed.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/actions/32/gnumeric-format-halign-distributed.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/actions/32/gnumeric-format-valign-bottom-symbolic.svg -> gnumeric-format-valign-bottom.svg
@@ -12859,7 +12861,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/22/applications-acce
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/22/applications-graphics-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/22/applications-graphics.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/22/applications-internet-symbolic.svg -> ../../actions/22/globe.svg
--rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/22/applications-internet.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/22/applications-internet.svg -> ../../actions/22/globe.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/22/applications-multimedia-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/22/applications-multimedia.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/22/applications-network-symbolic.svg -> applications-internet-symbolic.svg
@@ -12896,7 +12898,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/24/applications-acce
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/24/applications-graphics-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/24/applications-graphics.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/24/applications-internet-symbolic.svg -> ../../actions/24/globe.svg
--rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/24/applications-internet.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/24/applications-internet.svg -> ../../actions/24/globe.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/24/applications-multimedia-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/24/applications-multimedia.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/24/applications-network-symbolic.svg -> applications-internet-symbolic.svg
@@ -12925,7 +12927,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/32/applications-acce
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/32/applications-engineering.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/32/applications-games.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/32/applications-graphics.svg
--rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/32/applications-internet.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/32/applications-internet.svg -> ../../actions/32/globe.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/32/applications-multimedia.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/categories/32/applications-network.svg -> applications-internet.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/categories/32/applications-office.svg
@@ -17413,6 +17415,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-syst
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-network-proxy.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-network-share-windows.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-network-sharing.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-network-symbolic.svg -> ../../actions/22/globe-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-network-vpn.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-network-wakeonlan.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/22/preferences-system-power-management.svg
@@ -17516,6 +17519,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-syst
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-network-proxy.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-network-share-windows.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-network-sharing.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-network-symbolic.svg -> ../../actions/24/globe-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-network-vpn.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-network-wakeonlan.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/preferences/24/preferences-system-power-management.svg
@@ -18932,6 +18936,8 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/22/transmission-tray-ico
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/status/22/transmission-tray-icon.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/22/uninstall-symbolic.svg -> uninstall.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/status/22/uninstall.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/22/update-busy-symbolic.svg -> update-busy.svg
+-rw-r--r--	root/root	usr/share/icons/breeze-dark/status/22/update-busy.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/22/update-high-symbolic.svg -> update-high.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/status/22/update-high.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/22/update-low-symbolic.svg -> update-low.svg
@@ -19759,6 +19765,8 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/24/transmission-tray-ico
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/status/24/transmission-tray-icon.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/24/uninstall-symbolic.svg -> uninstall.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/status/24/uninstall.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/24/update-busy-symbolic.svg -> update-busy.svg
+-rw-r--r--	root/root	usr/share/icons/breeze-dark/status/24/update-busy.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/24/update-high-symbolic.svg -> update-high.svg
 -rw-r--r--	root/root	usr/share/icons/breeze-dark/status/24/update-high.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze-dark/status/24/update-low-symbolic.svg -> update-low.svg
@@ -31648,6 +31656,8 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/32/games-config-custom-symbo
 lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/32/games-config-custom.svg -> configure.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/32/games-config-options-symbolic.svg -> configure.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/32/games-config-options.svg -> configure.svg
+-rw-r--r--	root/root	usr/share/icons/breeze/actions/32/globe-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/breeze/actions/32/globe.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/32/gnumeric-format-halign-distributed-symbolic.svg -> gnumeric-format-halign-distributed.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/actions/32/gnumeric-format-halign-distributed.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/actions/32/gnumeric-format-valign-bottom-symbolic.svg -> gnumeric-format-valign-bottom.svg
@@ -32824,7 +32834,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/22/applications-accessori
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/22/applications-graphics-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/22/applications-graphics.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/22/applications-internet-symbolic.svg -> ../../actions/22/globe.svg
--rw-r--r--	root/root	usr/share/icons/breeze/categories/22/applications-internet.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/22/applications-internet.svg -> ../../actions/22/globe.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/22/applications-multimedia-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/22/applications-multimedia.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/22/applications-network-symbolic.svg -> ./applications-internet-symbolic.svg
@@ -32861,7 +32871,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/24/applications-accessori
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/24/applications-graphics-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/24/applications-graphics.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/24/applications-internet-symbolic.svg -> ../../actions/24/globe.svg
--rw-r--r--	root/root	usr/share/icons/breeze/categories/24/applications-internet.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/24/applications-internet.svg -> ../../actions/24/globe.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/24/applications-multimedia-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/24/applications-multimedia.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/24/applications-network-symbolic.svg -> ./applications-internet-symbolic.svg
@@ -32890,7 +32900,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/32/applications-accessori
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/32/applications-engineering.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/32/applications-games.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/32/applications-graphics.svg
--rw-r--r--	root/root	usr/share/icons/breeze/categories/32/applications-internet.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/32/applications-internet.svg -> ../../actions/32/globe.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/32/applications-multimedia.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/categories/32/applications-network.svg -> ./applications-internet.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/categories/32/applications-office.svg
@@ -37378,6 +37388,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/preferences/22/preferences-system-bl
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/22/preferences-system-network-proxy.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/22/preferences-system-network-share-windows.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/22/preferences-system-network-sharing.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/preferences/22/preferences-system-network-symbolic.svg -> ../../actions/22/globe-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/22/preferences-system-network-vpn.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/22/preferences-system-network-wakeonlan.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/22/preferences-system-power-management.svg
@@ -37481,6 +37492,7 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/preferences/24/preferences-system-bl
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/24/preferences-system-network-proxy.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/24/preferences-system-network-share-windows.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/24/preferences-system-network-sharing.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/preferences/24/preferences-system-network-symbolic.svg -> ../../actions/24/globe-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/24/preferences-system-network-vpn.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/24/preferences-system-network-wakeonlan.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/preferences/24/preferences-system-power-management.svg
@@ -38897,6 +38909,8 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/status/22/transmission-tray-icon-sym
 -rw-r--r--	root/root	usr/share/icons/breeze/status/22/transmission-tray-icon.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/status/22/uninstall-symbolic.svg -> uninstall.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/status/22/uninstall.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/status/22/update-busy-symbolic.svg -> update-busy.svg
+-rw-r--r--	root/root	usr/share/icons/breeze/status/22/update-busy.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/status/22/update-high-symbolic.svg -> update-high.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/status/22/update-high.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/status/22/update-low-symbolic.svg -> update-low.svg
@@ -39724,6 +39738,8 @@ lrwxrwxrwx	root/root	usr/share/icons/breeze/status/24/transmission-tray-icon-sym
 -rw-r--r--	root/root	usr/share/icons/breeze/status/24/transmission-tray-icon.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/status/24/uninstall-symbolic.svg -> uninstall.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/status/24/uninstall.svg
+lrwxrwxrwx	root/root	usr/share/icons/breeze/status/24/update-busy-symbolic.svg -> update-busy.svg
+-rw-r--r--	root/root	usr/share/icons/breeze/status/24/update-busy.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/status/24/update-high-symbolic.svg -> update-high.svg
 -rw-r--r--	root/root	usr/share/icons/breeze/status/24/update-high.svg
 lrwxrwxrwx	root/root	usr/share/icons/breeze/status/24/update-low-symbolic.svg -> update-low.svg

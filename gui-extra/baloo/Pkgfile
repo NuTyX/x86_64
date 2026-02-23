@@ -19,4 +19,13 @@ run=(hicolor-icon-theme xdg-utils)
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
-build=kde6
+build() {
+  cmake -B build -S $name-$version \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DKDE_INSTALL_LIBDIR=lib \
+  -DBUILD_TESTING=OFF \
+  -Wno-dev
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}

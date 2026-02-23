@@ -7,15 +7,16 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(qt6-base qt6-multimedia qt6-declarative extra-cmake-modules kdoctools
-             kconfig kconfigwidgets kcoreaddons kdbusaddons ki18n kio kirigami
-             kjobwidgets knotifications kpipewire kservice kwidgetsaddons opencv
-             kwindowsystem kxmlgui layer-shell-qt libxcb purpose wayland zxing-cpp prison
-             xcb-util xcb-util-cursor xcb-util-image plasma-wayland-protocols kstatusnotifieritem)
+             kquickimageeditor kconfig kconfigwidgets kcoreaddons kdbusaddons ki18n
+             kio kirigami kjobwidgets knotifications kpipewire kservice kwidgetsaddons
+             opencv kwindowsystem kxmlgui layer-shell-qt libxcb purpose wayland
+             zxing-cpp prison xcb-util xcb-util-cursor xcb-util-image
+             plasma-wayland-protocols kstatusnotifieritem)
 
 set=(kde6 kde6-plasma)
 
 name=spectacle
-version=6.5.5
+version=6.6.0
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
 

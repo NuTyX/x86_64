@@ -8,8 +8,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/Plasma5Support/
 -rw-r--r--	root/root	usr/lib/cmake/Plasma5Support/Plasma5SupportTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Plasma5Support/Plasma5SupportTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so -> libPlasma5Support.so.6
-lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so.6 -> libPlasma5Support.so.6.5.5
--rwxr-xr-x	root/root	usr/lib/libPlasma5Support.so.6.5.5
+lrwxrwxrwx	root/root	usr/lib/libPlasma5Support.so.6 -> libPlasma5Support.so.6.6.0
+-rwxr-xr-x	root/root	usr/lib/libPlasma5Support.so.6.6.0
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so -> libweather_ion.so.7
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so.7 -> libweather_ion.so.7.0.0
 -rwxr-xr-x	root/root	usr/lib/libweather_ion.so.7.0.0
@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_devicenotifications.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_dwd.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_envcan.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_executable.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_hotplug.so
@@ -32,6 +33,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_soliddevice.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_time.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_weather.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma5support/dataengine/plasma_engine_wettercom.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
@@ -58,6 +60,7 @@ drwxr-xr-x	root/root	usr/share/plasma5support/services/
 -rw-r--r--	root/root	usr/share/plasma5support/services/plasmoidservice.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/powermanagementservice.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/soliddevice.operations
+-rw-r--r--	root/root	usr/share/plasma5support/services/statusnotifieritem.operations
 -rw-r--r--	root/root	usr/share/plasma5support/services/storage.operations
 drwxr-xr-x	root/root	usr/share/qlogging-categories6/
 -rw-r--r--	root/root	usr/share/qlogging-categories6/plasma5support.categories

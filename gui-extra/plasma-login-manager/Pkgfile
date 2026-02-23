@@ -1,0 +1,28 @@
+description='Plasma Login Manager'
+url='https://kde.org/plasma-desktop/'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(pam extra-cmake-modules qt6-base qt6-5compat  kcmutils kconfig kcoreaddons
+             kdbusaddons ki18n kirigami kpackage kservice kwindowsystem layer-shell-qt
+             qt6-tools libplasma xorg-libxau pam plasma-workspace)
+
+set=(kde6 kde6-plasma)
+
+name=plasma-login-manager
+version=6.6.0
+
+source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
+
+build() {
+  cmake -B build -S $name-$version \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DKDE_INSTALL_LIBDIR=lib \
+  -DBUILD_TESTING=OFF \
+  -DINSTALL_PAM_CONFIGURATION:BOOL=OFF \
+  -Wno-dev
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}

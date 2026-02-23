@@ -11,10 +11,6 @@ drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/drkonqi-sentry-postman
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/drkonqi-polkit-helper
-drwxr-xr-x	root/root	usr/lib/qt6/
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/drkonqi/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/drkonqi/KDECoredumpNotifierTruck.so
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/drkonqi-coredump-processor@.service
@@ -132,16 +128,16 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/pygdbmi/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/gdbmiparser.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/printcolor.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/py.typed
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/METADATA
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/RECORD
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/licenses/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.52.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.53.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__init__.py
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/
@@ -653,6 +649,8 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/urllib3/util/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/urllib3/util/util.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/urllib3/util/wait.py
 -rw-r--r--	root/root	usr/share/drkonqi/mappings
+drwxr-xr-x	root/root	usr/share/knotifications6/
+-rw-r--r--	root/root	usr/share/knotifications6/drkonqi-coredump-launcher.notifyrc
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.drkonqi.policy
