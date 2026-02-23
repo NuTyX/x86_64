@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/include/kwin/
 -rw-r--r--	root/root	usr/include/kwin/compositor.h
 -rw-r--r--	root/root	usr/include/kwin/config-kwin.h
 drwxr-xr-x	root/root	usr/include/kwin/core/
+-rw-r--r--	root/root	usr/include/kwin/core/backendoutput.h
 -rw-r--r--	root/root	usr/include/kwin/core/colorlut3d.h
 -rw-r--r--	root/root	usr/include/kwin/core/colorpipeline.h
 -rw-r--r--	root/root	usr/include/kwin/core/colorpipelinestage.h
@@ -26,6 +27,8 @@ drwxr-xr-x	root/root	usr/include/kwin/core/
 -rw-r--r--	root/root	usr/include/kwin/core/outputconfiguration.h
 -rw-r--r--	root/root	usr/include/kwin/core/outputlayer.h
 -rw-r--r--	root/root	usr/include/kwin/core/pixelgrid.h
+-rw-r--r--	root/root	usr/include/kwin/core/rect.h
+-rw-r--r--	root/root	usr/include/kwin/core/region.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderbackend.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderjournal.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderloop.h
@@ -158,6 +161,7 @@ drwxr-xr-x	root/root	usr/include/kwin/utils/
 -rw-r--r--	root/root	usr/include/kwin/utils/ramfile.h
 -rw-r--r--	root/root	usr/include/kwin/utils/realtime.h
 -rw-r--r--	root/root	usr/include/kwin/utils/resource.h
+-rw-r--r--	root/root	usr/include/kwin/utils/serial.h
 -rw-r--r--	root/root	usr/include/kwin/utils/serviceutils.h
 -rw-r--r--	root/root	usr/include/kwin/utils/softwarevsyncmonitor.h
 -rw-r--r--	root/root	usr/include/kwin/utils/subsurfacemonitor.h
