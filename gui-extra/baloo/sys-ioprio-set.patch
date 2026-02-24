@@ -1,0 +1,18 @@
+diff -Naur a/src/file/priority.cpp b/src/file/priority.cpp
+--- a/src/file/priority.cpp	2026-02-13 13:01:18.000000000 +0100
++++ b/src/file/priority.cpp	2026-02-24 10:30:10.359750114 +0100
+@@ -24,12 +24,12 @@
+ bool lowerIOPriority()
+ {
+ #ifdef SYS_ioprio_set
+-    if (syscall(SYS_ioprio_set, IOPRIO_WHO_PROCESS, 0, ioprio_value(IOPRIO_CLASS_IDLE, 0, IOPRIO_HINT_NONE)) >= 0) {
++    if (syscall(SYS_ioprio_set, IOPRIO_WHO_PROCESS, 0, IOPRIO_PRIO_VALUE(IOPRIO_CLASS_IDLE, 0)) >= 0) {
+         return true;
+     }
+     int idle_error = errno;
+ 
+-    if (syscall(SYS_ioprio_set, IOPRIO_WHO_PROCESS, 0, ioprio_value(IOPRIO_CLASS_BE, 7, IOPRIO_HINT_NONE)) >= 0) {
++    if (syscall(SYS_ioprio_set, IOPRIO_WHO_PROCESS, 0, IOPRIO_PRIO_VALUE(IOPRIO_CLASS_BE, 7)) >= 0) {
+         qCDebug(BALOO, "Cannot set io scheduling to Idle (%s). Using Best Effort.\n", strerror(idle_error));
+         return true;
+     }
