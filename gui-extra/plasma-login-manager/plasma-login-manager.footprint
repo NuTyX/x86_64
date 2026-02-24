@@ -11,6 +11,10 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-login-greeter
 -rwxr-xr-x	root/root	usr/lib/libexec/plasmalogin-helper
 -rwxr-xr-x	root/root	usr/lib/libexec/plasmalogin-helper-start-x11user
+drwxr-xr-x	root/root	usr/lib/pam.d/
+-rw-r--r--	root/root	usr/lib/pam.d/plasmalogin
+-rw-r--r--	root/root	usr/lib/pam.d/plasmalogin-autologin
+-rw-r--r--	root/root	usr/lib/pam.d/plasmalogin-greeter
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/
@@ -36,8 +40,8 @@ drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmplasmalogin.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
--rw-r--r--	root/root	usr/share/dbus-1/system.d/org.freedesktop.DisplayManager.conf
 -rw-r--r--	root/root	usr/share/dbus-1/system.d/org.kde.kcontrol.kcmplasmalogin.conf
+-rw-r--r--	root/root	usr/share/dbus-1/system.d/plasmalogin_org.freedesktop.DisplayManager.conf
 drwxr-xr-x	root/root	usr/share/plasmalogin/
 drwxr-xr-x	root/root	usr/share/plasmalogin/scripts/
 -rwxr-xr-x	root/root	usr/share/plasmalogin/scripts/Xsession
@@ -47,3 +51,6 @@ drwxr-xr-x	root/root	usr/share/plasmalogin/scripts/
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kcontrol.kcmplasmalogin.policy
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-x---	plasmalogin/plasmalogin	var/lib/plasmalogin/
