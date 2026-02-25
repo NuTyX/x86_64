@@ -7,11 +7,10 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 name=discount
-version=3.0.0.d
-release=3
+version=3.0.1.2
 _version=3.0.0d
 
-source=(https://github.com/Orc/discount/archive/v${_version}/$name-$version.tar.gz)
+source=(https://github.com/Orc/discount/archive/refs/tags/v$version.tar.gz)
 
 build() {
   cd $name-*

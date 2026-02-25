@@ -6,7 +6,7 @@ contributors="Sundev79,Tnut"
 makedepends=(nettle)
 
 name=dnsmasq
-version=2.91
+version=2.92
 
 source=(https://thekelleys.org.uk/dnsmasq/$name-$version.tar.xz $name-config.patch dnsmasq.init)
 

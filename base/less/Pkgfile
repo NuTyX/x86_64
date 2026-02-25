@@ -2,15 +2,15 @@ description="The Less package contains a text file viewer."
 url="https://www.greenwoodsoftware.com/less/"
 
 maintainer="Mark Nudelman"
-contributors="Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 set=(core)
 
 makedepends=(ncurses)
 
 name=less
-version=685
+version=692
 
 source=(http://www.greenwoodsoftware.com/less/less-$version.tar.gz)
 

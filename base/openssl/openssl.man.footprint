@@ -314,6 +314,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_bind.3ssl.gz -> BIO_connect.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_callback_ctrl.3ssl.gz -> BIO_ctrl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_callback_fn.3ssl.gz -> BIO_set_callback.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_callback_fn_ex.3ssl.gz -> BIO_set_callback.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_clear_flags.3ssl.gz -> BIO_set_flags.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_clear_retry_flags.3ssl.gz -> BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_closesocket.3ssl.gz -> BIO_connect.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/BIO_connect.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/BIO_ctrl.3ssl.gz
@@ -387,6 +389,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_conn_port.3ssl.gz -> BIO_s_conne
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_ex_data.3ssl.gz -> BIO_get_ex_new_index.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/BIO_get_ex_new_index.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_fd.3ssl.gz -> BIO_s_fd.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_flags.3ssl.gz -> BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_fp.3ssl.gz -> BIO_s_file.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_indent.3ssl.gz -> BIO_f_prefix.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_info_callback.3ssl.gz -> BIO_ctrl.3ssl.gz
@@ -404,6 +407,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_peer_name.3ssl.gz -> BIO_s_accep
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_peer_port.3ssl.gz -> BIO_s_accept.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_read_request.3ssl.gz -> BIO_s_bio.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_retry_BIO.3ssl.gz -> BIO_should_retry.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_retry_flags.3ssl.gz -> BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_retry_reason.3ssl.gz -> BIO_should_retry.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/BIO_get_rpoll_descriptor.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_get_shutdown.3ssl.gz -> BIO_get_data.3ssl.gz
@@ -516,6 +520,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_conn_port.3ssl.gz -> BIO_s_conne
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_data.3ssl.gz -> BIO_get_data.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_ex_data.3ssl.gz -> BIO_get_ex_new_index.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_fd.3ssl.gz -> BIO_s_fd.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_fp.3ssl.gz -> BIO_s_file.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_indent.3ssl.gz -> BIO_f_prefix.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_info_callback.3ssl.gz -> BIO_ctrl.3ssl.gz
@@ -528,7 +533,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_nbio_accept.3ssl.gz -> BIO_s_acc
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_next.3ssl.gz -> BIO_push.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_prefix.3ssl.gz -> BIO_f_prefix.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_read_buffer_size.3ssl.gz -> BIO_f_buffer.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_retry_read.3ssl.gz -> BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_retry_reason.3ssl.gz -> BIO_should_retry.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_retry_special.3ssl.gz -> BIO_set_flags.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_retry_write.3ssl.gz -> BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_shutdown.3ssl.gz -> BIO_get_data.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_sock_type.3ssl.gz -> BIO_s_connect.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_set_ssl.3ssl.gz -> BIO_f_ssl.3ssl.gz
@@ -550,6 +558,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_socket.3ssl.gz -> BIO_connect.3ssl.g
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_ssl_copy_session_id.3ssl.gz -> BIO_f_ssl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_ssl_shutdown.3ssl.gz -> BIO_f_ssl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_tell.3ssl.gz -> BIO_ctrl.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_test_flags.3ssl.gz -> BIO_set_flags.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_up_ref.3ssl.gz -> BIO_new.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_vfree.3ssl.gz -> BIO_new.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_vprintf.3ssl.gz -> BIO_printf.3ssl.gz
@@ -738,6 +747,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/CMS_ContentInfo_print_ctx.3ssl.gz -> X50
 -rw-r--r--	root/root	usr/share/man/man3/CMS_EncryptedData_decrypt.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/CMS_EncryptedData_encrypt.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_EncryptedData_encrypt_ex.3ssl.gz -> CMS_EncryptedData_encrypt.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/CMS_EncryptedData_set1_key.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/CMS_EnvelopedData_create.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_EnvelopedData_create_ex.3ssl.gz -> CMS_EnvelopedData_create.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/CMS_EnvelopedData_decrypt.3ssl.gz -> CMS_EncryptedData_decrypt.3ssl.gz
@@ -1481,7 +1491,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get0_name.3ssl.gz -> EVP_
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get1_cipher.3ssl.gz -> EVP_EncryptInit.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_algor.3ssl.gz -> EVP_PKEY_CTX_get_algor.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_algor_params.3ssl.gz -> EVP_PKEY_CTX_get_algor.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_app_data.3ssl.gz -> EVP_EncryptInit.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_app_data.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_block_size.3ssl.gz -> EVP_EncryptInit.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_cipher_data.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_get_iv_length.3ssl.gz -> EVP_EncryptInit.3ssl.gz
@@ -1507,7 +1517,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_num.3ssl.gz -> EVP_Encryp
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_original_iv.3ssl.gz -> EVP_CIPHER_CTX_get_original_iv.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_reset.3ssl.gz -> EVP_EncryptInit.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_set_algor_params.3ssl.gz -> EVP_PKEY_CTX_get_algor.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_set_app_data.3ssl.gz -> EVP_EncryptInit.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_set_app_data.3ssl.gz -> EVP_CIPHER_CTX_get_app_data.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_set_cipher_data.3ssl.gz -> EVP_CIPHER_CTX_get_cipher_data.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_set_flags.3ssl.gz -> EVP_EncryptInit.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_CIPHER_CTX_set_key_length.3ssl.gz -> EVP_EncryptInit.3ssl.gz
@@ -2727,6 +2737,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_mem_debug_pop.3ssl.gz -> OPENSSL
 lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_mem_debug_push.3ssl.gz -> OPENSSL_malloc.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_memdup.3ssl.gz -> OPENSSL_malloc.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_no_config.3ssl.gz -> OPENSSL_config.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/OPENSSL_ppccap.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_realloc.3ssl.gz -> OPENSSL_malloc.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OPENSSL_realloc_array.3ssl.gz -> OPENSSL_malloc.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/OPENSSL_riscvcap.3ssl.gz

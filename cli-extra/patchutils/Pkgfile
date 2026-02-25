@@ -7,6 +7,6 @@ makedepends=(perl)
 run=(perl)
 
 name=patchutils
-version=0.4.2
+version=0.4.4
 
-source=(http://cyberelk.net/tim/data/patchutils/stable/$name-$version.tar.xz)
+source=(https://github.com/twaugh/patchutils/releases/download/$version/patchutils-$version.tar.xz)

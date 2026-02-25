@@ -3,14 +3,14 @@ url='https://glad.dav1d.de'
 
 license="MIT"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python python-jinja python-build python-installer)
 
 name=glad
 version=2.0.8
-release=3
+release=4
 
 source=(https://github.com/Dav1dde/glad/archive/refs/tags/v$version/$name-$version.tar.gz)
 

@@ -1,8 +1,8 @@
 description="Widely used protocol for monitoring the health and welfare of network equipment."
 url="http://www.net-snmp.org/"
 
-contributors="Pierre,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(python-setuptools automake autoconf m4 libtool
              libnl openssl pciutils libxcrypt)
@@ -10,8 +10,7 @@ makedepends=(python-setuptools automake autoconf m4 libtool
 run=(python perl)
 
 name=net-snmp
-version=5.9.4
-release=5
+version=5.9.5.2
 
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 

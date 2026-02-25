@@ -1,17 +1,7 @@
 drwxr-xr-x	root/root	etc/
--rw-r--r--	root/root	etc/environment
 drwxr-xr-x	root/root	etc/security/
--rw-r--r--	root/root	etc/security/access.conf
--rw-r--r--	root/root	etc/security/faillock.conf
--rw-r--r--	root/root	etc/security/group.conf
--rw-r--r--	root/root	etc/security/limits.conf
 drwxr-xr-x	root/root	etc/security/limits.d/
--rw-r--r--	root/root	etc/security/namespace.conf
 drwxr-xr-x	root/root	etc/security/namespace.d/
--rwxr-xr-x	root/root	etc/security/namespace.init
--rw-r--r--	root/root	etc/security/pam_env.conf
--rw-r--r--	root/root	etc/security/pwhistory.conf
--rw-r--r--	root/root	etc/security/time.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libpam.so -> libpam.so.0
@@ -77,3 +67,15 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/pwhistory_helper
 -rwsr-xr-x	root/root	usr/sbin/unix_chkpwd
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/pam/
+-rw-r--r--	root/root	usr/share/pam/environment
+drwxr-xr-x	root/root	usr/share/pam/security/
+-rw-r--r--	root/root	usr/share/pam/security/access.conf
+-rw-r--r--	root/root	usr/share/pam/security/faillock.conf
+-rw-r--r--	root/root	usr/share/pam/security/group.conf
+-rw-r--r--	root/root	usr/share/pam/security/limits.conf
+-rw-r--r--	root/root	usr/share/pam/security/namespace.conf
+-rwxr-xr-x	root/root	usr/share/pam/security/namespace.init
+-rw-r--r--	root/root	usr/share/pam/security/pam_env.conf
+-rw-r--r--	root/root	usr/share/pam/security/pwhistory.conf
+-rw-r--r--	root/root	usr/share/pam/security/time.conf

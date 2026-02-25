@@ -5,11 +5,11 @@ packager="spiky <spiky@nutyx.org>"
 contributors=""
 
 makedepends=(gobject-introspection python vala git gtk-doc meson samba
-             python-quart libnghttp2)
+             libnghttp2)
 run=(glib-networking libpsl)
 
 name=libsoup3
-version=3.6.5
+version=3.6.6
 
 source=(https://gitlab.gnome.org/GNOME/libsoup/-/archive/$version/libsoup-$version.tar.gz)
 

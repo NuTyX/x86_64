@@ -1,14 +1,13 @@
 description="The GRUB package contains the GRand Unified Bootloader."
 url="https://www.gnu.org/software/grub/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Schrodinger72,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Schrodinger72,Tnut"
 
 set=(core)
 
 name=grub
-version=2.12
-release=5
+version=2.14
 
 dejavu_version=2.37
 splash_version=21.03.0-rc4
@@ -38,6 +37,9 @@ cd grub-$version
 #patch -Np1 -i ../ext2-fixe.patch
 #fix missing file
   echo depends bli part_gpt > grub-core/extra_deps.lst
+
+# First fix a bug introduced in grub-2.14
+sed 's/--image-base/--nonexist-linker-option/' -i configure
 }
 
 build() {

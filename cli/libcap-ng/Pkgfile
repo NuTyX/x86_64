@@ -3,10 +3,18 @@ url="http://people.redhat.com/sgrubb/libcap-ng/"
 packager="spiky <spiky@nutyx.org>"
 
 name=libcap-ng
-version=0.8.5
-release=2
+version=0.9
 
-source=(http://people.redhat.com/sgrubb/$name/$name-$version.tar.gz)
+makedepends=(autoreconf libtool perl)
+
+source=(https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v${version}.tar.gz)
+
+prepare() {
+cd $name-$version
+# make stupid autotools happy -_-
+  touch NEWS
+  autoreconf -fiv
+}
 
 build() {
 cd $name-$version

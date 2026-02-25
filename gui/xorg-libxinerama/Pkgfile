@@ -4,8 +4,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Greg,Tnut"
 
 name=xorg-libxinerama
-version=1.1.5
-release=2
+version=1.1.6
 _name=libXinerama
 makedepends=(xorgproto xorg-libx11 xorg-libxext)
 source=(http://ftp.x.org/pub/individual/lib/${_name}-$version.tar.xz)

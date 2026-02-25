@@ -8,7 +8,7 @@ makedepends=(brotli git cmake ninja)
 
 name=woff2
 version=1.0.2
-release=4
+release=5
 
 source=()
 
@@ -16,8 +16,12 @@ source=()
 build() {
   git clone https://github.com/google/woff2.git woff2
   cd $name
+
+  sed -i '/output.h/i #include <cstdint>' src/woff2_out.cc
   sed -i 's/NOT BUILD_SHARED_LIBS/TRUE/' CMakeLists.txt
-  cmake -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib .
+
+  cmake -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+                 -DCMAKE_POLICY_VERSION_MINIMUM=3.5 .
   ninja 
   DESTDIR=$PKG ninja install
 }

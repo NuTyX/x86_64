@@ -1,8 +1,8 @@
 description='A simple, correct PEP517 package builder'
 url='https://github.com/pypa/build'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-setuptools python-wheel python-flit-core python-packaging python-pyproject-hooks)
 
@@ -10,8 +10,7 @@ name=python-build
 _name="build"
 alias=(${_name})
 
-version=1.3.0
-release=2
+version=1.4.0
 
 source=(https://files.pythonhosted.org/packages/source/${name:7:1}/${name#*-}/${name#*-}-$version.tar.gz)
 

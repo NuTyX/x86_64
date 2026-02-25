@@ -9,6 +9,8 @@ lrwxrwxrwx	root/root	usr/bin/combinediff -> interdiff
 lrwxrwxrwx	root/root	usr/bin/flipdiff -> interdiff
 -rwxr-xr-x	root/root	usr/bin/gitdiff
 -rwxr-xr-x	root/root	usr/bin/gitdiffview
+-rwxr-xr-x	root/root	usr/bin/gitshow
+-rwxr-xr-x	root/root	usr/bin/gitshowview
 lrwxrwxrwx	root/root	usr/bin/grepdiff -> filterdiff
 -rwxr-xr-x	root/root	usr/bin/interdiff
 lrwxrwxrwx	root/root	usr/bin/lsdiff -> filterdiff
@@ -19,3 +21,25 @@ lrwxrwxrwx	root/root	usr/bin/patchview -> filterdiff
 -rwxr-xr-x	root/root	usr/bin/svndiff
 -rwxr-xr-x	root/root	usr/bin/svndiffview
 -rwxr-xr-x	root/root	usr/bin/unwrapdiff
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/bash-completion/
+drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/combinediff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/dehtmldiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/editdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/espdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/filterdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/fixcvsdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/flipdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/gitdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/gitdiffview -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/grepdiff -> interdiff
+-rw-r--r--	root/root	usr/share/bash-completion/completions/interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/lsdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/patchview -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/recountdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/rediff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/splitdiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/svndiff -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/svndiffview -> interdiff
+lrwxrwxrwx	root/root	usr/share/bash-completion/completions/unwrapdiff -> interdiff

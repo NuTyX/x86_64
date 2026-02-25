@@ -3,14 +3,13 @@ url="https://gitlab.gnome.org/World/libcloudproviders"
 
 license="LGPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson git gobject-introspection vala gtk-doc)
 
 name=libcloudproviders
-version=0.3.6
-release=2
+version=0.4.0
 
 
 prepare() {

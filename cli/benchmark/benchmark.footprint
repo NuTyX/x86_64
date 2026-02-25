@@ -7,9 +7,31 @@ drwxr-xr-x	root/root	usr/lib/cmake/benchmark/
 -rw-r--r--	root/root	usr/lib/cmake/benchmark/benchmarkTargets-none.cmake
 -rw-r--r--	root/root	usr/lib/cmake/benchmark/benchmarkTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libbenchmark.so -> libbenchmark.so.1
-lrwxrwxrwx	root/root	usr/lib/libbenchmark.so.1 -> libbenchmark.so.1.9.4
--rwxr-xr-x	root/root	usr/lib/libbenchmark.so.1.9.4
+lrwxrwxrwx	root/root	usr/lib/libbenchmark.so.1 -> libbenchmark.so.1.9.5
+-rwxr-xr-x	root/root	usr/lib/libbenchmark.so.1.9.5
 lrwxrwxrwx	root/root	usr/lib/libbenchmark_main.so -> libbenchmark_main.so.1
-lrwxrwxrwx	root/root	usr/lib/libbenchmark_main.so.1 -> libbenchmark_main.so.1.9.4
--rwxr-xr-x	root/root	usr/lib/libbenchmark_main.so.1.9.4
+lrwxrwxrwx	root/root	usr/lib/libbenchmark_main.so.1 -> libbenchmark_main.so.1.9.5
+-rwxr-xr-x	root/root	usr/lib/libbenchmark_main.so.1.9.5
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/googlebenchmark/
+drwxr-xr-x	root/root	usr/share/googlebenchmark/tools/
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/BUILD.bazel
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/compare.py
+drwxr-xr-x	root/root	usr/share/googlebenchmark/tools/gbench/
+drwxr-xr-x	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test1_run1.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test1_run2.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test2_run.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test3_run0.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test3_run1.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test4_run.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test4_run0.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test4_run1.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test5_run0.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/Inputs/test5_run1.json
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/__init__.py
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/report.py
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/gbench/util.py
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/libpfm.BUILD.bazel
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/requirements.txt
+-rw-r--r--	root/root	usr/share/googlebenchmark/tools/strip_asm.py

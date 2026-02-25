@@ -3,13 +3,13 @@ url="http://btrfs.wiki.kernel.org/"
 
 license="GPL2"
 
-contributors="Alienus, Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(systemd zstd e2fsprogs lzo util-linux zlib)
 
 name=btrfs-progs
-version=6.17.1
+version=6.19
 
 source=(https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz)
 

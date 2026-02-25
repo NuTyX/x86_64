@@ -15,7 +15,7 @@ PKGMK_GROUPS=(devel doc)
 PKGMK_KEEP_SOURCES="no"
 
 name=kernel-mainline
-version=6.19-rc8
+version=7.0-rc1
 SUFFIX="${name/*-/}"
 INITRD="initrd-$SUFFIX"
 KERNEL="$name"
@@ -28,9 +28,10 @@ _version=${version}
 ## Download all the sources
 #
 
-source=(https://git.kernel.org/torvalds/t/linux-${_version}.tar.gz config)
+source=(init_path.patch
+        https://git.kernel.org/torvalds/t/linux-${_version}.tar.gz config)
 
-[ -z $patchname ] || source+=" $url/pub/linux/kernel/v6.x/$patchname"
+[ -z $patchname ] || source+=" $url/pub/linux/kernel/v7.x/$patchname"
 ## Time to build everything
 #
 
@@ -41,6 +42,8 @@ cd linux-${_version}
 
 [ -f $SRC/patch-$version.xz ] && \
 xz -d -c  $SRC/patch-$version.xz | patch -Np1
+
+patch -Np1 -i ../init_path.patch
 
 echo "-$release-nutyx" > localversion
 

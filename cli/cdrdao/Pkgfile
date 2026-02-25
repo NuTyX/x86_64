@@ -7,8 +7,7 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(libvorbis libmad libao)
 
 name=cdrdao
-version=1.2.5
-release=2
+version=1.2.6
 
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2
         cdrdao-1.2.3-autoconf-update.patch)

@@ -1,14 +1,13 @@
 description='JavaScript interpreter and libraries - Version 140'
 url='https://spidermonkey.dev/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip cbindgen)
 
 name=js140
-version=140.4.0
-release=2
+version=140.7.1
 
 source=(python-3.14.patch js-config.patch
         https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz)

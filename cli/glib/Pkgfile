@@ -9,13 +9,12 @@ contributors="Fanch,Tnut"
 alias=(glib2)
 
 makedepends=(flex bison libffi pcre2 python-packaging
-             python-docutils python-packaging
-             elfutils meson ninja libxslt docbook-xsl)
+             python-docutils elfutils meson ninja libxslt docbook-xsl)
 
 PKGMK_GROUPS=(man devel doc )
 
 name=glib
-version=2.86.3
+version=2.86.4
 
 giversion=1.86.0
 
