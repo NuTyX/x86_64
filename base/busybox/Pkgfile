@@ -40,6 +40,7 @@ package() {
  install -m0755 $name-$version/$name $PKG/usr/bin/$name
  for i in $($PKG/usr/bin/$name --list)
  do
+  [ "$i" == "sh" ] && continue
   ln -sv ../usr/bin/$name $PKG/bin/$i
  done
 }
