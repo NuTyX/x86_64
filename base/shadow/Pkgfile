@@ -9,7 +9,7 @@ makedepends=(libxcrypt pam)
 
 name=shadow
 version=4.19.0
-release=4
+release=5
 
 set=(chroot core)
 
@@ -43,7 +43,7 @@ make
 
 make DESTDIR=$PKG install
 
-install -Dm 600 ../useradd $PKG/etc/default/useraddd
+install -Dm 600 ../useradd $PKG/etc/default/useradd
 
 #
 # Configuration files for pam
