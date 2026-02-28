@@ -7,7 +7,7 @@ makedepends=(git musl)
 
 name=busybox
 version=1.36.1
-release=6
+release=7
 
 set=(chroot)
 
@@ -38,4 +38,8 @@ cp -a mdev-like-a-boss/helpers $PKG/etc/mdev.d
 }
 package() {
  install -m0755 $name-$version/$name $PKG/usr/bin/$name
+ for i in $($PKG/usr/bin/$name --list)
+ do
+  ln -sv ../usr/bin/$name $PKG/bin/$i
+ done
 }
