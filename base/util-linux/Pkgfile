@@ -11,7 +11,7 @@ set=(core)
 
 name=util-linux
 version=2.41.3
-release=3
+release=4
 
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz
         $name-$version-consolidate-1.patch)
@@ -33,7 +33,7 @@ mkdir -pv $PKG/var/lib/hwclock
 	--disable-chfn-chsh  \
           --bindir=/usr/bin    \
           --libdir=/usr/lib    \
-	--sbindir=/usr/sbin  \
+	--sbindir=/usr/bin   \
 	--disable-login      \
 	--disable-nologin    \
 	--disable-su         \
