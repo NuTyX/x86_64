@@ -12,7 +12,6 @@ contributors="Spiky"
 # 3/ rebuild dbus with systemd as dependency so that dbus gets links to systemd
 
 PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja)
-PKGMK_KEEP_SOURCES="no"
 
 makedepends=(acl libcap kmod m4 gperf kbd pam libxcrypt util-linux)
 run=(shadow)
@@ -21,18 +20,18 @@ set=(core)
 
 name=systemd
 version=259.2
-release=1
+release=2
 
 source=($name-$version-consolidate-1.patch
         https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
-        https://github.com/systemd/systemd/archive/refs/tags/v$version.tar.gz)
+        https://github.com/systemd/systemd/archive/refs/tags/$name-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
 -Dnobody-group=nogroup -Dpam=enabled -Dpamconfdir=/etc/pam.d \
 -Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
--Dumount-path=/usr/bin/umount -Dswapon-path=/usr/sbin/swapon \
--Dswapoff-path=/usr/sbin/swapoff -Dagetty-path=/usr/sbin/agetty \
+-Dumount-path=/usr/bin/umount -Dswapon-path=/usr/bin/swapon \
+-Dswapoff-path=/usr/bin/swapoff -Dagetty-path=/usr/bin/agetty \
 -Dkmod-path=/usr/bin/kmod"
 
 prepare() {

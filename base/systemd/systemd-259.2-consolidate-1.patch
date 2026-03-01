@@ -7,8 +7,8 @@ diff -Naur a/src/basic/unit-def.h b/src/basic/unit-def.h
          SWAP_DEAD,
 -        SWAP_ACTIVATING,               /* /sbin/swapon is running, but the swap not yet enabled. */
 -        SWAP_ACTIVATING_DONE,          /* /sbin/swapon is running, and the swap is done. */
-+        SWAP_ACTIVATING,               /* /usr/sbin/swapon is running, but the swap not yet enabled. */
-+        SWAP_ACTIVATING_DONE,          /* /usr/sbin/swapon is running, and the swap is done. */
++        SWAP_ACTIVATING,               /* /usr/bin/swapon is running, but the swap not yet enabled. */
++        SWAP_ACTIVATING_DONE,          /* /usr/bin/swapon is running, and the swap is done. */
          SWAP_ACTIVE,
          SWAP_DEACTIVATING,
          SWAP_DEACTIVATING_SIGTERM,
@@ -20,7 +20,7 @@ diff -Naur a/src/core/swap.c b/src/core/swap.c
                  /* Dispatch this before we dispatch SIGCHLD, so that
                   * we always get the events from /proc/swaps before
 -                 * the SIGCHLD of /sbin/swapon. */
-+                 * the SIGCHLD of /usr/sbin/swapon. */
++                 * the SIGCHLD of /usr/bin/swapon. */
                  r = sd_event_source_set_priority(m->swap_event_source, EVENT_PRIORITY_SWAP_TABLE);
                  if (r < 0) {
                          log_error_errno(r, "Failed to change /proc/swaps priority: %m");
@@ -100,12 +100,3 @@ diff -Naur a/units/kmod-static-nodes.service.in b/units/kmod-static-nodes.servic
  ConditionPathExists={{KMOD}}
  
  [Service]
-diff -Naur a/units/modprobe@.service b/units/modprobe@.service
---- a/units/modprobe@.service	2025-12-18 00:02:36.000000000 +0100
-+++ b/units/modprobe@.service	2026-01-31 11:53:20.395014143 +0100
-@@ -32,4 +32,4 @@
- 
- [Service]
- Type=oneshot
--ExecStart=-modprobe -abq %i
-+ExecStart=-/usr/sbin/modprobe -abq %i
