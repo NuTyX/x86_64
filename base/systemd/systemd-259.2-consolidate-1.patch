@@ -107,5 +107,5 @@ diff -Naur a/units/modprobe@.service b/units/modprobe@.service
  
  [Service]
  Type=oneshot
--ExecStart=-/sbin/modprobe -abq %i
+-ExecStart=-modprobe -abq %i
 +ExecStart=-/usr/sbin/modprobe -abq %i

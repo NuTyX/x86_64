@@ -47,14 +47,13 @@ drwxr-xr-x	root/root	etc/udev/rules.d/
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/systemd/
 lrwxrwxrwx	root/root	etc/xdg/systemd/user -> ../../systemd/user
-drwxr-xr-x	root/root	sbin/
-lrwxrwxrwx	root/root	sbin/init -> ../usr/lib/systemd/systemd
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bootctl
 -rwxr-xr-x	root/root	usr/bin/busctl
 -rwxr-xr-x	root/root	usr/bin/coredumpctl
 -rwxr-xr-x	root/root	usr/bin/hostnamectl
+lrwxrwxrwx	root/root	usr/bin/init -> ../lib/systemd/systemd
 -rwxr-xr-x	root/root	usr/bin/journalctl
 -rwxr-xr-x	root/root	usr/bin/kernel-install
 -rwxr-xr-x	root/root	usr/bin/localectl

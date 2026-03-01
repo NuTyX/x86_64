@@ -7,11 +7,12 @@ contributors="Spiky"
 # Those dependencies are need to compile the package
 # but not listed to avoid circular dependencies:
 # When rebuild systemd:
-# 1/ rebuild dbus first without systemd  in dbus package by removing systemd dependency
+# 1/ rebuild dbus first without systemd in dbus package by removing systemd dependency
 # 2/ build systemd with dbus that has no systemd libs
 # 3/ rebuild dbus with systemd as dependency so that dbus gets links to systemd
 
 PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja)
+PKGMK_KEEP_SOURCES="no"
 
 makedepends=(acl libcap kmod m4 gperf kbd pam libxcrypt util-linux)
 run=(shadow)
@@ -19,12 +20,12 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=259.1
+version=259.2
 release=1
 
 source=($name-$version-consolidate-1.patch
         https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
-        https://github.com/systemd/systemd/archive/v$version/systemd-$version.tar.gz)
+        https://github.com/systemd/systemd/archive/refs/tags/v$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
