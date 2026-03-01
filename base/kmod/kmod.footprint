@@ -3,20 +3,19 @@ drwxr-xr-x	root/root	etc/depmod.d/
 drwxr-xr-x	root/root	etc/modprobe.d/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/depmod -> kmod
+lrwxrwxrwx	root/root	usr/bin/insmod -> kmod
 -rwxr-xr-x	root/root	usr/bin/kmod
+lrwxrwxrwx	root/root	usr/bin/lsmod -> kmod
+lrwxrwxrwx	root/root	usr/bin/modinfo -> kmod
+lrwxrwxrwx	root/root	usr/bin/modprobe -> kmod
+lrwxrwxrwx	root/root	usr/bin/rmmod -> kmod
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/depmod.d/
 lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2
 lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.5.1
 -rwxr-xr-x	root/root	usr/lib/libkmod.so.2.5.1
 drwxr-xr-x	root/root	usr/lib/modprobe.d/
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/depmod -> ../bin/kmod
-lrwxrwxrwx	root/root	usr/sbin/insmod -> ../bin/kmod
-lrwxrwxrwx	root/root	usr/sbin/lsmod -> ../bin/kmod
-lrwxrwxrwx	root/root	usr/sbin/modinfo -> ../bin/kmod
-lrwxrwxrwx	root/root	usr/sbin/modprobe -> ../bin/kmod
-lrwxrwxrwx	root/root	usr/sbin/rmmod -> ../bin/kmod
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/

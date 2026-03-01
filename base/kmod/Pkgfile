@@ -13,10 +13,10 @@ PKGMK_GROUPS=(devel doc man)
 
 name=kmod
 version=34.2
-release=3
+release=4
 
 source=(http://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz )
-PKGMK_MESON_OPTIONS="-Dmoduledir=/usr/lib/modules --sbindir=/usr/sbin \
+PKGMK_MESON_OPTIONS="-Dmoduledir=/usr/lib/modules --sbindir=/usr/bin \
 -Ddocs=false -Dmanpages=false"
 
 build=meson
