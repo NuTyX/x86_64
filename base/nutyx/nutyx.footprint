@@ -3,7 +3,15 @@ lrwxrwxrwx	root/root	etc/mtab -> ../proc/self/mounts
 drwx------	root/root	root/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/chroot-nutyx -> install-nutyx
+-rwxr-xr-x	root/root	usr/bin/flushmem
+lrwxrwxrwx	root/root	usr/bin/generate-nutyx -> install-nutyx
+-rwxr-xr-x	root/root	usr/bin/genfstab
+-rwxr-xr-x	root/root	usr/bin/install-nutyx
+-rwxr-xr-x	root/root	usr/bin/mkinitramfs
+-rwxr-xr-x	root/root	usr/bin/setup-nutyx
 -rwxr-xr-x	root/root	usr/bin/setup-vm
+-rwxr-xr-x	root/root	usr/bin/unsquash-nutyx
 -rwxr-xr-x	root/root	usr/bin/which
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/systemd/
@@ -11,15 +19,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/setup-nutyx.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/sysinit.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/setup-nutyx.service -> ../setup-nutyx.service
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/chroot-nutyx -> install-nutyx
--rwxr-xr-x	root/root	usr/sbin/flushmem
-lrwxrwxrwx	root/root	usr/sbin/generate-nutyx -> install-nutyx
--rwxr-xr-x	root/root	usr/sbin/genfstab
--rwxr-xr-x	root/root	usr/sbin/install-nutyx
--rwxr-xr-x	root/root	usr/sbin/mkinitramfs
--rwxr-xr-x	root/root	usr/sbin/setup-nutyx
--rwxr-xr-x	root/root	usr/sbin/unsquash-nutyx
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/nutyx/
 -rw-r--r--	root/root	usr/share/nutyx/init.in
