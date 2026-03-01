@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel
-version=6.19.3
+version=6.19.5
 _version=${version%.*}
 [ "${version:0:1}" == "${version%.*}" ] && _version=$version
 
