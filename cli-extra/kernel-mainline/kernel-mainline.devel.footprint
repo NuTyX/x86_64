@@ -8556,7 +8556,6 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GENERIC_DIRTYLOG_READ_PROTECT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GENERIC_HARDWARE_ENABLING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GENERIC_MEMORY_ATTRIBUTES (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GENERIC_MMU_NOTIFIER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GENERIC_PRE_FAULT_MEMORY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GUEST (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/KVM_GUEST_MEMFD (EMPTY)
@@ -30243,6 +30242,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signa
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/fpmr_siginfo.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/gcs_exception_fault.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/gcs_frame.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/gcs_prot_none_fault.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/gcs_write_fault.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/mangle_pstate_invalid_compat_toggle.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/signal/testcases/mangle_pstate_invalid_daif_bits.c
@@ -30277,6 +30277,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/arm64/tags/
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/DENYLIST
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/DENYLIST.asan
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/DENYLIST.riscv64
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/DENYLIST.s390x
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/Makefile
@@ -30566,6 +30567,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_te
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_in_map.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_init.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_kptr.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_kptr_race.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_lock.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_lookup_percpu_elem.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/map_ops.c
@@ -31137,6 +31139,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/map_in_map_btf.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/map_kptr.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/map_kptr_fail.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/map_kptr_race.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/map_percpu_stats.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/map_ptr_kern.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/mem_rdonly_untrusted.c
@@ -32232,6 +32235,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/dev_addr_lists.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/options.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/propagation.sh
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/refleak.sh
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/virtio_net/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/virtio_net/Makefile
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/virtio_net/basic_features.sh
@@ -33713,6 +33717,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetd
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_ooo_rcv_mss.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rcv_big_endseq.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rcv_toobig.pkt
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rcv_zero_wnd_fin.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rto_synack_rto_max.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_sack_sack-route-refresh-ip-tos.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_sack_sack-shift-sacked-2-6-8-3-9-nofack.pkt
@@ -35675,8 +35680,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc1/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc2/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-7.0-rc1 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-7.0-rc2 -> kernel-mainline
