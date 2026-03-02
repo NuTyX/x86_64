@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-6.18.13-1-nutyx
--rw-r--r--	root/root	boot/config-6.18.13-1-nutyx
+-rw-r--r--	root/root	boot/System.map-6.18.15-1-nutyx
+-rw-r--r--	root/root	boot/config-6.18.15-1-nutyx
 -rw-r--r--	root/root	boot/kernel-618
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/6.18.13-1-nutyx -> kernel-618
+lrwxrwxrwx	root/root	usr/lib/modules/6.18.15-1-nutyx -> kernel-618
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-618/build -> /usr/src/kernel-618
 drwxr-xr-x	root/root	usr/lib/modules/kernel-618/kernel/
