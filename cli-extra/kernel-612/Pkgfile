@@ -12,6 +12,7 @@ PKGMK_GROUPS=(devel doc)
 
 name=kernel-612
 version=6.12.74
+release=2
 _version=${version%.*}
 
 alias=(linux-612)
