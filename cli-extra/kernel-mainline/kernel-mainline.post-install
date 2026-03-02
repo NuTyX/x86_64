@@ -1,5 +1,5 @@
 if [ -f boot/initrd-mainline ]; then
-    mkinitramfs 7.0.0-rc2-1-nutyx
+    mkinitramfs 7.0.0-rc2-2-nutyx
     rm boot/initrd-mainline
-    mv boot/initrd-7.0.0-rc2-1-nutyx boot/initrd-mainline
+    mv boot/initrd-7.0.0-rc2-2-nutyx boot/initrd-mainline
 fi

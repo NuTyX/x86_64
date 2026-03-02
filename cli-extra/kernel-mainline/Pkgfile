@@ -16,6 +16,7 @@ PKGMK_KEEP_SOURCES="no"
 
 name=kernel-mainline
 version=7.0-rc2
+release=2
 SUFFIX="${name/*-/}"
 INITRD="initrd-$SUFFIX"
 KERNEL="$name"
@@ -53,16 +54,15 @@ diff -u ../config .config || true
 }
 
 build() {
-
 cd linux-${_version}
 KERNELRELEASE=$(make -s kernelrelease)
 IMAGENAME=$(make -s image_name)
-#make menuconfig
+# make menuconfig
 make
 cp .config ${PKGMK_ROOT}/config
 ZSTD_CLEVEL=19                 \
 make INSTALL_MOD_PATH=$PKG/usr \
-INSTALL_MOD_STRIP="-s"         \
+INSTALL_MOD_STRIP=1            \
 DEPMOD=/dev/null modules_install
 depmod -b $PKG -a $KERNELRELEASE
 
