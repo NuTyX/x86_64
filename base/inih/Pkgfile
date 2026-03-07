@@ -1,12 +1,12 @@
 description='A simple .INI file parser written in C'
 url='https://github.com/benhoyt/inih'
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(meson ninja python)
 
 name=inih
-version=61
+version=62
 
 source=(https://github.com/benhoyt/inih/archive/refs/tags/r${version}.tar.gz)
 
