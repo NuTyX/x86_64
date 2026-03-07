@@ -1,13 +1,14 @@
 description="real-time compression algorithm, providing high compression ratios."
 url="https://facebook.github.io/zstd/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+ontributors="Rems,Spiky"
 
 makedepends=(zlib xz lz4)
 
 name=zstd
 version=1.5.7
+release=2
 
 set=(chroot)
 
@@ -21,7 +22,4 @@ make DESTDIR=$PKG prefix=/usr install
 #something wrong here
 sed -i s@usr/local@usr@ $PKG/usr/lib/pkgconfig/libzstd.pc
 
-mkdir $PKG/lib
-mv -v $PKG/usr/lib/libzstd.so.* $PKG/lib
-ln -sfv ../../lib/$(readlink $PKG/usr/lib/libzstd.so) $PKG/usr/lib/libzstd.so
 }
