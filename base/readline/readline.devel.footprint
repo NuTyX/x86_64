@@ -9,9 +9,10 @@ drwxr-xr-x	root/root	usr/include/readline/
 -rw-r--r--	root/root	usr/include/readline/rltypedefs.h
 -rw-r--r--	root/root	usr/include/readline/tilde.h
 -rw-r--r--	root/root	usr/lib/libhistory.a
-lrwxrwxrwx	root/root	usr/lib/libhistory.so -> ../../lib/libhistory.so.8
 -rw-r--r--	root/root	usr/lib/libreadline.a
-lrwxrwxrwx	root/root	usr/lib/libreadline.so -> ../../lib/libreadline.so.8
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/history.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/readline.pc
 drwxr-xr-x	root/root	usr/share/readline/
 -rw-r--r--	root/root	usr/share/readline/excallback.c
 -rw-r--r--	root/root	usr/share/readline/fileman.c

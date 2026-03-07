@@ -1,11 +1,9 @@
-drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libhistory.so.8 -> libhistory.so.8.3
--rwxr-xr-x	root/root	lib/libhistory.so.8.3
-lrwxrwxrwx	root/root	lib/libreadline.so.8 -> libreadline.so.8.3
--rwxr-xr-x	root/root	lib/libreadline.so.8.3
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/history.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/readline.pc
+lrwxrwxrwx	root/root	usr/lib/libhistory.so -> libhistory.so.8
+lrwxrwxrwx	root/root	usr/lib/libhistory.so.8 -> libhistory.so.8.3
+-rwxr-xr-x	root/root	usr/lib/libhistory.so.8.3
+lrwxrwxrwx	root/root	usr/lib/libreadline.so -> libreadline.so.8
+lrwxrwxrwx	root/root	usr/lib/libreadline.so.8 -> libreadline.so.8.3
+-rwxr-xr-x	root/root	usr/lib/libreadline.so.8.3
 drwxr-xr-x	root/root	usr/share/
