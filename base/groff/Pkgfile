@@ -2,16 +2,15 @@ description="The Groff package contains programs for processing and formatting t
 url="https://www.gnu.org/software/groff/"
 
 maintainer="Werner Lemberg  wl at gnu dot org"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(perl m4)
 
 set=(core devel)
 
 name=groff
-version=1.23.0
-release=3
+version=1.24.0
 
 source=(http://ftp.gnu.org/gnu/groff/groff-$version.tar.gz)
 
