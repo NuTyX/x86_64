@@ -52,6 +52,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bootctl
 -rwxr-xr-x	root/root	usr/bin/busctl
 -rwxr-xr-x	root/root	usr/bin/coredumpctl
+lrwxrwxrwx	root/root	usr/bin/halt -> systemctl
 -rwxr-xr-x	root/root	usr/bin/hostnamectl
 lrwxrwxrwx	root/root	usr/bin/init -> ../lib/systemd/systemd
 -rwxr-xr-x	root/root	usr/bin/journalctl
@@ -59,11 +60,16 @@ lrwxrwxrwx	root/root	usr/bin/init -> ../lib/systemd/systemd
 -rwxr-xr-x	root/root	usr/bin/localectl
 -rwxr-xr-x	root/root	usr/bin/loginctl
 -rwxr-xr-x	root/root	usr/bin/machinectl
+lrwxrwxrwx	root/root	usr/bin/mount.ddi -> systemd-dissect
 -rwxr-xr-x	root/root	usr/bin/networkctl
 -rwxr-xr-x	root/root	usr/bin/oomctl
 -rwxr-xr-x	root/root	usr/bin/portablectl
+lrwxrwxrwx	root/root	usr/bin/poweroff -> systemctl
+lrwxrwxrwx	root/root	usr/bin/reboot -> systemctl
+lrwxrwxrwx	root/root	usr/bin/resolvconf -> resolvectl
 -rwxr-xr-x	root/root	usr/bin/resolvectl
 lrwxrwxrwx	root/root	usr/bin/run0 -> systemd-run
+lrwxrwxrwx	root/root	usr/bin/shutdown -> systemctl
 -rwxr-xr-x	root/root	usr/bin/systemctl
 -rwxr-xr-x	root/root	usr/bin/systemd-ac-power
 -rwxr-xr-x	root/root	usr/bin/systemd-analyze
@@ -747,14 +753,6 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/README
 -rwxr-xr-x	root/root	usr/lib/udev/scsi_id
 -rwxr-xr-x	root/root	usr/lib/udev/v4l_id
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/halt -> ../bin/systemctl
-lrwxrwxrwx	root/root	usr/sbin/init -> ../lib/systemd/systemd
-lrwxrwxrwx	root/root	usr/sbin/mount.ddi -> ../bin/systemd-dissect
-lrwxrwxrwx	root/root	usr/sbin/poweroff -> ../bin/systemctl
-lrwxrwxrwx	root/root	usr/sbin/reboot -> ../bin/systemctl
-lrwxrwxrwx	root/root	usr/sbin/resolvconf -> ../bin/resolvectl
-lrwxrwxrwx	root/root	usr/sbin/shutdown -> ../bin/systemctl
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/

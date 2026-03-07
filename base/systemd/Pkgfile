@@ -19,8 +19,8 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=259.2
-release=2
+version=259.3
+release=1
 
 source=($name-$version-consolidate-1.patch
         https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
@@ -32,7 +32,7 @@ PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
 -Dumount-path=/usr/bin/umount -Dswapon-path=/usr/bin/swapon \
 -Dswapoff-path=/usr/bin/swapoff -Dagetty-path=/usr/bin/agetty \
--Dkmod-path=/usr/bin/kmod"
+-Dkmod-path=/usr/bin/kmod -Dsbindir=bin -Dsplit-bin=false"
 
 prepare() {
   cd $name-$version
@@ -52,9 +52,6 @@ package() {
     mv $name-man-pages-$version/man$i \
      $PKG/usr/share/man
   done
-
-  ln -s ../lib/systemd/systemd \
-  $PKG/usr/bin/init
 
   rm $PKG/usr/share/factory/etc/vconsole.conf
 
