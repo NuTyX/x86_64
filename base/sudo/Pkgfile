@@ -9,8 +9,8 @@ makedepends=(pam)
 set=(core)
 
 name=sudo
-version=1.9.15p5
-release=2
+version=1.9.17p2
+release=1
 
 source=($url/dist/$name-$version.tar.gz)
 
@@ -22,7 +22,8 @@ sed -e '/^pre-install:/{N;s@;@ -a -r $(sudoersdir)/sudoers;@}' \
 
 ./configure --prefix=/usr \
 --libexecdir=/usr/lib \
---docdir=/usr/share/doc/sudo-$version \
+--sbindir=/usr/bin \
+--docdir=/usr/share/doc/sudo \
 --with-all-insults \
 --with-env-editor \
 --without-sendmail \

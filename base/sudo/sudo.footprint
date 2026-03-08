@@ -12,8 +12,11 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cvtsudoers
 -rwsr-xr-x	root/root	usr/bin/sudo
+-rwxr-xr-x	root/root	usr/bin/sudo_logsrvd
+-rwxr-xr-x	root/root	usr/bin/sudo_sendlog
 lrwxrwxrwx	root/root	usr/bin/sudoedit -> sudo
 -rwxr-xr-x	root/root	usr/bin/sudoreplay
+-rwxr-xr-x	root/root	usr/bin/visudo
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/sudo/
 -rw-r--r--	root/root	usr/lib/sudo/audit_json.so
@@ -25,10 +28,6 @@ lrwxrwxrwx	root/root	usr/lib/sudo/libsudo_util.so.0 -> libsudo_util.so.0.0.0
 -rw-r--r--	root/root	usr/lib/sudo/sudo_noexec.so
 -rw-r--r--	root/root	usr/lib/sudo/sudoers.so
 -rw-r--r--	root/root	usr/lib/sudo/system_group.so
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/sudo_logsrvd
--rwxr-xr-x	root/root	usr/sbin/sudo_sendlog
--rwxr-xr-x	root/root	usr/sbin/visudo
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
