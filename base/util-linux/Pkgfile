@@ -25,7 +25,7 @@ build()
 {
 cd util-linux-$version
 patch -Np1 -i ../$name-$version-consolidate-1.patch
-
+sed -i "s@exec_prefix}/sbin@exec_prefix}/bin@" configure
 mkdir -pv $PKG/var/lib/hwclock
 ./configure ADJTIME_PATH=/var/lib/hwclock/adjtime \
 	--docdir=/usr/share/doc/$name \

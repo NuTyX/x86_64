@@ -1,5 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/addpart
 -rwxr-xr-x	root/root	usr/bin/agetty
 -rwxr-xr-x	root/root	usr/bin/bits
 -rwxr-xr-x	root/root	usr/bin/blkdiscard
@@ -19,6 +20,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/coresched
 -rwxr-xr-x	root/root	usr/bin/ctrlaltdel
+-rwxr-xr-x	root/root	usr/bin/delpart
 -rwxr-xr-x	root/root	usr/bin/dmesg
 -rwxr-xr-x	root/root	usr/bin/eject
 -rwxr-xr-x	root/root	usr/bin/enosys
@@ -49,6 +51,7 @@ lrwxrwxrwx	root/root	usr/bin/i386 -> setarch
 -rwxr-xr-x	root/root	usr/bin/kill
 -rwxr-xr-x	root/root	usr/bin/last
 lrwxrwxrwx	root/root	usr/bin/lastb -> last
+-rwxr-xr-x	root/root	usr/bin/ldattach
 lrwxrwxrwx	root/root	usr/bin/linux32 -> setarch
 lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/logger
@@ -76,12 +79,17 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/mountpoint
 -rwxr-xr-x	root/root	usr/bin/namei
 -rwxr-xr-x	root/root	usr/bin/nsenter
+-rwxr-xr-x	root/root	usr/bin/partx
 -rwxr-xr-x	root/root	usr/bin/pipesz
 -rwxr-xr-x	root/root	usr/bin/pivot_root
 -rwxr-xr-x	root/root	usr/bin/prlimit
+-rwxr-xr-x	root/root	usr/bin/readprofile
 -rwxr-xr-x	root/root	usr/bin/rename
 -rwxr-xr-x	root/root	usr/bin/renice
+-rwxr-xr-x	root/root	usr/bin/resizepart
 -rwxr-xr-x	root/root	usr/bin/rev
+-rwxr-xr-x	root/root	usr/bin/rfkill
+-rwxr-xr-x	root/root	usr/bin/rtcwake
 -rwxr-xr-x	root/root	usr/bin/script
 -rwxr-xr-x	root/root	usr/bin/scriptlive
 -rwxr-xr-x	root/root	usr/bin/scriptreplay
@@ -102,6 +110,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 lrwxrwxrwx	root/root	usr/bin/uname26 -> setarch
 -rwxr-xr-x	root/root	usr/bin/unshare
 -rwxr-xr-x	root/root	usr/bin/utmpdump
+-rwxr-xr-x	root/root	usr/bin/uuidd
 -rwxr-xr-x	root/root	usr/bin/uuidgen
 -rwxr-xr-x	root/root	usr/bin/uuidparse
 -rwxr-xr-x	root/root	usr/bin/waitpid
@@ -137,16 +146,6 @@ drwxr-xr-x	root/root	usr/lib/sysusers.d/
 -rw-r--r--	root/root	usr/lib/sysusers.d/uuidd-sysusers.conf
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/uuidd-tmpfiles.conf
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/addpart
--rwxr-xr-x	root/root	usr/sbin/delpart
--rwxr-xr-x	root/root	usr/sbin/ldattach
--rwxr-xr-x	root/root	usr/sbin/partx
--rwxr-xr-x	root/root	usr/sbin/readprofile
--rwxr-xr-x	root/root	usr/sbin/resizepart
--rwxr-xr-x	root/root	usr/sbin/rfkill
--rwxr-xr-x	root/root	usr/sbin/rtcwake
--rwxr-xr-x	root/root	usr/sbin/uuidd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
