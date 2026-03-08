@@ -1,15 +1,15 @@
 description="Fast and flexible source code highlighter (CLI version)"
 url="https://www.andre-simon.de/doku/highlight/highlight.html"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B, Remy, tnut"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Remy,Tnut"
 
 license="GPL3"
 
 makedepends=(boost lua qtbase)
 
 name=highlight
-version=4.18
+version=4.19
 
 source=(http://www.andre-simon.de/zip/$name-$version.tar.bz2)
 
