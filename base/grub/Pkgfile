@@ -1,13 +1,14 @@
 description="The GRUB package contains the GRand Unified Bootloader."
 url="https://www.gnu.org/software/grub/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Schrodinger72,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Schrodinger72,Spiky"
 
 set=(core)
 
 name=grub
 version=2.14
+release=2
 
 dejavu_version=2.37
 splash_version=21.03.0-rc4
@@ -49,7 +50,8 @@ build() {
 	cd grub-$version
 
 	./configure --prefix=/usr \
-	      --sysconfdir=/etc       \
+	      --sysconfdir=/etc         \
+                --sbindir=/usr/bin        \
 	      --infodir=/usr/share/info \
                 --with-platform=pc \
                 --disable-efiemu \
@@ -63,7 +65,6 @@ build() {
 
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
-		--sbindir=/sbin        \
 		--disable-efiemu \
 		--infodir=/usr/share/info \
                 --with-platform=efi \
@@ -78,7 +79,6 @@ build() {
 
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
-		--sbindir=/sbin        \
 		--disable-efiemu \
 		--infodir=/usr/share/info \
                 --with-platform=efi \
