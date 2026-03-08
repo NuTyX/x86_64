@@ -1,8 +1,8 @@
 description="POSIX 1003.1e capabilities library"
 url="https://www.kernel.org/pub/linux/libs/security/linux-privs/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 set=(core)
 
@@ -10,15 +10,16 @@ makedepends=(pam)
 
 name=libcap
 version=2.77
+release=2
 
 source=(https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$version.tar.xz)
 
 build() {
 cd libcap-$version
 sed -i '/install -m.*STA/d' libcap/Makefile
-make prefix=/usr lib=lib
+make prefix=/usr lib=lib sbindir=bin
 
-make prefix=$PKG/usr lib=lib install
+make prefix=$PKG/usr lib=lib sbindir=bin install
 chmod -v 755 $PKG/usr/lib/lib{cap,psx}.so.$version
 
 }
