@@ -1,0 +1,70 @@
+diff -Naur a/src/Makefile.am b/src/Makefile.am
+--- a/src/Makefile.am	2026-01-28 16:17:58.094629145 +0100
++++ b/src/Makefile.am	2026-03-08 18:35:09.457546854 +0100
+@@ -3,7 +3,7 @@
+ 	.indent.pro
+ 
+ ubindir = ${prefix}/bin
+-usbindir = ${prefix}/sbin
++usbindir = ${prefix}/bin
+ suidperms = 4755
+ sgidperms = 2755
+ 
+@@ -26,9 +26,9 @@
+ # and installation would be much simpler (just two directories,
+ # $prefix/bin and $prefix/sbin, no install-data hacks...)
+ 
+-bin_PROGRAMS   = login
+-sbin_PROGRAMS  = nologin
+-ubin_PROGRAMS  = faillog chage chfn chsh expiry gpasswd newgrp passwd
++bin_PROGRAMS   =
++sbin_PROGRAMS  =
++ubin_PROGRAMS  = faillog lastlog chage expiry gpasswd newgrp passwd
+ if ENABLE_SUBIDS
+ ubin_PROGRAMS += newgidmap newuidmap
+ endif
+@@ -48,22 +48,20 @@
+ 	grpck \
+ 	grpconv \
+ 	grpunconv \
+-	logoutd \
+ 	newusers \
+ 	pwck \
+ 	pwconv \
+ 	pwunconv \
+ 	useradd \
+ 	userdel \
+-	usermod \
+-	vipw
++	usermod
+ 
+ # sulogin from sysvinit
+ noinst_PROGRAMS = sulogin
+ 
+ suidusbins     =
+ suidbins       =
+-suidubins      = chage chfn chsh expiry gpasswd newgrp
++suidubins      = chage expiry gpasswd newgrp
+ if WITH_SU
+ suidbins      += su
+ endif
+@@ -135,18 +133,16 @@
+ useradd_LDADD  = $(LDADD) $(LIBPAM_SUID) $(LIBAUDIT) $(LIBSELINUX) $(LIBSEMANAGE) $(LIBACL) $(LIBATTR) $(LIBECONF) -ldl
+ userdel_LDADD  = $(LDADD) $(LIBPAM_SUID) $(LIBAUDIT) $(LIBSELINUX) $(LIBSEMANAGE) $(LIBECONF) -ldl
+ usermod_LDADD  = $(LDADD) $(LIBPAM_SUID) $(LIBAUDIT) $(LIBSELINUX) $(LIBSEMANAGE) $(LIBACL) $(LIBATTR) $(LIBECONF) -ldl
+-vipw_LDADD     = $(LDADD) $(LIBAUDIT) $(LIBSELINUX) $(LIBECONF)
+ 
+ install-am: all-am
+ 	$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+-	ln -sf newgrp	$(DESTDIR)$(ubindir)/sg
+-	ln -sf vipw	$(DESTDIR)$(usbindir)/vigr
+ 	set -e; for i in $(suidbins); do \
+ 		chmod $(suidperms) $(DESTDIR)$(bindir)/$$i; \
+ 	done
+ 	set -e; for i in $(suidubins); do \
+ 		chmod $(suidperms) $(DESTDIR)$(ubindir)/$$i; \
+ 	done
++	mv -v $(DESTDIR)$(ubindir)/newgrp	$(DESTDIR)$(ubindir)/sg
+ 	set -e; for i in $(suidusbins); do \
+ 		chmod $(suidperms) $(DESTDIR)$(usbindir)/$$i; \
+ 	done
