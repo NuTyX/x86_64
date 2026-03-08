@@ -2,13 +2,14 @@ description="Utilities for showing and setting the basic system characteristics"
 url="https://www.gnu.org/software/coreutils/"
 
 maintainer="Jim Meyering meyering at redhat dot com"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(autoconf automake gettext)
 
 name=coreutils
 version=9.10
+release=2
 
 set=(chroot core)
 
@@ -39,9 +40,6 @@ if [ -f /tools/bin/su ];then
 	sed -i '/dummy/d' /etc/group
 fi
 make DESTDIR=$PKG install
-
-mkdir -p $PKG/usr/sbin
-mv -v $PKG/usr/bin/chroot $PKG/usr/sbin
 
 mkdir -p $PKG/usr/share/man/man8
 mv -v $PKG/usr/share/man/man1/chroot.1 $PKG/usr/share/man/man8/chroot.8
