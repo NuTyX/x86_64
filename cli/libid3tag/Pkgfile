@@ -7,8 +7,7 @@ contributors="Pierre,Tnut"
 makedepends=(cmake)
 
 name=libid3tag
-version=0.16.3
-release=2
+version=0.16.4
 
 source=(https://codeberg.org/tenacityteam/libid3tag/archive/0.16.3.tar.gz \
 	id3tag.pc)
@@ -26,6 +25,7 @@ build() {
 
         cmake -DCMAKE_INSTALL_PREFIX=/usr \
               -DCMAKE_BUILD_TYPE=None     \
+              -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
               ..
 
         make
