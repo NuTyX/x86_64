@@ -1,6 +1,6 @@
 diff -Naur a/src/Makefile.am b/src/Makefile.am
 --- a/src/Makefile.am	2026-01-28 16:17:58.094629145 +0100
-+++ b/src/Makefile.am	2026-03-08 18:35:09.457546854 +0100
++++ b/src/Makefile.am	2026-03-08 19:09:28.288565953 +0100
 @@ -3,7 +3,7 @@
  	.indent.pro
  
@@ -10,14 +10,12 @@ diff -Naur a/src/Makefile.am b/src/Makefile.am
  suidperms = 4755
  sgidperms = 2755
  
-@@ -26,9 +26,9 @@
- # and installation would be much simpler (just two directories,
+@@ -27,8 +27,8 @@
  # $prefix/bin and $prefix/sbin, no install-data hacks...)
  
--bin_PROGRAMS   = login
+ bin_PROGRAMS   = login
 -sbin_PROGRAMS  = nologin
 -ubin_PROGRAMS  = faillog chage chfn chsh expiry gpasswd newgrp passwd
-+bin_PROGRAMS   =
 +sbin_PROGRAMS  =
 +ubin_PROGRAMS  = faillog lastlog chage expiry gpasswd newgrp passwd
  if ENABLE_SUBIDS

@@ -5,7 +5,7 @@ maintainer="pkg-shadow-devel@lists.alioth.debian.org"
 contributors="Pierre,Spiky"
 packager="tnut <tnut@nutyx.org>"
 
-makedepends=(autoconf automake m4 libxcrypt pam)
+makedepends=(autoconf automake libtool m4 libxcrypt pam)
 
 name=shadow
 version=4.19.3
@@ -35,7 +35,7 @@ sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' \
 ./configure          \
  --sysconfdir=/etc   \
  --bindir=/usr/bin   \
- --usbindir=/usr/bin \
+ --sbindir=/usr/bin \
  --libdir=/usr/lib   \
  --with-{b,yes}crypt \
  --without-libbsd    \
