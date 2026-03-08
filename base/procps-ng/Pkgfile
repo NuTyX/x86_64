@@ -3,8 +3,8 @@ url="https://procps.sourceforge.net/"
 
 license="GPL LGPL"
 
-contributors="Pierre,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Pierre, Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(pkgconf ncurses)
 
@@ -12,6 +12,7 @@ set=(core)
 
 name=procps-ng
 version=4.0.6
+release=2
 
 PKGMK_LOCALES=()
 source=(https://sourceforge.net/projects/$name/files/Production/$name-$version.tar.xz)
@@ -21,9 +22,9 @@ build()
 cd $name-$version
 
 ./configure --prefix=/usr \
---exec-prefix= --sbindir=/usr/sbin \
+--exec-prefix= --sbindir=/usr/bin \
 --libdir=/usr/lib --bindir=/usr/bin \
---docdir=/usr/share/doc/procps-ng-$version \
+--docdir=/usr/share/doc/$name \
 --disable-static \
 --disable-kill
 
