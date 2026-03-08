@@ -3,8 +3,8 @@ url="https://www.kernel.org/pub/libs/pam"
 
 license="GPL-2.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(core)
 
@@ -13,9 +13,10 @@ makedepends=(intltool texinfo libxcrypt)
 
 name=pam
 version=1.7.2
+release=2
 
 PKGMK_LOCALES=()
-PKGMK_MESON_OPTIONS="--libdir lib -Ddocdir=/usr/share/doc/Linux-PAM"
+PKGMK_MESON_OPTIONS="--libdir lib -Ddocdir=/usr/share/doc/Linux-PAM --sbindir bin"
 source=(https://github.com/linux-pam/linux-pam/releases/download/v$version/Linux-PAM-$version.tar.xz)
 
 prepare() {
@@ -27,5 +28,5 @@ mv Linux-PAM-$version \
 build=meson
 
 package() {
-chmod -v 4755 $PKG/usr/sbin/unix_chkpwd
+chmod -v 4755 $PKG/usr/bin/unix_chkpwd
 }
