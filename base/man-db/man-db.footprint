@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/man_db.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/accessdb
 lrwxrwxrwx	root/root	usr/bin/apropos -> whatis
 -rwxr-xr-x	root/root	usr/bin/catman
 -rwxr-xr-x	root/root	usr/bin/convert-mans
@@ -26,8 +27,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/man-db.timer
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/man-db.conf
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/accessdb
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/man-db/
