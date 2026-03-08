@@ -2,8 +2,8 @@ description="Utilities for handling the ext2,3 and 4 files system."
 url="https://e2fsprogs.sourceforge.net/"
 
 maintainer="Ted Ts'o tytso at mit dot edu,tytso at alum dot mit dot edu"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(core)
 
@@ -12,6 +12,7 @@ PKGMK_GROUPS=(devel man doc)
 
 name=e2fsprogs
 version=1.47.3
+release=2
 
 PKGMK_LOCALES=()
 
@@ -26,7 +27,7 @@ cd build
 ../configure --prefix=/usr \
 --with-root-prefix="" \
 --bindir=/usr/bin   \
---sbindir=/usr/sbin \
+--sbindir=/usr/bin \
 --enable-elf-shlibs \
 --disable-libblkid  \
 --disable-libuuid   \
