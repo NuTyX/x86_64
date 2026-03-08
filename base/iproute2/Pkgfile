@@ -1,8 +1,8 @@
 url="https://www.kernel.org/pub/linux/utils/net/iproute2/"
 description="Programs for basic and advanced network routing."
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(libcap bison flex)
 
@@ -10,6 +10,7 @@ set=(core)
 
 name=iproute2
 version=6.19.0
+release=2
 
 PKGMK_GROUPS=(devel man doc)
 
@@ -22,7 +23,7 @@ sed -i /ARPD/d Makefile
 rm -fv man/man8/arpd.8
 
 make NETNS_RUN_DIR=/run/netns DESTDIR=$PKG
-make SBINDIR=/usr/sbin DESTDIR=$PKG \
+make SBINDIR=/usr/bin DESTDIR=$PKG \
   DOCDIR=/usr/share/doc/iproute2 install
 
 install -vDm644 COPYING README* -t \
