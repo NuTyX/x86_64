@@ -3008,7 +3008,6 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_init_issue74784.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_init_path.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_init_tidy.txt
--rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_init_version.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_insecure_issue63845.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_install_hint.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_install_pkg_version.txt
@@ -3368,7 +3367,6 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_init_gowork.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_init_path.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_init_toolchain.txt
--rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_init_version.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_install_submodule.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_issue51204.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/work_issue54048.txt
@@ -8474,6 +8472,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/internal/poll/
 -rw-r--r--	root/root	usr/lib/go/src/internal/poll/fd_writev_libc.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/poll/fd_writev_unix.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/poll/file_plan9.go
+-rw-r--r--	root/root	usr/lib/go/src/internal/poll/fstatat_unix.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/poll/hook_cloexec.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/poll/hook_unix.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/poll/hook_windows.go
@@ -10478,6 +10477,9 @@ drwxr-xr-x	root/root	usr/lib/go/src/os/signal/
 -rw-r--r--	root/root	usr/lib/go/src/os/stat_unix.go
 -rw-r--r--	root/root	usr/lib/go/src/os/stat_wasip1.go
 -rw-r--r--	root/root	usr/lib/go/src/os/stat_windows.go
+-rw-r--r--	root/root	usr/lib/go/src/os/statat.go
+-rw-r--r--	root/root	usr/lib/go/src/os/statat_other.go
+-rw-r--r--	root/root	usr/lib/go/src/os/statat_unix.go
 -rw-r--r--	root/root	usr/lib/go/src/os/sticky_bsd.go
 -rw-r--r--	root/root	usr/lib/go/src/os/sticky_notbsd.go
 -rw-r--r--	root/root	usr/lib/go/src/os/sys.go
@@ -15577,7 +15579,11 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7740.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7742.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7746.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue77534.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7760.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue77604.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue77613.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue77779.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7794.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7863.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7867.go
