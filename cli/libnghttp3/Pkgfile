@@ -1,0 +1,25 @@
+description='Description: HTTP/3 library written in C'
+url='https://github.com/ngtcp2/nghttp3'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(autoconf automake itstool pkgconf)
+
+name=libnghttp3
+version=1.15.0
+
+source=(https://github.com/ngtcp2/nghttp3/releases/download/v$version/nghttp3-$version.tar.xz)
+
+build() {
+cd nghttp3-$version
+
+  autoreconf -fvi
+  ./configure --prefix=/usr \
+    --enable-lib-only
+  make
+  make DESTDIR=$PKG install
+
+  rm -r $PKG/usr/share
+}
+
