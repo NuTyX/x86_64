@@ -12,7 +12,7 @@ makedepends=(readline apache libxml2 aspell aspell-dict libxslt enchant
              unixodbc openssl cyrus-sasl kerberos libzip)
 
 name=php
-version=8.5.1
+version=8.5.3
 
 source=(apache.conf
         https://php.net/distributions/$name-$version.tar.xz)
