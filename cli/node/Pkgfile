@@ -4,19 +4,22 @@ url="https://nodejs.org/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Alienus,Greg,Tnut"
 
-makedepends=(python c-ares icu zlib libuv libnghttp2 brotli)
+makedepends=(python c-ares icu zlib libuv libnghttp2 libnghttp3 brotli)
 
 name=node
 alias=(nodejs node-js)
-version=25.6.1
-release=2
+version=25.8.0
 
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
         system-c-ares.patch)
 
 build() {
 
+export MAKEFLAGS=-j15
+
 	cd node-v$version
+CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files -Wl,--no-keep-files-mapped" \
+  CXXFLAGS="$CFLAGS" \
 	./configure \
 	  --prefix=/usr          \
             --shared-brotli        \
@@ -24,6 +27,7 @@ build() {
             --shared-libuv         \
             --shared-openssl       \
             --shared-nghttp2       \
+            --shared-nghttp3       \
             --shared-zlib          \
             --with-intl=system-icu 
 
