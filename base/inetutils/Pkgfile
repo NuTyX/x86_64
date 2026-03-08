@@ -12,6 +12,7 @@ set=(core)
 
 name=inetutils
 version=2.7
+release=2
 
 source=(https://ftpmirror.gnu.org/$name/$name-$version.tar.gz)
 
@@ -23,6 +24,7 @@ sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c
 
 ./configure --prefix=/usr \
 --bindir=/usr/bin    \
+--libexec=/usr/bin   \
 --localstatedir=/var \
 --disable-logger \
 --disable-whois \
@@ -35,6 +37,4 @@ sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c
 make
 make check || true
 make DESTDIR=$PKG install
-mkdir -p $PKG/usr/sbin
-mv -v $PKG/usr/{,s}bin/ifconfig
 }
