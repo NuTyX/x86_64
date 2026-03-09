@@ -14,6 +14,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.clippy.toml
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel-mainline/.config
+-rw-r--r--	root/root	usr/src/kernel-mainline/.config.old
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.editorconfig
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.gitattributes
@@ -3633,6 +3634,10 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/crypto/
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.michael_mic.mod.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.michael_mic.mod.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.michael_mic.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.mldsa.ko.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.mldsa.mod.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.mldsa.mod.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.mldsa.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.modules.order.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.pcbc.ko.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/.pcbc.mod.cmd
@@ -4267,6 +4272,11 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/crypto/krb5/
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/michael_mic.mod.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/michael_mic.o
 -rw-rw-r--	root/root	usr/src/kernel-mainline/crypto/mldsa.c
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/mldsa.ko
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/mldsa.mod
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/mldsa.mod.c
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/mldsa.mod.o
+-rw-r--r--	root/root	usr/src/kernel-mainline/crypto/mldsa.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/modules.order
 -rw-rw-r--	root/root	usr/src/kernel-mainline/crypto/pcbc.c
 -rw-r--r--	root/root	usr/src/kernel-mainline/crypto/pcbc.ko
@@ -4655,6 +4665,9 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/9P_FS_SECURITY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/A11Y_BRAILLE_CONSOLE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ABP060MG (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ABP2030PA (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ABP2030PA_I2C (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ABP2030PA_SPI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/AC97_BUS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ACCESSIBILITY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ACENIC (EMPTY)
@@ -4845,6 +4858,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADIS16480 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADIS16550 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADJD_S311 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADL8113 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADM8211 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADMFM2000 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/ADMV1013 (EMPTY)
@@ -6139,6 +6153,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_DES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_GF128MUL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_MD5 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_MLDSA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_NH (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_NH_ARCH (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_LIB_POLY1305 (EMPTY)
@@ -6165,6 +6180,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_MD4 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_MD5 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_MICHAEL_MIC (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_MLDSA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_NULL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_PCBC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CRYPTO_PCRYPT (EMPTY)
@@ -8832,6 +8848,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX1241 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX1363 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX14001 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX22007 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX30100 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX30102 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MAX30208 (EMPTY)
@@ -8871,6 +8888,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP4531 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP4725 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP4728 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP47FEB02 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP4821 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP4922 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MCP9600 (EMPTY)
@@ -9236,6 +9254,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMA9553 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMC35240 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMC5633 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMCONF_FAM10H (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMC_ALCOR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/MMC_BLOCK (EMPTY)
@@ -10401,6 +10420,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_CAN_TRANSCEIVER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_COMMON_PROPS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_CPCAP_USB (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_GOOGLE_USB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_INTEL_LGM_EMMC (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_PACKAGE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/PHY_PXA_28NM_HSIC (EMPTY)
@@ -23126,6 +23146,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/crypto/
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.des.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.gf128mul.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.hash_info.o.cmd
+-rw-rw-r--	root/root	usr/src/kernel-mainline/lib/crypto/.kunitconfig
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libaescfb.ko.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libaescfb.mod.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libaescfb.mod.o.cmd
@@ -23142,6 +23163,10 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/crypto/
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libdes.mod.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libdes.mod.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libdes.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libmldsa.ko.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libmldsa.mod.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libmldsa.mod.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libmldsa.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libnh.ko.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libnh.mod.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libnh.mod.o.cmd
@@ -23156,6 +23181,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/crypto/
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.libsm3.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.md5.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.memneq.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.mldsa.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.modules.order.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.nh.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/.poly1305-donna64.o.cmd
@@ -23270,6 +23296,11 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/crypto/arm64/
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libdes.mod.c
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libdes.mod.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libdes.o
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libmldsa.ko
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libmldsa.mod
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libmldsa.mod.c
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libmldsa.mod.o
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libmldsa.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libnh.ko
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libnh.mod
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/libnh.mod.c
@@ -23300,6 +23331,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/crypto/mips/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/lib/crypto/mips/sha256.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/lib/crypto/mips/sha512.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/lib/crypto/mldsa.c
+-rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/mldsa.o
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/modules.order
 drwxrwxr-x	root/root	usr/src/kernel-mainline/lib/crypto/mpi/
 -rw-r--r--	root/root	usr/src/kernel-mainline/lib/crypto/mpi/.built-in.a.cmd
@@ -29837,6 +29869,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/sched/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/sched/root_domains_dump.py
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/sched_ext/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/sched_ext/.gitignore
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/sched_ext/Kconfig
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/sched_ext/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/sched_ext/README.md
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/sched_ext/include/
@@ -33267,6 +33300,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/bench/p
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/bind_wildcard.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/bpf.mk
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/bpf_offload.py
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/bridge_vlan_dump.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/broadcast_ether_dst.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/broadcast_pmtu.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/busy_poll_test.sh
@@ -33715,7 +33749,6 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetd
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_ooo-before-and-after-accept.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_ooo_rcv_mss.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rcv_big_endseq.pkt
--rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rcv_toobig.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rcv_zero_wnd_fin.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_rto_synack_rto_max.pkt
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/packetdrill/tcp_sack_sack-route-refresh-ip-tos.pkt
@@ -35679,8 +35712,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc2/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc3/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-7.0-rc2 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-7.0-rc3 -> kernel-mainline

@@ -15,8 +15,8 @@ PKGMK_GROUPS=(devel doc)
 PKGMK_KEEP_SOURCES="no"
 
 name=kernel-mainline
-version=7.0-rc2
-release=2
+version=7.0-rc3
+release=1
 SUFFIX="${name/*-/}"
 INITRD="initrd-$SUFFIX"
 KERNEL="$name"
