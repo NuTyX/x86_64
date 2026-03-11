@@ -3,6 +3,10 @@ drwxr-xr-x	root/root	etc/dbus-1/
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/wpa_supplicant.conf
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/wpa_cli
+-rwxr-xr-x	root/root	usr/bin/wpa_passphrase
+-rwxr-xr-x	root/root	usr/bin/wpa_supplicant
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
@@ -10,10 +14,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/wpa_supplicant-wired@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/wpa_supplicant.service
 -rw-r--r--	root/root	usr/lib/systemd/system/wpa_supplicant@.service
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/wpa_cli
--rwxr-xr-x	root/root	usr/sbin/wpa_passphrase
--rwxr-xr-x	root/root	usr/sbin/wpa_supplicant
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/

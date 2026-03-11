@@ -46,10 +46,10 @@ CONFIG_CTRL_IFACE_DBUS_NEW=y
 CONFIG_CTRL_IFACE_DBUS_INTRO=y
 EOF
 cd wpa_supplicant &&
-make BINDIR=/usr/bin LIBDIR=/usr/lib
-mkdir -p $PKG/{etc,usr/{sbin,lib,share/man/man{5,8}}}
+make sbindir=/usr/bin LIBDIR=/usr/lib
+mkdir -p $PKG/{etc,usr/{bin,lib,share/man/man{5,8}}}
 
-install -v -m755 wpa_{cli,passphrase,supplicant} $PKG/usr/sbin
+install -v -m755 wpa_{cli,passphrase,supplicant} $PKG/usr/bin
 install -v -m644 doc/docbook/wpa_supplicant.conf.5 $PKG/usr/share/man/man5
 install -v -m644 doc/docbook/wpa_{cli,passphrase,supplicant}.8 $PKG/usr/share/man/man8
 
