@@ -1,5 +1,5 @@
 description='ReadyMedia (formerly known as MiniDLNA) is a simple media server software'
-url='http://sourceforge.net/projects/minidlna/'
+url='https://sourceforge.net/projects/minidlna/'
 
 packager="tnut <tnut@nutyx.org>"
 contributors=""
@@ -8,12 +8,10 @@ makedepends=(ffmpeg libexif flac taglib libid3tag
              libjpeg-turbo libvorbis x264 opus
              inotify-tools libmatroska)
 
-run=(start-stop-daemon)
-
 PKGMK_GROUPS=(man)
 name=minidlna
 version=1.3.3
-release=6
+release=7
 
 source=(minidlna.conf consolidate.patch  minidlna
         https://downloads.sourceforge.net/project/$name/minidlna/${version}/${name}-${version}.tar.gz)
@@ -24,7 +22,13 @@ cd $name-$version
 patch -p1 -i ../consolidate.patch
 ./autogen.sh
 }
-
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+  --sbindir=/usr/bin
+  make
+  make DESTDIR=$PKG install
+}
 package() {
 cd $name-$version
 gzip minidlnad.8
