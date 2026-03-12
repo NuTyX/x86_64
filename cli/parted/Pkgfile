@@ -8,16 +8,23 @@ makedepends=(grep sed lvm2 util-linux check texinfo)
 
 name=parted
 version=3.6
-release=2
+release=3
 
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.xz)
 
 build() {
+
+
 cd $name-$version
+sed -i 's/do_version ()/do_version (PedDevice** dev, PedDisk** diskp)/' parted/parted.c
 ./configure --prefix=/usr \
+--sbindir=/usr/bin        \
 --disable-static
+
 make
+
 make DESTDIR=$PKG install
+
 make -C doc html
 makeinfo --html -o doc/html doc/parted.texi
 makeinfo --plaintext -o doc/parted.txt doc/parted.texi
