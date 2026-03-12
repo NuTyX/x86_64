@@ -11,12 +11,14 @@ makedepends=(acl attr systemd libgudev expat libatasmart libxslt polkit \
 
 name=udisks2
 version=2.11.1
+release=2
 
 source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz2)
 
 build() {
 cd udisks-$version
 ./configure --prefix=/usr \
+--sbindir=/usr/bin \
 --sysconfdir=/etc \
 --localstatedir=/var \
 --disable-static
