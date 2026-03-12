@@ -17,6 +17,8 @@ source=(http://linuxtv.org/downloads/v4l-utils/$name-$version.tar.xz)
 build() {
 	cd $name-$version
 
+sed -i 's/sbin/bin/' utils/v4l2-dbg/meson.build
+
 mkdir build
 cd    build
 meson setup .. \
