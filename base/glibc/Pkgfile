@@ -46,6 +46,7 @@ mkdir -v build
 cd       build
 
 echo "rootsbindir=/usr/bin" > configparms
+echo "sbindir=/usr/bin" >> configparms
 
 ../configure --prefix=/usr                                    \
 --with-bugurl=https://github.com/NuTyX/x86_64/issues \

@@ -36,6 +36,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/getconf
 -rwxr-xr-x	root/root	usr/bin/getent
 -rwxr-xr-x	root/root	usr/bin/iconv
+-rwxr-xr-x	root/root	usr/bin/iconvconfig
 lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-x86-64.so.2
 -rwxr-xr-x	root/root	usr/bin/ldconfig
 -rwxr-xr-x	root/root	usr/bin/ldd
@@ -51,6 +52,7 @@ lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-x86-64.so.2
 -rwxr-xr-x	root/root	usr/bin/tzselect
 -rwxr-xr-x	root/root	usr/bin/xtrace
 -rwxr-xr-x	root/root	usr/bin/zdump
+-rwxr-xr-x	root/root	usr/bin/zic
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/Mcrt1.o
 -rw-r--r--	root/root	usr/lib/Scrt1.o
@@ -351,9 +353,6 @@ drwxr-xr-x	root/root	usr/libexec/getconf/
 -rwxr-xr-x	root/root	usr/libexec/getconf/POSIX_V6_LP64_OFF64
 -rwxr-xr-x	root/root	usr/libexec/getconf/POSIX_V7_LP64_OFF64
 -rwxr-xr-x	root/root	usr/libexec/getconf/XBS5_LP64_OFF64
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/iconvconfig
--rwxr-xr-x	root/root	usr/sbin/zic
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/i18n/
 drwxr-xr-x	root/root	usr/share/i18n/charmaps/
