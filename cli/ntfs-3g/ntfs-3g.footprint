@@ -1,27 +1,29 @@
+drwxr-xr-x	root/root	sbin/
+lrwxrwxrwx	root/root	sbin/mount.lowntfs-3g -> /bin/lowntfs-3g
+lrwxrwxrwx	root/root	sbin/mount.ntfs-3g -> /bin/ntfs-3g
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/lowntfs-3g
+lrwxrwxrwx	root/root	usr/bin/mkfs.ntfs -> /usr/bin/mkntfs
+-rwxr-xr-x	root/root	usr/bin/mkntfs
+lrwxrwxrwx	root/root	usr/bin/mount.lowntfs-3g -> ../bin/lowntfs-3g
+lrwxrwxrwx	root/root	usr/bin/mount.ntfs -> ../bin/ntfs-3g
+lrwxrwxrwx	root/root	usr/bin/mount.ntfs-3g -> ../bin/ntfs-3g
 -rwxr-xr-x	root/root	usr/bin/ntfs-3g
 -rwxr-xr-x	root/root	usr/bin/ntfs-3g.probe
 -rwxr-xr-x	root/root	usr/bin/ntfscat
+-rwxr-xr-x	root/root	usr/bin/ntfsclone
 -rwxr-xr-x	root/root	usr/bin/ntfscluster
 -rwxr-xr-x	root/root	usr/bin/ntfscmp
+-rwxr-xr-x	root/root	usr/bin/ntfscp
 -rwxr-xr-x	root/root	usr/bin/ntfsfix
 -rwxr-xr-x	root/root	usr/bin/ntfsinfo
+-rwxr-xr-x	root/root	usr/bin/ntfslabel
 -rwxr-xr-x	root/root	usr/bin/ntfsls
+-rwxr-xr-x	root/root	usr/bin/ntfsresize
+-rwxr-xr-x	root/root	usr/bin/ntfsundelete
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libntfs-3g.so -> libntfs-3g.so.89.0.0
 lrwxrwxrwx	root/root	usr/lib/libntfs-3g.so.89 -> libntfs-3g.so.89.0.0
 -rwxr-xr-x	root/root	usr/lib/libntfs-3g.so.89.0.0
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/mkfs.ntfs -> /usr/sbin/mkntfs
--rwxr-xr-x	root/root	usr/sbin/mkntfs
-lrwxrwxrwx	root/root	usr/sbin/mount.lowntfs-3g -> ../bin/lowntfs-3g
-lrwxrwxrwx	root/root	usr/sbin/mount.ntfs -> ../bin/ntfs-3g
-lrwxrwxrwx	root/root	usr/sbin/mount.ntfs-3g -> ../bin/ntfs-3g
--rwxr-xr-x	root/root	usr/sbin/ntfsclone
--rwxr-xr-x	root/root	usr/sbin/ntfscp
--rwxr-xr-x	root/root	usr/sbin/ntfslabel
--rwxr-xr-x	root/root	usr/sbin/ntfsresize
--rwxr-xr-x	root/root	usr/sbin/ntfsundelete
 drwxr-xr-x	root/root	usr/share/
