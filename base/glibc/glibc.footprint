@@ -36,7 +36,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/getconf
 -rwxr-xr-x	root/root	usr/bin/getent
 -rwxr-xr-x	root/root	usr/bin/iconv
+-rwxr-xr-x	root/root	usr/bin/iconvconfig
 lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-x86-64.so.2
+-rwxr-xr-x	root/root	usr/bin/ldconfig
 -rwxr-xr-x	root/root	usr/bin/ldd
 -rwxr-xr-x	root/root	usr/bin/locale
 -rwxr-xr-x	root/root	usr/bin/localedef
@@ -44,11 +46,13 @@ lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-x86-64.so.2
 -rwxr-xr-x	root/root	usr/bin/mtrace
 -rwxr-xr-x	root/root	usr/bin/pcprofiledump
 -rwxr-xr-x	root/root	usr/bin/pldd
+-rwxr-xr-x	root/root	usr/bin/sln
 -rwxr-xr-x	root/root	usr/bin/sotruss
 -rwxr-xr-x	root/root	usr/bin/sprof
 -rwxr-xr-x	root/root	usr/bin/tzselect
 -rwxr-xr-x	root/root	usr/bin/xtrace
 -rwxr-xr-x	root/root	usr/bin/zdump
+-rwxr-xr-x	root/root	usr/bin/zic
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/Mcrt1.o
 -rw-r--r--	root/root	usr/lib/Scrt1.o
@@ -326,7 +330,7 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 -rw-r--r--	root/root	usr/lib/libc_nonshared.a
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.42.a
+-rw-r--r--	root/root	usr/lib/libm-2.43.a
 -rw-r--r--	root/root	usr/lib/libm.a
 -rw-r--r--	root/root	usr/lib/libm.so
 -rw-r--r--	root/root	usr/lib/libmcheck.a
@@ -349,11 +353,6 @@ drwxr-xr-x	root/root	usr/libexec/getconf/
 -rwxr-xr-x	root/root	usr/libexec/getconf/POSIX_V6_LP64_OFF64
 -rwxr-xr-x	root/root	usr/libexec/getconf/POSIX_V7_LP64_OFF64
 -rwxr-xr-x	root/root	usr/libexec/getconf/XBS5_LP64_OFF64
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/iconvconfig
--rwxr-xr-x	root/root	usr/sbin/ldconfig
--rwxr-xr-x	root/root	usr/sbin/sln
--rwxr-xr-x	root/root	usr/sbin/zic
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/i18n/
 drwxr-xr-x	root/root	usr/share/i18n/charmaps/
@@ -697,6 +696,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/en_NZ
 -rw-r--r--	root/root	usr/share/i18n/locales/en_PH
 -rw-r--r--	root/root	usr/share/i18n/locales/en_SC
+-rw-r--r--	root/root	usr/share/i18n/locales/en_SE
 -rw-r--r--	root/root	usr/share/i18n/locales/en_SG
 -rw-r--r--	root/root	usr/share/i18n/locales/en_US
 -rw-r--r--	root/root	usr/share/i18n/locales/en_ZA
