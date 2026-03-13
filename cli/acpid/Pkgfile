@@ -1,14 +1,14 @@
 description="A completely flexible, totally extensible daemon for delivering ACPI events."
 url="https://sourceforge.net/projects/acpid2/"
 
-contributors="Berlius,Fanch,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Fanch,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 run=(pm-utils)
 
 name=acpid
 version=2.0.34
-release=5
+release=6
 
 scriptsversion=20250201
 
@@ -21,6 +21,7 @@ build() {
 
 cd $name-$version
 ./configure --prefix=/usr \
+--sbindir=/usr/bin \
 --docdir=/usr/share/doc/$name-$version
 make
 
