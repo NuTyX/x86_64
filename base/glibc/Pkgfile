@@ -8,8 +8,8 @@ kernelversion=6.1
 makedepends=(python gawk bison grep)
 
 name=glibc
-version=2.42
-release=2
+version=2.43
+release=1
 
 set=(chroot)
 
@@ -45,10 +45,10 @@ ln -s ../lib/ld-linux-x86-64.so.2 $PKG/lib64/ld-lsb-x86-64.so.3
 mkdir -v build
 cd       build
 
-echo "rootsbindir=/usr/sbin" > configparms
+echo "rootsbindir=/usr/bin" > configparms
 
 ../configure --prefix=/usr                                    \
---with-bugurl=https://github.com/NuTyX/packages-x86_64/issues \
+--with-bugurl=https://github.com/NuTyX/x86_64/issues \
 --disable-werror                \
 --enable-kernel=5.4             \
 --with-headers=/usr/include     \
