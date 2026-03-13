@@ -1,13 +1,13 @@
 description="General Purpose Mouse: mouse server for the console and xterm."
 url="https://unix.schottelius.org/gpm"
 
-packager="tnut <tnu@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(autoconf automake m4 libtool sed grep bison)
 name=gpm
 version=1.20.7
-release=14
+release=15
 
 scriptsversion=20250201
 
@@ -26,6 +26,7 @@ build() {
           src/prog/{display-buttons,display-coords,get-versions}.c
 	./autogen.sh
 	./configure --prefix=/usr \
+              --sbindir=/usr/bin  \
 	      --sysconfdir=/etc   \
                 ac_cv_path_emacs=no \
 	      --mandir=/usr/share/man \
