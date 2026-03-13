@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/arpaname
+-rwxr-xr-x	root/root	usr/bin/ddns-confgen
 -rwxr-xr-x	root/root	usr/bin/delv
 -rwxr-xr-x	root/root	usr/bin/dig
 -rwxr-xr-x	root/root	usr/bin/dnssec-cds
@@ -15,6 +16,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/dnssec-verify
 -rwxr-xr-x	root/root	usr/bin/host
 -rwxr-xr-x	root/root	usr/bin/mdig
+-rwxr-xr-x	root/root	usr/bin/named
 -rwxr-xr-x	root/root	usr/bin/named-checkconf
 -rwxr-xr-x	root/root	usr/bin/named-checkzone
 -rwxr-xr-x	root/root	usr/bin/named-compilezone
@@ -23,6 +25,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nsec3hash
 -rwxr-xr-x	root/root	usr/bin/nslookup
 -rwxr-xr-x	root/root	usr/bin/nsupdate
+-rwxr-xr-x	root/root	usr/bin/rndc
+-rwxr-xr-x	root/root	usr/bin/rndc-confgen
+-rwxr-xr-x	root/root	usr/bin/tsig-keygen
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bind/
 -rwxr-xr-x	root/root	usr/lib/bind/filter-a.so
@@ -37,12 +42,6 @@ lrwxrwxrwx	root/root	usr/lib/libisccc.so -> libisccc-9.20.20.so
 lrwxrwxrwx	root/root	usr/lib/libisccfg.so -> libisccfg-9.20.20.so
 -rwxr-xr-x	root/root	usr/lib/libns-9.20.20.so
 lrwxrwxrwx	root/root	usr/lib/libns.so -> libns-9.20.20.so
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/ddns-confgen
--rwxr-xr-x	root/root	usr/sbin/named
--rwxr-xr-x	root/root	usr/sbin/rndc
--rwxr-xr-x	root/root	usr/sbin/rndc-confgen
--rwxr-xr-x	root/root	usr/sbin/tsig-keygen
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/bind/
