@@ -3,16 +3,16 @@ drwxr-xr-x	root/root	lib/cracklib/
 lrwxrwxrwx	root/root	lib/libcrack.so.2 -> libcrack.so.2.9.0
 -rwxr-xr-x	root/root	lib/libcrack.so.2.9.0
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cracklib-check
+-rwxr-xr-x	root/root	usr/bin/cracklib-format
+-rwxr-xr-x	root/root	usr/bin/cracklib-packer
+-rwxr-xr-x	root/root	usr/bin/cracklib-unpacker
+-rwxr-xr-x	root/root	usr/bin/cracklib-update
+-rwxr-xr-x	root/root	usr/bin/create-cracklib-dict
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libcrack.a
 lrwxrwxrwx	root/root	usr/lib/libcrack.so -> ../../lib/libcrack.so.2.9.0
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/cracklib-check
--rwxr-xr-x	root/root	usr/sbin/cracklib-format
--rwxr-xr-x	root/root	usr/sbin/cracklib-packer
--rwxr-xr-x	root/root	usr/sbin/cracklib-unpacker
--rwxr-xr-x	root/root	usr/sbin/cracklib-update
--rwxr-xr-x	root/root	usr/sbin/create-cracklib-dict
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/cracklib/
 -rw-r--r--	root/root	usr/share/cracklib/cracklib-small

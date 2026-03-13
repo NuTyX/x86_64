@@ -6,6 +6,7 @@ contributors="Pierre,Tnut"
 
 name=cracklib
 version=2.10.3
+release=2
 
 source=(https://github.com/cracklib/cracklib/releases/download/v$version/$name-$version.tar.bz2
 	https://github.com/cracklib/cracklib/releases/download/v$version/$name-words-$version.gz)
@@ -15,6 +16,7 @@ build()
 cd $name-$version
 sed -i '/skipping/d' util/packer.c
 ./configure --prefix=/usr \
+--sbindir=/usr/bin \
 --with-default-dict=/$LIB/cracklib/pw_dict
 make
 make DESTDIR=$PKG  install
