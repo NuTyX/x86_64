@@ -3,18 +3,17 @@ drwxr-xr-x	root/root	etc/sensors.d/
 -rw-r--r--	root/root	etc/sensors3.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/fancontrol
+-rwxr-xr-x	root/root	usr/bin/isadump
+-rwxr-xr-x	root/root	usr/bin/isaset
+-rwxr-xr-x	root/root	usr/bin/pwmconfig
 -rwxr-xr-x	root/root	usr/bin/sensors
 -rwxr-xr-x	root/root	usr/bin/sensors-conf-convert
+-rwxr-xr-x	root/root	usr/bin/sensors-detect
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libsensors.so -> libsensors.so.5
 lrwxrwxrwx	root/root	usr/lib/libsensors.so.5 -> libsensors.so.5.0.0
 -rwxr-xr-x	root/root	usr/lib/libsensors.so.5.0.0
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/fancontrol
--rwxr-xr-x	root/root	usr/sbin/isadump
--rwxr-xr-x	root/root	usr/sbin/isaset
--rwxr-xr-x	root/root	usr/sbin/pwmconfig
--rwxr-xr-x	root/root	usr/sbin/sensors-detect
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/zsh/
 drwxr-xr-x	root/root	usr/share/zsh/site-functions/

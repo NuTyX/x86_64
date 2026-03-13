@@ -1,15 +1,15 @@
 description="Collection of user space tools for general SMBus access and hardware monitoring"
 url="https://dl.lm-sensors.org/lm-sensors/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(bison flex)
 run=(perl)
 
 name=lm-sensors
 version=3.6.2
-release=2
+release=3
 
 _version=${version//./-}
 
@@ -18,9 +18,11 @@ source=(https://github.com/hramrach/lm-sensors/archive/V${_version}/$name-${_ver
 build() {
 	cd $name-${_version}
 	make PREFIX=/usr DESTDIR=$PKG \
+        SBINDIR=/usr/bin   \
 	BUILD_STATIC_LIB=0 \
 	MANDIR=/usr/share/man
 	make PREFIX=/usr DESTDIR=$PKG \
+        SBINDIR=/usr/bin   \
 	BUILD_STATIC_LIB=0 \
 	MANDIR=/usr/share/man install
 
