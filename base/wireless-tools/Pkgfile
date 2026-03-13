@@ -3,12 +3,12 @@ url="https://hewlettpackard.github.io/wireless-tools/Tools.html"
 
 license="GPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=wireless-tools
 version=29
-release=2
+release=3
 
 source=(https://hewlettpackard.github.io/$name/wireless_tools.$version.tar.gz
 	https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch)
@@ -17,5 +17,5 @@ cd wireless_tools.${version}
 patch -Np1 -i ../wireless_tools-${version}-fix_iwlist_scanning-1.patch
 make
 mkdir -p $PKG/usr/share/man
-make PREFIX=$PKG/usr INSTALL_MAN=$PKG/usr/share/man install
+make PREFIX=$PKG/usr INSTALL_DIR=$PKG/usr/bin INSTALL_MAN=$PKG/usr/share/man install
 }
