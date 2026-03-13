@@ -8,6 +8,7 @@ makedepends=(zlib)
 
 name=mandoc
 version=1.14.6
+release=2
 
 source=(http://mandoc.bsd.lv/snapshots/$name-$version.tar.gz)
 
@@ -17,6 +18,7 @@ cd $name-$version
 cat >configure.local <<-'EOF'
 		OSNAME=CRUX
 		PREFIX=/usr
+                SBINDIR=/usr/bin
 		MANDIR=/usr/share/man
 
 		MANPATH_DEFAULT="/usr/local/share/man:/usr/local/man:/usr/share/man:/usr/man"
