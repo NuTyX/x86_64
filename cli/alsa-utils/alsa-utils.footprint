@@ -5,6 +5,8 @@ drwxr-xr-x	root/root	lib/udev/rules.d/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/aconnect
+-rwxr-xr-x	root/root	usr/bin/alsa-info.sh
+-rwxr-xr-x	root/root	usr/bin/alsactl
 -rwxr-xr-x	root/root	usr/bin/alsaloop
 -rwxr-xr-x	root/root	usr/bin/alsamixer
 -rwxr-xr-x	root/root	usr/bin/alsatplg
@@ -27,9 +29,6 @@ lrwxrwxrwx	root/root	usr/bin/arecord -> aplay
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/alsa-topology/
 -rwxr-xr-x	root/root	usr/lib/alsa-topology/libalsatplg_module_nhlt.so
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/alsa-info.sh
--rwxr-xr-x	root/root	usr/sbin/alsactl
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/alsa/
 drwxr-xr-x	root/root	usr/share/alsa/init/
