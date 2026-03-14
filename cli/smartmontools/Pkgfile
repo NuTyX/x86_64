@@ -7,6 +7,7 @@ licesne="GPL"
 
 name=smartmontools
 version=7.5
+release=2
 
 source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz )
 
@@ -14,6 +15,7 @@ build() {
 
 	cd $name-$version
 	./configure --prefix=/usr \
+	--sbindir=/usr/bin        \
 	--sysconfdir=/etc         \
 	--with-initscriptdir=no   \
 	--docdir=/usr/share/doc/smartmontools-$version
