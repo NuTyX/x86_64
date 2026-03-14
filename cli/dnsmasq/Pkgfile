@@ -7,6 +7,7 @@ makedepends=(nettle)
 
 name=dnsmasq
 version=2.92
+release=2
 
 source=(https://thekelleys.org.uk/dnsmasq/$name-$version.tar.xz $name-config.patch dnsmasq.init)
 
@@ -14,7 +15,7 @@ build() {
    cd $name-$version
    patch -p1 -i $SRC/$name-config.patch
    make COPTS="-DHAVE_DNSSEC" PREFIX=/usr
-   make COPTS="-DHAVE_DNSSEC" PREFIX=/usr DESTDIR=$PKG install
+   make COPTS="-DHAVE_DNSSEC" PREFIX=/usr BINDIR=/usr/bin DESTDIR=$PKG install
 
    install -d $PKG/{var/lib/dhcp,etc,usr/share/dnsmasq}
    install -m 644 dnsmasq.conf.example $PKG/etc/dnsmasq.conf
