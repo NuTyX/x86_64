@@ -1,14 +1,13 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/lspci
+-rwxr-xr-x	root/root	usr/bin/pcilmr
+-rwxr-xr-x	root/root	usr/bin/setpci
+-rwxr-xr-x	root/root	usr/bin/update-pciids
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libpci.so -> libpci.so.3
 lrwxrwxrwx	root/root	usr/lib/libpci.so.3 -> libpci.so.3.14.0
 -rwxr-xr-x	root/root	usr/lib/libpci.so.3.14.0
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/pcilmr
--rwxr-xr-x	root/root	usr/sbin/setpci
--rwxr-xr-x	root/root	usr/sbin/update-pciids
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/misc/
 -rw-r--r--	root/root	usr/share/misc/pci.ids

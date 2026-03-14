@@ -8,6 +8,7 @@ makedepends=(kmod)
 
 name=pciutils
 version=3.14.0
+release=2
 
 source=(  https://www.kernel.org/pub/software/utils/pciutils/$name-$version.tar.xz)
 
@@ -18,6 +19,7 @@ cd $name-$version
 make OPT="$CFLAGS -fPIC -DPIC" \
 ZLIB=no \
 PREFIX=/usr \
+SBINDIR=/usr/bin \
 SHAREDIR=/usr/share/misc \
 MANDIR=/usr/share/man \
 SHARED=yes all
@@ -25,6 +27,7 @@ SHARED=yes all
 mkdir -p $PKG/usr/share/man
 mkdir -p $PKG/usr/lib
 make PREFIX=$PKG/usr \
+SBINDIR=$PKG/usr/bin \
 SHAREDIR=$PKG/usr/share/misc \
 MANDIR=$PKG/usr/share/man \
 SHARED=yes ZLIB=no \
