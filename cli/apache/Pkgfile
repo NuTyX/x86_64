@@ -3,15 +3,15 @@ url="https://httpd.apache.org/ABOUT_APACHE.html"
 
 license="APACHE"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(sed grep pcre2 apr-util sqlite expat libxcrypt)
 run=(shadow)
 
 name=apache
 version=2.4.66
-release=2
+release=3
 
 scriptsversion=20250201
 
@@ -47,6 +47,7 @@ unset MAKEFLAGS
 patch -Np1 -i ../layout.patch
 sed '/dir.*CFG_PREFIX/s@^@#@' -i support/apxs.in
 ./configure --enable-authnz-fcgi                            \
+            --sbindir=/usr/bin                              \
             --enable-layout=BLFS                            \
             --enable-mods-shared="all cgi"                  \
             --enable-mpms-shared=all                        \
@@ -62,7 +63,7 @@ sed '/dir.*CFG_PREFIX/s@^@#@' -i support/apxs.in
 make
 make DESTDIR=$PKG install
 
-mv -v $PKG/usr/sbin/suexec $PKG/usr/lib/httpd/suexec
+mv -v $PKG/usr/bin/suexec $PKG/usr/lib/httpd/suexec
 chgrp http $PKG/usr/lib/httpd/suexec
 chmod 4754 $PKG/usr/lib/httpd/suexec
 
