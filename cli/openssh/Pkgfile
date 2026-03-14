@@ -1,8 +1,8 @@
 description="Free version of the SSH connectivity tools"
 url="https://www.openssh.org/"
 
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 license="BSD"
 
@@ -11,7 +11,7 @@ run=(shadow)
 
 name=openssh
 version=10.2p1
-release=3
+release=4
 
 scriptsversion=20250201
 
@@ -75,8 +75,8 @@ service() {
 cd $PKG
 bsdtar -r -f \
 $PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/ssh/sshd_config.default var usr/sbin \
+etc/ssh/sshd_config.default var usr/bin \
 usr/lib/systemd
-rm -r etc/ssh/sshd_config.default var usr/sbin \
+rm -r etc/ssh/sshd_config.default var usr/bin \
 usr/lib/systemd
 }
