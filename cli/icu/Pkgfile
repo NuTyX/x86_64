@@ -11,7 +11,7 @@ makedepends=(llvm doxygen)
 
 name=icu
 version=78.2
-release=1
+release=2
 
 PKGMK_GROUPS=(lib devel man)
 PKGMK_IGNORE_UNPACK="yes"
@@ -30,7 +30,9 @@ mv $name $name-77.1
 build () {
 cd $name-$version/source
 
-./configure --prefix=/usr
+./configure --prefix=/usr \
+--sbindir=/usr/bin
+
 make
 make prefix=$PKG/usr install
 
@@ -39,6 +41,7 @@ cd ../..
 cd $name-77.1/source
 
 ./configure --prefix=/usr/local
+
 make
 make prefix=$PKG/usr/local install
 
