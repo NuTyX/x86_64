@@ -8,25 +8,22 @@ makedepends=(autoconf)
  
 name=bridge-utils
 version=1.7.1
-release=2
+release=3
 
 runyx_version=20201011
 
-source=(http://downloads.tuxfamily.org/nutyx/files/runyx-${runyx_version}.tar.xz
-	https://mirrors.edge.kernel.org/pub/linux/utils/net/$name/$name-$version.tar.xz)
+source=(https://mirrors.edge.kernel.org/pub/linux/utils/net/$name/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
 
 autoconf
 
-./configure --prefix=/usr
+./configure --prefix=/usr \
+            --sbindir=/usr/bin
 
 make
 
 make DESTDIR=$PKG install
 
-# service
-cd ../runyx-${runyx_version}
-make DESTDIR=$PKG -C services/sysv install-service-bridge
 }
