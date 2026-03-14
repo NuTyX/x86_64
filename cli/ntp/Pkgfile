@@ -1,15 +1,15 @@
 description="Client and server to keep the time synchronized between various computers over a network."
 url="https://www.ntp.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Minzords,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Minzords,Tnut"
 
 makedepends=(autoconf m4 libtool libcap perl-io-socket-ssl perl-net-ssleay)
 run=(wget shadow)
 
 name=ntp
 version=4.2.8p18
-release=2
+release=3
 
 scriptsversion=20250201
 
@@ -41,7 +41,7 @@ sed -e 's/#ifndef __sun/#if !defined(__sun) \&\& !defined(__GLIBC__)/' \
     -i libntp/work_thread.c
 
 ./configure --prefix=/usr \
---bindir=/usr/sbin \
+--sbindir=/usr/bin \
 --sysconfdir=/etc \
 --mandir=/usr/share/man \
 --infodir=/usr/share/info \
