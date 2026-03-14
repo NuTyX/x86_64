@@ -4,12 +4,12 @@ url="https://roy.marples.name/projects/dhcpcd"
 license="BSD-2-Clause"
 
 maintainer="Roy Marples"
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=dhcpcd
 version=10.3.0
-release=3
+release=4
 
 makedepends=(shadow)
 
@@ -29,6 +29,7 @@ cd $name-$version
 sed -i "s@mkdir@/bin/mkdir@" hooks/*
 
 ./configure --prefix=/usr   \
+--sbindir=/usr/bin          \
 --sysconfdir=/etc           \
 --libexecdir=/usr/lib/$name \
 --dbdir=/var/lib/$name      \
