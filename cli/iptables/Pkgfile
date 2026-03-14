@@ -3,12 +3,12 @@ url="https://www.iptables.org/"
 
 license="GPL2"
 
-packager="tnut tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=iptables
 version=1.8.11
-release=3
+release=4
 
 makedepends=(libmnl libnftnl)
 
@@ -23,6 +23,7 @@ build() {
 cd $name-$version
 
 ./configure --prefix=/usr \
+--sbindir=/usr/bin        \
 --enable-libipq
 
 make
@@ -40,7 +41,7 @@ rm $PKG/usr/lib/libxtables.la
 
 package() {
 for f in {arp,eb,ip,ip6}tables{,-restore,-save} iptables-xml; do
-  ln -sf xtables-nft-multi $PKG/usr/sbin/$f
+  ln -sf xtables-nft-multi $PKG/usr/bin/$f
 done
 }
 service() {

@@ -2,7 +2,48 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/default/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/iptables-xml -> /usr/sbin/xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/arptables -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/arptables-nft -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/arptables-nft-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/arptables-nft-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/arptables-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/arptables-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/arptables-translate -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables-nft -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables-nft-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables-nft-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ebtables-translate -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-apply -> iptables-apply
+lrwxrwxrwx	root/root	usr/bin/ip6tables-legacy -> xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-legacy-restore -> xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-legacy-save -> xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-nft -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-nft-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-nft-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-restore-translate -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/ip6tables-translate -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables -> xtables-nft-multi
+-rwxr-xr-x	root/root	usr/bin/iptables-apply
+lrwxrwxrwx	root/root	usr/bin/iptables-legacy -> xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-legacy-restore -> xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-legacy-save -> xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-nft -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-nft-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-nft-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-restore -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-restore-translate -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-save -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-translate -> xtables-nft-multi
+lrwxrwxrwx	root/root	usr/bin/iptables-xml -> xtables-nft-multi
+-rwxr-xr-x	root/root	usr/bin/xtables-legacy-multi
+lrwxrwxrwx	root/root	usr/bin/xtables-monitor -> xtables-nft-multi
+-rwxr-xr-x	root/root	usr/bin/xtables-nft-multi
 drwxr-xr-x	root/root	usr/etc/
 -rw-r--r--	root/root	usr/etc/ethertypes
 drwxr-xr-x	root/root	usr/lib/
@@ -144,49 +185,6 @@ lrwxrwxrwx	root/root	usr/lib/xtables/libxt_state.so -> libxt_conntrack.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_tos.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_u32.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_udp.so
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/arptables -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/arptables-nft -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/arptables-nft-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/arptables-nft-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/arptables-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/arptables-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/arptables-translate -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables-nft -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables-nft-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables-nft-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ebtables-translate -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-apply -> iptables-apply
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-legacy -> xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-legacy-restore -> xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-legacy-save -> xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-nft -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-nft-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-nft-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-restore-translate -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/ip6tables-translate -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables -> xtables-nft-multi
--rwxr-xr-x	root/root	usr/sbin/iptables-apply
-lrwxrwxrwx	root/root	usr/sbin/iptables-legacy -> xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-legacy-restore -> xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-legacy-save -> xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-nft -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-nft-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-nft-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-restore -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-restore-translate -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-save -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-translate -> xtables-nft-multi
-lrwxrwxrwx	root/root	usr/sbin/iptables-xml -> xtables-nft-multi
--rwxr-xr-x	root/root	usr/sbin/xtables-legacy-multi
-lrwxrwxrwx	root/root	usr/sbin/xtables-monitor -> xtables-nft-multi
--rwxr-xr-x	root/root	usr/sbin/xtables-nft-multi
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/xtables/
 -rw-r--r--	root/root	usr/share/xtables/iptables.xslt
