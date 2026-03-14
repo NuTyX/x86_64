@@ -44,6 +44,7 @@ lrwxrwxrwx	root/root	usr/bin/mariadb-config -> mariadb_config
 -rwxr-xr-x	root/root	usr/bin/mariadb-upgrade
 -rwxr-xr-x	root/root	usr/bin/mariadb-waitpid
 -rwxr-xr-x	root/root	usr/bin/mariadb_config
+-rwxr-xr-x	root/root	usr/bin/mariadbd
 -rwxr-xr-x	root/root	usr/bin/mariadbd-multi
 -rwxr-xr-x	root/root	usr/bin/mariadbd-safe
 -rwxr-xr-x	root/root	usr/bin/mariadbd-safe-helper
@@ -75,6 +76,7 @@ lrwxrwxrwx	root/root	usr/bin/mysqlaccess -> mariadb-access
 lrwxrwxrwx	root/root	usr/bin/mysqladmin -> mariadb-admin
 lrwxrwxrwx	root/root	usr/bin/mysqlbinlog -> mariadb-binlog
 lrwxrwxrwx	root/root	usr/bin/mysqlcheck -> mariadb-check
+lrwxrwxrwx	root/root	usr/bin/mysqld -> mariadbd
 lrwxrwxrwx	root/root	usr/bin/mysqld_multi -> mariadbd-multi
 lrwxrwxrwx	root/root	usr/bin/mysqld_safe -> mariadbd-safe
 lrwxrwxrwx	root/root	usr/bin/mysqld_safe_helper -> mariadbd-safe-helper
@@ -99,9 +101,6 @@ lrwxrwxrwx	root/root	usr/bin/mysqltest_embedded -> mariadb-test-embedded
 -rwxr-xr-x	root/root	usr/bin/wsrep_sst_mysqldump
 -rwxr-xr-x	root/root	usr/bin/wsrep_sst_rsync
 lrwxrwxrwx	root/root	usr/bin/wsrep_sst_rsync_wan -> wsrep_sst_rsync
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/mariadbd
-lrwxrwxrwx	root/root	usr/sbin/mysqld -> mariadbd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/mysql.m4

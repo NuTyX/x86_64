@@ -12,6 +12,7 @@ run=(shadow mariadb.lib)
 
 name=mariadb
 version=12.2.2
+release=2
 
 scriptsversion=20250201
 
@@ -44,7 +45,7 @@ cmake -DCMAKE_BUILD_TYPE=Release                        \
       -DINSTALL_MYSQLSHAREDIR=share/mysql               \
       -DINSTALL_MYSQLTESTDIR=share/mysql/test           \
       -DINSTALL_PLUGINDIR=lib/mysql/plugin              \
-      -DINSTALL_SBINDIR=sbin                            \
+      -DINSTALL_SBINDIR=bin                            \
       -DINSTALL_SCRIPTDIR=bin                           \
       -DINSTALL_SQLBENCHDIR=share/mysql/bench           \
       -DINSTALL_SUPPORTFILESDIR=share/mysql             \
