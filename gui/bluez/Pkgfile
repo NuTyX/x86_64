@@ -3,15 +3,15 @@ url="https://www.bluez.org/"
 
 license="GPL2.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(readline dbus libical libvorbis alsa-lib
              libusb-compat libsndfile cups glib)
 
 name=bluez
 version=5.85
-release=3
+release=4
 
 PKGMK_GROUPS=(man devel doc)
 
@@ -22,6 +22,7 @@ build() {
 cd $name-$version
 
 ./configure --prefix=/usr \
+    --sbindir=/usr/bin \
     --sysconfdir=/etc \
     --localstatedir=/var \
     --enable-gstreamer \
@@ -41,9 +42,9 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 
-install -v -dm755 $PKG/{etc/bluetooth,usr/sbin}
+install -v -dm755 $PKG/{etc/bluetooth,usr/bin}
 install -v -m644 src/main.conf $PKG/etc/bluetooth/main.conf
-ln -svf ../libexec/bluetooth/bluetoothd $PKG/usr/sbin
+ln -svf ../libexec/bluetooth/bluetoothd $PKG/usr/bin
 
 
 cat > $PKG/etc/bluetooth/rfcomm.conf << "EOF"

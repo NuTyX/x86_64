@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bluemoon
 -rwxr-xr-x	root/root	usr/bin/bluetoothctl
+lrwxrwxrwx	root/root	usr/bin/bluetoothd -> ../libexec/bluetooth/bluetoothd
 -rwxr-xr-x	root/root	usr/bin/btattach
 -rwxr-xr-x	root/root	usr/bin/btmon
 -rwxr-xr-x	root/root	usr/bin/hex2hcd
@@ -39,8 +40,6 @@ drwxr-xr-x	root/root	usr/libexec/
 drwxr-xr-x	root/root	usr/libexec/bluetooth/
 -rwxr-xr-x	root/root	usr/libexec/bluetooth/bluetoothd
 -rwxr-xr-x	root/root	usr/libexec/bluetooth/obexd
-drwxr-xr-x	root/root	usr/sbin/
-lrwxrwxrwx	root/root	usr/sbin/bluetoothd -> ../libexec/bluetooth/bluetoothd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
