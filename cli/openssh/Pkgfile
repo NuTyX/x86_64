@@ -11,7 +11,7 @@ run=(shadow)
 
 name=openssh
 version=10.2p1
-release=5
+release=3
 
 scriptsversion=20250201
 
@@ -35,7 +35,6 @@ install -v -m700 -d $PKG/var/lib/sshd
 chown -v root:sys $PKG/var/lib/sshd
 
 ./configure --prefix=/usr \
---sbindir=/usr/bin    \
 --sysconfdir=/etc/ssh \
 --datadir=/usr/share/sshd \
 --with-md5-passwords \
@@ -76,8 +75,8 @@ service() {
 cd $PKG
 bsdtar -r -f \
 $PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
-etc/ssh/sshd_config.default var usr/bin \
+etc/ssh/sshd_config.default var usr/sbin \
 usr/lib/systemd
-rm -r etc/ssh/sshd_config.default var usr/bin \
+rm -r etc/ssh/sshd_config.default var usr/sbin \
 usr/lib/systemd
 }
