@@ -3,8 +3,8 @@ url="https://rpcbind.sourceforge.net/"
 
 license="BSD-3 Clause"
 
-contributors="Alienus,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(libtirpc systemd)
 
@@ -12,7 +12,7 @@ PKGMK_GROUPS=(man)
 
 name=rpcbind
 version=1.2.8
-release=2
+release=3
 
 scriptsversion=20250201
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
@@ -29,7 +29,7 @@ build() {
 
     ./configure --prefix=/usr       \
                 --with-rpcuser=root \
-                --bindir=/usr/sbin  \
+                --sbindir=/usr/bin  \
                 --enable-warmstarts
     make
     make DESTDIR=$PKG install
