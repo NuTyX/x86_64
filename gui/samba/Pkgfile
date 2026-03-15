@@ -12,7 +12,7 @@ makedepends=(acl pam perl-yapp jansson rustc rpcsvc-proto libtirpc
 run=(samba.lib)
 
 name=samba
-version=4.23.5
+version=4.23.6
 
 scriptsversion=20250201
 
@@ -34,6 +34,7 @@ CFLAGS+=" -I/usr/include/tirpc"         \
 LDFLAGS+=" -ltirpc"                     \
 ./configure                             \
     --prefix=/usr                       \
+    --sbindir=/usr/bin                  \
     --sysconfdir=/etc                   \
     --localstatedir=/var                \
     --with-piddir=/run/samba            \
