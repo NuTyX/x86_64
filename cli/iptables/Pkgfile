@@ -3,16 +3,16 @@ url="https://www.iptables.org/"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=iptables
 version=1.8.11
-release=4
+release=5
 
 makedepends=(libmnl libnftnl)
 
-scriptsversion=20250201
+scriptsversion=20260315
 
 PKGMK_GROUPS=(man devel)
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
