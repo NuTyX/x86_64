@@ -9,5 +9,5 @@ fi
 if ! (getent passwd $UN > /dev/null); then
  printf "${INFO}Creating $UN user${NORMAL}\n"
  useradd  -c "OpenLDAP Daemon Owner" -d /var/lib/openldap \
- -g $UN -s /bin/false -u 83 $UN
+ -g $UN -s /usr/bin/false -u 83 $UN
 fi

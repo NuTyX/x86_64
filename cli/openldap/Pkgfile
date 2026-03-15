@@ -10,8 +10,9 @@ makedepends=(autoconf m4 shadow)
 
 name=openldap
 version=2.6.12
+release=2
 
-scripts_version=20250201
+scripts_version=20260315
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scripts_version}.tar.xz
 	    https://www.openldap.org/software/download/OpenLDAP/openldap-release/$name-$version.tgz
@@ -21,7 +22,7 @@ prepare() {
 (getent group  ldap > /dev/null) || groupadd -g 83 ldap
 (getent passwd ldap > /dev/null) || useradd  -c "OpenLDAP Daemon Owner" \
          -d /var/lib/openldap -u 83 \
-         -g ldap -s /bin/false ldap
+         -g ldap -s /usr/bin/false ldap
 
 cd $name-$version
 patch -Np1 -i ../$name-$version-consolidated-1.patch
