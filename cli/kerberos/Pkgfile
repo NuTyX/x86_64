@@ -5,16 +5,16 @@ license="custom"
 
 alias=(krb krb5)
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(perl e2fsprogs bison gawk)
 
 name=kerberos
 version=1.22.2
-release=1
+release=2
 
-scriptsversion=20250201
+scriptsversion=20260315
 
 source=(mitkrb-1.22.2-upstream_fix-1.patch
         https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
