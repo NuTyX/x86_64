@@ -1,0 +1,106 @@
+diff -Naur a/com32/elflink/ldlinux/cli.c b/com32/elflink/ldlinux/cli.c
+--- a/com32/elflink/ldlinux/cli.c	2014-10-06 18:27:44.000000000 +0200
++++ b/com32/elflink/ldlinux/cli.c	2026-03-15 16:06:17.717507427 +0100
+@@ -125,7 +125,7 @@
+ 			 int (*pDraw_Menu) (int, int, int),
+ 			 void (*show_fkey) (int), bool *timedout)
+ {
+-    char cmdline[MAX_CMDLINE_LEN] = { };
++    static char cmdline[MAX_CMDLINE_LEN] = { };
+     int key, len, prev_len, cursor;
+     int redraw = 0;
+     int x, y;
+diff -Naur a/com32/lib/syslinux/debug.c b/com32/lib/syslinux/debug.c
+--- a/com32/lib/syslinux/debug.c	2014-10-06 18:27:44.000000000 +0200
++++ b/com32/lib/syslinux/debug.c	2026-03-15 16:05:45.520181343 +0100
+@@ -1,6 +1,7 @@
+ #include <linux/list.h>
+ #include <string.h>
+ #include <stdbool.h>
++#include <stdio.h>
+ 
+ #ifdef DYNAMIC_DEBUG
+ 
+diff -Naur a/dos/string.h b/dos/string.h
+--- a/dos/string.h	2014-10-06 18:27:44.000000000 +0200
++++ b/dos/string.h	2026-03-15 16:06:39.166724474 +0100
+@@ -5,12 +5,21 @@
+ #ifndef _STRING_H
+ #define _STRING_H
+ 
++#include <stddef.h>
++
+ /* Standard routines */
+ #define memcpy(a,b,c)	__builtin_memcpy(a,b,c)
+ #define memmove(a,b,c)	__builtin_memmove(a,b,c)
+ #define memset(a,b,c)	__builtin_memset(a,b,c)
+ #define strcpy(a,b)	__builtin_strcpy(a,b)
+-#define strlen(a)	__builtin_strlen(a)
++
++static inline size_t strlen(const char *s)
++{
++    const char *ss = s;
++    while (*ss)
++	ss++;
++    return ss - s;
++}
+ 
+ /* This only returns true or false */
+ static inline int memcmp(const void *__m1, const void *__m2, unsigned int __n)
+diff -Naur a/extlinux/main.c b/extlinux/main.c
+--- a/extlinux/main.c	2014-10-06 18:27:44.000000000 +0200
++++ b/extlinux/main.c	2026-03-15 16:06:27.287604280 +0100
+@@ -38,6 +38,7 @@
+ #include <sysexits.h>
+ #include <sys/ioctl.h>
+ #include <sys/stat.h>
++#include <sys/sysmacros.h>
+ #include <sys/types.h>
+ #include <sys/mount.h>
+ #include <sys/vfs.h>
+diff -Naur a/mk/efi.mk b/mk/efi.mk
+--- a/mk/efi.mk	2014-10-06 18:27:44.000000000 +0200
++++ b/mk/efi.mk	2026-03-15 16:06:39.167724484 +0100
+@@ -25,6 +25,7 @@
+ 
+ CFLAGS = -I$(EFIINC) -I$(EFIINC)/$(EFI_SUBARCH) \
+ 		-DEFI_FUNCTION_WRAPPER -fPIC -fshort-wchar -ffreestanding \
++		-fcommon \
+ 		-Wall -I$(com32)/include -I$(com32)/include/sys \
+ 		-I$(core)/include -I$(core)/ $(ARCHOPT) \
+ 		-I$(com32)/lib/ -I$(com32)/libutil/include -std=gnu99 \
+diff -Naur a/mk/elf.mk b/mk/elf.mk
+--- a/mk/elf.mk	2014-10-06 18:27:44.000000000 +0200
++++ b/mk/elf.mk	2026-03-15 16:06:39.169724504 +0100
+@@ -55,6 +55,7 @@
+ endif
+ 
+ CFLAGS     = $(GCCOPT) $(GCCWARN) -W -Wall \
++	     -fcommon \
+ 	     -fomit-frame-pointer -D__COM32__ -D__FIRMWARE_$(FIRMWARE)__ -DDYNAMIC_MODULE \
+ 	     -nostdinc -iwithprefix include \
+ 	     -I$(com32)/libutil/include -I$(com32)/include \
+diff -Naur a/mk/embedded.mk b/mk/embedded.mk
+--- a/mk/embedded.mk	2014-10-06 18:27:44.000000000 +0200
++++ b/mk/embedded.mk	2026-03-15 16:06:39.169724504 +0100
+@@ -58,7 +58,7 @@
+ LD        += -m elf_$(ARCH)
+ 
+ # Note: use += for CFLAGS and SFLAGS in case something is set in MCONFIG.local
+-CFLAGS    += $(GCCOPT) -g $(GCCWARN) -Wno-sign-compare $(OPTFLAGS) $(INCLUDES)
++CFLAGS    += $(GCCOPT) -g $(GCCWARN) -Wno-sign-compare -fcommon $(OPTFLAGS) $(INCLUDES)
+ SFLAGS    += $(CFLAGS) -D__ASSEMBLY__
+ 
+ .SUFFIXES: .c .o .S .s .i .elf .com .bin .asm .lst .c32 .lss
+diff -Naur a/mk/lib.mk b/mk/lib.mk
+--- a/mk/lib.mk	2014-10-06 18:27:44.000000000 +0200
++++ b/mk/lib.mk	2026-03-15 16:09:45.873608721 +0100
+@@ -52,7 +52,7 @@
+ 	    -falign-labels=0 -ffast-math -fomit-frame-pointer
+ WARNFLAGS = $(GCCWARN) -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Winline
+ 
+-CFLAGS  = $(OPTFLAGS) $(REQFLAGS) $(WARNFLAGS) $(LIBFLAGS)
++CFLAGS  = $(OPTFLAGS) $(REQFLAGS) -fcommon $(WARNFLAGS) $(LIBFLAGS)
+ 
+ ifndef EFI_BUILD
+ CFLAGS += -mregparm=3 -DREGPARM=3
