@@ -3,8 +3,25 @@ drwxr-xr-x	root/root	etc/default/
 -rw-r--r--	root/root	etc/default/nfs-utils
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/exportfs
+-rwxr-xr-x	root/root	usr/bin/fsidd
 -rwsr-xr-x	root/root	usr/bin/mount.nfs
 lrwxrwxrwx	root/root	usr/bin/mount.nfs4 -> mount.nfs
+-rwxr-xr-x	root/root	usr/bin/mountstats
+-rwxr-xr-x	root/root	usr/bin/nfsconf
+-rwxr-xr-x	root/root	usr/bin/nfsdclnts
+-rwxr-xr-x	root/root	usr/bin/nfsdctl
+-rwxr-xr-x	root/root	usr/bin/nfsiostat
+-rwxr-xr-x	root/root	usr/bin/nfsref
+-rwxr-xr-x	root/root	usr/bin/nfsstat
+-rwxr-xr-x	root/root	usr/bin/rpc.mountd
+-rwxr-xr-x	root/root	usr/bin/rpc.nfsd
+-rwxr-xr-x	root/root	usr/bin/rpc.statd
+-rwxr-xr-x	root/root	usr/bin/rpcctl
+-rwxr-xr-x	root/root	usr/bin/rpcdebug
+-rwxr-xr-x	root/root	usr/bin/showmount
+-rwxr-xr-x	root/root	usr/bin/sm-notify
+-rwxr-xr-x	root/root	usr/bin/start-statd
 lrwxrwxrwx	root/root	usr/bin/umount.nfs -> mount.nfs
 lrwxrwxrwx	root/root	usr/bin/umount.nfs4 -> mount.nfs
 drwxr-xr-x	root/root	usr/lib/
@@ -30,24 +47,6 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/99-nfs.rules
 drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/nfsrahead
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/exportfs
--rwxr-xr-x	root/root	usr/sbin/fsidd
--rwxr-xr-x	root/root	usr/sbin/mountstats
--rwxr-xr-x	root/root	usr/sbin/nfsconf
--rwxr-xr-x	root/root	usr/sbin/nfsdclnts
--rwxr-xr-x	root/root	usr/sbin/nfsdctl
--rwxr-xr-x	root/root	usr/sbin/nfsiostat
--rwxr-xr-x	root/root	usr/sbin/nfsref
--rwxr-xr-x	root/root	usr/sbin/nfsstat
--rwxr-xr-x	root/root	usr/sbin/rpc.mountd
--rwxr-xr-x	root/root	usr/sbin/rpc.nfsd
--rwxr-xr-x	root/root	usr/sbin/rpc.statd
--rwxr-xr-x	root/root	usr/sbin/rpcctl
--rwxr-xr-x	root/root	usr/sbin/rpcdebug
--rwxr-xr-x	root/root	usr/sbin/showmount
--rwxr-xr-x	root/root	usr/sbin/sm-notify
--rwxr-xr-x	root/root	usr/sbin/start-statd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
