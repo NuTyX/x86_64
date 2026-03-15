@@ -7,7 +7,8 @@ contributors="Pierre,Tnut,Fabienwang"
 makedepends=(libxml2 cups)
 
 name=foomatic-db-engine
-version=20241110
+version=20260314
+release=2
 _version=4.0
 
 PKGMK_KEEP_SOURCES="no"
@@ -16,7 +17,9 @@ source=(https://www.openprinting.org/download/foomatic/$name-${_version}-$versio
 
 build() {
     cd $name-*
-    ./configure --prefix=/usr
+    ./configure --prefix=/usr \
+    --sbindir=/usr/bin
+
     make
     make DESTDIR=$PKG install
 }
