@@ -8,18 +8,17 @@ contributors="Spiky"
 
 name=ufw
 version=0.36.2
-release=8
+release=9
 
 makedepends=(python-setuptools)
 run=(iptables python)
 
-source=(service
+source=(service 01-move-from-lib-to-usr-lib.patch
         ${url}/${version%.*}/${version}/+download/${name}-${version}.tar.gz)
 
 prepare() {
   cd $name-$version
-  # we put all the files in usr now when possible
-  sed -i -e 's|/lib|/usr/lib|' setup.py
+  patch -Np1 -i ../01-move-from-lib-to-usr-lib.patch
 
   # don't force-enable tcp selective acks
   sed -i -e '/net\/ipv4\/tcp_sack/s/^/#/g' conf/sysctl.conf
