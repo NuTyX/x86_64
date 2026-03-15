@@ -1,12 +1,12 @@
 description="The initd-tools package contains programs to install and remove LSB based bootscripts." 
 url="https://people.freedesktop.org/~dbn/initd-tools/"
 
-contributors="Berlius, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 name=initd-tools
 version=0.1.3	
-release=3
+release=4
 
 source=(https://people.freedesktop.org/~dbn/initd-tools/releases/$name-$version.tar.gz)
  
@@ -14,7 +14,7 @@ build() {
 
 	cd $name-$version
 	./configure --prefix=/ --mandir=/usr/share/man \
-          --sbindir=/usr/sbin
+          --sbindir=/usr/bin
 	make
 	make DESTDIR=$PKG install	
 }
