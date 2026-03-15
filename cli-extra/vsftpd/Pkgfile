@@ -1,23 +1,23 @@
 description='Contains a very secure and very small FTP daemon.'
 url="https://security.appspot.com/vsftpd.html"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(libnsl libcap)
 run=(pam shadow)
 
 name=vsftpd
 version=3.0.5
-release=4
+release=5
 
-scripts_version=20250201
+scripts_version=20260315
 
 source=(https://downloads.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.tar.xz
         https://security.appspot.com/downloads/$name-$version.tar.gz)
 
 prepare() {
 
-mkdir -p $PKG/{etc/pam.d,home,usr/{sbin,share/{vsftpd,man/man{5,8}}}}
+mkdir -p $PKG/{etc/pam.d,home,usr/{bin,share/{vsftpd,man/man{5,8}}}}
 install -v -d -m 0755 $PKG/usr/share/vsftpd/empty
 install -v -d -m 0755 $PKG/home/ftp
 
@@ -55,7 +55,7 @@ package() {
 
  cd $name-$version
 
- install -v -m 755 vsftpd        $PKG/usr/sbin/vsftpd
+ install -v -m 755 vsftpd        $PKG/usr/bin/vsftpd
  install -v -m 644 vsftpd.8      $PKG/usr/share/man/man8
  install -v -m 644 vsftpd.conf.5 $PKG/usr/share/man/man5
  install -v -m 644 vsftpd.conf   $PKG/etc/vsftpd.conf.example
