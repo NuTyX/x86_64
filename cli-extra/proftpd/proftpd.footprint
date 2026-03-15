@@ -9,8 +9,12 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ftpdctl
 -rwxr-xr-x	root/root	usr/bin/ftpmail
 -rwxr-xr-x	root/root	usr/bin/ftpquota
+-rwxr-xr-x	root/root	usr/bin/ftpscrub
+-rwxr-xr-x	root/root	usr/bin/ftpshut
 -rwxr-xr-x	root/root	usr/bin/ftptop
 -rwxr-xr-x	root/root	usr/bin/ftpwho
+lrwxrwxrwx	root/root	usr/bin/in.proftpd -> ./proftpd
+-rwxr-xr-x	root/root	usr/bin/proftpd
 lrwxrwxrwx	root/root	usr/bin/proftpdshell -> /bin/false
 -rwxr-xr-x	root/root	usr/bin/prxs
 drwxr-xr-x	root/root	usr/lib/
@@ -20,11 +24,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/proftpd.service
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/ftpscrub
--rwxr-xr-x	root/root	usr/sbin/ftpshut
-lrwxrwxrwx	root/root	usr/sbin/in.proftpd -> ./proftpd
--rwxr-xr-x	root/root	usr/sbin/proftpd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/run/
