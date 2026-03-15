@@ -17,10 +17,10 @@ fi
 if ! (getent passwd $SN1 > /dev/null); then
 	printf "${INFO}Creating $SN1 user${NORMAL}\n"
 	useradd -c "vsftpd User" -d /dev/null -g $SN1 \
-        -s /bin/false -u $IDN1 $SN1
+        -s /usr/bin/false -u $IDN1 $SN1
 fi
 if ! (getent passwd $SN2 > /dev/null); then
 	printf "${INFO}Creating $SN2 user${NORMAL}\n"
 	useradd -c "anonymous_user" -d /home/ftp -g $SN2 \
-        -s /bin/false -u $IDN2 $SN2
+        -s /usr/bin/false -u $IDN2 $SN2
 fi
