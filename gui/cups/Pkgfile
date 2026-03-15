@@ -1,8 +1,8 @@
 description="The Common Unix Printing System (CUPS) is a print spooler and associated utilities"
 url="https://www.cups.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(pam libusb avahi python gnutls
              libxcrypt)
@@ -15,7 +15,7 @@ PKGMK_GROUPS=(devel man lib)
 
 name=cups
 version=2.4.16
-release=2
+release=3
 
 source=(https://github.com/OpenPrinting/cups/releases/download/v${version}/$name-$version-source.tar.gz
         99-printer.rules)
@@ -43,8 +43,9 @@ build() {
 
 	CC=gcc CXX=g++ \
 	./configure --libdir=/usr/lib        \
-                    --with-rundir=/run/cups    \
-		--with-rcdir=/tmp/cupsinit \
+                    --sbindir=/usr/bin       \
+                    --with-rundir=/run/cups  \
+       		--with-rcdir=/tmp/cupsinit \
 		--with-system-groups=lpadmin \
 		--with-docdir=/usr/share/cups/doc \
 		--disable-libusb

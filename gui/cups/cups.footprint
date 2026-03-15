@@ -23,11 +23,22 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cancel
 -rwxr-xr-x	root/root	usr/bin/cups-config
+-rwxr-xr-x	root/root	usr/bin/cupsaccept
+-rwxr-xr-x	root/root	usr/bin/cupsctl
+-rwx------	root/root	usr/bin/cupsd
+lrwxrwxrwx	root/root	usr/bin/cupsdisable -> cupsaccept
+lrwxrwxrwx	root/root	usr/bin/cupsenable -> cupsaccept
+-rwxr-xr-x	root/root	usr/bin/cupsfilter
+lrwxrwxrwx	root/root	usr/bin/cupsreject -> cupsaccept
 -rwxr-xr-x	root/root	usr/bin/cupstestppd
 -rwxr-xr-x	root/root	usr/bin/ippeveprinter
 -rwxr-xr-x	root/root	usr/bin/ippfind
 -rwxr-xr-x	root/root	usr/bin/ipptool
 -rwxr-xr-x	root/root	usr/bin/lp
+-rwxr-xr-x	root/root	usr/bin/lpadmin
+-rwxr-xr-x	root/root	usr/bin/lpc
+-rwxr-xr-x	root/root	usr/bin/lpinfo
+-rwxr-xr-x	root/root	usr/bin/lpmove
 -rwxr-xr-x	root/root	usr/bin/lpoptions
 -rwxr-xr-x	root/root	usr/bin/lpq
 -rwxr-xr-x	root/root	usr/bin/lpr
@@ -88,18 +99,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -r--r--r--	root/root	usr/lib/systemd/system/cups.service
 -r--r--r--	root/root	usr/lib/systemd/system/cups.socket
 -r--r--r--	root/root	usr/lib/systemd/system/system-cups.slice
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/cupsaccept
--rwxr-xr-x	root/root	usr/sbin/cupsctl
--rwx------	root/root	usr/sbin/cupsd
-lrwxrwxrwx	root/root	usr/sbin/cupsdisable -> cupsaccept
-lrwxrwxrwx	root/root	usr/sbin/cupsenable -> cupsaccept
--rwxr-xr-x	root/root	usr/sbin/cupsfilter
-lrwxrwxrwx	root/root	usr/sbin/cupsreject -> cupsaccept
--rwxr-xr-x	root/root	usr/sbin/lpadmin
--rwxr-xr-x	root/root	usr/sbin/lpc
--rwxr-xr-x	root/root	usr/sbin/lpinfo
--rwxr-xr-x	root/root	usr/sbin/lpmove
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -r--r--r--	root/root	usr/share/applications/cups.desktop
