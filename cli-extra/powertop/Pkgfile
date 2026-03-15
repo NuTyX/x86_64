@@ -1,15 +1,15 @@
 description="an intel provided tool that enhances powersaving"
 url="https://bellard.org/tcc/tcc-doc.html#Invoke"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Cbarth,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Cbarth,Tnut"
 
 makedepends=(libnl ncurses pciutils gettext libtool autoconf automake autoconf-archive patch)
 
 name=powertop
 
 version=2.15
-release=2
+release=3
 
 source=(https://github.com/fenrus75/$name/archive/refs/tags/v${version}.tar.gz)
 
@@ -19,6 +19,7 @@ build() {
 
         ./autogen.sh
 	./configure --prefix=/usr \
+                --sbindir=/usr/bin \
 		--disable-static
 	make
 	make DESTDIR=$PKG install
