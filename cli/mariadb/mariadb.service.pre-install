@@ -7,5 +7,5 @@ fi
 if ! (getent passwd mysql > /dev/null); then
 	printf "${INFO}Creating mysql user${NORMAL}\n"
 	useradd  -c 'MySQL Server' -d /srv/mysql \
-	-g mysql -s /bin/false -u 40 mysql
+	-g mysql -s /usr/bin/false -u 40 mysql
 fi
