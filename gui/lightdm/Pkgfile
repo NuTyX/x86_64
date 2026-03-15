@@ -8,9 +8,9 @@ set=(lightdm)
 
 name=lightdm
 version=1.32.0
-release=6
+release=7
 
-scriptsversion=20250201
+scriptsversion=20260315
 PKGMK_GROUPS=(man devel doc)
 
 makedepends=(gtk3 libgcrypt pam pcre2 gobject-introspection xorg-libxklavier vala)
