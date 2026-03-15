@@ -4,23 +4,23 @@ url="https://roy.marples.name/projects/dhcpcd"
 license="BSD-2-Clause"
 
 maintainer="Roy Marples"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=dhcpcd
 version=10.3.0
-release=4
+release=5
 
 makedepends=(shadow)
 
-scriptsversion=20250201
+scriptsversion=20260315
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	    https://github.com/NetworkConfiguration/dhcpcd/releases/download/v${version}/$name-$version.tar.xz)
 
 prepare() {
 groupadd -g 52 $name
 useradd -c 'dhcpcd PrivSep' -d /var/lib/$name \
--g $name -s /bin/false -u 52 $name
+-g $name -s /usr/bin/false -u 52 $name
 }
 build() {
 install -v m700 -d $PKG/var/lib/$name
