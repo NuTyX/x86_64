@@ -9,6 +9,7 @@ makedepends=(python-setuptools
 
 name=nftables
 version=1.1.6
+release=2
 
 source=($url/files/nftables-$version.tar.xz
         nftables.conf)
@@ -17,9 +18,10 @@ source=($url/files/nftables-$version.tar.xz
 build(){
 
 cd $name-$version
-./configure --prefix=/usr \
+./configure --prefix=/usr          \
+	--sbindir=/usr/bin         \
 	--sysconfdir=/etc/nftables \
-	--mandir=/usr/share/man \
+	--mandir=/usr/share/man    \
         --with-json \
         --with-cli=readline
 make
