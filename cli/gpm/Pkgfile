@@ -7,9 +7,9 @@ contributors="Pierre,Tnut"
 makedepends=(autoconf automake m4 libtool sed grep bison)
 name=gpm
 version=1.20.7
-release=15
+release=16
 
-scriptsversion=20250201
+scriptsversion=20260315
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	    gpm-1.20.7-consolidated-1.patch gpm-1.20.7-gcc15_fixes-1.patch
@@ -20,8 +20,7 @@ build() {
 
 	patch -Np1 -i ../gpm-1.20.7-consolidated-1.patch
           patch -Np1 -i ../gpm-1.20.7-gcc15_fixes-1.patch
-          sed -i "s@/sbin/sed@/usr/bin/sed@g" /usr/bin/libtoolize
-          sed -i s@/sbin/grep@/usr/bin/grep@ /usr/bin/libtoolize
+
           sed -i -e 's:<gpm.h>:"headers/gpm.h":' \
           src/prog/{display-buttons,display-coords,get-versions}.c
 	./autogen.sh
