@@ -9,9 +9,9 @@ run=(wget shadow)
 
 name=ntp
 version=4.2.8p18
-release=4
+release=5
 
-scriptsversion=20250201
+scriptsversion=20260315
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	    https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/$name-4.2/$name-$version.tar.gz
@@ -39,7 +39,7 @@ if ! (getent group $UN > /dev/null); then
 fi
 if ! (getent passwd $UN > /dev/null); then
    useradd  -c "Network Time Protocol" -d /var/lib/ntp \
-   -g $UN -s /bin/false -u 87 $UN
+   -g $UN -s /usr/bin/false -u 87 $UN
 fi
 }
 build() {
@@ -53,7 +53,7 @@ cd $name-$version
 --infodir=/usr/share/info \
 --enable-linuxcaps \
 --with-lineeditlibs=readline \
---docdir=/usr/share/doc/$name-$version
+--docdir=/usr/share/doc/$name
 
 make 
 make DESTDIR=$PKG install

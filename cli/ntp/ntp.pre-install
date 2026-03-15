@@ -9,5 +9,5 @@ fi
 if ! (getent passwd $SN > /dev/null); then
 	printf "${INFO}Creating $SN user${NORMAL}\n"
 	useradd  -c "Network Time Protocol" -d /var/lib/ntp \
-	-g $SN -s /bin/false -u $IDN $SN
+	-g $SN -s /usr/bin/false -u $IDN $SN
 fi
