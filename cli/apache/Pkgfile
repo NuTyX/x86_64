@@ -35,7 +35,7 @@ if ! (getent group $UN > /dev/null); then
 fi
 if ! (getent passwd $UN > /dev/null); then
    useradd  -c "http Server" -d /srv/www \
-   -g $UN -s /bin/false -u 25 $UN
+   -g $UN -s /usr/bin/false -u 25 $UN
 fi
 }
 build(){

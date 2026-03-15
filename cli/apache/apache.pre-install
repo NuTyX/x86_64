@@ -1,7 +1,6 @@
 INFO="\033[1;36m"
 NORMAL="\033[0;39m"
 
-[ -f etc/rc.d/init.d/httpd ] && etc/rc.d/init.d/httpd stop
 [ -f etc/httpd/httpd.conf ] && sed \
 -e 's@User apache@User http@'   \
 -e 's@Group apache@Group http@' \
@@ -24,5 +23,5 @@ fi
 if ! (getent passwd $UN > /dev/null); then
 	printf "${INFO}Creating $UN user${NORMAL}\n"
 	useradd  -c "http Server" -d /srv/www \
-	-g $UN -s /bin/false -u 25 $UN
+	-g $UN -s /usr/bin/false -u 25 $UN
 fi
