@@ -11,7 +11,7 @@ makedepends=(libusb-compat libjpeg-turbo libtiff gtk2 libexif cups net-snmp avah
 
 name=sane
 version=1.4.0
-release=3
+release=4
 
 source=(https://gitlab.com/sane-project/backends/-/archive/$version/backends-$version.tar.gz)
 
@@ -25,6 +25,7 @@ build() {
   autoreconf -fiv
 
 	./configure --prefix=/usr \
+                --sbindir=/usr/bin \
 		--localstatedir=/var \
 		--sysconfdir=/etc \
 		--with-docdir=/usr/share/doc/sane-backend-$version \
