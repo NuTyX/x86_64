@@ -3,9 +3,9 @@ drwxr-xr-x	root/root	etc/dbus-1/
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/org.freedesktop.SystemToolsBackends.conf
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/system-tools-backends
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/system-tools-backends
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
@@ -85,9 +85,9 @@ drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl/auto/N
 -rw-r--r--	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl/auto/Net/DBus/.packlist
 -r-xr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl/auto/Net/DBus/DBus.so
 drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/
-drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/5.40/
-drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/5.40/core_perl/
--rw-r--r--	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/5.40/core_perl/perllocal.pod
+drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/5.42/
+drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/5.42/core_perl/
+-rw-r--r--	root/root	usr/share/system-tools-backends-2.0/modules/lib/perl5/5.42/core_perl/perllocal.pod
 drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/share/
 drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/share/man/
 drwxr-xr-x	root/root	usr/share/system-tools-backends-2.0/modules/share/man/man3/
