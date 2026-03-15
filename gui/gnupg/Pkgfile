@@ -11,6 +11,7 @@ run=(pinentry)
 
 name=gnupg
 version=2.4.9
+release=2
 
 source=(https://gnupg.org/ftp/gcrypt/gnupg/gnupg-$version.tar.bz2)
 
@@ -20,10 +21,11 @@ cd gnupg-$version
 sed -e '/noinst_SCRIPTS = gpg-zip/c sbin_SCRIPTS += gpg-zip' \
     -i tools/Makefile.in
 
-./configure --prefix=/usr \
---enable-symcryptrun      \
---enable-maintainer-mode  \
---docdir=/usr/share/doc/gnupg-$version
+./configure --prefix=/usr         \
+	--sbindir=/usr/bin        \
+	--enable-symcryptrun      \
+	--enable-maintainer-mode  \
+	--docdir=/usr/share/doc/gnupg-$version
 make
 
 makeinfo --html --no-split -o doc/gnupg_nochunks.html doc/gnupg.texi
