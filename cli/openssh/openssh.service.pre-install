@@ -7,5 +7,5 @@ fi
 if ! (getent passwd sshd > /dev/null); then
 	printf "${INFO}Creating sshd user${NORMAL}\n"
 	useradd  -c 'sshd PrivSep' -d /var/lib/sshd \
-	-g sshd -s /bin/false -u 50 sshd
+	-g sshd -s /usr/bin/false -u 50 sshd
 fi
