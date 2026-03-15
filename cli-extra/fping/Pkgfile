@@ -10,6 +10,7 @@ set=()
 
 name=fping
 version=5.5
+release=2
 
 source=(https://fping.org/dist/$name-$version.tar.gz)
 
@@ -17,9 +18,10 @@ build() {
 
 cd $name-$version
 
-./configure --prefix=/usr
+./configure --prefix=/usr \
+            --sbindir=/usr/bin
 make
 make DESTDIR=$PKG install
 
-chmod 4755 ${PKG}/usr/sbin/fping
+chmod 4755 ${PKG}/usr/bin/fping
 }
