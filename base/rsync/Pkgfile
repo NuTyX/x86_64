@@ -7,9 +7,9 @@ run=(shadow)
 
 name=rsync
 version=3.4.1
-release=3
+release=4
 
-scriptsversion=20250201
+scriptsversion=20260315
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
         https://www.samba.org/ftp/$name/$name-$version.tar.gz)
@@ -21,7 +21,7 @@ if ! (getent group $UN > /dev/null); then
 fi
 if ! (getent passwd $UN > /dev/null); then
    useradd  -c "rsyncd Daemon" -d /home/rsync \
-   -g $UN -s /bin/false -u 48 $UN
+   -g $UN -s /usr/bin/false -u 48 $UN
 fi
 }
 build() {
