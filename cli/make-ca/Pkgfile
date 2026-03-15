@@ -1,14 +1,14 @@
 description="Utility to deliver and manage a complete PKI configuration"
 url="https://github.com/djlucas/make-ca/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 run=(gawk nss p11-kit)
 
 name=make-ca
 version=1.16.1
-release=1
+release=2
 
 set=(devel)
 
@@ -22,11 +22,11 @@ install -vdm755 $PKG/etc/ssl
 install -m644 certdata.txt $PKG/etc/ssl/certdata.txt
 
 cd $name-$version
-make DESTDIR=$PKG install
+make DESTDIR=$PKG SBINDIR=/usr/bin install
 
 # Generate all the certificates a first time
-$PKG/usr/sbin/make-ca -r -D $PKG
+$PKG/usr/bin/make-ca -r -D $PKG
 
 # And refresh it .. don't ask me
-# $PKG/usr/sbin/make-ca -g -D $PKG
+# $PKG/usr/bin/make-ca -g -D $PKG
 }
