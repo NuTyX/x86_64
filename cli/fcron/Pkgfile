@@ -4,11 +4,11 @@ url="http://fcron.free.fr"
 contributors="Pierre,Greg,Spiky"
 packager="tnut <tnut@nutyx.org>"
 
-makedepends=(vim pam libxcrypt)
+makedepends=(vim pam libxcrypt readline)
 
 name=fcron
 version=3.4.0
-release=2
+release=3
 
 PKGMK_GROUPS=(doc man)
 source=(http://fcron.free.fr/archives/$name-$version.src.tar.gz)
@@ -20,40 +20,45 @@ IDN="22"
 
 groupadd -g $IDN $SN
 useradd -c "Fcron User" -d /dev/null \
-   -u $IDN -g $SN -s /bin/false $SN
+   -u $IDN -g $SN -s /usr/bin/false $SN
 
 unset MAKEFLAGS
-
+cd $name-$version
+find doc -type f -exec sed -i 's:/usr/local::g' {} \;
 }
 
 build() {
+    unset MAKEFLAGS
 
-	cd $name-$version
+    cd $name-$version
 
-	./configure --prefix=/usr \
-                    --sysconfdir=/etc \
-                    --without-sendmail \
-                    --localstatedir=/var \
-	            --with-boot-install=no \
-                    --mandir=/usr/share/man \
-		    --infodir=/usr/share/info \
-                    --with-piddir=/run \
-		    --with-answer-all=no
-	make
-        make DESTDIR=$PKG install
+    ./configure --prefix=/usr \
+    --sysconfdir=/etc  \
+    --sbindir=/usr/bin \
+    --without-sendmail \
+    --localstatedir=/var    \
+    --with-boot-install=no  \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --with-piddir=/run \
+    --with-answer-all=no
 
-mkdir -p $PKG/etc/pam.d
+    make
 
-for i in fcron fcrontab
-do
-install -D -m644 files/fcron.pam $PKG/etc/pam.d/$i
-done
+    make DESTDIR=$PKG install
+
+    mkdir -p $PKG/etc/pam.d
+
+    for i in fcron fcrontab
+    do
+        install -D -m644 files/fcron.pam $PKG/etc/pam.d/$i
+    done
 
 # Add cron.* directories
 
-for j in daily hourly monthly weekly
-do
-install -d -m755 $PKG/etc/cron.$j
-done
+    for j in daily hourly monthly weekly
+    do
+        install -d -m755 $PKG/etc/cron.$j
+    done
 
 }
