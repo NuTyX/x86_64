@@ -1,14 +1,14 @@
 description="exfat filesystem utilities"
 url="http://code.google.com/p/exfat/"
 
-contributors="Guy,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Guy,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(fuse2)
 
 name=fuse-exfat
 version=1.4.0
-release=3
+release=4
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/relan/exfat/archive/refs/tags/v${version}.tar.gz)
@@ -17,7 +17,7 @@ build () {
 
  cd exfat-$version
    autoreconf --install
-   ./configure --prefix=/usr --sbindir=/usr/sbin
+   ./configure --prefix=/usr --sbindir=/usr/bin
    make
    make DESTDIR=$PKG install
 }
