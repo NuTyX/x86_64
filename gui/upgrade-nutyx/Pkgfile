@@ -1,12 +1,12 @@
 description="Notify when upgraded packages will be automatically updated at shutdown"
 url=https://github.com/NuTyX/cards-upgrade-notifier
 
-packager="tnut <tnut@nutyx.org>"
-contributors=""
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=upgrade-nutyx
 version=20250115
-release=2
+release=3
 
 _notifier="cards-upgrade-notifier"
 
@@ -24,8 +24,8 @@ build() {
 cc ${_notifier}.c \
 $(pkg-config --cflags --libs gtk+-3.0) -o ${_notifier}
 
-mkdir -p $PKG/usr/{sbin,bin,share/pixmaps}
-install -m755 $name.in $PKG/usr/sbin/$name
+mkdir -p $PKG/usr/{bin,share/pixmaps}
+install -m755 $name.in $PKG/usr/bin/$name
 install -m755 ${_notifier} $PKG/usr/bin/${_notifier}
 install -m755 ${_notifier}-updates.png \
 $PKG/usr/share/pixmaps/${_notifier}-updates.png
