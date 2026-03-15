@@ -1,22 +1,24 @@
 description="Cyrus saslauthd SASL authentication daemon"
 url="https://cyrusimap.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(db automake libtool libxcrypt)
 
 name=cyrus-sasl
 version=2.1.28
-release=6
+release=7
 
-scriptsversion=20250125
+scriptsversion=20260315
 
-source=(https://github.com/cyrusimap/$name/archive/refs/tags/$name-$version.tar.gz
+source=(cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+        https://github.com/cyrusimap/$name/archive/refs/tags/$name-$version.tar.gz
         https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz)
 
 prepare() {
 cd $name-$name-$version
+patch -Np1 -i ../cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 autoreconf -fiv
 sed '/saslint/a #include <time.h>'       -i lib/saslutil.c
 sed '/plugin_common/a #include <time.h>' -i plugins/cram.c
@@ -24,6 +26,7 @@ sed '/plugin_common/a #include <time.h>' -i plugins/cram.c
 build() {
 	cd $name-$name-$version
 	./configure --prefix=/usr \
+                    --sbindir=/usr/bin \
 		--sysconfdir=/etc \
 		--mandir=/usr/share/man \
 		--enable-auth-sasldb \

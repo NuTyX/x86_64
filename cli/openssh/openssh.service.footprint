@@ -1,12 +1,11 @@
 -rw-r--r--	root/root	etc/ssh/sshd_config.default
+-rwxr-xr-x	root/root	usr/bin/sshd
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/sshd.service
 -rw-r--r--	root/root	usr/lib/systemd/system/sshd.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/sshd@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/sshdgenkeys.service
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/sshd
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwx------	root/sys	var/lib/sshd/
