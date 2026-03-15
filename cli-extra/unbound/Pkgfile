@@ -10,6 +10,7 @@ makedepends=(openssl doxygen)
 
 name=unbound
 version=1.24.2
+release=2
 
 source=(${url}/downloads/$name-$version.tar.gz)
 
@@ -18,9 +19,10 @@ build()
 
   cd $name-$version
 
-  ./configure --prefix=/usr     \
-            --sysconfdir=/etc \
-            --disable-static  \
+  ./configure --prefix=/usr    \
+            --sbindir=/usr/bin \
+            --sysconfdir=/etc  \
+            --disable-static   \
             --with-pidfile=/run/unbound.pid &&
 
   make
@@ -28,8 +30,6 @@ build()
   make doc
 
   make DESTDIR=$PKG install
-  mkdir -p $PKG/usr/bin
-  mv -v $PKG/usr/sbin/unbound-host $PKG/usr/bin/
 
   install -v -m755 -d $PKG/usr/share/doc/$name
   install -v -m644 doc/html/* $PKG/usr/share/doc/$name

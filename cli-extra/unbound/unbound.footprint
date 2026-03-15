@@ -3,17 +3,16 @@ drwxr-xr-x	root/root	etc/unbound/
 -rw-r--r--	root/root	etc/unbound/unbound.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/unbound
+-rwxr-xr-x	root/root	usr/bin/unbound-anchor
+-rwxr-xr-x	root/root	usr/bin/unbound-checkconf
+-rwxr-xr-x	root/root	usr/bin/unbound-control
+-rwxr-xr-x	root/root	usr/bin/unbound-control-setup
 -rwxr-xr-x	root/root	usr/bin/unbound-host
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libunbound.so -> libunbound.so.8.1.34
 lrwxrwxrwx	root/root	usr/lib/libunbound.so.8 -> libunbound.so.8.1.34
 -rwxr-xr-x	root/root	usr/lib/libunbound.so.8.1.34
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/unbound
--rwxr-xr-x	root/root	usr/sbin/unbound-anchor
--rwxr-xr-x	root/root	usr/sbin/unbound-checkconf
--rwxr-xr-x	root/root	usr/sbin/unbound-control
--rwxr-xr-x	root/root	usr/sbin/unbound-control-setup
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/unbound/
