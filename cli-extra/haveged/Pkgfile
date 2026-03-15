@@ -1,13 +1,13 @@
 description="Daemon that generates an unpredictable stream of random numbers and feeds the /dev/random"
 url="https://www.issihosts.com/haveged/"
 
-contributors="Berlius,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 name=haveged
 version=1.9.19
+release=3
 scripts_version=20250201
-release=2
 
 
 source=(http://download.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.tar.xz
@@ -16,7 +16,8 @@ source=(http://download.sourceforge.net/nutyx/nutyx-scripts-${scripts_version}.t
 build () {
 
     cd $name-$version
-    ./configure --prefix=/usr 
+    ./configure --prefix=/usr \
+                --sbindir=/usr/bin
 
     make
     make DESTDIR=$PKG install
