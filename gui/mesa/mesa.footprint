@@ -1,13 +1,22 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/OpenCL/
+drwxr-xr-x	root/root	etc/OpenCL/vendors/
+-rw-r--r--	root/root	etc/OpenCL/vendors/rusticl.icd
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-r-xr-xr-x	root/root	usr/bin/mesa-overlay-control.py
+-r-xr-xr-x	root/root	usr/bin/mesa-screenshot-control.py
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/dri/
 lrwxrwxrwx	root/root	usr/lib/dri/apple_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/armada-drm_dri.so -> libdril_dri.so
+lrwxrwxrwx	root/root	usr/lib/dri/asahi_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/crocus_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/exynos_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/gm12u320_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/hdlcd_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/hx8357d_dri.so -> libdril_dri.so
+lrwxrwxrwx	root/root	usr/lib/dri/i915_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/ili9163_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/ili9225_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/ili9341_dri.so -> libdril_dri.so
@@ -18,6 +27,7 @@ lrwxrwxrwx	root/root	usr/lib/dri/imx-lcdif_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/ingenic-drm_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/iris_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/kirin_dri.so -> libdril_dri.so
+lrwxrwxrwx	root/root	usr/lib/dri/kms_swrast_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/komeda_dri.so -> libdril_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/mali-dp_dri.so -> libdril_dri.so
@@ -27,14 +37,14 @@ lrwxrwxrwx	root/root	usr/lib/dri/meson_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/mi0283qt_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/mxsfb-drm_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/nouveau_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/nouveau_drv_video.so -> ../libgallium-25.3.2.so
+lrwxrwxrwx	root/root	usr/lib/dri/nouveau_drv_video.so -> ../libgallium-26.0.2.so
 lrwxrwxrwx	root/root	usr/lib/dri/panel-mipi-dbi_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/pl111_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/r300_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/r600_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/r600_drv_video.so -> ../libgallium-25.3.2.so
+lrwxrwxrwx	root/root	usr/lib/dri/r600_drv_video.so -> ../libgallium-26.0.2.so
 lrwxrwxrwx	root/root	usr/lib/dri/radeonsi_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/radeonsi_drv_video.so -> ../libgallium-25.3.2.so
+lrwxrwxrwx	root/root	usr/lib/dri/radeonsi_drv_video.so -> ../libgallium-26.0.2.so
 lrwxrwxrwx	root/root	usr/lib/dri/rcar-du_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/repaper_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/rockchip_dri.so -> libdril_dri.so
@@ -45,9 +55,10 @@ lrwxrwxrwx	root/root	usr/lib/dri/st7735r_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/sti_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/stm_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/sun4i-drm_dri.so -> libdril_dri.so
+lrwxrwxrwx	root/root	usr/lib/dri/swrast_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/udl_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/virtio_gpu_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/virtio_gpu_drv_video.so -> ../libgallium-25.3.2.so
+lrwxrwxrwx	root/root	usr/lib/dri/virtio_gpu_drv_video.so -> ../libgallium-26.0.2.so
 lrwxrwxrwx	root/root	usr/lib/dri/vkms_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/vmwgfx_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/zink_dri.so -> libdril_dri.so
@@ -61,15 +72,28 @@ lrwxrwxrwx	root/root	usr/lib/libGLX_indirect.so.0 -> libGLX_mesa.so.0
 lrwxrwxrwx	root/root	usr/lib/libGLX_mesa.so -> libGLX_mesa.so.0
 lrwxrwxrwx	root/root	usr/lib/libGLX_mesa.so.0 -> libGLX_mesa.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libGLX_mesa.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgallium-25.3.2.so
+lrwxrwxrwx	root/root	usr/lib/libRusticlOpenCL.so -> libRusticlOpenCL.so.1
+lrwxrwxrwx	root/root	usr/lib/libRusticlOpenCL.so.1 -> libRusticlOpenCL.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libRusticlOpenCL.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libVkLayer_INTEL_nullhw.so
+-rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_anti_lag.so
+-rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_device_select.so
+-rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_overlay.so
+-rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_screenshot.so
+-rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_vram_report_limit.so
+-rwxr-xr-x	root/root	usr/lib/libgallium-26.0.2.so
 lrwxrwxrwx	root/root	usr/lib/libgbm.so -> libgbm.so.1
 lrwxrwxrwx	root/root	usr/lib/libgbm.so.1 -> libgbm.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libgbm.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libvulkan_asahi.so
+-rwxr-xr-x	root/root	usr/lib/libvulkan_freedreno.so
+-rwxr-xr-x	root/root	usr/lib/libvulkan_gfxstream.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_intel.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_intel_hasvk.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_lvp.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_nouveau.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_radeon.so
+-rwxr-xr-x	root/root	usr/lib/libvulkan_virtio.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/drirc.d/
 -rw-r--r--	root/root	usr/share/drirc.d/00-mesa-defaults.conf
@@ -81,9 +105,21 @@ drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/mesa/
 -rw-r--r--	root/root	usr/share/licenses/mesa/LICENSE
 drwxr-xr-x	root/root	usr/share/vulkan/
+drwxr-xr-x	root/root	usr/share/vulkan/explicit_layer.d/
+-rw-r--r--	root/root	usr/share/vulkan/explicit_layer.d/VkLayer_INTEL_nullhw.json
+-rw-r--r--	root/root	usr/share/vulkan/explicit_layer.d/VkLayer_MESA_overlay.json
+-rw-r--r--	root/root	usr/share/vulkan/explicit_layer.d/VkLayer_MESA_screenshot.json
+-rw-r--r--	root/root	usr/share/vulkan/explicit_layer.d/VkLayer_MESA_vram_report_limit.json
 drwxr-xr-x	root/root	usr/share/vulkan/icd.d/
+-rw-r--r--	root/root	usr/share/vulkan/icd.d/asahi_icd.x86_64.json
+-rw-r--r--	root/root	usr/share/vulkan/icd.d/freedreno_icd.x86_64.json
+-rw-r--r--	root/root	usr/share/vulkan/icd.d/gfxstream_vk_icd.x86_64.json
 -rw-r--r--	root/root	usr/share/vulkan/icd.d/intel_hasvk_icd.x86_64.json
 -rw-r--r--	root/root	usr/share/vulkan/icd.d/intel_icd.x86_64.json
 -rw-r--r--	root/root	usr/share/vulkan/icd.d/lvp_icd.x86_64.json
 -rw-r--r--	root/root	usr/share/vulkan/icd.d/nouveau_icd.x86_64.json
 -rw-r--r--	root/root	usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+-rw-r--r--	root/root	usr/share/vulkan/icd.d/virtio_icd.x86_64.json
+drwxr-xr-x	root/root	usr/share/vulkan/implicit_layer.d/
+-rw-r--r--	root/root	usr/share/vulkan/implicit_layer.d/VkLayer_MESA_anti_lag.json
+-rw-r--r--	root/root	usr/share/vulkan/implicit_layer.d/VkLayer_MESA_device_select.json
