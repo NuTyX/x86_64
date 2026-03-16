@@ -12,8 +12,8 @@ run=(gsettings-desktop-schemas freefont-ttf iso-codes
      xorg-xkeyboard-config bubblewrap libxkbcommon)
 
 name=gnome-desktop
-version=44.4
-release=2
+version=44.5
+release=1
 PKGMK_MESON_OPTIONS="-Ddebug_tools=false"
 PKGMK_GROUPS=(devel lib doc man)
 
