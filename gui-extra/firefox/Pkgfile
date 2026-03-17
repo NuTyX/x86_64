@@ -18,13 +18,13 @@ run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=148.0
+version=148.0.2
 
 locale_version=$version
 
 source=(firefox.desktop
         https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz
-        cbindgen-0.27.patch)
+        cbindgen-0.27.patch glibc-2.43.patch)
 
 pack_remove_locale() {
 
@@ -43,6 +43,11 @@ rm usr/lib/firefox/browser/extensions/langpack-${1}@firefox.mozilla.org.xpi
 
 prepare() {
 cd $name-$version
+
+patch -Np1 -i ../glibc-2.43.patch
+sed '/patch.crates-io/a glslopt={path="third_party/rust/glslopt"}' \
+    -i Cargo.toml
+sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock
 
 (for i in {43..47}; do
    sed '/ZWJ/s/}/,CLASS_CHARACTER&/' -i intl/lwbrk/LineBreaker.cpp || exit $?

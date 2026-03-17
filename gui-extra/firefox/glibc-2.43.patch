@@ -1,0 +1,35 @@
+diff -Naur a/security/sandbox/chromium/sandbox/linux/system_headers/linux_seccomp.h b/security/sandbox/chromium/sandbox/linux/system_headers/linux_seccomp.h
+--- a/security/sandbox/chromium/sandbox/linux/system_headers/linux_seccomp.h	2026-03-09 17:20:55.000000000 +0100
++++ b/security/sandbox/chromium/sandbox/linux/system_headers/linux_seccomp.h	2026-03-16 19:33:54.143288592 +0100
+@@ -214,8 +214,5 @@
+ #define SECCOMP_RET_INVALID 0x00010000U  // Illegal return value
+ #endif
+ 
+-#ifndef SYS_SECCOMP
+-#define SYS_SECCOMP                   1
+-#endif
+ 
+ #endif  // SANDBOX_LINUX_SYSTEM_HEADERS_LINUX_SECCOMP_H_
+diff -Naur a/third_party/rust/glslopt/glsl-optimizer/include/c11/threads_posix.h b/third_party/rust/glslopt/glsl-optimizer/include/c11/threads_posix.h
+--- a/third_party/rust/glslopt/glsl-optimizer/include/c11/threads_posix.h	2026-03-09 17:21:02.000000000 +0100
++++ b/third_party/rust/glslopt/glsl-optimizer/include/c11/threads_posix.h	2026-03-16 19:36:10.341754487 +0100
+@@ -66,7 +66,6 @@
+ typedef pthread_t       thrd_t;
+ typedef pthread_key_t   tss_t;
+ typedef pthread_mutex_t mtx_t;
+-typedef pthread_once_t  once_flag;
+ 
+ 
+ /*
+@@ -90,11 +89,6 @@
+ 
+ /*--------------- 7.25.2 Initialization functions ---------------*/
+ // 7.25.2.1
+-static inline void
+-call_once(once_flag *flag, void (*func)(void))
+-{
+-    pthread_once(flag, func);
+-}
+ 
+ 
+ /*------------- 7.25.3 Condition variable functions -------------*/
