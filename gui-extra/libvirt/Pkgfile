@@ -13,19 +13,21 @@ makedepends=(bash-completion bridge-utils cyrus-sasl dbus
              perl-xml-xpath pm-utils polkit python-docutils
              rpcsvc-proto xorg-libpciaccess xorg-libx11 xorg-libxau
              xorg-libxdmcp xfsprogs yajl)
-run=(qemu dmidecode dnsmasq ebtables iptables)
+run=(qemu dmidecode dnsmasq iptables)
 
 name=libvirt
 version=12.0.0
+release=2
 
 PKGMK_GROUPS=(doc man devel)
 
 source=(https://libvirt.org/sources/$name-$version.tar.xz)
 
 PKGMK_MESON_OPTIONS="--libexecdir=/usr/lib/${name} \
--Dnetcf=disabled"
+--sbindir=/usr/bin -Dnetcf=disabled"
 
 build=meson
+
 package() {
   cd $name-$version
   install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
