@@ -1,7 +1,0 @@
-INFO="\033[1;36m"
-NORMAL="\033[0;39m"
-if [ ! -f etc/ebtables.conf ]; then
-   cp etc/ebtables.conf{.default,}
-   printf "${INFO} /etc/ebtables.conf created ${NORMAL}\n"
-   printf "${INFO} Double check /etc/ebtables.conf and adapted to your needs ${NORMAL}\n"
-fi
