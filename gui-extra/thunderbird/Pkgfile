@@ -18,7 +18,7 @@ run=(startup-notification hunspell startup-notification
 name=thunderbird
 version=140.8.0esr
 
-source=($name-$version-python_3.14_fixes-1.patch
+source=($name-$version-python_3.14_fixes-1.patch glibc-2.43.patch
         https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
         $name.desktop)
 
@@ -40,12 +40,16 @@ prepare() {
  cd $name-${version%esr}
  patch -Np1 -i ../thunderbird-140.8.0esr-python_3.14_fixes-1.patch
 
- # Remove checksums from cargo crates for files that don't exist
- for crate in {minimal-lexical,lmdb-rkv,cubeb-sys,wasi,glslopt,sfv}; do
-  sed -e 's|,"[^"]*.gitmodules[^,]*[^,]||' \
-      -e '$a\'                             \
-      -i comm/third_party/rust/$crate/.cargo-checksum.json
- done
+ find -name .cargo-checksum.json | \
+     xargs sed -ri 's|"[^"]*.gitmodules":"[^"]*",?||'
+
+ patch -Np1 -i ../glibc-2.43.patch
+ sed '/patch.crates-io/a glslopt={path="../third_party/rust/glslopt"}' \
+    -i comm/rust/Cargo.toml
+
+ sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' \
+    -i comm/rust/Cargo.lock
+
 }
 build() {
   cd $name-${version%esr}
