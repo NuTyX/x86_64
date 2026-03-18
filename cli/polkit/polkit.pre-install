@@ -11,5 +11,5 @@ fi
 if ! (getent passwd $SN > /dev/null); then
    printf "${INFO}Creating $SN user${NORMAL}\n"
    useradd -c "Policykit Daemon Owner" -d /etc/polkit-1 \
-   -u $IDN -g $SN -s /bin/false $SN
+   -u $IDN -g $SN -s /usr/bin/false $SN
 fi

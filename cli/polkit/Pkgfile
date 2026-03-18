@@ -6,11 +6,13 @@ contributors="Pierre,Spiky"
 
 name=polkit
 version=127
-release=2
+release=3
 
 makedepends=(pam systemd gettext glib duktape gobject-introspection
              patch autoconf intltool perl-xml-parser libxslt docbook-xsl)
 source=(https://github.com/$name-org/$name/archive/$version/$name-$version.tar.gz)
+
+PKGMK_GROUPS=(devel)
 
 prepare() {
 SN="polkitd"
@@ -20,7 +22,7 @@ if ! (getent group $SN > /dev/null); then
 fi
 if ! (getent passwd $SN > /dev/null); then
    useradd -c "PolicyKit Daemon Owner" -d /etc/polkit-1 \
-   -u $IDN -g $SN -s /bin/false $SN
+   -u $IDN -g $SN -s /usr/bin/false $SN
 fi
 sed -i '/systemd_sysusers_dir/s/^/#/' $name-$version/meson.build
 }
