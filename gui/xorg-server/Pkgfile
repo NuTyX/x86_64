@@ -14,31 +14,24 @@ makedepends=(meson ninja meson libtirpc libepoxy libxcvt mesa
 
 name=xorg-server
 version=21.1.21
+release=2
 
 source=(xorg-server-21.1.16-tearfree_backport-1.patch
 	https://ftp.x.org/pub/individual/xserver/$name-$version.tar.xz)
+
+PKGMK_MESON_OPTIONS="--sysconfdir=/etc --localstatedir=/var \
+ -Dxkb_output_dir=/var/lib/xkb -Dglamor=true"
 
 prepare() {
   cd $name-$version
   patch -Np1 -i ../xorg-server-21.1.16-tearfree_backport-1.patch
 }
-build() {
+build=meson
 
-cd $name-$version
-mkdir build
-cd    build
-meson setup ..      \
-  --prefix=/usr     \
-  --sysconfdir=/etc \
-  --localstatedir=/var \
-  -Dxkb_output_dir=/var/lib/xkb \
-  -Dglamor=true
-ninja
-
-DESTDIR=$PKG ninja install
+package() {
 
 rm -rf $PKG/var
 
-install -Dm644 ../COPYING \
+install -Dm644 $name-$version/COPYING \
    $PKG/usr/share/licenses/$name/COPYING
 }
