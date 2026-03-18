@@ -12,11 +12,17 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/flatpak-bisect
 -rwxr-xr-x	root/root	usr/bin/flatpak-coredumpctl
 drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/flatpak-oci-authenticator
+-rwxr-xr-x	root/root	usr/lib/flatpak-portal
+-rwxr-xr-x	root/root	usr/lib/flatpak-session-helper
+-rwxr-xr-x	root/root	usr/lib/flatpak-system-helper
+-rwxr-xr-x	root/root	usr/lib/flatpak-validate-icon
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Flatpak-1.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libflatpak.so -> libflatpak.so.0
 lrwxrwxrwx	root/root	usr/lib/libflatpak.so.0 -> libflatpak.so.0.11603.0
 -rwxr-xr-x	root/root	usr/lib/libflatpak.so.0.11603.0
+-rwxr-xr-x	root/root	usr/lib/revokefs-fuse
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system-environment-generators/
 -rwxr-xr-x	root/root	usr/lib/systemd/system-environment-generators/60-flatpak-system-only
@@ -32,13 +38,6 @@ drwxr-xr-x	root/root	usr/lib/sysusers.d/
 -rw-r--r--	root/root	usr/lib/sysusers.d/flatpak.conf
 drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/flatpak.conf
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/flatpak-oci-authenticator
--rwxr-xr-x	root/root	usr/libexec/flatpak-portal
--rwxr-xr-x	root/root	usr/libexec/flatpak-session-helper
--rwxr-xr-x	root/root	usr/libexec/flatpak-system-helper
--rwxr-xr-x	root/root	usr/libexec/flatpak-validate-icon
--rwxr-xr-x	root/root	usr/libexec/revokefs-fuse
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
