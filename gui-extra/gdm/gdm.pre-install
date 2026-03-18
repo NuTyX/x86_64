@@ -11,7 +11,7 @@ fi
 if ! (getent passwd $SN > /dev/null); then
    printf "${INFO}Creating $SN user${NORMAL}\n"
    useradd -c "GDM Daemon Owner" -d /var/lib/$SN \
-   -u $IDN -g $SN -s /bin/false $SN
+   -u $IDN -g $SN -s /usr/bin/false $SN
    passwd -ql $SN
 fi
 rm -f etc/pam.d/gdm-launch-environment
