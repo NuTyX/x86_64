@@ -1,0 +1,17 @@
+diff --git a/scripts/pkgmk.in b/scripts/pkgmk.in
+index 6dd0d56..a1532d6 100755
+--- a/scripts/pkgmk.in
++++ b/scripts/pkgmk.in
+@@ -1223,10 +1223,10 @@ check_build() {
+ 			echo $i
+ 		done
+ 	fi
+-	if [ -d $PKG/usr/sbin ];
++	if [ -d $PKG/usr/sbin ]; then
+ 		abort_on_build "/usr/sbin should not exist"
+ 	fi
+-	if [ -d $PKG/sbin ];
++	if [ -d $PKG/sbin ]; then
+ 		abort_on_build "/sbin should not exist"
+ 	fi
+ 
