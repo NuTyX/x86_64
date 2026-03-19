@@ -1,9 +1,11 @@
 description="A library making programming with POSIX capabilities easier than traditional libcap."
-url="http://people.redhat.com/sgrubb/libcap-ng/"
-packager="spiky <spiky@nutyx.org>"
+url="https://people.redhat.com/sgrubb/libcap-ng/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=libcap-ng
-version=0.9
+version=0.9.1
 
 makedepends=(autoreconf libtool perl)
 
