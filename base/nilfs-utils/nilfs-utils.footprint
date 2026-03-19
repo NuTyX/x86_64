@@ -1,10 +1,5 @@
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/nilfs_cleanerd.conf
-drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/mkfs.nilfs2
--rwxr-xr-x	root/root	sbin/mount.nilfs2
--rwxr-xr-x	root/root	sbin/nilfs_cleanerd
--rwxr-xr-x	root/root	sbin/umount.nilfs2
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/chcp
@@ -12,21 +7,19 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/lscp
 -rwxr-xr-x	root/root	usr/bin/lssu
 -rwxr-xr-x	root/root	usr/bin/mkcp
+-rwxr-xr-x	root/root	usr/bin/mkfs.nilfs2
+-rwxr-xr-x	root/root	usr/bin/mount.nilfs2
 -rwxr-xr-x	root/root	usr/bin/nilfs-clean
 -rwxr-xr-x	root/root	usr/bin/nilfs-resize
 -rwxr-xr-x	root/root	usr/bin/nilfs-tune
+-rwxr-xr-x	root/root	usr/bin/nilfs_cleanerd
 -rwxr-xr-x	root/root	usr/bin/rmcp
+-rwxr-xr-x	root/root	usr/bin/umount.nilfs2
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libnilfs.a
-lrwxrwxrwx	root/root	usr/lib/libnilfs.so -> libnilfs.so.0.2.4
-lrwxrwxrwx	root/root	usr/lib/libnilfs.so.0 -> libnilfs.so.0.2.4
--rwxr-xr-x	root/root	usr/lib/libnilfs.so.0.2.4
--rw-r--r--	root/root	usr/lib/libnilfscleaner.a
-lrwxrwxrwx	root/root	usr/lib/libnilfscleaner.so -> libnilfscleaner.so.0.1.0
-lrwxrwxrwx	root/root	usr/lib/libnilfscleaner.so.0 -> libnilfscleaner.so.0.1.0
--rwxr-xr-x	root/root	usr/lib/libnilfscleaner.so.0.1.0
--rw-r--r--	root/root	usr/lib/libnilfsgc.a
-lrwxrwxrwx	root/root	usr/lib/libnilfsgc.so -> libnilfsgc.so.0.2.1
-lrwxrwxrwx	root/root	usr/lib/libnilfsgc.so.0 -> libnilfsgc.so.0.2.1
--rwxr-xr-x	root/root	usr/lib/libnilfsgc.so.0.2.1
+lrwxrwxrwx	root/root	usr/lib/libnilfs.so -> libnilfs.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libnilfs.so.3 -> libnilfs.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libnilfs.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libnilfsgc.so -> libnilfsgc.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libnilfsgc.so.3 -> libnilfsgc.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libnilfsgc.so.3.0.0
 drwxr-xr-x	root/root	usr/share/

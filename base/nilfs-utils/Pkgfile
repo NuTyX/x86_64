@@ -1,25 +1,24 @@
-description='nilfs-utils'
-url='http://nilfs.sourceforge.net/'
+description='A log-structured file system supporting continuous snapshotting (userspace utils)'
+url='https://nilfs.sourceforge.net/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(util-linux)
+makedepends=(sed util-linux)
 run=()
 set=()
 
 name=nilfs-utils
-version=2.2.15
+version=2.3.0
 
 source=(http://nilfs.sourceforge.net/download/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
 
-sed -i -e 's#root_sbindir=/sbin#root_sbindir=/usr/bin#' configure
 ./configure --prefix=/usr \
             --sbindir=/usr/bin \
             --with-libmount
 make
-make DESTDIR=$PKG sbindir=/usr/bin install LDCONFIG=/bin/true
+make DESTDIR=$PKG sbindir=/usr/bin core_sbindir=/usr/bin install LDCONFIG=/usr/bin/true
 }
