@@ -1,8 +1,8 @@
 description='Easily download, build, install, upgrade, and uninstall Python packages'
 url='https://pypi.python.org/pypi/setuptools'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python python-wheel)
 
@@ -10,17 +10,16 @@ name=python-setuptools
 _name="setuptools"
 alias=(${_name})
 
-version=82.0.0
+version=82.0.1
 
 source=(https://pypi.org/packages/source/s/setuptools/setuptools-$version.tar.gz)
 
 build() {
-cd ${_name}-$version
+  cd ${_name}-$version
 
+  export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
 
-	export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
-
-	  pip3 wheel -w dist \
+  pip3 wheel -w dist \
     --no-build-isolation \
     --no-deps $PWD
   pip3 install --no-index \
@@ -30,5 +29,5 @@ cd ${_name}-$version
     --root=$PKG       \
     ${_name}
 
- find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
+  find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
 }
