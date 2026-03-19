@@ -3,13 +3,13 @@ url='https://github.com/fastfloat/fast_float'
 
 license="Apache, Boost, MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cmake git)
 
 name=fast_float
-version=8.2.3
+version=8.2.4
 
 source=(https://github.com/fastfloat/fast_float/archive/v${version}/$name-$version.tar.gz)
 
