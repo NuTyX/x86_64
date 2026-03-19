@@ -1,13 +1,13 @@
 description="The Expat package contains a stream oriented C library for parsing XML."
 url="https://expat.sourceforge.net/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(core)
 
 name=expat
-version=2.7.4
+version=2.7.5
 
 source=(https://github.com/libexpat/libexpat/releases/download/R_${version//./_}/$name-$version.tar.xz)
 
