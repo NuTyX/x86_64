@@ -36,12 +36,12 @@ drwxr-xr-x	root/root	usr/lib/aqbanking/plugins/44/providers/
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqofxconnect.xml
 -rw-r--r--	root/root	usr/lib/aqbanking/plugins/44/providers/aqpaypal.xml
 drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/aqbanking-6.6/
--rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.6/aqbanking-config-version.cmake
--rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.6/aqbanking-config.cmake
-lrwxrwxrwx	root/root	usr/lib/libaqbanking.so -> libaqbanking.so.44.6.4
-lrwxrwxrwx	root/root	usr/lib/libaqbanking.so.44 -> libaqbanking.so.44.6.4
--rwxr-xr-x	root/root	usr/lib/libaqbanking.so.44.6.4
+drwxr-xr-x	root/root	usr/lib/cmake/aqbanking-6.9/
+-rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.9/aqbanking-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/aqbanking-6.9/aqbanking-config.cmake
+lrwxrwxrwx	root/root	usr/lib/libaqbanking.so -> libaqbanking.so.44.9.1
+lrwxrwxrwx	root/root	usr/lib/libaqbanking.so.44 -> libaqbanking.so.44.9.1
+-rwxr-xr-x	root/root	usr/lib/libaqbanking.so.44.9.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/aqbanking.m4
@@ -82,6 +82,7 @@ drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/dlg_pintan_special.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/dlg_pintan_tanmode.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/dlg_rdh_special.dlg
+-rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/dlg_vop.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/dlg_zkacard.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/keyfile.png
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/pintan.png
@@ -89,7 +90,6 @@ drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqhbci/dialogs/
 drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqofxconnect/
 drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqofxconnect/dialogs/
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqofxconnect/dialogs/dlg_edituser.dlg
--rw-r--r--	root/root	usr/share/aqbanking/backends/aqofxconnect/dialogs/dlg_getinst.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqofxconnect/dialogs/dlg_newuser.dlg
 -rw-r--r--	root/root	usr/share/aqbanking/backends/aqofxconnect/dialogs/dlg_ofx_special.dlg
 drwxr-xr-x	root/root	usr/share/aqbanking/backends/aqpaypal/
@@ -194,19 +194,24 @@ drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/swift/profiles/
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/xml/
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/xml/data/
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_052_001_02.xml
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_052_001_08.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_053_001_02.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_053_001_04.xml
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/camt_053_001_08.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/ofx1.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/ofx2.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_001_001_03.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_001_001_09.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_001_003_03.xml
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_002_001_10.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_008_001_02.xml
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/data/pain_008_003_02.xml
 drwxr-xr-x	root/root	usr/share/aqbanking/imexporters/xml/profiles/
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_052_001_02.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_052_001_08.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_053_001_02.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_053_001_04.conf
+-rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/camt_053_001_08.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/default.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/ofx1.conf
 -rw-r--r--	root/root	usr/share/aqbanking/imexporters/xml/profiles/ofx2.conf
