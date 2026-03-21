@@ -3,30 +3,19 @@ url="https://gitlab.gnome.org/GNOME/gspell"
 
 license="LGPL2-1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(glib iso-codes gtk3 enchant)
 
 name=gspell
-version=1.14.2
+version=1.14.3
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
+build=meson
 
-cd $name-$version
-
-mkdir gspell-build
-cd    gspell-build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../LICENSES/LGPL-2.1-or-later.txt $PKG/usr/share/licenses/$name/LGPL-2.1-or-later.txt
+package() {
+install -Dm644 $name-$version/LICENSES/LGPL-2.1-or-later.txt \
+$PKG/usr/share/licenses/$name/LGPL-2.1-or-later.txt
 }
