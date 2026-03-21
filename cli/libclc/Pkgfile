@@ -3,18 +3,18 @@ url='https://libclc.llvm.org/'
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cmake ninja spirv-llvm-translator)
 
 name=libclc
-version=21.1.8
+version=22.1.1
 
-source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/$name-$version.src.tar.xz)
+source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-project-$version.src.tar.xz)
 
 build() {
-cd $name-$version.src
+cd llvm-project-$version.src/libclc
 
    mkdir build
    cd    build
