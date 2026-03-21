@@ -3,15 +3,15 @@ url="https://www.graphviz.org"
 
 license="EPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Spiky"
 
 makedepends=(gtk2 freetype xorg-fontconfig gdk-pixbuf libjpeg-turbo
              libpng pango ghostscript swig guile openjdk
              lua python ruby tcl tk libxcrypt)
 
 name=graphviz
-version=14.1.2
+version=14.1.3
 
 source=(https://gitlab.com/graphviz/graphviz/-/archive/$version/$name-$version.tar.gz)
 
