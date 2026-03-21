@@ -1,8 +1,8 @@
 description='Web content engine for GTK'
 url='https://webkitgtk.org'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(cmake mesa ninja gtk-doc python ruby gobject-introspection
              wayland-protocols  gstreamer-plugins-bad gperf unifdef libavif sysprof)
@@ -14,7 +14,7 @@ run=(cairo xorg-fontconfig freetype libgcrypt glib gtk4 harfbuzz icu
           gstreamer-plugins-base gi-docgen)
 
 name=webkit2gtk-6
-version=2.50.4
+version=2.50.5
 
 source=(https://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
 
