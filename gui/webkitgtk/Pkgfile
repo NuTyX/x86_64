@@ -1,10 +1,10 @@
 description="engine of made Web free for the browsers web version 3"
-url="http://webkitgtk.org/"
+url="https://webkitgtk.org/"
 
 license="Custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Fanch,Spiky"
 
 makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
              gstreamer-plugins-bad xorg-libxt gtk2 gtk3 gtk-doc
@@ -14,7 +14,7 @@ makedepends=(openjpeg ninja enchant cmake gstreamer gstreamer-plugins-base
              harfbuzz gtk-doc libnotify wayland woff2 unifdef)
              
 name=webkitgtk
-version=2.50.4
+version=2.50.5
 
 source=(http://webkitgtk.org/releases/webkitgtk-$version.tar.xz)
 
