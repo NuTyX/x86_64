@@ -7,7 +7,7 @@ contributors="Spiky"
 makedepends=(gobject-introspection vala gtk4 graphene hicolor-icon-theme libadwaita)
 
 name=libpanel
-version=1.10.3
+version=1.10.4
 
 source=(https://gitlab.gnome.org/GNOME/libpanel/-/archive/$version/$name-$version.tar.gz)
 PKGMK_MESON_OPTIONS="-Ddocs=disabled"
