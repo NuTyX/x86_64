@@ -3,16 +3,16 @@ url="https://gitlab.gnome.org/GNOME/evolution/-/wikis/home"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Spiky"
 
 makedepends=(vim db libcanberra gnome-online-accounts gnome-common gperf icu
              libgdata libical libsecret libsoup3 nss libgweather-4 vala 
              gobject-introspection kerberos gtk4 openldap gcr-4 webkit2gtk-6)
 
 name=evolution-data-server
-version=3.58.2
-release=2
+version=3.58.3
+release=1
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
