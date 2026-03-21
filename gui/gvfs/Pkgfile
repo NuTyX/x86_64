@@ -11,46 +11,15 @@ makedepends=(ninja meson libcdio-paranoia avahi dbus-glib libgdata libgudev
              libarchive libmtp samba bluez gcr libgphoto2 libnfs openssh gcr-4)
 
 name=gvfs
-version=1.58.0
+version=1.58.3
 
-source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz
-       handle-inactive-vfs.patch
-       libnfs-6-backport-to-1.56.patch)
+source=($url/-/archive/$version/$name-$version.tar.gz)
 
-build() {
-cd $name-$version
+PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dafc=false -Donedrive=false \
+-Dhttp=false -Ddnssd=false -Dgoa=false -Dgoogle=false"
 
-#patch -Np1 -i ../libnfs-6-backport-to-1.56.patch
-#patch -Np1 -i ../handle-inactive-vfs.patch
-sed '/policy,/d' -i daemon/meson.build
-mkdir build &&
-cd    build &&
+build=meson
 
-meson setup             \
-      --prefix=/usr     \
-      --sysconfdir=/etc \
-      -Dafc=false       \
-      -Donedrive=false  \
-      -Dhttp=false      \
-      -Ddnssd=false     \
-      -Dgoa=false       \
-      -Dgoogle=false    \
-      -Dtmpfilesdir=no  \
-      -Dlogind=false    \
-      -Dsystemduserunitdir=no ..
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-}
-
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/$name"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f3`"
-echo "$lastversion"
+package() {
+  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
