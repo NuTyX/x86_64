@@ -1,16 +1,16 @@
 description="OpenType text shaping engine"
-url="http://www.freedesktop.org/software/harfbuzz"
+url="https://www.freedesktop.org/software/harfbuzz"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Spiky"
 
 makedepends=(pkgconf cairo glib icu freetype gobject-introspection gtk-doc python-pygments)
 
 
 name=harfbuzz
-version=12.3.2
+version=13.2.0
 
 source=(https://github.com/harfbuzz/harfbuzz/releases/download/$version/$name-$version.tar.xz)
 
