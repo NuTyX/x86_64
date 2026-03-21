@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	usr/include/pipewire-0.3/
 drwxr-xr-x	root/root	usr/include/pipewire-0.3/pipewire/
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/array.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/buffers.h
+-rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/capabilities.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/client.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/conf.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/context.h
@@ -56,6 +57,7 @@ drwxr-xr-x	root/root	usr/include/pipewire-0.3/pipewire/extensions/session-manage
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/stream.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/thread-loop.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/thread.h
+-rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/timer-queue.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/type.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/utils.h
 -rw-r--r--	root/root	usr/include/pipewire-0.3/pipewire/version.h
@@ -107,6 +109,8 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/audio/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/aac-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/aac-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/aac.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/ac3-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/ac3.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/alac-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/alac.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/amr-types.h
@@ -119,6 +123,11 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/audio/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/dsd.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/dsp-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/dsp.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/dts-types.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/dts-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/dts.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/eac3-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/eac3.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/flac-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/flac.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/format-utils.h
@@ -126,10 +135,13 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/audio/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/iec958-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/iec958-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/iec958.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/layout-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/layout.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/mp3-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/mp3-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/mp3.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/mpegh-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/mpegh.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/opus.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/ra-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/ra.h
@@ -137,6 +149,8 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/audio/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/raw.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/truehd-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/truehd.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/type-info.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/vorbis-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/audio/vorbis.h
@@ -148,6 +162,9 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/bluetooth/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/bluetooth/type-info.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/buffers-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/buffers.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/dict-types.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/dict-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/dict.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/format-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/format-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/format.h
@@ -156,6 +173,9 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/bluetooth/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/latency.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/param-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/param.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/peer-types.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/peer-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/peer.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/port-config-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/port-config.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/profile-types.h
@@ -172,6 +192,7 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/bluetooth/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/type-info.h
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/video/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/chroma.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/color-types.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/color.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/dsp-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/dsp.h
@@ -180,6 +201,8 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/video/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/format.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/h264-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/h264.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/h265-utils.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/h265.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/mjpg-utils.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/mjpg.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/multiview.h
@@ -188,6 +211,7 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/param/video/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/raw.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/param/video/type-info.h
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/pod/
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/body.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/builder.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/command.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/compare.h
@@ -197,6 +221,7 @@ drwxr-xr-x	root/root	usr/include/spa-0.2/spa/pod/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/iter.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/parser.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/pod.h
+-rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/simplify.h
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/pod/vararg.h
 drwxr-xr-x	root/root	usr/include/spa-0.2/spa/support/
 -rw-r--r--	root/root	usr/include/spa-0.2/spa/support/cpu.h

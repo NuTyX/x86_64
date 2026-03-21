@@ -10,27 +10,18 @@ makedepends=(meson dbus doxygen python-docutils ffmpeg glib graphviz gstreamer
              gstreamer-plugins-base sbc valgrind libsndfile xmltoman) 
 
 name=pipewire
-version=1.4.9
+version=1.6.2
 
 source=(https://github.com/PipeWire/pipewire/archive/$version/$name-$version.tar.gz)
 
-build() {
-cd $name-$version
+CFLAGS="-Wno-error=discarded-qualifiers"
 
-  meson setup build \
-    --prefix=/usr      \
-    --sysconfdir=/etc      \
-    -Djack=disabled           \
-    -Dpipewire-jack=disabled  \
-    -Dvulkan=disabled         \
-    -Ddocs=enabled            \
-    -Dman=enabled             \
-    -Dsession-managers="[]"
+PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Djack=disabled -Dpipewire-jack=disabled \
+-Dvulkan=disabled -Ddocs=enabled  -Dman=enabled  -Dsession-managers="[]""
+ 
 
-meson compile -C build
-
-DESTDIR=$PKG meson install -C build
-
-install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
-install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
+build=meson
+package() {
+install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }

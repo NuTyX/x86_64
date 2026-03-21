@@ -19,6 +19,8 @@ lrwxrwxrwx	root/root	usr/bin/pw-encplay -> pw-cat
 -rwxr-xr-x	root/root	usr/bin/pw-link
 -rwxr-xr-x	root/root	usr/bin/pw-loopback
 -rwxr-xr-x	root/root	usr/bin/pw-metadata
+lrwxrwxrwx	root/root	usr/bin/pw-midi2play -> pw-cat
+lrwxrwxrwx	root/root	usr/bin/pw-midi2record -> pw-cat
 -rwxr-xr-x	root/root	usr/bin/pw-mididump
 lrwxrwxrwx	root/root	usr/bin/pw-midiplay -> pw-cat
 lrwxrwxrwx	root/root	usr/bin/pw-midirecord -> pw-cat
@@ -27,6 +29,7 @@ lrwxrwxrwx	root/root	usr/bin/pw-play -> pw-cat
 -rwxr-xr-x	root/root	usr/bin/pw-profiler
 lrwxrwxrwx	root/root	usr/bin/pw-record -> pw-cat
 -rwxr-xr-x	root/root	usr/bin/pw-reserve
+lrwxrwxrwx	root/root	usr/bin/pw-sysex -> pw-cat
 -rwxr-xr-x	root/root	usr/bin/pw-top
 -rwxr-xr-x	root/root	usr/bin/pw-v4l2
 -rwxr-xr-x	root/root	usr/bin/spa-acp-tool
@@ -41,8 +44,8 @@ drwxr-xr-x	root/root	usr/lib/alsa-lib/
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpipewire.so
 lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so -> libpipewire-0.3.so.0
-lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1409.0
--rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1409.0
+lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1602.0
+-rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1602.0
 drwxr-xr-x	root/root	usr/lib/pipewire-0.3/
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-access.so
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-adapter.so
@@ -104,6 +107,8 @@ drwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-aac.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-faststream.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-g722.so
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-hfp-cvsd.so
+-rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-hfp-msbc.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-opus-g.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-opus.so
 -rwxr-xr-x	root/root	usr/lib/spa-0.2/bluez5/libspa-codec-bluez5-sbc.so
@@ -179,6 +184,7 @@ drwxr-xr-x	root/root	usr/share/alsa-card-profile/mixer/paths/
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/hdmi-output-9.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/iec958-stereo-input.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/iec958-stereo-output.conf
+-rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/logi407-iec958-stereo-output.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/steelseries-arctis-output-chat-common.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/steelseries-arctis-output-game-common.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/paths/usb-gaming-headset-input.conf
@@ -199,6 +205,7 @@ drwxr-xr-x	root/root	usr/share/alsa-card-profile/mixer/profile-sets/
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/hp-tbt-dock-120w-g2.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/hp-tbt-dock-audio-module.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/kinect-audio.conf
+-rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/logi407.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/maudio-fasttrack-pro.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/native-instruments-audio4dj.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/native-instruments-audio8dj.conf
@@ -213,6 +220,7 @@ drwxr-xr-x	root/root	usr/share/alsa-card-profile/mixer/profile-sets/
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/simple-headphones-mic.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/steelseries-arctis-common-usb-audio.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/texas-instruments-pcm2902.conf
+-rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/usb-gaming-headset-gamefirst.conf
 -rw-r--r--	root/root	usr/share/alsa-card-profile/mixer/profile-sets/usb-gaming-headset.conf
 drwxr-xr-x	root/root	usr/share/alsa/
 drwxr-xr-x	root/root	usr/share/alsa/alsa.conf.d/
@@ -229,6 +237,7 @@ drwxr-xr-x	root/root	usr/share/pipewire/client.conf.avail/
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain.conf
 drwxr-xr-x	root/root	usr/share/pipewire/filter-chain/
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/demonic.conf
+-rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-dolby-pro-logic-ii.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-dolby-surround.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-eq6.conf
 -rw-r--r--	root/root	usr/share/pipewire/filter-chain/sink-make-LFE.conf
