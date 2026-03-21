@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/include/opencv4/opencv2/core/cuda/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/cuda/border_interpolate.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/cuda/color.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/cuda/common.hpp
+-rw-r--r--	root/root	usr/include/opencv4/opencv2/core/cuda/cuda_compat.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/cuda/datamov_utils.hpp
 drwxr-xr-x	root/root	usr/include/opencv4/opencv2/core/cuda/detail/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/core/cuda/detail/color_detail.hpp
@@ -256,6 +257,7 @@ drwxr-xr-x	root/root	usr/include/opencv4/opencv2/gapi/infer/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/infer/onnx.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/infer/ov.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/infer/parsers.hpp
+-rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/infer/workload_type.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/media.hpp
 drwxr-xr-x	root/root	usr/include/opencv4/opencv2/gapi/oak/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/oak/infer.hpp
@@ -280,6 +282,8 @@ drwxr-xr-x	root/root	usr/include/opencv4/opencv2/gapi/plaidml/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/plaidml/core.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/plaidml/gplaidmlkernel.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/plaidml/plaidml.hpp
+drwxr-xr-x	root/root	usr/include/opencv4/opencv2/gapi/pysrc/
+-rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/pysrc/python_stream_source.hpp
 drwxr-xr-x	root/root	usr/include/opencv4/opencv2/gapi/python/
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/python/python.hpp
 -rw-r--r--	root/root	usr/include/opencv4/opencv2/gapi/render.hpp
