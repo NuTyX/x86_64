@@ -9,9 +9,9 @@ contributors="Spiky"
 makedepends=(gnutls libgcrypt openssl gtk3)
 
 name=gwenhywfar
-version=5.12.1
+version=5.14.1
 
-source=(https://www.aquamaniac.de/rdm/attachments/download/533/$name-$version.tar.gz)
+source=(https://www.aquamaniac.de/rdm/attachments/download/630/$name-$version.tar.gz)
 
 build() {
 cd $name-$version 
