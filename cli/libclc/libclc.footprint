@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/clc/
--rw-r--r--	root/root	usr/share/clc/amdgcn--amdhsa.bc
+-rw-r--r--	root/root	usr/share/clc/amdgcn-amd-amdhsa.bc
 lrwxrwxrwx	root/root	usr/share/clc/aruba-r600--.bc -> cayman-r600--.bc
 -rw-r--r--	root/root	usr/share/clc/barts-r600--.bc
 lrwxrwxrwx	root/root	usr/share/clc/bonaire-amdgcn--.bc -> tahiti-amdgcn--.bc
@@ -58,6 +58,10 @@ lrwxrwxrwx	root/root	usr/share/clc/gfx1200-amdgcn--.bc -> tahiti-amdgcn--.bc
 lrwxrwxrwx	root/root	usr/share/clc/gfx1200-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
 lrwxrwxrwx	root/root	usr/share/clc/gfx1201-amdgcn--.bc -> tahiti-amdgcn--.bc
 lrwxrwxrwx	root/root	usr/share/clc/gfx1201-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
+lrwxrwxrwx	root/root	usr/share/clc/gfx1250-amdgcn--.bc -> tahiti-amdgcn--.bc
+lrwxrwxrwx	root/root	usr/share/clc/gfx1250-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
+lrwxrwxrwx	root/root	usr/share/clc/gfx1251-amdgcn--.bc -> tahiti-amdgcn--.bc
+lrwxrwxrwx	root/root	usr/share/clc/gfx1251-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
 lrwxrwxrwx	root/root	usr/share/clc/gfx602-amdgcn--.bc -> tahiti-amdgcn--.bc
 lrwxrwxrwx	root/root	usr/share/clc/gfx602-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
 lrwxrwxrwx	root/root	usr/share/clc/gfx705-amdgcn--.bc -> tahiti-amdgcn--.bc
@@ -98,10 +102,9 @@ lrwxrwxrwx	root/root	usr/share/clc/kaveri-amdgcn--.bc -> tahiti-amdgcn--.bc
 lrwxrwxrwx	root/root	usr/share/clc/kaveri-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
 lrwxrwxrwx	root/root	usr/share/clc/mullins-amdgcn--.bc -> tahiti-amdgcn--.bc
 lrwxrwxrwx	root/root	usr/share/clc/mullins-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
--rw-r--r--	root/root	usr/share/clc/nvptx--.bc
--rw-r--r--	root/root	usr/share/clc/nvptx--nvidiacl.bc
 -rw-r--r--	root/root	usr/share/clc/nvptx64--.bc
 -rw-r--r--	root/root	usr/share/clc/nvptx64--nvidiacl.bc
+-rw-r--r--	root/root	usr/share/clc/nvptx64-nvidia-cuda.bc
 lrwxrwxrwx	root/root	usr/share/clc/oland-amdgcn--.bc -> tahiti-amdgcn--.bc
 lrwxrwxrwx	root/root	usr/share/clc/oland-amdgcn-mesa-mesa3d.bc -> tahiti-amdgcn-mesa-mesa3d.bc
 lrwxrwxrwx	root/root	usr/share/clc/palm-r600--.bc -> cedar-r600--.bc

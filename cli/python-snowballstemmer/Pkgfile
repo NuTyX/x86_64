@@ -1,8 +1,8 @@
 description='Snowball stemming library collection for Python'
 url='https://github.com/shibukawa/snowball_py/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -10,8 +10,8 @@ name=python-snowballstemmer
 _name="snowballstemmer"
 alias=(${_name})
 
-version=2.2.0
-release=6
+version=3.0.0.1
+release=1
 
 source=(https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-$version.tar.gz)
 

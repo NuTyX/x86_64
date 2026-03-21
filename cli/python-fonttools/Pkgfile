@@ -1,8 +1,8 @@
 description="A library to manipulate font files from Python"
 url="https://github.com/fonttools/fonttools"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 license="MLT"
 
 makedepends=(python-setuptools python-wheel cython)
@@ -11,7 +11,7 @@ name=python-fonttools
 _name="fonttools"
 alias=(${_name})
 
-version=4.61.1
+version=4.62.1
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/fonttools/fonttools/archive/refs/tags/$version.tar.gz)

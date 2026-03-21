@@ -6,5 +6,5 @@ UN=flatpak
 if ! (getent passwd $UN > /dev/null); then
 	printf "${INFO}Creating $UN user${NORMAL}\n"
 	useradd  -c "Flatpak User" -d /var/run/flatpak \
-	-s /bin/false -u 89 $UN
+	-s /usr/bin/false -u 89 $UN
 fi

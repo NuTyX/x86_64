@@ -12,7 +12,9 @@ run=(make-ca bubblewrap gnupg xdg-dbus-proxy)
 
 name=flatpak
 version=1.16.3
-release=2
+release=3
+
+PKGMK_GROUPS=(devel doc man)
 
 source=(https://dl.flathub.org/repo/flathub.flatpakrepo flatpak-bindir.sh
         https://github.com/flatpak/flatpak/releases/download/$version/flatpak-$version.tar.xz)

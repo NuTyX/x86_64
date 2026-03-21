@@ -8,10 +8,12 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=dhcpcd
-version=10.3.0
-release=5
+version=10.3.1
+release=1
 
 makedepends=(shadow)
+
+PKGMK_GROUPS=(man)
 
 scriptsversion=20260315
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz

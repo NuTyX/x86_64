@@ -6,10 +6,12 @@ contributors="Pierre,Spiky"
 
 name=colord
 version=1.4.8
-release=2
+release=3
 
 makedepends=(meson libgudev sqlite polkit lcms2 argyllcms gobject-introspection libusb dbus vala libgusb)
 source=(http://www.freedesktop.org/software/$name/releases/$name-$version.tar.xz)
+
+PKGMK_GROUPS=(devel)
 
 prepare() {
 SN="colord"
@@ -19,7 +21,7 @@ if ! (getent group $SN > /dev/null); then
 fi
 if ! (getent passwd $SN > /dev/null); then
    useradd -c "Color Daemon Owner" -d /var/lib/$SN \
-   -u $IDN -g $SN -s /bin/false $SN
+   -u $IDN -g $SN -s /usr/bin/false $SN
 fi
 }
 

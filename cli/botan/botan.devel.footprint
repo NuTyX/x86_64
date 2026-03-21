@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/argon2fmt.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/asn1_obj.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/asn1_print.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/asn1_time.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/assert.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/auto_rng.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/base32.h
@@ -108,8 +109,6 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pk_ops_fwd.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pkcs10.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pkcs11.h
--rw-rw-r--	root/root	usr/include/botan-3/botan/pkcs11f.h
--rw-rw-r--	root/root	usr/include/botan-3/botan/pkcs11t.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pkcs8.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pkix_enums.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pkix_types.h
@@ -118,6 +117,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pss_params.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pubkey.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/pwdhash.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/range_concepts.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/reducer.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/rfc3394.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/rfc4880.h
@@ -147,15 +147,20 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_client.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_exceptn.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_extensions.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/tls_extensions_12.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/tls_extensions_13.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_external_psk.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_handshake_msg.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_magic.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_messages.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/tls_messages_12.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/tls_messages_13.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_policy.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_psk_identity_13.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_server.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_server_info.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_session.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/tls_session_id.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_session_manager.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_session_manager_hybrid.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_session_manager_memory.h

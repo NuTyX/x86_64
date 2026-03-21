@@ -1,10 +1,11 @@
 description="The lmdb package is a fast, compact, key-value embedded data store."
 url="https://github.com/LMDB"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=lmdb
-version=0.9.34
+version=0.9.35
 
 source=(https://git.openldap.org/openldap/openldap/-/archive/LMDB_$version/openldap-LMDB_$version.tar.gz lmdb.pc)
 

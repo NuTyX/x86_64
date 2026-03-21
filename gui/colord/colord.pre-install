@@ -12,5 +12,5 @@ fi
 if ! (getent passwd $SN > /dev/null); then
    printf "${INFO}Creating $SN user${NORMAL}\n"
    useradd -c "Color Daemon Owner" -d /var/lib/$SN \
-   -u $IDN -g $SN -s /bin/false $SN
+   -u $IDN -g $SN -s /usr/bin/false $SN
 fi

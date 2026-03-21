@@ -1,8 +1,8 @@
 description="Python module that implements a XML/HTML/XHTML Markup safe string."
 url="https://pypi.org/project/MarkupSafe/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -10,8 +10,8 @@ name=python-markupsafe
 _name="markupsafe"
 alias=(${_name})
 
-version=3.0.2
-release=4
+version=3.0.3
+release=1
 
 source=(https://pypi.io/packages/source/m/markupsafe/markupsafe-$version.tar.gz)
 

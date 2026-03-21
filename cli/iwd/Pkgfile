@@ -3,13 +3,13 @@ url="https://git.kernel.org/cgit/network/wireless/iwd.git/"
 
 license="LGPL"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Dania,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Dania,Rems,Spiky"
 
 makedepends=(dbus python-docutils readline pkgconf)
 
 name=iwd
-version=3.11
+version=3.12
 
 source=(https://mirrors.edge.kernel.org/pub/linux/network/wireless/$name-$version.tar.xz)
 

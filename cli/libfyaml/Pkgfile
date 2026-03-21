@@ -3,13 +3,13 @@ url="https://pantoniou.github.io/libfyaml/"
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(grep autoconf libtool)
 
 name=libfyaml
-version=0.9.5
+version=0.9.6
 
 source=(https://github.com/pantoniou/$name/archive/refs/tags/v$version.tar.gz)
 

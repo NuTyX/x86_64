@@ -1,8 +1,8 @@
 description='Python documentation generator'
 url='http://www.sphinx-doc.org/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(python-setuptools python-wheel python-docutils python-jinja 
              python-packaging python-pygments python-requests python-babel
@@ -16,14 +16,12 @@ name=python-sphinx
 _name="sphinx"
 alias=(${_name})
 
-version=8.2.3
-release=3
+version=9.1.0
+release=1
 
 source=(https://pypi.org/packages/source/s/sphinx/sphinx-$version.tar.gz)
 
-
 PKGMK_IGNORE_UNPACK="yes"
-
 
 prepare() {
 localedef -i en_US -f UTF-8 en_US.UTF-8
@@ -37,15 +35,12 @@ build() {
 
   cd ${_name}-$version
 
-  pip3 wheel -w dist \
-    --no-build-isolation \
-    --no-deps $PWD
-  pip3 install --no-index \
-    --find-links dist \
-    --no-cache-dir    \
-    --no-user         \
-    --root=$PKG       \
-    ${_name}
+  python -m build --wheel \
+    --no-isolation --skip-dependency-check
+
+  python -m installer \
+    --destdir=$PKG \
+    dist/*.whl
 
  find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
 }

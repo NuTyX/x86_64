@@ -4,13 +4,14 @@ url="http://curl.haxx.se"
 maintainer="Daniel Stenberg"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
+
 license="MIT"
 
 makedepends=(openssl libidn2 libpsl zlib zstd)
 
 name=curl
-version=8.18.0
-release=2
+version=8.19.0
+release=1
 
 set=(chroot)
 

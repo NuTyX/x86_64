@@ -4,6 +4,8 @@ drwxr-xr-x	root/root	etc/cups/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cups-calibrate
+-rwxr-xr-x	root/root	usr/bin/cups-genppd.5.3
+-rwxr-xr-x	root/root	usr/bin/cups-genppdupdate
 -rwxr-xr-x	root/root	usr/bin/escputil
 -rwxr-xr-x	root/root	usr/bin/testpattern
 drwxr-xr-x	root/root	usr/lib/
@@ -36,9 +38,6 @@ lrwxrwxrwx	root/root	usr/lib/libgutenprint.so.9 -> libgutenprint.so.9.6.0
 lrwxrwxrwx	root/root	usr/lib/libgutenprintui2.so -> libgutenprintui2.so.2.6.0
 lrwxrwxrwx	root/root	usr/lib/libgutenprintui2.so.2 -> libgutenprintui2.so.2.6.0
 -rwxr-xr-x	root/root	usr/lib/libgutenprintui2.so.2.6.0
-drwxr-xr-x	root/root	usr/sbin/
--rwxr-xr-x	root/root	usr/sbin/cups-genppd.5.3
--rwxr-xr-x	root/root	usr/sbin/cups-genppdupdate
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/cups/
 -rw-r--r--	root/root	usr/share/cups/calibrate.ppm
@@ -386,6 +385,35 @@ drwxr-xr-x	root/root	usr/share/gutenprint/5.3/xml/printers/
 -rw-r--r--	root/root	usr/share/gutenprint/5.3/xml/printers/pcl.xml
 -rw-r--r--	root/root	usr/share/gutenprint/5.3/xml/printers/ps.xml
 -rw-r--r--	root/root	usr/share/gutenprint/5.3/xml/printers/raw.xml
+drwxr-xr-x	root/root	usr/share/gutenprint/doc/
+-rw-r--r--	root/root	usr/share/gutenprint/doc/AUTHORS
+-rw-r--r--	root/root	usr/share/gutenprint/doc/COPYING
+-rw-r--r--	root/root	usr/share/gutenprint/doc/ChangeLog
+-rw-r--r--	root/root	usr/share/gutenprint/doc/FAQ.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/NEWS
+-rw-r--r--	root/root	usr/share/gutenprint/doc/README
+-rw-r--r--	root/root	usr/share/gutenprint/doc/gutenprint-users-manual.odt
+-rw-r--r--	root/root	usr/share/gutenprint/doc/gutenprint-users-manual.pdf
+-rw-r--r--	root/root	usr/share/gutenprint/doc/gutenprint.pdf
+drwxr-xr-x	root/root	usr/share/gutenprint/doc/reference-html/
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/a2128.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/book1.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c1723.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c193.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c1974.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c199.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c38.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c463.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/c47.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/f14.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/ln10.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x1675.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x1740.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x2159.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x270.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x66.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x78.html
+-rw-r--r--	root/root	usr/share/gutenprint/doc/reference-html/x961.html
 drwxr-xr-x	root/root	usr/share/gutenprint/samples/
 -rw-r--r--	root/root	usr/share/gutenprint/samples/colorbars4.png
 -rw-r--r--	root/root	usr/share/gutenprint/samples/colorsweep.png

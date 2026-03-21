@@ -9,11 +9,11 @@ contributors="Spiky"
 set=(kde6-frameworks)
 
 name=kcmutils
-version=6.23.0
+version=6.24.0
 
 makedepends=(qt6-base qt6-declarative qt6-tools
              kconfig kconfigwidgets kitemviews kcoreaddons ki18n kio
-             kservice kwidgetsaddons kxmlgui)
+             kservice kwidgetsaddons kxmlgui kirigami)
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 

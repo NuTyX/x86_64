@@ -1,36 +1,43 @@
 description="Top quality printer drivers for POSIX systems"
 url="http://gimp-print.sourceforge.net"
 
-contributors="PierreB,Greg,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="PierreB,Greg,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=gutenprint
 version=5.3.5
-release=2
+release=3
 
-makedepends=(cups gimp)
+makedepends=(autoconf sed m4 cups gimp)
 
 set=(cups printer)
 
 source=(https://downloads.sourceforge.net/gimp-print/gutenprint-$version.tar.xz)
 
-build() {
-
+prepare() {
 cd $name-$version
 sed -i 's|$(PACKAGE)/doc|doc/$(PACKAGE)-$(VERSION)|' \
        {,doc/,doc/developer/}Makefile.in
 
+sed -i 's@cups_sbindir=\"\${cups_exec_prefix}\/sbin\"@cups_sbindir=\"\${cups_exec_prefix}\/bin\"@' \
+m4local/stp_cups.m4
+
+autoreconf -vfi
+}
+build() {
+cd $name-$version
+
 ./configure --prefix=/usr --disable-static \
-            --without-gimp2    \
+            --without-gimp2 --sbindir=/usr/bin \
             --without-gimp2-as-gutenprint
 
 make
 make DESTDIR=$PKG install
 
-install -v -m755 -d $PKG/usr/share/doc/gutenprint-$version/api/gutenprint{,ui2}
+install -v -m755 -d $PKG/usr/share/doc/$name/api/gutenprint{,ui2}
 install -v -m644    doc/gutenprint/html/* \
-        $PKG/usr/share/doc/gutenprint-$version/api/gutenprint
+        $PKG/usr/share/doc/$name/api/gutenprint
 
 install -v -m644    doc/gutenprintui2/html/* \
-        $PKG/usr/share/doc/gutenprint-$version/api/gutenprintui2
+        $PKG/usr/share/doc/$name/api/gutenprintui2
 }

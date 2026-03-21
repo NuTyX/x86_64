@@ -1,17 +1,17 @@
 description="The International Components for Unicode (ICU) package is \
 a mature, widely used set of C/C++ libraries"
-url="http://www.icu-project.org/"
+url="https://www.icu-project.org/"
 
 license="UNICODE LICENSE V3"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Remy,Spiky"
 
 makedepends=(llvm doxygen)
 
 name=icu
-version=78.2
-release=2
+version=78.3
+release=1
 
 PKGMK_GROUPS=(lib devel man)
 PKGMK_IGNORE_UNPACK="yes"
