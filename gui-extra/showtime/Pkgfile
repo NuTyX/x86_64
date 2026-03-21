@@ -1,0 +1,16 @@
+description='Video player for GNOME'
+url='https://apps.gnome.org/Showtime/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(blueprint-compiler gstreamer-plugins-base libadwaita python-gobject)
+run=()
+set=()
+
+name=showtime
+version=49.1
+
+source=(https://gitlab.gnome.org/GNOME/showtime/-/archive/$version/showtime-$version.tar.gz)
+
+build=meson
