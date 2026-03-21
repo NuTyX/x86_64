@@ -18,7 +18,7 @@ set=()
 
 name=gtk4
 version=4.20.3
-release=2
+release=3
 
 PKGMK_GROUPS=(devel doc lib man)
 PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dbroadway-backend=true \
