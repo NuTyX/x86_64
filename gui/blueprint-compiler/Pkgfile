@@ -1,0 +1,18 @@
+description='Markup language for GTK user interfaces'
+url='https://jwestman.pages.gitlab.gnome.org/blueprint-compiler'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(python-gobject)
+
+name=blueprint-compiler
+version=0.20.4
+
+source=(https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/v$version/$name-v$version.tar.gz)
+
+prepare() {
+mv $name-v$version $name-$version
+}
+
+build=meson
