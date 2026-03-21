@@ -5,9 +5,9 @@ lrwxrwxrwx	root/root	usr/bin/amdgpu-arch -> offload-arch
 -rwxr-xr-x	root/root	usr/bin/analyze-build
 -rwxr-xr-x	root/root	usr/bin/bugpoint
 -rwxr-xr-x	root/root	usr/bin/c-index-test
-lrwxrwxrwx	root/root	usr/bin/clang -> clang-21
+lrwxrwxrwx	root/root	usr/bin/clang -> clang-22
 lrwxrwxrwx	root/root	usr/bin/clang++ -> clang
--rwxr-xr-x	root/root	usr/bin/clang-21
+-rwxr-xr-x	root/root	usr/bin/clang-22
 -rwxr-xr-x	root/root	usr/bin/clang-check
 lrwxrwxrwx	root/root	usr/bin/clang-cl -> clang
 lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
@@ -17,7 +17,7 @@ lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
 -rwxr-xr-x	root/root	usr/bin/clang-linker-wrapper
 -rwxr-xr-x	root/root	usr/bin/clang-nvlink-wrapper
 -rwxr-xr-x	root/root	usr/bin/clang-offload-bundler
--rwxr-xr-x	root/root	usr/bin/clang-offload-packager
+lrwxrwxrwx	root/root	usr/bin/clang-offload-packager -> llvm-offload-binary
 -rwxr-xr-x	root/root	usr/bin/clang-refactor
 -rwxr-xr-x	root/root	usr/bin/clang-repl
 -rwxr-xr-x	root/root	usr/bin/clang-scan-deps
@@ -36,6 +36,7 @@ lrwxrwxrwx	root/root	usr/bin/llvm-addr2line -> llvm-symbolizer
 -rwxr-xr-x	root/root	usr/bin/llvm-bcanalyzer
 lrwxrwxrwx	root/root	usr/bin/llvm-bitcode-strip -> llvm-objcopy
 -rwxr-xr-x	root/root	usr/bin/llvm-c-test
+-rwxr-xr-x	root/root	usr/bin/llvm-cas
 -rwxr-xr-x	root/root	usr/bin/llvm-cat
 -rwxr-xr-x	root/root	usr/bin/llvm-cfi-verify
 -rwxr-xr-x	root/root	usr/bin/llvm-cgdata
@@ -60,6 +61,7 @@ lrwxrwxrwx	root/root	usr/bin/llvm-dlltool -> llvm-ar
 -rwxr-xr-x	root/root	usr/bin/llvm-gsymutil
 -rwxr-xr-x	root/root	usr/bin/llvm-ifs
 lrwxrwxrwx	root/root	usr/bin/llvm-install-name-tool -> llvm-objcopy
+-rwxr-xr-x	root/root	usr/bin/llvm-ir2vec
 -rwxr-xr-x	root/root	usr/bin/llvm-jitlink
 lrwxrwxrwx	root/root	usr/bin/llvm-lib -> llvm-ar
 -rwxr-xr-x	root/root	usr/bin/llvm-libtool-darwin
@@ -76,6 +78,8 @@ lrwxrwxrwx	root/root	usr/bin/llvm-ml64 -> llvm-ml
 -rwxr-xr-x	root/root	usr/bin/llvm-nm
 -rwxr-xr-x	root/root	usr/bin/llvm-objcopy
 -rwxr-xr-x	root/root	usr/bin/llvm-objdump
+-rwxr-xr-x	root/root	usr/bin/llvm-offload-binary
+-rwxr-xr-x	root/root	usr/bin/llvm-offload-wrapper
 -rwxr-xr-x	root/root	usr/bin/llvm-opt-report
 lrwxrwxrwx	root/root	usr/bin/llvm-otool -> llvm-objdump
 -rwxr-xr-x	root/root	usr/bin/llvm-pdbutil
