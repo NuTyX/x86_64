@@ -5,42 +5,22 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Pierrei,Jayce,Spiky"
 
 makedepends=(meson ninja xmlto libxslt polkit libxcrypt
-             gobject-introspection vala)
+             gobject-introspection vala json-c)
 
 set=(gnome kde6)
 
 name=accountsservice
-version=23.13.9
-release=7
+version=26.12.8
+release=2
 
-source=(http://www.freedesktop.org/software/$name/$name-$version.tar.xz)
+PKGMK_GROUPS=(devel)
+PKGMK_MESON_OPTIONS="-D admin_group=wheel"
 
-prepare() {
-cd $name-$version
-   mv tests/dbusmock{,-tests}
+source=($url/-/archive/$version/$name-$version.tar.bz2)
 
-   sed -e '/accounts_service\.py/s/dbusmock/dbusmock-tests/' \
-    -e 's/assertEquals/assertEqual/'                      \
-    -i tests/test-libaccountsservice.py
+build=meson
 
-sed -i '/^SIMULATED_SYSTEM_LOCALE/s/en_IE.UTF-8/en_HK.iso88591/' tests/test-daemon.py
-}
-
-build() {
-cd $name-$version
-mkdir build
-cd    build
-meson --prefix=/usr             \
-      -Dadmin_group=adm         \
-      ..
-
-grep 'print_indent'     ../subprojects/mocklibc-1.0/src/netgroup.c \
-     | sed 's/ {/;/' >> ../subprojects/mocklibc-1.0/src/netgroup.h &&
-sed -i '1i#include <stdio.h>'                                      \
-    ../subprojects/mocklibc-1.0/src/netgroup.h
-
-ninja
-DESTDIR=$PKG ninja install
- 
-mkdir -p $PKG/var/{lib,run}/polkit-1
+package() { 
+ install -d  $PKG/var/{lib,run}/polkit-1
+ install -d $PKG/usr/share/accountsservice/interfaces
 }
