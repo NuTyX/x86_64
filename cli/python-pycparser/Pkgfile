@@ -4,23 +4,21 @@ url="https://github.com/eliben/pycparser"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(python-setuptools python-ply)
+makedepends=(python-build python-installer python-setuptools python-wheel)
 
 name=python-pycparser
 _name="pycparser"
 alias=(${_name})
 
-version=2.23
+version=3.00
 release=1
 
 source=(https://github.com/eliben/pycparser/archive/refs/tags/release_v${version}.tar.gz)
 build() {
 
 cd ${_name}-release_v${version}
-python setup.py build
-  cd pycparser
-  python _build_tables.py
+python -m build --wheel --no-isolation
 
- cd ../
-python setup.py install --root=$PKG --optimize=1
+python -m installer --destdir=$PKG dist/*.whl
+install -Dm644 LICENSE -t $PKG/usr/share/licenses/$name/
 }
