@@ -10,10 +10,11 @@ run=(python-six python-pygments)
 PKGMK_GROUPS=()
 
 name=gtk-doc
-version=1.35.1
+version=1.36.0
 release=1
 
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
+PKGMK_MESON_OPTIONS="-D tests=false"
 
 build=meson
