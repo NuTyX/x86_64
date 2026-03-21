@@ -10,9 +10,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/spice-vdagentd
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/systemd/
-drwxr-xr-x	root/root	usr/lib/systemd/system/
--rw-r--r--	root/root	usr/lib/systemd/system/spice-vdagentd.service
--rw-r--r--	root/root	usr/lib/systemd/system/spice-vdagentd.socket
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 drwxr-xr-x	root/root	usr/lib/systemd/user/graphical-session.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/user/graphical-session.target.wants/spice-vdagent.service -> ../spice-vdagent.service
