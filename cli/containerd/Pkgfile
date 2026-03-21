@@ -3,13 +3,13 @@ url='https://containerd.io/'
 
 license="APACHE"
 
-contributors="MattHoush,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="MattHoush,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(go btrfs-progs git libseccomp)
 
 name=containerd
-version=2.2.1
+version=2.2.2
 PKGMK_KEEP_SOURCES="no"
 
 source=(https://github.com/containerd/containerd/archive/refs/tags/v${version}.tar.gz)
