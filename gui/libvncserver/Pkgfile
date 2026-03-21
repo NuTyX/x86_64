@@ -7,8 +7,8 @@ contributors="Jayce,Spiky"
 makedepends=(libjpeg-turbo libpng gnutls libgcrypt sdl)
 
 name=libvncserver
-version=0.9.14
-release=3
+version=0.9.15
+release=1
 
 source=(https://github.com/LibVNC/libvncserver/archive/LibVNCServer-${version}.tar.gz)
 
@@ -17,7 +17,8 @@ cd $name-LibVNCServer-$version
 
 mkdir -pv build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+-DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
 
 make
 make DESTDIR=$PKG install
