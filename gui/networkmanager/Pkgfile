@@ -3,8 +3,8 @@ url="https://networkmanager.dev/"
 
 license="LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Rems,Spiky"
 
 makedepends=(libndp libgudev dbus-glib iptables libnl
              nss wireless-tools polkit upower vala grep
@@ -17,8 +17,10 @@ alias=(NetworkManager)
 _name=NetworkManager
 
 name=networkmanager
-version=1.54.3
-release=3
+version=1.56.0
+release=1
+
+PKGMK_GROUPS=(devel doc man)
 
 source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/$version/downloads/NetworkManager-$version.tar.xz)
 
