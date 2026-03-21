@@ -10,7 +10,7 @@ makedepends=(gcr-4 kerberos libgnome-keyring libnotify librest libsecret
 run=(gtk-update-icon-cache keyutils)
 
 name=gnome-online-accounts
-version=3.56.2
+version=3.56.5
 
 PKGMK_MESON_OPTIONS="-Dgtk_doc=true"
 
