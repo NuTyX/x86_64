@@ -3,36 +3,24 @@ url='https://github.com/haasn/libplacebo'
 
 license="LGPL2.2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(glad ffmpeg glslang vulkan-icd-loader lcms2)
 
 name=libplacebo
-version=7.360.0
+version=7.360.1
 
 source=(fix_glslang_linking.patch
         https://github.com/haasn/libplacebo/archive/refs/tags/v$version/$name-$version.tar.gz)
+PKGMK_MESON_OPTIONS="-Dtests=true -Ddemos=false"
 
 prepare() {
  cd $name-$version
  patch -Np1 < $SRC/fix_glslang_linking.patch
 }
-build() {
-cd $name-$version
+build=meson
 
-   mkdir build &&
-cd    build &&
-
-meson setup ..            \
-      --prefix=/usr       \
-      --buildtype=release \
-      -Dtests=true        \
-      -Ddemos=false
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
+package() {
+ install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
