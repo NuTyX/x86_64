@@ -4,6 +4,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gnome-session-inhibit
 -rwxr-xr-x	root/root	usr/bin/gnome-session-quit
 drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/gnome-session-ctl
+-rwxr-xr-x	root/root	usr/lib/gnome-session-init-worker
+-rwxr-xr-x	root/root	usr/lib/gnome-session-service
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 drwxr-xr-x	root/root	usr/lib/systemd/user/app-flatpak-.scope.d/
@@ -29,10 +32,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/user/app-gnome-.scope.d/
 -rw-r--r--	root/root	usr/lib/systemd/user/gnome-session@.target
 drwxr-xr-x	root/root	usr/lib/systemd/user/gnome-session@gnome.target.d/
 -rw-r--r--	root/root	usr/lib/systemd/user/gnome-session@gnome.target.d/gnome.session.conf
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/gnome-session-ctl
--rwxr-xr-x	root/root	usr/libexec/gnome-session-init-worker
--rwxr-xr-x	root/root	usr/libexec/gnome-session-service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-mimeapps.list
