@@ -1,5 +1,5 @@
 description="Eye of Gnome: An image viewing and cataloging program"
-url="http://www.gnome.org/"
+url="https://www.gnome.org/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Fanch,Jayce,Remy,Fabienwang,Spiky"
@@ -13,17 +13,10 @@ run=(adwaita-icon-theme gsettings-desktop-schemas
 set=(gnome)
 
 name=eog
-version=47.0
+version=49.2
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
-build() {
+PKGMK_MESON_OPTIONS="-Dlibportal=false"
 
-meson setup $name-$version build \
-      --prefix=/usr \
-      -D libportal=false
-
-meson compile -C build
-
-DESTDIR=$PKG meson install -C build
-}
+build=meson
