@@ -11,8 +11,8 @@ run=(adwaita-icon-theme colord gnome-themes-extra )
 set=(xfce4)
 
 name=xfce4-settings
-version=4.20.3
-release=2
+version=4.20.4
+release=1
 
 source=(default-xsettings-xml.patch
         https://archive.xfce.org/src/xfce/${name}/${version%.*}/$name-$version.tar.bz2)
