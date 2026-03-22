@@ -16,6 +16,7 @@ set=(gnome)
 
 name=mutter
 version=49.5
+release=2
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
