@@ -2,6 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gnome-software
 drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/gnome-software-cmd
+-rwxr-xr-x	root/root	usr/lib/gnome-software-restarter
 drwxr-xr-x	root/root	usr/lib/gnome-software/
 lrwxrwxrwx	root/root	usr/lib/gnome-software/libgnomesoftware.so -> libgnomesoftware.so.23
 -rwxr-xr-x	root/root	usr/lib/gnome-software/libgnomesoftware.so.23
@@ -25,9 +27,6 @@ drwxr-xr-x	root/root	usr/lib/gnome-software/plugins-23/
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/gnome-software.service
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/gnome-software-cmd
--rwxr-xr-x	root/root	usr/libexec/gnome-software-restarter
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-software-local-file-flatpak.desktop
@@ -73,6 +72,58 @@ drwxr-xr-x	root/root	usr/share/help/C/gnome-software/figures/scalable/symbolic/
 -rw-r--r--	root/root	usr/share/help/C/gnome-software/legal.xml
 -rw-r--r--	root/root	usr/share/help/C/gnome-software/software-licensing.page
 -rw-r--r--	root/root	usr/share/help/C/gnome-software/software-metadata.page
+drwxr-xr-x	root/root	usr/share/help/bg/
+drwxr-xr-x	root/root	usr/share/help/bg/gnome-software/
+drwxr-xr-x	root/root	usr/share/help/bg/gnome-software/figures/
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/app-context-bar.png -> ../../../C/gnome-software/figures/app-context-bar.png
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/app-screenshot.png -> ../../../C/gnome-software/figures/app-screenshot.png
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/carousel.png -> ../../../C/gnome-software/figures/carousel.png
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/install-webapp-from-gnome-web.png -> ../../../C/gnome-software/figures/install-webapp-from-gnome-web.png
+drwxr-xr-x	root/root	usr/share/help/bg/gnome-software/figures/scalable/
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/license-community-built.svg -> ../../../../C/gnome-software/figures/scalable/license-community-built.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/license-proprietary-and-special.svg -> ../../../../C/gnome-software/figures/scalable/license-proprietary-and-special.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/license-unknown.svg -> ../../../../C/gnome-software/figures/scalable/license-unknown.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/links.svg -> ../../../../C/gnome-software/figures/scalable/links.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/no-links.svg -> ../../../../C/gnome-software/figures/scalable/no-links.svg
+drwxr-xr-x	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/computer-fail-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/computer-fail-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/contact-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/contact-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/donate-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/donate-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/help-link-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/help-link-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/image-missing-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/image-missing-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/translations-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/translations-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/bg/gnome-software/figures/scalable/symbolic/webpage-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/webpage-symbolic.svg
+-rw-r--r--	root/root	usr/share/help/bg/gnome-software/how-to-reinstall-a-web-app.page
+-rw-r--r--	root/root	usr/share/help/bg/gnome-software/index.page
+-rw-r--r--	root/root	usr/share/help/bg/gnome-software/legal.xml
+-rw-r--r--	root/root	usr/share/help/bg/gnome-software/software-licensing.page
+-rw-r--r--	root/root	usr/share/help/bg/gnome-software/software-metadata.page
+drwxr-xr-x	root/root	usr/share/help/ca/
+drwxr-xr-x	root/root	usr/share/help/ca/gnome-software/
+drwxr-xr-x	root/root	usr/share/help/ca/gnome-software/figures/
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/app-context-bar.png -> ../../../C/gnome-software/figures/app-context-bar.png
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/app-screenshot.png -> ../../../C/gnome-software/figures/app-screenshot.png
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/carousel.png -> ../../../C/gnome-software/figures/carousel.png
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/install-webapp-from-gnome-web.png -> ../../../C/gnome-software/figures/install-webapp-from-gnome-web.png
+drwxr-xr-x	root/root	usr/share/help/ca/gnome-software/figures/scalable/
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/license-community-built.svg -> ../../../../C/gnome-software/figures/scalable/license-community-built.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/license-proprietary-and-special.svg -> ../../../../C/gnome-software/figures/scalable/license-proprietary-and-special.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/license-unknown.svg -> ../../../../C/gnome-software/figures/scalable/license-unknown.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/links.svg -> ../../../../C/gnome-software/figures/scalable/links.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/no-links.svg -> ../../../../C/gnome-software/figures/scalable/no-links.svg
+drwxr-xr-x	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/computer-fail-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/computer-fail-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/contact-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/contact-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/donate-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/donate-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/help-link-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/help-link-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/image-missing-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/image-missing-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/translations-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/translations-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/ca/gnome-software/figures/scalable/symbolic/webpage-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/webpage-symbolic.svg
+-rw-r--r--	root/root	usr/share/help/ca/gnome-software/how-to-reinstall-a-web-app.page
+-rw-r--r--	root/root	usr/share/help/ca/gnome-software/index.page
+-rw-r--r--	root/root	usr/share/help/ca/gnome-software/legal.xml
+-rw-r--r--	root/root	usr/share/help/ca/gnome-software/software-licensing.page
+-rw-r--r--	root/root	usr/share/help/ca/gnome-software/software-metadata.page
 drwxr-xr-x	root/root	usr/share/help/cs/
 drwxr-xr-x	root/root	usr/share/help/cs/gnome-software/
 drwxr-xr-x	root/root	usr/share/help/cs/gnome-software/figures/
@@ -125,6 +176,32 @@ lrwxrwxrwx	root/root	usr/share/help/de/gnome-software/figures/scalable/symbolic/
 -rw-r--r--	root/root	usr/share/help/de/gnome-software/legal.xml
 -rw-r--r--	root/root	usr/share/help/de/gnome-software/software-licensing.page
 -rw-r--r--	root/root	usr/share/help/de/gnome-software/software-metadata.page
+drwxr-xr-x	root/root	usr/share/help/el/
+drwxr-xr-x	root/root	usr/share/help/el/gnome-software/
+drwxr-xr-x	root/root	usr/share/help/el/gnome-software/figures/
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/app-context-bar.png -> ../../../C/gnome-software/figures/app-context-bar.png
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/app-screenshot.png -> ../../../C/gnome-software/figures/app-screenshot.png
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/carousel.png -> ../../../C/gnome-software/figures/carousel.png
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/install-webapp-from-gnome-web.png -> ../../../C/gnome-software/figures/install-webapp-from-gnome-web.png
+drwxr-xr-x	root/root	usr/share/help/el/gnome-software/figures/scalable/
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/license-community-built.svg -> ../../../../C/gnome-software/figures/scalable/license-community-built.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/license-proprietary-and-special.svg -> ../../../../C/gnome-software/figures/scalable/license-proprietary-and-special.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/license-unknown.svg -> ../../../../C/gnome-software/figures/scalable/license-unknown.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/links.svg -> ../../../../C/gnome-software/figures/scalable/links.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/no-links.svg -> ../../../../C/gnome-software/figures/scalable/no-links.svg
+drwxr-xr-x	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/computer-fail-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/computer-fail-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/contact-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/contact-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/donate-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/donate-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/help-link-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/help-link-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/image-missing-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/image-missing-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/translations-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/translations-symbolic.svg
+lrwxrwxrwx	root/root	usr/share/help/el/gnome-software/figures/scalable/symbolic/webpage-symbolic.svg -> ../../../../../C/gnome-software/figures/scalable/symbolic/webpage-symbolic.svg
+-rw-r--r--	root/root	usr/share/help/el/gnome-software/how-to-reinstall-a-web-app.page
+-rw-r--r--	root/root	usr/share/help/el/gnome-software/index.page
+-rw-r--r--	root/root	usr/share/help/el/gnome-software/legal.xml
+-rw-r--r--	root/root	usr/share/help/el/gnome-software/software-licensing.page
+-rw-r--r--	root/root	usr/share/help/el/gnome-software/software-metadata.page
 drwxr-xr-x	root/root	usr/share/help/eu/
 drwxr-xr-x	root/root	usr/share/help/eu/gnome-software/
 drwxr-xr-x	root/root	usr/share/help/eu/gnome-software/figures/
