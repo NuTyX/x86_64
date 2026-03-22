@@ -1,10 +1,10 @@
 description="Ristretto is a fast and lightweight picture-viewer for the Xfce desktop environment."
-url="http://goodies.xfce.org/projects/applications/ristretto"
+url="https://goodies.xfce.org/projects/applications/ristretto"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tyrry,Greg,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tyrry,Greg,Fabienwang,Spiky"
 
 makedepends=(libxfce4util libxfce4ui xorg-libxinerama xorg-libxrandr
              xorg-libsm thunar libexif)
@@ -13,23 +13,12 @@ run=(tumbler)
 set=(xfce4-extra)
 
 name=ristretto
-version=0.13.4
+version=0.14.0
 
 source=(https://archive.xfce.org/src/apps/$name/${version:0:4}/$name-$version.tar.xz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-     --prefix=/usr          \
-     --buildtype=plain
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
