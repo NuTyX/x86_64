@@ -5,10 +5,12 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gedit/
 drwxr-xr-x	root/root	usr/lib/gedit/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/gedit/girepository-1.0/Gedit-3.0.typelib
--rwxr-xr-x	root/root	usr/lib/gedit/libgedit-48.1.so
+-rwxr-xr-x	root/root	usr/lib/gedit/libgedit-49.so
 drwxr-xr-x	root/root	usr/lib/gedit/plugins/
+-rw-r--r--	root/root	usr/lib/gedit/plugins/codecomment.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/docinfo.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/filebrowser.plugin
+-rwxr-xr-x	root/root	usr/lib/gedit/plugins/libcodecomment.so
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libdocinfo.so
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libfilebrowser.so
 -rwxr-xr-x	root/root	usr/lib/gedit/plugins/libmodelines.so
@@ -23,13 +25,6 @@ drwxr-xr-x	root/root	usr/lib/gedit/plugins/
 -rw-r--r--	root/root	usr/lib/gedit/plugins/spell.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/textsize.plugin
 -rw-r--r--	root/root	usr/lib/gedit/plugins/time.plugin
-drwxr-xr-x	root/root	usr/lib/python3.14/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/overrides/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/Gedit.py
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/Gedit.cpython-314.pyc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.gnome.gedit.desktop
@@ -57,11 +52,12 @@ drwxr-xr-x	root/root	usr/share/help/C/gedit/
 drwxr-xr-x	root/root	usr/share/help/C/gedit/figures/
 -rw-r--r--	root/root	usr/share/help/C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/C/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/C/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/C/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-general-intro.page
@@ -70,8 +66,8 @@ drwxr-xr-x	root/root	usr/share/help/C/gedit/figures/
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/C/gedit/gedit-plugins-insert-date-time.page
@@ -94,11 +90,12 @@ drwxr-xr-x	root/root	usr/share/help/ar/gedit/
 drwxr-xr-x	root/root	usr/share/help/ar/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-general-intro.page
@@ -107,8 +104,8 @@ lrwxrwxrwx	root/root	usr/share/help/ar/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ar/gedit/gedit-plugins-insert-date-time.page
@@ -131,11 +128,12 @@ drwxr-xr-x	root/root	usr/share/help/bg/gedit/
 drwxr-xr-x	root/root	usr/share/help/bg/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/bg/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-general-intro.page
@@ -144,8 +142,8 @@ lrwxrwxrwx	root/root	usr/share/help/bg/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/bg/gedit/gedit-plugins-insert-date-time.page
@@ -168,11 +166,12 @@ drwxr-xr-x	root/root	usr/share/help/ca/gedit/
 drwxr-xr-x	root/root	usr/share/help/ca/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-general-intro.page
@@ -181,8 +180,8 @@ lrwxrwxrwx	root/root	usr/share/help/ca/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ca/gedit/gedit-plugins-insert-date-time.page
@@ -205,11 +204,12 @@ drwxr-xr-x	root/root	usr/share/help/cs/gedit/
 drwxr-xr-x	root/root	usr/share/help/cs/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-general-intro.page
@@ -218,8 +218,8 @@ lrwxrwxrwx	root/root	usr/share/help/cs/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/cs/gedit/gedit-plugins-insert-date-time.page
@@ -242,11 +242,12 @@ drwxr-xr-x	root/root	usr/share/help/da/gedit/
 drwxr-xr-x	root/root	usr/share/help/da/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/da/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/da/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/da/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/da/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-general-intro.page
@@ -255,8 +256,8 @@ lrwxrwxrwx	root/root	usr/share/help/da/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/da/gedit/gedit-plugins-insert-date-time.page
@@ -279,11 +280,12 @@ drwxr-xr-x	root/root	usr/share/help/de/gedit/
 drwxr-xr-x	root/root	usr/share/help/de/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/de/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/de/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/de/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/de/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-general-intro.page
@@ -292,8 +294,8 @@ lrwxrwxrwx	root/root	usr/share/help/de/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/de/gedit/gedit-plugins-insert-date-time.page
@@ -316,11 +318,12 @@ drwxr-xr-x	root/root	usr/share/help/el/gedit/
 drwxr-xr-x	root/root	usr/share/help/el/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/el/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/el/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/el/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/el/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-general-intro.page
@@ -329,8 +332,8 @@ lrwxrwxrwx	root/root	usr/share/help/el/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/el/gedit/gedit-plugins-insert-date-time.page
@@ -353,11 +356,12 @@ drwxr-xr-x	root/root	usr/share/help/en_GB/gedit/
 drwxr-xr-x	root/root	usr/share/help/en_GB/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-general-intro.page
@@ -366,8 +370,8 @@ lrwxrwxrwx	root/root	usr/share/help/en_GB/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/en_GB/gedit/gedit-plugins-insert-date-time.page
@@ -390,11 +394,12 @@ drwxr-xr-x	root/root	usr/share/help/es/gedit/
 drwxr-xr-x	root/root	usr/share/help/es/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/es/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/es/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/es/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-general-intro.page
@@ -403,8 +408,8 @@ lrwxrwxrwx	root/root	usr/share/help/es/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/es/gedit/gedit-plugins-insert-date-time.page
@@ -427,11 +432,12 @@ drwxr-xr-x	root/root	usr/share/help/eu/gedit/
 drwxr-xr-x	root/root	usr/share/help/eu/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-general-intro.page
@@ -440,8 +446,8 @@ lrwxrwxrwx	root/root	usr/share/help/eu/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/eu/gedit/gedit-plugins-insert-date-time.page
@@ -464,11 +470,12 @@ drwxr-xr-x	root/root	usr/share/help/fi/gedit/
 drwxr-xr-x	root/root	usr/share/help/fi/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-general-intro.page
@@ -477,8 +484,8 @@ lrwxrwxrwx	root/root	usr/share/help/fi/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/fi/gedit/gedit-plugins-insert-date-time.page
@@ -501,11 +508,12 @@ drwxr-xr-x	root/root	usr/share/help/fr/gedit/
 drwxr-xr-x	root/root	usr/share/help/fr/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/fr/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-general-intro.page
@@ -514,8 +522,8 @@ lrwxrwxrwx	root/root	usr/share/help/fr/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/fr/gedit/gedit-plugins-insert-date-time.page
@@ -538,11 +546,12 @@ drwxr-xr-x	root/root	usr/share/help/gl/gedit/
 drwxr-xr-x	root/root	usr/share/help/gl/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-general-intro.page
@@ -551,8 +560,8 @@ lrwxrwxrwx	root/root	usr/share/help/gl/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/gl/gedit/gedit-plugins-insert-date-time.page
@@ -575,11 +584,12 @@ drwxr-xr-x	root/root	usr/share/help/hu/gedit/
 drwxr-xr-x	root/root	usr/share/help/hu/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/hu/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-general-intro.page
@@ -588,8 +598,8 @@ lrwxrwxrwx	root/root	usr/share/help/hu/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/hu/gedit/gedit-plugins-insert-date-time.page
@@ -612,11 +622,12 @@ drwxr-xr-x	root/root	usr/share/help/id/gedit/
 drwxr-xr-x	root/root	usr/share/help/id/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/id/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/id/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/id/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-general-intro.page
@@ -625,8 +636,8 @@ lrwxrwxrwx	root/root	usr/share/help/id/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/id/gedit/gedit-plugins-insert-date-time.page
@@ -649,11 +660,12 @@ drwxr-xr-x	root/root	usr/share/help/it/gedit/
 drwxr-xr-x	root/root	usr/share/help/it/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/it/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/it/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/it/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-general-intro.page
@@ -662,8 +674,8 @@ lrwxrwxrwx	root/root	usr/share/help/it/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/it/gedit/gedit-plugins-insert-date-time.page
@@ -686,11 +698,12 @@ drwxr-xr-x	root/root	usr/share/help/ja/gedit/
 drwxr-xr-x	root/root	usr/share/help/ja/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-general-intro.page
@@ -699,8 +712,8 @@ lrwxrwxrwx	root/root	usr/share/help/ja/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ja/gedit/gedit-plugins-insert-date-time.page
@@ -723,11 +736,12 @@ drwxr-xr-x	root/root	usr/share/help/ko/gedit/
 drwxr-xr-x	root/root	usr/share/help/ko/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-general-intro.page
@@ -736,8 +750,8 @@ lrwxrwxrwx	root/root	usr/share/help/ko/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ko/gedit/gedit-plugins-insert-date-time.page
@@ -760,11 +774,12 @@ drwxr-xr-x	root/root	usr/share/help/lv/gedit/
 drwxr-xr-x	root/root	usr/share/help/lv/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-general-intro.page
@@ -773,8 +788,8 @@ lrwxrwxrwx	root/root	usr/share/help/lv/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/lv/gedit/gedit-plugins-insert-date-time.page
@@ -797,11 +812,12 @@ drwxr-xr-x	root/root	usr/share/help/oc/gedit/
 drwxr-xr-x	root/root	usr/share/help/oc/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-general-intro.page
@@ -810,8 +826,8 @@ lrwxrwxrwx	root/root	usr/share/help/oc/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/oc/gedit/gedit-plugins-insert-date-time.page
@@ -834,11 +850,12 @@ drwxr-xr-x	root/root	usr/share/help/pl/gedit/
 drwxr-xr-x	root/root	usr/share/help/pl/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/pl/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-general-intro.page
@@ -847,8 +864,8 @@ lrwxrwxrwx	root/root	usr/share/help/pl/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/pl/gedit/gedit-plugins-insert-date-time.page
@@ -871,11 +888,12 @@ drwxr-xr-x	root/root	usr/share/help/pt_BR/gedit/
 drwxr-xr-x	root/root	usr/share/help/pt_BR/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-general-intro.page
@@ -884,8 +902,8 @@ lrwxrwxrwx	root/root	usr/share/help/pt_BR/gedit/figures/gedit-icon-24x24.png -> 
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/pt_BR/gedit/gedit-plugins-insert-date-time.page
@@ -908,11 +926,12 @@ drwxr-xr-x	root/root	usr/share/help/ro/gedit/
 drwxr-xr-x	root/root	usr/share/help/ro/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/ro/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-general-intro.page
@@ -921,8 +940,8 @@ lrwxrwxrwx	root/root	usr/share/help/ro/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ro/gedit/gedit-plugins-insert-date-time.page
@@ -945,11 +964,12 @@ drwxr-xr-x	root/root	usr/share/help/ru/gedit/
 drwxr-xr-x	root/root	usr/share/help/ru/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-general-intro.page
@@ -958,8 +978,8 @@ lrwxrwxrwx	root/root	usr/share/help/ru/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/ru/gedit/gedit-plugins-insert-date-time.page
@@ -982,11 +1002,12 @@ drwxr-xr-x	root/root	usr/share/help/sl/gedit/
 drwxr-xr-x	root/root	usr/share/help/sl/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-general-intro.page
@@ -995,8 +1016,8 @@ lrwxrwxrwx	root/root	usr/share/help/sl/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/sl/gedit/gedit-plugins-insert-date-time.page
@@ -1019,11 +1040,12 @@ drwxr-xr-x	root/root	usr/share/help/sv/gedit/
 drwxr-xr-x	root/root	usr/share/help/sv/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 -rw-r--r--	root/root	usr/share/help/sv/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-general-intro.page
@@ -1032,8 +1054,8 @@ lrwxrwxrwx	root/root	usr/share/help/sv/gedit/figures/gedit-icon-24x24.png -> ../
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/sv/gedit/gedit-plugins-insert-date-time.page
@@ -1056,11 +1078,12 @@ drwxr-xr-x	root/root	usr/share/help/te/gedit/
 drwxr-xr-x	root/root	usr/share/help/te/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/te/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/te/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/te/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-general-intro.page
@@ -1069,8 +1092,8 @@ lrwxrwxrwx	root/root	usr/share/help/te/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/te/gedit/gedit-plugins-insert-date-time.page
@@ -1093,11 +1116,12 @@ drwxr-xr-x	root/root	usr/share/help/th/gedit/
 drwxr-xr-x	root/root	usr/share/help/th/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/th/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/th/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/th/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-general-intro.page
@@ -1106,8 +1130,8 @@ lrwxrwxrwx	root/root	usr/share/help/th/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/th/gedit/gedit-plugins-insert-date-time.page
@@ -1130,11 +1154,12 @@ drwxr-xr-x	root/root	usr/share/help/uk/gedit/
 drwxr-xr-x	root/root	usr/share/help/uk/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-general-intro.page
@@ -1143,8 +1168,8 @@ lrwxrwxrwx	root/root	usr/share/help/uk/gedit/figures/gedit3-screenshot.png -> ..
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/uk/gedit/gedit-plugins-insert-date-time.page
@@ -1167,11 +1192,12 @@ drwxr-xr-x	root/root	usr/share/help/zh_CN/gedit/
 drwxr-xr-x	root/root	usr/share/help/zh_CN/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-general-intro.page
@@ -1180,8 +1206,8 @@ lrwxrwxrwx	root/root	usr/share/help/zh_CN/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/zh_CN/gedit/gedit-plugins-insert-date-time.page
@@ -1204,11 +1230,12 @@ drwxr-xr-x	root/root	usr/share/help/zh_HK/gedit/
 drwxr-xr-x	root/root	usr/share/help/zh_HK/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-general-intro.page
@@ -1217,8 +1244,8 @@ lrwxrwxrwx	root/root	usr/share/help/zh_HK/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/zh_HK/gedit/gedit-plugins-insert-date-time.page
@@ -1241,11 +1268,12 @@ drwxr-xr-x	root/root	usr/share/help/zh_TW/gedit/
 drwxr-xr-x	root/root	usr/share/help/zh_TW/gedit/figures/
 lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit-icon-24x24.png -> ../../../C/gedit/figures/gedit-icon-24x24.png
 lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit3-screenshot.png -> ../../../C/gedit/figures/gedit3-screenshot.png
+-rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-admin-privileges.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-brief-intro.page
+-rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-change-color-scheme.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-close-file.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-create-new-file.page
--rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-edit-as-root.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-files-basic.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-full-screen.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-general-intro.page
@@ -1254,8 +1282,8 @@ lrwxrwxrwx	root/root	usr/share/help/zh_TW/gedit/figures/gedit3-screenshot.png ->
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-open-on-server.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-open-recent.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-open-several-files-at-once.page
+-rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugin-code-comment.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugin-guide.page
--rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-change-case.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-doc-stats.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-file-browser.page
 -rw-r--r--	root/root	usr/share/help/zh_TW/gedit/gedit-plugins-insert-date-time.page

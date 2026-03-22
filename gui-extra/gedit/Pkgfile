@@ -1,5 +1,5 @@
 description="A text editor for GNOME"
-url="https://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/gedit"
 
 license="GPL2"
 
@@ -7,36 +7,32 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Jayce,Fanch,Spiky"
 
 makedepends=(meson ninja libpeas yelp-xsl enchant iso-codes
-             libgedit-gtksourceview gspell enchant
+             libgedit-gtksourceview gspell enchant git
              libsoup python-gobject python libgedit-tepl)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gvfs)
 
 name=gedit
-version=48.1
-release=2
+version=49.0
+release=1
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+
+PKGMK_MESON_OPTIONS="-Dgtk_doc=false"
+
+source=(https://gitlab.gnome.org/World/gedit/gedit.git)
 
 prepare() {
-# First change the meson.build script so that it can accept a release build.
-cd $name-$version
-sed -i s/plain/release/ meson.build
+  git clone https://gitlab.gnome.org/GNOME/libgd.git
+
+  cd $name-$version
+  git submodule init
+  git submodule set-url subprojects/libgd $SRC/libgd
+  git -c protocol.file.allow=always submodule update
 }
-build() {
-cd $name-$version
 
-mkdir gedit-build
-cd    gedit-build
+build=meson
 
-meson setup .. \
-       --prefix=/usr          \
-       --buildtype=release    \
-       -Dgtk_doc=false
+package() {
 
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
 
