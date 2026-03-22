@@ -1,8 +1,8 @@
 description="Xfce4 Session is a session manager for Xfce."
-url="http://www.xfce.org"
+url="https://www.xfce.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tyrry,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tyrry,Greg,Spiky"
 
 makedepends=(gnupg xorg-libxres libwnck libxfce4ui libxfce4windowing)
 run=(udisks2 upower polkit xorg-xrdb xorg-iceauth
@@ -11,7 +11,7 @@ run=(udisks2 upower polkit xorg-xrdb xorg-iceauth
 set=(xfce4)
 
 name=xfce4-session
-version=4.20.3
+version=4.20.4
 
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
