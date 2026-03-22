@@ -16,9 +16,9 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=140.8.0esr
+version=140.8.1esr
 
-source=($name-$version-python_3.14_fixes-1.patch glibc-2.43.patch
+source=(python-3.14-fixes-1.patch glibc-2.43.patch llvm-22-1.patch
         https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
         $name.desktop)
 
@@ -38,7 +38,7 @@ rm usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 }
 prepare() {
  cd $name-${version%esr}
- patch -Np1 -i ../thunderbird-140.8.0esr-python_3.14_fixes-1.patch
+ patch -Np1 -i ../python-3.14-fixes-1.patch
 
  find -name .cargo-checksum.json | \
      xargs sed -ri 's|"[^"]*.gitmodules":"[^"]*",?||'
@@ -50,6 +50,7 @@ prepare() {
  sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' \
     -i comm/rust/Cargo.lock
 
+ patch -Np1 -i ../llvm-22-1.patch
 }
 build() {
   cd $name-${version%esr}
