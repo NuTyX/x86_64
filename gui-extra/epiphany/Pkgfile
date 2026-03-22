@@ -17,7 +17,7 @@ run=(adwaita-icon-theme gsettings-desktop-schemas woff2 libxslt.lib
 set=(gnome)
 
 name=epiphany
-version=49.2
+version=49.5
 PKGMK_MESON_OPTIONS="-Dunit_tests=disabled --libdir=/usr/lib"
 
 source=(https://gitlab.gnome.org/GNOME/epiphany/-/archive/$version/$name-$version.tar.gz)
