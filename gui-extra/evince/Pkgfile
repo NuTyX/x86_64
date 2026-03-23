@@ -1,10 +1,10 @@
 description="Pdf, Postscript, DjVu, Tiff, DVI documents viewer."
-url="https://gnome.org"
+url="https://apps.gnome.org/Evince"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Remy,Fanch,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Remy,Fanch,Fabienwang,Spiky"
 
 makedepends=(gtk3 gstreamer-plugins-base yelp-xsl
              itstool gobject-introspection meson ninja
@@ -17,24 +17,14 @@ set=(gnome)
 
 name=evince
 version=48.1
+release=2
+
+PKGMK_MESON_OPTIONS="-Dgtk_doc=false --wrap-mode=nodownload"
 
 source=(https://gitlab.gnome.org/GNOME/evince/-/archive/$version/$name-$version.tar.gz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-      --prefix=/usr \
-      --libdir=/usr/lib \
-      -Dgtk_doc=false \
-      --wrap-mode=nodownload
-
-
-ninja
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
