@@ -12,6 +12,8 @@ set=(kde6 kde6-plasma)
 
 name=plasma-login-manager
 version=6.6.3
+release=2
+PKGMK_GROUPS=()
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
 prepare() {
