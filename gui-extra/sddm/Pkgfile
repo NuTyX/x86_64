@@ -10,8 +10,9 @@ run=(xorg-xauth xorg-server xorg-xinit)
 
 name=sddm
 version=0.21.0
-release=7
+release=8
 
+PKGMK_GROUPS=(man)
 PKGMK_KEEP_SOURCES="no"
 
 source=(sddm-0.20.0-consolidate-1.patch
