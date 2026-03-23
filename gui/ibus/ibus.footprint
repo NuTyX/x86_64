@@ -24,6 +24,13 @@ drwxr-xr-x	root/root	usr/lib/gtk-4.0/
 drwxr-xr-x	root/root	usr/lib/gtk-4.0/4.0.0/
 drwxr-xr-x	root/root	usr/lib/gtk-4.0/4.0.0/immodules/
 -rwxr-xr-x	root/root	usr/lib/gtk-4.0/4.0.0/immodules/libim-ibus.so
+drwxr-xr-x	root/root	usr/lib/ibus/
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-dconf
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-engine-simple
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-portal
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-ui-gtk3
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-wayland
+-rwxr-xr-x	root/root	usr/lib/ibus/ibus-x11
 lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so -> libibus-1.0.so.5.0.533
 lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so.5 -> libibus-1.0.so.5.0.533
 -rwxr-xr-x	root/root	usr/lib/libibus-1.0.so.5.0.533
@@ -42,13 +49,6 @@ drwxr-xr-x	root/root	usr/lib/systemd/user/gnome-session.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/user/gnome-session.target.wants/org.freedesktop.IBus.session.GNOME.service -> ../org.freedesktop.IBus.session.GNOME.service
 -rw-r--r--	root/root	usr/lib/systemd/user/org.freedesktop.IBus.session.GNOME.service
 -rw-r--r--	root/root	usr/lib/systemd/user/org.freedesktop.IBus.session.generic.service
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/ibus-dconf
--rwxr-xr-x	root/root	usr/libexec/ibus-engine-simple
--rwxr-xr-x	root/root	usr/libexec/ibus-portal
--rwxr-xr-x	root/root	usr/libexec/ibus-ui-gtk3
--rwxr-xr-x	root/root	usr/libexec/ibus-wayland
--rwxr-xr-x	root/root	usr/libexec/ibus-x11
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/GConf/
 drwxr-xr-x	root/root	usr/share/GConf/gsettings/

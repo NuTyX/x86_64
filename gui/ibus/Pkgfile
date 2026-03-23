@@ -7,11 +7,13 @@ packager="tnut <tnut@nutyx.org>"
 contributor="Spiky"
 
 makedepends=(dconf iso-codes gobject-introspection gtk3 gtk4 dbus-launch
-             libnotify vala python libxkbcommon libdbusmenu-gtk)
-run=(python-dbus python-gobject)
+             libnotify vala python libxkbcommon libdbusmenu-gtk wayland-protocols)
+
+run=(python-dbus python-gobject wayland)
 
 name=ibus
 version=1.5.33
+release=2
 
 source=(https://github.com/ibus/ibus/archive/refs/tags/$version.tar.gz)
 
@@ -23,6 +25,10 @@ sed -i 's@/desktop/ibus@/org/freedesktop/ibus@g' \
 
 NOCONFIGURE=1 ./autogen.sh
 ./configure --prefix=/usr           \
+            --libexecdir=/usr/lib/ibus \
+            --enable-wayland        \
+            --enable-dconf          \
+            --enable-ui             \
             --sysconfdir=/etc       \
             --enable-gtk4           \
             --disable-gtk2          \
