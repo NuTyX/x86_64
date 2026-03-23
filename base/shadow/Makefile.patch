@@ -17,7 +17,7 @@ diff -Naur a/src/Makefile.am b/src/Makefile.am
 -sbin_PROGRAMS  = nologin
 -ubin_PROGRAMS  = faillog chage chfn chsh expiry gpasswd newgrp passwd
 +sbin_PROGRAMS  =
-+ubin_PROGRAMS  = faillog lastlog chage expiry gpasswd newgrp passwd
++ubin_PROGRAMS  = nologin faillog lastlog chage expiry gpasswd newgrp passwd
  if ENABLE_SUBIDS
  ubin_PROGRAMS += newgidmap newuidmap
  endif
