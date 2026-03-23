@@ -3,25 +3,29 @@ url="https://www.freedesktop.org/wiki/Software/udisks"
 
 license="GPL-2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre, Spiky"
 
 makedepends=(acl attr systemd libgudev expat libatasmart libxslt polkit \
              gobject-introspection docbook-xsl libblockdev)
 
 name=udisks2
 version=2.11.1
-release=2
+release=3
+
+PKGMK_GROUPS=(devel doc man)
 
 source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz2)
 
 build() {
 cd udisks-$version
 ./configure --prefix=/usr \
+--libexecdir=/usr/lib \
 --sbindir=/usr/bin \
 --sysconfdir=/etc \
 --localstatedir=/var \
---disable-static
+--disable-static \
+--with-systemdsystemunitdir=/usr/lib/systemd/system
 
 make
 
