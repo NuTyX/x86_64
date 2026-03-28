@@ -1,0 +1,28 @@
+if [ -e "/usr/lib/lsb/init-functions" ]; then
+  . /usr/lib/lsb/init-functions
+elif [ -e "/lib/lsb/init-functions" ]; then
+  . /lib/lsb/init-functions
+fi
+
+if ( cards list | grep shadow ) ; then \
+  if ! (getent group rtkit > /dev/null 2>&1); then 
+    log_info_msg "${INFO}Creating rtkit user${NORMAL}\n"
+      groupadd \
+      -r \
+      -g 90 \
+      rtkit
+  fi
+
+  if ! (getent passwd rtkit > /dev/null 2>&1); then
+    log_info_msg "${INFO}Creating rtkit user${NORMAL}\n"
+      useradd \
+      -r -l \
+      -u 90 \
+      -g rtkit \
+      -d /proc \
+      -s /sbin/nologin \
+      -c "RealtimeKit" \
+      rtkit
+  fi
+
+fi
