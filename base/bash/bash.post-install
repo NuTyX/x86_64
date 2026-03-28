@@ -1,0 +1,8 @@
+grep -qe '^/bin/bash$' etc/shells || echo '/bin/bash' >> etc/shells
+grep -qe '^/usr/bin/bash$' etc/shells || echo '/usr/bin/bash' >> etc/shells
+grep -qe '^/bin/sh$' etc/shells || echo '/bin/sh' >> etc/shells
+grep -qe '^/usr/bin/sh$' etc/shells || echo '/usr/bin/sh' >> etc/shells
+
+sed -i "s@:/bin/bash@:/usr/bin/bash@" etc/passwd
+sed -i "s@:/bin/false@:/usr/bin/false@" etc/passwd
+

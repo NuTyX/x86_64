@@ -36,7 +36,9 @@ cd bash-${_version}
 make
 make DESTDIR=$PKG install
 
+ln -sv bash $PKG/usr/bin/sh
+
 mkdir -p $PKG/bin
-ln -svf ../usr/bin/bash $PKG/bin/bash
-ln -s bash $PKG/bin/sh
+ln -sv ../usr/bin/bash $PKG/bin/bash
+ln -sv ../usr/bin/sh   $PKG/bin/sh
 }
