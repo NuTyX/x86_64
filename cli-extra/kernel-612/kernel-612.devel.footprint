@@ -14,6 +14,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/
 -rw-r--r--	root/root	usr/src/kernel-612/.clippy.toml
 -rw-rw-r--	root/root	usr/src/kernel-612/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel-612/.config
+-rw-r--r--	root/root	usr/src/kernel-612/.config.old
 -rw-rw-r--	root/root	usr/src/kernel-612/.editorconfig
 -rw-rw-r--	root/root	usr/src/kernel-612/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel-612/.gitattributes
@@ -7436,7 +7437,7 @@ drwxr-xr-x	root/root	usr/src/kernel-612/include/config/
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FTRACE_MCOUNT_RECORD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FUNCTION_ARG_ACCESS_API (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FUNCTION_ERROR_INJECTION (EMPTY)
--rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FUNCTION_GRAPH_RETVAL (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FUNCTION_GRAPH_FREGS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FUNCTION_GRAPH_TRACER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_FUNCTION_TRACER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-612/include/config/HAVE_GCC_PLUGINS (EMPTY)
@@ -16000,6 +16001,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/include/linux/fsl/bestcomm/
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/fsverity.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/ftrace.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/ftrace_irq.h
+-rw-r--r--	root/root	usr/src/kernel-612/include/linux/ftrace_regs.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/futex.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/fw_table.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/fwnode.h
@@ -17247,7 +17249,6 @@ drwxrwxr-x	root/root	usr/src/kernel-612/include/linux/platform_data/gpio/
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/lv5207lp.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/max197.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/max3421-hcd.h
--rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/max6639.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/max732x.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/mdio-bcm-unimac.h
 -rw-rw-r--	root/root	usr/src/kernel-612/include/linux/platform_data/mdio-gpio.h
@@ -21116,6 +21117,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/kernel/irq/
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.irq_sim.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.irqdesc.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.irqdomain.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.kexec.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.manage.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.matrix.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/.migration.o.cmd
@@ -21155,6 +21157,8 @@ drwxrwxr-x	root/root	usr/src/kernel-612/kernel/irq/
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/irqdesc.o
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/irq/irqdomain.c
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/irqdomain.o
+-rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/kexec.c
+-rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/kexec.o
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/irq/manage.c
 -rw-r--r--	root/root	usr/src/kernel-612/kernel/irq/manage.o
 -rw-rw-r--	root/root	usr/src/kernel-612/kernel/irq/matrix.c
