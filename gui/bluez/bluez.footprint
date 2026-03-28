@@ -19,6 +19,9 @@ lrwxrwxrwx	root/root	usr/bin/bluetoothd -> ../libexec/bluetooth/bluetoothd
 -rwxr-xr-x	root/root	usr/bin/mpris-proxy
 -rwxr-xr-x	root/root	usr/bin/rctest
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bluetooth/
+-rwxr-xr-x	root/root	usr/lib/bluetooth/bluetoothd
+-rwxr-xr-x	root/root	usr/lib/bluetooth/obexd
 drwxr-xr-x	root/root	usr/lib/cups/
 drwxr-xr-x	root/root	usr/lib/cups/backend/
 -rwxr-xr-x	root/root	usr/lib/cups/backend/bluetooth
@@ -36,10 +39,6 @@ drwxr-xr-x	root/root	usr/lib/udev/
 -rwxr-xr-x	root/root	usr/lib/udev/hid2hci
 drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/97-hid2hci.rules
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/bluetooth/
--rwxr-xr-x	root/root	usr/libexec/bluetooth/bluetoothd
--rwxr-xr-x	root/root	usr/libexec/bluetooth/obexd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/

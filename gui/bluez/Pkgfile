@@ -3,8 +3,8 @@ url="https://www.bluez.org/"
 
 license="GPL2.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(readline dbus libical libvorbis alsa-lib
              libusb-compat libsndfile cups glib)
@@ -25,6 +25,7 @@ cd $name-$version
     --sbindir=/usr/bin \
     --sysconfdir=/etc \
     --localstatedir=/var \
+    --libexecdir=/usr/lib \
     --enable-gstreamer \
     --enable-alsa \
     --enable-usb \
