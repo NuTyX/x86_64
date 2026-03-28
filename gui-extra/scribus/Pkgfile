@@ -10,18 +10,18 @@ makedepends=(icu cmake boost aspell cups qttools qtdeclarative gnutls kerberos
 run=(shared-mime-info desktop-file-utils)
 
 name=scribus
-version=1.6.4
-release=4
+version=1.6.5
+release=1
 
-source=(https://sourceforge.net/projects/scribus/files/scribus/1.6.4/scribus-1.6.4.tar.xz
-        fix_build_with_poppler_25.07.0.patch fix_build_with_poppler_25.09.0.patch
-        fix_build_with_poppler_25.10.0.patch)
+source=(https://sourceforge.net/projects/scribus/files/scribus/$version/scribus-$version.tar.xz
+        fix_build_with_poppler_26.01.0.patch fix_build_with_poppler_26.02.0.patch
+        fix_build_with_poppler_26.03.0.patch)
 
 prepare() {
 cd $name-$version
-    patch -Np1 -i ../fix_build_with_poppler_25.07.0.patch
-    patch -Np1 -i ../fix_build_with_poppler_25.09.0.patch
-    patch -Np1 -i ../fix_build_with_poppler_25.10.0.patch
+    patch -Np1 -i ../fix_build_with_poppler_26.01.0.patch
+    patch -Np1 -i ../fix_build_with_poppler_26.02.0.patch
+    patch -Np1 -i ../fix_build_with_poppler_26.03.0.patch
 }
 
 build() {
