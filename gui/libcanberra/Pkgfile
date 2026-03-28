@@ -8,10 +8,16 @@ makedepends=(gtk2 libvorbis alsa-lib gstreamer gtk3 pulseaudio)
 
 name=libcanberra
 version=0.30
-release=9
+release=10
 
-source=(http://0pointer.de/lennart/projects/libcanberra/libcanberra-$version.tar.xz)
+PKGMK_GROUPS=(doc devel)
 
+source=( https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+        http://0pointer.de/lennart/projects/libcanberra/libcanberra-$version.tar.xz)
+prepare() {
+cd $name-$version
+patch -Np1 -i ../libcanberra-0.30-wayland-1.patch
+}
 build() {
 cd $name-$version
 ./configure --prefix=/usr \
