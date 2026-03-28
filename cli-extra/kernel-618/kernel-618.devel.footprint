@@ -1473,6 +1473,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/arch/x86/include/asm/trace/
 -rw-rw-r--	root/root	usr/src/kernel-618/arch/x86/include/asm/unistd.h
 -rw-rw-r--	root/root	usr/src/kernel-618/arch/x86/include/asm/unwind.h
 -rw-rw-r--	root/root	usr/src/kernel-618/arch/x86/include/asm/unwind_hints.h
+-rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/asm/unwind_user.h
 -rw-rw-r--	root/root	usr/src/kernel-618/arch/x86/include/asm/uprobes.h
 -rw-rw-r--	root/root	usr/src/kernel-618/arch/x86/include/asm/user.h
 -rw-rw-r--	root/root	usr/src/kernel-618/arch/x86/include/asm/user32.h
@@ -1546,7 +1547,6 @@ drwxr-xr-x	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/syscalls_x32.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/unistd_32_ia32.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/unistd_64_x32.h
--rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/unwind_user.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/xen-hypercalls.h
 drwxr-xr-x	root/root	usr/src/kernel-618/arch/x86/include/generated/uapi/
 drwxr-xr-x	root/root	usr/src/kernel-618/arch/x86/include/generated/uapi/asm/
@@ -7435,6 +7435,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/HAVE_UACCESS_VALIDATION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/HAVE_UID16 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/HAVE_UNSTABLE_SCHED_CLOCK (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/HAVE_UNWIND_USER_FP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/HAVE_USER_RETURN_NOTIFIER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/HAVE_VIRT_CPU_ACCOUNTING_GEN (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/HDC100X (EMPTY)
@@ -13132,6 +13133,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/UNIX98_PTYS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/UNIX_DIAG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/UNWINDER_ORC (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/UNWIND_USER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/UPROBES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/UPROBE_EVENTS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/US5182D (EMPTY)
@@ -22437,12 +22439,16 @@ drwxrwxr-x	root/root	usr/src/kernel-618/kernel/trace/rv/monitors/wwnr/
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/umh.o
 drwxrwxr-x	root/root	usr/src/kernel-618/kernel/unwind/
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/.built-in.a.cmd
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/.deferred.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/.modules.order.cmd
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/.user.o.cmd
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/unwind/Makefile
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/built-in.a
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/unwind/deferred.c
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/deferred.o
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/modules.order (EMPTY)
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/unwind/user.c
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/unwind/user.o
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/up.c
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/user-return-notifier.c
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/user-return-notifier.o
