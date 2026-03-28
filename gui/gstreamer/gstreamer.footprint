@@ -13,6 +13,10 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GstController-1.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GstNet-1.0.typelib
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/gst-completion-helper
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/gst-hotdoc-plugins-scanner
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/gst-plugin-scanner
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/gst-plugins-doc-cache-generator
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcoreelements.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcoretracers.so
 lrwxrwxrwx	root/root	usr/lib/libgstbase-1.0.so -> libgstbase-1.0.so.0
@@ -30,12 +34,6 @@ lrwxrwxrwx	root/root	usr/lib/libgstnet-1.0.so.0 -> libgstnet-1.0.so.0.2801.0
 lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so -> libgstreamer-1.0.so.0
 lrwxrwxrwx	root/root	usr/lib/libgstreamer-1.0.so.0 -> libgstreamer-1.0.so.0.2801.0
 -rwxr-xr-x	root/root	usr/lib/libgstreamer-1.0.so.0.2801.0
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/
--rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-completion-helper
--rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-hotdoc-plugins-scanner
--rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-plugin-scanner
--rwxr-xr-x	root/root	usr/libexec/gstreamer-1.0/gst-plugins-doc-cache-generator
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gst-element-check-1.0.m4
