@@ -8,7 +8,7 @@ contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
 
 makedepends=(meson ninja glib xorg-libsm graphene libdisplay-info glycin
              gnome-desktop gnome-settings-daemon libwacom libxkbcommon upower
-             gobject-introspection libcanberra startup-notification
+             gobject-introspection libcanberra startup-notification pipewire
              xorg-libxcursor xorg-libxcomposite wayland-protocols libei)
 
 run=(xorg-server zenity pipewire xorg-xwayland)
@@ -16,7 +16,7 @@ set=(gnome)
 
 name=mutter
 version=49.5
-release=2
+release=3
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
