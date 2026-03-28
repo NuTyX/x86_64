@@ -1,0 +1,1 @@
+grep -qe 'autospawn = no' etc/pulse/client.conf||sudo sed '/autospawn/iautospawn = no' -i etc/pulse/client.conf

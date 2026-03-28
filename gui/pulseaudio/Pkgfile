@@ -12,28 +12,28 @@ makedepends=(python meson ninja doxygen gdbm check
              openssl speex speexdsp libsamplerate
              webrtc-audio-processing jack xmltoman
              gstreamer-plugins-base)
-run=(bluez sbc)
+
+run=(bluez sbc rtkit)
 
 name=pulseaudio
 version=17.0
-release=3
+release=4
 
 source=(https://freedesktop.org/software/$name/releases/$name-$version.tar.xz)
 
-build() {
+PKGMK_MESON_OPTIONS="-Ddatabase=gdbm -Dudevrulesdir=/usr/lib/udev/rules.d"
+
 unset MAKEFLAGS
+
+build=meson
+
+package() {
 cd $name-$version
-
-mkdir build
-cd    build
-meson --prefix=/usr --buildtype=release -Ddatabase=gdbm
-ninja
-DESTDIR=$PKG ninja install
-
 mkdir -p $PKG/usr/share/icons/hicolor/scalable/devices
 for size in 16 22 32 48 64 128; do
     mkdir -p $PKG/usr/share/icons/hicolor/${size}x${size}/{apps,devices}
     ln -s ../apps/pulseaudio.png $PKG/usr/share/icons/hicolor/${size}x${size}/devices/audio-backend-pulseaudio.png
 done
-
+mkdir -p $PKG/etc/pulse/default.pa.d
+sed '/autospawn/iautospawn = no' -i $PKG/etc/pulse/client.conf
 }

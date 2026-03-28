@@ -3,16 +3,13 @@ drwxr-xr-x	root/root	etc/pulse/
 -rw-r--r--	root/root	etc/pulse/client.conf
 -rw-r--r--	root/root	etc/pulse/daemon.conf
 -rw-r--r--	root/root	etc/pulse/default.pa
+drwxr-xr-x	root/root	etc/pulse/default.pa.d/
 -rw-r--r--	root/root	etc/pulse/system.pa
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/Xwayland-session.d/
 -rwxr-xr-x	root/root	etc/xdg/Xwayland-session.d/00-pulseaudio-x11
 drwxr-xr-x	root/root	etc/xdg/autostart/
 -rw-r--r--	root/root	etc/xdg/autostart/pulseaudio.desktop
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/udev/
-drwxr-xr-x	root/root	lib/udev/rules.d/
--rw-r--r--	root/root	lib/udev/rules.d/90-pulseaudio.rules
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pa-info
@@ -145,6 +142,9 @@ drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/pulseaudio-x11.service
 -rw-r--r--	root/root	usr/lib/systemd/user/pulseaudio.service
 -rw-r--r--	root/root	usr/lib/systemd/user/pulseaudio.socket
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/90-pulseaudio.rules
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
