@@ -4,28 +4,19 @@ url="https://upower.freedesktop.org"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Greg,Spiky"
 
-makedepends=(autoconf automake m4 sed grep pkgconf
-             dbus-glib libusb intltool perl-xml-parser
+makedepends=(dbus-glib libusb intltool perl-xml-parser
              polkit gobject-introspection libgudev pm-utils)
 
 name=upower
 version=1.91.1
-_version=${version//./_}
+release=2
+
 source=(https://gitlab.freedesktop.org/$name/$name/-/archive/v${version}/$name-v${version}.tar.gz)
 
-build() {
- cd $name-v${version}
+PKGMK_GROUPS=(devel doc man)
 
-mkdir build
-cd    build
-
-meson setup .. \
-      --prefix=/usr \
-              --libdir=/usr/lib \
-              -Dsystemdsystemunitdir=/usr/lib/systemd/system
-
-ninja
-
-DESTDIR=$PKG ninja install
-
+prepare() {
+  mv $name-v$version $name-$version
 }
+
+build=meson
