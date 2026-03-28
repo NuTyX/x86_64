@@ -7782,6 +7782,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I2C_VIRTIO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I2C_XILINX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I2C_ZHAOXIN (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I3C_OR_I2C (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I40E (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I40EVF (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/I40E_DCB (EMPTY)
@@ -24725,6 +24726,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/rust/kernel/pci/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/print.rs
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/processor.rs
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/ptr.rs
+drwxrwxr-x	root/root	usr/src/kernel-mainline/rust/kernel/ptr/
+-rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/ptr/projection.rs
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/pwm.rs
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/rbtree.rs
 -rw-rw-r--	root/root	usr/src/kernel-mainline/rust/kernel/regulator.rs
@@ -25845,7 +25848,9 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-longkey.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-manywords.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-no-keyword.bconf
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-non-closed-brace.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-nonprintable.bconf
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-over-max-brace.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-samekey.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-spaceword.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/bad-tree.bconf
@@ -25858,6 +25863,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-mixed-kv2.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-mixed-kv3.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-mixed-override.bconf
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-nested-brace.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-override.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-printables.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/exp-good-simple.bconf
@@ -25871,6 +25877,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-mixed-kv2.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-mixed-kv3.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-mixed-override.bconf
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-nested-brace.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-override.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-printables.bconf
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/bootconfig/samples/good-simple.bconf
@@ -32808,6 +32815,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/pmu.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/processor.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/sev.h
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/smm.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/svm.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/svm_util.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/include/x86/ucall.h
@@ -32902,6 +32910,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/cr4_cpuid_sync_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/debug_regs.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/dirty_log_page_splitting_test.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/evmcs_smm_controls_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/exit_on_emulation_failure_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/fastops_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/x86/feature_msrs_test.c
@@ -35712,8 +35721,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc3/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc5/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-7.0-rc3 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-7.0-rc5 -> kernel-mainline
