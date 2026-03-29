@@ -1,0 +1,13 @@
+diff --git a/scripts/pkgmk.in b/scripts/pkgmk.in
+index cd06d61..9d9c625 100755
+--- a/scripts/pkgmk.in
++++ b/scripts/pkgmk.in
+@@ -75,7 +75,7 @@ get_collections() {
+ 	done
+ }
+ get_filename() {
+-	if [[ $1 =~ ^(https://*.git) ]]; then
++	if [[ $1 =~ git$ ]]; then
+ 		echo "$PKGMK_SOURCE_DIR/$name-$version${PKGMK_GIT_EXT}"
+ 	elif [[ $1 =~ ^(http|https|ftp|file)://.*/(.+) ]]; then
+ 		echo "$PKGMK_SOURCE_DIR/${BASH_REMATCH[2]}"
