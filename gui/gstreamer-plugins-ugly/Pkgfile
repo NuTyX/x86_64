@@ -11,32 +11,19 @@ _name=gst-plugins-ugly
 
 name=gstreamer-plugins-ugly
 version=1.28.1
+release=2
 
-source=(https://gstreamer.freedesktop.org/src/${_name}/gst-plugins-ugly-$version.tar.xz )
+source=(https://gstreamer.freedesktop.org/src/${_name}/${_name}-$version.tar.xz )
 
-build() {
-cd gst-plugins*
-mkdir build
-cd    build
+PKGMK_MESON_OPTIONS="-Dpackage-origin=http://downloads.nutyx.org/"
 
-meson setup .. \
---prefix=/usr \
--Dbuildtype=release \
--Dpackage-name="GStreamer Ugly Plugins $version NuTyX" \
--Dpackage-origin="http://downloads.nutyx.org/"
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-
+prepare() {
+ mv ${_name}-$version $name-$version
 }
-uptodate() {
-local url ext
-name=${_name}
-url="https://gstreamer.freedesktop.org/src/$name/"
-ext=".tar.xz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url|grep $name-[0-9]|grep $ext$|sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
+
+build=meson
+
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
