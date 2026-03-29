@@ -11,8 +11,8 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-66
-version=6.6.127
-release=2
+version=6.6.130
+release=1
 _version=${version%.*}
 
 alias=(linux-66)
