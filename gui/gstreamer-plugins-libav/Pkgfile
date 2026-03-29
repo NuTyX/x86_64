@@ -11,36 +11,19 @@ name=gstreamer-plugins-libav
 _name=gst-libav
 
 version=1.28.1
+release=2
 
-source=(https://gstreamer.freedesktop.org/src/${_name}/gst-libav-$version.tar.xz
-       ffmpeg7.patch)
+source=(https://gstreamer.freedesktop.org/src/${_name}/gst-libav-$version.tar.xz)
 
-#prepare() {
-#cd gst-*
-#patch -Np3 -i ../ffmpeg7.patch
-#}
+PKGMK_MESON_OPTIONS="-Dpackage-origin=http://downloads.nutyx.org/"
 
-build() {
-cd gst-*
-
-meson setup build \
---prefix=/usr \
--Dbuildtype=release \
--Dpackage-name="GStreamer Libav Plugins $version NuTyX" \
--Dpackage-origin="http://downloads.nutyx.org/"
-
-meson compile -C build
-
-DESTDIR=$PKG meson install -C build
-
-install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
-
+prepare() {
+ mv  ${_name}-$version $name-$version 
 }
-uptodate() {
-local url ext
-name=${_name}
-url="https://gstreamer.freedesktop.org/src/$name/"
-ext=".tar.xz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url|grep $name-[0-9]|grep $ext$|sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
+
+build=meson
+
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
