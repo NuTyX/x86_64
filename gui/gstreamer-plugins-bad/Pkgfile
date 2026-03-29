@@ -11,23 +11,20 @@ makedepends=(pkgconf meson ninja gstreamer-plugins-base libdvdread libdvdnav
 
 name=gstreamer-plugins-bad
 version=1.28.1
+release=2
+_name=gst-plugins-bad
 
-source=(https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-$version.tar.xz )
+source=(https://gstreamer.freedesktop.org/src/${_name}/${_name}-$version.tar.xz )
 
-build() {
-cd gst-plugins*
-mkdir build
-cd    build
-meson setup ..       \
- --prefix=/usr       \
- --buildtype=release \
- -Dgpl=enabled       \
- -Dpackage-name="Gstreamer Bad Plugins $version NuTyX" \
- -Dpackage-origin="http://downloads.nutyx.org/"
+PKGMK_MESON_OPTION="-Dgpl=enabled \
+-Dpackage-origin=http://downloads.nutyx.org/"
 
-ninja
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build=meson
 
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
