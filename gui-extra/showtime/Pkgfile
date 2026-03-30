@@ -5,11 +5,11 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(git blueprint-compiler gstreamer-plugins-base libadwaita python-gobject)
-run=()
-set=()
+set=(gnome)
 
 name=showtime
 version=49.1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/showtime.git)
 
