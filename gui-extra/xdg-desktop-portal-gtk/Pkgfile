@@ -1,30 +1,23 @@
 description="A backend implementation for xdg-desktop-portal using GTK"
 url='https://github.com/flatpak/xdg-desktop-portal-gtk'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(xdg-desktop-portal python git xdg-desktop-portal-gnome)
-run=(gtk3 gsettings-desktop-schemas xdg-desktop-portal)
+license="LGPL-2.0-or-later"
+
+makedepends=(git python gtk3 gnome-desktop)
+
+run=(gsettings-desktop-schemas xdg-desktop-portal)
 
 name=xdg-desktop-portal-gtk
 version=1.15.3
 
-prepare () {
-git clone https://github.com/flatpak/$name $name-$version
-}
+source=(https://github.com/flatpak/$name.git)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-       --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
