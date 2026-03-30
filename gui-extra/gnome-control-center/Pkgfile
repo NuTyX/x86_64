@@ -15,13 +15,19 @@ makedepends=(autoconf git udisks2 accountsservice clutter-gtk libhandy
 run=(iso-codes gsettings-desktop-schemas libgnomekbd tecla
      sound-theme-freedesktop libnma libadwaita)
 
-set=(gnome)
+set=(gnome-base gnome)
 
 name=gnome-control-center
 version=49.6
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
 PKGMK_MESON_OPTIONS="-Dx11=True"
 
 build=meson
+
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/COPYING
+}
