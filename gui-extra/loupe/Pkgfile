@@ -7,11 +7,11 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(glycin lcms2 libadwaita libgweather-4  libseccomp rustc)
-run=()
-set=()
+set=(gnome)
 
 name=loupe
 version=49.2
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/loupe.git)
 
