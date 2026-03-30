@@ -9,11 +9,11 @@ contributors="Fanch,Rems,Spiky"
 makedepends=(dconf dbus-glib docbook-xml docbook-xsl
              gnome-desktop json-glib libxslt mesa meson upower xmlto)
 
-set=(gnome)
+set=(gnome-base gnome)
 
 name=gnome-session
 version=49.2
-release=3
+release=4
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dman=False -Ddocbook=False"
 
@@ -22,8 +22,8 @@ source=($url/-/archive/$version/$name-$version.tar.bz2)
 build=meson
 
 package() {
-# Uneeded duplicated entries
-rm $PKG/usr/share/{xsessions,wayland-sessions}/gnome.desktop
-
-install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+ # Uneeded duplicated entries
+ rm $PKG/usr/share/{xsessions,wayland-sessions}/gnome.desktop
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
