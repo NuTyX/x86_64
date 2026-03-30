@@ -15,11 +15,11 @@ run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus
      telepathy-mission-control gtk-update-icon-cache
      gnome-settings-daemon libsoup3)
 
-set=(gnome)
+set=(gnome-base gnome)
 
 name=gnome-shell
 version=49.5
-release=3
+release=4
 
 PKGMK_MESON_OPTIONS="-Dtests=false"
 source=($url/-/archive/$version/$name-$version.tar.bz2)
@@ -27,5 +27,6 @@ source=($url/-/archive/$version/$name-$version.tar.bz2)
 build=meson
 
 package() {
-  install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
