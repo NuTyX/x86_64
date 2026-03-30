@@ -32272,6 +32272,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/config
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/dev_addr_lists.sh
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/non_ether_header_ops.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/options.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/propagation.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/team/refleak.sh
@@ -32890,6 +32891,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/config
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/cpumodel_subfuncs_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/debug_test.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/irq_routing.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/keyop.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/memop.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/kvm/s390/resets.c
@@ -35721,8 +35723,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc5/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.0-rc6/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-7.0-rc5 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-7.0-rc6 -> kernel-mainline
