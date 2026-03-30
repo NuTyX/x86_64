@@ -11,26 +11,16 @@ makedepends=(python xmlto docbook-xsl git libportal pipewire
 run=(fuse)
 
 name=xdg-desktop-portal
-version=1.20.3
-release=2
+version=1.21.0
+release=1
 
-prepare () {
-git clone https://github.com/flatpak/$name $name-$version
-}
-build() {
-cd $name-$version
+source=(https://github.com/flatpak/xdg-desktop-portal.git)
 
-mkdir build
-cd    build
+PKGMK_MESON_OPTIONS="-D tests=disabled"
 
-meson setup .. \
-       --prefix=/usr          \
-       --buildtype=release    \
-       -D tests=disabled
+build=meson
 
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
