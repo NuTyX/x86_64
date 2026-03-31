@@ -12,11 +12,11 @@ makedepends=(meson ninja glib xorg-libsm graphene libdisplay-info glycin
              xorg-libxcursor xorg-libxcomposite wayland-protocols libei)
 
 run=(xorg-server zenity pipewire xorg-xwayland)
-set=(gnome)
+set=(gnome-base gnome)
 
 name=mutter
 version=49.5
-release=3
+release=4
 
 PKGMK_MESON_OPTIONS="-Dx11=True -Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
@@ -30,6 +30,8 @@ sed "/c_args:/a '-U', 'G_DISABLE_ASSERT'," -i src/tests/cogl/unit/meson.build
 }
 
 build=meson
+
 package() {
-install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
