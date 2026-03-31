@@ -19,7 +19,7 @@ set=(gnome-base gnome)
 
 name=gnome-control-center
 version=49.6
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
@@ -29,5 +29,5 @@ build=meson
 
 package() {
  install -Dm644 $name-$version/COPYING \
- $PKG/usr/share/licenses/COPYING
+ $PKG/usr/share/licenses/$name/COPYING
 }
