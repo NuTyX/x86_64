@@ -1,13 +1,19 @@
 diff -Naur a/init/main.c b/init/main.c
---- a/init/main.c	2026-02-08 22:03:27.000000000 +0100
-+++ b/init/main.c	2026-02-20 11:15:49.953844302 +0100
-@@ -1631,7 +1631,8 @@
+--- a/init/main.c	2025-11-30 23:42:10.000000000 +0100
++++ b/init/main.c	2026-04-03 19:58:56.539213779 +0200
+@@ -1534,12 +1534,10 @@
+ 			       CONFIG_DEFAULT_INIT, ret);
+ 		else
  			return 0;
- 	}
+-	}
++         }
  
 -	if (!try_to_run_init_process("/sbin/init") ||
-+	if (!try_to_run_init_process("/usr/bin/init") ||
-+	    !try_to_run_init_process("/sbin/init") ||
- 	    !try_to_run_init_process("/etc/init") ||
- 	    !try_to_run_init_process("/bin/init") ||
- 	    !try_to_run_init_process("/bin/sh"))
+-	    !try_to_run_init_process("/etc/init") ||
+-	    !try_to_run_init_process("/bin/init") ||
+-	    !try_to_run_init_process("/bin/sh"))
++        if (!try_to_run_init_process("/usr/lib/systemd/systemd") ||
++	    !try_to_run_init_process("/usr/bin/sh"))
+ 		return 0;
+ 
+ 	panic("No working init found.  Try passing init= option to kernel. "
