@@ -12,6 +12,7 @@ contributors="Spiky"
 # 3/ rebuild dbus with systemd as dependency so that dbus gets links to systemd
 
 PKGMK_DEPENDS=(python python-markupsafe python-jinja meson ninja)
+PKGMK_GROUPS=(man doc devel)
 
 makedepends=(acl libcap kmod m4 gperf kbd pam libxcrypt util-linux)
 run=(shadow)
@@ -19,24 +20,24 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=259.3
+version=260.1
 release=1
 
-source=($name-$version-consolidate-1.patch
-        https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
+source=(https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/refs/tags/$name-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
 -Dnobody-group=nogroup -Dpam=enabled -Dpamconfdir=/etc/pam.d \
--Drpmmacrosdir=no -Dsysusers=false -Dmount-path=/usr/bin/mount \
+-Drpmmacrosdir=no -Dmount-path=/usr/bin/mount -Dsplit-bin=false \
 -Dumount-path=/usr/bin/umount -Dswapon-path=/usr/bin/swapon \
 -Dswapoff-path=/usr/bin/swapoff -Dagetty-path=/usr/bin/agetty \
--Dkmod-path=/usr/bin/kmod -Dsbindir=bin -Dsplit-bin=false"
+-Dkmod-path=/usr/bin/kmod -Dkernel-install=false -Dukify=disabled"
 
 prepare() {
   cd $name-$version
-  patch -Np1 -i ../$name-$version-consolidate-1.patch
+  sed -i "s@=/lib/modules@=/usr/lib/modules@" \
+  units/kmod-static-nodes.service.in
 
   sed -e 's/GROUP="render"/GROUP="video"/' \
   -e 's/GROUP="sgx", //'                   \

@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/loginctl.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/machinectl.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/mount.ddi.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/mount.mstack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/networkctl.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/oomctl.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/portablectl.1.gz
@@ -35,6 +36,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/systemd-keyutil.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-machine-id-setup.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-mount.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/systemd-mstack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-mute-console.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-mute-console.socket.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-mute-console@.service.1.gz
@@ -42,6 +44,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/systemd-nspawn.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-path.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-pty-forward.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/systemd-report.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-run.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-sbsign.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/systemd-socket-activate.1.gz
@@ -798,6 +801,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sd_session_get_class.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_session_get_desktop.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_session_get_display.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sd_session_get_extra_device_access.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_session_get_leader.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_session_get_remote_host.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sd_session_get_remote_user.3.gz
@@ -1005,6 +1009,7 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/systemd.image-policy.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.index.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.journal-fields.7.gz
+-rw-r--r--	root/root	usr/share/man/man7/systemd.mstack.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.net-naming-scheme.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.offline-updates.7.gz
 -rw-r--r--	root/root	usr/share/man/man7/systemd.special.7.gz
@@ -1028,7 +1033,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/pam_systemd.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_systemd_loadkey.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/poweroff.8.gz
--rw-r--r--	root/root	usr/share/man/man8/rc-local.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/reboot.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/shutdown.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-ask-password-console.path.8.gz
@@ -1135,7 +1139,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-quotacheck@.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-random-seed.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-random-seed.service.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-rc-local-generator.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-reboot.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-remount-fs.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-remount-fs.service.8.gz
@@ -1164,7 +1167,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-system-update-generator.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysusers.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-sysusers.service.8.gz
--rw-r--r--	root/root	usr/share/man/man8/systemd-sysv-generator.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-time-wait-sync.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-time-wait-sync.service.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/systemd-timedated.8.gz
