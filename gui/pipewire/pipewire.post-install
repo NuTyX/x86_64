@@ -1,0 +1,3 @@
+systemctl --global enable pipewire.{service,socket}
+systemctl --global enable pipewire-pulse.{service,socket}
+systemctl --global enable wireplumber

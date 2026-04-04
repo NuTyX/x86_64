@@ -11,13 +11,14 @@ makedepends=(meson dbus doxygen python-docutils ffmpeg glib graphviz gstreamer
 
 name=pipewire
 version=1.6.2
+release=2
 
 source=(https://github.com/PipeWire/pipewire/archive/$version/$name-$version.tar.gz)
 
 CFLAGS="-Wno-error=discarded-qualifiers"
 
 PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Djack=disabled -Dpipewire-jack=disabled \
--Dvulkan=disabled -Ddocs=enabled  -Dman=enabled  -Dsession-managers="[]""
+-Ddocs=enabled  -Dman=enabled"
  
 
 build=meson
