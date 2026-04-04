@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gtk4-demo
 -rwxr-xr-x	root/root	usr/bin/gtk4-demo-application
 -rwxr-xr-x	root/root	usr/bin/gtk4-encode-symbolic-svg
+-rwxr-xr-x	root/root	usr/bin/gtk4-icon-editor
 -rwxr-xr-x	root/root	usr/bin/gtk4-image-tool
 -rwxr-xr-x	root/root	usr/bin/gtk4-launch
 -rwxr-xr-x	root/root	usr/bin/gtk4-node-editor
@@ -18,6 +19,7 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.gtk.Demo4.desktop
 -rw-r--r--	root/root	usr/share/applications/org.gtk.PrintEditor4.desktop
+-rw-r--r--	root/root	usr/share/applications/org.gtk.Shaper.desktop
 -rw-r--r--	root/root	usr/share/applications/org.gtk.WidgetFactory4.desktop
 -rw-r--r--	root/root	usr/share/applications/org.gtk.gtk4.NodeEditor.desktop
 drwxr-xr-x	root/root	usr/share/bash-completion/
@@ -84,6 +86,8 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.Demo4.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.PrintEditor4.Devel.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.PrintEditor4.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.Shaper.Devel.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.Shaper.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.WidgetFactory4.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.gtk4.NodeEditor.Devel.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.gtk.gtk4.NodeEditor.svg
@@ -91,6 +95,7 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gtk.Demo4-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gtk.PrintEditor4-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gtk.Shaper-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gtk.WidgetFactory4-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gtk.gtk4.NodeEditor-symbolic.svg
 drwxr-xr-x	root/root	usr/share/licenses/
@@ -101,3 +106,6 @@ drwxr-xr-x	root/root	usr/share/metainfo/
 -rw-r--r--	root/root	usr/share/metainfo/org.gtk.PrintEditor4.appdata.xml
 -rw-r--r--	root/root	usr/share/metainfo/org.gtk.WidgetFactory4.appdata.xml
 -rw-r--r--	root/root	usr/share/metainfo/org.gtk.gtk4.NodeEditor.appdata.xml
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/packages/
+-rw-r--r--	root/root	usr/share/mime/packages/gtk-mime.xml
