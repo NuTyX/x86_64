@@ -14,12 +14,12 @@ run=(xorg-xinit xorg-xhost xorg-xrdb upower iso-codes)
 set=(gnome-base gnome)
 
 name=gdm
-version=49.2
-release=8
+version=50.0
 
 PKGMK_GROUPS=(devel)
 PKGMK_MESON_OPTIONS="-Dgdm-xsession=true \
 -Ddefault-pam-config=lfs \
+-Ddefault-path=/usr/local/bin:/usr/bin:/bin \
 -Drun-dir=/run/gdm   \
 --sbindir=/usr/bin   \
 --localstatedir=/var \
@@ -27,15 +27,12 @@ PKGMK_MESON_OPTIONS="-Dgdm-xsession=true \
 
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
-prepare() {
-getent group gdm || groupadd -g 21 gdm
-getent passwd gdm || ( useradd -c "GDM Daemon Owner" \
-        -d /var/lib/gdm -u 21 \
-        -g gdm -s /usr/bin/false gdm )
-passwd -ql gdm
-}
 build=meson
 
 package() {
+  mkdir -p $PKG/var/lib/gdm
   install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+  install -Dm644 /dev/stdin $PKG/usr/lib/sysusers.d/gdm.conf << EOF
+g gdm 21 -
+EOF
 }
