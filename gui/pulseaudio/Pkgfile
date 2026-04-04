@@ -17,12 +17,12 @@ run=(bluez sbc rtkit)
 
 name=pulseaudio
 version=17.0
-release=4
+release=5
 
 source=(https://freedesktop.org/software/$name/releases/$name-$version.tar.xz)
 
 PKGMK_MESON_OPTIONS="-Ddatabase=gdbm -Dudevrulesdir=/usr/lib/udev/rules.d"
-
+PKGMK_GROUPS=(devel lib man)
 unset MAKEFLAGS
 
 build=meson
@@ -36,4 +36,34 @@ for size in 16 22 32 48 64 128; do
 done
 mkdir -p $PKG/etc/pulse/default.pa.d
 sed '/autospawn/iautospawn = no' -i $PKG/etc/pulse/client.conf
+}
+
+
+devel () {
+
+cd $PKG
+
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
+usr/lib/pkgconfig \
+usr/include \
+usr/lib/cmake
+
+rm -r usr/{lib/{pkgconfig,cmake},include}
+}
+
+lib() {
+cd $PKG
+ mv usr/lib/systemd \
+ systemd
+
+ mv usr/lib/udev \
+ udev
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
+usr/lib
+rm -r usr/lib
+mkdir -p usr/lib
+mv systemd usr/lib
+mv udev    usr/lib
 }
