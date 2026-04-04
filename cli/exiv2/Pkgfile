@@ -1,14 +1,13 @@
 description="Exif and Iptc metadata manipulation library and tools"
-url="http://www.exiv2.org/index.html"
+url="https://exiv2.org"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 name=exiv2
-version=0.28.7
-release=2
+version=0.28.8
 makedepends=(cmake brotli inih)
 source=(https://github.com/Exiv2/exiv2/archive/v$version.tar.gz)
 
