@@ -14,7 +14,7 @@ version=1.6.2
 release=2
 
 source=(https://github.com/PipeWire/pipewire/archive/$version/$name-$version.tar.gz)
-
+PKGMK_GROUPS=(devel service man doc)
 CFLAGS="-Wno-error=discarded-qualifiers"
 
 PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Djack=disabled -Dpipewire-jack=disabled \
@@ -25,4 +25,11 @@ build=meson
 package() {
 install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
 install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+}
+service() {
+cd $PKG
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
+usr/lib/systemd
+rm -r usr/lib/systemd
 }
