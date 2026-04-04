@@ -3,7 +3,9 @@ url="https://goodies.xfce.org/projects/panel-plugins/xfce4-pulseaudio-plugin"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
 makedepends=(git pulseaudio dbus-glib pavucontrol keybinder3
              libnotify xfce4-dev-tools libxfce4util libxfce4ui
              xfce4-panel)
@@ -12,22 +14,12 @@ set=(xfce4-extra)
 
 name=xfce4-pulseaudio-plugin
 version=0.5.1
+release=2
 
 source=(http://archive.xfce.org/src/panel-plugins/$name/${version:0:3}/$name-$version.tar.xz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-     --prefix=/usr          \
-     --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
