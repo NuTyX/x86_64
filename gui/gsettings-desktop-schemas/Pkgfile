@@ -9,7 +9,7 @@ contributors="Pierre,Fanch,Spiky,Skythrew"
 makedepends=(meson ninja intltool glib gobject-introspection perl-xml-parser adobe-source-code-pro-fonts)
 
 name=gsettings-desktop-schemas
-version=49.1
+version=50.0
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
@@ -22,30 +22,9 @@ schemas/org.gnome.desktop.background.gschema.xml.in
 sed -i -r 's:"(/system):"/org/gnome\1:g' schemas/*.in
 }
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-}
-
-
-uptodate(){
-local latest lastversion url
-url="https://download.gnome.org/sources/$name"
-latest="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url/?C=N\;O=D|grep [0-9]/$|head -1`"
-lastversion="`lynx -read_timeout=20 -dump -listonly -nonumbers \
-$latest/?C=N\;O=D|grep LATEST|grep [0-9]$|cut -d "-" -f5`"
-echo "$lastversion"
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
