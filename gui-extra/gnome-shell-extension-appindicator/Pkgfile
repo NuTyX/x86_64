@@ -4,31 +4,20 @@ url="https://github.com/ubuntu/gnome-shell-extension-appindicator"
 license="GPL2"
 
 packager="tnut <tnut@nutyx.org>"
-contributors=""
+contributors="Spiky"
 
-makedepends=(jq libayatana-appindicator)
-run=()
-set=()
+makedepends=(meson jq libayatana-appindicator)
+run=(gnome-shell)
+set=(gnome-extra)
 
 name=gnome-shell-extension-appindicator
-version=63
+version=64
 
 source=(https://github.com/ubuntu/$name/archive/refs/tags/v${version}.tar.gz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-      --prefix=/usr
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-rm $PKG/usr/share/glib-2.0/schemas/gschemas.compiled
-
-install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
+package() {
+ rm $PKG/usr/share/glib-2.0/schemas/gschemas.compiled
+ install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
