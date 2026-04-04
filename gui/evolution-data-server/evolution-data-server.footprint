@@ -53,18 +53,18 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EDataServer-1.2.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EDataServerUI-1.2.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/EDataServerUI4-1.0.typelib
-lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so -> libcamel-1.2.so.66
-lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so.66 -> libcamel-1.2.so.66.0.0
--rwxr-xr-x	root/root	usr/lib/libcamel-1.2.so.66.0.0
+lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so -> libcamel-1.2.so.67
+lrwxrwxrwx	root/root	usr/lib/libcamel-1.2.so.67 -> libcamel-1.2.so.67.0.0
+-rwxr-xr-x	root/root	usr/lib/libcamel-1.2.so.67.0.0
 lrwxrwxrwx	root/root	usr/lib/libebackend-1.2.so -> libebackend-1.2.so.11
 lrwxrwxrwx	root/root	usr/lib/libebackend-1.2.so.11 -> libebackend-1.2.so.11.0.0
 -rwxr-xr-x	root/root	usr/lib/libebackend-1.2.so.11.0.0
 lrwxrwxrwx	root/root	usr/lib/libebook-1.2.so -> libebook-1.2.so.21
 lrwxrwxrwx	root/root	usr/lib/libebook-1.2.so.21 -> libebook-1.2.so.21.1.3
 -rwxr-xr-x	root/root	usr/lib/libebook-1.2.so.21.1.3
-lrwxrwxrwx	root/root	usr/lib/libebook-contacts-1.2.so -> libebook-contacts-1.2.so.4
-lrwxrwxrwx	root/root	usr/lib/libebook-contacts-1.2.so.4 -> libebook-contacts-1.2.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libebook-contacts-1.2.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libebook-contacts-1.2.so -> libebook-contacts-1.2.so.5
+lrwxrwxrwx	root/root	usr/lib/libebook-contacts-1.2.so.5 -> libebook-contacts-1.2.so.5.0.0
+-rwxr-xr-x	root/root	usr/lib/libebook-contacts-1.2.so.5.0.0
 lrwxrwxrwx	root/root	usr/lib/libecal-2.0.so -> libecal-2.0.so.3
 lrwxrwxrwx	root/root	usr/lib/libecal-2.0.so.3 -> libecal-2.0.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libecal-2.0.so.3.0.0
@@ -209,6 +209,7 @@ drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/component
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-folder-thread
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-indices-updater
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-intervaltree
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-name-western
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-phone-number
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-query
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-sqlite-create-cursor
@@ -225,7 +226,7 @@ drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/component
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-store-search
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-type-param
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-untyped-phones
--rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-vcard-parsing
+-rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-vcard
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/test-vee-folder
 drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/
 -rw-r--r--	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/custom-1.vcf
@@ -274,7 +275,6 @@ drwxr-xr-x	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/
 -rw-r--r--	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/sorted-8.vcf
 -rw-r--r--	root/root	usr/libexec/evolution-data-server/installed-tests/vcards/sorted-9.vcf
 -rwxr-xr-x	root/root	usr/libexec/evolution-data-server/list-sources
--rwxr-xr-x	root/root	usr/libexec/evolution-scan-gconf-tree-xml
 -rwxr-xr-x	root/root	usr/libexec/evolution-source-registry
 -rwxr-xr-x	root/root	usr/libexec/evolution-user-prompter
 drwxr-xr-x	root/root	usr/share/
@@ -438,6 +438,7 @@ drwxr-xr-x	root/root	usr/share/installed-tests/evolution-data-server/
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-fixture.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-indices-updater.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-intervaltree.test
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-name-western.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-phone-number.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-query.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-sqlite-create-cursor.test
@@ -453,7 +454,7 @@ drwxr-xr-x	root/root	usr/share/installed-tests/evolution-data-server/
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-sqlite-query.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-type-param.test
 -rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-untyped-phones.test
--rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-vcard-parsing.test
+-rw-r--r--	root/root	usr/share/installed-tests/evolution-data-server/test-vcard.test
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/evolution-data-server/
 -rw-r--r--	root/root	usr/share/licenses/evolution-data-server/COPYING
