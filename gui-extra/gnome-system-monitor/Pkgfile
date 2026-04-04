@@ -13,12 +13,13 @@ run=(gsettings-desktop-schemas desktop-file-utils libhandy libadwaita)
 set=(gnome)
 
 name=gnome-system-monitor
-version=49.1
-release=2
+version=50.0
+release=1
 
 source=(https://gitlab.gnome.org/GNOME/gnome-system-monitor/-/archive/$version/$name-$version.tar.bz2)
 
 build=meson
+
 package() {
-install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
