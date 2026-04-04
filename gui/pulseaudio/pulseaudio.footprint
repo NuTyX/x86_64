@@ -27,11 +27,6 @@ lrwxrwxrwx	root/root	usr/bin/parecord -> pacat
 -rwxr-xr-x	root/root	usr/bin/qpaeq
 -rwxr-xr-x	root/root	usr/bin/start-pulseaudio-x11
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/systemd/
-drwxr-xr-x	root/root	usr/lib/systemd/user/
--rw-r--r--	root/root	usr/lib/systemd/user/pulseaudio-x11.service
--rw-r--r--	root/root	usr/lib/systemd/user/pulseaudio.service
--rw-r--r--	root/root	usr/lib/systemd/user/pulseaudio.socket
 drwxr-xr-x	root/root	usr/lib/udev/
 drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/90-pulseaudio.rules
