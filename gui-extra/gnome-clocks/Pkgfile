@@ -6,30 +6,19 @@ license="GPL2"
 packager="tnut <tnut@nutyx.org>"
 contributors="Jayce,Remy,Spiky"
 
-makedepends=(meson ninja gtk4 libcanberra gnome-desktop libhandy
+makedepends=(meson ninja gtk4 libcanberra gnome-desktop libhandy vorbis-tools
              libnotify libgweather-4 geoclue2 geocode-glib gsound)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache libadwaita)
 
 set=(gnome)
 
 name=gnome-clocks
-version=49.0
+version=50.0
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../LICENSE.md $PKG/usr/share/licenses/$name/LICENSE.md
+package() {
+ install -Dm644 $name-$version/LICENSE.md $PKG/usr/share/licenses/$name/LICENSE.md
 }
