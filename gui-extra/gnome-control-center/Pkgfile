@@ -18,12 +18,9 @@ run=(iso-codes gsettings-desktop-schemas libgnomekbd tecla
 set=(gnome-base gnome)
 
 name=gnome-control-center
-version=49.6
-release=3
+version=50.0
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
-
-PKGMK_MESON_OPTIONS="-Dx11=True"
 
 build=meson
 
