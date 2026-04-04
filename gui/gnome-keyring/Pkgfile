@@ -1,39 +1,28 @@
 description="GNOME Password Management daemon"
-url="http://www.gnome.org/"
+url="https://gitlab.gnome.org/GNOME/gnome-keyring"
 
 license="GPL2.0"
 license="LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Spiky"
 
 makedepends=(dbus gcr pam libxslt libcap-ng gnupg openssh valgrind)
 
 name=gnome-keyring
-version=48.0
+version=50.0
 
 set=(gnome)
 
-source=(https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/$version/$name-$version.tar.gz)
+source=($url/-/archive/$version/$name-$version.tar.gz)
+PKGMK_MESON_OPTIONS="-Dssh-agent=true"
 
+prepare() {
+ sed -i 's:"/desktop:"/org:' $name-$version/schema/*.xml
+}
+build=meson
 
-build() {
-cd $name-$version
-
-sed -i 's:"/desktop:"/org:' schema/*.xml
-
-mkdir build-gkr
-cd    build-gkr
-
-meson setup .. \
-     --prefix=/usr \
-     --buildtype=release \
-     -D ssh-agent=true
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-install -Dm644 ../COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
+package() {
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 $name-$version/COPYING.LIB $PKG/usr/share/licenses/$name/COPYING.LIB
 }
