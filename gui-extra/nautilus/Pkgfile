@@ -8,13 +8,14 @@ contributors="Fanch,Jayce,Remy,Fabienwang,Spiky"
 
 run=(desktop-file-utils gtk-update-icon-cache
      shared-mime-info libportal gtk4 localsearch)
-makedepends=(gnome-autoar libnotify gnome-desktop gvfs
-             gobject-introspection exempi libexif libgexiv2
+makedepends=(gnome-autoar libnotify gnome-desktop gvfs glycin-gtk4
+             gobject-introspection exempi libexif libgexiv2 blueprint-compiler
              libcloudproviders meson gtk-doc libhandy bubblewrap libadwaita)
 set=(gnome)
 
 name=nautilus
-version=49.5
+version=50.0
+PKGMK_MESON_OPTIONS="-Dselinux=disabled"
 
 source=(https://gitlab.gnome.org/GNOME/nautilus/-/archive/$version/$name-$version.tar.gz)
 
