@@ -13,10 +13,14 @@ run=(adwaita-icon-theme gsettings-desktop-schemas
 set=(gnome)
 
 name=eog
-version=49.2
+version=50.0
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Dlibportal=false"
 
 build=meson
+
+package() {
+  install -Dm644 $name-$version/COPYING $PKG//usr/share/licenses/$name/COPYING
+}
