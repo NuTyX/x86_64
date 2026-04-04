@@ -1,0 +1,23 @@
+description="Extra tools for Ogg-Vorbis"
+url="https://www.xiph.org/vorbis/"
+
+license="GPL2"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(curl flac libao libvorbis)
+
+name=vorbis-tools
+version=1.4.3
+
+source=(https://downloads.xiph.org/releases/vorbis/$name-$version.tar.gz)
+
+build() {
+ cd $name-$version
+ ./configure --prefix=/usr \
+   --without-speex \
+   --enable-vcut
+ make
+ make DESTDIR=$PKG install
+}
