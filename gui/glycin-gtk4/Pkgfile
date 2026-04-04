@@ -1,0 +1,35 @@
+description="glycin - GTK4 integration"
+url="https://gnome.pages.gitlab.gnome.org/glycin/"
+
+packager="tnut <tnut@nutyx.org"
+contributors="Spiky"
+
+name=glycin-gtk4
+version=2.0.8
+
+makedepends=(gtk4 glycin)
+
+source=(https://download.gnome.org/sources/glycin/${version%.*}/glycin-$version.tar.xz)
+
+PKGMK_MESON_OPTIONS="-Dtests=false"
+prepare() {
+ mv glycin-$version $name-$version
+}
+
+build=meson
+
+package() {
+ # libglycin
+ rm    $PKG/usr/lib/libglycin-2.so*
+ rm -r $PKG/usr/include/glycin-2
+ rm -r $PKG/usr/lib/pkgconfig/glycin-2.pc
+
+ # glycin
+ rm -r $PKG/usr/bin
+ rm    $PKG/usr/lib/girepository-1.0/Gly-2.typelib
+ rm -r $PKG/usr/lib/glycin-loaders
+ rm -r $PKG/usr/share/glycin-loaders
+ rm    $PKG/usr/share/gir-1.0/Gly-2.gir
+ rm    $PKG/usr/share/vala/vapi/{glycin-2.vapi,glycin-2.deps}
+ rm -r $PKG/usr/share/thumbnailers
+}
