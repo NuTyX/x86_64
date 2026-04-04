@@ -11,21 +11,15 @@ run=()
 set=(gnome)
 
 name=gnome-console
-version=49.2
+version=50.0
 
 source=(https://gitlab.gnome.org/GNOME/console/-/archive/$version/console-$version.tar.bz2)
 
-build() {
-cd console-$version
+prepare() {
+ mv console-$version $name-$version
+}
+build=meson
 
-mkdir build
-cd build
-
-meson setup .. \
-      --prefix=/usr
-
-ninja
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING $PKG/usr/share/licenses/$name/COPYING
 }
