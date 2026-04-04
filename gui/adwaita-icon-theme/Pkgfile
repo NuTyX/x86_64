@@ -11,23 +11,13 @@ makedepends=(meson ninja)
 run=(hicolor-icon-theme gtk-update-icon-cache icon-naming-utils librsvg)
 
 name=adwaita-icon-theme
-version=49.0
+version=50.0
 
 source=(https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/archive/$version/$name-$version.tar.gz)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-      --prefix=/usr
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 $SRC/$name-$version/COPYING_LGPL $PKG/usr/share/licenses/$name/COPYING_LGPL
-install -Dm644 $SRC/$name-$version/COPYING_CCBYSA3 $PKG/usr/share/licenses/$name/COPYING_CCBYSA3
+package() {
+install -Dm644 $name-$version/COPYING_LGPL $PKG/usr/share/licenses/$name/COPYING_LGPL
+install -Dm644 $name-$version/COPYING_CCBYSA3 $PKG/usr/share/licenses/$name/COPYING_CCBYSA3
 }
