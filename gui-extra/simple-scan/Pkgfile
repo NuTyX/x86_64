@@ -13,8 +13,13 @@ makedepends=(sane dconf gtk4 colord libgusb ninja meson yelp-tools
 run=(hicolor-icon-theme)
 
 name=simple-scan
-version=49.1
+version=50.0
 
 source=(https://gitlab.gnome.org/GNOME/simple-scan/-/archive/$version/$name-$version.tar.gz)
 
 build=meson
+
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
+}
