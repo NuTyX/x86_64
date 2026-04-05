@@ -14,24 +14,13 @@ set=(gnome)
 
 name=gnome-tweaks
 version=49.0
-release=1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/$version/$name-$version.tar.bz2)
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-meson setup .. \
-       --prefix=/usr          \
-            --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../LICENSES/GPL-3.0 $PKG/usr/share/licenses/$name/GPL-3.0
-install -Dm644 ../LICENSES/CC0-1.0 $PKG/usr/share/licenses/$name/CC0-1.0
+package() {
+ install -Dm644 $name-$version/LICENSES/GPL-3.0 $PKG/usr/share/licenses/$name/GPL-3.0
+ install -Dm644 $name-$version/LICENSES/CC0-1.0 $PKG/usr/share/licenses/$name/CC0-1.0
 }
