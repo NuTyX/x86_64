@@ -6,17 +6,16 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Tracker-3.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Tsparql-3.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libtinysparql-3.0.so -> libtinysparql-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libtinysparql-3.0.so.0 -> libtinysparql-3.0.so.0.1001.0
--rwxr-xr-x	root/root	usr/lib/libtinysparql-3.0.so.0.1001.0
+lrwxrwxrwx	root/root	usr/lib/libtinysparql-3.0.so.0 -> libtinysparql-3.0.so.0.1100.0
+-rwxr-xr-x	root/root	usr/lib/libtinysparql-3.0.so.0.1100.0
 lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so -> libtinysparql-3.0.so
 lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so.0 -> libtinysparql-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so.0.1001.0 -> libtinysparql-3.0.so.0.1001.0
+lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so.0.1100.0 -> libtinysparql-3.0.so.0.1100.0
 drwxr-xr-x	root/root	usr/lib/tinysparql-3.0/
 -rwxr-xr-x	root/root	usr/lib/tinysparql-3.0/libtracker-http-soup3.so
 -rwxr-xr-x	root/root	usr/lib/tinysparql-3.0/libtracker-parser-libicu.so
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/tinysparql-sql
--rwxr-xr-x	root/root	usr/libexec/tinysparql-xdg-portal-3
+-rwxr-xr-x	root/root	usr/lib/tinysparql-sql
+-rwxr-xr-x	root/root	usr/lib/tinysparql-xdg-portal-3
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
@@ -27,6 +26,11 @@ drwxr-xr-x	root/root	usr/share/dbus-1/services/
 drwxr-xr-x	root/root	usr/share/gir-1.0/
 -rw-r--r--	root/root	usr/share/gir-1.0/Tracker-3.0.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/Tsparql-3.0.gir
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/tinysparql/
+-rw-r--r--	root/root	usr/share/licenses/tinysparql/COPYING
+-rw-r--r--	root/root	usr/share/licenses/tinysparql/COPYING.GPL
+-rw-r--r--	root/root	usr/share/licenses/tinysparql/COPYING.LGPL
 drwxr-xr-x	root/root	usr/share/vala/
 drwxr-xr-x	root/root	usr/share/vala/vapi/
 -rw-r--r--	root/root	usr/share/vala/vapi/tinysparql-3.0.deps

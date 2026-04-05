@@ -1,6 +1,8 @@
 description='Tinysparql is a low-footprint RDF triple store with a SPARQL 1.1 interface'
 url='https://download.gnome.org/sources/tinysparql'
 
+license="LGPLv2.1+"
+
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
@@ -8,32 +10,18 @@ makedepends=(json-glib vala icu libsoup3 python-gobject asciidoc gi-docgen)
 run=()
 
 name=tinysparql
-version=3.10.1
+version=3.11.0
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
+PKGMK_MESON_OPTIONS="-Dman=false"
 
-prepare() {
-cd $name-$version
+build=meson
 
-rm -fv /usr/lib/systemd/user/tracker-xdg-portal-3.service
-
-sed -e "s/'generate'/&, '--no-namespace-dir'/"         \
-    -e "/--output-dir/s/@OUTPUT@/&\/$name-$version/" \
-    -i docs/reference/meson.build
-}
-
-build() {
-cd $name-$version
-
-mkdir build
-cd    build
-
-    meson setup --prefix /usr \
-    --buildtype  release      \
-    -D man=false              \
-    -D systemd_user_services=false
-
-ninja
-
-DESTDIR=$PKG ninja install
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 $name-$version/COPYING.LGPL \
+ $PKG/usr/share/licenses/$name/COPYING.LGPL
+ install -Dm644 $name-$version/COPYING.GPL \
+ $PKG/usr/share/licenses/$name/COPYING.GPL
 }
