@@ -11,13 +11,14 @@ makedepends=(libadwaita libxkbcommon)
 set=(gnome)
 
 name=tecla
-version=49.0
-release=2
+version=50.0
+release=1
 
 source=(https://gitlab.gnome.org/GNOME/tecla/-/archive/$version/$name-$version.tar.gz)
 
 build=meson
 
 package() {
-install -Dm644 $name-$version/LICENSE $PKG/usr/share/licenses/$name/LICENSE
+ install -Dm644 $name-$version/LICENSE \
+ $PKG/usr/share/licenses/$name/LICENSE
 }
