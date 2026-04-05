@@ -40,24 +40,15 @@ sed '/autospawn/iautospawn = no' -i $PKG/etc/pulse/client.conf
 
 
 devel () {
-
 cd $PKG
-
 bsdtar -cf \
 $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/pkgconfig \
 usr/include \
 usr/lib/cmake
-
 rm -r usr/{lib/{pkgconfig,cmake},include}
 }
-service() {
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/$name.service${PKGMK_PACKAGE_EXT}$version-$release \
-usr/lib/systemd
-rm -r usr/lib/systemd
-}
+
 lib() {
 cd $PKG
 
@@ -68,5 +59,5 @@ $PKGMK_PACKAGE_DIR/$name.lib${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib
 rm -r usr/lib
 mkdir -p usr/lib
-mv udev    usr/lib
+mv udev  usr/lib
 }
