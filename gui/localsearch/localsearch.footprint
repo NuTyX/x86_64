@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/localsearch
 drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/localsearch-3
 drwxr-xr-x	root/root	usr/lib/localsearch-3.0/
 drwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/extract-modules/libextract-abw.so
@@ -44,11 +45,9 @@ drwxr-xr-x	root/root	usr/lib/localsearch-3.0/trackertestutils/
 drwxr-xr-x	root/root	usr/lib/localsearch-3.0/writeback-modules/
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/writeback-modules/libwriteback-gstreamer.so
 -rwxr-xr-x	root/root	usr/lib/localsearch-3.0/writeback-modules/libwriteback-xmp.so
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/localsearch-3
--rwxr-xr-x	root/root	usr/libexec/localsearch-control-3
--rwxr-xr-x	root/root	usr/libexec/localsearch-extractor-3
--rwxr-xr-x	root/root	usr/libexec/localsearch-writeback-3
+-rwxr-xr-x	root/root	usr/lib/localsearch-control-3
+-rwxr-xr-x	root/root	usr/lib/localsearch-extractor-3
+-rwxr-xr-x	root/root	usr/lib/localsearch-writeback-3
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
@@ -70,6 +69,11 @@ drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.freedesktop.Tracker3.FTS.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.freedesktop.Tracker3.Miner.Files.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.freedesktop.TrackerMiners3.enums.xml
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/localsearch/
+-rw-r--r--	root/root	usr/share/licenses/localsearch/COPYING
+-rw-r--r--	root/root	usr/share/licenses/localsearch/COPYING.GPL
+-rw-r--r--	root/root	usr/share/licenses/localsearch/COPYING.LGPL
 drwxr-xr-x	root/root	usr/share/localsearch3/
 drwxr-xr-x	root/root	usr/share/localsearch3/extract-rules/
 -rw-r--r--	root/root	usr/share/localsearch3/extract-rules/10-abw.rule

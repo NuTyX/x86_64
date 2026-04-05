@@ -3,8 +3,8 @@ url='https://gitlab.gnome.org/GNOME/localsearch'
 
 license="GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(gstreamer-plugins-base tinysparql exempi libgexiv2 giflib
              libexif libgxps  libseccomp poppler taglib ffmpeg upower
@@ -14,8 +14,10 @@ set=()
 
 name=localsearch
 version=3.10.2
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/localsearch/-/archive/$version/$name-$version.tar.bz2)
+PKGMK_MESON_OPTIONS="-Dman=false -Dlandlock=enabled"
 
 prepare() {
 cd $name-$version
@@ -28,23 +30,10 @@ rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Writeback.service
 rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.service
 
 }
-build() {
-cd $name-$version
 
-mkdir build
-cd    build
+build=meson
 
-   meson setup .. \
-       --prefix=/usr          \
-       --buildtype=release    \
-       -D landlock=enabled    \
-       -D systemd_user_services=false \
-       -D man=false
-
-ninja
-
-DESTDIR=$PKG ninja install
-
+package() {
   #we don't need tracker3 files again...
   rm -f $PKG/usr/lib/girepository-1.0/Tracker*.typelib
   rm -f $PKG/usr/lib/libtracker-sparql*.so
@@ -56,4 +45,8 @@ DESTDIR=$PKG ninja install
 
   rm -f $PKG/usr/lib/pkgconfig/tracker-sparql-3.0.pc
 
+  for i in COPYING COPYING.GPL COPYING.LGPL; do
+    install -Dm644 $name-$version/$i \
+    $PKG/usr/share/licenses/$name/$i
+  done
 }
