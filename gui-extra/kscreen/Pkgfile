@@ -10,6 +10,7 @@ set=(kde6 kde6-plasma)
 
 name=kscreen
 version=6.6.3
+release=2
 
 makedepends=(qt6-sensors
              kcmutils kconfig kcoreaddons kdeclarative ki18n kirigami ksvg
@@ -18,5 +19,7 @@ makedepends=(qt6-sensors
 run=(xdg-utils hicolor-icon-theme )
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
+
+PKGMK_GROUPS=(devel)
 
 build=kde6
