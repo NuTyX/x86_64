@@ -2,3 +2,24 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/drkonqi-coredump-processor@.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/systemd-coredump@.service.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/systemd-coredump@.service.wants/drkonqi-coredump-processor@.service -> ../drkonqi-coredump-processor@.service
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+drwxr-xr-x	root/root	usr/lib/systemd/user/default.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/user/default.target.wants/drkonqi-coredump-cleanup.service -> ../drkonqi-coredump-cleanup.service
+lrwxrwxrwx	root/root	usr/lib/systemd/user/default.target.wants/drkonqi-sentry-postman.path -> ../drkonqi-sentry-postman.path
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-coredump-cleanup.service
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-coredump-cleanup.timer
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-coredump-launcher.socket
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-coredump-launcher@.service
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-coredump-pickup.service
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-sentry-postman.path
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-sentry-postman.service
+-rw-r--r--	root/root	usr/lib/systemd/user/drkonqi-sentry-postman.timer
+drwxr-xr-x	root/root	usr/lib/systemd/user/plasma-core.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/user/plasma-core.target.wants/drkonqi-coredump-pickup.service -> ../drkonqi-coredump-pickup.service
+lrwxrwxrwx	root/root	usr/lib/systemd/user/plasma-core.target.wants/drkonqi-sentry-postman.path -> ../drkonqi-sentry-postman.path
+lrwxrwxrwx	root/root	usr/lib/systemd/user/plasma-core.target.wants/drkonqi-sentry-postman.timer -> ../drkonqi-sentry-postman.timer
+drwxr-xr-x	root/root	usr/lib/systemd/user/sockets.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/drkonqi-coredump-launcher.socket -> ../drkonqi-coredump-launcher.socket
+drwxr-xr-x	root/root	usr/lib/systemd/user/timers.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/user/timers.target.wants/drkonqi-coredump-cleanup.timer -> ../drkonqi-coredump-cleanup.timer
+lrwxrwxrwx	root/root	usr/lib/systemd/user/timers.target.wants/drkonqi-sentry-postman.timer -> ../drkonqi-sentry-postman.timer
