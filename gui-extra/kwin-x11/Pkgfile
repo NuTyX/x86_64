@@ -10,6 +10,7 @@ set=(kde6 kde6-plasma)
 
 name=kwin-x11
 version=6.6.3
+release=2
 
 makedepends=(xorg-libx11 xorg-libdrm libxcb libepoxy libinput pipewire libxkbcommon
              mesa libplasma python wayland-protocols xorg-xwayland libdisplay-info
@@ -24,5 +25,7 @@ makedepends=(xorg-libx11 xorg-libdrm libxcb libepoxy libinput pipewire libxkbcom
 run=(kquickcharts)
 
 source=(https://download.kde.org/stable/plasma/${version:0:5}/$name-$version.tar.xz)
+
+PKGMK_GROUPS=(devel doc)
 
 build=kde6
