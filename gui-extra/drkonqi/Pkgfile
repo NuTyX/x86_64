@@ -10,7 +10,7 @@ set=(kde6 kde6-plasma)
 
 name=drkonqi
 version=6.6.3
-release=2
+release=3
 
 makedepends=(python python-psutil qt6-base qt6-declarative extra-cmake-modules
              kcmutils kconfig kcoreaddons kcrash ki18n kidletime kio
@@ -18,5 +18,6 @@ makedepends=(python python-psutil qt6-base qt6-declarative extra-cmake-modules
              kwidgetsaddons kwindowsystem polkit-qt-1 syntax-highlighting)
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
+PKGMK_GROUPS=()
 
 build=kde6
