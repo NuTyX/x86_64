@@ -11,6 +11,9 @@ lrwxrwxrwx	root/root	usr/lib/libtinysparql-3.0.so.0 -> libtinysparql-3.0.so.0.11
 lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so -> libtinysparql-3.0.so
 lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so.0 -> libtinysparql-3.0.so.0
 lrwxrwxrwx	root/root	usr/lib/libtracker-sparql-3.0.so.0.1100.0 -> libtinysparql-3.0.so.0.1100.0
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+-rw-r--r--	root/root	usr/lib/systemd/user/tinysparql-xdg-portal-3.service
 drwxr-xr-x	root/root	usr/lib/tinysparql-3.0/
 -rwxr-xr-x	root/root	usr/lib/tinysparql-3.0/libtracker-http-soup3.so
 -rwxr-xr-x	root/root	usr/lib/tinysparql-3.0/libtracker-parser-libicu.so
