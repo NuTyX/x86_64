@@ -10,7 +10,7 @@ set=(kde6-frameworks)
 
 name=baloo
 version=6.24.0
-release=2
+release=3
 
 makedepends=(lmdb kconfig kcoreaddons kcrash
              kdbusaddons kfilemetadata ki18n kidletime
@@ -20,6 +20,7 @@ run=(hicolor-icon-theme xdg-utils)
 
 source=(sys-ioprio-set.patch
         https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
+PKGMK_GROUPS=(devel)
 
 prepare() {
  cd $name-$version
