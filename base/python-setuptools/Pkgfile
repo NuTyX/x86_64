@@ -1,8 +1,8 @@
 description='Easily download, build, install, upgrade, and uninstall Python packages'
 url='https://pypi.python.org/pypi/setuptools'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python python-wheel)
 
@@ -11,6 +11,7 @@ _name="setuptools"
 alias=(${_name})
 
 version=82.0.1
+release=2
 
 source=(https://pypi.org/packages/source/s/setuptools/setuptools-$version.tar.gz)
 
