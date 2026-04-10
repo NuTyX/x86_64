@@ -11,9 +11,10 @@ run=()
 
 name=tinysparql
 version=3.11.0
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
-PKGMK_MESON_OPTIONS="-Dman=false"
+PKGMK_GROUPS=(devel doc man)
 
 build=meson
 

@@ -6,16 +6,17 @@ license="GPL2-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
 
-makedepends=(meson ninja glib xorg-libsm graphene libdisplay-info glycin
+makedepends=(meson ninja glib xorg-libsm graphene libdisplay-info
              gnome-desktop gnome-settings-daemon libwacom libxkbcommon upower
-             gobject-introspection libcanberra startup-notification pipewire
+             gobject-introspection libcanberra startup-notification
              xorg-libxcursor xorg-libxcomposite wayland-protocols libei)
 
-run=(xorg-server zenity pipewire xorg-xwayland)
+run=(xorg-server zenity pipewire xorg-xwayland glycin)
 set=(gnome-base gnome)
 
 name=mutter
 version=50.0
+release=2
 
 PKGMK_MESON_OPTIONS="-Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"

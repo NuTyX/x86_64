@@ -11,9 +11,11 @@ makedepends=(automake texinfo intltool dotconf
 
 name=speech-dispatcher
 version=0.12.1
-release=3
+release=4
 
 source=(https://github.com/brailcom/speechd/releases/download/$version/$name-$version.tar.gz)
+PKGMK_GROUPS=(devel man)
+
 build() {
 cd $name-$version
 
