@@ -1,0 +1,19 @@
+description='Locate per-dist and per-module shared files'
+url='https://metacpan.org/release/File-ShareDir'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(perl-class-inspector)
+
+name=perl-file-sharedir
+version=1.118
+
+source=(https://cpan.metacpan.org/authors/id/R/RE/REHSACK/File-ShareDir-$version.tar.gz)
+
+build() {
+cd File-ShareDir-$version
+perl Makefile.PL
+make
+make DESTDIR=$PKG install
+}
