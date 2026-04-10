@@ -23,11 +23,11 @@ drwxr-xr-x	root/root	usr/include/absl/base/internal/
 -rw-r--r--	root/root	usr/include/absl/base/internal/exception_safety_testing.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/exception_testing.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/hide_ptr.h
--rw-r--r--	root/root	usr/include/absl/base/internal/identity.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/iterator_traits.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/iterator_traits_test_helper.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/low_level_alloc.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/low_level_scheduling.h
+-rw-r--r--	root/root	usr/include/absl/base/internal/nullability_traits.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/per_thread_tls.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/poison.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/pretty_function.h
@@ -67,6 +67,7 @@ drwxr-xr-x	root/root	usr/include/absl/container/
 -rw-r--r--	root/root	usr/include/absl/container/btree_map.h
 -rw-r--r--	root/root	usr/include/absl/container/btree_set.h
 -rw-r--r--	root/root	usr/include/absl/container/btree_test.h
+-rw-r--r--	root/root	usr/include/absl/container/chunked_queue.h
 -rw-r--r--	root/root	usr/include/absl/container/fixed_array.h
 -rw-r--r--	root/root	usr/include/absl/container/flat_hash_map.h
 -rw-r--r--	root/root	usr/include/absl/container/flat_hash_set.h
@@ -75,6 +76,7 @@ drwxr-xr-x	root/root	usr/include/absl/container/
 drwxr-xr-x	root/root	usr/include/absl/container/internal/
 -rw-r--r--	root/root	usr/include/absl/container/internal/btree.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/btree_container.h
+-rw-r--r--	root/root	usr/include/absl/container/internal/chunked_queue.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/common.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/common_policy_traits.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/compressed_tuple.h
@@ -87,6 +89,7 @@ drwxr-xr-x	root/root	usr/include/absl/container/internal/
 -rw-r--r--	root/root	usr/include/absl/container/internal/hashtable_debug.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hashtable_debug_hooks.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/hashtablez_sampler.h
+-rw-r--r--	root/root	usr/include/absl/container/internal/heterogeneous_lookup_testing.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/inlined_vector.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/layout.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/node_slot_policy.h
@@ -104,6 +107,8 @@ drwxr-xr-x	root/root	usr/include/absl/container/internal/
 -rw-r--r--	root/root	usr/include/absl/container/internal/unordered_set_lookup_test.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/unordered_set_members_test.h
 -rw-r--r--	root/root	usr/include/absl/container/internal/unordered_set_modifiers_test.h
+-rw-r--r--	root/root	usr/include/absl/container/linked_hash_map.h
+-rw-r--r--	root/root	usr/include/absl/container/linked_hash_set.h
 -rw-r--r--	root/root	usr/include/absl/container/node_hash_map.h
 -rw-r--r--	root/root	usr/include/absl/container/node_hash_set.h
 drwxr-xr-x	root/root	usr/include/absl/crc/
@@ -124,6 +129,7 @@ drwxr-xr-x	root/root	usr/include/absl/debugging/
 drwxr-xr-x	root/root	usr/include/absl/debugging/internal/
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/address_is_readable.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/addresses.h
+-rw-r--r--	root/root	usr/include/absl/debugging/internal/borrowed_fixup_buffer.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/bounded_utf8_length_sequence.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/decode_rust_punycode.h
 -rw-r--r--	root/root	usr/include/absl/debugging/internal/demangle.h
@@ -206,6 +212,7 @@ drwxr-xr-x	root/root	usr/include/absl/log/internal/
 -rw-r--r--	root/root	usr/include/absl/log/internal/check_op.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/conditions.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/config.h
+-rw-r--r--	root/root	usr/include/absl/log/internal/container.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/flags.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/fnmatch.h
 -rw-r--r--	root/root	usr/include/absl/log/internal/globals.h
@@ -236,6 +243,9 @@ drwxr-xr-x	root/root	usr/include/absl/log/internal/
 drwxr-xr-x	root/root	usr/include/absl/memory/
 -rw-r--r--	root/root	usr/include/absl/memory/memory.h
 drwxr-xr-x	root/root	usr/include/absl/meta/
+drwxr-xr-x	root/root	usr/include/absl/meta/internal/
+-rw-r--r--	root/root	usr/include/absl/meta/internal/constexpr_testing.h
+-rw-r--r--	root/root	usr/include/absl/meta/internal/requires.h
 -rw-r--r--	root/root	usr/include/absl/meta/type_traits.h
 drwxr-xr-x	root/root	usr/include/absl/numeric/
 -rw-r--r--	root/root	usr/include/absl/numeric/bits.h
@@ -321,6 +331,7 @@ drwxr-xr-x	root/root	usr/include/absl/strings/
 -rw-r--r--	root/root	usr/include/absl/strings/has_absl_stringify.h
 -rw-r--r--	root/root	usr/include/absl/strings/has_ostream_operator.h
 drwxr-xr-x	root/root	usr/include/absl/strings/internal/
+-rw-r--r--	root/root	usr/include/absl/strings/internal/append_and_overwrite.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/charconv_bigint.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/charconv_parse.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/cord_data_edge.h
@@ -342,6 +353,8 @@ drwxr-xr-x	root/root	usr/include/absl/strings/internal/
 -rw-r--r--	root/root	usr/include/absl/strings/internal/damerau_levenshtein_distance.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/escaping.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/escaping_test_common.h
+-rw-r--r--	root/root	usr/include/absl/strings/internal/generic_printer.h
+-rw-r--r--	root/root	usr/include/absl/strings/internal/generic_printer_internal.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/memutil.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/numbers_test_common.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/ostringstream.h
@@ -364,6 +377,7 @@ drwxr-xr-x	root/root	usr/include/absl/strings/internal/str_format/
 -rw-r--r--	root/root	usr/include/absl/strings/internal/utf8.h
 -rw-r--r--	root/root	usr/include/absl/strings/match.h
 -rw-r--r--	root/root	usr/include/absl/strings/numbers.h
+-rw-r--r--	root/root	usr/include/absl/strings/resize_and_overwrite.h
 -rw-r--r--	root/root	usr/include/absl/strings/str_cat.h
 -rw-r--r--	root/root	usr/include/absl/strings/str_format.h
 -rw-r--r--	root/root	usr/include/absl/strings/str_join.h
@@ -409,6 +423,7 @@ drwxr-xr-x	root/root	usr/include/absl/time/internal/cctz/src/
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_impl.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_info.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_libc.h
+-rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_name_win.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/time_zone_posix.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/cctz/src/tzfile.h
 -rw-r--r--	root/root	usr/include/absl/time/internal/get_current_time_chrono.inc
@@ -441,10 +456,12 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_base_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bind_front.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bits.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_borrowed_fixup_buffer.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bounded_utf8_length_sequence.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_btree.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_charset.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_check.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_chunked_queue.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_city.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_civil_time.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_cleanup.pc
@@ -453,6 +470,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_compare.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_compressed_tuple.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_config.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_constexpr_testing_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_container_common.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_container_memory.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_cord.pc
@@ -499,6 +517,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_flat_hash_map.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_flat_hash_set.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_function_ref.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_generic_printer_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_graphcycles_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_has_ostream_operator.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hash.pc
@@ -510,6 +529,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_debug_hooks.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtable_profiler.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_hashtablez_sampler.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_heterogeneous_lookup_testing.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_inlined_vector.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_inlined_vector_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_int128.pc
@@ -518,6 +538,8 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_kernel_timeout_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_layout.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_leak_check.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_linked_hash_map.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_linked_hash_set.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_entry.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_flags.pc
@@ -528,6 +550,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_check_op.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_conditions.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_config.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_container.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_flags.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_fnmatch.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_log_internal_format.pc
@@ -557,6 +580,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_non_temporal_arm_intrinsics.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_non_temporal_memcpy.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_nullability.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_nullability_traits_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_numeric.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_numeric_representation.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_optional.pc
@@ -596,6 +620,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_hash_set.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_hash_set_resize_impl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_raw_logging_internal.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_requires_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_sample_recorder.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_scoped_set_env.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_span.pc
@@ -608,7 +633,9 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_strerror.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_string_view.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_strings.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_strings_append_and_overwrite.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_strings_internal.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_strings_resize_and_overwrite.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_symbolize.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_synchronization.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_throw_delegate.pc
