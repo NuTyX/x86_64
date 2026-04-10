@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_downloads/
 drwxr-xr-x	root/root	usr/share/doc/python/html/_downloads/6dc1f3f4f0e6ca13cb42ddf4d6cbc8af/
 -rw-r--r--	root/root	usr/share/doc/python/html/_downloads/6dc1f3f4f0e6ca13cb42ddf4d6cbc8af/tzinfo_examples.py
 drwxr-xr-x	root/root	usr/share/doc/python/html/_images/
+-rw-r--r--	root/root	usr/share/doc/python/html/_images/datetime-inheritance.svg
 -rw-r--r--	root/root	usr/share/doc/python/html/_images/hashlib-blake2-tree.png
 -rw-r--r--	root/root	usr/share/doc/python/html/_images/kde_example.png
 -rw-r--r--	root/root	usr/share/doc/python/html/_images/mac_installer_01_introduction.png
@@ -62,6 +63,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/index.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/init.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/init_config.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/interp-lifecycle.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/intro.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/iter.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/iterator.rst.txt
@@ -81,6 +83,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/objimpl.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/perfmaps.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/picklebuffer.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/profiling.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/refcounting.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/reflection.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/sequence.rst.txt
@@ -88,8 +91,12 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/slice.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/stable.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/structures.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/subinterpreters.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/synchronization.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/sys.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/threads.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/time.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/tls.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/tuple.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/type.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/c-api/typehints.rst.txt
@@ -166,6 +173,8 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/howto/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/timerfd.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/unicode.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/howto/urllib2.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/improve-page-nojs.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/improve-page.rst.txt
 drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/installing/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/installing/index.rst.txt
 drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/library/
@@ -435,6 +444,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/_sources/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/text.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/textwrap.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/threading.rst.txt
+-rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/threadsafety.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/time.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/timeit.rst.txt
 -rw-r--r--	root/root	usr/share/doc/python/html/_sources/library/tk.rst.txt
@@ -627,6 +637,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/index.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/init.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/init_config.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/interp-lifecycle.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/intro.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/iter.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/iterator.html
@@ -646,6 +657,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/objimpl.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/perfmaps.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/picklebuffer.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/profiling.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/refcounting.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/reflection.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/sequence.html
@@ -653,8 +665,12 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/c-api/
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/slice.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/stable.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/structures.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/subinterpreters.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/synchronization.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/sys.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/threads.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/time.html
+-rw-r--r--	root/root	usr/share/doc/python/html/c-api/tls.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/tuple.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/type.html
 -rw-r--r--	root/root	usr/share/doc/python/html/c-api/typehints.html
@@ -762,6 +778,8 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/howto/
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/timerfd.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/unicode.html
 -rw-r--r--	root/root	usr/share/doc/python/html/howto/urllib2.html
+-rw-r--r--	root/root	usr/share/doc/python/html/improve-page-nojs.html
+-rw-r--r--	root/root	usr/share/doc/python/html/improve-page.html
 -rw-r--r--	root/root	usr/share/doc/python/html/index.html
 drwxr-xr-x	root/root	usr/share/doc/python/html/installing/
 -rw-r--r--	root/root	usr/share/doc/python/html/installing/index.html
@@ -1032,6 +1050,7 @@ drwxr-xr-x	root/root	usr/share/doc/python/html/library/
 -rw-r--r--	root/root	usr/share/doc/python/html/library/text.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/textwrap.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/threading.html
+-rw-r--r--	root/root	usr/share/doc/python/html/library/threadsafety.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/time.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/timeit.html
 -rw-r--r--	root/root	usr/share/doc/python/html/library/tk.html
