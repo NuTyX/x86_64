@@ -1,15 +1,14 @@
 description='A C++ crypto library'
 url='https://botan.randombit.net/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gmp python)
 run=()
 
 name=botan
-version=3.11.0
-release=1
+version=3.11.1
 
 source=(https://botan.randombit.net/releases/Botan-$version.tar.xz)
 
