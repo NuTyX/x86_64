@@ -11,7 +11,7 @@ release=2
 makedepends=(systemd meson dbus polkit vim)
 
 source=(https://gitlab.freedesktop.org/pipewire/rtkit/-/archive/v${version}/rtkit-v${version}.tar.gz)
-PKGMK_GROUPS=()
+PKGMK_GROUPS=(man)
 
 prepare() {
   mv ${name}-v${version} ${name}-${version}
