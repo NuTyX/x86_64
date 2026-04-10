@@ -1,8 +1,8 @@
 description="A cross-platform open-source make system"
 url="http://www.cmake.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Fanch,Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Fanch,Greg,Tnut"
 
 license="custom"
 
@@ -10,7 +10,7 @@ set=(devel)
 makedepends=(ncurses expat libuv curl libarchive jsoncpp rhash)
 
 name=cmake
-version=4.3.0
+version=4.3.1
 
 source=($url/files/v${version%.*}/$name-$version.tar.gz)
 
