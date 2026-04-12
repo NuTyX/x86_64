@@ -1,13 +1,13 @@
 description="An high dynamic-range image file format library"
 url="https://www.openexr.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Rems,Tnut"
 
 makedepends=(cmake boost)
 
 name=openexr
-version=3.4.7
+version=3.4.9
 
 PKGMK_KEEP_SOURCES="no"
 
