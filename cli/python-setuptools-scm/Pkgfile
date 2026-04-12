@@ -5,16 +5,19 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 makedepends=(python-setuptools python-wheel python-flit-core
-             python-typing_extensions python-packaging)
+             python-typing_extensions python-packaging python-vcs-versioning)
 
 name=python-setuptools-scm
-_name="setuptools-scm"
+_name="setuptools_scm"
 alias=(${_name})
 
-version=9.2.2
-release=2
+version=10.0.5
 
-source=(https://github.com/pypa/setuptools_scm/archive/refs/tags/v$version.tar.gz)
+source=(https://pypi.io/packages/source/s/setuptools_scm/setuptools_scm-$version.tar.gz)
+
+#prepare() {
+#mv ${_name}-${_name}-v$version ${_name}-$version
+#}
 
 build() {
 
