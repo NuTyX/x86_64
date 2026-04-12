@@ -1,26 +1,36 @@
 description="Cross-platform C++ library for ASynchronous network I/O"
 url="https://asio.sourceforge.net"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg, Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
-makedepends=(boost)
+makedepends=(boost automake autoconf)
 
 name=asio
-version=1.36.0
-release=1
+version=1.38.0
+_version=1-38-0
 
 PKGMK_IGNORE_UNPACK="yes"
 
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+source=(https://github.com/chriskohlhoff/asio/archive/refs/tags/asio-${_version}.tar.gz)
 
 prepare() {
 localedef -i en_US -f UTF-8 en_US.UTF-8
 LC_ALL=en_US.UTF-8 LANG=en_US.utf-8 \
-tar -p -o -C $SRC -xf ${PKGMK_SOURCE_DIR}/$name-$version.tar.bz2
+tar -p -o -C $SRC -xf ${PKGMK_SOURCE_DIR}/$name-${_version}.tar.gz
+mv asio-asio-${_version} $name-$version
 }
 
-package() {
+build() {
 cd $name-$version
+
+autoreconf -fiv
+
+ ./configure \
+    --prefix=/usr
+  make
+
+make DESTDIR=$PKG install
+
 install -D -m644 LICENSE_1_0.txt $PKG/usr/share/licenses/$name/LICENSE
 }

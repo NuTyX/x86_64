@@ -366,6 +366,7 @@ drwxr-xr-x	root/root	usr/include/asio/execution/
 -rw-r--r--	root/root	usr/include/asio/execution/executor.hpp
 drwxr-xr-x	root/root	usr/include/asio/execution/impl/
 -rw-r--r--	root/root	usr/include/asio/execution/impl/bad_executor.ipp
+-rw-r--r--	root/root	usr/include/asio/execution/inline_exception_handling.hpp
 -rw-r--r--	root/root	usr/include/asio/execution/invocable_archetype.hpp
 -rw-r--r--	root/root	usr/include/asio/execution/mapping.hpp
 -rw-r--r--	root/root	usr/include/asio/execution/occupancy.hpp
@@ -461,6 +462,7 @@ drwxr-xr-x	root/root	usr/include/asio/impl/
 -rw-r--r--	root/root	usr/include/asio/impl/read.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/read_at.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/read_until.hpp
+-rw-r--r--	root/root	usr/include/asio/impl/redirect_disposition.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/redirect_error.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/serial_port_base.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/serial_port_base.ipp
@@ -475,6 +477,8 @@ drwxr-xr-x	root/root	usr/include/asio/impl/
 -rw-r--r--	root/root	usr/include/asio/impl/use_future.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/write.hpp
 -rw-r--r--	root/root	usr/include/asio/impl/write_at.hpp
+-rw-r--r--	root/root	usr/include/asio/inline_executor.hpp
+-rw-r--r--	root/root	usr/include/asio/inline_or_executor.hpp
 -rw-r--r--	root/root	usr/include/asio/io_context.hpp
 -rw-r--r--	root/root	usr/include/asio/io_context_strand.hpp
 drwxr-xr-x	root/root	usr/include/asio/ip/
@@ -555,6 +559,7 @@ drwxr-xr-x	root/root	usr/include/asio/posix/
 -rw-r--r--	root/root	usr/include/asio/read_until.hpp
 -rw-r--r--	root/root	usr/include/asio/readable_pipe.hpp
 -rw-r--r--	root/root	usr/include/asio/recycling_allocator.hpp
+-rw-r--r--	root/root	usr/include/asio/redirect_disposition.hpp
 -rw-r--r--	root/root	usr/include/asio/redirect_error.hpp
 -rw-r--r--	root/root	usr/include/asio/registered_buffer.hpp
 -rw-r--r--	root/root	usr/include/asio/require.hpp
