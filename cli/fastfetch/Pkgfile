@@ -4,6 +4,7 @@ name=fastfetch
 license="MIT"
 
 version=2.61.0
+release=2
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut,Alexis"
@@ -27,4 +28,6 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr    \
       .. 
 make 
 make DESTDIR=$PKG install
+
+install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
