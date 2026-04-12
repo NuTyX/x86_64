@@ -10,6 +10,7 @@ makedepends=(meson ninja intltool glib gobject-introspection perl-xml-parser ado
 
 name=gsettings-desktop-schemas
 version=50.0
+set=(gnome-base)
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 

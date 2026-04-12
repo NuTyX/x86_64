@@ -1,5 +1,5 @@
-description="Adwaita icon theme."
-url="https://www.gnome.org/"
+description="GNOME standard icons"
+url="https://gitlab.gnome.org/GNOME/adwaita-icon-theme"
 
 license="LGPL3 CCPL:by-sa"
 
@@ -9,11 +9,13 @@ contributors="Spiky"
 
 makedepends=(meson ninja)
 run=(hicolor-icon-theme gtk-update-icon-cache icon-naming-utils librsvg)
+set=(gnome-base)
 
 name=adwaita-icon-theme
 version=50.0
+release=2
 
-source=(https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/archive/$version/$name-$version.tar.gz)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
 build=meson
 
