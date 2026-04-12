@@ -1,13 +1,13 @@
 description="Perl interface to the SHA-1 Algorithm"
 url="https://metacpan.org/pod/Digest::SHA1"
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 run=(perl)
 
 name=perl-digest-sha1
 version=2.13
-release=2
+release=3
 
 source=(http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Digest-SHA1-$version.tar.gz)
 
