@@ -3,13 +3,13 @@ url="https://lib.filezilla-project.org/"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg,Rémy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Rémy,Tnut"
 
 makedepends=(libidn2 gettext nettle gnutls libxcrypt)
 
 name=libfilezilla
-version=0.54.1
+version=0.55.2
 
 source=(https://sources.archlinux.org/other/libfilezilla/$name-$version.tar.xz)
 
