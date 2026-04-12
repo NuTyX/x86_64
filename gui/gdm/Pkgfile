@@ -9,7 +9,8 @@ contributors="Fanch,Schrodinger72,Spiky"
 makedepends=(pam accountsservice nss libcanberra
              gnome-session gnome-shell libdaemon
              libhandy gtk3 systemd)
-run=(xorg-xinit xorg-xhost xorg-xrdb upower iso-codes)
+run=(xorg-xinit xorg-xhost xorg-xrdb upower iso-codes
+     gnome-backgrounds mutter gnome-control-center)
 
 set=(gnome-base gnome)
 
