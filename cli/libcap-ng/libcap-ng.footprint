@@ -3,9 +3,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/filecap
 -rwxr-xr-x	root/root	usr/bin/netcap
 -rwxr-xr-x	root/root	usr/bin/pscap
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/bash_completion.d/
--rw-r--r--	root/root	usr/etc/bash_completion.d/libcap-ng.bash_completion
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libcap-ng.so -> libcap-ng.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libcap-ng.so.0 -> libcap-ng.so.0.0.0
@@ -16,3 +13,6 @@ lrwxrwxrwx	root/root	usr/lib/libdrop_ambient.so.0 -> libdrop_ambient.so.0.0.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/cap-ng.m4
+drwxr-xr-x	root/root	usr/share/bash-completion/
+drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+-rw-r--r--	root/root	usr/share/bash-completion/completions/libcap-ng.bash_completion
