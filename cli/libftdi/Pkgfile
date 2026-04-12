@@ -8,7 +8,7 @@ makedepends=(libusb confuse boost cmake swig)
 
 name=libftdi
 version=1.5
-release=3
+release=5
 
 source=(http://www.intra2net.com/en/developer/libftdi/download/${name}1-$version.tar.bz2)
 
@@ -21,7 +21,9 @@ cd ${name}1-$version
   cd build
   cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
            -DFTDI_EEPROM=ON -DDOCUMENTATION=OFF \
-           -DSTATICLIBS=0 -Wno-dev
+           -DSTATICLIBS=0 -Wno-dev              \
+           -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
   make
   make DESTDIR=$PKG install
   install -Dm644 ../packages/99-libftdi.rules $PKG/etc/udev/rules.d/69-libftdi.rules
