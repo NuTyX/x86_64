@@ -1,0 +1,82 @@
+
+diff --git a/src/detection/packages/packages.h b/src/detection/packages/packages.h
+index 8b8a435..5887e65 100644
+--- a/src/detection/packages/packages.h
++++ b/src/detection/packages/packages.h
+@@ -10,6 +10,7 @@ typedef struct FFPackagesResult
+     uint32_t apk;
+     uint32_t brew;
+     uint32_t brewCask;
++    uint32_t cards;
+     uint32_t choco;
+     uint32_t dpkg;
+     uint32_t emerge;
+diff --git a/src/detection/packages/packages_linux.c b/src/detection/packages/packages_linux.c
+index 8d9c9b0..27e17be 100644
+--- a/src/detection/packages/packages_linux.c
++++ b/src/detection/packages/packages_linux.c
+@@ -493,6 +493,7 @@ static void getPackageCounts(FFstrbuf* baseDir, FFPackagesResult* packageCounts,
+     if (!(options->disabled & FF_PACKAGES_FLAG_PISI_BIT)) packageCounts->pisi += getNumElements(baseDir, "/var/lib/pisi/package", true);
+     if (!(options->disabled & FF_PACKAGES_FLAG_PKGSRC_BIT)) packageCounts->pkgsrc += getNumElements(baseDir, "/usr/pkg/pkgdb", DT_DIR);
+     if (!(options->disabled & FF_PACKAGES_FLAG_MOSS_BIT)) packageCounts->moss += getSQLite3Int(baseDir, "/.moss/db/state", "SELECT COUNT(*) FROM state_selections WHERE state_id = (SELECT MAX(id) FROM state)", "moss");
++    if (!(options->disabled & FF_PACKAGES_FLAG_CARDS_BIT)) packageCounts->cards += getNumElements(baseDir, "/var/lib/pkg/DB", true);
+ }
+ 
+ static void getPackageCountsRegular(FFstrbuf* baseDir, FFPackagesResult* packageCounts, FFPackagesOptions* options)
+diff --git a/src/modules/packages/option.h b/src/modules/packages/option.h
+index 45c0497..271c836 100644
+--- a/src/modules/packages/option.h
++++ b/src/modules/packages/option.h
+@@ -38,6 +38,7 @@ typedef enum __attribute__((__packed__)) FFPackagesFlags
+     FF_PACKAGES_FLAG_SOAR_BIT = 1ULL << 30,
+     FF_PACKAGES_FLAG_KISS_BIT = 1ULL << 31,
+     FF_PACKAGES_FLAG_MOSS_BIT = 1ULL << 32,
++    FF_PACKAGES_FLAG_CARDS_BIT = 1ULL << 33,
+     FF_PACKAGES_FLAG_FORCE_UNSIGNED = UINT64_MAX,
+ } FFPackagesFlags;
+ static_assert(sizeof(FFPackagesFlags) == sizeof(uint64_t), "");
+diff --git a/src/modules/packages/packages.c b/src/modules/packages/packages.c
+index 6552d53..f2c9d49 100644
+--- a/src/modules/packages/packages.c
++++ b/src/modules/packages/packages.c
+@@ -24,6 +24,7 @@ bool ffPrintPackages(FFPackagesOptions* options)
+     uint32_t hpkgAll = counts.hpkgSystem + counts.hpkgUser;
+     uint32_t amAll = counts.amSystem + counts.amUser;
+     uint32_t scoopAll = counts.scoopUser + counts.scoopGlobal;
++    counts.all += counts.cards;
+ 
+     if(options->moduleArgs.outputFormat.length == 0)
+     {
+@@ -120,6 +121,7 @@ bool ffPrintPackages(FFPackagesOptions* options)
+         FF_PRINT_PACKAGE(paludis)
+         FF_PRINT_PACKAGE(winget)
+         FF_PRINT_PACKAGE(opkg)
++        FF_PRINT_PACKAGE(cards)
+         if (options->combined)
+         {
+             FF_PRINT_PACKAGE_ALL(am);
+@@ -255,6 +257,7 @@ void ffParsePackagesJsonObject(FFPackagesOptions* options, yyjson_val* module)
+                             break;
+                         case 'C': if (false);
+                             FF_TEST_PACKAGE_NAME(CHOCO)
++                            FF_TEST_PACKAGE_NAME(CARDS)
+                             break;
+                         case 'D': if (false);
+                             FF_TEST_PACKAGE_NAME(DPKG)
+@@ -347,6 +350,7 @@ void ffGeneratePackagesJsonConfig(FFPackagesOptions* options, yyjson_mut_doc* do
+     FF_TEST_PACKAGE_NAME(AM)
+     FF_TEST_PACKAGE_NAME(APK)
+     FF_TEST_PACKAGE_NAME(BREW)
++    FF_TEST_PACKAGE_NAME(CARDS)
+     FF_TEST_PACKAGE_NAME(CHOCO)
+     FF_TEST_PACKAGE_NAME(DPKG)
+     FF_TEST_PACKAGE_NAME(EMERGE)
+@@ -421,6 +425,7 @@ bool ffGeneratePackagesJsonResult(FF_MAYBE_UNUSED FFPackagesOptions* options, yy
+     FF_APPEND_PACKAGE_COUNT(macports)
+     FF_APPEND_PACKAGE_COUNT(mport)
+     FF_APPEND_PACKAGE_COUNT(moss)
++    FF_APPEND_PACKAGE_COUNT(cards)
+     FF_APPEND_PACKAGE_COUNT(nixDefault)
+     FF_APPEND_PACKAGE_COUNT(nixSystem)
+     FF_APPEND_PACKAGE_COUNT(nixUser)
+ 
