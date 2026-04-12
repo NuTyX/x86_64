@@ -4,13 +4,13 @@ url="http://gmerlin.sourceforge.net/"
 packager="spiky <spiky@nutyx.org>"
 contributors="Pierre,Tnut"
 
-makedepends=(doxygen)
+makedepends=(doxygen hettle gnutls xorg-libdrm libva
+             libglvnd)
 
 name=gavl
-version=1.4.0
-release=4
+version=2.0.1
 
-source=(http://downloads.sourceforge.net/sourceforge/gmerlin/$name-$version.tar.gz)
+source=(https://github.com/bplaum/gavl/releases/download/v$version/gavl-$version.tar.gz)
 
 build() {
 cd $name-$version
