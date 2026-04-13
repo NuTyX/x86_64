@@ -1,5 +1,5 @@
-url="https://www.kernel.org"
-description="The latest development kernel version"
+description='The latest development kernel version'
+url='https://www.kernel.org'
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
@@ -31,7 +31,7 @@ _version=${version}
 source=(init_path.patch
         https://git.kernel.org/torvalds/t/linux-${_version}.tar.gz config)
 
-[ -z $patchname ] || source+=" $url/pub/linux/kernel/v7.x/$patchname"
+[ -z $patchname ] || source+=" $url/pub/linux/kernel/v${version:0:1}.x/$patchname"
 ## Time to build everything
 #
 
