@@ -1,14 +1,13 @@
 description="Joe's own editor"
 url="http://joe-editor.sourceforge.net/"
 
-contributors="Berlius, Tnut, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gpm)
 
 name=joe
-version=4.6
-release=2
+version=4.7
 
 source=(https://downloads.sourceforge.net/joe-editor/$name-$version.tar.gz)
 
