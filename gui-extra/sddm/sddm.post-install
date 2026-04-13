@@ -1,12 +1,8 @@
 INFO="\033[1;36m"
 NORMAL="\033[0;39m"
 
-if [ ! -L etc/systemd/system/display-manager.service ];then
-  systemctl enable sddm
-else
-  ACTIVE_SERVICE="$(readlink /etc/systemd/system/display-manager.service)"
-  printf "${INFO} display-manager already exist: ${ACTIVE_SERVICE}${NORMAL}\n"
-fi
+systemctl enable sddm
+
 sed -i "s@system-local-login@system-login@" etc/pam.d/sddm-autologin
 if [ ! -f etc/sddm.conf ]; then
   sddm --example-config > etc/sddm.config
