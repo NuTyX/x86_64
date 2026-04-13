@@ -21,17 +21,18 @@ makedepends=(icu freetype xorg-fontconfig gpsd zlib wayland xcb-util xcb-util-im
              accountsservice appstream kunitconversion kactivitymanagerd karchive
              kauth kbookmarks kcmutils kcolorscheme kcompletion kconfig
              kconfigwidgets kcoreaddons kcrash kdbusaddons kde-cli-tools
-             kdeclarative kded kglobalaccel kguiaddons kholidays
+             kdeclarative kglobalaccel kguiaddons kholidays
              ki18n kiconthemes kidletime kio kio-extras kio-fuse
              kitemmodels kjobwidgets knewstuff knotifications
              knotifyconfig kpackage kparts kpipewire krunner
              kscreenlocker kservice kstatusnotifieritem ksvg ksystemstats
              ktexteditor ktextwidgets kuserfeedback kwallet kwayland kwin baloo
              kwidgetsaddons kwindowsystem kxmlgui layer-shell-qt milou solid
-             ocean-sound-theme phonon plasma-activities plasma-activities-stats
+             phonon plasma-activities plasma-activities-stats
              prison networkmanager-qt plasma5support kwayland-integration)
 
-run=(breeze kirigami kirigami-addons xorg-xwayland kquickcharts)
+run=(breeze kirigami kirigami-addons xorg-xwayland kquickcharts
+     ocean-sound-theme kded)
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
 
