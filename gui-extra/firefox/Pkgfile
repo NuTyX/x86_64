@@ -18,13 +18,14 @@ run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=149.0
+version=149.0.2
 
 locale_version=$version
 
-source=(firefox.desktop
-        https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz
-        cbindgen-0.27.patch glibc-2.43.patch)
+source=(glsl-optimizer-to-build-with-glibc-2.43.patch
+        Fix-Linux-sandbox-build-breakage-on-glib.patch
+        firefox.desktop
+        https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz)
 
 pack_remove_locale() {
 
@@ -44,9 +45,8 @@ rm usr/lib/firefox/browser/extensions/langpack-${1}@firefox.mozilla.org.xpi
 prepare() {
 cd $name-$version
 
-patch -Np1 -i ../glibc-2.43.patch
-sed '/patch.crates-io/a glslopt={path="third_party/rust/glslopt"}' \
-    -i Cargo.toml
+patch -Np1 -i ../glsl-optimizer-to-build-with-glibc-2.43.patch
+patch -Np1 -i ../Fix-Linux-sandbox-build-breakage-on-glib.patch
 sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock
 
 (for i in {43..47}; do
