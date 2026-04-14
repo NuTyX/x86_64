@@ -11,8 +11,8 @@ makedepends=(extra-cmake-modules qt6-base qt6-tools)
 set=(kde6-frameworks)
 
 name=kdbusaddons
-version=6.24.0
-release=2
+version=6.25.0
+release=1
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
