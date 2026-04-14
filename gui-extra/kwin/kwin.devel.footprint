@@ -117,6 +117,7 @@ drwxr-xr-x	root/root	usr/include/kwin/opengl/
 -rw-r--r--	root/root	usr/include/kwin/rulebooksettings.h
 -rw-r--r--	root/root	usr/include/kwin/rules.h
 drwxr-xr-x	root/root	usr/include/kwin/scene/
+-rw-r--r--	root/root	usr/include/kwin/scene/backgroundeffectitem.h
 -rw-r--r--	root/root	usr/include/kwin/scene/borderoutline.h
 -rw-r--r--	root/root	usr/include/kwin/scene/borderradius.h
 -rw-r--r--	root/root	usr/include/kwin/scene/cursoritem.h
@@ -292,3 +293,12 @@ drwxr-xr-x	root/root	usr/include/kwin/wayland/
 -rw-r--r--	root/root	usr/include/kwin/xdgshellintegration.h
 -rw-r--r--	root/root	usr/include/kwin/xdgshellwindow.h
 -rw-r--r--	root/root	usr/include/kwin/xkb.h
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/KWin/
+-rw-r--r--	root/root	usr/lib/cmake/KWin/FindLibdrm.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KWin/KWinConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KWin/KWinConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KWin/KWinTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KWin/KWinTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/KWinDBusInterface/
+-rw-r--r--	root/root	usr/lib/cmake/KWinDBusInterface/KWinDBusInterfaceConfig.cmake
