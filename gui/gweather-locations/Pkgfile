@@ -1,0 +1,27 @@
+description="Location and timezone database for the libgweather library"
+url="https://gitlab.gnome.org/GNOME/gweather-locations"
+
+license="GPL2"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Alexis"
+
+makedepends=(python-gobject meson ninja)
+
+name=gweather-locations
+version=2026.2
+release=1
+
+source=($url/-/archive/$version/$name-$version.tar.gz)
+
+prepare() {
+ sed -i "s|'Locations\.xml',|meson.current_source_dir() / 'Locations.xml',|" \
+ $name-$version/data/meson.build
+}
+
+build=meson
+
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
+}
