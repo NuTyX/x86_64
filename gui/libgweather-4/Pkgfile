@@ -3,35 +3,28 @@ url="https://wiki.gnome.org/Projects/LibGWeather"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(geocode-glib gobject-introspection libsoup3 meson ninja
-             vala python-gobject gi-docgen)
+             vala python-gobject gi-docgen gweather-locations)
 run=(gtk-update-icon-cache)
 
 name=libgweather-4
-version=4.4.4
-release=2
+version=4.6.0
+release=1
 
-source=(https://gitlab.gnome.org/GNOME/libgweather/-/archive/$version/libgweather-$version.tar.gz
-        disable-metar-test.patch)
+source=(https://gitlab.gnome.org/GNOME/libgweather/-/archive/$version/libgweather-$version.tar.gz)
+PKGMK_MESON_OPTIONS="-Dgtk_doc=false"
+
 
 prepare() {
-cd libgweather-$version
-patch -Np1 -i ../disable-metar-test.patch
+mv libgweather-$version $name-$version
 }
 
-build() {
-cd libgweather-$version
-mkdir build
-cd    build
+build=meson
 
-meson setup .. \
-      --prefix=/usr \
-      -Dgtk_doc=false
-ninja
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
