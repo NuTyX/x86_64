@@ -37,36 +37,6 @@ lrwxrwxrwx	root/root	usr/bin/lookandfeeltool -> /usr/bin/plasma-apply-lookandfee
 -rwxr-xr-x	root/root	usr/bin/startplasma-x11
 -rwxr-xr-x	root/root	usr/bin/xembedsniproxy
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/KRunnerAppDBusInterface/
--rw-r--r--	root/root	usr/lib/cmake/KRunnerAppDBusInterface/KRunnerAppDBusInterfaceConfig.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/KSMServerDBusInterface/
--rw-r--r--	root/root	usr/lib/cmake/KSMServerDBusInterface/KSMServerDBusInterfaceConfig.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Krdb/
--rw-r--r--	root/root	usr/lib/cmake/Krdb/KrdbConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Krdb/KrdbConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Krdb/krdbLibraryTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/Krdb/krdbLibraryTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/LibKLookAndFeel/
--rw-r--r--	root/root	usr/lib/cmake/LibKLookAndFeel/LibKLookAndFeelConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibKLookAndFeel/LibKLookAndFeelConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibKLookAndFeel/LibKLookAndFeelLibraryTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibKLookAndFeel/LibKLookAndFeelLibraryTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/LibKWorkspace/
--rw-r--r--	root/root	usr/lib/cmake/LibKWorkspace/LibKWorkspaceConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibKWorkspace/LibKWorkspaceConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibKWorkspace/LibKWorkspaceLibraryTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibKWorkspace/LibKWorkspaceLibraryTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/LibNotificationManager/
--rw-r--r--	root/root	usr/lib/cmake/LibNotificationManager/LibNotificationManagerConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibNotificationManager/LibNotificationManagerConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibNotificationManager/LibNotificationManagerLibraryTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibNotificationManager/LibNotificationManagerLibraryTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/LibTaskManager/
--rw-r--r--	root/root	usr/lib/cmake/LibTaskManager/LibTaskManagerConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibTaskManager/LibTaskManagerConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibTaskManager/LibTaskManagerLibraryTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/LibTaskManager/LibTaskManagerLibraryTargets.cmake
 drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasma6.0-remove-dpi-settings
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasma6.0-remove-old-shortcuts
@@ -76,8 +46,8 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasmashell-6.5-remove-stop-activity-shortcut
 lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so -> libbatterycontrol.so.6
-lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libbatterycontrol.so.6 -> libbatterycontrol.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libbatterycontrol.so.6.6.4
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/baloorunner
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
@@ -94,29 +64,29 @@ drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-fallback-session-save
 -rwxr-xr-x	root/root	usr/lib/libexec/plasma-sourceenv.sh
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so -> libkfontinst.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.6 -> libkfontinst.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libkfontinst.so.6.6.4
 lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so -> libkfontinstui.so.6
-lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.6 -> libkfontinstui.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.6.6.4
 lrwxrwxrwx	root/root	usr/lib/libklipper.so -> libklipper.so.6
-lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libklipper.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libklipper.so.6 -> libklipper.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libklipper.so.6.6.4
 lrwxrwxrwx	root/root	usr/lib/libklookandfeel.so -> libklookandfeel.so.6
-lrwxrwxrwx	root/root	usr/lib/libklookandfeel.so.6 -> libklookandfeel.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libklookandfeel.so.6.6.3
-lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libklookandfeel.so.6 -> libklookandfeel.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libklookandfeel.so.6.6.4
+lrwxrwxrwx	root/root	usr/lib/libkmpris.so.6 -> libkmpris.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libkmpris.so.6.6.4
 -rwxr-xr-x	root/root	usr/lib/libkrdb.so
 lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so -> libkworkspace6.so.6
-lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libkworkspace6.so.6 -> libkworkspace6.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libkworkspace6.so.6.6.4
 lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so -> libnotificationmanager.so.1
-lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libnotificationmanager.so.1 -> libnotificationmanager.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libnotificationmanager.so.6.6.4
 lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so -> libtaskmanager.so.6
-lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.6 -> libtaskmanager.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.6.6.4
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
