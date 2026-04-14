@@ -5,17 +5,9 @@ drwxr-xr-x	root/root	etc/pam.d/
 -rw-r--r--	root/root	etc/pam.d/kscreensaver
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/KScreenLocker/
--rw-r--r--	root/root	usr/lib/cmake/KScreenLocker/KScreenLockerConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/KScreenLocker/KScreenLockerConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/KScreenLocker/KScreenLockerTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/KScreenLocker/KScreenLockerTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/ScreenSaverDBusInterface/
--rw-r--r--	root/root	usr/lib/cmake/ScreenSaverDBusInterface/ScreenSaverDBusInterfaceConfig.cmake
 lrwxrwxrwx	root/root	usr/lib/libKScreenLocker.so -> libKScreenLocker.so.6
-lrwxrwxrwx	root/root	usr/lib/libKScreenLocker.so.6 -> libKScreenLocker.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libKScreenLocker.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libKScreenLocker.so.6 -> libKScreenLocker.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libKScreenLocker.so.6.6.4
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/kscreenlocker_greet
 drwxr-xr-x	root/root	usr/lib/qt6/
