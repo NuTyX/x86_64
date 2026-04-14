@@ -10,6 +10,7 @@ set=(qt6)
 
 name=qt6-webengine
 version=6.11.0
+release=2
 
 makedepends=(cmake ninja qt6-base qt6-declarative qt6-positioning qt6-webchannel
              qt6-tools qt6-websockets python-html5lib gzip icu
@@ -50,15 +51,4 @@ export NINJAJOBS=8
  -S ${_name}-$version -B build -G Ninja
  cmake --build build
  DESTDIR=$PKG cmake --install build
-}
-devel() {
-  cd $PKG
-  bsdtar -cf \
-  $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-  usr/include \
-  usr/lib/qt6/mkspecs \
-  usr/lib/cmake/
-  
-  rm -r usr/include usr/lib/qt6/mkspecs \
-  usr/lib/cmake
 }
