@@ -2,14 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kwin_x11
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/KWinX11/
--rw-r--r--	root/root	usr/lib/cmake/KWinX11/KWinX11Config.cmake
--rw-r--r--	root/root	usr/lib/cmake/KWinX11/KWinX11ConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/KWinX11/KWinX11Targets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/KWinX11/KWinX11Targets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/KWinX11DBusInterface/
--rw-r--r--	root/root	usr/lib/cmake/KWinX11DBusInterface/KWinX11DBusInterfaceConfig.cmake
 drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin-6.0-delete-desktop-switching-shortcuts-x11
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin-6.0-remove-breeze-tabbox-default-x11
@@ -20,11 +12,11 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/kwin-applywindowdecoration-x11
 -rwxr-xr-x	root/root	usr/lib/libexec/kwin_killer_helper_x11
-lrwxrwxrwx	root/root	usr/lib/libkcmkwincommon-x11.so.6 -> libkcmkwincommon-x11.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libkcmkwincommon-x11.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libkcmkwincommon-x11.so.6 -> libkcmkwincommon-x11.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libkcmkwincommon-x11.so.6.6.4
 lrwxrwxrwx	root/root	usr/lib/libkwin-x11.so -> libkwin-x11.so.6
-lrwxrwxrwx	root/root	usr/lib/libkwin-x11.so.6 -> libkwin-x11.so.6.6.3
--rwxr-xr-x	root/root	usr/lib/libkwin-x11.so.6.6.3
+lrwxrwxrwx	root/root	usr/lib/libkwin-x11.so.6 -> libkwin-x11.so.6.6.4
+-rwxr-xr-x	root/root	usr/lib/libkwin-x11.so.6.6.4
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
