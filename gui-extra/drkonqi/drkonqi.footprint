@@ -128,16 +128,16 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/pygdbmi/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/gdbmiparser.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/printcolor.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/py.typed
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/METADATA
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/RECORD
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/licenses/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.57.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.58.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__init__.py
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/
@@ -192,10 +192,12 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/_openai_completions_api.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/_openai_responses_api.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/consts.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/monitoring.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/__pycache__/utils.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/_openai_completions_api.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/_openai_responses_api.py
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/consts.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/monitoring.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/ai/utils.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/api.py
@@ -268,6 +270,7 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pyca
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/pure_eval.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/pymongo.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/pyramid.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/pyreqwest.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/quart.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/ray.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/__pycache__/rq.cpython-314.pyc
@@ -473,6 +476,7 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/pydant
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/pydantic_ai/utils.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/pymongo.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/pyramid.py
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/pyreqwest.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/quart.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/ray.py
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/integrations/redis/
