@@ -10,6 +10,7 @@ set=(qt6)
 
 name=qt6-imageformats
 version=6.11.0
+release=2
 
 makedepends=(cmake ninja qt6-base
              jasper libmng libwebp )
@@ -21,12 +22,4 @@ build() {
  cmake -S qtimageformats-everywhere-src-$version -B build -G Ninja
  cmake --build build
  DESTDIR=$PKG cmake --install build
-}
-devel() {
-  cd $PKG
-  bsdtar -cf \
-  $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-  usr/lib/cmake
-  
-  rm -r usr/lib/cmake
 }
