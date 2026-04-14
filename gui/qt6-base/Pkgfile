@@ -10,7 +10,7 @@ set=(qt6)
 
 name=qt6-base
 version=6.11.0
-release=2
+release=3
 
 makedepends=(libb2 cmake ninja systemd icu at-spi2-core mtdev 
              cups gstreamer-plugins-base xcb-util xcb-util-renderutil
@@ -57,15 +57,4 @@ package() {
   do
       ln -svf $_line
   done < $SRC/build/user_facing_tool_links.txt
-}
-devel() {
-  cd $PKG
-  bsdtar -cf \
-  $PKGMK_PACKAGE_DIR/$name.devel${PKGMK_PACKAGE_EXT}$version-$release \
-  usr/include \
-  usr/lib/qt6/mkspecs \
-  usr/lib/cmake/
-  
-  rm -r usr/include usr/lib/qt6/mkspecs \
-  usr/lib/cmake
 }
