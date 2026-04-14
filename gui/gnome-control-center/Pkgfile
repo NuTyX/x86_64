@@ -10,17 +10,19 @@ makedepends=(autoconf git udisks2 accountsservice clutter-gtk libhandy
              colord-gtk gnome-online-accounts gsound gnome-settings-daemon
              grilo libgtop libpwquality kerberos shared-mime-info cheese
              cups samba gnome-bluetooth ibus meson modemmanager blueprint-compiler
-             network-manager-applet ninja gnome-color-manager
-             cups-pk-helper wayland gdk-pixbuf libadwaita xorg-setxkbmap)
+             network-manager-applet ninja gnome-color-manager gnome-desktop
+             cups-pk-helper wayland gdk-pixbuf libadwaita xorg-setxkbmap
+             gnome-settings-daemon geocode-glib libgweather-4)
 run=(iso-codes gsettings-desktop-schemas libgnomekbd tecla
      sound-theme-freedesktop libnma libadwaita)
 
 set=(gnome-base gnome)
 
 name=gnome-control-center
-version=50.0
+version=50.1
+release=2
 
-source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/gnome-control-center.git)
 
 build=meson
 
