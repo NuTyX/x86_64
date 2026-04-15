@@ -12,37 +12,25 @@ makedepends=(meson xorgproto xorg-xtrans xorg-libxkbfile dbus xorg-font-util
 run=()
 
 name=xorg-xwayland
-version=24.1.9
-release=2
+version=24.1.10
+release=1
 
 source=(https://xorg.freedesktop.org/archive/individual/xserver/xwayland-$version.tar.xz)
+PKGMK_MESON_OPTIONS="-Dipv6=true -Dxvfb=false -Dxdmcp=false -Dxcsecurity=true -Ddri3=true \
+-Dglamor=true -Dxkb_dir=/usr/share/X11/xkb -Dxkb_output_dir=/var/lib/xkb"
 
 prepare() {
-    sed -i '/install_man/,$d' \
-    xwayland-$version/meson.build
+ sed -i '/install_man/,$d' \
+ xwayland-$version/meson.build
+ mv xwayland-$version $name-$version
 }
-build() {
-cd xwayland-$version
-mkdir build
-cd build
 
-meson setup .. \
-    --prefix=/usr  \
-    -Dipv6=true \
-    -Dxvfb=false \
-    -Dxdmcp=false \
-    -Dxcsecurity=true \
-    -Ddri3=true \
-    -Dglamor=true \
-    -Dxkb_dir=/usr/share/X11/xkb \
-    -Dxkb_output_dir=/var/lib/xkb
- 
-ninja
+build=meson
 
-DESTDIR=$PKG ninja install      
+package() {
+ rm -v $PKG/usr/share/man/man1/Xserver.1
+ rm -r $PKG/usr/lib/xorg
 
-rm -v $PKG/usr/share/man/man1/Xserver.1
-rm -r $PKG/usr/lib/xorg
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
