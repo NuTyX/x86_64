@@ -9,13 +9,12 @@ contributors="Fanch,Jayce,Remy,Fabienwang,Spiky"
 run=(desktop-file-utils gtk-update-icon-cache glycin
      glycin-gtk4 shared-mime-info libportal localsearch)
 makedepends=(gnome-autoar libnotify gnome-desktop gvfs gtk4
-             gobject-introspection exempi libexif libgexiv2 blueprint-compiler
+             gobject-introspection exempi libexif gexiv2 blueprint-compiler
              libcloudproviders meson gtk-doc libhandy bubblewrap libadwaita)
 set=(gnome)
 
 name=nautilus
-version=50.0
-release=2
+version=50.1
 
 PKGMK_MESON_OPTIONS="-Dselinux=disabled"
 
