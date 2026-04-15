@@ -1,8 +1,8 @@
 description="An iTunes-like music playback and management application"
 url="https://www.rhythmbox.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Spiky"
 
 makedepends=(gobject-introspection intltool gtk3 gdk-pixbuf libsoup3 libpeas
              libxml2 tdb json-glib totem-pl-parser libmtp webkitgtk
@@ -10,29 +10,20 @@ makedepends=(gobject-introspection intltool gtk3 gdk-pixbuf libsoup3 libpeas
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
      gstreamer gstreamer-plugins-base gstreamer-plugins-good gstreamer-plugins-libav)
 
-set=(gnome)
-
 name=rhythmbox
-version=3.4.8
-release=4
+version=3.4.9
+release=1
 
 source=(https://download.gnome.org/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
 prepare() {
-       cd $name-$version
-sed -i '/unsupported version of meson/d' meson.build
+  sed -i '/unsupported version of meson/d' $name-$version/meson.build
 }
 
-build() {
-	cd $name-$version
-	mkdir build
-        cd    build
+build=meson
 
-        meson --prefix=/usr
-
-ninja
-DESTDIR=$PKG ninja install
-
+package() {
+  cd $name-$version
   python -m compileall -d /usr/lib "$pkgdir/usr/lib"
   python -O -m compileall -d /usr/lib "$pkgdir/usr/lib"
 }
