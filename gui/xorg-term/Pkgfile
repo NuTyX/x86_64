@@ -1,24 +1,25 @@
 description="xterm is a terminal emulator for the X Window System."
 url="https://invisible-island.net/xterm"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Greg,Remy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Remy,Spiky"
 
 alias=(xterm)
 name=xorg-term
-version=407
+version=409
+
 makedepends=(xorg-fontconfig xorg-libxft xorg-libxaw xorg-luit
              xorg-libxkbfile libutempter xorg-xbitmaps freetype)
 run=(xorg-luit)
 
 _name=xterm
 
-source=($name-$version-color-1.patch
+source=($name-color-1.patch
 	https://invisible-mirror.net/archives/${_name}/${_name}-$version.tgz)
 
 prepare() {
 cd ${_name}-$version
-patch -Np1 -i ../$name-$version-color-1.patch
+patch -Np1 -i ../$name-color-1.patch
 sed -i '/v0/{n;s/new:/new:kb=^?:/}' termcap
 printf '\tkbs=\\177,\n' >> terminfo
 }
