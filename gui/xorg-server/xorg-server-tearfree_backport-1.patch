@@ -1,12 +1,15 @@
 Submitted By:            Rahul Chandra <rahulshaku2_at_gmail_dot_com>
 Updated By:              Douglas R. Reno <renodr at linuxfromscratch dot org>
 Updated By:              Bruce Dubbs <bdubbs at linuxfromscratch dot org>
+Updated By:              Joe jlocash <jlocash at gmail dot org>
 Date:                    2023-07-20
 Updated Date:            2024-01-17
 Updated Date:            2025-02-25
+Updated Date:            2026-04-14
 Initial Package Version: 21.1.8
 Updated Package Version: 21.1.11
 Updated Package Version: 21.1.16
+Updated Package Version: 21.1.22
 Upstream Status:         In Master
 Origin:                  Master Gitlab
 Description:             Backport of the TearFree option from Xorg master
@@ -1357,20 +1360,6 @@ diff -Naurp xorg-server-21.1.16.orig/hw/xfree86/drivers/modesetting/present.c xo
 diff -Naurp xorg-server-21.1.16.orig/hw/xfree86/modes/xf86Crtc.h xorg-server-21.1.16/hw/xfree86/modes/xf86Crtc.h
 --- xorg-server-21.1.16.orig/hw/xfree86/modes/xf86Crtc.h	2025-02-25 12:56:05.000000000 -0600
 +++ xorg-server-21.1.16/hw/xfree86/modes/xf86Crtc.h	2025-02-25 15:18:13.451722949 -0600
-@@ -837,11 +837,12 @@ extern _X_EXPORT int xf86CrtcConfigPriva
- static _X_INLINE xf86OutputPtr
- xf86CompatOutput(ScrnInfoPtr pScrn)
- {
--    xf86CrtcConfigPtr config = XF86_CRTC_CONFIG_PTR(pScrn);
-+    xf86CrtcConfigPtr config;
- 
-     if (xf86CrtcConfigPrivateIndex == -1)
-         return NULL;
- 
-+    config = XF86_CRTC_CONFIG_PTR(pScrn);
-     if (config->compat_output < 0)
-         return NULL;
-     return config->output[config->compat_output];
 @@ -912,6 +913,11 @@ extern _X_EXPORT void
  extern _X_EXPORT Bool
   xf86CrtcRotate(xf86CrtcPtr crtc);
