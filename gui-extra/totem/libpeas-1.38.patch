@@ -1,0 +1,62 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: "Jan Alexander Steffens (heftig)" <heftig@archlinux.org>
+Date: Tue, 7 Apr 2026 04:45:07 +0200
+Subject: [PATCH] libpeas 1.38
+
+---
+ meson.build                        | 2 --
+ src/meson.build                    | 1 -
+ src/plugins/totem-plugins-engine.c | 8 ++++----
+ 3 files changed, 4 insertions(+), 7 deletions(-)
+
+diff --git a/meson.build b/meson.build
+index b1a66921197c..fa6d503cda88 100644
+--- a/meson.build
++++ b/meson.build
+@@ -164,8 +164,6 @@ libgd = subproject(
+ )
+ libgd_dep = libgd.get_variable('libgd_dep')
+ 
+-gir_dep = dependency('gobject-introspection-1.0', version: '>= 0.6.7')
+-
+ # missing plugins support
+ easy_codec_option = get_option('enable-easy-codec-installation')
+ have_easy_codec = false
+diff --git a/src/meson.build b/src/meson.build
+index 0ed3bed7ff83..941da2e9ebdf 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -53,7 +53,6 @@ totem_common_deps = libbacon_video_widget_deps + python_deps + [
+   gtk_dep,
+   hdy_dep,
+   totem_plparser_dep,
+-  gir_dep,
+   peas_dep,
+   peas_gtk_dep,
+   dependency('grilo-0.3', version: grilo_req_version),
+diff --git a/src/plugins/totem-plugins-engine.c b/src/plugins/totem-plugins-engine.c
+index 9e547dd66424..79ce172ce0d4 100644
+--- a/src/plugins/totem-plugins-engine.c
++++ b/src/plugins/totem-plugins-engine.c
+@@ -35,7 +35,7 @@
+ 
+ #include <glib/gi18n.h>
+ #include <glib.h>
+-#include <girepository.h>
++#include <girepository/girepository.h>
+ #include <libpeas/peas-activatable.h>
+ #include <libpeas/peas-extension-set.h>
+ 
+@@ -101,9 +101,9 @@ totem_plugins_engine_get_default (TotemObject *totem)
+ 
+ 	g_return_val_if_fail (totem != NULL, NULL);
+ 
+-	g_irepository_require (g_irepository_get_default (), "Peas", "1.0", 0, NULL);
+-	g_irepository_require (g_irepository_get_default (), "PeasGtk", "1.0", 0, NULL);
+-	g_irepository_require (g_irepository_get_default (), "Totem", TOTEM_API_VERSION, 0, NULL);
++	gi_repository_require (gi_repository_dup_default (), "Peas", "1.0", 0, NULL);
++	gi_repository_require (gi_repository_dup_default (), "PeasGtk", "1.0", 0, NULL);
++	gi_repository_require (gi_repository_dup_default (), "Totem", TOTEM_API_VERSION, 0, NULL);
+ 
+ 	paths = totem_get_plugin_paths ();
+ 

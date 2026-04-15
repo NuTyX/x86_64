@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 lrwxrwxrwx	root/root	usr/lib/libtotem.so -> libtotem.so.0
 lrwxrwxrwx	root/root	usr/lib/libtotem.so.0 -> libtotem.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libtotem.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/totem-gallery-thumbnailer
 drwxr-xr-x	root/root	usr/lib/totem/
 drwxr-xr-x	root/root	usr/lib/totem/plugins/
 drwxr-xr-x	root/root	usr/lib/totem/plugins/autoload-subtitles/
@@ -55,8 +56,6 @@ drwxr-xr-x	root/root	usr/lib/totem/plugins/skipto/
 drwxr-xr-x	root/root	usr/lib/totem/plugins/variable-rate/
 -rwxr-xr-x	root/root	usr/lib/totem/plugins/variable-rate/libvariable-rate.so
 -rw-r--r--	root/root	usr/lib/totem/plugins/variable-rate/variable-rate.plugin
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/totem-gallery-thumbnailer
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/GConf/
 drwxr-xr-x	root/root	usr/share/GConf/gsettings/
@@ -1022,6 +1021,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/org.gnome.Totem-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/totem-tv-symbolic.svg
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/totem/
+-rw-r--r--	root/root	usr/share/licenses/totem/COPYING
 drwxr-xr-x	root/root	usr/share/metainfo/
 -rw-r--r--	root/root	usr/share/metainfo/org.gnome.Totem.appdata.xml
 drwxr-xr-x	root/root	usr/share/thumbnailers/
