@@ -10,11 +10,16 @@ makedepends=(cmake boost guile libdbi webkitgtk gtest
 run=(desktop-file-utils)
 
 name=gnucash
-version=5.14
+version=5.15
 release=1
 
-source=(https://downloads.sourceforge.net/$name/$name-${version}.tar.bz2)
+source=(gnucash-boost-1.90-fix-filesystem-linking.patch
+        https://downloads.sourceforge.net/$name/$name-${version}.tar.bz2)
 
+prepare() {
+ cd $name-$version
+ patch -Np1 -i ../gnucash-boost-1.90-fix-filesystem-linking.patch
+}
 build() {
 cd $name-$version
 
