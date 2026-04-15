@@ -1,5 +1,5 @@
 description="For reading and writing GIFs as well as programs for converting and working with GIF files."
-url="http://downloads.sourceforge.net/giflib/"
+url="https://downloads.sourceforge.net/giflib/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
@@ -7,8 +7,7 @@ contributors="Pierre,Spiky"
 makedepends=(xmlto imagemagick)
 
 name=giflib
-version=5.2.2
-release=2
+version=6.1.3
 
 source=(https://sourceforge.net/projects/giflib/files/giflib-$version.tar.gz)
 
@@ -22,8 +21,8 @@ rm -vf $PKG/usr/lib/libgif.a
 find doc \( -name Makefile\* -o -name \*.1 \
          -o -name \*.xml \) -exec rm -v {} \;
 
-install -v -dm755 $PKG/usr/share/doc/giflib-$version
+install -v -dm755 $PKG/usr/share/doc/$name
 cp -v -R doc/* \
-$PKG/usr/share/doc/giflib-$version
+$PKG/usr/share/doc/$name
 
 }
