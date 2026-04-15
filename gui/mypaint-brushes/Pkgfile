@@ -1,22 +1,28 @@
 description="A fast and easy painting library for digital painters, with brush dynamics"
-url="http://mypaint.intilinux.com/"
+url="https://github.com/mypaint/mypaint-brushes"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rémy,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rémy,Spiky"
 
 makedepends=(automake autoconf m4 libmypaint)
 
 name=mypaint-brushes
-version=1.3.1
+version=2.0.2
  
 source=(https://github.com/mypaint/$name/releases/download/v$version/$name-$version.tar.xz)
- 
+
+prepare() {
+ cd $name-$version
+ autoreconf -fiv
+}
+
 build() {
-cd $name-$version
-
-./configure --prefix=/usr
-
-make
-
-make DESTDIR=$PKG install
+ cd $name-$version
+ ./configure --prefix=/usr
+ make
+ make DESTDIR=$PKG install
+}
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
