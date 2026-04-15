@@ -10,23 +10,23 @@ drwxr-xr-x	root/root	etc/gimp/3.0/
 -rw-r--r--	root/root	etc/gimp/3.0/unitrc
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/gimp -> gimp-3.0
-lrwxrwxrwx	root/root	usr/bin/gimp-3 -> gimp-3.0
--rwxr-xr-x	root/root	usr/bin/gimp-3.0
-lrwxrwxrwx	root/root	usr/bin/gimp-console -> gimp-console-3.0
-lrwxrwxrwx	root/root	usr/bin/gimp-console-3 -> gimp-console-3.0
--rwxr-xr-x	root/root	usr/bin/gimp-console-3.0
+lrwxrwxrwx	root/root	usr/bin/gimp -> gimp-3.2
+lrwxrwxrwx	root/root	usr/bin/gimp-3 -> gimp-3.2
+-rwxr-xr-x	root/root	usr/bin/gimp-3.2
+lrwxrwxrwx	root/root	usr/bin/gimp-console -> gimp-console-3.2
+lrwxrwxrwx	root/root	usr/bin/gimp-console-3 -> gimp-console-3.2
+-rwxr-xr-x	root/root	usr/bin/gimp-console-3.2
 -rwxr-xr-x	root/root	usr/bin/gimp-script-fu-interpreter-3.0
-lrwxrwxrwx	root/root	usr/bin/gimp-test-clipboard -> gimp-test-clipboard-3.0
-lrwxrwxrwx	root/root	usr/bin/gimp-test-clipboard-3 -> gimp-test-clipboard-3.0
--rwxr-xr-x	root/root	usr/bin/gimp-test-clipboard-3.0
-lrwxrwxrwx	root/root	usr/bin/gimptool -> gimptool-3.0
-lrwxrwxrwx	root/root	usr/bin/gimptool-3 -> gimptool-3.0
--rwxr-xr-x	root/root	usr/bin/gimptool-3.0
+lrwxrwxrwx	root/root	usr/bin/gimp-test-clipboard -> gimp-test-clipboard-3.2
+lrwxrwxrwx	root/root	usr/bin/gimp-test-clipboard-3 -> gimp-test-clipboard-3.2
+-rwxr-xr-x	root/root	usr/bin/gimp-test-clipboard-3.2
+lrwxrwxrwx	root/root	usr/bin/gimptool -> gimptool-3.2
+lrwxrwxrwx	root/root	usr/bin/gimptool-3 -> gimptool-3.2
+-rwxr-xr-x	root/root	usr/bin/gimptool-3.2
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/gimp-debug-tool -> gimp-debug-tool-3.0
-lrwxrwxrwx	root/root	usr/lib/gimp-debug-tool-3 -> gimp-debug-tool-3.0
--rwxr-xr-x	root/root	usr/lib/gimp-debug-tool-3.0
+lrwxrwxrwx	root/root	usr/lib/gimp-debug-tool -> gimp-debug-tool-3.2
+lrwxrwxrwx	root/root	usr/lib/gimp-debug-tool-3 -> gimp-debug-tool-3.2
+-rwxr-xr-x	root/root	usr/lib/gimp-debug-tool-3.2
 drwxr-xr-x	root/root	usr/lib/gimp/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/environ/
@@ -138,6 +138,9 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercis
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/ka/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/ka/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/ka/LC_MESSAGES/org.gimp.extension.goat-exercises.mo
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/kk/
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/kk/LC_MESSAGES/
+-rw-r--r--	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/kk/LC_MESSAGES/org.gimp.extension.goat-exercises.mo
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/km/
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/km/LC_MESSAGES/
 -rw-r--r--	root/root	usr/lib/gimp/3.0/extensions/org.gimp.extension.goat-exercises/locale/km/LC_MESSAGES/org.gimp.extension.goat-exercises.mo
@@ -293,6 +296,8 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/destripe/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/destripe/destripe
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-aa/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-aa/file-aa
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-another-rawtherapee/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-another-rawtherapee/file-another-rawtherapee
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-bmp/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-bmp/file-bmp
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-cel/
@@ -337,14 +342,16 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-icns/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-icns/file-icns
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-ico/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-ico/file-ico
-drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jp2-load/
--rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jp2-load/file-jp2-load
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jp2/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jp2/file-jp2
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jpeg/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jpeg/file-jpeg
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-mng/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-mng/file-mng
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-openraster/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-openraster/file-openraster.py
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-paa/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-paa/file-paa
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pat/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pat/file-pat
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pcx/
@@ -365,12 +372,16 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-psd/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-psd/file-psd
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-psp/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-psp/file-psp
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pvr/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pvr/file-pvr
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-raw-data/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-raw-data/file-raw-data
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-raw-placeholder/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-raw-placeholder/file-raw-placeholder
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-rawtherapee/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-rawtherapee/file-rawtherapee
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-seattle-filmworks/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-seattle-filmworks/file-seattle-filmworks
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-sgi/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-sgi/file-sgi
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-sunras/
@@ -381,6 +392,8 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tga/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tga/file-tga
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tiff/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tiff/file-tiff
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tim/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tim/file-tim
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-wbmp/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-wbmp/file-wbmp
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-webp/
@@ -397,6 +410,8 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-xwd/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-xwd/file-xwd
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/film/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/film/film
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/filter-browser/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/filter-browser/filter-browser
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/flame/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/flame/flame
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/foggify/
@@ -443,6 +458,8 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/nl-filter/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/nl-filter/nl-filter
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/pagecurl/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/pagecurl/pagecurl
+drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/palette-export-as-kpl/
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/palette-export-as-kpl/palette-export-as-kpl.py
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/palette-offset/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/palette-offset/palette-offset.py
 drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/palette-sort/
@@ -500,35 +517,35 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Gimp-3.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GimpUi-3.0.typelib
 lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so -> libgimp-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimp-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimp-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so -> libgimp-scriptfu-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimp-scriptfu-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimp-scriptfu-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so -> libgimpbase-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpbase-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpbase-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so -> libgimpcolor-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpcolor-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpcolor-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so -> libgimpconfig-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpconfig-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpconfig-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so -> libgimpmath-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpmath-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpmath-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so -> libgimpmodule-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpmodule-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpmodule-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so -> libgimpthumb-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpthumb-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpthumb-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so -> libgimpui-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpui-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpui-3.0.so.0.200.2
 lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so -> libgimpwidgets-3.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.8.0
--rwxr-xr-x	root/root	usr/lib/libgimpwidgets-3.0.so.0.8.0
+lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.200.2
+-rwxr-xr-x	root/root	usr/lib/libgimpwidgets-3.0.so.0.200.2
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gimp.desktop
@@ -1851,6 +1868,10 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-sample-point.png
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-template.png
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-text-dir-ttb-ltr-upright.png
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-text-dir-ttb-ltr.png
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-text-dir-ttb-rtl-upright.png
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-text-dir-ttb-rtl.png
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-text-layer.png
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-toilet-paper.png
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/24x24/apps/gimp-tool-options.png
@@ -1957,6 +1978,8 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-space-non-linear.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-space-perceptual.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-color-water.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-curve-point-corner.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-curve-point-smooth.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-dashboard.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-detach.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gimp-display.svg
@@ -2068,6 +2091,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-ok.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-select-color.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-select-font.svg
+-rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/gtk-yes.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-shrink-wrap-symbolic.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-shrink-wrap.svg
 -rw-r--r--	root/root	usr/share/gimp/3.0/icons/Legacy/scalable/apps/view-zoom-fill-symbolic.svg
@@ -2087,6 +2111,7 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/icons/hicolor/scalable/status/
 drwxr-xr-x	root/root	usr/share/gimp/3.0/images/
 -rw-r--r--	root/root	usr/share/gimp/3.0/images/gimp-logo.png
 -rw-r--r--	root/root	usr/share/gimp/3.0/images/gimp-splash.png
+-rw-r--r--	root/root	usr/share/gimp/3.0/images/sidrat.data
 drwxr-xr-x	root/root	usr/share/gimp/3.0/menus/
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/app-menu.ui
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/brush-editor-menu.ui
@@ -2119,10 +2144,10 @@ drwxr-xr-x	root/root	usr/share/gimp/3.0/menus/
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/text-editor-toolbar.ui
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/text-tool-menu.ui
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/tool-options-menu.ui
+-rw-r--r--	root/root	usr/share/gimp/3.0/menus/tool-path-menu.ui
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/tool-preset-editor-menu.ui
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/tool-presets-menu.ui
 -rw-r--r--	root/root	usr/share/gimp/3.0/menus/undo-menu.ui
--rw-r--r--	root/root	usr/share/gimp/3.0/menus/vector-toolpath-menu.ui
 drwxr-xr-x	root/root	usr/share/gimp/3.0/palettes/
 -rw-r--r--	root/root	usr/share/gimp/3.0/palettes/Bears.gpl
 -rw-r--r--	root/root	usr/share/gimp/3.0/palettes/Bgold.gpl

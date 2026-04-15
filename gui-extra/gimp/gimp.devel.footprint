@@ -15,6 +15,7 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpchannel.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpchannel_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpcontext_pdb.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpcurve.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpdebug_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpdisplay.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpdisplay_pdb.h
@@ -55,6 +56,7 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimage.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimage_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimageautocrop_pdb.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagechooser.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagecolorprofile.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagecolorprofile_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagecombobox.h
@@ -69,11 +71,14 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimageundo_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpitem.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpitem_pdb.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpitemchooser.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpitemcombobox.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpitemtransform_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimplayer.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimplayer_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimplayermask.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimplinklayer.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimplinklayer_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimploadprocedure.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpmessage_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimppainttools_pdb.h
@@ -102,6 +107,8 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpprogress_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpprogressbar.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimppropwidgets.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimprasterizable.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimprasterizable_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpresource.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpresource_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpresourcechooser.h
@@ -115,6 +122,8 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpui.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpuitypes.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpunit_pdb.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpvectorlayer.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpvectorlayer_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpvectorloadprocedure.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpvectorloadproceduredialog.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpzoompreview.h

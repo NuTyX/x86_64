@@ -6,16 +6,16 @@ license="LGPL3 GPL3"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr 
+makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr libgexiv2
              gegl poppler-glib glib-networking libmng alsa-lib libwmf
              babl libmypaint mypaint-brushes lcms2 libgexiv2 aalib appstream
              harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib)
 
 name=gimp
-version=3.0.8
+version=3.2.2
 
 PKGMK_MESON_OPTIONS="-Dgi-docgen=disabled \
--Dbug-report-url=https://github.com/NuTyX/systemd/issues"
+-Dbug-report-url=https://github.com/NuTyX/x86_64/issues"
 
 source=(https://download.gimp.org/gimp/v${version:0:3}/gimp-$version.tar.xz)
 
