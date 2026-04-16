@@ -1,0 +1,12 @@
+diff -Naur a/include/libbb.h b/include/libbb.h
+--- a/include/libbb.h	2023-01-03 15:14:43.000000000 +0100
++++ b/include/libbb.h	2026-04-16 14:05:02.086560544 +0200
+@@ -2276,7 +2276,7 @@
+ #ifndef BB_ADDITIONAL_PATH
+ #define BB_ADDITIONAL_PATH ""
+ #endif
+-#define BB_PATH_ROOT_PATH "PATH=/sbin:/usr/sbin:/bin:/usr/bin" BB_ADDITIONAL_PATH
++#define BB_PATH_ROOT_PATH "PATH=/usr/bin:/bin" BB_ADDITIONAL_PATH
+ extern const char bb_PATH_root_path[] ALIGN1; /* BB_PATH_ROOT_PATH */
+ #define bb_default_root_path (bb_PATH_root_path + sizeof("PATH"))
+ /* util-linux manpage says /sbin:/bin:/usr/sbin:/usr/bin,

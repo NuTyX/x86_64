@@ -3,38 +3,31 @@ url="https://busybox.net/about.html"
 
 packager="tnut <tnut@nutyx.org>"
 
-makedepends=(git musl)
+makedepends=(musl)
 
 name=busybox
 version=1.36.1
-release=7
+release=8
 
 set=(chroot)
 
-source=(busybox-1.33.0_modprobe.patch
-        $name.config
-	https://busybox.net/downloads/busybox-$version.tar.bz2)
+source=(busybox-1.33.0_modprobe.patch bb_default_path.patch
+        $name.config https://busybox.net/downloads/busybox-$version.tar.bz2)
 
 prepare() {
-git clone https://github.com/slashbeast/mdev-like-a-boss.git
-sed -i "s@/opt/mdev@/etc/mdev.d@g" mdev-like-a-boss/mdev.conf
-sed -i "s@uucp@dialout@g" mdev-like-a-boss/mdev.conf
 cd $name-$version
 # Anti-future-proofing patch: when kernel will learn how to finit_module(fd)
 # a gzipped module in addition to uncompressed ones, this patch needs to be
 # removed
 patch -Np1 -i ../busybox-1.33.0_modprobe.patch
+# Busybox default patch doen't fit for NuTyX
+patch -Np1 -i ../bb_default_path.patch
 }
 build() {
 cd $name-$version
 cp ../$name.config .config
 make CC=musl-gcc
-
-# mdev
-mkdir -p $PKG/{etc/mdev.d,usr/bin,bin}
-cd ..
-install -m0755  mdev-like-a-boss/mdev.conf $PKG/etc/mdev.conf
-cp -a mdev-like-a-boss/helpers $PKG/etc/mdev.d
+mkdir -p $PKG/{usr/bin,bin}
 }
 package() {
  install -m0755 $name-$version/$name $PKG/usr/bin/$name
