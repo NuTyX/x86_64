@@ -17,6 +17,7 @@ run=(shared-mime-info xdg-utils desktop-file-utils gtk-update-icon-cache
 
 name=libreoffice
 version=26.2.2.2
+release=2
 
 categories=(Office Graphics Education)
 
@@ -124,13 +125,16 @@ usr/lib/libreoffice/program/resource/af \
 usr/lib/libreoffice/share/autotext/af \
 usr/lib/libreoffice/share/extensions/dict-af \
 usr/lib/libreoffice/readmes/README_af \
+usr/lib/libreoffice/share/numbertext/af.sor \
 usr/lib/libreoffice/share/registry/{Langpack-af.xcd,res/{registry_,fcfg_langpack_}af.xcd} \
 usr/lib/libreoffice/share/wizards/resources_af.properties
 
 rm -r usr/lib/libreoffice/program/resource/af \
 usr/lib/libreoffice/share/autotext/af \
 usr/lib/libreoffice/share/extensions/dict-af
+
 rm usr/lib/libreoffice/readmes/README_af \
+usr/lib/libreoffice/share/numbertext/af.sor \
 usr/lib/libreoffice/share/registry/{Langpack-af.xcd,res/{registry_,fcfg_langpack_}af.xcd} \
 usr/lib/libreoffice/share/wizards/resources_af.properties
 }
@@ -144,14 +148,15 @@ usr/lib/libreoffice/program/resource/ar \
 usr/lib/libreoffice/share/autotext/ar \
 usr/lib/libreoffice/share/extensions/dict-ar \
 usr/lib/libreoffice/readmes/README_ar \
-usr/lib/libreoffice/share/registry/{Langpack-ar.xcd,res/{registry_,fcfg_langpack_}ar.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}ar.xcd,res/{registry_,fcfg_langpack_}ar.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ar.properties
 
 rm -r usr/lib/libreoffice/{help/ar,program/resource/ar} \
 usr/lib/libreoffice/share/autotext/ar \
 usr/lib/libreoffice/share/extensions/dict-ar
+
 rm usr/lib/libreoffice/readmes/README_ar \
-usr/lib/libreoffice/share/registry/{Langpack-ar.xcd,res/{registry_,fcfg_langpack_}ar.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}ar.xcd,res/{registry_,fcfg_langpack_}ar.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ar.properties
 }
 locale_as()
@@ -166,7 +171,8 @@ usr/lib/libreoffice/share/registry/{Langpack-as.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_as.properties
 
 rm -r usr/lib/libreoffice/program/resource/as \
-usr/lib/libreoffice/share/autotext/as \
+usr/lib/libreoffice/share/autotext/as
+
 rm usr/lib/libreoffice/readmes/README_as \
 usr/lib/libreoffice/share/registry/{Langpack-as.xcd,res/{registry_,fcfg_langpack_}as.xcd} \
 usr/lib/libreoffice/share/wizards/resources_as.properties
@@ -186,6 +192,7 @@ usr/lib/libreoffice/share/wizards/resources_be.properties
 rm -r usr/lib/libreoffice/program/resource/be \
 usr/lib/libreoffice/share/autotext/be \
 usr/lib/libreoffice/share/extensions/dict-be
+
 rm usr/lib/libreoffice/readmes/README_be \
 usr/lib/libreoffice/share/registry/{Langpack-be.xcd,res/{registry_,fcfg_langpack_}be.xcd} \
 usr/lib/libreoffice/share/wizards/resources_be.properties
@@ -200,13 +207,16 @@ usr/lib/libreoffice/program/resource/bg \
 usr/lib/libreoffice/share/autotext/bg \
 usr/lib/libreoffice/share/extensions/dict-bg \
 usr/lib/libreoffice/readmes/README_bg \
+usr/lib/libreoffice/share/numbertext/bg.sor \
 usr/lib/libreoffice/share/registry/{Langpack-bg.xcd,res/{registry_,fcfg_langpack_}bg.xcd} \
 usr/lib/libreoffice/share/wizards/resources_bg.properties
 
 rm -r usr/lib/libreoffice/{help/bg,program/resource/bg} \
 usr/lib/libreoffice/share/autotext/bg \
 usr/lib/libreoffice/share/extensions/dict-bg
+
 rm usr/lib/libreoffice/readmes/README_bg \
+usr/lib/libreoffice/share/numbertext/bg.sor \
 usr/lib/libreoffice/share/registry/{Langpack-bg.xcd,res/{registry_,fcfg_langpack_}bg.xcd} \
 usr/lib/libreoffice/share/wizards/resources_bg.properties
 }
@@ -226,6 +236,7 @@ usr/lib/libreoffice/share/wizards/resources_bs.properties
 rm -r usr/lib/libreoffice/{help/bs,program/resource/bs} \
 usr/lib/libreoffice/share/autotext/bs \
 usr/lib/libreoffice/share/extensions/dict-bs
+
 rm usr/lib/libreoffice/readmes/README_bs \
 usr/lib/libreoffice/share/registry/{Langpack-bs.xcd,res/{registry_,fcfg_langpack_}bs.xcd} \
 usr/lib/libreoffice/share/wizards/resources_bs.properties
@@ -240,13 +251,16 @@ usr/lib/libreoffice/program/resource/ca \
 usr/lib/libreoffice/share/autotext/ca \
 usr/lib/libreoffice/share/extensions/dict-ca \
 usr/lib/libreoffice/readmes/README_ca \
+usr/lib/libreoffice/share/numbertext/ca.sor \
 usr/lib/libreoffice/share/registry/{Langpack-ca.xcd,res/{registry_,fcfg_langpack_}ca.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ca.properties
 
 rm -r usr/lib/libreoffice/{help/ca,program/resource/ca} \
 usr/lib/libreoffice/share/autotext/ca \
 usr/lib/libreoffice/share/extensions/dict-ca
+
 rm usr/lib/libreoffice/readmes/README_ca \
+usr/lib/libreoffice/share/numbertext/ca.sor \
 usr/lib/libreoffice/share/registry/{Langpack-ca.xcd,res/{registry_,fcfg_langpack_}ca.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ca.properties
 }
@@ -268,6 +282,7 @@ usr/lib/libreoffice/share/wizards/resources_cs.properties
 rm -r usr/lib/libreoffice/{help/cs,program/resource/cs} \
 usr/lib/libreoffice/share/autotext/cs \
 usr/lib/libreoffice/share/extensions/dict-cs
+
 rm usr/lib/libreoffice/readmes/README_cs \
 usr/lib/libreoffice/share/numbertext/cs.sor \
 usr/lib/libreoffice/share/registry/{Langpack-cs.xcd,res/{registry_,fcfg_langpack_}cs.xcd} \
@@ -307,6 +322,7 @@ usr/lib/libreoffice/share/wizards/resources_da.properties
 rm -r usr/lib/libreoffice/{help/da,program/resource/da} \
 usr/lib/libreoffice/share/autotext/da \
 usr/lib/libreoffice/share/extensions/dict-da
+
 rm usr/lib/libreoffice/readmes/README_da \
 usr/lib/libreoffice/share/numbertext/da.sor \
 usr/lib/libreoffice/share/registry/{Langpack-da.xcd,res/{registry_,fcfg_langpack_}da.xcd} \
@@ -329,6 +345,7 @@ usr/lib/libreoffice/share/wizards/resources_de.properties
 rm -r usr/lib/libreoffice/{help/de,program/resource/de} \
 usr/lib/libreoffice/share/autotext/de \
 usr/lib/libreoffice/share/extensions/dict-de
+
 rm usr/lib/libreoffice/readmes/README_de \
 usr/lib/libreoffice/share/numbertext/de.sor \
 usr/lib/libreoffice/share/registry/{Langpack-de.xcd,res/{registry_,fcfg_langpack_}de.xcd} \
@@ -351,6 +368,7 @@ usr/lib/libreoffice/share/wizards/resources_el.properties
 rm -r usr/lib/libreoffice/{help/el,program/resource/el} \
 usr/lib/libreoffice/share/autotext/el \
 usr/lib/libreoffice/share/extensions/dict-el
+
 rm usr/lib/libreoffice/readmes/README_el \
 usr/lib/libreoffice/share/numbertext/el.sor \
 usr/lib/libreoffice/share/registry/{Langpack-el.xcd,res/{registry_,fcfg_langpack_}el.xcd} \
@@ -373,6 +391,7 @@ usr/lib/libreoffice/share/wizards/resources_es.properties
 rm -r usr/lib/libreoffice/{help/es,program/resource/es} \
 usr/lib/libreoffice/share/autotext/es \
 usr/lib/libreoffice/share/extensions/dict-es
+
 rm usr/lib/libreoffice/readmes/README_es \
 usr/lib/libreoffice/share/numbertext/es.sor \
 usr/lib/libreoffice/share/registry/{Langpack-es.xcd,res/{registry_,fcfg_langpack_}es.xcd} \
@@ -393,6 +412,7 @@ usr/lib/libreoffice/share/wizards/resources_fi.properties
 
 rm -r usr/lib/libreoffice/{help/fi,program/resource/fi} \
 usr/lib/libreoffice/share/autotext/fi
+
 rm usr/lib/libreoffice/readmes/README_fi \
 usr/lib/libreoffice/share/numbertext/fi.sor \
 usr/lib/libreoffice/share/registry/{Langpack-fi.xcd,res/{registry_,fcfg_langpack_}fi.xcd} \
@@ -415,6 +435,7 @@ usr/lib/libreoffice/share/wizards/resources_fr.properties
 rm -r usr/lib/libreoffice/{help/fr,program/resource/fr} \
 usr/lib/libreoffice/share/autotext/fr \
 usr/lib/libreoffice/share/extensions/dict-fr
+
 rm usr/lib/libreoffice/readmes/README_fr \
 usr/lib/libreoffice/share/numbertext/fr.sor \
 usr/lib/libreoffice/share/registry/{Langpack-fr.xcd,res/{registry_,fcfg_langpack_}fr.xcd} \
@@ -428,12 +449,15 @@ $PKGMK_PACKAGE_DIR/${name}.ga${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/ga \
 usr/lib/libreoffice/share/autotext/ga \
 usr/lib/libreoffice/readmes/README_ga \
+usr/lib/libreoffice/share/numbertext/ga.sor \
 usr/lib/libreoffice/share/registry/{Langpack-ga.xcd,res/{registry_,fcfg_langpack_}ga.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ga.properties
 
 rm -r usr/lib/libreoffice/program/resource/ga \
 usr/lib/libreoffice/share/autotext/ga
+
 rm usr/lib/libreoffice/readmes/README_ga \
+usr/lib/libreoffice/share/numbertext/ga.sor \
 usr/lib/libreoffice/share/registry/{Langpack-ga.xcd,res/{registry_,fcfg_langpack_}ga.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ga.properties
 }
@@ -454,6 +478,7 @@ usr/lib/libreoffice/share/wizards/resources_gl.properties
 rm -r usr/lib/libreoffice/{help/gl,program/resource/gl} \
 usr/lib/libreoffice/share/autotext/gl \
 usr/lib/libreoffice/share/extensions/dict-gl
+
 rm usr/lib/libreoffice/readmes/README_gl \
 usr/lib/libreoffice/share/numbertext/gl.sor \
 usr/lib/libreoffice/share/registry/{Langpack-gl.xcd,res/{registry_,fcfg_langpack_}gl.xcd} \
@@ -469,14 +494,17 @@ usr/lib/libreoffice/program/resource/he \
 usr/lib/libreoffice/share/autotext/he \
 usr/lib/libreoffice/share/extensions/dict-he \
 usr/lib/libreoffice/readmes/README_he \
-usr/lib/libreoffice/share/registry/{Langpack-he.xcd,res/{registry_,fcfg_langpack_}he.xcd} \
+usr/lib/libreoffice/share/numbertext/he.sor \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}he.xcd,res/{registry_,fcfg_langpack_}he.xcd} \
 usr/lib/libreoffice/share/wizards/resources_he.properties
 
 rm -r usr/lib/libreoffice/{help/he,program/resource/he} \
 usr/lib/libreoffice/share/autotext/he \
 usr/lib/libreoffice/share/extensions/dict-he
+
 rm usr/lib/libreoffice/readmes/README_he \
-usr/lib/libreoffice/share/registry/{Langpack-he.xcd,res/{registry_,fcfg_langpack_}he.xcd} \
+usr/lib/libreoffice/share/numbertext/he.sor \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}he.xcd,res/{registry_,fcfg_langpack_}he.xcd} \
 usr/lib/libreoffice/share/wizards/resources_he.properties
 }
 locale_hi()
@@ -489,14 +517,15 @@ usr/lib/libreoffice/program/resource/hi \
 usr/lib/libreoffice/share/autotext/hi \
 usr/lib/libreoffice/share/extensions/dict-hi \
 usr/lib/libreoffice/readmes/README_hi \
-usr/lib/libreoffice/share/registry/{Langpack-hi.xcd,res/{registry_,fcfg_langpack_}hi.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}hi.xcd,res/{registry_,fcfg_langpack_}hi.xcd} \
 usr/lib/libreoffice/share/wizards/resources_hi.properties
 
 rm -r usr/lib/libreoffice/{help/hi,program/resource/hi} \
 usr/lib/libreoffice/share/autotext/hi \
 usr/lib/libreoffice/share/extensions/dict-hi
+
 rm usr/lib/libreoffice/readmes/README_hi \
-usr/lib/libreoffice/share/registry/{Langpack-hi.xcd,res/{registry_,fcfg_langpack_}hi.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}hi.xcd,res/{registry_,fcfg_langpack_}hi.xcd} \
 usr/lib/libreoffice/share/wizards/resources_hi.properties
 }
 locale_hr()
@@ -516,6 +545,7 @@ usr/lib/libreoffice/share/wizards/resources_hr.properties
 rm -r usr/lib/libreoffice/{help/hr,program/resource/hr} \
 usr/lib/libreoffice/share/autotext/hr \
 usr/lib/libreoffice/share/extensions/dict-hr
+
 rm usr/lib/libreoffice/readmes/README_hr \
 usr/lib/libreoffice/share/numbertext/hr.sor \
 usr/lib/libreoffice/share/registry/{Langpack-hr.xcd,res/{registry_,fcfg_langpack_}hr.xcd} \
@@ -531,6 +561,7 @@ usr/lib/libreoffice/program/resource/hu \
 usr/lib/libreoffice/share/autotext/hu \
 usr/lib/libreoffice/share/extensions/dict-hu \
 usr/lib/libreoffice/readmes/README_hu \
+usr/lib/libreoffice/share/numbertext/hu_Hung.sor \
 usr/lib/libreoffice/share/numbertext/hu.sor \
 usr/lib/libreoffice/share/registry/{Langpack-hu.xcd,res/{registry_,fcfg_langpack_}hu.xcd} \
 usr/lib/libreoffice/share/wizards/resources_hu.properties
@@ -538,7 +569,9 @@ usr/lib/libreoffice/share/wizards/resources_hu.properties
 rm -r usr/lib/libreoffice/{help/hu,program/resource/hu} \
 usr/lib/libreoffice/share/autotext/hu \
 usr/lib/libreoffice/share/extensions/dict-hu
+
 rm usr/lib/libreoffice/readmes/README_hu \
+usr/lib/libreoffice/share/numbertext/hu_Hung.sor \
 usr/lib/libreoffice/share/numbertext/hu.sor \
 usr/lib/libreoffice/share/registry/{Langpack-hu.xcd,res/{registry_,fcfg_langpack_}hu.xcd} \
 usr/lib/libreoffice/share/wizards/resources_hu.properties
@@ -553,13 +586,16 @@ usr/lib/libreoffice/program/resource/id \
 usr/lib/libreoffice/share/autotext/id \
 usr/lib/libreoffice/share/extensions/dict-id \
 usr/lib/libreoffice/readmes/README_id \
+usr/lib/libreoffice/share/numbertext/id.sor \
 usr/lib/libreoffice/share/registry/{Langpack-id.xcd,res/{registry_,fcfg_langpack_}id.xcd} \
 usr/lib/libreoffice/share/wizards/resources_id.properties
 
 rm -r usr/lib/libreoffice/{help/id,program/resource/id} \
 usr/lib/libreoffice/share/autotext/id \
 usr/lib/libreoffice/share/extensions/dict-id
+
 rm usr/lib/libreoffice/readmes/README_id \
+usr/lib/libreoffice/share/numbertext/id.sor \
 usr/lib/libreoffice/share/registry/{Langpack-id.xcd,res/{registry_,fcfg_langpack_}id.xcd} \
 usr/lib/libreoffice/share/wizards/resources_id.properties
 }
@@ -573,13 +609,16 @@ usr/lib/libreoffice/program/resource/is \
 usr/lib/libreoffice/share/autotext/is \
 usr/lib/libreoffice/share/extensions/dict-is \
 usr/lib/libreoffice/readmes/README_is \
+usr/lib/libreoffice/share/numbertext/is.sor \
 usr/lib/libreoffice/share/registry/{Langpack-is.xcd,res/{registry_,fcfg_langpack_}is.xcd} \
 usr/lib/libreoffice/share/wizards/resources_is.properties
 
 rm -r usr/lib/libreoffice/{help/is,program/resource/is} \
 usr/lib/libreoffice/share/autotext/is \
 usr/lib/libreoffice/share/extensions/dict-is
+
 rm usr/lib/libreoffice/readmes/README_is \
+usr/lib/libreoffice/share/numbertext/is.sor \
 usr/lib/libreoffice/share/registry/{Langpack-is.xcd,res/{registry_,fcfg_langpack_}is.xcd} \
 usr/lib/libreoffice/share/wizards/resources_is.properties
 }
@@ -600,6 +639,7 @@ usr/lib/libreoffice/share/wizards/resources_it.properties
 rm -r usr/lib/libreoffice/{help/it,program/resource/it} \
 usr/lib/libreoffice/share/autotext/it \
 usr/lib/libreoffice/share/extensions/dict-it
+
 rm usr/lib/libreoffice/readmes/README_it \
 usr/lib/libreoffice/share/numbertext/it.sor \
 usr/lib/libreoffice/share/registry/{Langpack-it.xcd,res/{registry_,fcfg_langpack_}it.xcd} \
@@ -615,14 +655,15 @@ usr/lib/libreoffice/program/resource/ja \
 usr/lib/libreoffice/share/autotext/ja \
 usr/lib/libreoffice/readmes/README_ja \
 usr/lib/libreoffice/share/numbertext/ja.sor \
-usr/lib/libreoffice/share/registry/{Langpack-ja.xcd,res/{registry_,fcfg_langpack_}ja.xcd} \
+usr/lib/libreoffice/share/registry/{{cjk_,Langpack-}ja.xcd,res/{registry_,fcfg_langpack_}ja.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ja.properties
 
 rm -r usr/lib/libreoffice/{help/ja,program/resource/ja} \
 usr/lib/libreoffice/share/autotext/ja
+
 rm usr/lib/libreoffice/readmes/README_ja \
 usr/lib/libreoffice/share/numbertext/ja.sor \
-usr/lib/libreoffice/share/registry/{Langpack-ja.xcd,res/{registry_,fcfg_langpack_}ja.xcd} \
+usr/lib/libreoffice/share/registry/{{cjk_,Langpack-}ja.xcd,res/{registry_,fcfg_langpack_}ja.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ja.properties
 }
 locale_ka()
@@ -638,7 +679,8 @@ usr/lib/libreoffice/share/registry/{Langpack-ka.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_ka.properties
 
 rm -r usr/lib/libreoffice/{help/ka,program/resource/ka} \
-usr/lib/libreoffice/share/autotext/ka \
+usr/lib/libreoffice/share/autotext/ka
+
 rm usr/lib/libreoffice/readmes/README_ka \
 usr/lib/libreoffice/share/registry/{Langpack-ka.xcd,res/{registry_,fcfg_langpack_}ka.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ka.properties
@@ -655,7 +697,8 @@ usr/lib/libreoffice/share/registry/{Langpack-kk.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_kk.properties
 
 rm -r usr/lib/libreoffice/program/resource/kk \
-usr/lib/libreoffice/share/autotext/kk \
+usr/lib/libreoffice/share/autotext/kk
+
 rm usr/lib/libreoffice/readmes/README_kk \
 usr/lib/libreoffice/share/registry/{Langpack-kk.xcd,res/{registry_,fcfg_langpack_}kk.xcd} \
 usr/lib/libreoffice/share/wizards/resources_kk.properties
@@ -669,13 +712,14 @@ usr/lib/libreoffice/help/km \
 usr/lib/libreoffice/program/resource/km \
 usr/lib/libreoffice/share/autotext/km \
 usr/lib/libreoffice/readmes/README_km \
-usr/lib/libreoffice/share/registry/{Langpack-km.xcd,res/{registry_,fcfg_langpack_}km.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-,ctlseqcheck_}km.xcd,res/{registry_,fcfg_langpack_}km.xcd} \
 usr/lib/libreoffice/share/wizards/resources_km.properties
 
 rm -r usr/lib/libreoffice/{help/km,program/resource/km} \
-usr/lib/libreoffice/share/autotext/km \
+usr/lib/libreoffice/share/autotext/km
+
 rm usr/lib/libreoffice/readmes/README_km \
-usr/lib/libreoffice/share/registry/{Langpack-km.xcd,res/{registry_,fcfg_langpack_}km.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-,ctlseqcheck_}km.xcd,res/{registry_,fcfg_langpack_}km.xcd} \
 usr/lib/libreoffice/share/wizards/resources_km.properties
 }
 locale_kn()
@@ -690,7 +734,8 @@ usr/lib/libreoffice/share/registry/{Langpack-kn.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_kn.properties
 
 rm -r usr/lib/libreoffice/program/resource/kn \
-usr/lib/libreoffice/share/autotext/kn \
+usr/lib/libreoffice/share/autotext/kn
+
 rm usr/lib/libreoffice/readmes/README_kn \
 usr/lib/libreoffice/share/registry/{Langpack-kn.xcd,res/{registry_,fcfg_langpack_}kn.xcd} \
 usr/lib/libreoffice/share/wizards/resources_kn.properties
@@ -705,14 +750,17 @@ usr/lib/libreoffice/program/resource/ko \
 usr/lib/libreoffice/share/autotext/ko \
 usr/lib/libreoffice/share/extensions/dict-ko \
 usr/lib/libreoffice/readmes/README_ko \
-usr/lib/libreoffice/share/registry/{Langpack-ko.xcd,res/{registry_,fcfg_langpack_}ko.xcd} \
+usr/lib/libreoffice/share/numbertext/ko.sor \
+usr/lib/libreoffice/share/registry/{{cjk_,Langpack-}ko.xcd,res/{registry_,fcfg_langpack_}ko.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ko.properties
 
 rm -r usr/lib/libreoffice/{help/ko,program/resource/ko} \
 usr/lib/libreoffice/share/autotext/ko \
 usr/lib/libreoffice/share/extensions/dict-ko
+
 rm usr/lib/libreoffice/readmes/README_ko \
-usr/lib/libreoffice/share/registry/{Langpack-ko.xcd,res/{registry_,fcfg_langpack_}ko.xcd} \
+usr/lib/libreoffice/share/numbertext/ko.sor \
+usr/lib/libreoffice/share/registry/{{cjk_,Langpack-}ko.xcd,res/{registry_,fcfg_langpack_}ko.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ko.properties
 }
 locale_lt()
@@ -732,6 +780,7 @@ usr/lib/libreoffice/share/wizards/resources_lt.properties
 rm -r usr/lib/libreoffice/{help/lt,program/resource/lt} \
 usr/lib/libreoffice/share/autotext/lt \
 usr/lib/libreoffice/share/extensions/dict-lt
+
 rm usr/lib/libreoffice/readmes/README_lt \
 usr/lib/libreoffice/share/numbertext/lt.sor \
 usr/lib/libreoffice/share/registry/{Langpack-lt.xcd,res/{registry_,fcfg_langpack_}lt.xcd} \
@@ -754,6 +803,7 @@ usr/lib/libreoffice/share/wizards/resources_lv.properties
 rm -r usr/lib/libreoffice/{help/lv,program/resource/lv} \
 usr/lib/libreoffice/share/autotext/lv \
 usr/lib/libreoffice/share/extensions/dict-lv
+
 rm usr/lib/libreoffice/readmes/README_lv \
 usr/lib/libreoffice/share/numbertext/lv.sor \
 usr/lib/libreoffice/share/registry/{Langpack-lv.xcd,res/{registry_,fcfg_langpack_}lv.xcd} \
@@ -772,7 +822,8 @@ usr/lib/libreoffice/share/registry/{Langpack-mk.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_mk.properties
 
 rm -r usr/lib/libreoffice/{help/mk,program/resource/mk} \
-usr/lib/libreoffice/share/autotext/mk \
+usr/lib/libreoffice/share/autotext/mk
+
 rm usr/lib/libreoffice/readmes/README_mk \
 usr/lib/libreoffice/share/registry/{Langpack-mk.xcd,res/{registry_,fcfg_langpack_}mk.xcd} \
 usr/lib/libreoffice/share/wizards/resources_mk.properties
@@ -789,7 +840,8 @@ usr/lib/libreoffice/share/registry/{Langpack-ml.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_ml.properties
 
 rm -r usr/lib/libreoffice/program/resource/ml \
-usr/lib/libreoffice/share/autotext/ml \
+usr/lib/libreoffice/share/autotext/ml
+
 rm usr/lib/libreoffice/readmes/README_ml \
 usr/lib/libreoffice/share/registry/{Langpack-ml.xcd,res/{registry_,fcfg_langpack_}ml.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ml.properties
@@ -802,12 +854,15 @@ $PKGMK_PACKAGE_DIR/${name}.mr${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/mr \
 usr/lib/libreoffice/share/autotext/mr \
 usr/lib/libreoffice/readmes/README_mr \
+usr/lib/libreoffice/share/numbertext/mr.sor \
 usr/lib/libreoffice/share/registry/{Langpack-mr.xcd,res/{registry_,fcfg_langpack_}mr.xcd} \
 usr/lib/libreoffice/share/wizards/resources_mr.properties
 
 rm -r usr/lib/libreoffice/program/resource/mr \
-usr/lib/libreoffice/share/autotext/mr \
+usr/lib/libreoffice/share/autotext/mr
+
 rm usr/lib/libreoffice/readmes/README_mr \
+usr/lib/libreoffice/share/numbertext/mr.sor \
 usr/lib/libreoffice/share/registry/{Langpack-mr.xcd,res/{registry_,fcfg_langpack_}mr.xcd} \
 usr/lib/libreoffice/share/wizards/resources_mr.properties
 }
@@ -819,13 +874,14 @@ $PKGMK_PACKAGE_DIR/${name}.my${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/my \
 usr/lib/libreoffice/share/autotext/my \
 usr/lib/libreoffice/readmes/README_my \
-usr/lib/libreoffice/share/registry/{Langpack-my.xcd,res/{registry_,fcfg_langpack_}my.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}my.xcd,res/{registry_,fcfg_langpack_}my.xcd} \
 usr/lib/libreoffice/share/wizards/resources_my.properties
 
 rm -r usr/lib/libreoffice/program/resource/my \
-usr/lib/libreoffice/share/autotext/my \
+usr/lib/libreoffice/share/autotext/my
+
 rm usr/lib/libreoffice/readmes/README_my \
-usr/lib/libreoffice/share/registry/{Langpack-my.xcd,res/{registry_,fcfg_langpack_}my.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}my.xcd,res/{registry_,fcfg_langpack_}my.xcd} \
 usr/lib/libreoffice/share/wizards/resources_my.properties
 }
 locale_nl()
@@ -845,6 +901,7 @@ usr/lib/libreoffice/share/wizards/resources_nl.properties
 rm -r usr/lib/libreoffice/{help/nl,program/resource/nl} \
 usr/lib/libreoffice/share/autotext/nl \
 usr/lib/libreoffice/share/extensions/dict-nl
+
 rm usr/lib/libreoffice/readmes/README_nl \
 usr/lib/libreoffice/share/numbertext/nl.sor \
 usr/lib/libreoffice/share/registry/{Langpack-nl.xcd,res/{registry_,fcfg_langpack_}nl.xcd} \
@@ -862,16 +919,15 @@ usr/lib/libreoffice/share/extensions/dict-no \
 usr/lib/libreoffice/readmes/README_nn \
 usr/lib/libreoffice/share/numbertext/no.sor \
 usr/lib/libreoffice/share/registry/{Langpack-nn.xcd,res/{registry_,fcfg_langpack_}nn.xcd} \
-usr/lib/libreoffice/share/registry/res/registry_nn.xcd \
 usr/lib/libreoffice/share/wizards/resources_nn.properties
 
 rm -r usr/lib/libreoffice/{help/nn,program/resource/nn} \
 usr/lib/libreoffice/share/autotext/nn \
 usr/lib/libreoffice/share/extensions/dict-no
+
 rm usr/lib/libreoffice/readmes/README_nn \
 usr/lib/libreoffice/share/numbertext/no.sor \
 usr/lib/libreoffice/share/registry/{Langpack-nn.xcd,res/{registry_,fcfg_langpack_}nn.xcd} \
-usr/lib/libreoffice/share/registry/res/registry_nn.xcd \
 usr/lib/libreoffice/share/wizards/resources_nn.properties
 }
 locale_oc()
@@ -889,6 +945,7 @@ usr/lib/libreoffice/share/wizards/resources_oc.properties
 rm -r usr/lib/libreoffice/program/resource/oc \
 usr/lib/libreoffice/share/autotext/oc \
 usr/lib/libreoffice/share/extensions/dict-oc
+
 rm usr/lib/libreoffice/readmes/README_oc \
 usr/lib/libreoffice/share/registry/{Langpack-oc.xcd,res/{registry_,fcfg_langpack_}oc.xcd} \
 usr/lib/libreoffice/share/wizards/resources_oc.properties
@@ -901,13 +958,14 @@ $PKGMK_PACKAGE_DIR/${name}.or${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/or \
 usr/lib/libreoffice/share/autotext/or \
 usr/lib/libreoffice/readmes/README_or \
-usr/lib/libreoffice/share/registry/{Langpack-or.xcd,res/{registry_,fcfg_langpack_}or.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}or.xcd,res/{registry_,fcfg_langpack_}or.xcd} \
 usr/lib/libreoffice/share/wizards/resources_or.properties
 
 rm -r usr/lib/libreoffice/program/resource/or \
 usr/lib/libreoffice/share/autotext/or
+
 rm usr/lib/libreoffice/readmes/README_or \
-usr/lib/libreoffice/share/registry/{Langpack-or.xcd,res/{registry_,fcfg_langpack_}or.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}or.xcd,res/{registry_,fcfg_langpack_}or.xcd} \
 usr/lib/libreoffice/share/wizards/resources_or.properties
 }
 locale_pa()
@@ -918,13 +976,14 @@ $PKGMK_PACKAGE_DIR/${name}.pa${PKGMK_PACKAGE_EXT}$version-$release \
 usr/lib/libreoffice/program/resource/pa_IN \
 usr/lib/libreoffice/share/autotext/pa-IN \
 usr/lib/libreoffice/readmes/README_pa-IN \
-usr/lib/libreoffice/share/registry/{Langpack-pa-IN.xcd,res/{registry_,fcfg_langpack_}pa-IN.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}pa-IN.xcd,res/{registry_,fcfg_langpack_}pa-IN.xcd} \
 usr/lib/libreoffice/share/wizards/resources_pa_IN.properties
 
 rm -r usr/lib/libreoffice/program/resource/pa_IN \
 usr/lib/libreoffice/share/autotext/pa-IN
+
 rm usr/lib/libreoffice/readmes/README_pa-IN \
-usr/lib/libreoffice/share/registry/{Langpack-pa-IN.xcd,res/{registry_,fcfg_langpack_}pa-IN.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}pa-IN.xcd,res/{registry_,fcfg_langpack_}pa-IN.xcd} \
 usr/lib/libreoffice/share/wizards/resources_pa_IN.properties
 }
 locale_pl()
@@ -944,6 +1003,7 @@ usr/lib/libreoffice/share/wizards/resources_pl.properties
 rm -r usr/lib/libreoffice/{help/pl,program/resource/pl} \
 usr/lib/libreoffice/share/autotext/pl \
 usr/lib/libreoffice/share/extensions/dict-pl
+
 rm usr/lib/libreoffice/readmes/README_pl \
 usr/lib/libreoffice/share/numbertext/pl.sor \
 usr/lib/libreoffice/share/registry/{Langpack-pl.xcd,res/{registry_,fcfg_langpack_}pl.xcd} \
@@ -966,6 +1026,7 @@ usr/lib/libreoffice/share/wizards/resources_pt.properties
 rm -r usr/lib/libreoffice/{help/pt,program/resource/pt} \
 usr/lib/libreoffice/share/autotext/pt \
 usr/lib/libreoffice/share/extensions/dict-pt-PT
+
 rm usr/lib/libreoffice/readmes/README_pt \
 usr/lib/libreoffice/share/numbertext/pt.sor \
 usr/lib/libreoffice/share/registry/{Langpack-pt.xcd,res/{registry_,fcfg_langpack_}pt.xcd} \
@@ -988,6 +1049,7 @@ usr/lib/libreoffice/share/wizards/resources_ro.properties
 rm -r usr/lib/libreoffice/{help/ro,program/resource/ro} \
 usr/lib/libreoffice/share/autotext/ro \
 usr/lib/libreoffice/share/extensions/dict-ro
+
 rm usr/lib/libreoffice/readmes/README_ro \
 usr/lib/libreoffice/share/numbertext/ro.sor \
 usr/lib/libreoffice/share/registry/{Langpack-ro.xcd,res/{registry_,fcfg_langpack_}ro.xcd} \
@@ -1010,6 +1072,7 @@ usr/lib/libreoffice/share/wizards/resources_ru.properties
 rm -r usr/lib/libreoffice/{help/ru,program/resource/ru} \
 usr/lib/libreoffice/share/autotext/ru \
 usr/lib/libreoffice/share/extensions/dict-ru
+
 rm usr/lib/libreoffice/readmes/README_ru \
 usr/lib/libreoffice/share/numbertext/ru.sor \
 usr/lib/libreoffice/share/registry/{Langpack-ru.xcd,res/{registry_,fcfg_langpack_}ru.xcd} \
@@ -1028,6 +1091,7 @@ usr/lib/libreoffice/share/wizards/resources_rw.properties
 
 rm -r usr/lib/libreoffice/program/resource/rw \
 usr/lib/libreoffice/share/autotext/rw
+
 rm usr/lib/libreoffice/readmes/README_rw \
 usr/lib/libreoffice/share/registry/{Langpack-rw.xcd,res/{registry_,fcfg_langpack_}rw.xcd} \
 usr/lib/libreoffice/share/wizards/resources_rw.properties
@@ -1048,6 +1112,7 @@ usr/lib/libreoffice/share/wizards/resources_si.properties
 rm -r usr/lib/libreoffice/{help/si,program/resource/si} \
 usr/lib/libreoffice/share/autotext/si \
 usr/lib/libreoffice/share/extensions/dict-si
+
 rm usr/lib/libreoffice/readmes/README_si \
 usr/lib/libreoffice/share/registry/{Langpack-si.xcd,res/{registry_,fcfg_langpack_}si.xcd} \
 usr/lib/libreoffice/share/wizards/resources_si.properties
@@ -1069,9 +1134,19 @@ usr/lib/libreoffice/share/wizards/resources_sk.properties
 rm -r usr/lib/libreoffice/{help/sk,program/resource/sk} \
 usr/lib/libreoffice/share/autotext/sk \
 usr/lib/libreoffice/share/extensions/dict-sk
+
 rm usr/lib/libreoffice/readmes/README_sk \
 usr/lib/libreoffice/share/registry/{Langpack-sk.xcd,res/{registry_,fcfg_langpack_}sk.xcd} \
 usr/lib/libreoffice/share/wizards/resources_sk.properties
+}
+locale_sh()
+{
+cd $PKG
+bsdtar -cf \
+$PKGMK_PACKAGE_DIR/${name}.sh${PKGMK_PACKAGE_EXT}$version-$release \
+usr/lib/libreoffice/share/numbertext/sh.sor
+
+rm usr/lib/libreoffice/share/numbertext/sh.sor
 }
 locale_sl()
 {
@@ -1090,6 +1165,7 @@ usr/lib/libreoffice/share/wizards/resources_sl.properties
 rm -r usr/lib/libreoffice/{help/sl,program/resource/sl} \
 usr/lib/libreoffice/share/autotext/sl \
 usr/lib/libreoffice/share/extensions/dict-sl
+
 rm usr/lib/libreoffice/readmes/README_sl \
 usr/lib/libreoffice/share/numbertext/sl.sor \
 usr/lib/libreoffice/share/registry/{Langpack-sl.xcd,res/{registry_,fcfg_langpack_}sl.xcd} \
@@ -1112,6 +1188,7 @@ usr/lib/libreoffice/share/wizards/resources_sq.properties
 rm -r usr/lib/libreoffice/{help/sq,program/resource/sq} \
 usr/lib/libreoffice/share/autotext/sq \
 usr/lib/libreoffice/share/extensions/dict-sq
+
 rm usr/lib/libreoffice/readmes/README_sq \
 usr/lib/libreoffice/share/numbertext/sq.sor \
 usr/lib/libreoffice/share/registry/{Langpack-sq.xcd,res/{registry_,fcfg_langpack_}sq.xcd} \
@@ -1133,6 +1210,7 @@ usr/lib/libreoffice/share/wizards/resources_sr.properties
 rm -r usr/lib/libreoffice/program/resource/sr \
 usr/lib/libreoffice/share/autotext/sr \
 usr/lib/libreoffice/share/extensions/dict-sr
+
 rm usr/lib/libreoffice/readmes/README_sr \
 usr/lib/libreoffice/share/numbertext/sr.sor \
 usr/lib/libreoffice/share/registry/{Langpack-sr.xcd,res/{registry_,fcfg_langpack_}sr.xcd} \
@@ -1155,6 +1233,7 @@ usr/lib/libreoffice/share/wizards/resources_sv.properties
 rm -r usr/lib/libreoffice/{help/sv,program/resource/sv} \
 usr/lib/libreoffice/share/autotext/sv \
 usr/lib/libreoffice/share/extensions/dict-sv
+
 rm usr/lib/libreoffice/readmes/README_sv \
 usr/lib/libreoffice/share/numbertext/sv.sor \
 usr/lib/libreoffice/share/registry/{Langpack-sv.xcd,res/{registry_,fcfg_langpack_}sv.xcd} \
@@ -1169,13 +1248,14 @@ usr/lib/libreoffice/help/ta \
 usr/lib/libreoffice/program/resource/ta \
 usr/lib/libreoffice/share/autotext/ta \
 usr/lib/libreoffice/readmes/README_ta \
-usr/lib/libreoffice/share/registry/{Langpack-ta.xcd,res/{registry_,fcfg_langpack_}ta.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}ta.xcd,res/{registry_,fcfg_langpack_}ta.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ta.properties
 
 rm -r usr/lib/libreoffice/{help/ta,program/resource/ta} \
-usr/lib/libreoffice/share/autotext/ta \
+usr/lib/libreoffice/share/autotext/ta
+
 rm usr/lib/libreoffice/readmes/README_ta \
-usr/lib/libreoffice/share/registry/{Langpack-ta.xcd,res/{registry_,fcfg_langpack_}ta.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-}ta.xcd,res/{registry_,fcfg_langpack_}ta.xcd} \
 usr/lib/libreoffice/share/wizards/resources_ta.properties
 }
 locale_th()
@@ -1188,15 +1268,16 @@ usr/lib/libreoffice/share/autotext/th \
 usr/lib/libreoffice/share/extensions/dict-th \
 usr/lib/libreoffice/readmes/README_th \
 usr/lib/libreoffice/share/numbertext/th.sor \
-usr/lib/libreoffice/share/registry/{Langpack-th.xcd,res/{registry_,fcfg_langpack_}th.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-,ctlseqcheck_}th.xcd,res/{registry_,fcfg_langpack_}th.xcd} \
 usr/lib/libreoffice/share/wizards/resources_th.properties
 
 rm -r usr/lib/libreoffice/program/resource/th \
 usr/lib/libreoffice/share/autotext/th \
 usr/lib/libreoffice/share/extensions/dict-th
+
 rm usr/lib/libreoffice/readmes/README_th \
 usr/lib/libreoffice/share/numbertext/th.sor \
-usr/lib/libreoffice/share/registry/{Langpack-th.xcd,res/{registry_,fcfg_langpack_}th.xcd} \
+usr/lib/libreoffice/share/registry/{{ctl_,Langpack-,ctlseqcheck_}th.xcd,res/{registry_,fcfg_langpack_}th.xcd} \
 usr/lib/libreoffice/share/wizards/resources_th.properties
 }
 locale_tr()
@@ -1214,8 +1295,9 @@ usr/lib/libreoffice/share/registry/{Langpack-tr.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_tr.properties
 
 rm -r usr/lib/libreoffice/{help/tr,program/resource/tr} \
+usr/lib/libreoffice/share/autotext/tr \
 usr/lib/libreoffice/share/extensions/dict-tr
-usr/lib/libreoffice/share/autotext/tr
+
 rm usr/lib/libreoffice/readmes/README_tr \
 usr/lib/libreoffice/share/numbertext/tr.sor \
 usr/lib/libreoffice/share/registry/{Langpack-tr.xcd,res/{registry_,fcfg_langpack_}tr.xcd} \
@@ -1238,6 +1320,7 @@ usr/lib/libreoffice/share/wizards/resources_uk.properties
 rm -r usr/lib/libreoffice/{help/uk,program/resource/uk} \
 usr/lib/libreoffice/share/autotext/uk \
 usr/lib/libreoffice/share/extensions/dict-uk
+
 rm usr/lib/libreoffice/readmes/README_uk \
 usr/lib/libreoffice/share/numbertext/uk.sor \
 usr/lib/libreoffice/share/registry/{Langpack-uk.xcd,res/{registry_,fcfg_langpack_}uk.xcd} \
@@ -1255,7 +1338,8 @@ usr/lib/libreoffice/share/registry/{Langpack-uz.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_uz.properties
 
 rm -r usr/lib/libreoffice/program/resource/uz \
-usr/lib/libreoffice/share/autotext/uz \
+usr/lib/libreoffice/share/autotext/uz
+
 rm usr/lib/libreoffice/readmes/README_uz \
 usr/lib/libreoffice/share/registry/{Langpack-uz.xcd,res/{registry_,fcfg_langpack_}uz.xcd} \
 usr/lib/libreoffice/share/wizards/resources_uz.properties
@@ -1270,13 +1354,16 @@ usr/lib/libreoffice/program/resource/vi \
 usr/lib/libreoffice/share/autotext/vi \
 usr/lib/libreoffice/share/extensions/dict-vi \
 usr/lib/libreoffice/readmes/README_vi \
+usr/lib/libreoffice/share/numbertext/vi.sor \
 usr/lib/libreoffice/share/registry/{Langpack-vi.xcd,res/{registry_,fcfg_langpack_}vi.xcd} \
 usr/lib/libreoffice/share/wizards/resources_vi.properties
 
 rm -r usr/lib/libreoffice/{help/vi,program/resource/vi} \
 usr/lib/libreoffice/share/autotext/vi \
 usr/lib/libreoffice/share/extensions/dict-vi
+
 rm usr/lib/libreoffice/readmes/README_vi \
+usr/lib/libreoffice/share/numbertext/vi.sor \
 usr/lib/libreoffice/share/registry/{Langpack-vi.xcd,res/{registry_,fcfg_langpack_}vi.xcd} \
 usr/lib/libreoffice/share/wizards/resources_vi.properties
 }
@@ -1292,7 +1379,8 @@ usr/lib/libreoffice/share/registry/{Langpack-xh.xcd,res/{registry_,fcfg_langpack
 usr/lib/libreoffice/share/wizards/resources_xh.properties
 
 rm -r usr/lib/libreoffice/share/autotext/xh \
-usr/lib/libreoffice/program/resource/xh \
+usr/lib/libreoffice/program/resource/xh
+
 rm usr/lib/libreoffice/readmes/README_xh \
 usr/lib/libreoffice/share/registry/{Langpack-xh.xcd,res/{registry_,fcfg_langpack_}xh.xcd} \
 usr/lib/libreoffice/share/wizards/resources_xh.properties
@@ -1307,13 +1395,14 @@ usr/lib/libreoffice/program/resource/zh_CN \
 usr/lib/libreoffice/share/autotext/zh-CN \
 usr/lib/libreoffice/readmes/README_zh-CN \
 usr/lib/libreoffice/share/numbertext/zh.sor \
-usr/lib/libreoffice/share/registry/{Langpack-zh-CN.xcd,res/{registry_,fcfg_langpack_}zh-CN.xcd} \
+usr/lib/libreoffice/share/registry/{{cjk_,Langpack-}zh-CN.xcd,res/{registry_,fcfg_langpack_}zh-CN.xcd} \
 usr/lib/libreoffice/share/wizards/resources_zh_CN.properties
 
 rm -r usr/lib/libreoffice/{help/zh-CN,program/resource/zh_CN} \
 usr/lib/libreoffice/share/autotext/zh-CN
+
 rm usr/lib/libreoffice/readmes/README_zh-CN \
 usr/lib/libreoffice/share/numbertext/zh.sor \
-usr/lib/libreoffice/share/registry/{Langpack-zh-CN.xcd,res/{registry_,fcfg_langpack_}zh-CN.xcd} \
+usr/lib/libreoffice/share/registry/{{cjk_,Langpack-}zh-CN.xcd,res/{registry_,fcfg_langpack_}zh-CN.xcd} \
 usr/lib/libreoffice/share/wizards/resources_zh_CN.properties
 }
