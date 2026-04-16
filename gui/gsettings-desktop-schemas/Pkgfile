@@ -6,10 +6,11 @@ license="LGPL2.1"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Fanch,Spiky,Skythrew"
 
-makedepends=(meson ninja intltool glib gobject-introspection perl-xml-parser adobe-source-code-pro-fonts)
+makedepends=(meson ninja intltool glib gobject-introspection perl-xml-parser)
+run=(adwaita-fonts)
 
 name=gsettings-desktop-schemas
-version=50.0
+version=50.1
 set=(gnome-base)
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
