@@ -11,8 +11,7 @@ makedepends=(glib libsoup3 gpgme polkit fuse2 libostree json-glib
 run=(make-ca bubblewrap gnupg xdg-dbus-proxy)
 
 name=flatpak
-version=1.16.3
-release=3
+version=1.16.6
 
 PKGMK_GROUPS=(devel doc man)
 
