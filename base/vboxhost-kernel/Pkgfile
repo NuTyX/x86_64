@@ -9,7 +9,7 @@ license="GPL, CDDL"
 run=(kernel)
 name=vboxhost-kernel
 version=7.2.6
-release=5
+release=6
 
 buildr=172322
 _VBARCH=amd64
@@ -32,5 +32,5 @@ do
 	$PKG/usr/lib/modules/$KERNELNAME/kernel/drivers/virt/vboxhost/$i
 done
 
-echo "depmod -a $(basename /usr/lib/modules/6*)" > $PKGMK_ROOT/$name.post-install
+echo "depmod -a $(basename /usr/lib/modules/7*)" > $PKGMK_ROOT/$name.post-install
 }
