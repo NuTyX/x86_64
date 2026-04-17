@@ -14,9 +14,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kdeconnect-sms
 -rwxr-xr-x	root/root	usr/bin/kdeconnectd
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libkdeconnectcore.so.25 -> libkdeconnectcore.so.25.12.3
--rwxr-xr-x	root/root	usr/lib/libkdeconnectcore.so.25.12.3
--rw-r--r--	root/root	usr/lib/libkdeconnectinterfaces.a
+lrwxrwxrwx	root/root	usr/lib/libkdeconnectcore.so.26 -> libkdeconnectcore.so.26.04.0
+-rwxr-xr-x	root/root	usr/lib/libkdeconnectcore.so.26.04.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/
@@ -24,6 +23,7 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_clipboard.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_connectivity_report.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_contacts.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_digitizer.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_findmyphone.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_findthisdevice.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_lockdevice.so
@@ -44,6 +44,8 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_sendnotifications.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_sftp.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_share.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_shareinputdevices.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_shareinputdevicesremote.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_sms.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_systemvolume.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kdeconnect/kdeconnect_telephony.so
@@ -70,6 +72,9 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/libkdeconnect_findthisdevice_qmlhelper.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/private/findthisdevice/qmldir
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kdeconnect/qmldir
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/40-kdeconnect-uinput.rules
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/Thunar/
 drwxr-xr-x	root/root	usr/share/Thunar/sendto/
@@ -141,9 +146,11 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
 drwxr-xr-x	root/root	usr/share/kdeconnect/
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_clipboard_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_pausemusic_config.qml
+-rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_presenter_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_runcommand_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_sendnotifications_config.qml
 -rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_share_config.qml
+-rw-r--r--	root/root	usr/share/kdeconnect/kdeconnect_shareinputdevices_config.qml
 drwxr-xr-x	root/root	usr/share/knotifications6/
 -rw-r--r--	root/root	usr/share/knotifications6/kdeconnect.notifyrc
 drwxr-xr-x	root/root	usr/share/metainfo/

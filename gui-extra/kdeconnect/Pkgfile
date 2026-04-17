@@ -7,7 +7,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(qt6-base qt6-declarative qt6-5compat qt6-multimedia qt6-wayland
-             extra-cmake-modules kdoctools kpackage wayland-protocols sshfs
+             extra-cmake-modules kdoctools kpackage wayland-protocols sshfs libei
              wayland solid kcmutils kconfig kcoreaddons kdbusaddons kdeclarative
              kguiaddons ki18n kiconthemes kio kirigami kirigami-addons kjobwidgets
              knotifications kpeople kservice kstatusnotifieritem kwidgetsaddons
@@ -18,7 +18,8 @@ run=(qqc2-desktop-style)
 set=(kde6 kde6-gear)
 
 name=kdeconnect
-version=25.12.3
+version=26.04.0
+release=1
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-kde-$version.tar.xz)
 
