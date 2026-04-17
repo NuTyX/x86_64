@@ -11,7 +11,8 @@ set=(kde6 kde6-gear)
 makedepends=(qt6-base qt6-5compat extra-cmake-modules)
 
 name=kdegraphics-mobipocket
-version=25.12.3
+version=26.04.0
+release=1
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
