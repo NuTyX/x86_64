@@ -18,9 +18,12 @@ run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus
 set=(gnome-base gnome)
 
 name=gnome-shell
-version=50.0
+version=50.1
+release=1
 
 PKGMK_MESON_OPTIONS="-Dtests=false"
+PKGMK_GROUPS=(man)
+
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
 build=meson
