@@ -11,9 +11,11 @@ conflicts=(nvidia-390 nvidia-470)
 
 name=nvidia
 version=595.58.03
-release=1
+release=2
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
+PKGMK_GROUPS=(man doc)
+
 source=(https://us.download.nvidia.com/XFree86/Linux-x86_64/${version}/NVIDIA-Linux-x86_64-${version}.run
         20-nvidia.conf
         nvidia.rules)

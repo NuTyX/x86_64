@@ -7,12 +7,12 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 makedepends=(geocode-glib gobject-introspection libsoup3 meson ninja
-             vala python-gobject gi-docgen gweather-locations)
-run=(gtk-update-icon-cache)
+             vala python-gobject gi-docgen)
+run=(gtk-update-icon-cache gweather-locations)
 
 name=libgweather-4
 version=4.6.0
-release=1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/libgweather/-/archive/$version/libgweather-$version.tar.gz)
 PKGMK_MESON_OPTIONS="-Dgtk_doc=false"

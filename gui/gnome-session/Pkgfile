@@ -13,8 +13,10 @@ set=(gnome-base gnome)
 
 name=gnome-session
 version=50.0
+release=2
 
 PKGMK_MESON_OPTIONS="-Dman=False -Ddocbook=False"
+PKGMK_GROUPS=()
 
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 

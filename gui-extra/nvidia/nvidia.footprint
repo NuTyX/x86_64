@@ -55,6 +55,12 @@ lrwxrwxrwx	root/root	usr/lib/nvidia/xorg/libglxserver_nvidia.so.1 -> libglxserve
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system-sleep/
 -rwxr-xr-x	root/root	usr/lib/systemd/system-sleep/nvidia
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/nvidia-hibernate.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nvidia-powerd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nvidia-resume.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nvidia-suspend-then-hibernate.service
+-rw-r--r--	root/root	usr/lib/systemd/system/nvidia-suspend.service
 drwxr-xr-x	root/root	usr/lib/vdpau/
 -rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.595.58.03
 drwxr-xr-x	root/root	usr/lib/xorg/

@@ -1,8 +1,8 @@
 description="Spice agent for Linux guests"
 url="https://www.spice-space.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
 
 makedepends=(alsa-lib dbus glib xorg-libpciaccess xorg-libxfixes
              xorg-libxinerama xorg-libxrandr spice-protocol
@@ -10,8 +10,9 @@ makedepends=(alsa-lib dbus glib xorg-libpciaccess xorg-libxfixes
 
 name=spice-vdagent
 version=0.23.0
-release=2
+release=3
 
+PKGMK_GROUPS=(man)
 source=(https://www.spice-space.org/download/releases/$name-$version.tar.bz2)
 
 build() {
