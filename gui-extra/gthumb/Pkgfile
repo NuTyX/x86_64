@@ -10,11 +10,9 @@ makedepends=(clutter-gtk dconf gsettings-desktop-schemas gstreamer-plugins-base
              json-glib librsvg libsecret libsoup libwebp webkitgtk brasero
              docbook-xsl exiv2 liboauth meson yelp-tools)
 
-set=(gnome)
-
 name=gthumb
 version=3.12.10
-release=2
+release=3
 
 source=(https://gitlab.gnome.org/GNOME/gthumb/-/archive/$version/$name-$version.tar.gz)
 
