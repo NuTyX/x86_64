@@ -1,30 +1,28 @@
 description="A gnome card patience game" 
 url="https://www.gnome.org/"
 
-contributors="Remy,Tnut"
-packager="spiky <spiky@nutyx.org>"
+license="GFDL-1.1-or-later, GFDL-1.3-only, GPL-3.0-or-later, LGPL-3.0-or-later"
+
+contributors="Remy,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(meson gtk3 libcanberra librsvg yelp-tools appstream-glib)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache guile)
 
-set=(gnome)
+set=(gnome-extra)
 
 name=aisleriot
 version=3.22.35
+release=2
 
+PKGMK_MESON_OPTIONS="-D theme_kde=false -D theme_svg_rsvg=true"
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
-build() {
+build=meson
 
-cd $name-$version
-   mkdir build
-   cd build
-
-    meson --prefix=/usr \
-           -D theme_kde=false \
-           -D theme_svg_rsvg=true \
-           ..
-    ninja
-
-    DESTDIR=$PKG ninja install
+package() {
+ for i in $name-$version/COPYING.*
+ do
+  install -Dm644 $i $PKG/usr/share/licenses/$name/$(basename $i)
+ done
 }

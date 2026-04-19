@@ -9,11 +9,11 @@ contributors="Jayce,Fanch,Rems,Skythrew,Spiky"
 makedepends=(dconf gtk3 vte nautilus gnome-shell yelp-tools)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
-set=(cinnamon)
-
 name=gnome-terminal
 version=3.58.1
+release=2
 
+PKGMK_GROUPS=(man)
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
 prepare() {
@@ -21,20 +21,9 @@ cd $name-$version
 sed -i -r 's:"(/system):"/org/gnome\1:g' src/external.gschema.xml
 }
 
-build() {
-cd $name-$version
+build=meson
 
-mkdir build
-cd    build
-
-      meson setup         \
-      --prefix=/usr       \
-      --buildtype=release \
-      ..
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }

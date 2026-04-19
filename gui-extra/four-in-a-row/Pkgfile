@@ -1,19 +1,19 @@
 description="Make lines of the same color to win"
-url="http://www.gnome.org"
+url="https://gitlab.gnome.org/GNOME/four-in-a-row"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Spiky"
 
 makedepends=(meson ninja gtk3 libcanberra
              librsvg gsound)
 run=(hicolor-icon-theme gsettings-desktop-schemas
      desktop-file-utils gtk-update-icon-cache)
 
-set=(gnome)
+set=(gnome-extra)
 
 name=four-in-a-row
 version=3.38.1
-release=2
+release=3
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
