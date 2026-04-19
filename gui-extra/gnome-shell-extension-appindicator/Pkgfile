@@ -8,10 +8,11 @@ contributors="Spiky"
 
 makedepends=(meson jq libayatana-appindicator)
 run=(gnome-shell)
-set=(gnome-extra)
+set=(gnome)
 
 name=gnome-shell-extension-appindicator
 version=64
+release=2
 
 source=(https://github.com/ubuntu/$name/archive/refs/tags/v${version}.tar.gz)
 
