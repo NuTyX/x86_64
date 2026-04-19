@@ -1,8 +1,8 @@
 description="Remote desktop client written in GTK+"
 url="https://github.com/FreeRDP/Remmina/"
 
-contributors="Rems,Fabienwang,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Fabienwang,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gtk3 zlib libjpeg-turbo libssh avahi vte
              libgcrypt xorg-libxdmcp libsecret webkitgtk
@@ -13,6 +13,7 @@ makedepends=(gtk3 zlib libjpeg-turbo libssh avahi vte
  
 name=remmina
 version=1.4.41
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://gitlab.com/Remmina/Remmina/-/archive/v$version/Remmina-v${version}.tar.gz)
@@ -26,6 +27,7 @@ cmake \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_INSTALL_LIBDIR=/usr/lib \
     -DWITH_AVAHI=OFF \
+    -DWITH_FREERDP3=ON \
     -DWITH_APPINDICATOR=OFF .
 
   make
