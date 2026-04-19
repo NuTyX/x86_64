@@ -6,12 +6,15 @@ license="GPL-3.0-or-later, LGPL-3.0-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Greg,Pierre,Jayce,Skythrew,Spiky"
 
-makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection fast_float)
+makedepends=(pcre2 gnutls vala gtk3 gtk4 perl-xml-parser gobject-introspection
+             fribidi fast_float)
+run=(vte.lib)
 
 name=vte
 version=0.82.3
+release=2
 
-PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dfribidi=false"
+PKGMK_GROUPS=(devel lib man doc)
 source=(https://gitlab.gnome.org/GNOME/vte/-/archive/$version/$name-$version.tar.bz2)
 
 build=meson
