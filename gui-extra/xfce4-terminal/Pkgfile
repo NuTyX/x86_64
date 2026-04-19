@@ -1,31 +1,25 @@
-url="http://www.os-cillation.com/index.php?id=42&L=5"
+url="https://docs.xfce.org/apps/terminal/start"
 description="Terminal emulator from Xfce4."
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(libxfce4util libxfce4ui exo vte)
-set=(xfce4-extra)
+makedepends=(libutempter xfce4-dev-tools gtk-layer-shell \
+             libxfce4util libxfce4ui exo vte)
+set=(xfce4)
 
 name=xfce4-terminal
-version=1.1.5
+version=1.2.0
+release=1
 
 source=(https://archive.xfce.org/src/apps/${name}/${version:0:3}/$name-$version.tar.xz)
 
-build() {
-cd $name-$version
+build=meson
 
-    mkdir build
-cd    build
 
-meson setup .. \
-     --prefix=/usr          \
-     --buildtype=release
-
-ninja
-
-DESTDIR=$PKG ninja install
-
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
 }
