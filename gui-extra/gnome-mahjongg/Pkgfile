@@ -12,10 +12,11 @@ makedepends=(meson ninja gobject-introspection
              librsvg yelp-tools libadwaita)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
-set=(gnome)
+set=(gnome-extra)
 
 name=gnome-mahjongg
 version=49.1.1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
