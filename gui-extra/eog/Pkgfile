@@ -10,10 +10,11 @@ makedepends=(gnome-desktop libpeas shared-mime-info yelp-xsl librsvg
 run=(adwaita-icon-theme gsettings-desktop-schemas
      desktop-file-utils gtk-update-icon-cache)
 
-set=(gnome)
+set=(gnome-extra)
 
 name=eog
 version=50.0
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
