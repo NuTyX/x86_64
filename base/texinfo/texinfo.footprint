@@ -11,25 +11,35 @@ lrwxrwxrwx	root/root	usr/bin/makeinfo -> texi2any
 -rwxr-xr-x	root/root	usr/bin/texindex
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/texi2any/
--rwxr-xr-x	root/root	usr/lib/texi2any/ConvertXS.so
--rwxr-xr-x	root/root	usr/lib/texi2any/DocumentXS.so
--rwxr-xr-x	root/root	usr/lib/texi2any/IndicesXS.so
--rwxr-xr-x	root/root	usr/lib/texi2any/MiscXS.so
--rwxr-xr-x	root/root	usr/lib/texi2any/Parsetexi.so
--rwxr-xr-x	root/root	usr/lib/texi2any/StructuringTransfoXS.so
--rwxr-xr-x	root/root	usr/lib/texi2any/XSParagraph.so
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfo-convert.so -> libtexinfo-convert.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfo-convert.so.0 -> libtexinfo-convert.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/texi2any/libtexinfo-convert.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfo-convertxs.so -> libtexinfo-convertxs.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfo-convertxs.so.0 -> libtexinfo-convertxs.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/texi2any/libtexinfo-convertxs.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfo.so -> libtexinfo.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfo.so.0 -> libtexinfo.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/texi2any/libtexinfo.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfoxs.so -> libtexinfoxs.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/texi2any/libtexinfoxs.so.0 -> libtexinfoxs.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/texi2any/libtexinfoxs.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/ConfigXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/ConvertToTexinfoXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/ConvertXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/DocumentXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/IndicesXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/MiscXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/Parsetexi.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/ReaderXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/StructuringTransfoXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/TreeElementConverterXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/TreeElementXS.so
+-rwxr-xr-x	root/root	usr/lib/texi2any/XS_extension/XSParagraph.so
+drwxr-xr-x	root/root	usr/lib/texi2any/lib/
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo-convert.so -> libtexinfo-convert.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo-convert.so.1 -> libtexinfo-convert.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/texi2any/lib/libtexinfo-convert.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo-convertxs.so -> libtexinfo-convertxs.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo-convertxs.so.1 -> libtexinfo-convertxs.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/texi2any/lib/libtexinfo-convertxs.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo-main.so -> libtexinfo-main.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo-main.so.0 -> libtexinfo-main.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/texi2any/lib/libtexinfo-main.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo.so -> libtexinfo.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfo.so.1 -> libtexinfo.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/texi2any/lib/libtexinfo.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfoxs.so -> libtexinfoxs.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/texi2any/lib/libtexinfoxs.so.1 -> libtexinfoxs.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/texi2any/lib/libtexinfoxs.so.1.0.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/texi2any/
 drwxr-xr-x	root/root	usr/share/texi2any/Pod-Simple-Texinfo/
@@ -39,8 +49,11 @@ drwxr-xr-x	root/root	usr/share/texi2any/Pod-Simple-Texinfo/Pod/Simple/
 drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Commands.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Commands.pod
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/CommandsValues.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/CommandsValues.pod
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Common.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Config.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/ConfigXS.pm
 drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/Convert/
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/ConvertXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/Converter.pm
@@ -55,12 +68,19 @@ drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/Convert/
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/ParagraphNonXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/PlainTexinfo.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/Plaintext.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/ReadDocBook.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TestReader.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/Texinfo.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TexinfoMarkup.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TexinfoNonXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TexinfoSXML.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TexinfoXML.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TexinfoXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/Text.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TextContent.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TreeElementConverter.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TreeElementConverterXS.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/TreeElementReadDocBook.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/Unicode.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Convert/Utils.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/DebugTree.pm
@@ -68,6 +88,7 @@ drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/Convert/
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/DocumentXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Documentlanguages.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/HTMLData.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/HTMLDataCSS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Indices.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/IndicesXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/ManipulateTree.pm
@@ -77,16 +98,20 @@ drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/Convert/
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/OutputUnits.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Parser.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/ParserNonXS.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/Reader.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/ReaderNonXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Report.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/StructTransfXS.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Structuring.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Tests.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Transformations.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/Translations.pm
-drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/XS/
-drwxr-xr-x	root/root	usr/share/texi2any/Texinfo/XS/parsetexi/
--rw-r--r--	root/root	usr/share/texi2any/Texinfo/XS/parsetexi/Parsetexi.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/TreeElement.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/TreeElementNonXS.pm
+-rw-r--r--	root/root	usr/share/texi2any/Texinfo/UnicodeData.pm
 -rw-r--r--	root/root	usr/share/texi2any/Texinfo/XSLoader.pm
+drwxr-xr-x	root/root	usr/share/texi2any/XSTexinfo/
+-rw-r--r--	root/root	usr/share/texi2any/XSTexinfo/Parsetexi.pm
 drwxr-xr-x	root/root	usr/share/texi2any/ext/
 -rw-r--r--	root/root	usr/share/texi2any/ext/epub3.pm
 -rw-r--r--	root/root	usr/share/texi2any/ext/highlight_syntax.pm
@@ -520,3 +545,4 @@ drwxr-xr-x	root/root	usr/share/texi2any/lib/libintl-perl/lib/Locale/RecodeData/
 -rw-r--r--	root/root	usr/share/texi2any/lib/libintl-perl/lib/Locale/Util.pm
 -rw-r--r--	root/root	usr/share/texi2any/lib/libintl-perl/lib/Locale/gettext_dumb.pm
 -rw-r--r--	root/root	usr/share/texi2any/lib/libintl-perl/lib/Locale/gettext_pp.pm
+-rwxr-xr-x	root/root	usr/share/texi2any/load_txi_modules
