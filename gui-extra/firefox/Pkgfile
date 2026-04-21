@@ -18,12 +18,14 @@ run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=149.0.2
+version=150.0
 
 locale_version=$version
 
-source=(glsl-optimizer-to-build-with-glibc-2.43.patch
-        Fix-Linux-sandbox-build-breakage-on-glib.patch
+source=(0001-Install-under-remoting-name.patch
+        0002-Bug-2033279-Make-enable-rust-simd-work-with-Rust-1.9.patch
+        0003-Patch-glsl-optimizer-to-build-with-glibc-2.43.patch
+        0004-Bug-2023597-Use-wasm32-wasip1-target-for-clang-22.1-.patch
         firefox.desktop
         https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz)
 
@@ -45,14 +47,10 @@ rm usr/lib/firefox/browser/extensions/langpack-${1}@firefox.mozilla.org.xpi
 prepare() {
 cd $name-$version
 
-patch -Np1 -i ../glsl-optimizer-to-build-with-glibc-2.43.patch
-patch -Np1 -i ../Fix-Linux-sandbox-build-breakage-on-glib.patch
-sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock
-
-(for i in {43..47}; do
-   sed '/ZWJ/s/}/,CLASS_CHARACTER&/' -i intl/lwbrk/LineBreaker.cpp || exit $?
- done)
-sed -i 's/icu-i18n/icu-uc &/' js/moz.configure
+patch -Np1 -i ../0001-Install-under-remoting-name.patch
+patch -Np1 -i ../0002-Bug-2033279-Make-enable-rust-simd-work-with-Rust-1.9.patch
+patch -Np1 -i ../0003-Patch-glsl-optimizer-to-build-with-glibc-2.43.patch
+patch -Np1 -i ../0004-Bug-2023597-Use-wasm32-wasip1-target-for-clang-22.1-.patch
 }
 
 build() {
