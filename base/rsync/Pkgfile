@@ -7,12 +7,12 @@ run=(shadow)
 
 name=rsync
 version=3.4.1
-release=4
+release=5
 
 scriptsversion=20260315
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-${scriptsversion}.tar.xz
-        https://www.samba.org/ftp/$name/$name-$version.tar.gz)
+        https://www.samba.org/ftp/$name/$name-$version.tar.gz rsync-3.4.1-security_fix-2.patch)
 
 prepare(){
 UN=rsyncd
@@ -23,6 +23,8 @@ if ! (getent passwd $UN > /dev/null); then
    useradd  -c "rsyncd Daemon" -d /home/rsync \
    -g $UN -s /usr/bin/false -u 48 $UN
 fi
+cd $name-$version
+patch -Np1 -i ../rsync-3.4.1-security_fix-2.patch
 }
 build() {
 
