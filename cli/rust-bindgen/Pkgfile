@@ -1,14 +1,14 @@
 description='Automatically generates Rust FFI bindings to C (and some C++) libraries'
 url='https://github.com/rust-lang/rust-bindgen'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(rustc llvm)
 
 name=rust-bindgen
 version=0.72.1
-release=1
+release=2
 
 source=(https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v$version.tar.gz)
 
