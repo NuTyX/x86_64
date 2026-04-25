@@ -1,0 +1,78 @@
+diff -Naur a/src/detection/packages/packages.h b/src/detection/packages/packages.h
+--- a/src/detection/packages/packages.h	2026-04-25 15:06:40.000000000 +0200
++++ b/src/detection/packages/packages.h	2026-04-25 15:10:16.497994285 +0200
+@@ -10,6 +10,7 @@
+     uint32_t appimage;
+     uint32_t brew;
+     uint32_t brewCask;
++    uint32_t cards;
+     uint32_t choco;
+     uint32_t dpkg;
+     uint32_t emerge;
+diff -Naur a/src/detection/packages/packages_linux.c b/src/detection/packages/packages_linux.c
+--- a/src/detection/packages/packages_linux.c	2026-04-25 15:06:40.000000000 +0200
++++ b/src/detection/packages/packages_linux.c	2026-04-25 15:16:20.697992896 +0200
+@@ -537,6 +537,9 @@
+     if (!(options->disabled & FF_PACKAGES_FLAG_MOSS_BIT)) {
+         packageCounts->moss += getSQLite3Int(baseDir, "/.moss/db/state", "SELECT COUNT(*) FROM state_selections WHERE state_id = (SELECT MAX(id) FROM state)", "moss");
+     }
++    if (!(options->disabled & FF_PACKAGES_FLAG_CARDS_BIT)) {
++        packageCounts->cards += getNumElements(baseDir, "/var/lib/pkg/DB", true);
++    }
+ }
+ 
+ static void getPackageCountsRegular(FFstrbuf* baseDir, FFPackagesResult* packageCounts, FFPackagesOptions* options) {
+diff -Naur a/src/modules/packages/option.h b/src/modules/packages/option.h
+--- a/src/modules/packages/option.h	2026-04-25 15:06:40.000000000 +0200
++++ b/src/modules/packages/option.h	2026-04-25 15:18:54.478992309 +0200
+@@ -38,6 +38,7 @@
+     FF_PACKAGES_FLAG_KISS_BIT = 1ULL << 31,
+     FF_PACKAGES_FLAG_MOSS_BIT = 1ULL << 32,
+     FF_PACKAGES_FLAG_APPIMAGE_BIT = 1ULL << 33,
++    FF_PACKAGES_FLAG_CARDS_BIT = 1ULL << 34,
+     FF_PACKAGES_FLAG_FORCE_UNSIGNED = UINT64_MAX,
+ } FFPackagesFlags;
+ static_assert(sizeof(FFPackagesFlags) == sizeof(uint64_t), "");
+diff -Naur a/src/modules/packages/packages.c b/src/modules/packages/packages.c
+--- a/src/modules/packages/packages.c	2026-04-25 15:06:40.000000000 +0200
++++ b/src/modules/packages/packages.c	2026-04-25 15:25:48.223990731 +0200
+@@ -27,6 +27,7 @@
+     uint32_t hpkgAll = counts.hpkgSystem + counts.hpkgUser;
+     uint32_t amAll = counts.amSystem + counts.amUser;
+     uint32_t scoopAll = counts.scoopUser + counts.scoopGlobal;
++    counts.all += counts.cards;
+ 
+     if (options->moduleArgs.outputFormat.length == 0) {
+         ffPrintLogoAndKey(FF_PACKAGES_MODULE_NAME, 0, &options->moduleArgs, FF_PRINT_TYPE_DEFAULT);
+@@ -119,6 +120,7 @@
+         FF_PRINT_PACKAGE(pkgsrc)
+         FF_PRINT_PACKAGE(pkgtool)
+         FF_PRINT_PACKAGE(rpm)
++        FF_PRINT_PACKAGE(cards)
+         if (options->combined) {
+             FF_PRINT_PACKAGE_ALL(scoop);
+         } else if (counts.scoopGlobal > 0) {
+@@ -248,6 +250,7 @@
+                             if (false)
+                                 ;
+                             FF_TEST_PACKAGE_NAME(CHOCO)
++                            FF_TEST_PACKAGE_NAME(CARDS)
+                             break;
+                         case 'D':
+                             if (false)
+@@ -371,6 +374,7 @@
+     FF_TEST_PACKAGE_NAME(APK)
+     FF_TEST_PACKAGE_NAME(APPIMAGE)
+     FF_TEST_PACKAGE_NAME(BREW)
++    FF_TEST_PACKAGE_NAME(CARDS)
+     FF_TEST_PACKAGE_NAME(CHOCO)
+     FF_TEST_PACKAGE_NAME(DPKG)
+     FF_TEST_PACKAGE_NAME(EMERGE)
+@@ -447,6 +451,7 @@
+     FF_APPEND_PACKAGE_COUNT(macports)
+     FF_APPEND_PACKAGE_COUNT(mport)
+     FF_APPEND_PACKAGE_COUNT(moss)
++    FF_APPEND_PACKAGE_COUNT(cards)
+     FF_APPEND_PACKAGE_COUNT(nixDefault)
+     FF_APPEND_PACKAGE_COUNT(nixSystem)
+     FF_APPEND_PACKAGE_COUNT(nixUser)
