@@ -1,8 +1,8 @@
 description='Simple wrapper around optparse for powerful command line utilities'
 url='https://pypi.org/project/click/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-setuptools python-wheel)
 
@@ -10,7 +10,7 @@ name=python-click
 _name="click"
 alias=(${_name})
 
-version=8.3.2
+version=8.3.3
 
 source=(https://github.com/pallets/click/archive/$version/click-$version.tar.gz)
 
