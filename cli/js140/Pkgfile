@@ -7,15 +7,16 @@ contributors="Tnut"
 makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip cbindgen)
 
 name=js140
-version=140.9.1
+version=140.10.0
 
-source=(python-3.14.patch js-config.patch
+source=(python-3.14.patch js-config.patch rustc-195.patch
         https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz)
 
 prepare() {
  cd firefox-$version
  patch -Np1 -i ../python-3.14.patch
  patch -Np1 -i ../js-config.patch
+ patch -Np1 -i ../rustc-195.patch
 }
 build() {
  cd firefox-$version
