@@ -3,14 +3,13 @@ url="https://www.gtk.org/"
 
 license="GPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(ninja meson glib dbus gobject-introspection xorg-libx11 xorg-libxtst)
 
 name=at-spi2-core
-version=2.60.1
-release=2
+version=2.60.2
 
 PKGMK_GROUPS=(devel)
 
