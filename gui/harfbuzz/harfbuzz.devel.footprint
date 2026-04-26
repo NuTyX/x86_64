@@ -17,6 +17,7 @@ drwxr-xr-x	root/root	usr/include/harfbuzz/
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-gobject-enums.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-gobject-structs.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-gobject.h
+-rw-r--r--	root/root	usr/include/harfbuzz/hb-gpu.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-icu.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-map.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-ot-color.h
@@ -43,9 +44,13 @@ drwxr-xr-x	root/root	usr/include/harfbuzz/
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-vector.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb-version.h
 -rw-r--r--	root/root	usr/include/harfbuzz/hb.h
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/harfbuzz/
+-rw-r--r--	root/root	usr/lib/cmake/harfbuzz/harfbuzz-config.cmake
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-cairo.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-gobject.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-gpu.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-icu.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-raster.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/harfbuzz-subset.pc

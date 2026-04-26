@@ -3,14 +3,14 @@ url="https://www.freedesktop.org/software/harfbuzz"
 
 license="MIT"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Remy,Tnut"
 
 makedepends=(pkgconf cairo glib icu freetype gobject-introspection gtk-doc python-pygments)
 
 
 name=harfbuzz
-version=13.2.0
+version=14.2.0
 
 source=(https://github.com/harfbuzz/harfbuzz/releases/download/$version/$name-$version.tar.xz)
 
