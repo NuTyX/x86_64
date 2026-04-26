@@ -5,10 +5,10 @@ license="LGPL2.1"
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(gtk3 libxml2)
+makedepends=(gtk3 libxml2 libgedit-amtk libgedit-gfls)
 
 name=libgedit-gtksourceview
-version=299.6.0
+version=299.7.0
 
 source=(https://gitlab.gnome.org/World/gedit/$name/-/archive/$version/$name-$version.tar.gz)
 
