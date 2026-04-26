@@ -36,14 +36,6 @@ diff -Naur a/src/modules/packages/option.h b/src/modules/packages/option.h
 diff -Naur a/src/modules/packages/packages.c b/src/modules/packages/packages.c
 --- a/src/modules/packages/packages.c	2026-04-25 15:06:40.000000000 +0200
 +++ b/src/modules/packages/packages.c	2026-04-25 15:25:48.223990731 +0200
-@@ -27,6 +27,7 @@
-     uint32_t hpkgAll = counts.hpkgSystem + counts.hpkgUser;
-     uint32_t amAll = counts.amSystem + counts.amUser;
-     uint32_t scoopAll = counts.scoopUser + counts.scoopGlobal;
-+    counts.all += counts.cards;
- 
-     if (options->moduleArgs.outputFormat.length == 0) {
-         ffPrintLogoAndKey(FF_PACKAGES_MODULE_NAME, 0, &options->moduleArgs, FF_PRINT_TYPE_DEFAULT);
 @@ -119,6 +120,7 @@
          FF_PRINT_PACKAGE(pkgsrc)
          FF_PRINT_PACKAGE(pkgtool)

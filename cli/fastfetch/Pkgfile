@@ -4,20 +4,20 @@ name=fastfetch
 license="MIT"
 
 version=2.62.1
-release=1
+release=2
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky,Alexis"
 
 url="https://github.com/fastfetch-cli/fastfetch/"
 source=(https://github.com/fastfetch-cli/fastfetch.git
-        $name-$version-cards-1.patch)
+        $name-$version-cards-2.patch)
 
 makedepends=(git cmake)
 
 prepare() {
 cd $name-$version
-patch -Np1 -i ../$name-$version-cards-1.patch
+patch -Np1 -i ../$name-$version-cards-2.patch
 }
 
 build() { 
