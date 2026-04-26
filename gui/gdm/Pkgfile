@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gdm"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Schrodinger72,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Schrodinger72,Tnut"
 
 makedepends=(pam accountsservice nss libcanberra
              gnome-session gnome-shell libdaemon
@@ -16,6 +16,7 @@ set=(gnome-base gnome)
 
 name=gdm
 version=50.0
+release=2
 
 PKGMK_GROUPS=(devel)
 PKGMK_MESON_OPTIONS="-Dgdm-xsession=true \
