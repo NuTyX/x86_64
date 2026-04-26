@@ -4,7 +4,7 @@ url="http://wvware.sourceforge.net/libwmf.html"
 packager="spiky <spiky@nutyx.org>"
 contributors="Alienus,Tnut"
 
-makedepends=(autoconf gsfonts libjpeg-turbo xorg-libx11 gdk-pixbuf gtk2 xorg-libxt)
+makedepends=(autoconf automake gsfonts libjpeg-turbo xorg-libx11 gdk-pixbuf gtk2 xorg-libxt)
 name=libwmf
 
 version=0.2.15
@@ -16,9 +16,9 @@ source=(libwmf-freetype.patch
 
 build(){
 
-autoreconf -fi
-
     cd $name-$version
+
+autoreconf -fi
     ./configure --prefix=/usr \
                 --with-gsfontdir=/usr/share/fonts/Type1 \
                 --with-fontdir=/usr/share/fonts/Type1 \
