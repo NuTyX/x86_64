@@ -3,15 +3,15 @@ url="https://gitlab.gnome.org/GNOME/gvfs"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Tyrry,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tyrry,Tnut"
 
 makedepends=(ninja meson libcdio-paranoia avahi dbus-glib libgdata libgudev
              libbluray intltool libsecret gtk3 libsoup3 udisks2 obexd fuse2 fuse
              libarchive libmtp samba bluez gcr libgphoto2 libnfs openssh gcr-4)
 
 name=gvfs
-version=1.58.3
+version=1.60.0
 
 source=($url/-/archive/$version/$name-$version.tar.gz)
 
