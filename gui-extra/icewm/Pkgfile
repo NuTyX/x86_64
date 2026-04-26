@@ -6,10 +6,10 @@ license="GPL2"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(cmake xorg-libxpm xorg-server xorg-fontconfig fribidi imlib2)
+makedepends=(cmake xorg-libxpm xorg-server xorg-fontconfig fribidi imlib2 xorg-libxcomposite)
 
 name=icewm
-version=3.9.0
+version=4.0.0
 
 source=(https://github.com/ice-wm/$name/releases/download/$version/$name-$version.tar.lz)
 
