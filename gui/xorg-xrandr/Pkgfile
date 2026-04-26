@@ -6,7 +6,7 @@ PKGMK_GROUPS=(doc man)
 url="http://xorg.freedesktop.org"
 
 name=xorg-xrandr
-version=1.5.3
+version=1.5.4
 _name=${name/xorg-/}
 makedepends=(xorg-libx11 xorg-libxrandr)
 
