@@ -75,6 +75,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/__init__.py
 -rwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/_glue.cpython-314-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/_ldb.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/asn1.py
 -rwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/auth.cpython-314-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/auth_util.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/colour.py
@@ -174,6 +175,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/emulate/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/emulate/traffic_packets.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/forest_update.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/functional_level.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/generate_csr.py
 -rwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/gensec.cpython-314-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/getopt.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/gkdi.py
@@ -224,6 +226,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/kcc/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/kcc/graph_utils.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/kcc/kcc_utils.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/kcc/ldif_import_export.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/key_credential_link.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/logger.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/lsa_utils.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/mdb_util.py
@@ -240,6 +243,8 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/netcmd/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/common.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/computer.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/computer_generate_csr.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/computer_keytrust.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/contact.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/dbcheck.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/delegation.py
@@ -321,7 +326,9 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/auth/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/disable.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/edit.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/enable.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/generate_csr.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/getgroups.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/keytrust.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/list.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/move.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/netcmd/user/password.py
@@ -467,6 +474,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/tests/dns_forwarder_
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/domain_backup_offline.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/dsdb.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/dsdb_api.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/dsdb_dn.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/dsdb_dns.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/dsdb_lock.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/dsdb_quiet_env_tests.py
@@ -496,6 +504,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/tests/kcc/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/kcc/kcc_utils.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/kcc/ldif_import_export.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/key_credential_link.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/key_credential_link_samdb.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/alias_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/as_canonicalization_tests.py
@@ -516,12 +525,14 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/kdc_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/kdc_tgs_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/kdc_tgt_tests.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/key_trust_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/kpasswd_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/lockout_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/ms_kile_client_principal_lookup_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/netlogon.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/nt_hash_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/pac_align_tests.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/pkinit_certificate_mapping_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/pkinit_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/protected_users_tests.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/krb5/raw_testcase.py
@@ -643,8 +654,10 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_auth_policy.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_auth_silo.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_check_password_script.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_generate_csr.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_get_kerberos_ticket.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_getpassword_gmsa.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_keytrust.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_virtualCryptSHA.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_virtualCryptSHA_base.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/samba/tests/samba_tool/user_virtualCryptSHA_gpg.py
@@ -729,6 +742,7 @@ drwxr-xr-x	root/root	usr/lib/samba/vfs/
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/acl_xattr.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/aio_fork.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/aio_pthread.so
+-rwxr-xr-x	root/root	usr/lib/samba/vfs/aio_ratelimit.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/audit.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/btrfs.so
 -rwxr-xr-x	root/root	usr/lib/samba/vfs/cap.so
