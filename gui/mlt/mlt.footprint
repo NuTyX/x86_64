@@ -3,18 +3,12 @@ drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/melt -> melt-7
 -rwxr-xr-x	root/root	usr/bin/melt-7
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/Mlt7/
--rw-r--r--	root/root	usr/lib/cmake/Mlt7/Mlt7Config.cmake
--rw-r--r--	root/root	usr/lib/cmake/Mlt7/Mlt7ConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Mlt7/Mlt7Targets-noconfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Mlt7/Mlt7Targets.cmake
 lrwxrwxrwx	root/root	usr/lib/libmlt++-7.so -> libmlt++-7.so.7
-lrwxrwxrwx	root/root	usr/lib/libmlt++-7.so.7 -> libmlt++-7.so.7.36.1
--rwxr-xr-x	root/root	usr/lib/libmlt++-7.so.7.36.1
+lrwxrwxrwx	root/root	usr/lib/libmlt++-7.so.7 -> libmlt++-7.so.7.38.0
+-rwxr-xr-x	root/root	usr/lib/libmlt++-7.so.7.38.0
 lrwxrwxrwx	root/root	usr/lib/libmlt-7.so -> libmlt-7.so.7
-lrwxrwxrwx	root/root	usr/lib/libmlt-7.so.7 -> libmlt-7.so.7.36.1
--rwxr-xr-x	root/root	usr/lib/libmlt-7.so.7.36.1
+lrwxrwxrwx	root/root	usr/lib/libmlt-7.so.7 -> libmlt-7.so.7.38.0
+-rwxr-xr-x	root/root	usr/lib/libmlt-7.so.7.38.0
 drwxr-xr-x	root/root	usr/lib/mlt-7/
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltavformat.so
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltcore.so
@@ -27,6 +21,7 @@ drwxr-xr-x	root/root	usr/lib/mlt-7/
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltmovit.so
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltnormalize.so
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltoldfilm.so
+-rwxr-xr-x	root/root	usr/lib/mlt-7/libmltopenfx.so
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltplus.so
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltplusgpl.so
 -rwxr-xr-x	root/root	usr/lib/mlt-7/libmltqt6.so
@@ -60,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/mlt-7/avformat/
 -rw-r--r--	root/root	usr/share/mlt-7/avformat/filter_swscale.yml
 -rw-r--r--	root/root	usr/share/mlt-7/avformat/link_avdeinterlace.yml
 -rw-r--r--	root/root	usr/share/mlt-7/avformat/link_swresample.yml
+-rw-r--r--	root/root	usr/share/mlt-7/avformat/producer_avformat-novalidate.yml
 -rw-r--r--	root/root	usr/share/mlt-7/avformat/producer_avformat.yml
 -rw-r--r--	root/root	usr/share/mlt-7/avformat/resolution_scale.yml
 -rw-r--r--	root/root	usr/share/mlt-7/avformat/yuv_only.txt
@@ -130,6 +126,7 @@ drwxr-xr-x	root/root	usr/share/mlt-7/gdk/
 -rw-r--r--	root/root	usr/share/mlt-7/gdk/producer_pango.yml
 -rw-r--r--	root/root	usr/share/mlt-7/gdk/producer_pixbuf.yml
 drwxr-xr-x	root/root	usr/share/mlt-7/jackrack/
+-rw-r--r--	root/root	usr/share/mlt-7/jackrack/blacklist.txt
 -rw-r--r--	root/root	usr/share/mlt-7/jackrack/consumer_jack.yml
 -rw-r--r--	root/root	usr/share/mlt-7/jackrack/filter_jack.yml
 -rw-r--r--	root/root	usr/share/mlt-7/jackrack/filter_jackrack.yml
@@ -144,6 +141,8 @@ drwxr-xr-x	root/root	usr/share/mlt-7/kdenlive/
 -rw-r--r--	root/root	usr/share/mlt-7/kdenlive/producer_framebuffer.yml
 -rw-r--r--	root/root	usr/share/mlt-7/metaschema.yaml
 drwxr-xr-x	root/root	usr/share/mlt-7/movit/
+-rw-r--r--	root/root	usr/share/mlt-7/movit/consumer_xgl.yml
+-rw-r--r--	root/root	usr/share/mlt-7/movit/filter_glsl_manager.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_blur.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_convert.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_crop.yml
@@ -154,6 +153,7 @@ drwxr-xr-x	root/root	usr/share/mlt-7/movit/
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_lift_gamma_gain.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_mirror.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_opacity.yml
+-rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_overlay_mode.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_rect.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_resample.yml
 -rw-r--r--	root/root	usr/share/mlt-7/movit/filter_movit_resize.yml
@@ -184,6 +184,8 @@ drwxr-xr-x	root/root	usr/share/mlt-7/oldfilm/
 -rw-r--r--	root/root	usr/share/mlt-7/oldfilm/oldfilm.svg
 -rw-r--r--	root/root	usr/share/mlt-7/oldfilm/tcolor.svg
 -rw-r--r--	root/root	usr/share/mlt-7/oldfilm/vignette.svg
+drwxr-xr-x	root/root	usr/share/mlt-7/openfx/
+-rw-r--r--	root/root	usr/share/mlt-7/openfx/filter_openfx.yml
 drwxr-xr-x	root/root	usr/share/mlt-7/plus/
 -rw-r--r--	root/root	usr/share/mlt-7/plus/consumer_blipflash.yml
 -rw-r--r--	root/root	usr/share/mlt-7/plus/filter_affine.yml
@@ -215,6 +217,7 @@ drwxr-xr-x	root/root	usr/share/mlt-7/plus/
 -rw-r--r--	root/root	usr/share/mlt-7/plus/producer_blipflash.yml
 -rw-r--r--	root/root	usr/share/mlt-7/plus/producer_count.yml
 -rw-r--r--	root/root	usr/share/mlt-7/plus/producer_pgm.yml
+-rw-r--r--	root/root	usr/share/mlt-7/plus/producer_subtitle.yml
 -rw-r--r--	root/root	usr/share/mlt-7/plus/transition_affine.yml
 drwxr-xr-x	root/root	usr/share/mlt-7/plusgpl/
 -rw-r--r--	root/root	usr/share/mlt-7/plusgpl/consumer_cbrts.yml
@@ -222,6 +225,7 @@ drwxr-xr-x	root/root	usr/share/mlt-7/plusgpl/
 -rw-r--r--	root/root	usr/share/mlt-7/plusgpl/filter_lumaliftgaingamma.yml
 -rw-r--r--	root/root	usr/share/mlt-7/plusgpl/filter_outline.yml
 -rw-r--r--	root/root	usr/share/mlt-7/plusgpl/filter_rotoscoping.yml
+-rw-r--r--	root/root	usr/share/mlt-7/plusgpl/filter_telecide.yml
 drwxr-xr-x	root/root	usr/share/mlt-7/presets/
 drwxr-xr-x	root/root	usr/share/mlt-7/presets/consumer/
 drwxr-xr-x	root/root	usr/share/mlt-7/presets/consumer/avformat/
@@ -345,6 +349,8 @@ drwxr-xr-x	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/
 -rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/ProRes 444
 -rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/ProRes HQ
 -rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/SVT-AV1
+-rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/vp9-eac3-mp4
+-rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/vp9-opus-webm
 -rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/x264-high10
 -rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/ten_bit/x265-main10
 -rw-r--r--	root/root	usr/share/mlt-7/presets/consumer/avformat/vp9
@@ -450,6 +456,7 @@ drwxr-xr-x	root/root	usr/share/mlt-7/profiles/
 -rw-r--r--	root/root	usr/share/mlt-7/profiles/vertical_hd_30
 -rw-r--r--	root/root	usr/share/mlt-7/profiles/vertical_hd_60
 drwxr-xr-x	root/root	usr/share/mlt-7/qt6/
+-rw-r--r--	root/root	usr/share/mlt-7/qt6/consumer_qglsl.yml
 -rw-r--r--	root/root	usr/share/mlt-7/qt6/filter_audiolevelgraph.yml
 -rw-r--r--	root/root	usr/share/mlt-7/qt6/filter_audiospectrum.yml
 -rw-r--r--	root/root	usr/share/mlt-7/qt6/filter_audiowaveform.yml
