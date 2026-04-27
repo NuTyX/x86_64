@@ -3,12 +3,12 @@ url="http://apps.gnome.org/Settings/"
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Fabienwang,Tnut"
 
 makedepends=(autoconf git udisks2 accountsservice clutter-gtk libhandy
              colord-gtk gnome-online-accounts gsound gnome-settings-daemon
-             grilo libgtop libpwquality kerberos shared-mime-info cheese
+             grilo libgtop libpwquality kerberos shared-mime-info
              cups samba gnome-bluetooth ibus meson modemmanager blueprint-compiler
              network-manager-applet ninja gnome-color-manager gnome-desktop
              cups-pk-helper wayland gdk-pixbuf libadwaita xorg-setxkbmap
@@ -20,7 +20,7 @@ set=(gnome-base gnome)
 
 name=gnome-control-center
 version=50.1
-release=2
+release=3
 
 source=(https://gitlab.gnome.org/GNOME/gnome-control-center.git)
 
