@@ -424,6 +424,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/ABI/testing/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-rapidio
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-rc
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-rc-nuvoton
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-reboot-mode-reboot_modes
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-regulator
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-remoteproc
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-class-rnbd-client
@@ -510,6 +511,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/ABI/testing/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-corsair
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-corsair-void
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-lenovo
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-lenovo-go
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-lenovo-go-s
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-logitech-hidpp
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-logitech-lg4ff
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-hid-multitouch
@@ -539,6 +542,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/ABI/testing/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-qat
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-qat_ras
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-qat_rl
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-qat_svn
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-samsung-laptop
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-spi-intel
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-driver-st
@@ -623,6 +627,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/ABI/testing/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-mce
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-memory-page-offline
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-module
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-nvme
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-nvmem-cells
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-ocfs2
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/ABI/testing/sysfs-platform-alienware-wmi
@@ -891,6 +896,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/cifs/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/cifs/usage.rst
 -rwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/cifs/winucase_convert.pl
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/clearing-warn-once.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/cpu-isolation.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/cpu-load.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/cputopology.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/dell_rbu.rst
@@ -1104,8 +1110,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/media/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/si4713.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/si476x.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/siano-cardlist.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/starfive_camss.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/starfive_camss_graph.dot
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/technisat.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/ttusb-dec.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/media/tuner-cardlist.rst
@@ -1181,7 +1185,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/mrvl-odyssey-ddr-pmu.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/mrvl-odyssey-tad-pmu.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/mrvl-pem-pmu.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/nvidia-pmu.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/nvidia-tegra241-pmu.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/nvidia-tegra410-pmu.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/qcom_l2_pmu.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/qcom_l3_pmu.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/perf/starfive_starlink_pmu.rst
@@ -1217,6 +1222,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/pm/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/syscall-user-dispatch.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/abi.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/crypto.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/debug.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/fs.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/kernel.rst
@@ -1224,6 +1231,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/sunrpc.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/user.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/vm.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysctl/xen.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysfs-rules.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/sysrq.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/admin-guide/tainted-kernels.rst
@@ -1338,6 +1346,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/arch/arm64/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/memory-tagging-extension.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/memory.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/mops.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/mpam.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/perf.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/pointer-authentication.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/arch/arm64/ptdump.rst
@@ -1628,6 +1637,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/core-api/irq/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/core-api/irq/irq-affinity.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/core-api/irq/irq-domain.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/core-api/irq/irqflags-tracing.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/core-api/irq/managed_irq.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/core-api/kernel-api.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/core-api/kho/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/core-api/kho/abi.rst
@@ -1702,6 +1712,11 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/crypto/device_drivers/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/intro.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/krb5.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/libcrypto-blockcipher.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/libcrypto-hash.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/libcrypto-signature.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/libcrypto-utils.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/libcrypto.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/sha3.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/crypto/userspace-if.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/dev-tools/
@@ -1824,12 +1839,15 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/apple
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/arm,versatile-sysreg.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/arm,versatile.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/arm,vexpress-juno.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/arm,vexpress-scc.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/aspeed/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/aspeed/aspeed,sbc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/aspeed/aspeed.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/atmel,at91rm9200-sdramc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/atmel,at91rm9200-st.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/atmel,at91sam9260-pit.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/atmel,sama5d2-secumod.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/atmel-at91.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/atmel-sysregs.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/axiado.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/axis.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/axxia.yaml
@@ -1924,6 +1942,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/media
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/mediatek/mediatek,mt7622-pcie-mirror.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/mediatek/mediatek,mt7622-wed.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/mediatek/mediatek,mt7986-wed-pcie.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/microchip,sam9x60-pit64b.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/microchip,sama7g5-chipid.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/microchip,sparx5.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/moxart.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/mrvl/
@@ -2012,7 +2032,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/ux500
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/ux500/boards.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/ux500/power_domain.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/vexpress-config.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/vexpress-scc.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/vexpress-sysreg.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/vt8500.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/arm/vt8500/
@@ -2026,7 +2045,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/apm,xgene-ahci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/arasan,cf-spear1340.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/ata-generic.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/baikal,bt1-ahci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/brcm,sata-brcm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/cavium,ebt3000-compact-flash.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/ata/ceva,ahci-1v84.yaml
@@ -2069,8 +2087,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/allwinner,sun8i-a23-rsb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/arm,integrator-ap-lm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/aspeed,ast2600-ahbc.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/baikal,bt1-apb.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/baikal,bt1-axi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/brcm,bus-axi.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/brcm,gisb-arb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/cznic,moxtet.yaml
@@ -2090,6 +2106,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/simple-pm-bus.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/socionext,uniphier-system-bus.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/st,stm32-etzpc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/st,stm32mp131-dbg-bus.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/st,stm32mp25-rifsc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/ti,da850-mstpri.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/ti-sysc.yaml
@@ -2097,7 +2114,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/bus/xlnx,versal-net-cdx.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/cache/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/cache/andestech,ax45mp-cache.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/cache/baikal,bt1-l2-ctl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/cache/freescale-l2cache.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/cache/l2c2x0.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/cache/marvell,kirkwood-cache.yaml
@@ -2171,9 +2187,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/atmel,at91sam9x5-sckc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/axis,artpec6-clkctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/axis,artpec8-clock.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/axis,artpec9-clock.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/axs10x-i2s-pll-clock.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/baikal,bt1-ccu-div.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/baikal,bt1-ccu-pll.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/bitmain,bm1880-clk.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/brcm,bcm2711-dvp.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/brcm,bcm2835-aux-clock.yaml
@@ -2190,6 +2205,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/cirrus,lochnagar.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/clk-palmas-clk32kg-clocks.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/clock-bindings.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/eswin,eic7700-clock.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/fixed-clock.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/fixed-factor-clock.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/fixed-mmio-clock.yaml
@@ -2310,7 +2326,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nuvoton,npcm750-clk.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nuvoton,npcm845-clk.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nvidia,tegra124-car.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nvidia,tegra124-dfll.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nvidia,tegra124-dfll.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nvidia,tegra20-car.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nxp,imx95-blk-ctl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/nxp,imx95-display-master-csr.yaml
@@ -2330,6 +2346,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,dispcc-sm6125.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,dispcc-sm6350.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,dispcc-sm8x50.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,eliza-dispcc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,gcc-apq8064.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,gcc-apq8084.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,gcc-ipq4019.yaml
@@ -2371,6 +2388,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,gpucc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,hfpll.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,ipq5018-gcc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,ipq5210-gcc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,ipq5332-gcc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,ipq5424-apss-clk.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,ipq9574-cmn-pll.yaml
@@ -2389,6 +2407,9 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,msm8996-apcc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,msm8996-cbf.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,msm8998-gpucc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,nord-gcc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,nord-negcc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,nord-nwgcc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,q6sstopcc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,qca8k-nsscc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/qcom,qcm2290-dispcc.yaml
@@ -2547,6 +2568,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/st/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/starfive,jh7110-voutcrg.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/stericsson,u8500-clks.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/sunplus,sp7021-clkc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/tenstorrent,atlantis-prcm-rcpu.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/tesla,fsd-clock.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/thead,th1520-clk-ap.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/ti,am62-audio-refclk.yaml
@@ -2585,6 +2607,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/clock/ti/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/common-properties.txt
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/connector/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/connector/gocontroll,moduline-module-slot.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/connector/pcie-m2-e-connector.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/connector/pcie-m2-m-connector.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/connector/usb-connector.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/counter/
@@ -2730,6 +2753,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/b
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/ite,it6263.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/ite,it6505.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/ite,it66121.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/lontium,lt8713sx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/lontium,lt8912b.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/lontium,lt9211.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/lontium,lt9611.yaml
@@ -2753,6 +2777,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/b
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/snps,dw-mipi-dsi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/solomon,ssd2825.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/synopsys,dw-hdmi.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/thead,th1520-dw-hdmi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/thine,thc63lvd1024.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/ti,dlpc3433.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/bridge/ti,sn65dsi83.yaml
@@ -2862,18 +2887,13 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/m
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dp-controller.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dpu-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-controller-main.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-phy-10nm.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-phy-14nm.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-phy-20nm.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-phy-28nm.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-phy-7nm.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/dsi-phy-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/gmu.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/gpu.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/hdmi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/mdp4.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/mdss-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/qcom,adreno-rgmu.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/qcom,eliza-mdss.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/qcom,glymur-mdss.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/qcom,kaanapali-mdss.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/msm/qcom,mdp5.yaml
@@ -2946,6 +2966,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/p
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/himax,hx83102.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/himax,hx83112a.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/himax,hx83112b.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/himax,hx83121a.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/himax,hx8394.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/hydis,hv101hd1.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/ilitek,il79900a.yaml
@@ -2970,9 +2991,11 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/p
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/lg,sw43408.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/lgphilips,lb035q02.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/logicpd,type28.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/lxd,m9189a.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/mantix,mlaf057we51-x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/mitsubishi,aa104xd12.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/mitsubishi,aa121td01.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/motorola,mot-panel.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/nec,nl8048hl11.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/newvision,nv3051d.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/panel/novatek,nt35510.yaml
@@ -3144,7 +3167,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/t
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/ti/ti,tpd12s015.txt
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/tilcdc/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/tilcdc/panel.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/tilcdc/tilcdc.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/tilcdc/ti,am33xx-tilcdc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/verisilicon,dc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/via,vt8500-fb.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/wm,prizm-ge-rops.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/display/wm,wm8505-fb.txt
@@ -3185,6 +3209,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/intel,ldma.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/k3dma.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/loongson,ls1b-apbdma.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/loongson,ls2k0300-dma.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/loongson,ls2x-apbdma.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/marvell,mmp-dma.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/marvell,orion-xor.yaml
@@ -3230,7 +3255,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/ti/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/ti/k3-pktdma.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/ti/k3-udma.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/xilinx/
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/xilinx/xilinx_dma.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/xilinx/xlnx,axi-dma.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/xilinx/xlnx,zynqmp-dma-1.0.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dma/xilinx/xlnx,zynqmp-dpdma.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/dpll/
@@ -3383,7 +3408,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-pca95xx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-rda.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-stp-xway.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-thunderx.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-vf610.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-virtio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/gpio-zynq.yaml
@@ -3410,6 +3434,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/nxp,lpc1850-gpio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/nxp,lpc3220-gpio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/nxp,pcf8575.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/pin-control-gpio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/pisosr-gpio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/pl061-gpio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/gpio/qca,ar7100-gpio.yaml
@@ -3497,7 +3522,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/apm,xgene-slimpro-hwmon.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/aspeed,ast2400-pwm-tacho.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/aspeed,g6-pwm-tach.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/baikal,bt1-pvt.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/cirrus,lochnagar.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/fan-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/gmt,g762.yaml
@@ -3524,21 +3548,23 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/microchip,emc2305.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/microchip,lan966x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/microchip,mcp3021.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/microchip,mcp9982.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/microchip,sparx5-temp.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/moortec,mr75203.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/national,lm90.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/npcm750-pwm-fan.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/nsa320-mcu.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/ntc-thermistor.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/nuvoton,nct6775.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/nuvoton,nct7363.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/nuvoton,nct7802.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/nuvoton,npcm750-pwm-fan.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/nxp,mc34vr500.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/adi,adp1050.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/adi,lt3074.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/adi,max17616.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/infineon,tda38640.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/infineon,xdp720.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/isil,isl68137.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/mps,mp2975.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/hwmon/pmbus/mps,mpq8785.yaml
@@ -3583,6 +3609,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/brcm,iproc-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/brcm,kona-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/cdns,i2c-r1p10.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/cnxt,cx92755-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/google,cros-ec-i2c-tunnel.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/hisilicon,ascend910-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/hisilicon,hix5hd2-i2c.yaml
@@ -3594,14 +3621,12 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-cbus-gpio.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-davinci.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-demux-pinctrl.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-digicolor.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-exynos5.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-gate.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-gpio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-img-scb.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-imx-lpi2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-imx.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-iop3xx.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-mpc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-mt65xx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-mux-gpio.yaml
@@ -3622,6 +3647,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/i2c-virtio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/ibm,i2c-fsi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/ingenic,i2c.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/intel,ixp4xx-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/loongson,ls2x-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/marvell,mv64xxx-i2c.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/i2c/mediatek,mt7621-i2c.yaml
@@ -3775,8 +3801,10 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/nxp,lpc3220-adc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/nxp,s32g2-sar-adc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/qcom,pm8018-adc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/qcom,spmi-adc5-gen3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/qcom,spmi-iadc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/qcom,spmi-rradc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/qcom,spmi-vadc-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/qcom,spmi-vadc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/renesas,r9a09g077-adc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/adc/renesas,rcar-gyroadc.yaml
@@ -3835,6 +3863,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/afe/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/afe/temperature-transducer.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/afe/voltage-divider.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/amplifiers/
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/amplifiers/adi,ad8366.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/amplifiers/adi,ada4250.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/amplifiers/adi,adl8113.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/iio/amplifiers/adi,hmc425a.yaml
@@ -4098,6 +4127,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/google,cros-ec-keyb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/google,goldfish-events-keypad.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/gpio-beeper.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/gpio-charlieplex-keypad.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/gpio-decoder.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/gpio-keys.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/gpio-matrix-keypad.yaml
@@ -4123,6 +4153,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/nvidia,tegra20-kbc.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/nxp,lpc3220-key.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/omap-keypad.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/parade,tc3408.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/pine64,pinephone-keyboard.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/ps2keyb-mouse-apbps2.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/pwm-beeper.yaml
@@ -4161,8 +4192,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/tou
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/eeti,exc3000.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/elan,ektf2127.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/elan,elants_i2c.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/fsl,imx25-tcq.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/fsl,imx6ul-tsc.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/fsl-mx25-tcq.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/goodix,gt9916.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/goodix.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/hideep.txt
@@ -4185,6 +4216,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/tou
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/sis_i2c.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/sitronix,st1232.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/st,stmfts.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/technologic,ts4800-ts.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/ti,ads7843.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/ti,am3359-tsc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/ti,tsc2005.yaml
@@ -4192,7 +4224,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/tou
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/toradex,vf50-touchscreen.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/touchscreen.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/trivial-touch.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/ts4800-ts.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/zeitec,zet6223.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/touchscreen/zinitix,bt400.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/input/tps65218-pwrbutton.txt
@@ -4203,6 +4234,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconn
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/mediatek,cci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/mediatek,mt8183-emi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/qcom,bcm-voter.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/qcom,eliza-rpmh.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/qcom,glymur-rpmh.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/qcom,kaanapali-rpmh.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interconnect/qcom,milos-rpmh.yaml
@@ -4305,6 +4337,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/loongson,htvec.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/loongson,liointc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/loongson,ls1x-intc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/loongson,pch-lpc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/loongson,pch-msi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/loongson,pch-pic.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/interrupt-controller/lsi,zevio-intc.yaml
@@ -4637,11 +4670,13 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,os05b10.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov02a10.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov02e10.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov08d10.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov08x40.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov2640.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov2659.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov2680.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov2685.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov2732.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov2735.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov4689.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/ovti,ov5640.yaml
@@ -4679,6 +4714,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/sony,imx296.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/sony,imx334.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/sony,imx335.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/sony,imx355.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/sony,imx412.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/sony,imx415.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/i2c/st,st-mipid02.yaml
@@ -4809,7 +4845,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/spi
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/st,stm32mp25-csi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/st,stm32mp25-video-codec.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/st-rc.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/starfive,jh7110-camss.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/ti,cal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/ti,da850-vpif.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/media/ti,j721e-csi2rx-shim.yaml
@@ -4870,6 +4905,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-co
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/nvidia,tegra20-emc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/nvidia,tegra20-mc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/nvidia,tegra210-emc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/nvidia,tegra210-mc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/nvidia,tegra30-emc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/nvidia,tegra30-mc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/memory-controllers/qca,ath79-ddr-controller.yaml
@@ -4941,9 +4977,9 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/dlg,da9063.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/ene-kb3930.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/ene-kb930.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/fsl,imx25-tsadc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/fsl,mc13xxx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/fsl,mcu-mpc8349emitx.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/fsl-imx25-tsadc.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/hi6421.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/hisilicon,hi6421-spmi-pmic.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/hisilicon,hi655x.txt
@@ -4952,11 +4988,11 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/khadas,mcu.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/lp3943.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/marvell,88pm886-a1.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/max77620.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/max77650.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max14577.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max5970.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max7360.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max77620.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max77686.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max77693.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mfd/maxim,max77705.yaml
@@ -5136,15 +5172,16 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/brcm,iproc-sdhci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/brcm,kona-sdhci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/brcm,sdhci-brcmstb.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/bst,c1200-sdhci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/cavium-mmc.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/cdns,sdhci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/fsl,esdhc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/fsl-imx-esdhc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/fsl-imx-mmc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/fujitsu,sdhci-fujitsu.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/hisilicon,hi3660-dw-mshc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/hisilicon,hi3798cv200-dw-mshc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/ingenic,mmc.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/k3-dw-mshc.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/litex,mmc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/loongson,ls2k0500-mmc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mmc/marvell,dove-sdhci.yaml
@@ -5232,8 +5269,10 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/mxic,multi-itfc-v009-nand-controller.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/mxicy,nand-ecc-engine.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nand-chip.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nand-controller-legacy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nand-controller.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nand-macronix.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nand-property.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nuvoton,ma35d1-nand.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nvidia,tegra20-nand.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/nxp,lpc1773-spifi.yaml
@@ -5257,6 +5296,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/parti
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/partitions/ubi-volume.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/qcom,nandc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/raw-nand-chip.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/raw-nand-property.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/realtek,rtl9301-ecc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/renesas-nandc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/mtd/rockchip,nand-controller.yaml
@@ -5491,6 +5531,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/ieee8
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/microchip,lan8650.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/microchip,lan95xx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/microchip,lan966x-switch.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/microchip,pic64hpsc-mdio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/microchip,sparx5-switch.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/motorcomm,yt8xxx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/mscc,miim.yaml
@@ -5508,6 +5549,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nfc/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nfc/st,st95hf.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nfc/ti,trf7970a.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nixge.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nuvoton,ma35d1-dwmac.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nvidia,tegra234-mgbe.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nxp,dwmac-imx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/nxp,lpc-eth.yaml
@@ -5564,6 +5606,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/pse-p
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/sophgo,cv1800b-dwmac.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/sophgo,sg2044-dwmac.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/spacemit,k1-emac.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/spacemit,k3-dwmac.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/starfive,jh7110-dwmac.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/sti-dwmac.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/net/stm32-dwmac.yaml
@@ -5690,11 +5733,11 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/amazon,al-alpine-v3-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/amd,versal2-mdb-host.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/amlogic,axg-pcie.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/andestech,qilai-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/apm,xgene-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/apple,pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/aspeed,ast2600-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/axis,artpec6-pcie.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/baikal,bt1-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/brcm,iproc-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/brcm,stb-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/cdns,cdns-pcie-ep.yaml
@@ -5703,6 +5746,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/cdns-pcie-host.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/cdns-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/cix,sky1-pcie-host.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/eswin,pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/faraday,ftpci100.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/fsl,imx6q-pcie-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/fsl,imx6q-pcie-ep.yaml
@@ -5731,6 +5775,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/nvidia,tegra194-pcie-ep.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/nvidia,tegra194-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/nvidia,tegra20-pcie.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/nvidia,tegra264-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/nxp,s32g-pcie.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/pci-ep-bus.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pci/pci-ep.yaml
@@ -5858,9 +5903,11 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/brcm,sr-pcie-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/brcm,sr-usb-combo-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/calxeda-combophy.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/canaan,k230-usb-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/cdns,dphy-rx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/cdns,dphy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/cdns,salvo-phy.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/eswin,eic7700-sata-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/fsl,imx8-pcie-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/fsl,imx8mp-hdmi-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/fsl,imx8mq-usb-phy.yaml
@@ -5930,6 +5977,12 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/phy-stm32-usbphyc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/phy-tegra194-p2u.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qca,ar7100-usb-phy.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,dsi-phy-10nm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,dsi-phy-14nm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,dsi-phy-20nm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,dsi-phy-28nm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,dsi-phy-7nm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,dsi-phy-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,edp-phy.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,hdmi-phy-other.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/phy/qcom,hdmi-phy-qmp.yaml
@@ -6070,7 +6123,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/eswin,eic7700-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx-pinctrl.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx25-pinctrl.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx27-pinctrl.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx27-iomuxc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx35-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx7d-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/fsl,imx7ulp-iomuxc1.yaml
@@ -6103,6 +6156,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/marvell,kirkwood-pinctrl.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/marvell,mvebu-pinctrl.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/marvell,orion-pinctrl.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/maxim,max77620-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/mediatek,mt65xx-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/mediatek,mt6779-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/mediatek,mt6795-pinctrl.yaml
@@ -6150,7 +6204,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/nxp,s32g2-siul2-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pincfg-node.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pinctrl-bindings.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pinctrl-max77620.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pinctrl-palmas.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pinctrl-rk805.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pinctrl-single.yaml
@@ -6162,9 +6215,12 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/pinmux-node.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,apq8064-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,apq8084-pinctrl.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,eliza-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,glymur-tlmm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,hawi-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,ipq4019-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,ipq5018-tlmm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,ipq5210-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,ipq5332-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,ipq5424-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,ipq6018-pinctrl.yaml
@@ -6175,6 +6231,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,lpass-lpi-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,mdm9607-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,mdm9615-pinctrl.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,milos-lpass-lpi-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,milos-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,msm8226-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,msm8660-pinctrl.yaml
@@ -6205,6 +6262,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sc8280xp-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sdm630-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sdm660-lpass-lpi-pinctrl.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sdm670-lpass-lpi-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sdm670-tlmm.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sdm845-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/qcom,sdx55-pinctrl.yaml
@@ -6241,6 +6299,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/realtek,rtd1315e-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/realtek,rtd1319d-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/realtek,rtd1619b-pinctrl.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/realtek,rtd1625-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/renesas,pfc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/renesas,r9a09g077-pinctrl.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/pinctrl/renesas,rza1-ports.yaml
@@ -6312,7 +6371,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/res
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/atmel,sama5d2-shdwc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/axxia-reset.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/brcm,bcm21664-resetmgr.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/gemini-poweroff.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/cortina,gemini-power-controller.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/gpio-poweroff.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/gpio-restart.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/reset/keystone-reset.txt
@@ -6394,6 +6453,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/sup
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/richtek,rt9756.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/rohm,bd99954.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/samsung,battery.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/samsung,s2mu005-fuel-gauge.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/sbs,sbs-battery.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/sbs,sbs-charger.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/power/supply/sbs,sbs-manager.yaml
@@ -6549,7 +6609,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/awinic,aw37503.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/brcm,bcm59054.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/brcm,bcm59056.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/cpcap-regulator.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/dlg,da9121.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/dlg,da9210.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/dlg,da9211.yaml
@@ -6575,6 +6634,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max14577.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max20086.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max20411.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max77620-regulator.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max77686.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max77693.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/maxim,max77802.yaml
@@ -6595,8 +6655,9 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mediatek,mt6397-regulator.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mediatek,mt6873-dvfsrc-regulator.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/microchip,mcp16502.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mp8859.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/motorola,cpcap-regulator.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mps,mp5416.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mps,mp8859.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mps,mp886x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mps,mpq2286.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/mps,mpq7920.yaml
@@ -6631,7 +6692,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/qcom-labibb-regulator.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/raspberrypi,7inch-touchscreen-panel-regulator-v2.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/raspberrypi,7inch-touchscreen-panel-regulator.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/regulator-max77620.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/regulator-output.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/regulator.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/regulator/regulator.yaml
@@ -6883,7 +6943,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/imxdi-rtc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/ingenic,rtc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/intersil,isl12022.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/isil,isl12026.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/isil,isl12026.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/isil,isl1208.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/loongson,rtc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/marvell,armada-380-rtc.yaml
@@ -6912,7 +6972,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/nxp,pcf85363.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/nxp,pcf8563.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/nxp,s32g-rtc.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/olpc-xo1-rtc.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/qcom-pm8xxx-rtc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/realtek,rtd119x.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/rtc/renesas,rz-rtca3.yaml
@@ -7038,6 +7097,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/bcm/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/bcm/brcm,bcm2835-vchiq.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/cirrus/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/cirrus/cirrus,ep9301-syscon.yaml
+drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/cix/
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/cix/cix,sky1-system-control.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/dove/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/dove/pmu.txt
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/fsl/
@@ -7117,11 +7178,13 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/media
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/mediatek/scpsys.txt
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/microchip/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/microchip/atmel,at91rm9200-tcb.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/microchip/microchip,mpfs-irqmux.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/microchip/microchip,mpfs-mss-top-sysreg.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/microchip/microchip,mpfs-sys-controller.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/microchip/microchip,sparx5-cpu-syscon.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/mobileye/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/mobileye/mobileye,eyeq5-olb.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/mobileye/mobileye,eyeq6lplus-olb.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/nuvoton/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/nuvoton/nuvoton,gfxi.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/soc/nuvoton/nuvoton,npcm-gcr.yaml
@@ -7216,7 +7279,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/adi,axi-spdif-tx.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/adi,max98388.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/adi,max98396.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/adi,ssm2305.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/adi,ssm2305.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/adi,ssm2518.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/ak4118.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/ak5386.txt
@@ -7342,7 +7405,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/google,goldfish-audio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/google,sc7180-trogdor.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/google,sc7280-herobrine.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/hisilicon,hi6210-i2s.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/hisilicon,hi6210-i2s.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/img,i2s-in.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/img,i2s-out.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/img,parallel-out.txt
@@ -7384,6 +7447,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt7986-afe.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt7986-wm8960.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt8173-afe-pcm.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt8173-rt5650-rt5514.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt8183-audio.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt8183_da7219.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mediatek,mt8183_mt6358_ts3a227.yaml
@@ -7407,7 +7471,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt6797-afe-pcm.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt6797-mt6351.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt8173-max98090.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt8173-rt5650-rt5514.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt8173-rt5650-rt5676.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt8173-rt5650.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/mt8186-afe-pcm.yaml
@@ -7430,6 +7493,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nuvoton,nau8825.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-alc5632.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-common.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-cpcap.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-graph-card.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-max9808x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-max98090.yaml
@@ -7440,6 +7504,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-trimslice.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-wm8753.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-wm8903.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-wm8962.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra-audio-wm9712.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra186-asrc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/nvidia,tegra186-dspk.yaml
@@ -7538,10 +7603,10 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rk3288-hdmi-analog.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rk3308-codec.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rk3328-codec.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rk3399-gru-sound.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rk3399-gru-sound.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rk3576-sai.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip,rockchip-audio-max98090.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip-i2s.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip-max98090.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip-rt5645.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rockchip-spdif.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/rohm,bd28623.yaml
@@ -7589,7 +7654,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/storm.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/tas5720.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/tda7419.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/tdm-slot.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/tdm-slot.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/test-component.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/ti,ads117x.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/sound/ti,j721e-cpb-audio.yaml
@@ -7801,7 +7866,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/loongson,ls2k-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/marvell,armada-ap806-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/marvell,armada370-thermal.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/max77620_thermal.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/mediatek,lvts-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/mediatek,thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/nvidia,tegra124-soctherm.yaml
@@ -7821,10 +7885,10 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/rzg2l-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/samsung,exynos-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/socionext,uniphier-thermal.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/spear-thermal.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/sprd-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/st,stih407-thermal.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/st,stm32-thermal.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/st,thermal-spear1340.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/thermal-cooling-devices.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/thermal-idle.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/thermal/thermal-sensor.yaml
@@ -7957,7 +8021,8 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/apple,dwc3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/aspeed,ast2600-udc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/aspeed,usb-vhub.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/atmel-usb.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/atmel,at91rm9200-udc.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/atmel,at91sam9rl-udc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/brcm,bcm7445-ehci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/brcm,bdc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/brcm,usb-pinmap.yaml
@@ -7965,6 +8030,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/chipidea,usb2-common.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/chipidea,usb2-imx.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ci-hdrc-usb2.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/corechips,sl6341.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/cypress,cypd4226.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/cypress,hx3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/da8xx-usb.txt
@@ -8000,7 +8066,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/marvell,pxau2o-ehci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/maxim,max33359.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/maxim,max3420-udc.yaml
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/maxim,max3421.txt
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/maxim,max3421.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/mediatek,mt6360-tcpc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/mediatek,mt6370-tcpc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/mediatek,mtk-xhci.yaml
@@ -8016,14 +8082,13 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nvidia,tegra194-xusb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nvidia,tegra210-xusb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nvidia,tegra234-xusb.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nxp,imx-dwc3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nxp,isp1760.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nxp,lpc3220-udc.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nxp,ptn36502.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/nxp,ptn5110.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/octeon-usb.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ohci-da8xx.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ohci-st.txt
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/omap-usb.txt
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/onnn,nb7vpq904m.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/parade,ps5511.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/parade,ps8830.yaml
@@ -8038,6 +8103,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,rzg3e-xhci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,rzn1-usbf.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,rzv2m-usb3drd.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,upd720201-pci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,usb-xhci.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,usb3-peri.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/renesas,usbhs.yaml
@@ -8053,13 +8119,18 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/snps,dwc3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/socionext,uniphier-dwc3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/spacemit,k1-dwc3.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/st,st-ohci-300x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/st,stusb160x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/st,typec-stm32g0.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/starfive,jh7110-usb.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/starfive,jhb100-dwc3.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/terminus,fe11.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,am62-usb.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,dwc3.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,hd3ss3220.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,j721e-usb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,keystone-dwc3.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,omap4-musb.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,tps6598x.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,tusb1046.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/devicetree/bindings/usb/ti,tusb73x0-pci.yaml
@@ -8416,6 +8487,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/driver-api/media/drivers/ccs/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/maintainer-entry-profile.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/mc-core.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/media-committers.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/rc-core.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/tx-rx.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/driver-api/media/v4l2-async.rst
@@ -8845,6 +8917,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/filesystems/iomap/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/journalling.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/locking.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/locks.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/mmap_prepare.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/mount_api.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/multigrain-ts.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/netfs_library.rst
@@ -8862,6 +8935,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/filesystems/nfs/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/nfs/rpc-cache.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/nfs/rpc-server-gss.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/nilfs2.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/ntfs.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/ntfs3.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/ocfs2-online-filecheck.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/filesystems/ocfs2.rst
@@ -9011,6 +9085,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/gpu/dp-mst/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-kms-helpers.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-kms.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-mm.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-ras.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-uapi.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-usage-stats.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/gpu/drm-vm-bind-async.rst
@@ -9120,6 +9195,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/adt7475.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/aht10.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/amc6821.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/aps-379.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/aquacomputer_d5next.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/asb100.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/asc7621.rst
@@ -9131,7 +9207,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/bcm54140.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/bel-pfe.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/bpa-rs600.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/bt1-pvt.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/cgbc-hwmon.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/chipcap2.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/coretemp.rst
@@ -9192,6 +9267,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/kbatt.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/kfan.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/lan966x.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/lattepanda-sigma-ec.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/lineage-pem.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/lm25066.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/lm63.rst
@@ -9255,6 +9331,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/mc33xs2410_hwmon.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/mc34vr500.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/mcp3021.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/mcp9982.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/menf21bmc.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/mlxreg-fan.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/mp2856.rst
@@ -9367,6 +9444,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/hwmon/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/xdpe12284.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/xdpe152c4.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/xgene-hwmon.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/yogafan.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/hwmon/zl6100.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/i2c/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/i2c/busses/
@@ -9453,7 +9531,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/infiniband/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/core_locking.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/ipoib.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/opa_vnic.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/sysfs.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/tag_matching.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/infiniband/ucaps.rst
@@ -9499,11 +9576,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/input/joydev/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/input/shape.svg
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/input/uinput.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/input/userio.rst
-drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/isdn/
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/isdn/credits.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/isdn/index.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/isdn/interface_capi.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/isdn/m_isdn.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/kbuild/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/kbuild/Kconfig.recursion-issue-01
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/kbuild/Kconfig.recursion-issue-02
@@ -9699,6 +9771,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/netlink/specs/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/dev-energymodel.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/devlink.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/dpll.yaml
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/drm_ras.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/ethtool.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/fou.yaml
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/handshake.yaml
@@ -9727,21 +9800,15 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/netlink/specs/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/netlink/specs/wireguard.yaml
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/6lowpan.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/6pack.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/af_xdp.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/alias.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/arcnet-hardware.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/arcnet.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/atm.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/ax25.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/bareudp.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/batman-adv.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/bonding.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/bridge.rst
-drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/caif/
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/caif/caif.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/caif/index.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/caif/linux_caif.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/can.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/can_ucan_protocol.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/cdc_mbim.rst
@@ -9751,9 +9818,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/atm/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/atm/cxacru-cf.py
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/atm/cxacru.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/atm/fore200e.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/atm/index.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/atm/iphase.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/can/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/can/can327.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/can/ctu/
@@ -9768,7 +9833,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/cel
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/cellular/qualcomm/rmnet.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/3com/
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/3com/3c509.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/3com/vortex.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/altera/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/altera/altera_tse.rst
@@ -9844,8 +9908,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/eth
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/qualcomm/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/qualcomm/ppe/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/qualcomm/ppe/ppe.rst
-drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/smsc/
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/smsc/smc9.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/stmicro/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/stmicro/stmmac.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/ethernet/ti/
@@ -9863,10 +9925,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/fdd
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/fddi/defza.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/fddi/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/fddi/skfp.rst
-drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/hamradio/
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/hamradio/baycom.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/hamradio/index.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/hamradio/z8530drv.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/index.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/wifi/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/device_drivers/wifi/index.rst
@@ -9892,6 +9950,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/networking/devlink/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/devlink-reload.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/devlink-resource.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/devlink-selftests.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/devlink-shared.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/devlink-trap.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/etas_es58x.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/networking/devlink/hns3.rst
@@ -10385,6 +10444,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/staging/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/sunrpc/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/sunrpc/xdr/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/sunrpc/xdr/nfs4_1.x
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/sunrpc/xdr/nlm4.x
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/target/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/target/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/target/scripts.rst
@@ -10447,10 +10507,12 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/tools/rv/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv-list.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv-mon-sched.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv-mon-stall.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv-mon-wip.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv-mon-wwnr.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv-mon.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/rv/rv.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/tools/unittest.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/trace/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/boottime-trace.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/trace/coresight/
@@ -10472,6 +10534,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/trace/coresight/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events-kmem.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events-msr.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events-nmi.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events-pci-controller.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events-pci.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events-power.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/events.rst
@@ -10495,15 +10558,19 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/trace/postprocess/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/postprocess/decode_msr.py
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/postprocess/trace-pagealloc-postprocess.pl
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/postprocess/trace-vmscan-postprocess.pl
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/remotes.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/ring-buffer-design.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/ring-buffer-map.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/trace/rv/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/da_monitor_instrumentation.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/deterministic_automata.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/hybrid_automata.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/linear_temporal_logic.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_deadline.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_rtapp.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_sched.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_stall.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_synthesis.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_wip.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/trace/rv/monitor_wwnr.rst
@@ -10615,6 +10682,19 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/translations/ko_KR/
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/translations/ko_KR/process/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/ko_KR/process/howto.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/ko_KR/stable_api_nonsense.txt
+drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/disclaimer-pt_BR.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/index.rst
+drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/1.Intro.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/changes.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/conclave.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/howto.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/maintainer-handbooks.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/maintainer-kvm-x86.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/maintainer-netdev.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/maintainer-soc-clean-dts.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/pt_BR/process/maintainer-soc.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/translations/sp_SP/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/sp_SP/disclaimer-sp.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/sp_SP/index.rst
@@ -10847,7 +10927,6 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/core_locking.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/ipoib.rst
--rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/opa_vnic.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/sysfs.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/tag_matching.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/translations/zh_CN/infiniband/user_mad.rst
@@ -11201,6 +11280,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/userspace-api/ebpf/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/userspace-api/ebpf/syscall.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/userspace-api/futex2.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/userspace-api/fwctl/
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/userspace-api/fwctl/bnxt_fwctl.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/userspace-api/fwctl/fwctl-cxl.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/userspace-api/fwctl/fwctl.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/userspace-api/fwctl/index.rst
@@ -11712,6 +11792,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/hyp-abi.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/hypercalls.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/index.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/pkvm.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/ptp_kvm.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/pvtime.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/arm/vcpu-features.rst
@@ -11719,6 +11800,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/README
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/arm-vgic-its.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/arm-vgic-v3.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/arm-vgic-v5.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/arm-vgic.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/virt/kvm/devices/mpic.rst
@@ -11795,6 +11877,7 @@ drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/wmi/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/wmi/acpi-interface.rst
 drwxrwxr-x	root/root	usr/share/doc/kernel-mainline/wmi/devices/
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/wmi/devices/alienware-wmi.rst
+-rw-rw-r--	root/root	usr/share/doc/kernel-mainline/wmi/devices/bitland-mifs-wmi.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/wmi/devices/dell-wmi-ddv.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/wmi/devices/index.rst
 -rw-rw-r--	root/root	usr/share/doc/kernel-mainline/wmi/devices/lenovo-wmi-gamezone.rst
