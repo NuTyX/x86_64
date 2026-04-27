@@ -3,16 +3,15 @@ url="https://gitlab.gnome.org/GNOME/gnome-shell-extensions"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Remy,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Remy,Fabienwang,Tnut"
 
 makedepends=(libgtop meson ninja)
 
 set=(gnome)
 
 name=gnome-shell-extensions
-version=50.0
-release=1
+version=50.1
 
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
