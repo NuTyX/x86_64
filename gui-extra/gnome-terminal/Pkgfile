@@ -3,15 +3,14 @@ url="https://wiki.gnome.org/Apps/Terminal"
 
 license="GPL-3.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Fanch,Rems,Skythrew,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Fanch,Rems,Skythrew,Tnut"
 
 makedepends=(dconf gtk3 vte nautilus gnome-shell yelp-tools)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-terminal
-version=3.58.1
-release=2
+version=3.60.0
 
 PKGMK_GROUPS=(man)
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
