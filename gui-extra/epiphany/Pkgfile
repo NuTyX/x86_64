@@ -3,8 +3,8 @@ url="https://apps.gnome.org/Epiphany"
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Remy,Fanch,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Remy,Fanch,Fabienwang,Tnut"
 
 makedepends=(icu ninja meson lsb-release libwnck avahi gcr-4
              blueprint-compiler libgnome-keyring libnotify
@@ -17,7 +17,7 @@ run=(adwaita-icon-theme gsettings-desktop-schemas woff2 libxslt.lib
 set=(gnome)
 
 name=epiphany
-version=50.3
+version=50.4
 
 PKGMK_MESON_OPTIONS="-Dunit_tests=disabled --libdir=/usr/lib"
 
