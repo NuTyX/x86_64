@@ -1,19 +1,18 @@
 description="MailUserAgent, useful for reading, writing, replying to, saving, and deleting your email."
 url="http://www.mutt.org/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Berlius,Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
 
 makedepends=(aspell aspell-dict cyrus-sasl gnupg gpgme libidn
              kerberos slang openssl gnutls db libxslt lynx)
 run=(shadow sqlite)
 
 name=mutt
-version=2.2.14
-_version=2.2.14
-release=2
+version=2.3.2
+_version=2.3.2
 
-source=(https://bitbucket.org/mutt/mutt/downloads/$name-$version.tar.gz)
+source=(http://ftp.mutt.org/pub/mutt/mutt-$version.tar.gz)
  
 build() {
 
