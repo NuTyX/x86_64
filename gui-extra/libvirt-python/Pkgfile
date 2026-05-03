@@ -12,12 +12,12 @@ name=libvirt-python
 _name="libvirt-python"
 alias=(${_name})
 
-version=11.7.0
+version=12.3.0
 
-source=(https://libvirt.org/sources/python/$name-$version.tar.gz
+source=(https://gitlab.com/libvirt/libvirt-python/-/archive/v$version/$name-v$version.tar.gz
 )
 build() {
-cd ${_name}-$version
+cd ${_name}-v$version
 
   pip3 wheel -w dist \
     --no-build-isolation \
