@@ -2,16 +2,15 @@ description="Takes text input, do some operation on it, and outputs the modified
 url="https://www.gnu.org/software/sed//sed.html"
 
 maintainer="Ken Pizzini ken at gnu dot org,Paolo Bonzini bonzini at gnu dot org"
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(texinfo)
 
 set=(core)
 
 name=sed
-version=4.9
-release=3
+version=4.10
 
 PKGMK_LOCALES=()
 
