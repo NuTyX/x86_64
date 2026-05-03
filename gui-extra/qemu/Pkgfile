@@ -1,12 +1,11 @@
 description="Processor emulator using dynamic translation to achieve good emulation speed"
 url="http://www.qemu.org"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Tnut"
 
 name=qemu
-version=10.2.2
-release=2
+version=11.0.0
 
 makedepends=(dtc gtk3 sdl libseccomp libcap-ng xorg-pixman
              python mesa vte virglrenderer lzo nettle
