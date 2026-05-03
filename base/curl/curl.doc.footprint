@@ -52,6 +52,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/
 -rw-r--r--	root/root	usr/share/doc/curl/TODO.md
 -rw-r--r--	root/root	usr/share/doc/curl/TheArtOfHttpScripting.md
 -rw-r--r--	root/root	usr/share/doc/curl/URL-SYNTAX.md
+-rw-r--r--	root/root	usr/share/doc/curl/VERIFY.md
 -rw-r--r--	root/root	usr/share/doc/curl/VERSIONS.md
 -rw-r--r--	root/root	usr/share/doc/curl/VULN-DISCLOSURE-POLICY.md
 drwxr-xr-x	root/root	usr/share/doc/curl/cmdline-opts/
@@ -636,6 +637,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/internals/
 -rw-r--r--	root/root	usr/share/doc/curl/internals/SCORECARD.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/SPLAY.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/STRPARSE.md
+-rw-r--r--	root/root	usr/share/doc/curl/internals/THRDPOOL-AND-QUEUE.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/TIME-KEEPING.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/TLS-SESSIONS.md
 -rw-r--r--	root/root	usr/share/doc/curl/internals/UINT_SETS.md
@@ -977,6 +979,8 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_RTSP_SESSION_ID.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SCHEME.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SCHEME.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SIZE_DELIVERED.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SIZE_DELIVERED.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SIZE_DOWNLOAD.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SIZE_DOWNLOAD.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLINFO_SIZE_DOWNLOAD_T.3
@@ -1053,6 +1057,10 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PUSHDATA.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PUSHFUNCTION.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_PUSHFUNCTION.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_QUICK_EXIT.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_QUICK_EXIT.md
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_RESOLVE_THREADS_MAX.3
+-rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_RESOLVE_THREADS_MAX.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_SOCKETDATA.3
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_SOCKETDATA.md
 -rw-r--r--	root/root	usr/share/doc/curl/libcurl/opts/CURLMOPT_SOCKETFUNCTION.3
@@ -1698,9 +1706,7 @@ drwxr-xr-x	root/root	usr/share/doc/curl/libcurl/opts/
 -rw-r--r--	root/root	usr/share/doc/curl/mk-ca-bundle.1
 -rw-r--r--	root/root	usr/share/doc/curl/mk-ca-bundle.md
 -rw-r--r--	root/root	usr/share/doc/curl/options-in-versions
--rw-r--r--	root/root	usr/share/doc/curl/runtests.1
 -rw-r--r--	root/root	usr/share/doc/curl/runtests.md
--rw-r--r--	root/root	usr/share/doc/curl/testcurl.1
 -rw-r--r--	root/root	usr/share/doc/curl/testcurl.md
 drwxr-xr-x	root/root	usr/share/doc/curl/tests/
 -rw-r--r--	root/root	usr/share/doc/curl/tests/FILEFORMAT.md
