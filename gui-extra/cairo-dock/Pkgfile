@@ -3,13 +3,13 @@ url="https://github.com/Cairo-Dock/cairo-dock-core"
 
 license="GPL-3.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Dania,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Dania,Tnut"
 
-makedepends=(cairo cmake curl dbus-glib xorg-glu gtk3)
+makedepends=(cairo cmake curl dbus-glib xorg-glu gtk3 xorg-libxcomposite)
 
 name=cairo-dock
-version=3.6.1
+version=3.6.2
 
 source=($url/archive/refs/tags/$version.tar.gz)
 
