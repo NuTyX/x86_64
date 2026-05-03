@@ -1,8 +1,8 @@
 description="PycURL is a Python interface to libcurl"
 url="http://pycurl.io/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-setuptools python-wheel curl)
 
@@ -10,12 +10,11 @@ name=python-curl
 _name="pycurl"
 alias=(${_name})
 
-version=7.45.7
-release=1
+version=7.46.0
 
 _name=pycurl
 source=(
-https://files.pythonhosted.org/packages/e3/3d/01255f1cde24401f54bb3727d0e5d3396b67fc04964f287d5d473155f176/pycurl-$version.tar.gz)
+https://files.pythonhosted.org/packages/95/23/cc07b16591af8ca373494d29aafc8df13e547077579e6779bb865a3f5a7f/pycurl-$version.tar.gz)
 
 build() {
   cd ${_name}-$version
