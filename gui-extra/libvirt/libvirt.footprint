@@ -126,17 +126,17 @@ drwxr-xr-x	root/root	usr/lib/firewalld/zones/
 -rwxr-xr-x	root/root	usr/lib/libnss_libvirt.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_libvirt_guest.so.2
 lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so -> libvirt-admin.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so.0 -> libvirt-admin.so.0.12001.0
--rwxr-xr-x	root/root	usr/lib/libvirt-admin.so.0.12001.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so.0 -> libvirt-admin.so.0.12003.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-admin.so.0.12003.0
 lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so -> libvirt-lxc.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so.0 -> libvirt-lxc.so.0.12001.0
--rwxr-xr-x	root/root	usr/lib/libvirt-lxc.so.0.12001.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so.0 -> libvirt-lxc.so.0.12003.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-lxc.so.0.12003.0
 lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so -> libvirt-qemu.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so.0 -> libvirt-qemu.so.0.12001.0
--rwxr-xr-x	root/root	usr/lib/libvirt-qemu.so.0.12001.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so.0 -> libvirt-qemu.so.0.12003.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-qemu.so.0.12003.0
 lrwxrwxrwx	root/root	usr/lib/libvirt.so -> libvirt.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt.so.0 -> libvirt.so.0.12001.0
--rwxr-xr-x	root/root	usr/lib/libvirt.so.0.12001.0
+lrwxrwxrwx	root/root	usr/lib/libvirt.so.0 -> libvirt.so.0.12003.0
+-rwxr-xr-x	root/root	usr/lib/libvirt.so.0.12003.0
 drwxr-xr-x	root/root	usr/lib/libvirt/
 drwxr-xr-x	root/root	usr/lib/libvirt/connection-driver/
 -rwxr-xr-x	root/root	usr/lib/libvirt/connection-driver/libvirt_driver_ch.so
@@ -178,6 +178,8 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/libvirtd-tcp.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/libvirtd-tls.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/libvirtd.service
+drwxr-xr-x	root/root	usr/lib/systemd/system/libvirtd.service.d/
+-rw-r--r--	root/root	usr/lib/systemd/system/libvirtd.service.d/10-secret.conf
 -rw-r--r--	root/root	usr/lib/systemd/system/libvirtd.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/virt-guest-shutdown.target
 -rw-r--r--	root/root	usr/lib/systemd/system/virt-secret-init-encryption.service
