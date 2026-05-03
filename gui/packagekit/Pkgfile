@@ -3,7 +3,7 @@ url='https://www.freedesktop.org/software/PackageKit/'
 
 name=packagekit
 version=v1.3.5
-release=1
+release=2
 
 packager="tnut <tnut@nutyx.org>"
 contributors=""
@@ -13,7 +13,7 @@ makedepends=(sqlite gobject-introspection vala polkit intltool gtk3
              bash-completion) 
 
 source=(https://github.com/PackageKit/Packagekit.git
-        config.patch $name-$version-cards-consolidate-1.patch)
+        config.patch $name-$version-cards-consolidate-2.patch)
 PKGMK_GROUPS=(devel man)
 PKGMK_MESON_OPTIONS="-Dsystemd=true -Dpackaging_backend=cards \
 -Dgstreamer_plugin=false -Dcron=false -Dgtk_doc=false \
@@ -22,6 +22,6 @@ PKGMK_MESON_OPTIONS="-Dsystemd=true -Dpackaging_backend=cards \
 prepare() {
   cd $name-$version
   patch -Np1 -i ../config.patch
-  patch -Np1 -i ../$name-$version-cards-consolidate-1.patch
+  patch -Np1 -i ../$name-$version-cards-consolidate-2.patch
 }
 build=meson

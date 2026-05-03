@@ -1,0 +1,1623 @@
+diff -Naur PackageKit_upstream/backends/cards/job.cxx PackageKit/backends/cards/job.cxx
+--- PackageKit_upstream/backends/cards/job.cxx	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/job.cxx	2026-04-24 23:42:33.981358464 +0200
+@@ -0,0 +1,178 @@
++#include "job.h"
++
++#include <iostream>
++#include <sstream>
++#include <memory>
++#include <fstream>
++#include <dirent.h>
++
++Job::Job(PkBackendJob *job) :
++	m_cache(nullptr),
++	m_job(job),
++	m_cancel(false)
++{
++}
++Job::~Job()
++{
++	delete m_cache;
++	for (auto pkg : m_packageSet) {
++		if (pkg)
++			delete pkg;
++	}
++}
++bool Job::init()
++{
++	m_cache = new pkgdbh;
++
++	if (m_cache->getNumberOfPackages() > 0)
++		return true;
++
++	return false;
++}
++void Job::cancel()
++{
++    if (!m_cancel) {
++        m_cancel = true;
++        pk_backend_job_set_status(m_job, PK_STATUS_ENUM_CANCEL);
++    }
++
++    if (m_child_pid > 0) {
++        kill(m_child_pid, SIGTERM);
++    }
++}
++
++bool Job::cancelled() const
++{
++	return m_cancel;
++}
++
++PkBackendJob *Job::pkJob() const
++{
++	return m_job;
++}
++void Job::resolvePackages(PkBitfield filters)
++{
++	g_debug("resolvePackgesIds");
++
++	pk_backend_job_set_status (m_job, PK_STATUS_ENUM_QUERY);
++
++	for (auto p: m_cache->getSetOfPackagesNames()) {
++		cards::cache* pkg = new cards::cache;
++		pkg->name(p);
++		pkg->description(m_cache->getDescription(p));
++		pkg->arch(m_cache->getArch(p));
++		pkg->version(m_cache->getVersion(p));
++		pkg->collection(m_cache->getCollection(p));
++		m_packageSet.insert(pkg);
++	}
++}
++void Job::resolvePackageIds(gchar **package_ids, PkBitfield filters)
++{
++	g_debug("resolvePackgesIds");
++
++	pk_backend_job_set_status (m_job, PK_STATUS_ENUM_QUERY);
++
++	if (package_ids == NULL)
++		return;
++
++	for (uint i = 0; i < g_strv_length(package_ids); ++i) {
++		if (m_cancel)
++			break;
++		std::string pi = package_ids[i];
++		for (auto p: m_cache->getSetOfPackagesNames()) {
++			cards::cache* pkg = new cards::cache;
++			std::string::size_type pos;
++			pos = convertToLowerCase(m_cache->getCollection(p)).find(convertToLowerCase(pi));
++			if (pos == std::string::npos)
++				pos = convertToLowerCase(p).find(convertToLowerCase(pi));
++			if (pos == std::string::npos)
++				pos = convertToLowerCase(m_cache->getDescription(p)).find(convertToLowerCase(pi));
++			if (pos == std::string::npos)
++				pos = convertToLowerCase(m_cache->getVersion(p)).find(convertToLowerCase(pi));
++			if (pos != std::string::npos) {
++				pkg->name(p);
++				pkg->description(m_cache->getDescription(p));
++				pkg->arch(m_cache->getArch(p));
++				pkg->version(m_cache->getVersion(p));
++				pkg->collection(m_cache->getCollection(p));
++				m_packageSet.insert(pkg);
++			}
++		}
++	}
++}
++
++gchar* Job::matchPackage(const std::string &package)
++{
++  const gchar *name, *version, *arch, *collection;
++
++  name = package.c_str();
++  version = m_cache->getVersion(package).c_str();
++  arch = m_cache->getArch(package).c_str();
++  collection = m_cache->getCollection(package).c_str();
++
++  return pk_package_id_build (name, version, arch, collection);
++
++}
++bool Job::matchPackage(const std::string& PackageName, PkBitfield filters)
++{
++	return true;
++}
++void Job::refreshCache()
++{
++	pk_backend_job_set_status(m_job, PK_STATUS_ENUM_REFRESH_CACHE);
++}
++void Job::emitPackageFiles(const gchar *pi)
++{
++	using namespace std;
++	GPtrArray *files;
++	string line;
++
++	g_auto(GStrv) parts = pk_package_id_split(pi);
++	string fName;
++	fName = "/var/lib/pkg/DB/" + string(parts[PK_PACKAGE_ID_NAME]) + "/files";
++
++	if (checkFileExist(fName)) {
++		ifstream in(fName.c_str());
++		if (!in != 0) {
++			return;
++		}
++
++		files = g_ptr_array_new_with_free_func(g_free);
++		while (in.eof() == false) {
++			getline(in, line);
++			if (!line.empty()) {
++				g_ptr_array_add(files, g_strdup(line.c_str()));
++			}
++		}
++
++		if (files->len) {
++			g_ptr_array_add(files, NULL);
++			pk_backend_job_files(m_job, pi, (gchar **) files->pdata);
++		}
++		g_ptr_array_unref(files);
++	}
++}
++void Job::emitPackages(PkBitfield filters, PkInfoEnum state, bool multiversion)
++{
++	for (auto p:m_packageSet) {
++		if(m_cancel)
++			break;
++
++		std::string d = p->description();
++		std::string v = p->version();
++		std::string a = p->arch();
++		std::string c = p->collection();
++		std::string pi = p->name() + ";" + v + ";" + a + ";" + c;
++		pk_backend_job_package(m_job, PK_INFO_ENUM_INSTALLED, pi.c_str(), d.c_str());
++	}
++}
++void Job::emitPackageDetail(const gchar *pi)
++ {
++	using namespace std;
++	g_auto(GStrv) parts = pk_package_id_split(pi);
++	string fName = string(parts[PK_PACKAGE_ID_NAME]);
++	if (checkFileExist(fName)) {
++	}
++
++ }
++// vim:set ts=2 :
+diff -Naur PackageKit_upstream/backends/cards/job.h PackageKit/backends/cards/job.h
+--- PackageKit_upstream/backends/cards/job.h	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/job.h	2026-04-24 23:32:54.961017366 +0200
+@@ -0,0 +1,101 @@
++/* job.h
++ *
++ * Copyright (c) 2023 Thierry Nuttens <tnut@nutyx.org>
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; see the file COPYING.  If not, write to
++ * the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
++ * Boston, MA 02111-1307, USA.
++ */
++
++#pragma once
++
++#include <libcards.h>
++
++#include <pk-backend.h>
++
++class Job
++{
++public:
++	Job(PkBackendJob *job);
++	~Job();
++
++	bool init();
++	void cancel();
++	bool cancelled() const;
++
++	/**
++	  * Returns the PackageKit backend job associated with this CARDS job.
++	*/
++	PkBackendJob *pkJob() const;
++
++	/**
++	  * Get the list of packages
++	  *  generate m_packageSet, if the list is empty no package was found
++	  */
++	void resolvePackages(PkBitfield filters = PK_FILTER_ENUM_NONE);
++
++	/**
++	  * Tries to find a list of packages mathing the package ids
++	  *  generate m_packageSet, if the list is empty no package was found
++	  */
++	void resolvePackageIds(gchar **package_ids, PkBitfield filters = PK_FILTER_ENUM_NONE);
++
++	/**
++	  * Return a package_id
++	  *
++	  */
++	gchar* matchPackage(const std::string &package);
++
++	/**
++	  * Check if a given package matches the filters
++	  *  @return true if it passed the filters
++	  */
++	bool matchPackage(const std::string &PackageName, PkBitfield filters);
++
++	/**
++	  * Refreshes the sources of packages
++	  */
++	void refreshCache();
++
++	/**
++	  *  Emits the files of a package
++	  */
++	void emitPackageFiles(const gchar *pi);
++
++	/**
++	  *  Emits the files of a package
++	  */
++	void emitPackageFilesLocal(const gchar *pi);
++
++
++	/**
++		* Emit m_packageSet that matches the given filters
++	  */
++	void emitPackages(PkBitfield filters = PK_FILTER_ENUM_NONE,
++		PkInfoEnum state = PK_INFO_ENUM_UNKNOWN,
++		bool multiversion = false);
++
++	/**
++	 *  Emits details of the given package
++	 */
++	void emitPackageDetail(const gchar *pi);
++
++private:
++	pkgdbh *m_cache;
++	std::set<cards::cache*> m_packageSet;
++	PkBackendJob *m_job;
++	bool	m_cancel;
++	pid_t m_child_pid;
++};
++// vim:set ts=2 :
+diff -Naur PackageKit_upstream/backends/cards/meson.build PackageKit/backends/cards/meson.build
+--- PackageKit_upstream/backends/cards/meson.build	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/meson.build	2026-04-28 21:27:02.468015292 +0200
+@@ -0,0 +1,29 @@
++add_languages('cpp')
++
++cpp_compiler = meson.get_compiler('cpp')
++
++archive_dep = meson.get_compiler('c').find_library('archive')
++curl_dep = meson.get_compiler('c').find_library('curl')
++cards_dep = meson.get_compiler('c').find_library('cards')
++
++shared_module(
++  'pk_backend_cards',
++  'pk-backend-cards.cxx',
++  'thread.cxx',
++  'thread.hpp',
++  include_directories: packagekit_src_include,
++  dependencies: [
++    packagekit_glib2_dep,
++    archive_dep,
++    curl_dep,
++    cards_dep,
++    gmodule_dep,
++  ],
++  cpp_args: [
++    '-DPK_COMPILATION',
++    '-DG_LOG_DOMAIN="PackageKit-Cards"',
++  ],
++  override_options: ['c_std=c11','cpp_std=c++17'],
++  install: true,
++  install_dir: pk_plugin_dir,
++)
+diff -Naur PackageKit_upstream/backends/cards/pk-backend-cards.cxx PackageKit/backends/cards/pk-backend-cards.cxx
+--- PackageKit_upstream/backends/cards/pk-backend-cards.cxx	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/pk-backend-cards.cxx	2026-04-28 21:37:09.601260246 +0200
+@@ -0,0 +1,252 @@
++/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*-
++ *
++ * Copyright (C) 2025 Neal Gompa <neal@gompa.dev>
++ * Copyright (C) 2026 Thierry Nuttens <tnut@nutyx.org>
++ *
++ * Licensed under the GNU General Public License Version 2
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, see <https://www.gnu.org/licenses/>.
++ */
++
++
++#include "thread.hpp"
++#include <packagekit-glib2/pk-common-private.h>
++#include <packagekit-glib2/pk-debug.h>
++
++// Backend API Implementation
++
++extern "C" {
++
++const char *
++pk_backend_get_description (PkBackend *backend)
++{
++	return "CARDS package manager backend";
++}
++
++const char *
++pk_backend_get_author (PkBackend *backend)
++{
++	return "Thierry Nuttens <tnuty@nutyx.org>";
++}
++
++gboolean
++pk_backend_supports_parallelization (PkBackend *backend)
++{
++	return FALSE;
++}
++
++gchar **
++pk_backend_get_mime_types (PkBackend *backend)
++{
++	const gchar *mime_types[] = { "application/x-zst-compressed-tar",
++                                        NULL };
++	return g_strdupv ((gchar **) mime_types);
++}
++
++PkBitfield
++pk_backend_get_roles (PkBackend *backend)
++{
++	return pk_bitfield_from_enums (
++		PK_ROLE_ENUM_DEPENDS_ON,
++		PK_ROLE_ENUM_DOWNLOAD_PACKAGES,
++		PK_ROLE_ENUM_GET_DETAILS,
++		PK_ROLE_ENUM_GET_DETAILS_LOCAL,
++		PK_ROLE_ENUM_GET_FILES,
++		PK_ROLE_ENUM_GET_FILES_LOCAL,
++		PK_ROLE_ENUM_GET_PACKAGES,
++		PK_ROLE_ENUM_INSTALL_FILES,
++		PK_ROLE_ENUM_INSTALL_PACKAGES,
++		PK_ROLE_ENUM_REMOVE_PACKAGES,
++		PK_ROLE_ENUM_UPDATE_PACKAGES,
++		PK_ROLE_ENUM_REPAIR_SYSTEM,
++		PK_ROLE_ENUM_UPGRADE_SYSTEM,
++		PK_ROLE_ENUM_REQUIRED_BY,
++		PK_ROLE_ENUM_RESOLVE,
++		PK_ROLE_ENUM_REFRESH_CACHE,
++		PK_ROLE_ENUM_GET_UPDATES,
++		PK_ROLE_ENUM_GET_UPDATE_DETAIL,
++		PK_ROLE_ENUM_WHAT_PROVIDES,
++		PK_ROLE_ENUM_SEARCH_NAME,
++		PK_ROLE_ENUM_SEARCH_DETAILS,
++		PK_ROLE_ENUM_SEARCH_FILE,
++		PK_ROLE_ENUM_CANCEL,
++		-1);
++}
++
++void
++pk_backend_initialize (GKeyFile *conf, PkBackend *backend)
++{
++	g_autofree gchar *release_ver = NULL;
++	g_autoptr(GError) error = NULL;
++
++	// use logging
++	pk_debug_add_log_domain (G_LOG_DOMAIN);
++	pk_debug_add_log_domain ("CARDS");
++
++}
++
++void
++pk_backend_destroy (PkBackend *backend)
++{
++}
++
++void
++pk_backend_start_job (PkBackend *backend, PkBackendJob *job)
++{
++}
++
++void
++pk_backend_stop_job (PkBackend *backend, PkBackendJob *job)
++{
++}
++
++void
++pk_backend_search_names (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **values)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^as)", filters, values);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_search_details (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **values)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^as)", filters, values);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_search_files (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **values)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^as)", filters, values);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_packages (PkBackend *backend, PkBackendJob *job, PkBitfield filters)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t)", filters);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_resolve (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **package_ids)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^as)", filters, package_ids);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_details (PkBackend *backend, PkBackendJob *job, gchar **package_ids)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(^as)", package_ids);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_files (PkBackend *backend, PkBackendJob *job, gchar **package_ids)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(^as)", package_ids);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_repo_list (PkBackend *backend, PkBackendJob *job, PkBitfield filters)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t)", filters);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_updates (PkBackend *backend, PkBackendJob *job, PkBitfield filters)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t)", filters);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_what_provides (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **search)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^as)", filters, search);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_depends_on (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **package_ids, gboolean recursive)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^asb)", filters, package_ids, recursive);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_required_by (PkBackend *backend, PkBackendJob *job, PkBitfield filters, gchar **package_ids, gboolean recursive)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(t^asb)", filters, package_ids, recursive);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_update_detail (PkBackend *backend, PkBackendJob *job, gchar **package_ids)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(^as)", package_ids);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_download_packages (PkBackend *backend, PkBackendJob *job, gchar **package_ids, const gchar *directory)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(^as&s)", package_ids, directory);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_details_local (PkBackend *backend, PkBackendJob *job, gchar **files)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(^as)", files);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_get_files_local (PkBackend *backend, PkBackendJob *job, gchar **files)
++{
++	g_autoptr(GVariant) params = g_variant_new ("(^as)", files);
++	pk_backend_job_set_parameters (job, g_steal_pointer (&params));
++	pk_backend_job_thread_create (job, cards_query_thread, NULL, NULL);
++}
++
++void
++pk_backend_refresh_cache (PkBackend *backend, PkBackendJob *job, gboolean force)
++{
++}
++
++void
++pk_backend_cancel (PkBackend *backend, PkBackendJob *job)
++{
++}
++
++}
+diff -Naur PackageKit_upstream/backends/cards/thread.cxx PackageKit/backends/cards/thread.cxx
+--- PackageKit_upstream/backends/cards/thread.cxx	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/thread.cxx	2026-04-28 22:22:14.192655762 +0200
+@@ -0,0 +1,333 @@
++/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*-
++ *
++ * Copyright (C) 2025 Neal Gompa <neal@gompa.dev>
++ * Copyright (C) 2026 Thierry Nuttens <tnut@nutyx.org>
++ *
++ * Licensed under the GNU General Public License Version 2
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, see <https://www.gnu.org/licenses/>.
++ */
++
++#include "thread.hpp"
++#include <libcards.h>
++#include <packagekit-glib2/pk-common-private.h>
++#include <packagekit-glib2/pk-update-detail.h>
++#include <glib/gstdio.h>
++#include <filesystem>
++#include <map>
++
++void
++cards_query_thread (PkBackendJob *job, GVariant *params, gpointer user_data)
++{
++	PkBackend *backend = (PkBackend *) pk_backend_job_get_backend (job);
++//	PkBackendCardsPrivate *priv = (PkBackendCardsPrivate *) pk_backend_get_user_data (backend);
++	PkRoleEnum role = pk_backend_job_get_role (job);
++	
++//	g_autoptr(GMutexLocker) locker = g_mutex_locker_new (&priv->mutex);
++	
++	try {
++		if (role == PK_ROLE_ENUM_SEARCH_NAME || role == PK_ROLE_ENUM_SEARCH_DETAILS || role == PK_ROLE_ENUM_SEARCH_FILE || role == PK_ROLE_ENUM_RESOLVE || role == PK_ROLE_ENUM_WHAT_PROVIDES) {
++			PkBitfield filters;
++			g_auto(GStrv) values = NULL;
++			g_variant_get (params, "(t^as)", &filters, &values);
++			
++			g_debug("Query role=%d, filters=%lu", role, (unsigned long)filters);
++			
++			std::vector<cards::cache> results;
++//			libcards::rpm::PackageQuery query(*priv->base);
++			
++			std::vector<std::string> search_terms;
++			for (int i = 0; values[i]; i++) search_terms.push_back(values[i]);
++			
++			if (role == PK_ROLE_ENUM_SEARCH_NAME) {
++//				query.filter_name(search_terms, libcards::sack::QueryCmp::ICONTAINS);
++			} else if (role == PK_ROLE_ENUM_SEARCH_FILE) {
++//				query.filter_file(search_terms);
++			} else if (role == PK_ROLE_ENUM_RESOLVE) {
++				// For RESOLVE, filter by name FIRST, then apply other filters
++				// This matches the old DNF backend behavior
++				for (const auto &term : search_terms)
++					g_debug("Resolving package name: %s", term.c_str());
++//				query.filter_name(search_terms, libcards::sack::QueryCmp::EQ);
++//				g_debug("After filter_name: query has %zu packages", query.size());
++			} else if (role == PK_ROLE_ENUM_WHAT_PROVIDES) {
++				std::vector<std::string> provides;
++				for (const auto &term : search_terms) {
++					provides.push_back(term);
++					provides.push_back("gstreamer0.10(" + term + ")");
++					provides.push_back("gstreamer1(" + term + ")");
++					provides.push_back("font(" + term + ")");
++					provides.push_back("mimehandler(" + term + ")");
++					provides.push_back("postscriptdriver(" + term + ")");
++					provides.push_back("plasma4(" + term + ")");
++					provides.push_back("plasma5(" + term + ")");
++					provides.push_back("language(" + term + ")");
++				}
++//				query.filter_provides(provides);
++			} else if (role == PK_ROLE_ENUM_SEARCH_DETAILS) {
++//				libcards::rpm::PackageQuery query_sum(*priv->base);
++//				query.filter_description(search_terms, libcards::sack::QueryCmp::ICONTAINS);
++//				query_sum.filter_summary(search_terms, libcards::sack::QueryCmp::ICONTAINS);
++				// Apply filters to both queries before merging
++//				cards_apply_filters(*priv->base, query, filters);
++//				cards_apply_filters(*priv->base, query_sum, filters);
++//				for (auto p : query_sum) {
++//					if (cards_package_filter(p, filters))
++//						results.push_back(p);
++//				}
++			}
++			
++			// Apply filters AFTER filtering by name/file/provides for most roles
++			// Exception: SEARCH_DETAILS already applied filters above
++			if (role != PK_ROLE_ENUM_SEARCH_DETAILS) {
++//				g_debug("Before cards_apply_filters: query has %zu packages", query.size());
++//				cards_apply_filters(*priv->base, query, filters);
++//				g_debug("After cards_apply_filters: query has %zu packages", query.size());
++			}
++			
++			// For RESOLVE, we've already applied all necessary filters via cards_apply_filters
++			// Don't apply cards_package_filter again as it causes incorrect filtering
++			if (role == PK_ROLE_ENUM_RESOLVE) {
++//				for (auto p : query) {
++//					results.push_back(p);
++//				}
++			} else {
++//				for (auto p : query) {
++//					if (cards_package_filter(p, filters))
++//						results.push_back(p);
++//				}
++			}
++			g_debug("Final results: %zu packages", results.size());
++//			cards_sort_and_emit(job, results);
++
++
++			
++		} else if (role == PK_ROLE_ENUM_DEPENDS_ON || role == PK_ROLE_ENUM_REQUIRED_BY) {
++			PkBitfield filters;
++			g_auto(GStrv) package_ids = NULL;
++			gboolean recursive;
++			g_variant_get (params, "(t^asb)", &filters, &package_ids, &recursive);
++			
++//			auto input_pkgs = cards_resolve_package_ids(*priv->base, package_ids);
++			std::vector<cards::cache> results;
++//			for (const auto &pkg : input_pkgs) {
++//				auto deps = cards_process_dependency(*priv->base, pkg, role, recursive);
++//				for (auto dep : deps) {
++//					if (cards_package_filter(dep, filters))
++//						results.push_back(dep);
++//				}
++//			}
++//			cards_sort_and_emit(job, results);
++
++		} else if (role == PK_ROLE_ENUM_GET_PACKAGES || role == PK_ROLE_ENUM_GET_UPDATES) {
++			PkBitfield filters;
++			g_variant_get (params, "(t)", &filters);
++			
++//			libcards::rpm::PackageQuery query(*priv->base);
++//			cards_apply_filters(*priv->base, query, filters);
++			
++			if (role == PK_ROLE_ENUM_GET_UPDATES) {
++//				libcards::Goal goal(*priv->base);
++//				if (cards_force_distupgrade_on_upgrade (*priv->base))
++//					goal.add_rpm_distro_sync();
++//				else
++//					goal.add_rpm_upgrade();
++//				auto trans = goal.resolve();
++				
++				std::vector<cards::cache> update_pkgs;
++//				for (const auto &item : trans.get_transaction_packages()) {
++//					auto action = item.get_action();
++//					if (action == libcards::transaction::TransactionItemAction::UPGRADE || action == libcards::transaction::TransactionItemAction::INSTALL) {
++//						update_pkgs.push_back(item.get_package());
++//					}
++//				}
++				
++//				libcards::advisory::AdvisoryQuery adv_query(*priv->base);
++//				libcards::rpm::PackageSet pkg_set(priv->base->get_weak_ptr());
++//				for (const auto &pkg : update_pkgs) pkg_set.add(pkg);
++//				adv_query.filter_packages(pkg_set);
++				
++//				std::map<std::string, libcards::advisory::Advisory> pkg_to_advisory;
++//				for (const auto &adv_pkg : adv_query.get_advisory_packages_sorted(pkg_set)) {
++//					std::string key = adv_pkg.get_name() + ";" + adv_pkg.get_evr() + ";" + adv_pkg.get_arch();
++//					pkg_to_advisory.emplace(key, adv_pkg.get_advisory());
++//				}
++				
++//				for (const auto &pkg : update_pkgs) {
++//					if (cards_package_filter(pkg, filters)) {
++//						PkInfoEnum info = PK_INFO_ENUM_UNKNOWN;
++//						PkInfoEnum severity = PK_INFO_ENUM_UNKNOWN;
++						
++//						std::string key = pkg.get_name() + ";" + pkg.get_evr() + ";" + pkg.get_arch();
++//						auto it = pkg_to_advisory.find(key);
++//						if (it != pkg_to_advisory.end()) {
++//							info = cards_advisory_kind_to_info_enum(it->second.get_type());
++//							severity = cards_update_severity_to_enum(it->second.get_severity());
++//						}
++//						cards_emit_pkg(job, pkg, info, severity);
++//					}
++//				}
++			} else {
++//				std::vector<cards::cache> results;
++//				for (auto p : query) {
++//					if (cards_package_filter(p, filters))
++//						results.push_back(p);
++//				}
++//				cards_sort_and_emit(job, results);
++			}
++		} else if (role == PK_ROLE_ENUM_GET_DETAILS || role == PK_ROLE_ENUM_GET_FILES || role == PK_ROLE_ENUM_DOWNLOAD_PACKAGES || role == PK_ROLE_ENUM_GET_UPDATE_DETAIL) {
++			g_auto(GStrv) package_ids = NULL;
++			if (role == PK_ROLE_ENUM_DOWNLOAD_PACKAGES) {
++				gchar *directory = NULL;
++				g_variant_get (params, "(^as&s)", &package_ids, &directory);
++//				auto pkgs = cards_resolve_package_ids(*priv->base, package_ids);
++//				libcards::repo::PackageDownloader downloader(*priv->base);
++				uint64_t total_download_size = 0;
++/*
++				for (const auto &pkg : pkgs) total_download_size += pkg.get_download_size();
++				
++				priv->base->set_download_callbacks(std::make_unique<CardsDownloadCallbacks>(job, total_download_size));
++				for (auto &pkg : pkgs) {
++					cards_emit_pkg(job, pkg, PK_INFO_ENUM_DOWNLOADING);
++					downloader.add(pkg, directory);
++				}
++				downloader.download();
++				
++				std::vector<char*> files_c;
++				for (auto &pkg : pkgs) {
++					std::string path = pkg.get_package_path();
++					if (!path.empty()) files_c.push_back(g_strdup(path.c_str()));
++				}
++				files_c.push_back(nullptr);
++				pk_backend_job_files (job, NULL, files_c.data());
++				for (auto p : files_c) g_free(p); */
++				pk_backend_job_finished (job);
++				return;
++			} else {
++				g_variant_get (params, "(^as)", &package_ids);
++			}
++
++//			auto pkgs = cards_resolve_package_ids(*priv->base, package_ids);
++			if (role == PK_ROLE_ENUM_GET_UPDATE_DETAIL) {
++/*				libcards::advisory::AdvisoryQuery adv_query(*priv->base);
++				libcards::rpm::PackageSet pkg_set(priv->base->get_weak_ptr());
++				for (const auto &pkg : pkgs) pkg_set.add(pkg);
++				adv_query.filter_packages(pkg_set);
++				
++				std::map<std::string, libcards::advisory::AdvisoryPackage> pkg_to_adv_pkg;
++				for (const auto &adv_pkg : adv_query.get_advisory_packages_sorted(pkg_set)) {
++					std::string key = adv_pkg.name() + ";" + adv_pkg.get_evr() + ";" + adv_pkg.get_arch();
++					pkg_to_adv_pkg.emplace(key, adv_pkg);
++				}
++				
++				g_autoptr(GPtrArray) update_details = g_ptr_array_new_with_free_func ((GDestroyNotify) g_object_unref);
++				for (auto &pkg : pkgs) {
++					std::string repo_id = pkg.get_repo_id();
++					if (pkg.get_install_time() > 0) repo_id = "installed";
++					std::string pid = pkg.name() + ";" + pkg.get_evr() + ";" + pkg.get_arch() + ";" + repo_id;
++					
++					std::string key = pkg.name() + ";" + pkg.get_evr() + ";" + pkg.get_arch();
++					auto it = pkg_to_adv_pkg.find(key);
++					if (it != pkg_to_adv_pkg.end()) {
++						auto advisory = it->second.get_advisory();
++						g_autoptr(PkUpdateDetail) item = pk_update_detail_new ();
++						
++						std::vector<std::string> bugzilla_urls, cve_urls, vendor_urls;
++						for (const auto &ref : advisory.get_references()) {
++							if (ref.get_url().empty()) continue;
++							if (ref.get_type() == "bugzilla") bugzilla_urls.push_back(ref.get_url());
++							else if (ref.get_type() == "cve") cve_urls.push_back(ref.get_url());
++							else if (ref.get_type() == "vendor") vendor_urls.push_back(ref.get_url());
++						}
++						
++						auto buildtime = advisory.get_buildtime();
++						g_autoptr(GDateTime) dt = g_date_time_new_from_unix_local(buildtime);
++						g_autofree gchar *date_str = g_date_time_format(dt, "%Y-%m-%d");
++						
++						PkRestartEnum restart = PK_RESTART_ENUM_NONE;
++						if (it->second.get_reboot_suggested()) restart = PK_RESTART_ENUM_SYSTEM;
++						else if (it->second.get_restart_suggested()) restart = PK_RESTART_ENUM_APPLICATION;
++						else if (it->second.get_relogin_suggested()) restart = PK_RESTART_ENUM_SESSION;
++						
++						g_auto(GStrv) bugzilla_strv = (gchar **) g_new0 (gchar *, bugzilla_urls.size() + 1);
++						for (size_t i = 0; i < bugzilla_urls.size(); i++) bugzilla_strv[i] = g_strdup(bugzilla_urls[i].c_str());
++						g_auto(GStrv) cve_strv = (gchar **) g_new0 (gchar *, cve_urls.size() + 1);
++						for (size_t i = 0; i < cve_urls.size(); i++) cve_strv[i] = g_strdup(cve_urls[i].c_str());
++						g_auto(GStrv) vendor_strv = (gchar **) g_new0 (gchar *, vendor_urls.size() + 1);
++						for (size_t i = 0; i < vendor_urls.size(); i++) vendor_strv[i] = g_strdup(vendor_urls[i].c_str());
++						
++						g_object_set (item,
++								  "package-id", pid.c_str(),
++								  "bugzilla-urls", bugzilla_strv,
++								  "cve-urls", cve_strv,
++								  "vendor-urls", vendor_strv,
++								  "update-text", advisory.get_description().c_str(),
++								  "restart", restart,
++								  "state", PK_UPDATE_STATE_ENUM_STABLE,
++								  "issued", date_str,
++								  "updated", date_str,
++								  NULL);
++						g_ptr_array_add (update_details, g_steal_pointer (&item));
++					}
++				} */
++//				pk_backend_job_update_details (job, update_details);
++				pk_backend_job_finished (job);
++				return;
++			}
++/*
++			for (auto &pkg : pkgs) {
++				std::string repo_id = pkg.get_repo_id();
++				if (pkg.get_install_time() > 0) repo_id = "installed";
++				std::string pid = pkg.get_name() + ";" + pkg.get_evr() + ";" + pkg.get_arch() + ";" + repo_id;
++				
++				if (role == PK_ROLE_ENUM_GET_DETAILS) {
++					std::string license = pkg.license();
++					if (license.empty()) license = "unknown";
++					pk_backend_job_details(job, pid.c_str(), pkg.get_summary().c_str(), license.c_str(), PK_GROUP_ENUM_UNKNOWN, pkg.description().c_str(), pkg.url().c_str(), pkg.space(), pkg.size());
++				} else if (role == PK_ROLE_ENUM_GET_FILES) {
++					auto files_vec = pkg.get_files();
++					std::vector<char*> files_c;
++					for (const auto &f : files_vec) files_c.push_back(const_cast<char*>(f.c_str()));
++					files_c.push_back(nullptr);
++					pk_backend_job_files(job, pid.c_str(), files_c.data());
++				}
++			}*/
++		} else if (role == PK_ROLE_ENUM_GET_DETAILS_LOCAL || role == PK_ROLE_ENUM_GET_FILES_LOCAL) {
++			g_auto(GStrv) files = NULL;
++			g_variant_get (params, "(^as)", &files);
++/*			libcards::Base local_base;
++			local_base.load_config();
++			local_base.get_config().get_pkg_gpgcheck_option().set(false);
++			local_base.setup(); */
++			std::vector<std::string> paths;
++			for (int i = 0; files[i]; i++) paths.push_back(files[i]);
++/*			auto added = local_base.get_repo_sack()->add_cmdline_packages(paths);
++			for (const auto &pair : added) {
++				const auto &pkg = pair.second;
++				std::string pid = pkg.name() + ";" + pkg.version() + ";" + pkg.arch() + ";" + (pkg.origin().empty() ? "local" : pkg.origin());
++				if (role == PK_ROLE_ENUM_GET_DETAILS_LOCAL) {
++					pk_backend_job_details(job, pid.c_str(), pkg.summary().c_str(), pkg.license().c_str(), PK_GROUP_ENUM_UNKNOWN, pkg.description().c_str(), pkg.url().c_str(), pkg.space(), 0);
++				} else {
++					auto files_vec = pkg.files();
++					std::vector<char*> files_c;
++					for (const auto &f : files_vec) files_c.push_back(const_cast<char*>(f.c_str()));					files_c.push_back(nullptr);
++					pk_backend_job_files(job, pid.c_str(), files_c.data());
++				}
++			} */
++		}
++	} catch (const std::exception &e) {
++		pk_backend_job_error_code (job, PK_ERROR_ENUM_TRANSACTION_ERROR, "%s", e.what());
++	}
++	pk_backend_job_finished (job);
++}
+diff -Naur PackageKit_upstream/backends/cards/thread.hpp PackageKit/backends/cards/thread.hpp
+--- PackageKit_upstream/backends/cards/thread.hpp	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/thread.hpp	2026-04-28 21:28:35.120345590 +0200
+@@ -0,0 +1,28 @@
++/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*-
++ *
++ * Copyright (C) 2025 Neal Gompa <neal@gompa.dev>
++ * Copyright (C) 2026 Thierry Nuttens <tnut@nutyx.org>
++ *
++ * Licensed under the GNU General Public License Version 2
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, see <https://www.gnu.org/licenses/>.
++ */
++
++#pragma once
++
++#include <pk-backend.h>
++#include <glib.h>
++#include <libcards.h>
++
++void cards_query_thread(PkBackendJob *job, GVariant *params, gpointer user_data);
+diff -Naur PackageKit_upstream/backends/cards/utils.cxx PackageKit/backends/cards/utils.cxx
+--- PackageKit_upstream/backends/cards/utils.cxx	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/utils.cxx	2026-04-26 22:14:31.839007770 +0200
+@@ -0,0 +1,584 @@
++/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*-
++ *
++ * Copyright (C) 2025 Neal Gompa <neal@gompa.dev>
++ * Copyright (C) 2026 Thierry Nuttens <tnut@nutyx.org>
++ *
++ * Licensed under the GNU General Public License Version 2
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, see <https://www.gnu.org/licenses/>.
++ */
++
++#include "utils.hpp"
++#include <packagekit-glib2/pk-common-private.h>
++#include <packagekit-glib2/pk-update-detail.h>
++#include <libcards.h>
++#include <glib/gstdio.h>
++#include <algorithm>
++#include <set>
++#include <queue>
++#include <filesystem>
++#include <map>
++
++void
++cards_setup_base (PkBackendCardsPrivate *priv, gboolean refresh, gboolean force, const char *releasever)
++{
++	priv->base = std::make_unique<libcards::Base>();
++
++	priv->base->load_config();
++
++	auto &config = priv->base->get_config();
++	if (priv->conf != NULL) {
++		g_autofree gchar *destdir = g_key_file_get_string (priv->conf, "Daemon", "DestDir", NULL);
++		if (destdir != NULL) {
++			config.get_installroot_option().set(libcards::Option::Priority::COMMANDLINE, destdir);
++		}
++
++		gboolean keep_cache = g_key_file_get_boolean (priv->conf, "Daemon", "KeepCache", NULL);
++		config.get_keepcache_option().set(libcards::Option::Priority::COMMANDLINE, keep_cache != FALSE);
++
++		g_autofree gchar *distro_version = NULL;
++		if (releasever == NULL) {
++			g_autoptr(GError) error = NULL;
++			distro_version = pk_get_distro_version_id (&error);
++		} else {
++			distro_version = g_strdup(releasever);
++		}
++
++		if (distro_version != NULL) {
++			priv->base->get_vars()->set("releasever", distro_version);
++			const char *root = (destdir != NULL) ? destdir : "/";
++			g_autofree gchar *cache_dir = g_build_filename (root, "/var/cache/PackageKit", distro_version, "metadata", NULL);
++			g_debug("Using cachedir: %s", cache_dir);
++			config.get_cachedir_option().set(libcards::Option::Priority::COMMANDLINE, cache_dir);
++		}
++
++		auto &optional_metadata_types = config.get_optional_metadata_types_option();
++		auto &optional_metadata_types_setting = optional_metadata_types.get_value();
++		if (!optional_metadata_types_setting.contains(libcards::METADATA_TYPE_ALL)) {
++			// Ensure all required repodata types are downloaded
++			if(!optional_metadata_types_setting.contains(libcards::METADATA_TYPE_COMPS)) {
++				optional_metadata_types.add_item(libcards::Option::Priority::RUNTIME, libcards::METADATA_TYPE_COMPS);
++			}
++			if(!optional_metadata_types_setting.contains(libcards::METADATA_TYPE_UPDATEINFO)) {
++				optional_metadata_types.add_item(libcards::Option::Priority::RUNTIME, libcards::METADATA_TYPE_UPDATEINFO);
++			}
++			if(!optional_metadata_types_setting.contains(libcards::METADATA_TYPE_APPSTREAM)) {
++				optional_metadata_types.add_item(libcards::Option::Priority::RUNTIME, libcards::METADATA_TYPE_APPSTREAM);
++			}
++		}
++		
++		// Always assume yes to avoid interactive prompts failing the transaction
++		// TODO: Drop this once InstallSignature is implemented
++		config.get_assumeyes_option().set(libcards::Option::Priority::COMMANDLINE, true);
++	}
++
++	priv->base->setup();
++	
++	// Ensure releasever is set AFTER setup() because setup() might run auto-detection and overwrite it.
++	if (priv->conf != NULL) {
++		g_autofree gchar *distro_version = NULL;
++		if (releasever == NULL) {
++			g_autoptr(GError) error = NULL;
++			distro_version = pk_get_distro_version_id (&error);
++		} else {
++			distro_version = g_strdup(releasever);
++		}
++		if (distro_version != NULL) {
++			priv->base->get_vars()->set("releasever", distro_version);
++		}
++	}
++	
++	auto repo_sack = priv->base->get_repo_sack();
++	repo_sack->create_repos_from_system_configuration();
++	repo_sack->get_system_repo();
++
++	if (refresh && force) {
++		libcards::repo::RepoQuery query(*priv->base);
++		for (auto repo : query) {
++			if (repo->is_enabled()) {
++				g_debug("Expiring repository metadata: %s", repo->get_id().c_str());
++				repo->expire();
++			}
++		}
++	}
++
++	g_debug("Loading repositories");
++	repo_sack->load_repos();
++
++	libcards::repo::RepoQuery query(*priv->base);
++	query.filter_enabled(true);
++	for (auto repo : query) {
++		g_debug("Enabled repository: %s", repo->get_id().c_str());
++	}
++}
++
++void
++cards_refresh_cache(PkBackendCardsPrivate *priv, gboolean force)
++{
++	cards_setup_base(priv, TRUE, force);
++}
++
++PkInfoEnum
++cards_advisory_kind_to_info_enum (const std::string &type)
++{
++	if (type == "security")
++		return PK_INFO_ENUM_SECURITY;
++	if (type == "bugfix")
++		return PK_INFO_ENUM_BUGFIX;
++	if (type == "enhancement")
++		return PK_INFO_ENUM_ENHANCEMENT;
++	if (type == "newpackage")
++		return PK_INFO_ENUM_NORMAL;
++	return PK_INFO_ENUM_UNKNOWN;
++}
++
++PkInfoEnum
++cards_update_severity_to_enum (const std::string &severity)
++{
++	if (severity == "low")
++		return PK_INFO_ENUM_LOW;
++	if (severity == "moderate")
++		return PK_INFO_ENUM_NORMAL;
++	if (severity == "important")
++		return PK_INFO_ENUM_IMPORTANT;
++	if (severity == "critical")
++		return PK_INFO_ENUM_CRITICAL;
++	return PK_INFO_ENUM_UNKNOWN;
++}
++
++bool
++cards_force_distupgrade_on_upgrade (libcards::Base &base)
++{
++	std::vector<std::string> distroverpkg_names = { "system-release", "distribution-release" };
++	std::vector<std::string> distupgrade_provides = { "system-upgrade(dsync)", "product-upgrade() = dup" };
++
++	libcards::rpm::PackageQuery query(base);
++	query.filter_installed();
++	query.filter_name(distroverpkg_names);
++	query.filter_provides(distupgrade_provides);
++
++	return !query.empty();
++}
++
++bool
++cards_repo_is_devel (const libcards::repo::Repo &repo)
++{
++	std::string id = repo.get_id();
++	return (id.ends_with("-debuginfo") || id.ends_with("-debugsource") || id.ends_with("-devel"));
++}
++
++bool
++cards_repo_is_source (const libcards::repo::Repo &repo)
++{
++	std::string id = repo.get_id();
++	return id.ends_with("-source");
++}
++
++bool
++cards_repo_is_supported (const libcards::repo::Repo &repo)
++{
++	return cards_validate_supported_repo(repo.get_id());
++}
++
++bool
++cards_backend_pk_repo_filter (const libcards::repo::Repo &repo, PkBitfield filters)
++{
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_DEVELOPMENT) && !cards_repo_is_devel (repo))
++		return false;
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_DEVELOPMENT) && cards_repo_is_devel (repo))
++		return false;
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_SOURCE) && !cards_repo_is_source (repo))
++		return false;
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_SOURCE) && cards_repo_is_source (repo))
++		return false;
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_INSTALLED) && !repo.is_enabled())
++		return false;
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_INSTALLED) && repo.is_enabled())
++		return false;
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_SUPPORTED) && !cards_repo_is_supported (repo))
++		return false;
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_SUPPORTED) && cards_repo_is_supported (repo))
++		return false;
++
++	return true;
++}
++
++bool
++cards_package_is_gui (const libcards::rpm::Package &pkg)
++{
++	for (const auto &provide : pkg.get_provides()) {
++		std::string name = provide.get_name();
++		if (name.starts_with("application("))
++			return true;
++	}
++	return false;
++}
++
++bool
++cards_package_filter (const libcards::rpm::Package &pkg, PkBitfield filters)
++{
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_GUI) && !cards_package_is_gui (pkg))
++		return false;
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_GUI) && cards_package_is_gui (pkg))
++		return false;
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_DOWNLOADED) && !pkg.is_available_locally())
++		return false;
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_DOWNLOADED) && pkg.is_available_locally())
++		return false;
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_DEVELOPMENT) ||
++	    pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_DEVELOPMENT) ||
++	    pk_bitfield_contain (filters, PK_FILTER_ENUM_SOURCE) ||
++	    pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_SOURCE) ||
++	    pk_bitfield_contain (filters, PK_FILTER_ENUM_SUPPORTED) ||
++	    pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_SUPPORTED)) {
++		auto repo_weak = pkg.get_repo();
++		if (repo_weak.is_valid()) {
++			if (!cards_backend_pk_repo_filter(*repo_weak, filters))
++				return false;
++		}
++	}
++
++	return true;
++}
++
++std::vector<libcards::rpm::Package>
++cards_process_dependency (libcards::Base &base, const libcards::rpm::Package &pkg, PkRoleEnum role, gboolean recursive)
++{
++	std::vector<libcards::rpm::Package> results;
++	std::set<std::string> visited;
++	std::queue<libcards::rpm::Package> queue;
++	queue.push(pkg);
++	visited.insert(pkg.get_name() + ";" + pkg.get_evr() + ";" + pkg.get_arch());
++	
++	while (!queue.empty()) {
++		auto curr = queue.front();
++		queue.pop();
++		libcards::rpm::ReldepList reldeps(base);
++		if (role == PK_ROLE_ENUM_DEPENDS_ON) reldeps = curr.get_requires();
++		else reldeps = curr.get_provides();
++		
++		for (const auto &reldep : reldeps) {
++			std::string req = reldep.to_string();
++			libcards::rpm::PackageQuery query(base);
++			if (role == PK_ROLE_ENUM_DEPENDS_ON) query.filter_provides(req);
++			else query.filter_requires(req);
++			
++			// Filter for latest version and supported architectures to avoid duplicates
++			// for available packages
++			query.filter_latest_evr();
++			query.filter_arch(libcards::rpm::get_supported_arches());
++			
++			for (const auto &res : query) {
++				std::string res_nevra = res.get_name() + ";" + res.get_evr() + ";" + res.get_arch();
++				if (visited.find(res_nevra) == visited.end()) {
++					visited.insert(res_nevra);
++					results.push_back(res);
++					if (recursive) queue.push(res);
++				}
++			}
++		}
++	}
++	return results;
++}
++
++void
++cards_emit_pkg (PkBackendJob *job, const cards::cache &pkg, PkInfoEnum info, PkInfoEnum severity)
++{
++	if (info == PK_INFO_ENUM_UNKNOWN) {
++		info = PK_INFO_ENUM_AVAILABLE;
++		if (pkg.get_install_time() > 0) {
++			info = PK_INFO_ENUM_INSTALLED;
++		}
++	}
++	
++	std::string evr = pkg.get_evr();
++	std::string repo_id = pkg.get_repo_id();
++	if (pkg.get_install_time() > 0) {
++		repo_id = "installed";
++	}
++	
++	std::string package_id = pkg.get_name() + ";" + evr + ";" + pkg.get_arch() + ";" + repo_id;
++	if (severity != PK_INFO_ENUM_UNKNOWN) {
++		pk_backend_job_package_full (job, info, package_id.c_str(), pkg.get_summary().c_str(), severity);
++	} else {
++		pk_backend_job_package (job, info, package_id.c_str(), pkg.get_summary().c_str());
++	}
++}
++
++void
++cards_sort_and_emit (PkBackendJob *job, std::vector<cards::cache> &pkgs)
++{
++	std::sort(pkgs.begin(), pkgs.end(), [](const libcards::rpm::Package &a, const libcards::rpm::Package &b) {
++		bool a_installed = (a.get_install_time() > 0);
++		bool b_installed = (b.get_install_time() > 0);
++		if (a_installed != b_installed) return a_installed; 
++		if (a.get_name() != b.get_name()) return a.get_name() < b.get_name();
++		if (a.get_arch() != b.get_arch()) return a.get_arch() < b.get_arch();
++		return a.get_evr() < b.get_evr();
++	});
++
++	std::set<std::string> seen_nevras;
++	for (auto &pkg : pkgs) {
++		std::string nevra = pkg.get_name() + ";" + pkg.get_evr() + ";" + pkg.get_arch();
++		if (seen_nevras.find(nevra) == seen_nevras.end()) {
++			cards_emit_pkg(job, pkg);
++			seen_nevras.insert(nevra);
++		}
++	}
++}
++
++void
++cards_apply_filters (libcards::Base &base, libcards::rpm::PackageQuery &query, PkBitfield filters)
++{
++	gboolean installed = pk_bitfield_contain (filters, PK_FILTER_ENUM_INSTALLED);
++	gboolean available = pk_bitfield_contain (filters, PK_FILTER_ENUM_NOT_INSTALLED);
++
++	if (installed && !available) {
++		query.filter_installed();
++	} else if (!installed && available) {
++		query.filter_available();
++	}
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_ARCH)) {
++		auto vars = base.get_vars();
++		if (vars.is_valid()) {
++			std::string arch = vars->get_value("arch");
++			if (!arch.empty()) {
++				query.filter_arch({arch, "noarch"});
++			} else {
++				query.filter_arch(libcards::rpm::get_supported_arches());
++			}
++		}
++	}
++
++	if (pk_bitfield_contain (filters, PK_FILTER_ENUM_NEWEST)) {
++		query.filter_latest_evr();
++	}
++}
++
++std::vector<cards::cache>
++cards_resolve_package_ids(libcards::Base &base, gchar **package_ids)
++{
++	std::vector<libcards::rpm::Package> pkgs;
++	if (!package_ids) return pkgs;
++	
++	for (int i = 0; package_ids[i] != NULL; i++) {
++		// Check if this is a simple package name (no semicolons) or a full package ID
++		if (strchr(package_ids[i], ';') == NULL) {
++			// Simple package name - search by name and get latest available
++			try {
++				g_debug("Resolving simple package name: %s", package_ids[i]);
++				libcards::rpm::PackageQuery query(base);
++				query.filter_name(std::string(package_ids[i]), libcards::sack::QueryCmp::EQ);
++				query.filter_available();
++				query.filter_latest_evr();
++				query.filter_arch(libcards::rpm::get_supported_arches());
++
++				
++				if (!query.empty()) {
++					for (auto pkg : query) {
++						g_debug("Found package: name=%s, evr=%s, arch=%s, repo=%s",
++							pkg.get_name().c_str(), pkg.get_evr().c_str(), 
++							pkg.get_arch().c_str(), pkg.get_repo_id().c_str());
++						pkgs.push_back(pkg);
++						break; // Take the first match
++					}
++				} else {
++					g_debug("No available package found for name: %s", package_ids[i]);
++				}
++			} catch (const std::exception &e) {
++				g_debug("Exception resolving package name %s: %s", package_ids[i], e.what());
++			}
++			continue;
++		}
++		
++		// Full package ID - use existing logic
++		g_auto(GStrv) split = pk_package_id_split(package_ids[i]);
++		if (!split) continue;
++		
++		try {
++			libcards::rpm::PackageQuery query(base);
++			g_debug("Resolving package ID: name=%s, version=%s, arch=%s, repo=%s",
++				split[PK_PACKAGE_ID_NAME], split[PK_PACKAGE_ID_VERSION],
++				split[PK_PACKAGE_ID_ARCH], split[PK_PACKAGE_ID_DATA]);
++			query.filter_name(split[PK_PACKAGE_ID_NAME]);
++			query.filter_evr(split[PK_PACKAGE_ID_VERSION]);
++			query.filter_arch(split[PK_PACKAGE_ID_ARCH]);
++			
++			if (g_strcmp0(split[PK_PACKAGE_ID_DATA], "installed") == 0) {
++				query.filter_installed();
++			} else {
++				 query.filter_repo_id(split[PK_PACKAGE_ID_DATA]);
++			}
++			
++			if (query.empty()) {
++				g_debug("No exact match for ID: %s. Listing similar packages...", package_ids[i]);
++				libcards::rpm::PackageQuery fallback(base);
++				fallback.filter_name(split[PK_PACKAGE_ID_NAME]);
++				for (const auto &p : fallback) {
++					g_debug("Found similar package: name=%s, evr=%s, arch=%s, repo=%s",
++						p.get_name().c_str(), p.get_evr().c_str(), p.get_arch().c_str(), p.get_repo_id().c_str());
++				}
++			}
++
++			for (auto pkg : query) {
++				pkgs.push_back(pkg);
++				break;
++			}
++		} catch (const std::exception &e) {
++			g_debug("Exception resolving package ID %s: %s", package_ids[i], e.what());
++		}
++	}
++	return pkgs;
++}
++
++
++void
++cards_remove_old_cache_directories (PkBackend *backend, const gchar *release_ver)
++{
++	PkBackendCardsPrivate *priv = (PkBackendCardsPrivate *) pk_backend_get_user_data (backend);
++	g_assert (priv->conf != NULL);
++
++	/* cache cleanup disabled? */
++	if (g_key_file_get_boolean (priv->conf, "Daemon", "KeepCache", NULL)) {
++		g_debug ("KeepCache config option set; skipping old cache directory cleanup");
++		return;
++	}
++
++	/* only do cache cleanup for regular installs */
++	g_autofree gchar *destdir = g_key_file_get_string (priv->conf, "Daemon", "DestDir", NULL);
++	if (destdir != NULL) {
++		g_debug ("DestDir config option set; skipping old cache directory cleanup");
++		return;
++	}
++
++	std::filesystem::path cache_path("/var/cache/PackageKit");
++	if (!std::filesystem::exists(cache_path) || !std::filesystem::is_directory(cache_path))
++		return;
++
++	/* look at each subdirectory */
++	for (const auto &entry : std::filesystem::directory_iterator(cache_path)) {
++		if (!entry.is_directory())
++			continue;
++
++		std::string filename = entry.path().filename().string();
++
++		/* is the version older than the current release ver? */
++		if (rpmvercmp (filename.c_str(), release_ver) < 0) {
++			g_debug ("removing old cache directory %s", entry.path().c_str());
++			std::error_code ec;
++			std::filesystem::remove_all(entry.path(), ec);
++			if (ec)
++				g_warning ("failed to remove directory %s: %s", entry.path().c_str(), ec.message().c_str());
++		}
++	}
++}
++
++CardsDownloadCallbacks::CardsDownloadCallbacks(PkBackendJob *job, uint64_t total_size)
++    : job(job), total_size(total_size), finished_size(0), next_id(1) {}
++
++void *
++CardsDownloadCallbacks::add_new_download(void *user_data, const char *description, double total_to_download)
++{
++	std::lock_guard<std::mutex> lock(mutex);
++	void *id = reinterpret_cast<void*>(next_id++);
++	item_progress[id] = 0;
++	return id;
++}
++
++int
++CardsDownloadCallbacks::progress(void *user_cb_data, double total_to_download, double downloaded)
++{
++	std::lock_guard<std::mutex> lock(mutex);
++	item_progress[user_cb_data] = downloaded;
++	
++	if (total_size > 0) {
++		double current_total = finished_size;
++		for (auto const& [id, prog] : item_progress) {
++			current_total += prog;
++		}
++		pk_backend_job_set_percentage(job, (uint)(current_total * 100 / total_size));
++	}
++	return 0;
++}
++
++int
++CardsDownloadCallbacks::end(void *user_cb_data, TransferStatus status, const char *msg)
++{
++	std::lock_guard<std::mutex> lock(mutex);
++	finished_size += item_progress[user_cb_data];
++	item_progress.erase(user_cb_data);
++	return 0;
++}
++
++CardsTransactionCallbacks::CardsTransactionCallbacks(PkBackendJob *job)
++    : job(job), total_items(0), current_item_index(0) {}
++
++void
++CardsTransactionCallbacks::before_begin(uint64_t total)
++{
++	total_items = total;
++}
++
++void
++CardsTransactionCallbacks::elem_progress(const libcards::base::TransactionPackage &item, uint64_t amount, uint64_t total)
++{
++	current_item_index = amount;
++}
++
++void
++CardsTransactionCallbacks::install_progress(const libcards::base::TransactionPackage &item, uint64_t amount, uint64_t total)
++{
++	if (total_items > 0 && total > 0) {
++		double item_frac = (double)amount / total;
++		pk_backend_job_set_percentage(job, (uint)((current_item_index + item_frac) * 100 / total_items));
++	}
++}
++
++void
++CardsTransactionCallbacks::install_start(const libcards::base::TransactionPackage &item, uint64_t total)
++{
++	auto action = item.get_action();
++	PkInfoEnum info = PK_INFO_ENUM_INSTALLING;
++	if (action == libcards::transaction::TransactionItemAction::UPGRADE ||
++	    action == libcards::transaction::TransactionItemAction::DOWNGRADE) {
++		info = PK_INFO_ENUM_UPDATING;
++	}
++	cards_emit_pkg(job, item.get_package(), info);
++}
++
++void
++CardsTransactionCallbacks::uninstall_progress(const libcards::base::TransactionPackage &item, uint64_t amount, uint64_t total)
++{
++	if (total_items > 0 && total > 0) {
++		double item_frac = (double)amount / total;
++		pk_backend_job_set_percentage(job, (uint)((current_item_index + item_frac) * 100 / total_items));
++	}
++}
++
++void
++CardsTransactionCallbacks::uninstall_start(const libcards::base::TransactionPackage &item, uint64_t total)
++{
++	auto action = item.get_action();
++	PkInfoEnum info = PK_INFO_ENUM_REMOVING;
++	if (action == libcards::transaction::TransactionItemAction::REPLACED) {
++		info = PK_INFO_ENUM_CLEANUP;
++	}
++	cards_emit_pkg(job, item.get_package(), info);
++}
+diff -Naur PackageKit_upstream/backends/cards/utils.hpp PackageKit/backends/cards/utils.hpp
+--- PackageKit_upstream/backends/cards/utils.hpp	1970-01-01 01:00:00.000000000 +0100
++++ PackageKit/backends/cards/utils.hpp	2026-04-28 21:33:21.712086122 +0200
+@@ -0,0 +1,86 @@
++/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*-
++ *
++ * Copyright (C) 2025 Neal Gompa <neal@gompa.dev>
++ * Copyright (C) 2026 Thierry Nuttens <tnut@nutyx.org>
++ *
++ * Licensed under the GNU General Public License Version 2
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, see <https://www.gnu.org/licenses/>.
++ */
++
++#pragma once
++
++#include <pk-backend.h>
++#include <libcards.h>
++#include <glib.h>
++#include <memory>
++#include <mutex>
++#include <string>
++#include <vector>
++/*
++// Private data structures
++typedef struct {
++	std::unique_ptr<libcards::Base> base;
++	GKeyFile *conf;
++	GMutex mutex;
++	gint64 last_notification_timestamp;
++} PkBackendCardsPrivate;
++*/
++void cards_setup_base(PkBackendCardsPrivate *priv, gboolean refresh = FALSE, gboolean force = FALSE, const char *releasever = nullptr);
++void cards_refresh_cache(PkBackendCardsPrivate *priv, gboolean force);
++PkInfoEnum cards_advisory_kind_to_info_enum(const std::string &type);
++PkInfoEnum cards_update_severity_to_enum(const std::string &severity);
++bool cards_force_distupgrade_on_upgrade(libcards::Base &base);
++bool cards_repo_is_devel(const libcards::repo::Repo &repo);
++bool cards_repo_is_source(const libcards::repo::Repo &repo);
++bool cards_repo_is_supported(const libcards::repo::Repo &repo);
++bool cards_backend_pk_repo_filter(const libcards::repo::Repo &repo, PkBitfield filters);
++bool cards_package_is_gui(const libcards::rpm::Package &pkg);
++bool cards_package_filter(const libcards::rpm::Package &pkg, PkBitfield filters);
++std::vector<libcards::rpm::Package> cards_process_dependency(libcards::Base &base, const libcards::rpm::Package &pkg, PkRoleEnum role, gboolean recursive);
++void cards_emit_pkg(PkBackendJob *job, const libcards::rpm::Package &pkg, PkInfoEnum info = PK_INFO_ENUM_UNKNOWN, PkInfoEnum severity = PK_INFO_ENUM_UNKNOWN);
++void cards_sort_and_emit(PkBackendJob *job, std::vector<libcards::rpm::Package> &pkgs);
++void cards_apply_filters(libcards::Base &base, libcards::rpm::PackageQuery &query, PkBitfield filters);
++std::vector<libcards::rpm::Package> cards_resolve_package_ids(libcards::Base &base, gchar **package_ids);
++void cards_remove_old_cache_directories(PkBackend *backend, const gchar *release_ver);
++
++class CardsDownloadCallbacks : public libcards::repo::DownloadCallbacks {
++public:
++	explicit CardsDownloadCallbacks(PkBackendJob *job, uint64_t total_size = 0);
++	void * add_new_download(void *user_data, const char *description, double total_to_download) override;
++	int progress(void *user_cb_data, double total_to_download, double downloaded) override;
++	int end(void *user_cb_data, TransferStatus status, const char *msg) override;
++private:
++	PkBackendJob *job;
++	uint64_t total_size;
++	double finished_size;
++	std::map<void*, double> item_progress;
++	std::mutex mutex;
++	uint64_t next_id;
++};
++
++class CardsTransactionCallbacks : public libcards::rpm::TransactionCallbacks {
++public:
++	explicit CardsTransactionCallbacks(PkBackendJob *job);
++	void before_begin(uint64_t total) override;
++	void elem_progress(const libcards::base::TransactionPackage &item, uint64_t amount, uint64_t total) override;
++	void install_progress(const libcards::base::TransactionPackage &item, uint64_t amount, uint64_t total) override;
++	void install_start(const libcards::base::TransactionPackage &item, uint64_t total) override;
++	void uninstall_progress(const libcards::base::TransactionPackage &item, uint64_t amount, uint64_t total) override;
++	void uninstall_start(const libcards::base::TransactionPackage &item, uint64_t total) override;
++private:
++	PkBackendJob *job;
++	uint64_t total_items;
++	uint64_t current_item_index;
++};
