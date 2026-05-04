@@ -1,13 +1,13 @@
 description='Lightweight SSH server'
 url='https://github.com/mkj/dropbear'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(autoconf automake m4 sed grep)
 
 name=dropbear
-version=2025.89
+version=2026.90
 
 source=(https://github.com/mkj/dropbear/archive/DROPBEAR_${version}.tar.gz)
 prepare() {
