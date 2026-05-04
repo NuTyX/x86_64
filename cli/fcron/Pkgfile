@@ -4,11 +4,11 @@ url="http://fcron.free.fr"
 contributors="Pierre,Greg,Spiky"
 packager="tnut <tnut@nutyx.org>"
 
-makedepends=(vim pam libxcrypt readline)
+makedepends=(vim pam libxcrypt readline systemd)
 
 name=fcron
 version=3.4.0
-release=3
+release=4
 
 PKGMK_GROUPS=(doc man)
 source=(http://fcron.free.fr/archives/$name-$version.src.tar.gz)
