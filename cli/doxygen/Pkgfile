@@ -8,6 +8,7 @@ makedepends=(flex bison python cmake xapian git)
 
 name=doxygen
 version=1.16.1
+release=2
 PKGMK_IGNORE_UNPACK="yes"
 
 source=(http://doxygen.nl/files/$name-$version.src.tar.gz)
