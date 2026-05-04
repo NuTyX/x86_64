@@ -4,11 +4,14 @@ drwxr-xr-x	root/root	usr/include/hwy/
 -rw-r--r--	root/root	usr/include/hwy/aligned_allocator.h
 -rw-r--r--	root/root	usr/include/hwy/auto_tune.h
 -rw-r--r--	root/root	usr/include/hwy/base.h
+-rw-r--r--	root/root	usr/include/hwy/bit_set.h
 -rw-r--r--	root/root	usr/include/hwy/cache_control.h
 drwxr-xr-x	root/root	usr/include/hwy/contrib/
 drwxr-xr-x	root/root	usr/include/hwy/contrib/algo/
 -rw-r--r--	root/root	usr/include/hwy/contrib/algo/copy-inl.h
+-rw-r--r--	root/root	usr/include/hwy/contrib/algo/count-inl.h
 -rw-r--r--	root/root	usr/include/hwy/contrib/algo/find-inl.h
+-rw-r--r--	root/root	usr/include/hwy/contrib/algo/minmax-inl.h
 -rw-r--r--	root/root	usr/include/hwy/contrib/algo/transform-inl.h
 drwxr-xr-x	root/root	usr/include/hwy/contrib/bit_pack/
 -rw-r--r--	root/root	usr/include/hwy/contrib/bit_pack/bit_pack-inl.h
@@ -17,6 +20,7 @@ drwxr-xr-x	root/root	usr/include/hwy/contrib/dot/
 drwxr-xr-x	root/root	usr/include/hwy/contrib/image/
 -rw-r--r--	root/root	usr/include/hwy/contrib/image/image.h
 drwxr-xr-x	root/root	usr/include/hwy/contrib/math/
+-rw-r--r--	root/root	usr/include/hwy/contrib/math/fast_math-inl.h
 -rw-r--r--	root/root	usr/include/hwy/contrib/math/math-inl.h
 drwxr-xr-x	root/root	usr/include/hwy/contrib/matvec/
 -rw-r--r--	root/root	usr/include/hwy/contrib/matvec/matvec-inl.h
@@ -74,6 +78,11 @@ drwxr-xr-x	root/root	usr/include/hwy/tests/
 -rw-r--r--	root/root	usr/include/hwy/timer-inl.h
 -rw-r--r--	root/root	usr/include/hwy/timer.h
 -rw-r--r--	root/root	usr/include/hwy/x86_cpuid.h
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/hwy/
+-rw-r--r--	root/root	usr/lib/cmake/hwy/hwy-config-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/hwy/hwy-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/hwy/hwy-config.cmake
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libhwy-contrib.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libhwy-test.pc
