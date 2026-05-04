@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gedit"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Fanch,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Fanch,Tnut"
 
 makedepends=(meson ninja libpeas yelp-xsl enchant iso-codes
              libgedit-gtksourceview gspell enchant git
@@ -13,7 +13,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gvfs)
 
 name=gedit
 version=50.0
-release=1
+release=2
 
 
 PKGMK_MESON_OPTIONS="-Dgtk_doc=false"
