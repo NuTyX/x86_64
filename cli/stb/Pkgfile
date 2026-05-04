@@ -1,0 +1,21 @@
+description='single-file public domain libraries for C/C++'
+url='https://github.com/nothings/stb'
+
+license="MIT"
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(git)
+
+name=stb
+version=20260316
+_commit=e6cd9561ea6dae43d41633797745789d142b691e
+
+source=(https://github.com/nothings/stb/archive/$_commit/$name-$version.tar.gz)
+
+build() {
+
+    install -Dm 644 stb-$_commit/*.{c,h} -t $PKG/usr/include/stb/
+    install -Dm 644 stb-$_commit/deprecated/stb_image_resize.h -t $PKG/usr/include/stb/
+}
