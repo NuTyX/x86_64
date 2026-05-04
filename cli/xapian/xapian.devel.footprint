@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/xapian.h
 drwxr-xr-x	root/root	usr/include/xapian/
 -rw-r--r--	root/root	usr/include/xapian/attributes.h
+-rw-r--r--	root/root	usr/include/xapian/cluster.h
 -rw-r--r--	root/root	usr/include/xapian/compactor.h
 -rw-r--r--	root/root	usr/include/xapian/constants.h
 -rw-r--r--	root/root	usr/include/xapian/constinfo.h
@@ -12,13 +13,13 @@ drwxr-xr-x	root/root	usr/include/xapian/
 -rw-r--r--	root/root	usr/include/xapian/document.h
 -rw-r--r--	root/root	usr/include/xapian/enquire.h
 -rw-r--r--	root/root	usr/include/xapian/error.h
--rw-r--r--	root/root	usr/include/xapian/errorhandler.h
 -rw-r--r--	root/root	usr/include/xapian/eset.h
 -rw-r--r--	root/root	usr/include/xapian/expanddecider.h
 -rw-r--r--	root/root	usr/include/xapian/geospatial.h
 -rw-r--r--	root/root	usr/include/xapian/intrusive_ptr.h
 -rw-r--r--	root/root	usr/include/xapian/iterator.h
 -rw-r--r--	root/root	usr/include/xapian/keymaker.h
+-rw-r--r--	root/root	usr/include/xapian/matchdecider.h
 -rw-r--r--	root/root	usr/include/xapian/matchspy.h
 -rw-r--r--	root/root	usr/include/xapian/mset.h
 -rw-r--r--	root/root	usr/include/xapian/positioniterator.h
@@ -27,6 +28,7 @@ drwxr-xr-x	root/root	usr/include/xapian/
 -rw-r--r--	root/root	usr/include/xapian/query.h
 -rw-r--r--	root/root	usr/include/xapian/queryparser.h
 -rw-r--r--	root/root	usr/include/xapian/registry.h
+-rw-r--r--	root/root	usr/include/xapian/rset.h
 -rw-r--r--	root/root	usr/include/xapian/stem.h
 -rw-r--r--	root/root	usr/include/xapian/termgenerator.h
 -rw-r--r--	root/root	usr/include/xapian/termiterator.h
@@ -37,5 +39,9 @@ drwxr-xr-x	root/root	usr/include/xapian/
 -rw-r--r--	root/root	usr/include/xapian/version.h
 -rw-r--r--	root/root	usr/include/xapian/visibility.h
 -rw-r--r--	root/root	usr/include/xapian/weight.h
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/xapian/
+-rw-r--r--	root/root	usr/lib/cmake/xapian/xapian-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/xapian/xapian-config.cmake
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xapian-core.pc

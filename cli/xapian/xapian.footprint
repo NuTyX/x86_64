@@ -1,7 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/copydatabase
--rwxr-xr-x	root/root	usr/bin/quest
 -rwxr-xr-x	root/root	usr/bin/simpleexpand
 -rwxr-xr-x	root/root	usr/bin/simpleindex
 -rwxr-xr-x	root/root	usr/bin/simplesearch
@@ -12,17 +11,14 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xapian-metadata
 -rwxr-xr-x	root/root	usr/bin/xapian-pos
 -rwxr-xr-x	root/root	usr/bin/xapian-progsrv
+-rwxr-xr-x	root/root	usr/bin/xapian-quest
 -rwxr-xr-x	root/root	usr/bin/xapian-replicate
 -rwxr-xr-x	root/root	usr/bin/xapian-replicate-server
 -rwxr-xr-x	root/root	usr/bin/xapian-tcpsrv
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/xapian/
--rw-r--r--	root/root	usr/lib/cmake/xapian/xapian-config-version.cmake
--rw-r--r--	root/root	usr/lib/cmake/xapian/xapian-config.cmake
-lrwxrwxrwx	root/root	usr/lib/libxapian.so -> libxapian.so.30.14.2
-lrwxrwxrwx	root/root	usr/lib/libxapian.so.30 -> libxapian.so.30.14.2
--rwxr-xr-x	root/root	usr/lib/libxapian.so.30.14.2
+lrwxrwxrwx	root/root	usr/lib/libxapian.so -> libxapian.so.45.0.0
+lrwxrwxrwx	root/root	usr/lib/libxapian.so.45 -> libxapian.so.45.0.0
+-rwxr-xr-x	root/root	usr/lib/libxapian.so.45.0.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/xapian.m4
