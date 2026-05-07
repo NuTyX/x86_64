@@ -8,7 +8,7 @@ makedepends=(vim pam libxcrypt readline systemd)
 
 name=fcron
 version=3.4.0
-release=4
+release=5
 
 PKGMK_GROUPS=(doc man)
 source=(http://fcron.free.fr/archives/$name-$version.src.tar.gz)
@@ -35,7 +35,7 @@ build() {
     ./configure --prefix=/usr \
     --sysconfdir=/etc  \
     --sbindir=/usr/bin \
-    --without-sendmail \
+    --with-sendmail=/bin/sendmail \
     --localstatedir=/var    \
     --with-boot-install=no  \
     --mandir=/usr/share/man \
