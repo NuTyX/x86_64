@@ -1,0 +1,23 @@
+description='Wallet management tool'
+url='https://apps.kde.org/kwalletmanager5/'
+
+license="LGPL-2.0-only LGPL-3.0-only"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+set=(kde6-gear)
+
+name=kwalletmanager
+version=26.04.0
+release=1
+
+makedepends=(qt6-base extra-cmake-modules kdoctools
+            karchive kauth kcmutils kcodecs kconfig
+             kconfigwidgets kcoreaddons kcrash kdbusaddons
+             ki18n kio kitemviews kservice kstatusnotifieritem
+             kwallet kwidgetsaddons kwindowsystem kxmlgui)
+
+source=(https://download.kde.org/stable/release-service/${version}/src/${name}-$version.tar.xz)
+
+build=kde6
