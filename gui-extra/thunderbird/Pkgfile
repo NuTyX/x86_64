@@ -16,7 +16,7 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=140.9.1esr
+version=140.10.1esr
 
 source=(python-3.14-fixes-1.patch glibc-2.43.patch llvm-22-1.patch
         https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
@@ -108,7 +108,7 @@ EOF
   sed -e '1i\#![warn(dangerous_implicit_autorefs)]\r' \
     -i third_party/rust/allocator-api2/src/stable/vec/mod.rs
 
-  export CC=gcc CXX=g++ AR=gcc-ar NM=gcc-nm RANLIB=gcc-ranlib
+  export CC=clang CXX=clang++ AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib
 
   export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
   export MOZBUILD_STATE_PATH=${PWD}/mozbuild
