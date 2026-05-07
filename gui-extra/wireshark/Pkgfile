@@ -1,8 +1,8 @@
 description="Network Sniffer with nice GUI"
 url="https://www.wireshark.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Greg,Rémy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Greg,Rémy,Fabienwang,Spiky"
 
 makedepends=(cmake c-ares ninja shared-mime-info gtk3 libpcap pcre hicolor-icon-theme
              qt6-tools qt6-multimedia qt6-svg qt6-5compat)
@@ -24,17 +24,17 @@ build() {
   cd    build
   cmake  -DCMAKE_INSTALL_PREFIX=/usr \
          -DCMAKE_BUILD_TYPE=Release \
-         -DMAKE_INSTALL_DOCDIR=/usr/share/doc/$name-$version \
+         -DMAKE_INSTALL_DOCDIR=/usr/share/doc/$name \
          -G Ninja ..
 
   ninja
   DESTDIR=$PKG ninja install
 
-  install -v -m755 -d $PKG/usr/share/doc/wireshark-$version
+  install -v -m755 -d $PKG/usr/share/doc/$name
   install -v -m644    ../README.linux ../doc/README.* ../doc/randpkt.txt \
-                      $PKG/usr/share/doc/wireshark-$version
+                      $PKG/usr/share/doc/$name
 
-  pushd $PKG/usr/share/doc/wireshark-$version
+  pushd $PKG/usr/share/doc/$name
      for FILENAME in ../../wireshark/*.html; do
          ln -s -v -f $FILENAME .
      done
