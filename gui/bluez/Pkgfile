@@ -6,20 +6,20 @@ license="GPL2.0-only"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Spiky"
 
-makedepends=(readline dbus libical libvorbis alsa-lib
+makedepends=(git autoconf automake m4 grep sed libtool
+             readline dbus libical libvorbis alsa-lib
              libusb-compat libsndfile cups glib)
 
 name=bluez
-version=5.86
-release=2
+version=d45fd43
 
 PKGMK_GROUPS=(man devel doc)
 
-source=(https://www.kernel.org/pub/linux/bluetooth/$name-$version.tar.xz)
+source=(https://github.com/bluez/bluez.git)
 
 prepare() {
  cd $name-$version
- sed -i '4967,4968d' src/adapter.c
+ ./bootstrap
 }
 
 build() {
