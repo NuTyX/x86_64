@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel
-version=7.0.1
+version=7.0.6
 _version=${version%.*}
 [ "${version:0:1}" == "${version%.*}" ] && _version=$version
 
@@ -78,12 +78,12 @@ ln -sv /usr/src/$name $KERNELRELEASE/build
 rm -rf $PKG/lib/firmware
 
 # post-install autogen
-echo "if [ -f boot/$INITRD ]; then
-    mkinitramfs $KERNELRELEASE
-    rm boot/$INITRD
-    mv boot/initrd-$KERNELRELEASE boot/$INITRD
-fi" > $PKGMK_ROOT/$name.post-install
+echo "mkinitramfs $KERNELRELEASE
+rm -f boot/$INITRD
+mv boot/initrd-$KERNELRELEASE boot/$INITRD" > $PKGMK_ROOT/$name.post-install
 
+# post-remove autogen
+echo "rm -f boot/$INITRD" > $PKGMK_ROOT/$name.post-remove
 }
 devel() {
 cd $PKG
