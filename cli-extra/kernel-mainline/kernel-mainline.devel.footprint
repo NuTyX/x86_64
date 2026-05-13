@@ -15,6 +15,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.clippy.toml
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.cocciconfig
 -rw-r--r--	root/root	usr/src/kernel-mainline/.config
+-rw-r--r--	root/root	usr/src/kernel-mainline/.config.old
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.editorconfig
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.get_maintainer.ignore
 -rw-rw-r--	root/root	usr/src/kernel-mainline/.gitattributes
@@ -18174,6 +18175,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/include/linux/sched/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/slimbus.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/sm501-regs.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/sm501.h
+-rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/smbdirect.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/smc91x.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/smp.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/linux/smp_types.h
@@ -32226,6 +32228,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/hw_stats_l3_gre.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/iou-zcrx.c
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/iou-zcrx.py
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/ipsec_vxlan.py
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/irq.py
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/lib/
 drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/drivers/net/hw/lib/py/
@@ -34147,6 +34150,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_ao/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_ao/setsockopt-closed.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_ao/settings
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_ao/unsigned-md5.c
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_ecmp_failover.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_fastopen_backup_key.c
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_fastopen_backup_key.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/tcp_inq.c
@@ -34968,7 +34972,9 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/basic_percpu_ops_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/basic_test.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/check_optimized.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/compiler.h
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/legacy_check.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/param_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/rseq-abi.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/rseq-arm-bits.h
@@ -34997,8 +35003,10 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/rseq-x86.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/rseq.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/rseq.h
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/run_legacy_check.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/run_param_test.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/run_syscall_errors_test.sh
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/run_timeslice_test.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/settings
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/slice_test.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/rseq/syscall_errors_test.c
@@ -35061,6 +35069,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/maybe_null_fail_yld.bpf.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/minimal.bpf.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/minimal.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/non_scx_kfunc_deny.bpf.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/non_scx_kfunc_deny.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/numa.bpf.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/numa.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/sched_ext/peek_dsq.bpf.c
@@ -36030,8 +36040,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.1-rc1/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.1-rc3/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-7.1-rc1 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-7.1-rc3 -> kernel-mainline
