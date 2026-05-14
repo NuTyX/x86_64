@@ -8,6 +8,8 @@ makedepends=(pam extra-cmake-modules qt6-base qt6-5compat  kcmutils kconfig kcor
              kdbusaddons ki18n kirigami kpackage kservice kwindowsystem layer-shell-qt
              qt6-tools libplasma xorg-libxau pam plasma-workspace)
 
+run=(xorg-xauth xorg-server xorg-xinit)
+
 set=(kde6 kde6-plasma)
 
 name=plasma-login-manager
