@@ -11,18 +11,16 @@ makedepends=(nasm)
 
 name=e3
 version=2.82
-release=2
+release=4
 
 source=(Makefile
         https://deb.debian.org/debian/pool/main/e/e3/${name}_$version+dfsg.orig.tar.gz)
 build() {
-cd $name-$version*
-mv ../Makefile .
+ cd $name-$version*
+ mv ../Makefile .
 
-sed 's/DEFAULT_MODE WS/DEFAULT_MODE VI/' -i e3.h
+ sed 's/DEFAULT_MODE WS/DEFAULT_MODE VI/' -i e3.h
  make clean
  make EXMODE=_ 64
  make PREFIX="$PKG/usr" install
-ln -sv e3 $PKG/usr/bin/ev
-ln -sv e3 $PKG/usr/bin/vi
 }
