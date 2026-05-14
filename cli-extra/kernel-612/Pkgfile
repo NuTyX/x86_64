@@ -11,7 +11,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-612
-version=6.12.83
+version=6.12.87
 _version=${version%.*}
 
 alias=(linux-612)
@@ -75,12 +75,12 @@ ln -sv /usr/src/$name $KERNELRELEASE/build
 rm -rf $PKG/lib/firmware
 
 # post-install autogen
-echo "if [ -f boot/$INITRD ]; then
-    mkinitramfs $KERNELRELEASE
-    rm boot/$INITRD
-    mv boot/initrd-$KERNELRELEASE boot/$INITRD
-fi" > $PKGMK_ROOT/$name.post-install
+echo "mkinitramfs $KERNELRELEASE
+rm -p boot/$INITRD
+mv boot/initrd-$KERNELRELEASE boot/$INITRD" > $PKGMK_ROOT/$name.post-install
 
+# post-remove autogen
+echo "rm -p boot/$INITRD" > $PKGMK_ROOT/$name.post-remove
 }
 devel() {
 cd $PKG

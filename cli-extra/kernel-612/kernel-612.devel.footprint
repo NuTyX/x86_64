@@ -24032,6 +24032,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/scripts/package/debian/
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/rust_is_available.sh
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/rust_is_available_bindgen_0_66.h
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/rust_is_available_bindgen_libclang.h
+-rw-r--r--	root/root	usr/src/kernel-612/scripts/rust_is_available_bindgen_libclang_concat.h
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/rust_is_available_test.py
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/rustc-llvm-version.sh
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/rustc-version.sh
@@ -30839,7 +30840,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/mqueue/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/mqueue/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/mqueue/mq_open_tests.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/mqueue/mq_perf_tests.c
--rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/mqueue/setting
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/mqueue/settings
 drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/nci/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/nci/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/nci/Makefile
