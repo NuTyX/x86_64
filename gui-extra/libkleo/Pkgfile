@@ -1,0 +1,22 @@
+description="KDE PIM cryptographic library"
+url="https://kontact.kde.org/"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+makedepends=(qt6-base qt6-tools extra-cmake-modules boost
+             kcodecs kcolorscheme kcompletion kconfig
+             kcoreaddons ki18n kitemmodels kwidgetsaddons
+             qgpgme)
+
+set=(kde6-gear)
+
+name=libkleo
+version=26.04.1
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
