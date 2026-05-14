@@ -7,7 +7,7 @@ makedepends=(musl)
 
 name=busybox
 version=1.36.1
-release=8
+release=9
 
 set=(chroot)
 
@@ -36,4 +36,5 @@ package() {
   [ "$i" == "sh" ] && continue
   ln -sv ../usr/bin/$name $PKG/bin/$i
  done
+ ln -sv $name $PKG/usr/bin/vi
 }
