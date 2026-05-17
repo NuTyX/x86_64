@@ -9,8 +9,8 @@ contributors="Spiky"
 set=(qt6)
 
 name=qt6-base
-version=6.11.0
-release=3
+version=6.11.1
+release=1
 
 makedepends=(libb2 cmake ninja systemd icu at-spi2-core mtdev 
              cups gstreamer-plugins-base xcb-util xcb-util-renderutil
@@ -19,13 +19,8 @@ makedepends=(libb2 cmake ninja systemd icu at-spi2-core mtdev
              xcb-util-cursor mesa pcre2 xdg-utils xcb-util-wm
              xorg-libxrender libxkbcommon gtk3 mariadb postgresql brotli)
 
-source=(qdbusmetaobject.patch
-        https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/qtbase-everywhere-src-$version.tar.xz)
+source=(https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/qtbase-everywhere-src-$version.tar.xz)
 
-prepare() {
-  cd qtbase-everywhere-src-$version
-  patch -Np1 -i ../qdbusmetaobject.patch
-}
 
 build() {
  mkdir build
