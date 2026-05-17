@@ -9,7 +9,7 @@ contributors="Spiky"
 set=(kde6-frameworks)
 
 name=breeze-icons
-version=6.25.0
+version=6.26.0
 release=1
 
 makedepends=(python-lxml qt6-base extra-cmake-modules)
@@ -17,4 +17,4 @@ makedepends=(python-lxml qt6-base extra-cmake-modules)
 run=(gtk-update-icon-cache)
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/$name-$version.tar.xz)
-build=kde5
+build=kde6
