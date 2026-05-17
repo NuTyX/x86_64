@@ -1,19 +1,19 @@
 description="Arc icon theme"
 url="https://github.com/horst3180/arc-icon-theme"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Greg,Spiky"
 
 run=(gtk-update-icon-cache hicolor-icon-theme)
 
 name=arc-icon-theme
 version=20161122
-release=3
+release=2
 
-source=(https://github.com/horst3180/$name/archive/$version.tar.gz)
+source=(https://github.com/horst3180/$name.git)
 
 build() {
- cd $SRC/$name-$version
+ cd $name-$version
  ./autogen.sh --prefix=/usr
  make
  make DESTDIR=$PKG install	
