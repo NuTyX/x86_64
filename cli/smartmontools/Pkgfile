@@ -1,26 +1,46 @@
 description="Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives"
 url="http://smartmontools.sourceforge.net"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 licesne="GPL"
 
 name=smartmontools
 version=7.5
-release=2
+release=3
 
-source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz )
+makedepends=(systemd)
+
+PKGMK_GROUPS=(doc man)
+
+source=(https://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 build() {
 
-	cd $name-$version
-	./configure --prefix=/usr \
-	--sbindir=/usr/bin        \
-	--sysconfdir=/etc         \
-	--with-initscriptdir=no   \
-	--docdir=/usr/share/doc/smartmontools-$version
-	make
-	make DESTDIR=$PKG install
+cd $name-$version
+./configure --prefix=/usr \
+    --sbindir=/usr/bin        \
+    --sysconfdir=/etc         \
+    --with-initscriptdir=no   \
+    --with-libsystemd=yes     \
+    --with-systemdsystemunitdir=/usr/lib/systemd/system \
+    --with-systemdenvfile=/etc/conf.d/smartd \
+    --with-smartdscriptdir=/usr/share/smartmontools \
+    --with-smartdplugindir=/usr/share/smartmontools/smartd_warning.d \
+    --docdir=/usr/share/doc/$name
+
+make
+
+sed -i -e "s:sysconfig/smartmontools:conf.d/smartd:g" smartd.service
+sed -i -e "s:smartd_opts:SMARTD_ARGS:g" smartd.service
+
+make DESTDIR=$PKG install
+
+echo 'SMARTD_ARGS=\"\"' > ../smartd.conf
+mkdir -p $PKG/etc/conf.d/smartd
+install -Dm0644 ../smartd.conf $PKG/etc/conf.d/smartd
 
 install -Dm644 COPYING $PKG/usr/share/licenses/$name/COPYING
 }
