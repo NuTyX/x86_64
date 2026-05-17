@@ -9,8 +9,8 @@ contributors="Spiky"
 set=(qt6)
 
 name=qt6-quick3d
-version=6.11.0
-release=2
+version=6.11.1
+release=1
 
 _name=${name/6-/}-everywhere-src
 makedepends=(cmake ninja assimp qt6-shadertools qt6-quicktimeline)
