@@ -34700,7 +34700,9 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/rseq/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/Makefile
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/basic_percpu_ops_test.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/basic_test.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/check_optimized.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/compiler.h
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/legacy_check.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/param_test.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/rseq-abi.h
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/rseq-arm-bits.h
@@ -34729,8 +34731,10 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/rseq/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/rseq-x86.h
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/rseq.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/rseq.h
+-rwxr-xr-x	root/root	usr/src/kernel/tools/testing/selftests/rseq/run_legacy_check.sh
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/rseq/run_param_test.sh
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/rseq/run_syscall_errors_test.sh
+-rwxr-xr-x	root/root	usr/src/kernel/tools/testing/selftests/rseq/run_timeslice_test.sh
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/settings
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/slice_test.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/rseq/syscall_errors_test.c
