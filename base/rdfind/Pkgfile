@@ -9,6 +9,7 @@ contributors="Tnut"
 
 name=rdfind
 version=1.8.0
+release=2
 
 makedepends=(nettle)
 
@@ -16,6 +17,7 @@ source=($url/$name-$version.tar.gz)
 
 build() {
   cd $name-$version
+  ./bootstrap.sh
   ./configure --prefix=/usr
   make
   make DESTDIR=$PKG install
