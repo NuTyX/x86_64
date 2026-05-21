@@ -8,9 +8,15 @@ makedepends=(c-ares gnutls libssh2 libxml2 sqlite)
 
 name=aria2
 version=1.37.0
-release=2
+release=3
 
-source=(https://github.com/tatsuhiro-t/$name/releases/download/release-$version/$name-$version.tar.xz)
+source=(https://github.com/tatsuhiro-t/$name/releases/download/release-$version/$name-$version.tar.xz
+        nettle-4.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../nettle-4.patch
+}
 
 build(){
 	cd $name-$version
