@@ -7,7 +7,7 @@ makedepends=(nettle)
 
 name=dnsmasq
 version=2.92rel2
-release=3
+release=4
 
 source=(https://thekelleys.org.uk/dnsmasq/$name-$version.tar.xz 
         $name-config.patch dnsmasq.init nettle-4.0.patch)
