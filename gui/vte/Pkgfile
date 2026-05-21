@@ -12,6 +12,7 @@ run=(vte.lib)
 
 name=vte
 version=0.84.0
+release=2
 
 PKGMK_GROUPS=(devel lib man doc)
 source=(https://gitlab.gnome.org/GNOME/vte/-/archive/$version/$name-$version.tar.bz2)
