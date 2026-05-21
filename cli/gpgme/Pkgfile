@@ -1,13 +1,13 @@
 description="A C wrapper library for GnuPG"
 url="http://www.gnupg.org/related_software/gpgme/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libassuan libgpg-error python)
 
 name=gpgme
-version=2.0.1
+version=2.1.0
 
 source=(https://www.gnupg.org/ftp/gcrypt/$name/$name-$version.tar.bz2)
 build() {
