@@ -59,6 +59,7 @@ drwxr-xr-x	root/root	usr/lib/go/doc/initial/6-stdlib/99-minor/
 drwxr-xr-x	root/root	usr/lib/go/lib/
 drwxr-xr-x	root/root	usr/lib/go/lib/fips140/
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/Makefile
+-rw-r--r--	root/root	usr/lib/go/lib/fips140/certified.txt
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/fips140.sum
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/inprocess.txt
 -rw-r--r--	root/root	usr/lib/go/lib/fips140/v1.0.0-c2097c7c.zip
@@ -1189,6 +1190,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/inline
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/opt.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/range_esc_address.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/range_esc_closure.go
+-rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/range_esc_closure_linedir.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/range_esc_method.go
 -rw-r--r--	root/root	usr/lib/go/src/cmd/compile/internal/loopvar/testdata/range_esc_minimal_closure.go
 drwxr-xr-x	root/root	usr/lib/go/src/cmd/compile/internal/mips/
@@ -2667,6 +2669,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_single_vs_multiple.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_statements.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_swig.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_switch_toolchain.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_sync_atomic_import.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_test_localpkg_filepath.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/cover_test_pkgselect.txt
@@ -2694,6 +2697,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fileline.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fips.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fipssnap.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fix_diff_exitcode.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fix_suite.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fix_vendor.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/fmt_load_errors.txt
@@ -3107,6 +3111,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_stale.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_std_vendor.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_string_alias.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_sum_absent.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_sum_ambiguous.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_sum_issue56222.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_sum_lookup.txt
@@ -3220,6 +3225,8 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_buildinfo.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_buildinfo_godebug_issue68053.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_buildvcs.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_cache_coverpkg_bug.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_cache_coverpkg_no_profile.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_cache_inputs.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_chatty_fail.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/test_chatty_parallel_fail.txt
@@ -5671,6 +5678,8 @@ drwxr-xr-x	root/root	usr/lib/go/src/crypto/internal/fips140/check/checktest/
 drwxr-xr-x	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/cast.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/ctrdrbg.go
+-rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/entropy_fips140.go
+-rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/entropy_wasm.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/rand.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/internal/fips140/drbg/rand_test.go
 drwxr-xr-x	root/root	usr/lib/go/src/crypto/internal/fips140/ecdh/
@@ -9427,6 +9436,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue76383.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue76384.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue76478.go
+-rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue78163.go
 drwxr-xr-x	root/root	usr/lib/go/src/internal/types/testdata/spec/
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/spec/assignability.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/spec/comparable.go
@@ -15603,7 +15613,9 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue77815.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue77919.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7794.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue78404.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7863.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue78641.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7867.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7884.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7921.go
