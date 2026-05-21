@@ -6,14 +6,16 @@ contributors="Sundev79,Tnut"
 makedepends=(nettle)
 
 name=dnsmasq
-version=2.92
-release=2
+version=2.92rel2
+release=3
 
-source=(https://thekelleys.org.uk/dnsmasq/$name-$version.tar.xz $name-config.patch dnsmasq.init)
+source=(https://thekelleys.org.uk/dnsmasq/$name-$version.tar.xz 
+        $name-config.patch dnsmasq.init nettle-4.0.patch)
 
 build() {
    cd $name-$version
    patch -p1 -i $SRC/$name-config.patch
+   patch -Np1 -i ../nettle-4.0.patch
    make COPTS="-DHAVE_DNSSEC" PREFIX=/usr
    make COPTS="-DHAVE_DNSSEC" PREFIX=/usr BINDIR=/usr/bin DESTDIR=$PKG install
 
