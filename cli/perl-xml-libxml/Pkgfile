@@ -9,10 +9,9 @@ contributors=""
 makedepends=( perl-xml-sax perl-xml-namespacesupport perl-alien-build)
 run=(perl-alien-libxml2 perl-xml-sax perl-xml-namespacesupport)
 name=perl-xml-libxml
-version=2.0210
-release=2
+version=2.0213
 
-source=(https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-$version.tar.gz)
+source=(https://www.cpan.org/authors/id/T/TO/TODDR/XML-LibXML-$version.tar.gz)
 
 build() {
 cd XML-LibXML-$version
