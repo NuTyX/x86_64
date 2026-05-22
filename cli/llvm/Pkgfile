@@ -8,7 +8,7 @@ contributors="Pierre,Remy,Tnut"
 makedepends=(grep python cmake ninja libxml2 git)
 
 name=llvm
-version=22.1.3
+version=22.1.5
 
 PKGMK_GROUPS=(lib man devel doc)
 _url="https://github.com/llvm/llvm-project/releases/download/llvmorg-$version"
