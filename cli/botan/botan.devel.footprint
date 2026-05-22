@@ -74,6 +74,8 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/hex.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/hmac_drbg.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/hss_lms.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/ipv4_address.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/ipv6_address.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/kdf.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/kyber.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/mac.h
@@ -156,6 +158,7 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_messages_12.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_messages_13.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_policy.h
+-rw-rw-r--	root/root	usr/include/botan-3/botan/tls_psk_13.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_psk_identity_13.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_server.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/tls_server_info.h
@@ -189,8 +192,8 @@ drwxr-xr-x	root/root	usr/include/botan-3/botan/
 -rw-rw-r--	root/root	usr/include/botan-3/botan/zfec.h
 -rw-rw-r--	root/root	usr/include/botan-3/botan/zlib.h
 drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/Botan-3.11.1/
--rw-r--r--	root/root	usr/lib/cmake/Botan-3.11.1/botan-config-version.cmake
--rw-r--r--	root/root	usr/lib/cmake/Botan-3.11.1/botan-config.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/Botan-3.12.0/
+-rw-r--r--	root/root	usr/lib/cmake/Botan-3.12.0/botan-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/Botan-3.12.0/botan-config.cmake
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/botan-3.pc
