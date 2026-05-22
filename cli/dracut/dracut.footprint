@@ -101,6 +101,9 @@ drwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-sysctl/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-sysctl/module-setup.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-sysext/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-sysext/module-setup.sh
+drwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-sysusers-service/
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-sysusers-service/module-setup.sh
+-rw-r--r--	root/root	usr/lib/dracut/modules.d/11systemd-sysusers-service/sysusers-dracut.conf
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-timedated/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-timedated/module-setup.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/11systemd-timesyncd/
@@ -181,6 +184,7 @@ drwxr-xr-x	root/root	usr/lib/dracut/modules.d/45plymouth/
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/45simpledrm/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/45simpledrm/module-setup.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/45systemd-import/
+-rw-r--r--	root/root	usr/lib/dracut/modules.d/45systemd-import/dracut-remount-sysroot.service
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/45systemd-import/module-setup.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/45systemd-import/parse-systemd-import.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/45url-lib/
@@ -202,15 +206,20 @@ drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70btrfs/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70btrfs/btrfs_finished.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70btrfs/btrfs_timeout.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70btrfs/module-setup.sh
+drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt-lib/
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt-lib/crypt-lib.sh
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt-lib/module-setup.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/crypt-cleanup.sh
--rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/crypt-lib.sh
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/crypt-generator.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/crypt-run-generator.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/cryptroot-ask.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/module-setup.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/parse-crypt.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/parse-keydev.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70crypt/probe-keydev.sh
+drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70devicetree-firmware/
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70devicetree-firmware/module-setup.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70dm/
 -rw-r--r--	root/root	usr/lib/dracut/modules.d/70dm/11-dm.rules
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70dm/dm-pre-udev.sh
@@ -310,6 +319,10 @@ drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70qemu/
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/70uefi-lib/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70uefi-lib/module-setup.sh
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/70uefi-lib/uefi-lib.sh
+drwxr-xr-x	root/root	usr/lib/dracut/modules.d/71overlayfs-crypt/
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/71overlayfs-crypt/module-setup.sh
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/71overlayfs-crypt/overlayfs-crypt-lib.sh
+-rwxr-xr-x	root/root	usr/lib/dracut/modules.d/71overlayfs-crypt/prepare-overlayfs-crypt.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/71systemd-cryptsetup/
 -rwxr-xr-x	root/root	usr/lib/dracut/modules.d/71systemd-cryptsetup/module-setup.sh
 drwxr-xr-x	root/root	usr/lib/dracut/modules.d/73crypt-gpg/
@@ -531,27 +544,6 @@ drwxr-xr-x	root/root	usr/lib/kernel/
 drwxr-xr-x	root/root	usr/lib/kernel/install.d/
 -rwxr-xr-x	root/root	usr/lib/kernel/install.d/50-dracut.install
 -rwxr-xr-x	root/root	usr/lib/kernel/install.d/51-dracut-rescue.install
-drwxr-xr-x	root/root	usr/lib/systemd/
-drwxr-xr-x	root/root	usr/lib/systemd/system/
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-cmdline.service -> ../../dracut/modules.d/77dracut-systemd/dracut-cmdline.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-initqueue.service -> ../../dracut/modules.d/77initqueue/dracut-initqueue.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-mount.service -> ../../dracut/modules.d/77dracut-systemd/dracut-mount.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-pre-mount.service -> ../../dracut/modules.d/77dracut-systemd/dracut-pre-mount.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-pre-pivot.service -> ../../dracut/modules.d/77dracut-systemd/dracut-pre-pivot.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-pre-trigger.service -> ../../dracut/modules.d/77dracut-systemd/dracut-pre-trigger.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-pre-udev.service -> ../../dracut/modules.d/77dracut-systemd/dracut-pre-udev.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-shutdown-onfailure.service -> ../../dracut/modules.d/77dracut-systemd/dracut-shutdown-onfailure.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/dracut-shutdown.service -> ../../dracut/modules.d/77dracut-systemd/dracut-shutdown.service
-drwxr-xr-x	root/root	usr/lib/systemd/system/initrd.target.wants/
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-cmdline.service -> ../dracut-cmdline.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-initqueue.service -> ../dracut-initqueue.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-mount.service -> ../dracut-mount.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-pre-mount.service -> ../dracut-pre-mount.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-pre-pivot.service -> ../dracut-pre-pivot.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-pre-trigger.service -> ../dracut-pre-trigger.service
-lrwxrwxrwx	root/root	usr/lib/systemd/system/initrd.target.wants/dracut-pre-udev.service -> ../dracut-pre-udev.service
-drwxr-xr-x	root/root	usr/lib/systemd/system/sysinit.target.wants/
-lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/dracut-shutdown.service -> ../dracut-shutdown.service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/

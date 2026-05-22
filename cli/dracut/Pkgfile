@@ -1,19 +1,18 @@
 description="Can generate a customized initrams image which contains only whatever is necessary to boot"
 url="https://www.kernel.org/pub/linux/utils/boot/dracut/dracut.html"
 
-contributors="Greg, Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(pkgconf kmod asciidoctor systemd)
 
 name=dracut
-version=110
-release=2
+version=111
 
 source=(https://github.com/dracut-ng/dracut-ng/archive/$version/$name-$version.tar.gz)
 
 prepare() {
- mv $name-ng-$version $name-$version
+
  sed -i "s@/lib/modules@/usr/lib/modules@g" \
  $name-$version/$name.sh
 }
