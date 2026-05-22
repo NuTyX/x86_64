@@ -1122,6 +1122,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_proc.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_ssh.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_subcommand.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_sudo.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_suffix.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_user_at_hosts.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_user_ids.fish
@@ -1140,6 +1141,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_crux_packages.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cursor_konsole.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_cursor_xterm.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_cygwin_noacl.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_data_with_directory.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_describe_command.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_echo.fish
@@ -1149,6 +1151,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_gnu_complete.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_hg_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_indent.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_is_cygwin.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_first_arg.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_first_token.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_is_git_repository.fish
