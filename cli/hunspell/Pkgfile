@@ -11,8 +11,7 @@ makedepends=(git)
 PKGMK_LOCALES+=" et eu"
 
 name=hunspell
-version=1.7.2
-release=4
+version=1.7.3
 
 source=(https://github.com/hunspell/hunspell/releases/download/v${version}/$name-$version.tar.gz )
 
