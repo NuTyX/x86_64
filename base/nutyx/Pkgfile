@@ -9,19 +9,24 @@ makedepends=(zstd util-linux)
 set=(chroot)
 
 name=nutyx
-version=26.04.3
-
+version=26.05.0
+release=1
 # nutyx patch version
 [ "$release" != "1" ] && patchname="$name-$version-consolidate-$release.patch"
 
 PKGMK_GROUPS=(man)
 PKGMK_IGNORE_RUNTIMEDEPS=yes
 
-source=(https://download.sourceforge.net/nutyx/files/$name-$version.tar.xz)
+source=(https://nutyx.org/graphics/logo_nutyx_120.png
+        https://download.sourceforge.net/nutyx/files/$name-$version.tar.xz)
 [ -z "$patchname" ] || source+=" $patchname"
 
 build () {
 cd $name-$version
 [ -z "$patchname" ] || patch -Np1 -i ../$patchname
 make DESTDIR=$PKG install
+}
+package() {
+ install -Dm644 logo_nutyx_120.png \
+ $PKG/usr/share/icons/hicolor/128x128/places/nutyx.png
 }
