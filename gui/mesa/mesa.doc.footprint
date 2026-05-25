@@ -78,7 +78,6 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/_exts/
 -rw-r--r--	root/root	usr/share/doc/mesa/_exts/depfile.py
 -rw-r--r--	root/root	usr/share/doc/mesa/_exts/formatting.py
 -rw-r--r--	root/root	usr/share/doc/mesa/_exts/nir.py
--rw-r--r--	root/root	usr/share/doc/mesa/_exts/redirects.py
 -rw-r--r--	root/root	usr/share/doc/mesa/amber.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/android.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/application-issues.rst
@@ -97,7 +96,6 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/ci/
 -rw-r--r--	root/root	usr/share/doc/mesa/codingstyle.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/conf.py
 -rw-r--r--	root/root	usr/share/doc/mesa/conform.rst
--rw-r--r--	root/root	usr/share/doc/mesa/debugging.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/devinfo.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/dispatch.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/download.rst
@@ -107,6 +105,7 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/amd/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/amd/hang-debugging.rst
 drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/amd/hw/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/amd/hw/pops.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/drivers/amd/live-var-analysis.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/anv.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/asahi.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/d3d12.rst
@@ -116,6 +115,8 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/freedreno/
 drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/freedreno/hw/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/freedreno/hw/lrz.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/freedreno/ir3-notes.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/drivers/freedreno/subsampled_annotated.jpg
+-rw-r--r--	root/root	usr/share/doc/mesa/drivers/freedreno/subsampled_final.jpg
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/kosmickrisp.rst
 drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/kosmickrisp/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/kosmickrisp/workarounds.rst
@@ -132,6 +133,7 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/panfrost/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/panfrost/instancing.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/panfrost/texcomp.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/panfrost/tiling.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/drivers/panfrost/varyings.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/powervr.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/radv.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/svga3d.rst
@@ -170,8 +172,14 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/gallium/cso/
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/tgsi.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gitlab-ci-inc.yml
 -rw-r--r--	root/root	usr/share/doc/mesa/gitlab-ci.yml
+-rw-r--r--	root/root	usr/share/doc/mesa/glsl.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gpu-perf-tracing.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gpuvis.rst
+drwxr-xr-x	root/root	usr/share/doc/mesa/graphics-debugging/
+-rw-r--r--	root/root	usr/share/doc/mesa/graphics-debugging/debugging-misrenderings-crashes.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/graphics-debugging/rdc-abstractionist-rendering.jpg
+-rw-r--r--	root/root	usr/share/doc/mesa/graphics-debugging/rdc-pixel-history.jpg
+-rw-r--r--	root/root	usr/share/doc/mesa/graphics-debugging/rdc-resource-usage-history.jpg
 drwxr-xr-x	root/root	usr/share/doc/mesa/header-stubs/
 -rw-r--r--	root/root	usr/share/doc/mesa/header-stubs/README.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/header-stubs/builtin_types.h (EMPTY)
@@ -608,12 +616,16 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/relnotes/
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/25.3.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/25.3.2.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/25.3.3.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/25.3.4.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/25.3.5.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/25.3.6.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.0.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.2.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.3.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.4.rst
--rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.5.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.0.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/6.4
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/6.4.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/6.4.2.rst
@@ -683,7 +695,6 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/relnotes/
 -rw-r--r--	root/root	usr/share/doc/mesa/repository.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/rust.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/rusticl.rst
--rw-r--r--	root/root	usr/share/doc/mesa/shading.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/sourcetree.rst
 drwxr-xr-x	root/root	usr/share/doc/mesa/spirv/
 -rw-r--r--	root/root	usr/share/doc/mesa/spirv/index.rst
