@@ -18,14 +18,12 @@ run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
 
 
 name=firefox
-version=150.0.3
+version=151.0.1
 
 locale_version=$version
 
 source=(0001-Install-under-remoting-name.patch
-        0002-Bug-2033279-Make-enable-rust-simd-work-with-Rust-1.9.patch
-        0003-Patch-glsl-optimizer-to-build-with-glibc-2.43.patch
-        0004-Bug-2023597-Use-wasm32-wasip1-target-for-clang-22.1-.patch
+        0002-Patch-glsl-optimizer-to-build-with-glibc-2.43.patch
         firefox.desktop
         https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz)
 
@@ -48,9 +46,7 @@ prepare() {
 cd $name-$version
 
 patch -Np1 -i ../0001-Install-under-remoting-name.patch
-patch -Np1 -i ../0002-Bug-2033279-Make-enable-rust-simd-work-with-Rust-1.9.patch
-patch -Np1 -i ../0003-Patch-glsl-optimizer-to-build-with-glibc-2.43.patch
-patch -Np1 -i ../0004-Bug-2023597-Use-wasm32-wasip1-target-for-clang-22.1-.patch
+patch -Np1 -i ../0002-Patch-glsl-optimizer-to-build-with-glibc-2.43.patch
 }
 
 build() {
