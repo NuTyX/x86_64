@@ -17,7 +17,7 @@ run=(glib cairo pango fribidi gdk-pixbuf libpng libtiff libjpeg-turbo libepoxy m
 set=()
 
 name=gtk4
-version=4.22.3
+version=4.22.4
 
 PKGMK_GROUPS=(devel doc lib man)
 PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dbroadway-backend=true \
