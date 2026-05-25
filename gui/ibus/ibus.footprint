@@ -31,9 +31,9 @@ drwxr-xr-x	root/root	usr/lib/ibus/
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-ui-gtk3
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-wayland
 -rwxr-xr-x	root/root	usr/lib/ibus/ibus-x11
-lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so -> libibus-1.0.so.5.0.533
-lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so.5 -> libibus-1.0.so.5.0.533
--rwxr-xr-x	root/root	usr/lib/libibus-1.0.so.5.0.533
+lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so -> libibus-1.0.so.5.0.534
+lrwxrwxrwx	root/root	usr/lib/libibus-1.0.so.5 -> libibus-1.0.so.5.0.534
+-rwxr-xr-x	root/root	usr/lib/libibus-1.0.so.5.0.534
 drwxr-xr-x	root/root	usr/lib/python3.14/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/
@@ -43,12 +43,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/IBus.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/IBus.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/IBus.cpython-314.pyc
-drwxr-xr-x	root/root	usr/lib/systemd/
-drwxr-xr-x	root/root	usr/lib/systemd/user/
-drwxr-xr-x	root/root	usr/lib/systemd/user/gnome-session.target.wants/
-lrwxrwxrwx	root/root	usr/lib/systemd/user/gnome-session.target.wants/org.freedesktop.IBus.session.GNOME.service -> ../org.freedesktop.IBus.session.GNOME.service
--rw-r--r--	root/root	usr/lib/systemd/user/org.freedesktop.IBus.session.GNOME.service
--rw-r--r--	root/root	usr/lib/systemd/user/org.freedesktop.IBus.session.generic.service
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/GConf/
 drwxr-xr-x	root/root	usr/share/GConf/gsettings/

@@ -3,7 +3,7 @@ url="https://ibus.googlecode.com"
 
 license="LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributor="Spiky"
 
 makedepends=(dconf iso-codes gobject-introspection gtk3 gtk4 dbus-launch
@@ -12,8 +12,7 @@ makedepends=(dconf iso-codes gobject-introspection gtk3 gtk4 dbus-launch
 run=(python-dbus python-gobject wayland)
 
 name=ibus
-version=1.5.33
-release=2
+version=1.5.34
 
 source=(https://github.com/ibus/ibus/archive/refs/tags/$version.tar.gz)
 

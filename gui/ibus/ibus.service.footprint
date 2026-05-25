@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/lib/systemd/user/
+drwxr-xr-x	root/root	usr/lib/systemd/user/gnome-session.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/user/gnome-session.target.wants/org.freedesktop.IBus.session.GNOME.service -> ../org.freedesktop.IBus.session.GNOME.service
+-rw-r--r--	root/root	usr/lib/systemd/user/org.freedesktop.IBus.session.GNOME.service
+-rw-r--r--	root/root	usr/lib/systemd/user/org.freedesktop.IBus.session.generic.service
