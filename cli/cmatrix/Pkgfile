@@ -8,7 +8,7 @@ makedepends=(cmake kbd)
 run=(ncurses kbd)
 name=cmatrix
 version=2.0
-release=2
+release=3
 
 source=(https://github.com/abishekvashok/$name/archive/v$version.tar.gz
         cmatrix-tty)
@@ -20,6 +20,7 @@ build() {
       cd build
         cmake -DCMAKE_INSTALL_PREFIX=/usr  \
               -D CMAKE_BUILD_TYPE=Release \
+              -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
               ..
        make
        make DESTDIR=$PKG install
