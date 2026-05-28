@@ -1,8 +1,8 @@
 description="A system and process level monitor."
 url="https://www.atoptool.nl/"
 
-contributors="Rems,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 license="GPL-2.0-or-later"
 
@@ -10,6 +10,7 @@ makedepends=(ncurses glib zlib)
 
 name=atop
 version=2.12.1
+release=2
 
 source=(https://www.atoptool.nl/download/atop-${version/_/-}.tar.gz)
 
