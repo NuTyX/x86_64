@@ -8,6 +8,7 @@ makedepends=(autoconf automake ncurses libnl python)
 
 name=htop
 version=3.5.1
+release=2
 
 source=(https://github.com/htop-dev/htop/archive/$version/$name-$version.tar.gz)
 
