@@ -1,14 +1,14 @@
 description="An automounter implemented with FUSE."
 url="https://github.com/pcarrier/afuse/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg, Rems"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Rems,Tnut"
 
 makedepends=(fuse2)
 
 name=afuse
 version=0.4.1
-release=3
+release=4
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/pcarrier/afuse/archive/v$version.tar.gz)
