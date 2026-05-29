@@ -1,14 +1,14 @@
 description="Lossless mp3 normalizer with statistical analysis"
 url="http://mp3gain.sourceforge.net"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rems,Greg"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Greg,Tnut"
 
 makedepends=(mpg123)
 
 name=mp3gain
 version=1.6.2
-release=2
+release=3
 
 source=(http://downloads.sourceforge.net/$name/$name-${version//./_}-src.zip)
 
