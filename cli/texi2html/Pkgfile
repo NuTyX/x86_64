@@ -1,14 +1,14 @@
 description="Converts texinfo documents to HTML"
 url="http://www.nongnu.org/texi2html/"
 
-contributors="Chris Farrell, timcowchip, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Chris,Farrell,Timcowchip,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(perl)
 
 name=texi2html
 version=5.0
-release=2
+release=3
 
 source=("http://download.savannah.gnu.org/releases/texi2html/$name-$version.tar.bz2")
 
