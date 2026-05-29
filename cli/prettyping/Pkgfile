@@ -1,0 +1,21 @@
+description="A wrapper around the standard ping tool."
+url="https://github.com/denilsonsa/prettyping"
+
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
+
+PKGMK_KEEP_SOURCES="no"
+
+name=prettyping
+version=1.1.0
+release=2
+
+makedepends=(gawk)
+run=(gawk)
+
+source=(https://github.com/denilsonsa/prettyping/archive/v$version.tar.gz)
+
+build(){
+
+	install -Dm755 prettyping-$version/prettyping $PKG/usr/bin/prettyping
+}
