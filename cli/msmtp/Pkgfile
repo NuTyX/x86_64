@@ -3,13 +3,14 @@ url="https://marlam.de/msmtp/"
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rocket, Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rocket,Tnut"
 
 makedepends=(gnutls)
 
 name=msmtp
 version=1.8.32
+release=2
 
 source=(https://marlam.de/$name/releases/$name-$version.tar.xz)
 
