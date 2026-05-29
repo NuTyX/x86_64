@@ -1,12 +1,12 @@
 description="A flexible message logging facility for C++ programs and libraries"
 url="http://www.arg0.net/rlog"
 
-contributors="Pierre B, Greg"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 name=rlog
 version=1.4
-release=2
+release=3
 
 source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/$name/$name-$version.tar.gz 
        $name-section.patch)
