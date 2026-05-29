@@ -1,11 +1,12 @@
 description="Tool for enabling and disabling wireless devices"
 url="http://wireless.kernel.org/en/users/Documentation/rfkill"
 
-packager="Spiky <spiky@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
 name=rfkill
 version=1.0
+release=2
 
 source=(https://www.kernel.org/pub/software/network/$name/$name-$version.tar.gz
 	    rules.d)
