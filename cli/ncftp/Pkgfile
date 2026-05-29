@@ -8,6 +8,7 @@ makedepends=(ncurses inetutils)
 
 name=ncftp
 version=3.3.0	
+release=2
 
 source=(ncftp-reproducible.patch
         https://www.ncftp.com/public_ftp/ncftp/$name-$version-src.tar.gz)
