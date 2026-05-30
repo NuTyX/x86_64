@@ -3,8 +3,8 @@ url="https://www.bluez.org/"
 
 license="GPL2.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(git autoconf automake m4 grep sed libtool
              readline dbus libical libvorbis alsa-lib
@@ -12,6 +12,7 @@ makedepends=(git autoconf automake m4 grep sed libtool
 
 name=bluez
 version=d45fd43
+release=2
 
 PKGMK_GROUPS=(man devel doc)
 
@@ -44,7 +45,8 @@ cd $name-$version
     --disable-test \
     --disable-manpages    \
     --enable-library
-make
+make ICAL_LIBS="-lical -licalvcal"
+
 make DESTDIR=$PKG install
 
 install -v -dm755 $PKG/{etc/bluetooth,usr/bin}
