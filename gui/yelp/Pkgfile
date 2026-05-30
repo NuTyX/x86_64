@@ -3,15 +3,15 @@ url="https://gitlab.gnome.org/GNOME/yelp"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Greg,Tnut"
 
 makedepends=(meson
 itstool intltool gtk-doc libxslt webkit2gtk-6 yelp-xsl gsettings-desktop-schemas libhandy)
 run=(desktop-file-utils hicolor-icon-theme )
 
 name=yelp
-version=49.0
+version=49.1
 
 source=($url/-/archive/$version/yelp-$version.tar.gz)
 
