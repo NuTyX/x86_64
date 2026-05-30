@@ -22,9 +22,9 @@ lrwxrwxrwx	root/root	usr/bin/nmtui-edit -> nmtui
 lrwxrwxrwx	root/root	usr/bin/nmtui-hostname -> nmtui
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/
-drwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.0/
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.0/libnm-device-plugin-adsl.so
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.0/libnm-device-plugin-wifi.so
+drwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.1/
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.1/libnm-device-plugin-adsl.so
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.1/libnm-device-plugin-wifi.so
 drwxr-xr-x	root/root	usr/lib/NetworkManager/VPN/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/conf.d/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/dispatcher.d/
@@ -79,6 +79,7 @@ drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.Bridge.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.Dummy.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.Generic.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.Geneve.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.Hsr.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.IPTunnel.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.NetworkManager.Device.Infiniband.xml
