@@ -4,7 +4,7 @@ url='https://zint.org.uk/'
 packager="spiky <spiky@nutyx.org>"
 contributors=""
 
-makedepends=(cmake qt6-tools qt6-svg)
+makedepends=(cmake qt6-tools qt6-svg libpng)
 
 name=zint
 version=2.16.0
@@ -20,4 +20,7 @@ cmake -B build -S $name-$version \
   cmake --build build
 
   DESTDIR=$PKG cmake --install build
+
+  install -Dm644 $name-$version/zint-qt.png $PKG/usr/share/icons/hicolor/48x48/apps/zint-qt.png
+  install -Dm644 $name-$version/zint-qt.desktop $PKG/usr/share/applications/zint-qt.desktop
 }
