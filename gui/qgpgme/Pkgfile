@@ -1,14 +1,13 @@
 description="Qt bindings for GPGme"
 url="http://www.gnupg.org/related_software/gpgme/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(qt6-base gpgmepp)
 
 name=qgpgme
-version=2.0.0
-release=2
+version=2.1.0
 
 source=(https://www.gnupg.org/ftp/gcrypt/qgpgme/qgpgme-$version.tar.xz)
 
@@ -17,6 +16,7 @@ build() {
     -D CMAKE_INSTALL_PREFIX=/usr \
     -D CMAKE_INSTALL_LIBDIR=lib \
     -D CMAKE_BUILD_TYPE=Release \
+    -D BUILD_WITH_QT5=OFF       \
     -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
     -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
     -Wno-dev
