@@ -1,0 +1,22 @@
+description='Barcode encoding library supporting over 50 symbologies'
+url='https://zint.org.uk/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(cmake qt6-tools qt6-svg)
+
+name=zint
+version=2.16.0
+
+source=(https://github.com/zint/zint/archive/$version/$name-$version.tar.gz)
+
+build() {
+cmake -B build -S $name-$version \
+   -DCMAKE_INSTALL_PREFIX=/usr \
+   -DCMAKE_BUILD_TYPE=Release \
+   -DZINT_QT6=ON
+  cmake --build build
+
+  DESTDIR=$PKG cmake --install build
+}
