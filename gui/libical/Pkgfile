@@ -9,8 +9,7 @@ contributors="Pierre,Tnut"
 makedepends=(libxml2 cmake db gobject-introspection icu doxygen glib vala)
 
 name=libical
-version=3.0.20
-release=3
+version=4.0.1
 
 source=(https://github.com/libical/libical/releases/download/v$version/$name-$version.tar.gz)
 
@@ -21,16 +20,16 @@ mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
 -DCMAKE_BUILD_TYPE=Release  \
--DSHARED_ONLY=yes \
--DGOBJECT_INTROSPECTION=true \
--DICAL_GLIB_VAPI=true        \
--DICAL_BUILD_DOCS=false \
+-D LIBICAL_STATIC=NO        \
+-D LIBICAL_GOBJECT_INTROSPECTION=true \
+-D LIBICAL_JAVA_BINDINGS=OFF \
+-D LIBICAL_GLIB_VAPI=true   \
+-D LIBICAL_BUILD_DOCS=false \
 ..
 make -j1
 make DESTDIR=$PKG install
 
-install -Dm644 ../COPYING $PKG/usr/share/licenses/$name/COPYING
-install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
-install -Dm644 ../LICENSE.LGPL21.txt $PKG/usr/share/licenses/$name/LICENSE.LGPL21.txt
-install -Dm644 ../LICENSE.MPL2.txt $PKG/usr/share/licenses/$name/LICENSE.MPL2.txt
+install -Dm644 ../LICENSE.txt $PKG/usr/share/licenses/$name/LICENSE.txt
+install -Dm644 ../LICENSES/LGPL-2.1-only.txt $PKG/usr/share/licenses/$name/LGPL-2.1-only.txt
+install -Dm644 ../LICENSES/MPL-2.0.txt $PKG/usr/share/licenses/$name/MPL-2.0.txt
 }
