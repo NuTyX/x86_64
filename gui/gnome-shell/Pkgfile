@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gnome-shell"
 
 license="GPL3-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Remy,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Remy,Fabienwang,Tnut"
 
 makedepends=(meson sassc evolution-data-server gjs gnome-control-center
              gnome-themes-extra libcroco mutter startup-notification gtk4 gcr-4
@@ -18,13 +18,18 @@ run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus
 set=(gnome-base gnome)
 
 name=gnome-shell
-version=50.1
-release=1
+version=50.2
 
 PKGMK_MESON_OPTIONS="-Dtests=false"
 PKGMK_GROUPS=(man)
 
-source=($url/-/archive/$version/$name-$version.tar.bz2)
+source=($url/-/archive/$version/$name-$version.tar.bz2
+        Fix-build-with-libical-4.patch )
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../Fix-build-with-libical-4.patch
+}
 
 build=meson
 
