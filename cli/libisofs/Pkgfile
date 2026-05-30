@@ -7,9 +7,14 @@ contributors="Pierre,Tnut"
 makedepends=(acl)
 
 name=libisofs
-version=1.5.8
+version=1.5.8.2
+_version=1.5.8.pl02
 
-source=(http://files.libburnia-project.org/releases/$name-$version.tar.gz)
+source=(http://files.libburnia-project.org/releases/$name-${_version}.tar.gz)
+
+prepare() {
+mv $name-1.5.8 $name-$version
+}
 
 build() {
 cd $name-$version
