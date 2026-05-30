@@ -7,9 +7,14 @@ contributors="Pierre,Tnut"
 makedepends=(libburn libisofs acl attr doxygen)
 
 name=libisoburn
-version=1.5.8
+version=1.5.8.2
+_version=1.5.8.pl02
 
-source=(http://files.libburnia-project.org/releases/libisoburn-$version.tar.gz)
+source=(http://files.libburnia-project.org/releases/libisoburn-${_version}.tar.gz)
+
+prepare() {
+mv $name-1.5.8 $name-$version
+}
 
 build() {
 
