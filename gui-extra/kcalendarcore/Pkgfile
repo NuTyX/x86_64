@@ -14,6 +14,19 @@ release=1
 
 makedepends=(libical extra-cmake-modules qt6-base doxygen qt6-tools)
 
-build="kde6"
-
 source=(https://download.kde.org/stable/frameworks/${version%.*}/$name-$version.tar.xz)
+
+build() {
+
+cd $name-$version
+
+mkdir build
+cd    build
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+-DBUILD_PYTHON_BINDINGS=OFF        \
+..
+
+make
+make DESTDIR=$PKG install
+}
