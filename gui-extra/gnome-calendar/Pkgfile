@@ -3,8 +3,8 @@ url="https://apps.gnome.org/Calendar"
 
 license="GPL3-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Remy,Tnut"
 
 makedepends=(libdazzle meson intltool libhandy
              evolution-data-server python blueprint-compiler)
@@ -15,8 +15,15 @@ set=(gnome)
 
 name=gnome-calendar
 version=50.0
+release=2
 
-source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/${name}-$version.tar.bz2)
+source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/${name}-$version.tar.bz2
+       Support-libical-4.0.0.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../Support-libical-4.0.0.patch
+}
 
 build=meson
 
