@@ -5,10 +5,10 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
 
 name=xdotool
-version=3.20211022.1
+version=4.20260303.1
 
 makedepends=(xorg-libxtst xorg-libxinerama libxkbcommon)
-source=(https://github.com/jordansissel/xdotool/releases/download/v$version/$name-$version.tar.gz)
+source=(https://github.com/jordansissel/xdotool/archive/refs/tags/v${version}.tar.gz)
 
 build() {
 
