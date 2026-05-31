@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libKF6Purpose.so -> libKF6Purpose.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6Purpose.so.6 -> libKF6Purpose.so.6.25.0
--rwxr-xr-x	root/root	usr/lib/libKF6Purpose.so.6.25.0
+lrwxrwxrwx	root/root	usr/lib/libKF6Purpose.so.6 -> libKF6Purpose.so.6.26.0
+-rwxr-xr-x	root/root	usr/lib/libKF6Purpose.so.6.26.0
 lrwxrwxrwx	root/root	usr/lib/libKF6PurposeWidgets.so -> libKF6PurposeWidgets.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6PurposeWidgets.so.6 -> libKF6PurposeWidgets.so.6.25.0
--rwxr-xr-x	root/root	usr/lib/libKF6PurposeWidgets.so.6.25.0
+lrwxrwxrwx	root/root	usr/lib/libKF6PurposeWidgets.so.6 -> libKF6PurposeWidgets.so.6.26.0
+-rwxr-xr-x	root/root	usr/lib/libKF6PurposeWidgets.so.6.26.0
 drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/purposeprocess
@@ -22,17 +22,24 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/imgurplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/kdeconnectplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/kdeconnectsmsplugin.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/nextcloudplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/pastebinplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/phabricatorplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/reviewboardplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/saveasplugin.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/telegramplugin.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/purpose/youtubeplugin.so
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/AlternativesView.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/JobView.qml
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/accountshelper/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/accountshelper/accountshelper.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/accountshelper/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/accountshelper/libaccountshelper.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/accountshelper/qmldir
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/kde-qmlmodule.version
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/purpose/kdeconnect/kde-qmlmodule.version
@@ -64,9 +71,11 @@ drwxr-xr-x	root/root	usr/share/kf6/purpose/
 -rw-r--r--	root/root	usr/share/kf6/purpose/barcodeplugin_config.qml
 -rw-r--r--	root/root	usr/share/kf6/purpose/bluetoothplugin_config.qml
 -rw-r--r--	root/root	usr/share/kf6/purpose/kdeconnectplugin_config.qml
+-rw-r--r--	root/root	usr/share/kf6/purpose/nextcloudplugin_config.qml
 -rw-r--r--	root/root	usr/share/kf6/purpose/phabricatorplugin_config.qml
 -rw-r--r--	root/root	usr/share/kf6/purpose/reviewboardplugin_config.qml
 -rw-r--r--	root/root	usr/share/kf6/purpose/saveasplugin_config.qml
+-rw-r--r--	root/root	usr/share/kf6/purpose/youtubeplugin_config.qml
 drwxr-xr-x	root/root	usr/share/qlogging-categories6/
 -rw-r--r--	root/root	usr/share/qlogging-categories6/purpose.categories
 -rw-r--r--	root/root	usr/share/qlogging-categories6/purpose.renamecategories
