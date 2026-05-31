@@ -3,14 +3,13 @@ url='https://invent.kde.org/libraries/ktextaddons'
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(kde6)
 
 name=ktextaddons
-version=2.0.1
-release=1
+version=2.0.2
 
 makedepends=(qt6-base qt6-speech qt6-tools extra-cmake-modules karchive kconfig
              kconfigwidgets ki18n kio kwidgetsaddons kxmlgui sonnet qtkeychain-qt6
