@@ -1,0 +1,31 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/firmware/qcom/
+drwxr-xr-x	root/root	lib/firmware/qcom/venus-1.8/
+-rw-r--r--	root/root	lib/firmware/qcom/venus-1.8/venus.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/venus-1.8/venus.mdt -> venus.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/venus-4.2/
+-rw-r--r--	root/root	lib/firmware/qcom/venus-4.2/venus.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/venus-4.2/venus.mdt -> venus.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/venus-5.2/
+-rw-r--r--	root/root	lib/firmware/qcom/venus-5.2/venus.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/venus-5.2/venus.mdt -> venus.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/venus-5.4/
+-rw-r--r--	root/root	lib/firmware/qcom/venus-5.4/venus.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/venus-5.4/venus.mdt -> venus.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/venus-6.0/
+-rw-r--r--	root/root	lib/firmware/qcom/venus-6.0/venus.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/vpu-1.0/
+lrwxrwxrwx	root/root	lib/firmware/qcom/vpu-1.0/venus.mbn -> ../vpu/vpu20_p4.mbn
+lrwxrwxrwx	root/root	lib/firmware/qcom/vpu-1.0/venus.mdt -> ../vpu/vpu20_p4.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/vpu-2.0/
+lrwxrwxrwx	root/root	lib/firmware/qcom/vpu-2.0/venus.mbn -> ../vpu/vpu20_p1.mbn
+drwxr-xr-x	root/root	lib/firmware/qcom/vpu/
+-rw-r--r--	root/root	lib/firmware/qcom/vpu/vpu20_p1.mbn
+-rw-r--r--	root/root	lib/firmware/qcom/vpu/vpu20_p4.mbn
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/venus-firmware/
+-rw-r--r--	root/root	usr/share/licenses/venus-firmware/LICENSE.qcom
+-rw-r--r--	root/root	usr/share/licenses/venus-firmware/WHENCE
