@@ -10,9 +10,9 @@ set=(kde6 kde6-plasma)
 
 name=bluedevil
 version=6.6.5
-release=1
+release=2
 
-makedepends=(obexd qt6-base qt6-declarative extra-cmake-modules bluez-qt
+makedepends=(qt6-base qt6-declarative extra-cmake-modules bluez-qt
              kcmutils kconfig kcoreaddons kdbusaddons kdeclarative 
              kfilemetadata ki18n kio kirigami kjobwidgets knotifications
              kservice ksvg kwidgetsaddons kwindowsystem libplasma kdoctools)
