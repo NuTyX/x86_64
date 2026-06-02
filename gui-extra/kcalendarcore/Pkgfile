@@ -12,21 +12,21 @@ name=kcalendarcore
 version=6.26.0
 release=1
 
-makedepends=(libical extra-cmake-modules qt6-base doxygen qt6-tools)
+makedepends=(shiboken libical extra-cmake-modules qt6-base doxygen qt6-tools)
 
 source=(https://download.kde.org/stable/frameworks/${version%.*}/$name-$version.tar.xz)
 
 build() {
+  cmake -B build -S $name-$version    \
+  -D CMAKE_INSTALL_PREFIX=/usr        \
+  -D CMAKE_SKIP_INSTALL_RPATH=ON      \
+  -D CMAKE_INSTALL_LIBDIR=lib         \
+  -D BUILD_TESTING=OFF                \
+  -D BUILD_PYTHON_BINDINGS=OFF        \
+  -D CMAKE_BUILD_TYPE=Release         \
+  -W no-dev
 
-cd $name-$version
+  cmake --build build
 
-mkdir build
-cd    build
-
-cmake -D CMAKE_INSTALL_PREFIX=/usr \
--DBUILD_PYTHON_BINDINGS=OFF        \
-..
-
-make
-make DESTDIR=$PKG install
+  DESTDIR=$PKG cmake --install build
 }
