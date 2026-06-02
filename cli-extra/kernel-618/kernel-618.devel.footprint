@@ -1541,6 +1541,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/mmzone.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/module.lds.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/orc_hash.h
+-rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/ring_buffer.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/rwonce.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/syscalls_32.h
 -rw-r--r--	root/root	usr/src/kernel-618/arch/x86/include/generated/asm/syscalls_64.h
@@ -4611,6 +4612,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/include/asm-generic/bitops/
 -rw-rw-r--	root/root	usr/src/kernel-618/include/asm-generic/qspinlock.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/asm-generic/qspinlock_types.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/asm-generic/resource.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/asm-generic/ring_buffer.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/asm-generic/rqspinlock.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/asm-generic/runtime-const.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/asm-generic/rwonce.h
@@ -8475,6 +8477,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/KEXEC_CORE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/KEXEC_FILE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/KEXEC_HANDOVER (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/KEXEC_HANDOVER_DEBUGFS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/KEXEC_JUMP (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/KEXEC_SIG (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/KEYBOARD_ADC (EMPTY)
@@ -11100,6 +11103,11 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/RTW89_USB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/RT_MUTEXES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/RUNTIME_TESTING_MENU (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_HAS_COERCE_POINTEE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_HAS_FILE_AS_C_STR (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_HAS_FILE_WITH_NUL (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_HAS_SPAN_FILE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_HAS_UNNECESSARY_TRANSMUTES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_LLVM_VERSION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/RUSTC_VERSION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/RWSEM_SPIN_ON_OWNER (EMPTY)
@@ -14452,6 +14460,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/include/drm/display/
 -rw-rw-r--	root/root	usr/src/kernel-618/include/drm/drm_util.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/drm/drm_utils.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/drm/drm_vblank.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/drm/drm_vblank_helper.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/drm/drm_vblank_work.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/drm/drm_vma_manager.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/drm/drm_writeback.h
@@ -16436,6 +16445,11 @@ drwxrwxr-x	root/root	usr/src/kernel-618/include/linux/i3c/
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/icmpv6.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/idle_inject.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/idr.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/ieee80211-eht.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/ieee80211-he.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/ieee80211-ht.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/ieee80211-mesh.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/ieee80211-vht.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/ieee80211.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/ieee802154.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/if_arp.h
@@ -18377,6 +18391,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/include/linux/surface_aggregator/
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/trace.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/trace_clock.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/trace_events.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/trace_printk.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/trace_recursion.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/trace_seq.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/tracefs.h
@@ -21079,6 +21094,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/kernel/
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/.kexec_core.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/.kexec_file.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/.kexec_handover.o.cmd
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/.kexec_handover_debugfs.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/.kheaders.ko.cmd
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/.kheaders.mod.cmd
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/.kheaders.mod.o.cmd
@@ -21695,6 +21711,8 @@ drwxrwxr-x	root/root	usr/src/kernel-618/kernel/kcsan/
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/kexec_handover.c
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/kexec_handover.o
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/kexec_handover_debug.c
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/kexec_handover_debugfs.c
+-rw-r--r--	root/root	usr/src/kernel-618/kernel/kexec_handover_debugfs.o
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/kexec_handover_internal.h
 -rw-rw-r--	root/root	usr/src/kernel-618/kernel/kexec_internal.h
 -rw-r--r--	root/root	usr/src/kernel-618/kernel/kheaders-objlist
@@ -29763,7 +29781,6 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/map_tests/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/network_helpers.h
 drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/prog_tests/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/prog_tests/.gitignore
--rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/prog_tests/access_variable_array.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/prog_tests/align.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/prog_tests/arena_atomics.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/prog_tests/arena_htab.c
@@ -30669,7 +30686,6 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/tcp_ca_update.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/tcp_ca_write_sk_pacing.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/tcp_rtt.c
--rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/test_access_variable_array.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/test_assign_reuse.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/test_attach_kprobe_sleepable.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/bpf/progs/test_attach_probe.c
