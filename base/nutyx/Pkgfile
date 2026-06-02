@@ -10,9 +10,10 @@ set=(chroot)
 
 name=nutyx
 version=26.05.1
-release=1
+release=2
+
 # nutyx patch version
-[ "$release" != "1" ] && patchname="$name-$version-consolidate-$release.patch"
+# [ "$release" != "1" ] && patchname="$name-$version-consolidate-$release.patch"
 
 PKGMK_GROUPS=(man)
 PKGMK_IGNORE_RUNTIMEDEPS=yes
@@ -29,4 +30,6 @@ make DESTDIR=$PKG install
 package() {
  install -Dm644 logo_nutyx_120.png \
  $PKG/usr/share/icons/hicolor/128x128/places/nutyx.png
+
+ ln -sv ../../bin/busybox $PKG/usr/bin/which
 }
