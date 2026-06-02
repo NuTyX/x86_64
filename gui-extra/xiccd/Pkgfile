@@ -2,7 +2,8 @@
 description="X color profile daemon. A simple bridge between colord and X."
 
 # Self-promotion
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 # Build dependencies
 makedepends=(xorg-libxdmcp xorg-libxau libxcb xorgproto xorg-libx11 m4 xorg-libxrandr colord glib xorg-libxext xorg-libxrender pcre libffi gvfs util-linux)
@@ -17,9 +18,12 @@ name=xiccd
 version=0.4.1
 
 # Release of the package
+release=2
 
 # Location of the sources of the package to be built
 source=(https://github.com/agalakhov/${name}/archive/refs/tags/v${version}.tar.gz)
+
+PKGMK_KEEP_SOURCES="no"
 
 # Recipe for building the package
 build() {
