@@ -3,13 +3,14 @@ url='https://github.com/nu-book/zxing-cpp'
 
 license="Apache"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=zxing-cpp
 version=3.0.2
+release=2
 
-makedepends=(cmake opencv stb zint)
+makedepends=(cmake opencv stb zint qt6-multimedia)
 
 source=(https://github.com/nu-book/zxing-cpp/archive/v$version/$name-$version.tar.gz
         system-stb.patch)
@@ -24,10 +25,12 @@ build() {
   cmake -B build -S $name-$version \
    -DCMAKE_INSTALL_PREFIX=/usr \
    -D CMAKE_INSTALL_LIBDIR=lib \
-   -DCMAKE_BUILD_TYPE=Release \
-   -D ZXING_USE_BUNDLED_ZINT=OFF \
-   -DBUILD_EXAMPLES=OFF \
-   -DBUILD_UNIT_TESTS=OFF
+   -DCMAKE_BUILD_TYPE=None \
+   -DZXING_USE_BUNDLED_ZINT=OFF \
+   -DZXING_EXAMPLES=ON    \
+   -DZXING_EXAMPLES_QT=ON \
+   -DZXING_C_API=ON       \
+   -DZXING_WRITERS=BOTH
   cmake --build build
 
   DESTDIR=$PKG cmake --install build
