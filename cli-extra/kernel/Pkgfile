@@ -3,7 +3,8 @@ url='https://www.kernel.org'
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Sundev79,Spiky"
-makedepends=(gmp mpc bison flex perl libelf diffutils tar)
+makedepends=(gmp mpc bison flex perl libelf diffutils tar
+             rustc)
 run=(nutyx kmod)
 
 PKGMK_IGNORE_UNPACK="yes"
@@ -11,7 +12,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel
-version=7.0.9
+version=7.0.11
 _version=${version%.*}
 [ "${version:0:1}" == "${version%.*}" ] && _version=$version
 

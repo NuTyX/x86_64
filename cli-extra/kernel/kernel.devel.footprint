@@ -1524,6 +1524,7 @@ drwxr-xr-x	root/root	usr/src/kernel/arch/x86/include/generated/asm/
 -rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/mmzone.h
 -rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/module.lds.h
 -rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/orc_hash.h
+-rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/ring_buffer.h
 -rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/rwonce.h
 -rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/syscalls_32.h
 -rw-r--r--	root/root	usr/src/kernel/arch/x86/include/generated/asm/syscalls_64.h
@@ -4586,6 +4587,7 @@ drwxrwxr-x	root/root	usr/src/kernel/include/asm-generic/bitops/
 -rw-rw-r--	root/root	usr/src/kernel/include/asm-generic/qspinlock.h
 -rw-rw-r--	root/root	usr/src/kernel/include/asm-generic/qspinlock_types.h
 -rw-rw-r--	root/root	usr/src/kernel/include/asm-generic/resource.h
+-rw-r--r--	root/root	usr/src/kernel/include/asm-generic/ring_buffer.h
 -rw-rw-r--	root/root	usr/src/kernel/include/asm-generic/rqspinlock.h
 -rw-rw-r--	root/root	usr/src/kernel/include/asm-generic/runtime-const.h
 -rw-rw-r--	root/root	usr/src/kernel/include/asm-generic/rwonce.h
@@ -5747,6 +5749,7 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_AUTO_VAR_INIT_ZERO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_AUTO_VAR_INIT_ZERO_BARE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_COUNTED_BY (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_COUNTED_BY_PTR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_ENTRY_PADDING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_IBT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/CC_HAS_INT128 (EMPTY)
@@ -11159,6 +11162,12 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/RTW89_USB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/RT_MUTEXES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/RUNTIME_TESTING_MENU (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_HAS_COERCE_POINTEE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_HAS_FILE_AS_C_STR (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_HAS_FILE_WITH_NUL (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_HAS_SLICE_AS_FLATTENED (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_HAS_SPAN_FILE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_HAS_UNNECESSARY_TRANSMUTES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_LLVM_VERSION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/RUSTC_VERSION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/RWSEM_SPIN_ON_OWNER (EMPTY)
@@ -13754,7 +13763,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_DW9719 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_DW9768 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_DW9807_VCM (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_DW_MIPI_CSI2RX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_EM28XX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_EM28XX_ALSA (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/VIDEO_EM28XX_DVB (EMPTY)
@@ -30418,7 +30426,6 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/bpf/map_tests/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/network_helpers.h
 drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/.gitignore
--rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/access_variable_array.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/align.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/arena_atomics.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/arena_htab.c
@@ -31359,7 +31366,6 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/tcp_ca_update.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/tcp_ca_write_sk_pacing.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/tcp_rtt.c
--rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/test_access_variable_array.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/test_assign_reuse.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/test_attach_kprobe_sleepable.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/test_attach_probe.c

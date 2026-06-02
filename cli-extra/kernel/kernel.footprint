@@ -1,12 +1,12 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-7.0.9-1-nutyx
--rw-r--r--	root/root	boot/config-7.0.9-1-nutyx
+-rw-r--r--	root/root	boot/System.map-7.0.11-1-nutyx
+-rw-r--r--	root/root	boot/config-7.0.11-1-nutyx
 lrwxrwxrwx	root/root	boot/kernel -> kernel-stable
 -rw-r--r--	root/root	boot/kernel-stable
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/7.0.9-1-nutyx -> kernel
+lrwxrwxrwx	root/root	usr/lib/modules/7.0.11-1-nutyx -> kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel/build -> /usr/src/kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/
@@ -2870,8 +2870,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/platform/marvel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/platform/raspberrypi/
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/platform/raspberrypi/rp1-cfe/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/platform/raspberrypi/rp1-cfe/rp1-cfe.ko.zst
-drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/platform/synopsys/
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/platform/synopsys/dw-mipi-csi2rx.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/drivers/media/radio/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/radio/dsbr100.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/drivers/media/radio/radio-keene.ko.zst
