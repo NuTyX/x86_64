@@ -1,0 +1,40 @@
+description="Generates bindings for C++ libraries using CPython source code"
+url='https://www.qt.io'
+
+license="GPL-3.0-only LGPL-3.0-only LicenseRef-Qt-Commercial Qt-GPL-exception-1.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(git ninja cmake libxslt qt6-declarative qt6-3d qt6-charts qt6-speech qt6-serialport
+             qt6-shadertools qt6-tools qt6-location qt6-webengine qt6-sensors qt6-quick3d
+             qt6-connectivity qt6-multimedia qt6-networkauth qt6-positioning)
+
+source=(https://code.qt.io/pyside/pyside-setup.git)
+
+name=shiboken
+version=6.11
+
+prepare() {
+  cd $name-$version
+  # Fix header install dir
+  git cherry-pick -n d252378a3980c99e23340e6b722631182814d8bb \
+  71c4d1750463c99ab9cbff7e1d7162210506f225
+}
+build() {
+  cmake -B build -S $name-$version -G Ninja \
+    -DCMAKE_INSTALL_PREFIX=/usr    \
+    -DCMAKE_BUILD_TYPE=None \
+    -DFORCE_LIMITED_API=no  \
+    -DBUILD_TESTS=OFF       \
+    -DNO_QT_TOOLS=yes       \
+    -DSHIBOKEN_PYTHON_LIBRARIES=$(pkgconf python3-embed --libs)
+
+  PYTHONPATH="$PWD"/build/sources \
+  cmake --build build
+
+  DESTDIR=$PKG cmake --install build/sources/shiboken6
+  DESTDIR=$PKG cmake --install build/sources/shiboken6_generator
+
+  
+}  
