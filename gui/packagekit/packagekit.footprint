@@ -7,7 +7,9 @@ drwxr-xr-x	root/root	etc/profile.d/
 -rw-r--r--	root/root	etc/profile.d/PackageKit.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pkcon
 -rwxr-xr-x	root/root	usr/bin/pkgcli
+-rwxr-xr-x	root/root	usr/bin/pkmon
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/PackageKitGlib-1.0.typelib
@@ -58,6 +60,7 @@ drwxr-xr-x	root/root	usr/share/PackageKit/helpers/test_spawn/
 -rw-r--r--	root/root	usr/share/PackageKit/pk-upgrade-distro.sh
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
+-rw-r--r--	root/root	usr/share/bash-completion/completions/pkcon
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pkgcli
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
