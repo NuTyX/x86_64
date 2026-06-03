@@ -10,7 +10,7 @@ set=(kde6 kde6-plasma)
 
 name=discover
 version=6.6.5
-release=1
+release=2
 
 makedepends=(flatpak appstream-qt packagekit-qt6 qt6-base qt6-declarative
              qt6-webview extra-cmake-modules qcoro-qt6
@@ -24,3 +24,7 @@ source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
 PKGMK_GROUPS=()
 
 build=kde6
+
+package() {
+ mv $PKG/usr/lib/qt6/plugins/discover/packagekit-backend.so{,.disabled}
+}
