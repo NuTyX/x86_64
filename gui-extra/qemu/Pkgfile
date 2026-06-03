@@ -6,7 +6,7 @@ contributors="Rems,Spiky"
 
 name=qemu
 version=11.0.1
-release=1
+release=2
 
 makedepends=(dtc gtk3 sdl libseccomp libcap-ng xorg-pixman
              python mesa vte virglrenderer lzo nettle
@@ -57,7 +57,7 @@ install -vDm 644 ../../$name-sysusers.conf $PKG/usr/lib/sysusers.d/$name.conf
 install -vDm 644 ../../$name-ga.conf -t $PKG/etc/$name/
 install -vDm 755 ../scripts/$name-guest-agent/fsfreeze-hook -t $PKG/etc/$name/
 install -vDm 644 ../contrib/systemd/$name-guest-agent.service -t $PKG/usr/lib/systemd/system/
-
+echo "WantedBy=multi-user.target" >> $PKG/usr/lib/systemd/system/$name-guest-agent.service
 }
 
 ## Services
