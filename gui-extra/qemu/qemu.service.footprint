@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	etc/qemu/
+-rwxr-xr-x	root/root	etc/qemu/fsfreeze-hook
+-rw-r--r--	root/root	etc/qemu/qemu-ga.conf
+-rwxr-xr-x	root/root	usr/bin/qemu-ga
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/qemu-guest-agent.service
+-rw-r--r--	root/root	usr/lib/udev/rules.d/99-qemu-guest-agent.rules

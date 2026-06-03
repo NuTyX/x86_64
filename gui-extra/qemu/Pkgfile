@@ -1,11 +1,12 @@
 description="Processor emulator using dynamic translation to achieve good emulation speed"
-url="http://www.qemu.org"
+url="https://www.qemu.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Rems,Spiky"
 
 name=qemu
 version=11.0.1
+release=1
 
 makedepends=(dtc gtk3 sdl libseccomp libcap-ng xorg-pixman
              python mesa vte virglrenderer lzo nettle
@@ -14,7 +15,8 @@ makedepends=(dtc gtk3 sdl libseccomp libcap-ng xorg-pixman
              usbredir bridge-utils xorg-libdrm spice spice-protocol libaio libslirp)
 run=(desktop-file-utils ovmf)
 
-source=(configvm startvm https://download.qemu.org/qemu-$version.tar.xz)
+source=(qemu-ga.conf 99-qemu-guest-agent.rules qemu-sysusers.conf
+        configvm startvm https://download.qemu.org/qemu-$version.tar.xz)
 
 prepare() {
 for i in configvm startvm
@@ -36,18 +38,39 @@ cd build
             --enable-opengl       \
             --enable-virglrenderer \
             --enable-spice        \
-            --docdir=/usr/share/doc/qemu-$version
+            --docdir=/usr/share/doc/$name
             
 make
 make DESTDIR=$PKG install
 
 ln -svf qemu-system-x86_64 $PKG/usr/bin/qemu
 
-install -v -m755 -d $PKG/lib/udev/rules.d
+install -vDm 644 ../../99-$name-guest-agent.rules -t \
+$PKG/usr/lib/udev/rules.d/
 
-cat > $PKG/lib/udev/rules.d/65-kvm.rules << "EOF"
+cat > $PKG/usr/lib/udev/rules.d/65-kvm.rules << "EOF"
 KERNEL=="kvm", GROUP="kvm", MODE="0660"
 EOF
 chgrp kvm  $PKG/usr/libexec/qemu-bridge-helper
 chmod 4750 $PKG/usr/libexec/qemu-bridge-helper
+install -vDm 644 ../../$name-sysusers.conf $PKG/usr/lib/sysusers.d/$name.conf
+install -vDm 644 ../../$name-ga.conf -t $PKG/etc/$name/
+install -vDm 755 ../scripts/$name-guest-agent/fsfreeze-hook -t $PKG/etc/$name/
+install -vDm 644 ../contrib/systemd/$name-guest-agent.service -t $PKG/usr/lib/systemd/system/
+
+}
+
+## Services
+service() {
+cd $PKG
+bsdtar -r -f \
+$PKGMK_PACKAGE_DIR/${name}.${group}${PKGMK_PACKAGE_EXT}$version-$release \
+usr/lib/systemd \
+usr/bin/qemu-ga \
+etc/qemu usr/lib/udev/rules.d/99-$name-guest-agent.rules
+
+rm -r usr/lib/systemd \
+usr/bin/qemu-ga \
+etc/qemu \
+usr/lib/udev/rules.d/99-$name-guest-agent.rules
 }

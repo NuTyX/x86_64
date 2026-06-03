@@ -1,7 +1,4 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/udev/
-drwxr-xr-x	root/root	lib/udev/rules.d/
--rw-r--r--	root/root	lib/udev/rules.d/65-kvm.rules
+drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/configvm
@@ -13,7 +10,6 @@ lrwxrwxrwx	root/root	usr/bin/qemu -> qemu-system-x86_64
 -rwxr-xr-x	root/root	usr/bin/qemu-arm
 -rwxr-xr-x	root/root	usr/bin/qemu-armeb
 -rwxr-xr-x	root/root	usr/bin/qemu-edid
--rwxr-xr-x	root/root	usr/bin/qemu-ga
 -rwxr-xr-x	root/root	usr/bin/qemu-hexagon
 -rwxr-xr-x	root/root	usr/bin/qemu-hppa
 -rwxr-xr-x	root/root	usr/bin/qemu-i386
@@ -112,6 +108,11 @@ drwxr-xr-x	root/root	usr/lib/qemu/
 -rwxr-xr-x	root/root	usr/lib/qemu/ui-sdl.so
 -rwxr-xr-x	root/root	usr/lib/qemu/ui-spice-app.so
 -rwxr-xr-x	root/root	usr/lib/qemu/ui-spice-core.so
+drwxr-xr-x	root/root	usr/lib/sysusers.d/
+-rw-r--r--	root/root	usr/lib/sysusers.d/qemu.conf
+drwxr-xr-x	root/root	usr/lib/udev/
+drwxr-xr-x	root/root	usr/lib/udev/rules.d/
+-rw-r--r--	root/root	usr/lib/udev/rules.d/65-kvm.rules
 drwxr-xr-x	root/root	usr/libexec/
 -rwsr-x---	root/kvm	usr/libexec/qemu-bridge-helper
 -rwxr-xr-x	root/root	usr/libexec/vhost-user-gpu

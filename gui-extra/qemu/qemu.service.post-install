@@ -1,0 +1,5 @@
+systemctl daemon-reload
+systemctl enable --now qemu-guest-agent
+
+echo "Qemu agent has been enabled and started. To stop or disable it, check the systemd service
+named: qemu-guest-agent.service"
