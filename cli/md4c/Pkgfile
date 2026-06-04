@@ -1,0 +1,27 @@
+description='C Markdown parser'
+url='https://github.com/mity/md4c'
+
+license="MIT"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=md4c
+version=0.5.3
+
+makedepends=(cmake)
+
+PKGMK_KEEP_SOURCES="no"
+
+source=(https://github.com/mity/md4c/archive/release-$version.tar.gz)
+
+build() {
+  cmake -B build -S $name-release-$version \
+  -DCMAKE_INSTALL_PREFIX=/usr
+
+  cmake --build build
+
+  DESTDIR=$PKG cmake --install build
+  install -Dm644 $name-release-$version/LICENSE.md -t \
+  $PKG/usr/share/licenses/$name/
+}
