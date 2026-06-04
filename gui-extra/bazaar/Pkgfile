@@ -1,0 +1,25 @@
+description="A new app store with focus on flatpaks, particularly Flathub"
+url="https://github.com/kolunmi/bazaar"
+
+license="GPL-3.0-only"
+
+packager="tnut <tnut@nutyx.org"
+contributors="Spiky"
+
+set=(xfce4-extra)
+
+name=bazaar
+version=v0.8.1
+release=1
+
+makedepends=(md4c gtk4 glycin-gtk4 json-glib cairo pango
+            graphene appstream dconf libsoup libproxy
+            libadwaita webkit2gtk-6 gtksourceview5 python-babel
+            flatpak libsecret blueprint-compiler malcontent)
+
+run=(hicolor-icon-theme)
+PKGMK_GROUPS=(devel)
+
+source=(https://github.com/kolunmi/bazaar.git)
+
+build=meson
