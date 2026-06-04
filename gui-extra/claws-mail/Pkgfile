@@ -6,12 +6,20 @@ contributors="Pierre.,Greg,Fabianwang,Tnut"
 
 name=claws-mail
 version=4.4.0
+release=2
 
 makedepends=(bogofilter enchant aspell libetpan gnupg gpgme gnutls
              dbus gtk3 libtasn1 enchant xorg-libsm xorgproto nettle)
 run=(hicolor-icon-theme desktop-file-utils)
 
-source=(${url}/download.php?file=releases/$name-$version.tar.xz)
+source=(${url}/download.php?file=releases/$name-$version.tar.xz
+        libical-4.patch)
+
+prepare() {
+cd $name-$version
+
+patch -Np1 -i ../libical-4.patch
+}
 
 build() {
 cd $name-$version
