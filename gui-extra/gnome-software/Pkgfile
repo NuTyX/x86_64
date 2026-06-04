@@ -4,11 +4,12 @@ url="https://apps.gnome.org/Software"
 license="GPL-2.0-or-later"
 set=(gnome)
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 name=gnome-software
 version=50.2
+release=2
 
 makedepends=(flatpak packagekit appstream gnome-online-accounts gtk4 libadwaita libsoup)
 run=(gsettings-desktop-schemas)
@@ -16,6 +17,7 @@ run=(gsettings-desktop-schemas)
 source=(https://download.gnome.org/sources/$name/${version::2}/$name-$version.tar.xz)
 
 PKGMK_MESON_OPTIONS="-Dfwupd=false -Dmalcontent=false"
+PKGMK_GROUPS=(devel doc man)
 
 build=meson
 
