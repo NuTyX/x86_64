@@ -1,0 +1,211 @@
+diff --git a/libbalsa/rfc2445.c b/libbalsa/rfc2445.c
+index 98d5108e6..6bb2f6a98 100644
+--- a/libbalsa/rfc2445.c
++++ b/libbalsa/rfc2445.c
+@@ -501,13 +501,6 @@ libbalsa_vcal_vevent(LibBalsaVCal *vcal, guint nth_event)
+  * features als Thunderbird's "Lightning" extension, which should be fine for the majority of cases in the wild.  However, there
+  * /may/ (and will) be cases where these function just fail... */
+ 
+-static inline gboolean
+-ical_ar_empty(const short *array)
+-{
+-	return array[0] == ICAL_RECURRENCE_ARRAY_MAX;
+-}
+-
+-
+ static inline const gchar *
+ day_name(gint day)
+ {
+@@ -537,8 +530,8 @@ ical_check_bydays(const struct icalrecurrencetype *rrule, guint want_days)
+ 	guint have_days = 0U;
+ 	guint n;
+ 
+-	for (n = 0U; (n < ICAL_BY_DAY_SIZE) && (rrule->by_day[n] != ICAL_RECURRENCE_ARRAY_MAX); n++) {
+-		have_days |= (1U << rrule->by_day[n]);
++	for (n = 0U; n < rrule->by[ICAL_BY_DAY].size; n++) {
++		have_days |= (1U << rrule->by[ICAL_BY_DAY].data[n]);
+ 	}
+ 	return want_days == have_days;
+ }
+@@ -566,7 +559,8 @@ vevent_recurrence_weekly(const struct icalrecurrencetype *rrule)
+ {
+ 	GString *result = g_string_new(NULL);
+ 
+-	if (!ical_ar_empty(rrule->by_day)) {
++	size_t by_day_size = rrule->by[ICAL_BY_DAY].size;
++	if (by_day_size > 0) {
+ 		gint n;
+ 
+ 		if (rrule->interval == 1) {
+@@ -575,13 +569,13 @@ vevent_recurrence_weekly(const struct icalrecurrencetype *rrule)
+ 			/* #1: interval */
+ 			g_string_append_printf(result, _("every %d weeks on "), rrule->interval);
+ 		}
+-		g_string_append(result, day_name(rrule->by_day[0] - 1));
+-		for (n = 1; (n < ICAL_BY_DAY_SIZE) && (rrule->by_day[n] != ICAL_RECURRENCE_ARRAY_MAX); n++) {
+-			if ((n < (ICAL_BY_DAY_SIZE - 1)) && (rrule->by_day[n + 1] != ICAL_RECURRENCE_ARRAY_MAX)) {
+-				g_string_append_printf(result, ", %s", day_name(rrule->by_day[n] - 1));
++		g_string_append(result, day_name(rrule->by[ICAL_BY_DAY].data[0] - 1));
++		for (n = 1; n < (gint)by_day_size; n++) {
++			if (n < (gint)by_day_size - 1) {
++				g_string_append_printf(result, ", %s", day_name(rrule->by[ICAL_BY_DAY].data[n] - 1));
+ 			} else {
+ 				/* #1: the day of week (defined in the day_of_week context) */
+-				g_string_append_printf(result, _(" and %s"), day_name(rrule->by_day[n] - 1));
++				g_string_append_printf(result, _(" and %s"), day_name(rrule->by[ICAL_BY_DAY].data[n] - 1));
+ 			}
+ 		}
+ 	} else {
+@@ -634,7 +628,7 @@ vevent_recurrence_monthly(const struct icalrecurrencetype *rrule, const icaltime
+ {
+ 	GString *result = g_string_new(NULL);
+ 
+-	if (!ical_ar_empty(rrule->by_day)) {
++	if (rrule->by[ICAL_BY_DAY].size > 0) {
+ 		/* we have a "BYDAY" rule */
+ 		if (ical_check_bydays(rrule, 0xfeU)) {
+ 			if (rrule->interval == 1) {
+@@ -649,18 +643,19 @@ vevent_recurrence_monthly(const struct icalrecurrencetype *rrule, const icaltime
+ 			guint every_mask = 0U;
+ 			GList *days = NULL;
+ 			GList *p;
++			size_t by_day_size = rrule->by[ICAL_BY_DAY].size;
+ 
+ 			/* collect all days repeating every week */
+-			for (n = 0U; (n < ICAL_BY_DAY_SIZE) && (rrule->by_day[n] != ICAL_RECURRENCE_ARRAY_MAX); n++) {
++			for (n = 0U; n < by_day_size; n++) {
+ 				int day_pos;
+ 
+-				day_pos = icalrecurrencetype_day_position(rrule->by_day[n]);
++				day_pos = icalrecurrencetype_day_position(rrule->by[ICAL_BY_DAY].data[n]);
+ 				if ((day_pos < -1) || (day_pos > 5)) {
+ 					return g_string_assign(result, _("rule too complex"));
+ 				} else if (day_pos == 0) {
+ 					int day_of_week;
+ 
+-					day_of_week = icalrecurrencetype_day_day_of_week(rrule->by_day[n]);
++					day_of_week = icalrecurrencetype_day_day_of_week(rrule->by[ICAL_BY_DAY].data[n]);
+ 					every_mask |= 1U << day_of_week;
+ 					/* #1: the day of week (defined in the day_of_week context) */
+ 					days = g_list_append(days, g_strdup_printf(_("every %s"), day_name(day_of_week - 1)));
+@@ -670,15 +665,15 @@ vevent_recurrence_monthly(const struct icalrecurrencetype *rrule, const icaltime
+ 			}
+ 
+ 			/* collect specific ones, but avoid something like "Monday and the last Monday" */
+-			for (n = 0U; (n < ICAL_BY_DAY_SIZE) && (rrule->by_day[n] != ICAL_RECURRENCE_ARRAY_MAX); n++) {
++			for (n = 0U; n < by_day_size; n++) {
+ 				int day_of_week;
+ 
+-				day_of_week = icalrecurrencetype_day_day_of_week(rrule->by_day[n]);
++				day_of_week = icalrecurrencetype_day_day_of_week(rrule->by[ICAL_BY_DAY].data[n]);
+ 				if ((every_mask & (1U << day_of_week)) == 0U) {
+ 					int day_pos;
+ 					GString *buffer = g_string_new(NULL);
+ 
+-					day_pos = icalrecurrencetype_day_position(rrule->by_day[n]);
++					day_pos = icalrecurrencetype_day_position(rrule->by[ICAL_BY_DAY].data[n]);
+ 					day_ordinal_append(buffer, day_pos, day_name(day_of_week - 1), day_name(day_of_week - 1));
+ 					days = g_list_append(days, g_string_free(buffer, FALSE));
+ 				}
+@@ -696,22 +691,23 @@ vevent_recurrence_monthly(const struct icalrecurrencetype *rrule, const icaltime
+ 			}
+ 			g_list_free_full(days, g_free);
+ 		}
+-	} else if (!ical_ar_empty(rrule->by_month_day)) {
++	} else if (rrule->by[ICAL_BY_MONTH_DAY].size > 0) {
+ 		/* we have a "BYMONTHDAY" rule */
+ 		guint n;
+ 
+-		for (n = 0; (n < ICAL_BY_MONTHDAY_SIZE) && (rrule->by_month_day[n] != ICAL_RECURRENCE_ARRAY_MAX); n++) {
+-			if (rrule->by_month_day[n] < -1) {
++		size_t by_month_day_size = rrule->by[ICAL_BY_MONTH_DAY].size;
++		for (n = 0; n < by_month_day_size; n++) {
++			if (rrule->by[ICAL_BY_MONTH_DAY].data[n] < -1) {
+ 				return g_string_assign(result, _("rule too complex"));
+ 			} else {
+ 				if (n > 0) {
+-					if (rrule->by_month_day[n + 1] != ICAL_RECURRENCE_ARRAY_MAX) {
++					if (n + 1 < by_month_day_size) {
+ 						g_string_append(result, ", ");
+ 					} else {
+ 						g_string_append(result, _(" and "));
+ 					}
+ 				}
+-				day_ordinal_append(result, rrule->by_month_day[n], _("day"), NULL);
++				day_ordinal_append(result, rrule->by[ICAL_BY_MONTH_DAY].data[n], _("day"), NULL);
+ 			}
+ 		}
+ 	} else {
+@@ -749,12 +745,12 @@ vevent_recurrence_yearly(const struct icalrecurrencetype *rrule, const icaltimet
+ 	GString *result = g_string_new(NULL);
+ 
+ 	/* rules which are too complex for Lightning, so ignore them here, too... */
+-	if ((rrule->by_month[1] != ICAL_RECURRENCE_ARRAY_MAX) || (rrule->by_month_day[1] != ICAL_RECURRENCE_ARRAY_MAX) ||
+-		(rrule->by_month_day[0] < -1)) {
++	if ((rrule->by[ICAL_BY_MONTH].size > 1) || (rrule->by[ICAL_BY_MONTH_DAY].size > 1) ||
++		(rrule->by[ICAL_BY_MONTH_DAY].size > 0 && rrule->by[ICAL_BY_MONTH_DAY].data[0] < -1)) {
+ 		return g_string_assign(result, _("rule too complex"));
+ 	}
+ 
+-	if (ical_ar_empty(rrule->by_day)) {
++	if (rrule->by[ICAL_BY_DAY].size == 0) {
+         /* RRULE:FREQ=YEARLY;BYMONTH=x;BYMONTHDAY=y.
+          * RRULE:FREQ=YEARLY;BYMONTHDAY=x (takes the month from the start date)
+          * RRULE:FREQ=YEARLY;BYMONTH=x (takes the day from the start date)
+@@ -762,15 +758,15 @@ vevent_recurrence_yearly(const struct icalrecurrencetype *rrule, const icaltimet
+ 		const gchar *month;
+ 		GString *day = g_string_new(NULL);
+ 
+-		if (ical_ar_empty(rrule->by_month)) {
++		if (rrule->by[ICAL_BY_MONTH].size == 0) {
+ 			month = mon_name[start->month - 1];
+ 		} else {
+-			month = mon_name[rrule->by_month[0] - 1];
++			month = mon_name[rrule->by[ICAL_BY_MONTH].data[0] - 1];
+ 		}
+-		if (ical_ar_empty(rrule->by_month_day)) {
++		if (rrule->by[ICAL_BY_MONTH_DAY].size == 0) {
+ 			day_ordinal_append(day, start->day, NULL, NULL);
+ 		} else {
+-			day_ordinal_append(day, rrule->by_month_day[0], _("day"), NULL);
++			day_ordinal_append(day, rrule->by[ICAL_BY_MONTH_DAY].data[0], _("day"), NULL);
+ 		}
+ 		if (rrule->interval == 1) {
+ 			/* #1: name of month (defined in the name_of_month context) */
+@@ -783,9 +779,9 @@ vevent_recurrence_yearly(const struct icalrecurrencetype *rrule, const icaltimet
+ 			g_string_append_printf(result, _("every %d years on %s %s"), rrule->interval, month, day->str);
+ 		}
+ 		g_string_free(day, TRUE);
+-	} else if (!ical_ar_empty(rrule->by_month) && !ical_ar_empty(rrule->by_day)) {
++	} else if (rrule->by[ICAL_BY_MONTH].size > 0 && rrule->by[ICAL_BY_DAY].size > 0) {
+ 		/* RRULE:FREQ=YEARLY;BYMONTH=x;BYDAY=y1,y2,... */
+-		const gchar *month = mon_name[rrule->by_month[0] - 1];
++		const gchar *month = mon_name[rrule->by[ICAL_BY_MONTH].data[0] - 1];
+ 
+ 		if (ical_check_bydays(rrule, 0x7cU)) {
+ 			/* every day of the month */
+@@ -797,12 +793,12 @@ vevent_recurrence_yearly(const struct icalrecurrencetype *rrule, const icaltimet
+ 				/* #2: name of month (defined in the name_of_month context) */
+ 				g_string_append_printf(result, _("every %d years every day of %s"), rrule->interval, month);
+ 			}
+-		} else if (rrule->by_day[1] == ICAL_RECURRENCE_ARRAY_MAX) {
++		} else if (rrule->by[ICAL_BY_DAY].size == 1) {
+ 			int day_pos;
+ 			int day_of_week;
+ 
+-			day_pos = icalrecurrencetype_day_position(rrule->by_day[0]);
+-			day_of_week = icalrecurrencetype_day_day_of_week(rrule->by_day[0]);
++			day_pos = icalrecurrencetype_day_position(rrule->by[ICAL_BY_DAY].data[0]);
++			day_of_week = icalrecurrencetype_day_day_of_week(rrule->by[ICAL_BY_DAY].data[0]);
+ 			if (day_pos == 0) {
+ 				if (rrule->interval == 1) {
+ 					/* #1: day of week (defined in the day_of_week context) */
+@@ -1055,7 +1051,7 @@ vcalendar_extract(const gchar *vcal_buf)
+ 			/* RRULE (only one is allowed, see RFC 5546, Sect. 3.2.2) */
+ 			prop = icalcomponent_get_first_property(item, ICAL_RRULE_PROPERTY);
+ 			if (prop != NULL) {
+-				event->rrule = icalproperty_get_rrule(prop);
++				event->rrule = *icalproperty_get_rrule(prop);
+ 			}
+ 
+ 			/* UID, SUMMARY, LOCATION, DESCRIPTION */
