@@ -11,24 +11,30 @@ makedepends=(tar python perl-archive-zip unzip zip gtk3 cups poppler-glib
              libepoxy libjpeg-turbo xorg-glu gstreamer-plugins-base icu
              libatomic-ops lcms2 librsvg libxml2 libxslt mesa neon nss
              redland serf unixodbc doxygen gdb gnutls nasm telepathy-glib
-             gpgme gpgmepp libabw cppunit hunspell hyphen mariadb)
+             gpgme gpgmepp libabw cppunit hunspell hyphen mariadb libodfgen)
+
 run=(shared-mime-info xdg-utils desktop-file-utils gtk-update-icon-cache
      hicolor-icon-theme)
 
 name=libreoffice
 version=26.2.3.2
-release=1
+release=2
 
 categories=(Office Graphics Education)
 
 PKGMK_IGNORE_UNPACK="yes"
 _url="https://download.documentfoundation.org/libreoffice/src/${version:0:6}/"
+_ext="https://dev-www.libreoffice.org/src/"
 
 source=(Remove-check-if-root-due-to-issue-with-fakeroot.patch
-        ${_url}$name-$version.tar.xz
-        ${_url}$name-dictionaries-$version.tar.xz
-        ${_url}$name-help-$version.tar.xz
-        ${_url}$name-translations-$version.tar.xz)
+	${_ext}afdko-4.0.3.tar.gz ${_ext}pdfium-7471.tar.bz2
+	${_ext}CoinMP-1.8.4.tgz ${_ext}glm-1.0.3.zip
+	${_ext}dragonbox-1.1.3.tar.gz
+	${_ext}antlr4-cpp-runtime-4.13.2-source.zip
+	${_url}$name-$version.tar.xz
+	${_url}$name-dictionaries-$version.tar.xz
+	${_url}$name-help-$version.tar.xz
+	${_url}$name-translations-$version.tar.xz)
 
 prepare() {
   unset ACLOCAL
@@ -49,10 +55,15 @@ prepare() {
     -e "s|.1.gz|.1|g" \
     -i bin/distro-install-desktop-integration
 
-  install -dm755 external/tarballs/
-  ln -sv ../../../$name-dictionaries-$version.tar.xz  external/tarballs/
-  ln -sv ../../../$name-help-$version.tar.xz          external/tarballs/
-  ln -sv ../../../$name-translations-$version.tar.xz  external/tarballs/
+  install -dm755                                        external/tarballs/
+  ln -sv ../../../$name-dictionaries-$version.tar.xz    external/tarballs/
+  ln -sv ../../../$name-help-$version.tar.xz            external/tarballs/
+  ln -sv ../../../$name-translations-$version.tar.xz    external/tarballs/
+  ln -sv ../../../afdko-4.0.3.tar.gz                    external/tarballs/
+  ln -sv ../../../pdfium-7471.tar.bz2                   external/tarballs/
+  ln -sv ../../../CoinMP-1.8.4.tgz                      external/tarballs/
+  ln -sv ../../../dragonbox-1.1.3.tar.gz                external/tarballs/
+  ln -sv ../../../antlr4-cpp-runtime-4.13.2-source.zip  external/tarballs/
 
   ln -sv src/libreoffice-help-${version}/helpcontent2/
   ln -sv src/libreoffice-dictionaries-${version}/dictionaries/
@@ -60,16 +71,16 @@ prepare() {
 
 }
 build() {
-   cd $name-$version
+    cd $name-$version
 
    ./autogen.sh --prefix=/usr \
 	--sysconfdir=/etc \
 	--with-vendor="NuTyX" \
 	--with-extra-buildid="version-$release" \
 	--with-lang="af ar as be bg bs ca cs cy da de \
-        el es fi fr ga gl he hi hr hu id is it ja ka kk km \
-        kn ko lt lv mk ml mr my nl nn oc or pa-IN pl pt ro ru \
-        rw si sq sk sl sr sv ta th tr uk uz vi xh zh-CN" \
+	el es fi fr ga gl he hi hr hu id is it ja ka kk km \
+	kn ko lt lv mk ml mr my nl nn oc or pa-IN pl pt ro ru \
+	rw si sq sk sl sr sv ta th tr uk uz vi xh zh-CN" \
 	--with-help                 \
 	--with-myspell-dicts        \
 	--without-junit             \
@@ -77,25 +88,29 @@ build() {
 	--without-system-dicts      \
 	--disable-dconf             \
 	--disable-odk               \
-          --without-system-firebird   \
-          --disable-firebird-sdbc     \
+	--without-system-firebird   \
+	--disable-firebird-sdbc     \
 	--without-java              \
 	--enable-release-build=yes  \
 	--enable-python=system      \
 	--with-system-boost         \
-          --with-system-clucene       \
+	--with-system-clucene       \
 	--with-system-cppunit       \
 	--with-system-curl          \
 	--with-system-epoxy         \
 	--with-system-expat         \
 	--with-system-gpgmepp       \
 	--with-system-hunspell      \
+	--with-system-icu           \
 	--with-system-jpeg          \
 	--with-system-lcms2         \
 	--with-system-libabw        \
 	--with-system-libatomic_ops \
+	--with-system-libtiff       \
+	--with-system-libodfgen     \
 	--with-system-libpng        \
 	--with-system-libxml        \
+	--with-system-libwebp       \
 	--with-system-mariadb       \
 	--with-system-nss           \
 	--with-system-odbc          \
@@ -104,10 +119,8 @@ build() {
 	--with-system-poppler       \
 	--with-system-postgresql    \
 	--with-system-redland       \
-	--with-system-libtiff       \
-	--with-system-libwebp       \
 	--with-system-zlib          \
-          --with-system-icu           \
+	--with-system-zstd          \
 	--with-parallelism=$(getconf _NPROCESSORS_ONLN)
 
 	make -j15 build
