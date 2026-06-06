@@ -12,6 +12,7 @@ set=(xfce4)
 
 name=xfdesktop
 version=4.20.2
+release=2
 
 source=(https://archive.xfce.org/src/xfce/${name}/${version:0:4}/${name}-$version.tar.bz2)
 
@@ -19,9 +20,8 @@ build() {
 
 cd ${name}-$version
 
-sed -i "s@xfce/xfce-verticals.png@nutyx/nutyx.jpg@" common/xfdesktop-common.h
-
-./configure --prefix=/usr
+./configure --prefix=/usr \
+--with-default-backdrop-filename=/usr/share/backgrounds/nutyx/NuTyX-XFCE4-26.06.1.jpg
 
 make
 make DESTDIR=$PKG install
