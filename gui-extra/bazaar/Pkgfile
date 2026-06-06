@@ -6,11 +6,11 @@ license="GPL-3.0-only"
 packager="tnut <tnut@nutyx.org"
 contributors="Spiky"
 
-set=(xfce4-extra)
+set=(xfce4)
 
 name=bazaar
 version=v0.8.1
-release=1
+release=2
 
 makedepends=(md4c gtk4 glycin-gtk4 json-glib cairo pango
             graphene appstream dconf libsoup libproxy
@@ -19,7 +19,9 @@ makedepends=(md4c gtk4 glycin-gtk4 json-glib cairo pango
 
 run=(hicolor-icon-theme)
 PKGMK_GROUPS=(devel)
-
 source=(https://github.com/kolunmi/bazaar.git)
 
+prepare() {
+ sed -i "s/Utility/System/" $name-$version/data/io.github.kolunmi.Bazaar.desktop.in
+}
 build=meson
