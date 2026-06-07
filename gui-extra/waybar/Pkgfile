@@ -3,16 +3,18 @@ url='https://github.com/Alexays/Waybar'
 
 license="MIT"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="BlogofraisFR"
+packager="tnut <tnut@nutyx.org>"
+contributors="BlogofraisFR, Spiky"
 
 makedepends=(systemd meson wayland-protocols catch2)
 run=(gtkmm)
 
 name=waybar
 version=0.15.0
+release=2
 
 source=(https://github.com/Alexays/Waybar/archive/refs/tags/$version.tar.gz)
+PKGMK_GROUPS=(devel)
 
 prepare() {
 

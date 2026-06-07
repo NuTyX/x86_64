@@ -1,8 +1,8 @@
 description="D-Bus service for applications to request thumbnails"
 url="http://www.xfce.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tyrry,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tyrry,Greg,Spiky"
 
 makedepends=(libjpeg-turbo libpng freetype gdk-pixbuf
              dbus-glib intltool gstreamer libxfce4util)
@@ -10,8 +10,11 @@ set=(xfce4)
 
 name=tumbler
 version=4.20.1
+release=2
 
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+
+PKGMK_GROUPS=(devel doc)
 
 build() {
 

@@ -1,0 +1,16 @@
+diff --git a/migrate/default.xml.in b/migrate/default.xml.in
+index 249804559..7fba01e1c 100644
+--- a/migrate/default.xml.in
++++ b/migrate/default.xml.in
+@@ -90,6 +90,10 @@
+       </property>
+     </property>
+     <property name="plugin-17" type="string" value="separator"/>
+-    <property name="plugin-18" type="string" value="directorymenu"/>
++    <property name="plugin-18" type="string" value="launcher">
++      <property name="items" type="array">
++        <value type="string" value="io.github.kolunmi.Bazaar.desktop"/>
++      </property>
++    </property>
+   </property>
+ </channel>

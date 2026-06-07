@@ -12,12 +12,14 @@ makedepends=(ninja meson libcdio-paranoia avahi dbus-glib libgdata libgudev
 
 name=gvfs
 version=1.60.0
-release=2
+release=3
 
 source=($url/-/archive/$version/$name-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="--sysconfdir=/etc -Dafc=false -Donedrive=false \
--Dhttp=false -Ddnssd=false -Dgoa=false -Dgoogle=false"
+-Dhttp=false -Ddnssd=false -Dgoa=false -Dgoogle=false -Dman=true"
+
+PKGMK_GROUPS=(man)
 
 build=meson
 

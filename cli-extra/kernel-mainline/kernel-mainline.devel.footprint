@@ -709,6 +709,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/arch/x86/crypto/
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/crypto/twofish_glue_3way.o
 drwxrwxr-x	root/root	usr/src/kernel-mainline/arch/x86/entry/
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/.built-in.a.cmd
+-rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/.common.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/.entry.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/.entry_64.o.cmd
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/.entry_64_compat.o.cmd
@@ -721,6 +722,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/arch/x86/entry/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/arch/x86/entry/Makefile
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/built-in.a
 -rw-rw-r--	root/root	usr/src/kernel-mainline/arch/x86/entry/calling.h
+-rw-rw-r--	root/root	usr/src/kernel-mainline/arch/x86/entry/common.c
+-rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/common.o
 -rw-rw-r--	root/root	usr/src/kernel-mainline/arch/x86/entry/entry.S
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/entry/entry.o
 -rw-rw-r--	root/root	usr/src/kernel-mainline/arch/x86/entry/entry_32.S
@@ -1478,6 +1481,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/mmzone.h
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/module.lds.h
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/orc_hash.h
+-rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/ring_buffer.h
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/rwonce.h
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/syscalls_32.h
 -rw-r--r--	root/root	usr/src/kernel-mainline/arch/x86/include/generated/asm/syscalls_64.h
@@ -4508,6 +4512,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/include/asm-generic/bitops/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/qspinlock.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/qspinlock_types.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/resource.h
+-rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/ring_buffer.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/rqspinlock.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/runtime-const.h
 -rw-rw-r--	root/root	usr/src/kernel-mainline/include/asm-generic/rwonce.h
@@ -5646,6 +5651,7 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_AUTO_VAR_INIT_ZERO (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_AUTO_VAR_INIT_ZERO_BARE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_COUNTED_BY (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_COUNTED_BY_PTR (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_ENTRY_PADDING (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_IBT (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/CC_HAS_INT128 (EMPTY)
@@ -11034,6 +11040,10 @@ drwxr-xr-x	root/root	usr/src/kernel-mainline/include/config/
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RTW89_USB (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RT_MUTEXES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUNTIME_TESTING_MENU (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_HAS_FILE_AS_C_STR (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_HAS_FILE_WITH_NUL (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_HAS_SPAN_FILE (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_HAS_UNNECESSARY_TRANSMUTES (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_LLVM_MAJOR_VERSION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_LLVM_VERSION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-mainline/include/config/RUSTC_VERSION (EMPTY)
@@ -29173,6 +29183,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/arch/x86/in
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/fsconfig.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/fsmount.c
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/fsmount.sh
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/fsmount_attr.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/fspick.c
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/fspick.sh
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/perf/trace/beauty/futex_op.c
@@ -30740,6 +30751,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_te
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/parse_tcp_hdr_opt.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/pe_preserve_elems.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/percpu_alloc.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/percpu_array_inner_map.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/perf_branches.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/perf_buffer.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/prog_tests/perf_event_stackmap.c
@@ -31808,6 +31820,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_bswap.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_btf_ctx_access.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_btf_unreliable_prog.c
+-rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_call_large_imm.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_cfg.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_cgroup_inv_retcode.c
 -rw-rw-r--	root/root	usr/src/kernel-mainline/tools/testing/selftests/bpf/progs/verifier_cgroup_skb.c
@@ -33802,6 +33815,7 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilt
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_concat_range_perf.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_conntrack_helper.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_fib.sh
+-rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_fib_nexthop.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_flowtable.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_interface_stress.sh
 -rwxrwxr-x	root/root	usr/src/kernel-mainline/tools/testing/selftests/net/netfilter/nft_meta.sh
@@ -36040,8 +36054,8 @@ drwxrwxr-x	root/root	usr/src/kernel-mainline/usr/include/
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/initramfs_inc_data
 -rw-r--r--	root/root	usr/src/kernel-mainline/usr/modules.order (EMPTY)
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux
-lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.1-rc4/scripts/gdb/vmlinux-gdb.py
+lrwxrwxrwx	root/root	usr/src/kernel-mainline/vmlinux-gdb.py -> /tmp/work/src/linux-7.1-rc6/scripts/gdb/vmlinux-gdb.py
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.a
 -rw-r--r--	root/root	usr/src/kernel-mainline/vmlinux.o
 -rwxr-xr-x	root/root	usr/src/kernel-mainline/vmlinux.unstripped
-lrwxrwxrwx	root/root	usr/src/linux-7.1-rc4 -> kernel-mainline
+lrwxrwxrwx	root/root	usr/src/linux-7.1-rc6 -> kernel-mainline

@@ -1,0 +1,30 @@
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/Malcontent-0.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/MalcontentUi-1.typelib
+lrwxrwxrwx	root/root	usr/lib/libmalcontent-0.so -> libmalcontent-0.so.0
+lrwxrwxrwx	root/root	usr/lib/libmalcontent-0.so.0 -> libmalcontent-0.so.0.14.0
+-rwxr-xr-x	root/root	usr/lib/libmalcontent-0.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libmalcontent-ui-1.so -> libmalcontent-ui-1.so.1
+-rwxr-xr-x	root/root	usr/lib/libmalcontent-ui-1.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libmalcontent-ui-1.so.1 -> libmalcontent-ui-1.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libnss_malcontent.so -> libnss_malcontent.so.2
+-rwxr-xr-x	root/root	usr/lib/libnss_malcontent.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib/libnss_malcontent.so.2 -> libnss_malcontent.so.0.14.0
+-rwxr-xr-x	root/root	usr/lib/malcontent-timer-extension-agent
+-rwxr-xr-x	root/root	usr/lib/malcontent-timerd
+-rwxr-xr-x	root/root	usr/lib/malcontent-webd
+-rwxr-xr-x	root/root	usr/lib/malcontent-webd-update
+drwxr-xr-x	root/root	usr/lib/security/
+-rwxr-xr-x	root/root	usr/lib/security/pam_malcontent.so
+drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system/
+-rw-r--r--	root/root	usr/lib/systemd/system/malcontent-timer-extension-agent.service
+-rw-r--r--	root/root	usr/lib/systemd/system/malcontent-timerd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/malcontent-webd-update.service
+-rw-r--r--	root/root	usr/lib/systemd/system/malcontent-webd-update.timer
+-rw-r--r--	root/root	usr/lib/systemd/system/malcontent-webd.service
+drwxr-xr-x	root/root	usr/lib/sysusers.d/
+-rw-r--r--	root/root	usr/lib/sysusers.d/malcontent-timer-extension-agent.conf
+-rw-r--r--	root/root	usr/lib/sysusers.d/malcontent-timerd.conf
+-rw-r--r--	root/root	usr/lib/sysusers.d/malcontent-webd.conf

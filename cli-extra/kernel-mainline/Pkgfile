@@ -4,7 +4,8 @@ url='https://www.kernel.org'
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(gmp mpc bison flex perl libelf diffutils tar)
+makedepends=(gmp mpc bison flex perl libelf diffutils tar
+             rustc)
 run=(nutyx kmod)
 
 alias=(linux-mainline)
@@ -15,7 +16,7 @@ PKGMK_GROUPS=(devel doc)
 PKGMK_KEEP_SOURCES="no"
 
 name=kernel-mainline
-version=7.1-rc4
+version=7.1-rc6
 SUFFIX="${name/*-/}"
 INITRD="initrd-$SUFFIX"
 KERNEL="$name"

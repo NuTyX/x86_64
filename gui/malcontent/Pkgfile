@@ -1,0 +1,32 @@
+description='Parental control library'
+url='https://gitlab.freedesktop.org/pwithnall/malcontent'
+
+license="LGPL-2.1-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=malcontent
+version=0.14.0
+
+makedepends=(accountsservice gi-docgen git meson
+             gobject-introspection gnome-desktop
+             python-packaging yelp-tools flatpak
+             python-dbusmock libfyaml libadwaita)
+
+source=(0001-meson-Statically-link-against-libgcc.patch
+        https://www.corpit.ru/mjt/tinycdb/tinycdb-0.81.tar.gz
+        https://gitlab.freedesktop.org/pwithnall/malcontent.git)
+
+PKGMK_GROUPS=(devel doc lib man)
+
+prepare() {
+  git clone https://gitlab.gnome.org/GNOME/gvdb.git
+  cd $name-$version
+  patch -Np1 -i../0001-meson-Statically-link-against-libgcc.patch
+  git submodule init
+  git submodule set-url subprojects/gvdb $SRC/gvdb
+  git -c protocol.file.allow=always -c protocol.allow=never submodule update
+}
+
+build=meson
