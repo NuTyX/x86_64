@@ -12,6 +12,7 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/
 -rw-r--r--	root/root	usr/include/google/protobuf/arena_cleanup.h
 -rw-r--r--	root/root	usr/include/google/protobuf/arenastring.h
 -rw-r--r--	root/root	usr/include/google/protobuf/arenaz_sampler.h
+-rw-r--r--	root/root	usr/include/google/protobuf/c_sharp_features.proto
 drwxr-xr-x	root/root	usr/include/google/protobuf/compiler/
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/code_generator.h
 -rw-r--r--	root/root	usr/include/google/protobuf/compiler/code_generator_lite.h
@@ -138,6 +139,9 @@ drwxr-xr-x	root/root	usr/include/google/protobuf/json/internal/
 -rw-r--r--	root/root	usr/include/google/protobuf/reflection_visit_field_info.h
 -rw-r--r--	root/root	usr/include/google/protobuf/reflection_visit_fields.h
 -rw-r--r--	root/root	usr/include/google/protobuf/repeated_field.h
+-rw-r--r--	root/root	usr/include/google/protobuf/repeated_field_proxy.h
+-rw-r--r--	root/root	usr/include/google/protobuf/repeated_field_proxy_iterator.h
+-rw-r--r--	root/root	usr/include/google/protobuf/repeated_field_proxy_traits.h
 -rw-r--r--	root/root	usr/include/google/protobuf/repeated_ptr_field.h
 -rw-r--r--	root/root	usr/include/google/protobuf/runtime_version.h
 -rw-r--r--	root/root	usr/include/google/protobuf/serial_arena.h
@@ -190,6 +194,7 @@ drwxr-xr-x	root/root	usr/include/upb/base/internal/
 -rw-r--r--	root/root	usr/include/upb/generated_code_support.h
 drwxr-xr-x	root/root	usr/include/upb/hash/
 -rw-r--r--	root/root	usr/include/upb/hash/common.h
+-rw-r--r--	root/root	usr/include/upb/hash/ext_table.h
 -rw-r--r--	root/root	usr/include/upb/hash/int_table.h
 -rw-r--r--	root/root	usr/include/upb/hash/str_table.h
 drwxr-xr-x	root/root	usr/include/upb/json/
