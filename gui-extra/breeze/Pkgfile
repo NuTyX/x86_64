@@ -10,7 +10,7 @@ set=(kde6 kde6-plasma)
 
 name=breeze
 version=6.6.5
-release=1
+release=2
 
 makedepends=(qt6-base qt6-svg qt6-declarative extra-cmake-modules frameworkintegration
              kcmutils kcolorscheme kconfig kcoreaddons kdecoration kguiaddons
@@ -18,12 +18,23 @@ makedepends=(qt6-base qt6-svg qt6-declarative extra-cmake-modules frameworkinteg
 run=(breeze-icons)
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz
-        qt.patch)
+        https://download.sourceforge.net/nutyx/NuTyX-26.06-1.tar.xz)
 
-prepare() {
-cd $name-$version
+build() {
+ cmake -B build $name-$version \
+  -DCMAKE_INSTALL_PREFIX=/usr  \
+  -DCMAKE_BUILD_TYPE=Release   \
+  -DCMAKE_INSTALL_LIBDIR=lib   \
+  -DBUILD_QT5=OFF              \
+  -DBUILD_TESTING=OFF          \
+  -Wno-dev
 
-#patch -Np1 -i ../qt.patch
+ cmake --build build
+
+ DESTDIR=$PKG cmake --install build
 
 }
-build=kde6
+
+package() {
+ mv NuTyX-26.06 $PKG/usr/share/wallpapers
+}
