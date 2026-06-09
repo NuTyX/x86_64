@@ -126,17 +126,17 @@ drwxr-xr-x	root/root	usr/lib/firewalld/zones/
 -rwxr-xr-x	root/root	usr/lib/libnss_libvirt.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_libvirt_guest.so.2
 lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so -> libvirt-admin.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so.0 -> libvirt-admin.so.0.12003.0
--rwxr-xr-x	root/root	usr/lib/libvirt-admin.so.0.12003.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-admin.so.0 -> libvirt-admin.so.0.12004.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-admin.so.0.12004.0
 lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so -> libvirt-lxc.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so.0 -> libvirt-lxc.so.0.12003.0
--rwxr-xr-x	root/root	usr/lib/libvirt-lxc.so.0.12003.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-lxc.so.0 -> libvirt-lxc.so.0.12004.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-lxc.so.0.12004.0
 lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so -> libvirt-qemu.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so.0 -> libvirt-qemu.so.0.12003.0
--rwxr-xr-x	root/root	usr/lib/libvirt-qemu.so.0.12003.0
+lrwxrwxrwx	root/root	usr/lib/libvirt-qemu.so.0 -> libvirt-qemu.so.0.12004.0
+-rwxr-xr-x	root/root	usr/lib/libvirt-qemu.so.0.12004.0
 lrwxrwxrwx	root/root	usr/lib/libvirt.so -> libvirt.so.0
-lrwxrwxrwx	root/root	usr/lib/libvirt.so.0 -> libvirt.so.0.12003.0
--rwxr-xr-x	root/root	usr/lib/libvirt.so.0.12003.0
+lrwxrwxrwx	root/root	usr/lib/libvirt.so.0 -> libvirt.so.0.12004.0
+-rwxr-xr-x	root/root	usr/lib/libvirt.so.0.12004.0
 drwxr-xr-x	root/root	usr/lib/libvirt/
 drwxr-xr-x	root/root	usr/lib/libvirt/connection-driver/
 -rwxr-xr-x	root/root	usr/lib/libvirt/connection-driver/libvirt_driver_ch.so
@@ -302,6 +302,7 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_Neoverse-N1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_Neoverse-N2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_Neoverse-V1.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_Neoverse-V2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_Tengyun-S2500.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_ThunderX299xx.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/arm_a64fx.xml
@@ -338,6 +339,8 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cascadelake-Server-v5.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Cascadelake-Server.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_ClearwaterForest-v1.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_ClearwaterForest-v2.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_ClearwaterForest-v3.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_ClearwaterForest.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Conroe-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Conroe.xml
@@ -351,6 +354,8 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Dhyana-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Dhyana-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Dhyana.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_DiamondRapids-v1.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_DiamondRapids.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-Genoa-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-Genoa-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_EPYC-Genoa.xml
@@ -376,6 +381,8 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v3.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v4.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids-v5.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_GraniteRapids.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Haswell-IBRS.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Haswell-noTSX-IBRS.xml
@@ -426,10 +433,14 @@ drwxr-xr-x	root/root	usr/share/libvirt/cpu_map/
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SapphireRapids-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SapphireRapids-v3.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SapphireRapids-v4.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SapphireRapids-v5.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SapphireRapids-v6.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SapphireRapids.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SierraForest-v1.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SierraForest-v2.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SierraForest-v3.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SierraForest-v4.xml
+-rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SierraForest-v5.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_SierraForest.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Skylake-Client-IBRS.xml
 -rw-r--r--	root/root	usr/share/libvirt/cpu_map/x86_Skylake-Client-noTSX-IBRS.xml
