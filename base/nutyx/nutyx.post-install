@@ -1,3 +1,9 @@
-if [ -f etc/profile.d/i18n.sh ]; then 
-  setup-nutyx -ul
+if [ -f usr/lib/os-release ]; then
+  sed -i /VERSION/d usr/lib/os-release
+  sed -i /URL/d usr/lib/os-release
+  sed -i /LOGO/d usr/lib/os-release
+  echo "VERSION=systemd
+VERSION_ID="26.06.1"
+LOGO=nutyx.png
+HOME_URL="https://www.nutyx.org"" >>  usr/lib/os-release
 fi
