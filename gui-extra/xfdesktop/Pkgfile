@@ -21,7 +21,7 @@ build() {
 cd ${name}-$version
 
 ./configure --prefix=/usr \
---with-default-backdrop-filename=/usr/share/backgrounds/nutyx/NuTyX-XFCE4-26.06.1.jpg
+--with-default-backdrop-filename=/usr/share/backgrounds/nutyx/NuTyX-XFCE4-26.06.1.png
 
 make
 make DESTDIR=$PKG install
