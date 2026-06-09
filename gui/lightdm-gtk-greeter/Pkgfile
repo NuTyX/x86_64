@@ -12,7 +12,7 @@ run=(glycin)
 
 name=lightdm-gtk-greeter
 version=2.0.9
-release=5
+release=6
 
 
 source=(https://github.com/Xubuntu/lightdm-gtk-greeter/archive/lightdm-gtk-greeter-$version.tar.gz)
@@ -42,6 +42,6 @@ CFLAGS+=" -Wno-declaration-after-statement \
 
 make
 make DESTDIR=$PKG install
-sed -i "s@#background=@background=/usr/share/backgrounds/nutyx/nutyx-black.jpg@" \
+sed -i "s@#background=@background=/usr/share/backgrounds/nutyx/NuTyX-XFCE4-26.06.1.png@" \
 $PKG/etc/lightdm/lightdm-gtk-greeter.conf
 }
