@@ -3,37 +3,38 @@ url="https://www.python.org"
 
 license="PSF-2.0"
 
-contributors="Alienus,Tnut"
-packager="spiky <spiky@nutyx.org>"
+contributors="Alienus,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(bzip2 xz gdbm zlib util-linux ncurses sqlite expat libffi
              libxcrypt)
 alias=(python3 Python)
 
 name=python
-version=3.14.5
+version=3.14.6
 
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz
         https://www.python.org/ftp/python/doc/$version/python-$version-docs-html.tar.bz2
-        python.png)
+        python.png $name-$version-openssl_4-1.patch) 
 
 PKGMK_GROUPS=(devel man doc)
 PKGMK_IGNORE_UNPACK="yes"
 
+
+prepare() {
+ bsdtar -xf Python-$version.tar.xz
+ cd Python-$version
+ patch -Np1 -i ../$name-$version-openssl_4-1.patch
+}
+
 build() {
-bsdtar -xf Python-$version.tar.xz
 	cd Python-$version
 	CXX="/usr/bin/g++" \
 	./configure --prefix=/usr \
                 --enable-shared \
                 --with-system-expat \
-                --with-system-ffi \
 	      --with-ensurepip=no
 	make
-# Remove the tkinter stuff
-#rm Lib/test/test_tk.py
-#rm Lib/test/test_ttk_{gui,text}only.py
-#rm -r Lib/tkinter
 
 	make DESTDIR=$PKG install
 

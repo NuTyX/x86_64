@@ -1618,7 +1618,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/ensurepip/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/ensurepip/__pycache__/_uninstall.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/ensurepip/__pycache__/_uninstall.cpython-314.pyc
 drwxr-xr-x	root/root	usr/lib/python3.14/ensurepip/_bundled/
--rw-r--r--	root/root	usr/lib/python3.14/ensurepip/_bundled/pip-26.1.1-py3-none-any.whl
+-rw-r--r--	root/root	usr/lib/python3.14/ensurepip/_bundled/pip-26.1.2-py3-none-any.whl
 -rw-r--r--	root/root	usr/lib/python3.14/ensurepip/_uninstall.py
 -rw-r--r--	root/root	usr/lib/python3.14/enum.py
 -rw-r--r--	root/root	usr/lib/python3.14/filecmp.py
@@ -5015,6 +5015,9 @@ drwxr-xr-x	root/root	usr/lib/python3.14/test/test_capi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/__pycache__/test_watchers.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/__pycache__/test_watchers.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/__pycache__/test_watchers.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/__pycache__/test_weakref.cpython-314.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/__pycache__/test_weakref.cpython-314.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/__pycache__/test_weakref.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/check_config.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/test_abstract.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/test_bytearray.py
@@ -5052,6 +5055,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/test/test_capi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/test_type.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/test_unicode.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/test_watchers.py
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_capi/test_weakref.py
 drwxr-xr-x	root/root	usr/lib/python3.14/test/test_cext/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_cext/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.14/test/test_cext/__pycache__/
@@ -5712,6 +5716,9 @@ drwxr-xr-x	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_dict.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_dict.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_dict.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_dict_watcher.cpython-314.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_dict_watcher.cpython-314.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_dict_watcher.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_enumerate.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_enumerate.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_enumerate.cpython-314.pyc
@@ -5754,6 +5761,9 @@ drwxr-xr-x	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_monitoring.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_monitoring.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_monitoring.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_pickle.cpython-314.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_pickle.cpython-314.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_pickle.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_races.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_races.cpython-314.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/test_races.cpython-314.pyc
@@ -5795,6 +5805,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_csv.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_dbm_gnu.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_dict.py
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_dict_watcher.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_enumerate.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_frame.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_func_annotations.py
@@ -5809,6 +5820,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/test/test_free_threading/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_methodcaller.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_mmap.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_monitoring.py
+-rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_pickle.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_races.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_re.py
 -rw-r--r--	root/root	usr/lib/python3.14/test/test_free_threading/test_resource.py
