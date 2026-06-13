@@ -1,12 +1,14 @@
 description="The Go Programming Language"
 url="https://go.dev/"
 
-contributors="MattHoush,Tnut"
-packager="spiky <spiky@nutyx.org>"
+license="BSD-3-Clause"
+
+contributors="MattHoush,Spiky"
+packager="tnut <tnut@nutyx.org>"
 
 name=go
 version=1.26.4
-release=2
+release=3
 
 source=(https://golang.org/dl/go${version}.src.tar.gz \
     https://golang.org/dl/go${version}.linux-amd64.tar.gz)
@@ -16,12 +18,9 @@ PKGMK_IGNORE_UNPACK="yes"
 PKGMK_NO_STRIP="yes"
 
 prepare() {
-    localedef -i en_US -f UTF-8 en_US.UTF-8
     install -d $SRC/go${version}
-    LC_ALL=en_US.UTF-8 LANG=en_US.utf-8 \
     bsdtar -xf $PKGMK_SOURCE_DIR/go${version}.linux-amd64.tar.gz \
         -C $SRC/go${version} --strip-components=1
-    LC_ALL=en_US.UTF-8 LANG=en_US.utf-8 \
     bsdtar -xf $PKGMK_SOURCE_DIR/go${version}.src.tar.gz \
         -C $SRC
 }
@@ -39,4 +38,6 @@ build() {
 
     find $PKG \( -name "README*" -o -name "AUTHORS" -o -name "TODO" \) -delete
     rm $PKG/usr/lib/go/src/*.bat
+
+    install -Dm644 ../LICENSE $PKG/usr/share/licenses/$name/LICENSE
 }
