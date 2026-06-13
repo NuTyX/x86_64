@@ -20,11 +20,11 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=260.1
+version=260.2
 release=1
 
 source=(https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
-        https://github.com/systemd/systemd/archive/refs/tags/$name-$version.tar.gz)
+        https://github.com/systemd/systemd/archive/v$version/$name-$version.tar.gz)
 
 PKGMK_MESON_OPTIONS="-Ddefault-dnssec=no -Ddev-kvm-mode=0660 \
 -Dfirstboot=false -Dldconfig=false -Dhomed=disabled -Dmode=release \
