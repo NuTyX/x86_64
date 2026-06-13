@@ -4,14 +4,14 @@ url="https://apps.gnome.org/Software"
 license="GPL-2.0-or-later"
 set=(gnome)
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=gnome-software
 version=50.2
-release=2
+release=3
 
-makedepends=(flatpak packagekit appstream gnome-online-accounts gtk4 libadwaita libsoup)
+makedepends=(flatpak packagekit appstream gnome-online-accounts gtk4 libadwaita libsoup3)
 run=(gsettings-desktop-schemas)
 
 source=(https://download.gnome.org/sources/$name/${version::2}/$name-$version.tar.xz)
