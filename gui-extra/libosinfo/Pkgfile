@@ -6,14 +6,21 @@ license="GPL2 LGPL2.1"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut, Jayce"
 
-makedepends=(libsoup check)
+makedepends=(libsoup3 libxml2 check)
 
 set=(gnome)
 
 name=libosinfo
 version=1.12.0
+release=2
 
-source=(https://releases.pagure.org/$name/$name-$version.tar.xz)
+source=(https://releases.pagure.org/$name/$name-$version.tar.xz
+       libxml2.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../libxml2.patch
+}
 
 build() {
 cd $name-$version
