@@ -10,7 +10,7 @@ set=(kde6 kde6-plasma)
 
 name=plasma-workspace
 version=6.6.5
-release=1
+release=2
 
 makedepends=(icu freetype xorg-fontconfig gpsd zlib wayland xcb-util xcb-util-image
              libcanberra libqalculate xorg-libsm xorg-libx11 xorg-libxau libxcb
@@ -37,4 +37,8 @@ run=(breeze kirigami kirigami-addons xorg-xwayland kquickcharts
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
 
 PKGMK_GROUPS=(devel doc)
+prepare() {
+ cd $name-$version
+ sed -i "s@Image=Next@Image=NuTyX-26.06@" lookandfeel/org.kde.breeze/contents/defaults
+}
 build=kde6

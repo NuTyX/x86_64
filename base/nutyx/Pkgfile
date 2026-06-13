@@ -9,8 +9,8 @@ makedepends=(zstd util-linux)
 set=(chroot)
 
 name=nutyx
-version=26.05.1
-release=2
+version=26.06.1
+release=1
 
 # nutyx patch version
 # [ "$release" != "1" ] && patchname="$name-$version-consolidate-$release.patch"
@@ -26,6 +26,18 @@ build () {
 cd $name-$version
 [ -z "$patchname" ] || patch -Np1 -i ../$patchname
 make DESTDIR=$PKG install
+BRANCH="systemd"
+# post-install autogen
+echo "if [ -f usr/lib/os-release ]; then
+  sed -i "/VERSION/d" usr/lib/os-release
+  sed -i "/URL/d" usr/lib/os-release
+  sed -i "/LOGO/d" usr/lib/os-release
+  echo \"VERSION=$BRANCH
+VERSION_ID=\"$version\"
+LOGO=nutyx.png
+HOME_URL=\"https://www.nutyx.org\"\" >>  usr/lib/os-release
+fi" > $PKGMK_ROOT/$name.post-install
+
 }
 package() {
  install -Dm644 logo_nutyx_120.png \

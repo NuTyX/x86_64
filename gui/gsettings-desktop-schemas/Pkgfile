@@ -11,6 +11,8 @@ run=(adwaita-fonts)
 
 name=gsettings-desktop-schemas
 version=50.1
+release=2
+
 set=(gnome-base)
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
@@ -29,4 +31,9 @@ build=meson
 package() {
  install -Dm644 $name-$version/COPYING \
  $PKG/usr/share/licenses/$name/COPYING
+ sed -i "s@gnome/adwaita-l.jxl@nutyx/NuTyX-GNOME-26.06.1.png@" \
+ $PKG/usr/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+  sed -i "s@gnome/adwaita-d.jxl@nutyx/NuTyX-GNOME-26.06.1.png@" \
+ $PKG/usr/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+ 
 }

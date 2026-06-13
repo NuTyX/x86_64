@@ -1,0 +1,87 @@
+diff --git a/applets/kicker/ConfigGeneral.qml b/applets/kicker/ConfigGeneral.qml
+index 28e983bddf..0bd8b1f71f 100644
+--- a/applets/kicker/ConfigGeneral.qml
++++ b/applets/kicker/ConfigGeneral.qml
+@@ -96,7 +96,7 @@ KCMUtils.SimpleKCM {
+                 id: iconDialog
+ 
+                 function setCustomButtonImage(image) {
+-                    configGeneral.cfg_customButtonImage = image || configGeneral.cfg_icon || "start-here-kde-symbolic"
++                    configGeneral.cfg_customButtonImage = image || configGeneral.cfg_icon || "nutyx"
+                     configGeneral.cfg_useCustomButtonImage = true;
+                 }
+ 
+@@ -140,7 +140,7 @@ KCMUtils.SimpleKCM {
+                     text: i18nc("@item:inmenu Reset icon to default", "Reset to default icon")
+                     icon.name: "edit-clear"
+                     onClicked: {
+-                        configGeneral.cfg_icon = "start-here-kde-symbolic"
++                        configGeneral.cfg_icon = "nutyx"
+                         configGeneral.cfg_customButtonImage = ""
+                         configGeneral.cfg_useCustomButtonImage = false
+                     }
+diff --git a/applets/kicker/main.xml b/applets/kicker/main.xml
+index ef7533757e..841852f8b6 100644
+--- a/applets/kicker/main.xml
++++ b/applets/kicker/main.xml
+@@ -8,7 +8,7 @@
+   <group name="General">
+     <entry name="icon" type="String">
+       <label>The name of the icon to use for the compact representation (e.g. on a small panel).</label>
+-      <default>start-here-kde-symbolic</default>
++      <default>nutyx</default>
+     </entry>
+     <entry name="useCustomButtonImage" type="Bool">
+       <label>Whether to use a custom image instead of an icon in the compact representation (e.g. on a small panel).</label>
+diff --git a/applets/kicker/metadata.json b/applets/kicker/metadata.json
+index 46b431939d..2aa2b0040d 100644
+--- a/applets/kicker/metadata.json
++++ b/applets/kicker/metadata.json
+@@ -110,7 +110,7 @@
+         "Description[zh_CN]": "基于层叠弹出菜单设计的启动器",
+         "Description[zh_TW]": "基於彈出式串連選單的啟動器",
+         "EnabledByDefault": true,
+-        "Icon": "start-here-kde",
++        "Icon": "nutyx",
+         "License": "GPL-2.0+",
+         "Name": "Application Menu",
+         "Name[ar]": "قائمة التّطبيقات",
+diff --git a/applets/kickoff/code/tools.js b/applets/kickoff/code/tools.js
+index b2d475092b..922f5d04aa 100644
+--- a/applets/kickoff/code/tools.js
++++ b/applets/kickoff/code/tools.js
+@@ -10,7 +10,7 @@
+ .pragma library
+ .import org.kde.plasma.core as PlasmaCore
+ 
+-const defaultIconName = "start-here-kde-symbolic";
++const defaultIconName = "nutyx";
+ 
+ function iconOrDefault(formFactor, preferredIconName) {
+     // Vertical panels must have an icon, at least a default one.
+diff --git a/applets/kickoff/main.xml b/applets/kickoff/main.xml
+index 8f6a44e2a4..464d6421ba 100644
+--- a/applets/kickoff/main.xml
++++ b/applets/kickoff/main.xml
+@@ -7,7 +7,7 @@
+     <group name="General">
+         <entry name="icon" type="String">
+             <label>The name of the icon used in the compact representation (e.g. on a small panel).</label>
+-            <default>start-here-kde-symbolic</default>
++            <default>nutyx</default>
+         </entry>
+         <entry name="menuLabel" type="string">
+             <label>Text label for the Panel button</label>
+diff --git a/applets/kickoff/metadata.json b/applets/kickoff/metadata.json
+index dfaee377ce..040b44b0a9 100644
+--- a/applets/kickoff/metadata.json
++++ b/applets/kickoff/metadata.json
+@@ -165,7 +165,7 @@
+         "Description[zh_CN]": "应用程序启动器",
+         "Description[zh_TW]": "開啟應用程式用的啟動器",
+         "EnabledByDefault": true,
+-        "Icon": "start-here-kde",
++        "Icon": "nutyx",
+         "License": "GPL-2.0+",
+         "Name": "Application Launcher",
+         "Name[af]": "Programlanseerder",
