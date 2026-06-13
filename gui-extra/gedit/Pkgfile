@@ -8,12 +8,12 @@ contributors="Jayce,Fanch,Tnut"
 
 makedepends=(meson ninja libpeas yelp-xsl enchant iso-codes
              libgedit-gtksourceview gspell enchant git
-             libsoup python-gobject python libgedit-tepl)
+             libsoup3 python-gobject python libgedit-tepl)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gvfs)
 
 name=gedit
 version=50.0
-release=2
+release=3
 
 
 PKGMK_MESON_OPTIONS="-Dgtk_doc=false"
