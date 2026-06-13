@@ -10,12 +10,15 @@ set=(core)
 
 name=sudo
 version=1.9.17p2
-release=1
+release=2
 
 source=($url/dist/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
+
+sed -e 's/\([->.a-zA-Z_]*\)->length/ASN1_STRING_length(\1)/' \
+    -i lib/iolog/hostcheck.c
 
 sed -e '/^pre-install:/{N;s@;@ -a -r $(sudoersdir)/sudoers;@}' \
     -i plugins/sudoers/Makefile.in
@@ -54,7 +57,6 @@ session   include     system-session
 # End /etc/pam.d/sudo
 EOF
 chmod 644 $PKG/etc/pam.d/sudo
-echo "%wheel ALL=(ALL) ALL
-%wheel ALL =(ALL) NOPASSWD: /usr/bin/flcards" >> $PKG/etc/sudoers
+echo "%wheel ALL=(ALL) ALL" >> $PKG/etc/sudoers
 
 }
