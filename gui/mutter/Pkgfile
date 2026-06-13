@@ -15,7 +15,7 @@ run=(xorg-server zenity pipewire xorg-xwayland glycin libinput)
 set=(gnome-base gnome)
 
 name=mutter
-version=50.1
+version=50.2
 
 PKGMK_MESON_OPTIONS="-Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
