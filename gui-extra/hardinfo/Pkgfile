@@ -1,18 +1,18 @@
-Description="A system information and benchmark tool"
+description="A system information and benchmark tool"
 url="https://github.com/lpereira/hardinfo"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="McKim"
+packager="spiky <spiky@nutyx.org>"
+contributors="McKim,Tnut"
 
 makedepends=(git cmake json-glib gtk3
-             libsoup)
+             libsoup3)
 run=(pciutils usbutils xorg-xrandr mesa
      hicolor-icon-theme desktop-file-utils
      gtk-update-icon-cache shared-mime-info)
 
 name=hardinfo
 version=0.5.1
-release=4
+release=5
 
 prepare() {
 git clone https://github.com/lpereira/hardinfo
