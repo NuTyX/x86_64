@@ -8,7 +8,7 @@ contributors="Jayce,Fanch,Rems,Tnut"
 
 makedepends=(evolution-data-server gnome-autoar gnome-desktop
              highlight gstreamer libcanberra libgweather-4 gtkspell 
-             itstool libgdata libnotify clutter-gtk
+             itstool libnotify clutter-gtk
              gtk-doc openldap webkit2gtk-4 gspell)
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
@@ -16,6 +16,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 
 name=evolution
 version=3.60.2
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/evolution/-/archive/$version/$name-$version.tar.bz2)
 
