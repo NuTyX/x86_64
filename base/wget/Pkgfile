@@ -1,16 +1,26 @@
 description="Utility for non-interactive download of files using HTTP, HTTPS and FTP."
 url="http://www.gnu.org/software/wget/"
-maintainer="gscrivano at gnu dot org"
 
-packager="spiky <spiky@nutyx.org>"
+maintainer="gscrivano at gnu dot org"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
 name=wget
 
 version=1.25.0
+release=2
 
 makedepends=(perl libpsl)
 
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz) 
 
+prepare() {
+  cd $name-$version
+  NEW_LINE='#if !defined OPENSSL_NO_SSL3_METHOD '
+  NEW_LINE+='&& OPENSSL_VERSION_NUMBER < 0x40000000L'
+  sed -i "/SSL3/c $NEW_LINE" src/openssl.c
+  unset NEW_LINE
+}
 build() {
 cd $name-$version
 ./configure --prefix=/usr \
