@@ -3,10 +3,10 @@ url="https://apps.gnome.org/Calculator"
 
 license="GPL3-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Fanch,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Fanch,Remy,Tnut"
 
-makedepends=(mpc libgee gtksourceview5 gtk4 itstool libsoup meson ninja vala libadwaita
+makedepends=(mpc libgee gtksourceview5 gtk4 itstool libsoup3 meson ninja vala libadwaita
              blueprint-compiler)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache libhandy)
 
@@ -14,7 +14,7 @@ set=(gnome)
 
 name=gnome-calculator
 version=50.0
-release=1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
