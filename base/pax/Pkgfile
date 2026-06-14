@@ -1,0 +1,24 @@
+description="copies files to and from archives in several formats."
+url="https://downloads.sourceforge.net/heirloom"
+
+contributors="Berlius,Greg,Rems,Spiky"
+packager="tnut <tnut@nutyx.org>"
+
+name=pax
+version=20240817
+release=1
+
+source=(http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-$version.tgz)
+
+prepare() {
+  mv $name $name-$version
+}
+ 
+build() {
+
+cd $name-$version
+bash Build.sh
+
+install -v -dm 755 $PKG/usr/bin
+install -v -dm 755 $PKG/usr/share/man/man1
+}
