@@ -11,19 +11,22 @@ makedepends=(lzo cmake libevent boost libxml2 cracklib pcre2 ruby libaio openssl
 run=(shadow mariadb.lib)
 
 name=mariadb
-version=12.2.2
-release=4
+version=12.3.2
 
 scriptsversion=20260315
 
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
-	  https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz)
+        https://ftp.osuosl.org/pub/$name/$name-$version/source/$name-$version.tar.gz
+        mariadb-12.3.2-openssl4_fixes-1.patch)
 
 PKGMK_GROUPS=(devel lib man doc)
 
 prepare() {
 groupadd -g 40 mysql
 useradd -c "MySQL Server" -d /srv/mysql -g mysql -s /usr/bin/false -u 40 mysql
+
+cd $name-$version
+patch -Np1 -i ../mariadb-12.3.2-openssl4_fixes-1.patch
 }
 
 build() {
