@@ -10,7 +10,7 @@ makedepends=(autoconf m4 shadow)
 
 name=openldap
 version=2.6.13
-release=1
+release=2
 
 scripts_version=20260315
 
@@ -25,6 +25,11 @@ prepare() {
          -g ldap -s /usr/bin/false ldap
 
 cd $name-$version
+
+sed -e 's/cn->length/ASN1_STRING_length(cn)/g'  \
+    -e 's/cn->data/ASN1_STRING_get0_data(cn)/g' \
+    -i libraries/libldap/tls_o.c
+
 patch -Np1 -i ../$name-$version-consolidated-1.patch
 autoconf
 }
