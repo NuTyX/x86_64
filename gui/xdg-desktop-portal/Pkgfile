@@ -3,16 +3,15 @@ url='https://github.com/flatpak/xdg-desktop-portal'
 
 license="LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python xmlto docbook-xsl git libportal pipewire
              geoclue2 glib pipewire bubblewrap umockdev)
 run=(fuse)
 
 name=xdg-desktop-portal
-version=1.21.0
-release=1
+version=1.22.0
 
 source=(https://github.com/flatpak/xdg-desktop-portal.git)
 
