@@ -8,12 +8,12 @@ contributors="Berlius,Greg,Tnut"
 
 makedepends=(aspell enchant gmime3 rarian pcre
              gtksourceview4 libnotify kerberos openldap openssl
-             sqlite webkitgtk procmail gpgme libical)
+             sqlite webkit2gtk-4 procmail gpgme libical)
 
 
 name=balsa
 version=2.6.5
-release=3
+release=4
 
 source=(https://gitlab.gnome.org/GNOME/balsa/-/archive/$version/$name-$version.tar.gz
         libical-4.patch)
