@@ -3,17 +3,17 @@ url="https://mate-desktop.org/"
 
 license="GPL-2.0"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Greg,Jayce,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Greg,Jayce,Tnut"
 
 makedepends=(djvulibre libsecret libspectre
-             poppler-glib poppler webkitgtk libsynctex)
+             poppler-glib poppler webkit2gtk-4 libsynctex)
 
 set=(xfce4)
 
 name=atril
 version=1.28.2
-release=3
+release=4
 
 PKGMK_KEEP_SOURCES="no"
 
