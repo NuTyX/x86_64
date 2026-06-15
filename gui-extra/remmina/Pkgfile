@@ -5,7 +5,7 @@ contributors="Rems,Fabienwang,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gtk3 zlib libjpeg-turbo libssh avahi vte
-             libgcrypt xorg-libxdmcp libsecret webkitgtk
+             libgcrypt xorg-libxdmcp libsecret webkit2gtk-4
              intltool pkgconf cmake libgnome-keyring
              xorg-libxkbfile freerdp telepathy-glib libsodium
              libvncserver json-glib spice-gtk spice-protocol
@@ -13,6 +13,7 @@ makedepends=(gtk3 zlib libjpeg-turbo libssh avahi vte
  
 name=remmina
 version=1.4.43
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://gitlab.com/Remmina/Remmina/-/archive/v$version/Remmina-v${version}.tar.gz)
