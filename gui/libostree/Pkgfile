@@ -8,7 +8,7 @@ makedepends=(openssl glib gpgme fuse2 libsoup3 e2fsprogs)
 
 name=libostree
 version=2025.7
-release=2
+release=3
 
 source=(https://github.com/ostreedev/ostree/releases/download/v$version/libostree-$version.tar.xz)
 
