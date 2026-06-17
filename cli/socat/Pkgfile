@@ -8,5 +8,12 @@ contributors="Tnut"
 
 name=socat
 version=1.8.1.1
+release=2
 
-source=("http://www.dest-unreach.org/socat/download/$name-$version.tar.gz")
+source=(http://www.dest-unreach.org/socat/download/$name-$version.tar.gz
+        socat-1.8.1.1-openssl4_fixes-1.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../socat-1.8.1.1-openssl4_fixes-1.patch
+}
