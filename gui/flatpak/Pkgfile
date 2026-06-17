@@ -3,15 +3,15 @@ url='https://flatpak.org/'
 
 license="LGPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fabienwang,Tnut"
 
 makedepends=(glib libsoup3 gpgme polkit fuse2 libostree json-glib
              appstream libseccomp python-parsing socat)
 run=(make-ca bubblewrap gnupg xdg-dbus-proxy)
 
 name=flatpak
-version=1.16.6
+version=1.18.0
 
 PKGMK_GROUPS=(devel doc man)
 
