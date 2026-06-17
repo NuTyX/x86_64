@@ -1,13 +1,13 @@
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/qt/
 drwxr-xr-x	root/root	usr/include/qt/QtGamepad/
-drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.17/
-drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/
-drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/private/
--rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/private/qgamepadbackend_p.h
--rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/private/qgamepadbackendfactory_p.h
--rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/private/qgamepadbackendplugin_p.h
--rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/private/qtgamepad-config_p.h
+drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.19/
+drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.19/QtGamepad/
+drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.19/QtGamepad/private/
+-rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.19/QtGamepad/private/qgamepadbackend_p.h
+-rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.19/QtGamepad/private/qgamepadbackendfactory_p.h
+-rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.19/QtGamepad/private/qgamepadbackendplugin_p.h
+-rw-r--r--	root/root	usr/include/qt/QtGamepad/5.15.19/QtGamepad/private/qtgamepad-config_p.h
 -rw-r--r--	root/root	usr/include/qt/QtGamepad/QGamepad
 -rw-r--r--	root/root	usr/include/qt/QtGamepad/QGamepadKeyNavigation
 -rw-r--r--	root/root	usr/include/qt/QtGamepad/QGamepadManager
@@ -20,5 +20,11 @@ drwxr-xr-x	root/root	usr/include/qt/QtGamepad/5.15.17/QtGamepad/private/
 -rw-r--r--	root/root	usr/include/qt/QtGamepad/qtgamepad-config.h (EMPTY)
 -rw-r--r--	root/root	usr/include/qt/QtGamepad/qtgamepadglobal.h
 -rw-r--r--	root/root	usr/include/qt/QtGamepad/qtgamepadversion.h
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/Qt5Gamepad/
+-rw-r--r--	root/root	usr/lib/cmake/Qt5Gamepad/Qt5GamepadConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/Qt5Gamepad/Qt5GamepadConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/Qt5Gamepad/Qt5Gamepad_QEvdevGamepadBackendPlugin.cmake
+-rw-r--r--	root/root	usr/lib/cmake/Qt5Gamepad/Qt5Gamepad_QSdl2GamepadBackendPlugin.cmake
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/Qt5Gamepad.pc
