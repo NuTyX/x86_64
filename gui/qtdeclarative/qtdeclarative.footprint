@@ -15,103 +15,52 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qmltime
 -rwxr-xr-x	root/root	usr/bin/qmltyperegistrar
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5PacketProtocol/
--rw-r--r--	root/root	usr/lib/cmake/Qt5PacketProtocol/Qt5PacketProtocolConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5PacketProtocol/Qt5PacketProtocolConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5Qml/
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5QmlConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlPreviewServiceFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QmlDebug/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlDebug/Qt5QmlDebugConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlDebug/Qt5QmlDebugConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QmlDevTools/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlDevTools/Qt5QmlDevToolsConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlDevTools/Qt5QmlDevToolsConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QmlImportScanner/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlImportScanner/Qt5QmlImportScannerConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlImportScanner/Qt5QmlImportScannerTemplate.cpp.in
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QmlModels/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlModels/Qt5QmlModelsConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlModels/Qt5QmlModelsConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QmlWorkerScript/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlWorkerScript/Qt5QmlWorkerScriptConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QmlWorkerScript/Qt5QmlWorkerScriptConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5Quick/
--rw-r--r--	root/root	usr/lib/cmake/Qt5Quick/Qt5QuickConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QuickCompiler/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickCompiler/Qt5QuickCompilerConfig.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QuickParticles/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickParticles/Qt5QuickParticlesConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickParticles/Qt5QuickParticlesConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QuickShapes/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickShapes/Qt5QuickShapesConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickShapes/Qt5QuickShapesConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QuickTest/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickTest/Qt5QuickTestConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickTest/Qt5QuickTestConfigVersion.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5QuickWidgets/
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickWidgets/Qt5QuickWidgetsConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5QuickWidgets/Qt5QuickWidgetsConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib/libQt5PacketProtocol.a
 -rw-r--r--	root/root	usr/lib/libQt5PacketProtocol.prl
 -rw-r--r--	root/root	usr/lib/libQt5Qml.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5Qml.so -> libQt5Qml.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5Qml.so.5 -> libQt5Qml.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5Qml.so.5.15 -> libQt5Qml.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5Qml.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5Qml.so -> libQt5Qml.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5Qml.so.5 -> libQt5Qml.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5Qml.so.5.15 -> libQt5Qml.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5Qml.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5QmlDebug.a
 -rw-r--r--	root/root	usr/lib/libQt5QmlDebug.prl
 -rw-r--r--	root/root	usr/lib/libQt5QmlDevTools.a
 -rw-r--r--	root/root	usr/lib/libQt5QmlDevTools.prl
 -rw-r--r--	root/root	usr/lib/libQt5QmlModels.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5QmlModels.so -> libQt5QmlModels.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QmlModels.so.5 -> libQt5QmlModels.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QmlModels.so.5.15 -> libQt5QmlModels.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5QmlModels.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5QmlModels.so -> libQt5QmlModels.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QmlModels.so.5 -> libQt5QmlModels.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QmlModels.so.5.15 -> libQt5QmlModels.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5QmlModels.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5QmlWorkerScript.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5QmlWorkerScript.so -> libQt5QmlWorkerScript.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QmlWorkerScript.so.5 -> libQt5QmlWorkerScript.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QmlWorkerScript.so.5.15 -> libQt5QmlWorkerScript.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5QmlWorkerScript.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5QmlWorkerScript.so -> libQt5QmlWorkerScript.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QmlWorkerScript.so.5 -> libQt5QmlWorkerScript.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QmlWorkerScript.so.5.15 -> libQt5QmlWorkerScript.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5QmlWorkerScript.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5Quick.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5Quick.so -> libQt5Quick.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5Quick.so.5 -> libQt5Quick.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5Quick.so.5.15 -> libQt5Quick.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5Quick.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5Quick.so -> libQt5Quick.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5Quick.so.5 -> libQt5Quick.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5Quick.so.5.15 -> libQt5Quick.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5Quick.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5QuickParticles.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickParticles.so -> libQt5QuickParticles.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickParticles.so.5 -> libQt5QuickParticles.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickParticles.so.5.15 -> libQt5QuickParticles.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5QuickParticles.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickParticles.so -> libQt5QuickParticles.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickParticles.so.5 -> libQt5QuickParticles.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickParticles.so.5.15 -> libQt5QuickParticles.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5QuickParticles.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5QuickShapes.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickShapes.so -> libQt5QuickShapes.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickShapes.so.5 -> libQt5QuickShapes.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickShapes.so.5.15 -> libQt5QuickShapes.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5QuickShapes.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickShapes.so -> libQt5QuickShapes.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickShapes.so.5 -> libQt5QuickShapes.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickShapes.so.5.15 -> libQt5QuickShapes.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5QuickShapes.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5QuickTest.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickTest.so -> libQt5QuickTest.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickTest.so.5 -> libQt5QuickTest.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickTest.so.5.15 -> libQt5QuickTest.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5QuickTest.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickTest.so -> libQt5QuickTest.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickTest.so.5 -> libQt5QuickTest.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickTest.so.5.15 -> libQt5QuickTest.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5QuickTest.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5QuickWidgets.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickWidgets.so -> libQt5QuickWidgets.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickWidgets.so.5 -> libQt5QuickWidgets.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5QuickWidgets.so.5.15 -> libQt5QuickWidgets.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5QuickWidgets.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickWidgets.so -> libQt5QuickWidgets.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickWidgets.so.5 -> libQt5QuickWidgets.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5QuickWidgets.so.5.15 -> libQt5QuickWidgets.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5QuickWidgets.so.5.15.19
 drwxr-xr-x	root/root	usr/lib/metatypes/
 -rw-r--r--	root/root	usr/lib/metatypes/qt5qml_metatypes.json
 -rw-r--r--	root/root	usr/lib/metatypes/qt5qmlmodels_metatypes.json
