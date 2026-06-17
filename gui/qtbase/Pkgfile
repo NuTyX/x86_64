@@ -9,8 +9,8 @@ contributors="Pierre,Rems,Tnut"
 set=(qt5)
 
 name=qtbase
-version=5.15.17
-release=2
+version=5.15.19
+release=1
 
 makedepends=(git pcre2 xorgproto xorg-libxkbfile xorg-xtrans xorg-libx11 xorg-libxext
              xorg-libfs xorg-libice xorg-libsm xcb-proto libxcb xcb-util-keysyms
@@ -28,14 +28,13 @@ makedepends=(git pcre2 xorgproto xorg-libxkbfile xorg-xtrans xorg-libx11 xorg-li
 
 _name="${name}-everywhere-opensource-src"
 
-source=(https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/${_name}-${version}.tar.xz)
+source=(https://download.qt.io/archive/qt/${version:0:4}/$version/submodules/${_name}-${version}.tar.xz)
 
 build() {
 
 cd ${_name/-opensource/}-${version}
 
 mkdir .git
-
 ./configure -prefix         /usr                        \
             -sysconfdir     /etc/xdg                    \
             -bindir         /usr/bin                    \
@@ -51,7 +50,7 @@ mkdir .git
             -plugin-sql-{psql,mysql,sqlite,odbc}        \
             -confirm-license    \
             -opensource         \
-            -openssl-linked     \
+            -no-openssl         \
             -nomake tests       \
             -nomake examples    \
             -optimized-qmake    \
