@@ -2,49 +2,16 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qtwaylandscanner
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5Gui/
--rw-r--r--	root/root	usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5WaylandClient/
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClientConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClientConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_DmaBufServerBufferPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_DrmEglServerBufferPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandBradientDecorationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandEglClientBufferPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandFullScreenShellV1IntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandIviShellIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandWlShellIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandXCompositeGlxClientBufferPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandXdgShellIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandXdgShellV5IntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_QWaylandXdgShellV6IntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_ShmServerBufferPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandClient/Qt5WaylandClient_VulkanServerBufferPlugin.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt5WaylandCompositor/
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositorConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositorConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_DmaBufServerBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_DrmEglServerBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_QWaylandDmabufClientBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_QWaylandEglClientBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_QWaylandEglStreamBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_QWaylandXCompositeEglClientBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_QWaylandXCompositeGlxClientBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_ShmServerBufferIntegrationPlugin.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt5WaylandCompositor/Qt5WaylandCompositor_VulkanServerBufferIntegrationPlugin.cmake
 -rw-r--r--	root/root	usr/lib/libQt5WaylandClient.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5WaylandClient.so -> libQt5WaylandClient.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5WaylandClient.so.5 -> libQt5WaylandClient.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5WaylandClient.so.5.15 -> libQt5WaylandClient.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5WaylandClient.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5WaylandClient.so -> libQt5WaylandClient.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5WaylandClient.so.5 -> libQt5WaylandClient.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5WaylandClient.so.5.15 -> libQt5WaylandClient.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5WaylandClient.so.5.15.19
 -rw-r--r--	root/root	usr/lib/libQt5WaylandCompositor.prl
-lrwxrwxrwx	root/root	usr/lib/libQt5WaylandCompositor.so -> libQt5WaylandCompositor.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5WaylandCompositor.so.5 -> libQt5WaylandCompositor.so.5.15.17
-lrwxrwxrwx	root/root	usr/lib/libQt5WaylandCompositor.so.5.15 -> libQt5WaylandCompositor.so.5.15.17
--rwxr-xr-x	root/root	usr/lib/libQt5WaylandCompositor.so.5.15.17
+lrwxrwxrwx	root/root	usr/lib/libQt5WaylandCompositor.so -> libQt5WaylandCompositor.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5WaylandCompositor.so.5 -> libQt5WaylandCompositor.so.5.15.19
+lrwxrwxrwx	root/root	usr/lib/libQt5WaylandCompositor.so.5.15 -> libQt5WaylandCompositor.so.5.15.19
+-rwxr-xr-x	root/root	usr/lib/libQt5WaylandCompositor.so.5.15.19
 drwxr-xr-x	root/root	usr/lib/qt/
 drwxr-xr-x	root/root	usr/lib/qt/mkspecs/
 drwxr-xr-x	root/root	usr/lib/qt/mkspecs/modules/
