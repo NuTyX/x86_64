@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.bleachbit.BleachBit.desktop
 drwxr-xr-x	root/root	usr/share/bleachbit/
 -rw-r--r--	root/root	usr/share/bleachbit/Action.py
+-rw-r--r--	root/root	usr/share/bleachbit/Bootstrap.py
 -rw-r--r--	root/root	usr/share/bleachbit/CLI.py
 -rw-r--r--	root/root	usr/share/bleachbit/Chaff.py
 -rw-r--r--	root/root	usr/share/bleachbit/Cleaner.py
@@ -34,6 +35,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/
 -rw-r--r--	root/root	usr/share/bleachbit/Memory.py
 -rw-r--r--	root/root	usr/share/bleachbit/Network.py
 -rw-r--r--	root/root	usr/share/bleachbit/Options.py
+-rw-r--r--	root/root	usr/share/bleachbit/Process.py
 -rw-r--r--	root/root	usr/share/bleachbit/ProtectedPath.py
 -rw-r--r--	root/root	usr/share/bleachbit/RecognizeCleanerML.py
 -rw-r--r--	root/root	usr/share/bleachbit/Special.py
@@ -49,6 +51,8 @@ drwxr-xr-x	root/root	usr/share/bleachbit/
 drwxr-xr-x	root/root	usr/share/bleachbit/__pycache__/
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Action.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Action.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Bootstrap.cpython-314.opt-1.pyc
+-rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Bootstrap.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/CLI.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/CLI.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Chaff.cpython-314.opt-1.pyc
@@ -105,6 +109,8 @@ drwxr-xr-x	root/root	usr/share/bleachbit/__pycache__/
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Network.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Options.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Options.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Process.cpython-314.opt-1.pyc
+-rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Process.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/ProtectedPath.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/ProtectedPath.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/RecognizeCleanerML.cpython-314.opt-1.pyc
@@ -139,6 +145,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/cleaners/
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/beagle.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/brave.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/chromium.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/claude.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/d4x.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/deepscan.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/discord.xml
@@ -182,11 +189,13 @@ drwxr-xr-x	root/root	usr/share/bleachbit/cleaners/
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/nautilus.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/nexuiz.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/octave.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/openoffice.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/opera.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/pacman.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/paint.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/palemoon.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/pidgin.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/profanity.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/realplayer.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/recoll.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/rhythmbox.xml
@@ -209,6 +218,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/cleaners/
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/vim.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/vivaldi.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/vlc.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/vscode.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/vuze.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/warzone2100.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/waterfox.xml
