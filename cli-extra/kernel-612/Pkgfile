@@ -81,7 +81,7 @@ rm -f boot/$INITRD
 mv boot/initrd-$KERNELRELEASE boot/$INITRD" > $PKGMK_ROOT/$name.post-install
 
 # post-remove autogen
-echo "rm -p boot/$INITRD" > $PKGMK_ROOT/$name.post-remove
+echo "rm -f boot/$INITRD" > $PKGMK_ROOT/$name.post-remove
 }
 devel() {
 cd $PKG
