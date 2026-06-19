@@ -1,14 +1,14 @@
 description="C library implementing OAuth Core RFC 5849"
 url="http://sourceforge.net/projects/liboauth"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre, Spiky"
 
-makedepends=(curl nss)
+makedepends=(openssl curl nss)
 
 name=liboauth
 version=1.0.3
-release=5
+release=6
 
 source=( http://www.linuxfromscratch.org/patches/blfs/svn/$name-$version-openssl-1.1.0-3.patch
 	http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
