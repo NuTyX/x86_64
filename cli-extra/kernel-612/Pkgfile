@@ -12,7 +12,7 @@ PKGMK_NO_STRIP="yes"
 PKGMK_GROUPS=(devel doc)
 
 name=kernel-612
-version=6.12.92
+version=6.12.93
 _version=${version%.*}
 
 alias=(linux-612)
@@ -77,7 +77,7 @@ rm -rf $PKG/lib/firmware
 
 # post-install autogen
 echo "mkinitramfs $KERNELRELEASE
-rm -p boot/$INITRD
+rm -f boot/$INITRD
 mv boot/initrd-$KERNELRELEASE boot/$INITRD" > $PKGMK_ROOT/$name.post-install
 
 # post-remove autogen
