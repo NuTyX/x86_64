@@ -1,0 +1,21 @@
+description='Kirigami-based RSS reader'
+url="https://apps.kde.org/alligator/"
+
+license="LGPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(qt6-base qt6-declarative python extra-cmake-modules
+             kcolorscheme kcrash ki18n kirigami kirigami-addons
+             qqc2-desktop-style syndication)
+
+set=(kde6 kde6-gear)
+
+name=alligator
+version=26.04.1
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
