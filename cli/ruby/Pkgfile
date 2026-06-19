@@ -9,15 +9,20 @@ contributors="Pierre,Minzord,Spiky"
 makedepends=(doxygen openssl yaml libxcrypt)
 
 name=ruby
-version=3.4.8
-release=2
+version=4.0.5
+release=1
 
-source=(http://cache.ruby-lang.org/pub/ruby/${version:0:3}/ruby-$version.tar.xz)
+source=(ruby-4.0.5-openssl4_fixes-1.patch
+        https://cache.ruby-lang.org/pub/ruby/${version:0:3}/ruby-$version.tar.xz)
 
+prepare() {
+cd $name-$version
+patch -Np1 -i ../ruby-4.0.5-openssl4_fixes-1.patch
+}
 build() {
 cd ruby-$version
 ./configure --prefix=/usr --enable-shared \
---docdir=/usr/share/doc/$name-$version
+--docdir=/usr/share/doc/$name
 make
 make capi
 make DESTDIR=$PKG install
