@@ -12,16 +12,18 @@ makedepends=(perl e2fsprogs bison gawk)
 
 name=kerberos
 version=1.22.2
-release=2
+release=3
 
 scriptsversion=20260315
 
-source=(mitkrb-1.22.2-upstream_fix-1.patch
+source=(mitkrb-1.22.2-upstream_fix-1.patch mitkrb-1.22.2-security_fix-1.patch mitkrb-1.22.2-openssl_4_fixes-1.patch
         https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
         http://web.mit.edu/$name/dist/krb5/${version:0:4}/krb5-$version.tar.gz)
 prepare() {
   cd krb5-$version
   patch -Np1 -i ../mitkrb-1.22.2-upstream_fix-1.patch
+  patch -Np1 -i ../mitkrb-1.22.2-security_fix-1.patch
+  patch -Np1 -i ../mitkrb-1.22.2-openssl_4_fixes-1.patch
   cd src
   sed -i -e '/eq 0/{N;s/12 //}'    plugins/kdb/db2/libdb2/test/run.test
 }
