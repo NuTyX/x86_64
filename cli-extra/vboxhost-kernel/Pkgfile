@@ -8,10 +8,10 @@ license="GPL, CDDL"
 
 run=(kernel)
 name=vboxhost-kernel
-version=7.2.8
-release=4
+version=7.2.10
+release=2
 
-buildr=173730
+buildr=174163
 _VBARCH=amd64
 KERNELNAME="${name#vboxhost-}"
 
