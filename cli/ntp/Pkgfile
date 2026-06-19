@@ -9,13 +9,15 @@ run=(wget shadow)
 
 name=ntp
 version=4.2.8p18
-release=5
+release=6
 
 scriptsversion=20260315
 
+PKGMK_GROUPS=(doc man)
+
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
 	    https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/$name-4.2/$name-$version.tar.gz
-        ntp-fix-build.patch)
+        ntp-fix-build.patch ntp-4.2.8p18-openssl_4-1.patch)
 
 prepare() {
 cd $name-$version
@@ -25,7 +27,7 @@ patch -Np1 -i ../ntp-fix-build.patch
 sed -i 's/getclock/getclock memchr/' sntp/m4/ntp_libntp.m4
 sed -i 's/pthread_detach(NULL)/pthread_detach(0)/' \
 sntp/m4/openldap-thread-check.m4
-
+patch -Np1 -i ../ntp-4.2.8p18-openssl_4-1.patch
 autoreconf -fiv
 
 sed -i "/ep.*FAILED/,+4s/ep/ep2/" ntpd/ntp_io.c
