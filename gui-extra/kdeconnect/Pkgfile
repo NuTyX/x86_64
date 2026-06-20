@@ -12,18 +12,21 @@ makedepends=(qt6-base qt6-declarative qt6-5compat qt6-multimedia qt6-wayland
              kguiaddons ki18n kiconthemes kio kirigami kirigami-addons kjobwidgets
              knotifications kpeople kservice kstatusnotifieritem kwidgetsaddons
              kwindowsystem xorg-libx11 libxkbcommon xorg-libxtst modemmanager-qt
-             openssl pulseaudio-qt libfakekey qt6-connectivity)
+             openssl pulseaudio-qt libfakekey qt6-connectivity patch)
 run=(qqc2-desktop-style)
 
 set=(kde6 kde6-gear)
 
 name=kdeconnect
-version=26.04.1
+version=26.04.2
 release=1
 
-source=(https://download.kde.org/stable/release-service/$version/src/$name-kde-$version.tar.xz)
+source=(openssl4.patch
+        https://download.kde.org/stable/release-service/$version/src/$name-kde-$version.tar.xz)
 
 prepare() {
   mv $name-kde-$version $name-$version
+  cd $name-$version
+  patch -Np1 -i ../openssl4.patch
 }
 build=kde6

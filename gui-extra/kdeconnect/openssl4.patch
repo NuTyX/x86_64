@@ -1,0 +1,13 @@
+diff --git a/core/sslhelper.cpp b/core/sslhelper.cpp
+index c3bb90452..347b2f36d 100644
+--- a/core/sslhelper.cpp
++++ b/core/sslhelper.cpp
+@@ -169,7 +169,7 @@ QSslCertificate generateSelfSignedCertificate(const QSslKey &qtPrivateKey, const
+     }
+ 
+     // Set the certificate subject and issuer (self-signed).
+-    auto name = X509_get_subject_name(x509.get());
++    X509_NAME * name = const_cast<X509_NAME *>(reinterpret_cast<const X509_NAME *>(X509_get_subject_name(x509.get())));
+     QByteArray commonNameBytes = commonName.toLatin1();
+     const unsigned char *commonNameCStr = reinterpret_cast<const unsigned char *>(commonNameBytes.data());
+     if (!X509_NAME_add_entry_by_txt(name, "CN", MBSTRING_ASC, commonNameCStr, -1, -1, 0)) { // Common Name
