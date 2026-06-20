@@ -4,17 +4,17 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ktrash6
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOCore.so -> libKF6KIOCore.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOCore.so.6 -> libKF6KIOCore.so.6.26.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOCore.so.6.26.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOCore.so.6 -> libKF6KIOCore.so.6.27.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOCore.so.6.27.0
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOFileWidgets.so -> libKF6KIOFileWidgets.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOFileWidgets.so.6 -> libKF6KIOFileWidgets.so.6.26.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOFileWidgets.so.6.26.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOFileWidgets.so.6 -> libKF6KIOFileWidgets.so.6.27.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOFileWidgets.so.6.27.0
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOGui.so -> libKF6KIOGui.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOGui.so.6 -> libKF6KIOGui.so.6.26.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOGui.so.6.26.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOGui.so.6 -> libKF6KIOGui.so.6.27.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOGui.so.6.27.0
 lrwxrwxrwx	root/root	usr/lib/libKF6KIOWidgets.so -> libKF6KIOWidgets.so.6
-lrwxrwxrwx	root/root	usr/lib/libKF6KIOWidgets.so.6 -> libKF6KIOWidgets.so.6.26.0
--rwxr-xr-x	root/root	usr/lib/libKF6KIOWidgets.so.6.26.0
+lrwxrwxrwx	root/root	usr/lib/libKF6KIOWidgets.so.6 -> libKF6KIOWidgets.so.6.27.0
+-rwxr-xr-x	root/root	usr/lib/libKF6KIOWidgets.so.6.27.0
 drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/kiod6
@@ -70,6 +70,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/amg.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/archpkg.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/archwiki.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/ard.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/backports.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/baidu.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/beolingus.desktop
@@ -107,6 +108,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/facebook.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/fedora.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/feedster.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/flathub.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/flatpak.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/flickr.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/flickrcc.desktop
@@ -170,6 +172,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/nl-teletekst.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/npm.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/opendesktop.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/openstreetmap.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/opensuse.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/pgpkeys.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/php.desktop
@@ -217,6 +220,7 @@ drwxr-xr-x	root/root	usr/share/kf6/searchproviders/
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/yahoo_video.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/yandex.desktop
 -rw-r--r--	root/root	usr/share/kf6/searchproviders/youtube.desktop
+-rw-r--r--	root/root	usr/share/kf6/searchproviders/zdf.desktop
 drwxr-xr-x	root/root	usr/share/qlogging-categories6/
 -rw-r--r--	root/root	usr/share/qlogging-categories6/kio.categories
 -rw-r--r--	root/root	usr/share/qlogging-categories6/kio.renamecategories
