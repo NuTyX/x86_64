@@ -1,0 +1,20 @@
+description='Kontact Plugin Interface Library'
+url="https://kontact.kde.org/"
+
+license="LGPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(qt6-base extra-cmake-modules
+             kcoreaddons kio kparts kwindowsystem kxmlgui)
+
+set=(kde6 kde6-gear)
+
+name=kontactinterface
+version=26.04.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
