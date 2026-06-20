@@ -6,12 +6,14 @@ license="LGPL-2.1-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Fabienwang,Spiky"
 
+set=(kde6-frameworks)
+
 name=oxygen-icons
-version=6.1.0
-release=2
+version=6.27.0
+release=1
 
 makedepends=(cmake qt6-base extra-cmake-modules)
 
-source=(https://download.kde.org/stable/$name/$name-$version.tar.xz)
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${name}-$version.tar.xz)
 
 build=kde6
