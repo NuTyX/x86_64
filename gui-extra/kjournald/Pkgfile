@@ -1,0 +1,23 @@
+description='Framework for interacting with systemd-journald'
+url='https://apps.kde.org/kjournald/'
+
+license="LGPL-2.0-or-later, GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(qt6-base extra-cmake-modules qt6-declarative
+             qqc2-desktop-style kirigami kirigami-addons
+             kcoreaddons kcrash ki18n systemd)
+
+run=(hicolor-icon-theme)
+
+set=(kde6 kde6-gear)
+
+name=kjournald
+version=26.04.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
