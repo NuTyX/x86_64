@@ -3,13 +3,14 @@ url="https://podofo.sourceforge.net"
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Alienus,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Spiky"
 
 makedepends=(cmake xorg-fontconfig freetype libidn libpng libtiff)
 
 name=podofo
 version=0.10.6
+release=2
 
 source=(https://github.com/podofo/podofo/archive/refs/tags/$version.tar.gz)
 
