@@ -1,0 +1,33 @@
+description="Framework providing components to allow applications to integrate with a KDE Workspace"
+url="https://www.kde.org/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+makedepends=(qtbase extra-cmake-modules kf5-config kf5-configwidgets
+             kf5-iconthemes kf5-widgetsaddons kf5-notifications)
+
+set=(kde5-frameworks)
+
+_name=frameworkintegration
+name=kf5-frameworkintegration
+version=5.116.0
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build() {
+    cmake -B build \
+        -S $name-$version \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DBUILD_KPACKAGE_INSTALL_HANDLERS=OFF \
+        -DBUILD_TESTING=OFF \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="$PKG" cmake --install build
+}
