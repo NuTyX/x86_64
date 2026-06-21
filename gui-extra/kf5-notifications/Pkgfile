@@ -1,0 +1,22 @@
+description="Abstraction for system notifications "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Fabienwang,Spiky"
+
+set=(kde5-frameworks)
+
+_name=knotifications
+name=kf5-notifications
+version=5.116.0
+
+makedepends=(qtdeclarative kf5-windowsystem kf5-config kf5-coreaddons
+             extra-cmake-modules qttools libcanberra)
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build=kde5
