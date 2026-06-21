@@ -1,0 +1,23 @@
+description="Support for icon themes "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde5-frameworks)
+
+_name=kiconthemes
+name=kf5-iconthemes
+
+version=5.116.0
+
+makedepends=(qtsvg kf5-archive kf5-configwidgets breeze-icons qttools)
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build=kde5
