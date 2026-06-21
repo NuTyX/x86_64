@@ -1,0 +1,22 @@
+description="Advanced internationalization framework "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde5-frameworks)
+
+_name=ki18n
+name=kf5-i18n
+version=5.116.0
+
+makedepends=(iso-codes extra-cmake-modules qtdeclarative qtscript)
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build=kde5
