@@ -1,17 +1,16 @@
 description="Evented I/O for V8 JavaScript"
 url="https://nodejs.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Alienus,Greg,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Alienus,Greg,Spiky"
 
 makedepends=(python c-ares icu zlib libuv libnghttp2 libnghttp3 brotli)
 
 name=node
 alias=(nodejs node-js)
-version=26.2.0
+version=26.3.1
 
-source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
-        system-c-ares.patch)
+source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz)
 
 build() {
 
@@ -43,9 +42,4 @@ CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files 
 		-name 'ChangeLog' -o \
 		-name 'NEWS' \) -delete
 
-}
-uptodate() {
-url+="dist/latest/"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url|tail -1|sed -e "s@$url$name-v@@" -e "s@.tar.xz@@"
 }
