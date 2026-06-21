@@ -1,0 +1,22 @@
+description="Libraries and daemons to implement searching in Akonadi"
+url="https://kontact.kde.org"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(extra-cmake-modules boost akonadi-mime xapian akonadi
+             kdoctools ki18n kconfig kcrash kcontacts kmime
+             kcalendarcore kcmutils krunner ktextwidgets ktextaddons)
+
+
+set=(kde6 kde6-gear)
+
+name=akonadi-search
+version=26.04.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
