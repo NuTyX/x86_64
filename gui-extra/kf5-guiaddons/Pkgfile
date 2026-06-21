@@ -1,0 +1,36 @@
+description="Addons to QtGui "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+
+set=(kde5-frameworks)
+
+_name=kguiaddons
+name=kf5-guiaddons
+version=5.116.0
+
+makedepends=(extra-cmake-modules qtx11extras qtwayland plasma-wayland-protocols)
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build() {
+    cmake -B build \
+        -S $name-$version \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DBUILD_GEO_SCHEME_HANDLER=OFF \
+        -DBUILD_TESTING=OFF \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="$PKG" cmake --install build
+}
