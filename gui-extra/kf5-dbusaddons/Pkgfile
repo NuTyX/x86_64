@@ -1,0 +1,22 @@
+description="Addons to QtDBus "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde5-frameworks)
+
+_name=kdbusaddons
+name=kf5-dbusaddons
+version=5.116.0
+
+makedepends=(extra-cmake-modules qttools qtx11extras)
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build=kde5
