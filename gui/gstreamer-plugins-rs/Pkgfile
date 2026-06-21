@@ -1,0 +1,36 @@
+description="Rust GStreamer plugins"
+url="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+license="MIT APACHE MPL-2.0"
+
+makedepends=(git rustc gstreamer-plugins-base dav1d gtk4)
+run=(iso-codes)
+
+name=gstreamer-plugins-rs
+_name=gst-plugins-rs
+
+version=1.28.4
+release=1
+
+source=($url/-/archive/gstreamer-$version/gst-plugins-rs-gstreamer-$version.tar.gz)
+
+
+
+build() {
+ cd gst-plugins-rs-gstreamer-$version
+
+ cargo build --package gst-plugin-dav1d --release
+ install -Dm755 target/release/libgstdav1d.so \
+ $PKG/usr/lib/gstreamer-1.0/libgstdav1d.so 
+
+ cargo build --package gst-plugin-gtk4 --release
+ install -Dm755 target/release/libgstgtk4.so \
+ $PKG/usr/lib/gstreamer-1.0/libgstgtk4.so 
+ for i in  LICENSE-*
+ do
+  install -Dm644 $i $PKG/usr/share/licenses/$name/$i
+ done
+} 
