@@ -1,0 +1,42 @@
+description='A Python HTML parser/tokenizer based on the WHATWG HTML5 spec'
+url='https://github.com/html5lib'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=python-html5lib
+_name="html5lib"
+alias=(${_name})
+
+version=1.1
+release=1
+
+makedepends=(python-setuptools python-wheel python-six python-webencodings)
+
+PKGMK_KEEP_SOURCES="no"
+
+source=(https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-$version.tar.gz
+        html5lib-1.1-python_3.14_buildfix-1.patch)
+prepare() {
+  cd ${_name}-$version
+  patch -p1 -i ../html5lib-1.1-python_3.14_buildfix-1.patch
+
+  sed -i 's/from pkg_resources import/from packaging.version import parse as/' setup.py
+  sed -i 's/import pkg_resources/pkg_resources = None/' setup.py 
+}
+
+build() {
+  cd ${_name}-$version
+
+  pip3 wheel -w dist \
+    --no-build-isolation \
+    --no-deps $PWD
+  pip3 install --no-index \
+    --find-links dist \
+    --no-cache-dir    \
+    --no-user         \
+    --root=$PKG       \
+    ${_name}
+
+ find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
+}

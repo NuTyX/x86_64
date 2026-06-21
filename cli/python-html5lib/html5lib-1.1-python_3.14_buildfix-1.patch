@@ -1,0 +1,30 @@
+Submitted By:            Douglas R. Reno <renodr at linuxfromscratch dot org>
+Date:                    2025-11-16
+Initial Package Version: 1.1
+Origin:                  Upstream PR #589 (https://github.com/html5lib/html5lib-python/pull/589)
+Upstream Status:         Pending
+Description:             Fixes building html5lib-1.1 with Python 3.14, which
+                         removed the ast.Str method that is used by setup.py.
+                         This is worked around by using ast.Constant.
+
+diff -Naurp html5lib-1.1.orig/setup.py html5lib-1.1/setup.py
+--- html5lib-1.1.orig/setup.py	2020-06-22 18:23:02.000000000 -0500
++++ html5lib-1.1/setup.py	2025-11-16 20:49:13.542984960 -0600
+@@ -89,9 +89,14 @@ with open(join(here, "html5lib", "__init
+     for a in assignments:
+         if (len(a.targets) == 1 and
+                 isinstance(a.targets[0], ast.Name) and
+-                a.targets[0].id == "__version__" and
+-                isinstance(a.value, ast.Str)):
+-            version = a.value.s
++                a.targets[0].id == "__version__"):
++            if hasattr(ast, "Str") and isinstance(a.value, ast.Str):
++                version = a.value.s
++            elif (hasattr(ast, "Constant")
++                  and isinstance(a.value, ast.Constant)
++                  and isinstance(a.value.value, str)):
++                version = a.value.value
++assert version is not None
+ 
+ setup(name='html5lib',
+       version=version,
