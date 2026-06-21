@@ -1,0 +1,25 @@
+description="H.264 encoder and decoder"
+url='https://www.openh264.org/'
+
+license="BSD-2-Clause"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=openh264
+version=2.6.0
+
+makedepends=(nasm)
+
+source=(https://github.com/cisco/openh264/archive/v$version/$name-$version.tar.gz)
+
+build() {
+
+  make -C $name-$version
+
+  make -C $name-$version DESTDIR=$PKG PREFIX="/usr" install-shared
+
+  install -D -m755 $name-$version/h264{dec,enc} -t $PKG/usr/bin
+  install -D -m644 $name-$version/LICENSE -t \
+  $PKG/usr/share/licenses/$name
+}
