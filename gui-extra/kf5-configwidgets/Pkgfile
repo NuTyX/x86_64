@@ -1,0 +1,26 @@
+description="Widgets for KConfig "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+
+name=kf5-configwidgets
+version=5.116.0
+
+_name=kconfigwidgets
+
+set=(kde5-frameworks)
+
+makedepends=(kf5-auth kf5-codecs kf5-config kf5-coreaddons
+            kf5-guiaddons kf5-i18n kf5-widgetsaddons
+            qttools)
+
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+
+prepare() {
+mv ${_name}-$version $name-$version
+}
+build=kde5
