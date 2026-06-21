@@ -1,0 +1,22 @@
+description="Framework that lets applications manage user installable packages of non-binary asset "
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde5-frameworks)
+
+_name=kpackage
+name=kf5-package
+version=5.116.0
+
+makedepends=(kf5-archive kf5-i18n kf5-coreaddons)
+
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+build=kde5
