@@ -9,17 +9,20 @@ contributors="Spiky"
 set=(kde5-frameworks)
 
 name=kf5-wayland
-version=5.115.0
-release=2
+version=5.116.0
+release=1
 
 _name=kwayland
 
-makedepends=(qtbase qtwayland qttools extra-cmake-modules
+makedepends=(patch qtbase qtwayland qttools extra-cmake-modules
              plasma-wayland-protocols wayland-protocols)
 
-source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+source=(0954a179.patch
+        https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
 
 prepare() {
  mv ${_name}-$version $name-$version
+ cd $name-$version
+ patch -Np1 -i ../0954a179.patch
 }
 build=kde5
