@@ -9,10 +9,10 @@ contributors="Spiky"
 set=(kde6 kde6-plasma)
 
 name=plasma-nm
-version=6.6.5
+version=6.7.0
 release=1
 
-makedepends=(extra-cmake-modules qt6-base qt6-declarative
+makedepends=(extra-cmake-modules qt6-base qt6-declarative qtkeychain-qt6
              kcmutils kcolorscheme kcompletion kconfig kcoreaddons kdbusaddons
              kdeclarative ki18n kio kirigami knotifications ksvg
              kwallet kwidgetsaddons kwindowsystem libplasma solid prison
