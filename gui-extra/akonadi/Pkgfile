@@ -1,0 +1,33 @@
+description="PIM layer, which provides an asynchronous API to access all kind of PIM data."
+url="https://kontact.kde.org"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org"
+contributors="Spiky"
+
+makedepends=(extra-cmake-modules postgresql qt6-tools
+             boost kio kitemmodels libglvnd libxslt kxmlgui)
+run=(sqlite shared-mime-info)
+
+set=(kde6 kde-gear)
+
+name=akonadi
+version=26.04.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+	mkdir build && cd build
+	cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DKDE_INSTALL_LIBDIR=lib   \
+		-DBUILD_TESTING=OFF        \
+		-DDATABASE_BACKEND=SQLITE  \
+		-Wno-dev ..
+	make
+	make DESTDIR=$PKG install
+
+}
