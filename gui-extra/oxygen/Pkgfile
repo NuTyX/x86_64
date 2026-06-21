@@ -9,13 +9,15 @@ contributors="Spiky"
 set=(kde6 kde6-plasma)
 
 name=oxygen
-version=6.6.5
+version=6.7.0
 release=1
 
 makedepends=(libxcb qt6-base qt6-declarative extra-cmake-modules libplasma
               kcmutils kcolorscheme kcompletion kconfig kconfigwidgets
               kcoreaddons kdecoration kguiaddons ki18n kwidgetsaddons
-              kwindowsystem frameworkintegration)
+              kf5-completion kirigami2 kf5-configwidgets kf5-iconthemes
+              kf5-frameworkintegration frameworkintegration libplasma
+              kwindowsystem kf5-windowsystem kf5-service)
 
 source=(https://download.kde.org/stable/plasma/$version/$name-$version.tar.xz)
 
