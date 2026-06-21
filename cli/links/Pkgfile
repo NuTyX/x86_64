@@ -1,23 +1,27 @@
 description="Text and graphics mode WWW browser. It includes support for rendering tables and frames"
 url="http://links.twibright.com/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 makedepends=(gpm libpng libtiff libjpeg-turbo)
 
 name=links
 version=2.30
-release=2
+release=3
 
 source=(${url}download/links-$version.tar.bz2)
 build() {
 cd $name-$version
+
+sed '/*strchr/s/cast_const_char //g' -i ftp.c
+
 ./configure --prefix=/usr --enable-graphics \
 --mandir=/usr/share/man
+
 make
 make DESTDIR=$PKG install
-mkdir -p $PKG/usr/share/doc/$name-$version
+mkdir -p $PKG/usr/share/doc/$name
 install -v -m644 doc/links_cal/* KEYS BRAILLE_HOWTO \
-$PKG/usr/share/doc/$name-$version
+$PKG/usr/share/doc/$name
 }
