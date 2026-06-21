@@ -2,17 +2,18 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/libexec/
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/
+-rwxr-xr-x	root/root	usr/lib/libexec/kf6/kameleon-qmk-helper
 drwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/
 -rwxr-xr-x	root/root	usr/lib/libexec/kf6/kauth/kameleonhelper
 lrwxrwxrwx	root/root	usr/lib/libplasmapotdprovidercore.so -> libplasmapotdprovidercore.so.2
 lrwxrwxrwx	root/root	usr/lib/libplasmapotdprovidercore.so.2 -> libplasmapotdprovidercore.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libplasmapotdprovidercore.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libplasmaweatherdata.so -> libplasmaweatherdata.so.6
-lrwxrwxrwx	root/root	usr/lib/libplasmaweatherdata.so.6 -> libplasmaweatherdata.so.6.6.5
--rwxr-xr-x	root/root	usr/lib/libplasmaweatherdata.so.6.6.5
+lrwxrwxrwx	root/root	usr/lib/libplasmaweatherdata.so.6 -> libplasmaweatherdata.so.6.7.0
+-rwxr-xr-x	root/root	usr/lib/libplasmaweatherdata.so.6.7.0
 lrwxrwxrwx	root/root	usr/lib/libplasmaweatherion.so -> libplasmaweatherion.so.6
-lrwxrwxrwx	root/root	usr/lib/libplasmaweatherion.so.6 -> libplasmaweatherion.so.6.6.5
--rwxr-xr-x	root/root	usr/lib/libplasmaweatherion.so.6.6.5
+lrwxrwxrwx	root/root	usr/lib/libplasmaweatherion.so.6 -> libplasmaweatherion.so.6.7.0
+-rwxr-xr-x	root/root	usr/lib/libplasmaweatherion.so.6.7.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -111,8 +112,10 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasmacalendar/astronomicaleventsco
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
+-rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.kameleon.qmk.helper.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.kameleonhelper.service
 drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
+-rw-r--r--	root/root	usr/share/dbus-1/system.d/org.kde.kameleon.qmk.helper.conf
 -rw-r--r--	root/root	usr/share/dbus-1/system.d/org.kde.kameleonhelper.conf
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
@@ -226,6 +229,7 @@ drwxr-xr-x	root/root	usr/share/plasma/weather/
 -rw-r--r--	root/root	usr/share/plasma/weather/noaa_station_list.xml
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kameleon.qmk.helper.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kameleonhelper.policy
 drwxr-xr-x	root/root	usr/share/qlogging-categories6/
 -rw-r--r--	root/root	usr/share/qlogging-categories6/kdeplasma-addons.categories
