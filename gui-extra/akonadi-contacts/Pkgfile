@@ -1,0 +1,23 @@
+description="Libraries and daemons to implement Contact Management in Akonadi"
+url="https://kontact.kde.org"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(extra-cmake-modules boost akonadi qt6-base grantleetheme qt6-webengine
+             akonadi-mime libkleo prison kcodecs kio kcompletion kcodecs phonon
+             kcontacts kcalendarcore kmime ki18n kitemviews kconfig solid kcmutils
+             kldap kmbox ktextwidgets ktextaddons)
+
+
+set=(kde6 kde6-gear)
+
+name=akonadi-contacts
+version=26.04.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
