@@ -1,0 +1,22 @@
+description="Configuration system"
+url="https://www.kde.org/"
+
+license="LGPL"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde5-frameworks)
+
+name=kf5-config
+_name=kconfig
+version=5.116.0
+
+makedepends=(extra-cmake-modules qtbase qttools)
+source=(https://download.kde.org/stable/frameworks/${version%.*}/${_name}-$version.tar.xz)
+
+prepare() {
+ mv ${_name}-$version $name-$version
+}
+
+build=kde5
