@@ -14,8 +14,10 @@ drwxr-xr-x	root/root	usr/include/kwin/core/
 -rw-r--r--	root/root	usr/include/kwin/core/colorpipelinestage.h
 -rw-r--r--	root/root	usr/include/kwin/core/colorspace.h
 -rw-r--r--	root/root	usr/include/kwin/core/colortransformation.h
+-rw-r--r--	root/root	usr/include/kwin/core/drm_formats.h
 -rw-r--r--	root/root	usr/include/kwin/core/drmdevice.h
 -rw-r--r--	root/root	usr/include/kwin/core/gbmgraphicsbufferallocator.h
+-rw-r--r--	root/root	usr/include/kwin/core/gpumanager.h
 -rw-r--r--	root/root	usr/include/kwin/core/graphicsbuffer.h
 -rw-r--r--	root/root	usr/include/kwin/core/graphicsbufferallocator.h
 -rw-r--r--	root/root	usr/include/kwin/core/graphicsbufferview.h
@@ -30,6 +32,7 @@ drwxr-xr-x	root/root	usr/include/kwin/core/
 -rw-r--r--	root/root	usr/include/kwin/core/rect.h
 -rw-r--r--	root/root	usr/include/kwin/core/region.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderbackend.h
+-rw-r--r--	root/root	usr/include/kwin/core/renderdevice.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderjournal.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderloop.h
 -rw-r--r--	root/root	usr/include/kwin/core/renderloop_p.h
@@ -82,6 +85,7 @@ drwxr-xr-x	root/root	usr/include/kwin/effect/
 -rw-r--r--	root/root	usr/include/kwin/lidswitchtracker.h
 -rw-r--r--	root/root	usr/include/kwin/main.h
 -rw-r--r--	root/root	usr/include/kwin/mousebuttons.h
+-rw-r--r--	root/root	usr/include/kwin/multigpuswapchain.h
 -rw-r--r--	root/root	usr/include/kwin/netinfo.h
 -rw-r--r--	root/root	usr/include/kwin/onscreennotification.h
 drwxr-xr-x	root/root	usr/include/kwin/opengl/
@@ -117,6 +121,7 @@ drwxr-xr-x	root/root	usr/include/kwin/opengl/
 -rw-r--r--	root/root	usr/include/kwin/rulebooksettings.h
 -rw-r--r--	root/root	usr/include/kwin/rules.h
 drwxr-xr-x	root/root	usr/include/kwin/scene/
+-rw-r--r--	root/root	usr/include/kwin/scene/atlas.h
 -rw-r--r--	root/root	usr/include/kwin/scene/backgroundeffectitem.h
 -rw-r--r--	root/root	usr/include/kwin/scene/borderoutline.h
 -rw-r--r--	root/root	usr/include/kwin/scene/borderradius.h
@@ -129,6 +134,7 @@ drwxr-xr-x	root/root	usr/include/kwin/scene/
 -rw-r--r--	root/root	usr/include/kwin/scene/itemrenderer.h
 -rw-r--r--	root/root	usr/include/kwin/scene/itemrenderer_opengl.h
 -rw-r--r--	root/root	usr/include/kwin/scene/itemrenderer_qpainter.h
+-rw-r--r--	root/root	usr/include/kwin/scene/ninepatch.h
 -rw-r--r--	root/root	usr/include/kwin/scene/outlinedborderitem.h
 -rw-r--r--	root/root	usr/include/kwin/scene/rootitem.h
 -rw-r--r--	root/root	usr/include/kwin/scene/scene.h
@@ -136,6 +142,7 @@ drwxr-xr-x	root/root	usr/include/kwin/scene/
 -rw-r--r--	root/root	usr/include/kwin/scene/surfaceitem.h
 -rw-r--r--	root/root	usr/include/kwin/scene/surfaceitem_internal.h
 -rw-r--r--	root/root	usr/include/kwin/scene/surfaceitem_wayland.h
+-rw-r--r--	root/root	usr/include/kwin/scene/texture.h
 -rw-r--r--	root/root	usr/include/kwin/scene/windowitem.h
 -rw-r--r--	root/root	usr/include/kwin/scene/workspacescene.h
 -rw-r--r--	root/root	usr/include/kwin/screenedge.h
@@ -151,7 +158,6 @@ drwxr-xr-x	root/root	usr/include/kwin/utils/
 -rw-r--r--	root/root	usr/include/kwin/utils/common.h
 -rw-r--r--	root/root	usr/include/kwin/utils/cursortheme.h
 -rw-r--r--	root/root	usr/include/kwin/utils/damagejournal.h
--rw-r--r--	root/root	usr/include/kwin/utils/drm_format_helper.h
 -rw-r--r--	root/root	usr/include/kwin/utils/edid.h
 -rw-r--r--	root/root	usr/include/kwin/utils/executable_path.h
 -rw-r--r--	root/root	usr/include/kwin/utils/filedescriptor.h
@@ -173,16 +179,21 @@ drwxr-xr-x	root/root	usr/include/kwin/utils/
 -rw-r--r--	root/root	usr/include/kwin/virtualdesktops.h
 -rw-r--r--	root/root	usr/include/kwin/virtualdesktopsdbustypes.h
 -rw-r--r--	root/root	usr/include/kwin/virtualkeyboard_dbus.h
+drwxr-xr-x	root/root	usr/include/kwin/vulkan/
+-rw-r--r--	root/root	usr/include/kwin/vulkan/vulkan_device.h
+-rw-r--r--	root/root	usr/include/kwin/vulkan/vulkan_logging.h
+-rw-r--r--	root/root	usr/include/kwin/vulkan/vulkan_render_time_query.h
+-rw-r--r--	root/root	usr/include/kwin/vulkan/vulkan_swapchain.h
+-rw-r--r--	root/root	usr/include/kwin/vulkan/vulkan_texture.h
 drwxr-xr-x	root/root	usr/include/kwin/wayland/
 -rw-r--r--	root/root	usr/include/kwin/wayland/alphamodifier_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/appmenu.h
--rw-r--r--	root/root	usr/include/kwin/wayland/blur.h
+-rw-r--r--	root/root	usr/include/kwin/wayland/backgroundeffect_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/clientconnection.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/colormanagement_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/colorrepresentation_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/compositor.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/contenttype_v1.h
--rw-r--r--	root/root	usr/include/kwin/wayland/contrast.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/cursorshape_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/datacontroldevice_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/datacontroldevicemanager_v1.h
@@ -198,7 +209,7 @@ drwxr-xr-x	root/root	usr/include/kwin/wayland/
 -rw-r--r--	root/root	usr/include/kwin/wayland/externalbrightness_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/fifo_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/fractionalscale_v1.h
--rw-r--r--	root/root	usr/include/kwin/wayland/frog_colormanagement_v1.h
+-rw-r--r--	root/root	usr/include/kwin/wayland/fractionalscale_v2.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/idle.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/idleinhibit_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/idlenotify_v1.h
@@ -230,8 +241,8 @@ drwxr-xr-x	root/root	usr/include/kwin/wayland/
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-color-management-v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-color-representation-v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-content-type-v1.h
+-rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-ext-background-effect-v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-fifo-v1.h
--rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-frog-color-management-v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-kde-external-brightness-v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-linux-drm-syncobj-v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/qwayland-server-pointer-warp-v1.h
@@ -253,7 +264,6 @@ drwxr-xr-x	root/root	usr/include/kwin/wayland/
 -rw-r--r--	root/root	usr/include/kwin/wayland/tablet_v2.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/tearingcontrol_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/textinput.h
--rw-r--r--	root/root	usr/include/kwin/wayland/textinput_v1.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/textinput_v2.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/textinput_v3.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/touch.h
@@ -262,8 +272,8 @@ drwxr-xr-x	root/root	usr/include/kwin/wayland/
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-color-management-v1-server-protocol.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-color-representation-v1-server-protocol.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-content-type-v1-server-protocol.h
+-rw-r--r--	root/root	usr/include/kwin/wayland/wayland-ext-background-effect-v1-server-protocol.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-fifo-v1-server-protocol.h
--rw-r--r--	root/root	usr/include/kwin/wayland/wayland-frog-color-management-v1-server-protocol.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-kde-external-brightness-v1-server-protocol.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-linux-drm-syncobj-v1-server-protocol.h
 -rw-r--r--	root/root	usr/include/kwin/wayland/wayland-pointer-warp-v1-server-protocol.h

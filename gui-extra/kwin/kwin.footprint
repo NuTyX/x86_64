@@ -14,12 +14,13 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 drwxr-xr-x	root/root	usr/lib/libexec/
 -rwxr-xr-x	root/root	usr/lib/libexec/kwin-applywindowdecoration
 -rwxr-xr-x	root/root	usr/lib/libexec/kwin-tabbox-preview
+-rwxr-xr-x	root/root	usr/lib/libexec/kwin_dialog_helper
 -rwxr-xr-x	root/root	usr/lib/libexec/kwin_killer_helper
-lrwxrwxrwx	root/root	usr/lib/libkcmkwincommon.so.6 -> libkcmkwincommon.so.6.6.5
--rwxr-xr-x	root/root	usr/lib/libkcmkwincommon.so.6.6.5
+lrwxrwxrwx	root/root	usr/lib/libkcmkwincommon.so.6 -> libkcmkwincommon.so.6.7.0
+-rwxr-xr-x	root/root	usr/lib/libkcmkwincommon.so.6.7.0
 lrwxrwxrwx	root/root	usr/lib/libkwin.so -> libkwin.so.6
-lrwxrwxrwx	root/root	usr/lib/libkwin.so.6 -> libkwin.so.6.6.5
--rwxr-xr-x	root/root	usr/lib/libkwin.so.6.6.5
+lrwxrwxrwx	root/root	usr/lib/libkwin.so.6 -> libkwin.so.6.7.0
+-rwxr-xr-x	root/root	usr/lib/libkwin.so.6.7.0
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -108,6 +109,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/kcm_kwintabbox.desktop
 -rw-r--r--	root/root	usr/share/applications/kcm_kwinxwayland.desktop
 -rw-r--r--	root/root	usr/share/applications/kcm_virtualkeyboard.desktop
+-rw-r--r--	root/root	usr/share/applications/org.kde.kwin.dialoghelper.desktop
 -rw-r--r--	root/root	usr/share/applications/org.kde.kwin.killer.desktop
 drwxr-xr-x	root/root	usr/share/config.kcfg/
 -rw-r--r--	root/root	usr/share/config.kcfg/kwin.kcfg
@@ -179,6 +181,7 @@ drwxr-xr-x	root/root	usr/share/kwin-wayland/builtin-effects/
 -rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/showpaint.json
 -rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/slide.json
 -rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/slideback.json
+-rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/slidingnotifications.json
 -rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/slidingpopups.json
 -rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/startupfeedback.json
 -rw-r--r--	root/root	usr/share/kwin-wayland/builtin-effects/systembell.json
