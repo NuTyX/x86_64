@@ -1,0 +1,29 @@
+description='Tool for integrating Rust into an existing CMake project'
+url='https://github.com/corrosion-rs/corrosion'
+
+license="MIT"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=corrosion
+version=v0.6.1
+
+makedepends=(cmake rustc git)
+
+source=(https://github.com/corrosion-rs/corrosion.git)
+
+build() {
+    cmake -B build -S $name-$version \
+    -DCMAKE_INSTALL_PREFIX=/usr      \
+    -DCMAKE_INSTALL_LIBEXECDIR=lib   \
+    -DCORROSION_BUILD_TESTS=OFF
+
+    cmake --build build
+
+    DESTDIR=$PKG cmake --install build
+}
+package() {
+  install -Dm644 $name-$version/LICENSE -t \
+  $PKG/usr/share/licenses/$name
+}
