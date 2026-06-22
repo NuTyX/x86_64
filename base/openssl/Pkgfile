@@ -1,5 +1,5 @@
 description="The Open Source toolkit for Secure Sockets Layer and Transport Layer Security."
-url="http://www.openssl.org/"
+url="https://openssl-library.org/"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
@@ -7,21 +7,23 @@ contributors="Tnut"
 makedepends=(perl)
 
 name=openssl
-version=4.0.0
-
+version=4.0.1
+_ltsversion=3.5.7
 set=(chroot)
 
-source=(https://github.com/openssl/openssl/releases/download/$name-$version/$name-$version.tar.gz)
+source=(https://github.com/openssl/openssl/releases/download/$name-$version/$name-$version.tar.gz
+        https://github.com/openssl/openssl/releases/download/$name-${_ltsversion}/$name-${_ltsversion}.tar.gz)
 
 PKGMK_GROUPS=(devel man doc)
+
 build() {
 unset MAKEFLAGS
 
 cd $name-${version}
 
 ./config --prefix=/usr --libdir=lib \
-	--openssldir=/etc/ssl \
-	shared zlib-dynamic
+         --openssldir=/etc/ssl \
+         shared zlib-dynamic
 
 make
 
@@ -32,7 +34,17 @@ MANSUFFIX=ssl install
 
 cp -vfr doc/*     $PKG/usr/share/doc/openssl
 
+cd ../$name-${_ltsversion}
+
+./config --prefix=/usr --libdir=lib \
+         shared zlib-dynamic
+
+make build_libs
+
+make DESTDIR=$PKG install_runtime_libs
+
 }
+
 devel()
 {
 cd $PKG
