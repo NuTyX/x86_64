@@ -10,10 +10,10 @@ set=(qt6)
 
 name=qt6-webengine
 version=6.11.1
-release=1
+release=2
 
-makedepends=(cmake ninja qt6-base qt6-declarative qt6-positioning qt6-webchannel
-             qt6-tools qt6-websockets python-html5lib gzip icu
+makedepends=(cmake ninja re2 qt6-base qt6-declarative qt6-positioning qt6-webchannel
+             qt6-tools qt6-websockets qt6-svg python-html5lib gzip icu openh264
              alsa-lib dbus expat ffmpeg xorg-fontconfig freetype glib harfbuzz
              icu lcms2 xorg-libdrm libevent libjpeg-turbo libpng libtiff libwebp
              xorg-libx11 libxcb xorg-libxcomposite xorg-libxdamage xorg-libxext
@@ -25,30 +25,23 @@ _name=${name/6-/}-everywhere-src
 
 source=(https://download.qt.io/official_releases/qt/${version:0:4}/$version/submodules/${_name}-$version.tar.xz)
 
-prepare() {
-cd ${_name}-$version
-
-pushd src/3rdparty/chromium/third_party/webrtc/modules &&
-
-  sed -e "88 s/proxy_/reinterpret_cast<pw_node*>(&)/"       \
-      -e "120s/that->proxy_/reinterpret_cast<pw_node*>(&)/" \
-      -i video_capture/linux/pipewire_session.cc            &&
-
-popd
-
-}
 build() {
 ## Do not change ninja jobs ##
 export NINJAJOBS=8
 
+ cd ${_name}-$version
+ mkdir build
+ cd    build
  cmake -D CMAKE_MESSAGE_LOG_LEVEL=STATUS       \
  -D QT_FEATURE_webengine_system_icu=ON         \
  -D QT_FEATURE_webengine_system_ffmpeg=ON      \
- -D QT_FEATURE_webengine_system_libevent=ON    \
+ -D QT_FEATURE_webengine_system_re2=ON         \
  -D QT_FEATURE_webengine_proprietary_codecs=ON \
  -D QT_FEATURE_webengine_webrtc_pipewire=ON    \
  -D QT_BUILD_EXAMPLES_BY_DEFAULT=OFF           \
- -S ${_name}-$version -B build -G Ninja
- cmake --build build
- DESTDIR=$PKG cmake --install build
+ -G Ninja ..
+
+ ninja
+
+ DESTDIR=$PKG ninja install
 }
