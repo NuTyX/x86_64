@@ -4,13 +4,22 @@ url='https://apps.gnome.org/Showtime/'
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(git blueprint-compiler gstreamer-plugins-base libadwaita python-gobject)
+makedepends=(git blueprint-compiler gstreamer-plugins-base)
+run=(gstreamer gstreamer-plugins-base gstreamer-plugins-good
+     libadwaita python-gobject gtk4 gstreamer-plugins-rs)
 set=(gnome)
 
 name=showtime
 version=50.0
-release=1
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/showtime.git)
 
 build=meson
+
+package() {
+
+python -m compileall -d /usr/lib $PKG/usr/lib
+python -O -m compileall -d /usr/lib $PKG/usr/lib
+
+}

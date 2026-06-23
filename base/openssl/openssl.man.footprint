@@ -138,8 +138,16 @@ lrwxrwxrwx	root/root	usr/share/man/man3/ASIdentifierChoice_new.3ssl.gz -> X509_d
 lrwxrwxrwx	root/root	usr/share/man/man3/ASIdentifiers_free.3ssl.gz -> X509_dup.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ASIdentifiers_new.3ssl.gz -> X509_dup.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_AUX.3ssl.gz -> ASN1_aux_cb.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_check.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_free.3ssl.gz -> ASN1_BIT_STRING_new.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_get_bit.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/ASN1_BIT_STRING_get_length.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_name_print.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/ASN1_BIT_STRING_new.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_num_asc.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_set1.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_set_asc.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_BIT_STRING_set_bit.3ssl.gz -> ASN1_BIT_STRING_get_length.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_ENUMERATED_get.3ssl.gz -> ASN1_INTEGER_get_int64.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_ENUMERATED_get_int64.3ssl.gz -> ASN1_INTEGER_get_int64.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ASN1_ENUMERATED_set.3ssl.gz -> ASN1_INTEGER_get_int64.3ssl.gz
@@ -470,6 +478,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_socket.3ssl.gz -> BIO_s_socket.3
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_ssl.3ssl.gz -> BIO_f_ssl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_new_ssl_connect.3ssl.gz -> BIO_f_ssl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_next.3ssl.gz -> BIO_find_type.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_nread.3ssl.gz -> BIO_s_bio.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_nread0.3ssl.gz -> BIO_s_bio.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_nwrite.3ssl.gz -> BIO_s_bio.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/BIO_nwrite0.3ssl.gz -> BIO_s_bio.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/BIO_parse_hostserv.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_pending.3ssl.gz -> BIO_ctrl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/BIO_pop.3ssl.gz -> BIO_push.3ssl.gz
@@ -2722,6 +2734,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_AUTHORITY_ATTRIBUTE_ID_SYNTAX_new.3
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_BASIC_ATTR_CONSTRAINTS_free.3ssl.gz -> X509_dup.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_BASIC_ATTR_CONSTRAINTS_it.3ssl.gz -> X509_dup.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_BASIC_ATTR_CONSTRAINTS_new.3ssl.gz -> X509_dup.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_BEGIN_ALLOW_DEPRECATED.3ssl.gz -> OPENSSL_FILE.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/OSSL_CALLBACK.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_ATAV.3ssl.gz -> OSSL_CMP_ATAV_set0.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_ATAVS.3ssl.gz -> OSSL_CMP_ATAV_set0.3ssl.gz
@@ -3095,6 +3108,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ENCODER_settable_ctx_params.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ENCODER_to_data.3ssl.gz -> OSSL_ENCODER_to_bio.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ENCODER_to_fp.3ssl.gz -> OSSL_ENCODER_to_bio.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ENCODER_up_ref.3ssl.gz -> OSSL_ENCODER.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_END_ALLOW_DEPRECATED.3ssl.gz -> OPENSSL_FILE.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ERR_STATE_free.3ssl.gz -> OSSL_ERR_STATE_save.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ERR_STATE_new.3ssl.gz -> OSSL_ERR_STATE_save.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_ERR_STATE_restore.3ssl.gz -> OSSL_ERR_STATE_save.3ssl.gz
