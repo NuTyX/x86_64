@@ -1,16 +1,21 @@
 description='(un)zip based on zlib'
 url='https://www.zlib.net/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors=""
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(autoconf libtool automake)
 
 name=minizip
 version=1.3.2
+release=2
 
-source=(https://zlib.net/zlib-$version.tar.gz)
+source=(headers.patch
+        https://zlib.net/zlib-$version.tar.gz)
 
+prepare() {
+ patch -Np1 -d zlib-$version -i ../headers.patch
+}
 build() {
 
 cd zlib-$version/contrib/minizip

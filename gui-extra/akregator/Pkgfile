@@ -1,0 +1,25 @@
+description='A Feed reader by KDE'
+url="https://apps.kde.org/akregator/"
+
+license="LGPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(qt6-base qt6-webengine extra-cmake-modules
+             kdoctools grantleetheme kcmutils kcodecs
+             kcolorscheme kconfig kconfigwidgets kcoreaddons
+             kcrash ki18n kiconthemes kio knotifications
+             knotifyconfig kontactinterface kparts
+             kstatusnotifieritem ktextaddons kxmlgui
+             messagelib pimcommon syndication)
+
+set=(kde6 kde6-gear)
+
+name=akregator
+version=26.04.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
