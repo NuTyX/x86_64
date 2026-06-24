@@ -3,8 +3,8 @@ url="https://www.weechat.org"
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fabienwang,Tnut"
 
 makedepends=(ruby asciidoctor cmake aspell guile gnutls libgcrypt
              openssl lua perl python tcl pkgconf cjson)
@@ -12,8 +12,7 @@ run=(gnutls libgcrypt openssl)
 set=()
 
 name=weechat
-version=4.9.0
-release=4
+version=4.9.1
 
 source=(https://www.weechat.org/files/src/${name}-${version}.tar.xz)
 
