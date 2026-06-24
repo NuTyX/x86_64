@@ -21,6 +21,8 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/autoload/
 -rw-r--r--	root/root	usr/share/vim/vim92/autoload/RstFold.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/autoload/ada.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/autoload/adacomplete.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/autoload/beancount.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/autoload/beancountcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/autoload/bitbake.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/autoload/cargo.vim
 drwxr-xr-x	root/root	usr/share/vim/vim92/autoload/cargo/
@@ -132,6 +134,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/compiler/
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/bash.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/bcc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/bdf.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/compiler/bean_check.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/biome.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/cabal.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/cargo.vim
@@ -298,6 +301,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bash.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/basic.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bdf.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/beancount.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bicep-params.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bicep.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bindzone.vim
@@ -722,6 +726,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/indent/
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/awk.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/bash.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/basic.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/indent/beancount.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/bib.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/bitbake.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/bpftrace.vim
@@ -1254,6 +1259,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/basic.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bdf.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/beancount.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bib.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bindzone.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bitbake.vim
