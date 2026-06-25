@@ -1,12 +1,12 @@
 description="A GTK+ based e-mail client."
 url="http://www.claws-mail.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre.,Greg,Fabianwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre.,Greg,Fabianwang,Spiky"
 
 name=claws-mail
 version=4.4.0
-release=2
+release=3
 
 makedepends=(bogofilter enchant aspell libetpan gnupg gpgme gnutls
              dbus gtk3 libtasn1 enchant xorg-libsm xorgproto nettle)
