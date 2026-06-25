@@ -10,8 +10,10 @@ run=()
 
 name=nmap
 version=7.99
+release=2
 
-source=(http://download.insecure.org/nmap/dist/$name-$version.tgz)
+source=(http://download.insecure.org/nmap/dist/$name-$version.tgz
+        nmap-7.99-openssl4_fixes-1.patch)
 
 prepare() {
 cd $name-$version
@@ -21,6 +23,7 @@ sed -ri Makefile.in \
     -e '/pip install/s#(ZENMAP|NDIFF)DIR\)/#&dist/*.whl#'
 sed 's/, "setuptools-gettext"//' -i zenmap/pyproject.toml
 sed '/py-modules/s/f"/&, "Version"/' -i ndiff/pyproject.toml
+patch -Np1 -i ../nmap-7.99-openssl4_fixes-1.patch
 }
 
 build() {
