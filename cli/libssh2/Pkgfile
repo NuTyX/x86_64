@@ -1,23 +1,21 @@
 description="A library implementing the SSH2 protocol as defined by Internet Drafts"
 url="http://www.libssh2.org/"
-packager="spiky <spiky@nutyx.org>"
-contributors="Remy,Greg,Tnut"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Remy,Greg,Spiky"
 
 name=libssh2
 version=1.11.1
 release=2
 makedepends=(openssl zlib)
-source=(https://www.libssh2.org/download/$name-$version.tar.gz)
+source=(security_fixes-1.patch
+   https://www.libssh2.org/download/$name-$version.tar.gz)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../security_fixes-1.patch
+}
 
 package() {
 rm $PKG/usr/lib/libssh2.la
-}
-
-uptodate() {
-local url ext
-url="https://www.libssh2.org/download/"
-ext=".tar.gz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url?C=M\;O=A|grep $name-[0-9]|grep [0-9]$ext$| \
-sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
 }
