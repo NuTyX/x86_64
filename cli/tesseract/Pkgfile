@@ -1,0 +1,23 @@
+description='An OCR program'
+url='https://github.com/tesseract-ocr/tesseract'
+
+license="APACHE"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(curl libarchive leptonica icu pango asciidoc)
+
+name=tesseract
+version=5.5.2
+
+source=(https://github.com/tesseract-ocr/$name/archive/$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+  make training
+  make DESTDIR=$PKG install
+}

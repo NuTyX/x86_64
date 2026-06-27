@@ -1,0 +1,25 @@
+description='Software that is broadly useful for image processing and image analysis applications'
+url='http://www.leptonica.com'
+
+license='custom'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(libpng libtiff libjpeg-turbo giflib libwebp openjpeg)
+
+name=leptonica
+version=1.87.0
+release=1
+
+source=(https://github.com/DanBloomberg/$name/archive/$version/$name-$version.tar.gz)
+
+prepare() {
+  cd $name-$version
+  ./autogen.sh
+}
+
+package() {
+  install -Dm0644 $name-$version/leptonica-license.txt \
+  -t $PKG/usr/share/licenses/leptonica/
+}
