@@ -3,13 +3,13 @@ url="https://gitlab.gnome.org/GNOME/gspell"
 
 license="LGPL2-1-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(glib iso-codes gtk3 enchant)
 
 name=gspell
-version=1.14.3
+version=1.14.4
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
