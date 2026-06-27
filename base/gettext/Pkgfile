@@ -4,8 +4,8 @@ url="https://www.gnu.org/software/gettext/"
 license="GPL3"
 
 maintainer="Ulrich Drepper"
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Spiky"
 
 set=(devel core)
 
@@ -13,6 +13,7 @@ makedepends=(acl attr ncurses)
 
 name=gettext
 version=1.0
+release=2
 
 PKGMK_LOCALES=()
 
