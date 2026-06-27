@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/glib/"
 
 license="LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Spiky"
 
 alias=(glib2)
 
@@ -15,11 +15,12 @@ PKGMK_GROUPS=(man devel doc )
 
 name=glib
 version=2.88.2
+release=2
 
 giversion=1.86.0
 
 source=(https://download.gnome.org/sources/gobject-introspection/${giversion:0:4}/gobject-introspection-$giversion.tar.xz
-        https://download.sourceforge.net/nutyx/background-nutyx-0.0.2.tar.xz
+        https://download.sourceforge.net/nutyx/background-nutyx-0.0.3.tar.xz
         https://download.gnome.org/sources/glib/${version:0:4}/$name-$version.tar.xz
         glib-skip_warnings-1.patch)
 
