@@ -9,11 +9,11 @@ lrwxrwxrwx	root/root	usr/lib/libplasmapotdprovidercore.so -> libplasmapotdprovid
 lrwxrwxrwx	root/root	usr/lib/libplasmapotdprovidercore.so.2 -> libplasmapotdprovidercore.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libplasmapotdprovidercore.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libplasmaweatherdata.so -> libplasmaweatherdata.so.6
-lrwxrwxrwx	root/root	usr/lib/libplasmaweatherdata.so.6 -> libplasmaweatherdata.so.6.7.0
--rwxr-xr-x	root/root	usr/lib/libplasmaweatherdata.so.6.7.0
+lrwxrwxrwx	root/root	usr/lib/libplasmaweatherdata.so.6 -> libplasmaweatherdata.so.6.7.1
+-rwxr-xr-x	root/root	usr/lib/libplasmaweatherdata.so.6.7.1
 lrwxrwxrwx	root/root	usr/lib/libplasmaweatherion.so -> libplasmaweatherion.so.6
-lrwxrwxrwx	root/root	usr/lib/libplasmaweatherion.so.6 -> libplasmaweatherion.so.6.7.0
--rwxr-xr-x	root/root	usr/lib/libplasmaweatherion.so.6.7.0
+lrwxrwxrwx	root/root	usr/lib/libplasmaweatherion.so.6 -> libplasmaweatherion.so.6.7.1
+-rwxr-xr-x	root/root	usr/lib/libplasmaweatherion.so.6.7.1
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/kf6/
@@ -57,6 +57,8 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.timer.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.userswitcher.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.weather.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.webbrowser.so
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/applets/org.kde.plasma_applet_dict.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/weather_ions/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/weather_ions/bbcukmet.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/plasma/weather_ions/dwd.so
@@ -87,6 +89,11 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/alternatecalendarcon
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/alternatecalendarconfig/libplasmacalendaralternatecalendarconfig.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/alternatecalendarconfig/plasmacalendaralternatecalendarconfig.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/alternatecalendarconfig/qmldir
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/dict/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/dict/dictplugin.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/dict/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/dict/libdictplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/dict/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/plasma/private/fifteenpuzzle/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/fifteenpuzzle/fifteenpuzzleplugin.qmltypes
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/plasma/private/fifteenpuzzle/kde-qmlmodule.version
