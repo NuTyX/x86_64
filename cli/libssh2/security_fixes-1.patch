@@ -1,0 +1,157 @@
+Submitted By:            Douglas R. Reno <renodr at linuxfromscratch dot org>
+Date:                    2026-06-24
+Initial Package Version: 1.11.1
+Upstream Status:         Applied
+Origin:                  Upstream commits 2dae3024, 17626857, and 97acf3df with
+                         modifications to 2dae3024 to allow it to compile with
+                         libssh2-1.11.1 as a base.
+Description:             Fixes CVE-2026-55200, CVE-2025-15661, as well as
+                         CVE-2026-55199. CVE-2026-55200 is rated as Critical and
+                         is an extremely easy to exploit remote code execution
+                         vulnerability that is under active exploitation with a
+                         proof of concept available. This should be classified
+                         as an emergency. The NHS Digital Cybersecurity Team
+                         discovered and reported these issues upstream, more
+                         information can be found at
+                         https://digital.nhs.uk/cyber-alerts/2026/cc-4799
+                         NOTE: In terms of modifications, I followed the advice
+                         of Debian Security (who is also preparing patches) at
+                         https://github.com/libssh2/libssh2/issues/2125 and
+                         swapped the UNCONST cast with 'buf.data = data;'.
+
+diff -Naurp libssh2-1.11.1.orig/src/packet.c libssh2-1.11.1/src/packet.c
+--- libssh2-1.11.1.orig/src/packet.c	2024-10-16 03:03:21.000000000 -0500
++++ libssh2-1.11.1/src/packet.c	2026-06-24 14:01:51.553890572 -0500
+@@ -868,8 +868,10 @@ _libssh2_packet_add(LIBSSH2_SESSION * se
+ 
+                     nr_extensions -= 1;
+ 
+-                    _libssh2_get_string(&buf, &name, &name_len);
+-                    _libssh2_get_string(&buf, &value, &value_len);
++                    if(_libssh2_get_string(&buf, &name, &name_len))
++                       break;
++                    if (_libssh2_get_string(&buf, &value, &value_len))
++                       break;
+ 
+                     if(name && value) {
+                         _libssh2_debug((session,
+diff -Naurp libssh2-1.11.1.orig/src/sftp.c libssh2-1.11.1/src/sftp.c
+--- libssh2-1.11.1.orig/src/sftp.c	2024-10-16 03:03:21.000000000 -0500
++++ libssh2-1.11.1/src/sftp.c	2026-06-24 13:59:57.760596914 -0500
+@@ -3795,15 +3795,19 @@ static int sftp_symlink(LIBSSH2_SFTP *sf
+ {
+     LIBSSH2_CHANNEL *channel = sftp->channel;
+     LIBSSH2_SESSION *session = channel->session;
+-    size_t data_len = 0, link_len;
++    size_t data_len = 0, lk_len;
+     /* 13 = packet_len(4) + packet_type(1) + request_id(4) + path_len(4) */
+     ssize_t packet_len =
+         path_len + 13 +
+         ((link_type == LIBSSH2_SFTP_SYMLINK) ? (4 + target_len) : 0);
+     unsigned char *s, *data = NULL;
++    struct string_buf buf;
+     static const unsigned char link_responses[2] =
+         { SSH_FXP_NAME, SSH_FXP_STATUS };
+     int retcode;
++    unsigned char packet_type;
++    uint32_t tmp_u32;
++    unsigned char *lk_target;
+ 
+     if(sftp->symlink_state == libssh2_NB_state_idle) {
+         sftp->last_errno = LIBSSH2_FX_OK;
+@@ -3891,8 +3895,23 @@ static int sftp_symlink(LIBSSH2_SFTP *sf
+ 
+     sftp->symlink_state = libssh2_NB_state_idle;
+ 
+-    if(data[0] == SSH_FXP_STATUS) {
+-        retcode = _libssh2_ntohu32(data + 5);
++    buf.data = data;
++    buf.dataptr = buf.data;
++    buf.len = data_len;
++
++    if (_libssh2_get_byte(&buf, &packet_type)) {
++        LIBSSH2_FREE(session, data);
++        return _libssh2_error(session, LIBSSH2_ERROR_SFTP_PROTOCOL,
++                              "SFTP Protocol Error (type)");
++    }
++    if (packet_type == SSH_FXP_STATUS) {
++        if (_libssh2_get_u32(&buf, &tmp_u32)) {
++          LIBSSH2_FREE(session, data);
++          return _libssh2_error(session, LIBSSH2_ERROR_SFTP_PROTOCOL,
++                                "SFTP Protocol Error (code)");
++        }
++
++        retcode = (int)tmp_u32;
+         LIBSSH2_FREE(session, data);
+         if(retcode == LIBSSH2_FX_OK)
+             return LIBSSH2_ERROR_NONE;
+@@ -3903,30 +3922,37 @@ static int sftp_symlink(LIBSSH2_SFTP *sf
+         }
+     }
+ 
+-    if(_libssh2_ntohu32(data + 5) < 1) {
++    /* advance past id */
++    if(_libssh2_get_u32(&buf, &tmp_u32)) {
++        LIBSSH2_FREE(session, data);
++        return _libssh2_error(session, LIBSSH2_ERROR_SFTP_PROTOCOL,
++                              "SFTP Protocol Error (id)");
++    }
++
++    /* look for at least one link */
++    if(_libssh2_get_u32(&buf, &tmp_u32) || tmp_u32 < 1) {
+         LIBSSH2_FREE(session, data);
+         return _libssh2_error(session, LIBSSH2_ERROR_SFTP_PROTOCOL,
+                               "Invalid READLINK/REALPATH response, "
+                               "no name entries");
+     }
+ 
+-    if(data_len < 13) {
+-        if(data_len > 0) {
+-            LIBSSH2_FREE(session, data);
+-        }
++    if(_libssh2_get_string(&buf, &lk_target, &lk_len) == LIBSSH2_ERROR_NONE) {
++       if (lk_len < target_len) {
++          memcpy(target, lk_target, lk_len);
++          target[lk_len] = '\0';
++          retcode = (int)lk_len;
++       }
++       else {
++          retcode = LIBSSH2_ERROR_BUFFER_TOO_SMALL;
++       }
++    }
++    else {
++        LIBSSH2_FREE(session, data);
+         return _libssh2_error(session, LIBSSH2_ERROR_SFTP_PROTOCOL,
+-                              "SFTP stat packet too short");
++                              "SFTP Protocol Error (filename)");
+     }
+ 
+-    /* this reads a u32 and stores it into a signed 32bit value */
+-    link_len = _libssh2_ntohu32(data + 9);
+-    if(link_len < target_len) {
+-        memcpy(target, data + 13, link_len);
+-        target[link_len] = 0;
+-        retcode = (int)link_len;
+-    }
+-    else
+-        retcode = LIBSSH2_ERROR_BUFFER_TOO_SMALL;
+     LIBSSH2_FREE(session, data);
+ 
+     return retcode;
+diff -Naurp libssh2-1.11.1.orig/src/transport.c libssh2-1.11.1/src/transport.c
+--- libssh2-1.11.1.orig/src/transport.c	2024-10-16 03:03:21.000000000 -0500
++++ libssh2-1.11.1/src/transport.c	2026-06-24 14:02:47.746506183 -0500
+@@ -639,8 +639,12 @@ int _libssh2_transport_read(LIBSSH2_SESS
+                 total_num = 4;
+ 
+                 p->packet_length = _libssh2_ntohu32(block);
+-                if(p->packet_length < 1)
++                if(p->packet_length < 1) {
+                     return LIBSSH2_ERROR_DECRYPT;
++                }
++                else if (p->packet_length > LIBSSH2_PACKET_MAXPAYLOAD) {
++                   return LIBSSH2_ERROR_OUT_OF_BOUNDARY;
++                }
+ 
+                 /* total_num may include size field, however due to existing
+                  * logic it needs to be removed after the entire packet is read
