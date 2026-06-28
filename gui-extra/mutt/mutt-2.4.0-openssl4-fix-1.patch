@@ -1,0 +1,25 @@
+Submitted By:            Joe Locash <jlocash at gmail dot com>
+Date:                    2026-06-13
+Initial Package Version: 2.3.3
+Upstream Status:         Not submitted
+Origin:                  Self
+Update:                  Updated for version 2.4.0
+Description:             Fix building with openssl-4
+
+diff -Nuarp mutt-2.4.0.orig/mutt_ssl.c mutt-2.4.0/mutt_ssl.c
+--- mutt-2.4.0.orig/mutt_ssl.c	2026-06-12 01:03:22.000000000 -0400
++++ mutt-2.4.0/mutt_ssl.c	2026-06-21 15:33:32.182440797 -0400
+@@ -983,10 +983,10 @@ static int check_host(X509 *x509cert, co
+       if (subj_alt_name->type == GEN_DNS)
+       {
+         has_dns_entry = 1;
+-        if (subj_alt_name->d.ia5->length >= 0 &&
+-            mutt_strlen((char *)subj_alt_name->d.ia5->data) == (size_t)subj_alt_name->d.ia5->length &&
++        if (ASN1_STRING_length(subj_alt_name->d.ia5) >= 0 &&
++            mutt_strlen((char *)ASN1_STRING_get0_data(subj_alt_name->d.ia5)) == (size_t)(ASN1_STRING_length(subj_alt_name->d.ia5)) &&
+             (match_found = hostname_match(hostname_ascii,
+-                                          (char *)(subj_alt_name->d.ia5->data))))
++                                          (char *)(ASN1_STRING_get0_data(subj_alt_name->d.ia5)))))
+         {
+           break;
+         }

@@ -9,15 +9,15 @@ makedepends=(aspell aspell-dict cyrus-sasl gnupg gpgme libidn
 run=(shadow sqlite)
 
 name=mutt
-version=2.3.3
-_version=2.3.3
+version=2.4.0
+_version=2.4.0
 
 source=(http://ftp.mutt.org/pub/mutt/mutt-$version.tar.gz
-        mutt-2.3.3-openssl4-fix-1.patch)
+        mutt-2.4.0-openssl4-fix-1.patch)
 
 prepare() {
 cd $name-$version
-patch -Np1 -i ../mutt-2.3.3-openssl4-fix-1.patch
+patch -Np1 -i ../mutt-2.4.0-openssl4-fix-1.patch
 }
  
 build() {
