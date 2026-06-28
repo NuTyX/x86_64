@@ -3,15 +3,14 @@ url="https://github.com/AyatanaIndicators/libayatana-indicator"
 
 license="GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(extra-cmake-modules gobject-introspection vala)
 run=(gtk3 glib ayatana-ido)
 
 name=libayatana-indicator
-version=0.9.4
-release=3
+version=0.9.5
 
 prepare() {
 git clone https://github.com/AyatanaIndicators/libayatana-indicator.git
