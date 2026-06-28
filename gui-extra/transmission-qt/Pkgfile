@@ -1,15 +1,15 @@
 description="Light and fast Bittorent client (QT Interface)"
 url="http://www.transmissionbt.com/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Alienus,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Alienus,Remy,Tnut"
 
 makedepends=(e2fsprogs kerberos intltool curl
              libevent openssl qt6-base qt6-tools qt6-svg doxygen gdb)
 run=(desktop-file-utils gtk-update-icon-cache)
 
 name=transmission-qt
-version=4.1.1
+version=4.1.2
 
 source=(https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz
         miniupnp.patch)
