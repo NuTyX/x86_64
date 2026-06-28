@@ -3,14 +3,13 @@ url="https://exiv2.org"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 contributor="Jayce, Spiky"
 
 makedepends=(meson ninja exiv2 vala gobject-introspection)
 
 name=gexiv2
-version=0.16.0
-release=1
+version=0.16.1
 
 source=(https://download.gnome.org/sources/${name/lib/}/${version%.*}/${name/lib/}-$version.tar.xz)
 PKGMK_MESON_OPTIONS="-D python3=false"
