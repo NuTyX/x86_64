@@ -1,0 +1,47 @@
+description='The OpenTimelineIO package contains an interchange format and API for editorial cut information.'
+url='http://opentimeline.io/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(cmake git imath python-build python-packaging python-installer python-setuptools python-wheel)
+run=(python)
+
+name=opentimeline
+version=0.18.1
+
+source=(https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v${version}/OpenTimelineIO-$version.tar.gz)
+
+prepare() {
+  cd OpenTimelineIO-${version}
+  
+  git clone https://github.com/Tencent/rapidjson src/deps/rapidjson
+
+  git clone https://github.com/pybind/pybind11 src/deps/pybind11
+
+  git clone https://github.com/AcademySoftwareFoundation/Imath src/deps/Imath
+
+  sed -e '/cmake/d' -i pyproject.toml
+}
+
+build() {
+    cmake -B build -S OpenTimelineIO-${version} -DCMAKE_INSTALL_PREFIX=/usr -DOTIO_FIND_IMATH=ON -DOTIO_AUTOMATIC_SUBMODULES=OFF -DOTIO_DEPENDENCIES_INSTALL=OFF
+
+  cmake --build build
+
+  export CXXFLAGS+=" -I/usr/include/Imath"
+
+  cd OpenTimelineIO-${version}
+
+  python3 -m build --wheel --no-isolation
+}
+
+package() {
+  DESTDIR="$PKG" cmake --install build
+
+  cd OpenTimelineIO-${version}
+
+  python3 -m installer --destdir="$PKG" dist/*.whl
+
+  rm -fr "$PKG"/build
+}
