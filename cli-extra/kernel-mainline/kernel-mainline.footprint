@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-7.1.0-rc6-1-nutyx
--rw-r--r--	root/root	boot/config-7.1.0-rc6-1-nutyx
+-rw-r--r--	root/root	boot/System.map-7.2.0-rc1-1-nutyx
+-rw-r--r--	root/root	boot/config-7.2.0-rc1-1-nutyx
 -rw-r--r--	root/root	boot/kernel-mainline
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/7.1.0-rc6-1-nutyx -> kernel-mainline
+lrwxrwxrwx	root/root	usr/lib/modules/7.2.0-rc1-1-nutyx -> kernel-mainline
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel-mainline/build -> /usr/src/kernel-mainline
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/
@@ -89,7 +89,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/async_tx/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/echainiv.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/ecrdsa_generic.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/essiv.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/fcrypt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/gcm.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/geniv.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/hctr2.ko.zst
@@ -97,11 +96,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/krb5/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/krb5/krb5.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/krb5enc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/lrw.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/lz4.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/lz4hc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/md4.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/mldsa.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/pcbc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/pcrypt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/rmd160.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/crypto/seqiv.ko.zst
@@ -278,9 +275,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/ath3k.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/bcm203x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/bfusb.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/bluecard_cs.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/bpa10x.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/bt3c_cs.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/btbcm.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/btintel.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/btintel_pcie.ko.zst
@@ -295,7 +290,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/btrtl.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/btsdio.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/btusb.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/dtl1_cs.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/hci_bcm4377.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/hci_nokia.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/bluetooth/hci_uart.ko.zst
@@ -317,7 +311,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/agp/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/agp/intel-gtt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/agp/sis-agp.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/agp/via-agp.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/applicom.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/hangcheck-timer.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/hw_random/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/char/hw_random/amd-rng.ko.zst
@@ -581,6 +574,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/dfl-n3000-nios.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/dfl-pci.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/dfl.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/efinix-spi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/fpga-bridge.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/fpga-mgr.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/fpga/fpga-region.ko.zst
@@ -641,6 +635,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-amdpt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-arizona.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-bd9571mwv.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-by-pinctrl.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-cgbc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-cros-ec.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-da9052.ko.zst
@@ -704,6 +699,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-viperboard.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-virtio.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-vx855.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-waveshare-dsi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-wcd934x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-wcove.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpio/gpio-winbond.ko.zst
@@ -723,9 +719,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/amd/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/ast/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/ast/ast.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/bridge/
-drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/bridge/analogix/
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/bridge/analogix/analogix-anx78xx.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/bridge/analogix/analogix_dp.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/bridge/tda998x.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/display/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst
@@ -761,6 +754,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/nouv
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/nouveau/sil164.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/panel/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/panel/panel-auo-a030jtn01.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/panel/panel-focaltech-ota7290b.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/panel/panel-ilitek-ili9341.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/panel/panel-orisetech-ota5601a.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/panel/panel-raspberrypi-touchscreen.ko.zst
@@ -772,12 +766,18 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/rade
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/scheduler/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/st7571-i2c.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/st7571-spi.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/st7571.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/st7586.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/st7735r.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sitronix/st7920.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/solomon/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/solomon/ssd130x-i2c.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/solomon/ssd130x-spi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/solomon/ssd130x.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sysfb/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/sysfb/corebootdrm.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/tiny/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/tiny/appletbdrm.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/gpu/drm/tiny/bochs.ko.zst
@@ -899,6 +899,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/amd-sfh-
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-primax.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-prodikeys.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-pxrc.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-rakk.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-rapoo.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-razer.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hid/hid-redragon.ko.zst
@@ -1001,6 +1002,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/amc6821.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/applesmc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/aquacomputer_d5next.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/arctic_fan_controller.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/as370-hwmon.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/asb100.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/asc7621.ko.zst
@@ -1024,6 +1026,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/ds1621.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/ds620.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/emc1403.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/emc1812.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/emc2103.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/emc2305.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/emc6w201.ko.zst
@@ -1095,6 +1098,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/ltc4260.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/ltc4261.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/ltc4282.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/ltc4283.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/max1111.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/max127.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/max16065.ko.zst
@@ -1212,6 +1216,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/pmbus/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/pmbus/zl6100.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/powerz.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/powr1220.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/prom21-xhci.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/pt5161l.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/pwm-fan.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/hwmon/qnap-mcu-hwmon.ko.zst
@@ -1430,6 +1435,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad4130.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad4134.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad4170-4.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad4691.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad4695.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad4851.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/adc/ad7091r-base.ko.zst
@@ -1628,6 +1634,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5686-spi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5686.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5696-i2c.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5706r.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5755.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5758.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/dac/ad5761.ko.zst
@@ -1783,6 +1790,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/apds9300.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/apds9306.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/apds9960.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/apds9999.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/as73211.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/bh1745.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/bh1750.ko.zst
@@ -1834,6 +1842,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/vcnl4000.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/vcnl4035.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/veml3235.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/veml3328.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/veml6030.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/veml6040.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/light/veml6046x00.ko.zst
@@ -1855,6 +1864,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetom
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/mag3110.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/mmc35240.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/mmc5633.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/mmc5983.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/rm3100-core.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/rm3100-i2c.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/magnetometer/rm3100-spi.ko.zst
@@ -1972,7 +1982,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/temperat
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/temperature/tsys02d.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/trigger/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/trigger/iio-trig-hrtimer.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/trigger/iio-trig-interrupt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/trigger/iio-trig-loop.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/iio/trigger/iio-trig-sysfs.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/
@@ -1981,6 +1990,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/c
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/ib_core.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/ib_umad.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/ib_uverbs.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/ib_uverbs_support.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/iw_cm.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/rdma_cm.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/infiniband/core/rdma_ucm.ko.zst
@@ -2164,7 +2174,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/mc13783-pwrbutton.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/mma8450.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/palmas-pwrbutton.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/pcap_keys.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/pcf8574_keypad.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/pcspkr.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/misc/powermate.ko.zst
@@ -2276,7 +2285,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchs
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/msg2638.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/mtouch.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/novatek-nvt-ts.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/pcap_ts.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/penmount.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/pixcir_i2c_ts.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/raydium_i2c_ts.ko.zst
@@ -2302,6 +2310,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchs
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/usbtouchscreen.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/wacom_i2c.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/wacom_w8001.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/wacom_w9000.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/wdt87xx_i2c.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/wm831x-ts.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/input/touchscreen/wm97xx-ts.ko.zst
@@ -2332,6 +2341,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/flash/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-88pm860x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-adp5520.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-apu.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-as3668.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-aw200xx.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-bd2606mvv.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/leds/leds-bd2802.ko.zst
@@ -2427,6 +2437,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/bcache/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-era.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-flakey.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-historical-service-time.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-inlinecrypt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-integrity.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-io-affinity.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/md/dm-log-userspace.ko.zst
@@ -2626,6 +2637,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/firewi
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/ad5820.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/adp1653.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/adv7511-v4l2.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/adv7604.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/adv7842.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/ak7375.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/alvium-csi2.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/i2c/aptina-pll.ko.zst
@@ -2762,6 +2776,8 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/bt
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/bt8xx/dst.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/bt8xx/dst_ca.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/bt8xx/dvb-bt8xx.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/cobalt/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/cobalt/cobalt.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/cx18/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/cx18/cx18-alsa.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/cx18/cx18.ko.zst
@@ -2786,6 +2802,8 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/dm
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/dm1105/dm1105.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/dt3155/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/dt3155/dt3155.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/hws/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/hws/hws.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/intel/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/intel/ipu-bridge.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/intel/ipu3/
@@ -2844,6 +2862,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/tw
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/tw686x/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/pci/tw686x/tw686x.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/amd/
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/amd/isp4/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/amd/isp4/amd_isp4_capture.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/cadence/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/cadence/cdns-csi2rx.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/media/platform/cadence/cdns-csi2tx.ko.zst
@@ -3372,7 +3393,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/altera-stapl/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/altera-stapl/altera-stapl.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/apds9802als.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/apds990x.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/bcm-vk/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/bcm-vk/bcm_vk.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/misc/bh1770glc.ko.zst
@@ -3493,22 +3513,32 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/most/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/most/most_usb.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/cfi_cmdset_0002.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/cfi_probe.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/cfi_util.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/chipreg.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/gen_probe.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/chips/map_rom.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/devices/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/devices/block2mtd.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/devices/mtd_intel_dg.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/devices/mtdram.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/devices/phram.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/hyperbus/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/hyperbus/hyperbus-core.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/lpddr/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/lpddr/lpddr_cmds.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/lpddr/qinfo_probe.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/maps/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/maps/map_funcs.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/mtd.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/mtd_blkdevs.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/mtdblock.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/mtdpstore.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/nandcore.ko.zst
-drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/raw/
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/raw/nand.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/raw/nandsim.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/spi/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/nand/spi/spinand.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/spi-nor/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/spi-nor/spi-nor.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/mtd/ubi/
@@ -3522,14 +3552,10 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/amt.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/arc-rawmode.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/arc-rimi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/arcnet.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/capmode.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/com20020-pci.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/com20020.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/com20020_cs.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/com90io.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/com90xx.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/rfc1051.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/arcnet/rfc1201.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/bareudp.ko.zst
@@ -3601,6 +3627,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/can/usb/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/can/usb/ucan.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/can/usb/usb_8dev.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/can/vcan.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/can/virtio_can.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/can/vxcan.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/dsa/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/dsa/b53/
@@ -3970,7 +3997,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/wiznet/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/wiznet/w5100-spi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/wiznet/w5100.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/wiznet/w5300.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/xilinx/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/xilinx/ll_temac.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/ethernet/xilinx/xilinx_emac.ko.zst
@@ -4039,7 +4065,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/pcs/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/adin.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/adin1100.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/air_an8801.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/air_en8811h.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/air_phy_lib.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/amd.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/aquantia/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/phy/aquantia/aquantia.ko.zst
@@ -4446,6 +4474,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_8852cu.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_8922a.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_8922ae.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_8922au.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_core.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_pci.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/net/wireless/realtek/rtw89/rtw89_usb.ko.zst
@@ -4629,6 +4658,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/motorola
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/phy-can-transceiver.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/phy-google-usb.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/phy-lgm-usb.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/phy-nxp-tja1145.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/qualcomm/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/qualcomm/phy-qcom-usb-hs.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/phy/qualcomm/phy-qcom-usb-hsic.ko.zst
@@ -4645,6 +4675,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/inte
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-broxton.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-cannonlake.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-cedarfork.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-cherryview.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-denverton.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-elkhartlake.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/pinctrl/intel/pinctrl-emmitsburg.ko.zst
@@ -4754,6 +4785,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/alienware-wmi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/dcdbas.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/dell-dw5826e-reset.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/dell-laptop.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/dell-lis3lv02d.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/dell/dell-pc.ko.zst
@@ -4788,7 +4820,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/atomisp2/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/atomisp2/intel_atomisp2_led.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/atomisp2/intel_atomisp2_pm.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/ifs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/ifs/intel_ifs.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/int1092/
@@ -4818,6 +4849,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmc/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmc/intel_pmc_core.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmc/intel_pmc_core_pltdrv.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmc/intel_pmc_pwrm_telemetry.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmc/intel_pmc_ssram_telemetry.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmt/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/platform/x86/intel/pmt/pmt_class.ko.zst
@@ -4987,6 +5019,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/sbs-manager.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/smb347-charger.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/stc3117_fuel_gauge.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/surface-rt-ec.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/surface_battery.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/surface_charger.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/power/supply/test_power.ko.zst
@@ -5118,7 +5151,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/mt6397-regulator.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/palmas-regulator.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/pca9450-regulator.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/pcap-regulator.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/pf0900-regulator.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/pf9453-regulator.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/regulator/pv88060-regulator.ko.zst
@@ -5236,7 +5268,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-mt6397.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-nct6694.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-palmas.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-pcap.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-pcf2123.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-pcf2127.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/rtc/rtc-pcf85063.ko.zst
@@ -5482,6 +5513,13 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/iio/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/iio/impedance-analyzer/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/iio/impedance-analyzer/ad5933.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/atomisp.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/i2c/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/i2c/atomisp-gc2235.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/i2c/atomisp-ov2722.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/pci/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/atomisp/pci/atomisp_gmin_platform.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/av7110/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/av7110/dvb-ttpci.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/av7110/sp8870.ko.zst
@@ -5490,6 +5528,8 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/medi
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/ipu7/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/ipu7/intel-ipu7-isys.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/ipu7/intel-ipu7.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/max96712/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/media/max96712/max96712.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/most/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/most/net/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/most/net/most_net.ko.zst
@@ -5497,6 +5537,10 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/most
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/most/video/most_video.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/rtl8723bs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/rtl8723bs/r8723bs.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/vme_user/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/vme_user/vme_fake.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/vme_user/vme_tsi148.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/staging/vme_user/vme_user.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/target/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/target/iscsi/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/target/iscsi/cxgbit/
@@ -5552,6 +5596,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/thermal/test
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/thermal/thermal-generic-adc.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/thunderbolt/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/thunderbolt/thunderbolt.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/thunderbolt/thunderbolt_stream.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/ipwireless/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/ipwireless/ipwireless.ko.zst
@@ -5565,6 +5610,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_dfl.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_dw.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_exar.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_keba.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_lpss.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_men_mcb.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8250/8250_mid.ko.zst
@@ -5579,6 +5625,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/8
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/fsl_lpuart.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/jsm/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/jsm/jsm.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/lantiq.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/max3100.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/max310x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/tty/serial/men_z135_uart.ko.zst
@@ -5623,10 +5670,9 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/atm/
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/c67x00/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/c67x00/c67x00.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/cdns-usb-common.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/cdns.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/cdns3-pci-wrap.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/cdns3.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/cdnsp-udc-pci.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/cdns3/cdnsp-pci.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/chipidea/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/chipidea/ci_hdrc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/usb/chipidea/ci_hdrc_msm.ko.zst
@@ -5974,6 +6020,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backli
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/lp8788_bl.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/ltv350qv.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/lv5207lp.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/max25014.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/max8925_bl.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/mp3309c.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/video/backlight/mt6370-backlight.ko.zst
@@ -6063,6 +6110,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/eurotechwdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/exar_wdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/f71808e_wdt.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/gpio_wdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/hpwdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/i6300esb.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/iTCO_wdt.ko.zst
@@ -6075,7 +6123,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/kempld_wdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/lenovo_se10_wdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/lenovo_se30_wdt.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/machzwd.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/max63xx_wdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/mei_wdt.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/drivers/watchdog/mena21_wdt.ko.zst
@@ -6278,6 +6325,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/client/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/client/cifs.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/common/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/common/cifs_md4.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/common/smb_compress.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/server/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/server/ksmbd.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/fs/smb/smbdirect/
@@ -6318,7 +6366,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/lib/crypto/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/lib/crypto/libnh.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/lib/lru_cache.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/lib/lz4/
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/lib/lz4/lz4_compress.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/lib/lz4/lz4hc_compress.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/lib/math/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/lib/math/cordic.ko.zst
@@ -6363,8 +6410,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/9p/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/9p/9pnet_usbg.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/9p/9pnet_virtio.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/9p/9pnet_xen.ko.zst
-drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/appletalk/
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/appletalk/appletalk.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/atm/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/atm/atm.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/atm/br2684.ko.zst
@@ -6436,6 +6481,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_mtk.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_mxl-gsw1xx.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_mxl862xx.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_netc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_none.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_ocelot.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/dsa/tag_ocelot_8021q.ko.zst
@@ -6499,6 +6545,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/netfilter/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_bbr.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_bic.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_cdg.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_cubic.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_dctcp.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_diag.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/ipv4/tcp_highspeed.ko.zst
@@ -6571,6 +6618,8 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/l2tp/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/l2tp/l2tp_ip6.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/l2tp/l2tp_netlink.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/l2tp/l2tp_ppp.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/lapb/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/lapb/lapb.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/llc/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/llc/llc.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/llc/llc2.ko.zst
@@ -6647,7 +6696,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/ipvs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nf_nat_tftp.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nf_synproxy_core.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nf_tables.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nfnetlink.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nfnetlink_acct.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nfnetlink_cthelper.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/netfilter/nfnetlink_cttimeout.ko.zst
@@ -6896,6 +6944,8 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/vmw_vsock/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/vmw_vsock/vsock_loopback.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/wireless/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/wireless/cfg80211.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/x25/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/x25/x25.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/xdp/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/net/xdp/xsk_diag.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/net/xfrm/
@@ -7167,6 +7217,8 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp/snd-amd-sdw-acpi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp/snd-soc-acpi-amd-match.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp/snd-soc-acpi-amd-sdca-quirks.ko.zst
+drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp7x/
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp7x/snd-pci-acp7x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/acp_audio_dma.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/ps/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/amd/ps/snd-pci-ps.ko.zst
@@ -7276,6 +7328,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs42l83-i2c.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs42l84.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs42xx8-spi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs43130.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-cs4341.ko.zst
@@ -7301,6 +7354,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-es8375.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-es8389.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-es83xx-dsm-common.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-es9356.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-fs-amp-lib.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-fs210x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-gtm601.ko.zst
@@ -7336,6 +7390,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-mt6358.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-mt6660.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-nau8315.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-nau8325.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-nau8540.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-nau8810.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-nau8821.ko.zst
@@ -7438,6 +7493,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-sta32x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-sta350.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-sti-sas.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tac5xx2-sdw.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas2552.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas2562.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas2764.ko.zst
@@ -7453,6 +7509,7 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas5720.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas5805m.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas6424.ko.zst
+-rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tas675x.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tda7419.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tfa9879.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel-mainline/kernel/sound/soc/codecs/snd-soc-tfa989x.ko.zst

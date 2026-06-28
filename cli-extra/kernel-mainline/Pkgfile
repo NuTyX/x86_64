@@ -16,7 +16,7 @@ PKGMK_GROUPS=(devel doc)
 PKGMK_KEEP_SOURCES="no"
 
 name=kernel-mainline
-version=7.1-rc6
+version=7.2-rc1
 SUFFIX="${name/*-/}"
 INITRD="initrd-$SUFFIX"
 KERNEL="$name"
@@ -91,6 +91,7 @@ echo "mkinitramfs $KERNELRELEASE
 rm -f boot/$INITRD
 mv boot/initrd-$KERNELRELEASE boot/$INITRD" > $PKGMK_ROOT/$name.post-install
 
+# post-remove autogen
 echo "rm -f boot/$INITRD" > $PKGMK_ROOT/$name.post-remove
 }
 devel() {
