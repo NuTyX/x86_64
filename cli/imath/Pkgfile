@@ -1,0 +1,26 @@
+description='Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics. '
+url='https://openexr.com/en/latest/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(cmake boost python-numpy)
+
+name=imath
+version=3.2.2
+
+source=(https://github.com/AcademySoftwareFoundation/Imath/releases/download/v${version}/Imath-$version.tar.gz)
+
+build() {
+cd Imath-$version
+mkdir build
+cd    build
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D PYTHON=ON                 \
+      ..
+make
+
+DESTDIR=$PKG make install
+}
