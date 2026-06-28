@@ -1,13 +1,14 @@
 description="An high dynamic-range image file format library"
 url="https://www.openexr.org"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Spiky"
 
-makedepends=(cmake boost)
+makedepends=(cmake boost imath)
 
 name=openexr
 version=3.4.13
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 
@@ -22,12 +23,4 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr \
 
 make
 make DESTDIR=$PKG install
-}
-uptodate() {
-local url ext
-url="http://download.savannah.nongnu.org/releases/$name/"
-ext=".tar.gz"
-lynx -read_timeout=20 -dump -listonly -nonumbers \
-$url?C=M\;O=A|grep $name-[0-9]|grep [0-9]$ext$| \
-sed "s@$url$name-@@"|sed "s@$ext@@"|tail -1
 }
