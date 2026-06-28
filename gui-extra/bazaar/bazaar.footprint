@@ -5,7 +5,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bazaar-refresh-worker
 -rwxr-xr-x	root/root	usr/bin/bge-demo
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libbge-0.8.1.so
+lrwxrwxrwx	root/root	usr/lib/libbge.so -> libbge.so.0
+lrwxrwxrwx	root/root	usr/lib/libbge.so.0 -> libbge.so.0.8.4
+-rwxr-xr-x	root/root	usr/lib/libbge.so.0.8.4
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/io.github.kolunmi.Bazaar.service
