@@ -1,0 +1,35 @@
+description='NumPy is the fundamental package for scientific computing with Python.'
+url='https://openexr.com/en/latest/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(cython python-meson pyproject-metadata)
+
+name=python-numpy
+_name="numpy"
+alias=(${_name})
+
+version=2.5.0
+
+source=(https://files.pythonhosted.org/packages/source/n/${_name}/${_name}-$version.tar.gz)
+
+prepare() {
+mv ${_name}-$version ${name}-$version
+}
+
+build() {
+cd $name-$version
+
+ pip3 wheel -w dist \
+    --no-build-isolation \
+    --no-deps $PWD
+  pip3 install --no-index \
+    --find-links dist \
+    --no-cache-dir    \
+    --no-user         \
+    --root=$PKG       \
+    ${_name}
+
+ find $PKG -type d -name vendor -o -name tests |xargs rm -rf 
+}
