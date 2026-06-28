@@ -7,11 +7,11 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 makedepends=(cmake python ladspa frei0r-plugins libdv sdl-image libsamplerate sox rubberband
-             ffmpeg vid-stab qtsvg jack libexif swig movit eigen3 qt6-svg qt6-5compat)
+             ffmpeg vid-stab qtsvg jack libexif swig movit eigen3 qt6-svg qt6-5compat rnnoise)
 
 
 name=mlt
-version=7.38.0
+version=7.40.0
 
 source=(https://github.com/mltframework/mlt/releases/download/v${version}/mlt-$version.tar.gz)
 
