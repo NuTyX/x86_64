@@ -10,7 +10,7 @@ makedepends=(meson ninja xmlto libxslt polkit libxcrypt
 set=(gnome kde6)
 
 name=accountsservice
-version=26.13.3
+version=26.26.9
 
 PKGMK_GROUPS=(devel)
 PKGMK_MESON_OPTIONS="-D admin_group=wheel"
