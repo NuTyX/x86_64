@@ -3,8 +3,8 @@ url="https://apps.kde.org/kdenlive/"
 
 license="LGPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(qt6-base qt6-declarative qt6-multimedia qt6-networkauth qt6-tools
              qt6-svg extra-cmake-modules kdoctools karchive kbookmarks kcodecs
@@ -12,7 +12,7 @@ makedepends=(qt6-base qt6-declarative qt6-multimedia qt6-networkauth qt6-tools
              kdbusaddons kfilemetadata kguiaddons ki18n kiconthemes kio kitemviews
              knewstuff knotifications knotifyconfig ktextwidgets kwidgetsaddons
              kxmlgui mlt purpose ffmpeg kimageformats kddockwidgets
-             plasma-desktop doxygen)
+             plasma-desktop doxygen opentimeline)
 
 run=(shared-mime-info frei0r-plugins hicolor-icon-theme libmediainfo opencv
      python recordmydesktop qqc2-desktop-style)
@@ -20,7 +20,7 @@ run=(shared-mime-info frei0r-plugins hicolor-icon-theme libmediainfo opencv
 set=(kde6-gear)
 
 name=kdenlive
-version=25.12.3
+version=26.04.2
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
 
