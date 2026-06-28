@@ -3,16 +3,15 @@ url="https://github.com/AyatanaIndicators/libayatana-appindicator"
 
 license="GPL3 LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(extra-cmake-modules glib gtk3 gobject-introspection
              vala perl-xml-libxml)
 run=(libdbusmenu-gtk libayatana-indicator)
 
 name=libayatana-appindicator
-version=0.5.94
-release=2
+version=0.6.0
 
 source=(https://github.com/AyatanaIndicators/$name/archive/refs/tags/$version.tar.gz)
 
