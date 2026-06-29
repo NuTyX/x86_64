@@ -1,0 +1,1160 @@
+From 12c10f1fedd3a1895bfa23a4a16e2172237f3dd6 Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Sun, 6 Apr 2025 09:23:51 +0000
+Subject: [PATCH 1/7] - SFML template: Remove comments with invalid characters
+ (ticket #1523, thanks Dan Horak). Double quotes are not allowed inside
+ comments.
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13649 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit 7c8989cce81993d6c83b979e8d0763417f62ce89)
+---
+ src/templates/common/sfml.cbp | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/src/templates/common/sfml.cbp b/src/templates/common/sfml.cbp
+index f7d847416..f656d99eb 100644
+--- a/src/templates/common/sfml.cbp
++++ b/src/templates/common/sfml.cbp
+@@ -20,7 +20,6 @@
+ 			</Target>
+ 		</Build>
+ 		<Compiler>
+-			<!--<Add option="`pkg-config sfml --cflags`"/>-->
+ 		</Compiler>
+ 		<Linker>
+ 			<Add library="sfml-audio"/>
+@@ -28,7 +27,6 @@
+ 			<Add library="sfml-network"/>
+ 			<Add library="sfml-system"/>
+ 			<Add library="sfml-window"/>
+-			<!--<Add option="`pkg-config sfml --libs`"/>-->
+ 		</Linker>
+ 	</Project>
+ </CodeBlocks_project_file>
+-- 
+2.54.0
+
+
+From a4291c91b2448f89f330c46fb609573f15ee3700 Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Tue, 21 Oct 2025 11:34:49 +0000
+Subject: [PATCH 2/7] - NassiShneiderman: Do not link with unused boost_system
+ library (ticket #1563). The boost_system library has been removed in recent
+ boost, now it is a header-only library and part of C++11. Tested on Mint 18,
+ tHe autotools part will come later.
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13751 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit 1073dd2153ecaef1b26369e515207dc1523ec725)
+---
+ .../contrib/NassiShneiderman/NassiShneiderman_wx30-unix.cbp    | 3 ---
+ .../contrib/NassiShneiderman/NassiShneiderman_wx32-unix.cbp    | 3 ---
+ 2 files changed, 6 deletions(-)
+
+diff --git a/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx30-unix.cbp b/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx30-unix.cbp
+index 7300ceaf9..48aca35de 100644
+--- a/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx30-unix.cbp
++++ b/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx30-unix.cbp
+@@ -58,9 +58,6 @@
+ 			<Add option="-Wall" />
+ 			<Add option="-std=c++11" />
+ 		</Compiler>
+-		<Linker>
+-			<Add library="boost_system" />
+-		</Linker>
+ 		<Unit filename="CParser.cpp" />
+ 		<Unit filename="DataObject.cpp" />
+ 		<Unit filename="DataObject.h" />
+diff --git a/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx32-unix.cbp b/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx32-unix.cbp
+index fdb997a18..def7921f8 100644
+--- a/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx32-unix.cbp
++++ b/src/plugins/contrib/NassiShneiderman/NassiShneiderman_wx32-unix.cbp
+@@ -58,9 +58,6 @@
+ 			<Add option="-Wall" />
+ 			<Add option="-std=c++11" />
+ 		</Compiler>
+-		<Linker>
+-			<Add library="boost_system" />
+-		</Linker>
+ 		<Unit filename="CParser.cpp" />
+ 		<Unit filename="DataObject.cpp" />
+ 		<Unit filename="DataObject.h" />
+-- 
+2.54.0
+
+
+From a19531a51d85e45f43e04c54a4866a24962933b3 Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Tue, 21 Oct 2025 15:06:58 +0000
+Subject: [PATCH 3/7] - NassiShneiderman: Remove boost_system requirement from
+ autotools (ticket #1563). The plugin uses header-only boost libraries.
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13752 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit 576003121343859a25e050ef6fd3900773c0c0e2)
+---
+ configure.ac                                     | 1 -
+ src/plugins/contrib/NassiShneiderman/Makefile.am | 2 +-
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index e69501386..b46880989 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -235,7 +235,6 @@ case $WX_BASENAME in
+ 		if test "x$BUILD_NASSISHNEIDERMAN_TRUE" = "x" ; then
+ 			dnl Check whether boost is installed
+ 			AX_BOOST_BASE
+-			AX_BOOST_SYSTEM
+ 		fi
+ 
+ 		CB_GLIB2_CFLAGS="$GLIB2_CFLAGS"
+diff --git a/src/plugins/contrib/NassiShneiderman/Makefile.am b/src/plugins/contrib/NassiShneiderman/Makefile.am
+index 4cbb8965a..0423c38de 100644
+--- a/src/plugins/contrib/NassiShneiderman/Makefile.am
++++ b/src/plugins/contrib/NassiShneiderman/Makefile.am
+@@ -10,7 +10,7 @@ pluginlib_LTLIBRARIES = libNassiShneiderman.la
+ 
+ libNassiShneiderman_la_LDFLAGS = @MODULE_SHARED_LDFLAGS@ -version-info 0:1:0 -no-undefined -avoid-version
+ 
+-libNassiShneiderman_la_LIBADD = ../../../sdk/libcodeblocks.la $(WX_LIBS) $(BOOST_LDFLAGS) $(BOOST_SYSTEM_LIB)
++libNassiShneiderman_la_LIBADD = ../../../sdk/libcodeblocks.la $(WX_LIBS)
+ 
+ libNassiShneiderman_la_SOURCES = bricks.cpp \
+ 		cbEditorPanel.cpp \
+-- 
+2.54.0
+
+
+From 513d4a15ff499f971ccb35e79682b107d30716bc Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Wed, 19 Nov 2025 15:28:06 +0000
+Subject: [PATCH 4/7] - Build: Remove boost::system detection (end of ticket
+ #1563). The NassiShneiderman plugin does not use it and now it is a
+ header-only library, so detection failed.
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13760 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit 89fe56c8041b8a9bbaed9da3abb2ece87d7695e7)
+---
+ configure.ac                                  |   1 -
+ m4/ax_boost_system.m4                         | 121 ------------------
+ .../contrib/NassiShneiderman/Makefile.am      |   3 +-
+ 3 files changed, 1 insertion(+), 124 deletions(-)
+ delete mode 100644 m4/ax_boost_system.m4
+
+diff --git a/configure.ac b/configure.ac
+index b46880989..552cedbcf 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -15,7 +15,6 @@ AC_MSG_RESULT([${enable_flags_setting}])
+ m4_include([m4/acinclude.m4])
+ m4_include([m4/ax_cxx_compile_stdcxx.m4])
+ m4_include([m4/ax_boost_base.m4])
+-m4_include([m4/ax_boost_system.m4])
+ 
+ CODEBLOCKS_CHECK_DEBUG
+ 
+diff --git a/m4/ax_boost_system.m4 b/m4/ax_boost_system.m4
+deleted file mode 100644
+index 207d7be8d..000000000
+--- a/m4/ax_boost_system.m4
++++ /dev/null
+@@ -1,121 +0,0 @@
+-# ===========================================================================
+-#     https://www.gnu.org/software/autoconf-archive/ax_boost_system.html
+-# ===========================================================================
+-#
+-# SYNOPSIS
+-#
+-#   AX_BOOST_SYSTEM
+-#
+-# DESCRIPTION
+-#
+-#   Test for System library from the Boost C++ libraries. The macro requires
+-#   a preceding call to AX_BOOST_BASE. Further documentation is available at
+-#   <http://randspringer.de/boost/index.html>.
+-#
+-#   This macro calls:
+-#
+-#     AC_SUBST(BOOST_SYSTEM_LIB)
+-#
+-#   And sets:
+-#
+-#     HAVE_BOOST_SYSTEM
+-#
+-# LICENSE
+-#
+-#   Copyright (c) 2008 Thomas Porschberg <thomas@randspringer.de>
+-#   Copyright (c) 2008 Michael Tindal
+-#   Copyright (c) 2008 Daniel Casimiro <dan.casimiro@gmail.com>
+-#
+-#   Copying and distribution of this file, with or without modification, are
+-#   permitted in any medium without royalty provided the copyright notice
+-#   and this notice are preserved. This file is offered as-is, without any
+-#   warranty.
+-
+-#serial 19
+-
+-AC_DEFUN([AX_BOOST_SYSTEM],
+-[
+-	AC_ARG_WITH([boost-system],
+-	AS_HELP_STRING([--with-boost-system@<:@=special-lib@:>@],
+-                   [use the System library from boost - it is possible to specify a certain library for the linker
+-                        e.g. --with-boost-system=boost_system-gcc-mt ]),
+-        [
+-        if test "$withval" = "no"; then
+-			want_boost="no"
+-        elif test "$withval" = "yes"; then
+-            want_boost="yes"
+-            ax_boost_user_system_lib=""
+-        else
+-		    want_boost="yes"
+-		ax_boost_user_system_lib="$withval"
+-		fi
+-        ],
+-        [want_boost="yes"]
+-	)
+-
+-	if test "x$want_boost" = "xyes"; then
+-        AC_REQUIRE([AC_PROG_CC])
+-        AC_REQUIRE([AC_CANONICAL_BUILD])
+-		CPPFLAGS_SAVED="$CPPFLAGS"
+-		CPPFLAGS="$CPPFLAGS $BOOST_CPPFLAGS"
+-		export CPPFLAGS
+-
+-		LDFLAGS_SAVED="$LDFLAGS"
+-		LDFLAGS="$LDFLAGS $BOOST_LDFLAGS"
+-		export LDFLAGS
+-
+-        AC_CACHE_CHECK(whether the Boost::System library is available,
+-					   ax_cv_boost_system,
+-        [AC_LANG_PUSH([C++])
+-			 CXXFLAGS_SAVE=$CXXFLAGS
+-			 CXXFLAGS=
+-
+-			 AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[@%:@include <boost/system/error_code.hpp>]],
+-				    [[boost::system::error_category *a = 0;]])],
+-                   ax_cv_boost_system=yes, ax_cv_boost_system=no)
+-			 CXXFLAGS=$CXXFLAGS_SAVE
+-             AC_LANG_POP([C++])
+-		])
+-		if test "x$ax_cv_boost_system" = "xyes"; then
+-			AC_SUBST(BOOST_CPPFLAGS)
+-
+-			AC_DEFINE(HAVE_BOOST_SYSTEM,,[define if the Boost::System library is available])
+-            BOOSTLIBDIR=`echo $BOOST_LDFLAGS | sed -e 's/@<:@^\/@:>@*//'`
+-
+-			LDFLAGS_SAVE=$LDFLAGS
+-            if test "x$ax_boost_user_system_lib" = "x"; then
+-                for libextension in `ls -r $BOOSTLIBDIR/libboost_system* 2>/dev/null | sed 's,.*/lib,,' | sed 's,\..*,,'` ; do
+-                     ax_lib=${libextension}
+-				    AC_CHECK_LIB($ax_lib, exit,
+-                                 [BOOST_SYSTEM_LIB="-l$ax_lib"; AC_SUBST(BOOST_SYSTEM_LIB) link_system="yes"; break],
+-                                 [link_system="no"])
+-				done
+-                if test "x$link_system" != "xyes"; then
+-                for libextension in `ls -r $BOOSTLIBDIR/boost_system* 2>/dev/null | sed 's,.*/,,' | sed -e 's,\..*,,'` ; do
+-                     ax_lib=${libextension}
+-				    AC_CHECK_LIB($ax_lib, exit,
+-                                 [BOOST_SYSTEM_LIB="-l$ax_lib"; AC_SUBST(BOOST_SYSTEM_LIB) link_system="yes"; break],
+-                                 [link_system="no"])
+-				done
+-                fi
+-
+-            else
+-               for ax_lib in $ax_boost_user_system_lib boost_system-$ax_boost_user_system_lib; do
+-				      AC_CHECK_LIB($ax_lib, exit,
+-                                   [BOOST_SYSTEM_LIB="-l$ax_lib"; AC_SUBST(BOOST_SYSTEM_LIB) link_system="yes"; break],
+-                                   [link_system="no"])
+-                  done
+-
+-            fi
+-            if test "x$ax_lib" = "x"; then
+-                AC_MSG_ERROR(Could not find a version of the library!)
+-            fi
+-			if test "x$link_system" = "xno"; then
+-				AC_MSG_ERROR(Could not link against $ax_lib !)
+-			fi
+-		fi
+-
+-		CPPFLAGS="$CPPFLAGS_SAVED"
+-	LDFLAGS="$LDFLAGS_SAVED"
+-	fi
+-])
+diff --git a/src/plugins/contrib/NassiShneiderman/Makefile.am b/src/plugins/contrib/NassiShneiderman/Makefile.am
+index 0423c38de..44899857f 100644
+--- a/src/plugins/contrib/NassiShneiderman/Makefile.am
++++ b/src/plugins/contrib/NassiShneiderman/Makefile.am
+@@ -1,8 +1,7 @@
+ AM_CPPFLAGS = $(WX_CXXFLAGS) \
+ 		-I$(top_srcdir)/src/include \
+ 		-I$(top_srcdir)/src/sdk/wxscintilla/include \
+-		$(BOOST_CPPFLAGS) \
+-		-DBOOST_SYSTEM_NO_DEPRECATED
++		$(BOOST_CPPFLAGS)
+ 
+ pluginlibdir = $(pkglibdir)/plugins
+ 
+-- 
+2.54.0
+
+
+From dc94773ddb687f47bf8b77250453edfdb3343ad4 Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Thu, 22 Jan 2026 18:13:06 +0000
+Subject: [PATCH 5/7] * wxSmith: Delay-load images so they are loaded after
+ C::B is initialized. This sould reduce C::B start time and will make easier
+ migration to using SVG. Part of the presumed fix for C::B hanging on Linux
+ (wxsresourcetree must be adapted also).
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13775 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit 444f2cb208228d678559cfce3b2b85edd73bb460)
+---
+ .../wxwidgets/defitems/wxsmenuitem.cpp        |  6 +-
+ .../wxwidgets/defitems/wxstoolbaritem.cpp     |  6 +-
+ .../wxSmith/wxwidgets/wxscontainer.cpp        |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxscontainer.h  |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxsitem.cpp     |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxsitem.h       |  6 +-
+ .../wxSmith/wxwidgets/wxsitemeditor.cpp       | 20 ++---
+ .../contrib/wxSmith/wxwidgets/wxsitemeditor.h |  2 +-
+ .../wxwidgets/wxsitemeditorcontent.cpp        |  4 +-
+ .../wxSmith/wxwidgets/wxsitemeditorcontent.h  |  5 +-
+ .../wxSmith/wxwidgets/wxsitemfactory.cpp      | 10 +--
+ .../wxSmith/wxwidgets/wxsitemfactory.h        | 43 +++++-----
+ .../contrib/wxSmith/wxwidgets/wxsiteminfo.h   | 79 ++++++++++++++-----
+ .../contrib/wxSmith/wxwidgets/wxsparent.cpp   |  4 +-
+ .../contrib/wxSmith/wxwidgets/wxsparent.h     |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxssizer.cpp    |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxssizer.h      |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxstool.cpp     |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxstool.h       |  2 +-
+ .../wxSmith/wxwidgets/wxstoolspace.cpp        |  4 +-
+ .../contrib/wxSmith/wxwidgets/wxswidget.cpp   |  2 +-
+ .../contrib/wxSmith/wxwidgets/wxswidget.h     |  2 +-
+ .../wxAuiToolBar/wxsAuiToolBarItemBase.h      |  2 +-
+ 23 files changed, 126 insertions(+), 85 deletions(-)
+
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxsmenuitem.cpp b/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxsmenuitem.cpp
+index c0ab70d1c..c137e5e19 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxsmenuitem.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxsmenuitem.cpp
+@@ -48,9 +48,9 @@ namespace
+ 
+                 // TODO: This code should be more generic since it may quickly
+                 //       become invalid
+-                wxString DataPath = ConfigManager::GetDataFolder() + _T("/images/wxsmith/");
+-                Icon32.LoadFile(DataPath+_T("wxMenuItem32.png"),wxBITMAP_TYPE_PNG);
+-                Icon16.LoadFile(DataPath+_T("wxMenuItem16.png"),wxBITMAP_TYPE_PNG);
++                const wxString DataPath(ConfigManager::GetDataFolder()+"/images/wxsmith/");
++                SetIcon(32, DataPath+"wxMenuItem32.png");
++                SetIcon(16, DataPath+"wxMenuItem16.png");
+                 TreeIconId = m_TreeImage.GetIndex();
+             };
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxstoolbaritem.cpp b/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxstoolbaritem.cpp
+index 1c6acdcd4..14971af5b 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxstoolbaritem.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/defitems/wxstoolbaritem.cpp
+@@ -46,9 +46,9 @@ namespace
+ 
+                 // TODO: This code should be more generic since it may quickly
+                 //       become invalid
+-                wxString DataPath = ConfigManager::GetDataFolder() + _T("/images/wxsmith/");
+-                Icon32.LoadFile(DataPath+_T("wxToolBarItem32.png"),wxBITMAP_TYPE_PNG);
+-                Icon16.LoadFile(DataPath+_T("wxToolBarItem16.png"),wxBITMAP_TYPE_PNG);
++                const wxString DataPath(ConfigManager::GetDataFolder()+"/images/wxsmith/");
++                SetIcon(32, DataPath+"wxToolBarItem32.png");
++                SetIcon(16, DataPath+"wxToolBarItem16.png");
+                 TreeIconId = m_TreeImage.GetIndex();
+             };
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.cpp
+index 0029855d8..3da934ea4 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.cpp
+@@ -28,7 +28,7 @@
+ 
+ wxsContainer::wxsContainer(
+     wxsItemResData* Data,
+-    const wxsItemInfo* Info,
++    wxsItemInfo* Info,
+     const wxsEventDesc* EventArray,
+     const wxsStyleSet* StyleSet,
+     long PropertiesFlags):
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.h b/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.h
+index 1db540f96..2bad7f13e 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxscontainer.h
+@@ -51,7 +51,7 @@ class PLUGIN_EXPORT wxsContainer: public wxsParent
+          */
+         wxsContainer(
+             wxsItemResData* Data,
+-            const wxsItemInfo* Info,
++            wxsItemInfo* Info,
+             const wxsEventDesc* EventArray = 0,
+             const wxsStyleSet* StyleSet=0,
+             long PropertiesFlags=flContainer);
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.cpp
+index 27813d046..3df53465f 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.cpp
+@@ -41,7 +41,7 @@ namespace
+     long IdToBottom = wxNewId();
+ }
+ 
+-wxsItem::wxsItem(wxsItemResData* ResourceData,const wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet):
++wxsItem::wxsItem(wxsItemResData* ResourceData, wxsItemInfo* Info, long PropertiesFlags, const wxsEventDesc* Events, const wxsStyleSet* StyleSet) :
+     m_Info(Info),
+     m_Events(Events,this),
+     m_Parent(nullptr),
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.h b/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.h
+index 1b32b49fa..94a3a13e3 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitem.h
+@@ -78,7 +78,7 @@ class PLUGIN_EXPORT wxsItem: public wxsPropertyContainer, public wxsCodeGenerato
+          * \param Resource resource containing this widget, must not be 0
+          * \param Events array of events used by this object (may be 0 if item doesn't use events)
+          */
+-        wxsItem(wxsItemResData* Data,const wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet);
++        wxsItem(wxsItemResData* Data, wxsItemInfo* Info, long PropertiesFlags, const wxsEventDesc* Events, const wxsStyleSet* StyleSet);
+ 
+         /** \brief Dctor */
+         virtual ~wxsItem();
+@@ -87,7 +87,7 @@ class PLUGIN_EXPORT wxsItem: public wxsPropertyContainer, public wxsCodeGenerato
+          *
+          * \warning This function should return reference to static variable.
+          */
+-        inline const wxsItemInfo& GetInfo() { return *m_Info; }
++        inline wxsItemInfo& GetInfo() { return *m_Info; }
+ 
+         /** \brief Getting event management object used by this item
+          *  \note This function is wrapper to OnGetInfo() protected function
+@@ -578,7 +578,7 @@ class PLUGIN_EXPORT wxsItem: public wxsPropertyContainer, public wxsCodeGenerato
+         /** \brief Updating code generation flags before building code */
+         virtual void OnUpdateFlags(long& _Flags);
+ 
+-        const wxsItemInfo* m_Info;            ///< \brief Pointer to item's info structure
++        wxsItemInfo*       m_Info;            ///< \brief Pointer to item's info structure
+         wxsEvents          m_Events;          ///< \brief Object managing events
+         wxsParent*         m_Parent;          ///< \brief Parent class of this one
+         wxsItemResData*    m_ResourceData;    ///< \brief Data management object containing this item
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.cpp
+index 2a9422337..e89c78df3 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.cpp
+@@ -391,7 +391,7 @@ void wxsItemEditor::Paste()
+ 
+ void wxsItemEditor::InsertRequest(const wxString& Name)
+ {
+-    const wxsItemInfo* Info = wxsItemFactory::GetInfo(Name);
++    wxsItemInfo* Info = wxsItemFactory::GetInfo(Name);
+     if ( !Info ) return;
+     bool IsTool = Info->Type == wxsTTool;
+ 
+@@ -681,19 +681,19 @@ void wxsItemEditor::RebuildIcons()
+ 
+ namespace
+ {
+-    int PrioritySort(const wxsItemInfo** it1,const wxsItemInfo** it2)
++    int PrioritySort(wxsItemInfo** it1, wxsItemInfo** it2)
+     {
+         return (*it1)->Priority - (*it2)->Priority;
+     }
+ 
+-    WX_DEFINE_ARRAY(const wxsItemInfo*,ItemsT);
++    WX_DEFINE_ARRAY(wxsItemInfo*, ItemsT);
+ 
+     int CategorySort(ItemsT* it1, ItemsT* it2)
+     {
+-        if (it1->Item(0)->Category.IsSameAs(_T("Standard")))
++        if (it1->Item(0)->Category.IsSameAs("Standard"))
+             return -1;
+ 
+-        if (it2->Item(0)->Category.IsSameAs(_T("Standard")))
++        if (it2->Item(0)->Category.IsSameAs("Standard"))
+             return 1;
+ 
+         return wxStrcmp(it1->Item(0)->Category, it2->Item(0)->Category);
+@@ -714,7 +714,7 @@ void wxsItemEditor::BuildPalette(wxNotebook* Palette)
+     MapT Map;
+     ArrayOfItemsT aoi(CategorySort);
+ 
+-    for ( const wxsItemInfo* Info = wxsItemFactory::GetFirstInfo(); Info; Info = wxsItemFactory::GetNextInfo() )
++    for (wxsItemInfo* Info = wxsItemFactory::GetFirstInfo(); Info; Info = wxsItemFactory::GetNextInfo())
+     {
+         if ( !Info->Category.empty() )
+         {
+@@ -735,10 +735,10 @@ void wxsItemEditor::BuildPalette(wxNotebook* Palette)
+         Palette->AddPage(CurrentPanel,Items->Item(0)->Category);
+         wxSizer* RowSizer = new wxBoxSizer(wxHORIZONTAL);
+ 
+-        for ( size_t j=Items->Count(); j-->0; )
++        for (size_t j = Items->Count(); j-- > 0;)
+         {
+-            const wxsItemInfo* Info = Items->Item(j);
+-            const wxBitmap& Icon = ( PalIconSize() == 16L ) ? Info->Icon16 : Info->Icon32;
++            wxsItemInfo* Info = Items->Item(j);
++            const wxBitmap& Icon = Info->GetIcon(PalIconSize());
+ 
+             if ( AllowNonXRCItems || Info->AllowInXRC )
+             {
+@@ -889,7 +889,7 @@ void wxsItemEditor::OnKeyDown(wxKeyEvent& event)
+     }
+ }
+ 
+-void wxsItemEditor::StartInsertPointSequence(const wxsItemInfo* Info)
++void wxsItemEditor::StartInsertPointSequence(wxsItemInfo* Info)
+ {
+     if ( m_Content )
+     {
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.h b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.h
+index 4d95c8ffc..4b8b02d9c 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditor.h
+@@ -178,7 +178,7 @@ class wxsItemEditor : public wxsEditor
+         wxsItem* GetReferenceItem(int& InsertionType);
+ 
+         /** \brief Starting sequence of adding new item when inserting by pointing with mouse */
+-        void StartInsertPointSequence(const wxsItemInfo* Info);
++        void StartInsertPointSequence(wxsItemInfo* Info);
+ 
+         /** \brief Reloading images in all editors */
+         static void ReloadImages();
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.cpp
+index 24f193fe4..9d8249d99 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.cpp
+@@ -84,7 +84,7 @@ void wxsItemEditorContent::PaintExtra(wxDC* DC)
+ 
+     if ( m_MouseState==msTargetSearch && m_TargetInfo )
+     {
+-        DC->DrawBitmap(m_TargetInfo->Icon16,m_TargetX+16,m_TargetY,true);
++        DC->DrawBitmap(m_TargetInfo->GetIcon(16), m_TargetX+16, m_TargetY, true);
+     }
+ }
+ 
+@@ -1019,7 +1019,7 @@ void wxsItemEditorContent::RecalculateMapsReq(wxsItem* Item)
+     }
+ }
+ 
+-void wxsItemEditorContent::InsertByPointing(const wxsItemInfo* Info)
++void wxsItemEditorContent::InsertByPointing(wxsItemInfo* Info)
+ {
+     m_MouseState = msTargetSearch;
+     m_TargetInfo = Info;
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.h b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.h
+index 297e8bd75..b05bff2e6 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemeditorcontent.h
+@@ -55,7 +55,7 @@ class wxsItemEditorContent: public wxsDrawingWindow
+         void RefreshSelection();
+ 
+         /** \brief Starting sequence of adding new item by pointing with mouse */
+-        void InsertByPointing(const wxsItemInfo* Info);
++        void InsertByPointing(wxsItemInfo* Info);
+ 
+     protected:
+ 
+@@ -136,11 +136,10 @@ class wxsItemEditorContent: public wxsDrawingWindow
+         wxsParent* m_AssistParent;
+         bool       m_AssistAddAfter;
+ 
+-        const wxsItemInfo* m_TargetInfo;                    ///< \brief Info of item added by pointing with mouse
++        wxsItemInfo* m_TargetInfo;                          ///< \brief Info of item added by pointing with mouse
+         int m_TargetX;
+         int m_TargetY;
+ 
+-
+         /** \brief Processing mouse events */
+         void OnMouse(wxMouseEvent& event);
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.cpp
+index a41f3c14a..90e8c159c 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.cpp
+@@ -65,20 +65,20 @@ wxsItem* wxsItemFactory::Build(const wxString& Name,wxsItemResData* Data)
+     return Item;
+ }
+ 
+-const wxsItemInfo* wxsItemFactory::GetInfo(const wxString& Name)
++wxsItemInfo* wxsItemFactory::GetInfo(const wxString& Name)
+ {
+     ItemMapT::iterator it = ItemMap().find(Name);
+     if ( it == ItemMap().end() ) return nullptr;
+     return it->second->m_Info;
+ }
+ 
+-const wxsItemInfo* wxsItemFactory::GetFirstInfo()
++wxsItemInfo* wxsItemFactory::GetFirstInfo()
+ {
+     m_Iter = ItemMap().begin();
+     return (m_Iter==ItemMap().end()) ? nullptr : m_Iter->second->m_Info;
+ }
+ 
+-const wxsItemInfo* wxsItemFactory::GetNextInfo()
++wxsItemInfo* wxsItemFactory::GetNextInfo()
+ {
+     if ( m_Iter==ItemMap().end() ) return nullptr;
+     ++m_Iter;
+@@ -95,7 +95,7 @@ int wxsItemFactory::LoadImage(const wxString& FileName)
+     return wxsResourceTree::LoadImage(FileName);
+ }
+ 
+-wxsItemFactory::wxsItemFactory(const wxsItemInfo* Info):
++wxsItemFactory::wxsItemFactory(wxsItemInfo* Info) :
+     m_Info(Info)
+ {
+     m_Name = Info->ClassName;
+@@ -103,7 +103,7 @@ wxsItemFactory::wxsItemFactory(const wxsItemInfo* Info):
+     ItemMap()[m_Name] = this;
+ }
+ 
+-wxsItemFactory::wxsItemFactory(const wxsItemInfo* Info,wxString ClassName):
++wxsItemFactory::wxsItemFactory(wxsItemInfo* Info, wxString ClassName) :
+     m_Info(Info)
+ {
+     m_Name = ClassName;
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.h b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.h
+index 5ebe7eea3..ad9d4d84d 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsitemfactory.h
+@@ -64,13 +64,13 @@ class PLUGIN_EXPORT wxsItemFactory
+          *  \param ClassName name of item's class
+          *  \return Pointer to info or 0 if there's no such item
+          */
+-        static const wxsItemInfo* GetInfo(const wxString& ClassName);
++        static wxsItemInfo* GetInfo(const wxString& ClassName);
+ 
+         /** \brief Getting info of first item */
+-        static const wxsItemInfo* GetFirstInfo();
++        static wxsItemInfo* GetFirstInfo();
+ 
+         /** \brief Continuing getting item infos */
+-        static const wxsItemInfo* GetNextInfo();
++        static wxsItemInfo* GetNextInfo();
+ 
+         /** \brief Getting global image list with entries for items
+          *
+@@ -82,13 +82,13 @@ class PLUGIN_EXPORT wxsItemFactory
+         static int LoadImage(const wxString& Name);
+ 
+         /** \brief Ctor */
+-        wxsItemFactory(const wxsItemInfo* Info);
++        wxsItemFactory(wxsItemInfo* Info);
+ 
+         /** \brief Extra ctor for templates - uses class name from param.
+          *         It may be used when Info is going to be created
+          *         inside constructor.
+          */
+-        wxsItemFactory(const wxsItemInfo* Info,wxString ClassName);
++        wxsItemFactory(wxsItemInfo* Info,wxString ClassName);
+ 
+         /** \brief Dctor */
+         virtual ~wxsItemFactory();
+@@ -105,7 +105,7 @@ class PLUGIN_EXPORT wxsItemFactory
+         /** \brief Function for getting global item's map */
+         static ItemMapT& ItemMap();
+ 
+-        const wxsItemInfo* m_Info;          ///< \brief Info of item handled by this instance
++        wxsItemInfo* m_Info;                ///< \brief Info of item handled by this instance
+         wxString m_Name;                    ///< \brief Item's name
+         static ItemMapT::iterator m_Iter;   ///< \brief Iterator used for GetFirstInfo / GetNextInfo
+ };
+@@ -150,8 +150,8 @@ template<class T> class wxsRegisterItem: public wxsItemFactory
+             Info.Languages = Languages;
+             Info.VerHi = VerHi;
+             Info.VerLo = VerLo;
+-            Info.Icon32 = Bmp32.GetSubBitmap(wxRect(0,0,Bmp32.GetWidth(),Bmp32.GetHeight()));
+-            Info.Icon16 = Bmp16.GetSubBitmap(wxRect(0,0,Bmp16.GetWidth(),Bmp16.GetHeight()));
++            Info.SetIcon(32, Bmp32.GetSubBitmap(wxRect(0, 0, Bmp32.GetWidth(), Bmp32.GetHeight())));
++            Info.SetIcon(16, Bmp16.GetSubBitmap(wxRect(0, 0, Bmp16.GetWidth(), Bmp16.GetHeight())));
+             Info.AllowInXRC = AllowInXRC;
+             Info.TreeIconId = m_TreeImage.GetIndex();
+         }
+@@ -173,7 +173,7 @@ template<class T> class wxsRegisterItem: public wxsItemFactory
+             wxString Bmp32FileName,
+             wxString Bmp16FileName,
+             bool AllowInXRC = true
+-            ): wxsItemFactory(&Info,ClassName),
++            ): wxsItemFactory(&Info, ClassName),
+                m_TreeImage(Bmp16FileName)
+         {
+             Info.ClassName = ClassName;
+@@ -190,9 +190,9 @@ template<class T> class wxsRegisterItem: public wxsItemFactory
+             Info.VerLo = VerLo;
+             Info.AllowInXRC = AllowInXRC;
+ 
+-            wxString DataPath = ConfigManager::GetDataFolder()+_T("/");
+-            Info.Icon32.LoadFile(DataPath+Bmp32FileName,wxBITMAP_TYPE_ANY);
+-            Info.Icon16.LoadFile(DataPath+Bmp16FileName,wxBITMAP_TYPE_ANY);
++            const wxString DataPath(ConfigManager::GetDataFolder()+"/");
++            Info.SetIcon(32, DataPath+Bmp32FileName);
++            Info.SetIcon(16, DataPath+Bmp16FileName);
+             Info.TreeIconId = m_TreeImage.GetIndex();
+         }
+ 
+@@ -202,16 +202,16 @@ template<class T> class wxsRegisterItem: public wxsItemFactory
+             wxsItemType Type,
+             wxString Category,
+             long Priority,
+-            bool AllowInXRC=true):
+-                wxsItemFactory(&Info,_T("wx") + ClassNameWithoutWx),
+-                m_TreeImage(_T("images/wxsmith/wx")+ClassNameWithoutWx+_T("16.png"),true)
++            bool AllowInXRC = true):
++                wxsItemFactory(&Info, "wx"+ClassNameWithoutWx),
++                m_TreeImage("images/wxsmith/wx"+ClassNameWithoutWx+"16.png", true)
+         {
+-            Info.ClassName = _T("wx") + ClassNameWithoutWx;
++            Info.ClassName = "wx"+ClassNameWithoutWx;
+             Info.Type = Type;
+             Info.License = _("wxWidgets license");
+             Info.Author = _("wxWidgets team");
+-            Info.Email = _T("");
+-            Info.Site = _T("www.wxwidgets.org");
++            Info.Email = "";
++            Info.Site = "www.wxwidgets.org";
+             Info.Category = Category;
+             Info.Priority = Priority;
+             Info.DefaultVarName = ClassNameWithoutWx;
+@@ -220,10 +220,9 @@ template<class T> class wxsRegisterItem: public wxsItemFactory
+             Info.VerLo = 6;
+             Info.AllowInXRC = AllowInXRC;
+ 
+-            wxString DataPath = ConfigManager::GetDataFolder() + _T("/images/wxsmith/");
+-            Info.Icon32.LoadFile(DataPath+Info.ClassName+_T("32.png"),wxBITMAP_TYPE_PNG);
+-            Info.Icon16.LoadFile(DataPath+Info.ClassName+_T("16.png"),wxBITMAP_TYPE_PNG);
+-
++            const wxString DataPath(ConfigManager::GetDataFolder()+"/images/wxsmith/");
++            Info.SetIcon(32, DataPath+Info.ClassName+"32.png");
++            Info.SetIcon(16, DataPath+Info.ClassName+"16.png");
+             Info.TreeIconId = m_TreeImage.GetIndex();
+         }
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsiteminfo.h b/src/plugins/contrib/wxSmith/wxwidgets/wxsiteminfo.h
+index c1156c279..723f5d75e 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsiteminfo.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsiteminfo.h
+@@ -37,25 +37,68 @@ enum wxsItemType
+     wxsTTool             ///< \brief Tool
+ };
+ 
+-/** \brief Structure containing all global information about item */
+-struct wxsItemInfo
++/** \brief Class containing all global information about item */
++class wxsItemInfo
+ {
+-    wxString        ClassName;      ///< \brief Item's class name
+-    wxsItemType     Type;           ///< \brief Item type
+-    wxString        License;        ///< \brief Item's license
+-    wxString        Author;         ///< \brief Item's author
+-    wxString        Email;          ///< \brief Item's author's email
+-    wxString        Site;           ///< \brief Site about this item
+-    wxString        Category;       ///< \brief Item's category (used for grouping widgets, use _T() instead of _() because this string will be used for sorting and it will be translated manually)
+-    long            Priority;       ///< \brief Priority used for sorting widgets inside one group, should be in range 0..100, higher priority widgets will be at the beginning of palette
+-    wxString        DefaultVarName; ///< \brief Prefix for default variable name (converted to uppercase will be used as prefix for identifier)
+-    long            Languages;      ///< \brief Coding languages used by this item
+-    unsigned short  VerHi;          ///< \brief Lower number of version
+-    unsigned short  VerLo;          ///< \brief Higher number of version
+-    wxBitmap        Icon32;         ///< \brief Item's icon (32x32 pixels)
+-    wxBitmap        Icon16;         ///< \brief Item's icon (16x16 pixels)
+-    bool            AllowInXRC;     ///< \brief Item can be used in XRC files
+-    int             TreeIconId;     ///< \brief Identifier of image inside resource tree
++    public:
++
++        const wxBitmap& GetIcon(int Size)
++        {
++            if (Size == 16)
++            {
++                if (!Icon16.IsOk())
++                    Icon16.LoadFile(Icon16File, wxBITMAP_TYPE_PNG);
++
++                return Icon16;
++            }
++            else if (Size == 32)
++            {
++                if (!Icon32.IsOk())
++                    Icon32.LoadFile(Icon32File, wxBITMAP_TYPE_PNG);
++
++                return Icon32;
++            }
++
++            return wxNullBitmap;
++        }
++
++        void SetIcon(int Size, const wxBitmap& Bitmap)
++        {
++            if (Size == 16)
++                Icon16 = Bitmap;
++            else if (Size == 32)
++                Icon32 = Bitmap;
++        }
++
++        void SetIcon(int Size, const wxString& Filename)
++        {
++            if (Size == 16)
++                Icon16File = Filename;
++            else if (Size == 32)
++                Icon32File = Filename;
++        }
++
++        wxString        ClassName;      ///< \brief Item's class name
++        wxsItemType     Type;           ///< \brief Item type
++        wxString        License;        ///< \brief Item's license
++        wxString        Author;         ///< \brief Item's author
++        wxString        Email;          ///< \brief Item's author's email
++        wxString        Site;           ///< \brief Site about this item
++        wxString        Category;       ///< \brief Item's category (used for grouping widgets, use _T() instead of _() because this string will be used for sorting and it will be translated manually)
++        long            Priority;       ///< \brief Priority used for sorting widgets inside one group, should be in range 0..100, higher priority widgets will be at the beginning of palette
++        wxString        DefaultVarName; ///< \brief Prefix for default variable name (converted to uppercase will be used as prefix for identifier)
++        long            Languages;      ///< \brief Coding languages used by this item
++        unsigned short  VerHi;          ///< \brief Lower number of version
++        unsigned short  VerLo;          ///< \brief Higher number of version
++        bool            AllowInXRC;     ///< \brief Item can be used in XRC files
++        int             TreeIconId;     ///< \brief Identifier of image inside resource tree
++
++    private:
++
++        wxBitmap        Icon32;         ///< \brief Item's icon (32x32 pixels)
++        wxString        Icon32File;     ///< \brief Item's file name (32x32 pixels)
++        wxBitmap        Icon16;         ///< \brief Item's icon (16x16 pixels)
++        wxString        Icon16File;     ///< \brief Item's file name (16x16 pixels)
+ };
+ 
+ #endif
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.cpp
+index c32db4397..6f5f5c87c 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.cpp
+@@ -28,8 +28,8 @@
+ 
+ using namespace wxsFlags;
+ 
+-wxsParent::wxsParent(wxsItemResData* Data,const wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet):
+-    wxsItem(Data,Info,PropertiesFlags,Events,StyleSet)
++wxsParent::wxsParent(wxsItemResData* Data, wxsItemInfo* Info, long PropertiesFlags, const wxsEventDesc* Events, const wxsStyleSet* StyleSet):
++    wxsItem(Data, Info, PropertiesFlags, Events, StyleSet)
+ {
+ }
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.h b/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.h
+index 680dbce84..3e606d24c 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxsparent.h
+@@ -42,7 +42,7 @@ class PLUGIN_EXPORT wxsParent: public wxsItem
+     public:
+ 
+         /** \brief Ctor */
+-        wxsParent(wxsItemResData* Data,const wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet);
++        wxsParent(wxsItemResData* Data, wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet);
+ 
+         /** \brief Dctor */
+         virtual ~wxsParent();
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.cpp
+index f5c75fe0c..b83ed15de 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.cpp
+@@ -84,7 +84,7 @@ wxString wxsSizerExtra::AllParamsCode(wxsCoderContext* Ctx)
+     return wxEmptyString;
+ }
+ 
+-wxsSizer::wxsSizer(wxsItemResData* Data,const wxsItemInfo* Info):
++wxsSizer::wxsSizer(wxsItemResData* Data, wxsItemInfo* Info):
+     wxsParent(Data,Info,flVariable|flSubclass,0,0)
+ {
+     GetBaseProps()->m_IsMember = false;
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.h b/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.h
+index 1cc08d540..b81d8dfb2 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxssizer.h
+@@ -76,7 +76,7 @@ class PLUGIN_EXPORT wxsSizer: public wxsParent
+     public:
+ 
+         /** \brief Ctor */
+-        wxsSizer(wxsItemResData* Data,const wxsItemInfo* Info);
++        wxsSizer(wxsItemResData* Data, wxsItemInfo* Info);
+ 
+     protected:
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxstool.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxstool.cpp
+index 9c669f0e8..8b2c10ef6 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxstool.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxstool.cpp
+@@ -27,7 +27,7 @@
+ 
+ wxsTool::wxsTool(
+     wxsItemResData* Data,
+-    const wxsItemInfo* Info,
++    wxsItemInfo* Info,
+     const wxsEventDesc* EventArray,
+     const wxsStyleSet* StyleSet,
+     long PropertiesFlags):
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxstool.h b/src/plugins/contrib/wxSmith/wxwidgets/wxstool.h
+index 92aa7022a..583eb5dee 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxstool.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxstool.h
+@@ -39,7 +39,7 @@ class wxsTool: public wxsParent
+         /** \brief Ctor */
+         wxsTool(
+             wxsItemResData* Data,
+-            const wxsItemInfo* Info,
++            wxsItemInfo* Info,
+             const wxsEventDesc* EventArray = 0,
+             const wxsStyleSet* StyleSet=0,
+             long PropertiesFlags = flTool);
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxstoolspace.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxstoolspace.cpp
+index 3e6a85107..1f33eb532 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxstoolspace.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxstoolspace.cpp
+@@ -141,8 +141,8 @@ void wxsToolSpace::OnPaint(cb_unused wxPaintEvent& event)
+         int EndX = BeginX + IconSize;
+         int EndY = BeginY + IconSize;
+         DC.SetBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNFACE));
+-        DC.DrawRectangle(BeginX-1,BeginY-1,EndX-BeginX+2,EndY-BeginY+2);
+-        DC.DrawBitmap(Item->GetInfo().Icon32,BeginX,BeginY,true);
++        DC.DrawRectangle(BeginX-1, BeginY-1, EndX-BeginX+2, EndY-BeginY+2);
++        DC.DrawBitmap(Item->GetInfo().GetIcon(32), BeginX, BeginY, true);
+ 
+         if ( Item->GetIsSelected() )
+         {
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.cpp b/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.cpp
+index 707f10dc5..8cb18b27b 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.cpp
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.cpp
+@@ -26,7 +26,7 @@
+ 
+ wxsWidget::wxsWidget(
+     wxsItemResData* Data,
+-    const wxsItemInfo* Info,
++    wxsItemInfo* Info,
+     const wxsEventDesc* EventArray,
+     const wxsStyleSet* StyleSet,
+     long PropertiesFlags):
+diff --git a/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.h b/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.h
+index 61dbf11b5..2019d7bb8 100644
+--- a/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.h
++++ b/src/plugins/contrib/wxSmith/wxwidgets/wxswidget.h
+@@ -60,7 +60,7 @@ class PLUGIN_EXPORT wxsWidget: public wxsItem
+          */
+         wxsWidget(
+             wxsItemResData*     Data,
+-            const wxsItemInfo*  Info,
++            wxsItemInfo*        Info,
+             const wxsEventDesc* EventArray = 0,
+             const wxsStyleSet*  StyleSet = 0,
+             long                PropertiesFlags = flWidget);
+diff --git a/src/plugins/contrib/wxSmithAui/wxAuiToolBar/wxsAuiToolBarItemBase.h b/src/plugins/contrib/wxSmithAui/wxAuiToolBar/wxsAuiToolBarItemBase.h
+index 6bd794754..47b4817ba 100644
+--- a/src/plugins/contrib/wxSmithAui/wxAuiToolBar/wxsAuiToolBarItemBase.h
++++ b/src/plugins/contrib/wxSmithAui/wxAuiToolBar/wxsAuiToolBarItemBase.h
+@@ -32,7 +32,7 @@ class wxsAuiToolBarItemBase: public wxsItem
+         long m_HasGripper;
+         int  m_GripperSize;
+ 
+-        wxsAuiToolBarItemBase(wxsItemResData* Data,const wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet)
++        wxsAuiToolBarItemBase(wxsItemResData* Data, wxsItemInfo* Info,long PropertiesFlags,const wxsEventDesc* Events,const wxsStyleSet* StyleSet)
+             : wxsItem(Data,Info,PropertiesFlags,Events,StyleSet)
+         {}
+ 
+-- 
+2.54.0
+
+
+From 5db6db52b9d65e8f594c1488abc84cc7c5fa14cb Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Mon, 4 May 2026 18:24:20 +0000
+Subject: [PATCH 6/7] * wxSmith: Delay-load images in the resource tree (ticket
+ #1561). This should fix hangs on Arch, Fedora and others using gdk-pixbuf
+ newer than 2.24.12-2. See also revision [r13775].
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13841 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit 828c3f0d79a60730378a43cb89863c5719efa3a6)
+---
+ .../contrib/wxSmith/wxsresourcetree.cpp       | 38 ++++++++++++++++---
+ src/plugins/contrib/wxSmith/wxsresourcetree.h |  3 ++
+ 2 files changed, 35 insertions(+), 6 deletions(-)
+
+diff --git a/src/plugins/contrib/wxSmith/wxsresourcetree.cpp b/src/plugins/contrib/wxSmith/wxsresourcetree.cpp
+index 8295e13cc..0dee3c38d 100644
+--- a/src/plugins/contrib/wxSmith/wxsresourcetree.cpp
++++ b/src/plugins/contrib/wxSmith/wxsresourcetree.cpp
+@@ -51,9 +51,9 @@ namespace
+ }
+ 
+ wxsResourceTree* wxsResourceTree::m_Singleton = nullptr;
+-int wxsResourceTree::m_RootImageId = LoadImage(_T("/images/wxsmith/wxSmith16.png"));
+-int wxsResourceTree::m_ProjectImageId = LoadImage(_T("/images/codeblocks.png"));
+-int wxsResourceTree::m_ExternalImageId = LoadImage(_T("/images/wxsmith/deletewidget16.png"));
++int wxsResourceTree::m_RootImageId = LoadImage("images/wxsmith/wxSmith16.png");
++int wxsResourceTree::m_ProjectImageId = LoadImage("images/codeblocks.png");
++int wxsResourceTree::m_ExternalImageId = LoadImage("images/wxsmith/deletewidget16.png");
+ 
+ 
+ BEGIN_EVENT_TABLE(wxsResourceTree,wxTreeCtrl)
+@@ -70,7 +70,23 @@ wxsResourceTree::wxsResourceTree(wxWindow* Parent)
+     , m_Data(nullptr)
+ {
+     m_Singleton = this;
+-    SetImageList(&GetGlobalImageList());
++
++    // Load now the delayed loads
++    wxImageList* imagelist = &GetGlobalImageList();
++    for (int i = 0; i < imagelist->GetImageCount(); ++i)
++    {
++        const wxString filename = GetFilenameMap()[i];
++        if (!filename.empty())
++        {
++            const wxBitmap bmp(cbLoadBitmap(ConfigManager::GetDataFolder()+'/'+filename, wxBITMAP_TYPE_ANY));
++            if (bmp.IsOk())
++                imagelist->Replace(i, bmp);
++
++            GetFilenameMap()[i] = wxEmptyString;
++        }
++    }
++
++    SetImageList(imagelist);
+     Expand(AddRoot(_("Resources"),m_RootImageId));
+ }
+ 
+@@ -145,10 +161,19 @@ wxImageList& wxsResourceTree::GetGlobalImageList()
+     return List;
+ }
+ 
++std::map <int, wxString> & wxsResourceTree::GetFilenameMap()
++{
++    static std::map <int, wxString> FilenameMap;
++    return FilenameMap;
++}
++
+ int wxsResourceTree::LoadImage(const wxString& FileName)
+ {
+-    wxBitmap Bmp(cbLoadBitmap(ConfigManager::GetDataFolder()+_T("/")+FileName,wxBITMAP_TYPE_ANY));
+-    return InsertImage(Bmp);
++    // Store the filename for delay-loading, now it cannot be done
++    // because wxWidgets image handlers have not been initialized
++    const int index = InsertImage(wxBitmap(wxImage(16, 16)));
++    GetFilenameMap()[index] = FileName;
++    return index;
+ }
+ 
+ int wxsResourceTree::InsertImage(const wxBitmap& Bitmap)
+@@ -186,6 +211,7 @@ wxArrayInt& wxsResourceTree::GetFreedList()
+ 
+ void wxsResourceTree::FreeImage(int Index)
+ {
++    GetFilenameMap()[Index] = wxEmptyString;
+     GetFreedList().Add(Index);
+ }
+ 
+diff --git a/src/plugins/contrib/wxSmith/wxsresourcetree.h b/src/plugins/contrib/wxSmith/wxsresourcetree.h
+index 07128286e..73eab8a2f 100644
+--- a/src/plugins/contrib/wxSmith/wxsresourcetree.h
++++ b/src/plugins/contrib/wxSmith/wxsresourcetree.h
+@@ -26,6 +26,8 @@
+ #include <wx/treectrl.h>
+ #include "wxsresourcetreeitemdata.h"
+ 
++#include <map>
++
+ #if defined(__WXMSW__) && defined(LoadImage)
+     // Fix Windows winuser.h Header define of LoadImage.
+     #undef LoadImage
+@@ -116,6 +118,7 @@ class wxsResourceTree: public wxTreeCtrl
+         static int m_ProjectImageId;
+         static int m_ExternalImageId;
+ 
++        static std::map <int, wxString> & GetFilenameMap();
+         static wxArrayInt& GetFreedList();
+ 
+         void PopupMenu(wxMenu* Menu,wxsResourceTreeItemData* ItemData);
+-- 
+2.54.0
+
+
+From 2deefd998d6db211eebaa6c9e2c72e84109f8f7c Mon Sep 17 00:00:00 2001
+From: wh11204 <wh11204@2a5c6006-c6dd-42ca-98ab-0921f2732cef>
+Date: Tue, 5 May 2026 00:27:15 +0000
+Subject: [PATCH 7/7] - wxSmith: Enable direct loading after tree construction.
+ Without this, images added after tree construction would be wrong.
+
+git-svn-id: https://svn.code.sf.net/p/codeblocks/code/trunk@13842 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+(cherry picked from commit b81412050f5d4ee5f444a8b59ce57ac3e065df89)
+---
+ .../contrib/wxSmith/wxsresourcetree.cpp       | 29 +++++++++++++++----
+ src/plugins/contrib/wxSmith/wxsresourcetree.h |  1 +
+ 2 files changed, 25 insertions(+), 5 deletions(-)
+
+diff --git a/src/plugins/contrib/wxSmith/wxsresourcetree.cpp b/src/plugins/contrib/wxSmith/wxsresourcetree.cpp
+index 0dee3c38d..21afd4a50 100644
+--- a/src/plugins/contrib/wxSmith/wxsresourcetree.cpp
++++ b/src/plugins/contrib/wxSmith/wxsresourcetree.cpp
+@@ -64,7 +64,7 @@ END_EVENT_TABLE()
+ 
+ 
+ wxsResourceTree::wxsResourceTree(wxWindow* Parent)
+-    : wxTreeCtrl(Parent,-1)
++    : wxTreeCtrl(Parent, wxID_ANY)
+     , m_IsExt(false)
+     , m_BlockCount(0)
+     , m_Data(nullptr)
+@@ -87,6 +87,7 @@ wxsResourceTree::wxsResourceTree(wxWindow* Parent)
+     }
+ 
+     SetImageList(imagelist);
++    IsConstructed() = true;
+     Expand(AddRoot(_("Resources"),m_RootImageId));
+ }
+ 
+@@ -169,10 +170,22 @@ std::map <int, wxString> & wxsResourceTree::GetFilenameMap()
+ 
+ int wxsResourceTree::LoadImage(const wxString& FileName)
+ {
+-    // Store the filename for delay-loading, now it cannot be done
+-    // because wxWidgets image handlers have not been initialized
+-    const int index = InsertImage(wxBitmap(wxImage(16, 16)));
+-    GetFilenameMap()[index] = FileName;
++    int index;
++
++    if (IsConstructed())
++    {
++        // wxWidgets has started, load the bitmap directly
++        const wxBitmap bmp(cbLoadBitmap(ConfigManager::GetDataFolder()+'/'+FileName, wxBITMAP_TYPE_ANY));
++        index = InsertImage(bmp);
++    }
++    else
++    {
++        // Store the filename for delay-loading, now it cannot be done
++        // because wxWidgets image handlers have not been initialized
++        index = InsertImage(wxBitmap(wxImage(16, 16)));
++        GetFilenameMap()[index] = FileName;
++    }
++
+     return index;
+ }
+ 
+@@ -209,6 +222,12 @@ wxArrayInt& wxsResourceTree::GetFreedList()
+     return List;
+ }
+ 
++bool& wxsResourceTree::IsConstructed()
++{
++    static bool Constructed = false;
++    return Constructed;
++}
++
+ void wxsResourceTree::FreeImage(int Index)
+ {
+     GetFilenameMap()[Index] = wxEmptyString;
+diff --git a/src/plugins/contrib/wxSmith/wxsresourcetree.h b/src/plugins/contrib/wxSmith/wxsresourcetree.h
+index 73eab8a2f..2e01a8357 100644
+--- a/src/plugins/contrib/wxSmith/wxsresourcetree.h
++++ b/src/plugins/contrib/wxSmith/wxsresourcetree.h
+@@ -120,6 +120,7 @@ class wxsResourceTree: public wxTreeCtrl
+ 
+         static std::map <int, wxString> & GetFilenameMap();
+         static wxArrayInt& GetFreedList();
++        static bool& IsConstructed();
+ 
+         void PopupMenu(wxMenu* Menu,wxsResourceTreeItemData* ItemData);
+         void InvalidateItemData(wxsResourceTreeItemData* ItemData);
+-- 
+2.54.0
+
