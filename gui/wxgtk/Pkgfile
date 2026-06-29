@@ -10,8 +10,8 @@ makedepends=(gtk2 gtk3 gstreamer-plugins-base libnotify xorg-libsm
              xorg-libxxf86vm xorg-glu webkitgtk)
 
 name=wxgtk
-version=3.2.2.1
-release=2
+version=3.2.10
+release=1
 
 source=(https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2)
 
