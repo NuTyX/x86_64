@@ -3,13 +3,14 @@ url="https://www.aquamaniac.de/rdm/"
 
 license="LGPL"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gnutls libgcrypt openssl gtk3)
 
 name=gwenhywfar
 version=5.14.1
+release=2
 
 source=(https://www.aquamaniac.de/rdm/attachments/download/630/$name-$version.tar.gz)
 
