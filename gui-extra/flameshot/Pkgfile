@@ -4,12 +4,11 @@ url="https://github.com/lupoDharkael/flameshot"
 packager="spiky <spiky@nutyx.org>"
 contributors="Graknu,Greg"
 
-makedepends=(qtsvg make qttools)
+makedepends=(qt6-svg make qt6-tools)
 run=(hicolor-icon-theme)
 
 name=flameshot
-version=12.1.0
-release=2
+version=14.0.0
 
 PKGMK_KEEP_SOURCES="no"
 
