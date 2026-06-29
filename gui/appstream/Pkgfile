@@ -7,15 +7,18 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 makedepends=(meson xmlto gobject-introspection gtk-doc itstool vala gperf
-             curl librsvg libfyaml libsoup3 libxmlb libepoxy)
+             curl librsvg libfyaml libsoup3 libxmlb libepoxy docbook-xsl)
 
 name=appstream
-version=1.1.2
+version=1.1.3
 
 source=(https://www.freedesktop.org/software/appstream/releases/AppStream-$version.tar.xz)
 
 prepare() {
 mv AppStream-$version $name-$version
+cd $name-$version
+
+sed -i 's/xsl-ns/xsl/' docs/meson.build
 }
 
 build() {
@@ -27,10 +30,14 @@ meson setup .. \
       --prefix=/usr \
       --libexecdir=lib \
       -Dstemming=false \
+      -Ddocs=false \
+      -Dinstall-docs=false \
+      -D apidocs=false         \
       -D bash-completion=false \
       -Dqt=false  \
       -Dvapi=true \
-      -Dcompose=true
+      -Dcompose=true \
+      -Dblake3-support=false
 
 ninja
 DESTDIR=$PKG ninja install
