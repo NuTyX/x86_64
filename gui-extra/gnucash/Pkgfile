@@ -5,21 +5,16 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 license=(GPL2)
 
-makedepends=(cmake boost guile libdbi webkitgtk gtest
+makedepends=(cmake boost guile libdbi gtest webkit2gtk-4
             gwenhywfar aqbanking libofx libdbi-drivers)
 run=(desktop-file-utils)
 
 name=gnucash
-version=5.15
-release=2
+version=5.16
+release=1
 
-source=(gnucash-boost-1.90-fix-filesystem-linking.patch
-        https://downloads.sourceforge.net/$name/$name-${version}.tar.bz2)
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
-prepare() {
- cd $name-$version
- patch -Np1 -i ../gnucash-boost-1.90-fix-filesystem-linking.patch
-}
 build() {
 cd $name-$version
 
