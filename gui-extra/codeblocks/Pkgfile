@@ -7,7 +7,7 @@ maintainer="The Code::Blocks Team"
 packager="tnut <tnut@nutyx.org>"
 contributors="Rems,Spiky"
 
-makedepends=(sed autoconf m4 zip boost hunspell wxgtk imagemagick)
+makedepends=(sed autoconf m4 zip boost hunspell wxwidgets imagemagick)
 run=(desktop-file-utils gtk-update-icon-cache hicolor-icon-theme
      shared-mime-info)
 
