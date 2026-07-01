@@ -4,16 +4,16 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.14/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm-10.2.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/.git_archival.txt
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__init__.py
@@ -21,6 +21,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/__main__.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/_compat_helpers.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/_get_version.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/discover.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/fallbacks.cpython-314.pyc
@@ -30,19 +31,24 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/integration.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/scm_workdir.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/__pycache__/version.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_compat_helpers.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_get_version.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/__init__.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/_discover.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/build_py.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/deprecation.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/egg_info.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/pyproject_reading.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/setup_cfg.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/setuptools.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/__pycache__/version_inference.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/_discover.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/build_py.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/deprecation.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/egg_info.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/pyproject_reading.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/setup_cfg.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools_scm/_integration/setuptools.py
