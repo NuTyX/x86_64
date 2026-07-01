@@ -1,0 +1,21 @@
+description="A library implementing the SSH2 protocol as defined by Internet Drafts"
+url="http://www.libssh2.org/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Remy,Greg,Spiky"
+
+name=libssh2
+version=1.11.1
+release=2
+makedepends=(openssl zlib)
+source=(security_fixes-1.patch
+   https://www.libssh2.org/download/$name-$version.tar.gz)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../security_fixes-1.patch
+}
+
+package() {
+rm $PKG/usr/lib/libssh2.la
+}
