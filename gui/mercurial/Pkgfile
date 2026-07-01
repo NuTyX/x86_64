@@ -10,11 +10,17 @@ makedepends=(gnupg subversion python-setuptools-scm
 run=(openssh python)
 
 name=mercurial
-version=7.2.2
+version=7.2.3
 
 source=(https://www.mercurial-scm.org/release/mercurial-$version.tar.gz
 mercurial.profile
 )
+
+prepare() {
+cd $name-$version
+sed -i "15,23 s/^/#/" setup.py
+}
+
 build() {
   cd $name-$version/
 
