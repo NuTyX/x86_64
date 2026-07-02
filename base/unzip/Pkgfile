@@ -7,12 +7,19 @@ name=unzip
 version=6.0
 release=2
 
-source=(http://downloads.sourceforge.net/infozip/unzip60.tar.gz)
+source=(http://downloads.sourceforge.net/infozip/unzip60.tar.gz
+        cumulative.patch
+        28-cve-2022-0529-and-cve-2022-0530.patch)
 
+prepare() {
+cd $name${version/./}
+#    patch -Np1 -i $SRC/cumulative.patch
+#    patch -p1 -F3 -i $SRC/28-cve-2022-0529-and-cve-2022-0530.patch
+}
 
 build() {
-	cd $name${version/./}
-	export CFLAGS="$CFLAGS -D_FILE_OFFSET_BITS=64 -DACORN_FTYPE_NFS \
+	cd ${name}${version//./}
+    export CFLAGS="$CFLAGS -std=gnu17 -D_FILE_OFFSET_BITS=64 -DACORN_FTYPE_NFS \
   -DWILD_STOP_AT_DIR -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT \
   -DUNICODE_WCHAR -DUTF8_MAYBE_NATIVE -DNO_LCHMOD -DDATE_FORMAT=DF_YMD \
   -DUSE_BZIP2 -DNATIVE"
