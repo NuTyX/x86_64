@@ -16,7 +16,7 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=140.12.0esr
+version=140.12.1esr
 
 source=(python-3.14-fixes-1.patch glibc-2.43.patch llvm-22-1.patch
         https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
@@ -51,6 +51,8 @@ prepare() {
     -i comm/rust/Cargo.lock
 
  patch -Np1 -i ../llvm-22-1.patch
+
+ sed -i '/const [CVP]/s/pub //' gfx/wr/webrender/src/texture_cache.rs
 }
 build() {
   cd $name-${version%esr}
