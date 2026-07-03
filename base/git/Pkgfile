@@ -5,10 +5,10 @@ maintainer="Junio C Hamano, Linus Torvalds"
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre,Rems,Fabienwang,Spiky"
 
-makedepends=(gettext)
+makedepends=(gettext python)
 name=git
-version=2.54.0
-release=2
+version=2.55.0
+release=1
 
 source=(https://mirrors.edge.kernel.org/pub/software/scm/$name/$name{,-manpages,-htmldocs}-$version.tar.xz)
 
@@ -18,10 +18,10 @@ cd $name-$version
 ./configure --prefix=/usr \
 --libexecdir=/usr/lib \
 --with-gitconfig=/etc/gitconfig \
---without-python
+--with-python=python3 --with-libpcre2
 
-make
-make DESTDIR=$PKG install
+NO_RUST=1 make
+NO_RUST=1 make DESTDIR=$PKG install
 
 mkdir -p $PKG/usr/share/{man,doc/$name}
 
