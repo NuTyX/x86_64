@@ -9,24 +9,27 @@ contributors="Rems,Tnut"
 makedepends=(nasm openjdk cmake)
 
 name=libjpeg-turbo
-version=3.1.4.1
+version=3.2.0
 
 source=(https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/$version/$name-$version.tar.gz)
 
 build() {
 cd libjpeg-turbo-$version
-sed 's/Szathmáry/Szathmary/g' -i java/org/libjpegturbo/turbojpeg/*.java
-cmake -DWITH_JAVA=ON \
-      -DWITH_JPEG8=ON \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-      -DCMAKE_BUILD_TYPE=RELEASE \
-      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/libjpeg-turbo2
+
+mkdir build
+cd    build
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr        \
+      -D CMAKE_BUILD_TYPE=RELEASE         \
+      -D ENABLE_STATIC=FALSE              \
+      -D CMAKE_INSTALL_DEFAULT_LIBDIR=lib \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON      \
+      ..
 
 make
 make DESTDIR=$PKG \
 exampledir="/usr/share/doc/${name}-$version" \
                   install
-install -m 644 ../$name-$version/src/jpegint.h "${PKG}/usr/include" # required by other software
-install -Dm644 LICENSE.md $PKG/usr/share/licenses/$name/LICENSE.md
+install -m 644 ../../$name-$version/src/jpegint.h "${PKG}/usr/include" # required by other software
+install -Dm644 ../LICENSE.md $PKG/usr/share/licenses/$name/LICENSE.md
 }
