@@ -3,14 +3,14 @@ url='http://www.leptonica.com'
 
 license='custom'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(libpng libtiff libjpeg-turbo giflib libwebp openjpeg)
 
 name=leptonica
 version=1.87.0
-release=1
+release=2
 
 source=(https://github.com/DanBloomberg/$name/archive/$version/$name-$version.tar.gz)
 
