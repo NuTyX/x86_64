@@ -1,14 +1,14 @@
 description="Library for manipulation of TIFF images"
 url="http://www.remotesensing.org/libtiff/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libjpeg-turbo ninja cmake)
 
 name=libtiff
 version=4.7.1
-release=1
+release=2
 
 source=(http://download.osgeo.org/libtiff/tiff-$version.tar.gz)
 
