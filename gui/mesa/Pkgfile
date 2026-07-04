@@ -5,8 +5,8 @@ url="https://www.xorg-mesa3d.org"
 
 license="custom"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierre,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Rems,Spiky"
 
 makedepends=(meson ninja libclc python-ply rust-bindgen cbindgen python-pycparser
              xorgproto pkgconf libtool xorg-xrandr wayland python-mako
@@ -17,7 +17,7 @@ makedepends=(meson ninja libclc python-ply rust-bindgen cbindgen python-pycparse
 run=(libglvnd)
 
 name=mesa
-version=26.1.3
+version=26.1.4
 
 source=(LICENSE
         https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
