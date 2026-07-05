@@ -27,6 +27,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/
 -rw-r--r--	root/root	usr/src/kernel-612/.modules.order.cmd
 -rw-rw-r--	root/root	usr/src/kernel-612/.rustfmt.toml
 -rw-r--r--	root/root	usr/src/kernel-612/.tmp_vmlinux.kallsyms0.syms (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-612/.tmp_vmlinux.nm-sort
 -rw-r--r--	root/root	usr/src/kernel-612/.tmp_vmlinux0.kallsyms.S
 -rw-r--r--	root/root	usr/src/kernel-612/.tmp_vmlinux0.kallsyms.o
 -rwxr-xr-x	root/root	usr/src/kernel-612/.tmp_vmlinux1
@@ -24066,7 +24067,6 @@ drwxrwxr-x	root/root	usr/src/kernel-612/scripts/selinux/mdp/
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/sign-file.c
 -rwxr-xr-x	root/root	usr/src/kernel-612/scripts/sorttable
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/sorttable.c
--rw-rw-r--	root/root	usr/src/kernel-612/scripts/sorttable.h
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/spdxcheck-test.sh
 -rwxrwxr-x	root/root	usr/src/kernel-612/scripts/spdxcheck.py
 -rw-rw-r--	root/root	usr/src/kernel-612/scripts/spdxexclude
@@ -29049,6 +29049,7 @@ drwxrwxr-x	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/kprobe_multi_override.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/kprobe_multi_session.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/kprobe_multi_session_cookie.c
+-rw-r--r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/kprobe_multi_sleepable.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/kptr_xchg_inline.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/ksym_race.c
 -rw-rw-r--	root/root	usr/src/kernel-612/tools/testing/selftests/bpf/progs/linked_funcs1.c
