@@ -1,16 +1,15 @@
 description="The mdadm package contains administration tools for software RAID."
 url="https://git.kernel.org/pub/scm/utils/mdadm"
 
-contributors="Pierre,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(systemd)
 
 name=mdadm
-version=4.4
-release=2
+version=4.6
 
-source=(http://www.kernel.org/pub/linux/utils/raid/$name/$name-$version.tar.xz)
+source=(https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-$version.tar.gz)
 
 build() {
 cd $name-$version
