@@ -53,7 +53,7 @@ RawFile: qcom/qcs6490/Thundercomm/RubikPi3/adspr.jsn
 RawFile: qcom/qcs6490/Thundercomm/RubikPi3/adsps.jsn
 RawFile: qcom/qcs6490/Thundercomm/RubikPi3/adspua.jsn
 File: qcom/qcs615/adsp.mbn
-Version: ADSP.VT.5.2.c6-00059-SM6150-1
+Version: ADSP.VT.5.2.c6-00073-SM6150-1
 RawFile: qcom/qcs615/adspr.jsn
 RawFile: qcom/qcs615/adsps.jsn
 RawFile: qcom/qcs615/adspua.jsn
@@ -111,7 +111,7 @@ Version: vfw-3.1:rel0085-070fa3311d9ef968015fee7fea07198d7eb208a1
 RawFile: qcom/x1e80100/LENOVO/21N1/adspua.jsn
 File: qcom/x1e80100/cdsp.mbn
 File: qcom/x1e80100/cdsp_dtb.mbn
-Version: CDSP.HT.2.9.c1-00069-HAMOA-1
+Version: CDSP.HT.2.9.c1-00082-HAMOA-1
 RawFile: qcom/x1e80100/cdspr.jsn
 File: qcom/x1e80100/LENOVO/21N1/qcadsp8380.mbn
 Version: ADSP.HT.5.9-00787.2-HAMOA-1
@@ -140,7 +140,7 @@ File: qcom/x1e80100/LENOVO/83ED/qcdxkmsuc8380.mbn
 File: qcom/x1e80100/LENOVO/83ED/qcvss8380.mbn
 Version: video-firmware.3.1-e5aea20c64cb6df9a1c9be99e206053b36424939
 
-Licence: Redistributable. See LICENSE.qcom and qcom/NOTICE.txt for details
+Licence: Redistributable. See LICENSE.qcom and NOTICE.qcom for details
 
 Info:
 Binary files supplied originally from
@@ -158,17 +158,17 @@ https://github.com/andersson/pil-squasher
 
 File: qcom/glymur/adsp.mbn
 File: qcom/glymur/adsp_dtb.mbn
-Version: LPAIDSP.HT.1.6.2-00001-GLYMUR-1
+Version: LPAIDSP.HT.1.6.2-00020-GLYMUR-2
 RawFile: qcom/glymur/adspr.jsn
 RawFile: qcom/glymur/adsps.jsn
 RawFile: qcom/glymur/adspua.jsn
 File: qcom/glymur/cdsp.mbn
 File: qcom/glymur/cdsp_dtb.mbn
-Version: CDSP.HT.3.3-00311-GLYMUR-1
+Version: CDSP.HT.3.3-00315-GLYMUR-1
 RawFile: qcom/glymur/cdspr.jsn
 File: qcom/kaanapali/adsp.mbn
 File: qcom/kaanapali/adsp_dtb.mbn
-Version: LPAIDSP.HT.1.6.1-00002-KAANAPALI-1
+Version: LPAIDSP.HT.1.6.1-00035-KAANAPALI-1
 RawFile: qcom/kaanapali/adspr.jsn
 RawFile: qcom/kaanapali/adsps.jsn
 RawFile: qcom/kaanapali/adspua.jsn
@@ -182,34 +182,34 @@ File: qcom/kaanapali/soccp_dtb.mbn
 Version: SOCCP.FW.2.1-00204-KAANAPALI_SOCCP_PACK-1
 RawFile: qcom/kaanapali/soccpr.jsn
 File: qcom/qcs8300/adsp.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 RawFile: qcom/qcs8300/adspr.jsn
 RawFile: qcom/qcs8300/adspua.jsn
 File: qcom/qcs8300/cdsp0.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 RawFile: qcom/qcs8300/cdspr.jsn
 File: qcom/qcs8300/gpdsp0.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 RawFile: qcom/qcs8300/gpdspr.jsn
 File: qcom/sa8775p/adsp.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 RawFile: qcom/sa8775p/adspr.jsn
 RawFile: qcom/sa8775p/adspua.jsn
 File: qcom/sa8775p/cdsp0.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 File: qcom/sa8775p/cdsp1.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 RawFile: qcom/sa8775p/cdspr.jsn
 RawFile: qcom/sa8775p/cdsp1r.jsn
 File: qcom/sa8775p/gpdsp0.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 File: qcom/sa8775p/gpdsp1.mbn
-Version: DSP.AT.1.0.1-00196-LEMANS-2
+Version: DSP.AT.1.0.1-00201-LEMANS-2
 RawFile: qcom/sa8775p/gpdsp1r.jsn
 RawFile: qcom/sa8775p/gpdspr.jsn
 File: qcom/sm8750/adsp.mbn
 File: qcom/sm8750/adsp_dtb.mbn
-Version: LPAIDSP.HT.1.2.c2-00001-PAKALA-1
+Version: LPAIDSP.HT.1.2.c2-00021-PAKALA-1
 RawFile: qcom/sm8750/adspr.jsn
 RawFile: qcom/sm8750/adsps.jsn
 RawFile: qcom/sm8750/adspua.jsn
@@ -226,10 +226,16 @@ RawFile: qcom/x1e80100/adsps.jsn
 RawFile: qcom/x1e80100/adspua.jsn
 RawFile: qcom/x1e80100/battmgr.jsn
 File: qcom/shikra/cdsp.mbn
-Version: CDSP.VT.2.4.3-00076-SHIKRA-1
+Version: CDSP.VT.2.4.3-00088-SHIKRA-1
 RawFile: qcom/shikra/cdspr.jsn
+File: qcom/shikra/lpaicp.mbn
+File: qcom/shikra/lpaicp_dtb.mbn
+Version: LPAICP.FW.1.2-00135-SHIKRA_LPAICP_PACK-1
+RawFile: qcom/shikra/lpaicpr.jsn
+File: qcom/shikra/cqs/qdsp6sw.mbn
+Version: MPSS.JO.4.0-00194-SHIKRA_LWG_PACK-1
 
-Licence: Redistributable. See LICENSE.qcom-2 and qcom/NOTICE.txt for details
+Licence: Redistributable. See LICENSE.qcom-2 and NOTICE.qcom for details
 
 File: qcom/x1e80100/dell/xps13-9345/adsp_dtbs.elf
 RawFile: qcom/x1e80100/dell/xps13-9345/adspr.jsn
@@ -242,6 +248,6 @@ File: qcom/x1e80100/dell/xps13-9345/qcadsp8380.mbn
 File: qcom/x1e80100/dell/xps13-9345/qccdsp8380.mbn
 File: qcom/x1e80100/dell/xps13-9345/qcdxkmsuc8380.mbn
 
-Licence: Redistributable. See LICENSE.dell and qcom/NOTICE.txt for details
+Licence: Redistributable. See LICENSE.dell and NOTICE.qcom for details
 
 --------------------------------------------------------------------------
