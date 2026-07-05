@@ -30,6 +30,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/
 -rw-r--r--	root/root	usr/src/kernel-66/.tmp_vmlinux.kallsyms2.S
 -rw-r--r--	root/root	usr/src/kernel-66/.tmp_vmlinux.kallsyms2.o
 -rw-r--r--	root/root	usr/src/kernel-66/.tmp_vmlinux.kallsyms2.syms
+-rw-r--r--	root/root	usr/src/kernel-66/.tmp_vmlinux.nm-sort
 -rw-r--r--	root/root	usr/src/kernel-66/.version
 -rw-r--r--	root/root	usr/src/kernel-66/.vmlinux.a.cmd
 -rw-r--r--	root/root	usr/src/kernel-66/.vmlinux.cmd
@@ -23494,7 +23495,6 @@ drwxrwxr-x	root/root	usr/src/kernel-66/scripts/selinux/mdp/
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/sign-file.c
 -rwxr-xr-x	root/root	usr/src/kernel-66/scripts/sorttable
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/sorttable.c
--rw-rw-r--	root/root	usr/src/kernel-66/scripts/sorttable.h
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/spdxcheck-test.sh
 -rwxrwxr-x	root/root	usr/src/kernel-66/scripts/spdxcheck.py
 -rw-rw-r--	root/root	usr/src/kernel-66/scripts/spdxexclude
@@ -27876,6 +27876,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/kprobe_multi.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/kprobe_multi_empty.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/kprobe_multi_override.c
+-rw-r--r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/kprobe_multi_sleepable.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/ksym_race.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/linked_funcs1.c
 -rw-rw-r--	root/root	usr/src/kernel-66/tools/testing/selftests/bpf/progs/linked_funcs2.c
