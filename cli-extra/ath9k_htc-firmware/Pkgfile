@@ -9,7 +9,7 @@ license="Custom"
 set=(linux-firmware)
 
 name=ath9k_htc-firmware
-version=20260519
+version=20260622
 
 makedepends=(rdfind)
 source=(WHENCE
@@ -25,6 +25,4 @@ cp ../WHENCE .
 make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware NUM_JOBS=1 install
 
 install -Dt $PKG/usr/share/licenses/$name -m644 WHENCE
-install -Dt $PKG/usr/share/licenses/$name -m644 LICENCE.atheros_firmware
-install -Dt $PKG/usr/share/licenses/$name -m644 LICENCE.open-ath9k-htc-firmware
 }
