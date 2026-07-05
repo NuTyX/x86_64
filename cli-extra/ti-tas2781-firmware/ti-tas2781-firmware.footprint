@@ -115,14 +115,27 @@ lrwxrwxrwx	root/root	lib/firmware/TAS2XXX8F40.bin -> ti/audio/tas2781/TAS2XXX8F4
 lrwxrwxrwx	root/root	lib/firmware/TAS2XXX8F41.bin -> ti/audio/tas2781/TAS2XXX8F41.bin
 lrwxrwxrwx	root/root	lib/firmware/TAS2XXX8F42.bin -> ti/audio/tas2781/TAS2XXX8F42.bin
 lrwxrwxrwx	root/root	lib/firmware/TAS2XXX8F62.bin -> ti/audio/tas2781/TAS2XXX8F62.bin
+lrwxrwxrwx	root/root	lib/firmware/TAS2XXX8F94.bin -> ti/audio/tas2781/TAS2XXX8F94.bin
+lrwxrwxrwx	root/root	lib/firmware/TAS2XXX8F95.bin -> ti/audio/tas2781/TAS2XXX8F95.bin
 lrwxrwxrwx	root/root	lib/firmware/TIAS2781RCA2.bin -> ti/audio/tas2781/TIAS2781RCA2.bin
 lrwxrwxrwx	root/root	lib/firmware/TIAS2781RCA4.bin -> ti/audio/tas2781/TIAS2781RCA4.bin
 lrwxrwxrwx	root/root	lib/firmware/TXNW2781RCA0.bin -> ti/audio/tas2781/TXNW2781RCA1.bin
 lrwxrwxrwx	root/root	lib/firmware/TXNW2781RCA1.bin -> ti/audio/tas2781/TXNW2781RCA0.bin
 lrwxrwxrwx	root/root	lib/firmware/TXNW2781RCA2.bin -> ti/audio/tas2781/TIAS2781RCA2.bin
 lrwxrwxrwx	root/root	lib/firmware/TXNW2781RCA4.bin -> ti/audio/tas2781/TIAS2781RCA4.bin
+lrwxrwxrwx	root/root	lib/firmware/tas2572-1-1amp-reg.bin -> ti/audio/tas257x/tas2572-1-1amp-reg.bin
+lrwxrwxrwx	root/root	lib/firmware/tas2572-2-1amp-reg.bin -> ti/audio/tas257x/tas2572-2-1amp-reg.bin
+lrwxrwxrwx	root/root	lib/firmware/tas2572-3-1amp-reg.bin -> ti/audio/tas257x/tas2572-3-1amp-reg.bin
+lrwxrwxrwx	root/root	lib/firmware/tas2572-3amp-reg.bin -> ti/audio/tas257x/tas2572-3amp-reg.bin
+lrwxrwxrwx	root/root	lib/firmware/tas257x-1amp-reg.bin -> ti/audio/tas257x/tas257x-1amp-reg.bin
 drwxr-xr-x	root/root	lib/firmware/ti/
 drwxr-xr-x	root/root	lib/firmware/ti/audio/
+drwxr-xr-x	root/root	lib/firmware/ti/audio/tas257x/
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas257x/tas2572-1-1amp-reg.bin
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas257x/tas2572-2-1amp-reg.bin
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas257x/tas2572-3-1amp-reg.bin
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas257x/tas2572-3amp-reg.bin
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas257x/tas257x-1amp-reg.bin
 drwxr-xr-x	root/root	lib/firmware/ti/audio/tas2781/
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX0C94.bin
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX0C95.bin
@@ -210,6 +223,8 @@ drwxr-xr-x	root/root	lib/firmware/ti/audio/tas2781/
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX8F41.bin
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX8F42.bin
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX8F62.bin
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX8F94.bin (EMPTY)
+-rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TAS2XXX8F95.bin (EMPTY)
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TIAS2781RCA2.bin
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TIAS2781RCA4.bin
 -rw-r--r--	root/root	lib/firmware/ti/audio/tas2781/TXNW2781RCA0.bin
@@ -218,5 +233,4 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/ti-tas2781-firmware/
--rw-r--r--	root/root	usr/share/licenses/ti-tas2781-firmware/LICENCE.ti-tspa
 -rw-r--r--	root/root	usr/share/licenses/ti-tas2781-firmware/WHENCE
