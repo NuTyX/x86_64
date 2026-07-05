@@ -10,10 +10,10 @@ makedepends=(extra-cmake-modules postgresql qt6-tools
              boost kio kitemmodels libglvnd libxslt kxmlgui)
 run=(sqlite shared-mime-info)
 
-set=(kde6 kde-gear)
+set=(kde6 kde6-gear)
 
 name=akonadi
-version=26.04.2
+version=26.04.3
 release=1
 
 source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
