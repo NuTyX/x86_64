@@ -8,7 +8,7 @@ makedepends=(cmake unzip ffmpeg gstreamer-plugins-base gtk3 jasper libjpeg-turbo
              libpng libtiff libwebp v4l-utils python doxygen)
 
 name=opencv
-version=5.0.0
+version=4.13.0
 
 source=(ffmpeg8.patch
         https://github.com/opencv/opencv/archive/$version/opencv-$version.tar.gz)
