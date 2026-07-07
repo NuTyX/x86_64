@@ -1,23 +1,25 @@
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cffi-gen-src
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.14/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
 -rwxr-xr-x	root/root	usr/lib/python3.14/site-packages/_cffi_backend.cpython-314-x86_64-linux-gnu.so
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/licenses/AUTHORS
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.0.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/__init__.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/_cffi_gen_src.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/_imp_emulation.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/_shimmed_dist_utils.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/api.cpython-314.pyc
@@ -27,6 +29,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/cparser.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/error.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/ffiplatform.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/gen_src.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/lock.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/model.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/pkgconfig.cpython-314.pyc
@@ -36,6 +39,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/vengine_gen.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/verifier.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/_cffi_errors.h
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/_cffi_gen_src.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/_cffi_include.h
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/_embedding.h
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/_imp_emulation.py
@@ -47,6 +51,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/cffi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/cparser.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/error.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/ffiplatform.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/gen_src.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/lock.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/model.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/cffi/parse_c_type.h
