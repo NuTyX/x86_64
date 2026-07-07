@@ -3,23 +3,16 @@ url="https://www.devicetree.org/"
 
 license="BSD-2-Clause"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python meson yaml swig)
 name=dtc
-version=1.7.2
-release=1
+version=1.8.1
 
 PKGMK_MESON_OPTIONS="-Dpython=disabled"
 
-source=($name-$version-glibc_fixes-1.patch
-        https://kernel.org/pub/software/utils/$name/$name-$version.tar.xz)
-
-prepare() {
- cd $name-$version
- patch -Np1 -i ../dtc-1.7.2-glibc_fixes-1.patch
-}
+source=(https://kernel.org/pub/software/utils/$name/$name-$version.tar.xz)
 
 build=meson
 
