@@ -6,7 +6,7 @@ packager="spiky <spiky@nutyx.org>"
 
 
 name=bash-completion
-version=2.17.0
+version=2.18.0
 
 PKGMK_IGNORE_UNPACK='yes'
 source=(https://github.com/scop/$name/releases/download/$version/$name-$version.tar.xz)
@@ -25,5 +25,5 @@ make DESTDIR=$PKG install
 
 
 # remove Slackware's makepkg completion
-rm $PKG/usr/share/bash-completion/completions/makepkg
+#rm $PKG/usr/share/bash-completion/completions/makepkg
 }
