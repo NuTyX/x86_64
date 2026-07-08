@@ -2309,6 +2309,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/mod/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_fuzzfail_v0.2.0.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_generics_v1.0.0.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_ignore_v1.0.0.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_importcrypto_v1.0.0.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_incompatiblewithsub_v1.0.0.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_incompatiblewithsub_v2.0.0+incompatible.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/mod/example.com_invalidpath_v1_v1.0.0.txt
@@ -2920,6 +2921,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_exec_toolchain.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_extra.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_fallback.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_fips140_issue73649.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_fossil.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_future.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/mod_get_go_file.txt
@@ -15619,6 +15621,7 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7648.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7867.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7884.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue79182.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue79186.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7921.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7944.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7995.go
@@ -15629,6 +15632,7 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7995b.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7996.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7997.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue7998.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue80004.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue8004.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue8011.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue8017.go
