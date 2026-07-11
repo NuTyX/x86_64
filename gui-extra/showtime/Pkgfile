@@ -1,17 +1,17 @@
 description='Video player for GNOME'
 url='https://apps.gnome.org/Showtime/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(git blueprint-compiler gstreamer-plugins-base)
 run=(gstreamer gstreamer-plugins-base gstreamer-plugins-good
-     libadwaita python-gobject gtk4 gstreamer-plugins-rs)
+     libadwaita python-gobject gtk4)
 set=(gnome)
 
 name=showtime
 version=50.0
-release=2
+release=3
 
 source=(https://gitlab.gnome.org/GNOME/showtime.git)
 
