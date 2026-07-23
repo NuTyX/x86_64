@@ -6,12 +6,12 @@ contributors="Tnut"
 
 makedepends=(git blueprint-compiler gstreamer-plugins-base)
 run=(gstreamer gstreamer-plugins-base gstreamer-plugins-good
-     libadwaita python-gobject gtk4)
+     libadwaita python-gobject gtk4 gstreamer-plugins-rs)
 set=(gnome)
 
 name=showtime
 version=50.0
-release=3
+release=4
 
 source=(https://gitlab.gnome.org/GNOME/showtime.git)
 
