@@ -8,17 +8,17 @@ contributors="Pierre,Remy,Fabienwang,Spiky"
 
 categories=(Network WebBrowser)
 
-makedepends=(wget python node cbindgen libwebp nspr libevent rustc
-             dbus-glib autoconf2-13 libnotify yasm llvm xorg-libxcomposite)
-run=(pulseaudio sqlite libvpx nss gtk3 zip unzip
-     gstreamer gstreamer-plugins-base gstreamer-plugins-good
+makedepends=(wget python node cbindgen libwebp nspr libevent rustc nss gtk3 libvpx
+             sqlite dbus-glib autoconf2-13 libnotify yasm llvm xorg-libxcomposite
+             nspr zip unzip)
+run=(pulseaudio gstreamer gstreamer-plugins-base gstreamer-plugins-good
      gstreamer-plugins-libav shared-mime-info
      startup-notification desktop-file-utils hicolor-icon-theme
      shared-mime-info gtk-update-icon-cache)
 
 
 name=firefox
-version=152.0.6
+version=153.0
 
 locale_version=$version
 
