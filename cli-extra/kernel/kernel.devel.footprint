@@ -29783,6 +29783,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/perf/util/scripting-engines/
 -rw-rw-r--	root/root	usr/src/kernel/tools/perf/util/unwind-libdw.h
 -rw-rw-r--	root/root	usr/src/kernel/tools/perf/util/unwind-libunwind-local.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/perf/util/unwind-libunwind.c
+-rw-r--r--	root/root	usr/src/kernel/tools/perf/util/unwind.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/perf/util/unwind.h
 -rw-rw-r--	root/root	usr/src/kernel/tools/perf/util/usage.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/perf/util/util.c
@@ -30553,6 +30554,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bad_struct_ops.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bind_perm.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bloom_filter_map.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bpf_attr_size.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bpf_cookie.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bpf_gotox.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/bpf_insn_array.c
@@ -30776,7 +30778,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/queue_stack_map.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/raw_tp_null.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/raw_tp_test_run.c
--rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/raw_tp_writable_reject_nbd_invalid.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/raw_tp_writable_reject_bad_access.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/raw_tp_writable_test_run.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/rbtree.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/prog_tests/rcu_read_lock.c
@@ -31879,6 +31881,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_precision.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_prevent_map_lookup.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_private_stack.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_ptr_to_buf.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_raw_stack.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_raw_tp_writable.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/bpf/progs/verifier_ref_tracking.c
