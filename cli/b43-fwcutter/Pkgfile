@@ -4,10 +4,9 @@ contributors="Pierre,Greg,Tnut"
 packager="spiky <spiky@nutyx.org>"
 
 name=b43-fwcutter
-version=019
-release=3
+version=020
 
-source=(https://bues.ch/b43/fwcutter/${name}-${version}.tar.bz2)
+source=(https://bues.ch/b43/fwcutter/${name}-${version}.tar.xz)
 
 build() {
    cd $name-$version
