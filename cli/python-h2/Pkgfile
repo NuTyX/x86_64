@@ -1,8 +1,8 @@
 description='HTTP/2 State-Machine based protocol implementation'
 url='https://pypi.org/project/h2/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-wheel python-installer python-setuptools python-hyperframe python-hpack)
 
@@ -10,9 +10,9 @@ name=python-h2
 _name="h2"
 alias=(${_name})
 
-version=4.3.0
+version=4.4.0
 
-source=(https://files.pythonhosted.org/packages/1d/17/afa56379f94ad0fe8defd37d6eb3f89a25404ffc71d4d848893d270325fc/h2-$version.tar.gz)
+source=(https://github.com/python-hyper/hyper-h2/archive/v$version/$name-$version.tar.gz)
 
 build() {
 
