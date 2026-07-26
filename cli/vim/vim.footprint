@@ -113,6 +113,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/colors/lists/
 -rw-r--r--	root/root	usr/share/vim/vim92/colors/lunaperche.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/colors/morning.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/colors/murphy.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/colors/novum.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/colors/pablo.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/colors/peachpuff.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/colors/quiet.vim
@@ -179,6 +180,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/compiler/
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/haml.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/hare.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/hp_acc.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/compiler/iar.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/icc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/icon.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/compiler/ifort.vim
@@ -403,6 +405,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/gitconfig.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/gitignore.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/gitrebase.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/gitrevlist.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/gitsendemail.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/gleam.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/go.vim
@@ -425,6 +428,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/heex.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/help.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hgcommit.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hip.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hlsplaylist.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hog.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hostconf.vim
@@ -447,6 +451,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/javacc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/javascript.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/javascriptreact.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jinja.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jjdescription.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jproperties.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jq.vim
@@ -783,6 +788,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/indent/
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/handlebars.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hare.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hcl.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/indent/hip.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hog.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/html.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/htmldjango.vim
@@ -1433,6 +1439,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/gitignore.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/gitolite.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/gitrebase.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/gitrevlist.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/gitsendemail.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/gkrellmrc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/gleam.vim
@@ -1473,6 +1480,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hercules.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hex.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hgcommit.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/hip.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hitest.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hlsplaylist.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hog.vim
@@ -1848,8 +1856,12 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/shared/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/srec.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/srt.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/ssa.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/sshallowedsigners.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/sshauthorizedkeys.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/sshconfig.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/sshdconfig.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/sshknownhosts.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/sshpublickey.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/st.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/stata.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/stp.vim
