@@ -7,7 +7,7 @@ contributors="Tnut"
 makedepends=(autoconf automake m4 sed grep)
 
 name=dropbear
-version=2026.91
+version=2026.93
 
 source=(https://github.com/mkj/dropbear/archive/DROPBEAR_${version}.tar.gz)
 prepare() {
