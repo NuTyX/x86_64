@@ -12,6 +12,7 @@ name=frei0r-plugins
 version=3.2.3
 
 source=(https://github.com/dyne/frei0r/archive/refs/tags/v$version.tar.gz)
+PKGMK_KEEP_SOURCES="no"
 
 prepare() {
 mv frei0r-$version $name-$version
