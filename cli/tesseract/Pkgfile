@@ -3,13 +3,13 @@ url='https://github.com/tesseract-ocr/tesseract'
 
 license="APACHE"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(curl libarchive leptonica icu pango asciidoc)
 
 name=tesseract
-version=5.5.2
+version=5.5.3
 
 source=(https://github.com/tesseract-ocr/$name/archive/$version/$name-$version.tar.gz)
 
