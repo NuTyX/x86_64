@@ -7,7 +7,9 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=corrosion
-version=v0.6.1
+version=0.6.1
+tag=v$version
+release=2
 
 makedepends=(cmake rustc git)
 
