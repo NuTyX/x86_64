@@ -16,14 +16,15 @@ PKGMK_GROUPS=(devel doc man lib)
 PKGMK_LOCALES=()
 
 name=cards
-version=3.5.92
+version=3.5.92.1
 release=1
+tag=1fdf630
 
 set=(chroot)
 
 [ "$release" != "1" ] &&  patchname="$name-$version-consolidate-$release.patch"
 
-source=(https://sourceforge.net/projects/nutyx/files/sources/$name/$name-$version.tar.gz)
+source=($url.git)
 
 [ -z "$patchname" ] || source+=" $patchname"
 
@@ -38,10 +39,14 @@ cd $name-$version
 make all
 make DESTDIR=$PKG install
 
-mkdir -p $PKG/usr/share/doc/cards-$version
-install -m644 ChangeLog \
-$PKG/usr/share/doc/cards-$version/ChangeLog
+mkdir -p $PKG/usr/share/doc/$name
 
+if [ -e ChangeLog ]; then
+  install -m644 ChangeLog \
+  $PKG/usr/share/doc/$name/ChangeLog
+else
+  git log > $PKG/usr/share/doc/$name/ChangeLog
+fi
 }
 lib() {
 cd $PKG
