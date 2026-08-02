@@ -1,5 +1,5 @@
 description="The Control Center for GNOME"
-url="http://apps.gnome.org/Settings/"
+url="https://gitlab.gnome.org/GNOME/gnome-control-center"
 
 license="GPL-2.0-or-later"
 
@@ -19,9 +19,9 @@ run=(iso-codes gsettings-desktop-schemas libgnomekbd tecla
 set=(gnome-base gnome)
 
 name=gnome-control-center
-version=50.3
+version=50.4
 
-source=(https://gitlab.gnome.org/GNOME/gnome-control-center.git)
+source=($url.git)
 
 build=meson
 
