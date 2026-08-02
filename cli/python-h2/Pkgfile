@@ -1,22 +1,25 @@
 description='HTTP/2 State-Machine based protocol implementation'
-url='https://pypi.org/project/h2/'
+url='https://hyper.rtfd.org'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(python-wheel python-installer python-setuptools python-hyperframe python-hpack)
+makedepends=(git python-wheel python-installer python-setuptools
+             python-hyperframe python-hpack)
 
 name=python-h2
 _name="h2"
 alias=(${_name})
 
 version=4.4.0
+release=2
+tag=v$version
 
-source=(https://github.com/python-hyper/hyper-h2/archive/v$version/$name-$version.tar.gz)
+source=(https://github.com/python-hyper/h2.git)
 
 build() {
 
-  cd ${_name}-$version
+  cd $name-$version
 
   python -m build --wheel --no-isolation
   python -m installer --destdir=$PKG dist/*.whl
