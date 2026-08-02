@@ -1,5 +1,5 @@
 description="Server and user space API to deal with multimedia pipelines"
-url="https://pipewire.org"
+url="https://github.com/PipeWire/pipewire"
 
 license="MIT"
 
@@ -10,9 +10,10 @@ makedepends=(meson dbus doxygen python-docutils ffmpeg glib graphviz gstreamer
              gstreamer-plugins-base sbc valgrind libsndfile xmltoman) 
 
 name=pipewire
-version=1.6.7
+version=1.6.8
 
-source=(https://github.com/PipeWire/pipewire/archive/$version/$name-$version.tar.gz)
+source=($url.git)
+
 PKGMK_GROUPS=(devel man doc)
 CFLAGS="-Wno-error=discarded-qualifiers"
 

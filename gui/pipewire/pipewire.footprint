@@ -50,8 +50,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpipewire.so
 -rw-r--r--	root/root	usr/lib/liblua.a
 lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so -> libpipewire-0.3.so.0
-lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1607.0
--rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1607.0
+lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1608.0
+-rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1608.0
 lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so -> libwireplumber-0.5.so.0
 lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so.0 -> libwireplumber-0.5.so.0.515.0
 -rwxr-xr-x	root/root	usr/lib/libwireplumber-0.5.so.0.515.0
@@ -356,7 +356,17 @@ drwxr-xr-x	root/root	usr/share/wireplumber/scripts/monitors/
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/alsa-midi.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/alsa.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez-midi.lua
--rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez.lua
+drwxr-xr-x	root/root	usr/share/wireplumber/scripts/monitors/bluez/
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/create-device.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/create-loopback-node.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/create-node.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/create-offload-node.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/create-set-node.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/enumerate-device.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/name-device.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/name-node.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/remove-device.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/bluez/remove-node.lua
 drwxr-xr-x	root/root	usr/share/wireplumber/scripts/monitors/libcamera/
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/libcamera/create-device.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/monitors/libcamera/create-node.lua
