@@ -1,6 +1,5 @@
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/ebml/
--rw-r--r--	root/root	usr/include/ebml/Debug.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlBinary.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlConfig.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlContexts.h
@@ -16,7 +15,6 @@ drwxr-xr-x	root/root	usr/include/ebml/
 -rw-r--r--	root/root	usr/include/ebml/EbmlSInteger.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlStream.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlString.h
--rw-r--r--	root/root	usr/include/ebml/EbmlSubHead.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlTypes.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlUInteger.h
 -rw-r--r--	root/root	usr/include/ebml/EbmlUnicodeString.h
@@ -27,8 +25,12 @@ drwxr-xr-x	root/root	usr/include/ebml/
 -rw-r--r--	root/root	usr/include/ebml/MemReadIOCallback.h
 -rw-r--r--	root/root	usr/include/ebml/SafeReadIOCallback.h
 -rw-r--r--	root/root	usr/include/ebml/StdIOCallback.h
-drwxr-xr-x	root/root	usr/include/ebml/c/
--rw-r--r--	root/root	usr/include/ebml/c/libebml_t.h
 -rw-r--r--	root/root	usr/include/ebml/ebml_export.h
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/EBML/
+-rw-r--r--	root/root	usr/lib/cmake/EBML/EBMLConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/EBML/EBMLConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/EBML/EBMLTargets-noconfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/EBML/EBMLTargets.cmake
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libebml.pc
