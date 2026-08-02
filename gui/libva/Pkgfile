@@ -11,7 +11,7 @@ tag=$version
 makedepends=(xorg-libdrm xorg-libxfixes wayland xorg-libx11
              xorg-libxext libglvnd)
 
-source=(https://github.com/intel/libva.git)
+source=($url.git)
 
 build() {
 cd $name-$version
