@@ -4,17 +4,17 @@ url="https://github.com/Matroska-Org/libmatroska"
 packager="spiky <spiky@nutyx.org>"
 contributors="Fabienwang.,Tnut"
 
-makedepends=(cmake)
+makedepends=(git cmake)
 run=(libebml)
 
 name=libmatroska
-version=1.7.1
-release=2
+version=1.7.2
+tag=$version
 
-source=(https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-$version.zip)
+source=($url.git)
 
 build() {
-  cd $name-release-$version
+  cd $name-$version
   mkdir build
   cd build
   
