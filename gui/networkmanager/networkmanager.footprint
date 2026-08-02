@@ -22,9 +22,9 @@ lrwxrwxrwx	root/root	usr/bin/nmtui-edit -> nmtui
 lrwxrwxrwx	root/root	usr/bin/nmtui-hostname -> nmtui
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/
-drwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.1/
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.1/libnm-device-plugin-adsl.so
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.56.1/libnm-device-plugin-wifi.so
+drwxr-xr-x	root/root	usr/lib/NetworkManager/1.58.0/
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.58.0/libnm-device-plugin-adsl.so
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.58.0/libnm-device-plugin-wifi.so
 drwxr-xr-x	root/root	usr/lib/NetworkManager/VPN/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/conf.d/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/dispatcher.d/
@@ -40,7 +40,15 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 lrwxrwxrwx	root/root	usr/lib/libnm.so -> libnm.so.0
 lrwxrwxrwx	root/root	usr/lib/libnm.so.0 -> libnm.so.0.1.0
 -rwxr-xr-x	root/root	usr/lib/libnm.so.0.1.0
+-rwxr-xr-x	root/root	usr/lib/nm-daemon-helper
+-rwxr-xr-x	root/root	usr/lib/nm-dhcp-helper
+-rwxr-xr-x	root/root	usr/lib/nm-dispatcher
+-rwxr-xr-x	root/root	usr/lib/nm-initrd-generator
+-rwxr-xr-x	root/root	usr/lib/nm-libnm-helper
+-rwxr-xr-x	root/root	usr/lib/nm-priv-helper
 drwxr-xr-x	root/root	usr/lib/systemd/
+drwxr-xr-x	root/root	usr/lib/systemd/system-generators/
+-rwxr-xr-x	root/root	usr/lib/systemd/system-generators/nm-initrd-generator.sh
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/NetworkManager-config-initrd.service
 -rw-r--r--	root/root	usr/lib/systemd/system/NetworkManager-dispatcher.service
@@ -54,13 +62,6 @@ drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/84-nm-drivers.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/85-nm-unmanaged.rules
 -rw-r--r--	root/root	usr/lib/udev/rules.d/90-nm-thunderbolt.rules
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/nm-daemon-helper
--rwxr-xr-x	root/root	usr/libexec/nm-dhcp-helper
--rwxr-xr-x	root/root	usr/libexec/nm-dispatcher
--rwxr-xr-x	root/root	usr/libexec/nm-initrd-generator
--rwxr-xr-x	root/root	usr/libexec/nm-libnm-helper
--rwxr-xr-x	root/root	usr/libexec/nm-priv-helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/

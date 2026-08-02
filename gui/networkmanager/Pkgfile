@@ -1,5 +1,5 @@
 description="Network connection manager and user applications"
-url="https://networkmanager.dev/"
+url="https://gitlab.freedesktop.org/NetworkManager/NetworkManager"
 
 license="LGPL-2.1-or-later"
 
@@ -17,41 +17,26 @@ alias=(NetworkManager)
 _name=NetworkManager
 
 name=networkmanager
-version=1.56.1
+version=1.58.0
 
 PKGMK_GROUPS=(devel doc man)
 
-source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/$version/downloads/NetworkManager-$version.tar.xz)
+source=($url.git)
+
+PKGMK_MESON_OPTIONS="-Dsession_tracking=systemd -Dlibaudit=no -Dlibpsl=false \
+-Dnmtui=true -Dselinux=false -Dqt=false -Dovs=false -Dppp=false -Dmodem_manager=false \
+-Dnm_cloud_setup=false -Ddocs=false -Dvapi=true -D nbft=false -D clat=false "
 
 prepare() {
- cd ${_name}-$version
+
+ cd ${name}-$version
  grep -rl '^#!.*python$' | xargs sed -i '1s/python/&3/'
  sed -i "s/2\.0/3\.0/g" tools/generate-docs-nm-settings-docs-gir.py
 }
-build() {
 
-mkdir build && cd build
+build=meson
 
-CXXFLAGS+="-02 -fPIC"            \
-meson --prefix        /usr       \
-      --sbindir=/usr/bin         \
-      -Dsession_tracking=systemd \
-      -Dlibaudit=no              \
-      -Dlibpsl=false             \
-      -Dnmtui=true               \
-      -Dselinux=false            \
-      -Dqt=false                 \
-      -Dovs=false                \
-      -Dppp=false                \
-      -Dmodem_manager=false      \
-      -Dnm_cloud_setup=false     \
-      -Ddocs=false               \
-      -Dvapi=true                \
-      -D nbft=false              \
-      ../${_name}-$version
-ninja
-DESTDIR=$PKG ninja install
-
+package() {
 # create a VPN directory
 install -d $PKG/etc/$_name/VPN
 
