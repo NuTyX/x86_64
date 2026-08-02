@@ -1,5 +1,5 @@
 description="Protocol definitions and daemon for D-Bus at-spi"
-url="https://www.gtk.org/"
+url="https://gitlab.gnome.org/GNOME/at-spi2-core"
 
 license="GPL2.1"
 
@@ -9,11 +9,11 @@ contributors="Pierre,Tnut"
 makedepends=(ninja meson glib dbus gobject-introspection xorg-libx11 xorg-libxtst)
 
 name=at-spi2-core
-version=2.60.5
-
+version=2.60.6
+tag=$version
 PKGMK_GROUPS=(devel)
 
-source=(https://gitlab.gnome.org/GNOME/at-spi2-core/-/archive/$version/$name-$version.tar.gz)
+source=(https://gitlab.gnome.org/GNOME/at-spi2-core.git)
 
 build=meson
 
