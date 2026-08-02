@@ -1,5 +1,5 @@
 description='Operating system and container binary deployment and upgrades'
-url='https://ostree.readthedocs.io/en/latest/'
+url='https://github.com/ostreedev/ostree'
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
@@ -7,10 +7,15 @@ contributors="Tnut"
 makedepends=(openssl glib gpgme fuse2 libsoup3 e2fsprogs)
 
 name=libostree
-version=2025.7
-release=3
+version=2026.2
+tag=$version
 
-source=(https://github.com/ostreedev/ostree/releases/download/v$version/libostree-$version.tar.xz)
+source=($url.git)
+
+prepare() {
+cd $name-$version
+NOCONFIGURE=1 ./autogen.sh
+}
 
 build() {
 cd $name-$version
