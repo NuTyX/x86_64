@@ -6,14 +6,14 @@ license="APACHE"
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(grep man-db go-md2man libseccomp gpgme)
+makedepends=(git grep man-db go-md2man libseccomp gpgme)
 run=()
 set=()
 
 name=podman
-version=6.0.1
+version=6.0.2
 
-source=(https://github.com/containers/podman/archive/v$version/$name-$version.tar.gz)
+source=($url.git)
 
 build() {
 cd $name-$version
