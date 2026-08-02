@@ -1,5 +1,5 @@
 description='Map widget for GTK 4'
-url='https://wiki.gnome.org/Projects/libshumate'
+url='https://gitlab.gnome.org/GNOME/libshumate'
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
@@ -10,9 +10,10 @@ makedepends=(gobject-introspection gi-docgen vala meson
              glib cairo sqlite gtk4 libsoup3 protobuf-c)
 
 name=libshumate
-version=1.6.2
+version=1.6.3
+tag=$version
 
-source=(https://gitlab.gnome.org/GNOME/libshumate/-/archive/$version/$name-$version.tar.gz)
+source=($url.git)
 
 build() {
 
