@@ -9,10 +9,9 @@ contributors="Tnut"
 makedepends=(tar gwenhywfar xmlsec)
 
 name=aqbanking
-version=6.9.1
-release=2
+version=6.9.2
 
-source=(https://www.aquamaniac.de/rdm/attachments/download/652/$name-$version.tar.gz)
+source=(https://www.aquamaniac.de/rdm/attachments/download/654/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
