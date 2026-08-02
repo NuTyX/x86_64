@@ -1,5 +1,5 @@
 description="OpenType text shaping engine"
-url="https://www.freedesktop.org/software/harfbuzz"
+url="https://github.com/harfbuzz/harfbuzz"
 
 license="MIT"
 
@@ -10,9 +10,9 @@ makedepends=(pkgconf cairo glib icu freetype gobject-introspection gtk-doc pytho
 
 
 name=harfbuzz
-version=14.2.1
+version=14.3.0
 
-source=(https://github.com/harfbuzz/harfbuzz/releases/download/$version/$name-$version.tar.xz)
+source=($url.git)
 
 build() {
 cd $name-$version
