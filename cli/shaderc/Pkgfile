@@ -7,9 +7,10 @@ contributors="Tnut@Nutyx.Org>"
 makedepends=(git cmake glslang spirv-tools spirv-headers)
 
 name=shaderc
-version=2026.2
+version=2026.3
+tag=v$version
 
-source=(https://github.com/google/shaderc/archive/refs/tags/v$version.tar.gz)
+source=(https://github.com/google/shaderc.git)
 
 build() {
 
