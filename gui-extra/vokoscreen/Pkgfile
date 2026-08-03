@@ -3,8 +3,8 @@ description="An easy to use screencast creator"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Rems,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Rems,Tnut"
 
 makedepends=(ffmpeg lame pulseaudio lsof
              qt6-base qt6-tools qt6-multimedia
@@ -12,7 +12,7 @@ makedepends=(ffmpeg lame pulseaudio lsof
               gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-good)
 
 name=vokoscreen
-version=4.9.0
+version=4.10.0
 
 PKGMK_KEEP_SOURCES="no"
 source=(https://github.com/vkohaupt/${name}NG/archive/$version.tar.gz
