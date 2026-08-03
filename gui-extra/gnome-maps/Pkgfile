@@ -1,5 +1,5 @@
 description="GNOME Maps is a map application for GNOME"
-url="https://apps.gnome.org/Maps"
+url="https://gitlab.gnome.org/GNOME/gnome-maps"
 
 license="GPL2"
 
@@ -14,9 +14,9 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 set=(gnome)
 
 name=gnome-maps
-version=50.2
+version=50.3
 
-source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
+source=($url.git)
 
 build=meson
 
