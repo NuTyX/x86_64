@@ -16,7 +16,8 @@ makedepends=(bash-completion bridge-utils cyrus-sasl dbus
 run=(qemu dmidecode dnsmasq iptables)
 
 name=libvirt
-version=12.4.0
+version=12.6.0
+release=1
 
 PKGMK_GROUPS=(doc man devel)
 
