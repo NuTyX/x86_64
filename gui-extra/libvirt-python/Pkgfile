@@ -12,7 +12,8 @@ name=libvirt-python
 _name="libvirt-python"
 alias=(${_name})
 
-version=12.4.0
+version=12.6.0
+release=1
 
 source=(https://gitlab.com/libvirt/libvirt-python/-/archive/v$version/$name-v$version.tar.gz
 )
