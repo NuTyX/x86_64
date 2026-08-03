@@ -9,7 +9,7 @@ contributors="Tnut"
 set=(xfce4)
 
 name=bazaar
-version=0.8.3
+version=0.9.1
 
 makedepends=(md4c gtk4 glycin-gtk4 json-glib cairo pango
             graphene appstream dconf libsoup3 libproxy
@@ -18,7 +18,8 @@ makedepends=(md4c gtk4 glycin-gtk4 json-glib cairo pango
 
 run=(hicolor-icon-theme)
 PKGMK_GROUPS=(devel)
-source=(https://github.com/kolunmi/bazaar.git)
+
+source=($url.git)
 
 prepare() {
  sed -i "s/Utility/System/" $name-$version/data/io.github.kolunmi.Bazaar.desktop.in
