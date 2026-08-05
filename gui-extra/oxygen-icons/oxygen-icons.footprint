@@ -17,6 +17,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/applets/16x16/notifications-enabled.
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/16x16/window-unpin-symbolic.svg
 drwxr-xr-x	root/root	usr/share/icons/oxygen/applets/22x22/
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/akregator-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/amarok-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/anki.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/arrow-down-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/arrow-left-symbolic.svg
@@ -107,6 +108,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/applets/22x22/battery-low-symbolic.s
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/kgpg-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/klipper-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/ktorrent-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/mark-location-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/media-playback-paused-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/media-playback-playing-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/media-playback-stopped-symbolic.svg
@@ -300,6 +302,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/applets/22x22/video-display-symbolic
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/22x22/window-unpin-symbolic.svg
 drwxr-xr-x	root/root	usr/share/icons/oxygen/applets/24x24/
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/akregator-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/amarok-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/anki.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/arrow-down-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/arrow-left-symbolic.svg
@@ -390,6 +393,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/applets/24x24/
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/kgpg-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/klipper-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/ktorrent-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/mark-location-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/media-playback-paused-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/media-playback-playing-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/24x24/media-playback-stopped-symbolic.svg
@@ -595,6 +599,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/applets/32x32/
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/kgpg-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/klipper-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/ktorrent-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/mark-location-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/monitor-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/network-connect-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/network-disconnect-symbolic.svg
@@ -646,6 +651,9 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/applets/32x32/redshift-status-off.sv
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/applets/32x32/redshift-status-on.svg -> redshift-status-on-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/speedometer-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/tablet-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/trash-empty-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/user-trash-full-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/user-trash-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/window-pin-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/oxygen/applets/32x32/window-unpin-symbolic.svg
 drwxr-xr-x	root/root	usr/share/icons/oxygen/base/
@@ -816,6 +824,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/apps/kbugbuster.png -> 
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/apps/kdeconnect.png -> ../categories/preferences-kde-connect.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/kdf.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/keepsecret.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/kformula.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/kgpg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/kig.png
@@ -919,6 +928,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/apps/plasmagik.png -> .
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/system-diagnosis.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/system-file-manager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/system-software-update.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/system-users.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/tagua.png
@@ -928,6 +938,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/apps/utilities-file-arc
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/utilities-log-viewer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/utilities-system-monitor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/utilities-terminal.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/wine.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/xorg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/apps/yakuake.png
@@ -1072,6 +1083,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-vnd.flatpak.ref.png
@@ -1209,6 +1221,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-ms-dos-executable.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/128x128/mimetypes/application-x-nzb.png
@@ -1885,6 +1898,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/enum.png -> code-
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/error.png -> dialog-cancel.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/exifinfo.png -> help-about.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/expand.png -> arrow-down.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/favorite.png -> rating.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/feed-subscribe.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/file-zoom-in.png -> zoom-in.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/file-zoom-out.png -> zoom-out.png
@@ -2147,6 +2161,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/link.png -> inser
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/mail-signed-verified.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/mail-signed.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/mail-tagged.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/mail-thread-watch.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/measure.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/media-eject.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/media-playback-pause.png
@@ -2350,6 +2365,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/stroke-cap-miter.
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/system-log-out.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/system-reboot.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/system-run.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/system-save-session.png -> document-save.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/system-search.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/system-shutdown.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/system-suspend-hibernate.png
@@ -2528,6 +2544,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/view-sort.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/view-time-schedule-edit.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/view-time-schedule-insert.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/view-time-schedule.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/view-visible-off.png -> layer-visible-off.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/view-visible.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/actions/view-web-browser-dom-tree.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/actions/viewhtml.png -> ../categories/applications-internet.png
@@ -2724,6 +2741,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/apps/preferences-system-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/step.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/system-file-manager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/system-software-update.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/system-users.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/tagua.png
@@ -2733,6 +2751,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/apps/preferences-system-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/utilities-log-viewer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/utilities-system-monitor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/utilities-terminal.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/wine.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/xorg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/apps/yakuake.png
@@ -2905,6 +2924,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-sql
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-vnd.flatpak.ref.png
@@ -3042,6 +3062,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-m
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-ms-dos-executable.png -> application-x-executable-script.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/16x16/mimetypes/application-x-nzb.png
@@ -3786,6 +3807,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/enum.png -> code-
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/error.png -> dialog-cancel.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/exifinfo.png -> help-about.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/expand.png -> arrow-down.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/favorite.png -> rating.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/feed-subscribe.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/file-zoom-in.png -> zoom-in.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/file-zoom-out.png -> zoom-out.png
@@ -4005,6 +4027,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-change-tracker
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-check-data.png -> dialog-ok-apply.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-encrypted.png -> document-encrypted.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-info-widget.png -> help-about.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-magnet.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-pause.png -> media-playback-pause.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-remove.png -> list-remove.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/kt-restore-defaults.png -> document-revert.png
@@ -4066,6 +4089,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/mail-signed-fully
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/mail-signed-verified.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/mail-signed.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/mail-tagged.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/mail-thread-watch.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/measure.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/media-eject.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/media-playback-pause.png
@@ -4275,6 +4299,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/step_object_Rope.
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/system-log-out.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/system-reboot.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/system-run.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/system-save-session.png -> document-save.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/system-search.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/system-shutdown.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/system-suspend-hibernate.png
@@ -4456,6 +4481,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/view-sort.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/view-time-schedule-edit.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/view-time-schedule-insert.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/view-time-schedule.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/view-visible-off.png -> layer-visible-off.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/view-visible.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/actions/view-web-browser-dom-tree.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/actions/viewhtml.png -> ../categories/applications-internet.png
@@ -4650,6 +4676,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/apps/preferences-system-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/system-file-manager.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/apps/system-reboot.png -> ../actions/view-refresh.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/system-software-update.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/apps/system-users.png -> ../actions/meeting-attending.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/tagua.png
@@ -4659,6 +4686,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/apps/utilities-file-archi
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/utilities-log-viewer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/utilities-system-monitor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/utilities-terminal.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/wine.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/xorg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/apps/yakuake.png
@@ -4889,6 +4917,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-sql
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-vnd.flatpak.ref.png
@@ -5026,6 +5055,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-l
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-ms-dos-executable.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/22x22/mimetypes/application-x-nzb.png
@@ -5587,6 +5617,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/base/256x256/apps/
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/apps/kdeconnect.png -> ../categories/preferences-kde-connect.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/kdf.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/keepsecret.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/kformula.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/kgpg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/kig.png
@@ -5625,8 +5656,10 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/apps/knetattach.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/spectacle.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/system-diagnosis.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/telepathy-kde.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/timevault.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/yakuake.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/apps/zanshin.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/base/256x256/categories/
@@ -5717,6 +5750,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-vnd.flatpak.ref.png
@@ -5851,6 +5885,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-ms-dos-executable.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/256x256/mimetypes/application-x-nzb.png
@@ -6397,6 +6432,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/edit-none.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/edit-undo.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/editor.png -> document-edit.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/expand.png -> arrow-down.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/favorite.png -> rating.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/feed-subscribe.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/filename-bpm-amarok.png -> speedometer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/fileview-preview.png
@@ -6530,6 +6566,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/irc-channel-inact
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/journal-new.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/key-enter.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/kt-info-widget.png -> ../status/dialog-information.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/kt-magnet.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/kt-speed-limits.png -> speedometer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/layer-visible-off.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/layer-visible-on.png
@@ -6573,6 +6610,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/link.png -> inser
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/mail-signed-verified.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/mail-signed.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/mail-tagged.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/mail-thread-watch.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/measure.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/media-eject.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/media-playback-pause.png
@@ -6697,6 +6735,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/starred.png -> ra
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/system-log-out.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/system-reboot.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/system-run.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/system-save-session.png -> document-save.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/system-search.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/system-shutdown.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/system-suspend-hibernate.png
@@ -6872,6 +6911,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/view-sort.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/view-time-schedule-edit.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/view-time-schedule-insert.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/view-time-schedule.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/view-visible-off.png -> layer-visible-off.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/view-visible.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/actions/view-web-browser-dom-tree.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/actions/viewhtml.png -> ../categories/applications-internet.png
@@ -7060,6 +7100,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/apps/preferences-system-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/step.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/system-file-manager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/system-software-update.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/apps/system-users.png -> ../actions/meeting-attending.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/tagua.png
@@ -7069,6 +7110,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/apps/utilities-file-archi
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/utilities-log-viewer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/utilities-system-monitor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/utilities-terminal.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/wine.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/xorg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/apps/yakuake.png
@@ -7263,6 +7305,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-sql
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-vnd.flatpak.ref.png
@@ -7400,6 +7443,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-m
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-ms-dos-executable.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/32x32/mimetypes/application-x-nzb.png
@@ -8046,6 +8090,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/edit-none.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/edit-undo.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/edit-web-search.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/expand.png -> arrow-down.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/favorite.png -> rating.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/feed-subscribe.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/filename-bpm-amarok.png -> speedometer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/fill-color.png
@@ -8176,6 +8221,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/irc-channel-inact
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/irc-voice.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/key-enter.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/kt-info-widget.png -> ../status/dialog-information.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/kt-magnet.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/kt-speed-limits.png -> speedometer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/layer-visible-off.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/layer-visible-on.png
@@ -8219,6 +8265,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/lighttable.png ->
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/mail-signed-verified.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/mail-signed.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/mail-tagged.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/mail-thread-watch.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/measure.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/media-eject.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/media-playback-pause.png
@@ -8336,6 +8383,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/starred.png -> ra
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/system-log-out.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/system-reboot.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/system-run.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/system-save-session.png -> document-save.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/system-search.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/system-shutdown.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/system-suspend-hibernate.png
@@ -8494,6 +8542,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/view-sort.png -> 
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/view-time-schedule-edit.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/view-time-schedule-insert.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/view-time-schedule.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/view-visible-off.png -> layer-visible-off.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/view-visible.png -> layer-visible-on.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/actions/view-web-browser-dom-tree.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/actions/viewhtml.png -> ../categories/applications-internet.png
@@ -8573,6 +8622,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/apps/kde.png -> ../animat
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/apps/kdeconnect.png -> ../categories/preferences-kde-connect.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/kdf.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/keepsecret.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/kfind.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/kformula.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/kgpg.png
@@ -8682,6 +8732,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/apps/preferences-system-s
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/step.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/system-file-manager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/system-software-update.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/system-users.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/tagua.png
@@ -8691,6 +8742,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/apps/utilities-file-archi
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/utilities-log-viewer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/utilities-system-monitor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/utilities-terminal.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/wine.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/xorg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/apps/yakuake.png
@@ -8855,6 +8907,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-sql
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-vnd.flatpak.ref.png
@@ -8992,6 +9045,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-m
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-ms-dos-executable.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/48x48/mimetypes/application-x-nzb.png
@@ -9507,6 +9561,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/actions/help-about.png ->
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/actions/internet-amarok.png -> ../categories/applications-internet.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/actions/internet-services.png -> ../categories/applications-internet.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/actions/kt-info-widget.png -> ../status/dialog-information.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/actions/kt-magnet.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/actions/kt-speed-limits.png -> speedometer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/actions/list-add-user.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/actions/list-remove.png
@@ -9609,6 +9664,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/apps/kbugbuster.png -> ..
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/apps/kdeconnect.png -> ../categories/preferences-kde-connect.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/kdf.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/keepsecret.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/apps/kfind.png -> ../actions/system-search.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/kformula.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/kgpg.png
@@ -9703,6 +9759,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/apps/plasmagik.png -> ../
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/step.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/strigi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/system-file-manager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/system-software-install.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/system-software-update.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/system-users.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/tagua.png
@@ -9712,6 +9769,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/apps/utilities-file-archi
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/utilities-log-viewer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/utilities-system-monitor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/utilities-terminal.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/wayland.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/wine.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/xorg.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/apps/yakuake.png
@@ -9868,6 +9926,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-sql
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-toml.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-vnd-google-earth-kml.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-vnd.android.package-archive.png -> android-package-archive.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-vnd.appimage.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-vnd.debian.binary-package.png -> application-x-deb.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-vnd.efi.iso.png -> application-x-cd-image.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-vnd.flatpak.ref.png
@@ -10006,6 +10065,7 @@ lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-m
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-mplayer2.png -> application-vnd.rn-realmedia.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-ms-dos-executable.png
 lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-ms-wim.png -> application-x-cd-image.png
+lrwxrwxrwx	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-msdownload.png -> application-x-ms-dos-executable.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-mswinurl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-mswrite.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/base/64x64/mimetypes/application-x-nzb.png
