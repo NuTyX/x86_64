@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 6.12.100 Kernel Configuration
+# Linux/x86 6.12.101 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (GCC) 16.1.0"
 CONFIG_CC_IS_GCC=y
@@ -6905,6 +6905,7 @@ CONFIG_AGP_SIS=m
 CONFIG_AGP_VIA=m
 CONFIG_INTEL_GTT=m
 CONFIG_VGA_SWITCHEROO=y
+CONFIG_GPU_BUDDY=y
 CONFIG_DRM=y
 CONFIG_DRM_MIPI_DBI=m
 CONFIG_DRM_MIPI_DSI=y
