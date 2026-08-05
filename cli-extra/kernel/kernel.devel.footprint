@@ -32425,7 +32425,10 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/ocelot/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/psp_responder.c
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/queues.py
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/ring_reconfig.py
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/settings
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/shaper.py
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/so_txtime.c
+-rwxr-xr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/so_txtime.py
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/stats.py
 drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/team/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/drivers/net/team/Makefile
@@ -33853,6 +33856,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/netfilter/packet
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/nl_nlctrl.py
 drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/openvswitch/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/openvswitch/Makefile
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/net/openvswitch/config
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/openvswitch/openvswitch.sh
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/openvswitch/ovs-dpctl.py
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/openvswitch/settings
@@ -33892,6 +33896,7 @@ lrwxrwxrwx	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/json/peer6-
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/json/peer6-symm.json
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/json/peer6.json
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/ovpn-cli.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/settings
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/tcp_peers.txt
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/test-chachapoly.sh
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/ovpn/test-close-socket-tcp.sh
@@ -34123,8 +34128,6 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/rds/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/so_incoming_cpu.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/so_netns_cookie.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/so_rcv_listener.c
--rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/so_txtime.c
--rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/so_txtime.sh
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/socket.c
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/srv6_end_dt46_l3vpn_test.sh
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/srv6_end_dt4_l3vpn_test.sh
