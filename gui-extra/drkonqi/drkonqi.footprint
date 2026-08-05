@@ -49,14 +49,14 @@ drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
 drwxr-xr-x	root/root	usr/share/drkonqi/
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/INSTALLER
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/METADATA
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/RECORD
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/WHEEL
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/licenses/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.6.17.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/METADATA
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/RECORD
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/WHEEL
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/licenses/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi-2026.7.22.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/__init__.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/__main__.py
@@ -67,6 +67,12 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/cacert.pem
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/core.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/py.typed (EMPTY)
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi/tests/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/tests/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/certifi/tests/__pycache__/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/tests/__pycache__/__init__.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/tests/__pycache__/test_certify.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/certifi/tests/test_certify.py
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/gdb_preamble/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/gdb_preamble/__init__.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/gdb_preamble/preamble.py
@@ -128,16 +134,16 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/pygdbmi/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/gdbmiparser.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/printcolor.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/pygdbmi/py.typed
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/METADATA
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/RECORD
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/licenses/
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.64.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/licenses/
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk-2.66.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__init__.py
 drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/
@@ -156,6 +162,7 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/attachments.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/client.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/consts.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/data_collection.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/debug.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/envelope.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/__pycache__/feature_flags.cpython-314.pyc
@@ -214,6 +221,7 @@ drwxr-xr-x	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/crons/__pycache__/
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/crons/api.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/crons/consts.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/crons/decorator.py
+-rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/data_collection.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/debug.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/envelope.py
 -rw-r--r--	root/root	usr/share/drkonqi/gdb/python/sentry_sdk/feature_flags.py
