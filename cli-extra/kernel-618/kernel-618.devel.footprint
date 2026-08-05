@@ -6232,6 +6232,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/CXL_PMEM (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/CXL_PMU (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/CXL_PORT (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/CXL_RAS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/CXL_REGION (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/CXL_SUSPEND (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/CX_ECAT (EMPTY)
@@ -7269,6 +7270,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/GPIO_WS16C48 (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/GPIO_XILINX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/GPIO_XRA1403 (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/GPU_BUDDY (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/GP_PCI1XXXX (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/GRACE_PERIOD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/GREENASIA_FF (EMPTY)
@@ -16352,6 +16354,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/include/linux/gpio/
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/gpio/property.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/gpio/regmap.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/gpio_keys.h
+-rw-r--r--	root/root	usr/src/kernel-618/include/linux/gpu_buddy.h
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/greybus.h
 drwxrwxr-x	root/root	usr/src/kernel-618/include/linux/greybus/
 -rw-rw-r--	root/root	usr/src/kernel-618/include/linux/greybus/bundle.h
@@ -31575,6 +31578,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/ocel
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/psp.py
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/psp_responder.c
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/queues.py
+-rw-r--r--	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/settings
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/shaper.py
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/stats.py
 drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/drivers/net/team/
@@ -32851,6 +32855,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/netfilter/pa
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/nl_netdev.py
 drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/openvswitch/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/openvswitch/Makefile
+-rw-r--r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/openvswitch/config
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/openvswitch/openvswitch.sh
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/openvswitch/ovs-dpctl.py
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/openvswitch/settings
@@ -32861,6 +32866,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/config
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/data64.key
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/ovpn-cli.c
+-rw-r--r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/settings
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/tcp_peers.txt
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/test-chachapoly.sh
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/ovpn/test-close-socket-tcp.sh
