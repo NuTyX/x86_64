@@ -17,7 +17,7 @@ run=(shared-mime-info xdg-utils desktop-file-utils gtk-update-icon-cache
      hicolor-icon-theme)
 
 name=libreoffice
-version=26.2.4.2
+version=26.2.5.2
 
 categories=(Office Graphics Education)
 
@@ -44,7 +44,7 @@ prepare() {
   cd $name-$version
 
   patch -Np1 -i ../Remove-check-if-root-due-to-issue-with-fakeroot.patch
-  patch -Np1 -i ../libreoffice-26.2.4.2-poppler_26.06-1.patch
+#  patch -Np1 -i ../libreoffice-26.2.4.2-poppler_26.06-1.patch
 
   sed -e '/, const GooString/ s/GooString *\*/std::string \&/' \
     -i sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx \
