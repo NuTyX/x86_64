@@ -1,12 +1,12 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-7.1.5-1-nutyx
--rw-r--r--	root/root	boot/config-7.1.5-1-nutyx
+-rw-r--r--	root/root	boot/System.map-7.1.6-1-nutyx
+-rw-r--r--	root/root	boot/config-7.1.6-1-nutyx
 lrwxrwxrwx	root/root	boot/kernel -> kernel-stable
 -rw-r--r--	root/root	boot/kernel-stable
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/modules/
-lrwxrwxrwx	root/root	usr/lib/modules/7.1.5-1-nutyx -> kernel
+lrwxrwxrwx	root/root	usr/lib/modules/7.1.6-1-nutyx -> kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/
 lrwxrwxrwx	root/root	usr/lib/modules/kernel/build -> /usr/src/kernel
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/
@@ -7167,7 +7167,6 @@ drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-amd-acpi-mach.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-amd-sdw-acpi.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-soc-acpi-amd-match.ko.zst
--rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp/snd-soc-acpi-amd-sdca-quirks.ko.zst
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/acp_audio_dma.ko.zst
 drwxr-xr-x	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/ps/
 -rw-r--r--	root/root	usr/lib/modules/kernel/kernel/sound/soc/amd/ps/snd-pci-ps.ko.zst
