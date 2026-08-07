@@ -11,8 +11,10 @@ makedepends=(git icu cmake boost aspell cups qt6-tools qt6-declarative qt6-5comp
 run=(shared-mime-info desktop-file-utils)
 
 name=scribus
-version=2b9405a
+version=1.6.6
 release=1
+
+tag=ba246c3
 
 source=(https://github.com/scribusproject/scribus.git)
 
