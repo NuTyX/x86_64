@@ -1,0 +1,28 @@
+description="KDAB's helper class for single-instance policy applications"
+url='https://github.com/KDAB/KDSingleApplication'
+
+license="MIT"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre, Rems"
+
+makedepends=(git cmake qt6-base)
+
+name=kdsingleapplication
+version=1.2.1
+tag=v$version
+
+source=($url.git)
+
+build() {
+
+cmake -B build -S $name-$version \
+      -DCMAKE_INSTALL_PREFIX=/usr  \
+      -DKDSingleApplication_QT6=ON
+cmake --build build
+DESTDIR=$PKG cmake --install build
+}
+package() {
+  install -Dm644 $name-$version/LICENSE.txt -t \
+  $PKG/usr/share/licenses/$name
+}
