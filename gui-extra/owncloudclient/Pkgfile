@@ -1,28 +1,25 @@
 description="ownCloud client based on mirall"
-url="http://owncloud.org/"
+url="https://owncloud.org/"
 
 packager="tnut <tnut@nutyx.org>"
 contributors="Pierre, Rems"
 
-makedepends=(cmake extra-cmake-modules sqlite qtbase qtkeychain qttools
-             doxygen kio)
+makedepends=(cmake extra-cmake-modules sqlite qt6-base qtkeychain-qt6 qt6-svg
+             doxygen libre-graph-api kdsingleapplication)
 run=(hicolor-icon-theme)
 
 name=owncloudclient
-version=4.1.0.11250
+version=7.1.0.19041
 
 source=(https://download.owncloud.com/desktop/ownCloud/stable/$version/source/ownCloud-$version.tar.xz)
 
 build() {
 
-mkdir build
-cd    build
-
-cmake ../ownCloud-$version            \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DDATADIR=share  \
-        -DCMAKE_BUILD_TYPE=Release  \
-        -DCMAKE_INSTALL_SYSCONFDIR=/etc/$name
-cmake --build .
-DESTDIR=$PKG cmake --install .
+cmake  -B build -S ownCloud-$version \
+        -DCMAKE_INSTALL_PREFIX=/usr  \
+        -DDATADIR=share              \
+        -DCMAKE_BUILD_TYPE=Release   \
+        -DCMAKE_INSTALL_SYSCONFDIR=/etc
+cmake --build build
+DESTDIR=$PKG cmake --install build
 }

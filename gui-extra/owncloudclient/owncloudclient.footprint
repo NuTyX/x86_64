@@ -1,0 +1,77 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ownCloud/
+-rw-r--r--	root/root	etc/ownCloud/sync-exclude.lst
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/owncloud
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libownCloudCsync.so -> libownCloudCsync.so.0
+lrwxrwxrwx	root/root	usr/lib/libownCloudCsync.so.0 -> libownCloudCsync.so.7.1.0
+-rwxr-xr-x	root/root	usr/lib/libownCloudCsync.so.7.1.0
+lrwxrwxrwx	root/root	usr/lib/libownCloudLibSync.so -> libownCloudLibSync.so.0
+lrwxrwxrwx	root/root	usr/lib/libownCloudLibSync.so.0 -> libownCloudLibSync.so.7.1.0
+-rwxr-xr-x	root/root	usr/lib/libownCloudLibSync.so.7.1.0
+lrwxrwxrwx	root/root	usr/lib/libownCloudResources.so -> libownCloudResources.so.0
+lrwxrwxrwx	root/root	usr/lib/libownCloudResources.so.0 -> libownCloudResources.so.7.1.0
+-rwxr-xr-x	root/root	usr/lib/libownCloudResources.so.7.1.0
+-rwxr-xr-x	root/root	usr/lib/libowncloudGui.so
+drwxr-xr-x	root/root	usr/lib/qt6/
+drwxr-xr-x	root/root	usr/lib/qt6/plugins/
+-rwxr-xr-x	root/root	usr/lib/qt6/plugins/ownCloud_vfs_off.so
+drwxr-xr-x	root/root	usr/lib/qt6/qml/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/gui/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/gui/libowncloudGuiplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/owncloudGui.qmltypes
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/gui/qml/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/qml/AccountBar.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/qml/AccountButton.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/qmldir
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/gui/spaces/
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/gui/spaces/qml/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/spaces/qml/SpaceDelegate.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/gui/spaces/qml/SpacesView.qml
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/libsync/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/libsync/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/libsync/liblibsyncplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/libsync/libsync.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/libsync/qmldir
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/resources/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/resources/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/ownCloud/resources/libowncloudResourcesplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/resources/owncloudResources.qmltypes
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/ownCloud/resources/qmldir
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/owncloud.desktop
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/1024x1024/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/1024x1024/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/1024x1024/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/24x24/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/256x256/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/owncloud.png
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/packages/
+-rw-r--r--	root/root	usr/share/mime/packages/owncloud.xml
