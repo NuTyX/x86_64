@@ -1,0 +1,24 @@
+description='An API for open Cloud Collaboration'
+url="https://owncloud.org/"
+
+license="Apache"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre, Rems"
+
+makedepends=(cmake qt6-base)
+
+name=libre-graph-api
+version=1.0.4
+
+source=(https://github.com/owncloud/$name-cpp-qt-client/archive/v$version/$name-$version.tar.gz)
+
+build() {
+
+cmake  -B build -S $name-cpp-qt-client-$version/client \
+        -DCMAKE_INSTALL_PREFIX=/usr  \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+        -DBUILD_SHARED_LIBS=ON
+cmake --build build
+DESTDIR=$PKG cmake --install build
+}
