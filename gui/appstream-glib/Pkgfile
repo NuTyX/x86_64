@@ -2,8 +2,8 @@
 description="Library to read and write AppStream metadata"
 url="http://people.freedesktop.org/~hughsient/appstream-glib/"
  
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Spiky"
 
 makedepends=(gdk-pixbuf json-glib libarchive libsoup3 meson ninja pango gcab
              gobject-introspection gtk3 yaml)
@@ -11,6 +11,7 @@ set=(gnome)
 
 name=appstream-glib
 version=0.8.4
+release=2
 
 source=(https://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
 
