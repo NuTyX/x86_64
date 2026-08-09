@@ -1,8 +1,8 @@
 description="Accessing the list of user accounts and information attached to those accounts." 
 url="https://gitlab.freedesktop.org/accountsservice/accountsservice"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Pierrei,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierrei,Jayce,Spiky"
 
 makedepends=(meson ninja xmlto libxslt polkit libxcrypt
              gobject-introspection vala json-c)
@@ -11,6 +11,7 @@ set=(gnome kde6)
 
 name=accountsservice
 version=26.27.3
+release=2
 
 PKGMK_GROUPS=(devel)
 PKGMK_MESON_OPTIONS="-D admin_group=wheel"
