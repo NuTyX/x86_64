@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gnome-control-center"
 
 license="GPL-2.0-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Fabienwang,Spiky"
 
 makedepends=(autoconf git udisks2 accountsservice clutter-gtk libhandy
              colord-gtk gnome-online-accounts gsound gnome-settings-daemon
@@ -20,6 +20,7 @@ set=(gnome-base gnome)
 
 name=gnome-control-center
 version=50.4
+release=2
 
 source=($url.git)
 
