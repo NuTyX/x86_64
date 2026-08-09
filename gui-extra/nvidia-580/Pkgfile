@@ -1,0 +1,82 @@
+description="Libraries and tools for Nvidia drivers 580"
+url="https://www.nvidia.com/en-us/drivers/unix/"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+license="custom"
+
+name=nvidia-580
+version=580.178.04
+release=1
+
+PKGMK_IGNORE_RUNTIMELIBS="yes"
+PKGMK_GROUPS=(man doc)
+
+source=(http://fr.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
+
+prepare() {
+
+  sh NVIDIA-Linux-x86_64-$version.run --extract-only
+  install -dm0755 $PKG/usr/{lib,{bin,share/{applications,pixmaps,man/man1,doc/nvidia}}}
+
+}
+
+build()
+{
+
+  cd $SRC/NVIDIA-Linux-x86_64-$version
+  for i in *.0 *.$version
+  do
+  install -m 0755 $i $PKG/usr/lib
+  done
+
+  # man and utils
+  install -m 0755 nvidia-{xconfig,settings,smi} $PKG/usr/bin/
+  install -m 0644 nvidia-{xconfig,settings,smi}.1.gz \
+  $PKG/usr/share/man/man1/
+
+  # launcher
+  sed -e "s@__UTILS_PATH__/@@" -e "s@__PIXMAP_PATH__/@@" nvidia-settings.desktop \
+  > $PKG/usr/share/applications/nvidia-settings.desktop
+  install -m 0755 nvidia-settings.png \
+  $PKG/usr/share/pixmaps/
+
+  # xorg driver/extensions
+  install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
+  install -m 0755 nvidia_drv.so $PKG/usr/lib/xorg/modules/drivers
+  install -m 0755 libglxserver_nvidia.so.$version $PKG/usr/lib/xorg/modules/extensions
+  ln -s libglxserver_nvidia.so.$version $PKG/usr/lib/xorg/modules/extensions/libglxserver_nvidia.so
+
+  # avoid ldconfig warnings due to a missing symlink
+  rm $PKG/usr/lib/libGLX.so.0
+  ln -sf /usr/lib/libGLX.so.0.0.0 $PKG/usr/lib/libGLX.so.0
+
+  # create soname links
+  find "$pkgdir" -type f -name '*.so*' ! -path '*xorg/*' -print0 | while read -d $'\0' _lib; do
+    _soname=$(dirname "${_lib}")/$(readelf -d "${_lib}" | grep -Po 'SONAME.*: \[\K[^]]*' || true)
+    _base=$(echo ${_soname} | sed -r 's/(.*)\.so.*/\1.so/')
+    [[ -e "${_soname}" ]] || ln -s $(basename "${_lib}") "${_soname}"
+    [[ -e "${_base}" ]] || ln -s $(basename "${_soname}") "${_base}"
+  done
+  
+  # doc
+  cp -r html $PKG/usr/share/doc/nvidia/
+
+  # xorg config
+  mkdir -p $PKG/etc/X11/xorg.conf.d
+  cat > $PKG/etc/X11/xorg.conf.d/30-nvidia.conf << "EOF"
+Section "Device"
+      Identifier      "NVIDIA"
+      Driver          "nvidia"
+EndSection
+EOF
+
+  # Blacklist nouveau
+  mkdir -p $PKG/etc/modprobe.d
+  cat > $PKG/etc/modprobe.d/nouveau.conf << "EOF"
+blacklist nouveau
+options nouveau modeset=0
+EOF
+
+}
