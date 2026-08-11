@@ -6772,7 +6772,6 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/EQUALIZER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_BACKED_BY_FILE (EMPTY)
--rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_ONDEMAND (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_PCPU_KTHREAD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_PCPU_KTHREAD_HIPRI (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_POSIX_ACL (EMPTY)
@@ -6782,6 +6781,7 @@ drwxr-xr-x	root/root	usr/src/kernel/include/config/
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_ZIP_ACCEL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_ZIP_DEFLATE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_ZIP_LZMA (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_ZIP_LZMA_DEFAULT_MAX_STREAMS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/EROFS_FS_ZIP_ZSTD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ET131X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel/include/config/ETHERNET (EMPTY)
@@ -33509,6 +33509,7 @@ drwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/af_unix/
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/af_unix/so_peek_off.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/af_unix/unix_connect.c
 -rw-rw-r--	root/root	usr/src/kernel/tools/testing/selftests/net/af_unix/unix_connreset.c
+-rw-r--r--	root/root	usr/src/kernel/tools/testing/selftests/net/af_unix/unix_listen.c
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/altnames.sh
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/amt.sh
 -rwxrwxr-x	root/root	usr/src/kernel/tools/testing/selftests/net/arp_ndisc_evict_nocarrier.sh
