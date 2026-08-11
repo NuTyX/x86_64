@@ -9,16 +9,16 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/_distutils_hack/__pycache_
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/_distutils_hack/__pycache__/override.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/_distutils_hack/override.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/distutils-precedence.pth
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-83.0.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/__pycache__/
@@ -61,6 +61,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/__init__.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/_dataclass.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/_log.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/_macos_compat.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/_modified.cpython-314.pyc
@@ -88,6 +89,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/version.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/versionpredicate.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/__pycache__/zosccompiler.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/_dataclass.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/_log.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/_macos_compat.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/_modified.py
@@ -142,9 +144,9 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/comp
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/__pycache__/numpy.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/__pycache__/py39.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/__pycache__/py310.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/numpy.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/py39.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compat/py310.py
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/__pycache__/
@@ -161,6 +163,21 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/comp
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/py.typed
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/unix.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/zos.py
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/__pycache__/_modified.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/__pycache__/_util.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/__pycache__/errors.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/__pycache__/logging.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/_modified.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/_util.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/errors.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/logging.py
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/__pycache__/detect.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/__pycache__/macos.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/detect.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/macos.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/core.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/cygwinccompiler.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/setuptools/_distutils/debug.py
