@@ -6869,6 +6869,7 @@ drwxr-xr-x	root/root	usr/src/kernel-618/include/config/
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/EROFS_FS_ZIP_ACCEL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/EROFS_FS_ZIP_DEFLATE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/EROFS_FS_ZIP_LZMA (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-618/include/config/EROFS_FS_ZIP_LZMA_DEFAULT_MAX_STREAMS (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/EROFS_FS_ZIP_ZSTD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ET131X (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-618/include/config/ETHERNET (EMPTY)
@@ -32515,6 +32516,7 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/Makefile
 drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/
+-rw-r--r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/.gitignore
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/config
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/diag_uid.c
@@ -32524,6 +32526,8 @@ drwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/scm_rights.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/so_peek_off.c
 -rw-rw-r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/unix_connect.c
+-rw-r--r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/unix_connreset.c
+-rw-r--r--	root/root	usr/src/kernel-618/tools/testing/selftests/net/af_unix/unix_listen.c
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/altnames.sh
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/amt.sh
 -rwxrwxr-x	root/root	usr/src/kernel-618/tools/testing/selftests/net/arp_ndisc_evict_nocarrier.sh
