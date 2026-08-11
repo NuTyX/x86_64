@@ -2,15 +2,14 @@ description="The Bash package contains the Bourne-Again SHell."
 url='https://www.gnu.org/software/bash/'
 
 maintainer="Brian Fox,Chet Ramey and many more"
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(ncurses readline sed)
 
 name=bash
-version=5.3.9
+version=5.3.15
 _version=5.3
-release=1
 
 set=(chroot)
 PKGMK_IGNORE_RUNTIMEDEPS="yes"
