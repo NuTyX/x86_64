@@ -1,8 +1,8 @@
 description="Freedesktop.org message bus system"
 url="https://www.freedesktop.org/wiki/Software/dbus/"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Jayce,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Jayce,Tnut"
 
 # In case of rebuild systemd
 # dbus needs do be build once without systemd
@@ -19,7 +19,7 @@ set=(core)
 
 name=dbus
 version=1.16.2
-release=7
+release=8
 
 PKGMK_GROUPS=(doc devel)
 PKGMK_MESON_OPTIONS="--wrap-mode=nofallback"
