@@ -1,8 +1,8 @@
 description='HTTP/2 State-Machine based protocol implementation'
 url='https://hyper.rtfd.org'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(git python-wheel python-installer python-setuptools
              python-hyperframe python-hpack)
@@ -11,8 +11,7 @@ name=python-h2
 _name="h2"
 alias=(${_name})
 
-version=4.4.0
-release=2
+version=4.4.1
 tag=v$version
 
 source=(https://github.com/python-hyper/h2.git)
