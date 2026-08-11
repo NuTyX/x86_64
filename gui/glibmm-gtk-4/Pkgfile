@@ -1,16 +1,15 @@
 description='The GLibmm package is a set of C++ bindings for GLib'
-url='http://www.gtkmm.org'
+url='https://gitlab.gnome.org/GNOME/glibmm'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(git libsigc++-3 glib doxygen perl-xml-parser graphviz mm-common)
 
 name=glibmm-gtk-4
 _name=glibmm
 
-version=2.80.0
-release=3
+version=2.89.0
 
 source=(https://gitlab.gnome.org/GNOME/glibmm/-/archive/$version/glibmm-$version.tar.gz)
 
