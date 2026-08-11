@@ -58,6 +58,7 @@ lrwxrwxrwx	root/root	usr/bin/init -> ../lib/systemd/systemd
 -rwxr-xr-x	root/root	usr/bin/machinectl
 lrwxrwxrwx	root/root	usr/bin/mount.ddi -> systemd-dissect
 lrwxrwxrwx	root/root	usr/bin/mount.mstack -> systemd-mstack
+lrwxrwxrwx	root/root	usr/bin/mount.storage -> storagectl
 -rwxr-xr-x	root/root	usr/bin/networkctl
 -rwxr-xr-x	root/root	usr/bin/oomctl
 -rwxr-xr-x	root/root	usr/bin/portablectl
@@ -67,6 +68,7 @@ lrwxrwxrwx	root/root	usr/bin/resolvconf -> resolvectl
 -rwxr-xr-x	root/root	usr/bin/resolvectl
 lrwxrwxrwx	root/root	usr/bin/run0 -> systemd-run
 lrwxrwxrwx	root/root	usr/bin/shutdown -> systemctl
+-rwxr-xr-x	root/root	usr/bin/storagectl
 -rwxr-xr-x	root/root	usr/bin/systemctl
 -rwxr-xr-x	root/root	usr/bin/systemd-ac-power
 -rwxr-xr-x	root/root	usr/bin/systemd-analyze
@@ -97,6 +99,7 @@ lrwxrwxrwx	root/root	usr/bin/systemd-resolve -> resolvectl
 -rwxr-xr-x	root/root	usr/bin/systemd-socket-activate
 -rwxr-xr-x	root/root	usr/bin/systemd-stdio-bridge
 -rwxr-xr-x	root/root	usr/bin/systemd-sysext
+-rwxr-xr-x	root/root	usr/bin/systemd-sysinstall
 -rwxr-xr-x	root/root	usr/bin/systemd-sysusers
 -rwxr-xr-x	root/root	usr/bin/systemd-tmpfiles
 -rwxr-xr-x	root/root	usr/bin/systemd-tty-ask-password-agent
@@ -116,11 +119,11 @@ lrwxrwxrwx	root/root	usr/lib/environment.d/99-environment.conf -> ../../../etc/e
 -rwxr-xr-x	root/root	usr/lib/libnss_resolve.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_systemd.so.2
 lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.43.0
--rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.44.0
+-rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.44.0
 lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1
-lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.7.13
--rwxr-xr-x	root/root	usr/lib/libudev.so.1.7.13
+lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.7.14
+-rwxr-xr-x	root/root	usr/lib/libudev.so.1.7.14
 drwxr-xr-x	root/root	usr/lib/modprobe.d/
 -rw-r--r--	root/root	usr/lib/modprobe.d/README
 -rw-r--r--	root/root	usr/lib/modprobe.d/systemd.conf
@@ -155,8 +158,8 @@ drwxr-xr-x	root/root	usr/lib/systemd/catalog/
 drwxr-xr-x	root/root	usr/lib/systemd/initrd-preset/
 -rw-r--r--	root/root	usr/lib/systemd/initrd-preset/90-systemd.preset
 -rw-r--r--	root/root	usr/lib/systemd/initrd-preset/99-default.preset
--rwxr-xr-x	root/root	usr/lib/systemd/libsystemd-core-260.so
--rwxr-xr-x	root/root	usr/lib/systemd/libsystemd-shared-260.so
+-rwxr-xr-x	root/root	usr/lib/systemd/libsystemd-core-261.so
+-rwxr-xr-x	root/root	usr/lib/systemd/libsystemd-shared-261.so
 drwxr-xr-x	root/root	usr/lib/systemd/network/
 -rw-r--r--	root/root	usr/lib/systemd/network/80-6rd-tunnel.link
 -rw-r--r--	root/root	usr/lib/systemd/network/80-6rd-tunnel.network
@@ -349,6 +352,8 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-logind-
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-machined.socket -> ../systemd-machined.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-mute-console.socket -> ../systemd-mute-console.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-repart.socket -> ../systemd-repart.socket
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-storage-block.socket -> ../systemd-storage-block.socket
+lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-storage-fs.socket -> ../systemd-storage-fs.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-sysext.socket -> ../systemd-sysext.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-udevd-control.socket -> ../systemd-udevd-control.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sockets.target.wants/systemd-udevd-kernel.socket -> ../systemd-udevd-kernel.socket
@@ -395,6 +400,9 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-udevd.s
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-done.service -> ../systemd-update-done.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-utmp.service -> ../systemd-update-utmp.service
 -rw-r--r--	root/root	usr/lib/systemd/system/syslog.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/system-install.target
+drwxr-xr-x	root/root	usr/lib/systemd/system/system-install.target.wants/
+lrwxrwxrwx	root/root	usr/lib/systemd/system/system-install.target.wants/systemd-sysinstall.service -> ../systemd-sysinstall.service
 -rw-r--r--	root/root	usr/lib/systemd/system/system-systemd\x2dmute\x2dconsole.slice
 -rw-r--r--	root/root	usr/lib/systemd/system/system-update-cleanup.service
 -rw-r--r--	root/root	usr/lib/systemd/system/system-update-pre.target
@@ -412,6 +420,7 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/system-update-pre.target.wants/syste
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-binfmt.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-boot-check-no-failures.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-confext-initrd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-confext-sysroot.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-confext.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-coredump.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-coredump@.service
@@ -485,20 +494,30 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/system-update-pre.target.wants/syste
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-repart.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-repart.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-repart@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-report-basic.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-report-basic@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-report-cgroup.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-report-cgroup@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-resolved-monitor.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-resolved-varlink.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-resolved.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-rfkill.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-rfkill.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-soft-reboot.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-storage-block.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-storage-block@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-storage-fs.socket
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-storage-fs@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-storagetm.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-suspend-then-hibernate.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-suspend.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysctl.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysext-initrd.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysext-sysroot.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysext.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysext.socket
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysext@.service
+-rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysinstall.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-sysusers.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-time-wait-sync.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-timedated.service
@@ -578,6 +597,8 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/user@0.service.d/
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-remount-fs
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-reply-password
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-report
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-report-basic
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-report-cgroup
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-resolved
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-rfkill
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-sbsign
@@ -586,6 +607,8 @@ drwxr-xr-x	root/root	usr/lib/systemd/system/user@0.service.d/
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-socket-proxyd
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-ssh-issue
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-ssh-proxy
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-storage-block
+-rwxr-xr-x	root/root	usr/lib/systemd/systemd-storage-fs
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-storagetm
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-sulogin-shell
 -rwxr-xr-x	root/root	usr/lib/systemd/systemd-sysctl
@@ -644,6 +667,7 @@ drwxr-xr-x	root/root	usr/lib/systemd/user/sockets.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/systemd-ask-password.socket -> ../systemd-ask-password.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/systemd-journalctl.socket -> ../systemd-journalctl.socket
 lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/systemd-machined.socket -> ../systemd-machined.socket
+lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/systemd-storage-fs.socket -> ../systemd-storage-fs.socket
 -rw-r--r--	root/root	usr/lib/systemd/user/sound.target
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-ask-password.socket
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-ask-password@.service
@@ -654,6 +678,8 @@ lrwxrwxrwx	root/root	usr/lib/systemd/user/sockets.target.wants/systemd-machined.
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-machined.socket
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-nspawn@.service
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-portabled.service
+-rw-r--r--	root/root	usr/lib/systemd/user/systemd-storage-fs.socket
+-rw-r--r--	root/root	usr/lib/systemd/user/systemd-storage-fs@.service
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-tmpfiles-clean.service
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-tmpfiles-clean.timer
 -rw-r--r--	root/root	usr/lib/systemd/user/systemd-tmpfiles-setup.service
@@ -684,6 +710,7 @@ drwxr-xr-x	root/root	usr/lib/tmpfiles.d/
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/legacy.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/portables.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/provision.conf
+-rw-r--r--	root/root	usr/lib/tmpfiles.d/root.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/static-nodes-permissions.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/systemd-network.conf
 -rw-r--r--	root/root	usr/lib/tmpfiles.d/systemd-nologin.conf
@@ -713,6 +740,7 @@ drwxr-xr-x	root/root	usr/lib/udev/hwdb.d/
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-usb-classes.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-usb-vendor-model.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/20-vmbus-class.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/40-imds.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/60-autosuspend-chromiumos.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/60-autosuspend-fingerprint-reader.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/60-autosuspend.hwdb
@@ -725,6 +753,7 @@ drwxr-xr-x	root/root	usr/lib/udev/hwdb.d/
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-analyzers.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-av-production.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-cameras.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-debug-appliance.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-hardware-wallets.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-joystick.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-lights.hwdb
@@ -735,6 +764,7 @@ drwxr-xr-x	root/root	usr/lib/udev/hwdb.d/
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-software-radio.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-sound-card.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-touchpad.hwdb
+-rw-r--r--	root/root	usr/lib/udev/hwdb.d/70-vsock.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/80-ieee1394-unit-function.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/82-net-auto-link-local.hwdb
 -rw-r--r--	root/root	usr/lib/udev/hwdb.d/README
@@ -804,6 +834,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/portablectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/resolvectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/run0
+-rw-r--r--	root/root	usr/share/bash-completion/completions/storagectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemctl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-analyze
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-cat
@@ -821,6 +852,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-resolve
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-run
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-sysext
+-rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-sysinstall
 -rw-r--r--	root/root	usr/share/bash-completion/completions/systemd-vpick
 -rw-r--r--	root/root	usr/share/bash-completion/completions/timedatectl
 -rw-r--r--	root/root	usr/share/bash-completion/completions/udevadm
@@ -911,6 +943,7 @@ drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.credentials.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.mount-file-system.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.namespace-resource.policy
+-rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.storage.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/io.systemd.sysext.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.hostname1.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.locale1.policy
@@ -950,6 +983,7 @@ drwxr-xr-x	root/root	usr/share/zsh/site-functions/
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_machines
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_outputmodes
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_sd_unit_files
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_storagectl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemctl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-analyze
@@ -960,6 +994,7 @@ drwxr-xr-x	root/root	usr/share/zsh/site-functions/
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-nspawn
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-path
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-run
+-rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-sysinstall
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_systemd-tmpfiles
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_timedatectl
 -rw-r--r--	root/root	usr/share/zsh/site-functions/_udevadm

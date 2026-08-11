@@ -1,8 +1,8 @@
 description="Programs for controlling the startup, running, and shutdown of the system."
 url="https://systemd.io"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 # Those dependencies are need to compile the package
 # but not listed to avoid circular dependencies:
@@ -20,8 +20,7 @@ run=(shadow)
 set=(core)
 
 name=systemd
-version=260.2
-release=1
+version=261.2
 
 source=(https://anduin.linuxfromscratch.org/LFS/systemd-man-pages-$version.tar.xz
         https://github.com/systemd/systemd/archive/v$version/$name-$version.tar.gz)
