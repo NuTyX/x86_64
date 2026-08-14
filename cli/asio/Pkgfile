@@ -1,5 +1,5 @@
 description="Cross-platform C++ library for ASynchronous network I/O"
-url="https://asio.sourceforge.net"
+url="https://github.com/chriskohlhoff/asio"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Greg,Tnut"
@@ -7,18 +7,16 @@ contributors="Greg,Tnut"
 makedepends=(boost automake autoconf)
 
 name=asio
-version=1.38.0
-_version=1-38-0
+version=1.38.2
+_version=1.38.2
 
-PKGMK_IGNORE_UNPACK="yes"
+#PKGMK_IGNORE_UNPACK="yes"
 
-source=(https://github.com/chriskohlhoff/asio/archive/refs/tags/asio-${_version}.tar.gz)
+source=($url.git)
 
 prepare() {
 localedef -i en_US -f UTF-8 en_US.UTF-8
-LC_ALL=en_US.UTF-8 LANG=en_US.utf-8 \
-tar -p -o -C $SRC -xf ${PKGMK_SOURCE_DIR}/$name-${_version}.tar.gz
-mv asio-asio-${_version} $name-$version
+LC_ALL=en_US.UTF-8 LANG=en_US.utf-8
 }
 
 build() {
