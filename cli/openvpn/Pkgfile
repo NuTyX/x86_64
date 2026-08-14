@@ -1,19 +1,19 @@
 description="An easy-to-use, robust and highly configurable VPN (Virtual Private Network) client"
-url="http://www.openvpn.net"
+url="https://github.com/OpenVPN/openvpn"
 
 contributor="Graknu, Greg, Spiky"
 packager="spiky <spiky@nutyx.org>"
 
-makedepends=(autoconf libcap-ng automake m4 libtool sed grep pam 
+makedepends=(git autoconf libcap-ng automake m4 libtool sed grep pam 
              lzo python-docutils lz4)
 
 name=openvpn
-version=2.7.5
+version=2.7.6
 
 PKGMK_KEEP_SOURCES="no"
 
 source=(0001-unprivileged.patch
-        https://github.com/OpenVPN/$name/archive/v$version.tar.gz)
+        $url.git)
 
 #prepare() {
 #ln -sv rst2man.py /usr/bin/rst2man
