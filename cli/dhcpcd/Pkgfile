@@ -1,23 +1,22 @@
 description="Connect your computer to a network which uses DHCP to assign network addresses."
-url="https://roy.marples.name/projects/dhcpcd"
+url="https://github.com/NetworkConfiguration/dhcpcd"
 
 license="BSD-2-Clause"
 
 maintainer="Roy Marples"
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=dhcpcd
-version=10.3.2
-release=2
+version=10.5.0
 
-makedepends=(shadow)
+makedepends=(shadow git)
 
 PKGMK_GROUPS=(man)
 
 scriptsversion=20260315
 source=(https://sourceforge.net/projects/nutyx/files/sources/nutyx-scripts/nutyx-scripts-$scriptsversion.tar.xz
-	    https://github.com/NetworkConfiguration/dhcpcd/releases/download/v${version}/$name-$version.tar.xz)
+	$url.git)
 
 prepare() {
 groupadd -g 52 $name
