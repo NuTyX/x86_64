@@ -1,5 +1,5 @@
 description="a modern interactive commandline shell."
-url="https://fishshell.com/"
+url="https://github.com/fish-shell/fish-shell"
 
 license="GPL2 LGPL2"
 
@@ -9,9 +9,9 @@ contributors="Greg,Fanch,Remy,Tnut"
 makedepends=(cmake rustc doxygen)
 
 name=fish
-version=4.7.1
+version=4.8.1
 
-source=(https://github.com/fish-shell/fish-shell/releases/download/$version/$name-$version.tar.xz)
+source=($url.git)
 
 
 build() {
