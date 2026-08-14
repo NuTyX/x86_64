@@ -51,6 +51,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/npm/docs/content/commands/
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-help.md
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-init.md
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-install-ci-test.md
+-rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-install-scripts.md
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-install-test.md
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-install.md
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/content/commands/npm-link.md
@@ -147,6 +148,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/npm/docs/output/commands/
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-help.html
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-init.html
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-install-ci-test.html
+-rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-install-scripts.html
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-install-test.html
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-install.html
 -rw-r--r--	root/root	usr/lib/node_modules/npm/docs/output/commands/npm-link.html
@@ -252,6 +254,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/npm/lib/commands/
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/help.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/init.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/install-ci-test.js
+-rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/install-scripts.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/install-test.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/install.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/commands/link.js
@@ -315,6 +318,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/npm/lib/commands/trust/
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/trust-cmd.js
 drwxr-xr-x	root/root	usr/lib/node_modules/npm/lib/utils/
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/utils/allow-scripts-cmd.js
+-rw-r--r--	root/root	usr/lib/node_modules/npm/lib/utils/allow-scripts-prune.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/utils/allow-scripts-remediation.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/utils/allow-scripts-writer.js
 -rw-r--r--	root/root	usr/lib/node_modules/npm/lib/utils/audit-error.js
@@ -387,6 +391,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/npm/man/man1/
 -rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-help.1
 -rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-init.1
 -rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-install-ci-test.1
+-rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-install-scripts.1
 -rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-install-test.1
 -rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-install.1
 -rw-r--r--	root/root	usr/lib/node_modules/npm/man/man1/npm-link.1
