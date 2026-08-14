@@ -1,15 +1,15 @@
 description='A log-structured file system supporting continuous snapshotting (userspace utils)'
 url='https://nilfs.sourceforge.net/'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(sed util-linux)
 run=()
 set=()
 
 name=nilfs-utils
-version=2.3.0
+version=2.3.1
 
 source=(http://nilfs.sourceforge.net/download/$name-$version.tar.bz2)
 
