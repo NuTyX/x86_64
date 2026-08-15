@@ -1,5 +1,5 @@
 description="Open Source H265/HEVC video encoder."
-url="https://bitbucket.org/multicoreware/x265/wiki/Home"
+url="https://github.com/Multicorewareinc/x265"
 
 license="GPL"
 
@@ -9,15 +9,16 @@ contriutors="Chris Farrell"
 makedepends=(nasm git make-ca cmake)
 
 name=x265
-version=4.2
+version=4.3
 
-source=(https://bitbucket.org/multicoreware/x265_git/downloads/${name}_$version.tar.gz)
+source=($url.git)
+
 build() {
   mkdir build
   cd    build
    cmake  -DCMAKE_INSTALL_PREFIX=/usr \
    -DENABLE_STATIC=OFF  \
-   ../${name}_$version/source
+   ../${name}-$version/source
 
    make
 
