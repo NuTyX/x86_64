@@ -7,9 +7,9 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 name=xdg-dbus-proxy
-version=0.1.7
+version=0.1.8
 
 makedepends=(meson dbus glib)
-source=(https://github.com/flatpak/xdg-dbus-proxy/releases/download/$version/$name-$version.tar.xz)
+source=($url.git)
 
 build=meson
