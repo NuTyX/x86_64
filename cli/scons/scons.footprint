@@ -35,6 +35,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/SCons/Platform/
 drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/__init__.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/aix.cpython-314.pyc
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/bsd.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/cygwin.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/darwin.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/hpux.cpython-314.pyc
@@ -46,6 +47,7 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/virtualenv.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/__pycache__/win32.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/aix.py
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/bsd.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/cygwin.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/darwin.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Platform/hpux.py
@@ -242,8 +244,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/pdflatex.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/pdftex.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/python.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/qt.cpython-314.pyc
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/qt3.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/rmic.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/rpcgen.cpython-314.pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/__pycache__/rpm.cpython-314.pyc
@@ -1772,8 +1772,6 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/SCons/Tool/packaging/__pyc
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/pdflatex.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/pdftex.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/python.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/qt.py
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/qt3.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/rmic.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/rpcgen.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/Tool/rpm.py
@@ -1873,21 +1871,21 @@ drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/SCons/compat/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/cpp.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/dblite.py
 -rw-r--r--	root/root	usr/lib/python3.14/site-packages/SCons/exitfuncs.py
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/LICENSE
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/SCons/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/SCons/Tool/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/SCons/Tool/docbook/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/SCons/Tool/docbook/docbook-xsl-1.76.1/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/licenses/SCons/Tool/docbook/docbook-xsl-1.76.1/COPYING
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.10.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/SCons/
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/SCons/Tool/
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/SCons/Tool/docbook/
+drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/SCons/Tool/docbook/docbook-xsl-1.76.1/
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/licenses/SCons/Tool/docbook/docbook-xsl-1.76.1/COPYING
+-rw-r--r--	root/root	usr/lib/python3.14/site-packages/scons-4.11.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/scons/
