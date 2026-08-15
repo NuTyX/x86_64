@@ -1,8 +1,8 @@
 description="Rust GStreamer plugins"
 url="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 license="MIT APACHE MPL-2.0"
 
@@ -12,7 +12,7 @@ run=(iso-codes)
 name=gstreamer-plugins-rs
 _name=gst-plugins-rs
 
-version=1.28.5
+version=1.28.6
 release=1
 
 source=($url/-/archive/gstreamer-$version/gst-plugins-rs-gstreamer-$version.tar.gz)
