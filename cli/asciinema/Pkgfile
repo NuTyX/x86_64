@@ -7,13 +7,12 @@ contributors="Delta,Tnut"
 makedepends=(cargo-c)
 
 name=asciinema
-version=3.0.1
-release=2
+version=3.2.1
 
 
 PKGMK_KEEP_SOURCES="no"
 
-source=(https://github.com/asciinema/asciinema/archive/refs/tags/v$version.tar.gz)
+source=(https://github.com/asciinema/asciinema.git)
 
 build() {
 cd $name-$version
