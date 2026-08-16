@@ -3,18 +3,17 @@ url="https://github.com/ubuntu/gnome-shell-extension-appindicator"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson jq libayatana-appindicator)
 run=(gnome-shell)
 set=(gnome)
 
 name=gnome-shell-extension-appindicator
-version=64
-release=2
+version=65
 
-source=(https://github.com/ubuntu/$name/archive/refs/tags/v${version}.tar.gz)
+source=($url.git)
 
 build=meson
 
