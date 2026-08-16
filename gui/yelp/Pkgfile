@@ -11,9 +11,9 @@ itstool intltool gtk-doc libxslt webkit2gtk-6 yelp-xsl gsettings-desktop-schemas
 run=(desktop-file-utils hicolor-icon-theme )
 
 name=yelp
-version=49.1
+version=49.2
 
-source=($url/-/archive/$version/yelp-$version.tar.gz)
+source=($url.git)
 
 build() {
 
