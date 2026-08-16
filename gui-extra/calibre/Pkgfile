@@ -5,9 +5,9 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
 name=calibre
-version=8.7.0
+version=9.12.0
 
-makedepends=(bash-completion xdg-utils)
+makedepends=(bash-completion xdg-utils tzdata)
 run=(libglvnd xorg-fontconfig libxkbcommon xorg-libxcomposite
      xorg-libxdamage xorg-libxrandr xorg-libxtst xorg-libxshmfence
      xorg-libxkbfile hicolor-icon-theme desktop-file-utils
