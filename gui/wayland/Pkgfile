@@ -7,7 +7,7 @@ contributors="Pierre,Greg,Tnut"
 makedepends=(meson ninja libffi doxygen xmlto docbook-xml libxslt)
 
 name=wayland
-version=1.25.0
+version=1.26.0
 
 source=(https://gitlab.freedesktop.org/wayland/wayland/-/releases/$version/downloads/$name-$version.tar.xz)
 build() {
