@@ -1,14 +1,14 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsComponents.so -> libKirigamiAddonsComponents.so.6
--rwxr-xr-x	root/root	usr/lib/libKirigamiAddonsComponents.so.1.12.1
-lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsComponents.so.6 -> libKirigamiAddonsComponents.so.1.12.1
+-rwxr-xr-x	root/root	usr/lib/libKirigamiAddonsComponents.so.1.13.1
+lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsComponents.so.6 -> libKirigamiAddonsComponents.so.1.13.1
 lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsStatefulApp.so -> libKirigamiAddonsStatefulApp.so.6
--rwxr-xr-x	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.1.12.1
-lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.6 -> libKirigamiAddonsStatefulApp.so.1.12.1
+-rwxr-xr-x	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.1.13.1
+lrwxrwxrwx	root/root	usr/lib/libKirigamiAddonsStatefulApp.so.6 -> libKirigamiAddonsStatefulApp.so.1.13.1
 lrwxrwxrwx	root/root	usr/lib/libKirigamiApp.so -> libKirigamiApp.so.6
--rwxr-xr-x	root/root	usr/lib/libKirigamiApp.so.1.12.1
-lrwxrwxrwx	root/root	usr/lib/libKirigamiApp.so.6 -> libKirigamiApp.so.1.12.1
+-rwxr-xr-x	root/root	usr/lib/libKirigamiApp.so.1.13.1
+lrwxrwxrwx	root/root	usr/lib/libKirigamiApp.so.6 -> libKirigamiApp.so.1.13.1
 drwxr-xr-x	root/root	usr/lib/qt6/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/
@@ -116,6 +116,15 @@ drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/labs/components/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/labs/components/kde-qmlmodule.version
 -rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/labs/components/libcomponentslabsplugin.so
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/labs/components/qmldir
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/OnboardToolTip.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/kde-qmlmodule.version
+-rwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/libonboardingplugin.so
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/onboardingplugin.qmltypes
+drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/private/
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/private/OnboardingEffect.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/private/OnboardingOverlay.qml
+-rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/onboarding/qmldir
 drwxr-xr-x	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/settings/
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/settings/CategorizedSettings.qml
 -rw-r--r--	root/root	usr/lib/qt6/qml/org/kde/kirigamiaddons/settings/ConfigurationModule.qml
