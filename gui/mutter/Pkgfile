@@ -15,11 +15,11 @@ run=(xorg-server zenity pipewire xorg-xwayland glycin libinput)
 set=(gnome-base gnome)
 
 name=mutter
-version=50.3
+version=50.4
 
 PKGMK_MESON_OPTIONS="-Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
-source=($url/-/archive/$version/$name-$version.tar.bz2)
+source=($url.git)
 
 prepare() {
 cd $name-$version
