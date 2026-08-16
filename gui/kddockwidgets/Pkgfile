@@ -3,11 +3,11 @@ url="https://github.com/KDAB/KDDockWidgets"
 
 license="GPL-2.0-only GPL-3.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 name=kddockwidgets
-version=2.4.0
+version=2.4.1
 
 makedepends=(fmt qt6-base qt6-declarative cmake nlohmann-json qt6-tools) 
 source=($url/releases/download/v$version/kddockwidgets-$version.tar.gz)
