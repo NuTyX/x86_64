@@ -35,6 +35,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/
 -rw-r--r--	root/root	usr/share/bleachbit/Memory.py
 -rw-r--r--	root/root	usr/share/bleachbit/Network.py
 -rw-r--r--	root/root	usr/share/bleachbit/Options.py
+-rw-r--r--	root/root	usr/share/bleachbit/PathUtils.py
 -rw-r--r--	root/root	usr/share/bleachbit/Process.py
 -rw-r--r--	root/root	usr/share/bleachbit/ProtectedPath.py
 -rw-r--r--	root/root	usr/share/bleachbit/RecognizeCleanerML.py
@@ -110,6 +111,8 @@ drwxr-xr-x	root/root	usr/share/bleachbit/__pycache__/
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Network.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Options.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Options.cpython-314.pyc
+-rw-r--r--	root/root	usr/share/bleachbit/__pycache__/PathUtils.cpython-314.opt-1.pyc
+-rw-r--r--	root/root	usr/share/bleachbit/__pycache__/PathUtils.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Process.cpython-314.opt-1.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/Process.cpython-314.pyc
 -rw-r--r--	root/root	usr/share/bleachbit/__pycache__/ProtectedPath.cpython-314.opt-1.pyc
@@ -161,6 +164,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/cleaners/
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/exaile.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/filezilla.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/firefox.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/fish.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/flash.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/geary.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/gedit.xml
@@ -199,6 +203,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/cleaners/
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/palemoon.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/pidgin.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/profanity.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/python.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/realplayer.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/recoll.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/rhythmbox.xml
@@ -240,6 +245,7 @@ drwxr-xr-x	root/root	usr/share/bleachbit/cleaners/
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/yum.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/zen.xml
 -rw-r--r--	root/root	usr/share/bleachbit/cleaners/zoom.xml
+-rw-r--r--	root/root	usr/share/bleachbit/cleaners/zsh.xml
 drwxr-xr-x	root/root	usr/share/bleachbit/markovify/
 -rw-r--r--	root/root	usr/share/bleachbit/markovify/__init__.py
 drwxr-xr-x	root/root	usr/share/bleachbit/markovify/__pycache__/
