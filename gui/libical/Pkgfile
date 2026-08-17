@@ -3,13 +3,13 @@ url="https://github.com/libical/libical"
 
 License="MPL2 LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 makedepends=(libxml2 cmake db gobject-introspection icu doxygen glib vala)
 
 name=libical
-version=4.0.4
+version=4.0.5
 tag=v$version
 
 source=($url.git)
