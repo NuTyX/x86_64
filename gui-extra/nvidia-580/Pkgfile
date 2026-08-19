@@ -11,6 +11,7 @@ version=580.178.04
 release=1
 conflicts=(nvidia)
 
+makedepends=(grep)
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 PKGMK_GROUPS=(man doc)
 
@@ -51,8 +52,9 @@ build()
 
 
   # create soname links
-  find "$pkgdir" -type f -name '*.so*' ! -path '*xorg/*' -print0 | while read -d $'\0' _lib; do
-    _soname=$(dirname "${_lib}")/$(readelf -d "${_lib}" | grep -Po 'SONAME.*: \[\K[^]]*' || true)
+  find $PKG -type f -name '*.so*' ! -path '*xorg/*' -print0 | while read -d $'\0' _lib
+  do
+    _soname=$(dirname "${_lib}")/$(readelf -d "${_lib}" | grep -Eo 'soname.*: \[[^]]*'|sed "s/soname: \[//" || true)
     _base=$(echo ${_soname} | sed -r 's/(.*)\.so.*/\1.so/')
     [[ -e "${_soname}" ]] || ln -s $(basename "${_lib}") "${_soname}"
     [[ -e "${_base}" ]] || ln -s $(basename "${_soname}") "${_base}"
@@ -77,4 +79,13 @@ blacklist nouveau
 options nouveau modeset=0
 EOF
 
+
+ # In conflict with libglvnd
+ rm $PKG/usr/lib/libEGL.so
+ rm $PKG/usr/lib/libEGL.so.1
+
+echo "
+
+ln -sf libEGL.so.$version usr/lib/libEGL.so.1
+ln -sf libEGL.so.1 usr/lib/libEGL.so" > $PKGMK_ROOT/$name.post-install
 }
