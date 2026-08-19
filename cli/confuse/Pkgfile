@@ -3,10 +3,16 @@ url="https://github.com/martinh/libconfuse"
 packager="spiky <spiky@nutyx.org>"
 
 name=confuse
-version=3.3
-release=2
+version=3.4
 
-source=(https://github.com/martinh/libconfuse/releases/download/v$version/$name-$version.tar.gz)
+makedepends=(git automake libtool)
+
+source=($url.git)
+
+prepare() {
+cd $name-$version
+  autoreconf -vfi
+}
 
 build() {
 
