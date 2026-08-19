@@ -11,40 +11,95 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nvidia-xconfig
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libEGL.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libEGL_nvidia.so -> libEGL_nvidia.so.0
+lrwxrwxrwx	root/root	usr/lib/libEGL_nvidia.so.0 -> libEGL_nvidia.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libEGL_nvidia.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM_nvidia.so -> libGLESv1_CM_nvidia.so.1
+lrwxrwxrwx	root/root	usr/lib/libGLESv1_CM_nvidia.so.1 -> libGLESv1_CM_nvidia.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libGLESv1_CM_nvidia.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libGLESv2_nvidia.so -> libGLESv2_nvidia.so.2
+lrwxrwxrwx	root/root	usr/lib/libGLESv2_nvidia.so.2 -> libGLESv2_nvidia.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libGLESv2_nvidia.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libGLX_nvidia.so -> libGLX_nvidia.so.0
+lrwxrwxrwx	root/root	usr/lib/libGLX_nvidia.so.0 -> libGLX_nvidia.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libGLX_nvidia.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libcuda.so -> libcuda.so.1
+lrwxrwxrwx	root/root	usr/lib/libcuda.so.1 -> libcuda.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libcuda.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libcudadebugger.so -> libcudadebugger.so.1
+lrwxrwxrwx	root/root	usr/lib/libcudadebugger.so.1 -> libcudadebugger.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libcudadebugger.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libglxserver_nvidia.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so -> libnvcuvid.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so.1 -> libnvcuvid.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-allocator.so -> libnvidia-allocator.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-allocator.so.1 -> libnvidia-allocator.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-allocator.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-cfg.so -> libnvidia-cfg.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-cfg.so.1 -> libnvidia-cfg.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-eglcore.so -> libnvidia-eglcore.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-eglcore.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-encode.so -> libnvidia-encode.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-encode.so.1 -> libnvidia-encode.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-fbc.so -> libnvidia-fbc.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-fbc.so.1 -> libnvidia-fbc.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-glcore.so -> libnvidia-glcore.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-glsi.so -> libnvidia-glsi.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-glsi.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-glvkspirv.so -> libnvidia-glvkspirv.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-glvkspirv.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-gpucomp.so -> libnvidia-gpucomp.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-gpucomp.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-gtk2.so -> libnvidia-gtk2.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-gtk2.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-gtk3.so -> libnvidia-gtk3.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-gtk3.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so -> libnvidia-ml.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so.1 -> libnvidia-ml.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ngx.so -> libnvidia-ngx.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ngx.so.1 -> libnvidia-ngx.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-ngx.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-nvvm.so -> libnvidia-nvvm.so.4
+lrwxrwxrwx	root/root	usr/lib/libnvidia-nvvm.so.4 -> libnvidia-nvvm.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-nvvm.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-opencl.so -> libnvidia-opencl.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-opencl.so.1 -> libnvidia-opencl.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-opencl.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-opticalflow.so -> libnvidia-opticalflow.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-opticalflow.so.1 -> libnvidia-opticalflow.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-opticalflow.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-pkcs11-openssl3.so -> libnvidia-pkcs11-openssl3.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-pkcs11-openssl3.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-pkcs11.so -> libnvidia-pkcs11.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-pkcs11.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-present.so -> libnvidia-present.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-present.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ptxjitcompiler.so -> libnvidia-ptxjitcompiler.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ptxjitcompiler.so.1 -> libnvidia-ptxjitcompiler.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-ptxjitcompiler.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-rtcore.so -> libnvidia-rtcore.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-rtcore.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-sandboxutils.so -> libnvidia-sandboxutils.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-sandboxutils.so.1 -> libnvidia-sandboxutils.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-sandboxutils.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-tls.so -> libnvidia-tls.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-vksc-core.so -> libnvidia-vksc-core.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvidia-vksc-core.so.1 -> libnvidia-vksc-core.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-vksc-core.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvidia-wayland-client.so -> libnvidia-wayland-client.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvidia-wayland-client.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libnvoptix.so -> libnvoptix.so.1
+lrwxrwxrwx	root/root	usr/lib/libnvoptix.so.1 -> libnvoptix.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libnvoptix.so.580.178.04
+lrwxrwxrwx	root/root	usr/lib/libvdpau_nvidia.so -> libvdpau_nvidia.so.1
+lrwxrwxrwx	root/root	usr/lib/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.580.178.04
 -rwxr-xr-x	root/root	usr/lib/libvdpau_nvidia.so.580.178.04
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
