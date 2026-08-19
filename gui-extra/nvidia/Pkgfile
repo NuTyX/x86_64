@@ -10,7 +10,7 @@ run=(libglvnd)
 conflicts=(nvidia-390 nvidia-470)
 
 name=nvidia
-version=610.43.03
+version=610.57.04
 release=1
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
@@ -155,5 +155,13 @@ cd NVIDIA-Linux-x86_64-${version}
 
 #    install -D -m644 nvidia-settings.desktop "$PKG/usr/share/applications/nvidia-settings.desktop"
 #    install -D -m644 nvidia-settings.png "$PKG/usr/share/pixmaps/nvidia-settings.png"
-    
+
+   # create soname links
+    find $PKG -type f -name '*.so*' ! -path '*xorg/*' -print0 | while read -d $'\0' _lib
+    do
+     _soname=$(dirname "${_lib}")/$(readelf -d "${_lib}" | grep -Eo 'soname.*: \[[^]]*'|sed "s/soname: \[//" || true)
+     _base=$(echo ${_soname} | sed -r 's/(.*)\.so.*/\1.so/')
+     [[ -e "${_soname}" ]] || ln -s $(basename "${_lib}") "${_soname}"
+     [[ -e "${_base}" ]] || ln -s $(basename "${_soname}") "${_base}"
+    done
 }
