@@ -12517,6 +12517,7 @@ drwxr-xr-x	root/root	usr/src/kernel-66/include/config/
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/TCP_CONG_WESTWOOD (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/TCP_CONG_YEAH (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/TCP_MD5SIG (EMPTY)
+-rw-r--r--	root/root	usr/src/kernel-66/include/config/TCP_SIGPOOL (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/TDX_GUEST_DRIVER (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/TEE (EMPTY)
 -rw-r--r--	root/root	usr/src/kernel-66/include/config/TEHUTI (EMPTY)
@@ -18281,6 +18282,7 @@ drwxrwxr-x	root/root	usr/src/kernel-66/include/net/tc_act/
 -rw-rw-r--	root/root	usr/src/kernel-66/include/net/tc_act/tc_vlan.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/net/tc_wrapper.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/net/tcp.h
+-rw-r--r--	root/root	usr/src/kernel-66/include/net/tcp_ao.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/net/tcp_states.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/net/tcx.h
 -rw-rw-r--	root/root	usr/src/kernel-66/include/net/timewait_sock.h
@@ -22488,6 +22490,8 @@ drwxrwxr-x	root/root	usr/src/kernel-66/lib/reed_solomon/
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/test_dynamic_debug.c
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/test_firmware.c
 drwxrwxr-x	root/root	usr/src/kernel-66/lib/test_fortify/
+-rw-r--r--	root/root	usr/src/kernel-66/lib/test_fortify/.gitignore
+-rw-r--r--	root/root	usr/src/kernel-66/lib/test_fortify/Makefile
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/test_fortify/read_overflow-memchr.c
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/test_fortify/read_overflow-memchr_inv.c
 -rw-rw-r--	root/root	usr/src/kernel-66/lib/test_fortify/read_overflow-memcmp.c
