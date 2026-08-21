@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gnome-maps"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Fanch,Remy,Fabienwang,Tnut"
 
 makedepends=(meson clutter-gtk geocode-glib blueprint-compiler
              libgee folks libadwaita librest libshumate libportal)
@@ -14,8 +14,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 set=(gnome)
 
 name=gnome-maps
-version=50.3
-release=2
+version=50.4
 
 source=($url.git)
 
