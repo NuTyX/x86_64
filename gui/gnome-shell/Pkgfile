@@ -7,7 +7,7 @@ packager="spiky <spiky@nutyx.org>"
 contributors="Fanch,Remy,Fabienwang,Tnut"
 
 makedepends=(meson sassc evolution-data-server gjs gnome-control-center
-             gnome-themes-extra libcroco mutter startup-notification gtk4 gcr-4
+             gnome-themes-extra mutter startup-notification gtk4 gcr-4
              gstreamer-plugins-base network-manager-applet gtk-doc
              gnome-autoar asciidoc gnome-bluetooth gjs)
 
@@ -19,6 +19,7 @@ set=(gnome-base gnome)
 
 name=gnome-shell
 version=50.4
+release=2
 
 PKGMK_MESON_OPTIONS="-Dtests=false"
 PKGMK_GROUPS=(man)
