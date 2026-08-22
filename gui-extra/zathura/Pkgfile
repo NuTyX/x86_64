@@ -4,10 +4,10 @@ url='https://pwmt.org/projects/zathura/'
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(girara json-glib)
+makedepends=(girara json-glib xxhash gtk4)
 
 name=zathura
-version=2026.05.20
+version=2026.07.18
 
 source=(https://github.com/pwmt/zathura/archive/$version/$name-$version.tar.gz)
 
