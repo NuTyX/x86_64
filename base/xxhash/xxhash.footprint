@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/xxh128sum -> xxhsum
+lrwxrwxrwx	root/root	usr/bin/xxh32sum -> xxhsum
+lrwxrwxrwx	root/root	usr/bin/xxh3sum -> xxhsum
+lrwxrwxrwx	root/root	usr/bin/xxh64sum -> xxhsum
+-rwxr-xr-x	root/root	usr/bin/xxhsum
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libxxhash.a
+lrwxrwxrwx	root/root	usr/lib/libxxhash.so -> libxxhash.so.0
+lrwxrwxrwx	root/root	usr/lib/libxxhash.so.0 -> libxxhash.so.0.8.3
+-rwxr-xr-x	root/root	usr/lib/libxxhash.so.0.8.3
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/xxhash/
+-rw-r--r--	root/root	usr/share/licenses/xxhash/LICENSE
