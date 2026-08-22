@@ -4,11 +4,11 @@ url='https://pwmt.org/projects/zathura-pdf-poppler'
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
 
-makedepends=(ninja meson zathura)
+makedepends=(ninja meson zathura appstream)
 run=( poppler-glib)
 
 name=zathura-pdf-poppler
-version=2026.05.10
+version=2026.07.18
 
 source=(${url}/download/${name}-${version}.tar.xz)
 
