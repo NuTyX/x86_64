@@ -18,6 +18,7 @@ run=(shared-mime-info xdg-utils desktop-file-utils gtk-update-icon-cache
 
 name=libreoffice
 version=26.2.5.2
+release=2
 
 categories=(Office Graphics Education)
 
@@ -124,7 +125,7 @@ build() {
 	--with-system-zstd          \
 	--with-parallelism=$(getconf _NPROCESSORS_ONLN)
 
-	make -j15 build
+	make -j10 build
 	make DESTDIR=$PKG distro-pack-install
         
 	# Nettoyage
