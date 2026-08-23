@@ -1,5 +1,5 @@
 description="A minimalistic plugin API for video sources and filters"
-url="https://www.piksel.org/frei0r"
+url="https://github.com/dyne/frei0r"
 
 license="GPL2"
 
@@ -9,14 +9,10 @@ contributors="Pierre,Tnut"
 makedepends=(cmake gavl doxygen opencv)
 
 name=frei0r-plugins
-version=3.2.3
+version=3.4.3
 
-source=(https://github.com/dyne/frei0r/archive/refs/tags/v$version.tar.gz)
+source=($url.git)
 PKGMK_KEEP_SOURCES="no"
-
-prepare() {
-mv frei0r-$version $name-$version
-}
 
 build() {
 
