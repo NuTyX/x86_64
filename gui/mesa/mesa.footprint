@@ -14,7 +14,7 @@ lrwxrwxrwx	root/root	usr/lib/dri/armada-drm_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/asahi_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/crocus_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/d3d12_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/d3d12_drv_video.so -> ../libgallium-26.1.8.so
+lrwxrwxrwx	root/root	usr/lib/dri/d3d12_drv_video.so -> ../libgallium-26.2.1.so
 lrwxrwxrwx	root/root	usr/lib/dri/etnaviv_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/exynos_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/gm12u320_dri.so -> libdril_dri.so
@@ -44,16 +44,16 @@ lrwxrwxrwx	root/root	usr/lib/dri/mi0283qt_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/msm_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/mxsfb-drm_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/nouveau_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/nouveau_drv_video.so -> ../libgallium-26.1.8.so
+lrwxrwxrwx	root/root	usr/lib/dri/nouveau_drv_video.so -> ../libgallium-26.2.1.so
 lrwxrwxrwx	root/root	usr/lib/dri/panel-mipi-dbi_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/panfrost_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/panthor_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/pl111_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/r300_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/r600_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/r600_drv_video.so -> ../libgallium-26.1.8.so
+lrwxrwxrwx	root/root	usr/lib/dri/r600_drv_video.so -> ../libgallium-26.2.1.so
 lrwxrwxrwx	root/root	usr/lib/dri/radeonsi_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/radeonsi_drv_video.so -> ../libgallium-26.1.8.so
+lrwxrwxrwx	root/root	usr/lib/dri/radeonsi_drv_video.so -> ../libgallium-26.2.1.so
 lrwxrwxrwx	root/root	usr/lib/dri/rcar-du_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/repaper_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/rockchip_dri.so -> libdril_dri.so
@@ -70,7 +70,7 @@ lrwxrwxrwx	root/root	usr/lib/dri/udl_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/v3d_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/vc4_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/virtio_gpu_dri.so -> libdril_dri.so
-lrwxrwxrwx	root/root	usr/lib/dri/virtio_gpu_drv_video.so -> ../libgallium-26.1.8.so
+lrwxrwxrwx	root/root	usr/lib/dri/virtio_gpu_drv_video.so -> ../libgallium-26.2.1.so
 lrwxrwxrwx	root/root	usr/lib/dri/vkms_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/vmwgfx_dri.so -> libdril_dri.so
 lrwxrwxrwx	root/root	usr/lib/dri/zink_dri.so -> libdril_dri.so
@@ -95,7 +95,7 @@ lrwxrwxrwx	root/root	usr/lib/libRusticlOpenCL.so.1 -> libRusticlOpenCL.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_screenshot.so
 -rwxr-xr-x	root/root	usr/lib/libVkLayer_MESA_vram_report_limit.so
 -rw-r--r--	root/root	usr/lib/libd3dx12-format-properties.a
--rwxr-xr-x	root/root	usr/lib/libgallium-26.1.8.so
+-rwxr-xr-x	root/root	usr/lib/libgallium-26.2.1.so
 lrwxrwxrwx	root/root	usr/lib/libgbm.so -> libgbm.so.1
 lrwxrwxrwx	root/root	usr/lib/libgbm.so.1 -> libgbm.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libgbm.so.1.0.0
@@ -117,8 +117,32 @@ lrwxrwxrwx	root/root	usr/lib/libgbm.so.1 -> libgbm.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libvulkan_virtio.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/drirc.d/
+-rw-r--r--	root/root	usr/share/drirc.d/00-anv-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-asahi-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-crocus-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-d3d12-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-dzn-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-hasvk-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-hk-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-iris-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-lavapipe-defaults.conf
 -rw-r--r--	root/root	usr/share/drirc.d/00-mesa-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-msm-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-nvk-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-panfrost-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-panvk-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-pvr-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-r300-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-r600-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-radeonsi-defaults.conf
 -rw-r--r--	root/root	usr/share/drirc.d/00-radv-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-turnip-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-v3d-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-v3dv-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-venus-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-virtio_gpu-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-vmwgfx-defaults.conf
+-rw-r--r--	root/root	usr/share/drirc.d/00-zink-defaults.conf
 drwxr-xr-x	root/root	usr/share/glvnd/
 drwxr-xr-x	root/root	usr/share/glvnd/egl_vendor.d/
 -rw-r--r--	root/root	usr/share/glvnd/egl_vendor.d/50_mesa.json

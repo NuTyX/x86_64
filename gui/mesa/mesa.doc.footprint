@@ -86,6 +86,7 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/ci/
 -rw-r--r--	root/root	usr/share/doc/mesa/ci/LAVA.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/ci/bare-metal.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/ci/docker.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/ci/drm-shim.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/ci/fdo-cache
 -rw-r--r--	root/root	usr/share/doc/mesa/ci/index.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/ci/kernel.rst
@@ -96,7 +97,7 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/ci/
 -rw-r--r--	root/root	usr/share/doc/mesa/codingstyle.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/conf.py
 -rw-r--r--	root/root	usr/share/doc/mesa/conform.rst
--rw-r--r--	root/root	usr/share/doc/mesa/devinfo.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/developing-extensions.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/dispatch.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/download.rst
 drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/
@@ -126,6 +127,8 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/kosmickrisp/
 drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/nvk/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/nvk/external_hardware_docs.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/nvk/hardware_docs.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/drivers/nvk/isbe_layout.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/drivers/nvk/mesh_shading_notes.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/panfrost.rst
 drwxr-xr-x	root/root	usr/share/doc/mesa/drivers/panfrost/
 -rw-r--r--	root/root	usr/share/doc/mesa/drivers/panfrost/benchmarking.rst
@@ -166,7 +169,6 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/gallium/cso/
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/index.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/intro.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/pipeline.txt
--rw-r--r--	root/root	usr/share/doc/mesa/gallium/postprocess.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/resources.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/screen.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/gallium/tgsi.rst
@@ -201,6 +203,7 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/header-stubs/intel/dev/
 -rw-r--r--	root/root	usr/share/doc/mesa/header-stubs/vk_extensions.h
 -rw-r--r--	root/root	usr/share/doc/mesa/header-stubs/vk_physical_device_features.h
 -rw-r--r--	root/root	usr/share/doc/mesa/header-stubs/vk_physical_device_properties.h
+-rw-r--r--	root/root	usr/share/doc/mesa/header-stubs/vk_struct_type_cast.h (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/mesa/helpwanted.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/history.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/index.rst
@@ -624,15 +627,17 @@ drwxr-xr-x	root/root	usr/share/doc/mesa/relnotes/
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.2.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.3.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.4.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.5.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.6.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.7.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.0.8.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.0.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.2.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.3.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.4.rst
--rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.5.rst
--rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.6.rst
--rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.7.rst
--rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.1.8.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.2.0.rst
+-rw-r--r--	root/root	usr/share/doc/mesa/relnotes/26.2.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/6.4
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/6.4.1.rst
 -rw-r--r--	root/root	usr/share/doc/mesa/relnotes/6.4.2.rst
