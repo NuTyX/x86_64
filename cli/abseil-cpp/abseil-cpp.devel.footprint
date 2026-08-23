@@ -14,6 +14,7 @@ drwxr-xr-x	root/root	usr/include/absl/base/
 drwxr-xr-x	root/root	usr/include/absl/base/internal/
 -rw-r--r--	root/root	usr/include/absl/base/internal/atomic_hook.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/atomic_hook_test_helper.h
+-rw-r--r--	root/root	usr/include/absl/base/internal/cpu_detect.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/cycleclock.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/cycleclock_config.h
 -rw-r--r--	root/root	usr/include/absl/base/internal/direct_mmap.h
@@ -115,7 +116,6 @@ drwxr-xr-x	root/root	usr/include/absl/container/internal/
 drwxr-xr-x	root/root	usr/include/absl/crc/
 -rw-r--r--	root/root	usr/include/absl/crc/crc32c.h
 drwxr-xr-x	root/root	usr/include/absl/crc/internal/
--rw-r--r--	root/root	usr/include/absl/crc/internal/cpu_detect.h
 -rw-r--r--	root/root	usr/include/absl/crc/internal/crc.h
 -rw-r--r--	root/root	usr/include/absl/crc/internal/crc32_x86_arm_combined_simd.h
 -rw-r--r--	root/root	usr/include/absl/crc/internal/crc32c.h
@@ -180,6 +180,7 @@ drwxr-xr-x	root/root	usr/include/absl/flags/internal/
 -rw-r--r--	root/root	usr/include/absl/flags/usage_config.h
 drwxr-xr-x	root/root	usr/include/absl/functional/
 -rw-r--r--	root/root	usr/include/absl/functional/any_invocable.h
+-rw-r--r--	root/root	usr/include/absl/functional/any_invocable_test.h
 -rw-r--r--	root/root	usr/include/absl/functional/bind_back.h
 -rw-r--r--	root/root	usr/include/absl/functional/bind_front.h
 -rw-r--r--	root/root	usr/include/absl/functional/function_ref.h
@@ -365,7 +366,6 @@ drwxr-xr-x	root/root	usr/include/absl/strings/internal/
 -rw-r--r--	root/root	usr/include/absl/strings/internal/ostringstream.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/pow10_helper.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/resize_uninitialized.h
--rw-r--r--	root/root	usr/include/absl/strings/internal/stl_type_traits.h
 drwxr-xr-x	root/root	usr/include/absl/strings/internal/str_format/
 -rw-r--r--	root/root	usr/include/absl/strings/internal/str_format/arg.h
 -rw-r--r--	root/root	usr/include/absl/strings/internal/str_format/bind.h
@@ -472,6 +472,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bad_optional_access.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bad_variant_access.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_base.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/absl_base_cpu_detect.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_base_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bind_back.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_bind_front.pc
@@ -505,7 +506,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_core_headers.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_crc32c.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_crc_cord_state.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/absl_crc_cpu_detect.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_crc_internal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_debugging.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/absl_debugging_internal.pc
