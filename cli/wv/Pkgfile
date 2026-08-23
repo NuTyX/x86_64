@@ -8,7 +8,7 @@ makedepends=(autoconflibtool automake libgsf libpng)
 
 name=wv
 version=1.2.9
-release=5
+release=6
 
 source=(https://github.com/AbiWord/wv/archive/refs/tags/$name-1-2-9.tar.gz
         wv-1.2.9-format_security.patch)
