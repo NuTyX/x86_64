@@ -8,7 +8,7 @@ alias=(card)
 
 
 PKGMK_IGNORE_RUNTIMEDEPS="no"
-makedepends=(curl git bzip2 gettext xz util-linux)
+makedepends=(curl git bzip2 gettext xz util-linux lua)
 run_devel=(curl.devel gcc.devel glibc.devel libarchive.devel \
 openssl.devel zlib.devel bzip2.devel xz.devel zstd.devel)
 
