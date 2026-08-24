@@ -3,15 +3,15 @@ url="https://www.gnu.org/software/emacs/"
 
 license="GPL3"
 
-contributors="Berlius,Greg,Spiky"
-packager="tnut <tnut@nutyx.org>"
+contributors="Berlius,Greg,Tnut"
+packager="spiky <spiky@nutyx.org>"
 
 makedepends=(gtk3 desktop-file-utils libjpeg-turbo giflib libpng
              librsvg libtiff dbus alsa-lib gnutls xorg-libxpm)
 run=(gsettings-desktop-schemas)
 
 name=emacs
-version=30.2
+version=31.1
 
 source=(https://ftp.gnu.org/pub/gnu/emacs/$name-$version.tar.xz)
 
