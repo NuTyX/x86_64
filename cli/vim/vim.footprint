@@ -302,6 +302,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/awk.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bash.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/basic.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bazelrc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bdf.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/beancount.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/bicep-params.vim
@@ -429,6 +430,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/help.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hgcommit.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hip.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hlsl.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hlsplaylist.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hog.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/hostconf.vim
@@ -458,6 +460,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/json.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/json5.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jsonc.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jsonld.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jsonnet.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/ftplugin/julia.vim
@@ -789,6 +792,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/indent/
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hare.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hcl.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hip.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/indent/hlsl.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/hog.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/html.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/htmldjango.vim
@@ -802,6 +806,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/indent/
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/json.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/json5.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/jsonc.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/indent/jsonld.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/julia.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/indent/just.vim
@@ -1264,6 +1269,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/baan.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bash.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/basic.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/bazelrc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bc.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/bdf.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/beancount.vim
@@ -1384,6 +1390,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/dylanintr.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/dylanlid.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/ecd.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/ed.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/edif.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/editorconfig.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/eiffel.vim
@@ -1482,6 +1489,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hgcommit.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hip.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hitest.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/hlsl.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hlsplaylist.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hog.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/hollywood.vim
@@ -1530,6 +1538,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/json.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/json5.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/jsonc.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/jsonld.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/julia.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/just.vim
@@ -1596,6 +1605,7 @@ drwxr-xr-x	root/root	usr/share/vim/vim92/syntax/
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/manual.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/maple.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/markdown.vim
+-rw-r--r--	root/root	usr/share/vim/vim92/syntax/marko.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/masm.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/mason.vim
 -rw-r--r--	root/root	usr/share/vim/vim92/syntax/master.vim
