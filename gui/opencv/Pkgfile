@@ -9,9 +9,15 @@ makedepends=(cmake unzip ffmpeg gstreamer-plugins-base gtk3 jasper libjpeg-turbo
 
 name=opencv
 version=4.13.0
+release=2
 
-source=(ffmpeg8.patch
+source=(ffmpeg-9.patch
         https://github.com/opencv/opencv/archive/$version/opencv-$version.tar.gz)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../ffmpeg-9.patch
+}
 
 build() {
 cd $name-$version
