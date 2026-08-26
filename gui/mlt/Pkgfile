@@ -12,8 +12,15 @@ makedepends=(cmake python ladspa frei0r-plugins libdv sdl-image libsamplerate so
 
 name=mlt
 version=7.40.0
+release=2
 
-source=(https://github.com/mltframework/mlt/releases/download/v${version}/mlt-$version.tar.gz)
+source=(https://github.com/mltframework/mlt/releases/download/v${version}/mlt-$version.tar.gz
+        ffmpeg-9.patch)
+
+prepare() {
+cd $name-$version
+patch -Np1 -i ../ffmpeg-9.patch
+}
 
 build() {
  cmake -B build -S $name-$version  \
