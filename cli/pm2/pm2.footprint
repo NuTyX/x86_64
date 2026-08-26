@@ -12,6 +12,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/GNU-AGPL-3.0.txt
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/LICENSE
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/README.md
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/SECURITY.md
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/bin/
 -rwxr-xr-x	root/root	usr/lib/node_modules/pm2/bin/pm2
 -rwxr-xr-x	root/root	usr/lib/node_modules/pm2/bin/pm2-dev
@@ -97,9 +98,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/binaries/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/motd
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/templates/
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/templates/Dockerfiles/
--rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/Dockerfiles/Dockerfile-java.tpl
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/Dockerfiles/Dockerfile-nodejs.tpl
--rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/Dockerfiles/Dockerfile-ruby.tpl
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/ecosystem-es.tpl
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/ecosystem-simple-es.tpl
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/ecosystem-simple.tpl
@@ -134,7 +133,6 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/templates/sample-apps/python-a
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/templates/sample-apps/python-app/package.json
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/tools/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/Config.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/IsAbsolute.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/SysMetrics.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/copydirSync.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/deleteFolderRecursive.js
@@ -150,10 +148,10 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/tools/multimeter/charm/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/multimeter/index.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/open.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/passwd.js
--rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/promise.min.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/prompt.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/sexec.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/treeify.js
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/typestrip.js
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/lib/tools/which.js
 -rwxr-xr-x	root/root	usr/lib/node_modules/pm2/lib/tools/xdg-open
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/modules/
@@ -3334,6 +3332,7 @@ drwxr-xr-x	root/root	usr/lib/node_modules/pm2/scripts/
 drwxr-xr-x	root/root	usr/lib/node_modules/pm2/types/
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/types/index.d.ts
 -rw-r--r--	root/root	usr/lib/node_modules/pm2/types/tsconfig.json
+-rw-r--r--	root/root	usr/lib/node_modules/pm2/unit_time
 drwxr-xr-x	root/root	usr/lib/node_modules/root/
 -rw-r--r--	root/root	usr/lib/node_modules/root/.travis.yml
 -rw-r--r--	root/root	usr/lib/node_modules/root/LICENSE
