@@ -1,14 +1,14 @@
 description="The Open Source toolkit for Secure Sockets Layer and Transport Layer Security."
 url="https://openssl-library.org/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(perl)
 
 name=openssl
-version=4.0.1
-_ltsversion=3.5.7
+version=4.0.2
+_ltsversion=3.5.8
 set=(chroot)
 
 source=(https://github.com/openssl/openssl/releases/download/$name-$version/$name-$version.tar.gz

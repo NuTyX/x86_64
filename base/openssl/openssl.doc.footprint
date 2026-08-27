@@ -405,6 +405,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/html/man3/
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/HMAC.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/MD5.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/MDC2_Init.html
+-rw-r--r--	root/root	usr/share/doc/openssl/html/man3/NAME_CONSTRAINTS_check.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/NCONF_new_ex.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OBJ_nid2obj.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OCSP_REQUEST_new.html
@@ -417,6 +418,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/html/man3/
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_FILE.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_LH_COMPFUNC.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_LH_stats.html
+-rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_armcap.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_config.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_fork_prepare.html
 -rw-r--r--	root/root	usr/share/doc/openssl/html/man3/OPENSSL_gmtime.html
@@ -1058,6 +1060,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/internal/man7/
 -rw-r--r--	root/root	usr/share/doc/openssl/internal/man7/VERSION.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/internal/man7/build.info.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/internal/man7/deprecation.pod
+-rw-r--r--	root/root	usr/share/doc/openssl/internal/man7/ossl_rbtree.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/internal/man7/removal.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/internal/man7/valgrind-tests.pod
 drwxr-xr-x	root/root	usr/share/doc/openssl/life-cycles/
@@ -1392,6 +1395,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/man/man3/
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/HMAC.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/MD5.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/MDC2_Init.3
+-rw-r--r--	root/root	usr/share/doc/openssl/man/man3/NAME_CONSTRAINTS_check.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/NCONF_new_ex.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OBJ_nid2obj.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OCSP_REQUEST_new.3
@@ -1404,6 +1408,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/man/man3/
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_FILE.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_LH_COMPFUNC.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_LH_stats.3
+-rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_armcap.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_config.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_fork_prepare.3
 -rw-r--r--	root/root	usr/share/doc/openssl/man/man3/OPENSSL_gmtime.3
@@ -2347,6 +2352,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/man3/
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/HMAC.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/MD5.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/MDC2_Init.pod
+-rw-r--r--	root/root	usr/share/doc/openssl/man3/NAME_CONSTRAINTS_check.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/NCONF_new_ex.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OBJ_nid2obj.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OCSP_REQUEST_new.pod
@@ -2359,6 +2365,7 @@ drwxr-xr-x	root/root	usr/share/doc/openssl/man3/
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_FILE.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_LH_COMPFUNC.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_LH_stats.pod
+-rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_armcap.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_config.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_fork_prepare.pod
 -rw-r--r--	root/root	usr/share/doc/openssl/man3/OPENSSL_gmtime.pod
