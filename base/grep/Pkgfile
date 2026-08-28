@@ -5,13 +5,13 @@ maintainer="Jim Meyering jim at meyering dot net,Paolo Bonzini bonzini at gnu do
 contributors="Spiky"
 packager="tnut <tnut@nutyx.org>"
 
-makedepends=(perl)
+makedepends=(perl pcre2)
 
 set=(core)
 
 name=grep
 version=3.12
-release=2
+release=3
 
 PKGMK_LOCALES=()
 
