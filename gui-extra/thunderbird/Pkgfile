@@ -3,7 +3,7 @@ url="https://www.mozilla.org/thunderbird"
 
 license="MPL-2.0 GPL-2.0-only LGPL-2.1-only"
 
-packager="tnut <tnut@nutyx.org>"
+packager="spiky <spiky@nutyx.org>"
 maintainer="Pierre,Fabianwang,Rems,Spiky"
 
 makedepends=(rustc autoconf2-13 alsa-lib gtk3 zip unzip libevent libwebp
@@ -16,10 +16,11 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=153.0.3esr
+version=154.0
 
 source=(https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
-        $name.desktop)
+        $name.desktop rust.patch 
+        mozpkix-x11-success-macro.patch)
 
 pack_remove_locale() {
 
@@ -35,6 +36,14 @@ usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 rm usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 
 }
+
+prepare() {
+cd $name-$version
+
+patch -Np1 -i ../rust.patch
+patch -Np1 -i ../mozpkix-x11-success-macro.patch
+}
+
 build() {
   cd $name-${version%esr}
 
