@@ -3,8 +3,8 @@ url="https://www.mozilla.com/firefox/"
 
 license="MPL-2.0, GPL-2.0-or-later, LGPL-2.1-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Remy,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Remy,Fabienwang,Tnut"
 
 categories=(Network WebBrowser)
 
@@ -18,11 +18,12 @@ run=(pulseaudio gstreamer gstreamer-plugins-base gstreamer-plugins-good
 
 
 name=firefox
-version=154.0
+version=154.0.1
 
 locale_version=$version
 
 source=(0001-Install-under-remoting-name.patch
+        rust.patch
         firefox.desktop
         https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz)
 
@@ -45,6 +46,7 @@ prepare() {
 cd $name-$version
 
 patch -Np1 -i ../0001-Install-under-remoting-name.patch
+patch -Np1 -i ../rust.patch
 }
 
 build() {
