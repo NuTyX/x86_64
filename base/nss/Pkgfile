@@ -1,13 +1,13 @@
 description="Cross-platform development of security-enabled client and server applications."
 url="https://firefox-source-docs.mozilla.org/security/nss/index.html"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Fabienwang,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Fabienwang,Tnut"
 
 makedepends=(perl nspr sqlite)
 
 name=nss
-version=3.126
+version=3.127
 
 source=(https://archive.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-$version.tar.gz \
 	nss-standalone-1.patch)
