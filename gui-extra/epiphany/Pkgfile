@@ -1,5 +1,5 @@
 description="A GNOME web browser based on the WebKit rendering engine."
-url="https://apps.gnome.org/Epiphany"
+url="https://gitlab.gnome.org/GNOME/epiphany"
 
 license="GPL3"
 
@@ -17,12 +17,11 @@ run=(adwaita-icon-theme gsettings-desktop-schemas woff2 libxslt.lib
 set=(gnome)
 
 name=epiphany
-version=50.4
-release=2
+version=50.6
 
 PKGMK_MESON_OPTIONS="-Dunit_tests=disabled --libdir=/usr/lib"
 
-source=(https://gitlab.gnome.org/GNOME/epiphany/-/archive/$version/$name-$version.tar.gz)
+source=($url.git)
 
 build=meson
 
