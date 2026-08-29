@@ -1,0 +1,24 @@
+description='Simple C library for reading and writing PDF files'
+url='https://github.com/michaelrsweet/pdfio'
+
+license="Apache"
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(libpng)
+
+name=pdfio
+version=1.6.5
+
+source=(https://github.com/michaelrsweet/pdfio/archive/refs/tags/v${version}.tar.gz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+            --disable-static \
+            --enable-shared
+
+make
+make DESTDIR=$PKG install
+}
