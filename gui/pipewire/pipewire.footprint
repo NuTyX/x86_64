@@ -53,8 +53,8 @@ lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so -> libpipewire-0.3.so.0
 lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1608.0
 -rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1608.0
 lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so -> libwireplumber-0.5.so.0
-lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so.0 -> libwireplumber-0.5.so.0.515.0
--rwxr-xr-x	root/root	usr/lib/libwireplumber-0.5.so.0.515.0
+lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so.0 -> libwireplumber-0.5.so.0.516.0
+-rwxr-xr-x	root/root	usr/lib/libwireplumber-0.5.so.0.516.0
 drwxr-xr-x	root/root	usr/lib/pipewire-0.3/
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-access.so
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-adapter.so
@@ -343,7 +343,6 @@ drwxr-xr-x	root/root	usr/share/wireplumber/scripts/linking/
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/find-filter-target.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/find-media-role-sink-target.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/find-media-role-target.lua
--rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/find-user-target.lua.example
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/get-filter-from-target.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/link-target.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/mpris-pause.lua
@@ -382,7 +381,6 @@ drwxr-xr-x	root/root	usr/share/wireplumber/scripts/monitors/v4l2/
 drwxr-xr-x	root/root	usr/share/wireplumber/scripts/node/
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/node/audio-group.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/node/create-item.lua
--rw-r--r--	root/root	usr/share/wireplumber/scripts/node/filter-forward-format.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/node/filter-graph.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/node/find-media-role-default-volume.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/node/software-dsp.lua
