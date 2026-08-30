@@ -3,8 +3,8 @@ url='https://www.qt.io'
 
 license="GPL-3.0-only LGPL-3.0-only LicenseRef-Qt-Commercial Qt-GPL-exception-1.0"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(git ninja cmake libxslt qt6-declarative qt6-3d qt6-charts qt6-speech qt6-serialport
              qt6-shadertools qt6-tools qt6-location qt6-webengine qt6-sensors qt6-quick3d
@@ -13,7 +13,7 @@ makedepends=(git ninja cmake libxslt qt6-declarative qt6-3d qt6-charts qt6-speec
 source=(https://code.qt.io/pyside/pyside-setup.git)
 
 name=shiboken
-version=6.11
+version=6.11.2
 
 prepare() {
   cd $name-$version
