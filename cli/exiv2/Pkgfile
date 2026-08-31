@@ -3,11 +3,11 @@ url="https://exiv2.org"
 
 license="GPL2"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Tnut"
 
 name=exiv2
-version=0.28.8
+version=0.28.9
 makedepends=(cmake brotli inih)
 source=(https://github.com/Exiv2/exiv2/archive/v$version.tar.gz)
 
