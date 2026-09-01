@@ -5,21 +5,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bazaar-dl-worker
 -rwxr-xr-x	root/root	usr/bin/bge-demo
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/girepository-1.0/
--rw-r--r--	root/root	usr/lib/girepository-1.0/Dex-1.typelib
 lrwxrwxrwx	root/root	usr/lib/libbge.so -> libbge.so.0
 lrwxrwxrwx	root/root	usr/lib/libbge.so.0 -> libbge.so.0.9.5
 -rwxr-xr-x	root/root	usr/lib/libbge.so.0.9.5
-lrwxrwxrwx	root/root	usr/lib/libdex-1.so -> libdex-1.so.1
-lrwxrwxrwx	root/root	usr/lib/libdex-1.so.1 -> libdex-1.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libdex-1.so.1.0.0
-drwxr-xr-x	root/root	usr/lib/python3.14/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/overrides/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/Dex.py
-drwxr-xr-x	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/
--rw-r--r--	root/root	usr/lib/python3.14/site-packages/gi/overrides/__pycache__/Dex.cpython-314.pyc
 drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/user/
 -rw-r--r--	root/root	usr/lib/systemd/user/io.github.kolunmi.Bazaar.service
@@ -29,8 +17,6 @@ drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/io.github.kolunmi.Bazaar.SearchProvider.service
-drwxr-xr-x	root/root	usr/share/gir-1.0/
--rw-r--r--	root/root	usr/share/gir-1.0/Dex-1.gir
 drwxr-xr-x	root/root	usr/share/glib-2.0/
 drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/io.github.kolunmi.Bazaar.gschema.xml
@@ -47,7 +33,3 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/symbolic/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/symbolic/apps/io.github.kolunmi.Bazaar-symbolic.svg
 drwxr-xr-x	root/root	usr/share/metainfo/
 -rw-r--r--	root/root	usr/share/metainfo/io.github.kolunmi.Bazaar.metainfo.xml
-drwxr-xr-x	root/root	usr/share/vala/
-drwxr-xr-x	root/root	usr/share/vala/vapi/
--rw-r--r--	root/root	usr/share/vala/vapi/libdex-1.deps
--rw-r--r--	root/root	usr/share/vala/vapi/libdex-1.vapi

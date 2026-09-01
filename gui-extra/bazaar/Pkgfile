@@ -3,25 +3,41 @@ url="https://github.com/kolunmi/bazaar"
 
 license="GPL-3.0-only"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 set=(xfce4)
 
 name=bazaar
 version=0.9.4
+release=2
 
 makedepends=(md4c gtk4 glycin-gtk4 json-glib cairo pango
-            graphene appstream dconf libsoup3 libproxy
+            graphene appstream dconf libsoup3 libproxy libdex
             libadwaita webkit2gtk-6 gtksourceview5 python-babel
             flatpak libsecret blueprint-compiler malcontent)
 
 run=(hicolor-icon-theme)
 PKGMK_GROUPS=(devel)
+PKGMK_MESON_OPTIONS="-Dlibdex:default_library=static \
+-Dlibdex:docs=false \
+-Dlibdex:examples=false \
+-Dlibdex:gdbus=disabled \
+-Dlibdex:introspection=disabled \
+-Dlibdex:pygobject=false \
+-Dlibdex:tests=false \
+-Dlibdex:vapi=false"
 
 source=($url.git)
 
 prepare() {
  sed -i "s/Utility/System/" $name-$version/data/io.github.kolunmi.Bazaar.desktop.in
 }
+
 build=meson
+
+package() {
+rm $PKG/usr/lib/libdex-1.a
+rm $PKG//usr/lib/pkgconfig/libdex-1.pc
+rm -r $PKG/usr/include/libdex-1
+}
