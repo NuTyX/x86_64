@@ -3,7 +3,7 @@ if [ -f usr/lib/os-release ]; then
   sed -i /URL/d usr/lib/os-release
   sed -i /LOGO/d usr/lib/os-release
   echo "VERSION=systemd
-VERSION_ID="26.08.0"
+VERSION_ID="26.08.1"
 LOGO=nutyx.png
 HOME_URL="https://www.nutyx.org"" >>  usr/lib/os-release
 fi
