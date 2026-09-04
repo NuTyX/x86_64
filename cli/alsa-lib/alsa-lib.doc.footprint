@@ -20,6 +20,7 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/cards_8c.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/classes.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/clipboard.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/codefolding.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/conf.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/conf_8c.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/conf_8c.js
@@ -79,7 +80,6 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/doxygen.css
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/doxygen.svg
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/doxygen_crawl.html
--rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/dynsections.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/error_8c.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/error_8c.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/error_8h.html
@@ -290,7 +290,6 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/input_8h.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/input_8h.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/input_8h_source.html
--rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/jquery.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/menu.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/menudata.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/mixer.html
@@ -426,6 +425,7 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_18.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_19.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_1a.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_1b.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_2.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_3.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/all_4.js
@@ -443,6 +443,7 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/classes_0.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/classes_1.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/classes_2.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/classes_3.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/defines_0.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/defines_1.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/enums_0.js
@@ -567,6 +568,7 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/simple__abst_8c.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/simple__none_8c.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/simple__none_8c.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/struct_0fstruct_0e_8debug__config.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/struct__snd__ump__msg__dc.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/struct__snd__ump__msg__dc.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/struct__snd__ump__msg__dctpq.html
@@ -622,6 +624,9 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/struct__snd__ump__msg__stream__gen.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/struct__snd__ump__msg__stream__gen.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structrepeat__iterator.html
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structrepeat__iterator.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structrepeat__iterator_1_1_0fstruct_0e_8u_8array.html
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structrepeat__iterator_1_1_0fstruct_0e_8u_8integer.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structsnd__aes__iec958__t.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structsnd__aes__iec958__t.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/structsnd__ctl__ext.html
@@ -759,12 +764,19 @@ drwxr-xr-x	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/search/
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/ump__msg_8h.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/ump__msg_8h.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/ump__msg_8h_source.html
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionrepeat__iterator_1_1_0funion_0e_8u.html
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionrepeat__iterator_1_1_0funion_0e_8u.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__ctl__ext_1_1_0funion_0e_8tlv.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__pcm__sync__id__t.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__pcm__sync__id__t.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__seq__ev__queue__control__t_1_1_0funion_0e_8param.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__seq__event__data__t.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__seq__event__data__t.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__seq__timestamp__t.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__seq__timestamp__t.js
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__seq__ump__event__t_1_1_0funion_0e_8____unnamed0____.html
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__tplg__ctl__template_1_1_0funion_0e_8____unnamed0____.html
+-rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__tplg__obj__template__t_1_1_0funion_0e_8____unnamed0____.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__ump__msg__flex__data__t.html
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__ump__msg__flex__data__t.js
 -rw-r--r--	root/root	usr/share/doc/alsa-lib-1.2.16.1/html/unionsnd__ump__msg__midi1__t.html
