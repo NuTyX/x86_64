@@ -1,11 +1,24 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Mike Hommey <mh+mozilla@glandium.org>
+Date: Tue, 19 Aug 2025 05:09:09 +0000
+Subject: [PATCH] Bug 1969769 - Change uses of ast.Str with ast.Constant.
+ r=firefox-build-system-reviewers,ahochheiden
+
+ast.Str was deprecated in python 3.12 and removed in 3.14. It inherited
+from ast.Constant, `Str.s` was equivalent to `Constant.value`, so we can
+use the latter on both old and newer python versions.
+
+Differential Revision: https://phabricator.services.mozilla.com/D261512
+---
+ python/mozbuild/mozbuild/frontend/reader.py        | 14 +++++++-------
+ .../mozbuild/mozbuild/vendor/rewrite_mozbuild.py   |  6 ++----
+ 2 files changed, 9 insertions(+), 11 deletions(-)
+
+diff --git a/python/mozbuild/mozbuild/frontend/reader.py b/python/mozbuild/mozbuild/frontend/reader.py
+index 9f6292cb909d..89bf9995c176 100644
 --- a/python/mozbuild/mozbuild/frontend/reader.py
 +++ b/python/mozbuild/mozbuild/frontend/reader.py
-@@ -465,17 +465,17 @@ class TemplateFunction:
-                 return node
- 
-             def c(new_node):
-                 return ast.copy_location(new_node, node)
- 
+@@ -470,7 +470,7 @@ class TemplateFunction:
              return c(
                  ast.Subscript(
                      value=c(ast.Name(id=self._global_name, ctx=ast.Load())),
@@ -14,17 +27,7 @@
                      ctx=node.ctx,
                  )
              )
- 
- 
- class SandboxValidationError(Exception):
-     """Represents an error encountered when validating sandbox results."""
- 
-@@ -1034,33 +1034,33 @@ class BuildReader:
-                 # We need to branch to deal with python version differences.
-                 if isinstance(target.slice, ast.Constant):
-                     # Python >= 3.9
-                     assert isinstance(target.slice.value, str)
-                     key = target.slice.value
+@@ -1039,23 +1039,23 @@ class BuildReader:
                  else:
                      # Others
                      assert isinstance(target.slice, ast.Index)
@@ -54,20 +57,11 @@
  
          assignments = []
  
-         class Visitor(ast.NodeVisitor):
-             def helper(self, node):
-                 name, key = assigned_variable(node)
-                 if not name:
-                     return
-
+diff --git a/python/mozbuild/mozbuild/vendor/rewrite_mozbuild.py b/python/mozbuild/mozbuild/vendor/rewrite_mozbuild.py
+index cfcc0f18b9a9..de06b58819b6 100644
 --- a/python/mozbuild/mozbuild/vendor/rewrite_mozbuild.py
 +++ b/python/mozbuild/mozbuild/vendor/rewrite_mozbuild.py
-@@ -322,25 +322,23 @@ def assignment_node_to_source_filename_l
-     If this happens, we'll return an empty list. The consequence of this is that we
-     won't be able to match a file against this list, so we may not be able to add it.
- 
-     (But if the file matches a generated list, perhaps it will be included in the
-     Sources list automatically?)
+@@ -327,15 +327,13 @@ def assignment_node_to_source_filename_list(code, node):
      """
      if isinstance(node.value, ast.List) and "elts" in node.value._fields:
          for f in node.value.elts:
@@ -85,8 +79,3 @@
      elif isinstance(node.value, ast.ListComp):
          # SOURCES += [f for f in foo if blah]
          log("Could not find the files for " + ast_get_source_segment(code, node.value))
-     elif isinstance(node.value, ast.Name) or isinstance(node.value, ast.Subscript):
-         # SOURCES += other_var
-         # SOURCES += files['X64_SOURCES']
-         log("Could not find the files for " + ast_get_source_segment(code, node))
-     elif isinstance(node.value, ast.Call):

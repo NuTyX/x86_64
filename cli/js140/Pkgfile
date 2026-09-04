@@ -1,22 +1,29 @@
 description='JavaScript interpreter and libraries - Version 140'
 url='https://spidermonkey.dev/'
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip cbindgen)
 
 name=js140
 version=140.14.0
 
-source=(python-3.14.patch js-config.patch rustc-195.patch
-        https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz)
+source=(https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz
+0001-Bug-1973994-mozjs-140.pc-does-not-contain-DXP_UNIX-o.patch
+0002-Bug-1969769-Change-uses-of-ast.Str-with-ast.Constant.patch
+0003-Bug-1983713-Use-non-deprecated-ast-value.-r-firefox-.patch
+0004-Bug-1983736-Patch-jsonschema-to-work-with-Python-3.1.patch
+0005-Bug-1993797-Fix-AST-parsing-in-DecoratorVisitor-for-.patch
+0006-Bug-2053518-Handle-the-oe-linux-rust-targets-added-i.patch
+)
 
 prepare() {
  cd firefox-$version
- patch -Np1 -i ../python-3.14.patch
- patch -Np1 -i ../js-config.patch
-# patch -Np1 -i ../rustc-195.patch
+ for i in ../*.patch
+ do
+   patch -Np1 -i $i
+ done
 }
 build() {
  cd firefox-$version
