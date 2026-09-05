@@ -11,19 +11,8 @@ _name=glibmm
 
 version=2.89.0
 
-source=(https://gitlab.gnome.org/GNOME/glibmm/-/archive/$version/glibmm-$version.tar.gz)
+source=($url.git)
 
-build() {
-cd $_name-$version
-mkdir bld
-cd bld
+PKGMK_MESON_OPTIONS="-D maintainer-mode=true"
 
-meson setup .. \
-       --prefix=/usr          \
-       --buildtype=release    \
-       -D maintainer-mode=true
-
-ninja
-
-DESTDIR=$PKG ninja install
-}
+build=meson
