@@ -16,10 +16,10 @@ run=(startup-notification hunspell startup-notification
 
 
 name=thunderbird
-version=154.0
+version=155.0
 
 source=(https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$version/source/thunderbird-$version.source.tar.xz
-        $name.desktop rust.patch 
+        $name.desktop
         mozpkix-x11-success-macro.patch)
 
 pack_remove_locale() {
@@ -40,7 +40,6 @@ rm usr/lib/$name/extensions/langpack-${1}@$name.mozilla.org.xpi
 prepare() {
 cd $name-$version
 
-patch -Np1 -i ../rust.patch
 patch -Np1 -i ../mozpkix-x11-success-macro.patch
 }
 
