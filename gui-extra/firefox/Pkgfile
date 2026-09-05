@@ -18,12 +18,11 @@ run=(pulseaudio gstreamer gstreamer-plugins-base gstreamer-plugins-good
 
 
 name=firefox
-version=154.0.1
+version=155.0.1
 
 locale_version=$version
 
 source=(0001-Install-under-remoting-name.patch
-        rust.patch
         firefox.desktop
         https://archive.mozilla.org/pub/firefox/releases/$version/source/$name-$version.source.tar.xz)
 
@@ -46,7 +45,6 @@ prepare() {
 cd $name-$version
 
 patch -Np1 -i ../0001-Install-under-remoting-name.patch
-patch -Np1 -i ../rust.patch
 }
 
 build() {
