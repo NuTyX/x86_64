@@ -6,6 +6,7 @@ contributors="Spiky"
 
 name=calibre
 version=9.14.0
+release=2
 
 makedepends=(bash-completion xdg-utils tzdata)
 run=(libglvnd xorg-fontconfig libxkbcommon xorg-libxcomposite
@@ -41,6 +42,7 @@ do
   ln -svf /usr/share/$name/$(basename $i) \
   $PKG/usr/bin/$(basename $i)
 done
+rm $PKG/usr/share/mime/application/x-sony-bbeb.xml
 rm $PKG/usr/share/mime/application/x-mobipocket-ebook.xml
 rm $PKG/usr/share/mime/text/lrs.xml
 rm $PKG/usr/share/applications/mimeinfo.cache
