@@ -1,5 +1,5 @@
 description='A PEP 517 build backend for packages using Flit'
-url='https://github.com/pypa/flit/tree/main/flit_core'
+url='https://github.com/pypa/flit'
 
 license="BSD-3-Clause"
 
@@ -11,15 +11,14 @@ _name="flit_core"
 alias=(${_name})
 
 name=python-flit-core
-version=4.0.2
-release=2
+version=4.1.0
 
 makedepends=(python python-pip python-flit-core)
 
-source=(https://pypi.io/packages/source/f/${_name}/${_name}-$version.tar.gz)
+source=(https://github.com/takluyver/flit/archive/$version/flit-$version.tar.gz)
 
 build() {
-  cd ${_name}-$version
+  cd flit-$version/${_name}
 
   pip3 wheel -w dist \
     --no-build-isolation \
