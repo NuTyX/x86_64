@@ -17,7 +17,6 @@ PKGMK_LOCALES=()
 
 name=cards
 version=bd5873b
-tag=6c35648
 set=(chroot)
 
 [ "$release" != "1" ] &&  patchname="$name-$version-consolidate-$release.patch"
