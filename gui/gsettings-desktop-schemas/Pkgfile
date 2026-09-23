@@ -3,15 +3,14 @@ url="https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas"
 
 license="LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre,Fanch,Spiky,Skythrew"
+packager="spiky <spiky@nutyx.org>"
+contributors="Pierre,Fanch,Skythrew,Tnut"
 
 makedepends=(meson ninja intltool glib gobject-introspection perl-xml-parser)
 run=(adwaita-fonts)
 
 name=gsettings-desktop-schemas
-version=50.1
-release=2
+version=51.0
 
 set=(gnome-base)
 
