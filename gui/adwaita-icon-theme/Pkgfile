@@ -4,16 +4,15 @@ url="https://gitlab.gnome.org/GNOME/adwaita-icon-theme"
 license="LGPL3 CCPL:by-sa"
 
 maintainer="https://linuxfromscratch.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson ninja)
 run=(hicolor-icon-theme gtk-update-icon-cache icon-naming-utils librsvg)
 set=(gnome-base)
 
 name=adwaita-icon-theme
-version=50.0
-release=3
+version=51.0
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.gz)
 
