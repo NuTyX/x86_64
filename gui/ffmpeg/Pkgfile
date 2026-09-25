@@ -13,8 +13,7 @@ makedepends=(doxygen alsa-lib bzip2 fribidi gmp gsm jack ladspa lame
     xorg-libxfixes zlib libva libvdpau ffnvcodec-headers)
 
 name=ffmpeg
-version=9.0.1
-release=2
+version=9.0.2
 
 _CONF_OPTS="    --prefix=/usr \
     --disable-static \
