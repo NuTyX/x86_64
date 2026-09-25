@@ -11,8 +11,7 @@ makedepends=(ninja meson libcdio-paranoia avahi dbus-glib libgudev
              libarchive libmtp samba bluez gcr libgphoto2 libnfs openssh gcr-4)
 
 name=gvfs
-version=1.60.2
-release=3
+version=1.62.0
 tag=$version
 
 source=($url.git)
