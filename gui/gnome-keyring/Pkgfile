@@ -4,13 +4,13 @@ url="https://gitlab.gnome.org/GNOME/gnome-keyring"
 license="GPL2.0"
 license="LGPL2.1"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Tnut"
 
 makedepends=(dbus gcr pam libxslt libcap-ng gnupg openssh valgrind)
 
 name=gnome-keyring
-version=50.0
+version=51.1
 
 set=(gnome)
 
