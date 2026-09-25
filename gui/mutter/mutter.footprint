@@ -4,29 +4,29 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gnome-service-client
 -rwxr-xr-x	root/root	usr/bin/mutter
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libmutter-18.so -> libmutter-18.so.0
-lrwxrwxrwx	root/root	usr/lib/libmutter-18.so.0 -> libmutter-18.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libmutter-18.so.0.0.0
-drwxr-xr-x	root/root	usr/lib/mutter-18/
--rw-r--r--	root/root	usr/lib/mutter-18/Clutter-18.gir
--rw-r--r--	root/root	usr/lib/mutter-18/Clutter-18.typelib
--rw-r--r--	root/root	usr/lib/mutter-18/Cogl-18.gir
--rw-r--r--	root/root	usr/lib/mutter-18/Cogl-18.typelib
--rw-r--r--	root/root	usr/lib/mutter-18/Meta-18.gir
--rw-r--r--	root/root	usr/lib/mutter-18/Meta-18.typelib
--rw-r--r--	root/root	usr/lib/mutter-18/Mtk-18.gir
--rw-r--r--	root/root	usr/lib/mutter-18/Mtk-18.typelib
-lrwxrwxrwx	root/root	usr/lib/mutter-18/libmutter-clutter-18.so -> libmutter-clutter-18.so.0
-lrwxrwxrwx	root/root	usr/lib/mutter-18/libmutter-clutter-18.so.0 -> libmutter-clutter-18.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/mutter-18/libmutter-clutter-18.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/mutter-18/libmutter-cogl-18.so -> libmutter-cogl-18.so.0
-lrwxrwxrwx	root/root	usr/lib/mutter-18/libmutter-cogl-18.so.0 -> libmutter-cogl-18.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/mutter-18/libmutter-cogl-18.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/mutter-18/libmutter-mtk-18.so -> libmutter-mtk-18.so.0
-lrwxrwxrwx	root/root	usr/lib/mutter-18/libmutter-mtk-18.so.0 -> libmutter-mtk-18.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/mutter-18/libmutter-mtk-18.so.0.0.0
-drwxr-xr-x	root/root	usr/lib/mutter-18/plugins/
--rwxr-xr-x	root/root	usr/lib/mutter-18/plugins/libdefault.so
+lrwxrwxrwx	root/root	usr/lib/libmutter-51.so -> libmutter-51.so.0
+lrwxrwxrwx	root/root	usr/lib/libmutter-51.so.0 -> libmutter-51.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libmutter-51.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/mutter-51/
+-rw-r--r--	root/root	usr/lib/mutter-51/Clutter-51.gir
+-rw-r--r--	root/root	usr/lib/mutter-51/Clutter-51.typelib
+-rw-r--r--	root/root	usr/lib/mutter-51/Cogl-51.gir
+-rw-r--r--	root/root	usr/lib/mutter-51/Cogl-51.typelib
+-rw-r--r--	root/root	usr/lib/mutter-51/Meta-51.gir
+-rw-r--r--	root/root	usr/lib/mutter-51/Meta-51.typelib
+-rw-r--r--	root/root	usr/lib/mutter-51/Mtk-51.gir
+-rw-r--r--	root/root	usr/lib/mutter-51/Mtk-51.typelib
+lrwxrwxrwx	root/root	usr/lib/mutter-51/libmutter-clutter-51.so -> libmutter-clutter-51.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-51/libmutter-clutter-51.so.0 -> libmutter-clutter-51.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-51/libmutter-clutter-51.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mutter-51/libmutter-cogl-51.so -> libmutter-cogl-51.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-51/libmutter-cogl-51.so.0 -> libmutter-cogl-51.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-51/libmutter-cogl-51.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/mutter-51/libmutter-mtk-51.so -> libmutter-mtk-51.so.0
+lrwxrwxrwx	root/root	usr/lib/mutter-51/libmutter-mtk-51.so.0 -> libmutter-mtk-51.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/mutter-51/libmutter-mtk-51.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/mutter-51/plugins/
+-rwxr-xr-x	root/root	usr/lib/mutter-51/plugins/libdefault.so
 -rwxr-xr-x	root/root	usr/lib/mutter-backlight-helper
 -rwxr-xr-x	root/root	usr/lib/mutter-devkit
 -rwxr-xr-x	root/root	usr/lib/mutter-x11-frames
@@ -42,6 +42,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/glib-2.0/
 drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.mutter.devkit.gschema.xml
+-rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.mutter.experimental.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.mutter.gschema.xml
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/org.gnome.mutter.wayland.gschema.xml
 drwxr-xr-x	root/root	usr/share/gnome-control-center/
