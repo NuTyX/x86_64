@@ -1,8 +1,8 @@
 description="A backend implementation for xdg-desktop-portal using GTK"
 url='https://github.com/flatpak/xdg-desktop-portal-gtk'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 license="LGPL-2.0-or-later"
 
@@ -12,6 +12,7 @@ run=(gsettings-desktop-schemas xdg-desktop-portal)
 
 name=xdg-desktop-portal-gtk
 version=1.15.3
+release=2
 
 source=(https://github.com/flatpak/$name.git)
 
