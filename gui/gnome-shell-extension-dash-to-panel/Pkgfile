@@ -3,16 +3,15 @@ url='https://github.com/home-sweet-gnome/dash-to-panel'
 
 license="GPL-2.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(meson jq libayatana-appindicator)
 run=(gnome-shell)
 set=(gnome)
 
 name=gnome-shell-extension-dash-to-panel
-version=v73
-release=1
+version=74
 
 source=($name-fix-crash-on-close.patch
         $name-fix-crash-on-shutdown.patch
