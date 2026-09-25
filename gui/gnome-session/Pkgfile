@@ -12,7 +12,7 @@ makedepends=(dconf dbus-glib docbook-xml docbook-xsl
 set=(gnome-base gnome)
 
 name=gnome-session
-version=50.1
+version=51.0
 
 PKGMK_MESON_OPTIONS="-Dman=False -Ddocbook=False"
 PKGMK_GROUPS=()
