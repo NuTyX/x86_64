@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gnome-backgrounds"
 
 license="CCPL:by-sa"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Jayce,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Jayce,Remy,Tnut"
 
 makedepends=(intltool meson ninja python)
 run=(libjxl)
@@ -12,8 +12,7 @@ run=(libjxl)
 set=(gnome-base gnome)
 
 name=gnome-backgrounds
-version=50.0
-release=2
+version=51.0
 
 source=($url/-/archive/$version/$name-$version.tar.bz2)
 
