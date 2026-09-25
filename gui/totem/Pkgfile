@@ -14,7 +14,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 
 name=totem
 version=43.2
-release=3
+release=4
 
 source=(libpeas-1.38.patch
         https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
