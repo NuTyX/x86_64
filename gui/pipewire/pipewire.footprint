@@ -49,11 +49,11 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstpipewire.so
 lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so -> libpipewire-0.3.so.0
-lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1608.0
--rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1608.0
+lrwxrwxrwx	root/root	usr/lib/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1609.0
+-rwxr-xr-x	root/root	usr/lib/libpipewire-0.3.so.0.1609.0
 lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so -> libwireplumber-0.5.so.0
-lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so.0 -> libwireplumber-0.5.so.0.516.0
--rwxr-xr-x	root/root	usr/lib/libwireplumber-0.5.so.0.516.0
+lrwxrwxrwx	root/root	usr/lib/libwireplumber-0.5.so.0 -> libwireplumber-0.5.so.0.517.0
+-rwxr-xr-x	root/root	usr/lib/libwireplumber-0.5.so.0.517.0
 drwxr-xr-x	root/root	usr/lib/pipewire-0.3/
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-access.so
 -rwxr-xr-x	root/root	usr/lib/pipewire-0.3/libpipewire-module-adapter.so
@@ -334,6 +334,7 @@ drwxr-xr-x	root/root	usr/share/wireplumber/scripts/lib/
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/lib/linking-utils.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/lib/monitor-utils.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/lib/node-utils.lua
+-rw-r--r--	root/root	usr/share/wireplumber/scripts/lib/profile-utils.lua
 drwxr-xr-x	root/root	usr/share/wireplumber/scripts/linking/
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/find-audio-group-target.lua
 -rw-r--r--	root/root	usr/share/wireplumber/scripts/linking/find-best-target.lua
