@@ -3,8 +3,8 @@ url="https://wiki.gnome.org/App/Chess"
 
 license="GPL-3.0-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Tnut"
 
 set=(gnome-extra)
 
@@ -12,7 +12,7 @@ makedepends=(meson ninja hicolor-icon-theme gtk4 librsvg libadwaita)
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gnuchess)
 
 name=gnome-chess
-version=50.0
+version=50.1
 
 source=(https://gitlab.gnome.org/GNOME/$name/-/archive/$version/$name-$version.tar.bz2)
 
