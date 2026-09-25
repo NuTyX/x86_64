@@ -3,16 +3,15 @@ url="https://wiki.gnome.org/Projects/GnomeBluetooth"
 
 license="LGPL-2.1-or-later"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Jayce,Remy,Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Fanch,Jayce,Remy,Tnut"
 
 makedepends=(itstool libnotify gtk3 gtk4 gobject-introspection
-             meson gtk-doc libcanberra gsound libadwaita)
+             meson gtk-doc libcanberra gsound libadwaita upower)
 run=(gtk-update-icon-cache bluez)
 
 name=gnome-bluetooth
-version=42.8
-release=3
+version=47.2
 
 source=(https://download.gnome.org/sources/$name/${version:0:2}/$name-$version.tar.xz)
 
