@@ -3,7 +3,6 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/
 drwxr-xr-x	root/root	usr/include/gtk-4.0/gdk/
 drwxr-xr-x	root/root	usr/include/gtk-4.0/gdk/broadway/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gdk/broadway/gdkbroadway.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gdk/broadway/gdkbroadwaycursor.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gdk/broadway/gdkbroadwaydisplay.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gdk/broadway/gdkbroadwaymonitor.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gdk/broadway/gdkbroadwaysurface.h
@@ -137,6 +136,7 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gsk/gpu/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskpathmeasure.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskpathpoint.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskradialgradientnode.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskrectsnap.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskrenderer.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskrendernode.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gsk/gskrenderreplay.h
@@ -287,6 +287,7 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gtk/deprecated/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkemojichooser.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkentry.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkentrybuffer.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkenumlist.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkenums.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkeventcontroller.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkeventcontrollerfocus.h
@@ -411,7 +412,7 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gtk/deprecated/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkstringlist.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkstringsorter.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkstyleprovider.h
--rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtksvg.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtksvgwidget.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtkswitch.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtksymbolicpaintable.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/gtktestatcontext.h
@@ -448,6 +449,9 @@ drwxr-xr-x	root/root	usr/include/gtk-4.0/gtk/print/
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/print/gtkprintoperation.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/print/gtkprintoperationpreview.h
 -rw-r--r--	root/root	usr/include/gtk-4.0/gtk/print/gtkprintsettings.h
+drwxr-xr-x	root/root	usr/include/gtk-4.0/gtk/svg/
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/svg/gtksvg.h
+-rw-r--r--	root/root	usr/include/gtk-4.0/gtk/svg/gtksvgenumtypes.h
 drwxr-xr-x	root/root	usr/include/gtk-4.0/unix-print/
 drwxr-xr-x	root/root	usr/include/gtk-4.0/unix-print/gtk/
 -rw-r--r--	root/root	usr/include/gtk-4.0/unix-print/gtk/gtkunixprint.h
