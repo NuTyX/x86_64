@@ -3,8 +3,8 @@ url='https://www.gimp.org/'
 
 license="LGPL3 GPL3"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr libgexiv2
              gegl poppler-glib glib-networking libmng alsa-lib libwmf
@@ -12,7 +12,7 @@ makedepends=(gtk3 curl libexif xorg-libxmu xorg-libxpm openexr libgexiv2
              harfbuzz libjpeg-turbo librsvg libtiff libxml2 appstream-glib)
 
 name=gimp
-version=3.2.4
+version=3.2.6
 
 PKGMK_MESON_OPTIONS="-Dgi-docgen=disabled \
 -Dbug-report-url=https://github.com/NuTyX/x86_64/issues"
