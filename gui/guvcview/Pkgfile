@@ -1,0 +1,30 @@
+description='Graphic program to capture from webcams'
+url='http://guvcview.berlios.de/'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(gtk3 portaudio ffmpeg pulseaudio)
+
+name=guvcview
+version=2.2.2
+
+source=(https://sourceforge.net/projects/guvcview/files/source/guvcview-src-$version.tar.bz2)
+
+prepare() { 
+mv $name-src-$version $name-$version
+}
+
+build() {
+
+cd $name-$version
+mkdir -pv build
+cd        build
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+      -D CMAKE_BUILD_TYPE=Release \
+      ..
+
+make
+DESTDIR=$PKG make install
+}
