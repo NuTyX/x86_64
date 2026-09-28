@@ -1,0 +1,16 @@
+description='The Snapshot package contains a program that takes pictures and videos from a Webcam. '
+url='https://gitlab.gnome.org/GNOME/snapshot'
+
+packager="spiky <spiky@nutyx.org>"
+contributors=""
+
+makedepends=(git meson libadwaita rustc gstreamer-plugins-bad)
+run=(pipewire gstreamer-plugins-rs xdg-desktop-portal-gnome xdg-user-dirs)
+set=(gnome)
+
+name=snapshot
+version=51.0
+
+source=(https://download.gnome.org/sources/snapshot/51/snapshot-$version.tar.xz)
+
+build=meson
