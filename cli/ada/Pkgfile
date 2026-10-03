@@ -1,0 +1,23 @@
+description='WHATWG-compliant and fast URL parser written in modern C++'
+url="https://github.com/ada-url/ada"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=ada
+version=4.0.0
+tag=v$version
+makedepends=(git cmake)
+
+source=($url.git)
+
+build() {
+ cmake -B build -S $name-$version \
+ -DCMAKE_BUILD_TYPE=release \
+ -DCMAKE_INSTALL_PREFIX=/usr \
+ -DBUILD_SHARED_LIBS=ON
+
+ cmake --build build
+
+ DESTDIR=$PKG cmake --install build
+}
