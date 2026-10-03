@@ -1,0 +1,50 @@
+description='WEBRTC Library'
+url='https://github.com/desktop-app/tg_owt'
+
+license='BSD-3-Clause'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=libtg_owt
+version=19d51d3
+
+makedepends=(git ninja cmake protobuf xorg-libxrandr 
+             xorg-libxcomposite xorg-libxdamage openssl
+             ffmpeg libva opus yasm libjpeg-turbo pipewire
+             xorg-libxtst libepoxy openh264 libsrtp abseil-cpp)
+source=($url.git)
+
+prepare() {
+  git clone https://chromium.googlesource.com/libyuv/libyuv/
+  git clone https://github.com/google/crc32c
+  
+  cd $name-$version
+
+  git rm src/third_party/{abseil-cpp,libsrtp}
+
+  git submodule init
+  git submodule set-url src/third_party/libyuv $SRC/libyuv
+  git submodule set-url src/third_party/crc32c/src $SRC/crc32c
+  git -c protocol.file.allow=always submodule update  
+}
+build() {
+  cd $name-$version
+  sed -i "s@#include <string>@#include <string>\n#include <cstdint>@" \
+  src/video/stats_counter.h
+
+  export CFLAGS+=" -ffat-lto-objects"
+  export CXXFLAGS+=" -ffat-lto-objects"
+
+  cmake \
+    -B build \
+    -G Ninja \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DBUILD_SHARED_LIBS=OFF
+  ninja -C build
+
+
+  DESTDIR=$PKG/ ninja -C build install
+  install -Dm644 LICENSE $PKG/usr/share/licenses/$name/LICENSE
+}
