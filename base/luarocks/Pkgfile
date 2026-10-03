@@ -1,0 +1,12 @@
+description='The lua Package manager'
+url='https://luarocks.org'
+
+packager="tnut <tnut@nutyx.org"
+contributors="Spiky"
+
+name=luarocks
+version=3.13.0
+
+makedepends=(lua)
+
+source=($url/releases/$name-$version.tar.gz)
