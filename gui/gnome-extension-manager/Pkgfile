@@ -1,0 +1,22 @@
+description='A native tool for browsing, installing, and managing GNOME Shell Extensions'
+url='https://github.com/mjakeman/extension-manager'
+
+license="GPL-3.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(git libadwaita libsoup3 glycin-gtk4 blueprint-compiler
+             gobject-introspection meson gtk4)
+run=(hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+set=(gnome)
+
+name=gnome-extension-manager
+version=0.6.5
+
+source=($url.git)
+
+PKGMK_MESON_OPTIONS="-Dbacktrace=false -Ddistributor=NuTyX"
+
+build=meson
