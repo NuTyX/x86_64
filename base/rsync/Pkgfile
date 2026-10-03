@@ -3,10 +3,12 @@ url="https://samba.anu.edu.au/rsync/"
 
 packager="spiky <spiky@nutyx.org>"
 contributors="Tnut"
+
+makedepends=(libidn2)
 run=(shadow)
 
 name=rsync
-version=3.5.0
+version=3.5.1
 
 scriptsversion=20260315
 
