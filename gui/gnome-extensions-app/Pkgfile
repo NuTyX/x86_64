@@ -1,0 +1,26 @@
+description='Small app for managing GNOME Shell extensions.'
+url="https://gitlab.gnome.org/GNOME/gnome-extensions-app"
+
+license="GPL2-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
+
+makedepends=(meson ninja glib gtk4 appstream
+             gobject-introspection gjs dconf)
+
+run=(hicolor-icon-theme)
+set=(gnome)
+
+name=gnome-extensions-app
+version=51.alpha
+
+
+source=($url.git)
+
+build=meson
+
+package() {
+ install -Dm644 $name-$version/COPYING \
+ $PKG/usr/share/licenses/$name/COPYING
+}
