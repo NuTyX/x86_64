@@ -2785,7 +2785,7 @@ drwxr-xr-x	root/root	usr/share/cmake-4.4/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/IBMClang-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/IBMClang-FindBinUtils.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/IBMClang.cmake
--rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/IBMLLVMFlang-Fortran.cmake
+-rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/IBMFlang-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/Intel-ASM.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/Intel-C-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Compiler/Intel-C.cmake
@@ -3167,8 +3167,6 @@ drwxr-xr-x	root/root	usr/share/cmake-4.4/Modules/FortranCInterface/Verify/
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/GetPrerequisites.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/GoogleTest.cmake
 drwxr-xr-x	root/root	usr/share/cmake-4.4/Modules/GoogleTest/
--rw-r--r--	root/root	usr/share/cmake-4.4/Modules/GoogleTest/DiscoverTests.cmake
--rw-r--r--	root/root	usr/share/cmake-4.4/Modules/GoogleTest/LaunchTest.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/GoogleTest/ParseTestList.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/GoogleTestAddTests.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/ITKCompatibility.cmake
@@ -3339,7 +3337,7 @@ drwxr-xr-x	root/root	usr/share/cmake-4.4/Modules/Platform/
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-IBMClang-C.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-IBMClang-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-IBMClang.cmake
--rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-IBMLLVMFlang-Fortran.cmake
+-rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-IBMFlang-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-Initialize.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-LLVMFlang-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake-4.4/Modules/Platform/AIX-VisualAge-C.cmake
