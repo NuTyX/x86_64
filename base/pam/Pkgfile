@@ -3,8 +3,8 @@ url="https://www.kernel.org/pub/libs/pam"
 
 license="GPL-2.0-only"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 set=(core)
 
@@ -12,8 +12,7 @@ PKGMK_DEPENDS=(python meson ninja systemd)
 makedepends=(intltool texinfo libxcrypt)
 
 name=pam
-version=1.7.2
-release=2
+version=1.7.3
 
 PKGMK_LOCALES=()
 PKGMK_MESON_OPTIONS="--libdir lib -Ddocdir=/usr/share/doc/Linux-PAM --sbindir bin"
