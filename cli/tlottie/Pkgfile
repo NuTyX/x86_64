@@ -1,0 +1,29 @@
+description='Rust library for drawing Lottie animations'
+url='https://github.com/dkaraush/tlottie'
+
+license="MIT"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+makedepends=(git rustc)
+
+name=tlottie
+version=1.0.6
+tag=v$version
+
+source=($url.git)
+
+build() {
+cd $name-$version
+ 
+cargo fetch --locked --target host-tuple
+
+cargo build --release --frozen --features c-api
+
+install -Dm755 -t $PKG/usr/lib target/release/libtlottie.so
+install -Dm644 -t $PKG/usr/include include/tlottie.h
+install -Dm644 -t $PKG/usr/share/licenses/$name LICENSE
+
+
+}
