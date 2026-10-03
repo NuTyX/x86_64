@@ -13,6 +13,7 @@ makedepends=(intltool texinfo libxcrypt)
 
 name=pam
 version=1.7.3
+release=2
 
 PKGMK_LOCALES=()
 PKGMK_MESON_OPTIONS="--libdir lib -Ddocdir=/usr/share/doc/Linux-PAM --sbindir bin"
