@@ -7,8 +7,8 @@ contributors="Spiky"
 makedepends=(perl)
 
 name=openssl
-version=4.0.2
-_ltsversion=3.5.8
+version=4.0.3
+_ltsversion=3.5.9
 set=(chroot)
 
 source=(https://github.com/openssl/openssl/releases/download/$name-$version/$name-$version.tar.gz
