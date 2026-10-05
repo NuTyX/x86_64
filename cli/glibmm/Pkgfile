@@ -1,12 +1,12 @@
 description="gtkmm is the official C++ interface for the popular GUI library GTK+."
 url="https://gitlab.gnome.org/GNOME/glibmm"
 
-packager="spiky <spiky@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 
 makedepends=(meson ninja libsigc++ glib perl-xml-parser mm-common)
 
 name=glibmm
-version=2.66.10
+version=2.90.0
 
 source=($url.git)
 
