@@ -3,15 +3,14 @@ url='https://gitlab.gnome.org/GNOME/tinysparql'
 
 license="LGPLv2.1+"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(git json-glib vala icu libsoup3 python-gobject asciidoc gi-docgen)
 run=()
 
 name=tinysparql
-version=3.11.1
-release=2
+version=3.12.0
 
 source=($url.git)
 PKGMK_GROUPS=(devel doc man)
