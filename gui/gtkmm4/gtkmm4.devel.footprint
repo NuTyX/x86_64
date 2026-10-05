@@ -38,6 +38,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/graphene_point.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/graphene_rect.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/graphene_size.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/graphene_vec2.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/keymapkey.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/memorytexture.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/memorytexturebuilder.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/monitor.h
@@ -83,6 +85,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/graphene_point_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/graphene_rect_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/graphene_size_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/graphene_vec2_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/keymapkey_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/memorytexture_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/memorytexturebuilder_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gdkmm/private/monitor_p.h
@@ -123,11 +127,21 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gdkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm.h
 drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gskmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/enums.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/path.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/pathbuilder.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/pathmeasure.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/pathpoint.h
 drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gskmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/enums_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/path_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/pathbuilder_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/pathmeasure_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/pathpoint_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/roundedrect_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/stroke_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/private/transform_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/roundedrect.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/stroke.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/transform.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gskmm/wrap_init.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm.h
@@ -136,6 +150,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/accelerator.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/accelkey.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/accessible.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/accessiblehyperlink.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/accessiblehypertext.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/accessibletext.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/actionable.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/actionbar.h
@@ -217,6 +233,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/entry.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/entrybuffer.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/entrycompletion.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/enumlist.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/enumlistitem.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/enums.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/error.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/eventcontroller.h
@@ -315,6 +333,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/passwordentry.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/picture.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/popover.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/popoverbin.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/popovermenu.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/popovermenubar.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/printcontext.h
@@ -329,6 +348,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/
 drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/aboutdialog_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/accessible_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/accessiblehyperlink_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/accessiblehypertext_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/accessibletext_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/actionable_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/actionbar_p.h
@@ -408,6 +429,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/entry_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/entrybuffer_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/entrycompletion_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/enumlist_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/enumlistitem_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/enums_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/error_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/eventcontroller_p.h
@@ -504,6 +527,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/passwordentry_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/picture_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/popover_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/popoverbin_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/popovermenu_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/popovermenubar_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/printcontext_p.h
@@ -566,6 +590,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/stringsorter_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/stylecontext_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/styleprovider_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/svg_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/svgwidget_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/switch_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/symbolicpaintable_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/private/text_p.h
@@ -656,6 +682,8 @@ drwxr-xr-x	root/root	usr/include/gtkmm-4.0/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/stringsorter.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/stylecontext.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/styleprovider.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/svg.h
+-rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/svgwidget.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/switch.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/symbolicpaintable.h
 -rw-r--r--	root/root	usr/include/gtkmm-4.0/gtkmm/text.h
