@@ -8,13 +8,13 @@ contributors="Fanch,Spiky"
 
 alias=(glib2)
 
-makedepends=(flex bison libffi pcre2 python-packaging
+makedepends=(flex bison libffi pcre2 python-packaging systemd
              python-docutils elfutils meson ninja libxslt docbook-xsl)
 
 PKGMK_GROUPS=(man devel doc )
 
 name=glib
-version=2.89.4
+version=2.90.0
 
 giversion=1.86.0
 
@@ -38,14 +38,14 @@ prepare() {
 
 
 }
-build () {
-
+build() {
   cd build
-
   meson --prefix=/usr \
         --libdir=/usr/lib \
         -Dintrospection=disabled \
-        -Dman=false \
+        -Dman-pages=disabled \
+        -Dsysprof=disabled \
+        -Dglib_debug=disabled \
         ../$name-$version
 
   ninja
