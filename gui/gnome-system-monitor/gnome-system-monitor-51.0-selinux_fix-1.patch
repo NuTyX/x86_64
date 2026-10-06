@@ -1,0 +1,103 @@
+Submitted By:            Bruce Dubbs <bdubbs at linuxfromscratch dot org>
+Date:                    2026-09-18
+Initial Package Version: 51.0
+Upstream Status:         Not yet submitted
+Origin:                  Self with the help of claude
+Description:             Fixes the application hanging on start due to
+                         a missing selinux library (which has never been in BLFS).
+
+Fix load_selinux() to always call g_once_init_leave_pointer()
+
+load_selinux() in src/selinux/gsm-selinux.c calls
+g_once_init_enter_pointer(&module) and then, on failure to open
+libselinux.so.1 or resolve any of the required symbols, returns
+FALSE directly from inside the guarded block without ever calling
+g_once_init_leave_pointer().
+
+g_once_init_enter_pointer()/g_once_init_leave_pointer() are a
+strict pair: once enter_pointer() returns TRUE for a thread, that
+thread MUST call leave_pointer() on every exit path. Skipping it
+leaves the static guard permanently stuck in its "initialization
+in progress" state, so every future call to load_selinux() from
+any thread (including the main thread building the process table)
+blocks forever in g_once_init_enter_pointer()'s wait loop. This
+means gnome-system-monitor hangs indefinitely on startup, with no
+window ever presented, on any system where libselinux.so.1 is not
+installed (e.g. a system with no SELinux support built, such as a
+default LFS/BLFS build).
+
+The fix collects the g_module_open()/g_module_symbol() failure
+handling into a single block that always finishes with exactly one
+g_once_init_leave_pointer(&module, selinux) call, with selinux left
+NULL on any failure so subsequent calls short-circuit instantly via
+"return module != NULL;" instead of hanging or retrying.
+
+diff -Naur src/selinux.orig/gsm-selinux.c src/selinux/gsm-selinux.c
+--- a/src/selinux.orig/gsm-selinux.c	2026-09-11 10:59:37.000000000 -0500
++++ b/src/selinux/gsm-selinux.c	2026-09-18 18:15:11.540709606 -0500
+@@ -17,40 +17,38 @@
+ static gboolean
+ load_selinux (void)
+ {
++  static gsize initialized = 0;   // FALSE
+   static GModule *module = NULL;
+ 
+-  if (g_once_init_enter_pointer (&module)) {
++  if (g_once_init_enter (&initialized)) {
+     GModule *selinux = g_module_open ("libselinux.so.1",
+-                                      G_MODULE_BIND_LAZY | G_MODULE_BIND_LOCAL);
+-
+-    if (!g_module_symbol (selinux, "getpidcon", (gpointer *) &getpidcon)) {
+-      g_debug ("Could not load getpidcon from libselinux.so.0");
+-      return FALSE;
+-    } else {
+-      g_debug ("Loaded getpidcon from libselinux.so.0");
+-    }
+-
+-    if (!g_module_symbol (selinux, "freecon", (gpointer *) &freecon)) {
+-      g_debug ("Could not load freecon from libselinux.so.0");
+-      return FALSE;
+-    } else {
+-      g_debug ("Loaded freecon from libselinux.so.0");
++                                       G_MODULE_BIND_LAZY | G_MODULE_BIND_LOCAL);
++    if (selinux != NULL) {
++      if (!g_module_symbol (selinux, "getpidcon", (gpointer *) &getpidcon)) {
++        g_debug ("Could not load getpidcon from libselinux.so.1");
++        g_module_close (selinux);
++        selinux = NULL;
++      } else if (!g_module_symbol (selinux, "freecon", (gpointer *) &freecon)) {
++        g_debug ("Could not load freecon from libselinux.so.1");
++        g_module_close (selinux);
++        selinux = NULL;
++      } else if (!g_module_symbol (selinux,
++                                    "is_selinux_enabled",
++                                    (gpointer *) &is_selinux_enabled)) {
++        g_debug ("Could not load is_selinux_enabled from libselinux.so.1");
++        g_module_close (selinux);
++        selinux = NULL;
++      } else {
++        g_debug ("Loaded getpidcon, freecon, is_selinux_enabled from libselinux.so.1");
++        g_module_make_resident (selinux);
++      }
+     }
+ 
+-    if (!g_module_symbol (selinux,
+-                          "is_selinux_enabled",
+-                          (gpointer *) &is_selinux_enabled)) {
+-      g_debug ("Could not load is_selinux_enabled from libselinux.so.0");
+-      return FALSE;
+-    } else {
+-      g_debug ("Loaded is_selinux_enabled from libselinux.so.0");
+-    }
+-
+-    g_module_make_resident (selinux);
+-
+-    g_once_init_leave_pointer (&module, g_steal_pointer (&selinux));
++    module = selinux;
++    g_once_init_leave (&initialized, 1); // Set initialized FALSE
+   }
+ 
++
+   return module != NULL;
+ }
+ 
