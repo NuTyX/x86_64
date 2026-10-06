@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/mutter"
 
 license="GPL2-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Fanch,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Remy,Fabienwang,Spiky"
 
 makedepends=(meson ninja glib xorg-libsm graphene libdisplay-info libinput
              gnome-desktop gnome-settings-daemon libwacom libxkbcommon upower
@@ -16,6 +16,7 @@ set=(gnome-base gnome)
 
 name=mutter
 version=51.0
+release=2
 
 PKGMK_MESON_OPTIONS="-Dprofiler=false -Dbash_completion=false \
 -Dtests=disabled"
