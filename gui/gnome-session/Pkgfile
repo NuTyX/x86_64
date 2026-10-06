@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gnome-session"
 
 license="GPL2-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Rems,Spiky"
 
 makedepends=(dconf dbus-glib docbook-xml docbook-xsl
              gnome-desktop json-glib libxslt mesa meson upower xmlto)
@@ -13,6 +13,7 @@ set=(gnome-base gnome)
 
 name=gnome-session
 version=51.0
+release=2
 
 PKGMK_MESON_OPTIONS="-Dman=False -Ddocbook=False"
 PKGMK_GROUPS=()
