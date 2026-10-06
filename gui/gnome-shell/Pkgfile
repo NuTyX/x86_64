@@ -3,8 +3,8 @@ url="https://gitlab.gnome.org/GNOME/gnome-shell"
 
 license="GPL3-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Remy,Fabienwang,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Remy,Fabienwang,Spiky"
 
 makedepends=(meson sassc evolution-data-server gjs gnome-control-center
              gnome-themes-extra mutter startup-notification gtk4 gcr-4
@@ -19,6 +19,7 @@ set=(gnome-base gnome)
 
 name=gnome-shell
 version=51.0
+release=2
 
 PKGMK_MESON_OPTIONS="-Dtests=false"
 PKGMK_GROUPS=(man)
