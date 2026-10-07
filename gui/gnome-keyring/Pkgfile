@@ -1,21 +1,22 @@
 description="GNOME Password Management daemon"
 url="https://gitlab.gnome.org/GNOME/gnome-keyring"
 
-license="GPL2.0"
-license="LGPL2.1"
+license="GPL2.0 LGPL2.1"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Fanch,Jayce,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch,Jayce,Spiky"
 
 makedepends=(dbus gcr pam libxslt libcap-ng gnupg openssh valgrind)
 
 name=gnome-keyring
 version=51.1
+release=2
 
 set=(gnome)
 
 source=($url/-/archive/$version/$name-$version.tar.gz)
 PKGMK_MESON_OPTIONS="-Dssh-agent=true"
+PKGMK_GROUPS=(man)
 
 prepare() {
  sed -i 's:"/desktop:"/org:' $name-$version/schema/*.xml
