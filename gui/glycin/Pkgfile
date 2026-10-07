@@ -3,8 +3,8 @@ url="https://gnome.pages.gitlab.gnome.org/glycin/"
 
 license="MPL-2.0 OR LGPL-2.1-or-later"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson ninja xorg-fontconfig gobject-introspection
              rustc libseccomp lcms2 libheif libjxl vala)
@@ -13,6 +13,7 @@ run=(libglycin bubblewrap)
 
 name=glycin
 version=2.2.1
+release=2
 
 source=(https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 PKGMK_MESON_OPTIONS="-Dlibglycin-gtk4=false -Dtests=false"
