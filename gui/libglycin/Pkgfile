@@ -1,14 +1,14 @@
 description="It contains the libraries of the glycin package."
 url="https://gnome.pages.gitlab.gnome.org/glycin/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 makedepends=(meson ninja xorg-fontconfig gobject-introspection
              rustc libseccomp lcms2 libheif)
 
 name=libglycin
-version=2.1.1
+version=2.2.1
 
 source=(https://download.gnome.org/sources/glycin/${version%.*}/glycin-$version.tar.xz)
 
