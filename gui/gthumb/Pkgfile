@@ -3,16 +3,16 @@ url='https://wiki.gnome.org/Apps/Gthumb'
 
 license="GPL2"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
-makedepends=(clutter-gtk dconf gsettings-desktop-schemas gstreamer-plugins-base
+makedepends=(dconf gsettings-desktop-schemas gstreamer-plugins-base
              json-glib librsvg libsecret libsoup3 libwebp webkit2gtk-4 brasero
              docbook-xsl exiv2 liboauth meson yelp-tools)
 
 name=gthumb
-version=3.12.10
-release=5
+version=3.12.12
+release=1
 
 source=(https://gitlab.gnome.org/GNOME/gthumb/-/archive/$version/$name-$version.tar.gz)
 
