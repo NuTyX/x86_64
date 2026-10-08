@@ -6,9 +6,9 @@ license="GPL2"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-makedepends=(dconf gsettings-desktop-schemas gstreamer-plugins-base
+makedepends=(dconf gsettings-desktop-schemas gstreamer-plugins-base libjxl
              json-glib librsvg libsecret libsoup3 libwebp webkit2gtk-4 brasero
-             docbook-xsl exiv2 liboauth meson yelp-tools)
+             docbook-xsl exiv2 liboauth meson yelp-tools libraw)
 
 name=gthumb
 version=3.12.12
