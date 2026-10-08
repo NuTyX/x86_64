@@ -13,7 +13,7 @@ set=(gnome-base gnome)
 
 name=gnome-session
 version=51.0
-release=2
+release=3
 
 PKGMK_MESON_OPTIONS="-Dman=False -Ddocbook=False"
 PKGMK_GROUPS=()
@@ -24,7 +24,6 @@ build=meson
 
 package() {
  # Uneeded duplicated entries
- rm $PKG/usr/share/wayland-sessions/gnome.desktop
  install -Dm644 $name-$version/COPYING \
  $PKG/usr/share/licenses/$name/COPYING
 }
