@@ -3,19 +3,19 @@ url="https://gitlab.gnome.org/GNOME/evolution/-/wikis/home"
 
 license="LGPL3 LGPL2 OpenLDAP"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Jayce,Fanch,Rems,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Jayce,Fanch,Rems,Spiky"
 
 makedepends=(evolution-data-server gnome-autoar gnome-desktop
              highlight gstreamer libcanberra libgweather-4 gtkspell 
-             itstool libnotify clutter-gtk
-             gtk-doc openldap webkit2gtk-4 gspell)
+             itstool libnotify gtk-doc openldap webkit2gtk-4 gspell)
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
      shared-mime-info gnome-icon-theme adwaita-icon-theme)
 
 name=evolution
 version=3.62.0
+release=2
 
 source=(https://gitlab.gnome.org/GNOME/evolution/-/archive/$version/$name-$version.tar.bz2)
 
