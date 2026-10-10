@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/libtool
+-rwxr-xr-x	root/root	usr/bin/libtool-next-version
 -rwxr-xr-x	root/root	usr/bin/libtoolize
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/libltdl/
@@ -10,9 +11,9 @@ drwxr-xr-x	root/root	usr/include/libltdl/
 -rw-r--r--	root/root	usr/include/ltdl.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libltdl.a
-lrwxrwxrwx	root/root	usr/lib/libltdl.so -> libltdl.so.7.3.3
-lrwxrwxrwx	root/root	usr/lib/libltdl.so.7 -> libltdl.so.7.3.3
--rwxr-xr-x	root/root	usr/lib/libltdl.so.7.3.3
+lrwxrwxrwx	root/root	usr/lib/libltdl.so -> libltdl.so.7.3.6
+lrwxrwxrwx	root/root	usr/lib/libltdl.so.7 -> libltdl.so.7.3.6
+-rwxr-xr-x	root/root	usr/lib/libltdl.so.7.3.6
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/libtool.m4
@@ -74,5 +75,6 @@ drwxr-xr-x	root/root	usr/share/libtool/loaders/
 -rw-r--r--	root/root	usr/share/libtool/slist.c
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/libtool-next-version.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/libtool.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/libtoolize.1.gz
