@@ -10,7 +10,7 @@ run=(python-six python-pygments)
 PKGMK_GROUPS=()
 
 name=gtk-doc
-version=1.36.1
+version=1.37.0
 
 
 source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
