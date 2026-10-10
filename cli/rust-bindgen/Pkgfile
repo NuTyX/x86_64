@@ -8,6 +8,7 @@ makedepends=(rustc llvm)
 
 name=rust-bindgen
 version=0.73.2
+release=2
 
 source=(https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v$version.tar.gz)
 
