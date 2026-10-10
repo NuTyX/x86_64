@@ -1,8 +1,8 @@
 description="C parser and AST generator written in Python"
 url="https://github.com/eliben/pycparser"
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(python-build python-installer python-setuptools python-wheel)
 
@@ -10,8 +10,7 @@ name=python-pycparser
 _name="pycparser"
 alias=(${_name})
 
-version=3.00
-release=1
+version=3.11
 
 source=(https://github.com/eliben/pycparser/archive/refs/tags/release_v${version}.tar.gz)
 build() {
