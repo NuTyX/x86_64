@@ -7,7 +7,7 @@ contributors="Tnut"
 makedepends=(autoconf2-13 readline llvm icu rustc libffi python zlib zip cbindgen)
 
 name=js140
-version=140.16.0
+version=140.17.0
 
 source=(https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/firefox-${version}esr.source.tar.xz
 0001-Bug-1973994-mozjs-140.pc-does-not-contain-DXP_UNIX-o.patch
@@ -15,7 +15,6 @@ source=(https://archive.mozilla.org/pub/firefox/releases/${version}esr/source/fi
 0003-Bug-1983713-Use-non-deprecated-ast-value.-r-firefox-.patch
 0004-Bug-1983736-Patch-jsonschema-to-work-with-Python-3.1.patch
 0005-Bug-1993797-Fix-AST-parsing-in-DecoratorVisitor-for-.patch
-0006-Bug-2053518-Handle-the-oe-linux-rust-targets-added-i.patch
 )
 
 prepare() {
