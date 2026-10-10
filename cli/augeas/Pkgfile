@@ -7,8 +7,7 @@ packager="spiky <spiky@nutyx.org>"
 makedepends=(libxml2 readline)
 
 name=augeas
-version=1.14.1
-release=3
+version=1.15.0
 
 source=(https://github.com/hercules-team/augeas/releases/download/release-$version/$name-$version.tar.gz)
 
