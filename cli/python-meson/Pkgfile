@@ -1,8 +1,8 @@
 description='Meson PEP 517 Python build backend'
 url='https://github.com/mesonbuild/meson-python'
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Spiky"
+packager="spiky <spiky@nutyx.org>"
+contributors="Tnut"
 
 makedepends=(git meson python-setuptools python-packaging pyproject-metadata)
 run=(patchelf)
@@ -11,7 +11,7 @@ name=python-meson
 _name="meson-python"
 alias=(${_name})
 
-version=0.21.1
+version=0.22.1
 
 
 source=(https://github.com/mesonbuild/meson-python.git)
