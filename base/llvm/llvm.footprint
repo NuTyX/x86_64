@@ -3,11 +3,10 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/FileCheck
 lrwxrwxrwx	root/root	usr/bin/amdgpu-arch -> offload-arch
 -rwxr-xr-x	root/root	usr/bin/analyze-build
--rwxr-xr-x	root/root	usr/bin/bugpoint
 -rwxr-xr-x	root/root	usr/bin/c-index-test
-lrwxrwxrwx	root/root	usr/bin/clang -> clang-22
+lrwxrwxrwx	root/root	usr/bin/clang -> clang-23
 lrwxrwxrwx	root/root	usr/bin/clang++ -> clang
--rwxr-xr-x	root/root	usr/bin/clang-22
+-rwxr-xr-x	root/root	usr/bin/clang-23
 -rwxr-xr-x	root/root	usr/bin/clang-check
 lrwxrwxrwx	root/root	usr/bin/clang-cl -> clang
 lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
@@ -21,6 +20,9 @@ lrwxrwxrwx	root/root	usr/bin/clang-offload-packager -> llvm-offload-binary
 -rwxr-xr-x	root/root	usr/bin/clang-refactor
 -rwxr-xr-x	root/root	usr/bin/clang-repl
 -rwxr-xr-x	root/root	usr/bin/clang-scan-deps
+-rwxr-xr-x	root/root	usr/bin/clang-ssaf-analyzer
+-rwxr-xr-x	root/root	usr/bin/clang-ssaf-format
+-rwxr-xr-x	root/root	usr/bin/clang-ssaf-linker
 -rwxr-xr-x	root/root	usr/bin/clang-sycl-linker
 -rwxr-xr-x	root/root	usr/bin/clang-tblgen
 -rwxr-xr-x	root/root	usr/bin/diagtool
@@ -30,6 +32,7 @@ lrwxrwxrwx	root/root	usr/bin/clang-offload-packager -> llvm-offload-binary
 -rwxr-xr-x	root/root	usr/bin/intercept-build
 -rwxr-xr-x	root/root	usr/bin/llc
 -rwxr-xr-x	root/root	usr/bin/lli
+-rwxr-xr-x	root/root	usr/bin/llubi
 lrwxrwxrwx	root/root	usr/bin/llvm-addr2line -> llvm-symbolizer
 -rwxr-xr-x	root/root	usr/bin/llvm-ar
 -rwxr-xr-x	root/root	usr/bin/llvm-as
@@ -58,6 +61,8 @@ lrwxrwxrwx	root/root	usr/bin/llvm-dlltool -> llvm-ar
 -rwxr-xr-x	root/root	usr/bin/llvm-dwp
 -rwxr-xr-x	root/root	usr/bin/llvm-exegesis
 -rwxr-xr-x	root/root	usr/bin/llvm-extract
+lrwxrwxrwx	root/root	usr/bin/llvm-extract-bundle-entry -> llvm-objcopy
+-rwxr-xr-x	root/root	usr/bin/llvm-gpu-loader
 -rwxr-xr-x	root/root	usr/bin/llvm-gsymutil
 -rwxr-xr-x	root/root	usr/bin/llvm-ifs
 lrwxrwxrwx	root/root	usr/bin/llvm-install-name-tool -> llvm-objcopy
