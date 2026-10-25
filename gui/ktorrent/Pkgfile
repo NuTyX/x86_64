@@ -1,0 +1,26 @@
+description='A powerfull BitTorrent client for KDE'
+url="https://apps.kde.org/ktorrent"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde6 kde6-gear)
+
+makedepends=(libktorrent extra-cmake-modules qt6-base karchive
+         kcompletion kconfig kconfigwidgets kcoreaddons
+         kcrash kdbusaddons kglobalaccel kdnssd kdoctools
+         kplotting syndication taglib kcmutils
+         kguiaddons ki18n kiconthemes kio knotifications
+         knotifyconfig kparts kstatusnotifieritem
+         ktextwidgets kwidgetsaddons kwindowsystem
+         kxmlgui qt6-5compat qt6-multimedia qt6-webengine)
+
+name=ktorrent
+version=26.08.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
