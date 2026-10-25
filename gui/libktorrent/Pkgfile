@@ -1,0 +1,20 @@
+description="A BitTorrent protocol implementation"
+url="https://apps.kde.org/ktorrent"
+
+license="GPL-2.0-or-later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Pierre,Fabienwang,Spiky"
+
+set=(kde6 kde6-gear)
+
+makedepends=(extra-cmake-modules qt6-base karchive 
+             ki18n kconfig kcoreaddons kio openssl boost)
+
+name=libktorrent
+version=26.08.2
+release=1
+
+source=(https://download.kde.org/stable/release-service/$version/src/$name-$version.tar.xz)
+
+build=kde6
