@@ -6,10 +6,10 @@ license="LGPL-2.0-or-later"
 packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
-set=(kde6 kde6-plasma)
+set=(kde6-base kde6 kde6-plasma)
 
 name=discover
-version=6.8.1
+version=6.8.2
 release=1
 
 makedepends=(flatpak appstream-qt packagekit-qt6 qt6-base qt6-declarative
