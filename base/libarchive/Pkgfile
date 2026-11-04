@@ -2,15 +2,15 @@ description="Library that can create and read several streaming archive formats.
 url="https://people.freebsd.org/~kientzle/libarchive"
 
 maintainer="kientzle at acm dot org"
-packager="spiky <spiky@nutyx.org>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
 
 license="BSD"
 
 makedepends=(bzip2 zstd)
 
 name=libarchive
-version=3.8.10
+version=3.8.11
 
 set=(chroot)
 
