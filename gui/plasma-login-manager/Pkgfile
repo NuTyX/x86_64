@@ -10,7 +10,7 @@ makedepends=(pam extra-cmake-modules qt6-base qt6-5compat  kcmutils kconfig kcor
 
 run=(xorg-xauth xorg-server xorg-xinit)
 
-set=(kde6 kde6-plasma)
+set=(kde6-base kde6 kde6-plasma)
 
 name=plasma-login-manager
 version=6.8.2
