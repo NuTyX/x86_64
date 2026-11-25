@@ -7,12 +7,14 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=telegram-desktop
-version=7.4.4
+version=7.4.6
 
 _td_commit=c15d3f5a5de6e3ba5839822c451152e5e18bb700
 _wallet_engine_ver=0.0.7
 
-makedepends=(python-setuptools abseil-cpp ada ffmpeg glib hunspell kcoreaddons
+PKGMK_KEEP_SOURCES="no"
+
+makedepends=(python-setuptools abseil-cpp ffmpeg glib hunspell kcoreaddons
              libavif libjpeg-turbo libjxl pipewire libsrtp gperf qt6-base
              qt6-imageformats mesa expat libelf libglvnd libxcb wayland just
              xorg-libdrm xorg-libx11 xorg-libxext xorg-libxshmfence xorg-libxxf86vm
@@ -54,7 +56,8 @@ build() {
 
   cmake -B build -S tdesktop-$version-full \
    -G Ninja -DCMAKE_VERBOSE_MAKEFILE=ON \
-   -DCMAKE_INSTALL_PREFIX="/usr" \
+   -DCMAKE_INSTALL_PREFIX="/usr"  \
+   -DCMAKE_INSTALL_LIBEXECDIR=lib \
    -Dtde2e_DIR=$PWD/td/install/lib/cmake/tde2e \
    -DCMAKE_PREFIX_PATH="$PWD/wallet-engine-${_wallet_engine_ver}/install" \
    -DCMAKE_BUILD_TYPE=None \
